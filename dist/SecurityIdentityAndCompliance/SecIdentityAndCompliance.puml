@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SecIdentityAndCompliance [64x64/16z] {
+xTO5ajqm30PWeGM-_tqRQpg1mgwoJF-3c3xJKA3o4xoPYttYallImEDk580EFsRUJ6mU3v-lu7zy3A8HJ_N60Bn-zWJlYe3gHw7lQz-rxCo8dBKH6j7rBbZ3
+vogXUCwQS9KQFXXE1k0q5t0qF6ZK9c23oPphBBLqABIyvs6OZxdIkzxtwsBUBzJxtlQ1p7kpVGV_ut-yFTVF_tZhUPqEzgSty1mTdoWPA7zwmKZ5ZcUgqLSV
+ADNJy6kN1dRrrO3IyNLuegidgewEJ-ArtZZxiQX2jFm0to3uuHtM0pbRFb3M7yPlN-MQjkTJrqX7j9pCCmtHroISJP-qrWi2KY8beDe9HDix5XaCMxWw1Iox
+lZRlDMfBrQc6T7q1zhqYW9PzNr44P54LHa2DlEipJ0Yta5YyxllRZzUu6x_u9-JP7cali3mXl2-BIFU3nJzzVW4
+}
+
+AWSEntityColoring(SecIdentityAndCompliance)
+!define SecIdentityAndCompliance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SecIdentityAndCompliance, SecIdentityAndCompliance)
+!define SecIdentityAndCompliance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SecIdentityAndCompliance, SecIdentityAndCompliance)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DatabaseMigrationService [64x64/16z] {
+xPK5kYGX30R_4EV-1zw6SIUpzgpQfT1yeVyTVlWXOqVc6wvh8-oXffubMsbgF6dOQ9RBUhJnV-If8pRUnAAU18uxPRPSymtSxy3mLL_w7GIswaFpTaXHyD4q
+yamE9HHyOG34OXFX8REk-zv36yve6jtN_VbZkkba7mbMyY_vPBxsE-YwV-zFByKFUrwc0ox5JmE8rJmst9HfF5VYnuPo1birVZ9CXJT4pVDRnS_zJCVB_hrS
+6uo2Vvc0Ceo1WczsiNxC1okDNxgU8eXOFUlZdnc-4PcVQ_uT5Fs687XVWm7Ds-M7-o8f05WzSXAk342oBnD26D061YJHIsIOS1j-Ozcl86LoK5UDxuq_swel
+cFw-vlqr84MVAQTE_9xViFFHtlCPUv-BlclU-gdUQroslqx4wVfN-E67Nm
+}
+
+AWSEntityColoring(DatabaseMigrationService)
+!define DatabaseMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)

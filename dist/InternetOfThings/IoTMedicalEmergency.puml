@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTMedicalEmergency [64x64/16z] {
+xPS7Ri0m24NZ1VpxNxZvShgCQpcYktqQcI_32pZUctHjaj_qYsi4oas5yTuCP6g6ohCAsVRnqeVp0-__hduc2kEc0UNSLA2Ucm8qdZLe9ZExABRHudNSmZr0
+0McR2A23dW4vjX4WEx_j--qt-KBqhgz2-jmYJtvg2zAJt-6n4dlo6nOytsDAtF_l-ElswpDdHjdrqp4bUNzzBOkGl7v79Mtc2q1avhTAXlxpljdWk_vB1ZER
+-vocElSfzJKkaNBNBucuzb_wk_sNhvQtxjlL2tc__mGWtU_8M_sNINM-alDSK-Bycicy_-ZRyGeR_KwA-i7lZxLVlF_2uoSwVgFp9pf_W-j7PFsAhv_nzJiS
+FuBnAnm_W_7xF_-9vu_n_9LKtA8U8rMnZTPO_V25zSzlgX_ZzNES1m
+}
+
+AWSEntityColoring(IoTMedicalEmergency)
+!define IoTMedicalEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
+!define IoTMedicalEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)

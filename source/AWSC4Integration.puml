@@ -1,0 +1,70 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+' AWS C4 UML Integration
+
+!ifdef COMPONENT_BG_COLOR
+    !define COMPONENT_LEGEND
+!else
+    !ifdef CONTAINER_BG_COLOR 
+        !define CONTAINER_LEGEND
+    !else
+        !define CONTEXT_LEGEND
+    !endif
+!endif
+
+!ifdef CONTEXT_LEGEND
+    !definelong LAYOUT_WITH_LEGEND
+        hide <<person>> stereotype
+        hide <<external_system>> stereotype
+        hide <<system>> stereotype
+        hide <<external_system>> stereotype
+        legend right
+        |=              |= Type |
+        |<PERSON_BG_COLOR>      | person |
+        |<EXTERNAL_PERSON_BG_COLOR>      | external person |
+        |<SYSTEM_BG_COLOR>   | system |
+        |<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+        |<AWS_BG_COLOR>       | AWS service container |
+        endlegend
+    !enddefinelong
+!endif
+
+!ifdef CONTAINER_LEGEND
+    !definelong LAYOUT_WITH_LEGEND
+        hide <<person>> stereotype
+        hide <<external_system>> stereotype
+        hide <<system>> stereotype
+        hide <<external_system>> stereotype
+        hide <<container>> stereotype
+        legend right
+        |=              |= Type |
+        |<PERSON_BG_COLOR>      | person |
+        |<EXTERNAL_PERSON_BG_COLOR>      | external person |
+        |<SYSTEM_BG_COLOR>   | system |
+        |<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+        |<CONTAINER_BG_COLOR>   | container |
+        |<AWS_BG_COLOR>       | AWS service container |
+        endlegend
+    !enddefinelong
+!endif
+
+!ifdef COMPONENT_LEGEND
+    !definelong LAYOUT_WITH_LEGEND
+        hide <<person>> stereotype
+        hide <<external_system>> stereotype
+        hide <<system>> stereotype
+        hide <<external_system>> stereotype
+        hide <<container>> stereotype
+        hide <<component>> stereotype
+        legend right
+        |=              |= Type |
+        |<PERSON_BG_COLOR>      | person |
+        |<EXTERNAL_PERSON_BG_COLOR>      | external person |
+        |<SYSTEM_BG_COLOR>   | system |
+        |<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+        |<CONTAINER_BG_COLOR>   | container |
+        |<AWS_BG_COLOR>       | AWS service container |
+        |<COMPONENT_BG_COLOR>   | component |
+        endlegend
+    !enddefinelong
+!endif

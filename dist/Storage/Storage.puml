@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Storage [64x64/16z] {
+xTO7UiCW38PXwHT3wFu7BkJ1P0_9tUsNPGDlzg93_x6pCqkH5cCcATaR4Ow-cBVMFI-VhJdJx-p_lMx5VA8jQC2RS2sZ2cADUDZSO6QD-74-DaIPgaLyJdbu
+Kr2rW1V8mRS6AkRtlUcRKDdZhGbbjqz8VODmY2XxVPOqpcOivd_zUZQ3rr_azrfN6l6W5I9UJ_9uwmdiekvxB_XQSYdWSX6Zb5pgSuyvTDeQmGjUsjta9Rzj
+szOQS7bDAuru8Sn88fwJJPRuApm8CqBi-PDPuFdRz_fTzfEyKBaRoNEleBj1d_gUtkst_d_wzqsTrJCVQBTdh0r9WOHfnWn_pFGRUWC
+}
+
+AWSEntityColoring(Storage)
+!define Storage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Storage, Storage)
+!define Storage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Storage, Storage)

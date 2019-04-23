@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $StepFunction [64x64/16z] {
+xTO5ieGm60FWL7_f_S_xT74P6ePHldK93eq_vVMgCOHOdPNn9pj70f98GX1szj7SBR8Ba53zHsNp6UNlXSqNe9fLe3Z58f0I4CqvcW4WgxDC0JM_0V1EDU1G
+g5Vs-ebq9Qz-G2_a6vjN-HTHvPzrvIFMQbSUo7CbRGzRozKF1IotGztclJKYRpbjrBryN0X3Nh4LV2DZPRXi2PBfqbxU_dc236-7V6w-r9ltbOxbFvX_n_OJ
+99KbX8xzfzYA7NahUKEeuzTRktN-MAhi-VlyzMDmFtyYFNxzviSFVlpYnqz-_7w-Fmp59J_GduZ-HlP79VeZqr_v_inxlRu1
+}
+
+AWSEntityColoring(StepFunction)
+!define StepFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, StepFunction, StepFunction)
+!define StepFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, StepFunction, StepFunction)

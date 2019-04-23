@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCPrivateLink [64x64/16z] {
+xTK7pgGm30NWvnhRS__xBXs4ik5lwdpJXpXwQQB-sklrUkMaVYfC201hgnz81K0i382_tqCZa4NE7Ja3-jroGFFQcTHt1C7g8lbx2UJUF0a-VtmrFTTDWCAO
+MBEU2LhTAIO4KAid2UfC2I2HgK0ynkzEbjdwyJoJ3X-48sGDVGm-d1n_shYt5k4sSVUMom30deFmW6IT6kD0NfN60CV_ossfJfU9LWFOV642s198W5OziLy8
+mY88MYq_jR1zzHoKrQ6mVPOr9jb0bMTZXkyDTRGu--NFijnod2RRlsKtGEpdb92NG04-yntB6BrwtNBGCPzIbU0ZNzjx6jKN8xSAooDM1eDoNCzrs-MV9QiR
+JG2A6kKlGkn1fSNA6RmUNzPyE0QsJs0mJfBtMy778VtJTGHtbPMstX57L4_GTZe6CXImwWi1m4E4hRol2M68s78Sy47zaTVhzVe7
+}
+
+AWSEntityColoring(VPCPrivateLink)
+!define VPCPrivateLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCPrivateLink, VPCPrivateLink)
+!define VPCPrivateLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCPrivateLink, VPCPrivateLink)

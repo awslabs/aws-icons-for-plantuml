@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTGreengrass [64x64/16z] {
+xPQ5jiGe40Mh1UZR__-_wvitpabMZasDowtWeF-3Br-wzK-eEPUkam2fgmp8jEi2OtKNbFRKqYE5I-fWQSSqiFcKDqboQXi7TtWK156LxFF6b2QcUyhu0zi8
+2fSaVwfe9KJb8TZbImzqKAt4zH5dI0FNgxoa87VjPmPUUcHuIIhRzE5oS3y4JqnSdwbIlHAq_i2Psl5ACABqEmlNMS7HVa-TknCyvtkGEYyuyYfS5mGpwnZZ
+TKNGFvDfwOBW89awByXZwWncdnPqS3P_23RvlU0-dqV-Z62DJVll1Arz_zS7GMat_gPZMQy5oflntth500Dx8_3T_2kOgY3x3ttVlJZmUVxt95igY1ZIY8Wf
+PKGiAN_opdoN7oq9mDKEHCk0qGL_vNjYUit2gZM8gfAgZXSTdwGofjuGM3XKwprERWuP3BqdS7sWLirFWi1Ad-a9gLTqERQqPHc-zCmqlAGzvV0mZ5lBJvo_
+Xa7C7yKQ3dvYrjOmm2B761a6-DGvLXf_uxbqWLhpTrRfCjsj_umlNtu5
+}
+
+AWSEntityColoring(IoTGreengrass)
+!define IoTGreengrass(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrass, IoTGreengrass)
+!define IoTGreengrass(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrass, IoTGreengrass)

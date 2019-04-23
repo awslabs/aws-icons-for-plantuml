@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudWatchEventTimeBased [64x64/16z] {
+xTG54Xin38LXYwLt__i6dOotB6-v_GU2tv9X_EperZPcYmAGBbkdjiAhuFx9iu0ATqy0fTspvntHk2S1e7c0gET5YzoFOK1nXokGTqZpoWs8Zi_x-HO_0f36
+mmDyB7v-yyqP84S_4jbvUaNFTs_l0FKyYuYUy5a0zhnNySq_idb857M6NmVBewUYwam00lAZ8rfd-kBuTwxU1EP2oM4rbOrEXaLm0acZbGD8PI8In-Ijh03K
+BTmA6kquNZvrR4Ng4M6yX_dmlbrMkJ0HYoKWNSw5UrM50c3R7i3Hao-5VTuxgxcxYjJghL2lFhylysBuw85yLJj-CNxIs-_XoMF9gUi5XwJh5QYS5Q0RvzTb
+fvGDBsCst--V_x__x__xttdzGcKMRsyoixSFcIcEVctkNuVqwPTMhxNofENFoo4f3t_JTMkN9MvyzHtI4zqurOdevd6Ycnzqed6wAm
+}
+
+AWSEntityColoring(CloudWatchEventTimeBased)
+!define CloudWatchEventTimeBased(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchEventTimeBased, CloudWatchEventTimeBased)
+!define CloudWatchEventTimeBased(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchEventTimeBased, CloudWatchEventTimeBased)

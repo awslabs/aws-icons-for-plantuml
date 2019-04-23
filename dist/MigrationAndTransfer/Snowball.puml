@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Snowball [64x64/16z] {
+xTP7WiGm24HH2Wq8wlxtdMnR2onFZdgRZh_R6VDFM9OblRs0vrckyYAQB3NH7daXkafZ9GJ9Z4sIUJmRtav8iE1Yx90DWYQFZ36ytMdYTUzKQVQaFMJsA6Z3
+sqe_xmN7sYXtUYmnPDhhq60tlltItZ7mb_UrB-tzfkGlx5DEv4jxH04lxvK5_I_zwc45lBY7bF32dj5ByGlEV_02fhrAivdj-ZsP7rFR_9ZEhzfyVctpCryq
+Fzyzlzz___3xBSjo1m
+}
+
+AWSEntityColoring(Snowball)
+!define Snowball(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Snowball, Snowball)
+!define Snowball(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Snowball, Snowball)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2AutoScalingResource [64x64/16z] {
+xPS5bYCn34Jb4bJV_y8B2YZWrwzZxGx_cR2_p2HV6hYZevCaElgsaLZNqoTMzRDFBEgkf3b9hEa2KcKbm4XTqiy0Grx3w7BnnMdoAYhbYyeAvSkFlmOmv3qO
+PaDWAgA6_BHGSIT5I1SbyRBl6gGP6Uf7_57lWE16vkFy9e0nILfeGCvO6iNveyaPX4udBChVQ41XtCh7T3fR1HXLuL9SH-aciXT0zDbNcUZp0F1uziEngrU0
+hF-Zd_MVwmCNWbbEZPaVclLYuCAG99XSbliSlS_bpn6SAQv4rtyilnyflp-Klz3KTzglaYHpVR__Ai1Stny_bMokxu_VlG23f1wRFyhv_D6ZyrTfpVMZktxr
+ry_--jsdlt_rzyyVltz-wvyV--VN_lcvVtxltn_wzvV-_Qb_VoiG0VdI_0O
+}
+
+AWSEntityColoring(EC2AutoScalingResource)
+!define EC2AutoScalingResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)
+!define EC2AutoScalingResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)

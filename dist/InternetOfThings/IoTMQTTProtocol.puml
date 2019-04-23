@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTMQTTProtocol [64x64/16z] {
+xTG54iCm34JHbMn9k_U_SCTDcTmK1lEBWHTEy9kizLMvuI9FhIuTnphrGUn7BgcYhIfAKiV8A0LM5n9j-VC9FpkAXWyoYkD7IdnKIhRtWO-Ae-_ugBxvpMz-
+yvlV_EO_wa--vtizywNtiYS-9KvxwMdJugN7jFxQcm4uVhlllyt6P_cP-UAWERuxfNAKHf4QrSGRntYJ34tfZGLleMZkhIkRptq18HgA09eQuEDhc02clkYe
+f86vc9K-CXiRpPOPc6jzOuNpSm_A_OtjZsU-TVZi-46gPnxO-wPqP-6nByaVU9mzGjBuXNFnlF1DAdlW3QFbnphJ0Pn7dZrAOflTFqvsN1S7RoM9TIg7Lzr6
+rgdp_J-or6LSy_nPyYYUAY0uwUm_o_2ZTW
+}
+
+AWSEntityColoring(IoTMQTTProtocol)
+!define IoTMQTTProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTAlexaEnabledDevice [64x64/16z] {
+tPU9pYGX28GR6e5w_nVUK35nPvoaSU_zAqTVVe4M0Rr-jMHUPBlmuvCSKHT3rbW5jB24rTk0jtbypsFZ3-t_3xoM0bcN0TogQe2fwWsCUfi8BNsYBT1Ms8xZ
+IFQ6Im8-cd8WvPLNmA-s7D2D7tr-V2NUIt7A1p7c5dNAKypHAEKfdyI-JFpab9ULUQLnoWzYlo1-aiZCOvuGirXAzob_4_iAyTEIdV96x31-8YfR_9gyMYG0
+P9Wklkk_EfOoJ9NgpjyW5pw6n-eVtVX956moduoFqkM9fzKCUFWmlIxBrO6Urs_XUjs1gT1B0uY9F-NFeAr1D7E6Ie908_vAt35dGEY7brbeftuuOFJXlgPk
+5ci3lB7-5OZhnal2A6q7eC_pRsK-WFljPV3BCn-0A13RMnN0d_aiIzFyqWrwbTTJ_w8H1-JJwqR-qQz0xcuvgyZMlyzvId_G_wFvsztgn2zd_BO60CJn-bav
+no_F-qTQKMRmae7kGnlxryJC7tiPB0PuP_yyLlxggaT3GFDBblWe7K3C-d4JTo1qNp3o-VoWgtuXf_MiX-YUNoJvzqn55e_qf4zDVjPlrgYwGu9ubryDRsaS
+d1zBwhdWT3qulwt-EM7Ji_Fp4hSylrRV
+}
+
+AWSEntityColoring(IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)

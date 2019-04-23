@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SnowFamilyImportExport [64x64/16z] {
+xPQ7SiCm243PYF__u0nYckApSbKpRkMrcV1aWXVmvGkAhi9ujot-mP3IFVw7GkBNjMWLZOYiW2ywmZBfmGMBO00K-mq3W5Y1-Qd7KwGiVnpq03EUP9f4HxC0
+ITypjoC0EghJb4tgC53v0t2q7c24GuCY38giHflVm_NJxcZc5fc_sxxkUzl8Zjp1qVtytEDx31Py8FEEue8_uHC-Ri06xkdzt_liuqRvDdOuPNy83tsDZMiE
+P7IFL6ZYkrsvRfa1GAtXwV2mkO-GI1xtdN8ymheVpQ-Bsk1ZdqRspvqdVc9LmTwl1MuGqQsVLv1-6GSLL68jCALNqEaBi4pHxU8X1tYTKnwF4S2OGN_mkPtD
+ZO6t8vmedsXxBL2s6f4At1AGF4jx23veilxewWfeVliWRjXRt44tQlhi-EbwFtvAPyQ3ur_u0fLEt93qKtzy_bwZZfFpr_Bvo9SV7zWGZloyzGaS-y0Ri46y
+Ww1uvlgfoa_ua_lN4zVlU7RxQpDClt_d_B1Awz_o35VpIvkV5gZvwSdvxTdvySdvzSdv-Udv_SkNCm
+}
+
+AWSEntityColoring(SnowFamilyImportExport)
+!define SnowFamilyImportExport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)
+!define SnowFamilyImportExport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)

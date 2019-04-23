@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCVPNConnection [64x64/16z] {
+xPK7ikOW38DZmCRI_U-xbR-RYKEslAQfAP-h6BQ_AlcfLRYeWoIwbXMwWnV13XVHVgSsimwIgCTm8-djTrPHa6n7S2MfTsEqOm7go--DHCdYucHxhQWdyVXV
+9xCpTB84FMKBAAH5KRCJqBXItLb1xSDadP2uB1tEb0W7-wLG3xSoVYYWI-ZNuHZiy4vwUSRl3DSqQd-y7_P02V2q-WXmZtlDg-4XW80BylFy_V2zvQLu6a35
+qlpY0ArDzjTc-ni1R4m3K_yyuR5_mRx3XmUncgJuJNhPOYNuX7potovVzQSCX0Oo4AO_9H6Sj-6iZ9Bb8JFUfEpAEUSrPTuvRt-M5tDtbLM-WZ_bPOql8E4W
+VOqtqcGhJhObtebnx_Gq7vrNq5VpoxYuL_llP_eNa019Fxb_MVSVYNR2_-Bi9_p_nUCSlvdhCZ_qcNZzp_dTzeKfptFtftWEdtSfEMr_KDy1
+}
+
+AWSEntityColoring(VPCVPNConnection)
+!define VPCVPNConnection(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCVPNConnection, VPCVPNConnection)
+!define VPCVPNConnection(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCVPNConnection, VPCVPNConnection)

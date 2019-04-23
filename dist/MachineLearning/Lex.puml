@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Lex [64x64/16z] {
+xTO5Zkj048JXwcakt_-y2y69j9RXCNnX-Ct4tyD__rMioTwJOvtjw0FgAo2x-k0AsTttgyld0ttZXLC0EzBhc0Nju-b0l-AdzJskd7pCYH_fvR6z3DpOcVKt
+hycVEV_sv2mpxsCzdeGEu62VayidNlfnVFwxghgxFcNMhDVwXGybM2NzTQyHaRnI37rX3mEnVlov_5PEHVDhIo1MZty68rjqUUbpQE_QK5ZmfGJp-2jJ0Cte
+7Nt2Ms1yzeaFEW2CtjFh9N_s1j5WkmfoJmyOvzxXItaq1shF_CCuzod8133QeBtPiv9ptmAZ8XtH0ftxTNCFE0SwBY_ZS4y7AW18EoIFzpJu4ggr32HFzUf5
+fikvFl315H_gJCzm1o1koHFzXKEAvEcUFNrOTlOUavgkS6nFxtXnILfmLToMFZ4WoCAuV2eUva2mu0jF2Y0ApjC2i6_f6G2Cto00vxUeRFvE_lll7G
+}
+
+AWSEntityColoring(Lex)
+!define Lex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Lex, Lex)
+!define Lex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Lex, Lex)

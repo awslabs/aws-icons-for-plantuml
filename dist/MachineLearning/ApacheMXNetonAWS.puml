@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ApacheMXNetonAWS [64x64/16z] {
+xPQ7aYqX24GRKB7d__ztiykbol8ohy9BsnKc7YMfN7-gVlGZpZVnrzZPJV0XiJ5lmXpwGQgP2W3eu0ry2A3TFn7Icm8oofOhO9xjSGDqrYRV_-aAL4peG3zy
+AU1-XJmzF1zW97mQOFFE0Aw1im4YG6DyXl19vbCIEzbJweOVwHpkDZ-SQ82MiEnuCAuHXeh2vknBrVJuEGzPT4AtMUg0blbmDmBoZEVAZSfoDmT4plnSuuki
+2EReYNmz6dUymnRFo61aZuit-BxqU_2hWiXLFS5tZ6Tys1r-tESljbWzz_YbnHHuHwln3RxFdzLumzpnXB32Ky1ztM8cPdCVTRPH_mgWOExu2OdVTffV3bWK
+V_3iW7sPltK_2dELtEAZ6AFCjt9eshSNd_PnXHzM_hZoV2BPdckSTW67p6z_1J8emY6GxtXCWHzFB-NZyQ70Sln3rFC1H8NbJIjlPHRZxqL1I_jssiSRv80l
+1utnoCTxWynAzx7Vw5rg7GXR-9nZqLXldyoPsfzY0nN9X_Jr-Fd46Xip1f-igOfCTt-WVlIZLm
+}
+
+AWSEntityColoring(ApacheMXNetonAWS)
+!define ApacheMXNetonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
+!define ApacheMXNetonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)

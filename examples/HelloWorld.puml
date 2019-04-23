@@ -1,0 +1,17 @@
+@startuml Hello World
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+!includeurl AWSPuml/BusinessApplications/all.puml
+!includeurl AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml
+
+actor "Person" as personAlias
+AmazonWorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
+AmazonSimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
+
+personAlias --> desktopAlias
+desktopAlias --> storageAlias
+
+@enduml

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SimpleNotificationServiceSNS [64x64/16z] {
+xPP5OkH034M_f1BU_xupIOCQvTZBmDi4oa_OKFKp-UEFSDCFp2FhCBuO3I-lGnYVBBKFz1I9xK1k1jYYcZ06s6iNkVhPfvYvIsUGrHlCgbAPLzO6GU3SYFq1
+HOqaGR8c51mXM5l5o-Go4H1L2Qg9DHSlO3dxDFg-qPiWQs5bAQG665PRVX9EJOpfkSvacAuFr2Bl_0eXi7-LFfNGaER5ZzDPraI0yh8cY7byu2Q0jR-DObNx
+wYVqW2_mVX7TGVdavpIzxdL1hlDZQ3tqhqJYWmv8NYRnE9FsKqwF-RlXQmPtirRzoxrlu4W5rpC9lXH1nFrA2505dJYTN58pSjilHbpJ--ZFzPT3klkX_d5-
+9mZHtT_v9VZ4tt_oa7OwWtRwn_qnITGJ_KIJH6MmnzEHJbaDV_fnn4_mi-z7_1BuWwzl_CmQ2SYzh_HIlp58SrS13C3gqTVpZclYyVKYKOz-4ho2uJLX7Vob
+KG4HfDSq8EEXCU_mapTEaw3f1A_D098ruFXarHOfeBS9JB92MAo-G069T_S7htq40s9v_FxI-71_sa_eS7_RJmxtnn_37t_y1m
+}
+
+AWSEntityColoring(SimpleNotificationServiceSNS)
+!define SimpleNotificationServiceSNS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)
+!define SimpleNotificationServiceSNS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)

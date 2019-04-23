@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Organizations [64x64/16z] {
+xPI9aeGW44CJGEd8_t_l7c8xnTpetkkhCnHF9Spqz7CvE33RPKSWsbPR2I21f4twI62G1e1Zlvs3lrW92Bd_uC7M53fh4C6nFGlOqK86CEYKDG38FJwzDM-I
+VVwWUlN-8z3GwPVb1fRsIw_lhNcJtRvVVTAqoQ-Gq_Gh_TButVq7QtqBFRuYaEpaMmAY-l_yrTyo0bmY_L7RXX-mOmJc0FJFdhO6F_X6f6aNAUtpoQaBMGjf
+BRgl4m-WxlfWR03QJ3pmOxbt_X8V-lVxk-TBCaH9fonIpKA4rNo94GlHksmxYsksQ_u8XXbmpWOi6NK_bqoCLtrV3kwdCdUMt0--yLc_vl_ZbsVwApVzECpG
+_L1pS9yrn-j-XkE-upwSVCrN7XUiBgnvsMvhrlGZE3Xu1G
+}
+
+AWSEntityColoring(Organizations)
+!define Organizations(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Organizations, Organizations)
+!define Organizations(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Organizations, Organizations)

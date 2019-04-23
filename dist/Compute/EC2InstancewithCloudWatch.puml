@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2InstancewithCloudWatch [64x64/16z] {
+vPS5Zkqm34LhFDt_XZz4Lf_gpAIJpt05nHFmZGF73vM7rpN6rI9akYwKCAvHLmUfPwdd1pxVvFtluUMRUCyXuFawvBtYJUN4vuQARnt_i2IP-MD3Vn2lzbNi
+yWnCnr01zlcXgDjz_e94loedNZqYNDxZSs3oNlmSXixKRuY_18K3liydu2g7Q02-omTSpJR0zlnNG6vF5X6szF_anGVO74hYnf_rRkQbZmLA_XO_-wzdYvYH
+sZgryj-WUJv-Cx2FnD-o-2O1GX_v0926oZNc_O5tE4FlUP2GBeTO07xdM_o4tlYWv3MOz1Q_bhyEDYTg1EM_LGCkgF49qcjt3rS3l1g-oFysT1Go02Z_lu8B
+_piVuC29LTC7luX_Qt-I3Y5w3Uia5toBdq04oEiNWrZmvL_ZzPMpWAxy7ydgMYh4hhGCy9O_FNzZF30qkXDnfLK8_fZ_JgbCqyjAK3awFyzVebOQXO_cYp48
+xVFNq_fPEnQeaQIxwwzpoQg0BVuG7zkbe0gGFVvI5K0i_7yim855_ZyMSDBoTsl_401Q_Ep_ion2c_z_wVxjU_UlFtx_lAdytlF3tldbVpc_xPzVzy_FFrIV
+0G
+}
+
+AWSEntityColoring(EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)

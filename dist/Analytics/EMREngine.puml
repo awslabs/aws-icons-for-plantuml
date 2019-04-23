@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EMREngine [64x64/16z] {
+xPO5aeH034NfUFxz3xm5FPPnP9rNWZvI4Q27RTdPQHuLc-adAZ7CmoOSoBwdoz98-B26vNuReOHFExDjYv4441CpytTSetDq1X1-9e2SauDSnxFt_4OyOG1T
+FJ25HwWMkEgQEC7r2eu4zGoz7t4Vav1o4sxZdyZn2k68Z3wWVUPL3l1GOUauOBq_hgeEvCadmDwPw9ZcCevzRYV_hIO7WeYFSwtp_V92ospVqR65yKaxRRvV
+-Lc-V7FyZ8WrVcUv7-x-0-htu_tTfyvItxAZztoVz_shVaiWl49t_32r-lqTpBWVN6DtVBlu_jledz2et4ce9QndOSmiYQoN2u6yyJ7v_DQwmW1vS4go97WV
+0Y3jChgU5YAjBWVkem3IxOWd09avdvMKOHPaSOdIi2qxEny
+}
+
+AWSEntityColoring(EMREngine)
+!define EMREngine(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMREngine, EMREngine)
+!define EMREngine(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMREngine, EMREngine)

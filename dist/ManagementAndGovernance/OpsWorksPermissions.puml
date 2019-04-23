@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $OpsWorksPermissions [64x64/16z] {
+xPM5akKW50Mv1fp-_m_UMhTGZyVgpAJZjzAujFyOYwpAy3CxXX08pJom9uWF26OygPT0ey8iSWXKp-d0yFO97q0zeISelmi8Sbltd_zEaE_w0-gYHcC_-tcH
+w7O1EegB3XLzpv-Q5r5x7zx1fCkCXcGxVYpwkY0s_LmCYjjVSlktR_wUXF8B2jBVOmlT9JQGVBbdRA6wzbFqUaX7kVIzFSHVaEzZpk77Ve44TUWdC2UGPxvG
+VeZgo7VexvyT_CGFb9_2SPZ_UFySX_ctYSgin6n7VWWaK9pvxmE0ydpyTUZUZltcahT_vj--PThVMxzkF-mXiVOFziy3Vvc_rIRM_X_U0G
+}
+
+AWSEntityColoring(OpsWorksPermissions)
+!define OpsWorksPermissions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
+!define OpsWorksPermissions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksPermissions, OpsWorksPermissions)

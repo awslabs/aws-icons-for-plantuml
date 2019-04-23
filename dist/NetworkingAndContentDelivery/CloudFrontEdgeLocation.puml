@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudFrontEdgeLocation [64x64/16z] {
+xTVL0ODG30LGGfpzzwrX5JpKS_yg1vvB4Gu4SkPL8B2BLzuKRJqLcqAjvssUFz2dJvzUpHzYkjnxDH1VurtluklyGs7rHJuz80zxHfZpW6ANmJFWJt4JX54F
+f1Sxvkku4WnvRB0hut3vaRk_u8sd0jZgrp9EjnzoNH1ZwFTFOQ-_AvUqVrc_orbQVudWylv3QL3hdM5T_mDxwrkzmhTFs6dyqRRrWmBhLs3z_97z8ttwzF7x
+K_p-5aZOH-_FuHm1
+}
+
+AWSEntityColoring(CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $MachineLearning [64x64/16z] {
+xTO7Skiw38NXWqO29_lVxtk2gSIU9j5tMihlNZuFLCVe_fBDNYpUwcGYiB5R0FhbnmStAq3bo_ErF__dAopvVtFMEtw8AAAO07pk-ZI9uX3Dm7I1HctuSY3x
+YPWPMLEmuOUeh--RLJyHussV24uKmmw_tl8Tdnmekdnw1epCkksd5MFvRi0CTjiVlNWEY27l-SaZRp_d-NOL_8OV0dXnAlpm1ask77NX3sP38GOPxFcd83zH
+NFY2piSCKNnubagnAv6wylCZYxtzc5vcQuSu6e3poWz7B3y1iRKcZqoAbnuz-UXjK8xs0xKswBMt92i0sEIv_UVfwzhFNdi-7V3JnyFxJM-M95FbzAhd-hEw
+yeEilZAMxvNHfU7AAxp88UFmZ_KtO5ofNkr_5T2XlHO34B6fNqCdnfKdKo6Jv1HucPaERkp_v_6RrZEOrIUM4Bz__f6nzlzLG86ywpEAhFOdT-RanlaZpPPV
+V7NfIn1L0HdFFczxbaDwFpXyZkgPxBxljI_PF-G6PuLipDzDXGSGLGu7BBddMR5K0jvwmtUrLDOF___pvwDsonV_Hl_iHJ-VcB-H2LOYkfy8VaB_0G
+}
+
+AWSEntityColoring(MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MachineLearning, MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MachineLearning, MachineLearning)

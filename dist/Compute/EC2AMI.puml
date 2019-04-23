@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2AMI [64x64/16z] {
+xPS5GaGn30NRDCda_XV68JXKrZkxNohptLuv2yGWEW2JjAinWDLNtI5SjVqRLG_mbmKOk9HEnC6Uvt99FLG7ULczb07aPGF0on0EZvD0ntmbwXA_FPQaTI2F
+HYDA-au7_fqV_-PxtqgY85aIq9BOttw3cgKAxS3-zhTV4mN9ae3Mv0V_0n4_by2Nth_ppuzkhizNxq0FyVp5aeyb0xU4Sxx_jh_zxUjdN__syGI2B17WoUht
+XpwLl8Fsylqw-_qy-_q-cnzcyyjaVfhDRvFvSJA_dWNt
+}
+
+AWSEntityColoring(EC2AMI)
+!define EC2AMI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AMI, EC2AMI)
+!define EC2AMI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AMI, EC2AMI)

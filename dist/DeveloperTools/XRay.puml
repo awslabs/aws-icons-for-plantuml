@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $XRay [64x64/16z] {
+xPO7jcCX34DbRC18-r_lj8GJqbwPtkxf_boAhP-4lo7_-OykVAtDR3LgI-fhx54D5qexluEw0Lvxzbg0aZgh0p7q1QO3NMVrfgc8zTm66eQcjT1Wu_Wm50Wz
+LTWZQkg0Fe3nuDDm6KSzu3U4dclmdXLeslNzLRUyKb82Gtj-URb6bqRiNa3JVuKIJcbBJyU6Fm2hMqy8mBQQt1rRJGnOfxZma1ffLA3gNN1jtA_c-0IbjTRV
+vhdS_K7iRW1WthdMEygRxfRLRWQWk1S0rjOTteouBm_JSC3xhMj-KnJeExw6eQGqtvnbQOtgdYyM1Ezw4IZKjf_mMGxueaiK7R5zVzAGceDST6OdHSEqx7L4
+rL26NWmoC7GRcngSht6KbEu6ALrziY1roK_gxGQ8L5q66J7zB-MHiVafqWmXdtqGQJPz9Lm1M1VV8hRKp5SEhVv0KVCsn2qabRa-ddnAuWwR_kH7-e4-VPbf
+-XrnpEzmaQF3HvhbSFGnFzdtcG4rB1WrO3o6AaAilb2fG1KFOcXweC5E_GJesgniemOqQadbJFs93Jov_8WvfPFA0fHecIs-vaSKnLvmfNIAfn57hn6rZscV
+HLVuc_AV_tm4
+}
+
+AWSEntityColoring(XRay)
+!define XRay(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, XRay, XRay)
+!define XRay(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, XRay, XRay)

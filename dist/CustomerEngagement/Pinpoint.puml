@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Pinpoint [64x64/16z] {
+xPQ7jgCm34H7bcn9lF__tuqFSqWr3cpVZLw90rmqAYxBlsaV-rXwgnThdYVWg0MRbHh7QDTEQMqNgre0HByeel6ES0M4BYd6biM0RcsADu6qvwiGpsp0J445
+x4N61Bw-HlTn0_nLJ2Zyb8btYIiKxh5g2V8B97TmniSAubgzbFM6e-pWAN2E382ecGe0ow-A4iiIibi0XT6v03Kuhe1u0L0AO3kuGv83w3gwYYacO657fXGN
+G7sC2_wL4Vtc40-wJtd42mIKPkC6giICFP9DHRHb5fHKsFRGmChwwWIoVxgmVXrVafMDOG4JGW_69AXdXgBZLyU276LVDndN96GX7tIiy47l4O1meX0lB0iT
+rr47yKP0wOPuRbU2RdPvXrszrQwTYWn-cC-QouYVwwVvGFyqVxHH_kRreouPrc_UFwxemB1_nlqRx5_f-BX_v_E7ig_pvzZy9RRTYsFh1t5Y3NfY_M8EkS2-
+kNvQS6o0SCpK75-_7mI-iN_aTV_8BS5CqD7zYpZhSdp_f7XcvzJ-dSQYdZe_N2-UExy86-Bq-Kdzvv_VnkV7VzC-zh5l
+}
+
+AWSEntityColoring(Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Pinpoint, Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Pinpoint, Pinpoint)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagedBlockchain [64x64/16z] {
+xTLLegHG48FXb2If_QzuRhiBl8pnjSkFmva_osQpsLYiggRMrHr0H008UfPg8EaTTI0qYpYHLma3lJ3dN7EXr-KdIoRGu3n8wEk-vv7RNwJcYQ_UZdYa3tdW
+f0idIPnfx3SzsY8fHsOUtnOQidwOu5JuJK_YHpX_E0246WqNVhIG5GY_wJF81XF81abK0n2gEw6C241l-gZzIsTsmpDHoYpjcltdAT3jJxqa7_eqgLF_GpGH
+VhtytUVbx-xpyfCP2XobN_GC07cx_Ugo_Oe_6k3h_VVZjFz-dFSVAVFGERd--Ddn-kFt2-8yKdg-LD3ZWWM-xXsX5vUKxoYW-xnd0GNAbve0Pn4NK9VhTsgM
+Kk4qVYHd3QkhgkdvGsqscyql
+}
+
+AWSEntityColoring(ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ManagedBlockchain, ManagedBlockchain)

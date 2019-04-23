@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudMap [64x64/16z] {
+xTG5rdCh34RX7I24lCn_lZsoolgiSbt-yzHbLmFwTxbSBfVXrSoA3vroZFmDTMLJsDIXZTkw-eOEfU9gj08kLQZxrT0x7BewFfsX3k6KQBKxbdej8BHw3K-p
+CC0RhfVI27teDGUjuSC8gbvosjoYrUVej4hEId-dDvflwhqFAiKf3UiqlJAuw_VUAr71eX9wfTFYbBhtGTM838fUQenvqkfLYAdp_9LARGVFrS-WQ7RgwAcd
+eh34-lvInHE6GnjwpA5ux4RT-ePjQ58Q1P-Z6NGzqjU4ppJ6Z6ARSeuJHPlqnoymODoldkyQXzIcsT1kniDLuFZAyIav1vUKcSg37gw2GguLvDbJJkkzuNCK
+--3162Isyfvspj-SWSyE7tlBd_kYNJzp_6FVbNSodlKECGp3v_hyU__vU_x4o9LxF_hTrpxD7er-LyF6dcllqm-fJ_t3NM1WTS_1TVHH3Z4_zcd4u_6r7D3N
+_eK1xMEVXQf76ZHmdRqQFRFJjFhXHaqzv6oic1M30fZjLmmhjWDSpwJNOX-0VLGyzRurCN-1o-LokG4
+}
+
+AWSEntityColoring(CloudMap)
+!define CloudMap(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudMap, CloudMap)
+!define CloudMap(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudMap, CloudMap)

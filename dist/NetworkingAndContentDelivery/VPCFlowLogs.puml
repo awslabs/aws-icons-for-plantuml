@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCFlowLogs [64x64/16z] {
+j9K7bWCn24C7O-hzxvlYXxE4pRGKRKdziX0fooy5Gs-XIApcGwPCU0vczIBbenP06eZmaCpR10TmiZWEacK4CjfDFfxtAYloyDsUuluSuvMOm7RtNgVXVhYq
+PLLDxX5WxL5pjxvigj-VqrPnRSkEcYQ3YWiSMA-yD02RrU2gsgDaWyghkumhtTSL1kAk_nUd4DVMXNDFTOquPfeyuIjHyD4LblHz9bdTJsBwymGKms_o6Foi
+W7BtmKo-OHKyyytI3cZKaNdsgfxvg2bD3tiy5Hx-6i0uFl6mdJy2OBbsiBzwghajv_d0QlpelrUL_2asnUNH_faUUIXyu0HFSt4GkTMrnDhCJsEP2JINp3Vg
+iFAzGB1a0t6RCKwf3uCv-EJRSSamABpvATcd_7VoVzhVn_lx_FLpBRqE2000G126zM-z4BE22l_Sx_xF_c_cn-RNvcVcz_R7zbVsP_RtyaFoI_BJybloO_9h
+ydFo-_d3-ylxq_lR--Fxw_lp3m
+}
+
+AWSEntityColoring(VPCFlowLogs)
+!define VPCFlowLogs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCFlowLogs, VPCFlowLogs)
+!define VPCFlowLogs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCFlowLogs, VPCFlowLogs)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $FSxforLustre [64x64/16z] {
+xTD5eWGX30JGYgTo__kEDT-rryFRu4xuxBPjsxQmGmr3HTIRfuZeGrBX4QvsShmF7nmrvB3vglyrVcNKPkLgrPdqoV6B8Sa9E4-CToIN5kbfAC-Cfy6Amxk2
+KT7y1uNS9SbKo7g-o40EsQu2iUpa3yJoxXXMZkCKKp2I0LY4AmJzq_WOljE6EauWd81tkaKhvC_pBmqVqYBX3R-FL3Ke_3_ZLyKaOYnSMgH81phG_ne_XPo6
+aTqIWPu9FAfYVXyVsMGdbElf6YN63i18_XGN6YlZ0X70UXmv91E51-b7Cx_LRxdAo29PjSgi6vTSfMUtRTksNG4
+}
+
+AWSEntityColoring(FSxforLustre)
+!define FSxforLustre(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSxforLustre, FSxforLustre)
+!define FSxforLustre(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSxforLustre, FSxforLustre)

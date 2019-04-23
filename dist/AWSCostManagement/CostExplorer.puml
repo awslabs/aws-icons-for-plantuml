@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CostExplorer [64x64/16z] {
+xTLLekGm30NHaYnRkjh_VWVI_PYS_0nMCvnmOlqs_Uz_cHjlFwxmn_TcJszvy_QQhu1HbtqvWELL7uogO5pqxLHBPYTz6ILrJIxvQS2ylOpIsULVC0OOZ7Im
+izlFMTqBHgglx3_ZvTHAvxoJtObVzGkRqvYRlb_x0Y2quoUMRvT_6AaDNmuGBttWShJZ1xwciPxxXPLionTMtOlnp9UnUjiV0d_cdP0slOni1QCVVU076bj-
+md0W7lo2qj6MrmGy3Cl3trPUgkbc7lcbxyJKvH0vm6vB4jmRjNdyJW0pI4d7rAfg6bPxNcb4rI2aWLUhr5q3rzhoCkuxTE7IT6oKD9ZoJLytRsG765Rt2Mxv
+mJYMlt0bbgg33LPfnvS1M2sYWzKwwaNqbbS5HFLazY1rBmcT6lyMi-C9hRC-6LrGEkfWdVCogbSy6uZE-PUZJS0ywMN4yzEBUTANuIb9EI0JvZclSZ1t0roT
+CCzvQTtmTCPz0kTyIrMbhYydK9Zgdbaz5BEEAUW-0VlOVvRNRG91VUJT7dD_ytP8ZaypNQuSBANhPPP-a_xtl-y
+}
+
+AWSEntityColoring(CostExplorer)
+!define CostExplorer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CostExplorer, CostExplorer)
+!define CostExplorer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CostExplorer, CostExplorer)

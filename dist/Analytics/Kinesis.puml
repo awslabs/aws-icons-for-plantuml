@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Kinesis [64x64/16z] {
+xPO50kCm30J5uFp_lKMLqVRnPSfDj5gPsn_1oafQrBUm78WtqFf640FnFXtFzOt1H-f7hB8Lf0qWODL-C5H00EP9YNB805SfD2P0Pm44Yf4c1CxZDmRGVWj1
+vxmAWDqArtc30K2yIwBoMYa80Y1RVAMHzHbySPx6i0DPp2FphOxh-Ti-YBqaN0dX028TiUVpJqh_odbhoxAq35TXmjA1f_61LVYjS_N8jkmu_7kaFIK503Kk
+lrtew9k8HStCY-S2rMMadbSQAbN-5TfU4Nf8INBgj8Fn37VJ2z7U4CPOjbdDFQhZEiXmvMlNU8lDnd_bdrYw_OTIzVf8-rN_nL3_rVZ9D-F7tesVG21hpyTl
+-sByMjaQdJzktyrVPlRsZA7ru_twjOyLY-7r4tlMp-g3kF7HHSpj7pcvVrtldpotVtFhXy4gVGdrS1sb89FdfvWy_-L0l5x5nzJvjHQ8FvwLbIq
+}
+
+AWSEntityColoring(Kinesis)
+!define Kinesis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Kinesis, Kinesis)
+!define Kinesis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Kinesis, Kinesis)

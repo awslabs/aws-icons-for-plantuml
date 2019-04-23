@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Appstream2 [64x64/16z] {
+xTLLSiD040RXgHtHREv_td3ILIPr6Bp_-zUskF-AZOtLkjWLYgsXjw1OjOXv4PlmXu6ilhkR1NyKQ2A05m7j2HZl0zuJCDu7l2TWl0zuJy1x7y2RWFK-W3U1
+rNj602wys5VxBJFRqNAnVesJQzRtEMAfWstA4pWywUKz0UOz0ULD0B-My0GE_Hgjd2U0vs4IdW2U05u4y0Jm8e0dW1S1F06y2E09u4K0Jm0l0dW23zu5y0Jm
+8e0dW1S1F847RmFBYoUGyuEtWSX-60Yy2BH-6C2RGFel4sFhrWzNQ_LViR6nEm
+}
+
+AWSEntityColoring(Appstream2.0)
+!define Appstream2.0(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Appstream2.0, Appstream2.0)
+!define Appstream2.0(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Appstream2.0, Appstream2.0)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTFireTVStick [64x64/16z] {
+xTL5Li1G343HkEn_mwH5wu93xhJdrRx1jscjDUAhQD97NcRuccFUe9FUw1B9Z4alS8rbkWtaNk_v3E_sKTxJLmZoZXvcFUuNg1uHXfkzA-xrwcPLyMPFdaQm
+1y6IDlhdGMNSY4d3qGDsUk3831EQjyXQWIEcxlL58aku2jE8MIooE0zNSRSlA9uBOrsCOQT_HkgJTlb5-tr14ZKFDrCXX7Ajd_gPFRwdV__wVORltx_Ult_U
+eEyyFzvxVds_rbfx
+}
+
+AWSEntityColoring(IoTFireTVStick)
+!define IoTFireTVStick(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStick(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFireTVStick, IoTFireTVStick)

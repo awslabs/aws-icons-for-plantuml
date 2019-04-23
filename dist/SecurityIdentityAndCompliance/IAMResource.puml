@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IAMResource [64x64/16z] {
+xTKtkkGW54JXGd1DbVQ_t_dGS-qRaOpZJx2dJOIaPLcMs0Q57aa0PG20r0EEfY4D_hXt3V4tFSEQEMVxAEYApVKEL0-lG9lfMJvF0uY9tb7rmT2c-g_3_4Fw
+g9yeUStN_VvpIBIzZuPFxFFNFMamvY5GIKdySipriY-uGTrvtRTB1IcbTIdHpOol-wt_vLtaCRRU6xeciO_nfk-pB2ZU9qVFw59I7pdGRx02iXJq_iwxdgYx
+8RzwvZSEzQgefV3o_t-gOpqtb1JDjjv7--PZlGAsAu6x_p_UIuoiaxr8gV__qtt9I_LqZsjdUxTsoOpd-did-kdtQ_xzd7-_bsLPVW4
+}
+
+AWSEntityColoring(IAMResource)
+!define IAMResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMResource, IAMResource)
+!define IAMResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMResource, IAMResource)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagementandGovernance [64x64/16z] {
+xTP5egj048NXSmgwXEn_lN6SGLVptlLlaY0_RdZwmwHLYoPZHgBJh0B8tEjbI0f0EFV3Z-p_-XYrzOQH9Vlmkr2eFIZAQqHjRyJBguXnKElwe9YRUNdt0yfZ
+q8HHrx_76FgNQJZNkumytwzzK1zF3esDkZw8Ouow7iME5DJsDXpHPEzngWzeUnzcYjuM8jKxjZpL3xlpdzz_sZWYcex_QZZPXyyCnTtF7x_szMjw_PFvGBRr
+vu__w6BLVQ_bJhKiQLVR2vy0hacSVVvzgvwYTa0OoVVd6gtw_NtiHtu__VKbidpLDpZTKwO_NT-W8zv8oIFn4zm
+}
+
+AWSEntityColoring(ManagementandGovernance)
+!define ManagementandGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementandGovernance, ManagementandGovernance)
+!define ManagementandGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementandGovernance, ManagementandGovernance)

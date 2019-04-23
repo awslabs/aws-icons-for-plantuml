@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTRule [64x64/16z] {
+xTPN0gCm38JXaMHBC_U_y0P3sFGuR2_VI-fF1nlVbvqz_0tlbCxoDkwKs0slcBx2bQ06-fk-seBYzG-Kc4c9zhflMEHDtwKqm5BA0xrHtDySwVVLfcI_e9_V
+VjP2Dt_BwUEtAyVEIrFd3ycDJhfXiAuT7JEsDSP-wLNir--ajcHfbfBOzljdtbgkIy4XKHgRZgCinygFSydn1_VMck60o3k13wJkvESzDmVxCWnMHtgURpQd
+n8zwGuhZ3WmW99LJ2PkzTMafhlTFQ-lzGwMn7E-rfLfwe6lemDAF7_3EsDmO_LZMQ4OVsmwzLYFOUWGPsFgnk9heAyp3SSN3BMgYJvsmk-6AUQTESgOVMBst
+eVSQxMJFIEe1PjHKRq2qB6h7oXO0Pll1p3nEtCmmJFTF_DZ-V_-__z__x_MqDxxlkyHc3-j6gUCDAqdCvbVBC6z9IMLJSyw1bNt8ebPfcE2Tr1soEsPvR6lT
+joGS7xCDVg0l
+}
+
+AWSEntityColoring(IoTRule)
+!define IoTRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTRule, IoTRule)
+!define IoTRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTRule, IoTRule)

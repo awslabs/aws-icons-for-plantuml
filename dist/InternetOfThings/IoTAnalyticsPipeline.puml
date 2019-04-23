@@ -1,0 +1,10 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTAnalyticsPipeline [64x64/16z] {
+xTO30aCn44NHyJJxNt1jlQJ6d1htM_JDIYcYMtB3lwFj2L2V_flR0TIt0xpimzQofqzRYqrljEOzlM_UshdU0T13p-u5G3q1OxrEremyvy-ZlUrcEXRFm-FF
+DINFp9xn0x_SLr-z09z-_7FWuSll_lFN0HuxVzvv_hxt-k6RbL9c
+}
+
+AWSEntityColoring(IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)

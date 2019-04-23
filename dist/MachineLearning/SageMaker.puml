@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SageMaker [64x64/16z] {
+xPQ5ckCm38H7iZ3x_kzxdxgnpwN4FOREGl4tZc3x4_NMMw7Udxh6gtGgW7R1eW7GV0bt1eGBgu5O0FPrEjfbxaA9Qf3FTt9rwGIoUQ2IrPkvk7Iq_efe3Bkq
+YVfMitk-50n8dcozbfuF-Bw9EEOTMeFSyowQsuV2L_bacNW7GBcjySdr3ppn3OrHMk1Bjxo02SHqniSJFWXejVyuvdNOpA_uBQtSez1Jxv3bf_EqUDZL5uuy
+L0ox06o2tS9w0pWFHz_XnVH5G7C0a33BoKEF3y66EGrSpoO0e9WiRezv-zYilfQGonixaWt4qy7PKpuORUl-zR490pV8EKy0-vW_jHzYqhx-p4E-fmq5PxyG
+kJnHBLn0UiItd4omtpVDNm3W1xprbENIRvacNY0DSi8tS3U1t_26Kej3tZNxBVCDlocH4C2mG__aRWAkGMQ-pZ-L03lnR_laZJ3n9_wTugV5XGSWLFnQ_CnN
+Dz9zyOlnE_B7L8DkUOMkv2yVbO9eyb_nQ_b_x94e9_ylvkzDnmKHY0WZ_fRuqimpZVX_WO-l-qy6E9VuwDUdaC5lwPxdzNDSUsnEWApMxtiFrQ-lzG_tIYEW
+FUfVLfkmVDm_nQ_etzRxn_N-rIIsFr5llVK5
+}
+
+AWSEntityColoring(SageMaker)
+!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMaker, SageMaker)

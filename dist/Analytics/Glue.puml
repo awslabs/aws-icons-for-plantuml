@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Glue [64x64/16z] {
+xTP50jr830JG4hPKllzvFy-4axR2y4mhaPc_hd_-gSnSpJ71pUAOIDhNnHynYkyxKY0OnJjkagutnVCCfWYE6LZlnO_gjvjPJES_MBXhdjLrromuzMHyhp0L
+mKqLh1HS5giterrm9sfcNRYZ0n3hpSajg_cI4P7iIWES6m9GprNL3oIxQwKh4DoXU94Nl2Yt593ffYelgXQPG75FmFW1Gt2N8lcUX7BRWZJVqOBYFdz_0eFp
+X1QiZpGqc-2LxXo3Vp3EO89Hz-zVC4NoF4EykPq62gZ_ZnC1vOqYEADOv89oAB6EOo7dyLxby_Y5XyMf2lSeZdMHrHnpLC4vTJpZ3uw4cTpZnIoclqxI_JXm
+e0HIPEdzCD46gH9eSyXnuvnB8FWrQl7NzSy_Lm
+}
+
+AWSEntityColoring(Glue)
+!define Glue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Glue, Glue)
+!define Glue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Glue, Glue)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTOverTheAirUpdate [64x64/16z] {
+xPO7Zkim34J5phd_XJ-ih90eChtoxstGjkInPw3sE-g_wD3NikA9G-b2zsbBF9LsCu9qEjpKF7e4lODRpybJBRwFEm2ZgHi0GJUooqb3iOVBm2Tn0hR59w2j
+dGQG3Lm1h-hArbZTb6gS4g1ohEReShhetYv23oNLk-EhlOOoQPO1A2_MnEC8AAeg-VBGH9zfaehsTVF6fE1bX-UY0TlCtu3KPT0QsENxBdsAG0UDu2rU0eVi
+xJoSQTkYD2PR222vtPBcCu0L3a4iAaB3ZzSlfLvTX3eUYiEGOlaCZqjMG0iR7J8AHBNm0EZCo10g8ke987FbwMC2UHeQpg-pElF0G8umAwulOzGyvHsWpjjg
+e_oQfclbhU3xPXO-QzxVq_lqktP9KNzBvAwFhVDR3O5EMhqqB0QYzeTQFlB6HEYc3mb6tpojcztvzFF2xmSkBmjtQhMMCoMR74Ix9GdJHH0yUA96OjdnnPCo
+-HFRrSpCisUD9Wxn9xPlzREArTpfKUFo_1ic8nxkTlsia-mAdjFRjZVY8PwNJRVuTAVfBz9kyV7yFFcqhTtwNUY0ULhs9lzXtX7nMBQqUpmtYQz-GxDrWDKZ
+C_goVup-wx--
+}
+
+AWSEntityColoring(IoTOverTheAirUpdate)
+!define IoTOverTheAirUpdate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
+!define IoTOverTheAirUpdate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)

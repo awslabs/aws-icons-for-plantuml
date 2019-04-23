@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTCar [64x64/16z] {
+xPS7bkim24KDehtzR_ZBA9Lnz9KplToPnFL6740ksq-3YCPYgulpeJcEwDyCw5XmN-XO1FpFVqnJwm0mCmTYBBmlOYp68TDsg2kMqQFH0SGI0DhXy49Bo640
+Xg1j2GhOJ_B9T_2CZrHeImZ9KtvozZqwp_dHSNhd_76xXP_r3VV88vztlFeD5RxudiespRy3qgueO3N_4pz7gR_7rH_eJXJ_nInhW9tzI6MQFylXRWc0LlDF
+WWo_HhJaipXGmqyFIl-f7x464gEZAsIqQVtOaRZaqOADBfZKp_UbDTgE8GEChdw9FqkpoymlLQPp5vJu1vP-Paq22Bst5K185a5A_gflIEnMToIwjOdFPe0A
+4Ae0v2xpeGQ0x_pIlmsTY6oyjXl9jRa5S4j_7AhrQnZuIDGTTfquCgbV7elHxNVu-SIOr2_Bb2NEGlC51vJoctcZn_MhuTHhaTF2_6cHUYjphnEyDFz8p8HA
+-wcfrEldw-uVhxz_lVR--VVyyQhdjzS_Fxx--VNrpy-lVtx_yzVV7tyQ_m
+}
+
+AWSEntityColoring(IoTCar)
+!define IoTCar(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCar, IoTCar)
+!define IoTCar(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCar, IoTCar)

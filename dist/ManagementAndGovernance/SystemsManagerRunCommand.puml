@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManagerRunCommand [64x64/16z] {
+xTQ72YGn30DGESsH_lz_hsG2syRdkTxsKK9R13Ro3lv0Rs-MGwnEvRmWKAWBw0XqoNjcYWNdN3HakbHnZfn8EQEGGWwaPXZIf6wPIgsGDfzKTEgIXay6TOzi
+S5rJLhu_gKPnfAXmV597nYYFnrUHAM8KCiY2G12IB_PwY96-NW_OGqWTzpfGz_WQTOQqew6EPV2UW4xLeqJYAyc17R9qtflhTmR09gUzQFjtNIfOh3m0fkQ-
+8UDiR2fVRhXfzuAgPxlXUgc9SrLgOO9HdZIyYpLCg5AxV-EpKdIMCFROEjVxF3yxnevzGygBgMax15ldJTzZpxP_Nxx1cx76texjItmXzkU6rt5JWN5STUlZ
+NCdAfsb8x91Jf2Cr6OLKyShjekT_Ih4gnRUBXap_tjibMNwLOpCfNyAek7mgo5In_RGF1__f7muMxyYesJCkXI5ENS2AWBboR8ZP1VX3lBrz1
+}
+
+AWSEntityColoring(SystemsManagerRunCommand)
+!define SystemsManagerRunCommand(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
+!define SystemsManagerRunCommand(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)

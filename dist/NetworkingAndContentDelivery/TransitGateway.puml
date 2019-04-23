@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TransitGateway [64x64/16z] {
+xLO7gkmm39oH8bjQt_--7oy1Oq8Q-gzdjgIgrzUln8C7KMrHLLsindtYei20bhX5RGIe_H-WAVl_TGwLWDPe1feHrg8gm7gHV07KknQ4j-PWb-mAB9TqLx2y
+pnpI3m9_THH2umgv-7eAzWEnKhbSOA3zdN7khj316tfgkmmH8G3c6oS-gA1FSGIck0LHZumdodo7dAyB6Flqjh6FtFZ7ZiJx6RqVA52sxYMt0IhxiQldz7Kt
+Xh5HhGWWPMDax0LFM_WSVd9E08-cUo4qc14Z_mJgxyAHaN-W6MmlzmW8mPYzgIj141I0Upce07syBl0rP92H7Kv0T-cjzTV13l2rWkkDph3P1z7dzT_tNzdu
+BnU_RFvaypTPFzdwpVQFPF_Aziz4_tQY9kT7SdubvcS8DBBpExy_vFUN_FwKtz_o--FFnuC7_m
+}
+
+AWSEntityColoring(TransitGateway)
+!define TransitGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, TransitGateway, TransitGateway)
+!define TransitGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, TransitGateway, TransitGateway)

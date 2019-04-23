@@ -1,0 +1,33 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+' Colors
+' ##################################
+!define AWS_COLOR #232F3E
+!define AWS_BG_COLOR #FFFFFF
+!define AWS_BORDER_COLOR #FF9900
+!define AWS_SYMBOL_COLOR AWS_COLOR
+
+' Styling
+' ##################################
+
+!define TECHN_FONT_SIZE 12
+
+!definelong AWSEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor AWS_BORDER_COLOR
+    
+}
+!enddefinelong
+
+' Elements
+' ##################################
+
+!definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong AWSEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+!enddefinelong

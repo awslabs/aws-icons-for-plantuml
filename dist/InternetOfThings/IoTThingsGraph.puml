@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTThingsGraph [64x64/16z] {
+xTK5skCu40RXQbBtf_iVUFKu6PxaJvRf3KEPRUdVvN__cxLMQqlJvyteNSwHvSR5eaRlC38mC8_CS8xejterKIVPXwRJ8EUDVXOMgRkzLORrwxqMHwSVqtva
+m7fd_X4iurZ5OIfOh_P79cqsnUbhpBGNj5wHVdIIs2xSMJgzTc6Zf_eOJHyAk7guzKSIUc8dHyWvAechp_pSo-XdVU21RoFyjlwKiuf8hdulOZ_jP_0nrEJd
+xRyuJ5fHgkgdVGySSpNTwpZXqHg3bR0-wXsqC8_HPriQRd8_wnkNCOlKDyATA8kWvablTlNs_MmMO6vO0Fve2ikELDhHt_GD5U0G3kjH7wsxgOZH5mitMaK4
+DW-FdxLrsVNTbaeSqsxiKNuKjRzCoanIUzvobb7jn9DZS5spxDQMCqbE0N7hpJai7TC3JKW5iH9JSzWoHfe8AFTJW-k1kIhpgzEU5J6DwzXo74kiSlI8qurD
+HqdJSoe5hOk10R6t7Yfo9o7j3i3MDSbRiCndGUc9WRcA1HOEkOleqSsUN7egJn6qx9fF6ot_weWDFkWdri9KnBvVBpILJjq_cZwG1hM_R3JJrYIfOuobvngo
+zLMFni7wbgS-xBrFd_S5Rbo5hv7sEF7QsE4Qw7qb9MUsf6Mlv9fLJkw4N6cu1Xjf4b8lsMEC2exGLX9AiFNE-BtthAevpoEdtXh-5x6x-Zxiaq7sw7LE5s2z
+2zB1PkiDWM4Lk8BUMjbwpqbdonap_IgZssYFwzSRnvP-Yz7VtF_-zmi
+}
+
+AWSEntityColoring(IoTThingsGraph)
+!define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)

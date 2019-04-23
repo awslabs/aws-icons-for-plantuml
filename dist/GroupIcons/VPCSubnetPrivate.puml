@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCSubnetPrivate [64x64/16z] {
+xTH5WeKm44NHLqBP_lVxtPM4ziwPe1Sd-LSDGzX6P2SJx8XbXn20U8C0YPwSrBCgNGaI7RbbvKQbjHzW0bdbGHbXoXP1qBoWeCW63egRutdRvKlbXPAs6r3e
+TQ_GqSyIMmA9iuiL-KOPRm7WiuiLLc_w2IzDxtlsftXEBrbFjgNCwv_v-jvLlRyFnWP7RoyW4GBtzMM0LJbWrTKVPXNwFRq1ThYBtkS7Pe9qlp_1XiI2xmUm
+HTyluF-wfuMzMIpggxAzhoVczU2dWEcJn_yCUodo3nc6DG
+}
+
+AWSEntityColoring(VPCSubnetPrivate)
+!define VPCSubnetPrivate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCSubnetPrivate, VPCSubnetPrivate)
+!define VPCSubnetPrivate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCSubnetPrivate, VPCSubnetPrivate)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SQSQueue [64x64/16z] {
+xTC5UiGm30LXMSOtzpzmwvJ1ohTby2m4_t3i5xVRxLf_S-sQ9z0RWtJuqT_KkFKgzgQA0f_IYy4blcXCuf9FFbGkzNhizVb-Un_TpxttuI_zhHdvpESnnnUU
+EHxw8eWyrCXN27q3MbhvT2oEl6MXll9TA5lehODMNj0jz3vvMVaYw1vvWVBw-cM18W_3e-ll0vQ-2dgAxt_geBhOFxJpvxV1OlzMYvrxA_N7l__RUwjfmjQE
+GMqU-_FMdkPlgd7hqPlYy2RUd8vBbT-Ssxzkjxi2
+}
+
+AWSEntityColoring(SQSQueue)
+!define SQSQueue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SQSQueue, SQSQueue)
+!define SQSQueue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SQSQueue, SQSQueue)

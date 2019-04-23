@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticBeanstalk [64x64/16z] {
+xPM73jim30MFGtpw_oyk5A6Ewcntjpwih0Dtt6yuEJbH3NJGhZ065dN0LbpK20D27mStBATL2QxFTDaQinpJHxeJk_SVPP3xU7AogxNIczdNlXyG05Pl-0rV
+rSpgVTYH3lNQ3zgQEU0IhgMofpYrw9Pfk3Gzfxtq3Isbg7TThKQyi9LS_Iak7Idmfnaq0r_ycfQlU-trPFJ4CkKWvwVNhDMSXqqeQFltKjkDBH-EqScRVCou
+_TGVXB-EL-aUrPjpsp4PshkxwPG1by1cJrPix-TomQM4chuoecafu8c_J3pnYzyOk5xwyMs2mePV4DKSr_Fy1Te2BFvS0zbcsOC1njS4sfn44iCtj9Otldsm
+_93RuRKAgCs_bbVsS04RU6axV6jz-4vkroGbnBD_RinTNSr8zOjVaAh0L6v0FhrV0pIFJvB6_9A1LQzt7aWgJNzY8ws0rFRLMwHTcBqMtezXlzl71npt9t4u
+VqsErp_vJ_sg_eYJavCl
+}
+
+AWSEntityColoring(ElasticBeanstalk)
+!define ElasticBeanstalk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticBeanstalk, ElasticBeanstalk)
+!define ElasticBeanstalk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticBeanstalk, ElasticBeanstalk)

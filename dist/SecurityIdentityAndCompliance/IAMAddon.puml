@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IAMAddon [64x64/16z] {
+xPK7aXmX34KHIeZx7zYW_HEfhgB7sUwtISFgAtOe_mmN5nTKFvUojOWUuLe_K6lh3vgSb4kapCtSq_HJDTXGX5L28pu_yZcvfHZmR4PEo8CFpZQGuRfsg-CK
+9R4fB6cwJZvwvxBYewSl-N1mGinkQoAShN6ZGfu1KhuuKw3EoaplVHdNkLcR5V3iQ5h6wVdmqXbchZsStXfBjDGlCsIwmteCkXOul0rI82_vVuWa7gUJrjj8
+DVRTLEVlyWJhWDCaKQbfrM7PVGwK1e_-iebSnGQI8uKUJGngVjg1Oxe-z46FQdOhyBj2KJVdN7QWXlpHFUiERA5kontp3zo1xXs7WDIFc9lAZb4wJIrc2ZBe
+CO526Jd58rpUh-n3FELe03OjDvRI4SiY5chUM1iqB6sTi9GTQgoUEL3VlvIwqMjCB6W_GEFdnSSug6KRZXb1cOQMs09NmZwuVY9QH1fQJf9PGIXzzW9sR-vQ
+oq_dukBYuXi
+}
+
+AWSEntityColoring(IAMAddon)
+!define IAMAddon(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMAddon, IAMAddon)
+!define IAMAddon(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMAddon, IAMAddon)

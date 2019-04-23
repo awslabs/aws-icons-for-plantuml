@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudWatchAlarm [64x64/16z] {
+xTG5aYGn34JHbeMPzx_leAV3ha2vbdT-GEChjXw_F14vjvOWMJwEk1PdY0Fk994HKIHJkjn8nASoaDda0wGzPbAaztniOe2G3XUWBXV3Ebul1po0x7W7zvjU
+g9Odz_DDrA_Slv9skPxPlFtR_gpx0EHs05B4Q7dbAfAC_lA1pPCfijeBA4YMcrcIh76mW44I0CcSlDS8yBsqumasL8USulLjlqJQa7Ui0Omk7o29oYoGX1zv
+uYs-T-B3ejvADnnvlxoVIIobjxs3-8h4Q7koliA9NqpSzFvdU8bS2kbwvPPslP6e6KZh-dNS6wa7NfV9gxVs_-s__RV_azSlJMVvzAupV_hKcN7tQtD-RTcd
+NrgzOUKbrp_FaLpRtsmTxReq6b_zWEn6Rrnm8tdpl96y7y2D7hTx1G
+}
+
+AWSEntityColoring(CloudWatchAlarm)
+!define CloudWatchAlarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
+!define CloudWatchAlarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchAlarm, CloudWatchAlarm)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CodeCommit [64x64/16z] {
+xPI5ZYin54CTkc3___S-cEb28MsKNN6Fe7YaInx-5c_UI1BtKRgdk4q7WC5Dr5561uRsz419AO3Synr3HnMXd_hQM8JoKdz97_-mdVdr3XXnaDhTNm6QEycz
+5bW0k8wIoaEc4ovL954TSCrym5_vylcVPA_yFYGhhl_i-8ULYj57QCC_qC1_J7k-7CLY0A4zly4b6VgUpuBp8kgcNv6Y0ctP5nqbliRNabbXgxwo0K3xAW3r
+_7X1UkgpePeLN0OcZe8oBkz9HGizyHMebB8WTLsewET2xCgVFt-kVKM5wyXcCptpkqYrMz-0bjJ02C0qzHDmoL6k1gq16CMZBmV6VFu3g1LmNVaT9SNp4EM0
+p-_72b3zUu9SnrfIh0Y9uwaleb8yqUbGRAXqD38hYg_ThvHMpkCHUsSxHr5J2xv4xm1QwkisZWOfllIb71KeFNJ-xUjsj90_HGFGd1AJ5qPDBURNWJBYfb0j
+vzSBZ9eKkf9VT4t_k93VkkVFytl5JdwlMSZlffz0tEVt0RwUtpuUq5RpQvWmpMyanIzy0cT8rnydy7Tuy-Ol
+}
+
+AWSEntityColoring(CodeCommit)
+!define CodeCommit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeCommit, CodeCommit)
+!define CodeCommit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeCommit, CodeCommit)

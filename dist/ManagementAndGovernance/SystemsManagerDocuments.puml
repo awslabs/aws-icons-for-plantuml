@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManagerDocuments [64x64/16z] {
+xT5NOiGW38HXYQgP-zytPNlHOjbiUlxtRsn0dfJwHNcb6shGTn9USOzQd5BKmyGjxbNUIjbBexw0NYNg6-Ty9Ohx_t6luXNtknShRXhr6MwMWhxGprBK8-jj
+jXi8UxdD1dyGy-ZEGDoZgpa3SM_Y3yIzFn3t_a3S-mE-p_rKFdbtmFS5fyhE0sLN0scwtfFOnRVGLf-_uHpPLtlHKyd2tiymvVKplAP7nNp1WspMVyx_3_ht
+6z_FTCvZXS_zlgR_x_TTlKnvcivvGcSyCEMrb3Bp_xjsNYTzoRhTDvAestt1d9UKS_J_1nKYoQX5prO6LN3iGM8Knpw1IrKPfal9ate5
+}
+
+AWSEntityColoring(SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DataPipeline [64x64/16z] {
+xPH7kfmm40P_TPPq__jwY9xKVCXiR3zgGQmYevPnStCJzKfT6U0BHo1G0VrH6b6xWwTZUAyHunTUb23k3DO2qD1j28Zn115uvFG5jONj-Bnbe4TfRz18tmZg
+11HWdf3hs6jmFA22GlC43xoD42BM3Dwxmvg9n9d8pPyzcqxgi0Fb6SM4vlspyaa0eWBiX-_RzVVVIjcKJmpQMrTeZOMgi5hjUSEgsFVU7ZiTX_X3iQndCnEG
+f13aeN3MRwT8SSnalRYxe30bS5cKe_it738hQRzEQyAJSjJtbj3FzItb7-ZltlFtxsVwGYdbgB_-_Mj4wBPpMBd-_xEgycEQmekIzNvk_FEiryTKeP4YioBV
+-m282QXj8rMYVSCAWE9vlYdP6weHyN7sLBcvkVa5
+}
+
+AWSEntityColoring(DataPipeline)
+!define DataPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, DataPipeline, DataPipeline)
+!define DataPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, DataPipeline, DataPipeline)

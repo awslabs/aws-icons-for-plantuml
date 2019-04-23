@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Textract [64x64/16z] {
+xTH5Okj048JXQkwk-zytYHK_C8y2EtqRuoyQu6yu70vJDvexE6x5dbxxciEvQDpKBmKPiE6IWAfSEhK97Qvm6LvAm8O5wRMUD_rszIqoN-mdFs-XLthSzjKE
+OotrQRnIsEHAF-bcKPStMYU8rtqR8Ae2-F3AGX-GwEcUTY1vOLxt3fyo06BL2ljFBlI168D6fWjy3D2_5lg6Zw1uCW4TbTbp_IPZQCu9MV16a5sRVjLFmnF9
+m0STqj4cf60JB_hHhIF33A6zNM-YsP_cQH_5KWI27rAuKMtKqlqxjCfqu5LDntHLjKaZUkNyWXCT0H0KvFcBnb_-h4_OJ634keTTq_L1h15vrizwLcSOx69_
+Q6HYLiVVH011dDz_W8mgMMlZFyD0Ev9akeSBCb6SfV7VZEWOlC_hE1fABet_MS4c07LJIBP8xro_2Qb94xMSX3Htzco5PdTN26ouk-UaOcD5xkutar4rv5Tx
+Xd3prTuVzlcTdg9Owz7t5BoA2n8F99TCFS0VSZWStW4
+}
+
+AWSEntityColoring(Textract)
+!define Textract(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Textract, Textract)
+!define Textract(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Textract, Textract)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTBicycle [64x64/16z] {
+xPU5alCw34OZsuBp_Yzy7MkQU3Pmcxz32z-26ZW6mSXTVff49CroC9BcNaxq_mKqJUb6qmJ-nr-hgdK1_Rz3fF5k8aq-CgsdkFAsz6ns8DuIK4-dR_AMska2
+Z93bBKbWFuaNNyKJde58NWkf1tpgnNjqCVEYPbPl-EXokTf_pg3_xBy2HBGbLRlA8rw249a6G-_uiigJduiu9N7aVI3BfVzrAX4nKBdp_v6lfFOdD_oYg-89
+7mEvz5_oRaCEj8VvhuFFQmFY8M_WuFjksuFuIQb1Y8FbLYmoOF9E_CHYNBGIe6CfnHWAa_-DNmr8kGQqCLb0Ake9Fw-_0g4Emm867W3MD80whV_eFtcjEQg3
+jnm78dsX47BdVnruDYg7gWov-DR8z8xF99GnMrd_6x2YZS5840T-pr_PGfQhYFxCXf58Tnd8r_mLKh6KJ9JYKVSYpgwhZE0rACjL_B9hfxxoajxMv2_Y9-0R
+_hhm_SMyk8cVGvqRwchdTbd1x_nV8KfUrosXOnkqZ8ytVFzFj6wBxaNN0EsZIiiqslbZ_n07njMqQcMxwRBtZ_F-fQHYAlaMfFHGVyV-ATglhCaoIPgvkygn
+V_wTFpu_ltr-Vdn-Vlty_Fpv-VsFV_xzyQVfFm
+}
+
+AWSEntityColoring(IoTBicycle)
+!define IoTBicycle(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBicycle, IoTBicycle)
+!define IoTBicycle(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBicycle, IoTBicycle)

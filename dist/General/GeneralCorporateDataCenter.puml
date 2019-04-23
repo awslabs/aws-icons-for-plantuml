@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralCorporateDataCenter [64x64/16z] {
+xPK5ZiGm34LDOVl-rzt6hRIYJ29bDFn4l_3AtuMxWWl0cDXiIej3FTiIQQ2pckOu8Qif3wxUBC2KO1Q7FlfrI8S0K9nZ9Ndmy-BCPxK3RGZfJ0cmdObNV357
+2SgP2f2UIHRzoBdxsPf8izpzp77TvoExNm7gwKVWx_45q-KJNNv2MVTRqzFN8xdVK_SVyFunbKu4uE8mGFIGSEvFcVj8dHx9-L-rv5EpJiLZXHC1guT63-fF
+ZkNgJqfNVqhCl_uyog-vdhwMekxxgiVqXqhjP8HGdG2OFHHwG7ycR5t_NdyUzlv-_TdmT-VNVdysvlV6_sEpFp__v_zyME2Md-AKTCDVOkYBhkageqUp2DoH
+Fm
+}
+
+AWSEntityColoring(GeneralCorporateDataCenter)
+!define GeneralCorporateDataCenter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)
+!define GeneralCorporateDataCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DataSync [64x64/16z] {
+xT9NOjim60DWaFmNSF_xPYVMTAdshT5dQtCJ-X_TRhVqqVlmfFv6TdpfeSjem8WYAmOmg6iuq78naavTOgiQ71Yw8ZSTigDrBytgIArK0m3NdDmFbom7GbFy
+k62YKJC6IaTiPW3b7U3Pl3YH6xIJOWLWv9zouqKTOrW7OY8tvm98xSslS3mfCsOMU9mEW6rcWnEcOuMnAypJKdkCsfLjkIk5hZFyegyZ0SHq_t9y6WL4uLq3
+Z5eAk4v4_sJLUzR7RLPRPu8DfISY3Z9PouWDFM7xUEHY3RZyliS189Ue08pr8RsXbKvbm-XOSGT2RFXYrAa0J6aB0_X80ErJbCxvqLwZKvDiFpTsrpGQ42f_
+4qeFbNqhJGd0EjxHq1J0bz2SQW0yllfdvAUW9d40rBzmq-zmkzrU0G
+}
+
+AWSEntityColoring(DataSync)
+!define DataSync(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DataSync, DataSync)
+!define DataSync(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DataSync, DataSync)

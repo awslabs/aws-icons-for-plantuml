@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SingleSignOn [64x64/16z] {
+xTHLOYin38NXNx9iGVQ_tWkTS3BOfyBtLZXdpFKD_VgLuUwHTOoRy9zOr7xP03Kp1Inhfn1qJAdiWiRkkENzM6HNGIfMzmpDsgxJwb73AdeVcrfIYDTVAO2C
+MZTeRuQ4zc6meQ3XRvR4ygDQijOeKNECiI6VDSTfjSmR2_a4wLdp3CHgtb2M5h4XuwN-unxUXj2XpxKZyVQBeEFM9_ZSqlcRYoZMJRcxHOxMEu6-NWNrEbLL
+A18hMpnU9jPebJujYTtQ3T-KTwH2BkTU6JNfZ4tvXfUY2dcUtYs_OVw9L29vkH9At7hV4UAnhqrvnU-ddKBExB_cKxuQecZUvmshzneQJ_F91YtgBjyX5jxj
+Ddno6MTctOQTNS1hrX0keenUDm5n6kVHp4hlDiaA91vlL-Q8sixGvu9JxT7ExqLwNWfg5mEqASZ1WZ01HEXrhA3oly1EXmhE0ktZ4mK1O9yeS1zwjE0ia3eN
+Z3f2P7hAnz4y_utJqVomVy0Qemvp0A_ZmjspleLVl_u2
+}
+
+AWSEntityColoring(SingleSignOn)
+!define SingleSignOn(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SingleSignOn, SingleSignOn)
+!define SingleSignOn(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SingleSignOn, SingleSignOn)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralVPC [64x64/16z] {
+xPG7ekCm24G5g09p_-F-8ZjnIRIhR2-Uz9Y7a3mG_ZLTkaIISiufqZV1iPdZKsujlPmY6VQozDhY3O2rB4J4gHg0nlCu6-1v0pWxO3AFFon75V0uMRm2DPoL
+0P-he6puAO7H12uEfK7UybaUynVJD61Gfy8bDWUyZO-27MrScJcwl8pu39TnQO3NbAe3emGA3IF5cmj4WJYwzpKCbGflXppQuvJLArm6_9JD1CXFAyGSJmvz
+39JcatnGm2tJ8MS1qCqNIq_IFrFvK5e39TUQkN_JyrmW1RnsiBWjYtWEwZsmGyLttk5i02hjtA6oNe9ptwHpQCYI5bTae4H9zmrIiir86MZtN8RK_MAVQQNR
+GWBPmvcp0cd9PVlsB5u_tr4--HYMz_YaWVc69I3jdQehjFAA6FAppiehrmx9sPm3kT5QlomdKHvvMWr_z7rVLT3wjvAAeVLlJvriYv_oiQmQ2dBd0NYZ4L_W
+zC7Zo3CqA7XTFqcF7Ct5ZTza7isMdSYzDtJCd_k-e7cvdSGYWSke_ktyjrc3UEH3WmeHoyF0Ejx_evzquza0Cs-dULlMUET3NLhMJzc2YxbhUZg8Cg0SlYQY
+euNJDkxhriwpek9msKe1D0lJb9XZCS1tIsO70BSfUGy-3a4kYXVackYy8ucvJ2aduV3xTUdIfNS
+}
+
+AWSEntityColoring(GeneralVPC)
+!define GeneralVPC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralVPC, GeneralVPC)
+!define GeneralVPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralVPC, GeneralVPC)

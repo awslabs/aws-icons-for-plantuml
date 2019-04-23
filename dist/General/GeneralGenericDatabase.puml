@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralGenericDatabase [64x64/16z] {
+xPTNhiCW44LDdRx_xRw0ebJQ4yeVvtTyR3EYtUjtk0V_5KC2P56xey88ARWr5uhPG8LXzew0ydYQ2B02H8yt2eQ1JLgV8OZUkVTM-0XKtwtKUqFM8aCiPXCN
+eRn2SxEAPiRfcf3OpB1LKDFi5XgSrRJn6J5BrnB9JAulr2ok-T5C6zzlDwRTPcdwPXGd7N2Hp3f-dIGCema2NATMsyT0MikKx_FdYVCnazGo1UpuPVxgOx8J
+8kORY4YF9Q5b_lRzEiTOhOamblQC_O8F2Sed7mWJfE1BRSL_BffmuzcA1R_DR_pZ7__unp_-yOz_V5xrkUMpwUhzMOrtx--R-M4pl-pcf_Ny1htyjfyVz_Fh
+VdxUvmy
+}
+
+AWSEntityColoring(GeneralGenericDatabase)
+!define GeneralGenericDatabase(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)
+!define GeneralGenericDatabase(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TransferforSFTP [64x64/16z] {
+xTG5Ujj054NX-nYw__rME5z3SZKfroUnBVh5KlyLFNjMd-D6KZsV0v1FSMVeB0yWkWWspRsxSt85moq3Fit7Zjoi2EIUwv27035nvG1vCNIdSdS3BqC6NOQp
+FynqP2_NSVZeonYZbxkPt-lZZ26-bY-ykiUb7uF5s9Am6XvBSkbh39TjXI1Fxn1zwEjiNqkVlgeCNe_st-bbfhiN8m90fDVUGFnjmpjlGHvvxnSTddkhRdbN
+LTezBODMztnXgvOXseRoxlO1Yro7CjRXlkdRG3dk9-tRlXLKWq_uLd0jJ1OtvLl0jNrD-iNAu3E-68FVyBLq335dt_J906Yigc_w8X0HCBPxq-VnllP97z2g
+SjYSJyOUnPGNi6o1Qi8NdKoGKvvxJoTyV5dytFO5wY8Mmol2NgINFebA02CQApIyxD9tHRf7CaJN19JnCiz-N12ElAUgsAl-atlsx2i
+}
+
+AWSEntityColoring(TransferforSFTP)
+!define TransferforSFTP(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TransferforSFTP, TransferforSFTP)
+!define TransferforSFTP(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TransferforSFTP, TransferforSFTP)

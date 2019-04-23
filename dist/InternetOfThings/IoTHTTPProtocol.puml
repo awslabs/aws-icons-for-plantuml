@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTHTTPProtocol [64x64/16z] {
+xTG5aiCm44JHGKtt_I-yLfWZgxA5-a73CzloczHZLwQtsXftr-p20vm8SUOaAtrNMIH3UWeoPNT9Gaz_9lZLWT0Pho3w3zbagaRgmUUSpxEFEH_BBx_yyiil
+l_nK_-IZZVNE5yVIDxwH-Df73_rQVlJpv-_ghN-fY6wPYjhfntJ8AttxPZXxS1n-B0cK3NZhKvIXxYptxGTmbqPprBXF4M5AhwfFX4XIHxoVATkzZp6FhHTU
+3P0HtoBosHE4oVpsu-7yvS3nUzZ_gnUonZsUVP7ssYky-n0HvDlrErdwqejUlrHEFwUlgvSYuHFtJvwy5adKfTOzwrFN-x-dZRTXr_Fda6NXKeaaldJrSwdy
+g3y
+}
+
+AWSEntityColoring(IoTHTTPProtocol)
+!define IoTHTTPProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)

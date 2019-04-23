@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2D2Instance [64x64/16z] {
+xPS7JWGn34N7zS_zJmmnfdj5Z9VEKqcHdgpq-BWgQfgbHIbcL9GNSI1Aor81oZPb-mtVIrz_Za_lyjK301lbGby6RkAlV6zG-4x7DkI5VpJuHZxB0bqVeN5i
+bQ3h1vRLjlye4I_wum-DhZF__-j_TlqpDAjz2XwReYgrNwu_0-SjC8wcOk6yj_xf8rXH1OYsRyr_-iui3e2Mhqm2dDpnSvPrJKQEM3f-bhYVGW1b_9o_qgT7
+Nm6lvyyHNF8fUvw5VvGs_DHbu_mNVfHt4zbPVtySTEWPlJN_Wl0oUi-7U-xlmt325xhjdq0GXYFntVKd3OIY9Pf8CN_Jyp_rf_VN__q_Up_dxxSD_F_r7_nV
+h_n_RkBJ_66Ol_py_6sUlyxpvpat
+}
+
+AWSEntityColoring(EC2D2Instance)
+!define EC2D2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2D2Instance, EC2D2Instance)
+!define EC2D2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2D2Instance, EC2D2Instance)

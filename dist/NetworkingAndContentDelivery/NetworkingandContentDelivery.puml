@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $NetworkingandContentDelivery [64x64/16z] {
+xTO5ekCm38JX6IbMDFBzpxjGykFQwVA-lmnVc73gCoxspE90Wv7mMAq1DdpqMgiBC0vVg_q5_jDBUi3l3i2QZdavh4Kuc4Uy3FlfJP8wu3TadKkqTIzij_SE
+RbhqWJ7NwHjiqM-i6lKTRSsRrxFS5dnkXgsUrQ1ftq1l-TA3JLC-nhX7siF1dF2Yrzk9dF0xijufiT_t0RtdXVZvFX4FJNyvyntlr8GNqLAlojqHKzkF76_6
+cDt-bQS298d8Srex_lKavIuo-v7ZPy3KtRiCiUWLeGQlAZyzeIb2qpu90AsklXe0C6UzCUNGy88hQPDUY5w973wHrGEQyqMl7j-z332TjkbUpfhq0NDifndP
+zzDaRt13pFeAirRdqPudf9fPB9z_TVOwVFvsj0QlmruEkDRzIFeRhdy-VN_CDwsMp_o17lQqsnlV3kJ49TBM8_4lz1K
+}
+
+AWSEntityColoring(NetworkingandContentDelivery)
+!define NetworkingandContentDelivery(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, NetworkingandContentDelivery, NetworkingandContentDelivery)
+!define NetworkingandContentDelivery(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, NetworkingandContentDelivery, NetworkingandContentDelivery)

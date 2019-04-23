@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2ContainerRegistryImage [64x64/16z] {
+xTVNUi9034JXrMgbyVk_SEfyC815iCAbvuRc_snw6V_VEO_6xEhHsRhw1FAGJMotFkpO9kxyE3Pxwaz_-ka--tuc0AGtlOFpbZS0uJC0p8vVVDM1wFW4JEuS
+zfTZLzVd-5dqVF03Fxz3197-agU3cpa08alUhxrkuNiR4C8rK7iDACzWeFOwMn5h2hUVffU-7lcGGErjpe9BeFOJyWAl99V0hYUNW9wkWSAJIq1Fry2U9qzp
+2UZf6jZnvBnYLPo17Kyk0GEKQo3kFVdbYctjd2ulttiZvnNVhvDN0VN899UtaNm_i27Ko-aIi57j_ltVXEldgPhTUU4QM2zwyYBG-_t9GDypqFSCz3q3VSz0
+tpFGzWnOqpFWpVCv6tzxUx9X3vjl_Vy1dQst_V_KtxbF
+}
+
+AWSEntityColoring(EC2ContainerRegistryImage)
+!define EC2ContainerRegistryImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2ContainerRegistryImage, EC2ContainerRegistryImage)
+!define EC2ContainerRegistryImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2ContainerRegistryImage, EC2ContainerRegistryImage)

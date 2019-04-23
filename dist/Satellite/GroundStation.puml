@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GroundStation [64x64/16z] {
+xPH7kkOe301BGW8atV--uu_VyrOTm9jEhWMvo92_8oylzU6n7QExzvdrI9_61_6iOpiTf9cxDP1HUKX3p1IGvWrwdUc6ke2s9j0SZcPG7NKmRwfNW3eITJHx
+1rSGm0njd6t1D4omhgqBTjbnkl_JiH1MCEB92OuqL8XuUeEg0n9L-HI1TcpN5uuAi-fcJu_vFmE6qxxoiNbtleVNdY_jGj0hX2jGP1NqBN-YkTO-gWAjgacx
+GcNMxkMjh8ulFxC6LbUWkny7zC-Wj-_qckmEdpN0CuNu-Ad453ntgG4j75z-3RI3czpq-laI5368G2i5e9SBN3Rqsll-G2UQjX9hHtjL2B5tZ0qGK92UbrB6
+g52iSeUggImq8l92YAcqhFrVq2C6LerPzv-uhzyBdhS_XNibJtnH08lBVkJVTkL3VsGZRllP-e_zrtzz6yENxqEV-8jM3U3SdxuODLQSfzHDtj5loClBVm
+}
+
+AWSEntityColoring(GroundStation)
+!define GroundStation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, GroundStation, GroundStation)
+!define GroundStation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, GroundStation, GroundStation)

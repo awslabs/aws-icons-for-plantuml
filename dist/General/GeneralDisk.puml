@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralDisk [64x64/16z] {
+j5I9biCW2FH4LFB_lxk4a8tbQU_EdeKC33ZH_H1UyGur0hQ-2Nf3YFuLSi9EsmseO_9Fig5ftug2gZeQ-6VONRYOWl-FXOH7z665jFScrMfcebr3kjky23lC
+iq4gbBM4i3UlSLq_rbr2M6KxDy_kBZ9Bw759RvfQ8xQXWANNPmweJWi4fgDx2iW5WgtQkBjx4goW6QN5XYniit9h6zvyT4yZyYcaCS05iti1cUMw2x0UVhq2
+kERf6uMf8HDZdg6j-w5zcGnPEXslVfcifeY0TVk0sm0CTmIaYNDIbqi0SWQKVzF4HUdyZsmMY2bPw_lC5GXi1zhmbD-zoUsIXvZ7pHpuG8javOT-BZIc5Czr
+MS-ZMWwaj1aDXwiGhfWHUMQ2TMVtSXifMX2vnk51ApOxVZdCp7J2d96ELojRat35TlofiyK0q-9vuy1ipLK2tWuMI0ggNfr77gTWrtJnxLwYXlN1EDdpcfzb
+tAm1_Jyl-UK3_cVwFzxVf-UtzeyV_UDM_ldSl-ltn_sLNWS4000W2CFwjxQ12ZE3m7_dH_Eh_O7zfVsf_OtxeVk5-udxhVo0_AByXFo6_8ZyYloC_8x-mFxY
+_kJ-vlxe_kh-x3S
+}
+
+AWSEntityColoring(GeneralDisk)
+!define GeneralDisk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralDisk, GeneralDisk)
+!define GeneralDisk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralDisk, GeneralDisk)

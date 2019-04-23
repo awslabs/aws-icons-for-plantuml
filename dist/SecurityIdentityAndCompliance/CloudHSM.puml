@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudHSM [64x64/16z] {
+xPG7aXmX40Ihkg7T_F-_2WZafH63_DrbcBN9RkBgnV366yvRDEiUWl9zY5xtW7M3_z2dr0tnk_t4J_XEuZC_1_k-WOAFlYi1K7tVju_zeG151O3cSpy8yU6b
+4OodVXAj5gbWRlPpzUlGimkbvtorumUvV0Tp90maAudON7zEly5cGcGefAfhFDf_H5Q7ra3WLrtrn4zmHFkQ5McJUEYlPiV2zdqovnmCEbfCShzV47CDvg8W
+AhVMFzqTidwpge7T6eQYy0tV063w2SGOOD3NTjZnrI0hMaQkTOkPOBNyjdb-5FIgwxggd1-izDZqKm6rY301sZmALAjR33qWjJ024_5o0WIWMHlpjqXlgjfy
+PADbfGkaRiZMsZU_8UXbFIlbwFvsI2dcaGOF_0vBKE1LWZpoYm1Y7QexmFYIClJBHQmgYQnR55_2KRsizUo6xEqBvl7H3oiXMOz9GYoyM-NX02khNOS3b8yI
+CDS_E8E0_im0NGbV2KTS1ksM0gyp702wmUgCZ702i3edX8nw4RpnnZi
+}
+
+AWSEntityColoring(CloudHSM)
+!define CloudHSM(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CloudHSM, CloudHSM)
+!define CloudHSM(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CloudHSM, CloudHSM)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CostandUsageReport [64x64/16z] {
+xPQ5iYiX44GR6Udv__-zGcepCTWRIfwUk1oAPf7Xxy9__XCHv3uk8ivjh00enbqAcdOKHcpbK3G66vhqtgyvuewrBy4GN50EfDsXg_Ye35Q8cVN3BxX7WrCg
+IYke94ElVl54Hx-cU0FG_DkNz7ab36NT0pSdfpuDNRE12Mi_P1aXJlrb0ogwzb5A0M2lqn_pT-Px6So6eA19kynVVVOJUUthc3yDNKJRhNytUo-Dn-dyJT_w
+WP3QXSDVp5zLw-c7uA0m6Z3pML5x7OtSvNSxy373fhvN0FLv_cRuHVw1gJrVVzTlFF-H_eJqCtyVIbJWJPyctnW79iet-f_vkSY_6BzQdpltW-ktYXW_cZzT
+do3r2-F9_9tYDbxINwsVfl88NRxGz9VhDmR7xCltcN-zVwp7VsV_ElSPtFQJVT_DT_qylxRzzVcP23Hspkz4OwT-I7ohVaaswgUj-cs_VjolN_yW_lEVJm
+}
+
+AWSEntityColoring(CostandUsageReport)
+!define CostandUsageReport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CostandUsageReport, CostandUsageReport)
+!define CostandUsageReport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CostandUsageReport, CostandUsageReport)

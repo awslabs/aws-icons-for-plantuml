@@ -1,0 +1,32 @@
+@startuml Two Modes - Simple View
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+
+' Comment out the following line to create technical view
+!includeurl AWSPuml/AWSSimplified.puml
+
+!includeurl AWSPuml/General/AWSGeneralUsers.puml
+!includeurl AWSPuml/Mobile/AmazonAPIGateway.puml
+!includeurl AWSPuml/SecurityIdentityandCompliance/AmazonCognito.puml
+!includeurl AWSPuml/Compute/AWSLambda.puml
+!includeurl AWSPuml/Database/AmazonDynamoDB.puml
+
+left to right direction
+
+AWSGeneralUsers(sources, "Events", "millions of users")
+AmazonAPIGateway(votingAPI, "Voting API", "user votes")
+AmazonCognito(userAuth, "User Authentication", "jwt to submit votes")
+AWSLambda(generateToken, "User Credentials", "return jwt")
+AWSLambda(recordVote, "Record Vote", "enter or update vote per user")
+AmazonDynamoDB(voteDb, "Vote Database", "one entry per user")
+
+sources --> userAuth
+sources --> votingAPI
+userAuth <--> generateToken
+votingAPI --> recordVote
+recordVote --> voteDb
+
+@enduml

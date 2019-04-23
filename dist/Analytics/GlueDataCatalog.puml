@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GlueDataCatalog [64x64/16z] {
+rPS5SWD130INXFz_S8uKK1BlcEqsGzUCL7HR5iXyePLgVXRMomgxxtxpCncBlLh6H5JNTq8mVFZZU2shtmjC_VBhQ_cTfvpqoNp6n9_oqljhWoQC--xFh_DB
+dVAe_TVQ3cezqw-THDLYbsOgF2hgDzx5Z7J8x_QPIJiiQhx2Y6_kIhscYTiGTs-WFtwlhA4--Oe9qnXzOOpF0HJfNzN_eo7--gtn7XYOYSRwfdwnBQcsjVis
+Gzs-j0RwmrrAOaGyu1UDKRyCSwk0dyC2Ycy0FpQGur4_Df3ZSJysaEDnlxjBYeVzAD1pFEv7WHoF-r4Wub4_5uXuqCy58XxrSu68H_rS8E9nFnSWTogedmje
+APpZSLyElxojxo9skK--8R2V6MfcL54VuDNzeLFkUlqtPCfhdpza1jztVseJzBRpZslyViNvzVhpyxNdzmy
+}
+
+AWSEntityColoring(GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueDataCatalog, GlueDataCatalog)

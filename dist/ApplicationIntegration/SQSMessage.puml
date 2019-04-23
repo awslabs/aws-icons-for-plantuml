@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SQSMessage [64x64/16z] {
+xPS5OYGn30HR9i7_7tpoeiONSXHEQj5GGp8Y3wt0kNulgMlrQygfQWiT43C1MCsKhwdkYO9YZW9DJIkShgOHCmRDlEaxxgid2UoY--hOsHydtwotErsdRoeD
+gCsfG1CrzrKxWTe4e7xt2G6PFdD3e34JEWz4lCvZ_WOF-qHhZEQ7bhn7VHBf27GHmX16ODPvr3ST28ppyvE3_zJpqzK_nM_nBNt-zxh_3L9-fltDEflFJm--
+vkEtuU-sdsFy7l9L7uzVAOG0bNB-YdYTTujV7nM1EZgXZOx867KhVlBbujVVw_oehI1GMZr_HLehxnK_jFNy3QYFd3_n_7wcdtz-6wJQpq_iF_dn8pz-RP0Q
+lvFpHp9--V4tEtzdrmzVR_tpjtxDttz-_x11Sl-Ktx-Dr-yVUtR_cjq_v_a7
+}
+
+AWSEntityColoring(SQSMessage)
+!define SQSMessage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SQSMessage, SQSMessage)
+!define SQSMessage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SQSMessage, SQSMessage)

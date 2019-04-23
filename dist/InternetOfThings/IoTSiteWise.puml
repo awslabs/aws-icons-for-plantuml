@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTSiteWise [64x64/16z] {
+xPM7SYiX301NGaWA__-_hnmNA_N6aAcPsock2whsoo_bvkOc8tBV3WMGlgaRI3C5pHszWvzHw8QU46C-LMmd-ZuUHycwBrJMZLZtwyxHyH_vjk4hyUxv8iEm
+SJwDZVgvW8z3Jq5oLOS6blCaGM8ipbuV3gWAj3I85Nt6dYOWpUSk-3CHf6bpgoyBMH6vgkMb7Xn8r1HMHGwkAwbOkk2Z_Ao6IcIZNUY97DFQlze2EuuLdl6_
+kly9ty4oX9QV_Mn8f85V_znDx6FzZ0SQtnKF2nFraDTREbYUaKbqLKi3_Vx-5Y_PvVL-1T0yxvS-lwDnjJHDmFAyNIFrF2iDH47zSdAdFL5YZ7o46wtixnZf
+yNXU_abSszDwcurcDl3TFoy1aAhO2WOQNRM7WYsfLUzUtTmyeVgnGRIozyYoVnitDpT_0G
+}
+
+AWSEntityColoring(IoTSiteWise)
+!define IoTSiteWise(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWise(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSiteWise, IoTSiteWise)

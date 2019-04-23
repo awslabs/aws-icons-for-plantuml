@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudTrail [64x64/16z] {
+xTG5heGX30JWWHRQcVlVzxrr-zEr-8Ol8O9Rgv-pBCl26EvZKb-XDnnvwdFH09iHqnlQrAS2S9ut0anz9k-6nCSJT0pTc6XKHhw_-wux3ki0UkWjzhXV0kZU
+WT0Rs43TSmn90rrlI6oxKNiTgTS2LhGC3BqqMpb-0crGpz00owfn6D1JJzYBzZHqgZJFhJM3gvGpzG81Lar9CbFC7TORYFBV7sHYfrKJZ3ASl1zazXrxR_pd
+lDX_s57IRChjR6x28ujz7GK1LyEPRuAvklqZwbZEg1jq5Cipg8mzCdPIZ8tHoYGmCKwRpi0U9xRgu4WF-G7JznI-CLA_OLcMvHy
+}
+
+AWSEntityColoring(CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudTrail, CloudTrail)

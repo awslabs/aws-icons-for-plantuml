@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTServo [64x64/16z] {
+xTO5cjqm34LXNTcITVQ_uOw6CP-JSll-nt32PB_LpKsioyBC1DUfU-e8xVEldlgm0mi8lH6To-AfdtOWFXb-GfdDhTwXCcKlD2RaRcyBOCcU1Cst-qbRR_Eq
+xTvcZ0APtp4L9FXstmIbAAZXK2RPgNu0HQi4tEnShwJbeYsTwvidb4RNKtQsRnfk5k7MJlSl_kH-hgfqUw6rjDydj67F4dAxdy0gADcZ0J1s-uBnPdzN0PJs
+Ua6-lBI42CYB_O1bjc1ScduzV1vGkhBy4iWxG5vPVyMpkhBzH3sBZNx7dzzxJ3CVkjHhBc2e8FryhqLRIKkTxRtZeXKmplMI5VYeea85EjKx922JkvkWHimJ
+VTB27YtQtExzRVwuBDTsdp27x8Ko2totByY3AvVZFapr-LNIiWFnr1zTfHrvwg_Jzrw__bOtDzy
+}
+
+AWSEntityColoring(IoTServo)
+!define IoTServo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTServo, IoTServo)
+!define IoTServo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTServo, IoTServo)

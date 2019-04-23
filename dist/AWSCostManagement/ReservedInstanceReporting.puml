@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ReservedInstanceReporting [64x64/16z] {
+xPP7OkH024KVK05y_mFFne5o1pJk7DXqV5zIyGbnl_6ETunn6YzoIzux3FyhFPi0I9l_ptx4KC3cD417V6m4JJqYl0j8zrZVkrh5A-hJ01ifYmROTANaNG6a
+UIpXJO0QZt2Wnvxe85xp4z3zJmQpveskgEzvBkjOYJiIaGGI7Y5ubVTEY_0aaF1ezCe7WaSMo7WuKk03-o9q1uymHcMVySLeH1EG5g7sBQz5yj8Dke38cdKv
+diAMhIEOHxXbpKuxWdjEKFj-wCJuKGyk1X7ycrdiTG0U8ej1VoXXiRV8E9K_wVvFFx_JyrVxnol_rFxrR_-g9_zkh1zRcsfPF_dKCvxAsP4D_IFZMQ3e7odP
+2Ky2oH95_qnu5kZOjlvjH_htAVC3ht553iylBGKKEpO_jUBDefZV9-mFrzfVylxK_G7tlxo_tc-yunt_
+}
+
+AWSEntityColoring(ReservedInstanceReporting)
+!define ReservedInstanceReporting(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)
+!define ReservedInstanceReporting(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticLoadBalancingELB [64x64/16z] {
+xPQ5WUDG34IV-FflECnWqYrxmh7dY-7Vpy2A5HKHkPmU0c2rb0xg9kYo0mfY_w7u8hvZXyz45YbWd5mdP9VVrR_ZFy6d9CfZgfG1wWPQOsJb2F6w_Ac8JygV
+411pTnEGEFwPihUwCg96tOHcdLW6Tg9Fp3g7k5V63fbhatCyxvqXk8FFYD4z4Y0cvvYziYZl0bj3uklvJxdo7HWm9bwwoIy40tDxxqnxQMYYv-CbZy6Crtmb
+NrfrAXWzyG9zRRxmqZU2701rER3BR-hVzLypVityQUPletxQzTll7_t-rUwVtVxTdX-z-RNE_-x-rD_V-ljZVt_zUgnOiGK
+}
+
+AWSEntityColoring(ElasticLoadBalancingELB)
+!define ElasticLoadBalancingELB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticLoadBalancingELB, ElasticLoadBalancingELB)
+!define ElasticLoadBalancingELB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticLoadBalancingELB, ElasticLoadBalancingELB)

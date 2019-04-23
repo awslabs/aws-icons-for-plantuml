@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTHouse [64x64/16z] {
+xPU7aiCm24G5Ah3__yDdXadH4PpUywwuljZUrOoLycaGaIzAM90lrX7eyf-1xWjU5jqN2ldvERMF1G3BVm7K5x8ir1T-QFHwKEyucLuY5O2U181wyFADJg8T
+l841fN8If1WFygj8lS9lM6Z7V1836pyqsgCFCSYt2KRqXxaTm0Y-i_75Mvrz4k-v0X3wxviXjFByB81MMwiA29-P7okW7DPFzVscvqV9VJPapsyUsXnbs_E5
+ZPBatqDflYlBV_PfkjXqInHzenjgVdpO68dvsesONmmxLBAQVomx38bLtuFFy6Jo_Zp9HYMZUMfPVuLXIAOF65pI_hmPpNpTFylyCFw8gwxvMfccyHV7lrWE
+eaQpJNM6-P1f_AT-nIO8mWO-pnVP-2eY2jJSxuRElgNiVlVY9b-xCVSt-xsj-Gxblf7vUNyRdnN6IFoZ_HMg2ro2VsB-6nxWJ--Fw7EIdncIv8-nGx3nPGma
+_Ocnvy-uxqXuVuRdRue9jHfOVRqzOFxn4F_Q-TkryyShvwzNpf-ldR___2k-FtuMVm
+}
+
+AWSEntityColoring(IoTHouse)
+!define IoTHouse(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHouse, IoTHouse)
+!define IoTHouse(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHouse, IoTHouse)

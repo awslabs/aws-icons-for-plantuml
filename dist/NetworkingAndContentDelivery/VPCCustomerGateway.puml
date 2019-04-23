@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCCustomerGateway [64x64/16z] {
+j967SWGn24CDQqpv_m_EuDcgZNsTASdT-Gb9b5yEzNaBNQIPHn-t9ijhSBE0iVQi18cjYBO-kdsMPwA8h-le9BaQSddelBzRlKAchZjFaM-yqSdCQIKrJ-r9
+ybokVCgIAq-UMTC23N3s2A_bWeD0gVc6XxWnuYZ0TX90N0bmZL0G8FrNW3oh0Rno1DSKW9ATaBS8nLD8IRu8bguH1dYxzofIEf__uPrGSHcL4Z7gQW7tjJpF
+btfD86luAOyLoBbxvzTuzkC6KF24n_CSwUbLdeu65bYF_D300lyzoUDM3o-lyuc1q8IV193TlkWpV9CzWAmw16USyR9YXTRd5hRz43BbuTaAUYZWm8y4D7or
+iNvRd-klfi0QVECJLxvDZQXy6qs1A-_nwl2d_5Vz_vLUtqO0W30KG-zS_lq7fYV3ymREqc_zi7ywFpg_kZ-wltW_z7xf_SJxhVz3_nV-J_pVp0_EByvFpc_E
+Zywlpi_ExtD_I0P_UFANgec_k3-vlxa_kh-wFtiq
+}
+
+AWSEntityColoring(VPCCustomerGateway)
+!define VPCCustomerGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCCustomerGateway, VPCCustomerGateway)
+!define VPCCustomerGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCCustomerGateway, VPCCustomerGateway)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalMediaConnect [64x64/16z] {
+xLPdrgD039Exxt_XBSOlFES7CsJBLvrAaOj62FBJndTyHwZ67y2D0B9NqSu0__xuIwrBrQuU9EuF3a0ptJELW9iqn54qvF53juPGi5SFTDHsXkwtRcdGzEgX
+QniiJMDpS15eIXFl34c32DOqHB5DnHsZHtPm6W2g5Oahl04zk3tZcmROPNssp8WCYuaFyup8D8wbwbgoSkAbnSo-ephK44xGQ4R9gtKibMYrt4u00wT-QvEy
+167NiXElaWJIy_gfpT-LNK1nWGSz1AZdzTkRNM4Vt_xnEhxYl-BXhQC3uCn-u5itZYjySgrmyUR5DW3nWf4Twk2rxRJd1O5A1T5UM0TZGu0j4fCWkFG6OSy8
+NItIM-bDLssh-BxtyiJpilGaWNJWzpru67xXn-rW6Txa3_muSXMpoiJlt8guffpumSn2Fz8j3lmSJlR9C_kDDyiR5COfqg2oBL0y7TZbqAXDS3QsluQXH1eN
+QxUa8M8n-9g6_lj_dr_cyzERFB-T_lzPupk-uoS
+}
+
+AWSEntityColoring(ElementalMediaConnect)
+!define ElementalMediaConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)

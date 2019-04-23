@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManagerPatchManager [64x64/16z] {
+nTTdSiOm28HXG0Q1xd_V58iqc7YygU_VvDclkz3lDiRtUCJu5byhnhVuwy0mOvoRlGne1EESw6L0ryAydZm7qaFfoNEWUI1RuTkRpwiHdgqz4BBz3B_qAqeh
+_q3tlBSeQ_vMJDGzCrEFMvHLxp6fDxqcaFSeBSpRh5rvi6lFBSnRh8_5yGi-uZC_j2RTot5GyrXNVhXynu-8OCptOntYTK0y4n4wlQuO8C-spuCgpjFd0CxJ
+vq3XWC-1zFdU4b1x0f1lRm3e-mUG7kOveDkB2CIpeNHwzfWWpn3F4OqZdiIJuxxN_N48PS0nxjLpXFRrYsDizMlzlESMGRvtsuzPEo2lKJF87rvJo1FNcit_
+QXwiUV6QtVMy3mmrl-dbV9DbrlJQJxVjFVAe3hVzkzE2AU7-RS3MKjYt-nV4HsYxVqAysMZtR_zm_zZlN_46nl4U0G
+}
+
+AWSEntityColoring(SystemsManagerPatchManager)
+!define SystemsManagerPatchManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
+!define SystemsManagerPatchManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)

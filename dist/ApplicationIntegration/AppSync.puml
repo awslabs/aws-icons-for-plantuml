@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AppSync [64x64/16z] {
+xLPPbYCX39FntlS_y0mTNaBn1a-exr9tLYoZo6Rv-HSUF7YGuQPg7dc7R4mO8BOyP6idiwYP2WCWFSbW1B2_6UaCnFUJCo1BUDZNz6WWl-zw43ZlqxE1zwF_
+hwMKT81OhB3IG3aJH6Oh51r5BPAmnaC_dnc0c-pzqOlw0CpcZ0I6LERHHPf1nzCOHWiWAt_uQePqIJeF2snBNmS349dSSjAUevAVIpvWZi-ynAm8jEKppDPg
+yRvw3bb2PIr9_spxvj5hEigr9TQWAdM3lGWjDo9Blg7DULP-hTz5the39E9BKEsV0VYif0O0jeYiwfU0UeDc_4KQo3zbP4JPF-dvQZB76pvQSyIK_UkG5zz0
+xHVKgJpSSBHw_IYqJyA2mUX2X47vdg9Slx-_BmY0pji8nN1cBz_Znp0cIhUOZ3KVBDbNFu4cOxtj42ZSbuOEApTtBSyE4sgv7-SkhaOMTEdUt4OoAExJevtG
+FLPpSNAivd9_483q-FxInls5098yTClFxa_dzxS73nxy0G
+}
+
+AWSEntityColoring(AppSync)
+!define AppSync(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AppSync, AppSync)
+!define AppSync(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AppSync, AppSync)

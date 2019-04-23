@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Forecast [64x64/16z] {
+xT9NOiGW34NH9qIJzh_WC9QTJftqS7zSZmkWm-rsEodfUebAiVBet4pC0mZl-u1czjROyeuRfVCThkwJjXC6KgAgxmsC0-Log7DU7AwSsJdlGMm5qNcVWGRh
+UqP8uIYA9XSdVG89uuX48yAOb-0jGZm-8SKf7t75MdmkfsZ6EuHaoUbbncUGdEcAzmYHhBpWXI01A1gOyc95yFaudlC9T0k8YvuiBsl-gJKlqSgBFiFoovv2
+27o7vxANx_Jfv_djTSo3cPrvLtR9_6qNi-ltoFoj4I_P4drlL_jUBIczizln0pLyf96YLfEHz6gtspq
+}
+
+AWSEntityColoring(Forecast)
+!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Forecast, Forecast)

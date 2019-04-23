@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Polly [64x64/16z] {
+xTK7OZ8v38RXJx9wxd_VwHjCD-pVUTBBgndR2THluUCZtKvuZN9qf0OPMF_3umCCMeSl0I2lzoLGXhpJUpBadRxw0UDzFs2yxmOCzyGp0kIbtWWxVgclt0He
+iEzba_6-zsQVBcscda_qJ0jEdzz5pK9m88c7FM51QG1jFI0M4MuDW3xgSrFhkzNtRQS2BT_Pls1mtkrLUfwoYDeaeztjSSOI2w_l0LOtf4VvcQnOP1q2bFMI
+tAR8tLtghjtVMuC_l874YQYPMIxl729RNuoegqByTFyrQqR89R6r5rqNO0FdJ-HiUs_WxTU6UeEsqzuXFwCFZV7x_-gdzVktzmA_rREqWmMuPgQvlDlEJwqg
+2V74yxVqvvmM-tKTN3U4VuiojBEVPiqOLaz9wXOw_lzZeAXp2KGzIQuD44WzIz0lDhBR_ySKOC_Z21XaMJfm0-KCK5CpRGGihpPq0vNMi6kUqG1cI8r8DrNR
+bn4DiwZNHUlxSU7rU_Zuc
+}
+
+AWSEntityColoring(Polly)
+!define Polly(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Polly, Polly)
+!define Polly(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Polly, Polly)

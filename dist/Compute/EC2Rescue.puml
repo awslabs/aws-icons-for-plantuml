@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2Rescue [64x64/16z] {
+rDDfOkCW44JX57JNw_jVE7im6e57-fSyxqQVTbv-HIsXRWJP7be9zqlzS4CvebykmWNMbqzmktt4XlpwDjPqAndQz-RNMzTelGVVEm1UZflHTe6FZoAMMsTg
+kGT1wQbtVER_-Rxnt__tZU_KoyuhN0zV3jtn2c3sGEYoxtpLJp-lU2NWtcRVke7K1Iy3SJv_0LXRFtEtrVbl1cll1q-jhvyIhES-8NVNVupkVGThxsNeJxmO
+Sx5HnBXF7_-2zZvu6AgSdxbg_Z-sNk2n6CMe6CoWdG_euuxhoIWxqr0ilIH3qqT0Fz_I-gY19PsyWIg-gYAFFW-3u7-yE5Hmz50SqicxZy9dx-WZhtpCktls
+ym757_1_phyLNmS4000G30JxjnRYR1C1x1_c1_i3-oltG_Uh_mF_b_vF_D-O7vvVdf-UtyuFpY_EJyvloe_8hyhFok_g3-elw4_gR-YFxg_xEW
+}
+
+AWSEntityColoring(EC2Rescue)
+!define EC2Rescue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Rescue, EC2Rescue)
+!define EC2Rescue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Rescue, EC2Rescue)

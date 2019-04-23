@@ -1,0 +1,37 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $QuantumLedgerDatabaseQLDB [64x64/16z] {
+xPO54gj050HdtZpP-ryujX1TgfQYv0iTwoGqRkt5oSb9PRZiXkIHjJCEmmq-U9YopUC45LbrdsnLfHl0d9sumQA-VtJ2vtgD1omXfYPFc_nZJE5WJtYDLyja
+Jt2u_YPxU10mprosNuOROCdPlbMAk4CkdvwjpVTzikwItdRV-Nx0NzIhZOcOwrcBkHPohEEUi7gO03w0ERWe7LYrnZq1PRLch8o8RABOkZh5MXJZ7bu2g18J
+Trnygh_fPjzQXLYY8p9f0XXT_Kst-uxHaQsPkPa2TTTuwfwUjEWQv8u-G3D8uAh-qec-tCnKejYw-fjkzLfCy0xvL7lJZPx8Ra5qwBagthLjzF3gklBcxxyE
+ASX0PRt_bihMJBF7RnW0cloEZ01yt_5VqRCRf7bKszLtM_bhpb_pry_Zr-_Zzm_7xr-EtpyTltyxEJcv0W
+}
+
+AWSEntityColoring(QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Blockchain [64x64/16z] {
+xTC50i8m44JHMPtS_yIuQngS_KZrrOjbbNHsOD7HAHE1XlS6wCv7wus0ojRxsttvykNBCzVn_EWDJyKwIS7fgFA6X-UoW2DEHXqtVT3DB0b7qkOnCMSv7tF6
+RPyEKIW1f44LbW2eK87dFLvQCsqHmVcWgN4-EX-q9kD-zFY7hz_m_HjzVWQVtmzx_ygNBr-UlUM1dz2m5zsEc4_81Ej4j3yH_48p
+}
+
+AWSEntityColoring(Blockchain)
+!define Blockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Blockchain, Blockchain)
+!define Blockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Blockchain, Blockchain)
+
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagedBlockchain [64x64/16z] {
+xTLLegHG48FXb2If_QzuRhiBl8pnjSkFmva_osQpsLYiggRMrHr0H008UfPg8EaTTI0qYpYHLma3lJ3dN7EXr-KdIoRGu3n8wEk-vv7RNwJcYQ_UZdYa3tdW
+f0idIPnfx3SzsY8fHsOUtnOQidwOu5JuJK_YHpX_E0246WqNVhIG5GY_wJF81XF81abK0n2gEw6C241l-gZzIsTsmpDHoYpjcltdAT3jJxqa7_eqgLF_GpGH
+VhtytUVbx-xpyfCP2XobN_GC07cx_Ugo_Oe_6k3h_VVZjFz-dFSVAVFGERd--Ddn-kFt2-8yKdg-LD3ZWWM-xXsX5vUKxoYW-xnd0GNAbve0Pn4NK9VhTsgM
+Kk4qVYHd3QkhgkdvGsqscyql
+}
+
+AWSEntityColoring(ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ManagedBlockchain, ManagedBlockchain)
+

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticTranscoder [64x64/16z] {
+xPO7hgGm44HVn-B-5zumBIq2oJ23mgPV2iJdK9GRRt-UllGbTLMrdj9fl1Jz16y3Zqm7wW4EFlqg83_5PSIlY_fy137ute1KrP-CNiVc323q9f-d6Gk8W7YJ
+T_hKeFNBb7wFDtGsT8OL3wP_k9-wfHLWMdpL-op8iLKlwdiJ0zV5rFncGGXqITy4eOYBPtXMfM5z4vsb_Hg7JP_pJcuni_VbMxLyqfWs1q9pldZBhvnn0Yml
+efnzDJD7SaXVy6hrGTfZENm7M2zu6IVvFEYOSmSifVKAyODUFgaS2ACtXzHw9VRflioca5jgIqoTcY3rci_edJS7l3G1iD8c9UIsv6KGslsmwDr2C6FmAnv2
+mnyhHiVUu9gt3iOdcPtVc3f-pMkAKC_v-P-8rprVG9twbuD7Z3-NV1dubEpQ4sZpJrGPSSKpzEx_D17uLbxpSwuh7g_3zxViRIgRJyk5h_CJNiVyJOHc_M8G
+BKDlvNVyx_5zrbyPr6BzDHO7OPg6AXXUVScVvJhL7t-vOuigtsTf6-t-MItzkz-Kf4sigSzv6PExDlpfdYuoVLnv80KmnUYXD5lQFqTV-j9t
+}
+
+AWSEntityColoring(ElasticTranscoder)
+!define ElasticTranscoder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
+!define ElasticTranscoder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticTranscoder, ElasticTranscoder)

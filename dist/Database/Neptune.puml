@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Neptune [64x64/16z] {
+xPO5pZCn34J7IHp3tF-yFxZCsLN5VO8FNy2nfiuly-C7p-nnCyEjSA-rDickNN2X3GjoLGyL0DA65kEmLFV55QO0VVhr_SE602CN5g028-xkIpAde2te0Jm_
+AAD1-T6tb_z4Hr_nE_dYJsi-HZvPWJGi-f0PrnrJJs0TYxuE05qj8W-4po50csk-qOS0W4ZxXzJtw9Qvva-IwNFqCW-Dw44oLltCu_NZ7wS29Azzygr_NRaZ
+rpxJ8_dPBnvzHWDwSA-V3QrXlF3rayz0onJ9vxuyFrWcNK--XEEL3x77yj858u-m0u3okL-jviahwig0dOm64NtvVju1IDTf_W-pEPgcG4wLfQ9dyitxkpR1
+DOCJG2k90KJPBtqoqqr7eTCZ___SZmlqklgd_kCrzNDsD1Mf7FpiFy8gec2FprFX8hrXSflFZ6Go1S6aestCJnKqJzUZAB8fFpc1LXU7BEnV-Sdh_EmmTaZN
+ldB_Otvw7FEZ_EmmrWCqe2_dPv462EHK2T6gPV93VZP18SOf5JSoIAlSe3VHjVoCu-iVyfTUVdMIStj-qj6P341Wt9v_d13FUNpBxP_V2jGJg5bmy_mm7J8d
+q9maTymlYaagZ3ld9uMIe_mzyniTrPx1dVCZvw6XTi-lZ2hy_lcvVlugFtxy1G
+}
+
+AWSEntityColoring(Neptune)
+!define Neptune(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Neptune, Neptune)
+!define Neptune(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Neptune, Neptune)

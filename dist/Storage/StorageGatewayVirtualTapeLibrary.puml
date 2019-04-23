@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $StorageGatewayVirtualTapeLibrary [64x64/16z] {
+xPU7ZkGW38Pjt7w__mlVOY6nA8SIPgxVVjF7_a9HQFIZu2CkTkGHmQlVyf1syKCV4z_pZHvZ_xXloVqTBGiqs94lAKG4fzOqjJNECvzxULmNaPvvwfD7D_bb
+Ny5rZLVzbaAmrts2CTeRleM0tl0bmz_n6IcV_1gSxS0d2wOAeFk13_H_67zVldW0OMq9Mm3XSkzBvC2P1kmv2BdnDJ-01_f76x7w4OuUqxq_TA-G8XCyXaAY
+jEPrWRtFg7Z1aLb3q3-jbbeNtVfMxmD6PRLI1fMnyxi1caYENA494hppwst2o22ABanAtVYo5aKOFaqgvwbVQcGyzFkRtfMl-_fNWzV_dCZNtDZtN-NE1enV
+KbSPZ5yxN-gcdJL5jQ9QDMzbsVfL98GwR5b95KfZwWYg-BtFaPbXgeuQ2ONNa3Ar2lBMdqDrZpFj_K82EnaXJ-OlbWtyY-RFBrznGK_yo0jnudjcB6JwcGzQ
+m9t_vOTESFLnTtxB5LguXDlD-TLfmVVdrm4l78PVvni
+}
+
+AWSEntityColoring(StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)

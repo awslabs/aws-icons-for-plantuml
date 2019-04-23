@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudSearch [64x64/16z] {
+xPG5abj134HR37l_ymQcjiRyCHm_C-YDr5Qv_q3UlAdAggEreGm0n1e7ger6BVDuzDw74o1HmvJE0E_gGG7Dlf02M6z6GD6t-0w1W6k6wEQZazWiC51TXmX8
+304sPP10zY0P47CbZADzUXSHM0-A83M7_vYVB9Fp585UzMII2UfOKnZiHZJZXxOW2jABCF9AD179we0s8pyMoWiySyZ73waDj3H2V0vT0ZocJQXaB8tW6FRY
+XnMSFIN3rkeLKlsYVYIxN5yllY78cV7I_05T-d4OzNfzU7RnG17Li5CFNdpbPNsEv8FWI-iVBnCoU2i3khW0CdV_eJTKhFwL4M9yLI9lg3PGLsOluoF1PDp2
+LG2arvYzk_0LairGtY8eWZtLSXTj4UIJX4l0rLi51Cw-9cYKRnMK01BpbJF6GcmNj1D0Okvk0e09shi4vO9FIA9pks1IwMRcEJe_8fZyYG8z9KX2dH8eeiy8
+3Dvd18peeuBgDd3tKG4nWR8FKag0P1-dilgFuSsRhm
+}
+
+AWSEntityColoring(CloudSearch)
+!define CloudSearch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudSearch, CloudSearch)
+!define CloudSearch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudSearch, CloudSearch)

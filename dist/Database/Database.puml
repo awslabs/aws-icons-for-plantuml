@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Database [64x64/16z] {
+xTP5WWD128LXA0CUzx_l44zbbJTk_wRrYxIM7FjFoJOhP3jJbRxOfaYx-PLiAAzt7bmP7-p_VTv5-o9XS_HgJ8jQfdp6K15jnmvp8vBneuG5a1KGDbG6uRlC
+0xqx4fZId_NfOec7qiJpIR-kk-uV-hnNtqvQBRXINhe5yXp2kb0-bjRsFbSrUnFH5PHF-1gd7RIDvKZMx-UFzti_p0zaRZen62-w8k-AfS9uwxLvcdk4kyqc
+qetno9XTvPps6Gdk-5K8TpFtG5QlEFvvxkUT_vdvm7CoNhhZ-iyhU1V6BnKTomDL-1grk1WFM9bhEWpq-KUuhSeyyAhpdzS--Vpnxm_-_SM_Fp_n_SsF7zu-
+Vg5wzF-URVSJGUQRVqLlzjgkCtsyehltcpO-LVaDlG
+}
+
+AWSEntityColoring(Database)
+!define Database(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Database, Database)
+!define Database(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Database, Database)

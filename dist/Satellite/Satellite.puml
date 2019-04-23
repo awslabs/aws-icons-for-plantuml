@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Satellite [64x64/16z] {
+xTO5TkGm48JXwfOQQ-z_tetdEKoIyoZm3yDd9jpwIpPxPd6XHoQ2uRiPe8_UkLi3Ae-UlHThm__vFy-ZovwTDYsQrpnhG5IWoIkU9U9kvehaiYTvld2A2mJY
+gglZ9yk7YkZmOgLgPax9MlIi2UWqcmfOir8XaSqrpnHODKbs6IJfC1bSN7yCQ94FSwB8m-lY-cDYD9-k_O4O48p5yPzZUeZ7DzK1vuAd8Lyj3pZPi1NVCb-l
+pY7DYLhm3EHhdqY3inVyb7uLMmIsiluO67pD7OYL_PSEJBxKeS1WV-uPcFhydpUjEPPygt8ed-0qWKPJvvA7_NCq3th32iniik1huvS81BioR00oeidROiaL
+pnh0-PCComEVyxLs_6LdJAXxLfDyN2l19T-76bBFZzQ9oPNnFsvi-PnhR_XcARp9SnKwjDWRljaJujLtbGjcixTyapa0kGiOoGldFxB2vhGeyjhvasT_rm-V
+-Z-_stDlNPlbCt-XBtlHXpTZNcW8paHqFn7yXFu3
+}
+
+AWSEntityColoring(Satellite)
+!define Satellite(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Satellite, Satellite)
+!define Satellite(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Satellite, Satellite)

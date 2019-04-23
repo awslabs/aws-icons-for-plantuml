@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManager [64x64/16z] {
+xTD7aiKs48DXT3S3WBd_VLryKtAGh3GRnsyh_Kn5-c_eV__J76DC-MTcuIDg-ZtMAdll5K3JwpoGGruq0idNUPCtAWJzHgBvzmhf5yRXzqItvgJyW09plo54
+2m0vVM-YlDS0L4jW-5R3yISYQ7iWv3i9-e3oKXWFUldCHFED6HSz4Prt5pVFUoKkxpC3CUHpOiVvVLQS3Sv5NbIdAsnePn-MBIlqi-db0zbEP2OWMxA9qDER
+vnP38q0xqSX8seLf7mtqavMZP7Ty1Dqn7lODqO56B-o1AeJE-sDEazw8TY58sKVSxrz0znvFNw42tAy8j3VpqnLA_dCTnmL8RGEqrdZn1XMxzGuq4tymYFGP
+0aLziri2jEOcCEUK4rayVq2RQG3f3VKbROToiOMUyMqQITcQIqVD3zdi6BudfEt3_csFDxtQKiZU5hxeaTsRmIz_OyMpFW78bbfGshW0JDzR8Vf-_rC8oiyG
+8MO2aPlPqVqK0TeU9NkJpti5odi3c4_xVDqV1s3LzZzRZaD-Dy2IOzM5vP3Vhc0aG3iHlR_CRGsjjFKUe3tf7oXyo3_4iKp_tVplVxy
+}
+
+AWSEntityColoring(SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManager, SystemsManager)

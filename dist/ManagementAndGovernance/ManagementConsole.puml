@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagementConsole [64x64/16z] {
+xPO5ccGX30P_ug7lVzuHmleoNyQjwxaKRlDBSELAQflydszeO__t9IBSQpyJSl9jPjxlwpXZPnyq5P7W9_eYqpYIxMd-vN9tlQpzpENe4xSWsElKdsOBFPTV
+2tihFrNkq7ogxrZuKtmdqm6EO0mryaVw5JN5d46LYBvVEfD4FOGG0zxrIxU_FyBxle3cNn2axmUGVrKb47tVm3ldOqXv3ElwQGIlDmkh8Y7BXbyQPUL2CxLI
+dWHOr-ULPeLKOUhA2_TzsrdsIZdNwxwlLOlRtpMdVNzONIbNnkjfT7qVk_e9f4gWtG26z_oP3DlNEpXteUOZsX_Lpwxg5UHuJFjtZFABygFlo_zyw_j9u8Zy
+-HZ1e6pxrLenT2KvT02bD_qAuDwowaIZz9vVP6G8XiY0H4O-PVmEBEB9yq_u7V5cyvU4_vTVcSy7rqydVFv0iB37hHz_bO3h8kUNuCgLMm
+}
+
+AWSEntityColoring(ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementConsole, ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementConsole, ManagementConsole)

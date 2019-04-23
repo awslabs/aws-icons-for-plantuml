@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Batch [64x64/16z] {
+xLO7jXiX49EcQUz_uHGUu_QCdR3f-N9TG4mJvVXZyO4FL6Pgdsq0mDYa9q0F0toBBc9OBY9t-D5s2zG6tr3NVrlyjkgets3VCGidG1ly0dBGRRE00NXM4joK
+O630jXMi8BoE4t1i6-_IdUJhk-9rZrk27knBfRVvZci30VYLaGHWzQhUwTS9730Zs8G0QCHYEMjsPCir1rCEknMa0jHglPTPNOHlKxz4zOBet-UbpiC0EnBW
+LxITwESvJy9Fyy_xVpv_-_KxgvyL5C1IlmFHnXSWNwoVztoHMgpVtyNN2NuvOAblvgS1bklzjnoWQqLtW0IyPmEYbBnCK008i5RoOKf9n8nbo7NyTeDByeL-
+UvtKx4_O8JB6drvWlQwUe61tDKl4Y4YQ4zfY_IxvVYHWtV6EtsP4w197HbtyTkIC8nPdXQlNUpyFSnUxh7vU990H17Lzzh2x_S33-tbrNxokRurdFWYAyVA-
+Mg_kh-hdFm8V-C1d
+}
+
+AWSEntityColoring(Batch)
+!define Batch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Batch, Batch)
+!define Batch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Batch, Batch)

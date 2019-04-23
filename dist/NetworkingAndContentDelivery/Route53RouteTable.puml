@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Route53RouteTable [64x64/16z] {
+nPS73jj03C2eUPB-_-06PmID0NVP0ShimUnGFlux5dcJC43c0V8LF-GMyVQTM_ZR3q0Lr5u8Ogvin0HGTm70Gjce6n0_VSbk8QfgNAgxj-0r0TfT3k3Jum0s
+FN7oDREsOgqOEWwGCG5hST19Da0jOau--E7d0j1HDXqmnaP6iMsqeQrNlhG3PCFRbrbL1kZ8yS0oXhPT-Ju2MDkdxxhwB_rQW7JmwIi-79eTXgEZ5xwC0Qj4
+mEJmgPHeLAcbgr1bbMHpuKSBs7HLo3Y7RrFjrCAcsrY5TO_3-VSdW0Y0lX1qNm4WfY02Ol8-e-VVtotYxNVr3Qg_ylybrcs2Ro2t0Q3cDlMTVbRUehxOFua0
+pnUAhULiB0tmjGm03MSJbNBkLtK95f5ZiY970R8dm3jz-zQp3dsorzatBm7m5a360Lmxe883jNNu7VZ8PVyg0Mpqr1_bOFk_wu-E0TJYmw-Q-4i_cdqivtxb
+_ANVUShduHj-zjkno_Tleo1TPaeQC06hR1NXm2hm8DkhEFksW5Y0rekW3IW7NLtAIY1p7sHVS_9_YrnVytX-V-d_ym1vs8-d_NhCutu_xz_p-HNS8hxOJyq5
+KI-Cg0usNWvajm7OcYK0ii-S-jTTWfhvc2oBsSBg2OW9Ku0CwmGk_h-YvtuUlaa7j7FmkNrbV-YdVFRJ7U0m_zHFtLgU-hacsMJBt_GpwznFOk0Tnj_wlS-s
+yjDd7D--TBol_Lq_TSh3g7S_ixqM6Qo9S38lvXTe0BRFvGjd6P06afL2194lY3ZDpyU_l-VhfmSyzf-kN_yxFm
+}
+
+AWSEntityColoring(Route53RouteTable)
+!define Route53RouteTable(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53RouteTable, Route53RouteTable)
+!define Route53RouteTable(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53RouteTable, Route53RouteTable)

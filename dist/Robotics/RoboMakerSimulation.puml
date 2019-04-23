@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $RoboMakerSimulation [64x64/16z] {
+xPO7jkKW2401GSh-5ppXQTf9cPJfy--lJxqYOWhyrNo1wYyGe7Y1Lo0Fqua8rpjm-Z8dur7X5itdohDVwdLAyzLrzglVo7_7bxYExEMFru7qAmvGKXxjtv9V
+vnDXzqr6wdM_HZW3F3q_4WazzYtS8kInhn5-pKUH7PzZmEc2h-xhji8yUE9k1IxuLjLGKcbe1XvCfB7-RXCxzMDtHezG6kkMqFNpWmZeBUY03tzhX2nyLske
+7VX0R6sx84A1rhui3_FievW2aBehjeLhAto6OIYCSBP_b15p_811CoaBrnfAXEE9ZwdNpp2FAAtaCXXidmMfQvpLJoACFdzK8pWxCsxEG1cNp-EJzUv8d5hd
+W1Le5A73_4jchNEzsmZYwcskpj7rppvBmBNo740ZxFp-qvgKwV32Az_njSNkO5cDNzzY-_rt93zaYotwhHK2WAZNrVAFQ2tx-rTQkJeQVIjhRqw_hrfsVLxv
+Ffw_gAOz_dZx2Jg8BplnrPq1ihVcE4C-k7-XX-ES_rHoBYryb1oYK0xypDHmkV-BsNIy2iCyekpwc26hy0RHw5CNRxLkzQEHNbooECIeByHC3kzVA7PWyzNd
+9z8E2B3ZgqmyV7yQmV_GZtS-8C8BFtdfcy_4u8jV9rCVh1c_-_uBK7L1HM2z3iFlvOjl
+}
+
+AWSEntityColoring(RoboMakerSimulation)
+!define RoboMakerSimulation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)

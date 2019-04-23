@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudFrontStreamingDistribution [64x64/16z] {
+xPU7pkCm38CjJudl_xutWWZEfNHRHpZCdnYTdynuqkb_IWuzGalhQZXasblPWxlY9ktVbf2c9pBweU6Vcto1DpkRaql9qv2rZyuL09ZNqe-wvItU0LXVs9Hk
+0FgQ5WKmSbeg3m0ggryDi9hUgXfWUObhJX-KrGiGVDojIQqlNmrQG8nrJJ4hh9DDqaqA368A85u7eAyrLRxbHUzUowfJW5LVbPlxcbOyKVtt2TfyUChJBcZN
+lhUynsU3oQNvdlRur2y6591TNcOF56z-pNC3PRxRvsUh1alRl6DUQ9ztsmqeJ_W2jBEEFE7bzAtGjCzFq32UyGFcDhPvV_0O_yC7noywVyBpbw-VKb_vMiZw
+uUkt6EgThx12rY_TFog0EldvbSknMOWKS9xZRjlViGBEJvpO9_kt4yupN01Tdn_E7Fp4-Vd1pw-3-iixpiylVdvwWG6CYTFpStr-LvoYF-dd_509JlB3EhzK
+WfFyiivFbU0aFotpMyevyVosoez4B3y6ysimFmVpU-p-4B-_nEzFyVjR_FuOlx_6xyzn_GO
+}
+
+AWSEntityColoring(CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)

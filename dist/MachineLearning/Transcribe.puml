@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Transcribe [64x64/16z] {
+xTC5WYGX44JH05AZxt_VtMAotQXrcTSk7oZZd-dJftIx5jp5SCjtzaCloDu137hWMTOAzlIywhi1_Zqz5R3lwMk07NtePDNN0EkzO-gidWROZZvzOx7rwAtr
+3Y2-QVjx-m3Oj_GbgOkz3oVJDWmhoUMU1zR-GogAh_JfEhvIJ-R7qGkrIHVc3sb0aPZZdSnFaNn10Gpp2BS1G98TPM7FvvYJbbGWEDg9lyixUl12-DtwNnde
+oMzdQEzp6_vizGr1pbMERI1fzV72g-Eda7cUPsH7aWD1Adonh-bRCsX7UCnUuEvBVQ0pDAeto82R2mnjgJVeGM6NlM4ehAtr0kFtzVvRUxrVltVTi_-4Fhnw
+7rR7pqIMZzyy_g5-Fdza-VnXdt_rxUdSXoMPPozwms09pthQUBi0sAlhvuxhxCzwFEa3o4U3ElCIdn7e_PWTWsi2BSaCNl26aLnGqwSrTAiYVG2IwzE7DM2x
+3pLJsTuPLmtq1epOPYsraYK1R7Kjt5JDapj4rTygFVXt-VJf2m
+}
+
+AWSEntityColoring(Transcribe)
+!define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Transcribe, Transcribe)
+!define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Transcribe, Transcribe)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SecurityHub [64x64/16z] {
+xPPdqXn124CVq4JV_xmEqyxpRNGE-hlxQjIeIZ2_h_xhlwg-XKu1oQVn0bLuseBXCuuzomizqyYpl58pXJxB1n8XnFr4BRNF_hu0rcS_kqTVm-Kh824_zmDe
+NtlmgfJFa1Rv8avFlHB77dMoNkONCTF2HGE5Vi7dKj2L_O7F7SeL_pwbs0640YA072FTrXFfYto204XE6rXKHgQ1LIY065VZJ1FnCd13iqD1LfK2Q9PjBzUq
+hGjeke0k0GjbXzBLSuySIO5LtOS9Ks8Ua9A9TIr1enCjfE_74vt4dKDI8cEF65Z4gyILC489aKdiaUAeEVWnoW--qKUUtvllJxn8FypBYN_GVorgFUv_psyv
+laXXns6FvTT8WI1ui1xBRvHyHoI0jL85VHVPlNjCkY2FmbjOAsXD-Og-HfU2feEWxM0HBcWPQc2t-gy44O1eHJ8K00jzHpdWQTZDXIKrqxQ__bR6RgI5x_wx
+jR1qJlrrwh-R2-lSdt6p_npDLFpb_cwvsNy6O7FYjyf0VAufp69UsbzRTK__dVRdJzZVL-FukVVB-Nxw-VVR-Nvy_dxzVVLV__K6
+}
+
+AWSEntityColoring(SecurityHub)
+!define SecurityHub(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHub(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SecurityHub, SecurityHub)

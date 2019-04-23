@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTFactory [64x64/16z] {
+xPS7akGm24MD9CA__uLN54i7x2cyERu9uF0SG5rI7tyRH1JXA24EjIXi_ny0HnWxS0I3_lS_Ph9i0Ep_2bW4tS4Yn27XUQapRiCN-WHWjm0mBs-_w1RhyW44
+HiSjo22_gyygauxAC00sFl197RXFs9ZCozRoquSwz7aRmVP7fZoAhsz-aBxQ9k-lREKIqTjttmsbq_iJ_AnPBb7zMh_YErCCZlBu2j-XvoMeyOUZnS-d2DnV
+Jr-7SvJwLp-U8lsB-ZT-G4i0dO0kgdx0ZbtwmPZa4and-CRE1_KZqOtGCt6cmf6-_eoD9mA44X0h0EfyrynU4daz2QFjdrzfPF9-CWFKzS-rEH7962U_xP-K
+zs_yVFvQlvK9Dyz_6l-BDuioEOhVrR_oe_qwVedZ-JrnTh8Y2R-ENq9GwdUHV6t_E9EsVtNyp6cXHTBtBxIHFb7w8vAxdv_gcw7nI_sAxt3rw_oH_PCDqzFF
+FU7N-QFMFmc_-_pL-TEO4ml_TK_wwfpdhu4tmd-bgT-XU4Dy_nlIh3_eZUEqvmUiNxvv_VRjwyTlNxz--_hvszV___t---FVnYS
+}
+
+AWSEntityColoring(IoTFactory)
+!define IoTFactory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFactory, IoTFactory)
+!define IoTFactory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFactory, IoTFactory)

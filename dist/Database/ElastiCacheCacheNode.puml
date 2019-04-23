@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElastiCacheCacheNode [64x64/16z] {
+hDC5biGW40HGQA-w_u4t7TOTtjH8zEECHsLkvHFMv6PIt_HC7YJd2o-I5RwHkCbSFades8o2p7L6OXwCDqXTrVTnFxeQCCaQHobotZxEVBnuF_F-ZPS8xy4q
+MuDauJ9atTBhvrVaP-y4UYw5R28W4CFk0KRskm3iHoylG-7hhS9Tr_BLtdzjV-1bIKLc5sTZorUjuuGu-eLvvfL3AEyygehjMOY_VUGOz7S-p0tjoqp_za0c
+wvsNhV4JXdjowkxuwPe_xsBaGjKdyz--Rw7WgnlCeM0X_xj-Ek9XejAdgY_hTrftg-zQHzxym_VFK_jrI0G0080mi7zhGlpXXd_FtZwVp-Vp-Rp_P_tls0_Q
+BzXFsc_OZzglti--0G
+}
+
+AWSEntityColoring(ElastiCacheCacheNode)
+!define ElastiCacheCacheNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)

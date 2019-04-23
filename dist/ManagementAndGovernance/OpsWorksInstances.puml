@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $OpsWorksInstances [64x64/16z] {
+xPS5ZaGn34FBhNl_0w_ooKgN1p_aYT_4msuLTpzUG_cJfMnTKqH6Q8aejdHDawUKHyaiNO98MYInRHZjVihNH1gMF39bnf97IwGkUIH7ofRtb7xB5qSItf-t
+lELxAwHj_QcKTUkF7fNys3_yr3zyxfyhJPDbCbGjQn2RcwOuPyIa2I9z6l1Ymo2ZJ7RWjjyFw_-7WkVlQEVyOESyiYTrVNr4oeZrzQid-QtziRpbx_t_tj-V
+U_jxx_bXt7T_tNT_tdj_7xb_bhVy_VlRlVlZdVlhlVlp_Nm
+}
+
+AWSEntityColoring(OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)

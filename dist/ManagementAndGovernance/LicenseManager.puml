@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $LicenseManager [64x64/16z] {
+xTC5WXqX44NHLoxP_tvJFUu3nELybzi6zE_al_ygtzQB16_JNaDWUOsNDy2eVYq0w7AVSIkVzCBGrLvmovxqMWnTx5rlnPCUJ82UddyIBhpMLxuI4PMhlU0D
+qhNQcxp1rlkmDqJNpph-y3V4Uc_y1ljvnryF8kh1Ud-l1927ZvjzvUH4a7bpq1i6Lp66RVS1C8iDOGPYjrTu6s6GjqDtUuCReEuAkCCs-sBetL47eE3QwYTd
+WL-DbKCON3kzWvDGNINGoPBXExqY6jH63CeYwe3kxP-2KOx9Ey51U_jl0GdiYsjsAvGWc-CdL-Gz36IGW_4FW5KPYFtnRvt46OEZ3Nem_mdY4Iv41_E_dQQZ
+J08H-Sdwhr8ChQe-wPbBYNHUz_h86qLKNTNNQzw8bPvm9wz-J9-uG_qfbriwNITpDb6ftF9UDxqJG3vz7oW2O0RWlFTkF-rRA7e4IH-fUdZzFVtttrS
+}
+
+AWSEntityColoring(LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, LicenseManager, LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, LicenseManager, LicenseManager)

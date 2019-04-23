@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Robotics [64x64/16z] {
+xTK5eXin38JX6O4jPUz_tygFmskNs_s3XYyCUEc8avrPBFJ9I6YRpG7vz6qxJPRb-UbFFzeV_l3XAg8UQpuL45K1D1TyW2rVQaJC-xGCHQMHdjE-Qg3txaJV
+JYi-NkysMow_Vw4Qt_F-2odVuHEz8zTzm0onwDE9b-Yvu1sm7fdH3V1fRx3y_2Z19hsTJpNObE_mosVJP_prkowSy7tSszNKVcySGYt784q7fUtr4TJY86GC
+1HpthOpOvmNmbyVGKIBGN-xR2-poIMFvXgR86aBhQdaQSuSFWRF6gQYBgX6Quy8XyTmBENoLfJulovEomvjO-QiQJUmly0huRU-0FlUfms-NV1jUywclI8XT
+9I3tVVvCxcG_vV_xy8Vtd2tE_4BVxIaVLzGMKk8jKkOZyI_q3G
+}
+
+AWSEntityColoring(Robotics)
+!define Robotics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Robotics, Robotics)
+!define Robotics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Robotics, Robotics)

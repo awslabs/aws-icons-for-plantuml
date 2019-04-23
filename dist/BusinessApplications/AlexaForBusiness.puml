@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AlexaForBusiness [64x64/16z] {
+xPJdOYGX38Fb0Yxp_kzxmLoPR8ETFzVo9TkHX4t9FvGllWZh7rZa5LmPcB1wlednq4dxG0W0Mxv12C3zPwWt1YJsmmdKfr74b7K2sQuSq1ZTgmuGgurF2jYk
+l5TYYRbUweiz0o-vCo0zHd1q0TZBm7C9erK7s4-UNDKtSAweCGveVa81dzwl2OAFftRlIv4EYbMyZZ39EtJ-qbRL-odbRcQ-w43zNY6XPsnERVg_eAEDe1XE
+9wgU04Ksz7o1mjBdQ3zJzGWy3ReglwCzwsrRDO3nOufXDqHbnrgliEha3REmsCvlDyIENbxLRz2gVzd_6X8_E2_kOT2DzVTJ_UriVdIqvVwhZUR2avu_84GA
+RBd_0_2yny1pRxwYG-eEYBn3qG-3R9p_PDmFSz1Y-aK7PmRVN_U2TZWeLp2q3CXkV2k-vmglooi4q3ZF7dOOABRk_pRlV_9Ffa6mtC1GrOTCWodNJ87c5iwW
+5lFA75Z9QrNt20N8wiQg3rDEdjkuG3A98aOV-f33Sfzvs0bASnsqvE_h0VNP4C-tzTcaHnxPKArxNrzqhWrnJH-D0V6yfFSc0CJo0WuY0AIUbt00qYpoAbRQ
+FvelllW6
+}
+
+AWSEntityColoring(AlexaForBusiness)
+!define AlexaForBusiness(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, AlexaForBusiness, AlexaForBusiness)
+!define AlexaForBusiness(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, AlexaForBusiness, AlexaForBusiness)

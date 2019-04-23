@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTDeviceDefender [64x64/16z] {
+xTG5SWCn38NX9xBW_WVkZiCaJvdoboj_oNB-t9uzSt-FhW2Ytip3222BrxggpReo05K0h1xpl-l2VGnJ8MoHRYnqzxkeZU4UqN768HBph5cw2Pq6dIU8gDhm
+o9cFuJaB7wOg0aJdwNmtGx0b9r1LlF9dCSYCm7dMAxnjiceJzZRFyDnoy5lzN1flzrwPvP2t-G6AgY2Cj_aKG0IGVADF1K2QR_OPTBsSMW_AohfOdgSgLzUV
+HfYQttyxtqOHslaqO4llUPqZomNNeO3LZJ-CHkS9NbcEJKN4tizV0_iHDTmXbPabcEdqPPZfVkIDtoyo43D3Tbx0p0IR8-qz7w_yYfFtghDH-_pJhDIvzjnV
+Z9gSG4o0tth7795tla80YEUjJv-ZgCvxxi_R7RyRbNV-x6QxzJDTt3yhJwqdYgNF9i6epfVtvsy-yXxx_SEmIK3ZiHy4oJu1U6JTyuCnUPypmEF6Jys-vATN
+EFUtUlqATl0AVQ3xLm3lJhUWq_rU4CRycM_86RELNf-Bj-UUFxTdpru
+}
+
+AWSEntityColoring(IoTDeviceDefender)
+!define IoTDeviceDefender(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefender(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceDefender, IoTDeviceDefender)

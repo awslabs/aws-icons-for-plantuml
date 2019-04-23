@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SimpleQueueServiceSQS [64x64/16z] {
+xLRfVkCX21n01FRz7tYbMN-r_yErzLEJJ6vrW739dwV46s-4MzM6Ql43jXK6EbZzcsnELj7Qe480nDRPpW1N7_w94b1YaQu07xL59T2I2I60NgqNG9VeTEEi
+kY90m77hLVgl04twBGoO-y20QQGhQ1Q58DIvVGKoixxlpZJORBDRxpM-Xhzlr8cAOK_1Vd9yrt7BPnjCWJmABqmmH4NbZXyHOoGIBC98Z9o8kv8ZZI6HH0WD
+98BoILO6YLqL3N6tCvrdZHJk7j54MRhmWvvd2ASmEz18_j1aAIP0dxw8Z7nkbVHhr5EQ5MW_6k6S0WZHPND4SaeAZOUrvIkV_maKc800b5pgV36YN3I3T96t
+_494w_op_UtzP7_FeMlxk__2-MEzNljF9_vh711TnSzx_6oCdvxpHmYyaZ-fnJRoDoBMwgTSrm_xj-lNULA_I_r3v_rZlt_jzy-4WJRwzzRziNz_xT-V-_Vt
+_lpGvnUTp2yRyzFs_BQEONvyJhpnnby
+}
+
+AWSEntityColoring(SimpleQueueServiceSQS)
+!define SimpleQueueServiceSQS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)
+!define SimpleQueueServiceSQS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)

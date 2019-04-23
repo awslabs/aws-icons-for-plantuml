@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VirtualPrivateCloudVPC [64x64/16z] {
+xPK5igH038R_fAFi_U-xNVrO2TfC-HJVA18Nbk_ZvUKbEnyBXqhhYCKdqju8AopFDIW1hDuP_-nXt0rW_uazqmZGH_82Q1PrZnHO4U-a0FCX14E6U570iUHS
+FHKKEvq4zKP46XFczJ2c3W7aTvK7nQ5MD7DbKDovNwDVGpRMN9DpNNifxhkqrhp_oIZkdLFadT0XBu7OhwlmI_eQs9t1jPHwMiLe0Ep_idd_1cMj19re21gD
+_x_xFTWi8MUCaSf3yH9gZXix09MQf1qhQA0idV0VjV-Tq0uw1rwFsNvGWktwqVULuweFBVzEi2sLWpvYsBoy3cC5Wi_BEsX2Fd8Gl9UViG_Y0M76FaDtCxko
+7nhRsvTI_ax-ntAV_wI9DLjxfQBJQpPA_vL5Fx5YKm6EvLW1YTzGvg-IofY09KzzCsatt3tIyuRbQtXvUVaD
+}
+
+AWSEntityColoring(VirtualPrivateCloudVPC)
+!define VirtualPrivateCloudVPC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VirtualPrivateCloudVPC, VirtualPrivateCloudVPC)
+!define VirtualPrivateCloudVPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VirtualPrivateCloudVPC, VirtualPrivateCloudVPC)

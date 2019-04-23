@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ClientVPN [64x64/16z] {
+xPC5Zk0m34M_xPZI-vztgT5ahDAsWeNf4nNy0eR-j_7oyX8gHCGQpsm1G4G0vC4A1h16zWnZG1_eqz7R2pZWVH84k-KpQhm3SUlqqYiA2PNscxNWxMw45UtN
+17WleHQXX7Rj6xP1gJ4o6PU-max-wNBbjnFV8NbkE-Epdx-OTxlgPmNOFk9T2028_UEB4axEP-Md0yG_A4egu0Tw4hoy3Sr0ymxbhQ9eDLbz86LBERg188gl
+SqlRBho5a2MixVi9El3BzxJeWx2eSTVxXt11OYwyyRTf2co8-Kyk9z_Gil2fhHkqUjkATuKlwpNMWo-p6W7auNoC1HOTLn60QpMTpXkOBI9IXy-OVcQ62w0N
+ymU0z_pr5ta_nLL4sl0D07JuZOdRiAzO_GJSWIpTVCDtoB8q-5C_m9cCUEft0GZI7_lPY5e-yaTuvlnmWm2e04I_Wt7rsVhVnilBotS
+}
+
+AWSEntityColoring(ClientVPN)
+!define ClientVPN(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, ClientVPN, ClientVPN)
+!define ClientVPN(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, ClientVPN, ClientVPN)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTDeviceGateway [64x64/16z] {
+xTS7pkGW30LWs-3oxd_X7OmYMH8fPFlk_wOvYhyqc4R_L5YDBcFALzo1TiKRu7p9qQzy1-1ynUyzd2_u0m_d4-xztlVHnslESkzbTYuv2H0UBaJaySbHZ7wE
+y03aw5tmuKS6EmgknQnczuBF_VlSlzU2HvFd_aj_uP6BJyu_HSmDrBrl-69AkU6hiYnsVMx0HX48fdrF78ZfdTvuyZFFlWm_zHtBzATUvomUYPZn0FInpoxk
+shcisVGj03Y_zHmOYPUU5R3cWDkCRte3c1fAjlUlOa0SsVCYo0JpJDlqr9FBw_4ZKSlnP-Ot_aXtXBxtYX7VzThw310MGECjNzD90Fl5lhUP3c0U_w-zVbp6
+B-8ZNnv_4yddrhVyClghFZ-fBKCF_KLM_ik756-zTnwjVL5OyHBJ6m3ZKJty_PNXP5avWEXxljTljvOBRNeLoHQMKcIZYEZqhUnoX1Lv4i-kNnuwbAb4BBVO
+xdsRXovKSvn4tFjiQyl_Fl7iztyeqp9YkF__0vEBzUvyvTczqH-Khtm3
+}
+
+AWSEntityColoring(IoTDeviceGateway)
+!define IoTDeviceGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceGateway, IoTDeviceGateway)

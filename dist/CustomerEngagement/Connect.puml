@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Connect [64x64/16z] {
+xPL9beCm34HBacLRgllVjnyF19qvOStVPFn6GuNaFHSN5opEsHdTLDLwa2VqQIXQy6Uz0-8pCgOBPF17tO6U99DaBY_uwzNdRf3ZjmCOm4t5741ylmisEE_x
+iUncRNntUNcOk42mqBxgll7nFTYC8MZyelpgdaV7vaao19EVVCLMFgSV7NEhm_b1ttrE070U1v0JbkGxFHhADtYl5vakwXc0zk3RwC3teIUj6cu0uEcAolCB
+tUju6bhVTic4p0b9PhINSUG49bal102CMoWqKx0ytUFzYAqdb-xTzwygL65x7FaYUVke1-0aExGQ0xHQ4mGVVOurNfmcMfjJECa1Z8ZaRSGU_SLX02YTSp4d
+qCbTeR_r7Pwj9a4_JllijzNlHr3Pe0R9R_o0hiV0W7dCgYAzeoyMgEkv7P3EuxsGygjEVNJh0ow5HF1_ec4tPGfU9TYWmODSw2ejkPD3Njw6c0RnNinAqsBr
+5HV0ynNCXWEv-LKNDj_V04RVaF8v1T9NHgNm5TpPVAO3xSJ_yUep3EXvQB_v70AjZd_sg_OyvpEqxdQd_ANsO9v40NWopo9L-pdeLhMVusDMBYuk_W
+}
+
+AWSEntityColoring(Connect)
+!define Connect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Connect, Connect)
+!define Connect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Connect, Connect)

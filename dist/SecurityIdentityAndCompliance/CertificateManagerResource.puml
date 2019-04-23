@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CertificateManagerResource [64x64/16z] {
+vTU7akim20LG8vh8_t_m8tT67dcd8VBwtYrnEyIu-_hsKMj7ajFhWn1yp5PYURrQiUNb7_SkhSpbk_bPNgcLltx_4Mk6gUVPueM4yRadXut0XzEX7pFLL1w3
+5OFZo8z8mdSdMI76WQS4Jizc9jMzvkBN8rbGovvYhUxUK53LovSlKyKgITKxPkpb3ATvqLCy5kN0wZWQAFdylgySIvSzWF3YgAPr3o7O1mDyBLtl7tDZtBpQ
+FpBVYw80-2ewhvh7lbvde6_7HDMlWyt1jqEovZ77taYLzYbbJzZdpuw2wXvxtSVTZoVdwy2ZG1Y_vxC5-9771InPvhKkNsMFaA02j53h-Z_Kt4r7v_fFpBGF
+dth1v6tuMtfYfhRdYoRkEzpq8t0CZgRtv7Dc0U_vZ14P1dfUSUwtFEESlSzbFl68sNRzy5_w_AOV-fYL-4R7_lvIIyHpwo9qyFwccn_h_UtRvmS
+}
+
+AWSEntityColoring(CertificateManagerResource)
+!define CertificateManagerResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CertificateManagerResource, CertificateManagerResource)
+!define CertificateManagerResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateManagerResource, CertificateManagerResource)

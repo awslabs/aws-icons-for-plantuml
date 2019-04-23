@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2OptimizedInstance [64x64/16z] {
+xPO5cbin4CQ6vVjVkF2uuC-nozrL61JpFv6VWaNEuIetMerfucuSQDG4VARqQ1qeLvb17IZPA0YPHa_De6G1FRm0bnKIR7_G9T_0Dxza2Vr5_hl_xglgikzP
+09MXdr_L4ntwpiNsSV34HdvoXjctVckCsayQX1qPPVB0xfpg-auZEpDNa3BmwMTPtdhNTrgphbuoyhFRV439q2_8lZxq5OYUhg_v9j_Yq2hJTU1RnqyEOisF
+F6jc3lllqiEIXY_Dtq51BQtVWGCws3z87mDii7-nlczjqBu2fLq_6FZYjFuFA92lvCUsqzGyu_CxQNe7cxwKNxJjjdrGsvEg8n37-LbSvFRnHTbB-MtxViqp
+1YCBgFHVKN_U_NUVDTykNvTy1_y9__yLqBNcwwvkApfsnJPfEe5vFcg55Yk4N4GnnRTXP3w7oL_2Hm
+}
+
+AWSEntityColoring(EC2OptimizedInstance)
+!define EC2OptimizedInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)
+!define EC2OptimizedInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)

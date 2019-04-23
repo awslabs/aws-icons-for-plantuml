@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DeviceFarm [64x64/16z] {
+xPO5ikCm44JV20RQzp_lObpwhEyiGuTLUIMtDQGVfl_whvgpTB_2m49tAZlq3ZrrXsf02oaQZEicfc6kGvBSiAaBMflEraQTbtBDU4eQ07sjlDFuUTCBosh4
+UHIZj9SRt0uzQSSnyLieWFbxZNzH6Hv6FZgHdV6MvxzJ3Z2KuxQMxStR4EiAQnf3YZ5S6gUZGsuGUaMTMIgV8SLfuxJkKaoleoRzTRvK1dJLp4V6Pca25ggt
+-KxtXkkP4lD1s_567S7GCpdpK2CtV2CqQVKigZfTQTI6Tp30_7bKOJ2quUL6YnKfAwgYcmrjUQcq8gLIAwggf3rVkVAWGnkSRdBFtzxFgC4QC6yBz2ky55Yf
+uz9zVDAaGTpBbz47v3K-GwVI0DUfo3t_M6MMUgGj7xsDqYcp1SxMVCi7W9MUynrWxlY6LsS-vuEMWTM6DtG4VV4NyxSpyzNzVRz_0hJIp8Ty-Ss_l-r_b7Bq
+MGgOTVBbXakpzr0D-jlr-pYJPqXbf3HWxEhtwXzn-pvIOO0hUwuwqlDA_ngJD_hNld_g6A_rptt_JgpKN-tV-_cXOuRLMhaulrI7biluvVb9LMj--Xdpstv-
+l3w__gBvUQ__-g-F
+}
+
+AWSEntityColoring(DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DeviceFarm, DeviceFarm)

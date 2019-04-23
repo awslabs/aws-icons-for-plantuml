@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $S3Object [64x64/16z] {
+rLT7jiGW31kBElU_yCV9RvJdcD4AhLAGEs2_3i2P48IO6cA0R9CHStt_ekQ47Ssnl2UKwBKYrfkWbWFgnIskHWyxN8jphqrYlaI6HthITIjlSVzvyBoeRgn_
+GcqeOj6hxMNK_sBI2yoq5XLWqUN1GKD0QNIJRAzAdMJ3oNKMGgF3LTfDG5ZQ5PtrgHuiFkQN4rbLpLx1oySSgJW7nIxoE7aFFnzZ1A3URo0Fwg8Z-CPwbISx
+VEdjbQh-xA1q6O16Vmkf2q3et74687HlsEEZqvW-uQVJ-MpysFonzSFMBxb_sFtBdX_a-SMUd-pvJTuVvFt5tf_a_Kts3sp_GlPFPFz6zezS_qhsprp_JiuF
+nFmImSrF1-1CV04
+}
+
+AWSEntityColoring(S3Object)
+!define S3Object(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3Object, S3Object)
+!define S3Object(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3Object, S3Object)

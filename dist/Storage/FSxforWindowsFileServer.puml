@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $FSxforWindowsFileServer [64x64/16z] {
+xT9LOWOX30JWII0otF--bNJvtLzgVEioE7-SPLcMPV0fFYKPNRLPy1a2-P9i46qA19-0pYmq64ccvtFvCLkYdC9Zzkv-dYovBua1IPB3qHxEKzhWP1LCI3xU
+_WxZuAR1I4MCHyUlCc8vUoD2Gq_VoTlpboHT0NKMju3Ii6FZShvvOSakq9mbvp29B25NycVb6dJcOvXmSpNVUMnqnDP-oHVo33YPrNb_fNv3a5gdptp5nWFv
+h5z7G3bwlSxeuk45dNVogkRk7OZXsnWc81i8BshEZIi-jIIR1ej0Prvvrro8UwvJJ_vsox8iopi
+}
+
+AWSEntityColoring(FSxforWindowsFileServer)
+!define FSxforWindowsFileServer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)
+!define FSxforWindowsFileServer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)

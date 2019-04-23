@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $WAF [64x64/16z] {
+xPQ54kGm28O_GWJOzt_UaywMuMJJdYkh3VabJ2n-a_WV_yC_RLhhFbpRfmGYzzKRbI3SPbVGFis_d61r8KFwoaxh3i5gW8vf8ZQ70csTNQu9NA7DWqdrQ9yD
+r8l2bc0XduWiOLNudi0ZmiRqcha3hmudIFTFKtS9l04o8sFSW5UN1aVPCZUEaMr3AGJALAYY2zt25-A7ysKUCUaE5UB2sk4RwpbraH66FZemga1x2QxP2QZH
+7XCLl2Zi37JcQHGH10sZZsfWqb_2lIW99Z323XisFOd5N-6jb4fnWnMB7eqoSnHxXP-CWhUO8s8m7WgaxS7S3Z_hv3aX1eXW-mAajHnc_WuOAMklfj0I44sN
+_MbfH2ZuUZQeWAmhl8CzV_qOLyecVkj_qeiDjsBRqElwTTQpYXOLjg_VP1HygMA53UPk_YI-DbIOOjlvMvsiz9eZIKlR0XZYQRgipDAqNxyThVekpFtwpMm2
+r1ydtWIj2llzwuJ8jAEt3r0Fy-lzApJpta5WJGL6X76SJ7gzVu_JWfwdhzMJwVhy63aXUjEn_8kFdstgrlcvEvc-zVp-SVU7TUF-iYVOtv-k2JRtj_i4-_kZ
+jxv3NDzVFNwJ-1__uoq
+}
+
+AWSEntityColoring(WAF)
+!define WAF(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAF, WAF)
+!define WAF(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAF, WAF)

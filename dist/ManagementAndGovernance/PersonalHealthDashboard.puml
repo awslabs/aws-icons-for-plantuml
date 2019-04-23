@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $PersonalHealthDashboard [64x64/16z] {
+xPM7SkOW38GNDOJk_P_tYWy7QuB-iJCrvKl-Hbs95OulnGy_kEbVkgUshd-nrLRI6HEoc1XXmZrUCXXeOdyH0iYFlGcW_sqDu14rtj3w730w0JsY0xJQ6fhN
+kxUyl0BkW6Q1hLJ0u4WeYA3re4n_lpG1z5vahxQtY8nXqrO869l87F1DbiPUFc_MFCQo99tx00owYOcFbPCAXTsUFqP4261tvajfYzGb-_aEBiyrfPRXnJOU
+EmHwdUAL0mMIGr_dfT0qhAeUk_xYKpwjiys7aSbT3FHJVepMbXgB2bsXTG3ybfRb6KxgwmeaAC6d_8Wp0G8QyGAV0HXe5eeSCnqq-ylfmqVuIKC_b1zlisfz
+KgnXiC0RV8YMAJz2i2Zy9nug4nsp-cG6FkI2nqj-NQn2yDLyYo5aw_e0nQHJTNVNDc90apiBAXkj-siGD2fg6-avIS1nbxLPbdGV1tfE2NeymT9phYgwcbme
+18cdC2IjzOofUSNoc9cpdCkdEHo73esF8U3YUN_VHhfoznm708-7rBvxZbbyNNxuuGy
+}
+
+AWSEntityColoring(PersonalHealthDashboard)
+!define PersonalHealthDashboard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, PersonalHealthDashboard, PersonalHealthDashboard)
+!define PersonalHealthDashboard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, PersonalHealthDashboard, PersonalHealthDashboard)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Timestream [64x64/16z] {
+xPQ5kjim34Q5jgJ__TztYKjVoNKxtkuf1axCbkfdyCKNsFZG76Bk70_UaYkQ2TE0HJqAMBV3c8ZLsy1LYDYYiAQd4blFmfdARaoQMD63gTsqU1msvbXvWF3Z
+Sf32AyLJnvDB_N9fvhVlzAa33qU5rtmcYviE12gD5lrm8l6u361LD27oMFIH--t4QWFT3wGbSjNVoF1D56OHDJ_CfkNozz-TwrNubd_BR_LrJ2aaJ_nP8Up3
+hpnE2sMUL58BTxwBY2QQoFvq8vhuf0dS-gfAuYH27SbJtuyJUECuTzcn4KI64khC4RF-AsTYzHvP6vcdzeTNeOmvWVdygsv29pZPXu2TPDR-mZyikEYzxKIn
+HqUX-mPpA3LBpFm1Jco-KKSZtf3D5A9uxLzWBwKcEWvG7_ZO7r107nURUzPxVZEbZavZTPi3ptr_u3UoKXhpnzoPVBP_Dk3MTokKaeovpqGoyOLqJB_xzUF7
+YIEIcBI_yo40rcNyS4NcY_dJbKVSLZDLJIQv8J3rHmBWgcF_j6gcDypzwzG5XGCfWIE_PV_CDR_Fol_U_E7xyvVlpv--Ft_x_lnnFNyz7lpQ_7cTBxxu1W
+}
+
+AWSEntityColoring(Timestream)
+!define Timestream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Timestream, Timestream)
+!define Timestream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Timestream, Timestream)

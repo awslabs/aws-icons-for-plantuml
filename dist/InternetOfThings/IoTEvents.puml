@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTEvents [64x64/16z] {
+xTO5RkjW40JWcUNvxt_V1tRAjMGhmiYVg4soQDGhkTrkPRHy8XmW4FgmT8KXrS3eOIf3vmqeBKThqqu0e_E8MU8UCW70itL1W66mhJZ1dBMkBS7nNstXFalb
+9CrBPtLr0ZL4I4a0900hdPS0uLiptfAc38YB2IG7UwchMgkk9I1g1Mps2S3K42LfJfy70umCy4m7N0Lg63fbUWLI1XkjfJRuSjI0Ej8P_NM4APXsGtJ3PPZZ
+bNrPqT1aQErMmLMp77rG7SWYIkzcldHRitru4BuIkLO1_0ostffvb-iulW7YWIJUn-_zN-0eNWrM6rBp9cE8qKFN_c7gG020Vzr_V2pKKMi_BuwKUtwTo8VO
+FbeASFyiT4wsY6h0ghiCxBsdrYaDge5gmyPcQn6kSnpmbO1tXNlqUrTdmqc4ce15pj8r0SuG_hXyyqhjhWwmbyR074tLBAaDTlh-oNu_9JoxkuA0zPNxzsQ2
+UB2w_FpOT8P7rbnyVZtx_7po-Vti-yFBkzrkVm4
+}
+
+AWSEntityColoring(IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEvents, IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEvents, IoTEvents)

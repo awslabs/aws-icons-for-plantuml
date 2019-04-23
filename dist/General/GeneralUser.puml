@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralUser [64x64/16z] {
+jLO7WjmW35o14Mhp_-Uc4AvZHullPglBg1S_VXJq1xlSmke1X4ahpxEh1bxXygG4ai4pbQuE0D7f6UK6mFYVKYey3akU7e2tzsTQ09uLK0BGykcSfGMG0Vhr
+h8wp2J2Wj13hGCjP7-KaAfv8GWSuVMLffjEfPPR9dPnTq-7PDHfmvAwjqIzqr4G0144NgP4xVF8Cts_gHyB_xVYtdyu_EMAx_cQLzzFGSABzx_JVDC3s-t_E
+7rgUJSu_tvr_4zK1R_HEESUW9t4O07Ylyx0x0DYH8XCx9iBTp3qmuVp_-3SVH9vI9honn_XDBAwGEimMYm32jO_ZAW70wWMT0uXtkxRKFtXtA044NovThTTR
+7O3GcguBuKiJbKxApez4SdrPtwJP5LzzPO40NlBrBL-NhjVnBsa1V-xjE1vf787ueCs6m3mwe1y7g-N9Ks7xC3Dppg-76GEIews7gINc-iKmh--2aOS2TPgo
+o5qgXtBnn9DzK9eRRmCoayP0s-4tW1SRFuqoisx3Zwq0sFY1FhQWGp41iiSNu7luVO_VCVcyn-VlubkN3NIR_1kWKJ-xc1E0jl6uZzy
+}
+
+AWSEntityColoring(GeneralUser)
+!define GeneralUser(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralUser, GeneralUser)
+!define GeneralUser(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralUser, GeneralUser)

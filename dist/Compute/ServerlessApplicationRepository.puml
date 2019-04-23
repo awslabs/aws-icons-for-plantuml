@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ServerlessApplicationRepository [64x64/16z] {
+xPI5ZWCn34J7EFx_Bpujw6hjDIa8Zl9A1arbsAH-5el5Oi4mLRLWlKCQS6Aibt50B38D0aYy8NSUHj00VraUfxKPSRhFaa1KqrS0MS-ZiEhwxKVfAlPK6GdX
+HKzvOHSExtRowC2I8R1doi-cnpvz7gNdCuCGt8eCY05-gMqAkvx1wlD8A6kA2y3giEa9GBE6K07TMir8RZyQD6W_5m8OntB9pJ1WjnmRMOtP5lmirG5JABU0
+M7wTK8n6b-SAyd0SCNd2hYIqIF9OePvwSikniQVk483i05wvEKT0MIuT80Pwd5Ybu9CiHMUeDvwqYWEsfPGt337e__w_NbCN_Nmn13m4tYDW3GQGWx5eKnXq
+Ud5UIRTM5nt8sSNjESFFxGr8nPJX0UpLwXZph9_1Oh5OV
+}
+
+AWSEntityColoring(ServerlessApplicationRepository)
+!define ServerlessApplicationRepository(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ServerlessApplicationRepository, ServerlessApplicationRepository)
+!define ServerlessApplicationRepository(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ServerlessApplicationRepository, ServerlessApplicationRepository)

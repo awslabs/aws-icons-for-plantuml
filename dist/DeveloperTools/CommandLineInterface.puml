@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CommandLineInterface [64x64/16z] {
+xTO5RWD144JHXMci-zyt4PKCCrQh7Ow_qF3AxDty6RrwXN9J7b8k9XosbJDC_R1IO-KDcSX8HE91jlAQ-vwoMMndheCkFSwHUdWUqlA6KhRonrdgMFbgAo_X
+XK8-w_KhiX3qipsUzF6KXtAewpdGy1neUWvqFGUwdWDTpu6Uvu2XxnDZsxFlOPCNKFBaqdxzvBYixCap_AAo9yUnNHIeUVA4oaMbnx_alTSF8M--__xD_t_v
+JxrXNhB7np_nUSd2tvELNyMxGowkg9y_1htp_75IuNILL_o8Nhrw0m
+}
+
+AWSEntityColoring(CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CommandLineInterface, CommandLineInterface)

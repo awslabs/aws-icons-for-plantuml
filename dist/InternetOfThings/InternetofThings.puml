@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $InternetofThings [64x64/16z] {
+xTPbeXin30JW6S5ArltlMrfuzIjPpf_IXE5BTcN4b_mFcvaicfaP2Jsy6q3U_57T343uUA_HJFu9_h_FVCKV17XiUuEu2spJ1tnK3KTi-LAUJwYruntsvTqo
+UDy70JsVAi1eUeU48MkCIbW8lEKTEYh962F8hA7mXW_eTGuYrx4hOjrJdWxqT1_XgYz7rFLKzNuMy5hoeO3bUvy6Q2nu0qt1c7qGQeJzqXzVEcsIioVpIrS-
+VkKfrzaULRUlEgwA27_XytvAglhfNPMyAvlhdZmzEVdbuxVRstJyg_Nxsg_Nxsc_oJ_jr-W_ax_wJwF_JhxHVvyYpdu8E-FNtdj3jEOFcxt1k_DNllaK-CRy
+oVpiaytvyueJkAw-jNuOtKXpMctwAjMgRN_LRzUxd5xyv_x__kc_7zbCJ7uZBtlAyqHj8qfS8QKV4dz3FW8
+}
+
+AWSEntityColoring(InternetofThings)
+!define InternetofThings(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, InternetofThings, InternetofThings)
+!define InternetofThings(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, InternetofThings, InternetofThings)

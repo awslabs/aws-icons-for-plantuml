@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $KinesisDataAnalytics [64x64/16z] {
+xPO7akGu30GB7g3-_zyxzR0bnexyUfDXscQn8Dz-2VxnZ_BixoBgWU-m_ewGN-Np8pyW_PqWdimFwcCRj3r0uEr5uj40kHHGS7k0Glee3AbxRjUqloDmFWWW
+IBsZOFShvBgk0NG_eMHPDmM0ngs8lgxtDWg0nFFU3B8sBnUyCjGZgmwxX2_lPacYHuGouGKHVn07vqzlJk_cqpIroZ0Lffw3JJy1xXN6vXPPSyZq-lQ3_S6v
+3_vkZXbYKJLtZqwrRO8nH-IOONty4MzxfDBQ-arLXhkjP3iWhI-exIcLOKBy5Rw__Cfj3jte_KadmpPnSVifH3_3yAFzDvmlYfhQo3JZyFtZnwkjABP6tV4J
+u1YFNvc-z9F-HrV_-Fpvx3k8m3j--6BtytV3zzRzVMgzVYn-kPdv9Ty1yjaU_SJCwb-wVjeq-99qmKyUhjyy-q94N0cRUF0ltJzyKWJ0G2NqYZ_UloHRctsP
+zAg_tZzxqEppPN-yVqkxxmjy3RhlZyylrkxx0LsAvDjFoEmNRFO3qS1nTlumwkqRA1Xca22uGXsaUxul_hB-Ddxn-JLzcsg_1F_unty
+}
+
+AWSEntityColoring(KinesisDataAnalytics)
+!define KinesisDataAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)
+!define KinesisDataAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)

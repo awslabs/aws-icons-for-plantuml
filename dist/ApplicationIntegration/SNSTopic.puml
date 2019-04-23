@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SNSTopic [64x64/16z] {
+xPO7SiKm20KNDOJlV-28LAKduFJibFqDssBWpIVBFn86Pymm0v3ZE2p4AXIytZI4NTTR8qIpVFr__N_zOJE4psz-Vz0PHi_A7n07UAC45uvwZeZwuro7KQ6x
+AdLJfxW6w98Ammkk-u-O0-fzAGnRDDgcGV4-AvWZtFL_TcIewe3k4fek2jLLAQvszPiEhY7qwVLWyVanbqYyyUJh9VFyNxv_sUV_wlvdvoSxlzdzIUvlFZ_o
+F7v-UVhvvGtvCr_ht-Hn_jXsVrqIcZwylpP4bxRxd_B_9yVlo9zEY7vE_fGYX91IlaN_3zloPouBpLMfUglP4DUMFtPE_eo7-wlFxQy-tD-nn_X3oIFnK6Jv
+vm8
+}
+
+AWSEntityColoring(SNSTopic)
+!define SNSTopic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SNSTopic, SNSTopic)
+!define SNSTopic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SNSTopic, SNSTopic)

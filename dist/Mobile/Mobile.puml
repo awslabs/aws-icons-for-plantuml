@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Mobile [64x64/16z] {
+xTO5SWKX48JXxi7X_kUD9mDHUbEwnVTS_dN3YuEYfOLepKY4h4g0UPz75pN0w7s_IN_wvjn-NuYlM7RxHYjV6TjkZpBwPwD0w7iqpYnshQUbcL7jq-Xk9Btl
+ivU-jbTotmopgFOPkUJd-xCIqUH-NP5wtxex_UbFBnn_nfNzZy7U1S9Si9q-XOaXkBtU-VIFCJQdFtNdoo-bihNyUWGNu7FHZ6clxpaj0eNb_zN8oCL5jU-L
+ql7_gxQuvVNJwLDJrQM_uDyzxUDDY1S4uWrfEX9ty0W
+}
+
+AWSEntityColoring(Mobile)
+!define Mobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Mobile, Mobile)
+!define Mobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Mobile, Mobile)

@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Client [64x64/16z] {
+xTT5Ta1124JHWlQ6slzou-uGJ_wTlyEKmWzGHqh51LrCMeepasaJW3YjI48nkW12TgGCyhgNkOEceD_sbM7rGMyxm1xtJGBQuxuYe7vCV_H7V_H7V_H7lrV0
+VjG7FUXrMT3MkpqWGS1jlnK9kka2O96sBMmRkN2c69Eiu9oCdJ847qHJRkhbAKilSsEIASuiSe-4JIu0Gcv1WcpoxV-prFiAC4XzSpzvdnVqoFt51-hlwijw
+VZzCfCoB7aRlAc7QdOOpZMaDvxepnJikQHy9NV43d08
+}
+
+AWSEntityColoring(Client)
+!define Client(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Client, Client)
+!define Client(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Client, Client)

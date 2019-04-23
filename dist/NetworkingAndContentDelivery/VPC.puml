@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPC [64x64/16z] {
+xPQ5ijmm34MlqDBD_tzluIsuu6JMdGuyE4CBEO8O-H7vueiUcQF_LGx56nhDVL80zGXN0CbT7F3Y6-M0zQukDR-LRWR8DttI1jlG6wW_VX7amQf-iVhW7mn8
+AW2jbz8t_yG0gEahOp5MpHPaa0n8azV4CiUesTirZd7LdF2QjYkVWcnU40BKzSo4zqLosE0LmmKokCOkHhX298h7qNvMOaARIpeLRsWsZmmk4TH9pG0qkaFn
+rk315GKzUwNYWwmYomMGMAT1BAF2ie-tt19zS1ZMGvnBVy1l3jJkrGToptT0lDx6032U-0EszZbdNIVap6z1dVdpkvpw3DYPtw_uhR3Uy5S1uAEw9ri-s_47
+lUMJdQQ_ik6l-Sz-x_e5es7ChqgVNw-O2HC-vqWSYkBh6Ag1ddEq8TmWuSTpPZhyI3WtQ47pDZFR8Kt5u0u1OmjW1aYzrR95Avpj0eZtaK1nZn9eaTstwypW
+BgNpEYLJto1NrxdzwsJnG_755zy1
+}
+
+AWSEntityColoring(VPC)
+!define VPC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPC, VPC)
+!define VPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPC, VPC)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2HighMemoryInstance [64x64/16z] {
+xPU7rgmm28GNGvYy_nDVCsTjM2FUlyyMXEENNb-FIhE-RQPDESlQxii0slos2WXzMledl6to-drukSMhKG3EBQK-uqRPYhS6aLzL_BB4DlXNWxuGtwKgjF8W
+rd6eKAqybVbuboSaNLLx_Od9C-t_r_-bbI_4ikT5P6Q5PXbOygx_4qEzm8LgckTQ0yois-z_yhRW2xh1Ps3Y1_ACfwyeDta2Wikyhpy3Ylto-_Q3LWsl6riC
+CFCyCOQeWI-Woi0Ba5DFPSSFq9gtAWmyozwRNTwNd_OryO9UoVFx_PyTNqd-t-a_UY8IuQauVwd_HJKnggerkRStFYPLSUqNc_zHFhf-_Qt_iVqpld_d0F_N
+_u7pwyFdvqPPzFuGlBzy__jR_FuQlp_7zGy
+}
+
+AWSEntityColoring(EC2HighMemoryInstance)
+!define EC2HighMemoryInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2HighMemoryInstance, EC2HighMemoryInstance)
+!define EC2HighMemoryInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2HighMemoryInstance, EC2HighMemoryInstance)

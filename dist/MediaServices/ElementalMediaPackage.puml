@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalMediaPackage [64x64/16z] {
+xPQ9SWGX24G15VB_NnpHBcQtOhcO-oB7UjHRQMPiVVgsyH__ORNQ6_36HDnUIwlG2D5NfLvyRMRFeTYvy4vtxSozoKI7POX5cIEL8-4GRKHsZPm87wrPVxio
+Ij1G2qG4NnOLIGdtA9xoJBtS9hO9Wqn8RpPLe0WemoO58QhnNIJNS32LCBmCXiGrZ-BmZeV45O_Yx7aywHMFcJrlSvKwwpT7P_tgpCmUygwolNn-pIkJu3tC
+GYuAWh4aZuZt5t70czxxbzeHt_XkkwaWZHpl9RlPRbP6LrgAnpQnYi9vWwhXrK_m7Q-6PVtvUIBGL3AyaCPcQHsBBQKaETxMlFrGlXpel_Nkniuh-bPej1xx
+ntnrLCO7jf7MJXVunmF_6Yw5DCArEcdmhxr_BfpQET7mpun_AxPBAPX9-FVgc69U76p9y-lY4-VNUXdmaTZf-GqU8s-xFxpn_lAs-zFRxczVSdyC__-syH__
+yGm
+}
+
+AWSEntityColoring(ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $OrganizationsOU [64x64/16z] {
+xPS7jkCW30050YJD_U-xnL6QbpN_vVSowOHHIxKyZnzAVGP5P0GF4qEaympwve_s42FzgF8GDJwe_-DhDxUk3_hgdB3wYDy1mWC8lLOqHgjFyHjWMgIeGpvN
+ZBz4N_ibuBnjW6zhJZAMVh_TPA2d6zTIMa1R-KwKwnOm4SqoH0DV-2Mm-sXRIPhr4FNOhzVkKzZ6a2KrMFd1cFYvfI_zulY-cmOPCuXoxEV8amvjYn8ztmL3
+5hvoNT3CPu2x1w0hNmP4suhl-NeFRXWBltI0i651Hb8m3mXpmCgHhyuzhY9DHQfg4Ma1Tk2FKsvdk-q6iF_GqET-3chyVLZ_ylTsMza5Y3htStJtDA3l5iRS
+xqo_omBQ_IV4oyolGQZyIuFOX6IaiVSDkimOCExZwSIlu3Abn5P0rHCTsiGVkJpXP1Z9t7UYo9mQsCBFFLFoQqZRcJwPl-Rqfen9RJi_fpgdGtschsi__7y4
+QpyuOEsh7rE_vF-N7__v_z-VGN_kySkpZv-Unm-_0G
+}
+
+AWSEntityColoring(OrganizationsOU)
+!define OrganizationsOU(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, OrganizationsOU, OrganizationsOU)
+!define OrganizationsOU(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, OrganizationsOU, OrganizationsOU)

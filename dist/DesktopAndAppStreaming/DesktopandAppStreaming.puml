@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DesktopandAppStreaming [64x64/16z] {
+xTK5akD038NX9sn9llzvXvEkSDJBE_uBZ9yPyD4UDJknM6Wo8eXtCu2dzwsQ9S0qVVqil_lT3xSh-NZIEq1N0lmvJv9rfMH-qbjTQrDg-eoH5Ng8e3eQVX00
+4_2Ca4_x08zGG6is6bu_rhKbFozthFaKuCFdaa-6UTHxJApHz9lZUAEO11HDhrH7hrl0ikjp-Ye291k-0ferVRZ1ExuCn9zzNN_Ibg-XyjcQdx5aH2Z6eXTy
+PFMSZmYI6CU29TvwzlubuJpTEi-lmV8avZ6pXxu4SUfnqaEVXDCqP_xOLuwJgFt-diP_salDlEyLD0ErVRhDF7x-_tltkxVi5YT-eH_snCSHqOM4y1KHzoF2
+_z0h
+}
+
+AWSEntityColoring(DesktopandAppStreaming)
+!define DesktopandAppStreaming(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)
+!define DesktopandAppStreaming(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)

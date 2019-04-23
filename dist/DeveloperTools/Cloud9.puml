@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Cloud9 [64x64/16z] {
+xPC5pkOm34J7iHF3tF-yIwqsIgKsFudxX1-ycEjdUNbvUU79L-rqKzNkzPKdc8OJwSbFwmCGyyXm0yJvIRq3lNYG1Wn-DhgJTK3wvnvW0al6T238-c0dQUYy
+rgFPMpF_M7Wfrah3WNsa-YKyoQCZbkc2pgsl2DO9ApoALJP8CWN9dT_cVnWDn_p9en7RIR1c3AQWZOx_2J6WMNooHyFq3LgaG-ia1T3WlQw0-cpxaUwiYD7b
+QGgA5kJ5fysEakK2knrTAowZK9BiopuovQwBWhWkhlcmwpu7MasMxraB7G3Q-UoapI_MSDVrOeR7sR_9B6Zd5qacfEgp_jJdFUxyW7BzGZrSqMvEPDl_m5zQ
+NiAd87VpFqWV8-gYqs1ysByDPP3a_VwRnmFU1HAylp_13alMBKmtVS16alK4TzJFyFBoyl8R
+}
+
+AWSEntityColoring(Cloud9)
+!define Cloud9(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Cloud9, Cloud9)
+!define Cloud9(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Cloud9, Cloud9)

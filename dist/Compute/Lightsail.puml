@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Lightsail [64x64/16z] {
+xPM74kGm24CbC2Z__yNdadhLtfkwaxUL3C9otxwJbvSNPKKVQiE93Zsqh2xioah_KzOgf04MEfmOm5oG5y3EVEtroehyIav6-mcWpCkRH3gYx7Lc2-IGR-az
+T83Qd-U4N1pj1E4jdp2CIW5gnhqD6uusQG95n6wbp3I_krGPvNoBlQGc3BJSdPvhoAkc8_uX_pabmDr48s7_jgzd6BlnkGw8l8S6UmoA_NCAxzjL1khHA_-B
+FaccaUba2T83fzs2UFokwltIB_ZF1Vyxejr3lusVj8_V-lnby-6vpz_A-ibZ_SZ1JDZq-bLkZ_MR33bYUl_8DEhvlYL30ZIvVnK6px5_4-VsARFdXmfXtIp1
+fVEZfeqnftuvlsBX_5Hkp_Dpjp61__xyzl-uFtn1NWa-xYy768lt9ohc5KF5FxY1ZHXOqVO9ogYajg_avUNb1m
+}
+
+AWSEntityColoring(Lightsail)
+!define Lightsail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Lightsail, Lightsail)
+!define Lightsail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Lightsail, Lightsail)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GeneralOfficeBuilding [64x64/16z] {
+xPTdceCm34J7NRR4_Q-xWdWBtV1jUjwFINqKuOhhO6RW2B6R4N60FFVpCL_Y23diOyGftte7E6_F-YG5A48dVStUL_EaJnUVdiF_-2PHXGS_NzfF7docIZ9O
+mNU_z7v84OWf3FulViFdKeaO4Kk5j_rWAci3KjZsFNRmUtxaOa5S02JEGEO4e3315exxVkh48ikq_ffMkjJgpv__xVrn-sdsXTKN7ezVBEgpDFZ6ES1gz6bh
+m6bgc7r_c-lxTklwRKlznFsq7mRuf_quaITfF-l-zVjFoDaYPfKq4v1o190rRSxX0ThFbVr0P1290Cq498e0IDCGXMktlq_xSo6OFW1D3_ZW00HDe_44xSyO
+m6XepjwYgVtK-lsE_xL-ZzH-7jyVhz_RVP6L-RUj_dNJuiRx5rVVNhlzKTo1DlqMrdqhBRfOh66Qm7_o1G
+}
+
+AWSEntityColoring(GeneralOfficeBuilding)
+!define GeneralOfficeBuilding(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
+!define GeneralOfficeBuilding(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)

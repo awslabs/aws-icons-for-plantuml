@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ARVR [64x64/16z] {
+xTH5OWCn38NXzqIsrFkVjznmCbIE_ytWvvs4rqPSs975cdQCXCRI792zZuTQM0B2lQzVuOSVVdZNA_aixn2LYy5d-0QjApdQfE-Gh6iP-eHFWd8rWZdXeNOZ
+nQHlTQFshNxuRjOt-2J0NEyDlSDM-rThw8jyr2vbLYMrTiMaf-P-NEFD-EwhSi9NWBjXithD3bx5zFumVSlQbLU_QlyEF_pmdalhHtv5cprbTwEs8kNk9Cho
+IFo7dW
+}
+
+AWSEntityColoring(ARVR)
+!define ARVR(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ARVR, ARVR)
+!define ARVR(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ARVR, ARVR)

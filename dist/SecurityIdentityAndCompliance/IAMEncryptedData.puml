@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IAMEncryptedData [64x64/16z] {
+tTT9ckmW30HX98CWu_xtxNdkBe6fUcDihJy_RoatooPDU8YyOIadQJvWWgX98nzmqSlq_xeblgM-8y6mVJyy6LZn9HbOyid0aay6bdmoiEIJWMLVVC2m3Izx
+xX0CE-yPBmdejk2jnaFLdhpubCzzUo6gZmVzGrhn_SaAe7__TCnyW9gRUHF4QN-0NcuEmN7MZmyd1uoJtaN_TE_dVFrqKQ6UzlxXwsdVhlI1x1_rjJqq8DfR
+0RqzPdDVIMfp7oJ5t3TKpN_8gcXBtikF-KVlIzvhzUHcvfj0RTitdcgRteGYX6pFkuXI0lcsxyN6jYy3ne1HDhqBGBxhYtVeNhPzSV3oBtlfAc_HRTk_zFlz
+yRC_5ZqQFoQ85P_KvjxwvS9oF-y_zdtTT-Jf-oqlG9Qz7-T5ydwTfqZVp_FApRe7
+}
+
+AWSEntityColoring(IAMEncryptedData)
+!define IAMEncryptedData(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMEncryptedData, IAMEncryptedData)
+!define IAMEncryptedData(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMEncryptedData, IAMEncryptedData)

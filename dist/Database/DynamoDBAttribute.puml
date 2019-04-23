@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DynamoDBAttribute [64x64/16z] {
+xTS5aa9138JX7elq_G-y5LodoEBou_B1Sy7LbKaNV5uuoG3Zf78Jh-DqllG-JgThtt4wNNh5wVhQ3wohhRLwgHy7leWpyb7-uxjpdRUy7-5azA4asRE-avI2
+g2h9clF5ToUZa9Ro8GJRZEmfx_I2ROtKZA_xVn_AIyAtkDjDoAJl4v__VytvoeDlEJtZuMJ5jfwS_XW1DXKdMthvamqt1ifuD9BM47KZlIGzEacQY3f9h_dr
+lnhNQK7MHttvtzg0h5zL8Y3lTqjxrzCvmqy-lid-noOfe3QfuCbTEVpNJR_hvz_roq_U__pF__pF__pLvq_Ndxyz-_ppslFdg_i3
+}
+
+AWSEntityColoring(DynamoDBAttribute)
+!define DynamoDBAttribute(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)
+!define DynamoDBAttribute(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ECSforKubernetes [64x64/16z] {
+xPPPqiCW38F5gjx_mbqGNV2CfmvvZV-r91z8zc2uUN755UJpPnzl2MJAVO_k1K3l00etf5SWfHUV4b1vLFg0oeilB41gXwHde3njYzVdU1g-wub_woaC6vVV
+oTjXF-n2ugqiFwnHyUPfmBZ3_qb3DuLcmwX_izbn95HasYAInMXcHlNuldeHPpNt03zaDhu_o5YSrv8siM5-IYSfcbGoWZo1fdgqCPn6MXl0A9_a0dMCpk6q
+nJVXktoJbrs-2z_bC_JkBWyadk5pKj7F-2zd-9icsESrmUJR1l-Qe7vtHOn7_rceQs7ENHdRVyNklv8grHLQRFzNhbtlXOv6W73_MGx3sRnxZl3lNh_yD_st
+t3s-qFPwgdMjZT29lfvmUdqP6_vB-FpHwxH7JEpyKv3Eqz3vwwlpGwNpRZJHYvTasXlDiVkFDsFy_kKx2gOXQjolfLEpi0b7UjH4IfKdR_1-N7750m
+}
+
+AWSEntityColoring(ECSforKubernetes)
+!define ECSforKubernetes(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ECSforKubernetes, ECSforKubernetes)
+!define ECSforKubernetes(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ECSforKubernetes, ECSforKubernetes)

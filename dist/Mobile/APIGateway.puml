@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $APIGateway [64x64/16z] {
+xTP5WWCW50FG8D_2_SyxnchAhxkaidkuyTNooIUkmOs4-i6w0SAD2D3zK9rxeFaXkgXbthGi9QGwXcVUH-mkmQOccTTFSfPWANUW_kaTdWojW6TUqKdkz3CT
+cdizpEiXVl1Vnf6-Up3CWlpxS-_7US270JOSa140ZlDDWY7ppqcHTjF-h-D_gWy_pmlqLA-TP8LtFMdz2E33KGsG4yQlurS8X0Pq7kiTq45ME8S2VgndGp4w
+Aca5xOJ-Ty05CXpe9wqVQL7XZ2Qdph-ZdhN-57AMfqVg7__yMi-FsvvVw_dv-EVN-NuSuiTMNpNs-z2Q-wW0shxxlm6emInXlSmYSZznwJPvcbb4pNoTU25f
+4QjFSPumMT-FOi4NooUVV0C
+}
+
+AWSEntityColoring(APIGateway)
+!define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, APIGateway, APIGateway)
+!define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, APIGateway, APIGateway)

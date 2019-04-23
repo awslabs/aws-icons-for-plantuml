@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Budgets [64x64/16z] {
+xPG7ikGm24GRYIJkV-3z5BMUYAtDyLLmuYdGerdVcV_y9nesTTC6s_C76iQUJn1zWu0sVNhRWKNx_Zk-nVV9t-Q3Vh4_libVz8t-cD_cgtsr7nyuqTVwpipY
+Nxz_1G3_Xj-VVf7l5azru-Q7-PLE_EHFJ1wVVIO_iyC8ykWBo6CbwGl8elSLk9qprNfZztrXG5jT0AcwUfZB0OsRVzGqirSnKJqG1e6VSWdjLX0CJ8-goubz
+0lCfryYN76zz0K2QWIslYOLztSWph0H0Ebyv6-WVwfph1VQLtxNtBPGoeJvTqh0Jl_OdRJpPdrE_oeQ_L8IF6lZI3ylADvCFYnt_jjA3swxs_3KgoQ9I6slV
+dnYPbDUJv_t0tFOPv9LaFbLgJk1DF_MSTY8L1cO-7WDSvqTs7AWnZkDYj9MVuDR6p7puhN6GIxyEyO6aKTJHFVUhfAC6F_FjTZYR4jY9BzcYKmGalP-pNo10
+vpD0UWcT_7zjqRR8THFlshl9-axyvp-V
+}
+
+AWSEntityColoring(Budgets)
+!define Budgets(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Budgets, Budgets)
+!define Budgets(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Budgets, Budgets)

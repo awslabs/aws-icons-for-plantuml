@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTHardwareBoard [64x64/16z] {
+pPS7qjmW34Rvr13tlt0mAyPZOYQmfBs_R7r8T4X_55I-TjcyLDmOQH-vvC1bEtY-l6ogzdc6BPsy1bMA5tgzefteLSYN0A8hCDKS7Ej-_ReXGVnJUIHOBN1P
+b_PbyX8ujVQGZV3KT3SH-rIUDX8WrGHlTQZ0MkKrcdEd3a7alaKDYXIW5DiVlNo_O4RwRn7x6ccDSm2Qx_c13-_CyEvhUa33EpCq_75mOD6Nt-j3bGzyyX8U
+vgjD8kbWyArSD2_F2z3IuS7tUBU2dmfWK-ev5tT_yItyjmBiiZZY4m0P_5WpmneBG6bufJGdqUXN868H9WemupwWEk7pw0VwoA0YTtotYXUVnByBYA3UfBlL
+A9un4SdClpD0yqllTaQK5Cpyf575b2F-MlzJpeR-bPO0UwlB4r0dFVnMMqUqDlKEmUhurtlqSFZ1cc_DbnSVber-wNFpQVHZ73ZZXSVwen5-zAF3_8Kop3zB
+4t_2qy-lVenzanTi9NuIdordikGd4DB4d-I_s__wcIwtpqk-FlQlU8ZjQsV_EW2d-_V_mldvwVpyTdv-F3-_df-V8tSSdDyFxW_Z_OLvSdyvkp-Ttz_Exu_d
+zzVp-_CvFm
+}
+
+AWSEntityColoring(IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHardwareBoard, IoTHardwareBoard)

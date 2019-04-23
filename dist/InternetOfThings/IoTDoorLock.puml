@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTDoorLock [64x64/16z] {
+xPS7SiGW34KjWSg__uM3L-uc6Zkzx4iHcSoZ26oqmr-3Y28Cfq0HSWpUVZCW4RW5YU2mf_ywHRG1eFqsm2DO2nuX_gLIkhhWCj8R7O1V0a3f3bzfeNkk9cft
+0WhVM7nYqvD3SvyD9uml--Jeu7JLBu1BtI4Er5TyiX6ildGIN01PVTW8JNyZsFeSBMAcQF7E3sRVlD7nMRsXtF6zOTHTV_WH0Zdv6gtKhm1CrG3KD_WSNlJ3
+gSyZTl0bzEX03hx5aSpol_P73kldF_EnJbA1p1zanFV-zcLZy8Fl3oNDdstdP_VpNm5Tfbzl-t7AEPvbf_lxDx03yCSl7kxlNumCn2pkxzz8KJCjoVENp7z7
+Elz0K_z-_jVtnzlzue2Nn4_ERpYDQFVFRvx_2fY5zwRzKq04qBVkNyM3ykRzCpJixVad1PJUxaVzalhh_P7u-Vr1238_lxz6kZwfKjSVZUp-okzVvFchW9S3
+3jIlgZy6zew-ht_o-eth2KxhjxVNZs-lNzzUFx-tVd_wR_xy-DTu0G
+}
+
+AWSEntityColoring(IoTDoorLock)
+!define IoTDoorLock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDoorLock, IoTDoorLock)
+!define IoTDoorLock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDoorLock, IoTDoorLock)

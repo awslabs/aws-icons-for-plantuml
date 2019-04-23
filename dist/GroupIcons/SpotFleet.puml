@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SpotFleet [64x64/16z] {
+xPQ7aZGX28GRaEP__oV-BOyvTGANAsvlSWk_TWo5_FixlVIIoFVPw0AYwzF4qgIhO4ZKkKOUSHgFFgxOf1vRfpk5GVX62o1YZGJ8PYA0l3bGOF4qlWo3K41o
+5DKSL02Dzowb0O4vaVdO02TU6hZVnTmtl3AeWzyr2FqGZtAAhZqS5QxmtS0nvVteEBGmSC3tAM3LqUD98R3J6W0yrFakWyJpy8bDWmuT0ZBapxEtR5B4HyDi
+uxliSGLYMJTwVxktyNR6v2buu1jqFmZl4YvJKRJgyQURM4hGagyc4B8PU_yNGztAaq_ZUnxWYK_jF847Nk8pVCWjB-YoH07RUGEI7oqfUNJfpYi0BtaIy4YU
+Z9qFaaTg1SXo_O3h_AS85FjtpsUptZ-5BNo3jfGcNvwVGImyCPKJgyzl9uIJ3szcriQNBscB0jRfOvwK2DM8ZbBIkamW3k4rQQJrJ2rUvgyhdvXm3by_05Pj
+zq8EN-RlE2NjpQ3AtrtakDyvTRbSMU3r_PvJ-ClxCoV9svX_yledf5sc44t0sk28SgbVp9RwXVKKGhVwISqPGD1Dj_hfSGTT1tuuT0cG3JyWgd-kVcoAb3Qk
+aJ-eNwlw-U_qqal_0G
+}
+
+AWSEntityColoring(SpotFleet)
+!define SpotFleet(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SpotFleet, SpotFleet)
+!define SpotFleet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SpotFleet, SpotFleet)

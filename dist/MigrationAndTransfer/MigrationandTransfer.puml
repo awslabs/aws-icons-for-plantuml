@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $MigrationandTransfer [64x64/16z] {
+xTG5aWCn34JHReEazjx_lZiLSdZ6Jb7W5mHVK1Ps_U9W5nOJTKOYssWLIDtRNnjCG6BtxQgV_tc5UsZMgn9BB37bdIWUOGMm2Uz8QhkKuSDUNFYnH8twYkWt
+0hcOHhoOsrcP16F0n-KTaeBKTk-8TbN0DlieKBkEvM-RTmBfnel9Oeitf3wrFMK2MQi-KDg3L96qvWlL7kQeArui5yBiucQcLZpiWkFwzf0Fv8mOyUrySfMe
+YvFKAbVynSdPlNSWTvzoM_7gWrwnkzjG-yVtDT-2hA4bFqv2WKjBKL0spAyoTlKDb72eRZm_RcPWdpN2bbm3-xF2s_7z-zmDx4-GJDhzYIJWOrwrb7By_qef
+LME-hw7e0p7fVTxhHUyHzehV5RDUuKkXET_xTF_pLQF5XP_ePSzqkfBBH9auHARnI7n2_m
+}
+
+AWSEntityColoring(MigrationandTransfer)
+!define MigrationandTransfer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MigrationandTransfer, MigrationandTransfer)
+!define MigrationandTransfer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MigrationandTransfer, MigrationandTransfer)

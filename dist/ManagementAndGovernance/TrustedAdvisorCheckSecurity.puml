@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TrustedAdvisorCheckSecurity [64x64/16z] {
+xTVNajim34PXi0Z0Vzx_VTEuJJEqo5LwikVQdok06TltLtPwh9EDr1xv2cWHg5_uw8iSBhowBQhRld-VFnJbEtm3rVk-97IxvRsPMO3RBHzIjGFoswVlvzhQ
+E-Xu_l15vsBjpO7d1nNE-OOt1to-KBRZpHNbk-QlVFVy_dvVZl9TtfNrEtm7bVk-2fhTyINxMB_3RlcKkWN4-1ZjL5tx3Wh8SdV--_EHd_ZOyDPv_V3zNDtn
+rjENyrUxHtWhz-QtE211zlTwgLiL80d0t-zBGlPQIdMGptsDQWyAU3umJT2cFgGwvtLCnwX3pFouuDCElLsDGENanzqNgZOlDCJeWFRMDnrZ_VfqVeQtrpfd
+dt2CzPlDx_1vuPiW8MpcVUsj2L2r-Vv-AQ-zDObcquf7f52ybf0HSRnwQzvjtY4aGAy122Wxy-kWd2IeMrugDgdhp_1aN5JN7btK5juyBwihR-KoM_XLt-a_
+_8T7FYlPzG_Qz4qyAB_p3xPzVvy1
+}
+
+AWSEntityColoring(TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)

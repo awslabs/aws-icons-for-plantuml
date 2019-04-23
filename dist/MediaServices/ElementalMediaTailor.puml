@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalMediaTailor [64x64/16z] {
+xLJdOeGX20CKwFi_SQloNUooOd_TI7lRC4tU7XSllE3-BtObgkSHbEa3h8V9XKZCslDH2IKoArCvuqVXHf9jl7xdr-qnj9RjAz_QCBR6Ljh8lV5judjRHl4_
+sShNoaiSzpBwzng1bwKZYOxLju2AqfPDEFVVSPf4g4T4VFO5V_grzoj4qkSnPLZpaQYLuin-lH_Oulij9_Ej5j_Znw1h78-0DTQomJSa6toKP3lyGfDU3EiQ
+tw_vB6WUc4SWx5i245j-imO6FgyZ0-FOGSoU4yc38eDbyRRwjbthK96rbo4PRo-A4ylvGsNAqJYKAPpPlvVYy_uJzm_8tJzu403lIUalaDBVzmkNqxz_pUaP
+_-5-53rJxKzpKFPDvOpKs0L-tLUE4Lb2HIZxc__0mPP08l2_bPKm4EQiVI2VNdn5FHaBi8jl47y2ZleFs9Z_6U3_ZuiNNdW7
+}
+
+AWSEntityColoring(ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)

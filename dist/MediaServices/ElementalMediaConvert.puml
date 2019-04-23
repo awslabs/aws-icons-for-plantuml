@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalMediaConvert [64x64/16z] {
+xPQ7TWKX24G7MCN__-8SrcF6DEBhTLxPUcs3IdjQlVMMRvkturK4a78iNHNG-DNZAe-wUnkEQaALtdVVvBW6E4-kwvdptCn_FiXfe4pdm2TLU9uwRZwT6oF0
+-tacezjLutmSUS-onaTpVzJ5DkqTyeGN11QMiwyTYs0e--ECX_IW7HNIXn7AWfoFvhB3LDNUeV_v-2V5aZgPywg3Tojxg_UU5FD1gdfcW0--01g364EdG1cy
+4qzxuTsruQIpvRdO_meRGLLRUptUENv-31yMXdzXtYBlQXFF-9buquFY5rYEN_B2-IF2-IEBVAjSn00k9xKjyjFwOJQj7miyIalMhzqJlzpwUVpwVVp-aUzV
+GB9_PQB_Hyi7x-te_464-SCn-Ol8CVaBtGvflKN-nlpnQVNMMny
+}
+
+AWSEntityColoring(ElementalMediaConvert)
+!define ElementalMediaConvert(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvert(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConvert, ElementalMediaConvert)

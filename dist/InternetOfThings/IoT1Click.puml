@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoT1Click [64x64/16z] {
+xPO5ikWu30HRbeNtl-zZybR0Iv-xE8OHJJdrm_27FsH4rZ_71D2iGrp7iBfYWgemiWumdbdNLWA9gbBcuIAUCPXNyjPLbOopnKxawdpKCoBdYqBM2Mql-Xr7
+-hsX7n3LER3ZHRl9loOC5RYg_tt_vL2Z7HbgTKD4Xk1TQKDWp8zOXAWjsY5SG4G0U_yuQfS9e55LEK4N-Iq6UBtG8Sn5Vk-yzuSb1JCLeckNHQoT5sPje_WQ
+pGmNl7OPwmHbl4IXNNl4eKd0ShTxaiTDjQtavLWevauH7SckGpeWDchVTKBRVG12rYd9k3qlTKuYExq_9UxrvqMAVR7urIxLXwVB8JSQo30_mCRU0CNW3AiD
+SZ3i0x1t5ArREWMjVYSO_KuAtfVARXw2hc_IyePavPLlWJL89PRcYY1ssZbrNLhKVnrd0JbpeQFLDOZ5icEHGA92ZbreM5VRbnefB6Bjp5vgikgFLNyYPk3r
+mUlvYPrOPqnXVBLojwDVuyVoT8fp09ghMLVBs_KOXiTIxEYsjP-XGxtsS525g7-A0UB_zdVsn-KFVtW4
+}
+
+AWSEntityColoring(IoT1Click)
+!define IoT1Click(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoT1Click, IoT1Click)
+!define IoT1Click(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoT1Click, IoT1Click)

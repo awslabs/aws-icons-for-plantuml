@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTBank [64x64/16z] {
+rTU7RiGm20RWC0pyx__25UWYMiVrfUh-DMwOBucDiewl3Zq-QFhemMqCdX-Ao5e6E5b0yr-7tVPuxT7-4_l_uvupZiYF0GWpAw3CBC38VmFEcPKMn-suN3a-
+59cz0pPknW2VE0Dst8u1VF7ZlX__nFDm7_p4MyQldZLG2UMhzs9rRbKcJ-ee6yYuqkHHoNyz4-LdR4gaDc-YV1IxpBzm57Pv09Bp7wLdwoU6tjjrEZ3PUfln
+THEsz5IU2lVG5AvDKFdUWsR6wST4UEhSwKUnxj_fJUGrSJywB68Ft_sZG4ISFXEqzfHLfozKbPIHybNHQrFTCA5UutJb8SNczMSHRt_sickyPhSzVtfCWK1u
+nARc32t6747k1-lAK-ywemiVy5w_sMknxjzo_nYnzDs_dPTQRjdwtV4VKkrqsHp_Plrw2x9Rltrlt0VW-vgzFmAnhQ6CBCQ6qk7Ew_rBiQFFdrN_mcl-kl25
+Ojk_qGEx_cbcpBw06cBmiVAZsBv_VVxVxn_RpXi_wPy1RyQ8tjG0jlVUrwzBA03unNicsgiSxqIqVHJhyxUzcRyJi_RTFyju-rtQUx7B_DLZ6zSdvmyzoHzy
+Vlhyy-FddryFnOUYnnpr-zhrq-yFV__zwU-_Ftx-_VdpUG4
+}
+
+AWSEntityColoring(IoTBank)
+!define IoTBank(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBank, IoTBank)
+!define IoTBank(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBank, IoTBank)

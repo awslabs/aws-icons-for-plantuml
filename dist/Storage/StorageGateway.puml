@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $StorageGateway [64x64/16z] {
+xPK5ia8n300tQTh8_G_yvp4Kfz-T7K4tpf0_aGSFmjtZpR896zhV5C80QQO2sEkJA-ppke76AtL1e-OhrzS6KDh5QtsDtj6hWBt2Xx_C5ow_w8W1w4iY3Awh
+RK0pHLuGm1YLrmL47JfRetXUuN7osHeX5hrPhUteBFm0MrOm1FHSYSYiqq7ggZwQvyHxKm4HRMCwCUJ-5XpwuNaJ054LDdJaZaf3xbJGw3Lje7MFVL8Ja1dR
+Q7Uc8uSJHdfaxQDLrIwYnd950vi9w9lifYBxzYjTqLddkENtMRxWbT45G4G0ccVD-chxujANJ1VGxd5eVvpvo_etl-rIviImpPylnc9-qu-J6ikdl_ePDEp4
+zulQfb-EBEzdxPSBVNM_QzyDMjx31Vh2BmDwBXXjhFpHNl27jEu_t-VdZ_SV_iElT_aqaqjVhBtKLpOYJt0sz6L--4QUuHkHFui73vu
+}
+
+AWSEntityColoring(StorageGateway)
+!define StorageGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGateway, StorageGateway)
+!define StorageGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGateway, StorageGateway)

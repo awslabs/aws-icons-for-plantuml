@@ -1,0 +1,10 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $WorkMail [64x64/16z] {
+xTOt0WCn24HHRKBf_kTrjgVGZi0vyUjvr9IFoFDo56Cnhta9vYBpYwWjkvamFvLQkjKoSRzCOSnzdySmBSnB6N60yR48zJNZ0EEvSdzQT7aft6F3USzZHRdY
+iIDSyLWIhdXi2TSyreHh7dl2BHwYvQg7QRdPGu7RFLp3hVuamIs-FG1kyUq1SBj7UPh0RLxFlVisz-whXLVgPp4rh_iOpCMx_zUFoFEs
+}
+
+AWSEntityColoring(WorkMail)
+!define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkMail, WorkMail)

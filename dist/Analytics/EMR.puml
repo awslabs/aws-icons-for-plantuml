@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EMR [64x64/16z] {
+xPO5ilKm28KF3kd-r_iBapkClKxxtCvr-IX14jOdrgz-bU7vVBeK0AIUoml8ZC7FD11eKc3FunNUCG0_r_sENO6Unnliw6N8CvC7n5f9y6VpOCPSFbGih_CC
+OO0UuIi1WElEs7-mgcGZ2l8m84wf2lV83Xjobm7L_zNqo-6dsGn1YomdRDBlV9SHeSxgdSJC601quaYrZWVFJ_B58A-7fU6Nmj88l8sTn7jCnqIw36XfhI3O
+MRot9dxbGW38Cz6Ifxp7NbX6RNkIBW1875H7W9ZOJwfzsgODKcT2ezPXqCNdfSCRMpfloFRR0kmqyTEbmmVq6E-0EEUvKqW4495rgYPMHP3r0duD_op_7PtE
+c_5Zts-BeEF0dVonvNhaJqKqrftwwKuY2q8TZfQjM_NR9W2A4d2M4_nv_KDj_WZGkj-_6e8NxXys_ANzQzf5cipn_zB-cK3EvTkCH7RydhT_5sEMTKKovqUh
+N5XZNLRHd5yVSNxE-VqnyyFCBnynFpL9slFRHyoFCxz-KltgLty1
+}
+
+AWSEntityColoring(EMR)
+!define EMR(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMR, EMR)
+!define EMR(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMR, EMR)

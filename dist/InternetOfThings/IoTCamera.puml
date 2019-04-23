@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTCamera [64x64/16z] {
+xPU7SYGX30K7WVJK___3jvHkb_KTjgdQIWxjC4azWCIawxlHMgl5zS-Y3dsAoDj_0w-5tHPUYqI__ljqZnj0H0Yo5hejiXPrABnlTUSOtxKEv150tpO_sX5Z
+su4Ws-4CJU8x-KqJ_lTTTwAzzT7axyv6yTSV4GgRFMAXjtvnzrLLBN_SpzM0LN9xzkk0scxyWehlgyorUfA_rXDSu3t0bg5Uj0zz4onMGjTksV--JJJ3asUy
+sOY8CSVoGDENJSfU-RyCijyn6wBGCAkT2VPefMryVnxHf8Bl4y0t_kMJB7zS9cdCgawjcraFG1Kyoa-V_9k_yXrWfWpPK8965sZvAtyxtsRAPg0iAC84uz0l
+4hgcwW78acpBtzQl_3NZ1gJDmuBXq9U_hT-pxzLyXHYeWo-_QE_x8WrYZSsIsFhx_WizJGO74zhqVn4VjeybEiv_ZRzINfTVTl1JV-LVRUe1xZ0s_cR-Ffeq
+GNhtXApwx-RlFl-NrwmhqWByEgnVaH3c2QHRKCqVrQ-mX1pzXesicNXQltK2a0IKVfp_edbIPBJhp7zxf8sG5AEjg8s_dX_ro5X8puj7L5RKvldbV8fldb_h
+-Jdq2UFv-Vdx_l7I-zlhxu-llx--_lxy-llxht_-_VZT-0C
+}
+
+AWSEntityColoring(IoTCamera)
+!define IoTCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCamera, IoTCamera)
+!define IoTCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCamera, IoTCamera)

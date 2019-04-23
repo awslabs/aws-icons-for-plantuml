@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Cognito [64x64/16z] {
+xTHNSiCm38JX1S22HUv_tvW8tQr8zBE-L5Fp3zGZdKudzdsCJQxOfnvR55Rt67HpF2HU_Bp88RxPMppZcuY2VhIdueKjzGxe4u1Byv4BRBN-DPgz7-pdGXTS
+60_qq6UZTu7rfj3iLUM__kFvAf5f7x-6xLxvn4SlO5nqbD4x3Rvo_YZosA-VFqEBYuBwNTyXZQmG7kcBJcKki61gHth3f7yBBf1Y8cQ0SR_dJIwev8r3vcra
+idhyU5YYYDbUtyhWhALbBtpOdl-tmdzwnT08MFOr3ilU-y3etRFtU41dfEF7t_qYAoy2G8elz0_NievO1K0ztBDOkXG6rBoa5IXx_RjoV-sxREq18Hi7vmzR
+VbpWMrCWRtfkQ36r5dNp2AhWJO_v3aWD834_lkExfnFJvcFeiIBxKgvvs1Sz1MNco_FpW5qmSmeOImmzBtoR9y5YJOSoWXvpV8z5TX_9_7yH5TfZw0fbBAC1
+McfHm1ZVQ8f1MtpBU-yUTwVJwHS
+}
+
+AWSEntityColoring(Cognito)
+!define Cognito(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Cognito, Cognito)
+!define Cognito(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Cognito, Cognito)

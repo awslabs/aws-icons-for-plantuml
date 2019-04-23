@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $S3GlacierVault [64x64/16z] {
+xPQ5pjum301ZEuPx_nUUliWQTN-RZEc4WOkXEButSikZ7TmISky73yIjFg7c3GNpHbV0nWq6wDl55_YunQ7aflWS3oJ4JV7F5wXWxXU_tm99yB61Gygu46yK
+jhbp0jEsM5klRJdXskZaYBoqpuwGyPqnFyA-iN_8vUOxGoz-w3Rn9T_7Dlwl-A8gN-rRL45Ls94lRIVlIUkb3L_BPMq1CjmZWRKeNlhi9vIDKH3QQm4rXXNa
+ipyBI9MSAsDPSocQGCsT-WDOmSMpAbrM2a38NlyxbXMBiivf__gzLpFV7x9__IrClHFkSbmjRC_lvVc-smcpD-pv0UFbTq1x-GFYo7VeTWju-pyZVY_RUo70
+ZkgVAs22l_hla3stwGlKcg8YYhMvG7Rz4IlOX_jlXO-nxVUlY7X1kVHFnxu_9fIzR_tAP1wzlm887VhoD80O-tvleVpbE_JYWTyvArZNSk0tC_NbQywlVlyh
+jFnl-XAkF-Vx-z_FkKs2Vj__Hybl_FyVSiJuNhm3
+}
+
+AWSEntityColoring(S3GlacierVault)
+!define S3GlacierVault(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3GlacierVault, S3GlacierVault)
+!define S3GlacierVault(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3GlacierVault, S3GlacierVault)

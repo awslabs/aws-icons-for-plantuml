@@ -1,0 +1,10 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2ElasticIPAddress [64x64/16z] {
+xPJL0O0m34I9T_-5SNUutpnSOjSs5KgI94b2RDvYGh_CnMD2RyESlxNEq5lwArs7EVLEdPboVwlHSkM08aAEhxlel7Rcb_7F7CWkPR_HG9TGw_zvdoMzTy0H
+TaX8gYjqxrqF6T650ejQktBffA9hVAlNIJ2B4jUKKa9HUpH_K3zm_C3v0yvVSFs0wnVi7s3_WlidJf8aIT8
+}
+
+AWSEntityColoring(EC2ElasticIPAddress)
+!define EC2ElasticIPAddress(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2ElasticIPAddress, EC2ElasticIPAddress)
+!define EC2ElasticIPAddress(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2ElasticIPAddress, EC2ElasticIPAddress)

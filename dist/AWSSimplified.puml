@@ -1,0 +1,26 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+' Styling
+' ##################################
+
+hide stereotype
+
+!definelong AWSEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+!enddefinelong
+
+' Overwriting Elements
+' ##################################
+
+!definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "<color:e_color><$e_sprite></color>\n\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong AWSEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "<color:e_color><$e_sprite></color>\n\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong

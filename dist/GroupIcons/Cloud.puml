@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Cloud [64x64/16z] {
+xPLbOiOm28PV90gx_t7dFfhIxc-UJweu90-_s6ms6vkz3xifx4sP06AjTrHq1i2ghuVgLyKBG6sQkrbdGFsoU7N_Z0IGIp5Ke7stEEcI1uFGta-_5DGNJppf
+VVdzOWSFQwLqIvcVVwgfO080wgVoxSly5ns0jYh0cGBNw1Klz99Ih-2J44mmejl3Nm-CTYBFRElerlATUAwo2reDn1H0R1qUgDXnxL3cEhuc08tOUgxJ1mEH
+4ITeRd4GI9XRIew9KLHaHKjFUEH0qFYBCaRodfNtl7mCw5_-MoGl-VprA7yDd0r0KCF-AJdn1bXO5MJs2cz0FLgvUPWliQ50MUrReYi8e7fSc2fCVy4N9Ei9
+zpdcRqPl7_JvaQ7DPhDv0W
+}
+
+AWSEntityColoring(Cloud)
+!define Cloud(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Cloud, Cloud)
+!define Cloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cloud, Cloud)

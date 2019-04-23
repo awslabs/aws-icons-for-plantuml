@@ -1,0 +1,11 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CorporateDataCenter [64x64/16z] {
+xTC5sWCn28HX618OUl_x_iBMFKzTlhgyQqdo1dtxvhgH3tAQR6GSz92--jG5B-h9opp0Yxn8VBGd7pJ-DdbtbZUUBQlOFlzWTPetLBBf1LNZATz5j4AiV40h
+aNxQm-C_viedwol7ETvohRPnn7QMPnw8PtjspygT4tKVyRuu2vtEFrqnvZ6hZxBmeY_bqR82vXusudEMKxFbcnpop2cktepui9wL6Uirh7tE-5tkwR6zVcB0
+7sZ0anUDlwjbfRfOl_P9unTe5yp_Yw__WUxZZtNQ4teaCA_Ojs-_
+}
+
+AWSEntityColoring(CorporateDataCenter)
+!define CorporateDataCenter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CorporateDataCenter, CorporateDataCenter)
+!define CorporateDataCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CorporateDataCenter, CorporateDataCenter)

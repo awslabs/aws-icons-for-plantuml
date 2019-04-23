@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DocumentDBwithMongoDBcompat [64x64/16z] {
+xTO5aYWf48JXh49AylxttO1e6uLzRl_u45-xaBzO__eNIRxvTHzdMAj5HwKsYoJtTNfJp4G4CssUtEHU09Hc7f6P4Mvj_iUvnGtG7ibHvl4pkWB63Uv0Vxkt
+P7R0kVOLdU-FTDGDN-0VU4VPyXfyRo1qS_sGdYJpRlpL1Pk-058jaaUPOLM0ikazgW2GKcfhhLQTVzM8NK-cjI8u4wqMcT4jatl7VswrkvbvH3qkOm4qkEL7
+F4g5da6Jc_vEvK859Va5lieH89t_suT0PYe0EZ_rbNphzVWze8BEppnga1zu1geBZ9zu0PwN7r_vCLu-yzu5WBPkxk5kSVcXYeWiFDEguAfVFdBcIqzcU6zr
+rFpmxEAi4bpxySlR_HSuAzgUlpiy4vAqB_RPKCc0vXTvEk0SusNXsmVhhtD4qHOUBSbtzr_9OLSUqkxtp_FuIx2lZvzL05gxHymkN-1ZU7tyeodkkiAcZnuq
+oxK_BxyogjxKfoUPvDhVhztH_37yrTg_YYcGHxl-hggg07hK-RNlxw-VFtpz_ENhvqzVFt_Rdpz-tVprL-rV__eF
+}
+
+AWSEntityColoring(DocumentDBwithMongoDBcompat)
+!define DocumentDBwithMongoDBcompat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)
+!define DocumentDBwithMongoDBcompat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)

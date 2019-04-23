@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTSensor [64x64/16z] {
+xPRPjg903039dlh_3vxDXGkQkQt7UPjw4wWqIISsspz2L5NUTJqRW0vxmuvcfrwDe0LGuNvzYtmf3GCwReecKBAkwtb1Q-Zb0D8Gfqi5jUedv4FCWbZJzUcx
+QeEAPuRBjylRzeX3Dm1jVzDrolGg0zWsu-3J3K944rfdFs6uMtq9792pN_D6oVqHPFHxzoUSkGAwu2kKopGtt_l2FXy730x5dV3Q7ppfPRBsxz8F0HI8RHN9
+Sv_dgCzpDZJkyfpBogwghhHwJbqLKrvwIA1e6NI88O6Q6tVNnm15Z-ll-XvWMdyUN8SEY0P_z0_vsxD7j345DLg_gR_qimJKDWNTJ9-bZnvJhM6RTAXidlkf
+PDaFGC_9qYuhldW1zbWjeF8hj_ppJaJKS0v8D2VyuZjdKgVFZWCtlmzKw3QmMhyF-_zzUSvctJRUlECz0ZtYDpzvYznzwaBMYSmQEFYrlKnzzVjIHVFJ24kc
+37u_-DP0-_cSM_ML2txyxi8N_OHGlv_CUqHTyviw7eLIu0ubB_W1UaW-8PVyWX1hMlRampq0N_7jLB_cJg_uMnmFo-9EBVcRHiPURB4xClYVwrz_cIO_DR_1
+MyHsGzzY-mG_0G
+}
+
+AWSEntityColoring(IoTSensor)
+!define IoTSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSensor, IoTSensor)
+!define IoTSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSensor, IoTSensor)
