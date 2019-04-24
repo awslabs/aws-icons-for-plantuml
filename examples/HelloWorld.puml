@@ -5,11 +5,11 @@
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!includeurl AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml
+!includeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 
 actor "Person" as personAlias
-AmazonWorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
-AmazonSimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
+WorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
+SimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
 
 personAlias --> desktopAlias
 desktopAlias --> storageAlias

@@ -8,20 +8,20 @@
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
-!includeurl AWSPuml/General/AWSGeneralUsers.puml
-!includeurl AWSPuml/Mobile/AmazonAPIGateway.puml
-!includeurl AWSPuml/SecurityIdentityandCompliance/AmazonCognito.puml
-!includeurl AWSPuml/Compute/AWSLambda.puml
-!includeurl AWSPuml/Database/AmazonDynamoDB.puml
+!includeurl AWSPuml/General/GeneralUsers.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
+!includeurl AWSPuml/Compute/Lambda.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
 
 left to right direction
 
-AWSGeneralUsers(sources, "Events", "millions of users")
-AmazonAPIGateway(votingAPI, "Voting API", "user votes")
-AmazonCognito(userAuth, "User Authentication", "jwt to submit votes")
-AWSLambda(generateToken, "User Credentials", "return jwt")
-AWSLambda(recordVote, "Record Vote", "enter or update vote per user")
-AmazonDynamoDB(voteDb, "Vote Database", "one entry per user")
+GeneralUsers(sources, "Events", "millions of users")
+APIGateway(votingAPI, "Voting API", "user votes")
+Cognito(userAuth, "User Authentication", "jwt to submit votes")
+Lambda(generateToken, "User Credentials", "return jwt")
+Lambda(recordVote, "Record Vote", "enter or update vote per user")
+DynamoDB(voteDb, "Vote Database", "one entry per user")
 
 sources --> userAuth
 sources --> votingAPI

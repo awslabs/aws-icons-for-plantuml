@@ -6,16 +6,16 @@
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/InternetOfThings/IoTRule.puml
 !includeurl AWSPuml/InternetOfThings/IoTAction.puml
-!includeurl AWSPuml/Analytics/AmazonKinesisDataStreams.puml
-!includeurl AWSPuml/ApplicationIntegration/AmazonSimpleQueueServiceSQS.puml
+!includeurl AWSPuml/Analytics/KinesisDataStreams.puml
+!includeurl AWSPuml/ApplicationIntegration/SimpleQueueServiceSQS.puml
 
 left to right direction
 
 agent "Published Event" as event #fff
 
 IoTRule(iotRule, "Action Error Rule", "Error if Kinesis fails")
-AmazonKinesisDataStreams(eventStream, "IoT Events", "2 shards")
-AmazonSimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
+KinesisDataStreams(eventStream, "IoT Events", "2 shards")
+SimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
 
 event --> iotRule : JSON message
 iotRule --> eventStream : messages

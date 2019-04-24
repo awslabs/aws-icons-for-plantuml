@@ -68,7 +68,7 @@ For example, including these files from the repository (URL), the includes would
 ' Include main AWSCommon and then sprite files
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!incudeurl AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml
+!incudeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 ```
 
 This defines the macro `AWSPuml` to point to the root of the `dist/` directory, which reduces the size of the include statements. Next the `AWSCommon.puml` file is loaded, and then the actual resource files. In this example, all of the entities in the *BusinessApplications* directory are added, and then only the *AmazonSimpleStorageServiceS3* entity from the *Storage* directory.
@@ -85,11 +85,11 @@ This is the [`examples/HelloWorld.puml`](<examples/HelloWorld.puml>) diagram cod
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!includeurl AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml
+!includeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 
 actor "Person" as personAlias
-AmazonWorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
-AmazonSimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
+WorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
+SimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
 
 personAlias --> desktopAlias
 desktopAlias --> storageAlias
@@ -99,7 +99,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-*** insert plantuml link here once public ***
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/HelloWorld.puml)
 
 
 
@@ -118,18 +118,18 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/InternetofThings/IoTRule.puml
-!includeurl AWSPuml/InternetofThings/IoTAction.puml
-!includeurl AWSPuml/Analytics/AmazonKinesisDataStreams.puml
-!includeurl AWSPuml/ApplicationIntegration/AmazonSimpleQueueServiceSQS.puml
+!includeurl AWSPuml/InternetOfThings/IoTRule.puml
+!includeurl AWSPuml/InternetOfThings/IoTAction.puml
+!includeurl AWSPuml/Analytics/KinesisDataStreams.puml
+!includeurl AWSPuml/ApplicationIntegration/SimpleQueueServiceSQS.puml
 
 left to right direction
 
 agent "Published Event" as event #fff
 
 IoTRule(iotRule, "Action Error Rule", "Error if Kinesis fails")
-AmazonKinesisDataStreams(eventStream, "IoT Events", "2 shards")
-AmazonSimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
+KinesisDataStreams(eventStream, "IoT Events", "2 shards")
+SimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
 
 event --> iotRule : JSON message
 iotRule --> eventStream : messages
@@ -152,14 +152,14 @@ The individual icon sprites (complete list [here](AWSSymbols.md)) can be include
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/MachineLearning/AmazonSageMakerModel.puml
-!includeurl AWSPuml/Robotics/AWSRoboMaker.puml
+!includeurl AWSPuml/MachineLearning/SageMakerModel.puml
+!includeurl AWSPuml/Robotics/RoboMaker.puml
 
-component "<color:green><$AmazonSageMakerModel></color>" as myMLModel
-database "<color:#232F3E><$AWSRoboMaker></color>" as myRoboticService
-AWSRoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
+component "<color:green><$SageMakerModel></color>" as myMLModel
+database "<color:#232F3E><$RoboMaker></color>" as myRoboticService
+RoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
 
-rectangle "<color:AWS_SYMBOL_COLOR><$AmazonSageMakerModel></color>" as mySecondML
+rectangle "<color:AWS_SYMBOL_COLOR><$SageMakerModel></color>" as mySecondML
 
 myMLModel --> myRoboticService
 mySecondFunction --> mySecondML
@@ -177,6 +177,8 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 
 ```bash
 @startuml Two Modes - Technical View
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
@@ -184,20 +186,20 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
-!includeurl AWSPuml/General/AWSGeneralUsers.puml
-!includeurl AWSPuml/Mobile/AmazonAPIGateway.puml
-!includeurl AWSPuml/SecurityIdentityandCompliance/AmazonCognito.puml
-!includeurl AWSPuml/Compute/AWSLambda.puml
-!includeurl AWSPuml/Database/AmazonDynamoDB.puml
+!includeurl AWSPuml/General/GeneralUsers.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
+!includeurl AWSPuml/Compute/Lambda.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
 
 left to right direction
 
-AWSGeneralUsers(sources, "Events", "millions of users")
-AmazonAPIGateway(votingAPI, "Voting API", "user votes")
-AmazonCognito(userAuth, "User Authentication", "jwt to submit votes")
-AWSLambda(generateToken, "User Credentials", "return jwt")
-AWSLambda(recordVote, "Record Vote", "enter or update vote per user")
-AmazonDynamoDB(voteDb, "Vote Database", "one entry per user")
+GeneralUsers(sources, "Events", "millions of users")
+APIGateway(votingAPI, "Voting API", "user votes")
+Cognito(userAuth, "User Authentication", "jwt to submit votes")
+Lambda(generateToken, "User Credentials", "return jwt")
+Lambda(recordVote, "Record Vote", "enter or update vote per user")
+DynamoDB(voteDb, "Vote Database", "one entry per user")
 
 sources --> userAuth
 sources --> votingAPI

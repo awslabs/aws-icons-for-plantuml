@@ -4,14 +4,14 @@
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/MachineLearning/AmazonSageMakerModel.puml
-!includeurl AWSPuml/Robotics/AWSRoboMaker.puml
+!includeurl AWSPuml/MachineLearning/SageMakerModel.puml
+!includeurl AWSPuml/Robotics/RoboMaker.puml
 
-component "<color:green><$AmazonSageMakerModel></color>" as myMLModel
-database "<color:#232F3E><$AWSRoboMaker></color>" as myRoboticService
-AWSRoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
+component "<color:green><$SageMakerModel></color>" as myMLModel
+database "<color:#232F3E><$RoboMaker></color>" as myRoboticService
+RoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
 
-rectangle "<color:AWS_SYMBOL_COLOR><$AmazonSageMakerModel></color>" as mySecondML
+rectangle "<color:AWS_SYMBOL_COLOR><$SageMakerModel></color>" as mySecondML
 
 myMLModel --> myRoboticService
 mySecondFunction --> mySecondML
