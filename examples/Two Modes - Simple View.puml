@@ -18,8 +18,8 @@ left to right direction
 
 GeneralUsers(sources, "Events", "millions of users")
 APIGateway(votingAPI, "Voting API", "user votes")
-Cognito(userAuth, "User Authentication", "web token to submit votes")
-Lambda(generateToken, "User Credentials", "return web token")
+Cognito(userAuth, "User Authentication", "jwt to submit votes")
+Lambda(generateToken, "User Credentials", "return jwt")
 Lambda(recordVote, "Record Vote", "enter or update vote per user")
 DynamoDB(voteDb, "Vote Database", "one entry per user")
 

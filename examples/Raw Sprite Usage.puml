@@ -11,9 +11,9 @@ component "<color:green><$SageMakerModel></color>" as myMLModel
 database "<color:#232F3E><$RoboMaker></color>" as myRoboticService
 RoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
 
-rectangle "<color:AWS_SYMBOL_COLOR><$SageMakerModel></color>" as mySecondMLModel
+rectangle "<color:AWS_SYMBOL_COLOR><$SageMakerModel></color>" as mySecondML
 
 myMLModel --> myRoboticService
-mySecondFunction --> mySecondMLModel
+mySecondFunction --> mySecondML
 
 @enduml

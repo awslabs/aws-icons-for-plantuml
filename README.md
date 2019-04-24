@@ -127,7 +127,7 @@ left to right direction
 
 agent "Published Event" as event #fff
 
-IoTRule(iotRule, "Action Error Rule", "Error if Kinesis fails")
+IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
 KinesisDataStreams(eventStream, "IoT Events", "2 shards")
 SimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
 
