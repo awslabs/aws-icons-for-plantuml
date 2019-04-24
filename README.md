@@ -140,7 +140,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-**insert plantuml link here once public**
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/Basic%20Usage.puml)
 
 ### Raw Sprites
 
@@ -169,7 +169,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram: 
 
-**insert plantuml link here once public**
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/Raw%20Sprite%20Usage.puml)
 
 ### Simplified View
 
@@ -212,11 +212,13 @@ recordVote --> voteDb
 
 This code generates the following diagram:
 
-**URL of technical diagram**
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/Two%20Modes%20-%20Technical%20View.puml)
 
 And if the `!includeurl AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-**URL of the simplified diagram**
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/Two%20Modes%20-%20Simple%20View.puml)
+
+
 
 
 
