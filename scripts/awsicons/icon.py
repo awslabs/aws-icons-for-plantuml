@@ -68,6 +68,14 @@ class Icon:
                 target=self.target, color=self.color
             )
 
+            puml_content += "!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n".format(
+                target=self.target, color=self.color
+            )
+
+            puml_content += "!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n".format(
+                target=self.target, color=self.color
+            )
+
             with open("{}/{}.puml".format(path, self.target), "w") as f:
                 f.write(puml_content)
 
