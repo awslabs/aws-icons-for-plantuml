@@ -10,3 +10,5 @@ vSVBFrz-qP6v_y_zvsh_lJP-h8zVg-FdR_wnD7zRdp-kpr_Nvy_hy_UVdry_VXfx
 AWSEntityColoring(IoTGeneric)
 !define IoTGeneric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGeneric, IoTGeneric)
 !define IoTGeneric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGeneric, IoTGeneric)
+!define IoTGenericParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGeneric, IoTGeneric)
+!define IoTGenericParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGeneric, IoTGeneric)

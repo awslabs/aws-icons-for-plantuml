@@ -10,6 +10,8 @@ vm8
 AWSEntityColoring(SNSTopic)
 !define SNSTopic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SNSTopic, SNSTopic)
 !define SNSTopic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SNSTopic, SNSTopic)
+!define SNSTopicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SNSTopic, SNSTopic)
+!define SNSTopicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SNSTopic, SNSTopic)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -24,6 +26,8 @@ FLPpSNAivd9_483q-FxInls5098yTClFxa_dzxS73nxy0G
 AWSEntityColoring(AppSync)
 !define AppSync(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AppSync, AppSync)
 !define AppSync(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AppSync, AppSync)
+!define AppSyncParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AppSync, AppSync)
+!define AppSyncParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AppSync, AppSync)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -38,6 +42,8 @@ _lpGvnUTp2yRyzFs_BQEONvyJhpnnby
 AWSEntityColoring(SimpleQueueServiceSQS)
 !define SimpleQueueServiceSQS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)
 !define SimpleQueueServiceSQS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)
+!define SimpleQueueServiceSQSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)
+!define SimpleQueueServiceSQSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SimpleQueueServiceSQS, SimpleQueueServiceSQS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -51,6 +57,8 @@ lvFpHp9--V4tEtzdrmzVR_tpjtxDttz-_x11Sl-Ktx-Dr-yVUtR_cjq_v_a7
 AWSEntityColoring(SQSMessage)
 !define SQSMessage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SQSMessage, SQSMessage)
 !define SQSMessage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SQSMessage, SQSMessage)
+!define SQSMessageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SQSMessage, SQSMessage)
+!define SQSMessageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SQSMessage, SQSMessage)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -64,6 +72,8 @@ M1BHzaJm6Ve6
 AWSEntityColoring(ApplicationIntegration)
 !define ApplicationIntegration(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ApplicationIntegration, ApplicationIntegration)
 !define ApplicationIntegration(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ApplicationIntegration, ApplicationIntegration)
+!define ApplicationIntegrationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ApplicationIntegration, ApplicationIntegration)
+!define ApplicationIntegrationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ApplicationIntegration, ApplicationIntegration)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -76,6 +86,8 @@ GMqU-_FMdkPlgd7hqPlYy2RUd8vBbT-Ssxzkjxi2
 AWSEntityColoring(SQSQueue)
 !define SQSQueue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SQSQueue, SQSQueue)
 !define SQSQueue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SQSQueue, SQSQueue)
+!define SQSQueueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SQSQueue, SQSQueue)
+!define SQSQueueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SQSQueue, SQSQueue)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -88,6 +100,8 @@ bl5ZCiAwng-RnURFzy__wFeLNJ-ZwtTW_uZiNz7zCxf_VtVy4OsV0l5R9PHe_1YCNtyiRzxi0G
 AWSEntityColoring(StepFunctions)
 !define StepFunctions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, StepFunctions, StepFunctions)
 !define StepFunctions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, StepFunctions, StepFunctions)
+!define StepFunctionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, StepFunctions, StepFunctions)
+!define StepFunctionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, StepFunctions, StepFunctions)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -102,6 +116,8 @@ KG4HfDSq8EEXCU_mapTEaw3f1A_D098ruFXarHOfeBS9JB92MAo-G069T_S7htq40s9v_FxI-71_sa_e
 AWSEntityColoring(SimpleNotificationServiceSNS)
 !define SimpleNotificationServiceSNS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)
 !define SimpleNotificationServiceSNS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)
+!define SimpleNotificationServiceSNSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)
+!define SimpleNotificationServiceSNSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SimpleNotificationServiceSNS, SimpleNotificationServiceSNS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -117,6 +133,8 @@ tz_-x_xuFVdbbpy
 AWSEntityColoring(MQ)
 !define MQ(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, MQ, MQ)
 !define MQ(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, MQ, MQ)
+!define MQParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, MQ, MQ)
+!define MQParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, MQ, MQ)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -133,6 +151,8 @@ t_Rpf_sH_6b0Bu1MGgTmoVd6D6MLhlpP_lvU-UEP-I5_sfa_xKF-LEb_ykTCeTVcPvNYy_m3
 AWSEntityColoring(SNSEmailNotification)
 !define SNSEmailNotification(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SNSEmailNotification, SNSEmailNotification)
 !define SNSEmailNotification(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SNSEmailNotification, SNSEmailNotification)
+!define SNSEmailNotificationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SNSEmailNotification, SNSEmailNotification)
+!define SNSEmailNotificationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SNSEmailNotification, SNSEmailNotification)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -149,4 +169,6 @@ aVacyBB-OLVLdfC3ecOKb5jKCAC1OodVxn_zgd_qw_unGNlRFmrY7_RFkcFV3Ax-aTqQeVppz__Vzy_p
 AWSEntityColoring(SNSHTTPNotification)
 !define SNSHTTPNotification(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SNSHTTPNotification, SNSHTTPNotification)
 !define SNSHTTPNotification(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SNSHTTPNotification, SNSHTTPNotification)
+!define SNSHTTPNotificationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SNSHTTPNotification, SNSHTTPNotification)
+!define SNSHTTPNotificationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SNSHTTPNotification, SNSHTTPNotification)
 

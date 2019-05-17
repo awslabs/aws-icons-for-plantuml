@@ -13,3 +13,5 @@ EN9ayEUUc0_Jczw05Bf94Z3wkmJGv58t04alaiGecyhnwOkskLxeLTptQquLkHy9RoGjS54qeJTZqHwP
 AWSEntityColoring(ElastiCacheForRedis)
 !define ElastiCacheForRedis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
 !define ElastiCacheForRedis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
+!define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
+!define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)

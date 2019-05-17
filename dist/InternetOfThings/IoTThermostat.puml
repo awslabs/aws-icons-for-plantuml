@@ -13,3 +13,5 @@ bmhN4ls1-zjFtXzVlx_wJzwVK-BtQK-ywlxxuG_UR__Euo_VR_VVpp-jDm
 AWSEntityColoring(IoTThermostat)
 !define IoTThermostat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThermostat, IoTThermostat)
 !define IoTThermostat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThermostat, IoTThermostat)
+!define IoTThermostatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThermostat, IoTThermostat)
+!define IoTThermostatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThermostat, IoTThermostat)

@@ -8,3 +8,5 @@ RPyEKIW1f44LbW2eK87dFLvQCsqHmVcWgN4-EX-q9kD-zFY7hz_m_HjzVWQVtmzx_ygNBr-UlUM1dz2m
 AWSEntityColoring(Blockchain)
 !define Blockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Blockchain, Blockchain)
 !define Blockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Blockchain, Blockchain)

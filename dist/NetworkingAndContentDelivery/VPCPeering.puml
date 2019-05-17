@@ -12,3 +12,5 @@ l1W_nVbTFJ-gvrVn_2oUtzNxG_7-Khu_rUzlzVjZ_VvQlp_Nx-_v_W0Y4FU7h_QNrfBzfRO_rVUt-lvO
 AWSEntityColoring(VPCPeering)
 !define VPCPeering(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCPeering, VPCPeering)
 !define VPCPeering(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCPeering, VPCPeering)
+!define VPCPeeringParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCPeering, VPCPeering)
+!define VPCPeeringParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCPeering, VPCPeering)

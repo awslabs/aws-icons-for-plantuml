@@ -11,3 +11,5 @@ oMzdQEzp6_vizGr1pbMERI1fzV72g-Eda7cUPsH7aWD1Adonh-bRCsX7UCnUuEvBVQ0pDAeto82R2mnj
 AWSEntityColoring(Transcribe)
 !define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Transcribe, Transcribe)
 !define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Transcribe, Transcribe)

@@ -11,3 +11,5 @@ ehPy4c3kXIVA1md2ckKtLUUnbJ3zXVll_VxfQ_TlNxr__FhzwzVldxy-_mC
 AWSEntityColoring(IAMAWSSTSAlternate)
 !define IAMAWSSTSAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMAWSSTSAlternate, IAMAWSSTSAlternate)
 !define IAMAWSSTSAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMAWSSTSAlternate, IAMAWSSTSAlternate)
+!define IAMAWSSTSAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMAWSSTSAlternate, IAMAWSSTSAlternate)
+!define IAMAWSSTSAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMAWSSTSAlternate, IAMAWSSTSAlternate)

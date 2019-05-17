@@ -10,3 +10,5 @@ NiAd87VpFqWV8-gYqs1ysByDPP3a_VwRnmFU1HAylp_13alMBKmtVS16alK4TzJFyFBoyl8R
 AWSEntityColoring(Cloud9)
 !define Cloud9(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Cloud9, Cloud9)
 !define Cloud9(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Cloud9, Cloud9)
+!define Cloud9Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Cloud9, Cloud9)
+!define Cloud9Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Cloud9, Cloud9)

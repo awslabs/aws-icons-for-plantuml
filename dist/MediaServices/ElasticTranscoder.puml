@@ -11,3 +11,5 @@ BKDlvNVyx_5zrbyPr6BzDHO7OPg6AXXUVScVvJhL7t-vOuigtsTf6-t-MItzkz-Kf4sigSzv6PExDlpf
 AWSEntityColoring(ElasticTranscoder)
 !define ElasticTranscoder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
 !define ElasticTranscoder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticTranscoder, ElasticTranscoder)
+!define ElasticTranscoderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
+!define ElasticTranscoderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticTranscoder, ElasticTranscoder)

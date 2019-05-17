@@ -11,3 +11,5 @@ Yc3NyuSCbdIMshxlGUiIj7sR_wiKR77q_vRXaVsr--klVm
 AWSEntityColoring(ResourceAccessManager)
 !define ResourceAccessManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ResourceAccessManager, ResourceAccessManager)
 !define ResourceAccessManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ResourceAccessManager, ResourceAccessManager)
+!define ResourceAccessManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ResourceAccessManager, ResourceAccessManager)
+!define ResourceAccessManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ResourceAccessManager, ResourceAccessManager)

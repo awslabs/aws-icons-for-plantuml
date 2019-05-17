@@ -10,3 +10,5 @@ dth1v6tuMtfYfhRdYoRkEzpq8t0CZgRtv7Dc0U_vZ14P1dfUSUwtFEESlSzbFl68sNRzy5_w_AOV-fYL
 AWSEntityColoring(CertificateManagerResource)
 !define CertificateManagerResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CertificateManagerResource, CertificateManagerResource)
 !define CertificateManagerResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateManagerResource, CertificateManagerResource)
+!define CertificateManagerResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CertificateManagerResource, CertificateManagerResource)
+!define CertificateManagerResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CertificateManagerResource, CertificateManagerResource)

@@ -11,6 +11,8 @@ yGm
 AWSEntityColoring(ElementalMediaPackage)
 !define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
 !define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -25,6 +27,8 @@ xUNvyS_gfflk0G
 AWSEntityColoring(ElementalMediaStore)
 !define ElementalMediaStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
 !define ElementalMediaStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -39,6 +43,8 @@ MNdbbOy
 AWSEntityColoring(ElementalMediaLive)
 !define ElementalMediaLive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
 !define ElementalMediaLive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
+!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
+!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -52,6 +58,8 @@ _-5-53rJxKzpKFPDvOpKs0L-tLUE4Lb2HIZxc__0mPP08l2_bPKm4EQiVI2VNdn5FHaBi8jl47y2ZleF
 AWSEntityColoring(ElementalMediaTailor)
 !define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
 !define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -65,6 +73,8 @@ GB9_PQB_Hyi7x-te_464-SCn-Ol8CVaBtGvflKN-nlpnQVNMMny
 AWSEntityColoring(ElementalMediaConvert)
 !define ElementalMediaConvert(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConvert, ElementalMediaConvert)
 !define ElementalMediaConvert(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvertParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvertParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConvert, ElementalMediaConvert)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -79,6 +89,8 @@ QxUa8M8n-9g6_lj_dr_cyzERFB-T_lzPupk-uoS
 AWSEntityColoring(ElementalMediaConnect)
 !define ElementalMediaConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
 !define ElementalMediaConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -93,6 +105,8 @@ BKDlvNVyx_5zrbyPr6BzDHO7OPg6AXXUVScVvJhL7t-vOuigtsTf6-t-MItzkz-Kf4sigSzv6PExDlpf
 AWSEntityColoring(ElasticTranscoder)
 !define ElasticTranscoder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
 !define ElasticTranscoder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticTranscoder, ElasticTranscoder)
+!define ElasticTranscoderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
+!define ElasticTranscoderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticTranscoder, ElasticTranscoder)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -105,4 +119,6 @@ twMCO_9_ny_LNtrroGD_WiM-SNipV8AnpTQCVSpm7tW6
 AWSEntityColoring(MediaServices)
 !define MediaServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, MediaServices, MediaServices)
 !define MediaServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, MediaServices, MediaServices)
+!define MediaServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, MediaServices, MediaServices)
+!define MediaServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, MediaServices, MediaServices)
 

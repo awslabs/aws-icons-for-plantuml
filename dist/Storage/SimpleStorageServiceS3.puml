@@ -11,3 +11,5 @@ kFi2rYbVIm0ZyjiGHf2yn0bWzVZqxmctGS386uJI-_vj_miEsk-mvKrSl-uVBV8-TTHyu1x_kd_-EGyF
 AWSEntityColoring(SimpleStorageServiceS3)
 !define SimpleStorageServiceS3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
 !define SimpleStorageServiceS3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
+!define SimpleStorageServiceS3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
+!define SimpleStorageServiceS3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)

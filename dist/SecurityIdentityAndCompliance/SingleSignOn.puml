@@ -11,3 +11,5 @@ Z3f2P7hAnz4y_utJqVomVy0Qemvp0A_ZmjspleLVl_u2
 AWSEntityColoring(SingleSignOn)
 !define SingleSignOn(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SingleSignOn, SingleSignOn)
 !define SingleSignOn(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SingleSignOn, SingleSignOn)
+!define SingleSignOnParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SingleSignOn, SingleSignOn)
+!define SingleSignOnParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SingleSignOn, SingleSignOn)

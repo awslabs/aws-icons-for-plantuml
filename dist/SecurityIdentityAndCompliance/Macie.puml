@@ -10,3 +10,5 @@ e1w6ok6ukG5wwA_Lvowg8zSzq3N_VQIFECFZQomMYyNY5m
 AWSEntityColoring(Macie)
 !define Macie(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Macie, Macie)
 !define Macie(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Macie, Macie)

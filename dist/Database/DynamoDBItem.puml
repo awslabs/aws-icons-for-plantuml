@@ -9,3 +9,5 @@ gQZwpCPg6nme-YN9WB8_qAQFSRXW-XFZcxn_vea6CEQ914_koks_xlXTV_wkltxg_kT__kT__kUl_d-w
 AWSEntityColoring(DynamoDBItem)
 !define DynamoDBItem(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
 !define DynamoDBItem(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBItem, DynamoDBItem)

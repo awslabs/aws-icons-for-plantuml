@@ -13,3 +13,5 @@ t_Rpf_sH_6b0Bu1MGgTmoVd6D6MLhlpP_lvU-UEP-I5_sfa_xKF-LEb_ykTCeTVcPvNYy_m3
 AWSEntityColoring(SNSEmailNotification)
 !define SNSEmailNotification(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SNSEmailNotification, SNSEmailNotification)
 !define SNSEmailNotification(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SNSEmailNotification, SNSEmailNotification)
+!define SNSEmailNotificationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SNSEmailNotification, SNSEmailNotification)
+!define SNSEmailNotificationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SNSEmailNotification, SNSEmailNotification)

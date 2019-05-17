@@ -11,3 +11,5 @@ QUY7_CEJHpU_WE_Fttd_Zi_fb_ittzy14mVqPlqOI89kvny0_6R-2OcaS-nR4QxIlF_zQe1_w_Tpee4s
 AWSEntityColoring(IoTUtility)
 !define IoTUtility(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTUtility, IoTUtility)
 !define IoTUtility(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTUtility, IoTUtility)
+!define IoTUtilityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTUtility, IoTUtility)
+!define IoTUtilityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTUtility, IoTUtility)

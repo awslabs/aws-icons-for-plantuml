@@ -11,3 +11,5 @@ _ef4WbUt3ECzVtISz_m5F7y7-MWPG32J0JvQXeZVNmDyD0w_F-DtWK_Vtn0v-Kh_IFZNkdRyQz0_WOv_
 AWSEntityColoring(ToolsAndSDKs)
 !define ToolsAndSDKs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ToolsAndSDKs, ToolsAndSDKs)
 !define ToolsAndSDKs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ToolsAndSDKs, ToolsAndSDKs)
+!define ToolsAndSDKsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ToolsAndSDKs, ToolsAndSDKs)
+!define ToolsAndSDKsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ToolsAndSDKs, ToolsAndSDKs)

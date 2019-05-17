@@ -12,3 +12,5 @@ dyzC8wjL_fDsVKSMm5mx9zYCdmeOioGVlkpwPpt9Xsk2uX_aNuldFxoY1NVzn257r_RFV_uHKerjdubt
 AWSEntityColoring(CodeDeploy)
 !define CodeDeploy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeDeploy, CodeDeploy)
 !define CodeDeploy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeDeploy, CodeDeploy)
+!define CodeDeployParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodeDeploy, CodeDeploy)
+!define CodeDeployParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodeDeploy, CodeDeploy)

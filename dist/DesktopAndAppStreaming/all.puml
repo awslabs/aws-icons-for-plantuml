@@ -11,6 +11,8 @@ KOjugXMxytZKbhpT8UY2fqP-4-y5Q-wdULU6s1NUIjcgdkJv2EKapq6aIzuuUyqykrcBUGx-cPyVhHV2
 AWSEntityColoring(Workspaces)
 !define Workspaces(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Workspaces, Workspaces)
 !define Workspaces(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Workspaces, Workspaces)
+!define WorkspacesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Workspaces, Workspaces)
+!define WorkspacesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Workspaces, Workspaces)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -23,6 +25,8 @@ rNj602wys5VxBJFRqNAnVesJQzRtEMAfWstA4pWywUKz0UOz0ULD0B-My0GE_Hgjd2U0vs4IdW2U05u4
 AWSEntityColoring(Appstream2.0)
 !define Appstream2.0(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Appstream2.0, Appstream2.0)
 !define Appstream2.0(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Appstream2.0, Appstream2.0)
+!define Appstream2.0Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Appstream2.0, Appstream2.0)
+!define Appstream2.0Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Appstream2.0, Appstream2.0)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -36,4 +40,6 @@ _z0h
 AWSEntityColoring(DesktopandAppStreaming)
 !define DesktopandAppStreaming(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)
 !define DesktopandAppStreaming(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)
+!define DesktopandAppStreamingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)
+!define DesktopandAppStreamingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DesktopandAppStreaming, DesktopandAppStreaming)
 

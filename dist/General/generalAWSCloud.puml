@@ -12,3 +12,5 @@ ZwZvc9VQRRNySUlykItSPhOAZU2zN-Y8tBWPNS-4oDtrn-ep_dQ7woFhbxLvF_2c_FFxPUl_-3_-y_-_
 AWSEntityColoring(generalAWSCloud)
 !define generalAWSCloud(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, generalAWSCloud, generalAWSCloud)
 !define generalAWSCloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, generalAWSCloud, generalAWSCloud)
+!define generalAWSCloudParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, generalAWSCloud, generalAWSCloud)
+!define generalAWSCloudParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, generalAWSCloud, generalAWSCloud)

@@ -12,3 +12,5 @@ dSu9f0NkofrrhGdaU3--jdylzjTg-Di1bcwp0tOVLNg8v-lopSSoR2_VUxGlp3221_KF48CkmWaWt3q1
 AWSEntityColoring(GlueCrawlers)
 !define GlueCrawlers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueCrawlers, GlueCrawlers)
 !define GlueCrawlers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueCrawlers, GlueCrawlers)
+!define GlueCrawlersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueCrawlers, GlueCrawlers)
+!define GlueCrawlersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueCrawlers, GlueCrawlers)

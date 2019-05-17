@@ -8,3 +8,5 @@ DINFp9xn0x_SLr-z09z-_7FWuSll_lFN0HuxVzvv_hxt-k6RbL9c
 AWSEntityColoring(IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)

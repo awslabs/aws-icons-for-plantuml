@@ -10,3 +10,5 @@ F6jc3lllqiEIXY_Dtq51BQtVWGCws3z87mDii7-nlczjqBu2fLq_6FZYjFuFA92lvCUsqzGyu_CxQNe7
 AWSEntityColoring(EC2OptimizedInstance)
 !define EC2OptimizedInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)
 !define EC2OptimizedInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)
+!define EC2OptimizedInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)
+!define EC2OptimizedInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2OptimizedInstance, EC2OptimizedInstance)

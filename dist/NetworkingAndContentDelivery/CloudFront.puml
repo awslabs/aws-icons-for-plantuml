@@ -12,3 +12,5 @@ mbe4eYyLO57iRcqgXRv7v_fV8D6Xlzg_O3aBZe48ZBVwfxDgfWEqUBD_4otzM_FFwX_Zi_hN7nH_y0T_
 AWSEntityColoring(CloudFront)
 !define CloudFront(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFront, CloudFront)
 !define CloudFront(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFront, CloudFront)
+!define CloudFrontParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFront, CloudFront)
+!define CloudFrontParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFront, CloudFront)

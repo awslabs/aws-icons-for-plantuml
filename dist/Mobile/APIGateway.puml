@@ -10,3 +10,5 @@ Aca5xOJ-Ty05CXpe9wqVQL7XZ2Qdph-ZdhN-57AMfqVg7__yMi-FsvvVw_dv-EVN-NuSuiTMNpNs-z2Q
 AWSEntityColoring(APIGateway)
 !define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, APIGateway, APIGateway)
 !define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, APIGateway, APIGateway)

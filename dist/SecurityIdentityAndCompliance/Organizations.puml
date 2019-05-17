@@ -10,3 +10,5 @@ _L1pS9yrn-j-XkE-upwSVCrN7XUiBgnvsMvhrlGZE3Xu1G
 AWSEntityColoring(Organizations)
 !define Organizations(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Organizations, Organizations)
 !define Organizations(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Organizations, Organizations)

@@ -9,3 +9,5 @@ DizVZp__NdxzSFdr2ozmyVNRHriilW4
 AWSEntityColoring(ECSContainer3)
 !define ECSContainer3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ECSContainer3, ECSContainer3)
 !define ECSContainer3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ECSContainer3, ECSContainer3)
+!define ECSContainer3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ECSContainer3, ECSContainer3)
+!define ECSContainer3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ECSContainer3, ECSContainer3)

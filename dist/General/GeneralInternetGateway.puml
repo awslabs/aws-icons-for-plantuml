@@ -12,3 +12,5 @@ y8SU3AAf_VqjCG_Wq6zqmuq89eqttm9965644aVWHbZzL5GTQf4Oqp0bqZZGDnzl_gtTPYjqYlGlSzt_
 AWSEntityColoring(GeneralInternetGateway)
 !define GeneralInternetGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
 !define GeneralInternetGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
+!define GeneralInternetGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
+!define GeneralInternetGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralInternetGateway, GeneralInternetGateway)

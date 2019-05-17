@@ -11,3 +11,5 @@ V_3iW7sPltK_2dELtEAZ6AFCjt9eshSNd_PnXHzM_hZoV2BPdckSTW67p6z_1J8emY6GxtXCWHzFB-NZ
 AWSEntityColoring(TensorFlowonAWS)
 !define TensorFlowonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
 !define TensorFlowonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)

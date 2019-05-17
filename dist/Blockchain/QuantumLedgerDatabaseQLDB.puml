@@ -10,3 +10,5 @@ ASX0PRt_bihMJBF7RnW0cloEZ01yt_5VqRCRf7bKszLtM_bhpb_pry_Zr-_Zzm_7xr-EtpyTltyxEJcv
 AWSEntityColoring(QuantumLedgerDatabaseQLDB)
 !define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
 !define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)

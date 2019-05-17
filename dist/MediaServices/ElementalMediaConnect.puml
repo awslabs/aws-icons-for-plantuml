@@ -11,3 +11,5 @@ QxUa8M8n-9g6_lj_dr_cyzERFB-T_lzPupk-uoS
 AWSEntityColoring(ElementalMediaConnect)
 !define ElementalMediaConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
 !define ElementalMediaConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)

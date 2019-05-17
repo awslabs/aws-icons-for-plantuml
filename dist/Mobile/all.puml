@@ -9,6 +9,8 @@ ql7_gxQuvVNJwLDJrQM_uDyzxUDDY1S4uWrfEX9ty0W
 AWSEntityColoring(Mobile)
 !define Mobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Mobile, Mobile)
 !define Mobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Mobile, Mobile)
+!define MobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Mobile, Mobile)
+!define MobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Mobile, Mobile)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -22,6 +24,8 @@ Aca5xOJ-Ty05CXpe9wqVQL7XZ2Qdph-ZdhN-57AMfqVg7__yMi-FsvvVw_dv-EVN-NuSuiTMNpNs-z2Q
 AWSEntityColoring(APIGateway)
 !define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, APIGateway, APIGateway)
 !define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, APIGateway, APIGateway)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -37,6 +41,8 @@ l3w__gBvUQ__-g-F
 AWSEntityColoring(DeviceFarm)
 !define DeviceFarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DeviceFarm, DeviceFarm)
 !define DeviceFarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DeviceFarm, DeviceFarm)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -50,4 +56,6 @@ fGhzJuChdCAfxNI4FzKT2M6MrPZXUGr-JeVEkObyPSXN9wUhRpXacgyKkC6guiyQ67ud34IgWTZ9wVed
 AWSEntityColoring(Amplify)
 !define Amplify(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Amplify, Amplify)
 !define Amplify(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Amplify, Amplify)
 

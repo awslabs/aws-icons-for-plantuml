@@ -9,3 +9,5 @@ aTqIWPu9FAfYVXyVsMGdbElf6YN63i18_XGN6YlZ0X70UXmv91E51-b7Cx_LRxdAo29PjSgi6vTSfMUt
 AWSEntityColoring(FSxforLustre)
 !define FSxforLustre(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSxforLustre, FSxforLustre)
 !define FSxforLustre(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FSxforLustre, FSxforLustre)

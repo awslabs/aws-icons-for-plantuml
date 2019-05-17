@@ -9,3 +9,5 @@ wEi_Hn_6bpyF_23knl5W_G7fDnF4m_qFMDx844ySly3DugdZt-96RNq_NVNB-vYjd_WDxVQKhpzg6rBY
 AWSEntityColoring(BusinessApplication)
 !define BusinessApplication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, BusinessApplication, BusinessApplication)
 !define BusinessApplication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, BusinessApplication, BusinessApplication)
+!define BusinessApplicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, BusinessApplication, BusinessApplication)
+!define BusinessApplicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, BusinessApplication, BusinessApplication)

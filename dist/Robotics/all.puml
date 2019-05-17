@@ -15,6 +15,8 @@ g1ezzFUt_WC
 AWSEntityColoring(RoboMakerDevEnvironment)
 !define RoboMakerDevEnvironment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerDevEnvironment, RoboMakerDevEnvironment)
 !define RoboMakerDevEnvironment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerDevEnvironment, RoboMakerDevEnvironment)
+!define RoboMakerDevEnvironmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerDevEnvironment, RoboMakerDevEnvironment)
+!define RoboMakerDevEnvironmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerDevEnvironment, RoboMakerDevEnvironment)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -28,6 +30,8 @@ JYi-NkysMow_Vw4Qt_F-2odVuHEz8zTzm0onwDE9b-Yvu1sm7fdH3V1fRx3y_2Z19hsTJpNObE_mosVJ
 AWSEntityColoring(Robotics)
 !define Robotics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Robotics, Robotics)
 !define Robotics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Robotics, Robotics)
+!define RoboticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Robotics, Robotics)
+!define RoboticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Robotics, Robotics)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -47,6 +51,8 @@ wF_85CNc_LKD1451jlt_em7nhjEV_tyS8s9P9NqOCTkCOVyM5CU1TYvZxqbrLDSzzlz_V5I4yRRtgA2C
 AWSEntityColoring(RoboMakerFleetManagement)
 !define RoboMakerFleetManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
 !define RoboMakerFleetManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -65,6 +71,8 @@ DwCwSxkrttRYKs1L2Nl4dlBYwR9VY3-gaay
 AWSEntityColoring(RoboMakerCloudExtensionROS)
 !define RoboMakerCloudExtensionROS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerCloudExtensionROS, RoboMakerCloudExtensionROS)
 !define RoboMakerCloudExtensionROS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerCloudExtensionROS, RoboMakerCloudExtensionROS)
+!define RoboMakerCloudExtensionROSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerCloudExtensionROS, RoboMakerCloudExtensionROS)
+!define RoboMakerCloudExtensionROSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerCloudExtensionROS, RoboMakerCloudExtensionROS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -79,6 +87,8 @@ da-Lf02mi-AdFlbVqZx4CC_yiBK_yhVv-_rRpU-4nVnO9bTzzlxCNEolXP-ms5_Ii4HuXR0bpb_3F__S
 AWSEntityColoring(RoboMaker)
 !define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMaker, RoboMaker)
 !define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMaker, RoboMaker)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -94,4 +104,6 @@ Ffw_gAOz_dZx2Jg8BplnrPq1ihVcE4C-k7-XX-ES_rHoBYryb1oYK0xypDHmkV-BsNIy2iCyekpwc26h
 AWSEntityColoring(RoboMakerSimulation)
 !define RoboMakerSimulation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
 !define RoboMakerSimulation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
 

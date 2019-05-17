@@ -12,3 +12,5 @@ HPMn_JluyE73_m
 AWSEntityColoring(IAMRole)
 !define IAMRole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMRole, IAMRole)
 !define IAMRole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMRole, IAMRole)
+!define IAMRoleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMRole, IAMRole)
+!define IAMRoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMRole, IAMRole)

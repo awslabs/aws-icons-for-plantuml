@@ -12,6 +12,8 @@ WClTvqq2iAFvvm3f9bTcAtax_vRrfwXSHMhLLvDvw5dNdvO5mx_Bc3hii7wt_sMnzcyYFXAdo__sJozY
 AWSEntityColoring(IoTPoliceEmergency)
 !define IoTPoliceEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
 !define IoTPoliceEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
+!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
+!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -25,6 +27,8 @@ oVpiaytvyueJkAw-jNuOtKXpMctwAjMgRN_LRzUxd5xyv_x__kc_7zbCJ7uZBtlAyqHj8qfS8QKV4dz3
 AWSEntityColoring(InternetofThings)
 !define InternetofThings(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, InternetofThings, InternetofThings)
 !define InternetofThings(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, InternetofThings, InternetofThings)
+!define InternetofThingsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, InternetofThings, InternetofThings)
+!define InternetofThingsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, InternetofThings, InternetofThings)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -39,6 +43,8 @@ FU7N-QFMFmc_-_pL-TEO4ml_TK_wwfpdhu4tmd-bgT-XU4Dy_nlIh3_eZUEqvmUiNxvv_VRjwyTlNxz-
 AWSEntityColoring(IoTFactory)
 !define IoTFactory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFactory, IoTFactory)
 !define IoTFactory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFactory, IoTFactory)
+!define IoTFactoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFactory, IoTFactory)
+!define IoTFactoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFactory, IoTFactory)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -52,6 +58,8 @@ _fZyiYf1EuzPV_MIzNUkU51-UNJzvKlF3nUVNou_Frr-Vhly_7Zv-VNn_
 AWSEntityColoring(IoTAnalyticsDataStore)
 !define IoTAnalyticsDataStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
 !define IoTAnalyticsDataStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -67,6 +75,8 @@ PaoUxx_nHywpNY95VEC79VFQFIhST_EtwV1hjpJGg_F7Y_FNY_Fdg_FtV_w5_n__BFu3
 AWSEntityColoring(IoTCoffeePot)
 !define IoTCoffeePot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCoffeePot, IoTCoffeePot)
 !define IoTCoffeePot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCoffeePot, IoTCoffeePot)
+!define IoTCoffeePotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCoffeePot, IoTCoffeePot)
+!define IoTCoffeePotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCoffeePot, IoTCoffeePot)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -82,6 +92,8 @@ lBp5rqQVA_JmTRPj4dBpicNXW0XWYnVPhXt_5hfeQOOG068HuOM-wBfDXn8kgAVolmbtSu_yTVd7F_u3
 AWSEntityColoring(IoTAnalytics)
 !define IoTAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalytics, IoTAnalytics)
 !define IoTAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalytics, IoTAnalytics)
+!define IoTAnalyticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalytics, IoTAnalytics)
+!define IoTAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalytics, IoTAnalytics)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -98,6 +110,8 @@ FVFma3zEA-W5V_cF1FiJ7eH_E5BUVeDy0m
 AWSEntityColoring(IoTCertificateManager)
 !define IoTCertificateManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCertificateManager, IoTCertificateManager)
 !define IoTCertificateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCertificateManager, IoTCertificateManager)
+!define IoTCertificateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCertificateManager, IoTCertificateManager)
+!define IoTCertificateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCertificateManager, IoTCertificateManager)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -112,6 +126,8 @@ EFUtUlqATl0AVQ3xLm3lJhUWq_rU4CRycM_86RELNf-Bj-UUFxTdpru
 AWSEntityColoring(IoTDeviceDefender)
 !define IoTDeviceDefender(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
 !define IoTDeviceDefender(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -126,6 +142,8 @@ _AVZ___zrZll-TgsKO0FlbyLiEFlvplYsCQahH3l_Zym_ON_jt_juo_ylnt_Fv_p1G
 AWSEntityColoring(IoTWindfarm)
 !define IoTWindfarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTWindfarm, IoTWindfarm)
 !define IoTWindfarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTWindfarm, IoTWindfarm)
+!define IoTWindfarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTWindfarm, IoTWindfarm)
+!define IoTWindfarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTWindfarm, IoTWindfarm)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -142,6 +160,8 @@ RlBdGx7m3KZQCm3Yv165tS-lMBxIbFZf_7FYBobtXtnBw9U-loevx_3-E5OWvOlVhz_t_Knf7CCPn6ST
 AWSEntityColoring(IoTTravel)
 !define IoTTravel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTTravel, IoTTravel)
 !define IoTTravel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTTravel, IoTTravel)
+!define IoTTravelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTTravel, IoTTravel)
+!define IoTTravelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTTravel, IoTTravel)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -155,6 +175,8 @@ yNXU_abSszDwcurcDl3TFoy1aAhO2WOQNRM7WYsfLUzUtTmyeVgnGRIozyYoVnitDpT_0G
 AWSEntityColoring(IoTSiteWise)
 !define IoTSiteWise(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSiteWise, IoTSiteWise)
 !define IoTSiteWise(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWiseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWiseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSiteWise, IoTSiteWise)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -166,6 +188,8 @@ DINFp9xn0x_SLr-z09z-_7FWuSll_lFN0HuxVzvv_hxt-k6RbL9c
 AWSEntityColoring(IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -181,6 +205,8 @@ Do3YqltAl6lBHszEr4D-nk2NawVqQr49_KLgK-V-t_MXG088LQjBjh7DZrq_tao6BPm4FVlJk3ioNHuz
 AWSEntityColoring(IoTPolicy)
 !define IoTPolicy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTPolicy, IoTPolicy)
 !define IoTPolicy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTPolicy, IoTPolicy)
+!define IoTPolicyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTPolicy, IoTPolicy)
+!define IoTPolicyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTPolicy, IoTPolicy)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -196,6 +222,8 @@ MyHsGzzY-mG_0G
 AWSEntityColoring(IoTSensor)
 !define IoTSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSensor, IoTSensor)
 !define IoTSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSensor, IoTSensor)
+!define IoTSensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSensor, IoTSensor)
+!define IoTSensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSensor, IoTSensor)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -211,6 +239,8 @@ V9g_Yyty3O2REG0xvp-utxjT7lv7qVFZzVDb83TvgL_m_X5trwLPcba0Qux_VxP_xIw--3jCtx75R7JT
 AWSEntityColoring(IoTActuator)
 !define IoTActuator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTActuator, IoTActuator)
 !define IoTActuator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTActuator, IoTActuator)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -225,6 +255,8 @@ UB2w_FpOT8P7rbnyVZtx_7po-Vti-yFBkzrkVm4
 AWSEntityColoring(IoTEvents)
 !define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEvents, IoTEvents)
 !define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTEvents, IoTEvents)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -240,6 +272,8 @@ bvH7xR6rVtSv3E2WfXYFXzxmEAi2paJWH0BEMhXIo30yZ2ixI3Q0nmICWVqfPxmawr5aD95sP7xZWAz7
 AWSEntityColoring(IoTAction)
 !define IoTAction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAction, IoTAction)
 !define IoTAction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAction, IoTAction)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -255,6 +289,8 @@ V_wTFpu_ltr-Vdn-Vlty_Fpv-VsFV_xzyQVfFm
 AWSEntityColoring(IoTBicycle)
 !define IoTBicycle(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBicycle, IoTBicycle)
 !define IoTBicycle(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBicycle, IoTBicycle)
+!define IoTBicycleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTBicycle, IoTBicycle)
+!define IoTBicycleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTBicycle, IoTBicycle)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -269,6 +305,8 @@ hNtQORFCJqEI1mXo5lbx_-sMa9glUOVoc01Iv9eNWnIF3m1q80eu4ITBSUVDCmGAY49vng9-lpalF2U2
 AWSEntityColoring(IoTCore)
 !define IoTCore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCore, IoTCore)
 !define IoTCore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCore, IoTCore)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -282,6 +320,8 @@ FuBnAnm_W_7xF_-9vu_n_9LKtA8U8rMnZTPO_V25zSzlgX_ZzNES1m
 AWSEntityColoring(IoTMedicalEmergency)
 !define IoTMedicalEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
 !define IoTMedicalEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
+!define IoTMedicalEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
+!define IoTMedicalEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -297,6 +337,8 @@ l-cpuUDuUkwxYD_skquS8g0_hPy6GCXJlqXpRr9k-bxV2UAVtV-2FRnSHNIFybVu1W
 AWSEntityColoring(IoTSimulator)
 !define IoTSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSimulator, IoTSimulator)
 !define IoTSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSimulator, IoTSimulator)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -313,6 +355,8 @@ bmhN4ls1-zjFtXzVlx_wJzwVK-BtQK-ywlxxuG_UR__Euo_VR_VVpp-jDm
 AWSEntityColoring(IoTThermostat)
 !define IoTThermostat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThermostat, IoTThermostat)
 !define IoTThermostat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThermostat, IoTThermostat)
+!define IoTThermostatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThermostat, IoTThermostat)
+!define IoTThermostatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThermostat, IoTThermostat)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -328,6 +372,8 @@ GNhtXApwx-RlFl-NrwmhqWByEgnVaH3c2QHRKCqVrQ-mX1pzXesicNXQltK2a0IKVfp_edbIPBJhp7zx
 AWSEntityColoring(IoTCamera)
 !define IoTCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCamera, IoTCamera)
 !define IoTCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCamera, IoTCamera)
+!define IoTCameraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCamera, IoTCamera)
+!define IoTCameraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCamera, IoTCamera)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -342,6 +388,8 @@ ApzzaVJFwnSNAjzu97AWldyIB_oOYm3aLViFyWgVFSHU-Vnoa57udUUtGOhdj_T-Vdpzy-lhdvzV__p-
 AWSEntityColoring(IoTLightbulb)
 !define IoTLightbulb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTLightbulb, IoTLightbulb)
 !define IoTLightbulb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTLightbulb, IoTLightbulb)
+!define IoTLightbulbParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTLightbulb, IoTLightbulb)
+!define IoTLightbulbParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTLightbulb, IoTLightbulb)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -356,6 +404,8 @@ _Ocnvy-uxqXuVuRdRue9jHfOVRqzOFxn4F_Q-TkryyShvwzNpf-ldR___2k-FtuMVm
 AWSEntityColoring(IoTHouse)
 !define IoTHouse(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHouse, IoTHouse)
 !define IoTHouse(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHouse, IoTHouse)
+!define IoTHouseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHouse, IoTHouse)
+!define IoTHouseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHouse, IoTHouse)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -370,6 +420,8 @@ WWo_HhJaipXGmqyFIl-f7x464gEZAsIqQVtOaRZaqOADBfZKp_UbDTgE8GEChdw9FqkpoymlLQPp5vJu
 AWSEntityColoring(IoTCar)
 !define IoTCar(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCar, IoTCar)
 !define IoTCar(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCar, IoTCar)
+!define IoTCarParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCar, IoTCar)
+!define IoTCarParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCar, IoTCar)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -385,6 +437,8 @@ UV_wl7z-hey--XS
 AWSEntityColoring(IoTDeviceManagement)
 !define IoTDeviceManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
 !define IoTDeviceManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -398,6 +452,8 @@ rgdp_J-or6LSy_nPyYYUAY0uwUm_o_2ZTW
 AWSEntityColoring(IoTMQTTProtocol)
 !define IoTMQTTProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
 !define IoTMQTTProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -413,6 +469,8 @@ d1zBwhdWT3qulwt-EM7Ji_Fp4hSylrRV
 AWSEntityColoring(IoTAlexaEnabledDevice)
 !define IoTAlexaEnabledDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
 !define IoTAlexaEnabledDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -428,6 +486,8 @@ C_goVup-wx--
 AWSEntityColoring(IoTOverTheAirUpdate)
 !define IoTOverTheAirUpdate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
 !define IoTOverTheAirUpdate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
+!define IoTOverTheAirUpdateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
+!define IoTOverTheAirUpdateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -440,6 +500,8 @@ csGARKCvG9bKtk3RUt0dcS8ThiwDL-HhU_0hA1zlMUu
 AWSEntityColoring(IoTFireTV)
 !define IoTFireTV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFireTV, IoTFireTV)
 !define IoTFireTV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFireTV, IoTFireTV)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -456,6 +518,8 @@ t3eiKl3N_gdj_MN_wcqI_bVpgxZDtEZq8zfVy0u
 AWSEntityColoring(IoTShadow)
 !define IoTShadow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTShadow, IoTShadow)
 !define IoTShadow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTShadow, IoTShadow)
+!define IoTShadowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTShadow, IoTShadow)
+!define IoTShadowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTShadow, IoTShadow)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -469,6 +533,8 @@ uP5awVAEgsoAbHzUacHb6gJtg-hOPZmy93YBhV-VRdXMEIJhPj_yLe8FzGK
 AWSEntityColoring(IoTHTTP2Protocol)
 !define IoTHTTP2Protocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
 !define IoTHTTP2Protocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -485,6 +551,8 @@ zLMFni7wbgS-xBrFd_S5Rbo5hv7sEF7QsE4Qw7qb9MUsf6Mlv9fLJkw4N6cu1Xjf4b8lsMEC2exGLX9A
 AWSEntityColoring(IoTThingsGraph)
 !define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
 !define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -499,6 +567,8 @@ QUY7_CEJHpU_WE_Fttd_Zi_fb_ittzy14mVqPlqOI89kvny0_6R-2OcaS-nR4QxIlF_zQe1_w_Tpee4s
 AWSEntityColoring(IoTUtility)
 !define IoTUtility(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTUtility, IoTUtility)
 !define IoTUtility(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTUtility, IoTUtility)
+!define IoTUtilityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTUtility, IoTUtility)
+!define IoTUtilityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTUtility, IoTUtility)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -512,6 +582,8 @@ vSVBFrz-qP6v_y_zvsh_lJP-h8zVg-FdR_wnD7zRdp-kpr_Nvy_hy_UVdry_VXfx
 AWSEntityColoring(IoTGeneric)
 !define IoTGeneric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGeneric, IoTGeneric)
 !define IoTGeneric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGeneric, IoTGeneric)
+!define IoTGenericParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGeneric, IoTGeneric)
+!define IoTGenericParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGeneric, IoTGeneric)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -526,6 +598,8 @@ xdsRXovKSvn4tFjiQyl_Fl7iztyeqp9YkF__0vEBzUvyvTczqH-Khtm3
 AWSEntityColoring(IoTDeviceGateway)
 !define IoTDeviceGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
 !define IoTDeviceGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -540,6 +614,8 @@ mUlvYPrOPqnXVBLojwDVuyVoT8fp09ghMLVBs_KOXiTIxEYsjP-XGxtsS525g7-A0UB_zdVsn-KFVtW4
 AWSEntityColoring(IoT1Click)
 !define IoT1Click(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoT1Click, IoT1Click)
 !define IoT1Click(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoT1Click, IoT1Click)
+!define IoT1ClickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoT1Click, IoT1Click)
+!define IoT1ClickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoT1Click, IoT1Click)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -552,6 +628,8 @@ eEyyFzvxVds_rbfx
 AWSEntityColoring(IoTFireTVStick)
 !define IoTFireTVStick(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFireTVStick, IoTFireTVStick)
 !define IoTFireTVStick(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFireTVStick, IoTFireTVStick)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -567,6 +645,8 @@ s_xbid-wxTyk-yVR_lM-VxxNTm
 AWSEntityColoring(IoTAlexaSkill)
 !define IoTAlexaSkill(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
 !define IoTAlexaSkill(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
+!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
+!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -580,6 +660,8 @@ VTB27YtQtExzRVwuBDTsdp27x8Ko2totByY3AvVZFapr-LNIiWFnr1zTfHrvwg_Jzrw__bOtDzy
 AWSEntityColoring(IoTServo)
 !define IoTServo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTServo, IoTServo)
 !define IoTServo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTServo, IoTServo)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -592,6 +674,8 @@ tkPR0j2M_hh_r5HjsVz-_dhw-Lj5UlhrY-wVuFwDdf_W-GtU7-7xAtv_Hk_ldtn_jX__FqN_Ry7_O_p_
 AWSEntityColoring(IoTButton)
 !define IoTButton(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTButton, IoTButton)
 !define IoTButton(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTButton, IoTButton)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -607,6 +691,8 @@ Vlhyy-FddryFnOUYnnpr-zhrq-yFV__zwU-_Ftx-_VdpUG4
 AWSEntityColoring(IoTBank)
 !define IoTBank(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBank, IoTBank)
 !define IoTBank(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBank, IoTBank)
+!define IoTBankParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTBank, IoTBank)
+!define IoTBankParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTBank, IoTBank)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -621,6 +707,8 @@ NB-R-qTx_-hld_tzktz-w9zV-kUd_lcjVtxidrz___l7__k7TU-l_VlpZyS7
 AWSEntityColoring(IoTAnalyticsChannel)
 !define IoTAnalyticsChannel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
 !define IoTAnalyticsChannel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
+!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
+!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -635,6 +723,8 @@ VqF-asn1DoLohfz8zinG2y_r4wdPeubpjwxuhkgNdO5z7lwWtUQV77mA8gFfSkbdw2ax-4IRgj237vuV
 AWSEntityColoring(IoTCart)
 !define IoTCart(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCart, IoTCart)
 !define IoTCart(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCart, IoTCart)
+!define IoTCartParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCart, IoTCart)
+!define IoTCartParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCart, IoTCart)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -650,6 +740,8 @@ zzVp-_CvFm
 AWSEntityColoring(IoTHardwareBoard)
 !define IoTHardwareBoard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
 !define IoTHardwareBoard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -663,6 +755,8 @@ g3y
 AWSEntityColoring(IoTHTTPProtocol)
 !define IoTHTTPProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
 !define IoTHTTPProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -676,6 +770,8 @@ OY3zp9SYcRepU98iQPPV5IhZWMWiqLT60wj727whtyf64qjm1TA-ju15fPlyrlgvpsS
 AWSEntityColoring(IoTEcho)
 !define IoTEcho(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEcho, IoTEcho)
 !define IoTEcho(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTEcho, IoTEcho)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -692,6 +788,8 @@ J8NF_SpS9PBW8yFmSPNt5u589Be2d_SNHISE34WQ-7ZA-tiEQfleTtWs36rYIkJz7VOFzWCyF091PVyG
 AWSEntityColoring(IoTLambdaFunction)
 !define IoTLambdaFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
 !define IoTLambdaFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
+!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
+!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -706,6 +804,8 @@ joGS7xCDVg0l
 AWSEntityColoring(IoTRule)
 !define IoTRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTRule, IoTRule)
 !define IoTRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTRule, IoTRule)
+!define IoTRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTRule, IoTRule)
+!define IoTRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTRule, IoTRule)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -720,6 +820,8 @@ Elz0K_z-_jVtnzlzue2Nn4_ERpYDQFVFRvx_2fY5zwRzKq04qBVkNyM3ykRzCpJixVad1PJUxaVzalhh
 AWSEntityColoring(IoTDoorLock)
 !define IoTDoorLock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDoorLock, IoTDoorLock)
 !define IoTDoorLock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDoorLock, IoTDoorLock)
+!define IoTDoorLockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDoorLock, IoTDoorLock)
+!define IoTDoorLockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDoorLock, IoTDoorLock)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -735,6 +837,8 @@ rEADZu4gVSmwpV9k_bh3BxdvJG_otb_7VpnklwX9lDx-rjgs_sFextrfA_Fo_1LLukPJ9vZ-BSC_FF-p
 AWSEntityColoring(IoTDesiredState)
 !define IoTDesiredState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDesiredState, IoTDesiredState)
 !define IoTDesiredState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDesiredState, IoTDesiredState)
+!define IoTDesiredStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDesiredState, IoTDesiredState)
+!define IoTDesiredStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDesiredState, IoTDesiredState)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -749,6 +853,8 @@ Xa7C7yKQ3dvYrjOmm2B761a6-DGvLXf_uxbqWLhpTrRfCjsj_umlNtu5
 AWSEntityColoring(IoTGreengrass)
 !define IoTGreengrass(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrass, IoTGreengrass)
 !define IoTGreengrass(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrass, IoTGreengrass)
+!define IoTGreengrassParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrass, IoTGreengrass)
+!define IoTGreengrassParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrass, IoTGreengrass)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -764,6 +870,8 @@ VzlC7tVpr_tyUL-_0G
 AWSEntityColoring(IoTAlexaVoiceService)
 !define IoTAlexaVoiceService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
 !define IoTAlexaVoiceService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -776,6 +884,8 @@ N_8QBvpNtwzOdj6kvIUE9PUkzRVxskr7zRJzwDA_Rxy6k6tvvC_F_EZDSCbghbzjyfI8aZYLAhTdlhj-
 AWSEntityColoring(IoTReportedState)
 !define IoTReportedState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTReportedState, IoTReportedState)
 !define IoTReportedState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTReportedState, IoTReportedState)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -789,4 +899,6 @@ V9HbNSfmPNwYh1xBtumcFTt_edclnTFzxrE2JO_XL4BROh7hrWIydiI4QNVSev_P6G
 AWSEntityColoring(IoTTopic)
 !define IoTTopic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTTopic, IoTTopic)
 !define IoTTopic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTTopic, IoTTopic)
+!define IoTTopicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTTopic, IoTTopic)
+!define IoTTopicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTTopic, IoTTopic)
 

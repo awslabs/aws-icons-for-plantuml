@@ -10,3 +10,5 @@ _r_hTI8000038D3VEeXh1liBwWVzW_c1-ONziVt5--7to--dts__7_w__7_w_tP-S7vnVd9-StvqVdL-
 AWSEntityColoring(EMRCluster)
 !define EMRCluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMRCluster, EMRCluster)
 !define EMRCluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMRCluster, EMRCluster)
+!define EMRClusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMRCluster, EMRCluster)
+!define EMRClusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMRCluster, EMRCluster)

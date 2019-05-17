@@ -11,6 +11,8 @@ kNvQS6o0SCpK75-_7mI-iN_aTV_8BS5CqD7zYpZhSdp_f7XcvzJ-dSQYdZe_N2-UExy86-Bq-Kdzvv_V
 AWSEntityColoring(Pinpoint)
 !define Pinpoint(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Pinpoint, Pinpoint)
 !define Pinpoint(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Pinpoint, Pinpoint)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -25,6 +27,8 @@ qCbTeR_r7Pwj9a4_JllijzNlHr3Pe0R9R_o0hiV0W7dCgYAzeoyMgEkv7P3EuxsGygjEVNJh0ow5HF1_
 AWSEntityColoring(Connect)
 !define Connect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Connect, Connect)
 !define Connect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Connect, Connect)
+!define ConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Connect, Connect)
+!define ConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Connect, Connect)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -40,6 +44,8 @@ zJ3zulpF5m
 AWSEntityColoring(SESEmail)
 !define SESEmail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SESEmail, SESEmail)
 !define SESEmail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SESEmail, SESEmail)
+!define SESEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SESEmail, SESEmail)
+!define SESEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SESEmail, SESEmail)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -55,6 +61,8 @@ VddlUvywogJrLK62ZpRtlZXAFqR9eEUmOsYE9lQsrYAOadf-VsW1A7mfW06nSvpz3_O8cEixE7eVvwdb
 AWSEntityColoring(SimpleEmailServiceSES)
 !define SimpleEmailServiceSES(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
 !define SimpleEmailServiceSES(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
+!define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
+!define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -68,4 +76,6 @@ yz4EVQ45wmV-WgxsejitALzG4Yo9Q3mHV49_
 AWSEntityColoring(CustomerEngagement)
 !define CustomerEngagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
 !define CustomerEngagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
+!define CustomerEngagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
+!define CustomerEngagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
 

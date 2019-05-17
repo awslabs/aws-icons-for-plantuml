@@ -12,3 +12,5 @@ Gv6erJcVDQL0oT_Bc_C3-TAwQJLhoMf-OOQhFHrbDxzmVY9_eCbgVZgOtwo_yfhNyzl1_9XL9Mtcnylv
 AWSEntityColoring(WAFFilteringrule)
 !define WAFFilteringrule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFFilteringrule, WAFFilteringrule)
 !define WAFFilteringrule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFFilteringrule, WAFFilteringrule)
+!define WAFFilteringruleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFFilteringrule, WAFFilteringrule)
+!define WAFFilteringruleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFFilteringrule, WAFFilteringrule)

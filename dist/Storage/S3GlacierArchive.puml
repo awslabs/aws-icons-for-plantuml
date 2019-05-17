@@ -9,3 +9,5 @@ tUz-zxlV_UwZ9UdxJGJfQz__B2Za-rM4GLXbCbZa7G
 AWSEntityColoring(S3GlacierArchive)
 !define S3GlacierArchive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
 !define S3GlacierArchive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)

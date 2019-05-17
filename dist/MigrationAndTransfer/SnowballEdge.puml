@@ -11,3 +11,5 @@ m_rx6vHt591pWu8YwSXj52Sv3zOWSCiPG909c_qYCg6ygrolRQaCHw6kqE4Ou5oXA6uPjCc495SSTbXN
 AWSEntityColoring(SnowballEdge)
 !define SnowballEdge(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SnowballEdge, SnowballEdge)
 !define SnowballEdge(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SnowballEdge, SnowballEdge)

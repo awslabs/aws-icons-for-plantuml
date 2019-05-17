@@ -12,3 +12,5 @@ WClTvqq2iAFvvm3f9bTcAtax_vRrfwXSHMhLLvDvw5dNdvO5mx_Bc3hii7wt_sMnzcyYFXAdo__sJozY
 AWSEntityColoring(IoTPoliceEmergency)
 !define IoTPoliceEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
 !define IoTPoliceEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
+!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
+!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)

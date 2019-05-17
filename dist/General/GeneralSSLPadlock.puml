@@ -14,3 +14,5 @@ IZS7OE5H-gBTUlboZ_FZBhLe5fnUWZzLweykFJhRlvoPMqhD-fRoNFYaoh-ZPjP-mj7xmx-elm4
 AWSEntityColoring(GeneralSSLPadlock)
 !define GeneralSSLPadlock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
 !define GeneralSSLPadlock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
+!define GeneralSSLPadlockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
+!define GeneralSSLPadlockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)

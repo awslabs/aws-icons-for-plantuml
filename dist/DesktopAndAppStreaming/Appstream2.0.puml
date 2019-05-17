@@ -9,3 +9,5 @@ rNj602wys5VxBJFRqNAnVesJQzRtEMAfWstA4pWywUKz0UOz0ULD0B-My0GE_Hgjd2U0vs4IdW2U05u4
 AWSEntityColoring(Appstream2.0)
 !define Appstream2.0(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Appstream2.0, Appstream2.0)
 !define Appstream2.0(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Appstream2.0, Appstream2.0)
+!define Appstream2.0Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Appstream2.0, Appstream2.0)
+!define Appstream2.0Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Appstream2.0, Appstream2.0)

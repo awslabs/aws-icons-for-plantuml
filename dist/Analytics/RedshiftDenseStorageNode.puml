@@ -11,3 +11,5 @@ _S_tg_-Z_ulvuVdb-UdvxVtX_UNzwVtj_E3yulpa_ERywFpg_EpydlS7zYVtD_L7zLVrv_mK
 AWSEntityColoring(RedshiftDenseStorageNode)
 !define RedshiftDenseStorageNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
 !define RedshiftDenseStorageNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)

@@ -11,3 +11,5 @@ EwLEVnV0ftz1-Ei01QGyymCZHW1_vqVltK2K5_x0E42V_SivPUSFEW5QUV7z0crDB_O_c7vc-bfFqMl_
 AWSEntityColoring(SageMakerTrain)
 !define SageMakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
 !define SageMakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
+!define SageMakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
+!define SageMakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerTrain, SageMakerTrain)

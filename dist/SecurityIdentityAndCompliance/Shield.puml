@@ -11,3 +11,5 @@ cDT5yj4PxWRGm_cPoVjQ6a7wBIdhlt7a8CfjZRGr9OnuzpW3855LuTg2RMqWtfz0A6D2iaS9D_FiJoKZ
 AWSEntityColoring(Shield)
 !define Shield(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Shield, Shield)
 !define Shield(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Shield, Shield)
+!define ShieldParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Shield, Shield)
+!define ShieldParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Shield, Shield)

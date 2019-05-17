@@ -9,3 +9,5 @@ c16ATo0c1qBm742JvwRs_x395SydI7B9ymd8LTy2mDvaF_2OCCcJfxCL54--pMOqmJivAr7iF-Hye_KV
 AWSEntityColoring(IAMPermissions)
 !define IAMPermissions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMPermissions, IAMPermissions)
 !define IAMPermissions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMPermissions, IAMPermissions)
+!define IAMPermissionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMPermissions, IAMPermissions)
+!define IAMPermissionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMPermissions, IAMPermissions)

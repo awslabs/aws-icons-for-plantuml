@@ -10,3 +10,5 @@ fVEZfeqnftuvlsBX_5Hkp_Dpjp61__xyzl-uFtn1NWa-xYy768lt9ohc5KF5FxY1ZHXOqVO9ogYajg_a
 AWSEntityColoring(Lightsail)
 !define Lightsail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Lightsail, Lightsail)
 !define Lightsail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Lightsail, Lightsail)
+!define LightsailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Lightsail, Lightsail)
+!define LightsailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Lightsail, Lightsail)

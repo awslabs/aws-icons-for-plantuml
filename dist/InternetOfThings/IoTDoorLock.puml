@@ -11,3 +11,5 @@ Elz0K_z-_jVtnzlzue2Nn4_ERpYDQFVFRvx_2fY5zwRzKq04qBVkNyM3ykRzCpJixVad1PJUxaVzalhh
 AWSEntityColoring(IoTDoorLock)
 !define IoTDoorLock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDoorLock, IoTDoorLock)
 !define IoTDoorLock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDoorLock, IoTDoorLock)
+!define IoTDoorLockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDoorLock, IoTDoorLock)
+!define IoTDoorLockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDoorLock, IoTDoorLock)

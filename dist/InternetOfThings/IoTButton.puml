@@ -9,3 +9,5 @@ tkPR0j2M_hh_r5HjsVz-_dhw-Lj5UlhrY-wVuFwDdf_W-GtU7-7xAtv_Hk_ldtn_jX__FqN_Ry7_O_p_
 AWSEntityColoring(IoTButton)
 !define IoTButton(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTButton, IoTButton)
 !define IoTButton(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTButton, IoTButton)

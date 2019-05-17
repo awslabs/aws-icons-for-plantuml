@@ -11,3 +11,5 @@ qySCIysnqnTd_FefllaFqk3SllGe0GzOwL7eW0yz3Zse_u4dJtu
 AWSEntityColoring(KeyManagementService)
 !define KeyManagementService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, KeyManagementService, KeyManagementService)
 !define KeyManagementService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, KeyManagementService, KeyManagementService)

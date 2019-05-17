@@ -11,3 +11,5 @@ da-Lf02mi-AdFlbVqZx4CC_yiBK_yhVv-_rRpU-4nVnO9bTzzlxCNEolXP-ms5_Ii4HuXR0bpb_3F__S
 AWSEntityColoring(RoboMaker)
 !define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMaker, RoboMaker)
 !define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMaker, RoboMaker)

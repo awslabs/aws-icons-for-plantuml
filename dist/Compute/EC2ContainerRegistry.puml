@@ -10,3 +10,5 @@ NRJ7FuHnasTNEERjDNvr1NzSn-nK_IVlt7hI7VCEINv2a_vrs279Ms6Cu0gly3o7Klyd_n00rVc3F0CW
 AWSEntityColoring(EC2ContainerRegistry)
 !define EC2ContainerRegistry(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2ContainerRegistry, EC2ContainerRegistry)
 !define EC2ContainerRegistry(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2ContainerRegistry, EC2ContainerRegistry)
+!define EC2ContainerRegistryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2ContainerRegistry, EC2ContainerRegistry)
+!define EC2ContainerRegistryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2ContainerRegistry, EC2ContainerRegistry)

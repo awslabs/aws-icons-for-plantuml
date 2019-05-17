@@ -9,3 +9,5 @@ q-Sc7la2Oah4EJB5GOqBC6G1XKLLuBsl_p_ffvz--kcddtvwzbLun5jTnKQynlecjUgOzxRtdf_U-1bV
 AWSEntityColoring(StorageGatewayCachedVolume)
 !define StorageGatewayCachedVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
 !define StorageGatewayCachedVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
+!define StorageGatewayCachedVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
+!define StorageGatewayCachedVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)

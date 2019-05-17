@@ -10,3 +10,5 @@ oVpiaytvyueJkAw-jNuOtKXpMctwAjMgRN_LRzUxd5xyv_x__kc_7zbCJ7uZBtlAyqHj8qfS8QKV4dz3
 AWSEntityColoring(InternetofThings)
 !define InternetofThings(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, InternetofThings, InternetofThings)
 !define InternetofThings(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, InternetofThings, InternetofThings)
+!define InternetofThingsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, InternetofThings, InternetofThings)
+!define InternetofThingsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, InternetofThings, InternetofThings)

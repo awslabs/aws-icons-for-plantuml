@@ -9,6 +9,8 @@ n56_Gskh6RPCufk-WBC2Q1VzSj3I2_YwVAsk-1KCNLVF4cwW6F23nTRZWy2BndqdZjJFU404e4NsWLyw
 AWSEntityColoring(FSx)
 !define FSx(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSx, FSx)
 !define FSx(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSx, FSx)
+!define FSxParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FSx, FSx)
+!define FSxParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FSx, FSx)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -24,6 +26,8 @@ PTm4VpF-yv_l
 AWSEntityColoring(Backup)
 !define Backup(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Backup, Backup)
 !define Backup(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Backup, Backup)
+!define BackupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Backup, Backup)
+!define BackupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Backup, Backup)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -38,6 +42,8 @@ Ww1uvlgfoa_ua_lN4zVlU7RxQpDClt_d_B1Awz_o35VpIvkV5gZvwSdvxTdvySdvzSdv-Udv_SkNCm
 AWSEntityColoring(SnowFamilyImportExport)
 !define SnowFamilyImportExport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)
 !define SnowFamilyImportExport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)
+!define SnowFamilyImportExportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)
+!define SnowFamilyImportExportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SnowFamilyImportExport, SnowFamilyImportExport)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -52,6 +58,8 @@ m9t_vOTESFLnTtxB5LguXDlD-TLfmVVdrm4l78PVvni
 AWSEntityColoring(StorageGatewayVirtualTapeLibrary)
 !define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
 !define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -64,6 +72,8 @@ h5z7G3bwlSxeuk45dNVogkRk7OZXsnWc81i8BshEZIi-jIIR1ej0Prvvrro8UwvJJ_vsox8iopi
 AWSEntityColoring(FSxforWindowsFileServer)
 !define FSxforWindowsFileServer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)
 !define FSxforWindowsFileServer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)
+!define FSxforWindowsFileServerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)
+!define FSxforWindowsFileServerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FSxforWindowsFileServer, FSxforWindowsFileServer)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -79,6 +89,8 @@ FzP6euW_9shIgdiltuxnqXDq5E1F2qEv2LzVW6mMrnqe_RgcYHwlJygIU9BzRUvU1EhFzyTqiZwsMeT7
 AWSEntityColoring(S3Bucket)
 !define S3Bucket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3Bucket, S3Bucket)
 !define S3Bucket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3Bucket, S3Bucket)
+!define S3BucketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3Bucket, S3Bucket)
+!define S3BucketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3Bucket, S3Bucket)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -93,6 +105,8 @@ jFnl-XAkF-Vx-z_FkKs2Vj__Hybl_FyVSiJuNhm3
 AWSEntityColoring(S3GlacierVault)
 !define S3GlacierVault(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3GlacierVault, S3GlacierVault)
 !define S3GlacierVault(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3GlacierVault, S3GlacierVault)
+!define S3GlacierVaultParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3GlacierVault, S3GlacierVault)
+!define S3GlacierVaultParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3GlacierVault, S3GlacierVault)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -104,6 +118,8 @@ ckqzL_jrifzdvrVz
 AWSEntityColoring(StorageGatewayNonCachedVolume)
 !define StorageGatewayNonCachedVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayNonCachedVolume, StorageGatewayNonCachedVolume)
 !define StorageGatewayNonCachedVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayNonCachedVolume, StorageGatewayNonCachedVolume)
+!define StorageGatewayNonCachedVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayNonCachedVolume, StorageGatewayNonCachedVolume)
+!define StorageGatewayNonCachedVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayNonCachedVolume, StorageGatewayNonCachedVolume)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -121,6 +137,8 @@ tcgCsVC5ae3UsuUf6ZuT7ZNa_6O5NiS7HFKOjTR0djzVoE2oK-KRikVtzc6iPl-S2dMMOClQaRgT6DK1
 AWSEntityColoring(S3BucketwithObjects)
 !define S3BucketwithObjects(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3BucketwithObjects, S3BucketwithObjects)
 !define S3BucketwithObjects(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3BucketwithObjects, S3BucketwithObjects)
+!define S3BucketwithObjectsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3BucketwithObjects, S3BucketwithObjects)
+!define S3BucketwithObjectsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3BucketwithObjects, S3BucketwithObjects)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -133,6 +151,8 @@ q-Sc7la2Oah4EJB5GOqBC6G1XKLLuBsl_p_ffvz--kcddtvwzbLun5jTnKQynlecjUgOzxRtdf_U-1bV
 AWSEntityColoring(StorageGatewayCachedVolume)
 !define StorageGatewayCachedVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
 !define StorageGatewayCachedVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
+!define StorageGatewayCachedVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
+!define StorageGatewayCachedVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayCachedVolume, StorageGatewayCachedVolume)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -148,6 +168,8 @@ KpmnSkxv6tus9D_Eh-mwFVx3-VddVNtz
 AWSEntityColoring(S3Glacier)
 !define S3Glacier(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3Glacier, S3Glacier)
 !define S3Glacier(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3Glacier, S3Glacier)
+!define S3GlacierParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3Glacier, S3Glacier)
+!define S3GlacierParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3Glacier, S3Glacier)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -162,6 +184,8 @@ wvzT_uuZU__kvuVQRVF3ZVdbxlnqVtwxEp_Udb_lpy_tlRpy1
 AWSEntityColoring(ElasticFileSystemEFS)
 !define ElasticFileSystemEFS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemEFS, ElasticFileSystemEFS)
 !define ElasticFileSystemEFS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemEFS, ElasticFileSystemEFS)
+!define ElasticFileSystemEFSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemEFS, ElasticFileSystemEFS)
+!define ElasticFileSystemEFSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemEFS, ElasticFileSystemEFS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -174,6 +198,8 @@ PGTQskfhXTJAFhzmjp_yuGy_VFfXYqyWydL-C0BKzOW3V9HSaUW19ph1eVanFR-K4aCb2dLYVatCpucu
 AWSEntityColoring(ElasticBlockStoreEBS)
 !define ElasticBlockStoreEBS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticBlockStoreEBS, ElasticBlockStoreEBS)
 !define ElasticBlockStoreEBS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticBlockStoreEBS, ElasticBlockStoreEBS)
+!define ElasticBlockStoreEBSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticBlockStoreEBS, ElasticBlockStoreEBS)
+!define ElasticBlockStoreEBSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticBlockStoreEBS, ElasticBlockStoreEBS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -188,6 +214,8 @@ kFi2rYbVIm0ZyjiGHf2yn0bWzVZqxmctGS386uJI-_vj_miEsk-mvKrSl-uVBV8-TTHyu1x_kd_-EGyF
 AWSEntityColoring(SimpleStorageServiceS3)
 !define SimpleStorageServiceS3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
 !define SimpleStorageServiceS3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
+!define SimpleStorageServiceS3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
+!define SimpleStorageServiceS3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3, SimpleStorageServiceS3)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -201,6 +229,8 @@ nFmImSrF1-1CV04
 AWSEntityColoring(S3Object)
 !define S3Object(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3Object, S3Object)
 !define S3Object(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3Object, S3Object)
+!define S3ObjectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3Object, S3Object)
+!define S3ObjectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3Object, S3Object)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -216,6 +246,8 @@ H88NCUI06U0AqbKE6MeUmAVeib0UCIxaLta6
 AWSEntityColoring(EBSSnapshot)
 !define EBSSnapshot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, EBSSnapshot, EBSSnapshot)
 !define EBSSnapshot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, EBSSnapshot, EBSSnapshot)
+!define EBSSnapshotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, EBSSnapshot, EBSSnapshot)
+!define EBSSnapshotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, EBSSnapshot, EBSSnapshot)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -228,6 +260,8 @@ aTqIWPu9FAfYVXyVsMGdbElf6YN63i18_XGN6YlZ0X70UXmv91E51-b7Cx_LRxdAo29PjSgi6vTSfMUt
 AWSEntityColoring(FSxforLustre)
 !define FSxforLustre(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FSxforLustre, FSxforLustre)
 !define FSxforLustre(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FSxforLustre, FSxforLustre)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -240,6 +274,8 @@ szOQS7bDAuru8Sn88fwJJPRuApm8CqBi-PDPuFdRz_fTzfEyKBaRoNEleBj1d_gUtkst_d_wzqsTrJCV
 AWSEntityColoring(Storage)
 !define Storage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Storage, Storage)
 !define Storage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Storage, Storage)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -251,6 +287,8 @@ aT-elImHza9FGgQvV3L4vM6rXzIRrmyr3rzCCVqenyPLt-LOlzzddttssMUVVVRPPp_RiNdHXvXUvytr
 AWSEntityColoring(EBSVolume)
 !define EBSVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, EBSVolume, EBSVolume)
 !define EBSVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, EBSVolume, EBSVolume)
+!define EBSVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, EBSVolume, EBSVolume)
+!define EBSVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, EBSVolume, EBSVolume)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -263,6 +301,8 @@ tUz-zxlV_UwZ9UdxJGJfQz__B2Za-rM4GLXbCbZa7G
 AWSEntityColoring(S3GlacierArchive)
 !define S3GlacierArchive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
 !define S3GlacierArchive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -276,4 +316,6 @@ zulQfb-EBEzdxPSBVNM_QzyDMjx31Vh2BmDwBXXjhFpHNl27jEu_t-VdZ_SV_iElT_aqaqjVhBtKLpOY
 AWSEntityColoring(StorageGateway)
 !define StorageGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGateway, StorageGateway)
 !define StorageGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGateway, StorageGateway)
+!define StorageGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGateway, StorageGateway)
+!define StorageGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGateway, StorageGateway)
 

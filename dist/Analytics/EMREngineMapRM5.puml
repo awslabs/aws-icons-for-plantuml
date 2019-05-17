@@ -12,3 +12,5 @@ _nL9-WUF7Di1pp6Ihe_Hu_uZecDYdwvNel96WQHVtCyxSBc4PJyI9j-N__pd2m
 AWSEntityColoring(EMREngineMapRM5)
 !define EMREngineMapRM5(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMREngineMapRM5, EMREngineMapRM5)
 !define EMREngineMapRM5(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMREngineMapRM5, EMREngineMapRM5)
+!define EMREngineMapRM5Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMREngineMapRM5, EMREngineMapRM5)
+!define EMREngineMapRM5Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMREngineMapRM5, EMREngineMapRM5)

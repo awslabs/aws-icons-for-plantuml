@@ -10,3 +10,5 @@ lrtew9k8HStCY-S2rMMadbSQAbN-5TfU4Nf8INBgj8Fn37VJ2z7U4CPOjbdDFQhZEiXmvMlNU8lDnd_b
 AWSEntityColoring(Kinesis)
 !define Kinesis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Kinesis, Kinesis)
 !define Kinesis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Kinesis, Kinesis)

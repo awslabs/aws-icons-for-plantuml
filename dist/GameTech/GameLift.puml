@@ -12,3 +12,5 @@ H8jqkfcYw-cc5a__UoNIBqlPzx7wa_ArlcoE_zIyCzOTHkedv7zuvXd-RRwLF7emUf6y1etPdmNYXbIl
 AWSEntityColoring(GameLift)
 !define GameLift(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GameLift, GameLift)
 !define GameLift(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GameLift, GameLift)
+!define GameLiftParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GameLift, GameLift)
+!define GameLiftParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GameLift, GameLift)

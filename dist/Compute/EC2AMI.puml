@@ -9,3 +9,5 @@ XpwLl8Fsylqw-_qy-_q-cnzcyyjaVfhDRvFvSJA_dWNt
 AWSEntityColoring(EC2AMI)
 !define EC2AMI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AMI, EC2AMI)
 !define EC2AMI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AMI, EC2AMI)
+!define EC2AMIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2AMI, EC2AMI)
+!define EC2AMIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2AMI, EC2AMI)

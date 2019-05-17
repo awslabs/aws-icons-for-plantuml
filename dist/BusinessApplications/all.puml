@@ -9,6 +9,8 @@ wEi_Hn_6bpyF_23knl5W_G7fDnF4m_qFMDx844ySly3DugdZt-96RNq_NVNB-vYjd_WDxVQKhpzg6rBY
 AWSEntityColoring(BusinessApplication)
 !define BusinessApplication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, BusinessApplication, BusinessApplication)
 !define BusinessApplication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, BusinessApplication, BusinessApplication)
+!define BusinessApplicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, BusinessApplication, BusinessApplication)
+!define BusinessApplicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, BusinessApplication, BusinessApplication)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -20,6 +22,8 @@ iIDSyLWIhdXi2TSyreHh7dl2BHwYvQg7QRdPGu7RFLp3hVuamIs-FG1kyUq1SBj7UPh0RLxFlVisz-wh
 AWSEntityColoring(WorkMail)
 !define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkMail, WorkMail)
 !define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkMail, WorkMail)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -35,6 +39,8 @@ FvelllW6
 AWSEntityColoring(AlexaForBusiness)
 !define AlexaForBusiness(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, AlexaForBusiness, AlexaForBusiness)
 !define AlexaForBusiness(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, AlexaForBusiness, AlexaForBusiness)
+!define AlexaForBusinessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, AlexaForBusiness, AlexaForBusiness)
+!define AlexaForBusinessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, AlexaForBusiness, AlexaForBusiness)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -50,6 +56,8 @@ dXCWaofEPHyGrCp5x8yFSnZVivxBPqVDN9p23L0UTo5cqVCUoHFKQr9fJ8sYd97yY7OcbOoxbaiWUrTm
 AWSEntityColoring(Chime)
 !define Chime(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Chime, Chime)
 !define Chime(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Chime, Chime)
+!define ChimeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Chime, Chime)
+!define ChimeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Chime, Chime)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -62,4 +70,6 @@ VpNMHknYz-xz0G
 AWSEntityColoring(WorkDocs)
 !define WorkDocs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkDocs, WorkDocs)
 !define WorkDocs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkDocs, WorkDocs)
+!define WorkDocsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkDocs, WorkDocs)
+!define WorkDocsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkDocs, WorkDocs)
 

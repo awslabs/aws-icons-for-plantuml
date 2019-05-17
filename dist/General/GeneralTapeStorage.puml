@@ -13,3 +13,5 @@ nyzPBVLmxsf_P4UTj3O8lbgz3xFz1hS49ivTneGUiD_Iyw9JMyKktns7GPXOnoDqqZ8CtTC4CePGg3a2
 AWSEntityColoring(GeneralTapeStorage)
 !define GeneralTapeStorage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
 !define GeneralTapeStorage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
+!define GeneralTapeStorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
+!define GeneralTapeStorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralTapeStorage, GeneralTapeStorage)

@@ -10,3 +10,5 @@ ry_--jsdlt_rzyyVltz-wvyV--VN_lcvVtxltn_wzvV-_Qb_VoiG0VdI_0O
 AWSEntityColoring(EC2AutoScalingResource)
 !define EC2AutoScalingResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)
 !define EC2AutoScalingResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)
+!define EC2AutoScalingResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)
+!define EC2AutoScalingResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2AutoScalingResource, EC2AutoScalingResource)

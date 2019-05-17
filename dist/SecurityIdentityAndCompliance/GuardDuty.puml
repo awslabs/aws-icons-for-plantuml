@@ -11,3 +11,5 @@ gEhd-XNrCpPWxL680u_w-LhzzWA0AH50yNtztlUFNj_3JBLl5fpxbxkxbbvkWFPP_-nvqp-t_Jj_sB_p
 AWSEntityColoring(GuardDuty)
 !define GuardDuty(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, GuardDuty, GuardDuty)
 !define GuardDuty(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, GuardDuty, GuardDuty)
+!define GuardDutyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, GuardDuty, GuardDuty)
+!define GuardDutyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, GuardDuty, GuardDuty)

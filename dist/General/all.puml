@@ -12,6 +12,8 @@ OayrADIURy3j-GRSpXiGUxu1mVCDIFdy06BFBu7Oyms8FJtW9lRi06BF3Y1uDjMYbp-AbF-H7m
 AWSEntityColoring(GeneralSAMLToken)
 !define GeneralSAMLToken(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralSAMLToken, GeneralSAMLToken)
 !define GeneralSAMLToken(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralSAMLToken, GeneralSAMLToken)
+!define GeneralSAMLTokenParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralSAMLToken, GeneralSAMLToken)
+!define GeneralSAMLTokenParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralSAMLToken, GeneralSAMLToken)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -27,6 +29,8 @@ _kJ-vlxe_kh-x3S
 AWSEntityColoring(GeneralDisk)
 !define GeneralDisk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralDisk, GeneralDisk)
 !define GeneralDisk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralDisk, GeneralDisk)
+!define GeneralDiskParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralDisk, GeneralDisk)
+!define GeneralDiskParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralDisk, GeneralDisk)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -44,6 +48,8 @@ lUBl8kOFnIQqnuLju_R_y0i
 AWSEntityColoring(GeneralUsers)
 !define GeneralUsers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralUsers, GeneralUsers)
 !define GeneralUsers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralUsers, GeneralUsers)
+!define GeneralUsersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralUsers, GeneralUsers)
+!define GeneralUsersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralUsers, GeneralUsers)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -58,6 +64,8 @@ mCFmwlniV7b-XXl8UFIo-lwmLNTfV_0zsyMilZ_znFw6_V5_dnS
 AWSEntityColoring(ExternalSDK)
 !define ExternalSDK(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExternalSDK, ExternalSDK)
 !define ExternalSDK(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExternalSDK, ExternalSDK)
+!define ExternalSDKParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExternalSDK, ExternalSDK)
+!define ExternalSDKParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExternalSDK, ExternalSDK)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -73,6 +81,8 @@ KG0Qna-kOTN9gZ_vTiMIHqTXRBy4MaDkU1FhEFxuRh00SAsrghVYXmUBjlaDjjbBC-BiK1hTsnOu3Szs
 AWSEntityColoring(GeneralInternetAlt2)
 !define GeneralInternetAlt2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralInternetAlt2, GeneralInternetAlt2)
 !define GeneralInternetAlt2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralInternetAlt2, GeneralInternetAlt2)
+!define GeneralInternetAlt2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralInternetAlt2, GeneralInternetAlt2)
+!define GeneralInternetAlt2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralInternetAlt2, GeneralInternetAlt2)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -85,6 +95,8 @@ _BQ_FqE_lnlERpwFM6W9b_i5
 AWSEntityColoring(GeneralForums)
 !define GeneralForums(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralForums, GeneralForums)
 !define GeneralForums(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralForums, GeneralForums)
+!define GeneralForumsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralForums, GeneralForums)
+!define GeneralForumsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralForums, GeneralForums)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -100,6 +112,8 @@ ZwZvc9VQRRNySUlykItSPhOAZU2zN-Y8tBWPNS-4oDtrn-ep_dQ7woFhbxLvF_2c_FFxPUl_-3_-y_-_
 AWSEntityColoring(generalAWSCloud)
 !define generalAWSCloud(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, generalAWSCloud, generalAWSCloud)
 !define generalAWSCloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, generalAWSCloud, generalAWSCloud)
+!define generalAWSCloudParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, generalAWSCloud, generalAWSCloud)
+!define generalAWSCloudParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, generalAWSCloud, generalAWSCloud)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -115,6 +129,8 @@ IEPLZVBBxVQ9_0r_4OPCTzS3wh8ud806q8rStIPoF069kCfrI3uHXiZZn6-9__YFdm
 AWSEntityColoring(Marketplace)
 !define Marketplace(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Marketplace, Marketplace)
 !define Marketplace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Marketplace, Marketplace)
+!define MarketplaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Marketplace, Marketplace)
+!define MarketplaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Marketplace, Marketplace)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -129,6 +145,8 @@ o5qgXtBnn9DzK9eRRmCoayP0s-4tW1SRFuqoisx3Zwq0sFY1FhQWGp41iiSNu7luVO_VCVcyn-VlubkN
 AWSEntityColoring(GeneralUser)
 !define GeneralUser(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralUser, GeneralUser)
 !define GeneralUser(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralUser, GeneralUser)
+!define GeneralUserParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralUser, GeneralUser)
+!define GeneralUserParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralUser, GeneralUser)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -145,6 +163,8 @@ nyzPBVLmxsf_P4UTj3O8lbgz3xFz1hS49ivTneGUiD_Iyw9JMyKktns7GPXOnoDqqZ8CtTC4CePGg3a2
 AWSEntityColoring(GeneralTapeStorage)
 !define GeneralTapeStorage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
 !define GeneralTapeStorage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
+!define GeneralTapeStorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
+!define GeneralTapeStorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralTapeStorage, GeneralTapeStorage)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -160,6 +180,8 @@ y8SU3AAf_VqjCG_Wq6zqmuq89eqttm9965644aVWHbZzL5GTQf4Oqp0bqZZGDnzl_gtTPYjqYlGlSzt_
 AWSEntityColoring(GeneralInternetGateway)
 !define GeneralInternetGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
 !define GeneralInternetGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
+!define GeneralInternetGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
+!define GeneralInternetGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralInternetGateway, GeneralInternetGateway)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -173,6 +195,8 @@ Fm
 AWSEntityColoring(GeneralCorporateDataCenter)
 !define GeneralCorporateDataCenter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)
 !define GeneralCorporateDataCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)
+!define GeneralCorporateDataCenterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)
+!define GeneralCorporateDataCenterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralCorporateDataCenter, GeneralCorporateDataCenter)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -188,6 +212,8 @@ _lrn__wwVt_Ulx_lln_sto_xxwVzzrj-F_vs-mS
 AWSEntityColoring(ExternalToolkit)
 !define ExternalToolkit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExternalToolkit, ExternalToolkit)
 !define ExternalToolkit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExternalToolkit, ExternalToolkit)
+!define ExternalToolkitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExternalToolkit, ExternalToolkit)
+!define ExternalToolkitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExternalToolkit, ExternalToolkit)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -201,6 +227,8 @@ VdxUvmy
 AWSEntityColoring(GeneralGenericDatabase)
 !define GeneralGenericDatabase(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)
 !define GeneralGenericDatabase(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)
+!define GeneralGenericDatabaseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)
+!define GeneralGenericDatabaseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralGenericDatabase, GeneralGenericDatabase)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -216,6 +244,8 @@ Hp_q_3mxVg2ddi-DNpuxVlhq-EtpuyVFZby_FNx-_FZzy-VFfzzVFll-zCdtjy--F_x_t04
 AWSEntityColoring(GeneralMultimedia)
 !define GeneralMultimedia(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralMultimedia, GeneralMultimedia)
 !define GeneralMultimedia(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralMultimedia, GeneralMultimedia)
+!define GeneralMultimediaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralMultimedia, GeneralMultimedia)
+!define GeneralMultimediaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralMultimedia, GeneralMultimedia)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -233,6 +263,8 @@ IZS7OE5H-gBTUlboZ_FZBhLe5fnUWZzLweykFJhRlvoPMqhD-fRoNFYaoh-ZPjP-mj7xmx-elm4
 AWSEntityColoring(GeneralSSLPadlock)
 !define GeneralSSLPadlock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
 !define GeneralSSLPadlock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
+!define GeneralSSLPadlockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
+!define GeneralSSLPadlockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralSSLPadlock, GeneralSSLPadlock)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -244,6 +276,8 @@ dQRrBoylBoylB_-K_vlLsbTO7EK9_-SxkW
 AWSEntityColoring(GeneralTraditionalServer)
 !define GeneralTraditionalServer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralTraditionalServer, GeneralTraditionalServer)
 !define GeneralTraditionalServer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralTraditionalServer, GeneralTraditionalServer)
+!define GeneralTraditionalServerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralTraditionalServer, GeneralTraditionalServer)
+!define GeneralTraditionalServerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralTraditionalServer, GeneralTraditionalServer)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -257,6 +291,8 @@ m6XepjwYgVtK-lsE_xL-ZzH-7jyVhz_RVP6L-RUj_dNJuiRx5rVVNhlzKTo1DlqMrdqhBRfOh66Qm7_o
 AWSEntityColoring(GeneralOfficeBuilding)
 !define GeneralOfficeBuilding(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
 !define GeneralOfficeBuilding(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
+!define GeneralOfficeBuildingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
+!define GeneralOfficeBuildingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -272,6 +308,8 @@ LZ-f1otUi0fGfxwdMnHziQWdeFa0MsQ-hq0Dgb6dlcyc8nG8la-m4lKAZED2M9MfxmNYuZjWwVoCrPON
 AWSEntityColoring(GeneralInternetAlt1)
 !define GeneralInternetAlt1(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralInternetAlt1, GeneralInternetAlt1)
 !define GeneralInternetAlt1(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralInternetAlt1, GeneralInternetAlt1)
+!define GeneralInternetAlt1Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralInternetAlt1, GeneralInternetAlt1)
+!define GeneralInternetAlt1Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralInternetAlt1, GeneralInternetAlt1)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -284,6 +322,8 @@ VZzCfCoB7aRlAc7QdOOpZMaDvxepnJikQHy9NV43d08
 AWSEntityColoring(Client)
 !define Client(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Client, Client)
 !define Client(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Client, Client)
+!define ClientParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Client, Client)
+!define ClientParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Client, Client)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -296,6 +336,8 @@ GP9_sIa5xY_hhJxI641RZI213zDg25KdWt5vv_ty6Mm
 AWSEntityColoring(GeneralMobileClient)
 !define GeneralMobileClient(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralMobileClient, GeneralMobileClient)
 !define GeneralMobileClient(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralMobileClient, GeneralMobileClient)
+!define GeneralMobileClientParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralMobileClient, GeneralMobileClient)
+!define GeneralMobileClientParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralMobileClient, GeneralMobileClient)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -311,4 +353,6 @@ euNJDkxhriwpek9msKe1D0lJb9XZCS1tIsO70BSfUGy-3a4kYXVackYy8ucvJ2aduV3xTUdIfNS
 AWSEntityColoring(GeneralVPC)
 !define GeneralVPC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralVPC, GeneralVPC)
 !define GeneralVPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralVPC, GeneralVPC)
+!define GeneralVPCParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralVPC, GeneralVPC)
+!define GeneralVPCParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralVPC, GeneralVPC)
 

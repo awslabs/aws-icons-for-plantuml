@@ -11,3 +11,5 @@ e78e0ELRRz8N1LdgTdsLEeafD77_N0NezCsJ7f6vrq_ZdDpdzrf5_ou_82DyN_pGal5UWTfwNxtsKvhn
 AWSEntityColoring(Translate)
 !define Translate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Translate, Translate)
 !define Translate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Translate, Translate)

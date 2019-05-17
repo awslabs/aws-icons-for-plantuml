@@ -12,3 +12,5 @@ h9fV0FqMloVrXyZv_dlynZP1_-Zt3oM-gfzhSYZNh-fVLkvVFJzPUNwg-StAyrkzdwpyVkht6yhljzeV
 AWSEntityColoring(SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindows(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindows(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
+!define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
+!define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)

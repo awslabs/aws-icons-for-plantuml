@@ -12,3 +12,5 @@ _lrn__wwVt_Ulx_lln_sto_xxwVzzrj-F_vs-mS
 AWSEntityColoring(ExternalToolkit)
 !define ExternalToolkit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExternalToolkit, ExternalToolkit)
 !define ExternalToolkit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExternalToolkit, ExternalToolkit)
+!define ExternalToolkitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExternalToolkit, ExternalToolkit)
+!define ExternalToolkitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExternalToolkit, ExternalToolkit)

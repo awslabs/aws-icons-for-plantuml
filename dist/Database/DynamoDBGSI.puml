@@ -9,3 +9,5 @@ lz_Tly_-fP_Vt__-Pj-VBEpvuLlZnvxVlhV_dpvxVwBlRtpziVTNzlvCyme
 AWSEntityColoring(DynamoDBGSI)
 !define DynamoDBGSI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBGSI, DynamoDBGSI)
 !define DynamoDBGSI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBGSI, DynamoDBGSI)
+!define DynamoDBGSIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBGSI, DynamoDBGSI)
+!define DynamoDBGSIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBGSI, DynamoDBGSI)

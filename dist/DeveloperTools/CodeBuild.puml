@@ -12,3 +12,5 @@ h8-rUFQaFp8-KprgJtdfY9_lsxSV
 AWSEntityColoring(CodeBuild)
 !define CodeBuild(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeBuild, CodeBuild)
 !define CodeBuild(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeBuild, CodeBuild)
+!define CodeBuildParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodeBuild, CodeBuild)
+!define CodeBuildParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodeBuild, CodeBuild)

@@ -12,3 +12,5 @@ dXCWaofEPHyGrCp5x8yFSnZVivxBPqVDN9p23L0UTo5cqVCUoHFKQr9fJ8sYd97yY7OcbOoxbaiWUrTm
 AWSEntityColoring(Chime)
 !define Chime(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Chime, Chime)
 !define Chime(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Chime, Chime)
+!define ChimeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Chime, Chime)
+!define ChimeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Chime, Chime)

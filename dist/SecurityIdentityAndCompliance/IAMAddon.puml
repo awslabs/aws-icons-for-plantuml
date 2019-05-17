@@ -11,3 +11,5 @@ oq_dukBYuXi
 AWSEntityColoring(IAMAddon)
 !define IAMAddon(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMAddon, IAMAddon)
 !define IAMAddon(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMAddon, IAMAddon)
+!define IAMAddonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMAddon, IAMAddon)
+!define IAMAddonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMAddon, IAMAddon)

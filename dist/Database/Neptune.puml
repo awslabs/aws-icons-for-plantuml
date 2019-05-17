@@ -12,3 +12,5 @@ q9maTymlYaagZ3ld9uMIe_mzyniTrPx1dVCZvw6XTi-lZ2hy_lcvVlugFtxy1G
 AWSEntityColoring(Neptune)
 !define Neptune(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Neptune, Neptune)
 !define Neptune(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Neptune, Neptune)

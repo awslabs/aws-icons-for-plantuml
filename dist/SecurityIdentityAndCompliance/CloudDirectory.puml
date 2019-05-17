@@ -10,3 +10,5 @@ mIwGQzflhTSQNDqN8wjt1NW-Nr6ivJDKHxwLXVpMVO3qxWDyj9zpChy9QThxFLIZNLrjzF_n-U7y_79-
 AWSEntityColoring(CloudDirectory)
 !define CloudDirectory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CloudDirectory, CloudDirectory)
 !define CloudDirectory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CloudDirectory, CloudDirectory)
+!define CloudDirectoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CloudDirectory, CloudDirectory)
+!define CloudDirectoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CloudDirectory, CloudDirectory)

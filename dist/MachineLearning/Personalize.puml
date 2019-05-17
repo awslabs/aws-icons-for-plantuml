@@ -11,3 +11,5 @@ J52ykf_HtiyQk-VtMo0DEKkFn_yVrSCZ1sJFflE4NdkhKPQFoBUIjCS4A3tuPq5yqCFLwLAWI3efeyGy
 AWSEntityColoring(Personalize)
 !define Personalize(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Personalize, Personalize)
 !define Personalize(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Personalize, Personalize)

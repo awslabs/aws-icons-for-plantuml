@@ -11,3 +11,5 @@ mCFmwlniV7b-XXl8UFIo-lwmLNTfV_0zsyMilZ_znFw6_V5_dnS
 AWSEntityColoring(ExternalSDK)
 !define ExternalSDK(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExternalSDK, ExternalSDK)
 !define ExternalSDK(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExternalSDK, ExternalSDK)
+!define ExternalSDKParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExternalSDK, ExternalSDK)
+!define ExternalSDKParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExternalSDK, ExternalSDK)

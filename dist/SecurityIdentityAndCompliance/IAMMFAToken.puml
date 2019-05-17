@@ -12,3 +12,5 @@ _yN_a-S4
 AWSEntityColoring(IAMMFAToken)
 !define IAMMFAToken(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMMFAToken, IAMMFAToken)
 !define IAMMFAToken(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMMFAToken, IAMMFAToken)
+!define IAMMFATokenParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMMFAToken, IAMMFAToken)
+!define IAMMFATokenParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMMFAToken, IAMMFAToken)

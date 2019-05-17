@@ -12,3 +12,5 @@ sg72P6dyR-GA_-v4OEzL_L9KQF4iAV0nNgENG3qHiFVT-0cky8E71mWAb3pf_mfV3R3ZAL80U1-FqPbr
 AWSEntityColoring(Inspector)
 !define Inspector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Inspector, Inspector)
 !define Inspector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Inspector, Inspector)
+!define InspectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Inspector, Inspector)
+!define InspectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Inspector, Inspector)

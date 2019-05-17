@@ -11,3 +11,5 @@ vzSBZ9eKkf9VT4t_k93VkkVFytl5JdwlMSZlffz0tEVt0RwUtpuUq5RpQvWmpMyanIzy0cT8rnydy7Tu
 AWSEntityColoring(CodeCommit)
 !define CodeCommit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeCommit, CodeCommit)
 !define CodeCommit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeCommit, CodeCommit)
+!define CodeCommitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodeCommit, CodeCommit)
+!define CodeCommitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodeCommit, CodeCommit)

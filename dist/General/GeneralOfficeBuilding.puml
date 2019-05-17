@@ -10,3 +10,5 @@ m6XepjwYgVtK-lsE_xL-ZzH-7jyVhz_RVP6L-RUj_dNJuiRx5rVVNhlzKTo1DlqMrdqhBRfOh66Qm7_o
 AWSEntityColoring(GeneralOfficeBuilding)
 !define GeneralOfficeBuilding(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
 !define GeneralOfficeBuilding(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
+!define GeneralOfficeBuildingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)
+!define GeneralOfficeBuildingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralOfficeBuilding, GeneralOfficeBuilding)

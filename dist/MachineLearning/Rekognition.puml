@@ -12,3 +12,5 @@ x-H1ML-dUc60h6qnw9B7yQ640ph00LkqI_gKTy9Lg9C59llyIxw8WtOD0LG1RGyI0gJyKQhbe7y9Jvvy
 AWSEntityColoring(Rekognition)
 !define Rekognition(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Rekognition, Rekognition)
 !define Rekognition(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Rekognition, Rekognition)

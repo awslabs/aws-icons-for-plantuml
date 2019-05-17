@@ -8,3 +8,5 @@ hbZ-xsZgy_yGGmTZG-zWZ_VP9D0zVmIR2FTFU7xQ-oE-lz_-_QQVlfvVzFoavpSzF-hvLS_FUdvFaZq
 AWSEntityColoring(AutoScalingGroup)
 !define AutoScalingGroup(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AutoScalingGroup, AutoScalingGroup)
 !define AutoScalingGroup(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AutoScalingGroup, AutoScalingGroup)
+!define AutoScalingGroupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AutoScalingGroup, AutoScalingGroup)
+!define AutoScalingGroupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AutoScalingGroup, AutoScalingGroup)

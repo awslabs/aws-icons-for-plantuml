@@ -10,3 +10,5 @@ diAMhIEOHxXbpKuxWdjEKFj-wCJuKGyk1X7ycrdiTG0U8ej1VoXXiRV8E9K_wVvFFx_JyrVxnol_rFxr
 AWSEntityColoring(ReservedInstanceReporting)
 !define ReservedInstanceReporting(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)
 !define ReservedInstanceReporting(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)
+!define ReservedInstanceReportingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)
+!define ReservedInstanceReportingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ReservedInstanceReporting, ReservedInstanceReporting)

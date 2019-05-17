@@ -12,3 +12,5 @@ Ffw_gAOz_dZx2Jg8BplnrPq1ihVcE4C-k7-XX-ES_rHoBYryb1oYK0xypDHmkV-BsNIy2iCyekpwc26h
 AWSEntityColoring(RoboMakerSimulation)
 !define RoboMakerSimulation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
 !define RoboMakerSimulation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)

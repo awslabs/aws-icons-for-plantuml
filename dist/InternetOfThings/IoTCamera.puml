@@ -12,3 +12,5 @@ GNhtXApwx-RlFl-NrwmhqWByEgnVaH3c2QHRKCqVrQ-mX1pzXesicNXQltK2a0IKVfp_edbIPBJhp7zx
 AWSEntityColoring(IoTCamera)
 !define IoTCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCamera, IoTCamera)
 !define IoTCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCamera, IoTCamera)
+!define IoTCameraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCamera, IoTCamera)
+!define IoTCameraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCamera, IoTCamera)

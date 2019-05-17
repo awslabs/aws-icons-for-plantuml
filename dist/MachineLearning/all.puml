@@ -9,6 +9,8 @@ S7V-INx-uHlyvE_VV_qaVs2T_VxNzOEcno-zB5c9-PFCR__ru_VlV_tz8xj_PVVFvFxz3_Bhrs_Vi7-z
 AWSEntityColoring(SageMakerNotebook)
 !define SageMakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
 !define SageMakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
+!define SageMakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
+!define SageMakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -23,6 +25,8 @@ J52ykf_HtiyQk-VtMo0DEKkFn_yVrSCZ1sJFflE4NdkhKPQFoBUIjCS4A3tuPq5yqCFLwLAWI3efeyGy
 AWSEntityColoring(Personalize)
 !define Personalize(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Personalize, Personalize)
 !define Personalize(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Personalize, Personalize)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -37,6 +41,8 @@ V_3iW7sPltK_2dELtEAZ6AFCjt9eshSNd_PnXHzM_hZoV2BPdckSTW67p6z_1J8emY6GxtXCWHzFB-NZ
 AWSEntityColoring(TensorFlowonAWS)
 !define TensorFlowonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
 !define TensorFlowonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -51,6 +57,8 @@ V7NfIn1L0HdFFczxbaDwFpXyZkgPxBxljI_PF-G6PuLipDzDXGSGLGu7BBddMR5K0jvwmtUrLDOF___p
 AWSEntityColoring(MachineLearning)
 !define MachineLearning(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MachineLearning, MachineLearning)
 !define MachineLearning(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MachineLearning, MachineLearning)
+!define MachineLearningParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MachineLearning, MachineLearning)
+!define MachineLearningParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MachineLearning, MachineLearning)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -66,6 +74,8 @@ BJiheAV-E3vHeGQsyw5auDVl1w-UTKUNaXktDV52BjylWim14e4LcBi1aYkn4khs-wbc5fs-KMQicEql
 AWSEntityColoring(ElasticInference)
 !define ElasticInference(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ElasticInference, ElasticInference)
 !define ElasticInference(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ElasticInference, ElasticInference)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -80,6 +90,8 @@ e78e0ELRRz8N1LdgTdsLEeafD77_N0NezCsJ7f6vrq_ZdDpdzrf5_ou_82DyN_pGal5UWTfwNxtsKvhn
 AWSEntityColoring(Translate)
 !define Translate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Translate, Translate)
 !define Translate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Translate, Translate)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -94,6 +106,8 @@ bn4DiwZNHUlxSU7rU_Zuc
 AWSEntityColoring(Polly)
 !define Polly(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Polly, Polly)
 !define Polly(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Polly, Polly)
+!define PollyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Polly, Polly)
+!define PollyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Polly, Polly)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -109,6 +123,8 @@ nyV7hm
 AWSEntityColoring(DeepRacer)
 !define DeepRacer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepRacer, DeepRacer)
 !define DeepRacer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepRacer, DeepRacer)
+!define DeepRacerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepRacer, DeepRacer)
+!define DeepRacerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepRacer, DeepRacer)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -124,6 +140,8 @@ FUfVLfkmVDm_nQ_etzRxn_N-rIIsFr5llVK5
 AWSEntityColoring(SageMaker)
 !define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMaker, SageMaker)
 !define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMaker, SageMaker)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -137,6 +155,8 @@ TtfLwLQVUQjF87L_-s6ZZ_ZcFRtqftaytWC
 AWSEntityColoring(DeepLens)
 !define DeepLens(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLens, DeepLens)
 !define DeepLens(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLens, DeepLens)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -151,6 +171,8 @@ EwLEVnV0ftz1-Ei01QGyymCZHW1_vqVltK2K5_x0E42V_SivPUSFEW5QUV7z0crDB_O_c7vc-bfFqMl_
 AWSEntityColoring(SageMakerTrain)
 !define SageMakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
 !define SageMakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
+!define SageMakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
+!define SageMakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -166,6 +188,8 @@ l-IoZ_gIw3ymV_dBFm
 AWSEntityColoring(SageMakerGroundTruth)
 !define SageMakerGroundTruth(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
 !define SageMakerGroundTruth(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -180,6 +204,8 @@ oMzdQEzp6_vizGr1pbMERI1fzV72g-Eda7cUPsH7aWD1Adonh-bRCsX7UCnUuEvBVQ0pDAeto82R2mnj
 AWSEntityColoring(Transcribe)
 !define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Transcribe, Transcribe)
 !define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Transcribe, Transcribe)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -197,6 +223,8 @@ jUr-cr-VvkVTQytFlvtVozVy_YVk7wQl7_sf-vTaHYtjpzm_LOR-2_TlV_x-SOrsRqkyQ_j_vWy
 AWSEntityColoring(SageMakerModel)
 !define SageMakerModel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerModel, SageMakerModel)
 !define SageMakerModel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerModel, SageMakerModel)
+!define SageMakerModelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerModel, SageMakerModel)
+!define SageMakerModelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerModel, SageMakerModel)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -211,6 +239,8 @@ Xd3prTuVzlcTdg9Owz7t5BoA2n8F99TCFS0VSZWStW4
 AWSEntityColoring(Textract)
 !define Textract(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Textract, Textract)
 !define Textract(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Textract, Textract)
+!define TextractParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Textract, Textract)
+!define TextractParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Textract, Textract)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -225,6 +255,8 @@ V_3iW7sPltK_2dELtEAZ6AFCjt9eshSNd_PnXHzM_hZoV2BPdckSTW67p6z_1J8emY6GxtXCWHzFB-NZ
 AWSEntityColoring(ApacheMXNetonAWS)
 !define ApacheMXNetonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
 !define ApacheMXNetonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
+!define ApacheMXNetonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
+!define ApacheMXNetonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -238,6 +270,8 @@ Bv3Ml_zAqj4IzZB4sF6Z8EO-Fry_tFVka2AVUhNtCFMBsxxXbkIsPeAtyXwPAXFdc01KLM0SP2YrAXe7
 AWSEntityColoring(Comprehend)
 !define Comprehend(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Comprehend, Comprehend)
 !define Comprehend(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Comprehend, Comprehend)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -252,6 +286,8 @@ PwWDy_gayIKjY7hr5fiFtzfPIeFK1-GfUM0lwDhbBkBvb_nC7z_QhOy2040OXgB-NIFY0PqviscJ3_FX
 AWSEntityColoring(DeepLearningAMIs)
 !define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
 !define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -264,6 +300,8 @@ UqP8uIYA9XSdVG89uuX48yAOb-0jGZm-8SKf7t75MdmkfsZ6EuHaoUbbncUGdEcAzmYHhBpWXI01A1gO
 AWSEntityColoring(Forecast)
 !define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Forecast, Forecast)
 !define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Forecast, Forecast)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -279,6 +317,8 @@ x-H1ML-dUc60h6qnw9B7yQ640ph00LkqI_gKTy9Lg9C59llyIxw8WtOD0LG1RGyI0gJyKQhbe7y9Jvvy
 AWSEntityColoring(Rekognition)
 !define Rekognition(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Rekognition, Rekognition)
 !define Rekognition(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Rekognition, Rekognition)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -292,4 +332,6 @@ fikvFl315H_gJCzm1o1koHFzXKEAvEcUFNrOTlOUavgkS6nFxtXnILfmLToMFZ4WoCAuV2eUva2mu0jF
 AWSEntityColoring(Lex)
 !define Lex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Lex, Lex)
 !define Lex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Lex, Lex)
+!define LexParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Lex, Lex)
+!define LexParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Lex, Lex)
 

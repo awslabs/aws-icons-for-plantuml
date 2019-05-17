@@ -10,3 +10,5 @@ yRC_5ZqQFoQ85P_KvjxwvS9oF-y_zdtTT-Jf-oqlG9Qz7-T5ydwTfqZVp_FApRe7
 AWSEntityColoring(IAMEncryptedData)
 !define IAMEncryptedData(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IAMEncryptedData, IAMEncryptedData)
 !define IAMEncryptedData(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IAMEncryptedData, IAMEncryptedData)
+!define IAMEncryptedDataParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IAMEncryptedData, IAMEncryptedData)
+!define IAMEncryptedDataParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IAMEncryptedData, IAMEncryptedData)

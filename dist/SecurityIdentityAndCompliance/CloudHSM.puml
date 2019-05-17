@@ -11,3 +11,5 @@ CDS_E8E0_im0NGbV2KTS1ksM0gyp702wmUgCZ702i3edX8nw4RpnnZi
 AWSEntityColoring(CloudHSM)
 !define CloudHSM(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CloudHSM, CloudHSM)
 !define CloudHSM(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CloudHSM, CloudHSM)
+!define CloudHSMParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CloudHSM, CloudHSM)
+!define CloudHSMParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CloudHSM, CloudHSM)

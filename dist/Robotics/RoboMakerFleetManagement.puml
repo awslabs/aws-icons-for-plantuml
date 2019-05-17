@@ -16,3 +16,5 @@ wF_85CNc_LKD1451jlt_em7nhjEV_tyS8s9P9NqOCTkCOVyM5CU1TYvZxqbrLDSzzlz_V5I4yRRtgA2C
 AWSEntityColoring(RoboMakerFleetManagement)
 !define RoboMakerFleetManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
 !define RoboMakerFleetManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)

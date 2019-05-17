@@ -10,3 +10,5 @@ LME-hw7e0p7fVTxhHUyHzehV5RDUuKkXET_xTF_pLQF5XP_ePSzqkfBBH9auHARnI7n2_m
 AWSEntityColoring(MigrationandTransfer)
 !define MigrationandTransfer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MigrationandTransfer, MigrationandTransfer)
 !define MigrationandTransfer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MigrationandTransfer, MigrationandTransfer)
+!define MigrationandTransferParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MigrationandTransfer, MigrationandTransfer)
+!define MigrationandTransferParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MigrationandTransfer, MigrationandTransfer)

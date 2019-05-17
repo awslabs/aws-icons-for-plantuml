@@ -14,3 +14,5 @@ lUBl8kOFnIQqnuLju_R_y0i
 AWSEntityColoring(GeneralUsers)
 !define GeneralUsers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GeneralUsers, GeneralUsers)
 !define GeneralUsers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GeneralUsers, GeneralUsers)
+!define GeneralUsersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GeneralUsers, GeneralUsers)
+!define GeneralUsersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GeneralUsers, GeneralUsers)

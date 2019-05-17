@@ -12,3 +12,5 @@ H1OkyAhzptVrANblt-Wla4NDVCUyOdczNy1_Jhim-yNi5qHmSkRGvdz6W1ctNyfV
 AWSEntityColoring(DMSDatabaseMigrationWorkflow)
 !define DMSDatabaseMigrationWorkflow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
 !define DMSDatabaseMigrationWorkflow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
+!define DMSDatabaseMigrationWorkflowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
+!define DMSDatabaseMigrationWorkflowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)

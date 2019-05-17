@@ -9,6 +9,8 @@ lz_Tly_-fP_Vt__-Pj-VBEpvuLlZnvxVlhV_dpvxVwBlRtpziVTNzlvCyme
 AWSEntityColoring(DynamoDBGSI)
 !define DynamoDBGSI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBGSI, DynamoDBGSI)
 !define DynamoDBGSI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBGSI, DynamoDBGSI)
+!define DynamoDBGSIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBGSI, DynamoDBGSI)
+!define DynamoDBGSIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBGSI, DynamoDBGSI)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -22,6 +24,8 @@ d5i
 AWSEntityColoring(DynamoDBItems)
 !define DynamoDBItems(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBItems, DynamoDBItems)
 !define DynamoDBItems(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBItems, DynamoDBItems)
+!define DynamoDBItemsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBItems, DynamoDBItems)
+!define DynamoDBItemsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBItems, DynamoDBItems)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -38,6 +42,8 @@ NVm_FZv-0G
 AWSEntityColoring(RDSonVMware)
 !define RDSonVMware(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, RDSonVMware, RDSonVMware)
 !define RDSonVMware(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, RDSonVMware, RDSonVMware)
+!define RDSonVMwareParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDSonVMware, RDSonVMware)
+!define RDSonVMwareParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDSonVMware, RDSonVMware)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -51,6 +57,8 @@ BzXFsc_OZzglti--0G
 AWSEntityColoring(ElastiCacheCacheNode)
 !define ElastiCacheCacheNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
 !define ElastiCacheCacheNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -66,6 +74,8 @@ oiMgrbbBtsZDJsLhxtxno7zeV_tr3m
 AWSEntityColoring(ElastiCache)
 !define ElastiCache(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCache, ElastiCache)
 !define ElastiCache(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCache, ElastiCache)
+!define ElastiCacheParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCache, ElastiCache)
+!define ElastiCacheParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCache, ElastiCache)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -82,6 +92,8 @@ zzUlFs_wr--VJtlz_lqYldr-uDFawVF3gtYklGXtDvlk0TkVNrx65kkYCAOtwyzlkRciyFdjuvYbuYVo
 AWSEntityColoring(ElastiCacheForMemcached)
 !define ElastiCacheForMemcached(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheForMemcached, ElastiCacheForMemcached)
 !define ElastiCacheForMemcached(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheForMemcached, ElastiCacheForMemcached)
+!define ElastiCacheForMemcachedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheForMemcached, ElastiCacheForMemcached)
+!define ElastiCacheForMemcachedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheForMemcached, ElastiCacheForMemcached)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -96,6 +108,8 @@ ham80oHMZuld_x7OCPXllkxwKuEVVFtQltz--_txsySFtpv-sHy_VTluxTl6Ztyp__dF5m
 AWSEntityColoring(QLDB)
 !define QLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, QLDB, QLDB)
 !define QLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, QLDB, QLDB)
+!define QLDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, QLDB, QLDB)
+!define QLDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, QLDB, QLDB)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -111,6 +125,8 @@ H1OkyAhzptVrANblt-Wla4NDVCUyOdczNy1_Jhim-yNi5qHmSkRGvdz6W1ctNyfV
 AWSEntityColoring(DMSDatabaseMigrationWorkflow)
 !define DMSDatabaseMigrationWorkflow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
 !define DMSDatabaseMigrationWorkflow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
+!define DMSDatabaseMigrationWorkflowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
+!define DMSDatabaseMigrationWorkflowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DMSDatabaseMigrationWorkflow, DMSDatabaseMigrationWorkflow)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -125,6 +141,8 @@ oxK_BxyogjxKfoUPvDhVhztH_37yrTg_YYcGHxl-hggg07hK-RNlxw-VFtpz_ENhvqzVFt_Rdpz-tVpr
 AWSEntityColoring(DocumentDBwithMongoDBcompat)
 !define DocumentDBwithMongoDBcompat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)
 !define DocumentDBwithMongoDBcompat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)
+!define DocumentDBwithMongoDBcompatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)
+!define DocumentDBwithMongoDBcompatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DocumentDBwithMongoDBcompat, DocumentDBwithMongoDBcompat)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -140,6 +158,8 @@ IaH4UVgtzu_lxrzT9hVtpv_XovT_
 AWSEntityColoring(RDS)
 !define RDS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, RDS, RDS)
 !define RDS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, RDS, RDS)
+!define RDSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDS, RDS)
+!define RDSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDS, RDS)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -155,6 +175,8 @@ q9maTymlYaagZ3ld9uMIe_mzyniTrPx1dVCZvw6XTi-lZ2hy_lcvVlugFtxy1G
 AWSEntityColoring(Neptune)
 !define Neptune(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Neptune, Neptune)
 !define Neptune(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Neptune, Neptune)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -168,6 +190,8 @@ Vg5wzF-URVSJGUQRVqLlzjgkCtsyehltcpO-LVaDlG
 AWSEntityColoring(Database)
 !define Database(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Database, Database)
 !define Database(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Database, Database)
+!define DatabaseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Database, Database)
+!define DatabaseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Database, Database)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -184,6 +208,8 @@ d_V74Re0InRLB9NQNUmNlvpvmgjzzta04_JI6K_1TNN_6Xzyy0i
 AWSEntityColoring(Aurora)
 !define Aurora(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Aurora, Aurora)
 !define Aurora(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Aurora, Aurora)
+!define AuroraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Aurora, Aurora)
+!define AuroraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Aurora, Aurora)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -200,6 +226,8 @@ EN9ayEUUc0_Jczw05Bf94Z3wkmJGv58t04alaiGecyhnwOkskLxeLTptQquLkHy9RoGjS54qeJTZqHwP
 AWSEntityColoring(ElastiCacheForRedis)
 !define ElastiCacheForRedis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
 !define ElastiCacheForRedis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
+!define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
+!define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -212,6 +240,8 @@ lnhNQK7MHttvtzg0h5zL8Y3lTqjxrzCvmqy-lid-noOfe3QfuCbTEVpNJR_hvz_roq_U__pF__pF__pL
 AWSEntityColoring(DynamoDBAttribute)
 !define DynamoDBAttribute(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)
 !define DynamoDBAttribute(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)
+!define DynamoDBAttributeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)
+!define DynamoDBAttributeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBAttribute, DynamoDBAttribute)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -226,6 +256,8 @@ YIEIcBI_yo40rcNyS4NcY_dJbKVSLZDLJIQv8J3rHmBWgcF_j6gcDypzwzG5XGCfWIE_PV_CDR_Fol_U
 AWSEntityColoring(Timestream)
 !define Timestream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Timestream, Timestream)
 !define Timestream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Timestream, Timestream)
+!define TimestreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Timestream, Timestream)
+!define TimestreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Timestream, Timestream)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -239,6 +271,8 @@ cFw-vlqr84MVAQTE_9xViFFHtlCPUv-BlclU-gdUQroslqx4wVfN-E67Nm
 AWSEntityColoring(DatabaseMigrationService)
 !define DatabaseMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)
 !define DatabaseMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DatabaseMigrationService, DatabaseMigrationService)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -254,6 +288,8 @@ Fpht_Z62QSifaUa_ptyISlP_8l8_-ItYG7kM_xx7UoE9rY8Pltj_6XMe1_ruVzC_lp-Uxw_FqHl-Epvy
 AWSEntityColoring(DynamoDB)
 !define DynamoDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDB, DynamoDB)
 !define DynamoDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDB, DynamoDB)
+!define DynamoDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDB, DynamoDB)
+!define DynamoDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDB, DynamoDB)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -266,6 +302,8 @@ gQZwpCPg6nme-YN9WB8_qAQFSRXW-XFZcxn_vea6CEQ914_koks_xlXTV_wkltxg_kT__kT__kUl_d-w
 AWSEntityColoring(DynamoDBItem)
 !define DynamoDBItem(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
 !define DynamoDBItem(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBItem, DynamoDBItem)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -279,6 +317,8 @@ EGi
 AWSEntityColoring(DynamoDBAttributes)
 !define DynamoDBAttributes(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBAttributes, DynamoDBAttributes)
 !define DynamoDBAttributes(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBAttributes, DynamoDBAttributes)
+!define DynamoDBAttributesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBAttributes, DynamoDBAttributes)
+!define DynamoDBAttributesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBAttributes, DynamoDBAttributes)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -290,4 +330,6 @@ _sWRGNnlXuXd_Fo6Nr8ZYv_J46NF_vSr3Y5FOF1c-FlduvVzVcVyVAlFv-ztrn-sVhAm_GFHl_3lZ-tV
 AWSEntityColoring(DynamoDBTable)
 !define DynamoDBTable(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBTable, DynamoDBTable)
 !define DynamoDBTable(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTableParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTableParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBTable, DynamoDBTable)
 

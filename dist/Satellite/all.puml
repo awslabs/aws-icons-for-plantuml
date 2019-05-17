@@ -11,6 +11,8 @@ pnh0-PCComEVyxLs_6LdJAXxLfDyN2l19T-76bBFZzQ9oPNnFsvi-PnhR_XcARp9SnKwjDWRljaJujLt
 AWSEntityColoring(Satellite)
 !define Satellite(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Satellite, Satellite)
 !define Satellite(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Satellite, Satellite)
+!define SatelliteParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Satellite, Satellite)
+!define SatelliteParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Satellite, Satellite)
 
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
@@ -24,4 +26,6 @@ g52iSeUggImq8l92YAcqhFrVq2C6LerPzv-uhzyBdhS_XNibJtnH08lBVkJVTkL3VsGZRllP-e_zrtzz
 AWSEntityColoring(GroundStation)
 !define GroundStation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, GroundStation, GroundStation)
 !define GroundStation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, GroundStation, GroundStation)
+!define GroundStationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, GroundStation, GroundStation)
+!define GroundStationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, GroundStation, GroundStation)
 

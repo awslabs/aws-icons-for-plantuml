@@ -12,3 +12,5 @@ Sl1hPpgq3fH1hBwQxsil6jL1lGsCJamPO1xXHaX6Rm2V5OGUC3lT0CnB3QtEg5b0lUS1DVEwUdErtZRK
 AWSEntityColoring(ManagedServices)
 !define ManagedServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagedServices, ManagedServices)
 !define ManagedServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagedServices, ManagedServices)
+!define ManagedServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagedServices, ManagedServices)
+!define ManagedServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagedServices, ManagedServices)

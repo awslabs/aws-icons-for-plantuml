@@ -11,3 +11,5 @@ Oa3w_ElB1b5y-7N6UXKiVVwNom5guTES3r0_ULQzlnlL5ZnfaF2qGN1VyAH1ilIaGSBJ1cfOy6n0ikFo
 AWSEntityColoring(TrustedAdvisorCheckCost)
 !define TrustedAdvisorCheckCost(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
 !define TrustedAdvisorCheckCost(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)

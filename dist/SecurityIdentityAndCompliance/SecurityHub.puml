@@ -11,3 +11,5 @@ jR1qJlrrwh-R2-lSdt6p_npDLFpb_cwvsNy6O7FYjyf0VAufp69UsbzRTK__dVRdJzZVL-FukVVB-Nxw
 AWSEntityColoring(SecurityHub)
 !define SecurityHub(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SecurityHub, SecurityHub)
 !define SecurityHub(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHubParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHubParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SecurityHub, SecurityHub)
