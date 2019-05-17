@@ -24,7 +24,7 @@ This repository is based on the  [Azure-PlantUML](https://github.com/RicardoNiep
 - [Advanced Examples](#advanced-examples)
 - [Customized Builds](#customized-builds)
 - [Contributing](#contributing)
-- [License](#license)
+- [License Summary](#license-summary)
 - [Acknowledgements](#acknowledgements)
 
 <!-- tocstop -->
