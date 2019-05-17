@@ -86,7 +86,7 @@ def verify_environment():
         with open("config.yml") as f:
             config = yaml.safe_load(f)
     except Exception as e:
-        print("Error: {}\ncheck config.yml file".format(e))
+        print(f"Error: {e}\ncheck config.yml file")
         sys.exit(1)
     # Verify other files and folders exist
     dir = Path("../source")
@@ -109,7 +109,7 @@ def verify_environment():
             stderr=PIPE,
         )
     except Exception as e:
-        print("Error executing plantuml jar file, {}".format(e))
+        print(f"Error executing plantuml jar file, {e}")
         sys.exit(1)
 
     # Checks complete, return if not doing a pre-flight
@@ -232,7 +232,7 @@ def create_category_all_file(path):
         with open(f, "r") as read_file:
             data += read_file.read() + "\n"
 
-    with open("{}/all.puml".format(path), "w") as all_file:
+    with open(f"{path}/all.puml", "w") as all_file:
         all_file.write(data)
     return
 
@@ -241,16 +241,16 @@ def worker(icon):
     """multiprocess resource intensive operations (java subprocess)"""
     # create images without transparency for use with PlantUML sprites
     icon.generate_image(
-        Path("../dist/{}".format(icon.category)),
+        Path(f"../dist/{icon.category}"),
         color=True,
         max_target_size=64,
         transparency=False,
     )
-    print("generating PUML for {}".format(icon.source_name))
-    icon.generate_puml(Path("../dist/{}".format(icon.category)))
+    print(f"generating PUML for {icon.source_name}")
+    icon.generate_puml(Path(f"../dist/{icon.category}"))
     # Recreate the images with transparency
     icon.generate_image(
-        Path("../dist/{}".format(icon.category)),
+        Path(f"../dist/{icon.category}"),
         color=True,
         max_target_size=64,
         transparency=True,
@@ -276,7 +276,7 @@ def main():
     # Create category directories
     categories = sorted(set([icon.category for icon in icons]))
     for i in categories:
-        Path("../dist/{}".format(i)).mkdir(exist_ok=True)
+        Path(f"../dist/{i}").mkdir(exist_ok=True)
 
     # Create PlantUML sprites
     pool = Pool(processes=multiprocessing.cpu_count())
@@ -287,18 +287,21 @@ def main():
 
     # Generate "all.puml" files for each category
     for i in categories:
-        create_category_all_file(Path("../dist/{}".format(i)))
+        create_category_all_file(Path(f"../dist/{i}"))
 
     # Create markdown sheet and place in dist
     sorted_icons = sorted(icons, key=lambda x: (x.category, x.target))
     markdown = MARKDOWN_PREFIX_TEMPLATE
     for i in categories:
-        markdown += "**{category}** | | | **{category}/all.puml**\n".format(category=i)
+        category = i
+        markdown += f"**{category}** | | | **{category}/all.puml**\n"
         for j in sorted_icons:
             if j.category == i:
+                cat = j.category
+                tgt = j.target
                 markdown += (
-                    "{cat} | {tgt}  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
-                    "{cat}/{tgt}.puml\n".format(cat=j.category, tgt=j.target)
+                    f"{cat} | {tgt}  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                    f"{cat}/{tgt}.puml\n"
                 )
     with open(Path("../AWSSymbols.md"), "w") as f:
         f.write(markdown)

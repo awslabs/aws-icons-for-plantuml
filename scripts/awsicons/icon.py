@@ -38,7 +38,7 @@ class Icon:
         if not transparency:
             im = self._remove_transparency(im)
         # Save color image
-        im.save("{}/{}.png".format(path, self.target), "PNG")
+        im.save(f"{path}/{self.target}.png", "PNG")
         return
 
     def generate_puml(self, path):
@@ -46,6 +46,8 @@ class Icon:
         puml_content = PUML_LICENSE_HEADER
         # Start plantuml.jar and encode sprite from main PNG
         try:
+            target = self.target
+            color = self.color
             result = subprocess.run(
                 [
                     "java",
@@ -53,32 +55,24 @@ class Icon:
                     "./plantuml.jar",
                     "-encodesprite",
                     "16z",
-                    "{}/{}.png".format(path, self.target),
+                    f"{path}/{target}.png",
                 ],
                 shell=False,
                 stdout=PIPE,
                 stderr=PIPE,
             )
             puml_content += result.stdout.decode("UTF-8")
-            puml_content += "AWSEntityColoring({})\n".format(self.target)
-            puml_content += "!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n".format(
-                target=self.target, color=self.color
-            )
-            puml_content += "!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n".format(
-                target=self.target, color=self.color
-            )
-            puml_content += "!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n".format(
-                target=self.target, color=self.color
-            )
-            puml_content += "!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n".format(
-                target=self.target, color=self.color
-            )
+            puml_content += f"AWSEntityColoring({target})\n"
+            puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
 
-            with open("{}/{}.puml".format(path, self.target), "w") as f:
+            with open(f"{path}/{target}.puml", "w") as f:
                 f.write(puml_content)
 
         except Exception as e:
-            print("Error executing plantuml jar file, {}".format(e))
+            print(f"Error executing plantuml jar file, {e}")
             sys.exit(1)
 
     # Internal methods
@@ -103,20 +97,18 @@ class Icon:
                             )
                         else:
                             print(
-                                "No color definition found for {}, using black".format(
-                                    source_name
-                                )
+                                f"No color definition found for {source_name}, using black"
                             )
                             self.color = "#000000"
                         return
                     except KeyError as e:
-                        print("Error: {}".format(e))
+                        print(f"Error: {e}")
                         print(
                             "config.yml requires minimal config section, please see documentation"
                         )
                         sys.exit(1)
                     except TypeError as e:
-                        print("Error: {}".format(e))
+                        print(f"Error: {e}")
                         print(
                             "config.yml requires Defaults->Color definition, please see documentation"
                         )
@@ -128,7 +120,7 @@ class Icon:
             self.target = self._make_name(self.source_name)
             self.color = self.config["Defaults"]["Category"]["Color"]
         except KeyError as e:
-            print("Error: {}".format(e))
+            print(f"Error: {e}")
             print(
                 "config.yml requires minimal config section, please see documentation"
             )
@@ -155,13 +147,11 @@ class Icon:
                 if color == color_name:
                     return self.config["Defaults"]["Colors"][color]
             print(
-                "ERROR: Color {} not found in default color list, returning Black".format(
-                    color_name
-                )
+                f"ERROR: Color {color_name} not found in default color list, returning Black"
             )
             return "#000000"
         except KeyError as e:
-            print("Error: {}".format(e))
+            print(f"Error: {e}")
             print(
                 "config.yml requires minimal config section, please see documentation"
             )
