@@ -218,8 +218,84 @@ And if the `!includeurl AWSPuml/AWSSimplified.puml`is uncommented, this simplifi
 
 ![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmaster%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
 
+### Sequence Diagrams
 
+Icons can also be used in sequence diagrams, either in full stereotype or by using sprites and formatting the `participant` description. Here are examples of both.
 
+```bash
+@startuml Sequence Diagram - Spots and stereotypes
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+!includeurl AWSPuml/Compute/all.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
+
+actor User as user
+APIGatewayParticipant(api, Credit Card System, All methods are POST)
+LambdaParticipant(lambda,AuthorizeCard,)
+DynamoDBParticipant(db, PaymentTransactions, sortkey=transaction_id+token)
+GeneralInternetGatewayParticipant(processor, Authorizer, Returns status and token)
+
+user -> api: Process transaction\nPOST /prod/process
+api -> lambda: Invokes lambda with cardholder details
+lambda -> processor: Submit via API token\ncard number, expiry, CID
+processor -> processor: Validate and create token
+processor -> lambda: Returns status code and token
+lambda -> db: PUT transaction id, token
+lambda -> api: Returns\nstatus code, transaction id
+api -> user: Returns status code
+@enduml
+```
+
+This code generates the fully detailed diagram with stereotype. The participants follow the spot letter and stereotype formatting, with the icon to the left of the description.
+
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fmaster%2Fexamples%2FSequence%2520-%2520Technical.puml)
+
+```bash
+@startuml Sequence Diagram - Spots and stereotypes
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+!includeurl AWSPuml/Compute/all.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
+
+'Comment out to use default PlantUML sequence formatting
+skinparam participant {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor AWS_BORDER_COLOR
+}
+hide footbox
+
+actor User as user
+'Instead of using ...Participant(), native sprites can be used in monochrome
+participant "<$APIGateway>\nCredit Card System\nAll methods are POST" as api
+'Or skinned with colors (pulled from each sprite file) and with different layout of sprite to text
+participant "<color:#D86613><$Lambda></color>\nAuthorizeCard\nReturns status" as lambda
+participant "PaymentTransactions\n<color:#3B48CC><$DynamoDB></color>\nsortkey=transaction_id+token" as db
+participant "Authorizer\nReturns status and token\n<color:#232F3E><$GeneralInternetGateway></color>" as processor
+
+user -> api: Process transaction\nPOST /prod/process
+api -> lambda: Invokes lambda with cardholder details
+lambda -> processor: Submit via API token\ncard number, expiry, CID
+processor -> processor: Validate and create token
+processor -> lambda: Returns status code and token
+lambda -> db: PUT transaction id, token
+lambda -> api: Returns\nstatus code, transaction id
+api -> user: Returns status code
+@enduml
+```
+
+This code generates the same sequence diagram demonstrating how text and icon (sprite) postioning can be modified.
+
+![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fmaster%2Fexamples%2FSequence%2520-%2520Sprites.puml)
 
 
 ## Distribution "Dist" Details
