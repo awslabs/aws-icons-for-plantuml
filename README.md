@@ -295,7 +295,7 @@ api -> user: Returns status code
 @enduml
 ```
 
-This code generates the same sequence diagram demonstrating how text and icon (sprite) postioning can be modified.
+This code generates the same sequence diagram demonstrating how text and icon (sprite) positioning can be modified.
 
 ![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Sprites.puml)
 
@@ -335,6 +335,10 @@ It is also possible to customize the creation of the `dist/` PUML and PNG files.
 ## Contributing
 
 Please see the `CONTRIBUTING.md` file for details on how to contribute.
+
+The following, in alphabetical order by name or GitHub username, have contributed to this repository:
+
+* [jack-burridge-tp](https://github.com/jack-burridge-tp) - Added support for Sequence Diagrams
 
 ## License Summary
 
