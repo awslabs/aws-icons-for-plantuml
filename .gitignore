@@ -6,5 +6,7 @@ __pycache__/
 *.py[cod]
 source/*
 !source/*.puml
+# Force create of source/official as empty directory
+!source/official
 
 config-template.yml
