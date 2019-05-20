@@ -253,7 +253,7 @@ api -> user: Returns status code
 
 This code generates the fully detailed diagram with stereotype. The participants follow the spot letter and stereotype formatting, with the icon to the left of the description.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fmaster%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```bash
 @startuml Sequence Diagram - Spots and stereotypes
@@ -295,7 +295,7 @@ api -> user: Returns status code
 
 This code generates the same sequence diagram demonstrating how text and icon (sprite) postioning can be modified.
 
-![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fmaster%2Fexamples%2FSequence%2520-%2520Sprites.puml)
+![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Sprites.puml)
 
 
 ## Distribution "Dist" Details
