@@ -20,6 +20,7 @@ This repository is based on the  [Azure-PlantUML](https://github.com/RicardoNiep
   * [Basic Usage](#basic-usage)
   * [Raw Sprites](#raw-sprites)
   * [Simplified View](#simplified-view)
+  * [Sequence Diagrams](#sequence-diagrams)
 - [Distribution "Dist" Details](#distribution-dist-details)
 - [Advanced Examples](#advanced-examples)
 - [Customized Builds](#customized-builds)
@@ -220,7 +221,7 @@ And if the `!includeurl AWSPuml/AWSSimplified.puml`is uncommented, this simplifi
 
 ### Sequence Diagrams
 
-Icons can also be used in sequence diagrams, either in full stereotype or by using sprites and formatting the `participant` description. Here are examples of both.
+Icons can also be used in UML sequence diagrams, either in full stereotype or by just using sprites and formatting via `participant` description. Here are examples of both.
 
 ```bash
 @startuml Sequence Diagram - Spots and stereotypes
@@ -251,12 +252,12 @@ api -> user: Returns status code
 @enduml
 ```
 
-This code generates the fully detailed diagram with stereotype. The participants follow the spot letter and stereotype formatting, with the icon to the left of the description.
+This code generates the fully detailed diagram with stereotypes. The participants follow the spot letter and stereotype formatting, with the icon to the left of the description.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```bash
-@startuml Sequence Diagram - Spots and stereotypes
+@startuml Sequence Diagram - Sprites
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
@@ -272,6 +273,7 @@ skinparam participant {
     BackgroundColor AWS_BG_COLOR
     BorderColor AWS_BORDER_COLOR
 }
+'Hide the bottom boxes
 hide footbox
 
 actor User as user
@@ -295,7 +297,7 @@ api -> user: Returns status code
 
 This code generates the same sequence diagram demonstrating how text and icon (sprite) postioning can be modified.
 
-![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fgadams999%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Sprites.puml)
+![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fsequence_diag%2Fexamples%2FSequence%2520-%2520Sprites.puml)
 
 
 ## Distribution "Dist" Details

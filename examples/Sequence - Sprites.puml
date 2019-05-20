@@ -1,4 +1,4 @@
-@startuml Sequence Diagram - Spots and stereotypes
+@startuml Sequence Diagram - Sprites
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
@@ -14,6 +14,7 @@ skinparam participant {
     BackgroundColor AWS_BG_COLOR
     BorderColor AWS_BORDER_COLOR
 }
+'Hide the bottom boxes
 hide footbox
 
 actor User as user
