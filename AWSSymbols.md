@@ -30,8 +30,10 @@ AWSCostManagement | ReservedInstanceReporting  | ![ReservedInstanceReporting](di
 Analytics | Analytics  | ![Analytics](dist/Analytics/Analytics.png?raw=true) |Analytics/Analytics.puml
 Analytics | Athena  | ![Athena](dist/Analytics/Athena.png?raw=true) |Analytics/Athena.puml
 Analytics | CloudSearch  | ![CloudSearch](dist/Analytics/CloudSearch.png?raw=true) |Analytics/CloudSearch.puml
-Analytics | CloudSearchSearchDocs  | ![CloudSearchSearchDocs](dist/Analytics/CloudSearchSearchDocs.png?raw=true) |Analytics/CloudSearchSearchDocs.puml
+Analytics | CloudSearchSearchDocuments  | ![CloudSearchSearchDocuments](dist/Analytics/CloudSearchSearchDocuments.png?raw=true) |Analytics/CloudSearchSearchDocuments.puml
 Analytics | DataPipeline  | ![DataPipeline](dist/Analytics/DataPipeline.png?raw=true) |Analytics/DataPipeline.puml
+Analytics | DenseComputeNodeResource  | ![DenseComputeNodeResource](dist/Analytics/DenseComputeNodeResource.png?raw=true) |Analytics/DenseComputeNodeResource.puml
+Analytics | DenseStorageNodeResource  | ![DenseStorageNodeResource](dist/Analytics/DenseStorageNodeResource.png?raw=true) |Analytics/DenseStorageNodeResource.puml
 Analytics | EMR  | ![EMR](dist/Analytics/EMR.png?raw=true) |Analytics/EMR.puml
 Analytics | EMRCluster  | ![EMRCluster](dist/Analytics/EMRCluster.png?raw=true) |Analytics/EMRCluster.puml
 Analytics | EMREngine  | ![EMREngine](dist/Analytics/EMREngine.png?raw=true) |Analytics/EMREngine.puml
@@ -42,7 +44,7 @@ Analytics | EMRHDFSCluster  | ![EMRHDFSCluster](dist/Analytics/EMRHDFSCluster.pn
 Analytics | ElasticsearchService  | ![ElasticsearchService](dist/Analytics/ElasticsearchService.png?raw=true) |Analytics/ElasticsearchService.puml
 Analytics | Glue  | ![Glue](dist/Analytics/Glue.png?raw=true) |Analytics/Glue.puml
 Analytics | GlueCrawlers  | ![GlueCrawlers](dist/Analytics/GlueCrawlers.png?raw=true) |Analytics/GlueCrawlers.puml
-Analytics | GlueDataCatalog  | ![GlueDataCatalog](dist/Analytics/GlueDataCatalog.png?raw=true) |Analytics/GlueDataCatalog.puml
+Analytics | GlueDatacatalog  | ![GlueDatacatalog](dist/Analytics/GlueDatacatalog.png?raw=true) |Analytics/GlueDatacatalog.puml
 Analytics | Kinesis  | ![Kinesis](dist/Analytics/Kinesis.png?raw=true) |Analytics/Kinesis.puml
 Analytics | KinesisDataAnalytics  | ![KinesisDataAnalytics](dist/Analytics/KinesisDataAnalytics.png?raw=true) |Analytics/KinesisDataAnalytics.puml
 Analytics | KinesisDataFirehose  | ![KinesisDataFirehose](dist/Analytics/KinesisDataFirehose.png?raw=true) |Analytics/KinesisDataFirehose.puml
@@ -54,12 +56,7 @@ Analytics | ManagedStreamingforKafka  | ![ManagedStreamingforKafka](dist/Analyti
 Analytics | QuickSight  | ![QuickSight](dist/Analytics/QuickSight.png?raw=true) |Analytics/QuickSight.puml
 Analytics | Redshift  | ![Redshift](dist/Analytics/Redshift.png?raw=true) |Analytics/Redshift.puml
 Analytics | Redshift  | ![Redshift](dist/Analytics/Redshift.png?raw=true) |Analytics/Redshift.puml
-Analytics | RedshiftDenseComputeNode  | ![RedshiftDenseComputeNode](dist/Analytics/RedshiftDenseComputeNode.png?raw=true) |Analytics/RedshiftDenseComputeNode.puml
-Analytics | RedshiftDenseComputeNode  | ![RedshiftDenseComputeNode](dist/Analytics/RedshiftDenseComputeNode.png?raw=true) |Analytics/RedshiftDenseComputeNode.puml
-Analytics | RedshiftDenseStorageNode  | ![RedshiftDenseStorageNode](dist/Analytics/RedshiftDenseStorageNode.png?raw=true) |Analytics/RedshiftDenseStorageNode.puml
-Analytics | RedshiftDenseStorageNode  | ![RedshiftDenseStorageNode](dist/Analytics/RedshiftDenseStorageNode.png?raw=true) |Analytics/RedshiftDenseStorageNode.puml
 **ApplicationIntegration** | | | **ApplicationIntegration/all.puml**
-ApplicationIntegration | AppSync  | ![AppSync](dist/ApplicationIntegration/AppSync.png?raw=true) |ApplicationIntegration/AppSync.puml
 ApplicationIntegration | AppSync  | ![AppSync](dist/ApplicationIntegration/AppSync.png?raw=true) |ApplicationIntegration/AppSync.puml
 ApplicationIntegration | ApplicationIntegration  | ![ApplicationIntegration](dist/ApplicationIntegration/ApplicationIntegration.png?raw=true) |ApplicationIntegration/ApplicationIntegration.puml
 ApplicationIntegration | MQ  | ![MQ](dist/ApplicationIntegration/MQ.png?raw=true) |ApplicationIntegration/MQ.puml
@@ -77,9 +74,8 @@ Blockchain | ManagedBlockchain  | ![ManagedBlockchain](dist/Blockchain/ManagedBl
 Blockchain | QuantumLedgerDatabaseQLDB  | ![QuantumLedgerDatabaseQLDB](dist/Blockchain/QuantumLedgerDatabaseQLDB.png?raw=true) |Blockchain/QuantumLedgerDatabaseQLDB.puml
 **BusinessApplications** | | | **BusinessApplications/all.puml**
 BusinessApplications | AlexaForBusiness  | ![AlexaForBusiness](dist/BusinessApplications/AlexaForBusiness.png?raw=true) |BusinessApplications/AlexaForBusiness.puml
-BusinessApplications | BusinessApplication  | ![BusinessApplication](dist/BusinessApplications/BusinessApplication.png?raw=true) |BusinessApplications/BusinessApplication.puml
+BusinessApplications | BusinessApplications  | ![BusinessApplications](dist/BusinessApplications/BusinessApplications.png?raw=true) |BusinessApplications/BusinessApplications.puml
 BusinessApplications | Chime  | ![Chime](dist/BusinessApplications/Chime.png?raw=true) |BusinessApplications/Chime.puml
-BusinessApplications | WorkDocs  | ![WorkDocs](dist/BusinessApplications/WorkDocs.png?raw=true) |BusinessApplications/WorkDocs.puml
 BusinessApplications | WorkMail  | ![WorkMail](dist/BusinessApplications/WorkMail.png?raw=true) |BusinessApplications/WorkMail.puml
 **Compute** | | | **Compute/all.puml**
 Compute | Batch  | ![Batch](dist/Compute/Batch.png?raw=true) |Compute/Batch.puml
@@ -132,8 +128,6 @@ Compute | ElasticBeanstalk  | ![ElasticBeanstalk](dist/Compute/ElasticBeanstalk.
 Compute | ElasticBeanstalkApplication  | ![ElasticBeanstalkApplication](dist/Compute/ElasticBeanstalkApplication.png?raw=true) |Compute/ElasticBeanstalkApplication.puml
 Compute | ElasticBeanstalkDeployment  | ![ElasticBeanstalkDeployment](dist/Compute/ElasticBeanstalkDeployment.png?raw=true) |Compute/ElasticBeanstalkDeployment.puml
 Compute | ElasticContainerService  | ![ElasticContainerService](dist/Compute/ElasticContainerService.png?raw=true) |Compute/ElasticContainerService.puml
-Compute | ElasticContainerServiceTask  | ![ElasticContainerServiceTask](dist/Compute/ElasticContainerServiceTask.png?raw=true) |Compute/ElasticContainerServiceTask.puml
-Compute | ElasticLoadBalancingELB  | ![ElasticLoadBalancingELB](dist/Compute/ElasticLoadBalancingELB.png?raw=true) |Compute/ElasticLoadBalancingELB.puml
 Compute | Fargate  | ![Fargate](dist/Compute/Fargate.png?raw=true) |Compute/Fargate.puml
 Compute | Lambda  | ![Lambda](dist/Compute/Lambda.png?raw=true) |Compute/Lambda.puml
 Compute | LambdaLambdaFunction  | ![LambdaLambdaFunction](dist/Compute/LambdaLambdaFunction.png?raw=true) |Compute/LambdaLambdaFunction.puml
@@ -153,7 +147,8 @@ Database | Aurora  | ![Aurora](dist/Database/Aurora.png?raw=true) |Database/Auro
 Database | DMSDatabaseMigrationWorkflow  | ![DMSDatabaseMigrationWorkflow](dist/Database/DMSDatabaseMigrationWorkflow.png?raw=true) |Database/DMSDatabaseMigrationWorkflow.puml
 Database | Database  | ![Database](dist/Database/Database.png?raw=true) |Database/Database.puml
 Database | DatabaseMigrationService  | ![DatabaseMigrationService](dist/Database/DatabaseMigrationService.png?raw=true) |Database/DatabaseMigrationService.puml
-Database | DatabaseMigrationService  | ![DatabaseMigrationService](dist/Database/DatabaseMigrationService.png?raw=true) |Database/DatabaseMigrationService.puml
+Database | DenseComputeNodeResource2  | ![DenseComputeNodeResource2](dist/Database/DenseComputeNodeResource2.png?raw=true) |Database/DenseComputeNodeResource2.puml
+Database | DenseStorageNodeResource2  | ![DenseStorageNodeResource2](dist/Database/DenseStorageNodeResource2.png?raw=true) |Database/DenseStorageNodeResource2.puml
 Database | DocumentDBwithMongoDBcompat  | ![DocumentDBwithMongoDBcompat](dist/Database/DocumentDBwithMongoDBcompat.png?raw=true) |Database/DocumentDBwithMongoDBcompat.puml
 Database | DynamoDB  | ![DynamoDB](dist/Database/DynamoDB.png?raw=true) |Database/DynamoDB.puml
 Database | DynamoDBAttribute  | ![DynamoDBAttribute](dist/Database/DynamoDBAttribute.png?raw=true) |Database/DynamoDBAttribute.puml
@@ -171,10 +166,6 @@ Database | QLDB  | ![QLDB](dist/Database/QLDB.png?raw=true) |Database/QLDB.puml
 Database | RDS  | ![RDS](dist/Database/RDS.png?raw=true) |Database/RDS.puml
 Database | RDSonVMware  | ![RDSonVMware](dist/Database/RDSonVMware.png?raw=true) |Database/RDSonVMware.puml
 Database | Timestream  | ![Timestream](dist/Database/Timestream.png?raw=true) |Database/Timestream.puml
-**DesktopAndAppStreaming** | | | **DesktopAndAppStreaming/all.puml**
-DesktopAndAppStreaming | Appstream2.0  | ![Appstream2.0](dist/DesktopAndAppStreaming/Appstream2.0.png?raw=true) |DesktopAndAppStreaming/Appstream2.0.puml
-DesktopAndAppStreaming | DesktopandAppStreaming  | ![DesktopandAppStreaming](dist/DesktopAndAppStreaming/DesktopandAppStreaming.png?raw=true) |DesktopAndAppStreaming/DesktopandAppStreaming.puml
-DesktopAndAppStreaming | Workspaces  | ![Workspaces](dist/DesktopAndAppStreaming/Workspaces.png?raw=true) |DesktopAndAppStreaming/Workspaces.puml
 **DeveloperTools** | | | **DeveloperTools/all.puml**
 DeveloperTools | Cloud9  | ![Cloud9](dist/DeveloperTools/Cloud9.png?raw=true) |DeveloperTools/Cloud9.puml
 DeveloperTools | CodeBuild  | ![CodeBuild](dist/DeveloperTools/CodeBuild.png?raw=true) |DeveloperTools/CodeBuild.puml
@@ -187,38 +178,41 @@ DeveloperTools | CommandLineInterface  | ![CommandLineInterface](dist/DeveloperT
 DeveloperTools | DeveloperTools  | ![DeveloperTools](dist/DeveloperTools/DeveloperTools.png?raw=true) |DeveloperTools/DeveloperTools.puml
 DeveloperTools | ToolsAndSDKs  | ![ToolsAndSDKs](dist/DeveloperTools/ToolsAndSDKs.png?raw=true) |DeveloperTools/ToolsAndSDKs.puml
 DeveloperTools | XRay  | ![XRay](dist/DeveloperTools/XRay.png?raw=true) |DeveloperTools/XRay.puml
+**EndUserComputing** | | | **EndUserComputing/all.puml**
+EndUserComputing | Appstream2.0  | ![Appstream2.0](dist/EndUserComputing/Appstream2.0.png?raw=true) |EndUserComputing/Appstream2.0.puml
+EndUserComputing | EndUserComputing  | ![EndUserComputing](dist/EndUserComputing/EndUserComputing.png?raw=true) |EndUserComputing/EndUserComputing.puml
+EndUserComputing | WorkDocs  | ![WorkDocs](dist/EndUserComputing/WorkDocs.png?raw=true) |EndUserComputing/WorkDocs.puml
+EndUserComputing | WorkLink  | ![WorkLink](dist/EndUserComputing/WorkLink.png?raw=true) |EndUserComputing/WorkLink.puml
+EndUserComputing | Workspaces  | ![Workspaces](dist/EndUserComputing/Workspaces.png?raw=true) |EndUserComputing/Workspaces.puml
 **GameTech** | | | **GameTech/all.puml**
 GameTech | GameLift  | ![GameLift](dist/GameTech/GameLift.png?raw=true) |GameTech/GameLift.puml
 GameTech | GameTech  | ![GameTech](dist/GameTech/GameTech.png?raw=true) |GameTech/GameTech.puml
 **General** | | | **General/all.puml**
 General | Client  | ![Client](dist/General/Client.png?raw=true) |General/Client.puml
-General | ExternalSDK  | ![ExternalSDK](dist/General/ExternalSDK.png?raw=true) |General/ExternalSDK.puml
-General | ExternalToolkit  | ![ExternalToolkit](dist/General/ExternalToolkit.png?raw=true) |General/ExternalToolkit.puml
-General | GeneralCorporateDataCenter  | ![GeneralCorporateDataCenter](dist/General/GeneralCorporateDataCenter.png?raw=true) |General/GeneralCorporateDataCenter.puml
-General | GeneralDisk  | ![GeneralDisk](dist/General/GeneralDisk.png?raw=true) |General/GeneralDisk.puml
-General | GeneralForums  | ![GeneralForums](dist/General/GeneralForums.png?raw=true) |General/GeneralForums.puml
-General | GeneralGenericDatabase  | ![GeneralGenericDatabase](dist/General/GeneralGenericDatabase.png?raw=true) |General/GeneralGenericDatabase.puml
-General | GeneralInternetAlt1  | ![GeneralInternetAlt1](dist/General/GeneralInternetAlt1.png?raw=true) |General/GeneralInternetAlt1.puml
-General | GeneralInternetAlt2  | ![GeneralInternetAlt2](dist/General/GeneralInternetAlt2.png?raw=true) |General/GeneralInternetAlt2.puml
-General | GeneralInternetGateway  | ![GeneralInternetGateway](dist/General/GeneralInternetGateway.png?raw=true) |General/GeneralInternetGateway.puml
-General | GeneralMobileClient  | ![GeneralMobileClient](dist/General/GeneralMobileClient.png?raw=true) |General/GeneralMobileClient.puml
-General | GeneralMultimedia  | ![GeneralMultimedia](dist/General/GeneralMultimedia.png?raw=true) |General/GeneralMultimedia.puml
-General | GeneralOfficeBuilding  | ![GeneralOfficeBuilding](dist/General/GeneralOfficeBuilding.png?raw=true) |General/GeneralOfficeBuilding.puml
-General | GeneralSAMLToken  | ![GeneralSAMLToken](dist/General/GeneralSAMLToken.png?raw=true) |General/GeneralSAMLToken.puml
-General | GeneralSSLPadlock  | ![GeneralSSLPadlock](dist/General/GeneralSSLPadlock.png?raw=true) |General/GeneralSSLPadlock.puml
-General | GeneralTapeStorage  | ![GeneralTapeStorage](dist/General/GeneralTapeStorage.png?raw=true) |General/GeneralTapeStorage.puml
-General | GeneralTraditionalServer  | ![GeneralTraditionalServer](dist/General/GeneralTraditionalServer.png?raw=true) |General/GeneralTraditionalServer.puml
-General | GeneralUser  | ![GeneralUser](dist/General/GeneralUser.png?raw=true) |General/GeneralUser.puml
-General | GeneralUsers  | ![GeneralUsers](dist/General/GeneralUsers.png?raw=true) |General/GeneralUsers.puml
-General | GeneralVPC  | ![GeneralVPC](dist/General/GeneralVPC.png?raw=true) |General/GeneralVPC.puml
+General | Disk  | ![Disk](dist/General/Disk.png?raw=true) |General/Disk.puml
+General | Forums  | ![Forums](dist/General/Forums.png?raw=true) |General/Forums.puml
+General | General  | ![General](dist/General/General.png?raw=true) |General/General.puml
+General | GenericDatabase  | ![GenericDatabase](dist/General/GenericDatabase.png?raw=true) |General/GenericDatabase.puml
+General | InternetAlt1  | ![InternetAlt1](dist/General/InternetAlt1.png?raw=true) |General/InternetAlt1.puml
+General | InternetAlt2  | ![InternetAlt2](dist/General/InternetAlt2.png?raw=true) |General/InternetAlt2.puml
+General | InternetGateway  | ![InternetGateway](dist/General/InternetGateway.png?raw=true) |General/InternetGateway.puml
 General | Marketplace  | ![Marketplace](dist/General/Marketplace.png?raw=true) |General/Marketplace.puml
-General | generalAWSCloud  | ![generalAWSCloud](dist/General/generalAWSCloud.png?raw=true) |General/generalAWSCloud.puml
+General | MobileClient  | ![MobileClient](dist/General/MobileClient.png?raw=true) |General/MobileClient.puml
+General | Multimedia  | ![Multimedia](dist/General/Multimedia.png?raw=true) |General/Multimedia.puml
+General | OfficeBuilding  | ![OfficeBuilding](dist/General/OfficeBuilding.png?raw=true) |General/OfficeBuilding.puml
+General | SAMLToken  | ![SAMLToken](dist/General/SAMLToken.png?raw=true) |General/SAMLToken.puml
+General | SDK  | ![SDK](dist/General/SDK.png?raw=true) |General/SDK.puml
+General | SSLPadlock  | ![SSLPadlock](dist/General/SSLPadlock.png?raw=true) |General/SSLPadlock.puml
+General | TapeStorage  | ![TapeStorage](dist/General/TapeStorage.png?raw=true) |General/TapeStorage.puml
+General | Toolkit  | ![Toolkit](dist/General/Toolkit.png?raw=true) |General/Toolkit.puml
+General | TraditionalServer  | ![TraditionalServer](dist/General/TraditionalServer.png?raw=true) |General/TraditionalServer.puml
+General | User  | ![User](dist/General/User.png?raw=true) |General/User.puml
+General | Users  | ![Users](dist/General/Users.png?raw=true) |General/Users.puml
 **GroupIcons** | | | **GroupIcons/all.puml**
 GroupIcons | AutoScalingGroup  | ![AutoScalingGroup](dist/GroupIcons/AutoScalingGroup.png?raw=true) |GroupIcons/AutoScalingGroup.puml
 GroupIcons | Cloud  | ![Cloud](dist/GroupIcons/Cloud.png?raw=true) |GroupIcons/Cloud.puml
 GroupIcons | Cloudalt  | ![Cloudalt](dist/GroupIcons/Cloudalt.png?raw=true) |GroupIcons/Cloudalt.puml
 GroupIcons | CorporateDataCenter  | ![CorporateDataCenter](dist/GroupIcons/CorporateDataCenter.png?raw=true) |GroupIcons/CorporateDataCenter.puml
-GroupIcons | EC2InstanceContents  | ![EC2InstanceContents](dist/GroupIcons/EC2InstanceContents.png?raw=true) |GroupIcons/EC2InstanceContents.puml
 GroupIcons | ElasticBeanstalkContainer  | ![ElasticBeanstalkContainer](dist/GroupIcons/ElasticBeanstalkContainer.png?raw=true) |GroupIcons/ElasticBeanstalkContainer.puml
 GroupIcons | Region  | ![Region](dist/GroupIcons/Region.png?raw=true) |GroupIcons/Region.puml
 GroupIcons | ServerContents  | ![ServerContents](dist/GroupIcons/ServerContents.png?raw=true) |GroupIcons/ServerContents.puml
@@ -228,6 +222,7 @@ GroupIcons | VPCSubnetPrivate  | ![VPCSubnetPrivate](dist/GroupIcons/VPCSubnetPr
 GroupIcons | VPCSubnetPublic  | ![VPCSubnetPublic](dist/GroupIcons/VPCSubnetPublic.png?raw=true) |GroupIcons/VPCSubnetPublic.puml
 GroupIcons | VirtualPrivateCloudVPC  | ![VirtualPrivateCloudVPC](dist/GroupIcons/VirtualPrivateCloudVPC.png?raw=true) |GroupIcons/VirtualPrivateCloudVPC.puml
 **InternetOfThings** | | | **InternetOfThings/all.puml**
+InternetOfThings | FreeRTOS  | ![FreeRTOS](dist/InternetOfThings/FreeRTOS.png?raw=true) |InternetOfThings/FreeRTOS.puml
 InternetOfThings | InternetofThings  | ![InternetofThings](dist/InternetOfThings/InternetofThings.png?raw=true) |InternetOfThings/InternetofThings.puml
 InternetOfThings | IoT1Click  | ![IoT1Click](dist/InternetOfThings/IoT1Click.png?raw=true) |InternetOfThings/IoT1Click.puml
 InternetOfThings | IoTAction  | ![IoTAction](dist/InternetOfThings/IoTAction.png?raw=true) |InternetOfThings/IoTAction.puml
@@ -237,7 +232,9 @@ InternetOfThings | IoTAlexaSkill  | ![IoTAlexaSkill](dist/InternetOfThings/IoTAl
 InternetOfThings | IoTAlexaVoiceService  | ![IoTAlexaVoiceService](dist/InternetOfThings/IoTAlexaVoiceService.png?raw=true) |InternetOfThings/IoTAlexaVoiceService.puml
 InternetOfThings | IoTAnalytics  | ![IoTAnalytics](dist/InternetOfThings/IoTAnalytics.png?raw=true) |InternetOfThings/IoTAnalytics.puml
 InternetOfThings | IoTAnalyticsChannel  | ![IoTAnalyticsChannel](dist/InternetOfThings/IoTAnalyticsChannel.png?raw=true) |InternetOfThings/IoTAnalyticsChannel.puml
+InternetOfThings | IoTAnalyticsDataSet  | ![IoTAnalyticsDataSet](dist/InternetOfThings/IoTAnalyticsDataSet.png?raw=true) |InternetOfThings/IoTAnalyticsDataSet.puml
 InternetOfThings | IoTAnalyticsDataStore  | ![IoTAnalyticsDataStore](dist/InternetOfThings/IoTAnalyticsDataStore.png?raw=true) |InternetOfThings/IoTAnalyticsDataStore.puml
+InternetOfThings | IoTAnalyticsNotebook  | ![IoTAnalyticsNotebook](dist/InternetOfThings/IoTAnalyticsNotebook.png?raw=true) |InternetOfThings/IoTAnalyticsNotebook.puml
 InternetOfThings | IoTAnalyticsPipeline  | ![IoTAnalyticsPipeline](dist/InternetOfThings/IoTAnalyticsPipeline.png?raw=true) |InternetOfThings/IoTAnalyticsPipeline.puml
 InternetOfThings | IoTBank  | ![IoTBank](dist/InternetOfThings/IoTBank.png?raw=true) |InternetOfThings/IoTBank.puml
 InternetOfThings | IoTBicycle  | ![IoTBicycle](dist/InternetOfThings/IoTBicycle.png?raw=true) |InternetOfThings/IoTBicycle.puml
@@ -260,6 +257,7 @@ InternetOfThings | IoTFireTV  | ![IoTFireTV](dist/InternetOfThings/IoTFireTV.png
 InternetOfThings | IoTFireTVStick  | ![IoTFireTVStick](dist/InternetOfThings/IoTFireTVStick.png?raw=true) |InternetOfThings/IoTFireTVStick.puml
 InternetOfThings | IoTGeneric  | ![IoTGeneric](dist/InternetOfThings/IoTGeneric.png?raw=true) |InternetOfThings/IoTGeneric.puml
 InternetOfThings | IoTGreengrass  | ![IoTGreengrass](dist/InternetOfThings/IoTGreengrass.png?raw=true) |InternetOfThings/IoTGreengrass.puml
+InternetOfThings | IoTGreengrassConnector  | ![IoTGreengrassConnector](dist/InternetOfThings/IoTGreengrassConnector.png?raw=true) |InternetOfThings/IoTGreengrassConnector.puml
 InternetOfThings | IoTHTTP2Protocol  | ![IoTHTTP2Protocol](dist/InternetOfThings/IoTHTTP2Protocol.png?raw=true) |InternetOfThings/IoTHTTP2Protocol.puml
 InternetOfThings | IoTHTTPProtocol  | ![IoTHTTPProtocol](dist/InternetOfThings/IoTHTTPProtocol.png?raw=true) |InternetOfThings/IoTHTTPProtocol.puml
 InternetOfThings | IoTHardwareBoard  | ![IoTHardwareBoard](dist/InternetOfThings/IoTHardwareBoard.png?raw=true) |InternetOfThings/IoTHardwareBoard.puml
@@ -288,6 +286,7 @@ InternetOfThings | IoTWindfarm  | ![IoTWindfarm](dist/InternetOfThings/IoTWindfa
 MachineLearning | ApacheMXNetonAWS  | ![ApacheMXNetonAWS](dist/MachineLearning/ApacheMXNetonAWS.png?raw=true) |MachineLearning/ApacheMXNetonAWS.puml
 MachineLearning | Comprehend  | ![Comprehend](dist/MachineLearning/Comprehend.png?raw=true) |MachineLearning/Comprehend.puml
 MachineLearning | DeepLearningAMIs  | ![DeepLearningAMIs](dist/MachineLearning/DeepLearningAMIs.png?raw=true) |MachineLearning/DeepLearningAMIs.puml
+MachineLearning | DeepLearningContainers  | ![DeepLearningContainers](dist/MachineLearning/DeepLearningContainers.png?raw=true) |MachineLearning/DeepLearningContainers.puml
 MachineLearning | DeepLens  | ![DeepLens](dist/MachineLearning/DeepLens.png?raw=true) |MachineLearning/DeepLens.puml
 MachineLearning | DeepRacer  | ![DeepRacer](dist/MachineLearning/DeepRacer.png?raw=true) |MachineLearning/DeepRacer.puml
 MachineLearning | ElasticInference  | ![ElasticInference](dist/MachineLearning/ElasticInference.png?raw=true) |MachineLearning/ElasticInference.puml
@@ -297,6 +296,8 @@ MachineLearning | MachineLearning  | ![MachineLearning](dist/MachineLearning/Mac
 MachineLearning | Personalize  | ![Personalize](dist/MachineLearning/Personalize.png?raw=true) |MachineLearning/Personalize.puml
 MachineLearning | Polly  | ![Polly](dist/MachineLearning/Polly.png?raw=true) |MachineLearning/Polly.puml
 MachineLearning | Rekognition  | ![Rekognition](dist/MachineLearning/Rekognition.png?raw=true) |MachineLearning/Rekognition.puml
+MachineLearning | RekognitionImage  | ![RekognitionImage](dist/MachineLearning/RekognitionImage.png?raw=true) |MachineLearning/RekognitionImage.puml
+MachineLearning | RekognitionVideo  | ![RekognitionVideo](dist/MachineLearning/RekognitionVideo.png?raw=true) |MachineLearning/RekognitionVideo.puml
 MachineLearning | SageMaker  | ![SageMaker](dist/MachineLearning/SageMaker.png?raw=true) |MachineLearning/SageMaker.puml
 MachineLearning | SageMakerGroundTruth  | ![SageMakerGroundTruth](dist/MachineLearning/SageMakerGroundTruth.png?raw=true) |MachineLearning/SageMakerGroundTruth.puml
 MachineLearning | SageMakerModel  | ![SageMakerModel](dist/MachineLearning/SageMakerModel.png?raw=true) |MachineLearning/SageMakerModel.puml
@@ -333,10 +334,11 @@ ManagementAndGovernance | OpsWorksMonitoring  | ![OpsWorksMonitoring](dist/Manag
 ManagementAndGovernance | OpsWorksPermissions  | ![OpsWorksPermissions](dist/ManagementAndGovernance/OpsWorksPermissions.png?raw=true) |ManagementAndGovernance/OpsWorksPermissions.puml
 ManagementAndGovernance | OpsWorksResources  | ![OpsWorksResources](dist/ManagementAndGovernance/OpsWorksResources.png?raw=true) |ManagementAndGovernance/OpsWorksResources.puml
 ManagementAndGovernance | OpsWorksStack2  | ![OpsWorksStack2](dist/ManagementAndGovernance/OpsWorksStack2.png?raw=true) |ManagementAndGovernance/OpsWorksStack2.puml
+ManagementAndGovernance | Organizations  | ![Organizations](dist/ManagementAndGovernance/Organizations.png?raw=true) |ManagementAndGovernance/Organizations.puml
+ManagementAndGovernance | OrganizationsAccount  | ![OrganizationsAccount](dist/ManagementAndGovernance/OrganizationsAccount.png?raw=true) |ManagementAndGovernance/OrganizationsAccount.puml
+ManagementAndGovernance | OrganizationsOrganizationalUnitOU  | ![OrganizationsOrganizationalUnitOU](dist/ManagementAndGovernance/OrganizationsOrganizationalUnitOU.png?raw=true) |ManagementAndGovernance/OrganizationsOrganizationalUnitOU.puml
 ManagementAndGovernance | PersonalHealthDashboard  | ![PersonalHealthDashboard](dist/ManagementAndGovernance/PersonalHealthDashboard.png?raw=true) |ManagementAndGovernance/PersonalHealthDashboard.puml
 ManagementAndGovernance | ServiceCatalog  | ![ServiceCatalog](dist/ManagementAndGovernance/ServiceCatalog.png?raw=true) |ManagementAndGovernance/ServiceCatalog.puml
-ManagementAndGovernance | ShieldShieldAdvanced2  | ![ShieldShieldAdvanced2](dist/ManagementAndGovernance/ShieldShieldAdvanced2.png?raw=true) |ManagementAndGovernance/ShieldShieldAdvanced2.puml
-ManagementAndGovernance | ShieldShieldAdvanced2  | ![ShieldShieldAdvanced2](dist/ManagementAndGovernance/ShieldShieldAdvanced2.png?raw=true) |ManagementAndGovernance/ShieldShieldAdvanced2.puml
 ManagementAndGovernance | SystemsManager  | ![SystemsManager](dist/ManagementAndGovernance/SystemsManager.png?raw=true) |ManagementAndGovernance/SystemsManager.puml
 ManagementAndGovernance | SystemsManagerAutomation  | ![SystemsManagerAutomation](dist/ManagementAndGovernance/SystemsManagerAutomation.png?raw=true) |ManagementAndGovernance/SystemsManagerAutomation.puml
 ManagementAndGovernance | SystemsManagerDocuments  | ![SystemsManagerDocuments](dist/ManagementAndGovernance/SystemsManagerDocuments.png?raw=true) |ManagementAndGovernance/SystemsManagerDocuments.puml
@@ -356,7 +358,7 @@ ManagementAndGovernance | WellArchitectedTool  | ![WellArchitectedTool](dist/Man
 **MediaServices** | | | **MediaServices/all.puml**
 MediaServices | ElasticTranscoder  | ![ElasticTranscoder](dist/MediaServices/ElasticTranscoder.png?raw=true) |MediaServices/ElasticTranscoder.puml
 MediaServices | ElementalMediaConnect  | ![ElementalMediaConnect](dist/MediaServices/ElementalMediaConnect.png?raw=true) |MediaServices/ElementalMediaConnect.puml
-MediaServices | ElementalMediaConvert  | ![ElementalMediaConvert](dist/MediaServices/ElementalMediaConvert.png?raw=true) |MediaServices/ElementalMediaConvert.puml
+MediaServices | ElementalMediaLive  | ![ElementalMediaLive](dist/MediaServices/ElementalMediaLive.png?raw=true) |MediaServices/ElementalMediaLive.puml
 MediaServices | ElementalMediaLive  | ![ElementalMediaLive](dist/MediaServices/ElementalMediaLive.png?raw=true) |MediaServices/ElementalMediaLive.puml
 MediaServices | ElementalMediaPackage  | ![ElementalMediaPackage](dist/MediaServices/ElementalMediaPackage.png?raw=true) |MediaServices/ElementalMediaPackage.puml
 MediaServices | ElementalMediaStore  | ![ElementalMediaStore](dist/MediaServices/ElementalMediaStore.png?raw=true) |MediaServices/ElementalMediaStore.puml
@@ -365,6 +367,8 @@ MediaServices | MediaServices  | ![MediaServices](dist/MediaServices/MediaServic
 **MigrationAndTransfer** | | | **MigrationAndTransfer/all.puml**
 MigrationAndTransfer | ApplicationDiscoveryService  | ![ApplicationDiscoveryService](dist/MigrationAndTransfer/ApplicationDiscoveryService.png?raw=true) |MigrationAndTransfer/ApplicationDiscoveryService.puml
 MigrationAndTransfer | DataSync  | ![DataSync](dist/MigrationAndTransfer/DataSync.png?raw=true) |MigrationAndTransfer/DataSync.puml
+MigrationAndTransfer | DataSyncAgent  | ![DataSyncAgent](dist/MigrationAndTransfer/DataSyncAgent.png?raw=true) |MigrationAndTransfer/DataSyncAgent.puml
+MigrationAndTransfer | DatabaseMigrationService2  | ![DatabaseMigrationService2](dist/MigrationAndTransfer/DatabaseMigrationService2.png?raw=true) |MigrationAndTransfer/DatabaseMigrationService2.puml
 MigrationAndTransfer | MigrationHub  | ![MigrationHub](dist/MigrationAndTransfer/MigrationHub.png?raw=true) |MigrationAndTransfer/MigrationHub.puml
 MigrationAndTransfer | MigrationandTransfer  | ![MigrationandTransfer](dist/MigrationAndTransfer/MigrationandTransfer.png?raw=true) |MigrationAndTransfer/MigrationandTransfer.puml
 MigrationAndTransfer | ServerMigrationService  | ![ServerMigrationService](dist/MigrationAndTransfer/ServerMigrationService.png?raw=true) |MigrationAndTransfer/ServerMigrationService.puml
@@ -378,11 +382,15 @@ MigrationAndTransfer | TransferforSFTP  | ![TransferforSFTP](dist/MigrationAndTr
 **Mobile** | | | **Mobile/all.puml**
 Mobile | APIGateway  | ![APIGateway](dist/Mobile/APIGateway.png?raw=true) |Mobile/APIGateway.puml
 Mobile | APIGateway  | ![APIGateway](dist/Mobile/APIGateway.png?raw=true) |Mobile/APIGateway.puml
+Mobile | APIGatewayEndpoint  | ![APIGatewayEndpoint](dist/Mobile/APIGatewayEndpoint.png?raw=true) |Mobile/APIGatewayEndpoint.puml
+Mobile | APIGatewayEndpoint  | ![APIGatewayEndpoint](dist/Mobile/APIGatewayEndpoint.png?raw=true) |Mobile/APIGatewayEndpoint.puml
 Mobile | Amplify  | ![Amplify](dist/Mobile/Amplify.png?raw=true) |Mobile/Amplify.puml
+Mobile | AppSync2  | ![AppSync2](dist/Mobile/AppSync2.png?raw=true) |Mobile/AppSync2.puml
 Mobile | DeviceFarm  | ![DeviceFarm](dist/Mobile/DeviceFarm.png?raw=true) |Mobile/DeviceFarm.puml
 Mobile | Mobile  | ![Mobile](dist/Mobile/Mobile.png?raw=true) |Mobile/Mobile.puml
 **NetworkingAndContentDelivery** | | | **NetworkingAndContentDelivery/all.puml**
 NetworkingAndContentDelivery | AppMesh  | ![AppMesh](dist/NetworkingAndContentDelivery/AppMesh.png?raw=true) |NetworkingAndContentDelivery/AppMesh.puml
+NetworkingAndContentDelivery | ClassicLoadBalancer  | ![ClassicLoadBalancer](dist/NetworkingAndContentDelivery/ClassicLoadBalancer.png?raw=true) |NetworkingAndContentDelivery/ClassicLoadBalancer.puml
 NetworkingAndContentDelivery | ClientVPN  | ![ClientVPN](dist/NetworkingAndContentDelivery/ClientVPN.png?raw=true) |NetworkingAndContentDelivery/ClientVPN.puml
 NetworkingAndContentDelivery | CloudFront  | ![CloudFront](dist/NetworkingAndContentDelivery/CloudFront.png?raw=true) |NetworkingAndContentDelivery/CloudFront.puml
 NetworkingAndContentDelivery | CloudFrontDownloadDistribution  | ![CloudFrontDownloadDistribution](dist/NetworkingAndContentDelivery/CloudFrontDownloadDistribution.png?raw=true) |NetworkingAndContentDelivery/CloudFrontDownloadDistribution.puml
@@ -390,11 +398,16 @@ NetworkingAndContentDelivery | CloudFrontEdgeLocation  | ![CloudFrontEdgeLocatio
 NetworkingAndContentDelivery | CloudFrontStreamingDistribution  | ![CloudFrontStreamingDistribution](dist/NetworkingAndContentDelivery/CloudFrontStreamingDistribution.png?raw=true) |NetworkingAndContentDelivery/CloudFrontStreamingDistribution.puml
 NetworkingAndContentDelivery | CloudMap  | ![CloudMap](dist/NetworkingAndContentDelivery/CloudMap.png?raw=true) |NetworkingAndContentDelivery/CloudMap.puml
 NetworkingAndContentDelivery | DirectConnect  | ![DirectConnect](dist/NetworkingAndContentDelivery/DirectConnect.png?raw=true) |NetworkingAndContentDelivery/DirectConnect.puml
+NetworkingAndContentDelivery | ELBApplicationLoadBalancer  | ![ELBApplicationLoadBalancer](dist/NetworkingAndContentDelivery/ELBApplicationLoadBalancer.png?raw=true) |NetworkingAndContentDelivery/ELBApplicationLoadBalancer.puml
+NetworkingAndContentDelivery | ELBNetworkLoadBalancer  | ![ELBNetworkLoadBalancer](dist/NetworkingAndContentDelivery/ELBNetworkLoadBalancer.png?raw=true) |NetworkingAndContentDelivery/ELBNetworkLoadBalancer.puml
+NetworkingAndContentDelivery | ElasticLoadBalancing  | ![ElasticLoadBalancing](dist/NetworkingAndContentDelivery/ElasticLoadBalancing.png?raw=true) |NetworkingAndContentDelivery/ElasticLoadBalancing.puml
 NetworkingAndContentDelivery | GlobalAccelerator  | ![GlobalAccelerator](dist/NetworkingAndContentDelivery/GlobalAccelerator.png?raw=true) |NetworkingAndContentDelivery/GlobalAccelerator.puml
 NetworkingAndContentDelivery | NetworkingandContentDelivery  | ![NetworkingandContentDelivery](dist/NetworkingAndContentDelivery/NetworkingandContentDelivery.png?raw=true) |NetworkingAndContentDelivery/NetworkingandContentDelivery.puml
+NetworkingAndContentDelivery | PrivateLink  | ![PrivateLink](dist/NetworkingAndContentDelivery/PrivateLink.png?raw=true) |NetworkingAndContentDelivery/PrivateLink.puml
 NetworkingAndContentDelivery | Route53  | ![Route53](dist/NetworkingAndContentDelivery/Route53.png?raw=true) |NetworkingAndContentDelivery/Route53.puml
 NetworkingAndContentDelivery | Route53HostedZone  | ![Route53HostedZone](dist/NetworkingAndContentDelivery/Route53HostedZone.png?raw=true) |NetworkingAndContentDelivery/Route53HostedZone.puml
 NetworkingAndContentDelivery | Route53RouteTable  | ![Route53RouteTable](dist/NetworkingAndContentDelivery/Route53RouteTable.png?raw=true) |NetworkingAndContentDelivery/Route53RouteTable.puml
+NetworkingAndContentDelivery | SitetoSiteVPN  | ![SitetoSiteVPN](dist/NetworkingAndContentDelivery/SitetoSiteVPN.png?raw=true) |NetworkingAndContentDelivery/SitetoSiteVPN.puml
 NetworkingAndContentDelivery | TransitGateway  | ![TransitGateway](dist/NetworkingAndContentDelivery/TransitGateway.png?raw=true) |NetworkingAndContentDelivery/TransitGateway.puml
 NetworkingAndContentDelivery | VPC  | ![VPC](dist/NetworkingAndContentDelivery/VPC.png?raw=true) |NetworkingAndContentDelivery/VPC.puml
 NetworkingAndContentDelivery | VPCCustomerGateway  | ![VPCCustomerGateway](dist/NetworkingAndContentDelivery/VPCCustomerGateway.png?raw=true) |NetworkingAndContentDelivery/VPCCustomerGateway.puml
@@ -406,7 +419,6 @@ NetworkingAndContentDelivery | VPCInternetGateway  | ![VPCInternetGateway](dist/
 NetworkingAndContentDelivery | VPCNATGateway  | ![VPCNATGateway](dist/NetworkingAndContentDelivery/VPCNATGateway.png?raw=true) |NetworkingAndContentDelivery/VPCNATGateway.puml
 NetworkingAndContentDelivery | VPCNetworkAccessControlList  | ![VPCNetworkAccessControlList](dist/NetworkingAndContentDelivery/VPCNetworkAccessControlList.png?raw=true) |NetworkingAndContentDelivery/VPCNetworkAccessControlList.puml
 NetworkingAndContentDelivery | VPCPeering  | ![VPCPeering](dist/NetworkingAndContentDelivery/VPCPeering.png?raw=true) |NetworkingAndContentDelivery/VPCPeering.puml
-NetworkingAndContentDelivery | VPCPrivateLink  | ![VPCPrivateLink](dist/NetworkingAndContentDelivery/VPCPrivateLink.png?raw=true) |NetworkingAndContentDelivery/VPCPrivateLink.puml
 NetworkingAndContentDelivery | VPCRouter  | ![VPCRouter](dist/NetworkingAndContentDelivery/VPCRouter.png?raw=true) |NetworkingAndContentDelivery/VPCRouter.puml
 NetworkingAndContentDelivery | VPCVPNConnection  | ![VPCVPNConnection](dist/NetworkingAndContentDelivery/VPCVPNConnection.png?raw=true) |NetworkingAndContentDelivery/VPCVPNConnection.puml
 NetworkingAndContentDelivery | VPCVPNGateway  | ![VPCVPNGateway](dist/NetworkingAndContentDelivery/VPCVPNGateway.png?raw=true) |NetworkingAndContentDelivery/VPCVPNGateway.puml
@@ -445,21 +457,20 @@ SecurityIdentityAndCompliance | Inspector  | ![Inspector](dist/SecurityIdentityA
 SecurityIdentityAndCompliance | InspectorAgent  | ![InspectorAgent](dist/SecurityIdentityAndCompliance/InspectorAgent.png?raw=true) |SecurityIdentityAndCompliance/InspectorAgent.puml
 SecurityIdentityAndCompliance | KeyManagementService  | ![KeyManagementService](dist/SecurityIdentityAndCompliance/KeyManagementService.png?raw=true) |SecurityIdentityAndCompliance/KeyManagementService.puml
 SecurityIdentityAndCompliance | Macie  | ![Macie](dist/SecurityIdentityAndCompliance/Macie.png?raw=true) |SecurityIdentityAndCompliance/Macie.puml
-SecurityIdentityAndCompliance | Organizations  | ![Organizations](dist/SecurityIdentityAndCompliance/Organizations.png?raw=true) |SecurityIdentityAndCompliance/Organizations.puml
-SecurityIdentityAndCompliance | OrganizationsAccount  | ![OrganizationsAccount](dist/SecurityIdentityAndCompliance/OrganizationsAccount.png?raw=true) |SecurityIdentityAndCompliance/OrganizationsAccount.puml
-SecurityIdentityAndCompliance | OrganizationsOU  | ![OrganizationsOU](dist/SecurityIdentityAndCompliance/OrganizationsOU.png?raw=true) |SecurityIdentityAndCompliance/OrganizationsOU.puml
 SecurityIdentityAndCompliance | ResourceAccessManager  | ![ResourceAccessManager](dist/SecurityIdentityAndCompliance/ResourceAccessManager.png?raw=true) |SecurityIdentityAndCompliance/ResourceAccessManager.puml
 SecurityIdentityAndCompliance | SecIdentityAndCompliance  | ![SecIdentityAndCompliance](dist/SecurityIdentityAndCompliance/SecIdentityAndCompliance.png?raw=true) |SecurityIdentityAndCompliance/SecIdentityAndCompliance.puml
 SecurityIdentityAndCompliance | SecretsManager  | ![SecretsManager](dist/SecurityIdentityAndCompliance/SecretsManager.png?raw=true) |SecurityIdentityAndCompliance/SecretsManager.puml
 SecurityIdentityAndCompliance | SecurityHub  | ![SecurityHub](dist/SecurityIdentityAndCompliance/SecurityHub.png?raw=true) |SecurityIdentityAndCompliance/SecurityHub.puml
 SecurityIdentityAndCompliance | Shield  | ![Shield](dist/SecurityIdentityAndCompliance/Shield.png?raw=true) |SecurityIdentityAndCompliance/Shield.puml
+SecurityIdentityAndCompliance | ShieldShieldAdvanced  | ![ShieldShieldAdvanced](dist/SecurityIdentityAndCompliance/ShieldShieldAdvanced.png?raw=true) |SecurityIdentityAndCompliance/ShieldShieldAdvanced.puml
 SecurityIdentityAndCompliance | SingleSignOn  | ![SingleSignOn](dist/SecurityIdentityAndCompliance/SingleSignOn.png?raw=true) |SecurityIdentityAndCompliance/SingleSignOn.puml
 SecurityIdentityAndCompliance | WAF  | ![WAF](dist/SecurityIdentityAndCompliance/WAF.png?raw=true) |SecurityIdentityAndCompliance/WAF.puml
-SecurityIdentityAndCompliance | WAFFilteringrule  | ![WAFFilteringrule](dist/SecurityIdentityAndCompliance/WAFFilteringrule.png?raw=true) |SecurityIdentityAndCompliance/WAFFilteringrule.puml
+SecurityIdentityAndCompliance | WAFFilteringRule  | ![WAFFilteringRule](dist/SecurityIdentityAndCompliance/WAFFilteringRule.png?raw=true) |SecurityIdentityAndCompliance/WAFFilteringRule.puml
 **Storage** | | | **Storage/all.puml**
 Storage | Backup  | ![Backup](dist/Storage/Backup.png?raw=true) |Storage/Backup.puml
 Storage | EBSSnapshot  | ![EBSSnapshot](dist/Storage/EBSSnapshot.png?raw=true) |Storage/EBSSnapshot.puml
 Storage | EBSVolume  | ![EBSVolume](dist/Storage/EBSVolume.png?raw=true) |Storage/EBSVolume.puml
+Storage | EFSFilesystem  | ![EFSFilesystem](dist/Storage/EFSFilesystem.png?raw=true) |Storage/EFSFilesystem.puml
 Storage | ElasticBlockStoreEBS  | ![ElasticBlockStoreEBS](dist/Storage/ElasticBlockStoreEBS.png?raw=true) |Storage/ElasticBlockStoreEBS.puml
 Storage | ElasticFileSystemEFS  | ![ElasticFileSystemEFS](dist/Storage/ElasticFileSystemEFS.png?raw=true) |Storage/ElasticFileSystemEFS.puml
 Storage | FSx  | ![FSx](dist/Storage/FSx.png?raw=true) |Storage/FSx.puml

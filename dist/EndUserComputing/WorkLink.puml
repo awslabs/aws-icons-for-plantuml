@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $WorkLink [64x64/16z] {
+xTO52WCm38NXHzPOxt_VkM-1odpvSSA7Lb9_eompBb7i3RuWJfeyczxB6DpaBPX8ezUFzEcjQAVtcxgy4wuYx_80NGIuyZxn1a_r8e8lS8Y7lCakHXdoTPzD
+UlrLdzucFSik7VACGpJaNNYVtjxVAnyLln_jFdw_sdrLqc3IvXdoaJwzjVbucMhoWh0cxroYsEflb6Kh
+}
+
+AWSEntityColoring(WorkLink)
+!define WorkLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, WorkLink, WorkLink)
+!define WorkLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, WorkLink, WorkLink)
+!define WorkLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, WorkLink, WorkLink)
+!define WorkLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, WorkLink, WorkLink)

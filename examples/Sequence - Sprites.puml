@@ -6,7 +6,7 @@
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/General/InternetGateway.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 'Comment out to use default PlantUML sequence formatting
@@ -23,7 +23,7 @@ participant "<$APIGateway>\nCredit Card System\nAll methods are POST" as api
 'Or skinned with colors (pulled from each sprite file) and with different layout of sprite to text
 participant "<color:#D86613><$Lambda></color>\nAuthorizeCard\nReturns status" as lambda
 participant "PaymentTransactions\n<color:#3B48CC><$DynamoDB></color>\nsortkey=transaction_id+token" as db
-participant "Authorizer\nReturns status and token\n<color:#232F3E><$GeneralInternetGateway></color>" as processor
+participant "Authorizer\nReturns status and token\n<color:#232F3E><$InternetGateway></color>" as processor
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details

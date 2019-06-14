@@ -48,6 +48,7 @@ For local access use `!include` instead of `!includeurl` and include the path to
 !include path/to/AWSCommon.puml
 ```
 
+:exclamation: The `!includeurl` is deprecated recent versions of PlantUML. Now `!include` can be used with local file paths *or* URLs. Please see the [Preprocessing](http://plantuml.com/preprocessing) notes for usage.
 
 After inclusion of the `AWSCommon.puml` file, there are two different ways to reference resources:
 
@@ -85,7 +86,7 @@ This is the [`examples/HelloWorld.puml`](<examples/HelloWorld.puml>) diagram cod
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/BusinessApplications/all.puml
+!includeurl AWSPuml/EndUserComputing/all.puml
 !includeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 
 actor "Person" as personAlias
@@ -101,8 +102,6 @@ desktopAlias --> storageAlias
 This code generates the following diagram:
 
 ![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/examples/HelloWorld.puml)
-
-
 
 ## Examples
 
@@ -178,8 +177,6 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 
 ```bash
 @startuml Two Modes - Technical View
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
@@ -187,7 +184,7 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
-!includeurl AWSPuml/General/GeneralUsers.puml
+!includeurl AWSPuml/General/Users.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
 !includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
 !includeurl AWSPuml/Compute/Lambda.puml
@@ -195,7 +192,7 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 
 left to right direction
 
-GeneralUsers(sources, "Events", "millions of users")
+Users(sources, "Events", "millions of users")
 APIGateway(votingAPI, "Voting API", "user votes")
 Cognito(userAuth, "User Authentication", "jwt to submit votes")
 Lambda(generateToken, "User Credentials", "return jwt")
@@ -225,21 +222,19 @@ Icons can also be used in UML sequence diagrams, either in full stereotype or by
 
 ```bash
 @startuml Sequence Diagram - Spots and stereotypes
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/General/InternetGateway.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 actor User as user
 APIGatewayParticipant(api, Credit Card System, All methods are POST)
 LambdaParticipant(lambda,AuthorizeCard,)
 DynamoDBParticipant(db, PaymentTransactions, sortkey=transaction_id+token)
-GeneralInternetGatewayParticipant(processor, Authorizer, Returns status and token)
+InternetGatewayParticipant(processor, Authorizer, Returns status and token)
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details
@@ -258,14 +253,12 @@ This code generates the fully detailed diagram with stereotypes. The participant
 
 ```bash
 @startuml Sequence Diagram - Sprites
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/General/InternetGateway.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 'Comment out to use default PlantUML sequence formatting
@@ -282,7 +275,7 @@ participant "<$APIGateway>\nCredit Card System\nAll methods are POST" as api
 'Or skinned with colors (pulled from each sprite file) and with different layout of sprite to text
 participant "<color:#D86613><$Lambda></color>\nAuthorizeCard\nReturns status" as lambda
 participant "PaymentTransactions\n<color:#3B48CC><$DynamoDB></color>\nsortkey=transaction_id+token" as db
-participant "Authorizer\nReturns status and token\n<color:#232F3E><$GeneralInternetGateway></color>" as processor
+participant "Authorizer\nReturns status and token\n<color:#232F3E><$InternetGateway></color>" as processor
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details

@@ -137,12 +137,10 @@ def copy_puml():
 def build_file_list():
     """Enumerate AWS Icons directory.
     
-    Current format (2019-03-30) is:
-       source/official/CATEGORY/PRODUCT_or_RESOURCE_light-bg.png
-
-       or:
-
-       source/official/CATEGORY/SUBDIR/PRODUCT_or_RESOURCE_light-bg.png
+    Format for current Release 3.0-2019.05.21 PNG icon set:
+       source/official/CATEGORY/PRODUCT_or_RESOURCE_light-bg@4x.png
+    or:
+       source/official/CATEGORY/SUBDIR/PRODUCT_or_RESOURCE_light-bg@4x.png
 
     where:
 
@@ -151,10 +149,10 @@ def build_file_list():
     PRODUCT = Specific AWS named service (.e.g, Amazon Simple Queue Service)
     RESOURCE = Resource of product (e.g., "Queue" for Amazon SQS)
 
-    Returns POSIX path of those files to be processed (ending in _light-bg.png)
+    Returns POSIX path of those files to be processed (ending in _light-bg@4x.png)
     """
     p = Path("../source/official")
-    return p.glob("**/*_light-bg.png")
+    return p.glob("**/*_light-bg@4x.png")
 
 
 def create_config_template():
@@ -170,7 +168,7 @@ def create_config_template():
         # Get elements needed for YAML file
         category = i.split("/")[3]
         target = Icon(i.split("/")[-1], {})._make_name(i.split("/")[-1])
-        source_name = i.split("/")[-1].split("_light-bg.png")[0]
+        source_name = i.split("/")[-1].split("_light-bg@4x.png")[0]
         file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
 
         # Process each file and populate entries for creating YAML file

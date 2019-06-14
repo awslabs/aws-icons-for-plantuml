@@ -8,7 +8,7 @@
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
-!includeurl AWSPuml/General/GeneralUsers.puml
+!includeurl AWSPuml/General/Users.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
 !includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
 !includeurl AWSPuml/Compute/Lambda.puml
@@ -16,7 +16,7 @@
 
 left to right direction
 
-GeneralUsers(sources, "Events", "millions of users")
+Users(sources, "Events", "millions of users")
 APIGateway(votingAPI, "Voting API", "user votes")
 Cognito(userAuth, "User Authentication", "jwt to submit votes")
 Lambda(generateToken, "User Credentials", "return jwt")

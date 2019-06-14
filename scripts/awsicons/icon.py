@@ -4,7 +4,6 @@
 Modules to support creation of PlantUML icon files
 """
 
-
 import sys
 import subprocess
 from subprocess import PIPE
@@ -27,7 +26,7 @@ class Icon:
         # if config provided set other values, no config used to access methods only
         if self.config:
             self.source_name = (
-                str(posix_filename).split("/")[-1].split("_light-bg.png")[0]
+                str(posix_filename).split("/")[-1].split("_light-bg@4x.png")[0]
             )
             self._set_values(self.source_name)
 
@@ -127,17 +126,14 @@ class Icon:
             sys.exit(1)
 
     def _make_name(self, name=None):
-        """Create PUML friendly name short name without directory or _light-bg.png,
+        """Create PUML friendly name short name without directory or _light-bg@4x.png,
            then remove leading AWS or Amazon to reduce length."""
 
         if name:
-            new_name = name.split("/")[-1].split("_light-bg.png")[0]
+            new_name = name.split("/")[-1].split("_light-bg@4x.png")[0]
             if new_name.startswith(("AWS-", "Amazon-")):
                 new_name = new_name.split("-", 1)[1]
             new_name = new_name.translate(dict.fromkeys(map(ord, "-_"), None))
-            # new_name = name.split("_light-bg.png")[0].translate(
-            #     dict.fromkeys(map(ord, "_-"), None)
-            # )
         return new_name
 
     def _color_name(self, color_name):
