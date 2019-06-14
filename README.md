@@ -36,11 +36,11 @@ In order to incorporate and use the *AWS Icons for PlantUML* resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-```bash
-!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist/AWSCommon.puml
-```
+<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v3.0</b>/dist/AWSCommon.puml
+</code></pre>
+This references the latest *GitHun release* version of the referenced file  from GitHub when an Internet connection is available. You can also use the *master* branch by replacing `v3.0` (or which ever version you are using) with `master`.
 
-This ensures that the latest version of the file is used by downloading from GitHub when an Internet connection is available.
+All examples reference *master* and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
 For local access use `!include` instead of `!includeurl` and include the path to the file's location:
 
