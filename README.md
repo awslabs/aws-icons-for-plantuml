@@ -48,7 +48,7 @@ For local access use `!include` instead of `!includeurl` and include the path to
 !include path/to/AWSCommon.puml
 ```
 
-:exclamation: The `!includeurl` is deprecated recent versions of PlantUML. Now `!include` can be used with local file paths *or* URLs. Please see the [Preprocessing](http://plantuml.com/preprocessing) notes for usage.
+:exclamation: The `!includeurl` is deprecated in recent versions of PlantUML. Now `!include` can be used with local file paths *or* URLs. Please see the [Preprocessing](http://plantuml.com/preprocessing) notes for usage.
 
 After inclusion of the `AWSCommon.puml` file, there are two different ways to reference resources:
 
@@ -105,7 +105,7 @@ This code generates the following diagram:
 
 ## Examples
 
-Below are some sample diagrams that demonstrate the uses of this repository by using different styles. The images are generated from the source diagram in the `examples` directory, which reference the PUML files in the `dist` directory of the main branch of this repository.. 
+Below are some sample diagrams that demonstrate the uses of this repository by using different styles. The images are generated from the source diagram in the `examples` directory, which reference the PUML files in the `dist` directory of the main branch of this repository..
 
 Consider these as starting points for how to use the resources in your own documents and diagrams. You may wish to use the sprites (images) in your UML diagrams, use the rectangle entities, or create large and complex C4 model diagrams.
 
