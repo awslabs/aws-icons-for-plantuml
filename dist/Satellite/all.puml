@@ -1,26 +1,11 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Satellite [64x64/16z] {
-xTO5TkGm48JXwfOQQ-z_tetdEKoIyoZm3yDd9jpwIpPxPd6XHoQ2uRiPe8_UkLi3Ae-UlHThm__vFy-ZovwTDYsQrpnhG5IWoIkU9U9kvehaiYTvld2A2mJY
-gglZ9yk7YkZmOgLgPax9MlIi2UWqcmfOir8XaSqrpnHODKbs6IJfC1bSN7yCQ94FSwB8m-lY-cDYD9-k_O4O48p5yPzZUeZ7DzK1vuAd8Lyj3pZPi1NVCb-l
-pY7DYLhm3EHhdqY3inVyb7uLMmIsiluO67pD7OYL_PSEJBxKeS1WV-uPcFhydpUjEPPygt8ed-0qWKPJvvA7_NCq3th32iniik1huvS81BioR00oeidROiaL
-pnh0-PCComEVyxLs_6LdJAXxLfDyN2l19T-76bBFZzQ9oPNnFsvi-PnhR_XcARp9SnKwjDWRljaJujLtbGjcixTyapa0kGiOoGldFxB2vhGeyjhvasT_rm-V
--Z-_stDlNPlbCt-XBtlHXpTZNcW8paHqFn7yXFu3
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(Satellite)
-!define Satellite(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Satellite, Satellite)
-!define Satellite(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Satellite, Satellite)
-!define SatelliteParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Satellite, Satellite)
-!define SatelliteParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Satellite, Satellite)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $GroundStation [64x64/16z] {
-xPH7kkOe301BGW8atV--uu_VyrOTm9jEhWMvo92_8oylzU6n7QExzvdrI9_61_6iOpiTf9cxDP1HUKX3p1IGvWrwdUc6ke2s9j0SZcPG7NKmRwfNW3eITJHx
-1rSGm0njd6t1D4omhgqBTjbnkl_JiH1MCEB92OuqL8XuUeEg0n9L-HI1TcpN5uuAi-fcJu_vFmE6qxxoiNbtleVNdY_jGj0hX2jGP1NqBN-YkTO-gWAjgacx
-GcNMxkMjh8ulFxC6LbUWkny7zC-Wj-_qckmEdpN0CuNu-Ad453ntgG4j75z-3RI3czpq-laI5368G2i5e9SBN3Rqsll-G2UQjX9hHtjL2B5tZ0qGK92UbrB6
-g52iSeUggImq8l92YAcqhFrVq2C6LerPzv-uhzyBdhS_XNibJtnH08lBVkJVTkL3VsGZRllP-e_zrtzz6yENxqEV-8jM3U3SdxuODLQSfzHDtj5loClBVm
+xTHLWkn640NHI2ZAk__r3WZcoo39Vjod6K9SLJ-bbnTj7iSrUsjZbXxbAzbvVxA41fRjGu1DrKs9jUQ0HKyOgZkKU3U838VeDnUWZdTeBJoo1zwnfLkhxrXt
+C22Jo9jxi99cP8ySHWPZrIsgsMZB89SpLwbkKirAmbXhIVM0D03RweSCydQjBnqtfavrpVm2en5h7jR5Q-VlT5tf1vOV7CyCBCzdlzWlVD_t8Ir2vtCmLHSe
+Q2eDsbwM9YaDl2xHCeOqYRDlT2rZgYxHWAuorjwNiwRHwYeDY6gqhTSWElHcXw5_tmN76gnj_Ov1LpCmiqjJYQe1n6UVW4-LEbsrxTRbwTV0mRfKfMIeukg0
+a6QmyLgpFXWrdRWp2_QgIIXOKYSQPEb6FwHrzClOzgHkhV_itGt8fNhMizUgX_siO5lvmtxf3-nV_VYFVOxHjxvFVz83R3rmlvzzCpJQfxfBX-DD_OHUNju1
 }
 
 AWSEntityColoring(GroundStation)
@@ -28,4 +13,18 @@ AWSEntityColoring(GroundStation)
 !define GroundStation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, GroundStation, GroundStation)
 !define GroundStationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, GroundStation, GroundStation)
 !define GroundStationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, GroundStation, GroundStation)
+
+sprite $Satellite [64x64/16z] {
+xTO5ekn644DHbPggfEn_kuyPsqxoSUum73FXPtKf7by3RHvj07psqqVJ6wzZkGxuYxzuttRQspdwIFcSTpK40qoVyXKnvvYBIEzx--7PFHP1n2ArwrspCO9z
+oPLaPVN8slJM0DZ7w0I6N4NSQkzvPs2Kxwg1I4yacwKjxuLMjkwoYyY9HMhFEz7bbpFJa0s1jkSLrEi1YbHfONh3Uw2iLpanRUrvHRVUv1xoG6ru9_AzJ-J4
+j3Ry27tGux--yrvexqVl1IphU-y9TB_LIQ1Pttid1b__qre4isrvaMxq2rmZm2MpRtdCVoRaMseh1n4zRGjpopDMObcgDLeW-f8jUQ5slAi12CRjSnif-sc-
+jE7bsn63SsN9zlDQoJqlsMvHjb_laDu__bkCUiM3XyuVBc8-7pydA1_niZeuIpVL37JvwFdBsO2u2MZf4-S_kzReVQoopvq_VT_b-k5xV_57U-s7wc3vof_e
+l_DWEnEVHnkdmf_GDG
+}
+
+AWSEntityColoring(Satellite)
+!define Satellite(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Satellite, Satellite)
+!define Satellite(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Satellite, Satellite)
+!define SatelliteParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Satellite, Satellite)
+!define SatelliteParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Satellite, Satellite)
 

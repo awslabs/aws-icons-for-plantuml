@@ -6,14 +6,14 @@
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
 !includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/GeneralInternetGateway.puml
+!includeurl AWSPuml/General/InternetGateway.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 actor User as user
 APIGatewayParticipant(api, Credit Card System, All methods are POST)
 LambdaParticipant(lambda,AuthorizeCard,)
 DynamoDBParticipant(db, PaymentTransactions, sortkey=transaction_id+token)
-GeneralInternetGatewayParticipant(processor, Authorizer, Returns status and token)
+InternetGatewayParticipant(processor, Authorizer, Returns status and token)
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details

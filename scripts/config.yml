@@ -1,7 +1,7 @@
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
-# Hand curated config file for 2019-02-07 AWS Architecture Icon release
+# Hand curated config file for Release 3.0-2019-05-21 AWS Architecture Icon release
 # 
 Defaults:
   Colors:
@@ -48,29 +48,29 @@ Categories:
     Target: DataPipeline
   - Source: AWS-Glue_Crawlers
     Target: GlueCrawlers
-  - Source: AWS-Glue_Data-Catalog
-    Target: GlueDataCatalog
+  - Source: AWS-Glue_Data-catalog
+    Target: GlueDatacatalog
   - Source: AWS-Glue
     Target: Glue
   - Source: AWS-Lake-Formation
     Target: LakeFormation
   - Source: Amazon-Athena
     Target: Athena
-  - Source: Amazon-CloudSearch_Search-Documents
-    Target: CloudSearchSearchDocs
+  - Source: Amazon-CloudSearch_Search-documents
+    Target: CloudSearchSearchDocuments
   - Source: Amazon-CloudSearch
     Target: CloudSearch
   - Source: Amazon-EMR_Cluster
     Target: EMRCluster
-  - Source: Amazon-EMR_EMR-Engine-MapR-M3
+  - Source: Amazon-EMR_EMR-engine-MapR-M3
     Target: EMREngineMapRM3
-  - Source: Amazon-EMR_EMR-Engine-MapR-M5
+  - Source: Amazon-EMR_EMR-engine-MapR-M5
     Target: EMREngineMapRM5
-  - Source: Amazon-EMR_EMR-Engine-MapR-M7
+  - Source: Amazon-EMR_EMR-engine-MapR-M7
     Target: EMREngineMapRM7
-  - Source: Amazon-EMR_EMR-Engine
+  - Source: Amazon-EMR_EMR-engine
     Target: EMREngine
-  - Source: Amazon-EMR_HDFS-Cluster
+  - Source: Amazon-EMR_HDFS-cluster
     Target: EMRHDFSCluster
   - Source: Amazon-EMR
     Target: EMR
@@ -88,12 +88,12 @@ Categories:
     Target: Kinesis
   - Source: Amazon-Managed-Streaming-for-Kafka
     Target: ManagedStreamingforKafka
-  - Source: Amazon-QuickSight
+  - Source: Amazon-Quicksight
     Target: QuickSight
-  - Source: Amazon-Redshift_Dense-Compute-Node
-    Target: RedshiftDenseComputeNode
-  - Source: Amazon-Redshift_Dense-Storage-Node
-    Target: RedshiftDenseStorageNode
+  - Source: Amazon-Redshift_Dense-compute-node
+    Target: DenseComputeNodeResource
+  - Source: Amazon-Redshift_Dense-storage-node
+    Target: DenseStorageNodeResource
   - Source: Amazon-Redshift
     Target: Redshift
   - Source: Analytics
@@ -102,7 +102,7 @@ Categories:
 - Name: ApplicationIntegration
   Color: MaroonFlush
   Services:
-  - Source: AWS-AppSync
+  - Source: Amazon-AppSync
     Target: AppSync
   - Source: AWS-Step-Functions
     Target: StepFunctions
@@ -142,12 +142,10 @@ Categories:
     Target: AlexaForBusiness
   - Source: Amazon-Chime
     Target: Chime
-  - Source: Amazon-WorkDocs
-    Target: WorkDocs
   - Source: Amazon-WorkMail
     Target: WorkMail
-  - Source: Business-Application
-    Target: BusinessApplication
+  - Source: Business-Applications
+    Target: BusinessApplications
   SourceDir: Business Applications
 - Name: Compute
   Color: Meteor
@@ -206,8 +204,8 @@ Categories:
     Target: Lightsail
   - Source: Compute
     Target: Compute
-  - Source: Elastic-Load-Balancing-ELB
-    Target: ElasticLoadBalancingELB
+  # - Source: Elastic-Load-Balancing-ELB
+  #   Target: ElasticLoadBalancingELB
   - Source: VMware-Cloud-On-AWS
     Target: VMwareCloudOnAWS
   - Source: Amazon-EC2_A1-Instance
@@ -324,8 +322,9 @@ Categories:
     Target: DatabaseMigrationService
   - Source: Amazon-Aurora
     Target: Aurora
-  - Source: Amazon-DocumentDB-with-MongoDB-compatibility
+  - Source: "Amazon-DocumentDB-\x03with-MongoDB-compatibility"
     Target: DocumentDBwithMongoDBcompat
+    ZComment: "Unknown character in filename, this will capture it"
   - Source: Amazon-DynamoDB_Attribute
     Target: DynamoDBAttribute
   - Source: Amazon-DynamoDB_Attributes
@@ -350,16 +349,17 @@ Categories:
     Target: ElastiCache
   - Source: Amazon-Neptune
     Target: Neptune
-  - Source: Amazon-Quantum-Ledger-Database_QLDB
+  - Source: "Amazon-Quantum-Ledger-\x03Database_QLDB"
     Target: QLDB
+    ZComment: "Unknown character in filename, this will capture it"
   - Source: Amazon-RDS-on-VMware
     Target: RDSonVMware
   - Source: Amazon-RDS
     Target: RDS
   - Source: Amazon-Redshift_Dense-Compute-Node
-    Target: DenseComputeNodeResource
+    Target: DenseComputeNodeResource2
   - Source: Amazon-Redshift_Dense-Storage-Node
-    Target: DenseStorageNodeResource
+    Target: DenseStorageNodeResource2
   - Source: Amazon-Redshift
     Target: AmazonRedshift
   - Source: Amazon-Timestream
@@ -367,16 +367,6 @@ Categories:
   - Source: Database
     Target: Database
   SourceDir: Database
-- Name: DesktopAndAppStreaming
-  Color: Elm
-  Services:
-  - Source: Amazon-Appstream-2.0
-    Target: Appstream2.0
-  - Source: Amazon-Workspaces
-    Target: Workspaces
-  - Source: Desktop-and-App-Streaming
-    Target: DesktopandAppStreaming
-  SourceDir: Desktop and App Streaming
 - Name: DeveloperTools
   Color: CeruleanBlue
   Services:
@@ -401,6 +391,20 @@ Categories:
   - Source: Developer-Tools
     Target: DeveloperTools
   SourceDir: Developer Tools
+- Name: EndUserComputing
+  Color: Elm
+  Services:
+  - Source: Amazon-Appstream-2.0
+    Target: Appstream2.0
+  - Source: Amazon-WorkDocs
+    Target: WorkDocs
+  - Source: Amazon-WorkLink
+    Target: WorkLink
+  - Source: Amazon-Workspaces
+    Target: Workspaces
+  - Source: End-User-Computing
+    Target: EndUserComputing
+  SourceDir: End User Computing
 - Name: GameTech
   Color: PurpleHeart
   Services:
@@ -416,8 +420,12 @@ Categories:
     Target: IoT1Click
   - Source: AWS-IoT-Analytics_Channel
     Target: IoTAnalyticsChannel
+  - Source: AWS-IoT-Analytics_Data-Set
+    Target: IoTAnalyticsDataSet
   - Source: AWS-IoT-Analytics_Data-Store
     Target: IoTAnalyticsDataStore
+  - Source: AWS-IoT-Analytics_Notebook
+    Target: IoTAnalyticsNotebook
   - Source: AWS-IoT-Analytics_Pipeline
     Target: IoTAnalyticsPipeline
   - Source: AWS-IoT-Analytics
@@ -428,27 +436,32 @@ Categories:
     Target: IoTCore
   - Source: AWS-IoT-Device-Defender
     Target: IoTDeviceDefender
-  - Source: AWS-IoT-Device-Management
+  - Source: "AWS-IoT-\x03Device-Management"
     Target: IoTDeviceManagement
+    ZComment: "Unknown character in filename, this will capture it"
   - Source: AWS-IoT-Events
     Target: IoTEvents
   - Source: AWS-IoT-Greengrass
     Target: IoTGreengrass
+  - Source: AWS-IoT-Greengrass_Connector
+    Target: IoTGreengrassConnector
   - Source: AWS-IoT-SiteWise
     Target: IoTSiteWise
   - Source: AWS-IoT-Things-Graph
     Target: IoTThingsGraph
+  - Source: Amazon-FreeRTOS
+    Target: FreeRTOS
   - Source: Internet-of-Things
     Target: InternetofThings
   - Source: IoT_Action
     Target: IoTAction
   - Source: IoT_Actuator
     Target: IoTActuator
-  - Source: IoT_Alexa-Enabled-Device
+  - Source: IoT_Alexa-enabled-device
     Target: IoTAlexaEnabledDevice
-  - Source: IoT_Alexa-Skill
+  - Source: IoT_Alexa-skill
     Target: IoTAlexaSkill
-  - Source: IoT_Alexa-Voice-Service
+  - Source: IoT_Alexa-voice-service
     Target: IoTAlexaVoiceService
   - Source: IoT_Bank
     Target: IoTBank
@@ -460,49 +473,49 @@ Categories:
     Target: IoTCar
   - Source: IoT_Cart
     Target: IoTCart
-  - Source: IoT_Certificate-Manager
+  - Source: IoT_Certificate-manager
     Target: IoTCertificateManager
-  - Source: IoT_Coffee-Pot
+  - Source: IoT_Coffee-pot
     Target: IoTCoffeePot
-  - Source: IoT_Desired-State
+  - Source: IoT_Desired-state
     Target: IoTDesiredState
-  - Source: IoT_Device-Gateway
+  - Source: IoT_Device-gateway
     Target: IoTDeviceGateway
-  - Source: IoT_Door-Lock
+  - Source: IoT_Door-lock
     Target: IoTDoorLock
   - Source: IoT_Echo
     Target: IoTEcho
   - Source: IoT_Factory
     Target: IoTFactory
-  - Source: IoT_Fire-TV-Stick
+  - Source: IoT_Fire-TV-stick
     Target: IoTFireTVStick
   - Source: IoT_Fire-TV
     Target: IoTFireTV
   - Source: IoT_Generic
     Target: IoTGeneric
-  - Source: IoT_HTTP-2-Protocol
+  - Source: IoT_HTTP-2-protocol
     Target: IoTHTTP2Protocol
-  - Source: IoT_HTTP-Protocol
+  - Source: IoT_HTTP-protocol
     Target: IoTHTTPProtocol
-  - Source: IoT_Hardware-Board
+  - Source: IoT_Hardware-board
     Target: IoTHardwareBoard
   - Source: IoT_House
     Target: IoTHouse
-  - Source: IoT_Lambda-Function
+  - Source: IoT_Lambda-function
     Target: IoTLambdaFunction
   - Source: IoT_Lightbulb
     Target: IoTLightbulb
-  - Source: IoT_MQTT-Protocol
+  - Source: IoT_MQTT-protocol
     Target: IoTMQTTProtocol
-  - Source: IoT_Medical-Emergency
+  - Source: IoT_Medical-emergency
     Target: IoTMedicalEmergency
-  - Source: IoT_Over-The-Air-Update
+  - Source: IoT_Over-the-air-update
     Target: IoTOverTheAirUpdate
-  - Source: IoT_Police-Emergency
+  - Source: IoT_Police-emergency
     Target: IoTPoliceEmergency
   - Source: IoT_Policy
     Target: IoTPolicy
-  - Source: IoT_Reported-State
+  - Source: IoT_Reported-state
     Target: IoTReportedState
   - Source: IoT_Rule
     Target: IoTRule
@@ -530,6 +543,8 @@ Categories:
   Services:
   - Source: AWS-Deep-Learning-AMIs
     Target: DeepLearningAMIs
+  - Source: AWS-Deep-Learning-Containers
+    Target: DeepLearningContainers
   - Source: AWS-DeepLens
     Target: DeepLens
   - Source: AWS-DeepRacer
@@ -546,6 +561,10 @@ Categories:
     Target: Personalize
   - Source: Amazon-Polly
     Target: Polly
+  - Source: Amazon-Rekognition_Image
+    Target: RekognitionImage
+  - Source: Amazon-Rekognition_Video
+    Target: RekognitionVideo
   - Source: Amazon-Rekognition
     Target: Rekognition
   - Source: Amazon-SageMaker-Ground-Truth
@@ -616,12 +635,18 @@ Categories:
     Target: OpsWorksStack2
   - Source: AWS-OpsWorks
     Target: OpsWorks
+  - Source: AWS-Organizations_Account
+    Target: OrganizationsAccount
+  - Source: AWS-Organizations_Organizational-Unit-OU
+    Target: OrganizationsOrganizationalUnitOU
+  - Source: AWS-Organizations
+    Target: Organizations
   - Source: AWS-Personal-Health-Dashboard
     Target: PersonalHealthDashboard
   - Source: AWS-Service-Catalog
     Target: ServiceCatalog
-  - Source: AWS-Shield_Shield-Advanced
-    Target: ShieldShieldAdvanced2
+  # - Source: AWS-Shield_Shield-Advanced
+  #   Target: ShieldShieldAdvanced2
   - Source: AWS-Systems-Manager_Automation
     Target: SystemsManagerAutomation
   - Source: AWS-Systems-Manager_Documents
@@ -674,13 +699,16 @@ Categories:
     Target: ElementalMediaConnect
   - Source: AWS-Elemental-MediaConvert
     Target: ElementalMediaConvert
+  - Source: "AWS-Elemental-\x03MediaLive"
+    Target: ElementalMediaLive
   - Source: AWS-Elemental-MediaLive
     Target: ElementalMediaLive
-  - Source: AWS-Elemental-MediaPackage
+    ZComment: "Both files are the same image, map to same name until filename is resolved"
+  - Source: "AWS-Elemental-\x03MediaPackage"
     Target: ElementalMediaPackage
-  - Source: AWS-Elemental-MediaStore
+  - Source: "AWS-Elemental-\x03MediaStore"
     Target: ElementalMediaStore
-  - Source: AWS-Elemental-MediaTailor
+  - Source: "AWS-Elemental-\x03MediaTailor"
     Target: ElementalMediaTailor
   - Source: Amazon-Elastic-Transcoder
     Target: ElasticTranscoder
@@ -694,9 +722,11 @@ Categories:
   Services:
   - Source: AWS-Application-Discovery-Service
     Target: ApplicationDiscoveryService
+  - Source: AWS-DataSync_Agent
+    Target: DataSyncAgent
   - Source: AWS-DataSync
     Target: DataSync
-  - Source: AWS-Database-Migration-Service
+  - Source: "AWS-Database-\x03Migration-Service"
     Target: DatabaseMigrationService2
   - Source: AWS-Migration-Hub
     Target: MigrationHub
@@ -722,6 +752,8 @@ Categories:
     Target: AppSync2
   - Source: AWS-Device-Farm
     Target: DeviceFarm
+  - Source: Amazon-API-Gateway_Endpoint
+    Target: APIGatewayEndpoint
   - Source: Amazon-API-Gateway
     Target: APIGateway
   - Source: Amazon-Pinpoint
@@ -742,12 +774,18 @@ Categories:
     Target: DirectConnect
   - Source: AWS-Global-Accelerator
     Target: GlobalAccelerator
+  - Source: AWS-PrivateLink
+    Target: PrivateLink
+  - Source: AWS-Site-to-Site-VPN
+    Target: SitetoSiteVPN
   - Source: AWS-Transit-Gateway
     Target: TransitGateway
-  - Source: AWS-VPC-PrivateLink
-    Target: VPCPrivateLink
+  # - Source: AWS-VPC-PrivateLink
+  #   Target: VPCPrivateLink
   - Source: Amazon-API-Gateway
     Target: APIGateway2
+  - Source: Amazon-API-Gateway_Endpoint
+    Target: APIGatewayEndpoint2
   - Source: Amazon-CloudFront_Download-Distribution
     Target: CloudFrontDownloadDistribution
   - Source: Amazon-CloudFront_Edge-Location
@@ -788,6 +826,14 @@ Categories:
     Target: VPCVPNGateway
   - Source: Amazon-VPC
     Target: VPC
+  - Source: Elastic-Load-Balancing-ELB_Application-load-balancer
+    Target: ELBApplicationLoadBalancer
+  - Source: Elastic-Load-Balancing-ELB_Network-load-balancer
+    Target: ELBNetworkLoadBalancer
+  - Source: Elastic-Load-Balancing_Classic-load-balancer
+    Target: ClassicLoadBalancer
+  - Source: Elastic-Load-Balancing
+    Target: ElasticLoadBalancing
   - Source: Networking-and-Content-Delivery
     Target: NetworkingandContentDelivery
   SourceDir: Networking & Content Delivery
@@ -850,16 +896,10 @@ Categories:
     Target: IAMRole
   - Source: AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential
     Target: IAMTemporarySecurityCredential
-  - Source: AWS-Identity-and-Access-Management_IAM
+  - Source: "AWS-Identity-and-\x03Access-Management_IAM"
     Target: IAMResource
   - Source: AWS-Key-Management-Service
     Target: KeyManagementService
-  - Source: AWS-Organizations_Account
-    Target: OrganizationsAccount
-  - Source: AWS-Organizations_Organizational-Unit
-    Target: OrganizationsOU
-  - Source: AWS-Organizations
-    Target: Organizations
   - Source: AWS-Resource-Access-Manager
     Target: ResourceAccessManager
   - Source: AWS-Secrets-Manager
@@ -873,7 +913,7 @@ Categories:
   - Source: AWS-Single-Sign-On
     Target: SingleSignOn
   - Source: AWS-WAF_Filtering-rule
-    Target: WAFFilteringrule
+    Target: WAFFilteringRule
   - Source: AWS-WAF
     Target: WAF
   - Source: Amazon-Cloud-Directory
@@ -918,6 +958,8 @@ Categories:
     Target: EBSVolume
   - Source: Amazon-Elastic-Block-Store-EBS
     Target: ElasticBlockStoreEBS
+  - Source: Amazon-Elastic-File-System_EFS_File-system
+    Target: EFSFilesystem
   - Source: Amazon-Elastic-File-System_EFS
     Target: ElasticFileSystemEFS
   - Source: Amazon-FSx-for-Lustre
@@ -938,7 +980,7 @@ Categories:
     Target: S3Bucket
   - Source: Amazon-Simple-Storage-Service-S3_Object
     Target: S3Object
-  - Source: Amazon-Simple-Storage-Service-S3
+  - Source: "Amazon-Simple-\x03Storage-Service-S3"
     Target: SimpleStorageServiceS3
   - Source: Storage
     Target: Storage
@@ -946,51 +988,47 @@ Categories:
 - Name: General
   Color: SquidInk
   Services:
-  - Source: AWS-General_AWS-Cloud
-    Target: generalAWSCloud
-  - Source: AWS-General_Corporate-Data-Center
-    Target: GeneralCorporateDataCenter
-  - Source: AWS-General_Disk
-    Target: GeneralDisk
-  - Source: AWS-General_Forums
-    Target: GeneralForums
-  - Source: AWS-General_Generic-Database
-    Target: GeneralGenericDatabase
-  - Source: AWS-General_Internet-Alt1
-    Target: GeneralInternetAlt1
-  - Source: AWS-General_Internet-Alt2
-    Target: GeneralInternetAlt2
-  - Source: AWS-General_Internet-Gateway
-    Target: GeneralInternetGateway
-  - Source: AWS-General_Mobile-Client
-    Target: GeneralMobileClient
-  - Source: AWS-General_Multimedia
-    Target: GeneralMultimedia
-  - Source: AWS-General_Office-Building
-    Target: GeneralOfficeBuilding
-  - Source: AWS-General_SAML-Token
-    Target: GeneralSAMLToken
-  - Source: AWS-General_SSL-Padlock
-    Target: GeneralSSLPadlock
-  - Source: AWS-General_Tape-Storage
-    Target: GeneralTapeStorage
-  - Source: AWS-General_Traditional-Server
-    Target: GeneralTraditionalServer
-  - Source: AWS-General_User
-    Target: GeneralUser
-  - Source: AWS-General_Users
-    Target: GeneralUsers
-  - Source: AWS-General_Virtual-Private-Cloud
-    Target: GeneralVPC
   - Source: AWS-Marketplace
     Target: Marketplace
   - Source: Client
     Target: Client
-  - Source: External_SDK
-    Target: ExternalSDK
-  - Source: External_Toolkit
-    Target: ExternalToolkit
-  SourceDir: _General AWS
+  - Source: Disk
+    Target: Disk
+  - Source: Forums
+    Target: Forums
+  - Source: General
+    Target: General
+  - Source: Generic-database
+    Target: GenericDatabase
+  - Source: Internet-alt1
+    Target: InternetAlt1
+  - Source: Internet-alt2
+    Target: InternetAlt2
+  - Source: Internet-gateway
+    Target: InternetGateway
+  - Source: Mobile-client
+    Target: MobileClient
+  - Source: Multimedia
+    Target: Multimedia
+  - Source: Office-building
+    Target: OfficeBuilding
+  - Source: SAML-token
+    Target: SAMLToken
+  - Source: SDK
+    Target: SDK
+  - Source: SSL-padlock
+    Target: SSLPadlock
+  - Source: Tape-storage
+    Target: TapeStorage
+  - Source: Toolkit
+    Target: Toolkit
+  - Source: Traditional-server
+    Target: TraditionalServer
+  - Source: User
+    Target: User
+  - Source: Users
+    Target: Users
+  SourceDir: _General
 - Name: GroupIcons
   Color: SquidInk
   Services:
@@ -1004,8 +1042,6 @@ Categories:
     Target: AutoScalingGroup
   - Source: Corporate-data-center
     Target: CorporateDataCenter
-  - Source: EC2-instance-contents
-    Target: EC2InstanceContents
   - Source: Elastic-Beanstalk-container
     Target: ElasticBeanstalkContainer
   - Source: Region

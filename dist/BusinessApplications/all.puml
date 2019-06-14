@@ -1,39 +1,13 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $BusinessApplication [64x64/16z] {
-xTP5WkGm44JHY2H9cVS_xqnpCSZUDEXlgWpFJ7XhnSbEB3PqO2GqPdD03Zug9nk0yE3pL_hbnzZdLNVvKgqTlWSPVRitaB0TNZ9besyayUf1iirxXuUyUWb7
-JFiAPhrlVoMZ9hqfUTX_KctA3uZvmRi9njJwqIeFFgjXOltD3N5w_WBcxKdl8D5EVGC9VyvJSrokVwJoIU_NlVy8l_poDT0o3y-Vp8PHJ_dHEsrq-CkVeTAx
-wEi_Hn_6bpyF_23knl5W_G7fDnF4m_qFMDx844ySly3DugdZt-96RNq_NVNB-vYjd_WDxVQKhpzg6rBY8rBc8_4R-Wy
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(BusinessApplication)
-!define BusinessApplication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, BusinessApplication, BusinessApplication)
-!define BusinessApplication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, BusinessApplication, BusinessApplication)
-!define BusinessApplicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, BusinessApplication, BusinessApplication)
-!define BusinessApplicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, BusinessApplication, BusinessApplication)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $WorkMail [64x64/16z] {
-xTOt0WCn24HHRKBf_kTrjgVGZi0vyUjvr9IFoFDo56Cnhta9vYBpYwWjkvamFvLQkjKoSRzCOSnzdySmBSnB6N60yR48zJNZ0EEvSdzQT7aft6F3USzZHRdY
-iIDSyLWIhdXi2TSyreHh7dl2BHwYvQg7QRdPGu7RFLp3hVuamIs-FG1kyUq1SBj7UPh0RLxFlVisz-whXLVgPp4rh_iOpCMx_zUFoFEs
-}
-
-AWSEntityColoring(WorkMail)
-!define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkMail, WorkMail)
-!define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkMail, WorkMail)
-!define WorkMailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkMail, WorkMail)
-!define WorkMailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkMail, WorkMail)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $AlexaForBusiness [64x64/16z] {
-xPJdOYGX38Fb0Yxp_kzxmLoPR8ETFzVo9TkHX4t9FvGllWZh7rZa5LmPcB1wlednq4dxG0W0Mxv12C3zPwWt1YJsmmdKfr74b7K2sQuSq1ZTgmuGgurF2jYk
-l5TYYRbUweiz0o-vCo0zHd1q0TZBm7C9erK7s4-UNDKtSAweCGveVa81dzwl2OAFftRlIv4EYbMyZZ39EtJ-qbRL-odbRcQ-w43zNY6XPsnERVg_eAEDe1XE
-9wgU04Ksz7o1mjBdQ3zJzGWy3ReglwCzwsrRDO3nOufXDqHbnrgliEha3REmsCvlDyIENbxLRz2gVzd_6X8_E2_kOT2DzVTJ_UriVdIqvVwhZUR2avu_84GA
-RBd_0_2yny1pRxwYG-eEYBn3qG-3R9p_PDmFSz1Y-aK7PmRVN_U2TZWeLp2q3CXkV2k-vmglooi4q3ZF7dOOABRk_pRlV_9Ffa6mtC1GrOTCWodNJ87c5iwW
-5lFA75Z9QrNt20N8wiQg3rDEdjkuG3A98aOV-f33Sfzvs0bASnsqvE_h0VNP4C-tzTcaHnxPKArxNrzqhWrnJH-D0V6yfFSc0CJo0WuY0AIUbt00qYpoAbRQ
-FvelllW6
+xPK5qXjB38HRE5Bx_kTzBr78KF_EUWk2dncwXLl3NvH__ADhPQvgNg52yHMDufii0w0Udt05O8jlq0veDh_IgO0tpr82NHpb9-RDKaYTpHtmUNKLGDJ7ou5r
+LfuaKm28whpC5-SCIf1a6s1hSkzbW3MPfqfGn9XOtNdQI0FA7GaRUV2160D3yfWM57laBmRDWlGkl9CEvmi-l-mIKDHTb9VCQjE1-Ns2TFWT-JMryJyW4Mn1
+auLxZ6H3cd5SW6EnO9FAFLEFeRZWFC3GayC7oIKRTjo-Pc3DrZtH4xkXXthvfYyyKImuM_Ha_7YYMVluXlgu_ZLwEzd__iRzS6y5tysVZ_EFU_DR8hRx5mYo
+xIl9huoleRRxFvl-Ii7O8hs__XBALnnvMx0JrpyD_XeUqZGi7ZEnMs7zCjgy5OGx3346MhndGSU3ErgGPFlZYLE2ket7biBCU0cq7anRi4uUNzQJWZI7LlXT
+LtUKGhB96C6aucH0coS9G1Pxsjq1nClfiw4SHegmKo2BJA3u1WqZ5Iw0zylfkwScFW0licsIVriVbit9tPeNzCFIwTyrVQS2LhoahpHSKezU1814yH8DY8tu
+8cirVt7-yO__0G
 }
 
 AWSEntityColoring(AlexaForBusiness)
@@ -42,15 +16,24 @@ AWSEntityColoring(AlexaForBusiness)
 !define AlexaForBusinessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, AlexaForBusiness, AlexaForBusiness)
 !define AlexaForBusinessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, AlexaForBusiness, AlexaForBusiness)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $BusinessApplications [64x64/16z] {
+xTO5Oi9054NHzrrc_-kjjpX4wkJYSkA6dsgBtby9udCpW7VUHy-i3dt_Ix_vgdLUP9KV8cE5JoEoNEuLHD0LdhjveGyYmhC74SLyRp3dPyzkiDb-EFNGPw-Z
+oSTChqAqctyYqLc-m6exRygeERuHetU-Hw2d-p257wu_XrfCz0wY8__-tIJFqdNgguMdURBptkWl-CrlVXIYUtVywGxKcEGhaxGIbfabdCbIcMd8Kigi6xu8
+LwEwxjl1UJ66tvn_X_Q553vX-Jb0PmDyql8Flr1irqzd_UQjvfO7Va6Vvy6o92QyHul2V-WH
+}
+
+AWSEntityColoring(BusinessApplications)
+!define BusinessApplications(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplications(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplicationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplicationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, BusinessApplications, BusinessApplications)
+
 sprite $Chime [64x64/16z] {
-xLO9agGm39CTHudX___TYZ5G53jawJhs6itHfnnPxPPP_bnyunkT0yq_fBiWm7UijjzhK9A2zefUKFEkWUlY8lwEZfsWw4D4UKSl1jlSWsuYNj7LNT370wAc
-YDsOQICjjDTDSa4B4SckWZ8hi1tjORb7BQQR561U88ycT3CkHInDWT9TPmNow4N1rS0KqGkWBTsT520qh1SN-11XRe1mgswO3fE28RkCGgj11L9zTr3ghtq4
-7O1MCm5WcsHgtfrWcz-An3vCuU23SSVNjESCI1yWm2KTV9ODAOm3nlpoC8f0hO1mvhj8zDpS1HQd7WM0ukkCpwMP0X3JQsOqYMURp_YHMEKUEHsg8OBzYPyA
-lPcWN_csE4lqzvKCGe_ggztvKRX6VpyLqTEzg7xdh_jTwXTvukbUeT_vftih7_8etLEzyWcSxZtm3_S0QLUwMhgN_0UiNe3h_1Z4T_TangS0jHu5shXdiEnF
-dXCWaofEPHyGrCp5x8yFSnZVivxBPqVDN9p23L0UTo5cqVCUoHFKQr9fJ8sYd97yY7OcbOoxbaiWUrTmllhyT73BNy9MGlTSd2-_JAhB-b0mSt5QG8wagk2I
-8ZAIu_-qGBqj_pnwzX5SLtI7feYCvClocuEm596HN5xGxyjVy8uULqrhY0ZKL_ImdAIUZhsyY2G2yl6bP-D0N_vSVECRFm
+xPK5iYGn34CLScpV_xuBIhd6W-bimTBNC3prQqZYVso-yfLPcV6hV4Cf1QXdr3HVCP83SeGBUhmZsM1dEA2XRvGumqj7J_gIzFKAhbwXh_HdXMnmfVj4VzGd
+3MmBAepF6kI41DrD2sH_y2cGz8DsTnPS50Zze9aEp6i2eTyIdPgs0WDB_u5MtsHY2O3w1VM4pW9eOpIWw06T1PWYWFfiUxfNiNi1KLNp2LG0mxRQ02kMW08Q
+FYjDx3Cl3QkYmZITPnLqaxgfgCNTMD4QAl68OhZxvmho7XM0-2D_gvXlUSPcAoYM-SPFKL5VybdD6jBfieBIfiN7yfAVBU_ToBmBG6zxprCjAXxu2HIq6XNa
+DnKTeWbNHNKTh12G_rZ1p3odTNva1VbFiGwiIy1KTMtF5iMA_XdNpdEiW9IRIOTuP4TNgclX6Eu8WUiqOnM5Ks08p2Ew0sWy-UEQW3tGjK7MTD0l7O49zDmK
+CtXplIR0nIzeah4ANXDWGT0abxvV4o22e4c6n19GmBO5GMTz2kmNFrAfAY__7OtuzMHzkX_XMP_f9pZ94H8hUW2JH2abzC_JApFzZyrNll8T
 }
 
 AWSEntityColoring(Chime)
@@ -59,17 +42,14 @@ AWSEntityColoring(Chime)
 !define ChimeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Chime, Chime)
 !define ChimeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Chime, Chime)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $WorkDocs [64x64/16z] {
-xTP9ZiGW58DX6o43Z_lVj_VrqiYbcZ9v__q1LebTxDwzqRInRdjXS_9zLHhzWA0PZoC0sJwofm2zucCHiFmYOFb5mFABWEKN0TldWE-DWE5JmFP6mF0fO7iZ
-OFWKiBqHi7mE-3u7VEy6179qiaLXdPKbH09y783-YYUX5yuVeIzwwJKVyPelvRVth_KrF-Tllq_-zlqZNlEjlNh_t_hUN_DZFEEdS_xvhwzA0vHMjts3lRRu
-VpNMHknYz-xz0G
+sprite $WorkMail [64x64/16z] {
+xTOt4iGm34DHpz3Azx_l6hKPi3dnjyHJhVaHPTbebQmDpRUDhcc-7eTAX9dbPOQ9xQji4dEffiSrvDFnk4VSzLZuFF3OU3pqM3ayzjWvFFPOEZpss6gSzbWh
+dFVOAvpt4DPhb8VHEEsX5CvxE8Np7bBXl8S5v_tvWOFVuOV8kCFhfKz_BdtwnV1b-hrIxV3t_X_l_x--loox
 }
 
-AWSEntityColoring(WorkDocs)
-!define WorkDocs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkDocs, WorkDocs)
-!define WorkDocs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkDocs, WorkDocs)
-!define WorkDocsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkDocs, WorkDocs)
-!define WorkDocsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkDocs, WorkDocs)
+AWSEntityColoring(WorkMail)
+!define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkMail, WorkMail)
 

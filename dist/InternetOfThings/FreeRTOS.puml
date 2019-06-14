@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $FreeRTOS [64x64/16z] {
+xPQ73kiW34NljR6n_VyV_1IrA4WDfM-ldEvn1DUiv9_2pSrDR7ch2xR8Ev_G3U3QhgJKJ8wd4s7MjTrL5P8R1AhQymA_I6SYTb4XNzKUylBdbw-MOr17_lcp
+Go84NhFFutzNX9bXzhkWLtL8dtsOMNoINm5ObG5ed-GFTp_z4D00LS08YTDtzzZd5sYM4w1NAcIVFoCwnlyQz7W9CXvPsl3H8tAJls9CKuvNH6toTssZdove
+DVlL83voDUtly-lP1ddsJPVv1m_V8Ds0EFq0h0liuIzmaZXyGLGraEo7tqcYLSNpHvB-cGyxVCF2t_M_3xzVz7zVlphzMjHlENuAhJpzh0QTnsytVvA8kVq0
+Svu_k_bR1ixj4rRp_DsldmOnM95bCA8jrizo_MO3q99ylbcjt_N-uSGJ-dh_MEzVvI1nFBpM-zTw_vpgjzW_D_ktZ_hvOl_Ud1zTF5NJfI_FZ-y_lzRdPnwF
+yR8zFpy_lt_czKF6blnJkBcv-G8
+}
+
+AWSEntityColoring(FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FreeRTOS, FreeRTOS)
