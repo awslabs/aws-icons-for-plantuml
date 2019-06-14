@@ -1,67 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudWatchRule [64x64/16z] {
-nTPN5fum34HXoSQsvkv_loca2P-48qZxtk_yXMh_tJ6kcZsZNNlOitau84rF9gXRdKl3iW54aQS-3QW4I7roh990gNzkw7dlqp-N_MNleN2RKZzxdlQs8ERN
-K-GGBVNbWJD_svk0Rg_x0H1-wQTdTcU20i9_z82oUN-ogzcIZkzzGnTmDz2YcTaQwVkFgpW72hxsEmzOes9nzdtJ0bJ1sJUk53rKvMU_YUPLTlQp9ml2hQwX
-mx8bj8fIVnsemVV-jA94AFNF3RtjZ_vR_K3jD_e5wgzx3r2pL_rOrWJXzge_H0YMsxKV3xuwZFtueSZ6tO3EBxlt6TmDh6wfnyryNQM1L_Ul9fYzOdBslkcY
-wEnTczdrf6-04ZHRhxApNoCHJ7j-_whV_pDFVHvG3ItrQQ1Oa_lCIuQslYozVxpff-Plz1uWVzstW6Zsgf_T-eyRq7ZQBsa2u-tpOm3eiAqdLdQpTe2wxJqe
-usPWHBEjzxY2RM2pzxik6EtAVsgcVXieodqUg2BrIJisurVil_i8
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(CloudWatchRule)
-!define CloudWatchRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchRule, CloudWatchRule)
-!define CloudWatchRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchRule, CloudWatchRule)
-!define CloudWatchRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchRule, CloudWatchRule)
-!define CloudWatchRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchRule, CloudWatchRule)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $TrustedAdvisorCheckSecurity [64x64/16z] {
-xTS54XmX44RXRgpvt_tl6v-LAbZOcNZoIbU-SG6xdkyqvw6Tyemxe5Mepdo2A8igAdElOejysuztC-twel0BFWcbyzuxP3lbMpApW6QdV4Z9AdJxN7akhNq3
-LP1_ErjFjPtj1uwTTprND_pNBHZVKBRZhIfit9utjslUVWTV_P9lwdx15z0PlxZzrjxxvzyx53lbkvIj7RTVoa_vsXTGEsu_5uzjtJy5E7RUUTzRuRxpAQU7
-ikzuAxqkhpylhRMQJrw_NeK-HS_l-sgf2oG1rFUyIyKxzEAVG1NKiVT8Dgc9E8WW3Nr8QROBT3lA42DV8MnS4Tbk1V8dxzyMAvzk_kDF1TAZJwfcBiZ3w-TJ
-eMxtCkJd-uTg0NLu_GvzUlHPq8-TTxtjBGkGs_Z-NNjByp6MjuWGYdiTUaJKkxSKnSPL8G6w1qY0xro_5VeeGThoae-_l-RBT_BqzY9V-DNuDosyjVuoN_Xb
-lzZ_z_yzhGuAjhr60RxZisR5nGcsNUyZ
-}
-
-AWSEntityColoring(TrustedAdvisorCheckSecurity)
-!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
-!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
-!define TrustedAdvisorCheckSecurityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
-!define TrustedAdvisorCheckSecurityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudWatch [64x64/16z] {
-xPP5ikH034HJ37F_-quqKvM_OUktQbAAKXtkNqvEJYepgtUInhZ0jaUYz1AggXSHsnxE8Azx7O3Krl3ta6JmDW61JDwl8i3rNOzthru68xwN0N86IDSe97ZG
-4S12gmPXy84cvNMhicPwsJzutblB5UtFY_I_pLIq49-WgB-CIxKa3l9burekwOS2KckC-w9SXTNhwMUPhau6qOOxMYyxhXvTCKYZAer0-PZYPBgor58fg6OM
-kH23xIhqEW3Bj_uCCNQ73nPUxGG0-JejWwzqby8x0GktMuMo49-GaPdbxTT4DUX_Ely2Tn5z7LVHnA8ANHElqAcz_Ui3kiJ4Hpyslv00h3xxpmxmgnvg1sNF
-20BuWLJRPIKUhmrfbouUc18UK7NXVTIrwX-mddH_L5kCcS0S1VcpDodTB600gRiohdFVBf22AyBWNG9TuHxP9HE1jRm4-f2088u8_5D47n0GKFK10L3qVbuF
-4YSd9_y1
-}
-
-AWSEntityColoring(CloudWatch)
-!define CloudWatch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatch, CloudWatch)
-!define CloudWatch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatch, CloudWatch)
-!define CloudWatchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatch, CloudWatch)
-!define CloudWatchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatch, CloudWatch)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManagerDocuments [64x64/16z] {
-xTBNOeKm38FXE34Xqlk_RtVF01LCVRhxN_E9bNAZJ1Vb3fq7_GmcFIONrR0V9T79Lvb5VQCA7lKJqjupppy1yjgZlhdAehuIgc51tqXY6SbXOU-sR9m68hwL
-PODo8Eunpt8WxeiUY7iz4FTw8ExrGDph0UrRFzLENWvexpZbJvx3dvgm6D2-ZLFjsVDqa8b--Fqxpf5ps9-oSq3KwyOFy5RVAkOTb65aVVRvF-Fx_VisH0Uy
-OnqjxbiN_TRl_-zXAK_24hu3p7XpztBCg_AUNYtb2N-_RypvKX-oX3yzHatwxXjDsF4WiHMtlM4tBvlPNkL6tGC
-}
-
-AWSEntityColoring(SystemsManagerDocuments)
-!define SystemsManagerDocuments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
-!define SystemsManagerDocuments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
-!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
-!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $AutoScaling [64x64/16z] {
 xPO5SiKm30MVP4Tq__iM77KycFfRvMR3i6QAdylDZLb9Lq1hEg0r7T1zNOW4q6qzY68t08P447a8UCStYTCFiTWY_G9r7pM_ju9Vnu_32xeGGB9hAmEz0wph
 Jk-HM0EQpUlyVe4pyWS1M6Sw97MmhmNGW9w_UWTuJPy1D118iX09lA3xm0Xz-7O0hCh0OU2Xa_dWQhGX0FtLzr5qe_0S_Ae3T34YAPzG-ZR7p_H1VABl5a3w
@@ -74,23 +13,6 @@ AWSEntityColoring(AutoScaling)
 !define AutoScalingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AutoScaling, AutoScaling)
 !define AutoScalingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AutoScaling, AutoScaling)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksResources [64x64/16z] {
-xPS7iiCW34HDHxx_VTEZ6V3xCyllZVI45xn2Ys3xs1RZM-XGzxs6L-F5zakpyZewzGlSskMffrS8luAMjotRzM_Ygl3RXT-aXvkCXJ3ucDErB0dl2RvIXTjn
-i6ocXE4craXigEOX4ONpb0Z2jGuyPq9ArY3-ee-IkmkNChCFOGZ-5JOUB8nXhzj2g-D4v5jO5wqvyIvV2y3CDywxb_AmpNpqx9Ai6G-yP3Bl0ZocFnk0U38P
-MvDvDXbRatdN22BYj0u3ZrPYqp2F_TcQmAF9m9eQxnYuLU6zRdWT4Vaf39DmdVSVo17CSxVu_Vb__fzFQtmQUNEJ4e_Mjaprctcktx3QCCzB6-zVcEUb5NzX
-daVXwiWyT-0YnJoNDYwI4m-bLTW_Eo_idq6byu9m3iED1-7o-UNAQ-SNph9w0IapvJ3SMa-VVdxqERSQlk3yhBSp
-}
-
-AWSEntityColoring(OpsWorksResources)
-!define OpsWorksResources(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksResources, OpsWorksResources)
-!define OpsWorksResources(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksResources, OpsWorksResources)
-!define OpsWorksResourcesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksResources, OpsWorksResources)
-!define OpsWorksResourcesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksResources, OpsWorksResources)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CloudFormation [64x64/16z] {
 xTC5Zkqm38NX4rDit_tlzwbv0vrKBWs8-bqG_WhdxtWy7cwgvdcJ4GQol24O8ErT6U38omZaEJY18Y-IzQ0Cpciwsdf8WhcgHPwbr7F5CRIUDp6QTG4yIo6y
 eP4vE2-bGh9as9Z72xIzNdt2KvyDP7LlEP6vLm8uRlQ3CoZAFdImeXy4KlQEWVRwQ8Xo_3xuNf-2NlMJ6FbCOVNu5KzV_WvwHqMI0Cu5r_CFbK9F4ndZEbfK
@@ -103,24 +25,6 @@ AWSEntityColoring(CloudFormation)
 !define CloudFormationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormation, CloudFormation)
 !define CloudFormationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormation, CloudFormation)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $TrustedAdvisorCheckCost [64x64/16z] {
-nTO7Zkum20HWmBWmzx_lgoCbqSPBbhmogd_vY0j8aVVH9zdp6K_ITbm1f1hHjpumFKb7-Dw7InADfxwzynvJNtWBXDMzBi2bvBk9o0I6bFo8CEd0af_nQ-o1
-1yA1K7vpoSYz3FmCRszTVN_WVwsWtm_Ki_FlCT_rdxxlt__lkxxo8vQ-y0v4tNFyAbwdYmZ7h-1NH9C1JFaPQvTexXs80IpE3yvvD3yE066ozJqvFyUnUMjs
-IbCHCqsy-1fI2Fqctlr8-xBtG1o1VzLtuCG1pxnEkpu_J9Ln83pnCyAkNiNd6ihTm3_rdHruzWuW9iSBy7l_wm6DutVn2x40snIWjzL5D13jw9z6ZpM09hi2
-d1zqcK0_zw_zyYF0PTqLe6y1B63AHwyJN1OB8Fo3byQddEQNwpyt_yqjq8lTl6FHCviLq8jDbzHVLv3txttFyn1ptu2aG3Q_QG7wUW4DhB5BbytKyVli_NVj
-fkxq_LZx395FLw2IPhk20QojoGzn0akbN82yKA30MQ3EUGjrpbkeSwwWphc2EkSXafSBaDVYvELua5UpqULy1m
-}
-
-AWSEntityColoring(TrustedAdvisorCheckCost)
-!define TrustedAdvisorCheckCost(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
-!define TrustedAdvisorCheckCost(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
-!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
-!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CloudFormationChangeSet [64x64/16z] {
 xPU7SkKg40KPufp-_mz-CXWNxvRGJPjtszdGX14p9S8tmfxandOzYTlg9u6U09HMFqBDJr0XtlWnF47yERwzvoUrAp_w5qkZnJ1nL2xy8jH1PJqPisS6P7i_
 YrOF6ifXaa6ZgmcWNlcoqV73Jx6JV0vGeJYAZ_cH1Nrq4HuIj1Vz1cbyVt3zWxd-16skuX7_DdvpvmNorgVaWuBoxVFBe9aviiUV_pm_3emsK3xtapH9uOQg
@@ -136,39 +40,81 @@ AWSEntityColoring(CloudFormationChangeSet)
 !define CloudFormationChangeSetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationChangeSet, CloudFormationChangeSet)
 !define CloudFormationChangeSetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationChangeSet, CloudFormationChangeSet)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ControlTower [64x64/16z] {
-xPO7kkGW38CbY47o_U-xnQ-NoPUGxJl_z287SCr_bpjtUhyc1_ebUMiN36oWJMovY8W8KBcA2L1pLTrbqh6u0JTiAQM8aGjCz2mKpXNazVYntiIF-tPsxyfq
-1u3kSiHsIbwgYKOsp2m3EgFlzJf4QjJRSr5WvmDalk1ZsXTlAu3GIpXlH-IruI9GH1P73Z6KTNIU9KUGWJ8momkqOZVVgQtNcv42bMIAK8wA0zj4tvE3gZTD
-6OWwltgZLZeJjmoKofNk7I3vuQbNGN1PkgRVMx-Nrry6h7dx_29KyZt_4IDl-2zG_jjdWluOFqKxb4DpteZVjF8WpW_veppEv7YVlu4ueGT6lgaV0SxJjVUb
-VcLGUORfT_tNUHezzV_XjUuxiuYr5Zw0aLAErGuyCKnQJRc6HO3Eg_F3rVdbulpq--QtYfz_bpjtlW8
+sprite $CloudFormationStack [64x64/16z] {
+xTT5UWH134DX-PiYwVxt3GxRGwvmwj-stgePtwvE061YcWmmAerlFQkbL6xxWfJo4_hLhxuYfMvxSQHGRxt49Ca0j9xMW7bspSt3C5unWC4hjiy_ngJN_ihX
+RTzhRBpteyQwRbn_ZQyz6sA5lxzV_Uhpzy_y_Jlx_9X-VirhxgbiADqfCBz4yFwG39tY2R77InX5zrPgqZWXjN3ftv-Lhpq7JWmslmolltAbTyllxrU_-cf7
+whQt4zlUBQF_jzTUJWkNqV_ZXVi_NWBL0JRLsOJBR_SC
 }
 
-AWSEntityColoring(ControlTower)
-!define ControlTower(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ControlTower, ControlTower)
-!define ControlTower(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ControlTower, ControlTower)
-!define ControlTowerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ControlTower, ControlTower)
-!define ControlTowerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ControlTower, ControlTower)
+AWSEntityColoring(CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationStack, CloudFormationStack)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManager [64x64/16z] {
-xTI54kiw30JGbGpIxll__tqJcfk26wS35qyP1F78rY_edt-OqIEfxqGnBAocxcC1hBJMbYoLkYaD7biKky6fMsYevrvWr1q5LMSLHJTq-4l2BaQafXYU_vYm
-PW0yT2tUT5i1r5Q0YGGDNSyIdfBwp4eMf5u4zpwwhZYeaK3zxtfsnl49wxmSN6g43g3nu-1-BC1i1kVKu9vnjRSuJ517uHKBsyCAsgWyzO9hXBi3b4Wf1qkK
-AEzATtP3IewQQSx1Y4WTxMtd1ZZFRnlwP7o5DQ3cSPQW5ZZx-_X0UmrFPUh0MDSYS-xw2RGt_qBNvFftd5SgOjiVXSEjMryo9jl1K5lBWlWmtksfVbK2PptX
-d-Q_9ZTIBOOKus282ChX9KS97B1D43YL8fVxeW7e6c1psoJXIUtrEqh6Wb8sT5tZLZrnjaRsE_6iYmAlgxmH3w_QiQTsuJONxzYtRFEak94AWD04ig8_NtyG
-bjISX2dT0VD3D3JDIbixxUU97rpyz7dQWPYDzvSTVUp9-GJvOzhPh0_AZnCil4cAWiKeVDn1-Dgomzge-XWxbz3MjqCyKbyeM55Vohu8_Mh--UT_
+sprite $CloudFormationTemplate [64x64/16z] {
+xTTLOWH120JGHK93tV--woup0yIJzr_jkdedb7INzaZocn8aW4mQ2BdECs2QO03VvNcLmByr_-OdLifxu3X1e58UOJkEgENZq6wDtv0NVpGIUOqdQ3hlkZFs
+uy_snCpydUQ_rd-Bar5R_tJoz_PlGcVy-lFNNp_pw_Ttd1_qH28lySW_yFouFxzPdoZU7_txw-Ftpt-Uv8HA-O4JBvuV9zNzDsIBxLUS7oIFEBN_yI3cnk-m
+3wjvXEy43ktdUxFjH-mLnq_iH3zs__pdk_-txl-n_t_j_v_xDW
 }
 
-AWSEntityColoring(SystemsManager)
-!define SystemsManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManager, SystemsManager)
-!define SystemsManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManager, SystemsManager)
-!define SystemsManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManager, SystemsManager)
-!define SystemsManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManager, SystemsManager)
+AWSEntityColoring(CloudFormationTemplate)
+!define CloudFormationTemplate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
+!define CloudFormationTemplate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
+!define CloudFormationTemplateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
+!define CloudFormationTemplateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudTrail [64x64/16z] {
+xTC5biCm30JGaIsS-zztorm7zd6VVnW40VFdJDCqLPYgHVqpMWKNMjml1AAU6IgGs1_-A5i6EFT9WRya2-xIOQ_TI34ZjtVV-4BH6u2Mt4JV-oq1cZOWkOL8
+VMHqaex63UhpjheKRfiQI7H-Pp2kSXd6Ez1yfVaEz1XTz0wqueA-yfMoBoPmjDhmSmsb5rUKI8qkNLntrdwlJmrdbJWQLZ7uA7Cxgsn7VIL-rTx-Go-oL8Ec
+Dv-3gGPzNKG1Ii6DlT-c_AhoWimivbszXKiDmekF14UiV1Sca1pzUdPjEWD7GiCNmy-I6jIpolE6eHyy-HkcQPeE
+}
+
+AWSEntityColoring(CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudTrail, CloudTrail)
+
+sprite $CloudWatch [64x64/16z] {
+xPP5ikH034HJ37F_-quqKvM_OUktQbAAKXtkNqvEJYepgtUInhZ0jaUYz1AggXSHsnxE8Azx7O3Krl3ta6JmDW61JDwl8i3rNOzthru68xwN0N86IDSe97ZG
+4S12gmPXy84cvNMhicPwsJzutblB5UtFY_I_pLIq49-WgB-CIxKa3l9burekwOS2KckC-w9SXTNhwMUPhau6qOOxMYyxhXvTCKYZAer0-PZYPBgor58fg6OM
+kH23xIhqEW3Bj_uCCNQ73nPUxGG0-JejWwzqby8x0GktMuMo49-GaPdbxTT4DUX_Ely2Tn5z7LVHnA8ANHElqAcz_Ui3kiJ4Hpyslv00h3xxpmxmgnvg1sNF
+20BuWLJRPIKUhmrfbouUc18UK7NXVTIrwX-mddH_L5kCcS0S1VcpDodTB600gRiohdFVBf22AyBWNG9TuHxP9HE1jRm4-f2088u8_5D47n0GKFK10L3qVbuF
+4YSd9_y1
+}
+
+AWSEntityColoring(CloudWatch)
+!define CloudWatch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatch, CloudWatch)
+!define CloudWatch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatch, CloudWatch)
+!define CloudWatchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatch, CloudWatch)
+!define CloudWatchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatch, CloudWatch)
+
+sprite $CloudWatchAlarm [64x64/16z] {
+xTP50kKW48HXsg2hxd_ViP01bisuV9idoO-jQ3-TYDp7FW0Wusu8IsAAYzn9OaJq936kyYxFrwmF822iJPAar_eE-ZcQ5AVFOpV51HZfvtZebTv1RRj45ljp
+lwFSwtM_zhy0etZ-unmFtYe6QMr9GagzWj1jDFHM4oHyZZN8R5MTP8QP3v0fhSm1WWJ88Us2H98aXhLRQgPosShnlImnxCaq4bRD1IIHEH8a4NVz5oJfzHxT
+-yWSFGouwVty_fA-ytBl81PAkIVp1QBUOpM1R-lzD-cZRwBSAuYl2AtsHY8da7RHMvlihjSswL_T_-__z_zxqwdpxKEdU7jsdUpe0rpU_Z3x3MBrnWqmRtlB
+lFW1vv2BxcJ-jNisVVxrdVWtU7PrxtlqyWtQD_i8
+}
+
+AWSEntityColoring(CloudWatchAlarm)
+!define CloudWatchAlarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
+!define CloudWatchAlarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
+!define CloudWatchAlarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
+!define CloudWatchAlarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
+
+sprite $CloudWatchEventEventBased [64x64/16z] {
+xT85ZWGn34JHDcMwwlxtNOvYhz33zCKblSPiLqngJMqxQj7Y0X8vzYxWuC5J0Uuz3od30QVvyKh-xT-UePO2MrxvFuojKu2rWsojn4gwNJlpLNYR2rA4zpsJ
+P_GzGlvImDi-6IbUHixRta6iA6rFxZCGVOzb0gTvlnCV8nLjh-MmGRlUIAnVGZl2svpiEAzpqgVsR__sRs_wr-3qCQUOdcDELdo0gUbJqwSGonjJmFUaA9j-
+Rq2zv4fpCgVKpoHrEbD-GjyU9tGEBoUqdTmd
+}
+
+AWSEntityColoring(CloudWatchEventEventBased)
+!define CloudWatchEventEventBased(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBased(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+
 sprite $CloudWatchEventTimeBased [64x64/16z] {
 xT09jgGW38NX92J0lVjVS6CTEMBrPBJdVd_DfH-J_F9KzRxrXb6lTei7PcoMrjf0eaNKJX8bouU2oojh-G46QRfPszuTX6Lu8RkC570PETaolXEsUccaNUT6
 LZbv8-frxw2TlNJqwxu2klZvLyQBM2d5ENraVDjy1ycydukTFfOXh-QaYvLNAg-0TjqhsDv7XClrAkXl0q8JNa4KEMf4I2Rdic3hP9DSmM5SHTGgoAwIp04I
@@ -182,144 +128,20 @@ AWSEntityColoring(CloudWatchEventTimeBased)
 !define CloudWatchEventTimeBasedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchEventTimeBased, CloudWatchEventTimeBased)
 !define CloudWatchEventTimeBasedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchEventTimeBased, CloudWatchEventTimeBased)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $TrustedAdvisorCheckPerformance [64x64/16z] {
-rTO7ZiCw38HXaghpt_--hpX6R6EXjPJjarw-5644sZuUdycODyqaZRW3jngLeHSjtwIWFFRATXFNh4yVyrdDF-13A5xttY7RIxw4cJMezfAlKbY1_bY5QsB2
-WpB8zsSkgVVUAW39jlIhBnFUAaT7_PgvzIzg7-kVVxI_ly4N_v2lwlu1dq4VyCVsM_NUifaTss_LTobPXKU58btYzpw3AlHz_t3ErFx900fxrLlc-FEHufJa
-CzvohpQAe_AH_bgfyH5_PDtxEtdZlSNAT6vFVxmxfgSpu5TVeCrFvuQUVlih2UHpgnFPBUlfenSp5qf7VuRDyTg5-jbtKQn1EVexRcuW03_v9EZGRCPRxm3f
-v2s9uy_7tSxD0ihPMqXAi-tg8BMBjsZP9ds6KcegXrzgj-lnJ_EYTt-sBDkwp_jT5zsMlJU07cODqiNJwo3vwRD00cg6PbwhR_xz7LPtxmreuPKjOKbAkxVQ
-XoaFdyL-09mwg9a5nCFVPFDLj7YkOlTLRtrlQDYMPRybGNhDUwc--stbLtsIqkwt-wi-uF0GVyrRXDcRwta_oC2lpOz1fkVN8DFpSyi7vlT7yoy
+sprite $CloudWatchRule [64x64/16z] {
+nTPN5fum34HXoSQsvkv_loca2P-48qZxtk_yXMh_tJ6kcZsZNNlOitau84rF9gXRdKl3iW54aQS-3QW4I7roh990gNzkw7dlqp-N_MNleN2RKZzxdlQs8ERN
+K-GGBVNbWJD_svk0Rg_x0H1-wQTdTcU20i9_z82oUN-ogzcIZkzzGnTmDz2YcTaQwVkFgpW72hxsEmzOes9nzdtJ0bJ1sJUk53rKvMU_YUPLTlQp9ml2hQwX
+mx8bj8fIVnsemVV-jA94AFNF3RtjZ_vR_K3jD_e5wgzx3r2pL_rOrWJXzge_H0YMsxKV3xuwZFtueSZ6tO3EBxlt6TmDh6wfnyryNQM1L_Ul9fYzOdBslkcY
+wEnTczdrf6-04ZHRhxApNoCHJ7j-_whV_pDFVHvG3ItrQQ1Oa_lCIuQslYozVxpff-Plz1uWVzstW6Zsgf_T-eyRq7ZQBsa2u-tpOm3eiAqdLdQpTe2wxJqe
+usPWHBEjzxY2RM2pzxik6EtAVsgcVXieodqUg2BrIJisurVil_i8
 }
 
-AWSEntityColoring(TrustedAdvisorCheckPerformance)
-!define TrustedAdvisorCheckPerformance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
-!define TrustedAdvisorCheckPerformance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
-!define TrustedAdvisorCheckPerformanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
-!define TrustedAdvisorCheckPerformanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
+AWSEntityColoring(CloudWatchRule)
+!define CloudWatchRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchRule, CloudWatchRule)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManagerStateManager [64x64/16z] {
-xPU7RZGX30R1cFBD-p_mlmXbVqA8zaXHpLoplCpH9Jdy5F68HRRIT4GhDka57KEvzIgeEVlBv5n1zQrtqImSOWsL4K6BuPZOmCRePI_jpnAQnWpwpoDMfUQX
-avhKqkYu_vcK-oAqJqczBn3ANGS9hcIMufiV0MsX3wz2BG8BGL0AQFAzVzFA5b5wczfxbWU3VAbWmMU_VszfwdxVAqCv9F3GlzFgvxYbTRMXPBLB4PfPGt7n
-qHwe8RW0rCPf0rJ2ud_6E6QvHos-NHPwRlP3yayPfyKzzTyHMbZyKtxP__DzuT1teGdaPtxclKy-xLyMRqpoOp-6c_W3VYmBySp_kAA7FhG9EFNNpC_vVtvS
-EFHD2tRckq0t83_siz_aG__rrkO-iAqVpUBYcyr-amPjvsU1yZlV99jzw3Ri_Aw3ykmtQBEl6Y-gDduKFK3n_pC7yDaluQBi_0JU3Un-5eM4ujp_YL_07Sgs
-_-Vn6oWbWKtzfukgbzQlmg3UFWnUshygwAXkCy_dnv9T9Dja7ixlwVbdlJzh1dUjcTlFk_lxdCbZH59DMZ1xpgGgtVN3X_8iFcNk-i767JccWNspVlfc_VRD
--l7RzUltw-Vlymy
-}
-
-AWSEntityColoring(SystemsManagerStateManager)
-!define SystemsManagerStateManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
-!define SystemsManagerStateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
-!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
-!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorks [64x64/16z] {
-xPG7bjqW34NV4qX8_FtlDvPocBHVpAGdlkw6AphpJ-NYOjZ1UBSUAE9TRXzpW6R4yT9ZLnT0W3PdgnU9JRqaEwom2YMnfxSvLiVbMziAC83nuCyv598FrzRK
-yqsW6_fDAxkXi0gejzFwK29ADtUh007gEAa7WLQFCWOODOoCapvedbwRHSiuRiHfNsxLUbsTQTadik5xPFbz5ZtB3z_maMeWXVNi6mj96nWr2NnEhw4FectC
-W0whEqXKC-ouRs2GV8n6jXf4WMteZfKzOWM4R_Y4Jbz2lYdeSoj0FyvIl8EzzBq0IVyuS2Xz2nSDFRHiIgZuhzv_2-q7EdyZhNsVJ_vYFuPz3ccVC-ALRtYA
-lVRxu_Bx6TyUjzzU-Oq0kCPia00vxYJU9mWHUTle5HGXz4xY8r-EkwmiXZ7dW7sH-3FzosVDkRVnwsOTUYVnaO-4QxfzEUU9fFn7k2M-mbaHTnB_22ukFW
-}
-
-AWSEntityColoring(OpsWorks)
-!define OpsWorks(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorks, OpsWorks)
-!define OpsWorks(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorks, OpsWorks)
-!define OpsWorksParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorks, OpsWorks)
-!define OpsWorksParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorks, OpsWorks)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ManagementandGovernance [64x64/16z] {
-xTPLOiKm34JHaHDB6dV_-ssOFooNuJo66oPybN-olWewZSf0sdjzAK4yz-LNzlyzLsszOsN1dZwWGcsaoFCNjRq9PdF1vQDOPI_91fwNlY2x3JfXLS_b6qC_
-spx7UayhZ_TddzHpub1UrFKKF1FMzSZsf4TjR-M91dldctf2stkQANexOAXtN7ceBxVr7v__PEiNR5h-fy_1dhupP7T_y_BxrF4VKQnv-RKl_pkhxdlD0yqd
-sjNsIIQ0dAMgVi31jF_nfFoCu-zAaZr9mk3vSnKyVnO--vNNJ_zzPfIV-WRlroDrBP9W9Ktm6xm2
-}
-
-AWSEntityColoring(ManagementandGovernance)
-!define ManagementandGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementandGovernance, ManagementandGovernance)
-!define ManagementandGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementandGovernance, ManagementandGovernance)
-!define ManagementandGovernanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagementandGovernance, ManagementandGovernance)
-!define ManagementandGovernanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementandGovernance, ManagementandGovernance)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManagerPatchManager [64x64/16z] {
-jTTbaiCm38PXWz3tl--IYbBhxbTu_sQUS9Hn-snpliRTvqjyBPylyTCEXl0JdFcu0_RLSTxQSGVaZddwuwSTmBxH7p_ie7WWNcxXMQNjabBim4TuTTlnxhbr
-sD32ozutjPIsg7YWTtjrQJMnNB_ZxQOtpmt8i-JwngFjVSzXdZqt8I_5K_NiwvuVb1lL3vgjUAoTdpPUyTFTE-Rhh7kSdZnDZ4TzzF2qVA8y2XypCN70nmuI
-1_nf1pYF-N7QmScBQmCg9m3Djd83K5yVG7YSnmueV1yTuz6aqxkjA8-GRxkx5uxuDgpmTywMIQFb1kNwFT-NS_6R6LjyRCDcVFN8FwPwgBqVaYF8a-S4yjDo
-VDjhyM1lzzroyb_Vsq_3S_R8Q_ZnzmvtoV7UYt9uyvZAUE4lVWjCJ_Zp3dWjWdrPlo1-EPVr4nBBgEktzwyVyVKhtiGutZS
-}
-
-AWSEntityColoring(SystemsManagerPatchManager)
-!define SystemsManagerPatchManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
-!define SystemsManagerPatchManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
-!define SystemsManagerPatchManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
-!define SystemsManagerPatchManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Organizations [64x64/16z] {
-xPG7biCW34Hdg59o__Dk4PWNd2fd-_gdZXxV3T3XvxApK-ipjaGWobPRCn02a7MJNWYMyUD50f3in9g082xPd2YdZo6fGnU2TPe6WkAODQpkkH2e7Zy0eOxu
-ddn-LflwiGWqE_rsrgIQsfNu_JRro-pxVPl6CN5-to3jvz_vGMPVWiVNiM78iPtKkVcHjVcQ0POjpQU--zLQqCRcHsvlWNPckuhD5B8SlfEKdlD9vxJ932ap
-Ubidxa2zvGiO9u0v4tBBLyJRzn-Xd-QhgY2gwac1d7E4ZC8A8HgCbZMmvz24E0R89R-0mUZFM82UOUELFHFbij_BOV5JosdnmnXuqT_zuygtV5pvnwj-BFaT
-BdwmNCBYCrkEb_sA1LeM3CGA7BbUyhMMZhJ2o7suZAo77y7EpYi
-}
-
-AWSEntityColoring(Organizations)
-!define Organizations(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, Organizations, Organizations)
-!define Organizations(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, Organizations, Organizations)
-!define OrganizationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Organizations, Organizations)
-!define OrganizationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Organizations, Organizations)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudFormationTemplate [64x64/16z] {
-xTTLOWH120JGHK93tV--woup0yIJzr_jkdedb7INzaZocn8aW4mQ2BdECs2QO03VvNcLmByr_-OdLifxu3X1e58UOJkEgENZq6wDtv0NVpGIUOqdQ3hlkZFs
-uy_snCpydUQ_rd-Bar5R_tJoz_PlGcVy-lFNNp_pw_Ttd1_qH28lySW_yFouFxzPdoZU7_txw-Ftpt-Uv8HA-O4JBvuV9zNzDsIBxLUS7oIFEBN_yI3cnk-m
-3wjvXEy43ktdUxFjH-mLnq_iH3zs__pdk_-txl-n_t_j_v_xDW
-}
-
-AWSEntityColoring(CloudFormationTemplate)
-!define CloudFormationTemplate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
-!define CloudFormationTemplate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
-!define CloudFormationTemplateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
-!define CloudFormationTemplateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationTemplate, CloudFormationTemplate)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManagerInventory [64x64/16z] {
-lPQ9ikmW24G5CGZ__y7FfBrvsop0NResXkGKD45hslUAw5Euc4cTxjENPg_Hh0isStVbWl735Zs8XhdRGMdZg7lt8MdZip_v6JCkJzg96lyd6nt3hXJeAc0y
-zZ1UOZUNCHuRGtp4kyU4joUlHeq_RpLWF3269yR3Oo2ugLqEj7ZpevLqk5qy1gSp8ONnF_bfRa6vpGUycmPb_eYt8spSdl44jJlAyMGGDq4mixoxkNjlmznM
-bETLZfCNyo4pMHynWpUybwr_yDXyPotmInUF8Ck3icj-IzdwZQ6LPIZ5Vtx_1AB60jqfZlctIyl_lNyJqSZjd_Z7_ar44kDjKD_VdqbHNudD9Br_XFUGZ_8-
-LNV_k2TmhuJxXzcFyuVwPnIStuIu2GAzxrNvYVq9gDu_JuYAy-juPbJyVlrCJV2L_Lay8r_RtpDF0tpb_2pUuRzsVZi2f-BzGG9zs_ue1wKFUK_eOVqu_gW-
-f_GFNz7Dkqf9wfjtAyat_mdXdr9TxTFw1G
-}
-
-AWSEntityColoring(SystemsManagerInventory)
-!define SystemsManagerInventory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
-!define SystemsManagerInventory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
-!define SystemsManagerInventoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
-!define SystemsManagerInventoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksMonitoring [64x64/16z] {
-xP9NOWD124EPObXq__kck6eBBZWze-zzMFDakJyZ8_KvNDsAvBC3CEKFTBp7Qn9l3ZG5lENKET15iWVA1EoE4hm_pXkWHms-l_HO532Hom6D95aFbgFXMdYW
-kiFgrd9U5YvjYv_s2--MfLQhbuaBiIHJ05QNopMH-02_yg27AvHDtyNs7tEQ7rvPkCB-bpHOj0GrkO85ggIxbuMx8y8Lb6h6FF_1k08D7_7iRX-kC2sM2_dc
-z25LW3UvWoTtYmfTxk7P7QSrkOEdZO94FBbByUGkpLSdoGcUt6Lu9NS9lZYvI_7Uq_pW1pzuhQdeaKSwxxpu4v6tr9vEbM_DoCWh
-}
-
-AWSEntityColoring(OpsWorksMonitoring)
-!define OpsWorksMonitoring(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
-!define OpsWorksMonitoring(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
-!define OpsWorksMonitoringParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
-!define OpsWorksMonitoringParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Config [64x64/16z] {
 xTP5ekGm34NH9yaMPV_xRKCn9Qv9qx-Zq0bJ_X7zz5EOxcVllU58_jOhYkubi0zUj_pSLZ_xJAUMP2-u3NBS3Uvw0p5e80SOc7uC-Y5Vay--R7BsqWRNVVBL
 5yItNWKa1D5zxyFdlMVCUDU7eWIHnuFtQD6-PypAWxSUzZsXY1I1VBd_nDkMMpnuAw3AABRl8Is6V7dz6BFwvFFe_JFE__FzD_pAzNU564FZx1VlNyPCXY-f
@@ -335,8 +157,215 @@ AWSEntityColoring(Config)
 !define ConfigParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Config, Config)
 !define ConfigParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Config, Config)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ControlTower [64x64/16z] {
+xPO7kkGW38CbY47o_U-xnQ-NoPUGxJl_z287SCr_bpjtUhyc1_ebUMiN36oWJMovY8W8KBcA2L1pLTrbqh6u0JTiAQM8aGjCz2mKpXNazVYntiIF-tPsxyfq
+1u3kSiHsIbwgYKOsp2m3EgFlzJf4QjJRSr5WvmDalk1ZsXTlAu3GIpXlH-IruI9GH1P73Z6KTNIU9KUGWJ8momkqOZVVgQtNcv42bMIAK8wA0zj4tvE3gZTD
+6OWwltgZLZeJjmoKofNk7I3vuQbNGN1PkgRVMx-Nrry6h7dx_29KyZt_4IDl-2zG_jjdWluOFqKxb4DpteZVjF8WpW_veppEv7YVlu4ueGT6lgaV0SxJjVUb
+VcLGUORfT_tNUHezzV_XjUuxiuYr5Zw0aLAErGuyCKnQJRc6HO3Eg_F3rVdbulpq--QtYfz_bpjtlW8
+}
+
+AWSEntityColoring(ControlTower)
+!define ControlTower(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTower(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ControlTower, ControlTower)
+
+sprite $LicenseManager [64x64/16z] {
+xT85WXin44JHgWOrxFtl6tcPBIcSxBU7vmttdzHNNrM-MwrwnVlPeYVqdMJv0EHxbve0RDbdt5NzK405jkeLTurdtafWYtxuNVdCKmdOyVqJbxZcArzN6NDO
+zOftqYukUjTtydKV_aun_I-w_entodNlyax-www_7ikinzRzGwM0FYtk-Sh9HQ1pvi3x_VTEp7pR1o0qdna5Y5tl63s86USC_C0Fm28C60TUuM3EcPi47Bhd
+Io6ASJ7U0oRGsl43caHrjS8BaegnumqnPtfG87MP2zYE3p04DN3X1GaYTdmRQF2ReTNjCC8sd__KnEZP01rsyFu347S1ykpxwL3CDFh09q3eY1WA0hdhEuG4
+gm1IedVzhCemiwhk4ozIJdg9R7b4tbPatQlAsm9B_hxd7lSj-67tJTSfaZsztJTw8p88CCW-YW3S0Ppxw8vZhyoU9VNCLprD_yY--keR
+}
+
+AWSEntityColoring(LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, LicenseManager, LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, LicenseManager, LicenseManager)
+!define LicenseManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, LicenseManager, LicenseManager)
+!define LicenseManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, LicenseManager, LicenseManager)
+
+sprite $ManagedServices [64x64/16z] {
+xPNNecex24K7a12O_l_ttcAMUkk9sxTJnejrqc7fH-KNl-ZwW_vGcs7SiSZM5wa1UCm_20UYz0LwW6U_Gd4OhNTPXgz_VENOqdiaJFsB2VcctDR_H3LrPc7r
+U3j7-CjM6Kid-lMd1S2ubUVpYzA1k8BiKc6L-78OZnh4CNf_XZ4njG7k-7Rifm3yYZu0R4gzXbVxvRWEyiAl7dXQjDIzetgp-OFSPbXgASFCS-TzfYMdUdVA
+ImemWsWv8_8azsWyl1zT77SZvOGMu4Sz3bnwKs5zVL_ADEkpWIqlCq9vJS9-SmkslhuTGUyvyzHaFPeojCOrbuEX_wMpjo0aJPvZEnH0tUKmTA3nMizPKB1a
+Ldt9EHime1JS9sZWZx4kt4cZJsDaJgWT8WmhhQilLKvNwOoJwcbWuoffNQdf7Sh8_G1eQNW5yrdBTmXSFUxjI0S8gUQI3e-JdlauTX60TyEOMCzTrBKE2soz
+tpZuDAgDrYevuU2dA_nQrM7hjlkzTa6gXyF1G3lpjS-9-SZM36EeMzK9VQxyW-xh6Z8q3L-tE7LWmVnNLM9fOWwLp7Fle_vPb6wpKZBwV0lRORPU98p6zsOw
+b0waGMJjvAjLk9oiODxk3JsnnyNy3umXERK0N1c4tg3N30CmJoseMusOMa3gJVhExiaQsRebPBQ-J0BW7KnzH1BJC3xLgwG5aQtFgTQFn2z-yJi
+}
+
+AWSEntityColoring(ManagedServices)
+!define ManagedServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagedServices, ManagedServices)
+!define ManagedServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagedServices, ManagedServices)
+!define ManagedServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagedServices, ManagedServices)
+!define ManagedServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagedServices, ManagedServices)
+
+sprite $ManagementConsole [64x64/16z] {
+xPO5TjX030M_MDhS_xm1RJXnd-nocp73BDFw9_ZYYx8nzPdl6EEV-ven8FN8zrNriFTnZ1_xnCkG1RdegosNBF5h_iqQS7FeiunW-C-fFwiHTbn-8_nN-MLw
+ZzLLFz7a5JyuZ22P0hBWEEa77f1xBQHlO-vlNKbpDNb_2yJORzrNhMTgEH1pNy7h7GoT-_MXq1EekU-GRIdpOoa8VEfNC5eAl1HzWgDclWFKuH2ioa3j4U1J
+NpfwWxswfCpzVQF85XzBti_xqQLmtYThSRS2ti4OJVsWnyeMi3j37fi4nRpzUJk2UwJ3yZFjBy6rRzopRugHSpy-jjzVstyOKb7haOeIS8tz3e10jjkF4QZr
+kRy306mj0rxqiR_AgnIaIj0ghqlZFvgwFFzayulch-FrKxtaw9lhfoDYlJIini-j7rzA8AofzK_mnHTt
+}
+
+AWSEntityColoring(ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementConsole, ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementConsole, ManagementConsole)
+!define ManagementConsoleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagementConsole, ManagementConsole)
+!define ManagementConsoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementConsole, ManagementConsole)
+
+sprite $ManagementandGovernance [64x64/16z] {
+xTPLOiKm34JHaHDB6dV_-ssOFooNuJo66oPybN-olWewZSf0sdjzAK4yz-LNzlyzLsszOsN1dZwWGcsaoFCNjRq9PdF1vQDOPI_91fwNlY2x3JfXLS_b6qC_
+spx7UayhZ_TddzHpub1UrFKKF1FMzSZsf4TjR-M91dldctf2stkQANexOAXtN7ceBxVr7v__PEiNR5h-fy_1dhupP7T_y_BxrF4VKQnv-RKl_pkhxdlD0yqd
+sjNsIIQ0dAMgVi31jF_nfFoCu-zAaZr9mk3vSnKyVnO--vNNJ_zzPfIV-WRlroDrBP9W9Ktm6xm2
+}
+
+AWSEntityColoring(ManagementandGovernance)
+!define ManagementandGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementandGovernance, ManagementandGovernance)
+!define ManagementandGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementandGovernance, ManagementandGovernance)
+!define ManagementandGovernanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagementandGovernance, ManagementandGovernance)
+!define ManagementandGovernanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementandGovernance, ManagementandGovernance)
+
+sprite $OpsWorks [64x64/16z] {
+xPG7bjqW34NV4qX8_FtlDvPocBHVpAGdlkw6AphpJ-NYOjZ1UBSUAE9TRXzpW6R4yT9ZLnT0W3PdgnU9JRqaEwom2YMnfxSvLiVbMziAC83nuCyv598FrzRK
+yqsW6_fDAxkXi0gejzFwK29ADtUh007gEAa7WLQFCWOODOoCapvedbwRHSiuRiHfNsxLUbsTQTadik5xPFbz5ZtB3z_maMeWXVNi6mj96nWr2NnEhw4FectC
+W0whEqXKC-ouRs2GV8n6jXf4WMteZfKzOWM4R_Y4Jbz2lYdeSoj0FyvIl8EzzBq0IVyuS2Xz2nSDFRHiIgZuhzv_2-q7EdyZhNsVJ_vYFuPz3ccVC-ALRtYA
+lVRxu_Bx6TyUjzzU-Oq0kCPia00vxYJU9mWHUTle5HGXz4xY8r-EkwmiXZ7dW7sH-3FzosVDkRVnwsOTUYVnaO-4QxfzEUU9fFn7k2M-mbaHTnB_22ukFW
+}
+
+AWSEntityColoring(OpsWorks)
+!define OpsWorks(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorks(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorksParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorksParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorks, OpsWorks)
+
+sprite $OpsWorksApps [64x64/16z] {
+xTV50GGm24JHED9_lx4IXlMTVt-t2AHu6UvoCJZPFBixfZVCsvjBWnAtwwqbg6PVx-dftJhckztx9r8nNqMsVtj3uSPZtYyLAFs-zukUdfwUdfwUFho_HUUl
+uFuQtP_ZBG
+}
+
+AWSEntityColoring(OpsWorksApps)
+!define OpsWorksApps(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksApps, OpsWorksApps)
+!define OpsWorksApps(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksApps, OpsWorksApps)
+!define OpsWorksAppsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksApps, OpsWorksApps)
+!define OpsWorksAppsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksApps, OpsWorksApps)
+
+sprite $OpsWorksDeployments [64x64/16z] {
+xTS5paCn30FWlK8Q-_xt_M6j5CrZfaOm_EoCzrOlFKifopK-0_aQdyZqZdxwwQUVFfFv2bv0ebogK-DwMhgY_D8LbaQoBN7cad8vVswvNBoWVCyrnylrEKyd
+hv2ZQdkfV9GdHFds2aZ7l85rtssLi6E-mVVVw6YVvwUVVlfcuel7zwyNyQOv1jg6BuH7BSk6DyAslpLj-CxPJLm8R_5DgW731u-0xeLBmF32nnN32vS0WmVN
+08S9ru3QuC4rmD6gSFdjw3Eu18n1ElJRfLm3j5q3X6k0ykq01DyEE7uucYmVIBUqkl7y0W
+}
+
+AWSEntityColoring(OpsWorksDeployments)
+!define OpsWorksDeployments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
+!define OpsWorksDeployments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
+!define OpsWorksDeploymentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
+!define OpsWorksDeploymentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
+
+sprite $OpsWorksInstances [64x64/16z] {
+xPS5hiGm44F3YNt_-owaggnEFy_dpHDRULteW1Byn2CsjAaDEuwqUvXXoFUqcR3V7qaIWXptanK4157lwJ176My-s8iOc7u1gy9AbEbZ5D69wQC4qNOVKM74
+xhSW2d3s-yj-D_xob--jFuukmCqdUnVavXDT32AU-mylzH_E_HVQE39Ffc58ywacR24iSZcIPbeCCqmcpBCsXDvViU-ldDyVzle1plEN9jNy5Tnyr2XK_qbX
+Klr7KV6JytVvQtvwwzVVFzx-zSwFXMz_EVUdSt__wVcv_3L_tVStx_tHUN_rtf_zN04
+}
+
+AWSEntityColoring(OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)
+
+sprite $OpsWorksLayers [64x64/16z] xTQt0O105CDGCjZxxqiQmIvFwb_vmzGtn_tyLDpvyjcsebuulru-jwZJ-hssAMfJuV5uFBxSN-t-BFTtUp-wY4RyV_X_y7Wy_m__pmC
+
+AWSEntityColoring(OpsWorksLayers)
+!define OpsWorksLayers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)
+
+sprite $OpsWorksMonitoring [64x64/16z] {
+xP9NOWD124EPObXq__kck6eBBZWze-zzMFDakJyZ8_KvNDsAvBC3CEKFTBp7Qn9l3ZG5lENKET15iWVA1EoE4hm_pXkWHms-l_HO532Hom6D95aFbgFXMdYW
+kiFgrd9U5YvjYv_s2--MfLQhbuaBiIHJ05QNopMH-02_yg27AvHDtyNs7tEQ7rvPkCB-bpHOj0GrkO85ggIxbuMx8y8Lb6h6FF_1k08D7_7iRX-kC2sM2_dc
+z25LW3UvWoTtYmfTxk7P7QSrkOEdZO94FBbByUGkpLSdoGcUt6Lu9NS9lZYvI_7Uq_pW1pzuhQdeaKSwxxpu4v6tr9vEbM_DoCWh
+}
+
+AWSEntityColoring(OpsWorksMonitoring)
+!define OpsWorksMonitoring(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
+!define OpsWorksMonitoring(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
+!define OpsWorksMonitoringParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
+!define OpsWorksMonitoringParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksMonitoring, OpsWorksMonitoring)
+
+sprite $OpsWorksPermissions [64x64/16z] {
+xPK7UeKW40PTTYd_tF--AQGd-3t4z6HUKLU6NhPlZ7da76vhjbSXIQZwSJjL11r1ImVr4AX6CajH1Of3UWRAOvbMW7oazDS5XY2cTHFobo4Nibc_3WeBg9Dw
+6YQjaERyh55AHtdERsfpuJ4cbL6yI3RNVCNEb4f_mNVmLV_V__VJic-TWB01MRXrTdHN1q03dkA-ks_r16DTJs_pxfbJyaKAYbtVjejOzzS7A7sYdqfh9Itx
+MPsyw0VG6X1hVaFUJzwsv2V8lHMGLdm7VxekbL_wkGTfiVs4MR3G_eu34k1h_kO2K2pFFojGxCJyJ_JGel_lk-HdV8km4txdx_Zdpm-tY_YkdyKK--Vd9B6D
+YJn5rxyBrm
+}
+
+AWSEntityColoring(OpsWorksPermissions)
+!define OpsWorksPermissions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
+!define OpsWorksPermissions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
+!define OpsWorksPermissionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
+!define OpsWorksPermissionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
+
+sprite $OpsWorksResources [64x64/16z] {
+xPS7iiCW34HDHxx_VTEZ6V3xCyllZVI45xn2Ys3xs1RZM-XGzxs6L-F5zakpyZewzGlSskMffrS8luAMjotRzM_Ygl3RXT-aXvkCXJ3ucDErB0dl2RvIXTjn
+i6ocXE4craXigEOX4ONpb0Z2jGuyPq9ArY3-ee-IkmkNChCFOGZ-5JOUB8nXhzj2g-D4v5jO5wqvyIvV2y3CDywxb_AmpNpqx9Ai6G-yP3Bl0ZocFnk0U38P
+MvDvDXbRatdN22BYj0u3ZrPYqp2F_TcQmAF9m9eQxnYuLU6zRdWT4Vaf39DmdVSVo17CSxVu_Vb__fzFQtmQUNEJ4e_Mjaprctcktx3QCCzB6-zVcEUb5NzX
+daVXwiWyT-0YnJoNDYwI4m-bLTW_Eo_idq6byu9m3iED1-7o-UNAQ-SNph9w0IapvJ3SMa-VVdxqERSQlk3yhBSp
+}
+
+AWSEntityColoring(OpsWorksResources)
+!define OpsWorksResources(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksResources, OpsWorksResources)
+!define OpsWorksResources(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksResources, OpsWorksResources)
+!define OpsWorksResourcesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksResources, OpsWorksResources)
+!define OpsWorksResourcesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksResources, OpsWorksResources)
+
+sprite $OpsWorksStack2 [64x64/16z] xTSv0S0m5CFGtgtDdsyl0ac-Lsb_03JbpUL-VghS-VBPjagzS7wzV6wbJkltsgPIc_1uF1xV6HwFn-FnU7pyR-a_Xl-Q_dFU0m
+
+AWSEntityColoring(OpsWorksStack2)
+!define OpsWorksStack2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
+
+sprite $Organizations [64x64/16z] {
+xPG7biCW34Hdg59o__Dk4PWNd2fd-_gdZXxV3T3XvxApK-ipjaGWobPRCn02a7MJNWYMyUD50f3in9g082xPd2YdZo6fGnU2TPe6WkAODQpkkH2e7Zy0eOxu
+ddn-LflwiGWqE_rsrgIQsfNu_JRro-pxVPl6CN5-to3jvz_vGMPVWiVNiM78iPtKkVcHjVcQ0POjpQU--zLQqCRcHsvlWNPckuhD5B8SlfEKdlD9vxJ932ap
+Ubidxa2zvGiO9u0v4tBBLyJRzn-Xd-QhgY2gwac1d7E4ZC8A8HgCbZMmvz24E0R89R-0mUZFM82UOUELFHFbij_BOV5JosdnmnXuqT_zuygtV5pvnwj-BFaT
+BdwmNCBYCrkEb_sA1LeM3CGA7BbUyhMMZhJ2o7suZAo77y7EpYi
+}
+
+AWSEntityColoring(Organizations)
+!define Organizations(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, Organizations, Organizations)
+!define Organizations(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Organizations, Organizations)
+
+sprite $OrganizationsAccount [64x64/16z] {
+tPO5ZYH130IBond__-zXxLhDxTE9niiGOsSQrEaZe_PfDaVD_qGtGty2zJYT9u3DQG9PYU86wd-et0nKm_XqsGCKgc28aP971mlWvV3l0ree_KvlLgI0atyU
+eWJAFtIyejS2Abw-2r0FyEM47_ylVrn_2UXFOgPTz83_tgn0_mFp5v__1XRTlv5TV7J_KXMev-_zfuVITm6WTNy0pVS5T0dq1vH0cC05FKGnm5fEkKsJRFQI
+Kfs0wblbxUJtxrneruLsO3ol3lskj7AlNT3kh6c_Fr-_XZrBp6CDnadqPu5DmCKkPw5y1NeJxC-dUherxTQTkL9tUPVUxBWFjKPU9d2meK5x43xBfXRR_F-y
+KL-Fcfkj5_GBEw_mVkfvtunwkIb_2cO-spGDbq-vv76_TaTYU3Naw_mozylzD7d-8TtmbkgtN-vdtlBf9d_oiVbgVqexlkJJMFmtv-EtuK7daR_uTSTSnpR_
+1S_YtRVbuvQl_IfM_Txd6digsFBrW_ZqdizdV7dDetRaktZ1-xWxxxyiRtW_NultO_esybYF51MA7z10h8mDgbSJYALO87SZ65s02m_74Zvod7GRNFYdn4y
+}
+
+AWSEntityColoring(OrganizationsAccount)
+!define OrganizationsAccount(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccount(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccountParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccountParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsAccount, OrganizationsAccount)
+
+sprite $OrganizationsOrganizationalUnitOU [64x64/16z] {
+xPS7UgCX34H_WOGqS_y3ho7wICF6RRjVugv7hyTZl93o078S1juDxEJp0ReFwfqGmuVSsNBuG_sNNypThTpf5oSwTBd7Lv14ZESoqxJMLAxnAyXsygJwJ42o
+HBht1PnXHlhuBa029DhMLz3c1oThVm6zY2Z8klE3E2O5FST2UdvaR7mPnYGGFOIPRGDawzk7ZuxuQ2bPRlK_XXWsVfRuGuWVHoLjqJXhl-536okXRvfsmKdR
+-OKCcStFyMCZ6Qs1k_xh61blKPf3oTW1Ex2ThnovMGkIgACOS0SG_IluHRy61o0uy7BwilJm7bP1-0NVkjhKaQyalqoQ8Esitq0soLqnbmBIliulMVYfenwV
+KNn9G0bR-vhp_JCrPzqa64jVaFeNAbD839ILtq0zLXXXdzEh2x-0Vgm9zfYIsChFMRv6X-5W0btuWRYmKhUDdp5BSXaeTR9elvAfBcc0RFQFRDKrIfQDhs1v
+q4US0zVvvzdxrIyZ_-ZvvULJx-HPzuUxWJryVtgC5py
+}
+
+AWSEntityColoring(OrganizationsOrganizationalUnitOU)
+!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
+!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
+!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
+!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
+
 sprite $PersonalHealthDashboard [64x64/16z] {
 xPK7pYCX38KVniRb_lVTEcE11k-6gFxbKmsIUGMF4f-ARxvn5P6XlfuD4PdEIhJZecjrLkCT81wgWmaWYryOpMVTeyO9jAXgX2vE2EJ_6kUO680PC6A2KL_G
 Spmlw3t7yu9ULVUycW1wcjHANfzNRiuA0uwsESCpROFlxVDplZMFYBueyZx0WCJAFMch2y7Opu_O8y3u_xn2OWzXYIPx_rOzh86MQZiiahhNsUyyucXLJ8u9
@@ -351,23 +380,35 @@ AWSEntityColoring(PersonalHealthDashboard)
 !define PersonalHealthDashboardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, PersonalHealthDashboard, PersonalHealthDashboard)
 !define PersonalHealthDashboardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, PersonalHealthDashboard, PersonalHealthDashboard)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ManagementConsole [64x64/16z] {
-xPO5TjX030M_MDhS_xm1RJXnd-nocp73BDFw9_ZYYx8nzPdl6EEV-ven8FN8zrNriFTnZ1_xnCkG1RdegosNBF5h_iqQS7FeiunW-C-fFwiHTbn-8_nN-MLw
-ZzLLFz7a5JyuZ22P0hBWEEa77f1xBQHlO-vlNKbpDNb_2yJORzrNhMTgEH1pNy7h7GoT-_MXq1EekU-GRIdpOoa8VEfNC5eAl1HzWgDclWFKuH2ioa3j4U1J
-NpfwWxswfCpzVQF85XzBti_xqQLmtYThSRS2ti4OJVsWnyeMi3j37fi4nRpzUJk2UwJ3yZFjBy6rRzopRugHSpy-jjzVstyOKb7haOeIS8tz3e10jjkF4QZr
-kRy306mj0rxqiR_AgnIaIj0ghqlZFvgwFFzayulch-FrKxtaw9lhfoDYlJIini-j7rzA8AofzK_mnHTt
+sprite $ServiceCatalog [64x64/16z] {
+xLM7plCm23mm6CZxF_0lw-J6gk9qQFphkouo3ZX6UloX-C4FCgBtYFg6Ms4246AV-YWNGDIyTpS58Fw9Xou0OyvS0Ebl1s_0SxWoeBsNGWfQNfnMIBv31_my
+YZXjU-sWwZZif6V3cej3ikg-R1fB4m3LjHOEt1Io0qs1EBr9dpz40Dg0QmS5vBX5Yce1grbwunqod2TmgI5uLmC52wMp2C9oeD5pNAVll4g-GW6lSa2Xv3E2
+Nmj8A7CinfSQqeVw4iOlQbDSjx51e-k8GJwbMz5cRjf3qJRDLu3ta__yJNytSsmmVwIcAryV8jtZsA6Xrc7ev4zxedB75wbbS07DmKy5bZ4kqGszLfcQmuU9
+sE2ciZ2yQylNERZQXn4Ap8te2kbx_df5APV2Lrlt_5M_KZgBGEai0ldG7Lz1liIGRe26I2Zj5g9p2JOmnEny21TTX8y52Kx1OqrkDaY7Z1fYoAVDycwtRv6c
+SZr_ejFN3jnzHQwHQS_zZBtyUR51V57UQRlmuZxz6RhyhBolTeq8UaEVbzEMpZVQbbnnXjzNmEb8ERXFji6EMvGyvhNpTxKxMFnR1ViCEv3txEU7HMMU0Nrr
+lKUSpq1d_-YgGTwXyv-w5mEQCProxkGRuCtYLP3HFqYb2U37-qW3AaWn22Zf4rGS9xyDEHyZCRgTWZo-Wq7SXLbywG0W_KjaZpp-MFpW1xy
 }
 
-AWSEntityColoring(ManagementConsole)
-!define ManagementConsole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementConsole, ManagementConsole)
-!define ManagementConsole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementConsole, ManagementConsole)
-!define ManagementConsoleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagementConsole, ManagementConsole)
-!define ManagementConsoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementConsole, ManagementConsole)
+AWSEntityColoring(ServiceCatalog)
+!define ServiceCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ServiceCatalog, ServiceCatalog)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManager [64x64/16z] {
+xTI54kiw30JGbGpIxll__tqJcfk26wS35qyP1F78rY_edt-OqIEfxqGnBAocxcC1hBJMbYoLkYaD7biKky6fMsYevrvWr1q5LMSLHJTq-4l2BaQafXYU_vYm
+PW0yT2tUT5i1r5Q0YGGDNSyIdfBwp4eMf5u4zpwwhZYeaK3zxtfsnl49wxmSN6g43g3nu-1-BC1i1kVKu9vnjRSuJ517uHKBsyCAsgWyzO9hXBi3b4Wf1qkK
+AEzATtP3IewQQSx1Y4WTxMtd1ZZFRnlwP7o5DQ3cSPQW5ZZx-_X0UmrFPUh0MDSYS-xw2RGt_qBNvFftd5SgOjiVXSEjMryo9jl1K5lBWlWmtksfVbK2PptX
+d-Q_9ZTIBOOKus282ChX9KS97B1D43YL8fVxeW7e6c1psoJXIUtrEqh6Wb8sT5tZLZrnjaRsE_6iYmAlgxmH3w_QiQTsuJONxzYtRFEak94AWD04ig8_NtyG
+bjISX2dT0VD3D3JDIbixxUU97rpyz7dQWPYDzvSTVUp9-GJvOzhPh0_AZnCil4cAWiKeVDn1-Dgomzge-XWxbz3MjqCyKbyeM55Vohu8_Mh--UT_
+}
+
+AWSEntityColoring(SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManager, SystemsManager)
+
 sprite $SystemsManagerAutomation [64x64/16z] {
 pPVdmkii38Fh0RPq__VxZOGSeEuw-zMVPZqADiOqjzyaZKNz-_aEuXBXty-JUOcqx-OR8EFGFkTL7_1EVhjiyWftyenKB2VaO1_77T2NE66tctQG6qzcaoCf
 XBx2INWG9B9TrwKdIQ0rSZEek3iFXUznQikJjVxCmCzfRY3ZqGEUPt1F39mZTotisPJcyS0qAFW7AWOL_tu31U7VMTphkV6xUSXTyjbACNkFYExtoPAe2J0G
@@ -385,24 +426,32 @@ AWSEntityColoring(SystemsManagerAutomation)
 !define SystemsManagerAutomationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerAutomation, SystemsManagerAutomation)
 !define SystemsManagerAutomationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerAutomation, SystemsManagerAutomation)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OrganizationsAccount [64x64/16z] {
-tPO5ZYH130IBond__-zXxLhDxTE9niiGOsSQrEaZe_PfDaVD_qGtGty2zJYT9u3DQG9PYU86wd-et0nKm_XqsGCKgc28aP971mlWvV3l0ree_KvlLgI0atyU
-eWJAFtIyejS2Abw-2r0FyEM47_ylVrn_2UXFOgPTz83_tgn0_mFp5v__1XRTlv5TV7J_KXMev-_zfuVITm6WTNy0pVS5T0dq1vH0cC05FKGnm5fEkKsJRFQI
-Kfs0wblbxUJtxrneruLsO3ol3lskj7AlNT3kh6c_Fr-_XZrBp6CDnadqPu5DmCKkPw5y1NeJxC-dUherxTQTkL9tUPVUxBWFjKPU9d2meK5x43xBfXRR_F-y
-KL-Fcfkj5_GBEw_mVkfvtunwkIb_2cO-spGDbq-vv76_TaTYU3Naw_mozylzD7d-8TtmbkgtN-vdtlBf9d_oiVbgVqexlkJJMFmtv-EtuK7daR_uTSTSnpR_
-1S_YtRVbuvQl_IfM_Txd6digsFBrW_ZqdizdV7dDetRaktZ1-xWxxxyiRtW_NultO_esybYF51MA7z10h8mDgbSJYALO87SZ65s02m_74Zvod7GRNFYdn4y
+sprite $SystemsManagerDocuments [64x64/16z] {
+xTBNOeKm38FXE34Xqlk_RtVF01LCVRhxN_E9bNAZJ1Vb3fq7_GmcFIONrR0V9T79Lvb5VQCA7lKJqjupppy1yjgZlhdAehuIgc51tqXY6SbXOU-sR9m68hwL
+PODo8Eunpt8WxeiUY7iz4FTw8ExrGDph0UrRFzLENWvexpZbJvx3dvgm6D2-ZLFjsVDqa8b--Fqxpf5ps9-oSq3KwyOFy5RVAkOTb65aVVRvF-Fx_VisH0Uy
+OnqjxbiN_TRl_-zXAK_24hu3p7XpztBCg_AUNYtb2N-_RypvKX-oX3yzHatwxXjDsF4WiHMtlM4tBvlPNkL6tGC
 }
 
-AWSEntityColoring(OrganizationsAccount)
-!define OrganizationsAccount(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsAccount, OrganizationsAccount)
-!define OrganizationsAccount(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsAccount, OrganizationsAccount)
-!define OrganizationsAccountParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsAccount, OrganizationsAccount)
-!define OrganizationsAccountParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsAccount, OrganizationsAccount)
+AWSEntityColoring(SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemsManagerInventory [64x64/16z] {
+lPQ9ikmW24G5CGZ__y7FfBrvsop0NResXkGKD45hslUAw5Euc4cTxjENPg_Hh0isStVbWl735Zs8XhdRGMdZg7lt8MdZip_v6JCkJzg96lyd6nt3hXJeAc0y
+zZ1UOZUNCHuRGtp4kyU4joUlHeq_RpLWF3269yR3Oo2ugLqEj7ZpevLqk5qy1gSp8ONnF_bfRa6vpGUycmPb_eYt8spSdl44jJlAyMGGDq4mixoxkNjlmznM
+bETLZfCNyo4pMHynWpUybwr_yDXyPotmInUF8Ck3icj-IzdwZQ6LPIZ5Vtx_1AB60jqfZlctIyl_lNyJqSZjd_Z7_ar44kDjKD_VdqbHNudD9Br_XFUGZ_8-
+LNV_k2TmhuJxXzcFyuVwPnIStuIu2GAzxrNvYVq9gDu_JuYAy-juPbJyVlrCJV2L_Lay8r_RtpDF0tpb_2pUuRzsVZi2f-BzGG9zs_ue1wKFUK_eOVqu_gW-
+f_GFNz7Dkqf9wfjtAyat_mdXdr9TxTFw1G
+}
+
+AWSEntityColoring(SystemsManagerInventory)
+!define SystemsManagerInventory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
+!define SystemsManagerInventory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
+!define SystemsManagerInventoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
+!define SystemsManagerInventoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerInventory, SystemsManagerInventory)
+
 sprite $SystemsManagerMaintWindows [64x64/16z] {
 jPS7hjmm34HbDNBc_WSEj113Eyponn0oAAwFwYpbl-cwgRoNu2Pvtpf8eqcyxm6eVKk9ybhgdHReFq9rzfplisOumFwv6Kh-XjRzk3uuWPhW9D5A4u2yjqy2
 Kai3ITG4ryMH96RpBsqkaB9_g5_nMGQNn60t8LmQPTuCHBoK2KhzgtqXrWzk8E9BlPKlQcjktK34WyBU3mQ-utK8Ff9HVp8We3uR7ah0j9VVfNmUgKvYt9y1
@@ -418,92 +467,6 @@ AWSEntityColoring(SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SystemsManagerRunCommand [64x64/16z] {
-xTO5Tkr030FGmTZI_lVxmOMWgpBVnwY1s2Vb4_hrgsebrvqIhARX8A4GLX8JjAaucGt0W29Di9LhdWpjaI4Lc2MbGpevYj9u4pBye9T9GYFxpJ8SZ68a9Duk
-VxU3La0i4kWFpKn2kdmZPfRH8GjGIqg7EBoaT4W5bdYqHDs5jBarOcOZHWZYZC0QSh7_yRiM8oJz16JyhiKXUXkpWNLc3iyFxK6soqvr_xjApAHevVBb6sHm
-iKSnmYoX0hODoTjAFdrHuGRewSVZUVqsRMMGevuuVHDot3_CDNVXDJiMtyHgYPd5iWF4bN4ilZPNFMOMqvY9-312hjdBYYzc9XbUrBlgotlNU67lQc_Okr8w
-9DgA88jFYEBxV2SEUlbqI0LzAaRCV6Y4GY9Tuxg0alSNdhT-5hz-_GK
-}
-
-AWSEntityColoring(SystemsManagerRunCommand)
-!define SystemsManagerRunCommand(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
-!define SystemsManagerRunCommand(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
-!define SystemsManagerRunCommandParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
-!define SystemsManagerRunCommandParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksPermissions [64x64/16z] {
-xPK7UeKW40PTTYd_tF--AQGd-3t4z6HUKLU6NhPlZ7da76vhjbSXIQZwSJjL11r1ImVr4AX6CajH1Of3UWRAOvbMW7oazDS5XY2cTHFobo4Nibc_3WeBg9Dw
-6YQjaERyh55AHtdERsfpuJ4cbL6yI3RNVCNEb4f_mNVmLV_V__VJic-TWB01MRXrTdHN1q03dkA-ks_r16DTJs_pxfbJyaKAYbtVjejOzzS7A7sYdqfh9Itx
-MPsyw0VG6X1hVaFUJzwsv2V8lHMGLdm7VxekbL_wkGTfiVs4MR3G_eu34k1h_kO2K2pFFojGxCJyJ_JGel_lk-HdV8km4txdx_Zdpm-tY_YkdyKK--Vd9B6D
-YJn5rxyBrm
-}
-
-AWSEntityColoring(OpsWorksPermissions)
-!define OpsWorksPermissions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
-!define OpsWorksPermissions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
-!define OpsWorksPermissionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
-!define OpsWorksPermissionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksPermissions, OpsWorksPermissions)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksDeployments [64x64/16z] {
-xTS5paCn30FWlK8Q-_xt_M6j5CrZfaOm_EoCzrOlFKifopK-0_aQdyZqZdxwwQUVFfFv2bv0ebogK-DwMhgY_D8LbaQoBN7cad8vVswvNBoWVCyrnylrEKyd
-hv2ZQdkfV9GdHFds2aZ7l85rtssLi6E-mVVVw6YVvwUVVlfcuel7zwyNyQOv1jg6BuH7BSk6DyAslpLj-CxPJLm8R_5DgW731u-0xeLBmF32nnN32vS0WmVN
-08S9ru3QuC4rmD6gSFdjw3Eu18n1ElJRfLm3j5q3X6k0ykq01DyEE7uucYmVIBUqkl7y0W
-}
-
-AWSEntityColoring(OpsWorksDeployments)
-!define OpsWorksDeployments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
-!define OpsWorksDeployments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
-!define OpsWorksDeploymentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
-!define OpsWorksDeploymentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksDeployments, OpsWorksDeployments)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OrganizationsOrganizationalUnitOU [64x64/16z] {
-xPS7UgCX34H_WOGqS_y3ho7wICF6RRjVugv7hyTZl93o078S1juDxEJp0ReFwfqGmuVSsNBuG_sNNypThTpf5oSwTBd7Lv14ZESoqxJMLAxnAyXsygJwJ42o
-HBht1PnXHlhuBa029DhMLz3c1oThVm6zY2Z8klE3E2O5FST2UdvaR7mPnYGGFOIPRGDawzk7ZuxuQ2bPRlK_XXWsVfRuGuWVHoLjqJXhl-536okXRvfsmKdR
--OKCcStFyMCZ6Qs1k_xh61blKPf3oTW1Ex2ThnovMGkIgACOS0SG_IluHRy61o0uy7BwilJm7bP1-0NVkjhKaQyalqoQ8Esitq0soLqnbmBIliulMVYfenwV
-KNn9G0bR-vhp_JCrPzqa64jVaFeNAbD839ILtq0zLXXXdzEh2x-0Vgm9zfYIsChFMRv6X-5W0btuWRYmKhUDdp5BSXaeTR9elvAfBcc0RFQFRDKrIfQDhs1v
-q4US0zVvvzdxrIyZ_-ZvvULJx-HPzuUxWJryVtgC5py
-}
-
-AWSEntityColoring(OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksLayers [64x64/16z] xTQt0O105CDGCjZxxqiQmIvFwb_vmzGtn_tyLDpvyjcsebuulru-jwZJ-hssAMfJuV5uFBxSN-t-BFTtUp-wY4RyV_X_y7Wy_m__pmC
-
-AWSEntityColoring(OpsWorksLayers)
-!define OpsWorksLayers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
-!define OpsWorksLayers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)
-!define OpsWorksLayersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
-!define OpsWorksLayersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudTrail [64x64/16z] {
-xTC5biCm30JGaIsS-zztorm7zd6VVnW40VFdJDCqLPYgHVqpMWKNMjml1AAU6IgGs1_-A5i6EFT9WRya2-xIOQ_TI34ZjtVV-4BH6u2Mt4JV-oq1cZOWkOL8
-VMHqaex63UhpjheKRfiQI7H-Pp2kSXd6Ez1yfVaEz1XTz0wqueA-yfMoBoPmjDhmSmsb5rUKI8qkNLntrdwlJmrdbJWQLZ7uA7Cxgsn7VIL-rTx-Go-oL8Ec
-Dv-3gGPzNKG1Ii6DlT-c_AhoWimivbszXKiDmekF14UiV1Sca1pzUdPjEWD7GiCNmy-I6jIpolE6eHyy-HkcQPeE
-}
-
-AWSEntityColoring(CloudTrail)
-!define CloudTrail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudTrail, CloudTrail)
-!define CloudTrail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudTrail, CloudTrail)
-!define CloudTrailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudTrail, CloudTrail)
-!define CloudTrailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudTrail, CloudTrail)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $SystemsManagerParameterStore [64x64/16z] {
 rTS5agqm44RXTFm_-z_lSoYiIU3Pp2aP_IfzSSAVoxpcU9DRdE1LE1hwc2Ve-Re6TSHDk5DQXpJm3Oe_cv3TyWmj-1LeTpoE5cYGWr-7FB5vlEfu0oVHRtOT
 9TzN1CMV7ZG8m9pnDLTtVB2vmbygrTecgkxs4ve9SppguuJhrSAuej_p-JFuc4yzyXBQXT83R-BeUUPLRLj-x4lO5l-SBo9EUSk_Ad7hOwqsvQEMokBNKcsr
@@ -518,122 +481,47 @@ AWSEntityColoring(SystemsManagerParameterStore)
 !define SystemsManagerParameterStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)
 !define SystemsManagerParameterStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ManagedServices [64x64/16z] {
-xPNNecex24K7a12O_l_ttcAMUkk9sxTJnejrqc7fH-KNl-ZwW_vGcs7SiSZM5wa1UCm_20UYz0LwW6U_Gd4OhNTPXgz_VENOqdiaJFsB2VcctDR_H3LrPc7r
-U3j7-CjM6Kid-lMd1S2ubUVpYzA1k8BiKc6L-78OZnh4CNf_XZ4njG7k-7Rifm3yYZu0R4gzXbVxvRWEyiAl7dXQjDIzetgp-OFSPbXgASFCS-TzfYMdUdVA
-ImemWsWv8_8azsWyl1zT77SZvOGMu4Sz3bnwKs5zVL_ADEkpWIqlCq9vJS9-SmkslhuTGUyvyzHaFPeojCOrbuEX_wMpjo0aJPvZEnH0tUKmTA3nMizPKB1a
-Ldt9EHime1JS9sZWZx4kt4cZJsDaJgWT8WmhhQilLKvNwOoJwcbWuoffNQdf7Sh8_G1eQNW5yrdBTmXSFUxjI0S8gUQI3e-JdlauTX60TyEOMCzTrBKE2soz
-tpZuDAgDrYevuU2dA_nQrM7hjlkzTa6gXyF1G3lpjS-9-SZM36EeMzK9VQxyW-xh6Z8q3L-tE7LWmVnNLM9fOWwLp7Fle_vPb6wpKZBwV0lRORPU98p6zsOw
-b0waGMJjvAjLk9oiODxk3JsnnyNy3umXERK0N1c4tg3N30CmJoseMusOMa3gJVhExiaQsRebPBQ-J0BW7KnzH1BJC3xLgwG5aQtFgTQFn2z-yJi
+sprite $SystemsManagerPatchManager [64x64/16z] {
+jTTbaiCm38PXWz3tl--IYbBhxbTu_sQUS9Hn-snpliRTvqjyBPylyTCEXl0JdFcu0_RLSTxQSGVaZddwuwSTmBxH7p_ie7WWNcxXMQNjabBim4TuTTlnxhbr
+sD32ozutjPIsg7YWTtjrQJMnNB_ZxQOtpmt8i-JwngFjVSzXdZqt8I_5K_NiwvuVb1lL3vgjUAoTdpPUyTFTE-Rhh7kSdZnDZ4TzzF2qVA8y2XypCN70nmuI
+1_nf1pYF-N7QmScBQmCg9m3Djd83K5yVG7YSnmueV1yTuz6aqxkjA8-GRxkx5uxuDgpmTywMIQFb1kNwFT-NS_6R6LjyRCDcVFN8FwPwgBqVaYF8a-S4yjDo
+VDjhyM1lzzroyb_Vsq_3S_R8Q_ZnzmvtoV7UYt9uyvZAUE4lVWjCJ_Zp3dWjWdrPlo1-EPVr4nBBgEktzwyVyVKhtiGutZS
 }
 
-AWSEntityColoring(ManagedServices)
-!define ManagedServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagedServices, ManagedServices)
-!define ManagedServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagedServices, ManagedServices)
-!define ManagedServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagedServices, ManagedServices)
-!define ManagedServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagedServices, ManagedServices)
+AWSEntityColoring(SystemsManagerPatchManager)
+!define SystemsManagerPatchManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
+!define SystemsManagerPatchManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
+!define SystemsManagerPatchManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
+!define SystemsManagerPatchManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerPatchManager, SystemsManagerPatchManager)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $LicenseManager [64x64/16z] {
-xT85WXin44JHgWOrxFtl6tcPBIcSxBU7vmttdzHNNrM-MwrwnVlPeYVqdMJv0EHxbve0RDbdt5NzK405jkeLTurdtafWYtxuNVdCKmdOyVqJbxZcArzN6NDO
-zOftqYukUjTtydKV_aun_I-w_entodNlyax-www_7ikinzRzGwM0FYtk-Sh9HQ1pvi3x_VTEp7pR1o0qdna5Y5tl63s86USC_C0Fm28C60TUuM3EcPi47Bhd
-Io6ASJ7U0oRGsl43caHrjS8BaegnumqnPtfG87MP2zYE3p04DN3X1GaYTdmRQF2ReTNjCC8sd__KnEZP01rsyFu347S1ykpxwL3CDFh09q3eY1WA0hdhEuG4
-gm1IedVzhCemiwhk4ozIJdg9R7b4tbPatQlAsm9B_hxd7lSj-67tJTSfaZsztJTw8p88CCW-YW3S0Ppxw8vZhyoU9VNCLprD_yY--keR
+sprite $SystemsManagerRunCommand [64x64/16z] {
+xTO5Tkr030FGmTZI_lVxmOMWgpBVnwY1s2Vb4_hrgsebrvqIhARX8A4GLX8JjAaucGt0W29Di9LhdWpjaI4Lc2MbGpevYj9u4pBye9T9GYFxpJ8SZ68a9Duk
+VxU3La0i4kWFpKn2kdmZPfRH8GjGIqg7EBoaT4W5bdYqHDs5jBarOcOZHWZYZC0QSh7_yRiM8oJz16JyhiKXUXkpWNLc3iyFxK6soqvr_xjApAHevVBb6sHm
+iKSnmYoX0hODoTjAFdrHuGRewSVZUVqsRMMGevuuVHDot3_CDNVXDJiMtyHgYPd5iWF4bN4ilZPNFMOMqvY9-312hjdBYYzc9XbUrBlgotlNU67lQc_Okr8w
+9DgA88jFYEBxV2SEUlbqI0LzAaRCV6Y4GY9Tuxg0alSNdhT-5hz-_GK
 }
 
-AWSEntityColoring(LicenseManager)
-!define LicenseManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, LicenseManager, LicenseManager)
-!define LicenseManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, LicenseManager, LicenseManager)
-!define LicenseManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, LicenseManager, LicenseManager)
-!define LicenseManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, LicenseManager, LicenseManager)
+AWSEntityColoring(SystemsManagerRunCommand)
+!define SystemsManagerRunCommand(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
+!define SystemsManagerRunCommand(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
+!define SystemsManagerRunCommandParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
+!define SystemsManagerRunCommandParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerRunCommand, SystemsManagerRunCommand)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $WellArchitectedTool [64x64/16z] {
-xPPNOkOW30O7IJJd_lTTAyQ6RH2IfvJvU_c46iB7L-A77sfvgE-H1nx2EmmeQWt1jkMPS4VWhfHTlP1BYo2KX6xANH6k21HnQxl9A_6EMaa5sT97OeMMzKAe
-HjoG5uZQ5H6rhHec0Ac_jqBQMDzEob1CEzbUlsTJhlLJU92oYD-4DCIlK2iy-aKzZ5W9l-K_-PT7VUMrfc-j_uiHC-9c3clUPxUvw3-taQE32jbxCBS8ODaG
-Gawe0gv6MqVdbX1RxIdtM378Wa7f4Jc1vPvIL115bH2Jrw10xTPB8CzhwEG0K8wA4mVhiAXXSQuPuXLLLHiAf2VpZgxvuJGZNhRQqnDER2eNEla8X80E_I4m
-rKSaDWpnZDK-XRo0K6VB-y_tzFTkLN96tZnHZFYS0Cd_xmyb5a-7NbzDgnUU4m1gn5u6Y-k9Ae-tpruu7xL6ytma_suzllDlUy6_p3Vpxl-zsP_S2m-hsbaT
-ysCaJqY9dJgFlfGnm8nk745j_HPXFu7grl4rP3Xldu2FOhIsWvBSndnQpVklzlwRDFki_uMBOLhlfF3t_RTBGgoXoB6Fq2aVlNxyslpmmoy
+sprite $SystemsManagerStateManager [64x64/16z] {
+xPU7RZGX30R1cFBD-p_mlmXbVqA8zaXHpLoplCpH9Jdy5F68HRRIT4GhDka57KEvzIgeEVlBv5n1zQrtqImSOWsL4K6BuPZOmCRePI_jpnAQnWpwpoDMfUQX
+avhKqkYu_vcK-oAqJqczBn3ANGS9hcIMufiV0MsX3wz2BG8BGL0AQFAzVzFA5b5wczfxbWU3VAbWmMU_VszfwdxVAqCv9F3GlzFgvxYbTRMXPBLB4PfPGt7n
+qHwe8RW0rCPf0rJ2ud_6E6QvHos-NHPwRlP3yayPfyKzzTyHMbZyKtxP__DzuT1teGdaPtxclKy-xLyMRqpoOp-6c_W3VYmBySp_kAA7FhG9EFNNpC_vVtvS
+EFHD2tRckq0t83_siz_aG__rrkO-iAqVpUBYcyr-amPjvsU1yZlV99jzw3Ri_Aw3ykmtQBEl6Y-gDduKFK3n_pC7yDaluQBi_0JU3Un-5eM4ujp_YL_07Sgs
+_-Vn6oWbWKtzfukgbzQlmg3UFWnUshygwAXkCy_dnv9T9Dja7ixlwVbdlJzh1dUjcTlFk_lxdCbZH59DMZ1xpgGgtVN3X_8iFcNk-i767JccWNspVlfc_VRD
+-l7RzUltw-Vlymy
 }
 
-AWSEntityColoring(WellArchitectedTool)
-!define WellArchitectedTool(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
-!define WellArchitectedTool(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)
-!define WellArchitectedToolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
-!define WellArchitectedToolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)
+AWSEntityColoring(SystemsManagerStateManager)
+!define SystemsManagerStateManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudWatchAlarm [64x64/16z] {
-xTP50kKW48HXsg2hxd_ViP01bisuV9idoO-jQ3-TYDp7FW0Wusu8IsAAYzn9OaJq936kyYxFrwmF822iJPAar_eE-ZcQ5AVFOpV51HZfvtZebTv1RRj45ljp
-lwFSwtM_zhy0etZ-unmFtYe6QMr9GagzWj1jDFHM4oHyZZN8R5MTP8QP3v0fhSm1WWJ88Us2H98aXhLRQgPosShnlImnxCaq4bRD1IIHEH8a4NVz5oJfzHxT
--yWSFGouwVty_fA-ytBl81PAkIVp1QBUOpM1R-lzD-cZRwBSAuYl2AtsHY8da7RHMvlihjSswL_T_-__z_zxqwdpxKEdU7jsdUpe0rpU_Z3x3MBrnWqmRtlB
-lFW1vv2BxcJ-jNisVVxrdVWtU7PrxtlqyWtQD_i8
-}
-
-AWSEntityColoring(CloudWatchAlarm)
-!define CloudWatchAlarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
-!define CloudWatchAlarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
-!define CloudWatchAlarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
-!define CloudWatchAlarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchAlarm, CloudWatchAlarm)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksApps [64x64/16z] {
-xTV50GGm24JHED9_lx4IXlMTVt-t2AHu6UvoCJZPFBixfZVCsvjBWnAtwwqbg6PVx-dftJhckztx9r8nNqMsVtj3uSPZtYyLAFs-zukUdfwUdfwUFho_HUUl
-uFuQtP_ZBG
-}
-
-AWSEntityColoring(OpsWorksApps)
-!define OpsWorksApps(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksApps, OpsWorksApps)
-!define OpsWorksApps(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksApps, OpsWorksApps)
-!define OpsWorksAppsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksApps, OpsWorksApps)
-!define OpsWorksAppsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksApps, OpsWorksApps)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksStack2 [64x64/16z] xTSv0S0m5CFGtgtDdsyl0ac-Lsb_03JbpUL-VghS-VBPjagzS7wzV6wbJkltsgPIc_1uF1xV6HwFn-FnU7pyR-a_Xl-Q_dFU0m
-
-AWSEntityColoring(OpsWorksStack2)
-!define OpsWorksStack2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudWatchEventEventBased [64x64/16z] {
-xT85ZWGn34JHDcMwwlxtNOvYhz33zCKblSPiLqngJMqxQj7Y0X8vzYxWuC5J0Uuz3od30QVvyKh-xT-UePO2MrxvFuojKu2rWsojn4gwNJlpLNYR2rA4zpsJ
-P_GzGlvImDi-6IbUHixRta6iA6rFxZCGVOzb0gTvlnCV8nLjh-MmGRlUIAnVGZl2svpiEAzpqgVsR__sRs_wr-3qCQUOdcDELdo0gUbJqwSGonjJmFUaA9j-
-Rq2zv4fpCgVKpoHrEbD-GjyU9tGEBoUqdTmd
-}
-
-AWSEntityColoring(CloudWatchEventEventBased)
-!define CloudWatchEventEventBased(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
-!define CloudWatchEventEventBased(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
-!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
-!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CloudFormationStack [64x64/16z] {
-xTT5UWH134DX-PiYwVxt3GxRGwvmwj-stgePtwvE061YcWmmAerlFQkbL6xxWfJo4_hLhxuYfMvxSQHGRxt49Ca0j9xMW7bspSt3C5unWC4hjiy_ngJN_ihX
-RTzhRBpteyQwRbn_ZQyz6sA5lxzV_Uhpzy_y_Jlx_9X-VirhxgbiADqfCBz4yFwG39tY2R77InX5zrPgqZWXjN3ftv-Lhpq7JWmslmolltAbTyllxrU_-cf7
-whQt4zlUBQF_jzTUJWkNqV_ZXVi_NWBL0JRLsOJBR_SC
-}
-
-AWSEntityColoring(CloudFormationStack)
-!define CloudFormationStack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudFormationStack, CloudFormationStack)
-!define CloudFormationStack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudFormationStack, CloudFormationStack)
-!define CloudFormationStackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationStack, CloudFormationStack)
-!define CloudFormationStackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationStack, CloudFormationStack)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $TrustedAdvisor [64x64/16z] {
 xPM5ZYin3037YRd__xqFibSus99qmfrof4aCZTo_ni51kTVxSao06VMEdIeWPWAY-Qfi0z3egWu5XkNpzefxUdKgQ7RvMeWdzHA6LPSD5kSVKa_wZ7CC8HBd
 imSl-0PYsItIdIPWh_cAT_Vo_-FegtxU-lcyV_Y7Bs_xPyc-_d-jHPxr9vNCMt-InNZaXVR2y1RgwXVIWVP2O__SBUXWdWoz-egTpXavSyzFjXHBg19oyxVr
@@ -648,22 +536,20 @@ AWSEntityColoring(TrustedAdvisor)
 !define TrustedAdvisorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisor, TrustedAdvisor)
 !define TrustedAdvisorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisor, TrustedAdvisor)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $OpsWorksInstances [64x64/16z] {
-xPS5hiGm44F3YNt_-owaggnEFy_dpHDRULteW1Byn2CsjAaDEuwqUvXXoFUqcR3V7qaIWXptanK4157lwJ176My-s8iOc7u1gy9AbEbZ5D69wQC4qNOVKM74
-xhSW2d3s-yj-D_xob--jFuukmCqdUnVavXDT32AU-mylzH_E_HVQE39Ffc58ywacR24iSZcIPbeCCqmcpBCsXDvViU-ldDyVzle1plEN9jNy5Tnyr2XK_qbX
-Klr7KV6JytVvQtvwwzVVFzx-zSwFXMz_EVUdSt__wVcv_3L_tVStx_tHUN_rtf_zN04
+sprite $TrustedAdvisorCheckCost [64x64/16z] {
+nTO7Zkum20HWmBWmzx_lgoCbqSPBbhmogd_vY0j8aVVH9zdp6K_ITbm1f1hHjpumFKb7-Dw7InADfxwzynvJNtWBXDMzBi2bvBk9o0I6bFo8CEd0af_nQ-o1
+1yA1K7vpoSYz3FmCRszTVN_WVwsWtm_Ki_FlCT_rdxxlt__lkxxo8vQ-y0v4tNFyAbwdYmZ7h-1NH9C1JFaPQvTexXs80IpE3yvvD3yE066ozJqvFyUnUMjs
+IbCHCqsy-1fI2Fqctlr8-xBtG1o1VzLtuCG1pxnEkpu_J9Ln83pnCyAkNiNd6ihTm3_rdHruzWuW9iSBy7l_wm6DutVn2x40snIWjzL5D13jw9z6ZpM09hi2
+d1zqcK0_zw_zyYF0PTqLe6y1B63AHwyJN1OB8Fo3byQddEQNwpyt_yqjq8lTl6FHCviLq8jDbzHVLv3txttFyn1ptu2aG3Q_QG7wUW4DhB5BbytKyVli_NVj
+fkxq_LZx395FLw2IPhk20QojoGzn0akbN82yKA30MQ3EUGjrpbkeSwwWphc2EkSXafSBaDVYvELua5UpqULy1m
 }
 
-AWSEntityColoring(OpsWorksInstances)
-!define OpsWorksInstances(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstances(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)
+AWSEntityColoring(TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCost(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCost(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
+!define TrustedAdvisorCheckCostParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckCost, TrustedAdvisorCheckCost)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $TrustedAdvisorCheckFaultTolerant [64x64/16z] {
 tPI9RWCX34InmU2P___WYctMBL9OqFRkqzKZ3_0m9FqufUuWCrs8DKIP-Y1ywTFcFYmjK5pjZxBoPTTNpn_o7TGF-9Miz_O_TYsatvi_e_MKYMCT6Tdm7QpY
 P7caC61hlxiuXnUCrBL_B133sqZUoLySq8_qHon_j7-_m9UF-Hds4L_03xsVHjxSl_J1ZMptvZUuf0pYPduDzAxdrp5ymDP-QkpOxVVJ5uZXQnieM_atk7oe
@@ -678,8 +564,34 @@ AWSEntityColoring(TrustedAdvisorCheckFaultTolerant)
 !define TrustedAdvisorCheckFaultTolerantParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckFaultTolerant, TrustedAdvisorCheckFaultTolerant)
 !define TrustedAdvisorCheckFaultTolerantParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckFaultTolerant, TrustedAdvisorCheckFaultTolerant)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TrustedAdvisorCheckPerformance [64x64/16z] {
+rTO7ZiCw38HXaghpt_--hpX6R6EXjPJjarw-5644sZuUdycODyqaZRW3jngLeHSjtwIWFFRATXFNh4yVyrdDF-13A5xttY7RIxw4cJMezfAlKbY1_bY5QsB2
+WpB8zsSkgVVUAW39jlIhBnFUAaT7_PgvzIzg7-kVVxI_ly4N_v2lwlu1dq4VyCVsM_NUifaTss_LTobPXKU58btYzpw3AlHz_t3ErFx900fxrLlc-FEHufJa
+CzvohpQAe_AH_bgfyH5_PDtxEtdZlSNAT6vFVxmxfgSpu5TVeCrFvuQUVlih2UHpgnFPBUlfenSp5qf7VuRDyTg5-jbtKQn1EVexRcuW03_v9EZGRCPRxm3f
+v2s9uy_7tSxD0ihPMqXAi-tg8BMBjsZP9ds6KcegXrzgj-lnJ_EYTt-sBDkwp_jT5zsMlJU07cODqiNJwo3vwRD00cg6PbwhR_xz7LPtxmreuPKjOKbAkxVQ
+XoaFdyL-09mwg9a5nCFVPFDLj7YkOlTLRtrlQDYMPRybGNhDUwc--stbLtsIqkwt-wi-uF0GVyrRXDcRwta_oC2lpOz1fkVN8DFpSyi7vlT7yoy
+}
+
+AWSEntityColoring(TrustedAdvisorCheckPerformance)
+!define TrustedAdvisorCheckPerformance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
+!define TrustedAdvisorCheckPerformance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
+!define TrustedAdvisorCheckPerformanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
+!define TrustedAdvisorCheckPerformanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckPerformance, TrustedAdvisorCheckPerformance)
+
+sprite $TrustedAdvisorCheckSecurity [64x64/16z] {
+xTS54XmX44RXRgpvt_tl6v-LAbZOcNZoIbU-SG6xdkyqvw6Tyemxe5Mepdo2A8igAdElOejysuztC-twel0BFWcbyzuxP3lbMpApW6QdV4Z9AdJxN7akhNq3
+LP1_ErjFjPtj1uwTTprND_pNBHZVKBRZhIfit9utjslUVWTV_P9lwdx15z0PlxZzrjxxvzyx53lbkvIj7RTVoa_vsXTGEsu_5uzjtJy5E7RUUTzRuRxpAQU7
+ikzuAxqkhpylhRMQJrw_NeK-HS_l-sgf2oG1rFUyIyKxzEAVG1NKiVT8Dgc9E8WW3Nr8QROBT3lA42DV8MnS4Tbk1V8dxzyMAvzk_kDF1TAZJwfcBiZ3w-TJ
+eMxtCkJd-uTg0NLu_GvzUlHPq8-TTxtjBGkGs_Z-NNjByp6MjuWGYdiTUaJKkxSKnSPL8G6w1qY0xro_5VeeGThoae-_l-RBT_BqzY9V-DNuDosyjVuoN_Xb
+lzZ_z_yzhGuAjhr60RxZisR5nGcsNUyZ
+}
+
+AWSEntityColoring(TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurity(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
+!define TrustedAdvisorCheckSecurityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorCheckSecurity, TrustedAdvisorCheckSecurity)
+
 sprite $TrustedAdvisorChecklist [64x64/16z] {
 xPTNTlOm20KDQjpP_tx_agglESSYFRdlS-m1DRPNYXtC6HqwcB2PBu8ZDAZCl4El1zB1ptZV3iHVudjByHNr1Ez2dk03wih_suCyz9NwkTgzFB5K_n1jab_u
 FZIRvUrATlnT49DyqMLYh_ukPlcgAx6z_haqoNkzalt-Uo_PzV_r-L--bXJleYLu2oW9Va3c_6qGA_MpKH_aPOldLzqsqoH_YA-WEiaVzg-2CScNkCpOgry5
@@ -693,20 +605,17 @@ AWSEntityColoring(TrustedAdvisorChecklist)
 !define TrustedAdvisorChecklistParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorChecklist, TrustedAdvisorChecklist)
 !define TrustedAdvisorChecklistParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorChecklist, TrustedAdvisorChecklist)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ServiceCatalog [64x64/16z] {
-xLM7plCm23mm6CZxF_0lw-J6gk9qQFphkouo3ZX6UloX-C4FCgBtYFg6Ms4246AV-YWNGDIyTpS58Fw9Xou0OyvS0Ebl1s_0SxWoeBsNGWfQNfnMIBv31_my
-YZXjU-sWwZZif6V3cej3ikg-R1fB4m3LjHOEt1Io0qs1EBr9dpz40Dg0QmS5vBX5Yce1grbwunqod2TmgI5uLmC52wMp2C9oeD5pNAVll4g-GW6lSa2Xv3E2
-Nmj8A7CinfSQqeVw4iOlQbDSjx51e-k8GJwbMz5cRjf3qJRDLu3ta__yJNytSsmmVwIcAryV8jtZsA6Xrc7ev4zxedB75wbbS07DmKy5bZ4kqGszLfcQmuU9
-sE2ciZ2yQylNERZQXn4Ap8te2kbx_df5APV2Lrlt_5M_KZgBGEai0ldG7Lz1liIGRe26I2Zj5g9p2JOmnEny21TTX8y52Kx1OqrkDaY7Z1fYoAVDycwtRv6c
-SZr_ejFN3jnzHQwHQS_zZBtyUR51V57UQRlmuZxz6RhyhBolTeq8UaEVbzEMpZVQbbnnXjzNmEb8ERXFji6EMvGyvhNpTxKxMFnR1ViCEv3txEU7HMMU0Nrr
-lKUSpq1d_-YgGTwXyv-w5mEQCProxkGRuCtYLP3HFqYb2U37-qW3AaWn22Zf4rGS9xyDEHyZCRgTWZo-Wq7SXLbywG0W_KjaZpp-MFpW1xy
+sprite $WellArchitectedTool [64x64/16z] {
+xPPNOkOW30O7IJJd_lTTAyQ6RH2IfvJvU_c46iB7L-A77sfvgE-H1nx2EmmeQWt1jkMPS4VWhfHTlP1BYo2KX6xANH6k21HnQxl9A_6EMaa5sT97OeMMzKAe
+HjoG5uZQ5H6rhHec0Ac_jqBQMDzEob1CEzbUlsTJhlLJU92oYD-4DCIlK2iy-aKzZ5W9l-K_-PT7VUMrfc-j_uiHC-9c3clUPxUvw3-taQE32jbxCBS8ODaG
+Gawe0gv6MqVdbX1RxIdtM378Wa7f4Jc1vPvIL115bH2Jrw10xTPB8CzhwEG0K8wA4mVhiAXXSQuPuXLLLHiAf2VpZgxvuJGZNhRQqnDER2eNEla8X80E_I4m
+rKSaDWpnZDK-XRo0K6VB-y_tzFTkLN96tZnHZFYS0Cd_xmyb5a-7NbzDgnUU4m1gn5u6Y-k9Ae-tpruu7xL6ytma_suzllDlUy6_p3Vpxl-zsP_S2m-hsbaT
+ysCaJqY9dJgFlfGnm8nk745j_HPXFu7grl4rP3Xldu2FOhIsWvBSndnQpVklzlwRDFki_uMBOLhlfF3t_RTBGgoXoB6Fq2aVlNxyslpmmoy
 }
 
-AWSEntityColoring(ServiceCatalog)
-!define ServiceCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ServiceCatalog, ServiceCatalog)
-!define ServiceCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ServiceCatalog, ServiceCatalog)
-!define ServiceCatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ServiceCatalog, ServiceCatalog)
-!define ServiceCatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ServiceCatalog, ServiceCatalog)
+AWSEntityColoring(WellArchitectedTool)
+!define WellArchitectedTool(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedTool(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedToolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedToolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)
 

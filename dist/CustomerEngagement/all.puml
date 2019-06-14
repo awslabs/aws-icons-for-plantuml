@@ -1,21 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Pinpoint [64x64/16z] {
-xLQ7bWCX21n05Bp__zvhE-bPzdhDfAxFaOxCluaRRiZe_eW-yWtaSCKUwl5AjW7GvkCHtXH0p3bCfCNSHhOpaU5jJWS4GD-a3u6CUOuE6PaTsDB00P-Nq8NO
-OLjq2Zz5GfTVaIrw74ZnY2IVScl-ED2pAwFNyuc7N3PK-gU0ogS346lD183ddSDopk265RITwq8X7lpl0Wq3O0gqWXwGdHbeUPeGC1T0o_0RbOkBD15WtEMp
-BxCGlulHETqWqAI9iHuxvo-DxAPgVQR1w9h3flKKIqZIXyzGXJqhbKTA5YdMuNH2YymmG8y5AtBD_7QiXj89vEy5jxKCeDo471LAAioMasY0hvMmBmV7GZG4
-wQShSy0t-8rcKekTOzeR-BDdoQ_r9mhzQ_yHbV-supVxUVpYfVbZp9-eycSxVvVLAd_h-dd6QVtKzQleLzf_xfHyG__e86t0tjQ_M3I2U5l_d7lNlAb_Kozw
-uGttnoFO_TzoVv5EyrvvVnAZe1VtTx5Up0_5ublc5sL2l7b-ilZ4-QsU7oFdtyGDDpm
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(Pinpoint)
-!define Pinpoint(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Pinpoint, Pinpoint)
-!define Pinpoint(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Pinpoint, Pinpoint)
-!define PinpointParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Pinpoint, Pinpoint)
-!define PinpointParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Pinpoint, Pinpoint)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Connect [64x64/16z] {
 xPL7kgOm30HRSfHwxd_T2GO1m_U8Qshr1ygs4lOz7nyV35xQLhEgvcha2zqIWcnyh5T0QpUtNWJI-50lG7Lo9C4BKFb8Rv3ExLSqFebTCFI07R3xjM16uJwU
 x2sdt7bdUuZlKSXKYrlH5_vGZzojAJAlZxz4lubOo_WYC5xv6i_GIbaYvdoEmWkTYaYxO5DwZgP68i-pLp3lpuJIrWCNrKe3j3fF6rSYoGB_bT0PBGaKLWMa
@@ -31,8 +16,33 @@ AWSEntityColoring(Connect)
 !define ConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Connect, Connect)
 !define ConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Connect, Connect)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CustomerEngagement [64x64/16z] {
+xTO5WiCm34HHoQoP-zztWtQvqJBzChmmoLVrd-wlAh5uoo9X-49lkF3mHVlr_j_RLHxF8jTL7lTPwqL5YiS7NWHrUGMiZSplcMIKFt_yu6bmUxOwQbym_x0H
+3dds-lh7tW5lkHSaBrM7Pn7j1PqJTNczNWpRF937F6_iHePbNOfp_7qtZaIMgNh8ay0-oSngY15HYfa1pprBZ9X8cTzicr48qZXro2SHCv6ql5czg7NxVFmQ
+WA1beW6Bpn6T-zVVyeAtUNoUFzrhIA-NazqLc5vylifU115aAZWyKBUAQeEcwLrpUUvPbAoLKoxV8xAC7_mUODNw5W_-bUkNV-_imcUOitRcNz7xUGdnDOKn
+MdrLyXjw0G
+}
+
+AWSEntityColoring(CustomerEngagement)
+!define CustomerEngagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
+!define CustomerEngagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
+!define CustomerEngagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
+!define CustomerEngagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
+
+sprite $Pinpoint [64x64/16z] {
+xLQ7bWCX21n05Bp__zvhE-bPzdhDfAxFaOxCluaRRiZe_eW-yWtaSCKUwl5AjW7GvkCHtXH0p3bCfCNSHhOpaU5jJWS4GD-a3u6CUOuE6PaTsDB00P-Nq8NO
+OLjq2Zz5GfTVaIrw74ZnY2IVScl-ED2pAwFNyuc7N3PK-gU0ogS346lD183ddSDopk265RITwq8X7lpl0Wq3O0gqWXwGdHbeUPeGC1T0o_0RbOkBD15WtEMp
+BxCGlulHETqWqAI9iHuxvo-DxAPgVQR1w9h3flKKIqZIXyzGXJqhbKTA5YdMuNH2YymmG8y5AtBD_7QiXj89vEy5jxKCeDo471LAAioMasY0hvMmBmV7GZG4
+wQShSy0t-8rcKekTOzeR-BDdoQ_r9mhzQ_yHbV-supVxUVpYfVbZp9-eycSxVvVLAd_h-dd6QVtKzQleLzf_xfHyG__e86t0tjQ_M3I2U5l_d7lNlAb_Kozw
+uGttnoFO_TzoVv5EyrvvVnAZe1VtTx5Up0_5ublc5sL2l7b-ilZ4-QsU7oFdtyGDDpm
+}
+
+AWSEntityColoring(Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Pinpoint, Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Pinpoint, Pinpoint)
+
 sprite $SESEmail [64x64/16z] {
 xPO73YCn24KfBl3lV-3L86z68oHYPtlvwUNPvZ6DLlw7jQdmftGpHAP-GelXbNwEAm3lmgpZam44mFZwtW4vv3tcbAR4J0gCCxm3asW0c8v61Z-UNgW1S01A
 0v13UPFOBtIkaOvwE81sGPCkdaaFUGFu8XkHm-bu_e320GCpT0hHt0a_UOdMpV2FdKIZyU8Lw6iHP5xdvZtu9R7Hs2fVVF6tFvz0FCsDdZlWYm_rWWisO0jl
@@ -47,8 +57,6 @@ AWSEntityColoring(SESEmail)
 !define SESEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SESEmail, SESEmail)
 !define SESEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SESEmail, SESEmail)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $SimpleEmailServiceSES [64x64/16z] {
 xPQ7qkCW38HND27s_T_tpXfhSEOWvDhKx5_YzY495iNZF-chhtZh3zbXNN-gcv_y9csQ1RSagv6_G_VYMAcjrU83bKv-Ybi1fFPPVwy25EDdk0gaZMSuSZI1
 A3-WHmNguExw4S-GldoANP2F0sIaNPsqX7m8Nv3s8JWI2j_X2hcYSwah0u5oZvl0QxUbV0uym3xxUaTPI7o0kgt01_TF0v3AYmI0EUWfxi8t1W_bGuhWsRO9
@@ -63,19 +71,4 @@ AWSEntityColoring(SimpleEmailServiceSES)
 !define SimpleEmailServiceSES(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
 !define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
 !define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CustomerEngagement [64x64/16z] {
-xTO5WiCm34HHoQoP-zztWtQvqJBzChmmoLVrd-wlAh5uoo9X-49lkF3mHVlr_j_RLHxF8jTL7lTPwqL5YiS7NWHrUGMiZSplcMIKFt_yu6bmUxOwQbym_x0H
-3dds-lh7tW5lkHSaBrM7Pn7j1PqJTNczNWpRF937F6_iHePbNOfp_7qtZaIMgNh8ay0-oSngY15HYfa1pprBZ9X8cTzicr48qZXro2SHCv6ql5czg7NxVFmQ
-WA1beW6Bpn6T-zVVyeAtUNoUFzrhIA-NazqLc5vylifU115aAZWyKBUAQeEcwLrpUUvPbAoLKoxV8xAC7_mUODNw5W_-bUkNV-_imcUOitRcNz7xUGdnDOKn
-MdrLyXjw0G
-}
-
-AWSEntityColoring(CustomerEngagement)
-!define CustomerEngagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
 

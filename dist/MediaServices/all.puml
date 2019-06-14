@@ -1,82 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ElementalMediaPackage [64x64/16z] {
-xPO7aiKW28P1AU_-9zw1i99C6culZoc9vMC4zDV7ZxMdFKs9z1qu8m3oMsbfuDRaBRHs8n7DIzVvm9UL8ovHpAKX4SHqDXDu1As8cZrJIz_clnv4JlJCzR6K
-KX2hR3iPFQkAtDSi_W4uLWIWE--7rW1e-8AMtOCXoEwzMRf8ptabct75Tq_IdX-fxTTyLdh7nyWbRnF52hZFdvLFhFkEjoXvNp-sp1HuCttizuzr5lWR_QZo
-Ablz4ftY6Q7BPbSZrtaBV7NSj7kpIOcFGp2Ec_-GnjOlyDsvnOzuzKbVOwhm3MGS5ZQUyaJLUFrRV8-c5FYrKZCQBz5M0l-xrm-lT6gT_uZByhr-k7un0gul
-36FDsQr-kNxkjTwu9gcV1VqMZakWnqX5l_Sp555ttgltL_Bb-oid9hzt-_xxkng4yRcYBtc_rDzFzVVRTxmVK_z_h3tjQIy
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(ElementalMediaPackage)
-!define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ElementalMediaStore [64x64/16z] {
-xPO5OiKm34Ebr93xNtYGglMmD0P_pkzp8olKVstynt-aMRu1TmBqgtGqO9g05bVe7AIov7dXwhbKd2n38PNid72qh8OS3N5S-0ZBkZsD1ylW1DtWwlEg9Oq7
-HAZQ3fS1QYX7Dl7b2eChsO9KzYtf0AoBlmzNmn8683Tu0g0NtzLGhe9RF9WDQEdYarnLn_Y7sEPx3m8iNgh304RlUxpyLfcojLJ7Xudx_1EdShLk93h8Fvzr
-AiXX_kaKSjX9NhFk5DyZdiwawJ4V4ByHaVKLp8LNGkRk36BrWiNFWhPvNOD96NBmqTpXCGgwgLz5dz-Bd-yBjFtnXodLYrXvJMJw2V-cuZLnPSH5tk5lvEqY
-tq_nwcPmuU4Bhq_axlgPznyf7Yt4xw-VkeB3A_5F5_HJMr-ISuF3N6dt8Zt6ftYjPy2vRTpBlrFxPpbXAVxq_jqB8QiYLyulv9NpIta92V_yyrkT7tzj_CT_
-t08
-}
-
-AWSEntityColoring(ElementalMediaStore)
-!define ElementalMediaStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ElementalMediaLive [64x64/16z] {
-xPO7biGW34CbtBZ_YVSnUOdPHfXUDRryOYm3hY-hZpuArJW3DmAqKsalW0XG_2JS6hcCSb88laPkzAVop2BVYqJ_mvndjhaF0BfI1jgKPv7kgsAZOj_BxXzU
-qh_-EndW0K2tqDE_RH8A80Oy0T1x90TRlWL7F7W8jqj2D_N3H8Wnlrob-E_4BZ7iy-qvgHofaNjyaPKFyVJV9LPIIlAZA1me15K95g2FV8eF8o2nf8uMn_8j
-0bcBocjzGpxpTn9VRVNFwYIVzVDx_-ZhPxv-WUdwJPwvViXSFvpZ-qqioEYshXa-KzV-gDg-pYJkyR0wsh-g0N7c_dds_dt--J5_VW6ZysjVP3rTwV_9_GEP
-_SCf_GjvIl-INZOLlqV_bltZo-gZZxu
-}
-
-AWSEntityColoring(ElementalMediaLive)
-!define ElementalMediaLive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
-!define ElementalMediaLive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
-!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
-!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ElementalMediaTailor [64x64/16z] {
-xPI7SWCX44CbE5Rv_nzEmnxDff3bCir5BbUVA5fukLyzzPJqB_e0ZlCEWm30SOvM0vhc_nc-W_5n3AAVusEUn3O_Zk_yCQgqEg2ll82kQcOSt_d1KfP-hQFh
-OjXjlAQZkPk3uBWSFB0M2rpyVEwtqHe-7UrFBNWm3wG1BNURMFDv82BbRfTv4wJTghmdUhRlM4fyE6ZpqpGgV0Uw0tLSy_wQRtqEdjzI3iufwCtyiegIG-JA
-sQZYLBbrYKO60MftvsERNOwF8uljIowNUPW3Tq59AvpjMdpk-KWhit4dV_MkdVn1jsHvILJud5vEiCRdm6rOvTtTD7KbNdahjDEKrZp1I4KqHYgT8AW_LaxU
-GTrrFwsld01YSnNbryXlnclbkHUfd451VdloTjpRGCQL7nvHMJeOLpxeWTSbzz_qZioVbupVdvvwwWq
-}
-
-AWSEntityColoring(ElementalMediaTailor)
-!define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ElementalMediaConnect [64x64/16z] {
-xLPNeiCm20FCoFrF_6eKkblRRoz-CiKIADb-hVtRluLgl05kJCJsMhGBKMj4ugzA7KXuYVN2aRaxgbXiWmCIBMEdiwKYD5FliEueYz3vr7qpiZq7nCODZKdE
-cf9jaZbaR3dWjHMNGywOAF5xk4Zy0JtcqlADKE1zzmcyHdf_ca98voosiBZ0vuteN4eCvmPbNkQFnhIOcfiimfcqo6JFrCTpX57hxmhHQNxpKZnqG47akC4F
-ssb_yhAM8fxX-KY4dk-lKeNb5NpfnmaVAtZOc_4h-PFZf07l8fxuejwVzczBhK7V7Dt63Sy-GfF60r2AnTJxdpKb4lIF1x2sp3IOGwqsSqx6l667qfZp1BlJ
-V5vx1IU55rIqfBqd_9866wDzXQ-KvZJOfTfN-DiduzHly7D51DJ-4HvVX6SERXGM-0jr7kjtGTmwtlpoYpfkF-z5CgMGCT3Am-czPAga3-SdLXSuD6Qxk3Em
-6wOYRbXTdE5ozdd_BxV_Jr_p_rRw_sljt_xj1G
-}
-
-AWSEntityColoring(ElementalMediaConnect)
-!define ElementalMediaConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
-!define ElementalMediaConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
-!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
-!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ElasticTranscoder [64x64/16z] {
 xPO7Zgmm44HVn-B-5_u1Mnh1hba6XHzBOUBhHBNbxJVKV_rNLrNh8Qmq02mUHMW3pqe7wW4EqRCEo7Tn6I-ctwyWY6CnKfLkuy8EVquC8ExoIPxYGOJT3k3q
 AQ3rFfI-nnldNlVFTRE01Yt6ScE82h3F-Jjcag-pgBysK-AwQ2qWTO4BjAQTNSkLkfvnWLTt6gPr-NNnM58Q4pQzppkv1Q7nTbbZhfVY9xZFhx5baNuLsGcm
@@ -91,8 +15,73 @@ AWSEntityColoring(ElasticTranscoder)
 !define ElasticTranscoderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticTranscoder, ElasticTranscoder)
 !define ElasticTranscoderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticTranscoder, ElasticTranscoder)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalMediaConnect [64x64/16z] {
+xLPNeiCm20FCoFrF_6eKkblRRoz-CiKIADb-hVtRluLgl05kJCJsMhGBKMj4ugzA7KXuYVN2aRaxgbXiWmCIBMEdiwKYD5FliEueYz3vr7qpiZq7nCODZKdE
+cf9jaZbaR3dWjHMNGywOAF5xk4Zy0JtcqlADKE1zzmcyHdf_ca98voosiBZ0vuteN4eCvmPbNkQFnhIOcfiimfcqo6JFrCTpX57hxmhHQNxpKZnqG47akC4F
+ssb_yhAM8fxX-KY4dk-lKeNb5NpfnmaVAtZOc_4h-PFZf07l8fxuejwVzczBhK7V7Dt63Sy-GfF60r2AnTJxdpKb4lIF1x2sp3IOGwqsSqx6l667qfZp1BlJ
+V5vx1IU55rIqfBqd_9866wDzXQ-KvZJOfTfN-DiduzHly7D51DJ-4HvVX6SERXGM-0jr7kjtGTmwtlpoYpfkF-z5CgMGCT3Am-czPAga3-SdLXSuD6Qxk3Em
+6wOYRbXTdE5ozdd_BxV_Jr_p_rRw_sljt_xj1G
+}
+
+AWSEntityColoring(ElementalMediaConnect)
+!define ElementalMediaConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+!define ElementalMediaConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
+
+sprite $ElementalMediaLive [64x64/16z] {
+xPO7biGW34CbtBZ_YVSnUOdPHfXUDRryOYm3hY-hZpuArJW3DmAqKsalW0XG_2JS6hcCSb88laPkzAVop2BVYqJ_mvndjhaF0BfI1jgKPv7kgsAZOj_BxXzU
+qh_-EndW0K2tqDE_RH8A80Oy0T1x90TRlWL7F7W8jqj2D_N3H8Wnlrob-E_4BZ7iy-qvgHofaNjyaPKFyVJV9LPIIlAZA1me15K95g2FV8eF8o2nf8uMn_8j
+0bcBocjzGpxpTn9VRVNFwYIVzVDx_-ZhPxv-WUdwJPwvViXSFvpZ-qqioEYshXa-KzV-gDg-pYJkyR0wsh-g0N7c_dds_dt--J5_VW6ZysjVP3rTwV_9_GEP
+_SCf_GjvIl-INZOLlqV_bltZo-gZZxu
+}
+
+AWSEntityColoring(ElementalMediaLive)
+!define ElementalMediaLive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
+!define ElementalMediaLive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
+!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaLive, ElementalMediaLive)
+!define ElementalMediaLiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaLive, ElementalMediaLive)
+
+sprite $ElementalMediaPackage [64x64/16z] {
+xPO7aiKW28P1AU_-9zw1i99C6culZoc9vMC4zDV7ZxMdFKs9z1qu8m3oMsbfuDRaBRHs8n7DIzVvm9UL8ovHpAKX4SHqDXDu1As8cZrJIz_clnv4JlJCzR6K
+KX2hR3iPFQkAtDSi_W4uLWIWE--7rW1e-8AMtOCXoEwzMRf8ptabct75Tq_IdX-fxTTyLdh7nyWbRnF52hZFdvLFhFkEjoXvNp-sp1HuCttizuzr5lWR_QZo
+Ablz4ftY6Q7BPbSZrtaBV7NSj7kpIOcFGp2Ec_-GnjOlyDsvnOzuzKbVOwhm3MGS5ZQUyaJLUFrRV8-c5FYrKZCQBz5M0l-xrm-lT6gT_uZByhr-k7un0gul
+36FDsQr-kNxkjTwu9gcV1VqMZakWnqX5l_Sp555ttgltL_Bb-oid9hzt-_xxkng4yRcYBtc_rDzFzVVRTxmVK_z_h3tjQIy
+}
+
+AWSEntityColoring(ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+
+sprite $ElementalMediaStore [64x64/16z] {
+xPO5OiKm34Ebr93xNtYGglMmD0P_pkzp8olKVstynt-aMRu1TmBqgtGqO9g05bVe7AIov7dXwhbKd2n38PNid72qh8OS3N5S-0ZBkZsD1ylW1DtWwlEg9Oq7
+HAZQ3fS1QYX7Dl7b2eChsO9KzYtf0AoBlmzNmn8683Tu0g0NtzLGhe9RF9WDQEdYarnLn_Y7sEPx3m8iNgh304RlUxpyLfcojLJ7Xudx_1EdShLk93h8Fvzr
+AiXX_kaKSjX9NhFk5DyZdiwawJ4V4ByHaVKLp8LNGkRk36BrWiNFWhPvNOD96NBmqTpXCGgwgLz5dz-Bd-yBjFtnXodLYrXvJMJw2V-cuZLnPSH5tk5lvEqY
+tq_nwcPmuU4Bhq_axlgPznyf7Yt4xw-VkeB3A_5F5_HJMr-ISuF3N6dt8Zt6ftYjPy2vRTpBlrFxPpbXAVxq_jqB8QiYLyulv9NpIta92V_yyrkT7tzj_CT_
+t08
+}
+
+AWSEntityColoring(ElementalMediaStore)
+!define ElementalMediaStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
+
+sprite $ElementalMediaTailor [64x64/16z] {
+xPI7SWCX44CbE5Rv_nzEmnxDff3bCir5BbUVA5fukLyzzPJqB_e0ZlCEWm30SOvM0vhc_nc-W_5n3AAVusEUn3O_Zk_yCQgqEg2ll82kQcOSt_d1KfP-hQFh
+OjXjlAQZkPk3uBWSFB0M2rpyVEwtqHe-7UrFBNWm3wG1BNURMFDv82BbRfTv4wJTghmdUhRlM4fyE6ZpqpGgV0Uw0tLSy_wQRtqEdjzI3iufwCtyiegIG-JA
+sQZYLBbrYKO60MftvsERNOwF8uljIowNUPW3Tq59AvpjMdpk-KWhit4dV_MkdVn1jsHvILJud5vEiCRdm6rOvTtTD7KbNdahjDEKrZp1I4KqHYgT8AW_LaxU
+GTrrFwsld01YSnNbryXlnclbkHUfd451VdloTjpRGCQL7nvHMJeOLpxeWTSbzz_qZioVbupVdvvwwWq
+}
+
+AWSEntityColoring(ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+
 sprite $MediaServices [64x64/16z] {
 xTK5WiH024JH0WgA-rzutRMRzPtyyKbUNF1J7Tdjfy6Jkm5-xxDtqoFF_-4FVtZLypQy7CyBBVj4rjE8NFQ4-bdWnloVUzbdUBfxQD6hzCGJ5evSz0xBHpu1
 ji0rBp3WklU2MxIGgpwx7DJjk33j-cx2wlfFidhVj-B-q9luxa9yn9U3Soy2xB5FGsYy_HImxF7-Su3puwS3Ni-FtmONlTGBvy_W_1twpxv-pQ-Vy-lt_Fxn

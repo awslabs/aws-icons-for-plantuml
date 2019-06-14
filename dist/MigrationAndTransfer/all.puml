@@ -1,20 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $DatabaseMigrationService2 [64x64/16z] {
-xTO5eYD124NHXqFjVxznrw97ljwud2Wjuz_qsszLkQkMu3GX72Anx6ddBMFHJS84W7rU5mFYvyzTwG9mpNEv-xmfu4aVaF4WGSnvXuq7ANpMFtgceU71djV_
-9gFXJG2mcCSctq-2shoF_HkUOyiHyzxt_tguRVBOJu9t_5rVojjuaCtxHvCQrF2Gg75HXNJcHnaWiOZS5hi1OktCJsp9EPBepa-bcyecDS_wMVFpUFqrxn-l
-F-SzFLf_Dxm_sdvump_QVhNyhifTLL_h_u-7cyean9XBGLRZgZA2ZjaCW5XaxSem0M2jlG_2DjgqlzBT0wbq5Tvw5ZtFOhTQ0brot9NYirwHn_S-NoQqwOLg
-nqcMUSRUWvTvENff-h2wzsKn6jtvVfddot_IRx-j0G
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(DatabaseMigrationService2)
-!define DatabaseMigrationService2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
-!define DatabaseMigrationService2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
-!define DatabaseMigrationService2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
-!define DatabaseMigrationService2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ApplicationDiscoveryService [64x64/16z] {
 xLLNTXmX4AocwNZ_0_j1QymemlZ7IVKbxMx52UIVXszy8znKrJn-YMnCA13hOmaTvDP5fBSX8OyKl05DOqK1cZqm__dpY2X11lG1NQPjRqJKkiNwy8okrm8W
 NEtjKC0dFHXWzOXm7Urz2fniq8QDqtqmvqbLK1oaRvb1w7c709x9-mP1mwcXP_X2fA15-Zw0eLK6mmtyujst5v6XbK5uOMWw4AM-YV_-Lp7_xwKSculNwfUy
@@ -30,8 +16,6 @@ AWSEntityColoring(ApplicationDiscoveryService)
 !define ApplicationDiscoveryServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ApplicationDiscoveryService, ApplicationDiscoveryService)
 !define ApplicationDiscoveryServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ApplicationDiscoveryService, ApplicationDiscoveryService)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $DataSync [64x64/16z] {
 xTC7Zjqm40DGQlhm_lVTNknezI4dg5a_m6XM9IZ-ZswtMxcAg1V_IWe-IF8w0pIgkq81QrwaXrrBeCrBx3IZ5SOh4j8yQ86eDtS9YYSr1e3WdeBo3zqTsmlu
 pmCBepV3hqMgkTCw0Pe_oOqYE81Xgrm0BJwY6D5S2HCWDdgp5a1ofI2zqIskw4x0wq4znbQvRRztsVCkqDN-KNFbQfulNEaF_FWIGAnEENEyqnh8mYi1d2S1
@@ -45,8 +29,6 @@ AWSEntityColoring(DataSync)
 !define DataSyncParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DataSync, DataSync)
 !define DataSyncParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DataSync, DataSync)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $DataSyncAgent [64x64/16z] {
 xPS7hgqm34J7IUnuPl_xVGLGlb10w16LtuxAhOVY9emlIgH-J4R1ZbCIVyQc-AO7fGp_8P4IOpyxArvGAJeAHSChZ689gU8bLGegyPeKfS1hOcJX7Su_n__l
 MxGbtwbOyHl5Rak-b6N1Pqfirtxp4mPylpIW-44NBIJvfPyyKM4YAQ3nG99jGGYxyFlaasH--uD-ZAqiim_R031UznVO0DzOKgotyIk69xh4TkCxQNZ2kMcp
@@ -61,68 +43,19 @@ AWSEntityColoring(DataSyncAgent)
 !define DataSyncAgentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DataSyncAgent, DataSyncAgent)
 !define DataSyncAgentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DataSyncAgent, DataSyncAgent)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SnowballEdge [64x64/16z] {
-xTL5Wgn040RXFwigBUv_twSmsW8zgv5lWmOkV14_VdIi-wAv8ar7M79HILxtBQcuPCcXQmUy6Dirk1QNc1hN4wTDVzdRsHfSq6QaR6raz3PAczR6b9XTwrt1
-PYhPfIQRaD_iaqt8niwKH_jWqqFFHf_kwPSurRztgY-_ee_rhYlYQEzvmJhU9nVuX_gVlhCXFz3_GLVtOtsRP0MqxlOhNcWepvuQGnDWhLFFRn7wQu1fhX5m
-k-zuXPHycjV-XO-R_NikPzEHATNrFdalDNbXgixkVm4vnqoWP7sjJmr_BQaXDOJ-SkWhFQPcwet5r4meAJjD1LEZk60geEArOgYVhc78eQO65vGK_GwcV7ec
-Kml0Z4j2xpak-NuFfW983IwgDTuAI5d3q5X3es5ApXb31JqbpOQK9MViDwoozX_hAQK1pSuLd3CrXaK37TbJpZaz96c2xp_ZapgxJ97IcZQRHuGa1JGF2b_1
-r_BZnsy
+sprite $DatabaseMigrationService2 [64x64/16z] {
+xTO5eYD124NHXqFjVxznrw97ljwud2Wjuz_qsszLkQkMu3GX72Anx6ddBMFHJS84W7rU5mFYvyzTwG9mpNEv-xmfu4aVaF4WGSnvXuq7ANpMFtgceU71djV_
+9gFXJG2mcCSctq-2shoF_HkUOyiHyzxt_tguRVBOJu9t_5rVojjuaCtxHvCQrF2Gg75HXNJcHnaWiOZS5hi1OktCJsp9EPBepa-bcyecDS_wMVFpUFqrxn-l
+F-SzFLf_Dxm_sdvump_QVhNyhifTLL_h_u-7cyean9XBGLRZgZA2ZjaCW5XaxSem0M2jlG_2DjgqlzBT0wbq5Tvw5ZtFOhTQ0brot9NYirwHn_S-NoQqwOLg
+nqcMUSRUWvTvENff-h2wzsKn6jtvVfddot_IRx-j0G
 }
 
-AWSEntityColoring(SnowballEdge)
-!define SnowballEdge(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SnowballEdge, SnowballEdge)
-!define SnowballEdge(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SnowballEdge, SnowballEdge)
-!define SnowballEdgeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SnowballEdge, SnowballEdge)
-!define SnowballEdgeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SnowballEdge, SnowballEdge)
+AWSEntityColoring(DatabaseMigrationService2)
+!define DatabaseMigrationService2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
+!define DatabaseMigrationService2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
+!define DatabaseMigrationService2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
+!define DatabaseMigrationService2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DatabaseMigrationService2, DatabaseMigrationService2)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Snowmobile [64x64/16z] {
-xPO5bg8n48IhNVR-vrt9u90WURBspU1KNbD_M_-b_ES_5Mu_yQmFn6cC4-9l7X4CGCmZCrmPW6Q_J0eWKJV1sAinE21vzoQ1Nmj1GVx8JGMydoFWIQ3noW4A
-gQalXEWr1bxOb42kdGVLsbfUVixF0bJOydZfDKLO162K_GHV1b3zZAAfGrNLoVGGZhC3CK-ySe0UW7FK2PteZQKTtdL7EpGYyl03blRuuxS78pK5zO5Up9H7
-zYZoSSjWbhdUlWs7jDiHin2fvlfJzao-SZHgfMz1Zg_CU4qVauvhFlHf6jsXbfV7bgaF_SI_DW3by000DG3miru8W0XoUlqo8jfX34y6A89G9ri0Jm6G_IH_
-03csEiCvVy7T2L3DyxTJCvd0rGPeju2EC6XayQf-EiRH2c8GWHbowGu9aDFw7H1oD7fmbW1QVSO87EShkUfVLUVxCrN73DphdxlzUtD-RCwlpVcvEx_tzuVz
-_ML_VzhVt_Rtnp-V__pd1m
-}
-
-AWSEntityColoring(Snowmobile)
-!define Snowmobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Snowmobile, Snowmobile)
-!define Snowmobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Snowmobile, Snowmobile)
-!define SnowmobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Snowmobile, Snowmobile)
-!define SnowmobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Snowmobile, Snowmobile)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ServerMigrationService [64x64/16z] {
-xTK5ejim48JXMH3CzlxdBNh39Adj8t_XsByPudtOxLezrsD8nmLXZ6YmUcgyzsznGiRxEC6PlhV4cEa5gKprjQGM8j5huyBwHm5WRQ3dmU--LrV0-7Alr-lV
-5CfNUzTKimywb4lxt-3HQkspFGK20CPdlLkgf_k_0bQBG3cu_JRq5X4qb9Vt7xC_GSZQ-QCeVQLt0CxvdZqtud2VQD2vFXdgKj-XItqekDGx-ch_bilVrhOV
-5Mskpzpdxryi0ejxlRYTmA6ljb40vUNxjyR6aBJqk8lz31aRCl-A0Rt_VkFsRKnkVmKZ3Fr_ztiVxh7rrHWpib_GAkFTskr-
-}
-
-AWSEntityColoring(ServerMigrationService)
-!define ServerMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
-!define ServerMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ServerMigrationService, ServerMigrationService)
-!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
-!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ServerMigrationService, ServerMigrationService)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Snowball [64x64/16z] {
-xTP7WiCm34DHG8KcSV_xJajFwB6cb-XjKko_j63z3zCqMQkRccb5L0ofeLH3MMBJKj2KSJ0Klkov5Bjl8Pt-3GNXIXYwd3WAzTsNhi0HNHsMzwQ2sdSgJBxx
-whAplujilGUrvoWwAd3j4Q_rB6SDZt3sDmTxunbxUwyue_5-rNXlBMM3VM15ZFRq1CVxeaIvbtxsx0aEzqIAWxryIVb7dz-lxq5j86G3vtScFx_p_SZb-v7l
-Lsw_Nn_Spu_kzmVV7_w7QPeU0G
-}
-
-AWSEntityColoring(Snowball)
-!define Snowball(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Snowball, Snowball)
-!define Snowball(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Snowball, Snowball)
-!define SnowballParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Snowball, Snowball)
-!define SnowballParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Snowball, Snowball)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $MigrationHub [64x64/16z] {
 xPK7pkWu28G731Zc_lVTOYTQvozfAllQfuQCPd27FoH_-4DbBS5JoW0OIOxWiKE3cC186q7ZCn9QB44Lf5YAv2Cwd6H3vYZjw7n4GFbVVIhYyUQfAuni8xYv
 XTMJP0Wa6e1MP8rW397CVcRZ03GKy29pU74BohSK_6JHi54jkLF5dHmfm_TRCKx9OCinYYHtPYgX_9g2p9DRvC1YC4zHKEVrOv6xBmQnrpzTlzGY9nU3ahd-
@@ -138,23 +71,6 @@ AWSEntityColoring(MigrationHub)
 !define MigrationHubParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MigrationHub, MigrationHub)
 !define MigrationHubParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MigrationHub, MigrationHub)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $TransferforSFTP [64x64/16z] {
-xTG7hjim44NHDyFfV__x3IWJLW4YWtHwVDtBKIVhh-ZJfyYtkA6znm5PvmuuGzxXbGHTum5OVo7OWXvkUG6vgo3uD6UmMVHtveBf1IXwRPn3W2TzcfbkNY5c
-5lNTJ9_PUHbZ_LwtCVPaoNlu8uPuBqvUtUFM7u_wbhXczxnv07phSr-0Rdb3x5xqfSzHZPu-I-5bVklBw9pAy4O4W4XUU10Vsptt2FpAUntx6dwmdF8g8lJm
-92AQSpxHezo6O2_cV1bW4TkYmW6jILy6ojfAxdpMbu9oSAa5NmBk2sXejU370WPVyjtsPIpxQXXyokzZA7dm2HyCW6oWh4cV16O6eaQJFiPyPSjUCdFP9-CH
--P9luBO5oWMVHFlazvQNQQ_mhrhr3MfDD0xUzHpQZG-Y5C0E-s-un7LJHhXxCffiWT8lHRqkQ3__IsKyolgJ-_Jf6m
-}
-
-AWSEntityColoring(TransferforSFTP)
-!define TransferforSFTP(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TransferforSFTP, TransferforSFTP)
-!define TransferforSFTP(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TransferforSFTP, TransferforSFTP)
-!define TransferforSFTPParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TransferforSFTP, TransferforSFTP)
-!define TransferforSFTPParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TransferforSFTP, TransferforSFTP)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $MigrationandTransfer [64x64/16z] {
 xTO50jD048NXDpuJxdzVgcnz1OVyTVdYXj_L7brV2UAp6S3D-vTjihhtsm_skzzzcAf5BVeW41D0lkGLadNuMmfamLlxoc7JFc-D8MUzqFrVIMB6r_qaknh3
 9tmYdfTdZlj0FS-lZVeqVlORwPWl1OazyIAmrO0NU6qlSXDGT7qWjdSL8tjUU7jVaRpnxnQpNC0be-fvlr_hqBk5W9ePlyCFzpU-F_y9VTZmbFhBlqqBSHsU
@@ -167,4 +83,69 @@ AWSEntityColoring(MigrationandTransfer)
 !define MigrationandTransfer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MigrationandTransfer, MigrationandTransfer)
 !define MigrationandTransferParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MigrationandTransfer, MigrationandTransfer)
 !define MigrationandTransferParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MigrationandTransfer, MigrationandTransfer)
+
+sprite $ServerMigrationService [64x64/16z] {
+xTK5ejim48JXMH3CzlxdBNh39Adj8t_XsByPudtOxLezrsD8nmLXZ6YmUcgyzsznGiRxEC6PlhV4cEa5gKprjQGM8j5huyBwHm5WRQ3dmU--LrV0-7Alr-lV
+5CfNUzTKimywb4lxt-3HQkspFGK20CPdlLkgf_k_0bQBG3cu_JRq5X4qb9Vt7xC_GSZQ-QCeVQLt0CxvdZqtud2VQD2vFXdgKj-XItqekDGx-ch_bilVrhOV
+5Mskpzpdxryi0ejxlRYTmA6ljb40vUNxjyR6aBJqk8lz31aRCl-A0Rt_VkFsRKnkVmKZ3Fr_ztiVxh7rrHWpib_GAkFTskr-
+}
+
+AWSEntityColoring(ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ServerMigrationService, ServerMigrationService)
+
+sprite $Snowball [64x64/16z] {
+xTP5OWGn34HHoQYg-zytr12I4aqO_3Op3RztjeKVObaM9Y0sQi90f4fA3VCoxLMp11ymKH3pO80z-7S0eM9m3EcSAYTZt_vqcfnqiilm-y4YjM-gTCxjxsH_
+SBjmX3r4mOr9mVuVA6BSG0Klz5fmAA8dUN1Ra_tG1qQ-Z-Lxkj9zRwwUxIMGxdKwDDyNuXcM2teulgvVFHqNzDeTckvLN9hjRReiryS-lnS50udzyzY_OyV-
+dJW_0iVv4PzViVZyUl_v-VxpEpy_n9Y07s9Pbci
+}
+
+AWSEntityColoring(Snowball)
+!define Snowball(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Snowball, Snowball)
+!define Snowball(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Snowball, Snowball)
+!define SnowballParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Snowball, Snowball)
+!define SnowballParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Snowball, Snowball)
+
+sprite $SnowballEdge [64x64/16z] {
+xTG55k8038JXYMTo_mFlmcjnQTU53y_Znmd_51yVytttwN3pryoZ-KG9jf3YGmrulUT0yn57p7GjccHVNplecO3p4G7fEF4XZeHpCGusv74lB8YxVUK68TsE
+dnWfi6KiAChJFf2pCDIi2ZQBHBpkkKY8hkGytjnJSQRStxFFkA-V9pRs7VvGzAP-0a_arjuhxvHjxsjuPs9xd_pqTxhwktfsasnk-lxErgNRigu-lEaT7XT8
+LbGRL64pfFkktszFhdzYWRd6yCt_9w-mW529NZTylkd9kS09n933Wwm2-br_hM0y6qEzsvzd9EbmacLgXx0XVDOd9AuLMu4c0mVngWTfkE5Zq3fKo2v1aSV1
+0uOSLbvhAhXyXijv6vGF593DEu8Ynv73AVWy_m46xla446J2E3GaoOJoeNAzTKo5f49TZw41mHr6KMGR0EtZmoMtEtzXNNNwcFSeAC-MN_CU1bK9akmiskwU
+2W0s4pZGvbxLBSW4tCIutxfKOlZDqZtuFOP_ce-FBm
+}
+
+AWSEntityColoring(SnowballEdge)
+!define SnowballEdge(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SnowballEdge, SnowballEdge)
+!define SnowballEdge(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SnowballEdge, SnowballEdge)
+
+sprite $Snowmobile [64x64/16z] {
+x9H7Ojmm30078Fh__viYTrlYhdD9yvosQD08iVzSllXYVl2hQbU6ctbazUU3f2dFgDSdRGNK8d_WHoIhkRloMh3YgUgPBXUmUts7bU-74OBaNIKO4cVZD8Wx
+0YpqlDM9Um8OUZcNb5i1nj7DlmcrzHFPFJ21RdtbnemDtppWhDvJikl0f7hFE3QRy7qJaVtYoocQJmKOSL6Q8HrmflCojhoSaUlgmFk4O6LctMnW0f_JdmzM
+7GjUU_yylxi9KZr6dazETVMbxpFJXlKuSTuYoCu_UgSdplsk7zpmPr6NViyFZWTd7hv-gF_m_S9FTpyUBBFeJhDyxPTRzAAkvZS6T109O0uGByUo15YBcglp
+gypim8L81SaGwjLmlHPGc_qv-eSran0pnil-eZC5ijdVBgjKGNiSR7eXJoXI4zZc_JcsRBeDKKHGVPt94OMQxVe_D6oWLOktXPgWkRy_9bWlrqZL-_Pktb_V
+Hq7vINdvJNdzGNdzHRZ-fB3-fh3zG57xXTBs4_tQRvZjHzgtN-aFHi4e
+}
+
+AWSEntityColoring(Snowmobile)
+!define Snowmobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Snowmobile, Snowmobile)
+!define Snowmobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Snowmobile, Snowmobile)
+!define SnowmobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Snowmobile, Snowmobile)
+!define SnowmobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Snowmobile, Snowmobile)
+
+sprite $TransferforSFTP [64x64/16z] {
+xTG7hjim44NHDyFfV__x3IWJLW4YWtHwVDtBKIVhh-ZJfyYtkA6znm5PvmuuGzxXbGHTum5OVo7OWXvkUG6vgo3uD6UmMVHtveBf1IXwRPn3W2TzcfbkNY5c
+5lNTJ9_PUHbZ_LwtCVPaoNlu8uPuBqvUtUFM7u_wbhXczxnv07phSr-0Rdb3x5xqfSzHZPu-I-5bVklBw9pAy4O4W4XUU10Vsptt2FpAUntx6dwmdF8g8lJm
+92AQSpxHezo6O2_cV1bW4TkYmW6jILy6ojfAxdpMbu9oSAa5NmBk2sXejU370WPVyjtsPIpxQXXyokzZA7dm2HyCW6oWh4cV16O6eaQJFiPyPSjUCdFP9-CH
+-P9luBO5oWMVHFlazvQNQQ_mhrhr3MfDD0xUzHpQZG-Y5C0E-s-un7LJHhXxCffiWT8lHRqkQ3__IsKyolgJ-_Jf6m
+}
+
+AWSEntityColoring(TransferforSFTP)
+!define TransferforSFTP(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TransferforSFTP, TransferforSFTP)
+!define TransferforSFTP(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TransferforSFTP, TransferforSFTP)
+!define TransferforSFTPParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TransferforSFTP, TransferforSFTP)
+!define TransferforSFTPParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TransferforSFTP, TransferforSFTP)
 

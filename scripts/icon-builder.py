@@ -51,6 +51,11 @@ Category | PUML Macro (Name) | Image (PNG) | PUML Url
   ---    |  ---  | :---:  | ---
 """
 
+PUML_COPYRIGHT = """'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+"""
+
 parser = argparse.ArgumentParser(description="Generates AWS icons for PlantUML")
 parser.add_argument(
     "--check-env",
@@ -136,7 +141,7 @@ def copy_puml():
 
 def build_file_list():
     """Enumerate AWS Icons directory.
-    
+
     Format for current Release 3.0-2019.05.21 PNG icon set:
        source/official/CATEGORY/PRODUCT_or_RESOURCE_light-bg@4x.png
     or:
@@ -152,7 +157,7 @@ def build_file_list():
     Returns POSIX path of those files to be processed (ending in _light-bg@4x.png)
     """
     p = Path("../source/official")
-    return p.glob("**/*_light-bg@4x.png")
+    return sorted(p.glob("**/*_light-bg@4x.png"))
 
 
 def create_config_template():
@@ -226,12 +231,18 @@ def create_config_template():
 def create_category_all_file(path):
     """Create an 'all.puml' file with contents of files in path"""
     data = ""
-    for f in path.glob("*.puml"):
+    for f in sorted(path.glob("*.puml")):
         with open(f, "r") as read_file:
             data += read_file.read() + "\n"
+    # Filter out individual copyright statements and add single copyright to top of file
+    content = ""
+    for line in data.splitlines():
+        if not line.startswith("'"):
+            content += line + "\n"
+    content = PUML_COPYRIGHT + content
 
     with open(f"{path}/all.puml", "w") as all_file:
-        all_file.write(data)
+        all_file.write(content)
     return
 
 

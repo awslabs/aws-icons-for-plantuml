@@ -1,5 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
 sprite $Budgets [64x64/16z] {
 xTI7cXqX20NW0m82x_--QOnVtEpec4qlvokt-SFORlnU-P__wRP8F_ECHVZC4zHkeg13Jv4t2JhtT_act-IRl8E-hV-tUk9Vwxbzc-_zpJu_v1lMtqL4_Utp
 Dm3mRpX_zbNU-vVZUFBTdpX9llGDJVZoARGja9sWBtoEMrzUGJqt7FXypzJg6v_NHO1r0GCqBfyAI3Z1SlQXW2rv3IQgnWHcwE2ZhgqAf00onZd1eW7jrRuA
@@ -14,23 +15,6 @@ AWSEntityColoring(Budgets)
 !define BudgetsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Budgets, Budgets)
 !define BudgetsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Budgets, Budgets)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $CostandUsageReport [64x64/16z] {
-xTQ5hjr030JGMJ2C__z_7qIoqYXrw9RxZk3YM5bU_Z6-V0c-mbNK-PWr0CtuLCEqYSRunDiC8o86Ximv9TiH6poWa608i50kP6mOQuREO8UQsSnymvO5ImDz
-TWoIeSXyyvMU5W26amnPysGAGpikuEPacQT1T2rGg_CpZWl4QNufm8AA7kVHMaTLm3k0xdNUsm9GVa_7q87EYD1zVYNGOluoE315T7oRtypUB7u-VpDlCmcf
-KvZvOlwAgiurJq5gZ05Go_PtwKkHJVlTaYyphCZN_Ryslcf_ChNz-Bj-ylKVcQ-5xDe_WsIs_rRUv9DnOQAy-VpR_J0OT_glTwOKryOlM8XBysVg3gaVZ2Vp
-j-I6JzGhwsV83bq-AFNI-er5phxr_S_g__FzwppFu6jvlfPty-VvFByUvi_FpoJGX-TtqeVtX-GFxo_fqVtf-VtjvzyVK_1lykNBEm
-}
-
-AWSEntityColoring(CostandUsageReport)
-!define CostandUsageReport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CostandUsageReport, CostandUsageReport)
-!define CostandUsageReport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CostandUsageReport, CostandUsageReport)
-!define CostandUsageReportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CostandUsageReport, CostandUsageReport)
-!define CostandUsageReportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CostandUsageReport, CostandUsageReport)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CostExplorer [64x64/16z] {
 xTO7kjmW34NX8o64fFqlE1-Un-i5EpsPEytjvpBT-SVaddl6s5ZyE87c2f8hycRngZTeiU4_A5KG92xwwhFSQ5Uz4ZNNplaA8J8hEqIUzouWVZnScVy0Cn1e
 uyhhr_2gCNNMbVTFUFaIPfxpofZzkjRYf7Uakz0tVRtsmOpbZdTal9s_2IDtlAwc9r-6piKTR-XmmP_v6aZiUYIhdFRCX-2rwGFDTR-yOfKfRFKBeyfejNnr
@@ -45,8 +29,6 @@ AWSEntityColoring(CostExplorer)
 !define CostExplorerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CostExplorer, CostExplorer)
 !define CostExplorerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CostExplorer, CostExplorer)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CostManagement [64x64/16z] {
 xTO3jiH0443HilQ_tq5wxEfllEZeneAlwZ_SBn7Oj1i07RrLjpZpMjdic_j_NuUclAkPBfbFU8QJABfUmJQJvv83DtqnLSNUbs3RemWVFRNtduZm3RusnOcl
 bhSb1Q_zyTkIl-OTTdcC14RqglVzQiwWuAi-CglI3qLLPNLyg8WU4X5j-JB0yw3hyxIoQJ-Qy7LQtwlfCUEcTqGu3QdbyqRTxNDc4g9NRER8FHyYcfag4kN0
@@ -60,8 +42,19 @@ AWSEntityColoring(CostManagement)
 !define CostManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CostManagement, CostManagement)
 !define CostManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CostManagement, CostManagement)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CostandUsageReport [64x64/16z] {
+xTQ5hjr030JGMJ2C__z_7qIoqYXrw9RxZk3YM5bU_Z6-V0c-mbNK-PWr0CtuLCEqYSRunDiC8o86Ximv9TiH6poWa608i50kP6mOQuREO8UQsSnymvO5ImDz
+TWoIeSXyyvMU5W26amnPysGAGpikuEPacQT1T2rGg_CpZWl4QNufm8AA7kVHMaTLm3k0xdNUsm9GVa_7q87EYD1zVYNGOluoE315T7oRtypUB7u-VpDlCmcf
+KvZvOlwAgiurJq5gZ05Go_PtwKkHJVlTaYyphCZN_Ryslcf_ChNz-Bj-ylKVcQ-5xDe_WsIs_rRUv9DnOQAy-VpR_J0OT_glTwOKryOlM8XBysVg3gaVZ2Vp
+j-I6JzGhwsV83bq-AFNI-er5phxr_S_g__FzwppFu6jvlfPty-VvFByUvi_FpoJGX-TtqeVtX-GFxo_fqVtf-VtjvzyVK_1lykNBEm
+}
+
+AWSEntityColoring(CostandUsageReport)
+!define CostandUsageReport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CostandUsageReport, CostandUsageReport)
+!define CostandUsageReport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CostandUsageReport, CostandUsageReport)
+!define CostandUsageReportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CostandUsageReport, CostandUsageReport)
+!define CostandUsageReportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CostandUsageReport, CostandUsageReport)
+
 sprite $ReservedInstanceReporting [64x64/16z] {
 xPO55W9134FJTlp-zyK9hrZtuRB19Udi7-sVgrcpIhdFB_96_-W5AAkNszII082aTbDf0v1gJG2iJcw4wQPq5a1oEtwlAV8hj5TpDSV-YwQm7WVior5i16m2
 DI5p3oG3qcDLu7mP1L1Zlo4hz9pT2YnkFcG3yTI-yWfQrEyPQHm2l7qav6WSx4emW7OsxgfuYIw0_Mue0JqYrfK_Aw1vzTxOEHRHyoD15H12YmXwG09hgnI3

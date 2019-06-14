@@ -1,20 +1,6 @@
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $QuantumLedgerDatabaseQLDB [64x64/16z] {
-xPO5Zi0W50MVVE7-5rvZlILXNISsaVdrmdZWdt_-wSgm9JcY-gLncW18YiIrkLwG9q5dTSzXNI50knFQqE6CEudOwmEn65ixUTFZ76ghXrQ3ztekpt-p9vY7
--nV4Peye0ehgxlduSZu_xVPZbEThG_9653N62_hx5zYEoFaslAW_ylFxp9UzVnsUHDsh7-lg_LFVM80Jw5Ivw0NSp3P7PMODq-ofyKZHY-jl0tIRXMioUARh
-VenEgyr4TLC17bIATJ-vxdiCAIKVz2KzwOFkzPJW04zqenyXoHqyqsNlknun8UzLZtJH4pMjU4USwrZqo9vwn_IZBivVuDCrhojg37lt-oi1e2CoCsm2o9Tz
-lvqXuWPIysnUqa-T_B3_rthzzCUlt_lxXvVlNpvZ__Jo_Ti___np2G
-}
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-AWSEntityColoring(QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Blockchain [64x64/16z] {
 xPE5WSGm30HNkEw_ubV-c9ar8GicRBoAHXP7WOPV2g0hFyQbSCFtb_ljjzz--ymvt3yyuLCnHrBs39KdV7Z-4t34pj1nqW-wcP4b9QrWrf3Jq1bd-0vLA06a
 JKFB6bAdeP_bonYc8o9OXw766jPX37cE3v75_TTmUVyrzBZm_TNGBtf_rt-_w_-Vw__Vry-_zjjlltrUIcxuLt0_7shNe885SXNu1lu
@@ -26,8 +12,6 @@ AWSEntityColoring(Blockchain)
 !define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Blockchain, Blockchain)
 !define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Blockchain, Blockchain)
 
-' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ManagedBlockchain [64x64/16z] {
 xTK5ejn038DX6MJv_XTU31H3vRxvbk6VSD9_cM4OXc969DLNA0qmCm3EFetFJEfMfSEgJv4Zr8iovCcS_Id5gG4SNyrlWhrX_xy17UwploOUwSL9IPofYvFQ
 oGspJCoSMAYbZHwfUfA5-_GsB56g1nMgmxJHatXm-RCt05Pf2GKUKl0mc3PwDp911pn1qY9XA0JfLcvcG6tryNh922RKxL4HMSyceMdhflPwLUdTlrV3r3yK
@@ -40,4 +24,17 @@ AWSEntityColoring(ManagedBlockchain)
 !define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ManagedBlockchain, ManagedBlockchain)
 !define ManagedBlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ManagedBlockchain, ManagedBlockchain)
 !define ManagedBlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ManagedBlockchain, ManagedBlockchain)
+
+sprite $QuantumLedgerDatabaseQLDB [64x64/16z] {
+xPO5Zi0W50MVVE7-5rvZlILXNISsaVdrmdZWdt_-wSgm9JcY-gLncW18YiIrkLwG9q5dTSzXNI50knFQqE6CEudOwmEn65ixUTFZ76ghXrQ3ztekpt-p9vY7
+-nV4Peye0ehgxlduSZu_xVPZbEThG_9653N62_hx5zYEoFaslAW_ylFxp9UzVnsUHDsh7-lg_LFVM80Jw5Ivw0NSp3P7PMODq-ofyKZHY-jl0tIRXMioUARh
+VenEgyr4TLC17bIATJ-vxdiCAIKVz2KzwOFkzPJW04zqenyXoHqyqsNlknun8UzLZtJH4pMjU4USwrZqo9vwn_IZBivVuDCrhojg37lt-oi1e2CoCsm2o9Tz
+lvqXuWPIysnUqa-T_B3_rthzzCUlt_lxXvVlNpvZ__Jo_Ti___np2G
+}
+
+AWSEntityColoring(QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
 
