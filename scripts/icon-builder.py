@@ -142,7 +142,7 @@ def copy_puml():
 def build_file_list():
     """Enumerate AWS Icons directory.
 
-    Format for current Release 3.0-2019.05.21 PNG icon set:
+    Format for files since current Release 3.0-2019.05.21 PNG icon set:
        source/official/CATEGORY/PRODUCT_or_RESOURCE_light-bg@4x.png
     or:
        source/official/CATEGORY/SUBDIR/PRODUCT_or_RESOURCE_light-bg@4x.png

@@ -58,13 +58,13 @@ Prerequisites met, exiting
 
 ```
 
-### What happens
+### What Happens
 
 From a logical point of view, the following happens:
 
 1. The `config.yml` is loaded
 2. Cleanup: all files and directories from `dist` folder are deleted.
-3. AWSCommon.puml is copied to `dist`.
+3. AWSCommon.puml and supporting PUML files are copied to `dist`.
 4. All files ending in `_light-bg.png` are processed in the `source/official` directory:
     * Matching files will have a `Target` name and `Color` setting applied.
     * Non-matching files be set to Uncategorized with default `Target` and `Color` settings.

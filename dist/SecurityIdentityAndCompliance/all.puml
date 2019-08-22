@@ -1,6 +1,21 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
+sprite $ADConnector [64x64/16z] {
+pLS7jYCX31jZR2pT_y2RcLHdUO-oLV-dHmEM13Z7_mar_HMwaspxTEM9kiqFGa789hsITjxv7btkGmTHTiKxIo-R4XOodjVPCR6HvLb7R7Ztrir8s_3kxTkw
+XtbC9NtTkuuMayYQBtcOlv-piEvThcSMAVFh7lRzYdaFhLUiJakOyxhkOUklbmB6gdVh7gRzehEVh7kNzxEfJMimjINlieT87owBR2w7MWi0uLLclCiG0zze
+kXYoEpkQkmT8ifM5a9SuoQzf5mU9EcrG0HcQgd6IFhd82ph9K90-5L11Tt8IPCq7JXyjqVDrIsU1JZkZP0mt-MzdHAsclNhWdPBsdGDzLz166wG3aZGZ-Jc1
+CZXaIwkVjJ2CHDpGv1BUHi7FAMidvm9E5jWM3gWWxcQt6-pk743494Yx-FfMXp0kG7_YywXjVlpQuSy3R1U_oeb7_Mk7ixxrbqlH6734okS10ttoMQu0-e3l
+Y1G0WlHwWvwlnzcnz9KAykED69SlEL_YWP39xgpVn4fUslldcfCsjsf2-ih4R4iOqgD3fdC3_QggaIXBlyOq7OPJzEnxc1OHARM1P9DZ0UBW2O0NGez5Y0KV
+WEkn0z5gPbgE_ma_
+}
+
+AWSEntityColoring(ADConnector)
+!define ADConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ADConnector, ADConnector)
+!define ADConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ADConnector, ADConnector)
+!define ADConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ADConnector, ADConnector)
+!define ADConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ADConnector, ADConnector)
+
 sprite $Artifact [64x64/16z] {
 xPQ7hgD034Ml1tV-_tyNJInb2A3dVIfRJtevPhgTlod_-K-OgPh5jrpT20Lj6lbJE4-DvO1d8FPi4moGU6GHBWHmP0ybq6U3OtwP7HYGtFE20DpGDv1dw8hb
 n0bRGn-HgJWXEOdnPG2UUYhOjB0n6ru1E1-P7iNhLVSiTiOx047pcI1ubh-sIGaLm46HZp0axtoFWVf5mFc4W_BjwuiPLUUaJWZ-V7bTVBo8P4pAqyS612WM
@@ -15,6 +30,19 @@ AWSEntityColoring(Artifact)
 !define ArtifactParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Artifact, Artifact)
 !define ArtifactParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Artifact, Artifact)
 
+sprite $CertificateAuthority [64x64/16z] {
+vTTdejmW30HWIwWmS_y3vzcBDsmgA3rl_hX-hjJZtSSYYmbxuy9w89T7BmNawK4_Id7YuUqVzscbvEtBkJrAUNgNKk9l_t-YvcugDQy1Na7elfVWb91DBvra
+DnLHkrPboml8tkwjrad8Zkzapjj9zWtlDvyluCjUGCWNTgrwu-ikyx5lqUVhlHePXu2vwi6SEQvR9x7e1OpF-164B7i_trhF3SNuyhxfZT2RR_dn_a5211pl
+il7-uzGWCVYPZU_lznVZHswaRvI_FWhjyvvze_mTCUxh_h9dsSluwlCRGLRz-Elv198aTAlzQI0HUXxNEDVRPlkddIJn5fBikj_-MkT8jrhxhnQPOLfg_rNd
+zMtVo3QllrFl_YDUaaofUjLEabsrvWDa9eae-JCnMg6YlmvOrMEWXeANJ9tMvLUEtxpez-OlCL6PvYzS2_habO_8-lmjVF8ICUPlxpqV
+}
+
+AWSEntityColoring(CertificateAuthority)
+!define CertificateAuthority(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CertificateAuthority, CertificateAuthority)
+!define CertificateAuthority(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateAuthority, CertificateAuthority)
+!define CertificateAuthorityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CertificateAuthority, CertificateAuthority)
+!define CertificateAuthorityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CertificateAuthority, CertificateAuthority)
+
 sprite $CertificateManager [64x64/16z] {
 xPO5WaCX30KV986alVzzDrcf2wJhPRxBuBPn5ek5CGt2Tibl6APTziM6Q5TyVps4NlMt8_hsgayo1A5zKVdf42sL_pqwKVv4v-_wkD-1_eXV0Nh0xwWLFU-x
 x45aVDCkNCFr4qjNc_C9GV6qzuAWplaCYDf7MWIGoVmpoYx9MY3JvISekjSJvIyVUQwk9tpR-vRn5UmdZQBGZE_FnW2RtsHyHWLAWLyuuuVT_7M4aF6fYCNL
@@ -26,19 +54,6 @@ AWSEntityColoring(CertificateManager)
 !define CertificateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateManager, CertificateManager)
 !define CertificateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CertificateManager, CertificateManager)
 !define CertificateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CertificateManager, CertificateManager)
-
-sprite $CertificateManagerResource [64x64/16z] {
-vTTdejmW30HWIwWmS_y3vzcBDsmgA3rl_hX-hjJZtSSYYmbxuy9w89T7BmNawK4_Id7YuUqVzscbvEtBkJrAUNgNKk9l_t-YvcugDQy1Na7elfVWb91DBvra
-DnLHkrPboml8tkwjrad8Zkzapjj9zWtlDvyluCjUGCWNTgrwu-ikyx5lqUVhlHePXu2vwi6SEQvR9x7e1OpF-164B7i_trhF3SNuyhxfZT2RR_dn_a5211pl
-il7-uzGWCVYPZU_lznVZHswaRvI_FWhjyvvze_mTCUxh_h9dsSluwlCRGLRz-Elv198aTAlzQI0HUXxNEDVRPlkddIJn5fBikj_-MkT8jrhxhnQPOLfg_rNd
-zMtVo3QllrFl_YDUaaofUjLEabsrvWDa9eae-JCnMg6YlmvOrMEWXeANJ9tMvLUEtxpez-OlCL6PvYzS2_habO_8-lmjVF8ICUPlxpqV
-}
-
-AWSEntityColoring(CertificateManagerResource)
-!define CertificateManagerResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CertificateManagerResource, CertificateManagerResource)
-!define CertificateManagerResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateManagerResource, CertificateManagerResource)
-!define CertificateManagerResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CertificateManagerResource, CertificateManagerResource)
-!define CertificateManagerResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CertificateManagerResource, CertificateManagerResource)
 
 sprite $CloudDirectory [64x64/16z] {
 xPO74jKm34HNijewzxylANJ8eFZJuKr9VRE9g-PloN_-mwgCdQpYOpTD1UyHjMJVhd5Am_p4Xc1dL3FR0FaiZsa263l-WEJy2YdGXXuODp4SY6_xXfmt9ApZ
@@ -338,6 +353,21 @@ AWSEntityColoring(Macie)
 !define MacieParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Macie, Macie)
 !define MacieParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Macie, Macie)
 
+sprite $ManagedMicrosoftAD [64x64/16z] {
+lPO7iYCX30LH3lS_y8BbK5FBjsKsj7Fe2JmXPlmxsFLFT8XC6kTePlgvZhdWOzyoAJBWKATC7RoUpl0Ck3tZaIwPKeDWXzb5XN2MuLE3I3_ApYudydrsps5R
+6Hvaj_dGf7QvEvX-ThmRZ7vslW-ZN_YROZZ8RXnak2rvRsUudtAKQVt2Xtr1dMJt0FVJeFy_pUIJx1v0XE-LvZYHKRDfdSDlwmH8rDmZt4s5S9lTZx9uv1LN
+R8-nb1nkfchcKPyLheNlxvOo9HXF0CNNbuq-KLkcpTVJa4wVuX-g0YAjaTtoG-0tcptJEdESQ-o44Euga5Zan3PDQ-VVmulmIJm_fJLwtFAHrFD2686dDNhi
+yk5MW2ng4nMkB9--l-qFlFsr_4lJElKZ0yxzQbhdVcLtxbicDNoeKuIA0g7yJdClFs8f65xpCQ3yMd1Q_if8fqyX05JxhwRLymC6nlGvbbm-H0RJ6n0UlhWE
+Cuq14OftN_CJ_l2PaXCrgdDO-TBtPNZOcFu4DAJE7-a3yF9HeFn9QlaDogzXNZuAaILzwHlN1nle4SxZE_yAZ77g5__PXt-o_-Zvb6cR3O1cQlUID8tn8hD6
+jYytzB5ygqpKF79XC9gWbd5TGCOt8A_ztd1N8HWd0C15_0K
+}
+
+AWSEntityColoring(ManagedMicrosoftAD)
+!define ManagedMicrosoftAD(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ManagedMicrosoftAD, ManagedMicrosoftAD)
+!define ManagedMicrosoftAD(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ManagedMicrosoftAD, ManagedMicrosoftAD)
+!define ManagedMicrosoftADParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ManagedMicrosoftAD, ManagedMicrosoftAD)
+!define ManagedMicrosoftADParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ManagedMicrosoftAD, ManagedMicrosoftAD)
+
 sprite $ResourceAccessManager [64x64/16z] {
 xTM5hgr038NXrKwTzt_V6p9xWACqHAwTFxAb-N2fFwAVVagtPfwVUKSx_ymRn5e9x7DlMpNQx4jVgynwNzRgtYTJVfYElXTWl1y2qlKEObXTKi0PqlD9y03o
 oYcs94ZB3-XEHgq457Evsl06tZyOUWmereRPhGyWzi-Sd_F2zENrrlFhCjeSl2Pp0K6GklCAoAlh6QFO9h_pZ4jypiW8MlS-ur9UBu39R_oNAMazzREjxNqG
@@ -422,6 +452,20 @@ AWSEntityColoring(ShieldShieldAdvanced)
 !define ShieldShieldAdvanced(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ShieldShieldAdvanced, ShieldShieldAdvanced)
 !define ShieldShieldAdvancedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ShieldShieldAdvanced, ShieldShieldAdvanced)
 !define ShieldShieldAdvancedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ShieldShieldAdvanced, ShieldShieldAdvanced)
+
+sprite $SimpleAD [64x64/16z] {
+xPO7SiD024L5Xt__-wPfqpSoWyTJyzpBS-6pQ8_7eUdtw5I077CSGCvrnYiwzWEGGj5G5y0F1Npe9uhUhdca6s1d4MAONQqG9Xb-QbJ8KNRnvOzCilieso13
+0Nppe4sXQFTZ-jdfhXZzx78VHh_nDyqmoEuOPBXj-Mndk5zo0aI_yMdVK8FiFk3zCkY_pm4TPFS1LULUQTP9Gff3QuvUzWc9UMHMPOQRy3QxFsNBmdVIkLrZ
+E-NA2FU8hFEnq_V6pwj3cSkNTnDR0iZMd60WPVDq0DQPKmh87yqUdUmKAADVjYOGdJMkP-rCc9PAOb4049kXjVDNU5NvGdqyGdHcd08idlX6XL0YEZDM0Nfh
+G3MF5zpqpFB3Ju0l_Vshorz3Q-uNYiR-6bfZVsKtzmEGkR-6rjnF5C_zDRJ6FXLAvGAcIzznYxpqxKx_OBa1NViDxlR_VNh8zrVF5o0s7q3UtLe7W53-9giN
+sjiDnpfykxtWiJO3GUrThHT-K6j7r8NL8-kDJ3UXOm8HVHEV0G
+}
+
+AWSEntityColoring(SimpleAD)
+!define SimpleAD(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SimpleAD, SimpleAD)
+!define SimpleAD(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SimpleAD, SimpleAD)
+!define SimpleADParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SimpleAD, SimpleAD)
+!define SimpleADParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SimpleAD, SimpleAD)
 
 sprite $SingleSignOn [64x64/16z] {
 xPQ5aiCm34HNihZ__xr7lf83axX31s-ej2kmjvFwZVppJxXxJek5y0bfJAYp0MYYmW0aJnSdi7LL6e7pj5oUUg5p1WojHmHyHgvezKo3LfWUEuqavFAZ1W3a

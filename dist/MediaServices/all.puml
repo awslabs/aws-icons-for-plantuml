@@ -29,11 +29,24 @@ AWSEntityColoring(ElementalMediaConnect)
 !define ElementalMediaConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConnect, ElementalMediaConnect)
 !define ElementalMediaConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConnect, ElementalMediaConnect)
 
-sprite $ElementalMediaLive [64x64/16z] {
+sprite $ElementalMediaConvert [64x64/16z] {
 xPO7biGW34CbtBZ_YVSnUOdPHfXUDRryOYm3hY-hZpuArJW3DmAqKsalW0XG_2JS6hcCSb88laPkzAVop2BVYqJ_mvndjhaF0BfI1jgKPv7kgsAZOj_BxXzU
 qh_-EndW0K2tqDE_RH8A80Oy0T1x90TRlWL7F7W8jqj2D_N3H8Wnlrob-E_4BZ7iy-qvgHofaNjyaPKFyVJV9LPIIlAZA1me15K95g2FV8eF8o2nf8uMn_8j
 0bcBocjzGpxpTn9VRVNFwYIVzVDx_-ZhPxv-WUdwJPwvViXSFvpZ-qqioEYshXa-KzV-gDg-pYJkyR0wsh-g0N7c_dds_dt--J5_VW6ZysjVP3rTwV_9_GEP
 _SCf_GjvIl-INZOLlqV_bltZo-gZZxu
+}
+
+AWSEntityColoring(ElementalMediaConvert)
+!define ElementalMediaConvert(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvert(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvertParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+!define ElementalMediaConvertParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaConvert, ElementalMediaConvert)
+
+sprite $ElementalMediaLive [64x64/16z] {
+xPO7rkCm28G78p5x_mkdpSlAIb7RyZUJvi9dU80c-lLjxR33c1B_0Cy6M5wbOmFSWItMWekC3LXAmP5qaE1hVEWWPlc8Ltp464q7-CmJS8xrpD8hFXai3_LC
+OHnopmPNOlrUxZtahWVkdzx02I3LoTGX4m0sUCDkO7dDtN8zph0M3-DsZqYx_99LDbiOslp5pnGZ0AJYJ9M_nslHgcrMTInV7zRdPMhxKySc-J8FgxoAdZZ8
+vrppqh2z2EKilcFYooJgU13aQvung7eMh_8FwokXd06Fn_hH0HsrJCwtxxf_jnoKIGENnYYBu6v-0efCnrZ__SgRmbMrj0xFttnPFsiyDmtk75-B_pIFB7zx
+v4td6M1FFwMSbHlLHkbdLxztia6MoR2kVZ-jLvhfi8nnrvYZ7E_B5Ld7uwRuQ-REEq_tIRZ8jQbqyrbexPXf1Qxkd_G7-07xj_x-yUlROOUT0G
 }
 
 AWSEntityColoring(ElementalMediaLive)

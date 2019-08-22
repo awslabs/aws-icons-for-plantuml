@@ -28,5 +28,4 @@ sources --> votingAPI
 userAuth <--> generateToken
 votingAPI --> recordVote
 recordVote --> voteDb
-
 @enduml
