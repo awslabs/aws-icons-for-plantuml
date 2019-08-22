@@ -4,9 +4,12 @@
 .vscode/launch.json
 __pycache__/
 *.py[cod]
-source/*
+.python-version
+# source/
 !source/*.puml
+!source/.gitignore
+!source/official/.gitignore
 # Force create of source/official as empty directory
-!source/official
+
 
 config-template.yml

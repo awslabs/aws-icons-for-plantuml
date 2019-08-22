@@ -12,7 +12,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 * Python 3.6/3.7 and packages from the `requirements.txt` file.
 * [Amazon Corretto 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) or [OpenJDK 8](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-* Download the [AWS Architecture Icons - PNG format](https://d1.awsstatic.com/webteam/architecture-icons/AWS-Architecture-Icons_PNG_20190207.dc87f146435a511ec9ef9ab7b27578f3936aa2b8.zip), unzip,  and copy PNG file contents from `AWS-Architecture-Icons_PNG/Light-BG` directory to `source/official` directory.
+* Download the [AWS Architecture Icons - PNG format](https://d1.awsstatic.com/webteam/architecture-icons/AWS-Architecture-Icons_PNG_20190729.fc1bd3d844ff6ebd198d227d55e3b206fbcc62c2.zip), unzip,  and copy PNG file contents from `AWS-Architecture-Icons_PNG/Light-BG` directory to `source/official` directory.
 
   the folder structure should look like this:
 
@@ -58,13 +58,13 @@ Prerequisites met, exiting
 
 ```
 
-### What happens
+### What Happens
 
 From a logical point of view, the following happens:
 
 1. The `config.yml` is loaded
 2. Cleanup: all files and directories from `dist` folder are deleted.
-3. AWSCommon.puml is copied to `dist`.
+3. AWSCommon.puml and supporting PUML files are copied to `dist`.
 4. All files ending in `_light-bg.png` are processed in the `source/official` directory:
     * Matching files will have a `Target` name and `Color` setting applied.
     * Non-matching files be set to Uncategorized with default `Target` and `Color` settings.

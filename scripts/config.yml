@@ -1,7 +1,7 @@
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
-# Hand curated config file for Release 3.0-2019-05-21 AWS Architecture Icon release
+# Hand curated config file for Release 4.0-2019-07-29 AWS Architecture Icon release
 # 
 Defaults:
   Colors:
@@ -46,6 +46,8 @@ Categories:
   Services:
   - Source: AWS-Data-Pipeline
     Target: DataPipeline
+  - Source: AWS-Data-lake_Resource-icon
+    Target: DatalakeResourceIcon
   - Source: AWS-Glue_Crawlers
     Target: GlueCrawlers
   - Source: AWS-Glue_Data-catalog
@@ -71,7 +73,7 @@ Categories:
   - Source: Amazon-EMR_EMR-engine
     Target: EMREngine
   - Source: Amazon-EMR_HDFS-cluster
-    Target: EMRHDFSCluster
+    Target: EMRHDFScluster
   - Source: Amazon-EMR
     Target: EMR
   - Source: Amazon-Elasticsearch-Service
@@ -89,7 +91,7 @@ Categories:
   - Source: Amazon-Managed-Streaming-for-Kafka
     Target: ManagedStreamingforKafka
   - Source: Amazon-Quicksight
-    Target: QuickSight
+    Target: Quicksight
   - Source: Amazon-Redshift_Dense-compute-node
     Target: DenseComputeNodeResource
   - Source: Amazon-Redshift_Dense-storage-node
@@ -102,10 +104,12 @@ Categories:
 - Name: ApplicationIntegration
   Color: MaroonFlush
   Services:
-  - Source: Amazon-AppSync
-    Target: AppSync
   - Source: AWS-Step-Functions
     Target: StepFunctions
+  - Source: Amazon-AppSync
+    Target: AppSync
+  - Source: Amazon-EventBridge
+    Target: EventBridge
   - Source: Amazon-MQ
     Target: MQ
   - Source: Amazon-Simple-Notification-Service-SNS_Email-Notification
@@ -115,13 +119,13 @@ Categories:
   - Source: Amazon-Simple-Notification-Service-SNS_Topic
     Target: SNSTopic
   - Source: Amazon-Simple-Notification-Service-SNS
-    Target: SimpleNotificationServiceSNS
+    Target: SNS
   - Source: Amazon-Simple-Queue-Service-SQS_Message
     Target: SQSMessage
   - Source: Amazon-Simple-Queue-Service-SQS_Queue
     Target: SQSQueue
   - Source: Amazon-Simple-Queue-Service-SQS
-    Target: SimpleQueueServiceSQS
+    Target: SQS
   - Source: Application-Integration
     Target: ApplicationIntegration
   SourceDir: Application Integration
@@ -168,6 +172,20 @@ Categories:
     Target: Outposts
   - Source: AWS-Serverless-Application-Repository
     Target: ServerlessApplicationRepository
+  - Source: AWS-Thinkbox-Deadline
+    Target: ThinkboxDeadline
+  - Source: AWS-Thinkbox-Draft
+    Target: ThinkboxDraft
+  - Source: AWS-Thinkbox-Frost
+    Target: ThinkboxFrost
+  - Source: AWS-Thinkbox-Krakatoa
+    Target: ThinkboxKrakatoa
+  - Source: AWS-Thinkbox-Sequoia
+    Target: ThinkboxSequoia
+  - Source: AWS-Thinkbox-Stoke
+    Target: ThinkboxStoke
+  - Source: AWS-Thinkbox_XMesh
+    Target: ThinkboxXMesh
   - Source: Amazon-EC2-Auto-Scaling
     Target: EC2AutoScaling
   - Source: Amazon-EC2-Container-Registry_Image
@@ -186,8 +204,6 @@ Categories:
     Target: EC2Rescue
   - Source: Amazon-EC2
     Target: EC2
-  - Source: Amazon-Elastic-Container-Service-for-Kubernetes
-    Target: ECSforKubernetes
   - Source: Amazon-Elastic-Container-Service_Container1
     Target: ECSContainer1
   - Source: Amazon-Elastic-Container-Service_Container2
@@ -196,107 +212,105 @@ Categories:
     Target: ECSContainer3
   - Source: Amazon-Elastic-Container-Service_Service
     Target: ECSService
-  - Source: Amazon-Elastic-Container-Service_Task
-    Target: ElasticContainerServiceTask
   - Source: Amazon-Elastic-Container-Service
     Target: ElasticContainerService
+  - Source: Amazon-Elastic-Kubernetes-Service
+    Target: ElasticKubernetesService
   - Source: Amazon-Lightsail
     Target: Lightsail
   - Source: Compute
     Target: Compute
-  # - Source: Elastic-Load-Balancing-ELB
-  #   Target: ElasticLoadBalancingELB
   - Source: VMware-Cloud-On-AWS
     Target: VMwareCloudOnAWS
   - Source: Amazon-EC2_A1-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2A1Instance
   - Source: Amazon-EC2_C4-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2C4Instance
   - Source: Amazon-EC2_C5-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2C5Instance
   - Source: Amazon-EC2_C5n-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2C5nInstance
   - Source: Amazon-EC2_D2-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2D2Instance
   - Source: Amazon-EC2_DB-on-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2DBonInstance
   - Source: Amazon-EC2_F1-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2F1Instance
   - Source: Amazon-EC2_G3-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2G3Instance
   - Source: Amazon-EC2_H1-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2H1Instance
   - Source: Amazon-EC2_High-Memory-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2HighMemoryInstance
   - Source: Amazon-EC2_I3-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2I3Instance
   - Source: Amazon-EC2_Instance-with-CloudWatch
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2InstancewithCloudWatch
   - Source: Amazon-EC2_Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2Instance
   - Source: Amazon-EC2_Instances
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2Instances
   - Source: Amazon-EC2_M4-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2M4Instance
   - Source: Amazon-EC2_M5-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2M5Instance
   - Source: Amazon-EC2_M5a-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2M5aInstance
   - Source: Amazon-EC2_Optimized-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2OptimizedInstance
   - Source: Amazon-EC2_P2-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2P2Instance
   - Source: Amazon-EC2_P3-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2P3Instance
   - Source: Amazon-EC2_R4-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2R4Instance
   - Source: Amazon-EC2_R5-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2R5Instance
   - Source: Amazon-EC2_R5a-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2R5aInstance
-  - Source: Amazon-EC2_Spot-Instance
-    SourceDir: Compute/_EC2 Instance Types
-    Target: EC2SpotInstance
+  - Source: Amazon-EC2_Spot-instance
+    SourceDir: Compute/_Instances
+    Target: EC2Spotinstance
   - Source: Amazon-EC2_T2-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2T2Instance
   - Source: Amazon-EC2_T3-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2T3Instance
   - Source: Amazon-EC2_T3a-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2T3aInstance
   - Source: Amazon-EC2_X1-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2X1Instance
   - Source: Amazon-EC2_X1e-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2X1eInstance
   - Source: Amazon-EC2_z1d-Instance
-    SourceDir: Compute/_EC2 Instance Types
+    SourceDir: Compute/_Instances
     Target: EC2z1dInstance
   SourceDir: Compute
 - Name: CustomerEngagement
@@ -322,9 +336,8 @@ Categories:
     Target: DatabaseMigrationService
   - Source: Amazon-Aurora
     Target: Aurora
-  - Source: "Amazon-DocumentDB-\x03with-MongoDB-compatibility"
-    Target: DocumentDBwithMongoDBcompat
-    ZComment: "Unknown character in filename, this will capture it"
+  - Source: Amazon-DocumentDB-with-MongoDB-compatibility
+    Target: DocumentDBwithMongoDBcompatibility
   - Source: Amazon-DynamoDB_Attribute
     Target: DynamoDBAttribute
   - Source: Amazon-DynamoDB_Attributes
@@ -349,11 +362,40 @@ Categories:
     Target: ElastiCache
   - Source: Amazon-Neptune
     Target: Neptune
-  - Source: "Amazon-Quantum-Ledger-\x03Database_QLDB"
+  - Source: Amazon-Quantum-Ledger-Database_QLDB
     Target: QLDB
-    ZComment: "Unknown character in filename, this will capture it"
   - Source: Amazon-RDS-on-VMware
     Target: RDSonVMware
+  - Source: Amazon-RDS_Amazon-Aurora_instance-alt
+    Target: RDSAmazonAurorainstancealt
+  - Source: Amazon-RDS_Amazon-Aurora_instance
+    Target: RDSAmazonAurorainstance
+  - Source: Amazon-RDS_Amazon-RDS_instance-alt
+    Target: RDSAmazonRDSinstancealt
+  - Source: Amazon-RDS_Amazon-RDS_instance
+    Target: RDSAmazonRDSinstance
+  - Source: Amazon-RDS_MariaDB_instance-alt
+    Target: RDSMariaDBinstancealt
+  - Source: Amazon-RDS_MariaDB_instance
+    Target: RDSMariaDBinstance
+  - Source: Amazon-RDS_MySQL_instance-alt
+    Target: RDSMySQLinstancealt
+  - Source: Amazon-RDS_MySQL_instance
+    Target: RDSMySQLinstance
+  - Source: Amazon-RDS_Oracle_instance-alt
+    Target: RDSOracleinstancealt
+  - Source: Amazon-RDS_Oracle_instance
+    Target: RDSOracleinstance
+  - Source: Amazon-RDS_PIOP
+    Target: RDSPIOP
+  - Source: Amazon-RDS_PostgreSQL_instance-alt
+    Target: RDSPostgreSQLinstancealt
+  - Source: Amazon-RDS_PostgreSQL_instance
+    Target: RDSPostgreSQLinstance
+  - Source: Amazon-RDS_SQL-Server_instance-alt
+    Target: RDSSQLServerinstancealt
+  - Source: Amazon-RDS_SQL-Server_instance
+    Target: RDSSQLServerinstance
   - Source: Amazon-RDS
     Target: RDS
   - Source: Amazon-Redshift_Dense-Compute-Node
@@ -370,6 +412,8 @@ Categories:
 - Name: DeveloperTools
   Color: CeruleanBlue
   Services:
+  - Source: AWS-Cloud-Development-Kit
+    Target: CloudDevelopmentKit
   - Source: AWS-Cloud9
     Target: Cloud9
   - Source: AWS-CodeBuild
@@ -436,15 +480,14 @@ Categories:
     Target: IoTCore
   - Source: AWS-IoT-Device-Defender
     Target: IoTDeviceDefender
-  - Source: "AWS-IoT-\x03Device-Management"
+  - Source: AWS-IoT-Device-Management
     Target: IoTDeviceManagement
-    ZComment: "Unknown character in filename, this will capture it"
   - Source: AWS-IoT-Events
     Target: IoTEvents
-  - Source: AWS-IoT-Greengrass
-    Target: IoTGreengrass
   - Source: AWS-IoT-Greengrass_Connector
     Target: IoTGreengrassConnector
+  - Source: AWS-IoT-Greengrass
+    Target: IoTGreengrass
   - Source: AWS-IoT-SiteWise
     Target: IoTSiteWise
   - Source: AWS-IoT-Things-Graph
@@ -607,6 +650,7 @@ Categories:
     Target: CloudTrail
   - Source: AWS-Command-Line-Interface
     Target: AWSCommandLineInterface
+    ZComment: '******* Duplicate target name, must be made unique for All.puml ********'
   - Source: AWS-Config
     Target: Config
   - Source: AWS-Control-Tower
@@ -637,16 +681,14 @@ Categories:
     Target: OpsWorks
   - Source: AWS-Organizations_Account
     Target: OrganizationsAccount
-  - Source: AWS-Organizations_Organizational-Unit-OU
-    Target: OrganizationsOrganizationalUnitOU
+  - Source: AWS-Organizations_Organizational-unit
+    Target: OrganizationsOrganizationalunit
   - Source: AWS-Organizations
     Target: Organizations
   - Source: AWS-Personal-Health-Dashboard
     Target: PersonalHealthDashboard
   - Source: AWS-Service-Catalog
     Target: ServiceCatalog
-  # - Source: AWS-Shield_Shield-Advanced
-  #   Target: ShieldShieldAdvanced2
   - Source: AWS-Systems-Manager_Automation
     Target: SystemsManagerAutomation
   - Source: AWS-Systems-Manager_Documents
@@ -691,6 +733,8 @@ Categories:
     Target: CloudWatch
   - Source: Management-and-Governance
     Target: ManagementandGovernance
+  - Source: Systems-Manager_OpsCenter
+    Target: SystemsManagerOpsCenter
   SourceDir: Management & Governance
 - Name: MediaServices
   Color: Meteor
@@ -699,16 +743,13 @@ Categories:
     Target: ElementalMediaConnect
   - Source: AWS-Elemental-MediaConvert
     Target: ElementalMediaConvert
-  - Source: "AWS-Elemental-\x03MediaLive"
-    Target: ElementalMediaLive
   - Source: AWS-Elemental-MediaLive
     Target: ElementalMediaLive
-    ZComment: "Both files are the same image, map to same name until filename is resolved"
-  - Source: "AWS-Elemental-\x03MediaPackage"
+  - Source: AWS-Elemental-MediaPackage
     Target: ElementalMediaPackage
-  - Source: "AWS-Elemental-\x03MediaStore"
+  - Source: AWS-Elemental-MediaStore
     Target: ElementalMediaStore
-  - Source: "AWS-Elemental-\x03MediaTailor"
+  - Source: AWS-Elemental-MediaTailor
     Target: ElementalMediaTailor
   - Source: Amazon-Elastic-Transcoder
     Target: ElasticTranscoder
@@ -726,7 +767,7 @@ Categories:
     Target: DataSyncAgent
   - Source: AWS-DataSync
     Target: DataSync
-  - Source: "AWS-Database-\x03Migration-Service"
+  - Source: AWS-Database-Migration-Service
     Target: DatabaseMigrationService2
   - Source: AWS-Migration-Hub
     Target: MigrationHub
@@ -780,12 +821,10 @@ Categories:
     Target: SitetoSiteVPN
   - Source: AWS-Transit-Gateway
     Target: TransitGateway
-  # - Source: AWS-VPC-PrivateLink
-  #   Target: VPCPrivateLink
-  - Source: Amazon-API-Gateway
-    Target: APIGateway2
   - Source: Amazon-API-Gateway_Endpoint
     Target: APIGatewayEndpoint2
+  - Source: Amazon-API-Gateway
+    Target: APIGateway2
   - Source: Amazon-CloudFront_Download-Distribution
     Target: CloudFrontDownloadDistribution
   - Source: Amazon-CloudFront_Edge-Location
@@ -864,10 +903,12 @@ Categories:
 - Name: SecurityIdentityAndCompliance
   Color: Crimson
   Services:
+  - Source: AD-Connector
+    Target: ADConnector
   - Source: AWS-Artifact
     Target: Artifact
-  - Source: AWS-Certificate-Manager_Certificate-Manager
-    Target: CertificateManagerResource
+  - Source: AWS-Certificate-Authority
+    Target: CertificateAuthority
   - Source: AWS-Certificate-Manager
     Target: CertificateManager
   - Source: AWS-CloudHSM
@@ -896,10 +937,12 @@ Categories:
     Target: IAMRole
   - Source: AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential
     Target: IAMTemporarySecurityCredential
-  - Source: "AWS-Identity-and-\x03Access-Management_IAM"
+  - Source: AWS-Identity-and-Access-Management_IAM
     Target: IAMResource
   - Source: AWS-Key-Management-Service
     Target: KeyManagementService
+  - Source: AWS-Managed-Microsoft-AD
+    Target: ManagedMicrosoftAD
   - Source: AWS-Resource-Access-Manager
     Target: ResourceAccessManager
   - Source: AWS-Secrets-Manager
@@ -930,7 +973,9 @@ Categories:
     Target: Macie
   - Source: Security-Identity-and-Compliance
     Target: SecIdentityAndCompliance
-  SourceDir: Security, Identity, and Compliance
+  - Source: Simple-AD
+    Target: SimpleAD
+  SourceDir: Security, Identity, & Compliance
 - Name: Storage
   Color: ForestGreen
   Services:
@@ -980,8 +1025,12 @@ Categories:
     Target: S3Bucket
   - Source: Amazon-Simple-Storage-Service-S3_Object
     Target: S3Object
-  - Source: "Amazon-Simple-\x03Storage-Service-S3"
+  - Source: Amazon-Simple-Storage-Service-S3
     Target: SimpleStorageServiceS3
+  - Source: EFS-InfrequentAccess
+    Target: EFSInfrequentAccess
+  - Source: EFS-Standard
+    Target: EFSStandard
   - Source: Storage
     Target: Storage
   SourceDir: Storage
@@ -1048,7 +1097,7 @@ Categories:
     Target: Region
   - Source: Server-contents
     Target: ServerContents
-  - Source: Spot-Fleet
+  - Source: Spot-fleet
     Target: SpotFleet
   - Source: VPC-subnet-private
     Target: VPCSubnetPrivate

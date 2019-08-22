@@ -352,7 +352,7 @@ AWSEntityColoring(OrganizationsAccount)
 !define OrganizationsAccountParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsAccount, OrganizationsAccount)
 !define OrganizationsAccountParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsAccount, OrganizationsAccount)
 
-sprite $OrganizationsOrganizationalUnitOU [64x64/16z] {
+sprite $OrganizationsOrganizationalunit [64x64/16z] {
 xPS7UgCX34H_WOGqS_y3ho7wICF6RRjVugv7hyTZl93o078S1juDxEJp0ReFwfqGmuVSsNBuG_sNNypThTpf5oSwTBd7Lv14ZESoqxJMLAxnAyXsygJwJ42o
 HBht1PnXHlhuBa029DhMLz3c1oThVm6zY2Z8klE3E2O5FST2UdvaR7mPnYGGFOIPRGDawzk7ZuxuQ2bPRlK_XXWsVfRuGuWVHoLjqJXhl-536okXRvfsmKdR
 -OKCcStFyMCZ6Qs1k_xh61blKPf3oTW1Ex2ThnovMGkIgACOS0SG_IluHRy61o0uy7BwilJm7bP1-0NVkjhKaQyalqoQ8Esitq0soLqnbmBIliulMVYfenwV
@@ -360,11 +360,11 @@ KNn9G0bR-vhp_JCrPzqa64jVaFeNAbD839ILtq0zLXXXdzEh2x-0Vgm9zfYIsChFMRv6X-5W0btuWRYm
 q4US0zVvvzdxrIyZ_-ZvvULJx-HPzuUxWJryVtgC5py
 }
 
-AWSEntityColoring(OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOU(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
-!define OrganizationsOrganizationalUnitOUParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsOrganizationalUnitOU, OrganizationsOrganizationalUnitOU)
+AWSEntityColoring(OrganizationsOrganizationalunit)
+!define OrganizationsOrganizationalunit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsOrganizationalunit, OrganizationsOrganizationalunit)
+!define OrganizationsOrganizationalunit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsOrganizationalunit, OrganizationsOrganizationalunit)
+!define OrganizationsOrganizationalunitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsOrganizationalunit, OrganizationsOrganizationalunit)
+!define OrganizationsOrganizationalunitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsOrganizationalunit, OrganizationsOrganizationalunit)
 
 sprite $PersonalHealthDashboard [64x64/16z] {
 xPK7pYCX38KVniRb_lVTEcE11k-6gFxbKmsIUGMF4f-ARxvn5P6XlfuD4PdEIhJZecjrLkCT81wgWmaWYryOpMVTeyO9jAXgX2vE2EJ_6kUO680PC6A2KL_G
@@ -466,6 +466,22 @@ AWSEntityColoring(SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindows(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
 !define SystemsManagerMaintWindowsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerMaintWindows, SystemsManagerMaintWindows)
+
+sprite $SystemsManagerOpsCenter [64x64/16z] {
+bPM7Ukqm28C37Y2z_mFVBwKZcCQzLcV6JsIiGwvVfCCS906VNPUBSktLPg0a2PBqyImnl6rWwKw0X4qZpHm4m1-c0VwETm24VNXku6rLkpqgA0ZTuAHt-JwG
+-4y62Dm7ucJVk8V7rSH7XN7_DNAymNh_o9NvtFL1sXjkQ6KnifmX_Hs7RVbzxoPeKdZDpM6ok3gJjPcgsM5gVN6sujKXvjirPtLM7LhOgdSsOFo1jo-7wjHw
+rVx0vRlr6ZuEzOZj1FNi0vrZAsjG6kQcGetjHDghSfpTrTWs8kLWyTFIOObj0NI9bO6sZ-q4ykAIVJ7Ijh7jf3wletGRjekjfWPujhiKwAoN9SKrwjS2ARPP
+_aH8wo4f1IItNdieRG19XBGuMARjG8ZCF4EwH7QkqxQ3eISFceHAvalluZvrM4bJbQMPzje_Vvt9XehN_Pl42o_wCYt9Lj9ue0vgIUE13CZTi2DSbiGEG4xu
+HhRS3enJ-qb-PA0-hXqPC9QdEI47gxVjkRq4PDtl2Vvd1YPlfUNM6Rj_apJK0csTyJ5jId99o5s4irw1bfZNCz2hWQm51ecstYtrbXj7Tz9g0OuDB_CRRvSO
+OLBSqVIDRqww1XufBjD97SIKttWraYQ1V--aIyq1CDl2IxFes0EF0dNFZ01zTfNelsWt42295dZgPyczJW0WuI0T801YI0UvRj4Wx2gIU2B03vOU2se8V4dp
+xx7LFgQPsHnDdnaT9VVpO7AWnCxXrq41NmlO4N-9HyVAo-keW9olFrHoEm_UNVMr7Fj_h4bYY4YpoD-n1ab6Ha_SvyyoFroSio4TSxIW_m4
+}
+
+AWSEntityColoring(SystemsManagerOpsCenter)
+!define SystemsManagerOpsCenter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerOpsCenter, SystemsManagerOpsCenter)
+!define SystemsManagerOpsCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerOpsCenter, SystemsManagerOpsCenter)
+!define SystemsManagerOpsCenterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerOpsCenter, SystemsManagerOpsCenter)
+!define SystemsManagerOpsCenterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerOpsCenter, SystemsManagerOpsCenter)
 
 sprite $SystemsManagerParameterStore [64x64/16z] {
 rTS5agqm44RXTFm_-z_lSoYiIU3Pp2aP_IfzSSAVoxpcU9DRdE1LE1hwc2Ve-Re6TSHDk5DQXpJm3Oe_cv3TyWmj-1LeTpoE5cYGWr-7FB5vlEfu0oVHRtOT
