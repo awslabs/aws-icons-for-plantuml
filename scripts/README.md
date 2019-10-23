@@ -50,7 +50,7 @@ For PIP users, simply run `pip3 install -r requirements.txt` in your environment
 
 ## Run
 
-To verify all dependencies are met, run `iocn-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags..
+To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags..
 
 ```bash
 $ ./icon-builder.py --check-env
@@ -70,7 +70,7 @@ From a logical point of view, the following happens:
     * Non-matching files be set to Uncategorized with default `Target` and `Color` settings.
 5. For each file, the source PNG will be resized, preserving transparency if set.
 6. A PlantUML sprite is generated.
-7. In addition to single AWS services PUML files, also a combined PUML file, nameds `all.puml`, is created for each category.
+7. In addition to single AWS services PUML files, a combined PUML file, named `all.puml`, is created for each category.
 
 8. A markdown table with all AWS services,  image/icon, and the PUML name is generated.
 

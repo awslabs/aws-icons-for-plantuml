@@ -37,8 +37,8 @@ Analytics | DenseComputeNodeResource  | ![DenseComputeNodeResource](dist/Analyti
 Analytics | DenseStorageNodeResource  | ![DenseStorageNodeResource](dist/Analytics/DenseStorageNodeResource.png?raw=true) |Analytics/DenseStorageNodeResource.puml
 Analytics | EMR  | ![EMR](dist/Analytics/EMR.png?raw=true) |Analytics/EMR.puml
 Analytics | EMRCluster  | ![EMRCluster](dist/Analytics/EMRCluster.png?raw=true) |Analytics/EMRCluster.puml
-Analytics | EMREEngineMapRM3  | ![EMREEngineMapRM3](dist/Analytics/EMREEngineMapRM3.png?raw=true) |Analytics/EMREEngineMapRM3.puml
 Analytics | EMREngine  | ![EMREngine](dist/Analytics/EMREngine.png?raw=true) |Analytics/EMREngine.puml
+Analytics | EMREngineMapRM3  | ![EMREngineMapRM3](dist/Analytics/EMREngineMapRM3.png?raw=true) |Analytics/EMREngineMapRM3.puml
 Analytics | EMREngineMapRM5  | ![EMREngineMapRM5](dist/Analytics/EMREngineMapRM5.png?raw=true) |Analytics/EMREngineMapRM5.puml
 Analytics | EMREngineMapRM7  | ![EMREngineMapRM7](dist/Analytics/EMREngineMapRM7.png?raw=true) |Analytics/EMREngineMapRM7.puml
 Analytics | EMRHDFScluster  | ![EMRHDFScluster](dist/Analytics/EMRHDFScluster.png?raw=true) |Analytics/EMRHDFScluster.puml
