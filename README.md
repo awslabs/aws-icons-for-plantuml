@@ -54,7 +54,7 @@ After inclusion of the `AWSCommon.puml` file, there are two different ways to re
 
 1. **Use individual include files** - Use one file per service or setting. For example:
 
-    `!incude AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml`
+    `!incude AWSPuml/Storage/S3Bucket.puml`
 
 1. **Use category include file** - Single include that contains all services and resources for that category. For example:
 
@@ -70,7 +70,7 @@ For example, including these files from the repository (URL), the includes would
 ' Include main AWSCommon and then sprite files
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!incudeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
+!includeurl AWSPuml/Storage/S3Bucket.puml
 ```
 
 This defines the macro `AWSPuml` to point to the root of the `dist/` directory, which reduces the size of the include statements. Next the `AWSCommon.puml` file is loaded, and then the actual resource files. In this example, all of the entities in the *BusinessApplications* directory are added, and then only the *AmazonSimpleStorageServiceS3* entity from the *Storage* directory.
@@ -121,7 +121,7 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 !includeurl AWSPuml/InternetOfThings/IoTRule.puml
 !includeurl AWSPuml/InternetOfThings/IoTAction.puml
 !includeurl AWSPuml/Analytics/KinesisDataStreams.puml
-!includeurl AWSPuml/ApplicationIntegration/SimpleQueueServiceSQS.puml
+!includeurl AWSPuml/ApplicationIntegration/SQS.puml
 
 left to right direction
 
@@ -129,7 +129,7 @@ agent "Published Event" as event #fff
 
 IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
 KinesisDataStreams(eventStream, "IoT Events", "2 shards")
-SimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
+SQS(errorQueue, "Rule Error Queue", "failed Rule actions")
 
 event --> iotRule : JSON message
 iotRule --> eventStream : messages
