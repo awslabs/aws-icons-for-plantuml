@@ -70,7 +70,7 @@ For example, including these files from the repository (URL), the includes would
 ' Include main AWSCommon and then sprite files
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!incudeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
+!includeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 ```
 
 This defines the macro `AWSPuml` to point to the root of the `dist/` directory, which reduces the size of the include statements. Next the `AWSCommon.puml` file is loaded, and then the actual resource files. In this example, all of the entities in the *BusinessApplications* directory are added, and then only the *AmazonSimpleStorageServiceS3* entity from the *Storage* directory.
