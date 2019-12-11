@@ -51,7 +51,7 @@ Categories:
   - Source: AWS-Glue_Crawlers
     Target: GlueCrawlers
   - Source: AWS-Glue_Data-catalog
-    Target: GlueDatacatalog
+    Target: GlueDataCatalog
   - Source: AWS-Glue
     Target: Glue
   - Source: AWS-Lake-Formation
@@ -73,7 +73,7 @@ Categories:
   - Source: Amazon-EMR_EMR-engine
     Target: EMREngine
   - Source: Amazon-EMR_HDFS-cluster
-    Target: EMRHDFScluster
+    Target: EMRHDFSCluster
   - Source: Amazon-EMR
     Target: EMR
   - Source: Amazon-Elasticsearch-Service
@@ -91,7 +91,7 @@ Categories:
   - Source: Amazon-Managed-Streaming-for-Kafka
     Target: ManagedStreamingforKafka
   - Source: Amazon-Quicksight
-    Target: Quicksight
+    Target: QuickSight
   - Source: Amazon-Redshift_Dense-compute-node
     Target: DenseComputeNodeResource
   - Source: Amazon-Redshift_Dense-storage-node
@@ -293,7 +293,7 @@ Categories:
     Target: EC2R5aInstance
   - Source: Amazon-EC2_Spot-instance
     SourceDir: Compute/_Instances
-    Target: EC2Spotinstance
+    Target: EC2SpotInstance
   - Source: Amazon-EC2_T2-Instance
     SourceDir: Compute/_Instances
     Target: EC2T2Instance
@@ -313,7 +313,7 @@ Categories:
     SourceDir: Compute/_Instances
     Target: EC2z1dInstance
   SourceDir: Compute
-- Name: Customer Enablement
+- Name: CustomerEnablement
   Color: CeruleanBlue
   Services:
   - Source: AWS-IQ
@@ -967,7 +967,7 @@ Categories:
   - Source: AWS-Single-Sign-On
     Target: SingleSignOn
   - Source: AWS-WAF_Filtering-rule
-    Target: WAFFilteringRule
+    Target: WAFFilteringrule
   - Source: AWS-WAF
     Target: WAF
   - Source: Amazon-Cloud-Directory

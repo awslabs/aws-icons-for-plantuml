@@ -41,11 +41,11 @@ Analytics | EMREngine  | ![EMREngine](dist/Analytics/EMREngine.png?raw=true) |An
 Analytics | EMREngineMapRM3  | ![EMREngineMapRM3](dist/Analytics/EMREngineMapRM3.png?raw=true) |Analytics/EMREngineMapRM3.puml
 Analytics | EMREngineMapRM5  | ![EMREngineMapRM5](dist/Analytics/EMREngineMapRM5.png?raw=true) |Analytics/EMREngineMapRM5.puml
 Analytics | EMREngineMapRM7  | ![EMREngineMapRM7](dist/Analytics/EMREngineMapRM7.png?raw=true) |Analytics/EMREngineMapRM7.puml
-Analytics | EMRHDFScluster  | ![EMRHDFScluster](dist/Analytics/EMRHDFScluster.png?raw=true) |Analytics/EMRHDFScluster.puml
+Analytics | EMRHDFSCluster  | ![EMRHDFSCluster](dist/Analytics/EMRHDFSCluster.png?raw=true) |Analytics/EMRHDFSCluster.puml
 Analytics | ElasticsearchService  | ![ElasticsearchService](dist/Analytics/ElasticsearchService.png?raw=true) |Analytics/ElasticsearchService.puml
 Analytics | Glue  | ![Glue](dist/Analytics/Glue.png?raw=true) |Analytics/Glue.puml
 Analytics | GlueCrawlers  | ![GlueCrawlers](dist/Analytics/GlueCrawlers.png?raw=true) |Analytics/GlueCrawlers.puml
-Analytics | GlueDatacatalog  | ![GlueDatacatalog](dist/Analytics/GlueDatacatalog.png?raw=true) |Analytics/GlueDatacatalog.puml
+Analytics | GlueDataCatalog  | ![GlueDataCatalog](dist/Analytics/GlueDataCatalog.png?raw=true) |Analytics/GlueDataCatalog.puml
 Analytics | Kinesis  | ![Kinesis](dist/Analytics/Kinesis.png?raw=true) |Analytics/Kinesis.puml
 Analytics | KinesisDataAnalytics  | ![KinesisDataAnalytics](dist/Analytics/KinesisDataAnalytics.png?raw=true) |Analytics/KinesisDataAnalytics.puml
 Analytics | KinesisDataFirehose  | ![KinesisDataFirehose](dist/Analytics/KinesisDataFirehose.png?raw=true) |Analytics/KinesisDataFirehose.puml
@@ -54,7 +54,7 @@ Analytics | KinesisVideoStreams  | ![KinesisVideoStreams](dist/Analytics/Kinesis
 Analytics | KinesisVideoStreams  | ![KinesisVideoStreams](dist/Analytics/KinesisVideoStreams.png?raw=true) |Analytics/KinesisVideoStreams.puml
 Analytics | LakeFormation  | ![LakeFormation](dist/Analytics/LakeFormation.png?raw=true) |Analytics/LakeFormation.puml
 Analytics | ManagedStreamingforKafka  | ![ManagedStreamingforKafka](dist/Analytics/ManagedStreamingforKafka.png?raw=true) |Analytics/ManagedStreamingforKafka.puml
-Analytics | Quicksight  | ![Quicksight](dist/Analytics/Quicksight.png?raw=true) |Analytics/Quicksight.puml
+Analytics | QuickSight  | ![QuickSight](dist/Analytics/QuickSight.png?raw=true) |Analytics/QuickSight.puml
 Analytics | Redshift  | ![Redshift](dist/Analytics/Redshift.png?raw=true) |Analytics/Redshift.puml
 Analytics | Redshift  | ![Redshift](dist/Analytics/Redshift.png?raw=true) |Analytics/Redshift.puml
 **ApplicationIntegration** | | | **ApplicationIntegration/all.puml**
@@ -114,7 +114,7 @@ Compute | EC2R4Instance  | ![EC2R4Instance](dist/Compute/EC2R4Instance.png?raw=t
 Compute | EC2R5Instance  | ![EC2R5Instance](dist/Compute/EC2R5Instance.png?raw=true) |Compute/EC2R5Instance.puml
 Compute | EC2R5aInstance  | ![EC2R5aInstance](dist/Compute/EC2R5aInstance.png?raw=true) |Compute/EC2R5aInstance.puml
 Compute | EC2Rescue  | ![EC2Rescue](dist/Compute/EC2Rescue.png?raw=true) |Compute/EC2Rescue.puml
-Compute | EC2Spotinstance  | ![EC2Spotinstance](dist/Compute/EC2Spotinstance.png?raw=true) |Compute/EC2Spotinstance.puml
+Compute | EC2SpotInstance  | ![EC2SpotInstance](dist/Compute/EC2SpotInstance.png?raw=true) |Compute/EC2SpotInstance.puml
 Compute | EC2T2Instance  | ![EC2T2Instance](dist/Compute/EC2T2Instance.png?raw=true) |Compute/EC2T2Instance.puml
 Compute | EC2T3Instance  | ![EC2T3Instance](dist/Compute/EC2T3Instance.png?raw=true) |Compute/EC2T3Instance.puml
 Compute | EC2T3aInstance  | ![EC2T3aInstance](dist/Compute/EC2T3aInstance.png?raw=true) |Compute/EC2T3aInstance.puml
@@ -144,9 +144,9 @@ Compute | ThinkboxSequoia  | ![ThinkboxSequoia](dist/Compute/ThinkboxSequoia.png
 Compute | ThinkboxStoke  | ![ThinkboxStoke](dist/Compute/ThinkboxStoke.png?raw=true) |Compute/ThinkboxStoke.puml
 Compute | ThinkboxXMesh  | ![ThinkboxXMesh](dist/Compute/ThinkboxXMesh.png?raw=true) |Compute/ThinkboxXMesh.puml
 Compute | VMwareCloudOnAWS  | ![VMwareCloudOnAWS](dist/Compute/VMwareCloudOnAWS.png?raw=true) |Compute/VMwareCloudOnAWS.puml
-**Customer Enablement** | | | **Customer Enablement/all.puml**
-Customer Enablement | CustomerEnablement  | ![CustomerEnablement](dist/Customer Enablement/CustomerEnablement.png?raw=true) |Customer Enablement/CustomerEnablement.puml
-Customer Enablement | IQ  | ![IQ](dist/Customer Enablement/IQ.png?raw=true) |Customer Enablement/IQ.puml
+**CustomerEnablement** | | | **CustomerEnablement/all.puml**
+CustomerEnablement | CustomerEnablement  | ![CustomerEnablement](dist/CustomerEnablement/CustomerEnablement.png?raw=true) |CustomerEnablement/CustomerEnablement.puml
+CustomerEnablement | IQ  | ![IQ](dist/CustomerEnablement/IQ.png?raw=true) |CustomerEnablement/IQ.puml
 **CustomerEngagement** | | | **CustomerEngagement/all.puml**
 CustomerEngagement | Connect  | ![Connect](dist/CustomerEngagement/Connect.png?raw=true) |CustomerEngagement/Connect.puml
 CustomerEngagement | CustomerEngagement  | ![CustomerEngagement](dist/CustomerEngagement/CustomerEngagement.png?raw=true) |CustomerEngagement/CustomerEngagement.puml
@@ -498,7 +498,7 @@ SecurityIdentityAndCompliance | ShieldShieldAdvanced  | ![ShieldShieldAdvanced](
 SecurityIdentityAndCompliance | SimpleAD  | ![SimpleAD](dist/SecurityIdentityAndCompliance/SimpleAD.png?raw=true) |SecurityIdentityAndCompliance/SimpleAD.puml
 SecurityIdentityAndCompliance | SingleSignOn  | ![SingleSignOn](dist/SecurityIdentityAndCompliance/SingleSignOn.png?raw=true) |SecurityIdentityAndCompliance/SingleSignOn.puml
 SecurityIdentityAndCompliance | WAF  | ![WAF](dist/SecurityIdentityAndCompliance/WAF.png?raw=true) |SecurityIdentityAndCompliance/WAF.puml
-SecurityIdentityAndCompliance | WAFFilteringRule  | ![WAFFilteringRule](dist/SecurityIdentityAndCompliance/WAFFilteringRule.png?raw=true) |SecurityIdentityAndCompliance/WAFFilteringRule.puml
+SecurityIdentityAndCompliance | WAFFilteringrule  | ![WAFFilteringrule](dist/SecurityIdentityAndCompliance/WAFFilteringrule.png?raw=true) |SecurityIdentityAndCompliance/WAFFilteringrule.puml
 **Storage** | | | **Storage/all.puml**
 Storage | Backup  | ![Backup](dist/Storage/Backup.png?raw=true) |Storage/Backup.puml
 Storage | CloudEndureDisasterRecovery  | ![CloudEndureDisasterRecovery](dist/Storage/CloudEndureDisasterRecovery.png?raw=true) |Storage/CloudEndureDisasterRecovery.puml

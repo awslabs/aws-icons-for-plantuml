@@ -201,18 +201,18 @@ AWSEntityColoring(EMREngineMapRM7)
 !define EMREngineMapRM7Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMREngineMapRM7, EMREngineMapRM7)
 !define EMREngineMapRM7Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMREngineMapRM7, EMREngineMapRM7)
 
-sprite $EMRHDFScluster [64x64/16z] {
+sprite $EMRHDFSCluster [64x64/16z] {
 nPU7pi8m38HnbkDx_mV-LJ1gvFmfq6ES1lDJFHAFowSbkyxW7RjCNiO5e_8PNkjDxIHV_6qwoLT_cu54yetaeSBniCpm1g0nyIy0-YjHLA2bV5NTyfVj5H-a
 8vu_qUTzo8PHdl_wR1uA0DsCxu1k7couwDKcwviExMYunrviltePesJjkW9MTalwplUccre_u9C1biOqrEaMb3LVR8YHUv3YBQnBlauvSWyawyIt7cNkUeXc
 osf0v0N_IQU0uAwPxnfaWHT_icafcFao5rsTOBSgnVZx3OryXBKakruW8CjDzOWFPeiNW34EEE1RXEyvU9Bl4VRlaIjWzQQIBolUVPOfYTP3l1Uymq4rdesb
 _R9ifoOVu0dxgVYn-QFE3tj-oVj3tr-YVj3rYw-VVFrc-mVTl_Z-oVPlSduWvXTgVYBdDsv-56v-_U7y39MVxW-9sfz-ix-Dokp-IkxF7z0V
 }
 
-AWSEntityColoring(EMRHDFScluster)
-!define EMRHDFScluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMRHDFScluster, EMRHDFScluster)
-!define EMRHDFScluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMRHDFScluster, EMRHDFScluster)
-!define EMRHDFSclusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMRHDFScluster, EMRHDFScluster)
-!define EMRHDFSclusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMRHDFScluster, EMRHDFScluster)
+AWSEntityColoring(EMRHDFSCluster)
+!define EMRHDFSCluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSCluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
 
 sprite $ElasticsearchService [64x64/16z] {
 xTQ7hkKW38JX0Opj6Tx_VLS9X-ZcRWdQtdwrj2-zwI_kV_-ZjLVyAfzOnLTwur7_UZyaZM_mEZgyh_WrFebLVAMlSMJm1yHQPfKttyvJuOy-W9C3UVSwsl5T
@@ -256,18 +256,18 @@ AWSEntityColoring(GlueCrawlers)
 !define GlueCrawlersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueCrawlers, GlueCrawlers)
 !define GlueCrawlersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueCrawlers, GlueCrawlers)
 
-sprite $GlueDatacatalog [64x64/16z] {
+sprite $GlueDataCatalog [64x64/16z] {
 rPU5aYj124M1nl__VoDTFDbUQJQUKn8zTIz4PWPEIEG90epy5K5mHdD2GFbB-AnJPgY8uFcUIHijdpC7JAZkzS1_FhwMFtI7_EXBv0xyoUVOuVZA-oEM3NoN
 _VNz-D47tFAmxoyYqXd4N_l4wX5PHBZ9mAwFNoynRBHycdQugGYV457po3FIyJtJXTQPYIqpgUVRG5WXRVfSqwhmc31B3M2j_VaFNxsEpvck5l6_wUgPslpy
 VIOXqPWGOJtPzCSvQe7hkOuF_dVJIwUMNmNMU86T_qE1oC2sNmNM-AvV1N29x_jLO8bl--i6AhxlLm5Rufl-Mg3Y-_vQG9RudWzM1R3YU_vQeEBR_bfWniCb
 VXNWJBxC1qy7q0oyqBVouMtzD8tBVSc9NUh3i0WNwFeDNjrdts7tFN-sBIz-_M4RzBxxyostdNzSvbz__NhzzVErr-z7
 }
 
-AWSEntityColoring(GlueDatacatalog)
-!define GlueDatacatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueDatacatalog, GlueDatacatalog)
+AWSEntityColoring(GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueDataCatalog, GlueDataCatalog)
 
 sprite $Kinesis [64x64/16z] {
 xLPNWkKm21CTykv_tYs9_Sfqa-qx-ae3IuIs_H7un2VASro5LyFUOUEAqR6Fa_O96LU2wEWdggb4jmOKFZoXAM0ICF3MW5qZmFDg3Jo55uEp4SAR0m6iEWxc
@@ -368,18 +368,18 @@ AWSEntityColoring(ManagedStreamingforKafka)
 !define ManagedStreamingforKafkaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, ManagedStreamingforKafka, ManagedStreamingforKafka)
 !define ManagedStreamingforKafkaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, ManagedStreamingforKafka, ManagedStreamingforKafka)
 
-sprite $Quicksight [64x64/16z] {
+sprite $QuickSight [64x64/16z] {
 xTOtZaGX44NH1vHd_-iTNnhHjlI9sjmKdGGVpz6xTyx5_B9d5EFBdY2cTpE-xct6tMQ8NVCQzpCMF-fpalImDpHXD3_g6JBdW1tr0fwnvJ4wUXIzZ24hHmEw
 5pq104La2cXOwhlUqCmQRE7X90MVapKP-i-_fOABNZ4YEcpXTMyDQ0rZuIMVd0WWNtZ99uzeBHPUzCdJM_AQJvvUazTyylIMlEIJfqzUyiav8hsrv1M_SaMJ
 v2M_SixhkkfNRcYg3LxsbdmzFqLl5jC0Ni_FA7kbmMqPxEWTFMfUpYVB1p2yvXrDhSDYoLFVzGQQyyfOpNSFWXprCT0QcX_sGIqdwu3FoThmt6tB4xJaD_yl
 klz_sls_RVyVdwDtxpu1
 }
 
-AWSEntityColoring(Quicksight)
-!define Quicksight(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Quicksight, Quicksight)
-!define Quicksight(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Quicksight, Quicksight)
-!define QuicksightParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Quicksight, Quicksight)
-!define QuicksightParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Quicksight, Quicksight)
+AWSEntityColoring(QuickSight)
+!define QuickSight(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, QuickSight, QuickSight)
+!define QuickSight(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, QuickSight, QuickSight)
+!define QuickSightParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, QuickSight, QuickSight)
+!define QuickSightParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, QuickSight, QuickSight)
 
 sprite $Redshift [64x64/16z] {
 xPO5jkH024KVKW9l__kTId_t8ZbpDBTTRf0MoF_3pGrVEQDcnXmFPZoUgDWnN0MlYFe8SbUVZeMQjxveReA5JsxPwO2q6U_hZza4yDmvWa77uNxknr3OHlW1

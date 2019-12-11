@@ -1,6 +1,6 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $EC2Spotinstance [64x64/16z] {
+sprite $EC2SpotInstance [64x64/16z] {
 tPU7aYGn24DFO93__uSlKBLKgsZNJRYuscnuQeTP1d_vr48ctk6Dj5TPcAyWOxdXQTXMyeVshX-vx6SBzSiV1L_vihZCmXFA9za6gy0CDpZfC8yiczKucSex
 FmoSbGhTFvGfNPEdGVsyh0MupBbJ55U3x6aEBUR0Xm5iH5g6CpuZZoPfx27yPGC_9zYj0KJVCxnIfvo9QH0KhR9C-kH9Oip0gAeKa1puAdCrA3vMAqbqhWfa
 oYOsR_8Cr2zb95hDYC61zp41MP8tXGWeB-ajKqEtSN3ABvbNHsH4j3GBr0KaKt5ivJU4Lq3j-k2y5QGfhnCsUT7D4HU-HpJ-EAzn2Jp6wufXGPer-bsOFCoY
@@ -9,8 +9,8 @@ FSNrUReWCfMN-ZKsDCbPFuLlohIeQltK-dtcrK3hjqu0Sd2zJZ6OZo-Ec0Utcs-3JbKvimQ3-oBcJOUI
 _l7z_lNSFwUF_ZbF_RFsxzrgvtB0I0EyO791-_Vp_O6bJUvTFuIUzuSf2xs_XBrqVyfQX-4Ftz_q_lYfzGq
 }
 
-AWSEntityColoring(EC2Spotinstance)
-!define EC2Spotinstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Spotinstance, EC2Spotinstance)
-!define EC2Spotinstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Spotinstance, EC2Spotinstance)
-!define EC2SpotinstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2Spotinstance, EC2Spotinstance)
-!define EC2SpotinstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2Spotinstance, EC2Spotinstance)
+AWSEntityColoring(EC2SpotInstance)
+!define EC2SpotInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2SpotInstance, EC2SpotInstance)
