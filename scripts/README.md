@@ -12,7 +12,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 * Python 3.6/3.7 and packages from the `requirements.txt` file.
 * [Amazon Corretto 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) or [OpenJDK 8](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-* Download the [AWS Architecture Icons - PNG format](https://d1.awsstatic.com/webteam/architecture-icons/AWS-Architecture-Icons_PNG_20190729.fc1bd3d844ff6ebd198d227d55e3b206fbcc62c2.zip), unzip,  and copy PNG file contents from `AWS-Architecture-Icons_PNG/Light-BG` directory to `source/official` directory.
+* Download the latest [AWS Architecture Icons - Assets - PNG](https://aws.amazon.com/architecture/icons/) from here, unzip,  and copy the PNG file contents from `AWS-Architecture-Icons_PNG/Light-BG` directory to `source/official` directory.
 
   the folder structure should look like this:
 
