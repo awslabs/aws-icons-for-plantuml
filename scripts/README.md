@@ -51,8 +51,9 @@ To verify all dependencies are met, run `icon-builder.py` with the `--check-env`
 ```bash
 $ ./icon-builder.py --check-env
 Prerequisites met, exiting
-
 ```
+
+Next, run the same command without `--check-env` to create all new icons and update the `config.yml` file.
 
 ### What Happens
 

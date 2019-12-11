@@ -72,6 +72,7 @@ ApplicationIntegration | SQSQueue  | ![SQSQueue](dist/ApplicationIntegration/SQS
 ApplicationIntegration | StepFunctions  | ![StepFunctions](dist/ApplicationIntegration/StepFunctions.png?raw=true) |ApplicationIntegration/StepFunctions.puml
 **Blockchain** | | | **Blockchain/all.puml**
 Blockchain | Blockchain  | ![Blockchain](dist/Blockchain/Blockchain.png?raw=true) |Blockchain/Blockchain.puml
+Blockchain | BlockchainResourceIcon  | ![BlockchainResourceIcon](dist/Blockchain/BlockchainResourceIcon.png?raw=true) |Blockchain/BlockchainResourceIcon.puml
 Blockchain | ManagedBlockchain  | ![ManagedBlockchain](dist/Blockchain/ManagedBlockchain.png?raw=true) |Blockchain/ManagedBlockchain.puml
 Blockchain | QuantumLedgerDatabaseQLDB  | ![QuantumLedgerDatabaseQLDB](dist/Blockchain/QuantumLedgerDatabaseQLDB.png?raw=true) |Blockchain/QuantumLedgerDatabaseQLDB.puml
 **BusinessApplications** | | | **BusinessApplications/all.puml**
@@ -86,7 +87,6 @@ Compute | EC2  | ![EC2](dist/Compute/EC2.png?raw=true) |Compute/EC2.puml
 Compute | EC2A1Instance  | ![EC2A1Instance](dist/Compute/EC2A1Instance.png?raw=true) |Compute/EC2A1Instance.puml
 Compute | EC2AMI  | ![EC2AMI](dist/Compute/EC2AMI.png?raw=true) |Compute/EC2AMI.puml
 Compute | EC2AutoScaling  | ![EC2AutoScaling](dist/Compute/EC2AutoScaling.png?raw=true) |Compute/EC2AutoScaling.puml
-Compute | EC2AutoScalingResource  | ![EC2AutoScalingResource](dist/Compute/EC2AutoScalingResource.png?raw=true) |Compute/EC2AutoScalingResource.puml
 Compute | EC2C4Instance  | ![EC2C4Instance](dist/Compute/EC2C4Instance.png?raw=true) |Compute/EC2C4Instance.puml
 Compute | EC2C5Instance  | ![EC2C5Instance](dist/Compute/EC2C5Instance.png?raw=true) |Compute/EC2C5Instance.puml
 Compute | EC2C5nInstance  | ![EC2C5nInstance](dist/Compute/EC2C5nInstance.png?raw=true) |Compute/EC2C5nInstance.puml
@@ -144,6 +144,9 @@ Compute | ThinkboxSequoia  | ![ThinkboxSequoia](dist/Compute/ThinkboxSequoia.png
 Compute | ThinkboxStoke  | ![ThinkboxStoke](dist/Compute/ThinkboxStoke.png?raw=true) |Compute/ThinkboxStoke.puml
 Compute | ThinkboxXMesh  | ![ThinkboxXMesh](dist/Compute/ThinkboxXMesh.png?raw=true) |Compute/ThinkboxXMesh.puml
 Compute | VMwareCloudOnAWS  | ![VMwareCloudOnAWS](dist/Compute/VMwareCloudOnAWS.png?raw=true) |Compute/VMwareCloudOnAWS.puml
+**Customer Enablement** | | | **Customer Enablement/all.puml**
+Customer Enablement | CustomerEnablement  | ![CustomerEnablement](dist/Customer Enablement/CustomerEnablement.png?raw=true) |Customer Enablement/CustomerEnablement.puml
+Customer Enablement | IQ  | ![IQ](dist/Customer Enablement/IQ.png?raw=true) |Customer Enablement/IQ.puml
 **CustomerEngagement** | | | **CustomerEngagement/all.puml**
 CustomerEngagement | Connect  | ![Connect](dist/CustomerEngagement/Connect.png?raw=true) |CustomerEngagement/Connect.puml
 CustomerEngagement | CustomerEngagement  | ![CustomerEngagement](dist/CustomerEngagement/CustomerEngagement.png?raw=true) |CustomerEngagement/CustomerEngagement.puml
@@ -184,7 +187,6 @@ Database | RDSMySQLinstance  | ![RDSMySQLinstance](dist/Database/RDSMySQLinstanc
 Database | RDSMySQLinstancealt  | ![RDSMySQLinstancealt](dist/Database/RDSMySQLinstancealt.png?raw=true) |Database/RDSMySQLinstancealt.puml
 Database | RDSOracleinstance  | ![RDSOracleinstance](dist/Database/RDSOracleinstance.png?raw=true) |Database/RDSOracleinstance.puml
 Database | RDSOracleinstancealt  | ![RDSOracleinstancealt](dist/Database/RDSOracleinstancealt.png?raw=true) |Database/RDSOracleinstancealt.puml
-Database | RDSPIOP  | ![RDSPIOP](dist/Database/RDSPIOP.png?raw=true) |Database/RDSPIOP.puml
 Database | RDSPostgreSQLinstance  | ![RDSPostgreSQLinstance](dist/Database/RDSPostgreSQLinstance.png?raw=true) |Database/RDSPostgreSQLinstance.puml
 Database | RDSPostgreSQLinstancealt  | ![RDSPostgreSQLinstancealt](dist/Database/RDSPostgreSQLinstancealt.png?raw=true) |Database/RDSPostgreSQLinstancealt.puml
 Database | RDSSQLServerinstance  | ![RDSSQLServerinstance](dist/Database/RDSSQLServerinstance.png?raw=true) |Database/RDSSQLServerinstance.puml
@@ -193,6 +195,7 @@ Database | RDSonVMware  | ![RDSonVMware](dist/Database/RDSonVMware.png?raw=true)
 Database | Timestream  | ![Timestream](dist/Database/Timestream.png?raw=true) |Database/Timestream.puml
 **DeveloperTools** | | | **DeveloperTools/all.puml**
 DeveloperTools | Cloud9  | ![Cloud9](dist/DeveloperTools/Cloud9.png?raw=true) |DeveloperTools/Cloud9.puml
+DeveloperTools | Cloud9Resource  | ![Cloud9Resource](dist/DeveloperTools/Cloud9Resource.png?raw=true) |DeveloperTools/Cloud9Resource.puml
 DeveloperTools | CloudDevelopmentKit  | ![CloudDevelopmentKit](dist/DeveloperTools/CloudDevelopmentKit.png?raw=true) |DeveloperTools/CloudDevelopmentKit.puml
 DeveloperTools | CodeBuild  | ![CodeBuild](dist/DeveloperTools/CodeBuild.png?raw=true) |DeveloperTools/CodeBuild.puml
 DeveloperTools | CodeCommit  | ![CodeCommit](dist/DeveloperTools/CodeCommit.png?raw=true) |DeveloperTools/CodeCommit.puml
@@ -393,6 +396,7 @@ MediaServices | ElementalMediaTailor  | ![ElementalMediaTailor](dist/MediaServic
 MediaServices | MediaServices  | ![MediaServices](dist/MediaServices/MediaServices.png?raw=true) |MediaServices/MediaServices.puml
 **MigrationAndTransfer** | | | **MigrationAndTransfer/all.puml**
 MigrationAndTransfer | ApplicationDiscoveryService  | ![ApplicationDiscoveryService](dist/MigrationAndTransfer/ApplicationDiscoveryService.png?raw=true) |MigrationAndTransfer/ApplicationDiscoveryService.puml
+MigrationAndTransfer | CloudEndureMigration  | ![CloudEndureMigration](dist/MigrationAndTransfer/CloudEndureMigration.png?raw=true) |MigrationAndTransfer/CloudEndureMigration.puml
 MigrationAndTransfer | DataSync  | ![DataSync](dist/MigrationAndTransfer/DataSync.png?raw=true) |MigrationAndTransfer/DataSync.puml
 MigrationAndTransfer | DataSyncAgent  | ![DataSyncAgent](dist/MigrationAndTransfer/DataSyncAgent.png?raw=true) |MigrationAndTransfer/DataSyncAgent.puml
 MigrationAndTransfer | MigrationHub  | ![MigrationHub](dist/MigrationAndTransfer/MigrationHub.png?raw=true) |MigrationAndTransfer/MigrationHub.puml
@@ -497,6 +501,7 @@ SecurityIdentityAndCompliance | WAF  | ![WAF](dist/SecurityIdentityAndCompliance
 SecurityIdentityAndCompliance | WAFFilteringRule  | ![WAFFilteringRule](dist/SecurityIdentityAndCompliance/WAFFilteringRule.png?raw=true) |SecurityIdentityAndCompliance/WAFFilteringRule.puml
 **Storage** | | | **Storage/all.puml**
 Storage | Backup  | ![Backup](dist/Storage/Backup.png?raw=true) |Storage/Backup.puml
+Storage | CloudEndureDisasterRecovery  | ![CloudEndureDisasterRecovery](dist/Storage/CloudEndureDisasterRecovery.png?raw=true) |Storage/CloudEndureDisasterRecovery.puml
 Storage | EBSSnapshot  | ![EBSSnapshot](dist/Storage/EBSSnapshot.png?raw=true) |Storage/EBSSnapshot.puml
 Storage | EBSVolume  | ![EBSVolume](dist/Storage/EBSVolume.png?raw=true) |Storage/EBSVolume.puml
 Storage | EFSFilesystem  | ![EFSFilesystem](dist/Storage/EFSFilesystem.png?raw=true) |Storage/EFSFilesystem.puml

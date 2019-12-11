@@ -14,6 +14,19 @@ AWSEntityColoring(Cloud9)
 !define Cloud9Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Cloud9, Cloud9)
 !define Cloud9Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Cloud9, Cloud9)
 
+sprite $Cloud9Resource [64x64/16z] {
+xPL7Ukmm38D7ZUM__trVTOeKA5DN-OpT58242TANb-F4YHEbrb8UvNPF0CBg0_IHV23QdUmQ03vwxnO0TXUz0TdBcvW1KUwe3jZQJjuiK1B6yfr3tCft6EfB
+kx5xNIgXLekCKQwMh_gPlesqV-iUVASBuScRFOqERJVKRCTmwvvli1eyTi2YlWdvT_PpVfoUa6DnKhRy8DOeHe8BYm9bCFCJB_yOOywdIuMUpFn-j3h8AQ1w
+AGt8KQPlucsgTReDY34QP5-_yZSVVJPgNmIQM39xwpk-L6kvv22WYj3qm_8GlyMyDoPJwyDyQbPlIfUnB0w0fU1Nw2guCqhhhLoIfbRDH70LgXHF_4Q-RMwA
+Y_u5sfHutNzJXwN4QBKPk3RL9xLGBR9zVzWyCLCpBjtSHzqTMd7tRqLDQAiWBalfGu49ISB6LUnUgiMv6TcbAmjkG5ZRMxi1bn-24oTE_0O
+}
+
+AWSEntityColoring(Cloud9Resource)
+!define Cloud9Resource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Cloud9Resource, Cloud9Resource)
+!define Cloud9Resource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Cloud9Resource, Cloud9Resource)
+!define Cloud9ResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Cloud9Resource, Cloud9Resource)
+!define Cloud9ResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Cloud9Resource, Cloud9Resource)
+
 sprite $CloudDevelopmentKit [64x64/16z] {
 xPO56cCn28G7GWJc_kTT2RKdsxJhHbr-0c7couk_CVu7CxwQzjvgRIE-9WMZ5sI8ET_6Xm9Q-nZD1AZ1z_0Es8XB_rsWpZVnJjvxCSWR2JY0mSrMLkWRBIWQ
 ToaDndXjd6meFCavE3wFaoyixppfINEW5bnqVxPyi03QHrUKHVaLdQSpiI0P1PLF-OBpMOtysKLMxSTfy3QAPtj8ggp4LRziAOu2-7vTxjGbzRn5XW7QTaOK
