@@ -12,6 +12,17 @@ AWSEntityColoring(Blockchain)
 !define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Blockchain, Blockchain)
 !define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Blockchain, Blockchain)
 
+sprite $BlockchainResourceIcon [64x64/16z] {
+xPD50e103CIeqFx_nRWxp979RKE3R_5d2264-19hZLqRN-SP2z9snfjyPsRAShaARqoiJ7FSuxWuxZrsvgxNZkNqtiXezhraXyxthwEPxpyx_AZNbFOaxNGs
+nDwqlJKgJlgYePqMKHKvCjq2x-7xHzyV_ltm_mVzVz7zW-xVFqC88QG6
+}
+
+AWSEntityColoring(BlockchainResourceIcon)
+!define BlockchainResourceIcon(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
+!define BlockchainResourceIcon(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
+!define BlockchainResourceIconParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
+!define BlockchainResourceIconParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
+
 sprite $ManagedBlockchain [64x64/16z] {
 xTK5ejn038DX6MJv_XTU31H3vRxvbk6VSD9_cM4OXc969DLNA0qmCm3EFetFJEfMfSEgJv4Zr8iovCcS_Id5gG4SNyrlWhrX_xy17UwploOUwSL9IPofYvFQ
 oGspJCoSMAYbZHwfUfA5-_GsB56g1nMgmxJHatXm-RCt05Pf2GKUKl0mc3PwDp911pn1qY9XA0JfLcvcG6tryNh922RKxL4HMSyceMdhflPwLUdTlrV3r3yK

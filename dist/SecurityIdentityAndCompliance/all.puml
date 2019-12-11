@@ -496,7 +496,7 @@ AWSEntityColoring(WAF)
 !define WAFParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAF, WAF)
 !define WAFParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAF, WAF)
 
-sprite $WAFFilteringRule [64x64/16z] {
+sprite $WAFFilteringrule [64x64/16z] {
 jLU9jfqW32pPYFx_1nUUvgBfQBdbD6z_CjbcuWc__gUL7_idA8bLttxCgmbz1pRVaxbDkv03tEDgivx7uKBcqQvygRkm-fm7yXxP2DNKi_3tAhIZjJomeTs3
 lj1LstChBmUi7QZbwQctuFnU7xSK73iWz0W78VIWmMs686iE2l0BuDWCvLbROoQmu6mGv_FwzamZfPeA4RE8QBFsWvcef5vHSiWVgVQvs_-mFeSVKVCzNOc2
 g0uajArIj406VZkpv-qpU3tdi5xB64C-AzYkuJMyxYxq_4xnFJBLIm8UpPCn-Brf7D5PBl4bMkYZ-JQO_PlLeIAw_nOYjgV-MqZt7jKlNEZntrA8cqctevBI
@@ -506,9 +506,9 @@ G0I0Ue0tz8fLK17et-0FYm1J7_m1_GmH8Eg1VaA_K0IPUg3Vc1_CDwO-vYVDBswPFHwWzFu08i3K1opy
 r-qt
 }
 
-AWSEntityColoring(WAFFilteringRule)
-!define WAFFilteringRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFFilteringRule, WAFFilteringRule)
-!define WAFFilteringRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFFilteringRule, WAFFilteringRule)
-!define WAFFilteringRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFFilteringRule, WAFFilteringRule)
-!define WAFFilteringRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFFilteringRule, WAFFilteringRule)
+AWSEntityColoring(WAFFilteringrule)
+!define WAFFilteringrule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFFilteringrule, WAFFilteringrule)
+!define WAFFilteringrule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFFilteringrule, WAFFilteringrule)
+!define WAFFilteringruleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFFilteringrule, WAFFilteringrule)
+!define WAFFilteringruleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFFilteringrule, WAFFilteringrule)
 

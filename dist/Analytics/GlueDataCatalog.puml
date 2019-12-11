@@ -1,14 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $GlueDatacatalog [64x64/16z] {
+sprite $GlueDataCatalog [64x64/16z] {
 rPU5aYj124M1nl__VoDTFDbUQJQUKn8zTIz4PWPEIEG90epy5K5mHdD2GFbB-AnJPgY8uFcUIHijdpC7JAZkzS1_FhwMFtI7_EXBv0xyoUVOuVZA-oEM3NoN
 _VNz-D47tFAmxoyYqXd4N_l4wX5PHBZ9mAwFNoynRBHycdQugGYV457po3FIyJtJXTQPYIqpgUVRG5WXRVfSqwhmc31B3M2j_VaFNxsEpvck5l6_wUgPslpy
 VIOXqPWGOJtPzCSvQe7hkOuF_dVJIwUMNmNMU86T_qE1oC2sNmNM-AvV1N29x_jLO8bl--i6AhxlLm5Rufl-Mg3Y-_vQG9RudWzM1R3YU_vQeEBR_bfWniCb
 VXNWJBxC1qy7q0oyqBVouMtzD8tBVSc9NUh3i0WNwFeDNjrdts7tFN-sBIz-_M4RzBxxyostdNzSvbz__NhzzVErr-z7
 }
 
-AWSEntityColoring(GlueDatacatalog)
-!define GlueDatacatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueDatacatalog, GlueDatacatalog)
-!define GlueDatacatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueDatacatalog, GlueDatacatalog)
+AWSEntityColoring(GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueDataCatalog, GlueDataCatalog)
+!define GlueDataCatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueDataCatalog, GlueDataCatalog)

@@ -441,18 +441,6 @@ AWSEntityColoring(RDSOracleinstancealt)
 !define RDSOracleinstancealtParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDSOracleinstancealt, RDSOracleinstancealt)
 !define RDSOracleinstancealtParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDSOracleinstancealt, RDSOracleinstancealt)
 
-sprite $RDSPIOP [64x64/16z] {
-xTT9bWKX24JH45AGsF-22pzPVQzJtoJRUnm7Ch7WlmiJL9sBTSoSPBZzCm-INgV7XOMk83iakM0f2LACL2ocf0K3ooKcVTqxCrltTlpnnxzs_F777t_yySso
-tXut3O1wZFc8opBztNCM0YK5wFNOWC5P_uE_DEYGwOKqUJp2EIHb-zqBEgEyCG3qoPoEHkg__4W4o6JJuqzU9LdveDMxQ_hMIVdTp-GBN-ntFzm4vSUpr_JX
-Vk4FNf2LTmu0MhSEu9y-fGA30si-AKUG-idxttnptalBmr0v-SD-QUtzJHEvdt6NU7S_xUwtpVsukL_tz_FkVdy2
-}
-
-AWSEntityColoring(RDSPIOP)
-!define RDSPIOP(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, RDSPIOP, RDSPIOP)
-!define RDSPIOP(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, RDSPIOP, RDSPIOP)
-!define RDSPIOPParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDSPIOP, RDSPIOP)
-!define RDSPIOPParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDSPIOP, RDSPIOP)
-
 sprite $RDSPostgreSQLinstance [64x64/16z] {
 xTS7ZlCs443XDuNJxd_WW92DE5edaMoKbFzjSVtGE21108sUstKeHsi-RB7BcUcCcsNFJ09hffqFyfvPw4mh7wKzep5ZV9ZDH4_pSJqzatnSpim4ApE4ruGV
 QNKAU5K8B0U8mrTvDI-jv9nCsb9ybdL1nwjVo2Yw7F2bakNi9uQgAROC7O73oHZrq-ja9z6nl2TPart4j5l7c4nmKEXrycdPPA8Z5R2VqauKKL2BI7pQq56W

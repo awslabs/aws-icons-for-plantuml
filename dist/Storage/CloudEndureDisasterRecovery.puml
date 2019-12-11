@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudEndureDisasterRecovery [64x64/16z] {
+xTG5TYjB30JG4hIaqlxt6vvuJcJsXmU-GTlDhHh-yFJqrApCBDwfNF5EF7cxCW3gxYQ0PlCcdGA9OdUJgS3YJH9mDZS1E6zGWcWUTCbDAr2i7YCchnNGUI0G
+iYAIbobcgpOi1m1DNf0mJWL0V1aGFAlzU0k3ixi3A9wbnnjKy5qlUFCS4Pu5uKFz3TKyfSiXbyv7B7d20iHdcFJB8facWDM9jSdYODWeFwH2afD3vzwOq7gt
+B-85cIieI75IH9Fi1TkVWXshd3uHXpcwp38Hd8x3jenDhnbIA8SEsDTV_HcJqT-u6UiiGVLeVRx_ljmTLfbrlhyUYsrz_Nsd8-RdAxzzEwNbxe3lpsNrgBES
+5R6rxrxGyq-f6D4sG5LjUmJMVdhb8CZcdWdU5SdQVzW998U09Flu7WuFzMOv42VYQoiskLtKhjupOXcs-0sfE92lHQtkWDGXoxfuKiMt_4xL8ReP4SNczGor
+RVuk8dGOxrNGWF1k2HKaxzKBU63pR0UC3r087o58FYAIlxAdfrS
+}
+
+AWSEntityColoring(CloudEndureDisasterRecovery)
+!define CloudEndureDisasterRecovery(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CloudEndureDisasterRecovery, CloudEndureDisasterRecovery)
+!define CloudEndureDisasterRecovery(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CloudEndureDisasterRecovery, CloudEndureDisasterRecovery)
+!define CloudEndureDisasterRecoveryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CloudEndureDisasterRecovery, CloudEndureDisasterRecovery)
+!define CloudEndureDisasterRecoveryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CloudEndureDisasterRecovery, CloudEndureDisasterRecovery)
