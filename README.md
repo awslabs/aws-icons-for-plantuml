@@ -36,9 +36,9 @@ In order to incorporate and use the *AWS Icons for PlantUML* resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v4.0</b>/dist/AWSCommon.puml
+<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v5.0</b>/dist/AWSCommon.puml
 </code></pre>
-This references the latest *GitHub release* version of the referenced file  from GitHub when an Internet connection is available. You can also use the *master* branch by replacing `v4.0` (or which ever version you are using) with `master`.
+This references the latest *GitHub release* version of the referenced file  from GitHub when an Internet connection is available. You can also use the *master* branch by replacing `v5.0` (or which ever version you are using) with `master`.
 
 All examples reference *master* and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -70,7 +70,7 @@ For example, including these files from the repository (URL), the includes would
 ' Include main AWSCommon and then sprite files
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
-!incudeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
+!includeurl AWSPuml/Storage/SimpleStorageServiceS3.puml
 ```
 
 This defines the macro `AWSPuml` to point to the root of the `dist/` directory, which reduces the size of the include statements. Next the `AWSCommon.puml` file is loaded, and then the actual resource files. In this example, all of the entities in the *BusinessApplications* directory are added, and then only the *AmazonSimpleStorageServiceS3* entity from the *Storage* directory.
