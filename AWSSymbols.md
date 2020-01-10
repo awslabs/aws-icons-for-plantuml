@@ -208,7 +208,7 @@ DeveloperTools | DeveloperTools  | ![DeveloperTools](dist/DeveloperTools/Develop
 DeveloperTools | ToolsAndSDKs  | ![ToolsAndSDKs](dist/DeveloperTools/ToolsAndSDKs.png?raw=true) |DeveloperTools/ToolsAndSDKs.puml
 DeveloperTools | XRay  | ![XRay](dist/DeveloperTools/XRay.png?raw=true) |DeveloperTools/XRay.puml
 **EndUserComputing** | | | **EndUserComputing/all.puml**
-EndUserComputing | Appstream2.0  | ![Appstream2.0](dist/EndUserComputing/Appstream2.0.png?raw=true) |EndUserComputing/Appstream2.0.puml
+EndUserComputing | Appstream2_0  | ![Appstream2_0](dist/EndUserComputing/Appstream2_0.png?raw=true) |EndUserComputing/Appstream2_0.puml
 EndUserComputing | EndUserComputing  | ![EndUserComputing](dist/EndUserComputing/EndUserComputing.png?raw=true) |EndUserComputing/EndUserComputing.puml
 EndUserComputing | WorkDocs  | ![WorkDocs](dist/EndUserComputing/WorkDocs.png?raw=true) |EndUserComputing/WorkDocs.puml
 EndUserComputing | WorkLink  | ![WorkLink](dist/EndUserComputing/WorkLink.png?raw=true) |EndUserComputing/WorkLink.puml

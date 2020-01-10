@@ -161,7 +161,7 @@ def build_file_list():
 
 
 def create_config_template():
-    """Create config_template.yml file"""
+    """Create config_template.yml file from source icons"""
     source_files = build_file_list()
     files_sorted = sorted(str(i) for i in source_files)
 
