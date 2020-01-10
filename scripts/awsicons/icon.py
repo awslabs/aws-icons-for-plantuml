@@ -134,7 +134,6 @@ class Icon:
             if new_name.startswith(("AWS-", "Amazon-")):
                 new_name = new_name.split("-", 1)[1]
             # Replace non-alphanumeric with underscores (1:1 mapping)
-            # new_name = new_name.translate(dict.fromkeys(map(ord, "-_"), None))
             new_name = re.sub(r'\W+', '_', new_name)
         return new_name
 
