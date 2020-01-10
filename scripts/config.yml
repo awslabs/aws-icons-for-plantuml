@@ -449,7 +449,7 @@ Categories:
   Color: Elm
   Services:
   - Source: Amazon-Appstream-2.0
-    Target: Appstream2.0
+    Target: Appstream2_0
   - Source: Amazon-WorkDocs
     Target: WorkDocs
   - Source: Amazon-WorkLink
@@ -1096,26 +1096,38 @@ Categories:
   Services:
   - Source: AWS-Cloud-alt
     Target: Cloudalt
+    Color: SquidInk
   - Source: AWS-Cloud
     Target: Cloud
+    Color: SquidInk
   - Source: AWS-Step-Function
     Target: StepFunction
+    Color: MaroonFlush
   - Source: Auto-Scaling
     Target: AutoScalingGroup
+    Color: Meteor
   - Source: Corporate-data-center
     Target: CorporateDataCenter
+    Color: SquidInk
   - Source: Elastic-Beanstalk-container
     Target: ElasticBeanstalkContainer
+    Color: Meteor
   - Source: Region
     Target: Region
+    Color: CeruleanBlue
   - Source: Server-contents
     Target: ServerContents
+    Color: SquidInk
   - Source: Spot-fleet
     Target: SpotFleet
+    Color: Meteor
   - Source: VPC-subnet-private
     Target: VPCSubnetPrivate
+    Color: CeruleanBlue
   - Source: VPC-subnet-public
     Target: VPCSubnetPublic
+    Color: ForestGreen
   - Source: Virtual-private-cloud-VPC
     Target: VirtualPrivateCloudVPC
+    Color: ForestGreen
   SourceDir: _Group Icons
