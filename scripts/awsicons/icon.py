@@ -27,7 +27,7 @@ class Icon:
         # if config provided set other values, no config used to access methods only
         if self.config:
             self.source_name = (
-                str(posix_filename).split("/")[-1].split("_light-bg@4x.png")[0]
+                str(posix_filename).split("/")[-1].split("_light-bg@")[0]
             )
             self._set_values(self.source_name)
 
@@ -126,11 +126,11 @@ class Icon:
             sys.exit(1)
 
     def _make_name(self, name=None):
-        """Create PUML friendly name short name without directory or _light-bg@4x.png,
+        """Create PUML friendly name short name without directory or _light-bg@[45]x.png,
            then remove leading AWS or Amazon to reduce length. Also convert non-alphanumeric characters to underscores"""
 
         if name:
-            new_name = name.split("/")[-1].split("_light-bg@4x.png")[0]
+            new_name = name.split("/")[-1].split("_light-bg@")[0]
             if new_name.startswith(("AWS-", "Amazon-")):
                 new_name = new_name.split("-", 1)[1]
             # Replace non-alphanumeric with underscores (1:1 mapping)
