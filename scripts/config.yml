@@ -1,7 +1,7 @@
-# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
-# Hand curated config file for Release 4.0-2019-07-29 AWS Architecture Icon release
+# Hand curated config file for Release 6.0-2020.01.31 AWS Architecture Icon release
 # 
 Defaults:
   Colors:
@@ -617,7 +617,7 @@ Categories:
     Target: DeepLearningAMIs
   - Source: AWS-Deep-Learning-Containers
     Target: DeepLearningContainers
-  # Local file rename to process
+  # Local file rename to process - monitor
   - Source: AWS-DeepComposer
     Target: DeepComposer
   - Source: AWS-DeepLens
@@ -1099,7 +1099,7 @@ Categories:
     Target: Forums
   - Source: General
     Target: General
-  # Monitor for addition of "_light-bg@5x" entry
+  # Monitor for addition of "_light-bg@5x" entry for Generic Firewall
   - Source: Generic_Firewall
     Target: GenericFirewall
   - Source: Generic-database
