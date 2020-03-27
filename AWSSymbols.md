@@ -227,6 +227,7 @@ General | Disk  | ![Disk](dist/General/Disk.png?raw=true) |General/Disk.puml
 General | Forums  | ![Forums](dist/General/Forums.png?raw=true) |General/Forums.puml
 General | General  | ![General](dist/General/General.png?raw=true) |General/General.puml
 General | GenericDatabase  | ![GenericDatabase](dist/General/GenericDatabase.png?raw=true) |General/GenericDatabase.puml
+General | GenericFirewall  | ![GenericFirewall](dist/General/GenericFirewall.png?raw=true) |General/GenericFirewall.puml
 General | InternetAlt1  | ![InternetAlt1](dist/General/InternetAlt1.png?raw=true) |General/InternetAlt1.puml
 General | InternetAlt2  | ![InternetAlt2](dist/General/InternetAlt2.png?raw=true) |General/InternetAlt2.puml
 General | InternetGateway  | ![InternetGateway](dist/General/InternetGateway.png?raw=true) |General/InternetGateway.puml
