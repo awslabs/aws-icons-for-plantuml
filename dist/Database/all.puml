@@ -1,6 +1,20 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
+sprite $AmazonRedshift [64x64/16z] {
+xPO5jkH024KVKW9l__kTId_t8ZbpDBTTRf0MoF_3pGrVEQDcnXmFPZoUgDWnN0MlYFe8SbUVZeMQjxveReA5JsxPwO2q6U_hZza4yDmvWa77uNxknr3OHlW1
+-puCqz3vfzym-EEXsux_S_mz7_9z_OBD-83u-DZ_uGBedZ_3iH3prdflRv__tFJ97EtZzw-D9BVzfu9Zph6Opr-bhFW7_F05BCN_Z04QftqwrA3duuia5N7U
+nmn1dlNPiV3p-LCXBMi-doyB1YHPyzb5BFYS_o6MV0v07b7NEHHHzGs3Zfxa440po_vSFiIQm0IzdhyeP9bOqeJL_8K2EfdHO3dWrVW1ZJpkf68nQpxJqPa7
+31SRp9Bl0iJhty1nBla6aI_ltVS3cW792pwl-3JebVmP1dYUZy-Cv0K_d-swVtr-T-XFyrlHcN-YFyzltTwVlixlxVs9dFOwlm-UvxTDih8_uXs5_R6mlrxR
+dwzpS_CF
+}
+
+AWSEntityColoring(AmazonRedshift)
+!define AmazonRedshift(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AmazonRedshift, AmazonRedshift)
+!define AmazonRedshift(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AmazonRedshift, AmazonRedshift)
+!define AmazonRedshiftParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AmazonRedshift, AmazonRedshift)
+!define AmazonRedshiftParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AmazonRedshift, AmazonRedshift)
+
 sprite $Aurora [64x64/16z] {
 xPQ9acen24GRaa2W__zxtu9nrynzQstsZ9fBrIcAnOxvZ_NHH-IVyQCd_uGNH1uNbywF0m0w3w8PCKjHJvaq1MJm09tJck0iqU6drWdo23sagDR76BrhFVLW
 feq3k0lGB6xg3-y2Z4FpemCZI3vqm-IsTPinAlnL6ePWNkFn3W_eCxt6vpoV3Svt_Flyjk9X3TtUykYlwp_pd020u6jUgl_pqlzS_TVYIzxG_MtzQGe0sdeV
@@ -46,10 +60,11 @@ AWSEntityColoring(Database)
 !define DatabaseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Database, Database)
 
 sprite $DatabaseMigrationService [64x64/16z] {
-xTO5eYD124NHXqFjVxznrw97ljwud2Wjuz_qsszLkQkMu3GX72Anx6ddBMFHJS84W7rU5mFYvyzTwG9mpNEv-xmfu4aVaF4WGSnvXuq7ANpMFtgceU71djV_
-9gFXJG2mcCSctq-2shoF_HkUOyiHyzxt_tguRVBOJu9t_5rVojjuaCtxHvCQrF2Gg75HXNJcHnaWiOZS5hi1OktCJsp9EPBepa-bcyecDS_wMVFpUFqrxn-l
-F-SzFLf_Dxm_sdvump_QVhNyhifTLL_h_u-7cyean9XBGLRZgZA2ZjaCW5XaxSem0M2jlG_2DjgqlzBT0wbq5Tvw5ZtFOhTQ0brot9NYirwHn_S-NoQqwOLg
-nqcMUSRUWvTvENff-h2wzsKn6jtvVfddot_IRx-j0G
+xTLL0Ymf38NXG8JadFtlT-YQAzKEr-rxQVtB0Jpnpp_ytvUsgCgf2jiR8TAroGTD8y6TElebwsgJzYOYFS3Ll6QjKG0FG8MAQ15hkcXTdJB9LEbOmY56tf-J
+IdAf3t7Y3brYjPS0YHCI8Hkzz2Zm4rHqsUXTHQIRnvZ2zHARh_U3vLrEUXJ7JZyXH_WK8y5fgp_UV89fix_pZVlzvoVMUnaahf3PDdhH14-GjlFyM1TfwYDh
+oX7QHBhjNBzXJKwQ3Mm-FyZXffFvI7p1yyEJt-pvKH0tI5llHVDs_YoLzRuzchyt-Z7kruyH6psHSLw_F3Ul_ztwkTiVUDY_V_5Lup-br_tuhov9B35fKQSZ
+dogQ65QvY6XauL1vt7x7CfOtkMZJ_s-yY7KaCanxcxfQ9CYj6hW-_-DbDHzQl3yb7LpiJVA-Jx7Lte-Urd1vGJCUlM_sAdLvAT7DtkxwlUDFBzpsA4zktB-x
+7YJsLEAGXIz2NhtU--UV_m
 }
 
 AWSEntityColoring(DatabaseMigrationService)
@@ -247,6 +262,21 @@ AWSEntityColoring(ElastiCacheForRedis)
 !define ElastiCacheForRedis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
 !define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
 !define ElastiCacheForRedisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheForRedis, ElastiCacheForRedis)
+
+sprite $ManagedApacheCassandraService [64x64/16z] {
+xPS7Zjqm34I7QXHdxd_VnBQs6x9sbQ3k-xqymnI61iL_poyQ_CnaH3-869_NPKOhoO21fLmzAAtfKTEmoa7Erw5I2-dPPWMGMu_tzOUVnooX9pqIhCNdUYKf
+ci6wE2UXt1TAYHMOdu4SULAa6ihSht1n0X8V_3hnrPzzkCHRf6uBFaf8-Ygp5-3Phmd8BQZtaBqbmDpUV4dtw-S9WELIcv-qMj8LGDAC0tbstVfYj6puG2ej
+AB9KNaWDLRhphrEBxgqUD1zPlZIUH0s7iyMjVw3ttEGC6HbeklEVYPPnhVFKdqR9qCLl-hgWkbaV1rZtnV1ZGOEgQAERrdtrX8icEdayllX5a-w5bNh4gOeY
+gHiVbRhN_VpjODu_oRzcMnBjhRSdVYk05G_oG_iu7KO--wvUR5o-wqd92K0lA5ho9VQQ3M_OqJu9RSqVvJ9wzx_qgtrey4L_yAbz37tHlyVWMtxQyvLHj_oA
+DFVd-LTWke3F-I-ma4H9-bx-n-S4gpqOlTM7_9_pWruv55AHCKXwp3yivpBYRpXh5tj9PfPRFES_sQVylrt-9Qtb_oBYpTZ8_xe_GThptVTyC_xN-SbHDkQt
+xVbnVtuL2u1SP_Fp74Mrdy_lOzJRs3-CUhcuVzdVF-tpony
+}
+
+AWSEntityColoring(ManagedApacheCassandraService)
+!define ManagedApacheCassandraService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ManagedApacheCassandraService, ManagedApacheCassandraService)
+!define ManagedApacheCassandraService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ManagedApacheCassandraService, ManagedApacheCassandraService)
+!define ManagedApacheCassandraServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ManagedApacheCassandraService, ManagedApacheCassandraService)
+!define ManagedApacheCassandraServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ManagedApacheCassandraService, ManagedApacheCassandraService)
 
 sprite $Neptune [64x64/16z] {
 xPQ7ZiCm34CfoRO6__zxRpZDxKmSTjcPyLn89bZLF-kff_YXMsnb-5Ja-_4bkAARu4EYpPCyYsSN06AjZpVrPWe0BNWETm7Cyslz6Ls0LZo13w0doP_jS86T

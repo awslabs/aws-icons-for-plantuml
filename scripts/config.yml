@@ -1,7 +1,7 @@
-# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
-# Hand curated config file for Release 4.0-2019-07-29 AWS Architecture Icon release
+# Hand curated config file for Release 6.0-2020.01.31 AWS Architecture Icon release
 # 
 Defaults:
   Colors:
@@ -104,10 +104,18 @@ Categories:
 - Name: ApplicationIntegration
   Color: MaroonFlush
   Services:
+  - Source: AWS-Express-Workflows
+    Target: ExpressWorkflows
   - Source: AWS-Step-Functions
     Target: StepFunctions
   - Source: Amazon-AppSync
     Target: AppSync
+  - Source: Amazon-EventBridge_Custom-event-bus_resource-icon
+    Target: EventBridgeCustomEventBusResource
+  - Source: Amazon-EventBridge_Default-event-bus_resource-icon
+    Target: EventBridgeDefaultEventBusResource
+  - Source: Amazon-EventBridge_Saas-Partner-event-bus_resource-icon
+    Target: EventBridgeSaasPartnerEventBusResource
   - Source: Amazon-EventBridge
     Target: EventBridge
   - Source: Amazon-MQ
@@ -158,6 +166,8 @@ Categories:
   Services:
   - Source: AWS-Batch
     Target: Batch
+  - Source: AWS-Compute-Optimizer
+    Target: ComputeOptimizer
   - Source: AWS-Elastic-Beanstalk_Application
     Target: ElasticBeanstalkApplication
   - Source: AWS-Elastic-Beanstalk_Deployment
@@ -170,6 +180,8 @@ Categories:
     Target: LambdaLambdaFunction
   - Source: AWS-Lambda
     Target: Lambda
+  - Source: AWS-Local-Zones
+    Target: LocalZones
   - Source: AWS-Outposts
     Target: Outposts
   - Source: AWS-Serverless-Application-Repository
@@ -188,6 +200,8 @@ Categories:
     Target: ThinkboxStoke
   - Source: AWS-Thinkbox_XMesh
     Target: ThinkboxXMesh
+  - Source: AWS-Wavelength
+    Target: Wavelength
   - Source: Amazon-EC2-Container-Registry_Image
     Target: EC2ContainerRegistryImage
   - Source: Amazon-EC2-Container-Registry_Registry
@@ -220,6 +234,8 @@ Categories:
     Target: Lightsail
   - Source: Compute
     Target: Compute
+  - Source: EC2-Image-Builder
+    Target: EC2ImageBuilder
   - Source: VMware-Cloud-On-AWS
     Target: VMwareCloudOnAWS
   - Source: Amazon-EC2_A1-Instance
@@ -368,6 +384,8 @@ Categories:
     Target: ElastiCacheForRedis
   - Source: Amazon-ElastiCache
     Target: ElastiCache
+  - Source: Amazon-Managed-Apache-Cassandra-Service
+    Target: ManagedApacheCassandraService
   - Source: Amazon-Neptune
     Target: Neptune
   - Source: Amazon-Quantum-Ledger-Database_QLDB
@@ -394,6 +412,7 @@ Categories:
     Target: RDSOracleinstancealt
   - Source: Amazon-RDS_Oracle_instance
     Target: RDSOracleinstance
+  # No HiDPI version of Amazon-RDS_PIOP
   # - Source: Amazon-RDS_PIOP
   #   Target: RDSPIOP
   - Source: Amazon-RDS_PostgreSQL_instance-alt
@@ -598,16 +617,25 @@ Categories:
     Target: DeepLearningAMIs
   - Source: AWS-Deep-Learning-Containers
     Target: DeepLearningContainers
+  # Local file rename to process - monitor
+  - Source: AWS-DeepComposer
+    Target: DeepComposer
   - Source: AWS-DeepLens
     Target: DeepLens
   - Source: AWS-DeepRacer
     Target: DeepRacer
+  - Source: Amazon-Augmented-AI
+    Target: AugmentedAI
   - Source: Amazon-Comprehend
     Target: Comprehend
   - Source: Amazon-Elastic-Inference
     Target: ElasticInference
   - Source: Amazon-Forecast
     Target: Forecast
+  - Source: Amazon-Fraud-Detector
+    Target: FraudDetector
+  - Source: Amazon-Kendra
+    Target: Kendra
   - Source: Amazon-Lex
     Target: Lex
   - Source: Amazon-Personalize
@@ -740,6 +768,8 @@ Categories:
     Target: CloudWatchRule
   - Source: Amazon-CloudWatch
     Target: CloudWatch
+  - Source: Amazon-CodeGuru
+    Target: CodeGuru
   - Source: Management-and-Governance
     Target: ManagementandGovernance
   - Source: Systems-Manager_OpsCenter
@@ -887,6 +917,13 @@ Categories:
   - Source: Networking-and-Content-Delivery
     Target: NetworkingandContentDelivery
   SourceDir: Networking & Content Delivery
+- Name: QuantumTechnologies
+  Services:
+  - Source: AWS-Braket
+    Target: Braket
+  - Source: Quantum-Technologies
+    Target: QuantumTechnologies
+  SourceDir: Quantum Technologies
 - Name: Robotics
   Color: Crimson
   Services:
@@ -974,6 +1011,8 @@ Categories:
     Target: CloudDirectory
   - Source: Amazon-Cognito
     Target: Cognito
+  - Source: Amazon-Detective
+    Target: Detective
   - Source: Amazon-GuardDuty
     Target: GuardDuty
   - Source: Amazon-Inspector_Agent
@@ -1060,6 +1099,9 @@ Categories:
     Target: Forums
   - Source: General
     Target: General
+  # Monitor for addition of "_light-bg@5x" entry for Generic Firewall
+  - Source: Generic_Firewall
+    Target: GenericFirewall
   - Source: Generic-database
     Target: GenericDatabase
   - Source: Internet-alt1

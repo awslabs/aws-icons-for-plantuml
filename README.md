@@ -1,5 +1,5 @@
 <!--
-Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-plantuml-icons/blob/master/LICENSE)
 -->
 # AWS Icons for PlantUML
@@ -36,9 +36,9 @@ In order to incorporate and use the *AWS Icons for PlantUML* resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v5.0</b>/dist/AWSCommon.puml
+<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v6.0</b>/dist/AWSCommon.puml
 </code></pre>
-This references the latest *GitHub release* version of the referenced file  from GitHub when an Internet connection is available. You can also use the *master* branch by replacing `v5.0` (or which ever version you are using) with `master`.
+This references the latest *GitHub release* version of the referenced file from GitHub when an Internet connection is available. You can also use the *master* branch by replacing `v6.0` (or which ever version you are using) with `master`.
 
 All examples reference *master* and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 

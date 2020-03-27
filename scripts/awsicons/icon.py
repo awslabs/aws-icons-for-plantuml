@@ -24,12 +24,16 @@ class Icon:
         self.filename = posix_filename
         self.config = config
 
-        # if config provided set other values, no config used to access methods only
+        # If config provided, set other values
+        # If no config provided, used to access internal methods only
         if self.config:
+            # Source name and category to uniquely identify same file names
+            # in different categories to apply color or other values
             self.source_name = (
-                str(posix_filename).split("/")[-1].split("_light-bg@4x.png")[0]
+                str(posix_filename).split("/")[-1].split("_light-bg@")[0]
             )
-            self._set_values(self.source_name)
+            self.source_category = str(posix_filename).split("/")[3]
+            self._set_values(self.source_name, self.source_category)
 
     def generate_image(self, path, color=True, max_target_size=64, transparency=False):
         """Create image from filename and save full color without transparency to path"""
@@ -76,11 +80,11 @@ class Icon:
             sys.exit(1)
 
     # Internal methods
-    def _set_values(self, source_name):
+    def _set_values(self, source_name, source_category):
         """Set values if entry found, otherwise set uncategorized and defaults"""
         for i in self.config["Categories"]:
             for j in i["Services"]:
-                if j["Source"] == source_name:
+                if j["Source"] == source_name and i["SourceDir"] == source_category:
                     try:
                         self.category = i["Name"]
                         self.target = j["Target"]
@@ -125,12 +129,63 @@ class Icon:
             )
             sys.exit(1)
 
+
+
+    # def _set_values(self, source_name, source_category):
+    #     """Set values if entry found, otherwise set uncategorized and defaults"""
+    #     for i in self.config["Categories"]:
+    #         for j in i["Services"]:
+    #             if j["Source"] == source_name:
+    #                 try:
+    #                     self.category = i["Name"]
+    #                     self.target = j["Target"]
+
+    #                     # Set color from service, category, default then black
+    #                     if "Color" in j:
+    #                         self.color = self._color_name(j["Color"])
+    #                     elif "Color" in i:
+    #                         self.color = self._color_name(i["Color"])
+    #                     elif "Color" in self.config["Defaults"]["Category"]:
+    #                         self.color = self._color_name(
+    #                             self.config["Defaults"]["Category"]["Color"]
+    #                         )
+    #                     else:
+    #                         print(
+    #                             f"No color definition found for {source_name}, using black"
+    #                         )
+    #                         self.color = "#000000"
+    #                     return
+    #                 except KeyError as e:
+    #                     print(f"Error: {e}")
+    #                     print(
+    #                         "config.yml requires minimal config section, please see documentation"
+    #                     )
+    #                     sys.exit(1)
+    #                 except TypeError as e:
+    #                     print(f"Error: {e}")
+    #                     print(
+    #                         "config.yml requires Defaults->Color definition, please see documentation"
+    #                     )
+    #                     sys.exit(1)
+
+    #     # Entry not found, place into uncategorized
+    #     try:
+    #         self.category = "Uncategorized"
+    #         self.target = self._make_name(self.source_name)
+    #         self.color = self.config["Defaults"]["Category"]["Color"]
+    #     except KeyError as e:
+    #         print(f"Error: {e}")
+    #         print(
+    #             "config.yml requires minimal config section, please see documentation"
+    #         )
+    #         sys.exit(1)
+
     def _make_name(self, name=None):
-        """Create PUML friendly name short name without directory or _light-bg@4x.png,
+        """Create PUML friendly name short name without directory or _light-bg@[45]x.png,
            then remove leading AWS or Amazon to reduce length. Also convert non-alphanumeric characters to underscores"""
 
         if name:
-            new_name = name.split("/")[-1].split("_light-bg@4x.png")[0]
+            new_name = name.split("/")[-1].split("_light-bg@")[0]
             if new_name.startswith(("AWS-", "Amazon-")):
                 new_name = new_name.split("-", 1)[1]
             # Replace non-alphanumeric with underscores (1:1 mapping)

@@ -2,10 +2,10 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 sprite $APIGateway [64x64/16z] {
-xTPLOlGm30JWYMD9uz7zp_ipjjg0jzpCmjjd9dsqNBb26tgGOJoiEs1w40CwZ-hQ7oc1Ax1uL3vy0LRkQsNjKmzAA7HpIQgz97cxMK80BQHjBqK3elB-7Urx
-oU2rzsFUZ_ZKVycJldDeHFpw4zdFUO0PG2G1om7Wd5zjQDZFFqfcwylst_GWitxmFc_mdFJH9JNGOiexG16DW4_uZYM-CyjOq4zx0f5I0vK1SAP-YcWIP-fF
-6J0CdWHiQlruLyEGki_EFz7kMdyElykBe_9lxFoQFp_cpw_vy_Fjdr_pFe_ulEcRZtq_lDMU2u3LnvOVlW9Og3BilufWvVaB6tKxj0L0gtmhSLr4uGiyyNxy
-KBbovIi
+xTO5SiKm30JGZME1r_U_RySfjmhfbvlz67Z66KturtBbYei7fmxh2WZVH83gHtNiZxJWCp2fHTvq0cRVr-onxssxXQ6BZd-n7pzQLbkm1xtb7rgmoEj0-txy
+rTZhCQz7VEUhz9E-UcCpU_YYUJtd0H_VHWU43S0vNwInYVZJL_co-SVhd_NDR_C2pNgh90jSBEKLS3gA0vhm5PCD9hG9zRHtmFeoV7O3FDF_CdpIC_sJ0ZI1
+qW5XmbFhCdnMpUw_et0awnLwawUtoF-2-fMe7udwbQYVlw1-vNq_ulkgBzhsVTCIUvy0pDgsVDCPmEGCu_MXYTW_uEfSZyjeeaI-32m13aOH-A3dnFFZdygL
+AtS
 }
 
 AWSEntityColoring(APIGateway)
@@ -15,9 +15,10 @@ AWSEntityColoring(APIGateway)
 !define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, APIGateway, APIGateway)
 
 sprite $APIGatewayEndpoint [64x64/16z] {
-xPTL5W8m40D_sHIv_sbn7xRoWaDmibFNnVj9gKnSCd79nAKUl6eEuhG7SGRKtLBZIoq1UBMWkdCTT6MfXOCFc3MSFEmQdl4g22OUIdacG5nR1VdGTHJx_O3V
-RF-3Xt60tBF-GmaIFE6J182dF1CuV5xXv1b3ldlyVZ__vwbnFWuVDl-Kyl_x_y-hnIldGnkL6b-qKO0tzWzd_pBtJtl_pXCWd-DCW7oECu59nfU10rZKps_c
--T4yl_hdP__yxjyV_FkBVt-YJBoUW7j_VJ-j
+xTU7ZiCm30FGI9QIYl__lpVI8-1BsRs7iGp8ZzsLF3pUyjYo_23U2bjMjJEu3D0yJQuK0P9lApBW5Au3D3ybG7CTS1hN0PfRj4KnJ0PexjnpPH4nGF9kZx6l
+ZW0gH83Y0IZF0mmGd5LaBNqbCxi0nSUvjkddGrCVeBXDGFcW_FokhgmB47mr7r6ULLy6-9fpEzcWFPyT0xWDaBS2cVPyTnWGVzxM7EJQCm3h05lwv1FPwdbA
+-q3PVc-5U0R_yUusk0_cVf8tL3ZWKR1p_PdF_nq-luzFeEttJVr_iLAnpqU9_y_iEjzkd-XFnw9_181nbn_v5Da_klx5xRJTJrttK0sGFL9vtVvq1tNbVQNQ
+h-xWRTFBzgydY6tpooYu2aZjKtCzGTL_NwWuPW3CjBvccQxu-VFh-VFp-VFx-VU7y-ylvz-Vph-_xRy_ddj_VRpr3G
 }
 
 AWSEntityColoring(APIGatewayEndpoint)
@@ -78,4 +79,18 @@ AWSEntityColoring(Mobile)
 !define Mobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Mobile, Mobile)
 !define MobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Mobile, Mobile)
 !define MobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Mobile, Mobile)
+
+sprite $Pinpoint2 [64x64/16z] {
+xLQ7bWCX21n05Bp__zvhE-bPzdhDfAxFaOxCluaRRiZe_eW-yWtaSCKUwl5AjW7GvkCHtXH0p3bCfCNSHhOpaU5jJWS4GD-a3u6CUOuE6PaTsDB00P-Nq8NO
+OLjq2Zz5GfTVaIrw74ZnY2IVScl-ED2pAwFNyuc7N3PK-gU0ogS346lD183ddSDopk265RITwq8X7lpl0Wq3O0gqWXwGdHbeUPeGC1T0o_0RbOkBD15WtEMp
+BxCGlulHETqWqAI9iHuxvo-DxAPgVQR1w9h3flKKIqZIXyzGXJqhbKTA5YdMuNH2YymmG8y5AtBD_7QiXj89vEy5jxKCeDo471LAAioMasY0hvMmBmV7GZG4
+wQShSy0t-8rcKekTOzeR-BDdoQ_r9mhzQ_yHbV-supVxUVpYfVbZp9-eycSxVvVLAd_h-dd6QVtKzQleLzf_xfHyG__e86t0tjQ_M3I2U5l_d7lNlAb_Kozw
+uGttnoFO_TzoVv5EyrvvVnAZe1VtTx5Up0_5ublc5sL2l7b-ilZ4-QsU7oFdtyGDDpm
+}
+
+AWSEntityColoring(Pinpoint2)
+!define Pinpoint2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Pinpoint2, Pinpoint2)
+!define Pinpoint2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Pinpoint2, Pinpoint2)
+!define Pinpoint2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Pinpoint2, Pinpoint2)
+!define Pinpoint2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Pinpoint2, Pinpoint2)
 

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EC2ImageBuilder [64x64/16z] {
+xPO73kGm24K_Ddny_nClKj0kqv0ZQrNpfWzvXYHkAtXuUA1-nJNm3L_n3N44SyjNsZlXauQnvTlwG2HAzykd-WtVQJezVObt0uIxFgSWOFh0r7X1kENx133K
+UELVL04Yh11k-0Q8-GekFt2JY9O66by13QlwWMTClFSpH_Kh0zhxXjJJNpJ-QyC0jhvV1nH_0A9UzDQVML_9hmDPamjijJuX_kfxtazUnypUdtyJaEbduV2h
+06_y4cS8wMTqh612nfZ-ooT6wW8j-GC1hsO3--KRjEhLr_p7tQ2__7XLlVfPMj3u4wnwzHsowuzCTT-FLyb_k_uCPGFthrycoGRw-zVt7mhcwljFttyfyDlz
+juuViXa_v-FtVFuudx_Evy_p-Vjy_JXVlyxNp_Fr-tp_SBv_-OOGmVmF-xU7XuS_
+}
+
+AWSEntityColoring(EC2ImageBuilder)
+!define EC2ImageBuilder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2ImageBuilder, EC2ImageBuilder)
