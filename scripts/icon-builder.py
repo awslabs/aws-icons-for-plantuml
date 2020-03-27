@@ -147,7 +147,7 @@ def build_file_list():
     or:
        source/official/CATEGORY/SUBDIR/PRODUCT_or_RESOURCE_light-bg@[45]x.png
 
-    Since the 6.0 release, new icons now have an `@5x.png` designator
+    Since the 6.0 release, new icons now appear tp have an `@5x.png` designator
 
     where:
 

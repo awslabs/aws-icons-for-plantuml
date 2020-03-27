@@ -95,6 +95,20 @@ AWSEntityColoring(ElementalMediaTailor)
 !define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
 !define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
 
+sprite $KinesisVideoStreams2 [64x64/16z] {
+xPO7bkCm34F10bBtl_0MFpcKF0vdixqXlNmOL1-_XVxhlv8ntv7v5JpXyvqWVW4ViFbElufFo2pROUChPE2P1FbL1KYUJffV5K1dAVfL1YcmnpkDhpF8Cm7y
+nGZxTHsG5ntswuO1i7ZLmW7XuY36B_F8yzKgUL81GDGOaTdwqCTKw98ywOef4JqKj_ni-pLvJe-WcufWYdTyo2nyIsuU5JjFxUHMU6LBcW2pVdUMRlWgN3so
+FC9D1HTnF5EuuF1WvEeIf9TYD0fNUQGc8ouLzwhstbBB9lv0Viz_6xyf9bqEqkUW3z_LjrxOfVyST-9uFdwOIqn2-4OEv2qka79EgWq3ktLw5-5B8GBeCCJX
+jLVC9potPZ3coIiqxlb-_IWUK6R7brYDM3nrUkvyltvwyJcYKZLy2kInVil2pxh0ZU_t3-xyaI0wFdNTltAiFFNz_0RTZ8ftgHueljk_nxN_Ok__Rbmc95VU
+O3VZfpk_-5Zvp6RyDkUdhvq_YZmjuRpAWEnvGNRhXyGxvzTWROHygno_YVxhlpu2
+}
+
+AWSEntityColoring(KinesisVideoStreams2)
+!define KinesisVideoStreams2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, KinesisVideoStreams2, KinesisVideoStreams2)
+!define KinesisVideoStreams2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, KinesisVideoStreams2, KinesisVideoStreams2)
+!define KinesisVideoStreams2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, KinesisVideoStreams2, KinesisVideoStreams2)
+!define KinesisVideoStreams2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, KinesisVideoStreams2, KinesisVideoStreams2)
+
 sprite $MediaServices [64x64/16z] {
 xTK5WiH024JH0WgA-rzutRMRzPtyyKbUNF1J7Tdjfy6Jkm5-xxDtqoFF_-4FVtZLypQy7CyBBVj4rjE8NFQ4-bdWnloVUzbdUBfxQD6hzCGJ5evSz0xBHpu1
 ji0rBp3WklU2MxIGgpwx7DJjk33j-cx2wlfFidhVj-B-q9luxa9yn9U3Soy2xB5FGsYy_HImxF7-Su3puwS3Ni-FtmONlTGBvy_W_1twpxv-pQ-Vy-lt_Fxn
