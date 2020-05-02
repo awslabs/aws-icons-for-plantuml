@@ -39,7 +39,7 @@ SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-ic
 
 The table below lists all AWS symbols in the `dist/` directory, sorted by category.
 
-If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) direcotry and reference it locally with PlantUML.
+If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) directory and reference it locally with PlantUML.
 
 ## PNG images
 
@@ -95,7 +95,8 @@ def verify_environment():
         sys.exit(1)
     # Verify other files and folders exist
     dir = Path("../source")
-    q = dir / "AWScommon.puml"
+    q = dir / "AWSCommon.puml"
+    print (q )
     if not q.exists():
         print("File AWScommon.puml not found is source/ directory")
         sys.exit(1)
