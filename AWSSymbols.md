@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-ic
 
 The table below lists all AWS symbols in the `dist/` directory, sorted by category.
 
-If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) direcotry and reference it locally with PlantUML.
+If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) directory and reference it locally with PlantUML.
 
 ## PNG images
 
@@ -26,6 +26,7 @@ AWSCostManagement | CostExplorer  | ![CostExplorer](dist/AWSCostManagement/CostE
 AWSCostManagement | CostManagement  | ![CostManagement](dist/AWSCostManagement/CostManagement.png?raw=true) |AWSCostManagement/CostManagement.puml
 AWSCostManagement | CostandUsageReport  | ![CostandUsageReport](dist/AWSCostManagement/CostandUsageReport.png?raw=true) |AWSCostManagement/CostandUsageReport.puml
 AWSCostManagement | ReservedInstanceReporting  | ![ReservedInstanceReporting](dist/AWSCostManagement/ReservedInstanceReporting.png?raw=true) |AWSCostManagement/ReservedInstanceReporting.puml
+AWSCostManagement | SavingsPlans  | ![SavingsPlans](dist/AWSCostManagement/SavingsPlans.png?raw=true) |AWSCostManagement/SavingsPlans.puml
 **Analytics** | | | **Analytics/all.puml**
 Analytics | Analytics  | ![Analytics](dist/Analytics/Analytics.png?raw=true) |Analytics/Analytics.puml
 Analytics | Athena  | ![Athena](dist/Analytics/Athena.png?raw=true) |Analytics/Athena.puml
@@ -84,6 +85,7 @@ BusinessApplications | Chime  | ![Chime](dist/BusinessApplications/Chime.png?raw
 BusinessApplications | WorkMail  | ![WorkMail](dist/BusinessApplications/WorkMail.png?raw=true) |BusinessApplications/WorkMail.puml
 **Compute** | | | **Compute/all.puml**
 Compute | Batch  | ![Batch](dist/Compute/Batch.png?raw=true) |Compute/Batch.puml
+Compute | Bottlerocket  | ![Bottlerocket](dist/Compute/Bottlerocket.png?raw=true) |Compute/Bottlerocket.puml
 Compute | Compute  | ![Compute](dist/Compute/Compute.png?raw=true) |Compute/Compute.puml
 Compute | ComputeOptimizer  | ![ComputeOptimizer](dist/Compute/ComputeOptimizer.png?raw=true) |Compute/ComputeOptimizer.puml
 Compute | EC2  | ![EC2](dist/Compute/EC2.png?raw=true) |Compute/EC2.puml
@@ -140,6 +142,7 @@ Compute | LambdaLambdaFunction  | ![LambdaLambdaFunction](dist/Compute/LambdaLam
 Compute | Lightsail  | ![Lightsail](dist/Compute/Lightsail.png?raw=true) |Compute/Lightsail.puml
 Compute | LocalZones  | ![LocalZones](dist/Compute/LocalZones.png?raw=true) |Compute/LocalZones.puml
 Compute | Outposts  | ![Outposts](dist/Compute/Outposts.png?raw=true) |Compute/Outposts.puml
+Compute | ParallelCluster  | ![ParallelCluster](dist/Compute/ParallelCluster.png?raw=true) |Compute/ParallelCluster.puml
 Compute | ServerlessApplicationRepository  | ![ServerlessApplicationRepository](dist/Compute/ServerlessApplicationRepository.png?raw=true) |Compute/ServerlessApplicationRepository.puml
 Compute | ThinkboxDeadline  | ![ThinkboxDeadline](dist/Compute/ThinkboxDeadline.png?raw=true) |Compute/ThinkboxDeadline.puml
 Compute | ThinkboxDraft  | ![ThinkboxDraft](dist/Compute/ThinkboxDraft.png?raw=true) |Compute/ThinkboxDraft.puml
@@ -347,6 +350,7 @@ MachineLearning | Transcribe  | ![Transcribe](dist/MachineLearning/Transcribe.pn
 MachineLearning | Translate  | ![Translate](dist/MachineLearning/Translate.png?raw=true) |MachineLearning/Translate.puml
 **ManagementAndGovernance** | | | **ManagementAndGovernance/all.puml**
 ManagementAndGovernance | AWSCLI  | ![AWSCLI](dist/ManagementAndGovernance/AWSCLI.png?raw=true) |ManagementAndGovernance/AWSCLI.puml
+ManagementAndGovernance | AppConfig  | ![AppConfig](dist/ManagementAndGovernance/AppConfig.png?raw=true) |ManagementAndGovernance/AppConfig.puml
 ManagementAndGovernance | AutoScaling  | ![AutoScaling](dist/ManagementAndGovernance/AutoScaling.png?raw=true) |ManagementAndGovernance/AutoScaling.puml
 ManagementAndGovernance | CloudFormation  | ![CloudFormation](dist/ManagementAndGovernance/CloudFormation.png?raw=true) |ManagementAndGovernance/CloudFormation.puml
 ManagementAndGovernance | CloudFormationChangeSet  | ![CloudFormationChangeSet](dist/ManagementAndGovernance/CloudFormationChangeSet.png?raw=true) |ManagementAndGovernance/CloudFormationChangeSet.puml
@@ -358,7 +362,6 @@ ManagementAndGovernance | CloudWatchAlarm  | ![CloudWatchAlarm](dist/ManagementA
 ManagementAndGovernance | CloudWatchEventEventBased  | ![CloudWatchEventEventBased](dist/ManagementAndGovernance/CloudWatchEventEventBased.png?raw=true) |ManagementAndGovernance/CloudWatchEventEventBased.puml
 ManagementAndGovernance | CloudWatchEventTimeBased  | ![CloudWatchEventTimeBased](dist/ManagementAndGovernance/CloudWatchEventTimeBased.png?raw=true) |ManagementAndGovernance/CloudWatchEventTimeBased.puml
 ManagementAndGovernance | CloudWatchRule  | ![CloudWatchRule](dist/ManagementAndGovernance/CloudWatchRule.png?raw=true) |ManagementAndGovernance/CloudWatchRule.puml
-ManagementAndGovernance | CodeGuru  | ![CodeGuru](dist/ManagementAndGovernance/CodeGuru.png?raw=true) |ManagementAndGovernance/CodeGuru.puml
 ManagementAndGovernance | Config  | ![Config](dist/ManagementAndGovernance/Config.png?raw=true) |ManagementAndGovernance/Config.puml
 ManagementAndGovernance | ControlTower  | ![ControlTower](dist/ManagementAndGovernance/ControlTower.png?raw=true) |ManagementAndGovernance/ControlTower.puml
 ManagementAndGovernance | LicenseManager  | ![LicenseManager](dist/ManagementAndGovernance/LicenseManager.png?raw=true) |ManagementAndGovernance/LicenseManager.puml
@@ -418,7 +421,7 @@ MigrationAndTransfer | ServerMigrationService  | ![ServerMigrationService](dist/
 MigrationAndTransfer | Snowball  | ![Snowball](dist/MigrationAndTransfer/Snowball.png?raw=true) |MigrationAndTransfer/Snowball.puml
 MigrationAndTransfer | SnowballEdge  | ![SnowballEdge](dist/MigrationAndTransfer/SnowballEdge.png?raw=true) |MigrationAndTransfer/SnowballEdge.puml
 MigrationAndTransfer | Snowmobile  | ![Snowmobile](dist/MigrationAndTransfer/Snowmobile.png?raw=true) |MigrationAndTransfer/Snowmobile.puml
-MigrationAndTransfer | TransferforSFTP  | ![TransferforSFTP](dist/MigrationAndTransfer/TransferforSFTP.png?raw=true) |MigrationAndTransfer/TransferforSFTP.puml
+MigrationAndTransfer | TransferFamily  | ![TransferFamily](dist/MigrationAndTransfer/TransferFamily.png?raw=true) |MigrationAndTransfer/TransferFamily.puml
 **Mobile** | | | **Mobile/all.puml**
 Mobile | APIGateway  | ![APIGateway](dist/Mobile/APIGateway.png?raw=true) |Mobile/APIGateway.puml
 Mobile | APIGatewayEndpoint  | ![APIGatewayEndpoint](dist/Mobile/APIGatewayEndpoint.png?raw=true) |Mobile/APIGatewayEndpoint.puml
