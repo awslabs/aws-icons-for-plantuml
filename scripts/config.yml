@@ -1,7 +1,7 @@
 # Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
-# Hand curated config file for Release 6.0-2020.01.31 AWS Architecture Icon release
+# Hand curated config file for Release 7.0-2020.04.30 AWS Architecture Icon release
 # 
 Defaults:
   Colors:
@@ -40,6 +40,8 @@ Categories:
     Target: CostandUsageReport
   - Source: Reserved-Instance-Reporting
     Target: ReservedInstanceReporting
+  - Source: Savings-Plans
+    Target: SavingsPlans
   SourceDir: AWS Cost Management
 - Name: Analytics
   Color: PurpleHeart
@@ -232,10 +234,14 @@ Categories:
     Target: ElasticKubernetesService
   - Source: Amazon-Lightsail
     Target: Lightsail
+  - Source: Bottlerocket
+    Target: Bottlerocket
   - Source: Compute
     Target: Compute
   - Source: EC2-Image-Builder
     Target: EC2ImageBuilder
+  - Source: Parallel-Cluster
+    Target: ParallelCluster
   - Source: VMware-Cloud-On-AWS
     Target: VMwareCloudOnAWS
   - Source: Amazon-EC2_A1-Instance
@@ -674,6 +680,8 @@ Categories:
 - Name: ManagementAndGovernance
   Color: MaroonFlush
   Services:
+  - Source: AWS-App-Config
+    Target: AppConfig
   - Source: AWS-Auto-Scaling
     Target: AutoScaling
   - Source: AWS-CloudFormation_Change-Set
@@ -768,8 +776,6 @@ Categories:
     Target: CloudWatchRule
   - Source: Amazon-CloudWatch
     Target: CloudWatch
-  - Source: Amazon-CodeGuru
-    Target: CodeGuru
   - Source: Management-and-Governance
     Target: ManagementandGovernance
   - Source: Systems-Manager_OpsCenter
@@ -818,8 +824,8 @@ Categories:
     Target: Snowball
   - Source: AWS-Snowmobile
     Target: Snowmobile
-  - Source: AWS-Transfer-for-SFTP
-    Target: TransferforSFTP
+  - Source: AWS-Transfer-Family
+    Target: TransferFamily
   - Source: CloudEndure-Migration
     Target: CloudEndureMigration
   - Source: Migration-and-Transfer

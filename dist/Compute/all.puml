@@ -15,6 +15,20 @@ AWSEntityColoring(Batch)
 !define BatchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Batch, Batch)
 !define BatchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Batch, Batch)
 
+sprite $Bottlerocket [64x64/16z] {
+xTS5Ojj0443HFpptlt10KmfPktAv_G7Z4sFzulg-_lkJwhwFLUmURu1Vzuwa45TzGiw_Ixvcr87K5L_ApBgXjUk7zQJOfdyvsINufd-vs19YpvUy406vvL_F
+iYEruHsj33TzpZoo35ttmPi4VDKNm37QhAey9WGWLhrQrkltqZLN_EIlnXLxww-GVf58_H9VTPSFaRZkKm4qh_coPviALYtIEzwGDl1vZhNW6zuPZsOeuubb
+7umt0L0VJoxwX3XyjgFP-Umba5ho9KGnFl0UB-r8dVdXtkFzy6NZsz0wzuhruGF4y1285gaknKvz8JM-opYowfPvbphtskDd0vpDRtpBff_z_fgl5--Az9ON
+NdfqoxU-_6PYk-EFroV33L_20QPvhRNiIp13pBEVIhTvNOl-cS_68pNZdgrOQicBOCUpOBpCoSGGaNClu3q9DJCq6IpuWqzwIBNkoU3Kjttc6L_Adjoshf--
+z8Aj-Z3mfy3ZYf-TRdQTIxu4UOghlasExFUzV_dlVt7v2
+}
+
+AWSEntityColoring(Bottlerocket)
+!define Bottlerocket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Bottlerocket, Bottlerocket)
+!define Bottlerocket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Bottlerocket, Bottlerocket)
+!define BottlerocketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Bottlerocket, Bottlerocket)
+!define BottlerocketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Bottlerocket, Bottlerocket)
+
 sprite $Compute [64x64/16z] {
 xTO5SWKn30DGIN5Mll-5IvyvMPTRpMJuXGbVbVyGcv1GZza0ElYUi_69Zz_b_xrzKQPyfpEKsLgc8iq-wU4CPagPZ3Gcl2D2s1Go0jgKy90tmQi1FU83lZNb
 CUIPDyAFz-vTjxrwzmDFuCqlJKTfovi7-C2dlUc_q8uujEc_FJf-jJnAq-Zu8xJnElRQU4Ky73znsuFqIFyl_LZ_wzvDlEsfvgB_yl5Nrw-wVwhxjtf-gkUt
@@ -716,6 +730,19 @@ AWSEntityColoring(Outposts)
 !define Outposts(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Outposts, Outposts)
 !define OutpostsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Outposts, Outposts)
 !define OutpostsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Outposts, Outposts)
+
+sprite $ParallelCluster [64x64/16z] {
+xTE5hjWm38NXOpn-_oTUOHubLQTql7x22tz8Rlr3NY-ohVMA5akzG4_mnRuEkTopTW5VUBedlGaG3tg1oBEUZzwlUpleOgzeQpspSQdVN8VStFO9Bt9imqG0
+qU1LxmVRUeTcVIaL6za04ZTVdX__Rgn60yIJh6BQnTDcj3qCWVO2AP1WjHH4tQ92pYRwB2q1ZjiFlp88ZtpOpiSR45gp1MPv4J9iF-dBeDdvV5RQnVUccEQb
+oE_g2MXDsD0dRBx_nRauFWcdz-y5xlxP4DFtdoxWuwCaX9EyFYz0Rpb_4-Lq_lBZA3kQNWpivu-EFV-zb7FhFMC7kPfuM72JBb_TcWx4rkV5zBKGDCklrtPM
+Ac_wOfYAg0M__NtZfBzdQBROU-mSkjZtrLVxhEuT3tiHVzAtlwkNqsBlWfDuBM6hFyZhzG4
+}
+
+AWSEntityColoring(ParallelCluster)
+!define ParallelCluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ParallelCluster, ParallelCluster)
+!define ParallelCluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ParallelCluster, ParallelCluster)
+!define ParallelClusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ParallelCluster, ParallelCluster)
+!define ParallelClusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ParallelCluster, ParallelCluster)
 
 sprite $ServerlessApplicationRepository [64x64/16z] {
 xPHNOkGm34F1pljVU3VXDCOnFUKdJM-g2o0Hb9pVYyLYiGWJPbQBrzI2CwGlE1X0OXu21iZoIHJGEFsn4C2U7jqlHbQ7Jnb4oQ_wCdWc0u5cqzSFXpABFpOy

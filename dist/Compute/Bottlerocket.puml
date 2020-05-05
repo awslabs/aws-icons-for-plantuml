@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Bottlerocket [64x64/16z] {
+xTS5Ojj0443HFpptlt10KmfPktAv_G7Z4sFzulg-_lkJwhwFLUmURu1Vzuwa45TzGiw_Ixvcr87K5L_ApBgXjUk7zQJOfdyvsINufd-vs19YpvUy406vvL_F
+iYEruHsj33TzpZoo35ttmPi4VDKNm37QhAey9WGWLhrQrkltqZLN_EIlnXLxww-GVf58_H9VTPSFaRZkKm4qh_coPviALYtIEzwGDl1vZhNW6zuPZsOeuubb
+7umt0L0VJoxwX3XyjgFP-Umba5ho9KGnFl0UB-r8dVdXtkFzy6NZsz0wzuhruGF4y1285gaknKvz8JM-opYowfPvbphtskDd0vpDRtpBff_z_fgl5--Az9ON
+NdfqoxU-_6PYk-EFroV33L_20QPvhRNiIp13pBEVIhTvNOl-cS_68pNZdgrOQicBOCUpOBpCoSGGaNClu3q9DJCq6IpuWqzwIBNkoU3Kjttc6L_Adjoshf--
+z8Aj-Z3mfy3ZYf-TRdQTIxu4UOghlasExFUzV_dlVt7v2
+}
+
+AWSEntityColoring(Bottlerocket)
+!define Bottlerocket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Bottlerocket, Bottlerocket)
+!define Bottlerocket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Bottlerocket, Bottlerocket)
+!define BottlerocketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Bottlerocket, Bottlerocket)
+!define BottlerocketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Bottlerocket, Bottlerocket)
