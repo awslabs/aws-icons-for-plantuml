@@ -6,9 +6,9 @@ SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-pl
 
 PlantUML sprites, macros, and other includes for Amazon Web Services (AWS) services and resources. Used to create PlantUML diagrams with AWS components. All elements are generated from the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and when combined with [PlantUML](http://plantuml.com/) and the [C4 model](https://c4model.com/), are a great way to communicate your design, deployment, and topology as code.
 
-Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily created created with the icons.
+Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily be created with the icons.
 
-This repository is based on the  [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML) repository for creating  pattens used in quality diagrams. Thanks Ricardo!
+This repository is based on the  [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML) repository for creating  patterns used in quality diagrams. Thanks Ricardo!
 
 ## Table of Contents
 
@@ -58,7 +58,7 @@ After inclusion of the `AWSCommon.puml` file, there are two different ways to re
 
 1. **Use category include file** - Single include that contains all services and resources for that category. For example:
 
-1. `!include AWSPuml/BusinessApplications/all.puml`
+   `!include AWSPuml/BusinessApplications/all.puml`
 
 All of the services can be found in the `dist/` directory, which includes the service or product categories and the corresponding `puml` files.
 
@@ -75,7 +75,7 @@ For example, including these files from the repository (URL), the includes would
 
 This defines the macro `AWSPuml` to point to the root of the `dist/` directory, which reduces the size of the include statements. Next the `AWSCommon.puml` file is loaded, and then the actual resource files. In this example, all of the entities in the *BusinessApplications* directory are added, and then only the *AmazonSimpleStorageServiceS3* entity from the *Storage* directory.
 
-:exclamation: All examples reference the master *branch* of this repository. It is recommended that one of the release branches be used for documents. New releases will be created when AWS updates the AWS Architecture Icons. The release tag will be similar to the release date from AWS.
+:exclamation: All examples reference the master *branch* of this repository. It is recommended that one of the release tags be used for documents. New releases will be created when AWS updates the AWS Architecture Icons. The release tag will be similar to the release date from AWS.
 
 ### Hello World
 
