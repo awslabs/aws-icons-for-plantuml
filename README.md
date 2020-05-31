@@ -173,7 +173,7 @@ This code generates the following diagram:
 
 ### Simplified View
 
-In some cases, PlantUML diagrams may contain too much information, but are still usable for executive or higher level conversations. Using the `AWSSimplified.puml` file filters out a lot of the technical details, while keeping the interactions between entities. Here is an example of a technical view and simplified view. To generate the simplified view, uncomment the `!define` statement and regenerate the image.
+In some cases, PlantUML diagrams may contain too much information, but are still usable for executive or higher level conversations. Using the `AWSSimplified.puml` file filters out a lot of the technical details, while keeping the interactions between entities. Here is an example of a technical view and simplified view. To generate the simplified view, uncomment the `!includeurl` statement and regenerate the image.
 
 ```bash
 @startuml Two Modes - Technical View
