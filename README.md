@@ -121,7 +121,7 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 !includeurl AWSPuml/InternetOfThings/IoTRule.puml
 !includeurl AWSPuml/InternetOfThings/IoTAction.puml
 !includeurl AWSPuml/Analytics/KinesisDataStreams.puml
-!includeurl AWSPuml/ApplicationIntegration/SimpleQueueServiceSQS.puml
+!includeurl AWSPuml/ApplicationIntegration/SQS.puml
 
 left to right direction
 
@@ -129,7 +129,7 @@ agent "Published Event" as event #fff
 
 IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
 KinesisDataStreams(eventStream, "IoT Events", "2 shards")
-SimpleQueueServiceSQS(errorQueue, "Rule Error Queue", "failed Rule actions")
+SQS(errorQueue, "Rule Error Queue", "failed Rule actions")
 
 event --> iotRule : JSON message
 iotRule --> eventStream : messages
