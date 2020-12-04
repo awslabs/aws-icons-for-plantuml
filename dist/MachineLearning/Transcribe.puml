@@ -1,15 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Transcribe [64x64/16z] {
-xTG5ikCm48JXrl1qxd_U1LL0ZsKlmrSKy6yIyFVqtt-TyLJnaCGp8tb4GCCN0F9OxnS-z02Gntek6X90ValF0F9R-dc2Gttx5DT-dk18dvZasXyvmUmxfo8R
-aAy0r7Q_qZ4c84xrKpTziozDikChLbmrjtjUxekW0rUvqtUwgPfddxb--y3Li9g_tCrlrNn7340Zgofi0DuKt0K_q3gJguw1fibTVfnBSL758nJQF2yW7-Uf
-oTVrG97T94sQz36_DXVlZP_3ICheQa6JYY8TkTlFotECW2igowvzvbPVK9RNjK-OeR8SCSPM7_2B8sJf4xhVEvBn3RtzujuHz6Uz-dwVSARbRVmiR-FdlZb-
-mZd-vNLg_WYAP2R9sS_hLpRP3-_q0ULLrRhJr5XWxLzEu1SgM6CbnTSrHh_ySI2vn-0lSu5nJytBTt6H0yfDXhWm19fDJgM0yS3bGu013FK8jm58SfT11D1Y
-AguqkAs0MN_L5Lzayu2SzNcTnJ_BV_zz1W
+fTK7agqm34JHbeE2lV_r_WWOsHeeoZqvdFioQ3m9n-jiCs2R0TiCs6R0DWEs6R3DW6q6R3DW3u44F-8rO0y1B5i3zX00t4q0W3e7xBxOw-KJKAQ0kSLUJozv
+2PXVxFNqKe3i0ZOjzdfwgK2w1spUv77iz5BlZsFWBVOgWciavm9lpey9ZO1Sis2nrykyUOkzllduFW3y_UXzUmwy-nPWpea0IeLrcgo-pRfWZEeIy6jpe0AW
+mg8gN0XW_qhMnVj01fAC-w1cdRm6VWGIyEsGrboW06Bs9T3k0HxyAG0uFmA4Ub7W_-TNFm8C6lBHQ-2RPTH3tjvZhv47DF10v7Nr2XhO9IAlYnUaBrvdpyZj
+YzV5bzOY_t1Uy3x7_k6yuEy_HFxvlD1k8_pxqJz_x5ZizUuhqi_Uthq1qluky72BVQkWe-J6iq_3zxldqxj0HldvvTpl0GAt4GYEAP7l_kBdG0Pun2BVtUF7
+H3m2bHmtYtmV3vyG050HDLCk09AQs-n702W986R2DMARD_ipK07W_tNNSfo_n89vVmK8G6r-5YxolPMXFmJw28nz2FJDGDyCzCr0tmpqpK3V3FJDGDyCzCt0
+Rm
 }
 
 AWSEntityColoring(Transcribe)
-!define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Transcribe, Transcribe)
-!define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Transcribe, Transcribe)
-!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Transcribe, Transcribe)
-!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Transcribe, Transcribe)
+!define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Transcribe, Transcribe)
+!define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Transcribe, Transcribe)

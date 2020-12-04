@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $OrganizationsAccount [64x64/16z] {
+rTO7YaD130FG0qZW-vzsIve-WYbokYcxIVni0zFgCuFuZww6ejbRmPJ3WXr-d8Jny5OjRU-VaNClqFULU5fkwl44Nr_k4NgaVfxCs2Djx-dqWks3gt46GOOP
+5saVGHX5rBm8EHjXpGT3CRuol4AJ-oe8KdmF4iou0fRJ6t2OjkJpvQHl5oi36i5zj2SOS2EunDfxkdzbViQdIthTVhvLrXwqBrCFs5VcEV5KjhJvcdWP-s_J
+mxe2BFEZeD9mr96dxO7Qzv0NIUwrJ_3uTW-K4o3oaBSJQRS0v5LpBsmjmve7C_XcpfybWGxkdwn2TSDwvq7KfyKl
+}
+
+AWSEntityColoring(OrganizationsAccount)
+!define OrganizationsAccount(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccount(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccountParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, OrganizationsAccount, OrganizationsAccount)
+!define OrganizationsAccountParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, OrganizationsAccount, OrganizationsAccount)

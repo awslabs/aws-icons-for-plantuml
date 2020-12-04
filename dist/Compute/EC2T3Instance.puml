@@ -1,13 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2T3Instance [64x64/16z] {
-xPS53iCm34K3Xjx_meEucaUkR9NX2OOlz1jAar8H7Qyso3pu2jpbY0-_hyVq0HlCFFXAp8GD-Aau1axkfm07yak3eZw9foCVz0KSx-SnxSzRpE_AFolwmPz_
-vHUKW0NovQz-9ws2_Zrvnr-Q17qLhVc5c6iil_9U8wWUyKrTVHq_sszTCUQFvcVxCln6VWuVshx1xlpLLuYvkFDNtqWWClxvf_wOZuG0fAq9-wpZ7yW_0rHv
-Kv48gv7_skl_sFNhMl_7x9zN_iVnOuptnzuVhllNwFlh-FlpUEu
+xTV50SCm3030hzdxRzj-ZSAmr8Pp8NEzLRX_GCjRUlEE5BVq5HcwVlDGuAT-WHTzlrjwIt-_BN9m-Zl0Dr3NDzTerlc-vN3wjwZbhK1xvwJUqNrB8f3-a7UB
+Kx4-y7pphFeU_dxDCQl_hVwtzDTDlnVqNrymVZ1_IVm
 }
 
 AWSEntityColoring(EC2T3Instance)
-!define EC2T3Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2T3Instance, EC2T3Instance)
-!define EC2T3Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2T3Instance, EC2T3Instance)
-!define EC2T3InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2T3Instance, EC2T3Instance)
-!define EC2T3InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2T3Instance, EC2T3Instance)
+!define EC2T3Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2T3Instance, EC2T3Instance)
+!define EC2T3Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2T3Instance, EC2T3Instance)
+!define EC2T3InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2T3Instance, EC2T3Instance)
+!define EC2T3InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2T3Instance, EC2T3Instance)

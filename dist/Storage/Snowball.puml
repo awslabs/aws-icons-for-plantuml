@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Snowball [64x64/16z] {
+pT1NSiH028JXDaeqtF-y3Z9AjRCZoZZr-_TFu6dQsV9aB0PO3B0OO370Oe3508i15WCi1bWCi1XWCS1YWAVDWiHU9jMc7v7SeDhmCp3f_HEM4PXK7xrWolt1
+2D4zODm6A3bWcv34EbMLu-wBBe3k0RF31uyjXv-lZ__q6jvEVbNhHep74uOFjMu6Tg_XxUmPMt3PhB6pr_3My9Gp5srw3MyDVqnZ3Q_XhUVPyMgndcV2syaB
+cfEkjyFZoVA-zOIQPy9RppFXxNzx9hprF1FUUfu9RptFX3Sqb_VIvfBrPdmwW0blFS-4jwzwxGUMlXznku44sFGqZhTSgG3vw0MJNSVs9WZtWDks1PXv7z09
+cBa7_0YCI6xakl17O96Cbfcny6wTiRVmbO0N0ruCU37WnO0N0ruCU37WnO0N0ruCU37WnO0N0sy
+}
+
+AWSEntityColoring(Snowball)
+!define Snowball(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Snowball, Snowball)
+!define Snowball(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Snowball, Snowball)
+!define SnowballParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Snowball, Snowball)
+!define SnowballParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Snowball, Snowball)

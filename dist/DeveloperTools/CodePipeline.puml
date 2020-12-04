@@ -1,14 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CodePipeline [64x64/16z] {
-xTO5sjmm38JXaK6sPkv_tbByF-s2DqgPlcLumyJlrl_-fqJSfXY9GZlkXaJcsd2W-MaDS3tZ0Kmbca3eYHzeOY8rZEVUSzv_J__V3zr4lZtVDdQ-zfkeqRj_
-UhwfxlnjHhMtvzksuu_vHK76UhvjC_w0XHA58PvugiDydEQ6BZwj8rNd9eLxHVLDwySGTwsLkslzU77ZaZQRQD97V9ilHdsDFvGcgdZPYyr295KnQ8swvCMA
-Jru1OnHKwe8N2yen-WwNM552QQyrmeyPGXGRR2hh-O5BDoSLDHZJliF6mIgcI6eQUjxB0J-MNbcJ0LVQ7w2JwWVem13JVatmr5fw4pR5IvwAyNdf-HGlUafa
-mOBwgkr_ed1rtQ_f_YOlyHlywhhVbVDj-ARHplt0ouPuqdZPjrv2ytlsl_-z1m
+fTG7qcCX30DWmMjOvlxNtUO9avyXDbahlNnw3U0hugHz3fC5J1OmMS1a0PC5J1OmMS1a0PC5J1JClfq5OShnVF0FDdClVGEE5Xv2UohmhFo9O-ySL1mhNx0v
+cHwKbGSshq830XyKx7awNdOy7IyxdewN7K_7YtbrFHqlvfN3Zv3ZUHthCQ__xSMyJkDlochyYLZCwpJ-Wu83Xum27GLYyoygU0wWoOXQlfl_CdihaBtrfyd2
+gpSAo1yNVkdLzOozkfwnrwM_oir_YRskVC53I-prpH-ssGU5KkrzxFNbfQ9O3IxUm4MIZBsQbuBINfiaB-3ynhU2AdRsR5BSm27RlW5rEdiFK4c0iTU__kGu
+UwJjKVdd6NlzjxklipSsB-OPUsMp_zlP6uTldh7NVnU0l70QjrUQP-oLh3S9s4Ki5zyzOwzsr9KZxvwHjuAA-uDdx9Ky2pzvnbvfMNl6NbrFyztnwdgQxuvN
+rzDydxmRpWLzAgWkh_mPyrsTq8tvH45F5lHaGKyMz6H1JnRqP45F5lHamMy
 }
 
 AWSEntityColoring(CodePipeline)
-!define CodePipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodePipeline, CodePipeline)
-!define CodePipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodePipeline, CodePipeline)
-!define CodePipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodePipeline, CodePipeline)
-!define CodePipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodePipeline, CodePipeline)
+!define CodePipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CodePipeline, CodePipeline)
+!define CodePipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CodePipeline, CodePipeline)
+!define CodePipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CodePipeline, CodePipeline)
+!define CodePipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CodePipeline, CodePipeline)

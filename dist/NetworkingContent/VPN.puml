@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPN [64x64/16z] {
+fPE7jkim2C24D-R_l_VDD9SqhjDpq1sTKWT6LumD_Oe60neCQ32WmO060neCQ32WmS0C1cOmC8E16GpCTQ2N922vZeV0N0MQS5B7DZ0NWGnIsb3jLI1j0_CM
+609LNpIGPzy711bwoQKdtmVoLLSTK7Nh-q03fvztzLhQtZy2GjLt4W90MVi-q16zqO1S4gG7Vsgcwfqaut-cFlXJ6FgHXZpvi5i5UF1rwolallEhW3-9DK4g
+mmq2Kl_aQmPfymmq3ffRIw1zy3FYrxb2QcEqX9_9oD2N_e3X3b8_jGhzifsoz0l5dyHCqOD2kYvKM_c9Fbq0ncc0EWfvvOD-ckJLxyZQdvxF_e2ehmjV6D_u
+nuxU_KBrN-OLFu5ArZDWfpBy5yYDo_pq39ZvypVUlep59nW9KJq3vW89IbVdQu5oyNi16VeJC1ye_EVbLu2g2g3AV_BG5_zy7z2Ql9zfZUHzoLqTXs_pZSCl
+Y51k4tGSlgrz5P2nyzNM0JYtuD__HzzklhlynhUDFvLdtsw-O-_V0zpumhVz_ZpxDZTi_430WW4B1YmOi630WW4B1YmOi630WW4B1YmOi63WDm
+}
+
+AWSEntityColoring(VPN)
+!define VPN(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPN, VPN)
+!define VPN(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPN, VPN)
+!define VPNParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPN, VPN)
+!define VPNParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPN, VPN)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DirectoryServiceADConnector [64x64/16z] {
+xPS7ZiH0408VG5d-_sit9tIjcQ6jKpGNDbO3pjx_GwSaSGH_w2Yl0pZqUTwysZpF3bkx_EknotzgPAXZ3TvYapTmoFWKV_5qqhS7oFczmnVp4jpzShxS6d8y
+3-1UFY2tpzUXZCy3cCziRfApuAEQF7Z4QD3aC_GHgZn6F7AHdN1-dB49xi0Ozp3yvOVu_9rjqBrwZwM5PrOEBAUVZTNOdihM-3LxFLMU9bZOftm3eeXIy8wZ
+j-uymLdgPUC1UFBB-dRugQQ4hvOw1_YdElbzeukNt-Af4V7XJKlsRY9liiAR2-NswvhlFopYOni2llZYPh7Y0H2UrKMEUm8eZjz9WfVet5g0N7ig2q36Uc-3
+Jrq1
+}
+
+AWSEntityColoring(DirectoryServiceADConnector)
+!define DirectoryServiceADConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DirectoryServiceADConnector, DirectoryServiceADConnector)

@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!--  Test 'em' and units                                                      -->
+<!--                                                                           -->
+<!-- @author tkormann@apache.org                                               -->
+<!-- @version $Id: em.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+<title>Test 'em' units</title>
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+<g id="testContent">
+  <text x="225" y="50" class="title">Test 'em' units</text>
+</g>
+
+<g style="fill:none; stroke:black" transform="translate(20 0)">
+
+  <line x1="0" y1="80" x2="300" y2="80" />
+  <text x="0" y="94" style="stroke:none; fill:black; font-size:12">width: 300</text>
+
+  <line x1="0" y1="110" x2="30em" y2="110" style="font-size: 10"/>
+  <text x="0" y="124" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 10</text>
+
+  <line x1="0" y1="140" x2="60em" y2="140" style="font-size: 5"/>
+  <text x="0" y="154" style="stroke:none; fill:black; font-size:12">width: 60em / font-size: 5</text>
+
+  <line x1="0" y1="170" x2="30em" y2="170" style="font-size: 10px"/>
+  <text x="0" y="184" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 10px</text>
+
+  <line x1="0" y1="200" x2="60em" y2="200" style="font-size: 5px"/>
+  <text x="0" y="214" style="stroke:none; fill:black; font-size:12">width: 60em / font-size: 5px</text>
+
+  <g font-size="2">
+    <line x1="0" y1="230" x2="30em" y2="230" style="font-size: 5em"/>
+    <text x="0" y="244" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 5em / parent font-size: 2</text>
+  </g>
+
+  <g font-size="2px">
+    <line x1="0" y1="260" x2="30em" y2="260" style="font-size: 5em"/>
+    <text x="0" y="274" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 5em / parent font-size: 2px</text>
+  </g>
+
+  <line x1="0" y1="290" x2="30em" y2="290" style="font-size: 7.5pt"/>
+  <text x="0" y="304" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 7.5pt (96dpi)</text>
+
+  <g font-size="3.75pt">
+    <line x1="0" y1="320" x2="30em" y2="320" style="font-size: 2em"/>
+    <text x="0" y="334" style="stroke:none; fill:black; font-size:12">width: 30em / font-size: 2em / parent font-size: 3.75pt (96dpi)</text>
+  </g>
+
+</g>
+
+<!-- ============================================================= -->
+<!-- Batik sample mark                                             -->
+<!-- ============================================================= -->
+<use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

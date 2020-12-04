@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $VPCVPNGateway [64x64/16z] {
-jPS7aXqX34I_20fp_mCRYh6xt0op-5FkpOkUa42ap_-KIDTNQ2hg4LTJX6j9_mPhNAJGRHV51-AcjKdjzzzbd_QQ1V-JN7tFGtAAbNBozongfwiiPgDs3tLD
-YxLsbHS3RGOcBx57ViylnpA7r9lanvBgdQG5RfyD6HoGNvsBiDQvzFIEaxqQqpRgnjABBIREkP1Gl5mspjEOMauouvP5iiqE9AuhaSDCmMCkCratvJjSz6Lp
-ZcMlkIccw6KWiERsXg3xkQhpI0W6UHxmWkn3kFclbDCmfW0ShVhvYQyFLPJmsmClAvvx7P4m7qiUMPEZ9I_C8-nvSAMhDyeVvSPB5qrHkVq8xH3Fejr5xhZz
-SXgvjP05mBYCUAsFKkBjYb48kfWvaX2lLmZ-kycpvJjVpChtl8n3IxxZnqwBNNd5BySlDLIaEKdhyNkSFy4UCBw3f_dZ-k7-5MLEF41j0F7OLRr_KVvKlrW_
-pATn_qdCO_qWJE9n0jd0cKTYs3-87xuJrm_l7t34F0QVU8IDt_Pu3f_tRuxVdUAd_Hldn_xwm_d1vzS-BmsXynEyswCSFCvFdD-R-n-Vttn_IFwYHFS7kh_i
-2fdGdMXFiENxsrfyVpkyFnxUNy_kpt9uVpzxFvo_NyxVJ-Vlj_Ftu_dxzVpzVAvV
+pPO7iaCn20CFW2Q-_sb_hsInb1vDy_1OIkB2UcBLbyv2krOk5Kffwbcdq5nHY9_tOshhOty6f7C7H_zMc7_Aaq1l9eqrrvUIHCV6STy82W2lUUicbiC71w6n
+Wg7BjWH_vz7N3725hZoJtl9pVJx_Cdn5V5zw7cpuLHVol_l9Pu2zm6gEL-ARMIVm6lW5mar_Oxu-T3PVNxeUhv3_nVLB3RnsVDkdeYsA_DTAsl47vFF-mUvv
+xdF-_xNEuTidFDC2ByE3stbyDRuo7f45V1Fn_1geDX80xpg77zxlsWhITqk6oymlReAAfpS_g9q_l_d9q7lv2Zn-_lny_lnkV7ni5e-SKYMutt-HBErbu4ob
+Tr2rdbYl
 }
 
 AWSEntityColoring(VPCVPNGateway)
-!define VPCVPNGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCVPNGateway, VPCVPNGateway)
-!define VPCVPNGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCVPNGateway, VPCVPNGateway)
-!define VPCVPNGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCVPNGateway, VPCVPNGateway)
-!define VPCVPNGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCVPNGateway, VPCVPNGateway)
+!define VPCVPNGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCVPNGateway, VPCVPNGateway)
+!define VPCVPNGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCVPNGateway, VPCVPNGateway)
+!define VPCVPNGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPCVPNGateway, VPCVPNGateway)
+!define VPCVPNGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPCVPNGateway, VPCVPNGateway)

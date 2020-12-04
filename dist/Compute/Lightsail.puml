@@ -1,14 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Lightsail [64x64/16z] {
-xLO74iCW39DjRF7_3tU0kvV9xLxKcGGDDlq_iMF73iO9t4WE4mo8RT1m0Q1sWW8GN_HMG3rT6GP8h9W3-b2U1jGZjFl28PwIhUv-DYTJ335rYWaY2RHnQO3m
-TlytqYSKTkOf59QvX9NqcjsFSmSGGabZApJ1A3p0DkKi9QTMnJunokfPxXRWHnE-50de395NzZi-7o_zBZX5-8kl3sdIK17vos_a73NalA12-50h-p84GaIf
-8c4YpKKi04sx1h_zLlbUu9Vpn-rtG_i9EDGLtDX_lHkp_zR7JuFHe17G-lZD7aVCEH7YALwRFzJKizwWGuy0V_6pC4DXqTVdRpOPNQ3UNzQF-lf5uSlwvRs0
-N34P_MdzB2_0zdxzjfKDGEDXL1lAxXaMzhX_ULy1syF-YSQ-2BeA9jIvzVZW7i7-bzYnOySH
+fPC7aYij30PRGkdT_y1_U4pXeMPW0z-k4tOteeJoblXEV4uU2l9Ga8U2F1JaeI0F1Naeo4D17WhoK927WZmKv5PWAe28cYy4kKoOS8kqLy6IRW1gxX7kfW0M
+pwnm0Pb-RmBYt-GDyCoOOi13iC8rRbrGxQy2zWtUeKrj1Br4u5_oCV3e0WTi4cnvGRD7ky1WO8Bi-JJegw68PqOeJGS6jkV1S-n_zT8_cC6MDsIyxzywHBHH
+WD1kV3rFxpb7QVUw3Rdpio03SaxqWXjw8U1tVXOO-jXUCoDyd5jf4py96lRQZWZ1EsBep5Ukurp2pxQEnCpNRehRg4nNV1V0uqdu7ETJDZpuMlBjUtpbSf97
+_OlpRmK-Jg1OxlXwxvz3VER2N_etydv_6dfvCaCYGh5tlfRtjny_Gz48Y0LVp_cvo8m-rfffo9AlCRzp0UCKaI7OcgzCyET8nrWrY0rVQJ0g7pCbw2Z6SiTN
+2lgvyTUM47rDaSpSyHNZqag7Wb5zkqGxlfnBS44vX6s81hyGwDJ1ZeVUnd77b_FiGjgykECh16Gok814thBYHnj1pICpt1GGopaxlZ9D61dqb1K_XibK14JK
+8j-ouok_aQX3GUroojSfNwTydV9rojSfNwTyRVb3mPz3mPz3mRy
 }
 
 AWSEntityColoring(Lightsail)
-!define Lightsail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Lightsail, Lightsail)
-!define Lightsail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Lightsail, Lightsail)
-!define LightsailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Lightsail, Lightsail)
-!define LightsailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Lightsail, Lightsail)
+!define Lightsail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Lightsail, Lightsail)
+!define Lightsail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Lightsail, Lightsail)
+!define LightsailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Lightsail, Lightsail)
+!define LightsailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Lightsail, Lightsail)

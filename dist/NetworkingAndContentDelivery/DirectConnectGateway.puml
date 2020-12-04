@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DirectConnectGateway [64x64/16z] {
+pTS7Ta8n30J00qYO-vysFTcqUK-cAnNZMHVWb-DZrw7EubLLVOR-g1DrQcthLJ_hjC4F2UWD7V8sycP2LwQSF-D5f6_yV0eL7fzPAK6TuXCzsBP_FBQ1pyPZ
+QpKuFBgX6PwBI9jyQgLl2XyIh_LFAFOKxKSKFEekdf4zVlt0grhUhtGuF0BCxHrGuV0848zN03Yz0-h4EfDNnzzZV6p7TF-md_3W2807Tm3Qr5hmu0Ym3qT0
+mxjflpFuVO-_tLk-SLIT-SRvSuryTVhgmi1-uKpVPrm_-AdvzKiI6XuQK_ZhePaGxy6TKF4xEfqxlZeQXIbK5HO-smRSFumNSSuj5FH-m3hl3l1uJaK_PZq3
+}
+
+AWSEntityColoring(DirectConnectGateway)
+!define DirectConnectGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DirectConnectGateway, DirectConnectGateway)
+!define DirectConnectGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DirectConnectGateway, DirectConnectGateway)
+!define DirectConnectGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DirectConnectGateway, DirectConnectGateway)
+!define DirectConnectGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DirectConnectGateway, DirectConnectGateway)

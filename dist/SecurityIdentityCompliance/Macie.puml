@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Macie [64x64/16z] {
+fCon0K10542nal_s7rYf0IuP87DdVx2T1eF1O30O30Q3C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C3W8AG_i1c8GY7vGnRx_VHD4i9pLEiLDvSzZ1ju-Je5A
+lqD7zUt_-GxC6nneXy39Jr3qv0M5euAJBnGJsXMloEmmhW8trPj_xCJ2za9h5FO7RqB__b9guW8oJ2bh4OLzvXiQ8J1VjWKAiHx4zoVUOAmV5KtRPWso7a_d
+by0HNWgjh4SaLe4UNFwuvQU7znXrUevYbeq0pGeQ4ixkUALvwOX5XE5YVJLG1tTlJtuWRW6X-88UQKMOGwBqjRa5dc-yq4rXHeebKyjcbbZluLfy2eHbGUPF
+5uqLWUrX2W-HJ0eyju1G1RMSeecdQPQ9MtgGlU5y2dI0ialHjOp9ox-fK2jxP_4Xe43TdN0dq6fMkpq0U_ry2G3zVH2PtWCOb-U07dm8Z6RlerJdyg7pUAHr
+xGV_LSgS5008100GUYlz-rh0FOS0U6UUCJ4G0p4G0p4G0p4G0p4G0p4G0p4G0p4G0p4G0p4G0p7u
+}
+
+AWSEntityColoring(Macie)
+!define Macie(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Macie, Macie)
+!define Macie(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Macie, Macie)

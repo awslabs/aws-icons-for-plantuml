@@ -1,0 +1,132 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Alternate stylesheets                                                     -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: alternateStylesheet.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<?xml-stylesheet type="text/css" title="Hot" href="../../resources/style/hot.css" alternate="yes" ?>
+<?xml-stylesheet type="text/css" title="Cold" href="../../resources/style/cold.css" alternate="yes" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+  <title>Alternate stylesheets</title>
+
+  <style type="text/css"><![CDATA[
+
+  .title {
+    font-family: Arial, Helvetica; 
+    font-size: 16;
+    text-anchor: middle;
+  }
+
+  .legend {
+    font-family: Arial, Helvetica; 
+    font-size: 10;
+    text-anchor: middle;
+  }
+
+  .light {
+   lighting-color: #eee;
+  }
+
+  ]]></style>
+
+  <!-- ============================================================= -->
+  <!-- Test content                                                  -->
+  <!-- ============================================================= -->
+  <g id="testContent">
+    <text x="225" y="50" class="title">Alternate Stylesheets 2</text>
+
+    <text x="20" y="80" style="font-size:12; text-anchor:start">
+      <tspan>Choose your alternate stylesheet using the 'View->Use Stylesheet'</tspan>
+      <tspan x="20" y="100"> submenu items.</tspan>
+    </text>
+
+    <defs>
+      <font horiz-adv-x="838" >
+        <font-face font-family="SVGImpact"
+                   units-per-em="2048"
+                   panose-1="2 11 8 6 3 9 2 5 2 4"
+                   ascent="2066"
+                   descent="-432"/>
+
+        <missing-glyph horiz-adv-x="1536" d="M256 0V1280H1280V0H256ZM288 32H1248V1248H288V32Z" />
+
+        <glyph unicode="B" glyph-name="B" horiz-adv-x="1131" d="M84 1619H504Q703 1619 805 1588T971 1463T1034 1158Q1034 1016 990 960T814 874Q960 841 1012 765T1064 530V380Q1064 216 1027 137T907 29T571 0H84V1619ZM505 1342V982Q532 983 547 983Q609 983 626
+          1013T643 1188Q643 1264 629 1294T593 1333T505 1342ZM505 730V277Q594 280 618 305T643 428V579Q643 683 621 705T505 730Z" />
+
+        <glyph unicode="a" glyph-name="a" horiz-adv-x="1032" d="M433 813H54V902Q54 1056 89 1139T232 1287T510 1351Q715 1351 819 1279T944 1101T965 666V0H572V118Q535 47 477 12T337 -24Q231 -24 143 35T54 296V405Q54 554 101 608T334 734Q533 812 547 839T561
+          949Q561 1053 546 1084T494 1116Q453 1116 443 1090T433 952V813ZM561 631Q464 560 449 512T433 374Q433 271 446 241T500 211Q538 211 549 234T561 358V631Z" />
+
+        <glyph unicode="b" glyph-name="b" horiz-adv-x="1064" d="M476 1619V1236Q526 1294 587 1322T721 1351Q804 1351 865 1325T958 1252T996 1160T1003 968V370Q1003 224 984 153T892 29T721 -24Q650 -24 589 7T476 100L450 0H72V1619H476ZM599 950Q599 1053 586
+          1084T535 1116Q498 1116 487 1089T476 950V378Q476 271 488 241T538 211Q576 211 587 242T599 391V950Z" />
+
+        <glyph unicode="i" glyph-name="i" horiz-adv-x="561" d="M488 1619V1408H72V1619H488ZM488 1327V0H72V1327H488Z" />
+
+        <glyph unicode="k" glyph-name="k" horiz-adv-x="979" d="M942 1327L778 798L991 0H602L476 578V0H72V1619H476V939L602 1327H942Z" />
+
+        <glyph unicode="t" glyph-name="t" horiz-adv-x="624" d="M498 1504V1295H607V1085H498V375Q498 244 511 229T624 214V0H461Q323 0 264 11T160 64T104 159T93 411V1085H6V1295H93V1504H498Z" />
+      </font>
+
+      <filter id="emboss" >
+        <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+        <feSpecularLighting in="blur" surfaceScale="-3" class="light"
+                            specularConstant="1" specularExponent="20" 
+                            result="spec" kernelUnitLength="1" >
+          <feDistantLight azimuth="45" elevation="45" />
+        </feSpecularLighting>
+
+        <feComposite in="spec" in2="SourceGraphic" 
+                     operator="in" result="specOut"/>
+        <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+                     k1="0" k2="1" k3="1" k4="0" result="litPaint2"/> 
+      </filter>
+
+      <filter id="dropShadow" width="1.5" height="1.5">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="4 4"/> 
+        <feOffset dx="4" dy="4" />
+      </filter>
+
+    </defs>
+
+    <g>
+
+      <g style="text-anchor:middle; font-size:128; font-family:SVGImpact;">
+        <text x="50%" y="50%" style="filter:url(#dropShadow); fill:black">Batik</text>
+        <text x="50%" y="50%" class="logo" style="filter:url(#emboss);">Batik</text>
+      </g>
+
+    </g>
+
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Batik sample mark                                             -->
+  <!-- ============================================================= -->
+  <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

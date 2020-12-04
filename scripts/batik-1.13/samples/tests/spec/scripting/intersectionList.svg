@@ -1,0 +1,412 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Testing the getIntersectionList interface on the svg:svg element.      -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: intersectionList.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+  onload="testIntersection()"
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+  <title>Test of getIntersectionList interface</title>
+  <text x="50%" y="45" class="title">Test of getIntersectionList interface</text>
+
+  <script type="text/ecmascript"><![CDATA[
+    var svgns = "http://www.w3.org/2000/svg";
+
+    function doCheck(svg, rect, end, attr, val) {
+      var lst = svg.getIntersectionList(rect, end);
+      var i=0, sz = lst.getLength();
+      while (i < sz) {
+        var e = lst.item(i);
+        e.setAttribute(attr, val);
+        i++;
+      }
+    }
+
+    function setRect(rect, x, y, w, h) {
+      rect.x      = x;
+      rect.y      = y;
+      rect.width  = w;
+      rect.height = h;
+    }
+
+    function makeRect(parent, rect, stroke) {
+      var outline = document.createElementNS(svgns, "rect");
+      outline.setAttribute("x", "" + rect.x);
+      outline.setAttribute("y", "" + rect.y);
+      outline.setAttribute("width", "" + rect.width);
+      outline.setAttribute("height", "" + rect.height);
+      outline.setAttribute("fill", "none");
+      outline.setAttribute("stroke", stroke);
+      parent.appendChild(outline);
+    }
+
+    function checkIntersection(svg, rect, elem, attr, val1, val2) {
+       if (svg.checkIntersection(elem, rect)) 
+           elem.setAttribute(attr, val1);
+       else 
+           elem.setAttribute(attr, val2);
+    }
+   
+
+    function testIntersection() {
+      var root = document.getRootElement();
+      var rect = root.createSVGRect();
+      setRect(rect, 50, 95, 50, 50);
+
+      doCheck(root, rect, null, "fill", "blue");
+      makeRect(root, rect, "blue");
+
+      setRect(rect, 45, 90, 60, 60);
+      var middle = root.getElementById("tb1-middle");
+      doCheck(root, rect, middle, "stroke", "red");
+      makeRect(root, rect, "red");
+
+      var tb2 = root.getElementById("testblock2");
+      setRect(rect, 45, 60, 450, 20);
+      doCheck(tb2, rect, null, "fill", "green");
+      makeRect(tb2, rect, "green");
+
+      setRect(rect, 187.5, 139, 224, 10);
+      doCheck(root, rect, null, "stroke", "pink");
+      makeRect(root, rect, "pink");
+
+      setRect(rect, 82.35, 267.15, 35.25, 35.25);
+      doCheck(root, rect, null, "stroke", "lightgreen");
+
+      setRect(rect, 90.65, 275.25, 19, 19);
+      doCheck(root, rect, null, "fill", "purple");
+      makeRect(root, rect, "purple");
+      setRect(rect, 82.35, 267.15, 35.25, 35.25);
+      makeRect(root, rect, "lightgreen");
+
+      var tb5   = root.getElementById("testblock5");
+      var tb5_m = root.getElementById("tb5-middle");
+      setRect(rect, 45, 160, 150, 20);
+      doCheck(tb5, rect, tb5_m, "fill", "crimson");
+      makeRect(tb5, rect, "crimson");
+
+      var ts = root.getElementById("ts");
+      setRect(rect, 235, 200, 2, 50);
+      doCheck(root, rect, ts, "fill", "orange");
+      doCheck(root, rect, null, "text-decoration", "underline");
+      makeRect(root, rect, "orange");
+      setRect(rect, 255, 200, 2, 50);
+      doCheck(root, rect, ts, "stroke", "crimson");
+      makeRect(root, rect, "crimson");
+      
+
+
+      var tb6   = root.getElementById("testblock6");
+      var tb6_m = root.getElementById("tb6-middle");
+
+      var tb6_11 = root.getElementById("tb6-11");
+      var tb6_21 = root.getElementById("tb6-21");
+      var tb6_31 = root.getElementById("tb6-31");
+      var tb6_41 = root.getElementById("tb6-41");
+
+      var tb6_12 = root.getElementById("tb6-12");
+      var tb6_22 = root.getElementById("tb6-22");
+      var tb6_32 = root.getElementById("tb6-32");
+      var tb6_42 = root.getElementById("tb6-42");
+
+      var tb6_13 = root.getElementById("tb6-13");
+      var tb6_23 = root.getElementById("tb6-23");
+      var tb6_43 = root.getElementById("tb6-43");
+
+      var tb6_14 = root.getElementById("tb6-14");
+      var tb6_24 = root.getElementById("tb6-24");
+      var tb6_34 = root.getElementById("tb6-34");
+      var tb6_44 = root.getElementById("tb6-44");
+
+      setRect(rect, 190, 300, 70, 70);
+      checkIntersection(root, rect, tb6_11, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_21, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_31, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_41, "fill", "blue", "crimson");
+
+      checkIntersection(root, rect, tb6_12, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_22, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_32, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_42, "fill", "blue", "crimson");
+
+      checkIntersection(root, rect, tb6_13, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_23, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_m, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_43, "fill", "blue", "crimson");
+
+      checkIntersection(root, rect, tb6_14, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_24, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_34, "fill", "blue", "crimson");
+      checkIntersection(root, rect, tb6_44, "fill", "blue", "crimson");
+
+      makeRect(root, rect, "blue");
+
+    }
+    ]]></script>
+
+  <g id="test-content" >
+     <svg id="testblock1" overflow="visible"
+          x="15" y="60" width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect x="0"   y="0" width="40" height="40"/>
+      <rect x="50"  y="0" width="40" height="40"/>
+      <rect x="100" y="0" width="40" height="40"/>
+      <rect x="150" y="0" width="40" height="40"/>
+      <rect x="200" y="0" width="40" height="40"/>
+
+      <rect x="0"   y="50" width="40" height="40"/>
+      <rect x="50"  y="50" width="40" height="40"/>
+      <rect x="100" y="50" width="40" height="40"/>
+      <rect x="150" y="50" width="40" height="40"/>
+      <rect x="200" y="50" width="40" height="40"/>
+
+      <rect x="0"   y="100" width="40" height="40"/>
+      <rect x="50"  y="100" width="40" height="40"/>
+      <rect id="tb1-middle" x="100" y="100" width="40" height="40"/>
+      <rect x="150" y="100" width="40" height="40"/>
+      <rect x="200" y="100" width="40" height="40"/>
+
+      <rect x="0"   y="150" width="40" height="40"/>
+      <rect x="50"  y="150" width="40" height="40"/>
+      <rect x="100" y="150" width="40" height="40"/>
+      <rect x="150" y="150" width="40" height="40"/>
+      <rect x="200" y="150" width="40" height="40"/>
+
+      <rect x="0"   y="200" width="40" height="40"/>
+      <rect x="50"  y="200" width="40" height="40"/>
+      <rect x="100" y="200" width="40" height="40"/>
+      <rect x="150" y="200" width="40" height="40"/>
+      <rect x="200" y="200" width="40" height="40"/>
+    </svg>
+
+     <svg id="testblock2"  overflow="visible"
+          x="165" y="60" width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect x="0"   y="0" width="40" height="40"/>
+      <rect x="50"  y="0" width="40" height="40"/>
+      <rect x="100" y="0" width="40" height="40"/>
+      <rect x="150" y="0" width="40" height="40"/>
+      <rect x="200" y="0" width="40" height="40"/>
+
+      <rect x="0"   y="50" width="40" height="40"/>
+      <rect x="50"  y="50" width="40" height="40"/>
+      <rect x="100" y="50" width="40" height="40"/>
+      <rect x="150" y="50" width="40" height="40"/>
+      <rect x="200" y="50" width="40" height="40"/>
+
+      <rect x="0"   y="100" width="40" height="40"/>
+      <rect x="50"  y="100" width="40" height="40"/>
+      <rect id="tb2-middle" x="100" y="100" width="40" height="40"/>
+      <rect x="150" y="100" width="40" height="40"/>
+      <rect x="200" y="100" width="40" height="40"/>
+
+      <rect x="0"   y="150" width="40" height="40"/>
+      <rect x="50"  y="150" width="40" height="40"/>
+      <rect x="100" y="150" width="40" height="40"/>
+      <rect x="150" y="150" width="40" height="40"/>
+      <rect x="200" y="150" width="40" height="40"/>
+
+      <rect x="0"   y="200" width="40" height="40"/>
+      <rect x="50"  y="200" width="40" height="40"/>
+      <rect x="100" y="200" width="40" height="40"/>
+      <rect x="150" y="200" width="40" height="40"/>
+      <rect x="200" y="200" width="40" height="40"/>
+    </svg>
+
+     <svg id="testblock3"  overflow="visible"
+          x="315" y="60" width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect x="0"   y="0" width="40" height="40"/>
+      <rect x="50"  y="0" width="40" height="40"/>
+      <rect x="100" y="0" width="40" height="40"/>
+      <rect x="150" y="0" width="40" height="40"/>
+      <rect x="200" y="0" width="40" height="40"/>
+
+      <rect x="0"   y="50" width="40" height="40"/>
+      <rect x="50"  y="50" width="40" height="40"/>
+      <rect x="100" y="50" width="40" height="40"/>
+      <rect x="150" y="50" width="40" height="40"/>
+      <rect x="200" y="50" width="40" height="40"/>
+
+      <rect x="0"   y="100" width="40" height="40"/>
+      <rect x="50"  y="100" width="40" height="40"/>
+      <rect id="tb3-middle" x="100" y="100" width="40" height="40"/>
+      <rect x="150" y="100" width="40" height="40"/>
+      <rect x="200" y="100" width="40" height="40"/>
+
+      <rect x="0"   y="150" width="40" height="40"/>
+      <rect x="50"  y="150" width="40" height="40"/>
+      <rect x="100" y="150" width="40" height="40"/>
+      <rect x="150" y="150" width="40" height="40"/>
+      <rect x="200" y="150" width="40" height="40"/>
+
+      <rect x="0"   y="200" width="40" height="40"/>
+      <rect x="50"  y="200" width="40" height="40"/>
+      <rect x="100" y="200" width="40" height="40"/>
+      <rect x="150" y="200" width="40" height="40"/>
+      <rect x="200" y="200" width="40" height="40"/>
+    </svg>
+
+    <g transform="translate(100,200) rotate(45)">
+     <svg id="testblock4"  overflow="visible"
+          width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect x="0"   y="0" width="40" height="40"/>
+      <rect x="50"  y="0" width="40" height="40"/>
+      <rect x="100" y="0" width="40" height="40"/>
+      <rect x="150" y="0" width="40" height="40"/>
+      <rect x="200" y="0" width="40" height="40"/>
+
+      <rect x="0"   y="50" width="40" height="40"/>
+      <rect x="50"  y="50" width="40" height="40"/>
+      <rect x="100" y="50" width="40" height="40"/>
+      <rect x="150" y="50" width="40" height="40"/>
+      <rect x="200" y="50" width="40" height="40"/>
+
+      <rect x="0"   y="100" width="40" height="40"/>
+      <rect x="50"  y="100" width="40" height="40"/>
+      <g >
+        <rect id="tb4-middle" x="100" y="100" width="40" height="40"/>
+      </g>
+      <rect x="150" y="100" width="40" height="40"/>
+      <rect x="200" y="100" width="40" height="40"/>
+
+      <rect x="0"   y="150" width="40" height="40"/>
+      <rect x="50"  y="150" width="40" height="40"/>
+      <rect x="100" y="150" width="40" height="40"/>
+      <rect x="150" y="150" width="40" height="40"/>
+      <rect x="200" y="150" width="40" height="40"/>
+
+      <rect x="0"   y="200" width="40" height="40"/>
+      <rect x="50"  y="200" width="40" height="40"/>
+      <rect x="100" y="200" width="40" height="40"/>
+      <rect x="150" y="200" width="40" height="40"/>
+      <rect x="200" y="200" width="40" height="40"/>
+    </svg>
+   </g>
+
+    <g transform="translate(350,200) rotate(45)">
+     <svg id="testblock5"  overflow="visible"
+          width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect x="0"   y="0" width="40" height="40"/>
+      <rect x="50"  y="0" width="40" height="40"/>
+      <rect x="100" y="0" width="40" height="40"/>
+      <rect x="150" y="0" width="40" height="40"/>
+      <rect x="200" y="0" width="40" height="40"/>
+
+      <rect x="0"   y="50" width="40" height="40"/>
+      <rect x="50"  y="50" width="40" height="40"/>
+      <rect x="100" y="50" width="40" height="40"/>
+      <rect x="150" y="50" width="40" height="40"/>
+      <rect x="200" y="50" width="40" height="40"/>
+
+      <rect x="0"   y="100" width="40" height="40"/>
+      <rect x="50"  y="100" width="40" height="40"/>
+      <g >
+        <rect id="tb5-middle" x="100" y="100" width="40" height="40"/>
+      </g>
+      <rect x="150" y="100" width="40" height="40"/>
+      <rect x="200" y="100" width="40" height="40"/>
+
+      <rect x="0"   y="150" width="40" height="40"/>
+      <rect x="50"  y="150" width="40" height="40"/>
+      <rect x="100" y="150" width="40" height="40"/>
+      <rect x="150" y="150" width="40" height="40"/>
+      <rect x="200" y="150" width="40" height="40"/>
+
+      <rect x="0"   y="200" width="40" height="40"/>
+      <rect x="50"  y="200" width="40" height="40"/>
+      <rect x="100" y="200" width="40" height="40"/>
+      <rect x="150" y="200" width="40" height="40"/>
+      <rect x="200" y="200" width="40" height="40"/>
+    </svg>
+   </g>
+
+    <g transform="translate(225,285) rotate(45)">
+     <svg id="testblock6"  overflow="visible"
+          width="120" height="120" viewBox="-.5 -.5 241 241" 
+          style="fill:yellow; stroke:black; stroke-width:2; fill-opacity:.5;">
+      <path d="M 10 10 h 220 v 220 h -220 z m 20 20 v 180 h 180 v -180 z"/>
+
+      <rect id="tb6-11" x="0"   y="0" width="40" height="40"/>
+      <rect id="tb6-21" x="50"  y="0" width="40" height="40"/>
+      <rect id="tb6-31" x="100" y="0" width="40" height="40"/>
+      <rect id="tb6-41" x="150" y="0" width="40" height="40"/>
+      <rect id="tb6-51" x="200" y="0" width="40" height="40"/>
+
+      <rect id="tb6-12" x="0"   y="50" width="40" height="40"/>
+      <rect id="tb6-22" x="50"  y="50" width="40" height="40"
+            pointer-events="none"/>
+      <rect id="tb6-32" x="100" y="50" width="40" height="40"/>
+      <rect id="tb6-42" x="150" y="50" width="40" height="40"/>
+      <rect id="tb6-52" x="200" y="50" width="40" height="40"/>
+
+      <rect id="tb6-13" x="0"   y="100" width="40" height="40"/>
+      <rect id="tb6-23" x="50"  y="100" width="40" height="40"/>
+      <g >
+        <rect id="tb6-middle" x="100" y="100" width="40" height="40"/>
+      </g>
+      <rect id="tb6-43" x="150" y="100" width="40" height="40"/>
+      <rect id="tb6-53" x="200" y="100" width="40" height="40"/>
+
+      <rect id="tb6-14" x="0"   y="150" width="40" height="40"/>
+      <rect id="tb6-24" x="50"  y="150" width="40" height="40"/>
+      <rect id="tb6-34" x="100" y="150" width="40" height="40"/>
+      <rect id="tb6-44" x="150" y="150" width="40" height="40"/>
+      <rect id="tb6-54" x="200" y="150" width="40" height="40"/>
+
+      <rect id="tb6-15" x="0"   y="200" width="40" height="40"/>
+      <rect id="tb6-25" x="50"  y="200" width="40" height="40"/>
+      <rect id="tb6-35" x="100" y="200" width="40" height="40"/>
+      <rect id="tb6-45" x="150" y="200" width="40" height="40"/>
+      <rect id="tb6-55" x="200" y="200" width="40" height="40"/>
+    </svg>
+   </g>
+
+<text x="225" y="220" text-anchor="middle" font-size="15"
+>This <tspan id="ts" font-weight="bold">is <tspan font-style="italic">a</tspan> test</tspan>
+<tspan x="225" y="240" text-anchor="middle">of text intersection</tspan></text>
+  </g>
+</svg>
+
+

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTReportedState [64x64/16z] {
+xPVL0OGm40K_SUY_slFZnTsJmI8xkErL2eiLpZ9mr05qHoZTvMoXl5sMpBJlThqyT7XYVs6mz1UE-do-DlpXy_xmUUhpBz2ZF_pXOqcKPbEVBtnBflxoXrrH
+ElzRuzPew6FsPLs0o_u3j_CFtAu_I73_AIdQluJHHZfAirEwvfc_pAZu9c3f4y3PBtyjXIS
+}
+
+AWSEntityColoring(IoTReportedState)
+!define IoTReportedState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTReportedState, IoTReportedState)

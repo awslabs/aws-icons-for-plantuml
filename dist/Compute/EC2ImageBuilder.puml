@@ -1,14 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2ImageBuilder [64x64/16z] {
-xPO73kGm24K_Ddny_nClKj0kqv0ZQrNpfWzvXYHkAtXuUA1-nJNm3L_n3N44SyjNsZlXauQnvTlwG2HAzykd-WtVQJezVObt0uIxFgSWOFh0r7X1kENx133K
-UELVL04Yh11k-0Q8-GekFt2JY9O66by13QlwWMTClFSpH_Kh0zhxXjJJNpJ-QyC0jhvV1nH_0A9UzDQVML_9hmDPamjijJuX_kfxtazUnypUdtyJaEbduV2h
-06_y4cS8wMTqh612nfZ-ooT6wW8j-GC1hsO3--KRjEhLr_p7tQ2__7XLlVfPMj3u4wnwzHsowuzCTT-FLyb_k_uCPGFthrycoGRw-zVt7mhcwljFttyfyDlz
-juuViXa_v-FtVFuudx_Evy_p-Vjy_JXVlyxNp_Fr-tp_SBv_-OOGmVmF-xU7XuS_
+fTK9TkGW38JX7n0gvVu7djMq7XrWUXwLVVagHYPOolWdwNDqMQ3B0bqMwB90bmMwBD1bWIuBT5cWom9T5YHX7GSmN-PZZwyp-yKI8D-lSl1wzwrK_vQTzrvB
+uUMRUmFAXzuR0EcXG8FoaMz0QJrNRXKmxrbmy5wW-lZc65GrzomuU0UwDFkH3lNi7OfhvxrHphvGb05PRTr73DhHDuhFlW6bJtpl7RfctwqoMANud9Xzeshs
+OplKPtplFgPVXN55vkdb_VaVhBHt7qhVAODJffjgy0m0iCb7-aOR77lVL6riPPXzl7ob9v-yB4VtpSVurO8ddxt3tiVpgv3ypUleG-aTglxNHrx_-kyxPnyv
+l-NwEqNwbs-qtVmhJP83x7sdREw_CPO6sDg71BxSV_tfo_sxyg56NUt_1ZM7kFSXS2a3Sgj0UuPGf9EFHj7g_7XDeKadlpg_p2LD1NiVWZBvJCxruCEX-Dhd
+tZxuqFJy6B3QTBWVVBoUNo_VAs1ABkryDW2F1oXWqsXEFgJUQablhiR4fPFFGpNVMwcQSlBnvfUP_Je2TbwV-gvDF0xH1ubJRdtS-hZrSUlZriUjZriVHtzP
+y7LPy7LPy1C
 }
 
 AWSEntityColoring(EC2ImageBuilder)
-!define EC2ImageBuilder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2ImageBuilder, EC2ImageBuilder)
-!define EC2ImageBuilder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2ImageBuilder, EC2ImageBuilder)
-!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2ImageBuilder, EC2ImageBuilder)
-!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2ImageBuilder, EC2ImageBuilder)
+!define EC2ImageBuilderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2ImageBuilder, EC2ImageBuilder)

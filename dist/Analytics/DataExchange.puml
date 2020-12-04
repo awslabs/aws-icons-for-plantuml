@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DataExchange [64x64/16z] {
+fPDNsgWW30KFFOViVxstWhy8qOVCYtL6FmfFo0jjXSu0dG4w0tG6w0pG6Q0pG6UWEmFT6UZEG7S6-cUWvWWWf78Cz8-015paGw1_1H9oRI8jHo2qBT2_0Y9p
+36e0gkLt1eFR84QWMNw70PT0C7qnu3qGK7RV68CcrrcI4IW8csy50jeuYuWp451Ntmm8m44BLo0Xs_uowWsHUw0WsluowXM95mse_1keR_uowkNcIq0GaY8D
+mV0d75IafqxktpS3WiX1d3gPaJRV2d3IeloawgVVQT80iVqKTjBYHsJQFaxmHWQ4VF4f3nQ_09L_iFrj36w-9A2Cqs-_F_oM0LGEldpE0C2640F-41iltlqQ
+P0G05lmZJNi9wCclGEb_cF_VMXC-6Rvk_jJ_CFmpmzUdtwR-XpUVmzU7dm7soPlFuUlgCoBmxeSBFXY-BluCN3uk-6JuUlapK8OlqYaNtD31udSMOpkRlav_
+8HWSV3tvC3ZvUl0fPuw-xlxt6EWT8Eni0TiFs9b-vxVVkTCl37-bls3uhe0w0-eCg3EWpe0w0-eCg3EWpe0w0-eC_0O
+}
+
+AWSEntityColoring(DataExchange)
+!define DataExchange(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DataExchange, DataExchange)
+!define DataExchange(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DataExchange, DataExchange)
+!define DataExchangeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DataExchange, DataExchange)
+!define DataExchangeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DataExchange, DataExchange)

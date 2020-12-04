@@ -1,16 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $LocalZones [64x64/16z] {
-xLI9ibqX26Fd_lyNznZfujGHUsPj-_9MlGP2K3x_BBwG6Gyotv5Dc00M--CG8I3g0w474cFNBmEb4B55rYgCoGUTgEVFS-nhm1YQ255Q697jIcAoIthCfAx2
-BEg9rINTYvvALD1fYLvP1pfKi4O-29Wk9BWH7L-dIYMoNBObXuXEGn0dZdEiKR6TJ76Jtd2yyElQ6XEIAQS76qln2UTPlamH6xefR8npxsrDKjUkfE70kVmO
--VGJdk2gEXT5HvWu6W1v2A8Ke3m0FGnK57Zav_m5iKxiZfQDTGvgjlmwowKOrVpSQ_cnvmlsMlr6lkgFO7AqPEhte_z8Llvv-KTQ-q4w4noGn3D7lGDNhTu7
-gD3L602nyy4LKabmVwhyvWBY_gOGHz5bn3BIzlhLtGsY74cB7wGvtrGsygjdzLv_pk-QVh2n7o2R-H4Cvh2nWrJdPDr45x5vDy5ipM_Bz6f7s0xeG0-uVvZi
-FOpqeAi7wjpxSWVV74symql8xrAjxzrgLMDgNy5RzO2iFT1E_T6kLSvz1Q_Lb-HDCVT8DB5QjrNVDz5d9VI2NiINnVyKZZBUGaYRphUteEby6m1pz3qoF_yo
-ll0D
+fPG7TciX34H7NTd_Xlzvu29R6EU7II_tCWW_eiH_4tjD70hYK127WZWKnA4W3WLnA8X3GHmAuhF0X0a0iUXdGNmI26fa2hjWZG-QHEtwBnK2oDq9NR362M2h
+_yZkpe3vQzQy0MJXDHsVMV4Ei5zVxJQ_WSd0MzRuzLK9CmDKGFrNl80k2mCaOtwYTrpvEs-0pmcgXzzYymG1-yep9288DFxqm7cEaB_nFfQNyVaX6FZqs1TU
+mKDYvQLCe6jnkxxJBxn08nXS6arSmFFJdYTO173_YuaoSEj-VQ8jFz0mqEpXT3z-4QVhA_36P-F736OF1Wc1OwpBq1MVArv6Z_79WNag0bdosVh_9v_lyxDx
+VxdrZtj_1ItuAX18-9WVt-P77i6OynD8vwjWp3u0Sq2l7zKYGe5vVWHTylaw005VZ3uwGOF1qx7aysq3iESpu824OTJd9Ly53iHaJUvAcuvBs_Wc8EZp-QtF
+G0Z86zy41aoWy0DtG7TyrWB1LdXZlrriEpxB15hkbyAEptA5jGWuhkpulA_quLuTQNmJ2AZnz2oruxECi4PhfnsVfMmRNXVaMi2Wj_OSDHj-2W1jxMjsVDOT
+zFOpEpxd6VJsDJi-wu7DOVJi-1objMw-PyVdZIkUdXsVitVTVC-EpubEoQVi-0m72F3O97S90s3nPpv3eN70PqGSyNdAvocVftoUyhdb3mK_XuAVGy4_
 }
 
 AWSEntityColoring(LocalZones)
-!define LocalZones(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, LocalZones, LocalZones)
-!define LocalZones(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, LocalZones, LocalZones)
-!define LocalZonesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, LocalZones, LocalZones)
-!define LocalZonesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, LocalZones, LocalZones)
+!define LocalZones(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LocalZones, LocalZones)
+!define LocalZones(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LocalZones, LocalZones)
+!define LocalZonesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LocalZones, LocalZones)
+!define LocalZonesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LocalZones, LocalZones)

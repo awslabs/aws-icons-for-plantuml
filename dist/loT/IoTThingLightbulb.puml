@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTThingLightbulb [64x64/16z] {
+xTS55i9040FGPqWMcVkV5YVrUPEw1LdzIBqsim20LmpbTmyX7JdGaIFLUlFYJmrmPYoVy8tgsSDuSy7KQN-iqQEIk6TViILuv-EyRsnUc1T_c7rP7JMhKl32
+E1Y7sp7lcPXdx_my8tbM1_P0iHvRVwdE8xR-EDxLe-YX-6msIst_uo0BPVyZE7vxp-HHps_a6o0VF-cbuoTJy6RZUyRpZEy7Ed_vVKKUNNzC0dCMbf_p-yVt
+BFNrPpDQVsDSVudf-_hLWF4kmDCyxrzsFtwU
+}
+
+AWSEntityColoring(IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingLightbulb, IoTThingLightbulb)

@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Detective [64x64/16z] {
+fTG7ZiCw30RXKIUf-v_t5JgHuQo8BVfHWZQVUpIQIBnnJmy1FGJq4D13G0y1EmJi4B13m0u1Yu6HoED_O6Jo202BWGHGHIf0blqi11ff57nbG0lw213egYD3
+7YgD5FGHKCd-EuPhAJW12m013z_hiEy3e52UOAP-qzlpyFBi1unlUeiExolak7y28mEbwprf6KWZw9z0XPHnGgwu0EG49UmNq87wFYAfbEHn4vKAjBZtgLTr
+h9D-nQgzklHDRwCMZvpGqPh_zd99jN_Ns_zLXNKBLroxgCftlGEQU5rtBQ_xG5BVjxq3XQPICrp8q4RM3M01qCdNgRTsFSHCqmrW4G2YqGlzVMzQAV7tz7rl
+pmzuV9pEzxqragubgZuMzQErDjIl8DsdN9QrjkqRrvhw5RmFMltiPGCyUasGQgi9afZPu3g3uhT2AF8Lc8yyZUiY4aalW5BmN0UayGMODr38YyeKVmW5U1zN
+4hHFO2v0GEzpWM6cPjBxVTOPz0EO2wWqkrUf9gbT7rDBuZ-GvGEO2qY8tHEITN2WGRzoe3s1kG3u-1ko5t3dhMSectxkUmTMxeVkK3Rzt9t_1QoyUp2WR_gv
+kNyle9lTkKkxVdvzVhxXludxh3Djry_d-qCIkzUveqxUzlPuVtC826pxwKUjhIH0xGEeTnNrqte282MoFG7nuzSQzpwJthgOlW6zlyrYNiQzptmBAEj-PZKB
+-X1GC5zvdKdG1q1wFz46Oc4V0-zCqh2eZm4RNUsvtarLUm_x1SJJn-OXC0-1UGZCGs0U0lCGc8V0F0J-1G
+}
+
+AWSEntityColoring(Detective)
+!define Detective(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Detective, Detective)
+!define Detective(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Detective, Detective)
+!define DetectiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Detective, Detective)
+!define DetectiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Detective, Detective)

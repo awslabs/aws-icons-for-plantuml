@@ -2,836 +2,168 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 sprite $FreeRTOS [64x64/16z] {
-xPQ73kiW34NljR6n_VyV_1IrA4WDfM-ldEvn1DUiv9_2pSrDR7ch2xR8Ev_G3U3QhgJKJ8wd4s7MjTrL5P8R1AhQymA_I6SYTb4XNzKUylBdbw-MOr17_lcp
-Go84NhFFutzNX9bXzhkWLtL8dtsOMNoINm5ObG5ed-GFTp_z4D00LS08YTDtzzZd5sYM4w1NAcIVFoCwnlyQz7W9CXvPsl3H8tAJls9CKuvNH6toTssZdove
-DVlL83voDUtly-lP1ddsJPVv1m_V8Ds0EFq0h0liuIzmaZXyGLGraEo7tqcYLSNpHvB-cGyxVCF2t_M_3xzVz7zVlphzMjHlENuAhJpzh0QTnsytVvA8kVq0
-Svu_k_bR1ixj4rRp_DsldmOnM95bCA8jrizo_MO3q99ylbcjt_N-uSGJ-dh_MEzVvI1nFBpM-zTw_vpgjzW_D_ktZ_hvOl_Ud1zTF5NJfI_FZ-y_lzRdPnwF
-yR8zFpy_lt_czKF6blnJkBcv-G8
+fP89gWKX30Gxisdh_U_xSLx31Faka7hxKeK9GqUUa0Om660mm620mG230GO330OO330OO330O83108C1UWviO2xG-TWY-q0dhqTGOiTd-zl0p_8B7RsV3B2d
+z_L6VXdx2J03KkyB-MNeNpXpFd4D_2o__3z_le67V83xl_aRyelt_UmuoHE0FRqlv1Svpdy0kt_pt-tHdr_8BxsVWEkD00_p1QJU5qLqlZMTRFycMy0MVg6V
+_uRH5xFXxkRl_IB_sxny1N4l_4BzEni09Eyd0B0qEh_GlmySzm7plls-MlW5-EtiDT0IWDvcPY3DV03oJJwQtppegxIrFyELBe2Vd_5-PNdiAr6qBE1nFk_V
+L-lvoniuWPlURu4paHj-qVKZNm_3pSPgVqK1m-dz4vRvelbdldPmVlu998h5_bpWyu6758lvlu01EDuxB77N5pgfe0FWR7yk0EG7U5Bdh_OdwFSlzlOdXZv9
+RlXbvdF3B-oHxmErctyPGECBr3hnoyod_1OGs88Kyh_0WGqE-a1LO0Xdo0y4QZ1GWu4Q3DHWe0O3DHYemK0D1cemK8E16WpKOE0F
 }
 
 AWSEntityColoring(FreeRTOS)
-!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FreeRTOS, FreeRTOS)
-!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FreeRTOS, FreeRTOS)
-!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FreeRTOS, FreeRTOS)
-!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FreeRTOS, FreeRTOS)
-
-sprite $InternetofThings [64x64/16z] {
-xTU54YGX30JGxWWJyl__UqQbzYXRmhdqkhmL89aPu7zu6PJ7LOfH06a74AAyv6mcvUKLCjiHw6_l__k8R_5301dNtg1ZAEpIF_3y5CTpvLEvxb3pnZliYqk3
-jtq-17Hv1VXapmz8E28_yO27O7Hy3jWdI8avGnWv3IFF_RFcB0WHCDPSFkUUzNYGezxFKv-Eo9f3hNi1poF_AE2rx5Mh41pGvy0RQ0h6xeDG8-oj7_2P6UJk
-oSYSZl7EY-RwjoDVFiSQaLHvuyjDeQelxwgKMXTnxiar_kJcZt-_bRVjzv-EtzT-6x-p-TjzpLzZ_Mo-razZ_Mw-rc-ZVdO_XQtwtNspVjDXkpTudlYAG-Bb
-G-3z_ad6PnzagtzMd03NsQ-s7qOtqfoMbpvJDVFMr_ZTUfVbnPk-4dNpj-y__VVPvLd-kno_NENbLQqTrVAWN8Mey2hu7V8H
-}
-
-AWSEntityColoring(InternetofThings)
-!define InternetofThings(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, InternetofThings, InternetofThings)
-!define InternetofThings(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, InternetofThings, InternetofThings)
-!define InternetofThingsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, InternetofThings, InternetofThings)
-!define InternetofThingsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, InternetofThings, InternetofThings)
+!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FreeRTOS, FreeRTOS)
 
 sprite $IoT1Click [64x64/16z] {
-xTO5WY9130NG7y_F_U-xWepGGgthcy49IPVpz_7VVrNDhnS2m9gxobI3Pnmm5oZt13vJ7Yj8pz0Gmuq6agrm7fcu1lPUal7BXmqvZdSKFnFXbbq_LFHo_ks7
-SvQV3QdJw-zI18y5O2O7AHAV6S-a092t-OStan2rv1DTR44E6IOGZUQDeeOhfe0k0KG5GDpBDowQW01U93i0kwVdCiEzs6c5pqp2k4wHmviMP9WifjzUwoGk
-WiiS-RuQxrmlWFCmoBikLTXmJGcQ6uBenUeXtBB5Dd18DdTqhFn0GNgE1kP28zh9C9-43yy9UAoXV4Bas-8L_Itn4_0vNo7FjI0ukz5CeFbC0Hgv8mn8FjUA
-8pbSeB1u0SHD6fnFp2MzSUuQDdUKPmLav2NyeCNhlFrAjbk4eTulh0e9xXDu6kHiE2eWW1-jUZFpBc4vT1vsIBQWzWTNpkt-nXxNpKJSlx9LKCxRVIAW6O9y
-6-_7yLIelsrzGSyKx64JFnp5RUzFNv3Db4jy5ckdFqND1EpX46V5DGcu0SMl5G0a-VMwYh-n__xx2
+jPPRhkGW30NBX8SD-z_lA7U26kUQUQ4vlr4L-42BjYNwYxHDx51WXm8x5DYXm0u5TYYmGu4T2knGO8S2pnL1oaQG1SbJ4FE9EoaKFD-c8E8BKhKAEH1afBRx
+snG4l53Dh2911q9LrOhedPW7lJa8IeGl3jGBzkkRnUixmNR-jo3FR-e5_Nl_a_S2cVrxGU_lyyzGVyAjkGBc-Jj1du950iqq2y1LF_iFRs8F11TI04Hkmro-
+QYJeaK20T5Uh1IHSVWfw9AXGPeD2cij7WXu9qde4S0c8nkc1e86wEkzS6puGP2xxH8MgTJT03mGNnLQ1ccdcslDUKA3QEnLItV1Ua43Ktj4hxg2_1HTIBOfc
+o07l1GfgSRH2-pNVhP1j5qsKW7V95Dica_ytNqbx_W_sR-mtK27gtwV25RxABKCs2tals2LuM0BU4c5aJkRu21VjzcIjiyohjULBGhxmFWLvlKxNb6tuP-Fg
+VanBbmg253KB-O8qQqBf7m7Oalc6c4LyelNU6zAde8Yx3Nbvtm8UxAR07qGAtzSf6D_NJ-zvulVzuOURlt_cx_BLNKCsx_l3ZrV_QPrdLkZUzxcXXn_h-QVY
+vx6s5F0kvE57zudcz__lPcv-Bt3BnT4H2FmyziiC9uZpI_vGC0u5ur0m3WNZK30E1UDGC0u5ur0m3WK_
 }
 
 AWSEntityColoring(IoT1Click)
-!define IoT1Click(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoT1Click, IoT1Click)
-!define IoT1Click(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoT1Click, IoT1Click)
-!define IoT1ClickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoT1Click, IoT1Click)
-!define IoT1ClickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoT1Click, IoT1Click)
-
-sprite $IoTAction [64x64/16z] {
-n9G7TiD024IpTDt_mY4oRhnbqXFSZUPJnkkNNusLyJKbYNh4aH7XAlGviSRH8lJ32F6Ik6c6US5SFgIEIpb-67pnfQ5ubq1UlGupEPv2J_MmydKI5BXbcRVr
-rGjMueFnVFnspHv0cV9CuLYU01ggsqSCike0ovVpfm3UgYSE0RmRrx-ItFJejNSRwMof0s82h6XmttIhnTm5FxShDJm4z1N8qx8MNdIFbQd7yZekUeqdHHwc
-N-EYVMZWdg6XF0PeML3lXbY-MMsh6W-h-FYnA5c1C43H009-wIT_070vOBLz291DOpMOe_6hqXOGXp-yOC1knYeSsSQN07Rg5rW__ZlGN5pJGq3yanxt_rfw
-VGW00C003FEt3aHciDzM_RP_Epyxlxi_kxzvF_P-xVtC-xt_8__N_i_ytyiFoI_9JyjloO_9hydFoU_d3-ylxq_lR--Fxw_lpny
-}
-
-AWSEntityColoring(IoTAction)
-!define IoTAction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAction, IoTAction)
-!define IoTAction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAction, IoTAction)
-!define IoTActionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAction, IoTAction)
-!define IoTActionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAction, IoTAction)
-
-sprite $IoTActuator [64x64/16z] {
-jPQ9Zkim24ND3l__mq-kquULu6pgtDapEa3DXRhzaG0HuItBwj7bWYzmyKWPFQInqsx2n68zWZx2gTCCts3QIu07sJDXbkEt0u17oEwHHTXTNXDFMJwyhjxg
-eg2ngj9rUgpFr3P3d4Q0rIkr0VTlPm4uWfPDPMWW4G6dvSDg6aPWFhMJNJVACiKhdYFmnFbsfyDSLj2jVit36EjZ1AhQYsgcs6RnnmcE1QxxXn9TXu7W7W4F
-PN4hSBCCa9BzJ6g1moWJk_kB07fbN8gW_5dwe3Pkve0jk5J1kJ1kPHMCuAgFEbVZwsLWfUKyxCgusfqYFcTQ89hvTvilSl_M-VEe2lNaBWiVQtcQgRftDU7X
-i1WtlBC7E4AVyEc_ZATmmTV-pntl37TueDuNAfjbfaEyvqatbVFVnHuftVCQamJAdfAQR-fD5nsyVlxmhvIJhfKzwVtFtV3y8h9zuaCqUzBbh-zXdlZB08c_
-4fWb_aPm1oT_9ShryqewyVfOCVFU7ikFFB3mpcggRHOErJpvuTrsgd8-AAvudFuvNmfehdb8AzuY6CZ3r_xrC6RscXyFPDfOFI97sExCx8pdv2L2yqgTl2_h
-fpxqFhruGlpyoFeHSS7JTiNb-R26_CxvDOxiNyrR3Cd2FwA2qphzB_W-uey8zhornxAPTwQ7OW_zrVpAEpud1L-f_KB_
-}
-
-AWSEntityColoring(IoTActuator)
-!define IoTActuator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTActuator, IoTActuator)
-!define IoTActuator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTActuator, IoTActuator)
-!define IoTActuatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTActuator, IoTActuator)
-!define IoTActuatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTActuator, IoTActuator)
-
-sprite $IoTAlexaEnabledDevice [64x64/16z] {
-vPU7hkmW34Gn67lc_t_uCMHx2rcjshj79VLWqqNvDMOVBti4KvTEwDz6LdcawoqOUtuIcyy_vvj8eevBa6rSdFHnQMGVbmgcYLUsWykWFUiyn5C18Bilqaay
-w3RqiaoGzkJxkj__9pzI7FLJn1PP7FKtv2V4KHyYBs_gt-s_BkAe7xBy5_s7xtrSbgrsrAyc_eV-QyAF-jx4mVwpmLF_BVhc2GwGRhT-gM8l_ngy8RrkhBRV
-38ZexdrcWSlFAxwbOhPBW-inRDatR3jUzSWC7s83cKMiZDyaqqhDI-thp2YAs6__JkQv1GQwzbceB_cLX9KW6LM_jtaxAsL5kEZlV9bDqI5xqg0C6XaBxMTa
-ddAuK45MrS3sVLVurFytpDXDogwVXCB7KvUOaR6_Vu1PNE7lQ5jMK6HCtlYcfWhY_MlZvBtl2lISLfnNaH3vlJ-ndVnjfrfshFtgbbQkzP-HyRm1BFNVPVoq
-XwmmlznLwFFuhVU5Ui5Tgu2C_WgSvyzDi1d-FcBZ6_n-_WfLn-Rh6nhuakhNzQEUPtGOI7zpVj0bjXtMvPpMhnYNqsAQDSbOFR_8G9jnjsC6EbJMgb-K3RC5
-wSa1gEZh_lFf15xMVM616xjRUKSWTN5W-e1yOHwGcz7i-xErr9_o3m
-}
-
-AWSEntityColoring(IoTAlexaEnabledDevice)
-!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
-!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
-!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
-!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
-
-sprite $IoTAlexaSkill [64x64/16z] {
-hPU9MWKX28KJ6PRtV-2xU6WilwnXYDOh_hWVyUE_hALiWKdCKsP2Nt3n6oOdhkwk1oVi6CXiNUaZQQIVFQ0NtcxCjxeJciVVh55qm32GlAdRkn_knpt-S6-3
-vtiy_y4twlooJkq6trZDmqovvNWINqpeEjyERF5trz-3mE4usaM-lwjh_rQaxu3z4i-JNYFm1PvzRWZgBwEvtCv_yC0xMlpK19Cec06sV0UE_axJFfs_ySsY
-XWoAEr7d4KaYWBNVU8cnwxbUvtfgp85iUKX1u4RVzfDD3-rvGUy5YhAgXM04ik77lxgESfqPVK4xdgFAZu94Pt3UyUg66iT6BZhaQiCtZ4sYXzCsxfKd_6Uk
-Mxq3HJ_pVNIGTde44hLMVlKljiRVyctKegtWTzIlykN-r-SlltvOUKJ9xvypiBYrM_kNK8uesVE3Vc7ud3-_qwa3Iki7VA4VUVqQe2vZs-jdWtukyaFGpwlw
-lPPpp4pY_k0lk8Jp-lrbRbEzvThzXMlocFizGWeSdBc_upoDkOpnPFA7mOz4nZZoXrp-ycBCnt-R_AMKFzNpjth-MCzVg_bpCN-llX-gxvVY-wduVYk-7yll
-r_hxkMvF
-}
-
-AWSEntityColoring(IoTAlexaSkill)
-!define IoTAlexaSkill(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
-!define IoTAlexaSkill(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
-!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
-!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaSkill, IoTAlexaSkill)
-
-sprite $IoTAlexaVoiceService [64x64/16z] {
-h9Q9sfmm24KBXEMy_mDtSVZoBpQZiRspJpnoao3uutz9jlGDrYYsLA6VyE21Ok89f8yD-O7CwAJkBfScxK0XvS5w9sY7x-XxqZPGFP5j9VN71_Wpta4EVZpZ
-nmKlDlx8P8y_PsI5RV8Z-QeQ6xmLGBgfYAXv0fJTvHqeryyhuGN4BLuISFc-bWwaNFDIK1rRrCoq8KqekU8bwJ0orp3RJK391HyGxVUpN7emt_EZZz02AeQg
-cjTS_GH_nqixj2PQbi3enT4tVC1et4zRQg-HMFC2sL76UQ-Fo0cwvFqL9C_uN1c5MF95JOydzToIaWMluA_mSgBdv0ROWX-Wn-zOb9iUzWKVr0nmqhHNv8BF
-OoJ-Rd-IIItu8kRuMVFy5_ood3Vf8F_AF_LVA__xwxU_VpBtxrd-65XdmNx-ziJQtjNra-lyJ-hHzTk32h5NFrfAXqSVrAy3jAuDk_MptKVNpzlrExySMjBr
--tx_AFbQFGFoVl-A3jRLk_lNHlyiSZPaw_wvqx_puCVhXDs_T-uVafG_D6d7HspUlnIj-bLw7Gi000002FEt3g1pKRJ_Y_-J_vl_e_-h_ZF-k_f1_O9-Gh-X
-7zclxcSl
-}
-
-AWSEntityColoring(IoTAlexaVoiceService)
-!define IoTAlexaVoiceService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
-!define IoTAlexaVoiceService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
-!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
-!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoT1Click(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoT1Click, IoT1Click)
+!define IoT1Click(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoT1Click, IoT1Click)
+!define IoT1ClickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoT1Click, IoT1Click)
+!define IoT1ClickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoT1Click, IoT1Click)
 
 sprite $IoTAnalytics [64x64/16z] {
-xPI7ZlH828G_Ea7n_kzxORmMQjswPxGAb_vIci17WS7e7wjV-YNtqC-r36ZnOnpwQ5WbYD3d2iCpDUXtCmriV8hdOgGa6LyuM8Fs6IqDrejlN5KRIuhEoFTu
-p0RS_Yv9N-K4zfRs3bWtbb83wAwSMpad3R0PoWMj6pODnkqlE_kd6xQKad80z4WjmvPPPEQa7_45GtaFyDg_gmk3CJiMRtPctgac8rLVC0EQdt27TJC1PQK6
-jdovZZBcZUTWPE7qYIdF-BshPL_uA-4P3onKzZDLU6tIiteXbQlmNFGysskpt_6hW8TNkEPLkGgl2A3xO_drJzaNhZ2i6pmaCDjQARmCXbBpuGJ45Zcpy3rf
-LfsRd95xv8sNGLvFONs_-ZDt-nrFfvN_YNVi6_SEpCnqJ6U-i_B6YyOcz3bWwRd_iYyyOu1DfHjWwsdzMjaNNlIhzLczFypVQULUz1sIqdd_6YjlVAVbz0Us
-BhpJRlUC2Soeay9AFSk8LCClF3KDHkGMSC1pq4UZHQDlzFQ27XIyP7Hjz7RH3fhOYcKqhHVzS9xE_MSO1lqlLeEce_ph_Hf5xyN5U_vnIWDplJ_V-UsKCjeH
-hmvTtgW7NolSGk_L0MW6tKFAJ2dyMk6Fj7fhwne-hOynUWEiwlbCgJMCIzQNKZzGk2_tq3zNl_HBlmC
+fPI9aXuX20O_5HNq_TytDGn5bc9cSjXr97jqex-kyWF-OBuWXm4v3CXXG0u3SXYGmu0S1kGm88S1EGp8Ls1Ke8xFW7m420gnqQzSZm5v3mo0vYJ0Lc2v5WBo
+2bVGhTLxEYmNLY3l05Et2wWVSd_okRToU-x7tAS_6XGRY95y3wp7ZGErpm6Gwa0TOVsA-IdGTR28YAs22025pqynFmHKQceB5nIxFmJK0Zy_m_mGgC3mXHJs
+cmYWsFtvZVeXGC0Kew3xLPu5g9mmtmF3T1llL_dU2d72V0imqCN7-qPKvm4CJgoVWOOcSRoYkfrSzerxFBiFZAWp0oFxpZMUVeol4dM_Iiat98rtFRu7B_v4
+SPrGWvxVW-mJo7rW1Zs_1zclc65yqDDxaFq2Nc5yrCMyLn-GjNnyqhdazMVVxi5CUY-0lGVZtTS0eRbkZ08KVvNUzt_104TTxIuoFkzFmx1pRAP7MsIYY9l9
+xo0VBwxFghRIjUpa-sVZrwMxZIv6rVzctm3OnfiURV_xVF5rycfeflDbapXwBigBBu0ElFJ5BTX-BPJeEnKtHR8TNwT7V-fcEz2phOVFaW9nVB_FyR9vhQ3V
+yHJO3nSOQ7StwYG1y_UJlmmHeyCtxvY_y_hhYW5kfaVCt-dpi_LRWCbkKS9y3n2K2g3GP5d2auhsv17pFJ0hKESIWXFiXFaUS2Qr0fHQQSeNEmKod_vXO1y6
+zc5W7mRsOM0V1lPXO1y6zc5W7mP-0G
 }
 
 AWSEntityColoring(IoTAnalytics)
-!define IoTAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalytics, IoTAnalytics)
-!define IoTAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalytics, IoTAnalytics)
-!define IoTAnalyticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalytics, IoTAnalytics)
-!define IoTAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalytics, IoTAnalytics)
-
-sprite $IoTAnalyticsChannel [64x64/16z] {
-xPU7qjmm28IDGC3t_Y-Sk2M_oqqiCpSrUxsmta7KwGjetRstr-QT1RrWdWdOE_6GEasQ82ylt-PNVIaWoFLDubNxglwA_m2fdHywP2VQhQq4EtGuwgBjyIi6
--Jo8dHKfVna721HIfJd4KT93We2soMXZ1CTWQM3JE85miH_pGMvHQv0cumHz5Q3CoDv62IGXFO18WD11WfOii4aiLX5o8b2FpEZtNBDPfhULp9dX-eD0amtn
-m1zY2NzywRjbHFAqCkecekq4NLPjZqkhzDMN9WSVwkUWKWy_SElgIqWv94lSNY-0yscrVgqb3deV0omFEVaIuXBkzp4ea_JBZmBzMgGlI6Bx4LCpwpFSFU8Y
-ru_snzHJhj2BL7bcdpCk1-x_qA_jDsJ6lRkI6F3V52Uv2ZPoVdcYJ931-C4EuTC_nw_UnAydTDa80s8mVwO0icjhwa3ASFx-XCju_SXcmOBGL_Lh_ekQgRoh
-dyNwNUmVnVvLx9_5_bsS7uhpIt5-AirljEByM9nV_-yVDVrL_nNtn-h-Mj-VluzV
-}
-
-AWSEntityColoring(IoTAnalyticsChannel)
-!define IoTAnalyticsChannel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
-!define IoTAnalyticsChannel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
-!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
-!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsChannel, IoTAnalyticsChannel)
-
-sprite $IoTAnalyticsDataSet [64x64/16z] {
-xTI35KD1443HCVflE2VMOcBU62_u2xWFzHg5DiiQx_S-D-e3vk8TUh4bkRhtNFAhUuk8J6lrsBP-PTilHRltR6AGJB--bsKVXLwqYO1KfT0F_VlAyKT0NKBG
-Or8RVmBA9OGy5fK-0e4YStaRSPHxeOVjN5_Uuh7_-C_xentZo8NxXmBb2R-ivxnY_h1i4A2SuF_uFxnNwzFo-BT5eRVei__uFRn7QW00Mhfo_0E0wlj7mxAl
-xXyjs-V_u__GFdLkr9VSt5kdnwfsNpViaHblwJcJNzo7LsIlhshtv6KAzx4
-}
-
-AWSEntityColoring(IoTAnalyticsDataSet)
-!define IoTAnalyticsDataSet(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
-!define IoTAnalyticsDataSet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
-!define IoTAnalyticsDataSetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
-!define IoTAnalyticsDataSetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
-
-sprite $IoTAnalyticsDataStore [64x64/16z] {
-xPS5iiCm30NpnBh_XVyuPR3SdpBiO663tXbhUab0B6g-nbIOSAbBOf5d21CQoj3O2U4piVULejGr6-4gXBr_0YJgaGtjsuWcQ-zMGJh_0Jq_Cfsd4lRCcCuZ
-cJODiKpftZp6FZArwnk6kbL-Xg2q9RBm6s6CZipMxChNM1z3UMy10CIwTaChVuButlgBS8_OMtykc2eVgylqCm64hsuCjR_VdzbSd-trD_GBtiCNTuOtQ97V
--a0sU96ly_aZmkdzdf-D_K6_NDjyttxNV_3TWj_buEl3txrVCSypkCb_-_MPB-lNZ66DQ_jTvci48nfFw_VNhma3UoPOx99-0V5g_-S2bFvu_pdqV_qIh84h
---MlwFVw_VlryyFryylryzFryzlrysCzlxuaVm
-}
-
-AWSEntityColoring(IoTAnalyticsDataStore)
-!define IoTAnalyticsDataStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
-!define IoTAnalyticsDataStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
-!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
-!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
-
-sprite $IoTAnalyticsNotebook [64x64/16z] {
-xPS55iGm20KBVD9o_mElAxNmwZ8hrUX4Y_L08GeFAWjGmOTN2w4DuHMQ1RGvF6LNrGJXCI0ytL0pkHrwL3Q7XttW-tMoDhWnl0uCpm1ACmL0zsj16pIW_bRi
-ZvcJcTmEyV3UNpTP_b2sGHd-ulvz_MbPjS2xy-VhVudmB2B93BV3vxgPZFeB-_V-XhSVuZPsvY-U_rd6JtLTrX5hFn9llqW_qEblpVEVdp-Mg7ySrT_fpw-V
-b_EtSFZX-wSGEdp_E7p_kZnN
-}
-
-AWSEntityColoring(IoTAnalyticsNotebook)
-!define IoTAnalyticsNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
-!define IoTAnalyticsNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
-!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
-!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
-
-sprite $IoTAnalyticsPipeline [64x64/16z] {
-xTR50GCn34JHCMlwBpZCP0wjtbb_6OnVffIoxiGsJ4TU2CW8l10165v11g-ONH_TGQGWGowd3xt7GIZf0mxyWvu-Wva-PtPlCoxxtkkNxrsIdUGGaYHVstiU
-U2IIiNx_UxlzfwBzP_nnhxtsj1dV_ltp6KE_V_t_hzx_P-V_ktVzyCkKKci
-}
-
-AWSEntityColoring(IoTAnalyticsPipeline)
-!define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-
-sprite $IoTBank [64x64/16z] {
-xTS7hkCw38LXKOKyP_yRVY8D2FQZevioVUP7IVrSnDJoYwKml-Y0p8iAr7aXG2ypWtxfYV1aU38y6Hxyaxruq_l5c71UDBBDYqeEcKqltfrkngUpbZbVAct0
-I1rFfgILQp9vUJeb9Vdnl1-_YPTkrkKBhv7xX1bPb-mrAZD6uJC6yYR27yNauPszD3smjbAQWfusEVj0TdF-4Y2mv7lswvVtbezewosTRLeHstZ9E6z2_kUx
-DmwVfbWbJUxm8zXrVkwrNeZPUV-rgllh_73s7Xvvq3jvh8-jwlxqZAEcn6XhzyjCNuDTrkzyX94oqkAjizlE__ZaNTSCCA9uwrFuQU_Ih4ZR--gr6m-QUo_x
-5kmolxn_TjC7_cZh6sTeExyz_bADCskRuz-idzV0MNjl_JspHjedtiUuzUBL6p-w55D1sl_rzOl7yuC2k3__2DlvzVN0TdxT6yaxw4gCMkxy2FRC-ddFhx-C
-dH-oz_x8vJ4vN-TixBsHX9JR12GjUOEtF7ej3weTomUoDB_fTTFqQNuQBRzlUOtI-NV3DklX_x3VJv__VepVh_t99hTFVpz_-llzy_yF__v_VVx_zUVt7m
-}
-
-AWSEntityColoring(IoTBank)
-!define IoTBank(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBank, IoTBank)
-!define IoTBank(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBank, IoTBank)
-!define IoTBankParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTBank, IoTBank)
-!define IoTBankParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTBank, IoTBank)
-
-sprite $IoTBicycle [64x64/16z] {
-xPTNOYen302HR9Mv_uKV5elVOdhuIfa4jewBN3dyD4Jauh3SUqeGurMmuq51ZmS3cO_kyEUh-P64SO1qzu1OxxdfJRtpClrMxa2-15Mf5ODsU8bMiLbnyl0Y
-YVyaNsB0EpwboEPJlEKNSZT_iIFwDF-b_aiEzkNuoKKlrTQQl1V_94JsYTaZNmQnz-lYWH-b7Ex6tq2dxs1o9_vtV8NyJxtvmBT1Blu5gv-bt6-_1X1U1D3V
-xF-z_1aByatVoG2VjQKzydKGJ5yrYSEMW88deKUcJvHoi_t4iYww95WLNumYJPwsNqisOfoswYp1HhR5NyklbRKpY0uOUEdMUW9wKVurVbkP7TJ1EuE4BHO6
-AO_YRs3dXIf0EqK5Kqu9s2F_r0cbSjFnxGnqplb9xlob_-vMpNukXKKIGvm5aBN_2aNv9QgddajqpgsdopYS_1Ft_8qu-p4EzVBYh_D7lLlin7LYsSyVQ_mS
-T3U6-kvOAFYZ-6irS35F9IlHUNhVhs-o7JKnPhOTi76l9VYJzSk1ZClvtvWt_UdwPJc7ogITxzaBwvTqZ_2JFMdZNfTb_VhRVtosV_jy__Zv_dNTFmFk7kl-
-EUOZD_rq__xdV_3xyMVn3m
-}
-
-AWSEntityColoring(IoTBicycle)
-!define IoTBicycle(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTBicycle, IoTBicycle)
-!define IoTBicycle(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTBicycle, IoTBicycle)
-!define IoTBicycleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTBicycle, IoTBicycle)
-!define IoTBicycleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTBicycle, IoTBicycle)
+!define IoTAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalytics, IoTAnalytics)
+!define IoTAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalytics, IoTAnalytics)
+!define IoTAnalyticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalytics, IoTAnalytics)
+!define IoTAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalytics, IoTAnalytics)
 
 sprite $IoTButton [64x64/16z] {
-xTPLOeGn20JW0I8CzxzltKjIeRhxVwzn1Vu9XuEFUrpOLeYEUyxKnBsPjsz9zya43IDlF-86L-9MNxRdUvnz-rOUVpBZN7j_nRd5lMc2BR79jGQ8jRxKJ836
-1LV886E7Gw3EbC8ONF6k8ZQ21brCthWs00W0TLgwX0dXMWUwqwT2d8APtgf8t-njvvXnFyiOQA-h2fo9tYP9U-nSuKocwb0c382J8azkRmzzFTQ4CG408npw
-j68OvZlRAm3Vjj_Ftyq6i_cd-vTBzoy_lqn-ViNxKxo_nVTJVR-r_wF-VvN_p-h_NOqVfVRjYF_L_AcQlzNpnth--liEXqi
+fTHNakn024JHBDE2fFQ_tcSqj2yOHP3_vygBBzDa4ep508i15WCi1bWCi1XWCS1YWCK0Ym4M0w-emxSFmDSYZnVFs4D3V-KI0DKhdedNAvw9rokUYLVtbdac
+NjrRvfbuTM-PP-BLlJ6R9dDV2TX7G4P3k3QEpu2z1RG3-Rgy1-mr801koIzD9e3Zstj0WV7RFUY0RBsH8-1-MzgGCz3ttXI8-040Vkx0iVSJC-1otZVvEVU1
+kVSTyarlDv83dJpFVQWUQ7iFVFC13BATPLNvJmK8lNrw0201vHauQUOjEJufQ8dl43CBhvzaVlqJC_YOzFN-Jypu-NiWVFvK1MJlRM1O4D2VzuzCtZyZCBWF
+F3k0HDu4Q3Tb552PSBxtTkNx9sDlzjl_XoGP--UORU-1Am60v0LlcUS5Rvcd-vLuoppThyHRvkb-9TuoJ_ShyPPvkbyFxzi7u7jwklT0ttdxyftFkL-MZDbM
+CR2AWLKCh69W5GEh65Z5m2e6LZ6mYe5L3Fm5
 }
 
 AWSEntityColoring(IoTButton)
-!define IoTButton(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTButton, IoTButton)
-!define IoTButton(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTButton, IoTButton)
-!define IoTButtonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTButton, IoTButton)
-!define IoTButtonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTButton, IoTButton)
-
-sprite $IoTCamera [64x64/16z] {
-xPU7Rkim301DIXpt_p_y8Y424RtODH2iZciJpzEWPewVXeYy7BPxNnB4U1NiSL3Gny50rgCp_dmrVv0m3f3k7X3xFJTzgtTkqz_b3kGjc9NQCMZ7BTgCpOwJ
-nqqI_qc-n83__HuBstnY84-VoVAxkvlC5YbyyoVoBl--qX8WOfAWP_dlzG_8-RvMFrFeD-EdINO7QmvQHhI9NliIK5H0wtR8_xuCWbplLT2qcrlN6biGmu-f
-77ly1Q8LFPRJLTiaG2h-kwylOyZdpKoezkllV1laydMq_xFEfYggzgnt-JcLhVsUlYKmSmzjdfdUD23AFud_I_uDGXmcBW7zfhzQFAVkDhyboLDV1_7YArXx
-rbe2ca4hFwPodCVVG8EKOo1309l-lVPpKi6h9JNn4x_Al_kzMbs3E2d_CZPVQfgrolzE_Al-rHXL_rj-WzvN09nvqKxywhzR-mUaDKi86TTx_xqQF_tPwoOX
-3dRSRRz9W4jF86teSPpuQ_xOV4d8heEMa59-pH_d_N_DPH7pa7hS7N-59KnorlsMtrzQfdb4U9TA4kHy_H8WBe6yMhywNz8lrw_cSOctRVtwstzyl7_xVF_u
--Vwrzi-0kyU-VmvVZzpqq_txd__1xyUVnJy
-}
-
-AWSEntityColoring(IoTCamera)
-!define IoTCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCamera, IoTCamera)
-!define IoTCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCamera, IoTCamera)
-!define IoTCameraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCamera, IoTCamera)
-!define IoTCameraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCamera, IoTCamera)
-
-sprite $IoTCar [64x64/16z] {
-xPS73kGW301ZYktv_uTliL2AnUQokbv69NKK1BXa-ziGaSiXtVigXerNeRyE1Shhq47cexVyzqlN5mxZ0Awg1fRlQIzBlV6Ojlewu8y05YFeKBT7r9YRZEBR
-Gnpzcton0P_uX2BJ9_Z83-HRl_-3vw_KC_AfhtdNl_DbODclPChkMoZRxVmhr1CDDC__hUzOIYp8sky3Jtw5zYRi70_bTlqK90y8UJh_KcFuEK6rHxuqMsOf
-nvii_3AmwPUG0LrcI2yniw4iraz2nZMsMqOTaBlrCqBUtY0TzEJdyGjOcMKtCUyPo3x-F7-px3G7JxFN7Qp67DIR-H--BkRFc25KRtnHXLx1U_TBEUXn3v1o
-zjF-BG3c4MXb63kEI-nWq-7FHtd-Ypi3sqTyq8_0gJVhrnpm_Tq3dI_czSlvGqIXIooqxDYOEb5e8Zb_vFqlJk2IYZDWJ-AdE7EZ7zIuP_8m_bJR_lNzNg__
-wzVVr7zyU__sxVtZj_UlkNy6LDLo_spx8-tbM_lt__ut_3_-NNm1
-}
-
-AWSEntityColoring(IoTCar)
-!define IoTCar(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCar, IoTCar)
-!define IoTCar(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCar, IoTCar)
-!define IoTCarParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCar, IoTCar)
-!define IoTCarParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCar, IoTCar)
-
-sprite $IoTCart [64x64/16z] {
-xPU73kGW30LZcZt__yENe9Mr-vG8JjVBg6pB9F2mC7lyRPZPnujyjyJnwrBevqk1ShvqiFpfWVz-wUCau7g166Cuk7utUhdL6zkqkwS3iGLpKag7UcnHPpRA
-88vDWl6x-drK-rhV_8Bf1yGeIv-fsCldOlhc0B7s9wRFFx7cK3QVVvjVWVPD-GTU7oWxlgygNtsxyFI3P-8rmAaScdy-lzu3BldV-UrX0J9PzVj5f6ymRltn
-KeAOYZtKVqOX1BxE_ta21Vg6dnSg7SgjNoxU1nqo0VasyAde-icJReU_M3-vL8SllenVaXRoWXo_vYShdMXLhFU_2atR2zGTFxCUdsJwuclzvWIKbAH-DV-9
-UI0DpUVbo_LBxlT1zNN_o3avZC_UNjB7f_ASNma0bzxUj_Dt2A2zztQWRFe5nc6H-G5jjkrb_yhogR8FszHM_Ijh5I-Lh267KJhqHV_IygcoOhReNuav6L-k
-H-pKVngjsV56RTL-p_FBjv_Vllty-Etdrpm_0xDYvFpi-TFevLlFx__zR_Z_-7Vn1G
-}
-
-AWSEntityColoring(IoTCart)
-!define IoTCart(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCart, IoTCart)
-!define IoTCart(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCart, IoTCart)
-!define IoTCartParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCart, IoTCart)
-!define IoTCartParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCart, IoTCart)
-
-sprite $IoTCertificateManager [64x64/16z] {
-vPQ7TkOw28Gl8Cht_W-ycvXp_ogvf9osawumb04Z__UB4BKFg7o5goCB6fL3hx57ye8S5zW5KE6c7p2F_lka1qsWN9_El83KCy6tKFAcvIZWE0K7Oggu1E07
-zDWBCe0uYbww8qtjPp2QlkzWhO42Q_gnIO8TwMkGw-pZkB-nga2AaYNjs6mi79-rA-h_KSkgIb_fLDHSMRzDO2DaDIIwF9K4AYAArJ3eT8YIwX-KjLdIIids
-jznzrQI50j5Pf3oqAZV1SviyVpYNIL9Z-ruV37aOA4aWj02NMmTqCbVQ8cX2TWd2CwgYOxtFQViiKjdG0G8WExW1aDAvJkINptZk40xH2NY4Rpy-Y_CeADtC
-bloakXbJ9EIKFw3vGQdUEgJFw0KYCERw5M5iQ0Fd3J7Nhyy2nDjgGyte7Ui5NPDz6gYxtZV2U8BTj7f5bvoFfHap6HVgzb0gTsq7NUTyr2S2Zlv1kQcEN5q5
-0soz5kokMOtJ-wDLiVjD1-Mosi0-EvUxMch3bbk-OB6N5exFMac17j6LzPQtoVycCMmljvHTUkxN6FiE98-kk8JIlTix3_HPJbtFSvxf3saJSPDJ_Uq1pl4a
-WuoaBvOJw0r2kgbiBy6UqEl_9CIBHXMideOrFDoYkA72FFmyluX-YZp2-r4AwYh_Zd-MBn7o3VuegF5LlWGRGhx4jmB6wBc_pWyWjL_3YAlyAi3lJtJLDNu7
-RtGAL_d-UE3N-4dPsrB9ytmnUJlhen_7Nm
-}
-
-AWSEntityColoring(IoTCertificateManager)
-!define IoTCertificateManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCertificateManager, IoTCertificateManager)
-!define IoTCertificateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCertificateManager, IoTCertificateManager)
-!define IoTCertificateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCertificateManager, IoTCertificateManager)
-!define IoTCertificateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCertificateManager, IoTCertificateManager)
-
-sprite $IoTCoffeePot [64x64/16z] {
-xPU7qkig30Oj4EZRzt_X6yBVBEABvsJQAPiUs54iqNByQPZPwILzjoM8qHNQuwL0URmqiDdqpx-cjFv0C5v0Z-U0oD_rLbxgpctyLNH0jm3AwZUenotgp4sY
-e-Ccej_pNRAtV2Y_wbiB2QJmZMynuEmNyKLOzec1VVWCphu9r0SXYEnFx3f-X_Rz7h-8VtNz1lWd3U9-_keOteKpkkbR4yJgO__dso3GoDhiNC7B5ntAsGyR
-73d_1dfcoqyHAzIB_AVwYNW-siale72xzDj0Q2PXkEV1Q0patxxQOAsVGodWQQKI26ZR_0_t4DBP3y8Sy9rlq8yEqCzjp2pOIxyC0itIpEAtTHux-FI9CiZr
-cv7i4BDdAg11tzHlHkgaWXVmcORavzy_UzQymXgqwUVVd-UFFNCZi3nZvlDs_WMQxzTDpS5t_XovrkhIQ7MjNnw_NwdED11Gy_XTrxy2RVKh0z_Cl-kBAw0H
-Blbv_VXAOCQWNQmVUVrhK2wsd7lh9tIxE9Li_K60mbwsLacnsx-AM6iu5xGEiDs_hAyfSFWu1xNz_kMhNvbelt_D5FgP02J0_SR-BrP6j02uuHUzr0y7jFK7
-bld-EldldD_UFp--VtxDvsVWyHpv_1nVJRsLTy_l__mt_Z_-MVm7
-}
-
-AWSEntityColoring(IoTCoffeePot)
-!define IoTCoffeePot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCoffeePot, IoTCoffeePot)
-!define IoTCoffeePot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCoffeePot, IoTCoffeePot)
-!define IoTCoffeePotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCoffeePot, IoTCoffeePot)
-!define IoTCoffeePotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCoffeePot, IoTCoffeePot)
+!define IoTButton(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTButton, IoTButton)
+!define IoTButton(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTButton, IoTButton)
+!define IoTButtonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTButton, IoTButton)
 
 sprite $IoTCore [64x64/16z] {
-xPI7akCW44Hx0fF-_tytGEsXjMKjqkKxlwBIu9xaHlb7ykH9LULrmbjh5XVLBXYmNQaj06apKmROJnUdTr7L-t41x6HrWkQa0USwOBJAIHaeQbbT3N8JKKXZ
-8bcRWn3t8O08q0MvGMkdfUXhNKWWUzlgeOhUsZ75Y8FLjFgoVJem1iZYA-F9eJD0xU2UzzrQyr7fKG7UktDXZPag-6420-ST3G0eSaAmH-Nlcm-GXK9gTk3W
-_Udtujh_Ce9_gXEBpZC2j2e9aDYy1zlNjxej3W6Q2vX1FcsqfbUGbm40zrn-h7V8hHMZkgTqg6ZkUUNb4loZN8snntvyt-Bp1uC6hTdk9Z_3we6zvuqne9_7
-TG9qZhc30vgZHu09ij7N276cnz6NczIYzvZ1iF0nVtW8MgR0yeXG0599r0i3u5wV0Bo7kiSE2LFhgweIi83oNGy8mQk6dO-fldpITstIq8FBHYXo2GN0iT6F
-bqoUYqHtmrOVg-hflzhgPSw-X85ywal1UOu6s3VzNDsf1A1eC1_RF8qpFj2y1841Od1Tqy_z_oOzlazlBRr5DilhL3z_84-Ul08
+fT9POiCW303H4GY4uFxdxMPIEpZG1NrroJmR4RzCMOnDnZS1tmHy4_1Dm3S1tmHy4_1Dm3S1tmHy4_1DO9RdA41Gcm3hFWkFYJO3vdq4-NoovGZa2J3j0wJI
+Ts1VlzndqIlOPOaADWVgBRSZFu68c8OuhhBtDo2WmpKAnwGNG1s10iMVWGGnfV0Ig2EGYEu3eBaluhw3EWAHDFic1j8Dg0DWGlO9e8Gy0lKPKA3u14Y03AzG
+du08ySnlG5O17ViJI62tLeLWbpEGxdq78Fiu4O0pI60l--g9SCipM0d4imZewxu6ybWBdsQ2Cqg4II_ZwXM0N0BmNHbCUhWTFJtEdmNf2Vpk-UbOfq8mzoA4
+7vuVoVNC2tqTWlNVq_hycU0de4I_zfwE4mXfqhkGwWCmAC-z2rgA8cNILuFa1n00ATU-143CoDE-9WZviqgWGhZs2jftEEsh2Q3kuRC1aAEF0DaBhFlgEOZM
+iwTyzNBslkpxFDvVldixZ_IBtYCWvThxiJz_1kfi3Co_-j1x1-rN-ek-Ak7Q5rV47_EBteLuxJEOtu0wdmA1xrv1tMz0MmDWlU_v2BGb406Wt_umlLy1LNYC
+-MrwlmAE-yzVUtm9j3LmlRyNq_lstzvxlzo1hwPj0cqJQ9j0smJQ9j0sWRO9j4sWRG9j4sYRm3i
 }
 
 AWSEntityColoring(IoTCore)
-!define IoTCore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTCore, IoTCore)
-!define IoTCore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTCore, IoTCore)
-!define IoTCoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTCore, IoTCore)
-!define IoTCoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTCore, IoTCore)
-
-sprite $IoTDesiredState [64x64/16z] {
-rPU7hkmW34J71Upv_nz-Y8lI55ORTbyxAeu6JdepleP8OrBHECTdJ81amo1aGs5i9E1i153PA43yJ8DWfxBS-zpzxXscPTtqw1ioRqWJVghq2gWtR0mhuAKX
-A6HiMsSe7g91rhuaoS02GMfV45Sie5a4Ny1Dy052-arQBznimp9avZjFpEQyylF0YY_Oa5T-X7tW3rPyCSEolrEAlkNx1K04xvy_umLxTlwT5_onhxAX2_ua
-gTK-yXjhFaJmaVz3XAtvOeQFprzVaiWJ8SzyvmL_xDS3ZtouJ_VsTMAP8rdpqVZSbqnRyxMKoTY3vB_tORPw_Ml55ww_wgB__6Z51pBs_pnRLENYgnxzu23k
-pdz9Cil9Lr8FVhxodHq_-a76QVjL6lNE5pBTavHzpDdmau_6oOVqJOkItWtTnYJPI9duMWewCx-IPcIT-4Csa_lzLpBDajJT3ssqSdFz2pi-lLhNys-Pa-it
-yoi7TRTUt3ywc2IFdr_SFlyHvcJnZKBwcudC_bRVIVR_DqsUI7qd6RAKLCWPxC4iWOxsmRZQlwHyt3zrWdJ8wDFK6xhtQvDsBezxNLEsVhEoKKU_w5ixgRqA
-V4mhhDYHlSyiR9JDHzxxeZWnxvSdzKly0W
-}
-
-AWSEntityColoring(IoTDesiredState)
-!define IoTDesiredState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDesiredState, IoTDesiredState)
-!define IoTDesiredState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDesiredState, IoTDesiredState)
-!define IoTDesiredStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDesiredState, IoTDesiredState)
-!define IoTDesiredStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDesiredState, IoTDesiredState)
+!define IoTCore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTCore, IoTCore)
+!define IoTCore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTCore, IoTCore)
 
 sprite $IoTDeviceDefender [64x64/16z] {
-xTI7Zkiw38JX8IMAd7d_1xvm2xQPmHhbjlDlJUHF9Ot_tFxqfqpoUIf3wIbcXG4MHVrIYgmC1n01m2Dhl_TzLPahvZ3WNBhsUM1ZnigiQhdZoiSgIgB4MkF3
-GESDOr-dYlkXSwtayM_j-nf0TTuelGvQ0m361RJbx_o771xXS7xe5pumA74W7ldhqe8_zTnxwWTIf1BZcL_maignddaEO6m_VEXvl7_usAlCIh_mS4gwcr1w
-vsVLYgYVVKMigjbv1RRY9tyEYKqBY1M6q5UlWCKAO7NUaA8AgAtBrnPGeXBMyCGGIKrSUpMxpeIv3mravwVElRexnk47tFqyasRdhxUQ8wN2owUKhw7YVOv9
-ClPhF_fzA4XE33QLmOR1yhjF74FLUTMuFl6-Ufv3wdo9LKN-vBaFAJjlaritVcks1u2zyuREstjlR1f8TLu9xtp2IlTUT2nsJTYwzsaOx9k0hvzzEdh-kihN
-5t_TdxtzECD7NpUwdI4kFn4tkfy1W-VwdUvFORQyr_qCGA_xqY_zj4p-S_lJd_u2
+fTE9ZiCW38JXmGJmcFT_tsqIhAOgfbenUn_VNtg4Z-bYBHWt0zmCS3F0pG0t0zmCS3F0pG0t0rm79Fq8S1Le6P2s330E5C4rAIqEp74jEPqqDyruBUMZFYAX
+BpcB9FZjwZK_1r8IoVdyRUJXzFWySotPiu2-5lhINf1-DmIG-ZXshUNs6da-Tk3QeSyDxm6BVRte0TIPr-4jz8A3UWPawdLuYpoWf8k9r-5jvRdmEhp5vtzj
+TdxVy3RrRV7u-OQtVpz_FXkRUTwl7tBbVHF__iNA-pYR1pMQlKS_SVlq7hZ-Lc9lxqVisrFzRx6t2XIo0FNj9rT3wENaPq2-lPpShuR0-wEDUtBxX7D-tGCh
+hq-FsyCzVtb1iUlyUPpTF_ng-77-1XJL0hHFxuzVQ-l7pmgk5NvxbjNpvsk2b1jddaqIfEh2-wRUj_A01q8F_FBdLfwnJw070gy06Nf1jR6fzzTsv2iIRMpg
+DTrFRk1DaDJ69hublxG2pmHa3NmJ82a_0jsbhy0B3-yQ1-aR_Yl0u_g_qvjxryh7XkyM500_mqHxeCy2fXddt5-Qtnk-Mr0erstx5JaDz2XWJN1EN4ytVBUu
+a0eNwnu82YzjI--pnLP-Cz0t0tqpq3S3VJFGDmDzCz0t0tqpy0S
 }
 
 AWSEntityColoring(IoTDeviceDefender)
-!define IoTDeviceDefender(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
-!define IoTDeviceDefender(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
-!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
-!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceDefender, IoTDeviceDefender)
-
-sprite $IoTDeviceGateway [64x64/16z] {
-xTTPigmm20PWfa3O_uQlj9tY35mDdjV-dx3WArFEmjTyGWoNORfkkryEa3jVy-pt1zYp_M22FRkjaUpflLUFcPeptNjw3TOyZgyolxhCHQ67FqTB7Zv20EWH
-_5KuhU62R_arNl3mWuXU9HN52B_0Rmuxno_9Bxxf4sNLzSaiJST7RQStQFk4bQSosvwz3E_wKVlHyC97X3FIymWWDerX1RjUFI9F_L5DZOD6PwJfnxhJCrsF
-V_4Swv_kylJugqV6u-CFOquJUEeJoX1yxcdw4UxvdCA3Hx3fvugxehXBqsS27BRfJS-OkzBexnzpA3BngKSBJj3tAopSF__JvZiMEJORNhoCx7fKAwAuwIzo
-wpzUhhoKtfNInwqRcpE20FYryFIeVdh9v-JczrTavDk9BFRARs-gYZ6WNueHNbNjxJbMOcifkRbt_7A7aLpEsF9hTYKFXq-zznfhLIfwqRZtQ-b5nfuVyB-W
-tly_ALuE1D_lV_8F
-}
-
-AWSEntityColoring(IoTDeviceGateway)
-!define IoTDeviceGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
-!define IoTDeviceGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
-!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
-!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceDefender(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefender(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTDeviceDefender, IoTDeviceDefender)
+!define IoTDeviceDefenderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTDeviceDefender, IoTDeviceDefender)
 
 sprite $IoTDeviceManagement [64x64/16z] {
-fTQ7Wgqm20JG8I70yFyV_Du5tQPkqTbowqaXiV1BuhVn3Xysm4Dk-0SZuCC6U9OR_ku8-B01Vjy0UTENOwmLlESPf0aWTjFJ1p0dC9mtV2WmZBG1QF2lVWca
-viweft_pMwVTwpQKttkVmFGFAz6bE2t3-SJ5-gcRUP31C07qDzu4ihPX25wPrcK0PFtaVPiu6HEGgJe5c56Jc5M6QrzcU3yT4Ek6J31g0RSoN7ghYNS6Pdne
-TaIboh0kV4uejoWcFsH2tzToNljW9o3HJxO7WRE1_yOlhFoq4HRqtVD7Fs2cgW8HYAgQOPpxFFM2ZfAAZWHFVHvycQ7c0quwXfkEsWIdFWz-0a8o5rQLeWlO
-cu17dr-yOaWzqpv_Q2_8W5xu_EGTGeMzda3grqd3387ntET7Fs3f6EI4qVr5wqqQnfNFTnyOlNq5MBtqa5bl2fmNFdUVXfKrTWnK_Ue9lEgnBdtkVi6I9CIh
-4jMfTpqDUkspVAR2g_-Pv81N9JZXF_fit_q7X1coRpn1_DRt_3anL33-1wBIHxF2VlO1sJSXj1MsSuaWVlJCsGLap1f9hatNHcZFxxn3efOpqFtX_HooUrxw
-wd1q0miI8LWxLtBtFFTyUKw8CVzd0O3MR4pQCRR7Kx-OoNAYPck-_5osL01jffldqPj0h1g8YOge2YhJkGq3nix1PntnKItGrp9dPlXQo-FzZYAuv-0pOm3w
-uX-Fw_nmH-7yaAFlIIpc-Hs5yNDEVDOHwvcdTnHVS-AhUbs6FTixF4cUnhiCh2ItYV_U9wrcc-J-b7_okNNwFfI_-gqCNGhoXg--Uobk-gHL3Uxw2XzvyfdF
-fpwV-dpgywdFfpwV-ki6_W4
+fPMBhhGW38Idq4ABx_-y_uN1wBhAcZ3drfFuVUf0bZZ59waFYKL1B0fYKH2BWbWKnA8W5WMnA8X5GKm5HSJcWfW8QW80AJD1F0fg1c0cGBeONl4AGDsz3nV3
+JzuDGAxUGqEz26PyaK-WPkgEpFYQ02aiyT7mo7klZQCcWIGz5aFhLT1kQ-kpOWyDfHikWlOXwBMHziJQg_qV_33OXw2T1Gb8zPZt3We5VPHZzi4VWeum1j3K
+BppTrG3VC_Xsy37YXufFS40ScS6tBzwGk176za-mEzu7twvyWXKpPVkcHP5kUMyZ5rx0g2iOcVFjWpS0AIlWuO3c123F-NRY5MnVeAwzYGf0vdmZpujt7cCi
+446Uystd1QRG28C89255P6W5RCutyWKI5IW9K7OX1bGtf5TyXaLaz9Ge75A40_KDB_1-iOL1HeTmYd_nnoe0_3NMaCkYF_csyzBlZymz9A_vnkUFWdFAAEO5
+tn9AK23bVsJW8IZnWZVaiOd5YTc-hJpYDnz0vo9raK9Y_AiizWVV5Aa33kJnGKIFl-D3Xg020bXtPNhUyCq5qCgJ158zgd8DoCSpNpb4neXW95NY1OXuu1EG
+d6DL0KHhU1_oJWlwkztphG38qPY7az5wY_Ty2mMWmt13iyoJOBi8-EhsBV0yJiOzW_yID4-0iCW7cY5_8sXLzY9FftBsk8JydO15-X3Sq0nv2fwA3EFYtuOy
+1VT55Y7z4F8Kt1O9I8r9jfcWLP4IRShF1SoCNnHiYu9jKR0j2hP5mROes1O5sw9WMnJy1G
 }
 
 AWSEntityColoring(IoTDeviceManagement)
-!define IoTDeviceManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-
-sprite $IoTDoorLock [64x64/16z] {
-xPS5igr030L9XaZlVyF_fcgUCRnS-6vTWWoDd21X-ziGaG-JTLrF4BKfs6EYe8-9WSoXJ_dlg_c3X9f0kdj07DUvwQc-SvdzH5SWBm7ewXkCxHAZibbmSdj3
-5hOt4kzz2HP2hll92NdP7n3xWO3nYIzHyERl9m4hx6y-KSZqASvzaNEVGfuSNpqXNVlZJtpnToRxzBlyLh_qC0lAlEyBC_41IEjB4GVVNeKTxE2755kNVv3l
-jZ_Fl_7VdwIJhMz5BdviarZyjAAhNqbpN9Aud_yEFaTAlL__17zCrAcHpjSYZhuca0ca7ltGegjVhO-tDyVz-XLgystT-kVd_u7k_2VU-lVpdvf-Ywy9gOtV
-tByra00fgvzMTFdFgLbvNra_0n6mpY-aYDKVa0bZzKEAf_a5G7n3_HpyM-gle8tVV3ywl_z-zVxrxrSXxj8S_mSzFmDSFp8SnbLVaXDIBlc51WkXsy5l-ZSP
-2xBqRz_UFtvx_xhspu2xnx5_ZjSXD_tM_ls__mt_ZtyNNm
-}
-
-AWSEntityColoring(IoTDoorLock)
-!define IoTDoorLock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDoorLock, IoTDoorLock)
-!define IoTDoorLock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDoorLock, IoTDoorLock)
-!define IoTDoorLockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDoorLock, IoTDoorLock)
-!define IoTDoorLockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDoorLock, IoTDoorLock)
-
-sprite $IoTEcho [64x64/16z] {
-xPS5aeH034NZoR__XPVgoYfCaNNZZQ2lNUbJuOqtYMAHLOMDgWnJVeqSXHrfFBCviAYCy8t8B2ny57cjoEJvJOrrcy_z0b98zZdM0l9KDo28740nFOSJq3C_
-05abcBPxfe0F_3gEXArcFb2XJ0S5EFMx-jnjmoEw0Wk8Sx_44WUaSOtyxP_LEz9kmBuoDFKRRcWnztVy7l_oBv_f1ZpoaKA7I6BYxuRlnHeKfduFFwOBwx5W
-w9T6uO0AdPO_gqSzTzS0DF9Xj60MqGqHPbhOCF-fJ3jOSrv-bQuFqJABUXOmz0DDDMW2i_9ZYzgNll5hsZ-hUKHaHhYRya_lVvT_-PT_pPy6bDpUsJXD1l2G
-0tize7EyPs2c1xXdNwS9cZs7vFFzMyexDf0LyleDxEF-LRvs_ppd3W
-}
-
-AWSEntityColoring(IoTEcho)
-!define IoTEcho(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEcho, IoTEcho)
-!define IoTEcho(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEcho, IoTEcho)
-!define IoTEchoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTEcho, IoTEcho)
-!define IoTEchoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTEcho, IoTEcho)
+!define IoTDeviceManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
 
 sprite $IoTEvents [64x64/16z] {
-xTO5ZkH038NXtwuoFD__lWkzKNe4MIKQuQW_GR2Oh9_au-EZt3o_aHmCGc-Z9vnKGKk7Yj1zZKcpgEDn6z2wp-YH7qassChI0u5jnoMf7GlDFEk4pLyvQcDf
-bClDV9Vkwkg4bB6bDC0CyD9ja-3iqO9LaZeNnCCCf8NNg39BaqOycmSJk1G6O35jfEvgN8sr75R4WgN2rBPrQKQdxjd4EAjdHktiMQGmNQc8qXU64dy_LR76
-wSkP0soTsjOuzUxHhUhPrEN2YpHIfrPZEbM_Nbuado1c2lmBO-cVzbDUfSzN-ZSpyBDsPiVBc8lwMvKJqg4pscWTAb-taVzTE4jlHWTxz3AB6acOhkHQgRS9
-jev9EzhuCGgZMx9aPC7AxdIi9SaftLAO2hATb_LAdYpTis1DmkxQQvtRHxHksRYnfmnMP8-UsLYtiQHm8EReaJkwEh3MiN-gAtj6jV3R-wVrUR-Ygd8RUDtU
-lvVUvyV1y_dv8OqgzjwH_VpyEinVZy_FRvxVtuqVVhoFZu_V
+fTI7RaCx38FXNvO7PR__yzvXj5b7fmXWTWz-9HeXyHBzaN6JE0JY48X380w1E0JY48X380w1E0JY48X380w1E0JY48WJ8E-FWhdUW74B97Ls7i1mWzi5yz8l
+k5JmsC0e0AOxO5u0KCJ0Thy2tfNcfp_l-ohWajHRwoC5vWLmok_-0brgXHrh2J0lW62dHOKHmu3YNW3h5s0cW8CxEFJepx_R3DedC1DWfm4r1hZKgnVlaiFd
+WdaBT50O7gEmOrqEadhIdqc_HiCqWDfwtUkDAgSd_MI1mkW2LqXx_UYWYcVz6N9mlPsoHQLiQmD5HkzOsXS0zW9qyu0HFy00ZVqXxRySplk4U03Q6IFj6ueG
+doc_VHwnk_vC-fRqlzq_Ue3YL-YxCbg-Fox_Fu6S6Z-f54cgrBG_mmrNlAHG1xJ7GUu1bjvFSaX30qO37w7XK2EaXkdIpu26Hzt0pgv7o6X9Fm4Qz2ZGL0tC
+5JkzwDBFW0emmi5g7uf7TEbdW4EhqAFROtjel05vNmvUOEmDhXYrbBQdc-a3IEgyt447lEzFHpEmFI3-wZiUBsTOsPez7e6TF_eGSmfxt44ljWdlySmN_Vds
+wx5p0LQwFmerUKfBW7K1WfsONm4h0HppNVy2M1l8yXsm3e5r2An3O1q2wn1OXy0w1DOXi0w1TGYiGs0T0kiGM8V0lm
 }
 
 AWSEntityColoring(IoTEvents)
-!define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEvents, IoTEvents)
-!define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEvents, IoTEvents)
-!define IoTEventsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTEvents, IoTEvents)
-!define IoTEventsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTEvents, IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTEvents, IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTEvents, IoTEvents)
 
-sprite $IoTFactory [64x64/16z] {
-xPU9kgCW38K949Bp_YyySB5yFHDBcNtzxs9SVfM4Qfh-DaI45d7R7eEDGm7jYmpalb10vgx__ckojeu3Om5u_s-0yRQEvbkzufYQ8Xc07m4WHr-1aeueWAP0
-WwT37ErtzPlTLIURkvkyyCK66BwWu-4KobLpm0Po-HWiVvs2V2D_8dVNj-hX50elTzSFuv_JFgjZO5N8t-IF_4Id-2gVJ_76bu6HFodjoiNdliaWSVxPdyZZ
-5EnFPEFJAG3FW1MvztNWv3DIPCwiLgRlEdXHFsaVo0gkN61Wx_Elw50maMe0vCHtfs3HRlqyi6TVE5ZevLiUXFejFsSAsD_NBuv_xyVxh_YWhc1__t7-bzef
-QGN1t-S_y6FzE7-hTceAmV9v_Wec8Nyw0zvoNhyOH9-V7t7-n43u-N4__oLVGKeFV-qw_Von3npwdAsKGlusxo-kt_9Z_M23_VDl-RlFJxo-wyAdprja__uY
-fa_iyvVCyOJRpPQjduI8Mtv0__8j_Tktzu_Vthzo_mnWDixSFzlQrJH_Q__-t_-6xuz_5vy
+sprite $IoTGreengrassCore [64x64/16z] {
+fTC7RYCn34RXHrg5bEv_tgqQnBI6nW3wTvEWlM-wlys-h2VpGy0F0Jy4_13mGy0F0Jy4_13mGy0F0Ny6547A7U2F00L0Rm1_0XIazIQK3TZxAaZz08HcPWsn
+jRnVPne1-1U1NSlwYZHhGbd0Vlorf1UQkpV4tu6oL5uRC68FzhS33u02S0UCaHm_0aMWM8Fw0Om5RDU_5kzXXHQ1yG4ewm5S2xsz40l0M41u_WLUoPier02C
+1SJr5AXWxy1u0kGdO2C16fG0m7K26lgd0Am2UkWV0M-zKhS-0wfV--aBhz3dG0t0jOPkVGwq3UX8w1y2O6kmzIbGk03mf7y6mBg4dlG9y89-zPvS_mDWBRt_
+pu7y-O-gIFKDq00eDUaL0Bq3n22-Y7jVaUvTgECEkFgA9htInnWT7HjWokfDg4aF_hS4M7zy_NQu-eAOVp_-ltvilQwhh-x-_Vh3OupJ_un_l_yfKC3ytzBd
+3ttimFuzhtwEZnLe2L2WkaTWtW75Rm3JbGTWxa03wHjGWUPXgzy04z3cRu1L0JN_sEetO5I0L-tcmteh0aZpVQlV0M_A-tJL6p0348cY0eYMvkdc3kpIbyr3
+O1u2yn2OXy0y1EOXC0-1UGZCGs0U0hy1
 }
 
-AWSEntityColoring(IoTFactory)
-!define IoTFactory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFactory, IoTFactory)
-!define IoTFactory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFactory, IoTFactory)
-!define IoTFactoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFactory, IoTFactory)
-!define IoTFactoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFactory, IoTFactory)
-
-sprite $IoTFireTV [64x64/16z] {
-xTPLOiDG34HHuKYp_mtNK3QLyPsVu5LYjdolOT0tM_BYczMKAzz1bxuYto3ghWzvatXrF_hHcxlRJkygrpIRCspxwBoU4CY8RDQs5-TsmZudDlr4YuIVfngD
-AOoTVf8a6ww7SP5jKjJzNWoSTELcXdaM9wbJWUFjPyLL5p9Zba0r5x2bqyD-OjdSTRTwuLVxZsCpej9UjV-f9wfdLGZJpzh_Hp_wnflqNVzsKo_e4sIVW5nm
-qkKTZBHVsLla941YVVRACS5dudMzynb_vqsj_433S0C
-}
-
-AWSEntityColoring(IoTFireTV)
-!define IoTFireTV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFireTV, IoTFireTV)
-!define IoTFireTV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFireTV, IoTFireTV)
-!define IoTFireTVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFireTV, IoTFireTV)
-!define IoTFireTVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFireTV, IoTFireTV)
-
-sprite $IoTFireTVStick [64x64/16z] {
-xPK50WGn20Ct50Bv_uFFtLqxwpBrbk5jT3gT3kngjlpIrN1O0zr0RFcqgsYbtF9zk0vAdE6t-QabkDMlARVxDRtu0tsSDk1PLSGn7nauvJCPbEnu_gd0sMx3
-YVg7n7Qy_CKXwsJxMKf5nvvhaH81nPdszzA4OdWpJB7cp9AKRVeLP_klfVPOreljalutpzAQZHhXql43yo0poMXsx_Zx0lyDytS9xb-_xby_Ro3kZ1_tng_t
-q-bqEcC
-}
-
-AWSEntityColoring(IoTFireTVStick)
-!define IoTFireTVStick(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTFireTVStick, IoTFireTVStick)
-!define IoTFireTVStick(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTFireTVStick, IoTFireTVStick)
-!define IoTFireTVStickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTFireTVStick, IoTFireTVStick)
-!define IoTFireTVStickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTFireTVStick, IoTFireTVStick)
-
-sprite $IoTGeneric [64x64/16z] {
-xPS7ZiGm24MD9mR_-rzuOvafHA0bcbwUIkfB0TpAfq54PhCvzoy26RS2RTrKeAwR1f1U2ldvjV5A1yO6wCmiW6pFSQkklY3DuhqTG4y1mFc21XnAYiECpGP6
-Bqaw-9DyaW7s-901gO-9-iGXf3ucvBwV4SBk-rMxyAEwuKpy69sA0_MqF--lL0oXJmEnFZ40he4lD2Wc_iQdFa-HxqyezXdWHG39-6tGBtq2UAP2pk3izpQW
-C7uLM9mk9Hr_cbykzlqxyYVU_qT-7SYU-4iTsFnv-ISjfDtvKyqyoF73xrVCZqJVhvhl2o0B0pAqPFnjqZIHbFSjMaWry6tz1aNBvlscVatyu__dHFxoyLS_
-xZ_EL2__GeD4_apzFQZ_pFVVruqVruzVruwVl_d7jVEtw-UFryzVxVmP03FBTluifqlSwhNpzvz_nVhni_W3
-}
-
-AWSEntityColoring(IoTGeneric)
-!define IoTGeneric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGeneric, IoTGeneric)
-!define IoTGeneric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGeneric, IoTGeneric)
-!define IoTGenericParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGeneric, IoTGeneric)
-!define IoTGenericParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGeneric, IoTGeneric)
-
-sprite $IoTGreengrass [64x64/16z] {
-xPO5Ufmn34H7O5cZ-z-ty7yEnr6zvNPVO76U6VWNSETEHYHlPm20VqTSV0W6RqGmgrAGxCctNqeeoJ9CTeG24c_oGfAAREE0Al1QOF1CXsJVqAWA25-IWejE
-i1hwjg8v1DxN8A6RXfOXYmxbXoY232ZVovEqPXBDg__UoNDehfdmiK0lmwwQDQ7ivyzUG4EmvwrWMAuMAey5g__M9_DSy9IlmAXJmSe_pP5pGVZAKv2t28eB
-m-Inu8bo1Cy5Bhdo0y5ZGHas-LRGvdl1ok_RtmlcQFg_hG6RyMy4oMx-XOfuRWIENDstc_y34BmlLrYx_XAOfC7hqjUB1mFGhF-0rsKn6-Gmio3Tp2RfJ_dj
-_hFMjU1gWm6mkbwDoiUpesBRUmd9gW7BJ3BpyO7hrJg89ZSun1N8uePk_tTy9VRvxlp9cV6He3-1MO5D5IkjZvCr1VfU7uH0a-n90pnVIZdjuFuL0bWaMLyX
-SoYWazzASLpJo7oCuNOz3vvGdAx0GaVoc6BE-C9CilWdSkVEPm
-}
-
-AWSEntityColoring(IoTGreengrass)
-!define IoTGreengrass(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrass, IoTGreengrass)
-!define IoTGreengrass(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrass, IoTGreengrass)
-!define IoTGreengrassParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrass, IoTGreengrass)
-!define IoTGreengrassParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrass, IoTGreengrass)
-
-sprite $IoTGreengrassConnector [64x64/16z] {
-xTH50i0m20H0eh3_Vt2zr9KhSwiiyL37EUTSo9LdXLJXMSs1BiMAjQ1LiLOZdSle2Gy4Y5ft_RQJwKm1m2beiNLU8o4nW78UbqJga5T9pWeaG2AzoLCK8D6E
-ZlS-h_DnQ7xNfppFMJpcgHmwK86moq_EyW6e--uplM-VM0SG1zhzv_7h0E80i_mbdw6CUMl_3VDdMp_h_Z7kN-lvCPvVu_rXlB-CzwVz_dREETS2
-}
-
-AWSEntityColoring(IoTGreengrassConnector)
-!define IoTGreengrassConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassConnector, IoTGreengrassConnector)
-!define IoTGreengrassConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassConnector, IoTGreengrassConnector)
-!define IoTGreengrassConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassConnector, IoTGreengrassConnector)
-!define IoTGreengrassConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassConnector, IoTGreengrassConnector)
-
-sprite $IoTHTTP2Protocol [64x64/16z] {
-xTU5haGX30JGjWnjv_z_-0N9MnV8nfcho5cNM_bHT36t6f5SIWOkse8R2PF9aqolM4ZrPcpu85rbCUfaI0j8buquYN7tgJjUap4EBblnViTArZrVoU6nvt7y
-ySSVV_noZZzUpMJwtTnxBEREAnUZF_TLlqvzy6kl9VPynNllhUdGw37lXzAQhdrE4IH3N_bqaRO3CW4j209gh8WKaKBLGA5_yY8UqeB6Z2h6yj_f-TBNLrwR
-dxCZNla8e3xreBM7FsRYfS-8uAFFPEsFUpxyrSUFOY9ZL0hjojSlNxz-iFde_ttIFtXUVCtvuaq_wuUlxp-ydpCpTNgGVkrLHIwxTZ1fQ4me_Rnbtl-idox-
-NGeVlZ-N-isQ3xoB1ow9xY_res_zVbpgrogQMtxMpx9VHU_d3m
-}
-
-AWSEntityColoring(IoTHTTP2Protocol)
-!define IoTHTTP2Protocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
-!define IoTHTTP2Protocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
-!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
-!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHTTP2Protocol, IoTHTTP2Protocol)
-
-sprite $IoTHTTPProtocol [64x64/16z] {
-xTTLeiKW30JG16Ap_mq_IdbUWSeVyp6vTgvRwA7mO7vhyS1GmkLR9yU5UFha0OIf34HjCUqA732cmR01NWz9uNGX1iXwyy5NF0Ty7KQNOlM66T1hNe7LopKl
-qqy__VJJ3sVwwJabQlvwjdsMlknvGr_uDHzy6Ztq5rw_fprxhfMyfWtEfRJBGsgn25no6H4Yf109w_AvNGc5hgTxAOt5SgUdJP_xl8defhUW7X_k_jyZ0ldE
-uvVCzCFhgF_r-WVikc_xmtLVXsrxIhMu59UgezPFt_QdY-__pVsjUZcD5x-vFmvyVspjhp7WD_Vd_dMQRkS3
-}
-
-AWSEntityColoring(IoTHTTPProtocol)
-!define IoTHTTPProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
-!define IoTHTTPProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
-!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
-!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHTTPProtocol, IoTHTTPProtocol)
-
-sprite $IoTHardwareBoard [64x64/16z] {
-pPS50jmm30Iz8Zl__t0TAMd3fD8S-p9h2hdyKT3vBBEreTEClzZYSj3ahGqRlMggLeUEuPtUkgEJ0nsRW9Tw7GKG-KTz5z0tj_uXrJinTjxwvsETVMDqEwZm
-I7vHFRmFpKIiUTlneW5GYJuWfi9LKPGNY0z1q0Eal24Sb0b4rZk85mDAvVz5x3FYWvC0xhSDGnJT4lvcShr47tNy__8XoWa_JZdXdvyiI6QmyIqc9BwU1dHd
-WZP-dKeF0rWLDxvwAPTzGFpNQF890E_zE5qrEWY0HxVQ-ZEwI1lVOT5rW6hye679iHyi0txr1zDrhDEE_Nt0B4NBuYGS_MSYafs_3t1_A0w4x-Pl6O2V4rgV
-pZzPLSm1tW1gKrEMW6RAqe_Ujdcqmm8pdkx_6gEzy8Edlhal1pwq6jtwx3xsVWmZuG1T-3xiNFO-FpX_IaotbGDVaZvyEvK3wXE_S3ixdSaZlu1G4dxmH_tD
-HIk-F63o4o1x_VvlsTy_vU_VilUFsVlN_Frp_luzltx8hr_owwVy-Ys_ViolN_Fhvpm_
-}
-
-AWSEntityColoring(IoTHardwareBoard)
-!define IoTHardwareBoard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
-!define IoTHardwareBoard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
-!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
-!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHardwareBoard, IoTHardwareBoard)
-
-sprite $IoTHouse [64x64/16z] {
-xPS5bkGm34GZsPPKzx_mZgNcQdipRnd-W-0FbFdusn2HfmsVs-FmUIimFZOAwCTc05AN_ljhTDW70SmD46RcWB-Uiw5lzOxJz8DH074A0Ch-0DfnYZQp8Gnn
-d2HWFydN2Fq6lm6K2llY4x3VaNJsaOfSV2JaZ-bs08FyGhRlj_hs1i0Mxz_ylpWGMXa2Bf_ChwINHvttMm1sUwSO46tjoyGHJy7RQnRzmVTKZaN-WpAlKvG_
--Vmo_YJsnoGGd1OdMdwaygxy9EuwFo1acpyNDbU9hS-LZQia-pfnH2OPRUstoDG2dWgLN-tPxlNb5q9-Nl6LxtaN-VVlFqGrTdweod7_Viw_1XdncFHvEWgh
-IrJ_t_eDYTUeKEZdVBVqfSQiMFXKVs--rjrIJQ7VVQw_WkB97pqsVh7nanC-zH-LVzqnbhwdiipla2fVya_cV-Ed-E8JdFRtuvS3TiTllfk1yd_x_XVAB_ph
-urUFP_8kyKZwJvX__2J_s-Tltpv__FRvAy-VaVN7N-VFVhjaGxzr_lxV_uRruz_55m
-}
-
-AWSEntityColoring(IoTHouse)
-!define IoTHouse(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTHouse, IoTHouse)
-!define IoTHouse(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTHouse, IoTHouse)
-!define IoTHouseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTHouse, IoTHouse)
-!define IoTHouseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTHouse, IoTHouse)
-
-sprite $IoTLambdaFunction [64x64/16z] {
-jPUBakmW24I3HY3__yFNc5XdGf5zMRVt7MowXM57j_yAwVWRi-pDt8yETsjx-Hsv-H7WxSSfThiffgr3xKvc-u_OVibLuPdKov1_cw4ONhCz6P4CRR0b3yh8
-qDxPeZskyjS5ubsyRfkv0tkkhkUQF47feNDrEHxG868zGKdLnzh1Dvte3wEQuY2X3tx5RrAmD84DElm933mIM6mSZvxy7GF0uiCoBS77WAURBI7XpO6FWNsB
-gBTTrkYd5zrFJ2qC02LhB58DdM_u0NAGbHfDmHiobresAHYmq2CvGLBD3T2mVAXyjgIy6IZybl0fl8O5gDBXt00TISFlzgLWW0Ab6zYJyiWPe_CrawXtUdsP
-43gFWQ2XLyoJK3T0Zt83VXW_ujP6yhlpD1CWx1GNURDkWCwdKwI3Bz7QjUyo3PIioNEPH3uJDmqeER_du_McMZv5xtoi3chD3S2FzQDKzTq0zOlzerKOO8nB
-x1y_a9-4GNsECKOHvlNB_p9s7AQe9AzVvWTHsaZdgINp4-UNUY7SFWtCTsJc5m4qU3nyOc2W42SHyeKwniutrNi1jlcD6jD6Ei-AWYfxHZxKaSx39obMaISd
-78jygahF4K8U0_0fAWOKdIYFB_YAFE_VEjzvzpO9nDiLkQnKb3xE3mV0C9qd8awSyulO-x7DYBWCEzdvIS0MG2GzFmrBvCpn_G7mptJEhoc-FxzoVdu5v-V5
-y_lQ_M7z_h9-Vrg_lwtV7zVlh-ltvtNy0m
-}
-
-AWSEntityColoring(IoTLambdaFunction)
-!define IoTLambdaFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
-!define IoTLambdaFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
-!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
-!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTLambdaFunction, IoTLambdaFunction)
-
-sprite $IoTLightbulb [64x64/16z] {
-xPS7qjmW34QHGEMx_u6tOCqobaEMjTFplockpu0GnULVWuXsXtJlBGPxlWh8uy00Fmu2K3oQykMpw0C7dWV0LTK0o_TK-9jwmpAj7640lWG0Fle2rB94xR79
-ABmiuj1VubTHCvLwpc-EmDjtVR8dsFlitJJRZhptqHKA7vsTNtkntU9UaRhtEpGjdm48bO0404_BFxQV76WfDvtMuoSfG-BEgayOvyC1pNnwOiDfAPNZNXk-
-TQLCugzmoZuvT1R_x3ki733up9Sd3b-DZyExCka_clcqyFrBptDJgJsW4PI9pqzi-8B8refNvZCWmxUkpFgF0Ss-0hpQVyN26bbJ0IiJFzU_Ly0vJhQZnqcg
-_sp-4S3hyAi3yj7y9G2KDfyKeQ_wyG7RV4jwydF-1kp3Z-alv-ya_e4DtqhoDzxvNXlGga_zD7za_qNoq_mnMJzq-7fg_U8QS3dbL_EErVBv-ZN26WzMrg_i
-Uso8Q1B_T-LhchZMrg_XMtjW09s97o4uwHT182VtBnIKYNzv_tPz_tXz_vhtpm1KrVB-sLwFLFZg_ltBl_3_-6zn1m
-}
-
-AWSEntityColoring(IoTLightbulb)
-!define IoTLightbulb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTLightbulb, IoTLightbulb)
-!define IoTLightbulb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTLightbulb, IoTLightbulb)
-!define IoTLightbulbParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTLightbulb, IoTLightbulb)
-!define IoTLightbulbParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTLightbulb, IoTLightbulb)
-
-sprite $IoTMQTTProtocol [64x64/16z] {
-xTS7ijim38JX1OYszxzm1cAwwCXKdgVgTxVvkJVWYvBD_jIMnQqgxPVMv8rIV_0YAzmsycYZqoSPWiqao4HdPE16GTgy-P8xNeev3mAtYkE6XVHxtidfxPwt
-np_-yOz__7QFVxoeukHtM_jXx_NA1zzBFkPBBlD_Ubncd_KHnw8KG9FbW6VdbbrS-UG0q6k4EOo1OKutLJE6ZMiVmEWrKG2C2cZljMbovRC46IMec6RFbwT9
-ZHBC1UMRtaP5A4LkUaTHbOBv1vallR_ovcYVYQPZxOlnoWE77qspiFBd-U7i-sILhdqVnCgBe3k0Elt7gKxbXr_FJ-t_R6IDnVj_ERyT_ZIoLTgVvVJd-N7h
---CylzQUFy_Fxu_J-E--0G
-}
-
-AWSEntityColoring(IoTMQTTProtocol)
-!define IoTMQTTProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
-!define IoTMQTTProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
-!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
-!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTMQTTProtocol, IoTMQTTProtocol)
-
-sprite $IoTMedicalEmergency [64x64/16z] {
-xTS5RaGn30JGXZttlt1ZM_fCqPIx8_Zu5i9v-s6fqlIGHK8_H97O3q4awzqczTP3p0Fc0VE0US5Vza7JlHvAX_sGWDGF4IYXf_kWETAfuN5QsdCCPVS13QZb
-OIhGDZnqFj38WB3pvRalVybNowXtfHUmp3vVPFOUxzIQoMTS94_UK9l__wZVbz_iOpXCVEh3IVySzR5QuhNFcdBaAopro1TZS_sTU94JFzUVN7ZfZo-yJCDM
-7FNHs5n-Ltwy_BtanRruBOpu2ejxJptpKPDsNdfQxjTDUdO-6JkfF_ldgyZMUrZF_dwk_FZwOziFstxP_iFsNtRyOCOlVlpanszs_c3dBtR-PEVlr_g7Np_E
-wzVyC9qtTltChj_v_SDh_yNlNxy_xm
-}
-
-AWSEntityColoring(IoTMedicalEmergency)
-!define IoTMedicalEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
-!define IoTMedicalEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
-!define IoTMedicalEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
-!define IoTMedicalEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTMedicalEmergency, IoTMedicalEmergency)
-
-sprite $IoTOverTheAirUpdate [64x64/16z] {
-xPK7ikGm24G_84BV_yBhDAkI3HvvS_XTOU9p0IrQ7pzQd_eKYTgYnjz4DyTBOVoOZfrSX5L6Zt0342OhHBnL4Z9FamFHg7_13a2dUGUSJlqyU801VlbI0cXJ
-k02HJ8i1pDX0KVnFZhA8Rdaj6pL0I6DpfkO3KLK610xPJVTwKnhWgWR0wlzGnHCE3xWsmn4tpiP1KTbbmARs0v2YH9tX2R2Idv6dXqnibhVa6903itp3AkVJ
-Yi1czvoROL7hE81dGKM6_W2gpqGjwKjPJ8xLOf4rsiQhoRA_ZFFa-Ov3MsyA9ETTZdcsD4OHRkQ1HQg892xy-2ibCGhZVZA0Czz1Xv_n6FsLIFcsJp0kl0r7
-NDnoNW39zax6WIfsfNnMVum3QHwhFEDvgpRcSYmna9D0IFou3ImUsatcMOW1-vhktvGZuEH-eibbqbvsGw-WlALQE8ruZp5z6m2ZJTG2W9moAKoLRzhrZLJL
-_JmEVsN39daJsunTeNI92u-8pkVRJXliRQJ7qP7kEWeShorQzFQ6kVPYjQirdvWzpHlJaDP1ptYuTBExMvFyxh0raRQzTPf3-mOeka8_deWYsbgsOrDXzeI8
-5tNu3zIdlW
-}
-
-AWSEntityColoring(IoTOverTheAirUpdate)
-!define IoTOverTheAirUpdate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
-!define IoTOverTheAirUpdate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
-!define IoTOverTheAirUpdateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
-!define IoTOverTheAirUpdateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTOverTheAirUpdate, IoTOverTheAirUpdate)
-
-sprite $IoTPoliceEmergency [64x64/16z] {
-xPU5iXWn24KB9C3z_n_kvbQPPQtwx8oiJ4w4-ASNXcUinyYKxQ6PkZqaSwo_aNxf8-a3z07w0Ft4M_PbuSZrc81k3mDiUoWmPIFXikXi2zmcRA_Z4RiC0l1v
-4mUYo8oGFnXaWEpyUT-VRybtyjIdn923FFL1sFEvgFwGRoc__PLHVKfnq7v3oDSN65yaOBVZ9mcaSXO2d7cQGCfTFx38I9INkEaxu1CWOm1aEk2jFnRpXpzP
-aix8c5iguOjkjIf99hMc_umjRP04hEc_BBxmhOEM53zfBFJdyj6NZv_BLsfT_0pmpdVgD-8VoCvFnBt-6u2qrH-jhmkhlkvzhRvHQ-UVz-NNyGFI-SBnioS0
-QVnI_nhdYW6-g_y-VihYEmBGw_WxeBslW5_xxEQUG3P-7R_zGborEduJvA5Fikc_X9-TBOgFPls8i_X5ituGAUk7jde2TXr_LivrPpkRUEr_RLtwqE_ky0Jr
-AxyUXS9sNutVxLywWoMcMV8PKxlzg_HVrsBYUh9_dkpVmdHJplVlis6d4Vh6pp-_Vtua0VYuYGFns-Vdtp-___xzuUF-zVp--iBu3
-}
-
-AWSEntityColoring(IoTPoliceEmergency)
-!define IoTPoliceEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
-!define IoTPoliceEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
-!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
-!define IoTPoliceEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTPoliceEmergency, IoTPoliceEmergency)
-
-sprite $IoTPolicy [64x64/16z] {
-xPQ7SiGW34HHr_x_3sTiCHVkyDYarqskysHf1HgthzQ_B4yLUeuxhdGQW83qCm5vmPydw9_3SqLHUXtFkRyOabx5w-wp0U3Ny1KW2dyDNm6G_7h_0u2zld-6
-JVegll2q2l1A_vDt3-HLF2Lu3-Elp9_AUVcQ_J_hzVb_YNyAuBn_nAAcmY_TFnQ-rUM9KZglxzykIOmANZm_9V8DScKY5WlKkjNpspWtW9u_Eu2WjVbHUD31
-LslpYn9pJoc0M9kVFkFTB5sPttAxq9mMBUp_c1qfAU3NFDSgzSmmUenCX_oup01k72ZfGm9onFleO2Ah_-6v1o2JHiO5-W7les44s9QeKra9JS0IKDaAo9bt
-86aiNxe55U1PiTL6ZxmLFlBRCewW2ev8mFS0Fl9k7KzkzxmZM_GJmyADc1f901Xutv-ry9ctladzfhpd6O3gjFkflfMcKjqOvAD_vSqyl19EPKclxYQdH0p-
-ouoNOpkcJ1AJjpRsJsPyTqIReolvFZIFV2CwF6RPccPLJFVMnENzepIhB4LDfkDJwVhvdMlEPNKlu_h-MSjNddqfBnTKat6-EcGDhyL-jwjZmYypW7V_IA9t
-Sbrz08LxJ9rSamIwgfYNYzGZCwFg-2RwrnC
-}
-
-AWSEntityColoring(IoTPolicy)
-!define IoTPolicy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTPolicy, IoTPolicy)
-!define IoTPolicy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTPolicy, IoTPolicy)
-!define IoTPolicyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTPolicy, IoTPolicy)
-!define IoTPolicyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTPolicy, IoTPolicy)
-
-sprite $IoTReportedState [64x64/16z] {
-xTVLOiCm34PXIP4jdVT_u46vzY1snikvAtnbo2yVbGxLOAl9K5djXbScgXSUG1GVg1p8zTx3P32ByoCm29NXDC1ETsyoaPqUG18oLP0Yeb3cV04zU9SkhKqg
-NVw6TvfysETDCrxbadwQt_tkTw-HTuMEUQV9XtszQS8tr_v_VlUxLpDjlDbwNnAot7a3M-kTGtxh0sAbLqZt1Brw1_1rti0Fvzd5QmAapleAom9ryl4RvB8a
-s1elfNtzWbCnyVurVkhpOwU-ulDR_5BfptdR5wV9-tDUEtwM92ovAwq_f_T1NlP3Dy-qwVNzO10olL-sxwVv_RPnFsxUhzlty_OU0G
-}
-
-AWSEntityColoring(IoTReportedState)
-!define IoTReportedState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTReportedState, IoTReportedState)
-!define IoTReportedState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTReportedState, IoTReportedState)
-!define IoTReportedStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTReportedState, IoTReportedState)
-!define IoTReportedStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTReportedState, IoTReportedState)
-
-sprite $IoTRule [64x64/16z] {
-xTS5SWD134HHmKZgll-5KwkAfnBZ68ClOFpBA8-bEqS_aqkAExaV1qY4oZdA2VA9WGrseQ-ngRrUU-Gz2Ng-7xB9lJx8c8ytz23canjwdQCDKb_Gtpxzo0rk
-NdvJcKnMN5f_aWKqyiEOWXDCbcZs9CoHfytjTv5ZoxG719_xppgDhGJ9KBc9rLoGjvZhwtP6sa_knUosB0-ON25v8A_kKMY5s_fIQLetz9Zxge84hkbLagN5
-tbiDx1SfkhhieKdqJD2TFUbWAfRMmTYgxYNOGhftaaCkyTxZkkzXTTDzxuqk5sG7xxqui1NTz-1oeIyJDTlVZbMirdgomcIFHP6BVQkCCRn_8xjTx6417e4m
-BFKYOYCBd50vJ4IM-wPgvcwcAcsvF-47z3-y_-__-_zUx-c3B9UZlCXOkWL4-lxvnnCaIouBDbHbjAm2MyWA7SKZQgYiKeyiW0se3DURxwRbcTu
-}
-
-AWSEntityColoring(IoTRule)
-!define IoTRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTRule, IoTRule)
-!define IoTRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTRule, IoTRule)
-!define IoTRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTRule, IoTRule)
-!define IoTRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTRule, IoTRule)
-
-sprite $IoTSensor [64x64/16z] {
-xTL74kiu301H90Be-rzuogNlIBD4US9gtbPiHTYKVucggSgFF9kR6YRNHVDK9jTO7LSEZ-CknhMyeKFbO0cKNiY1V5tlVUK4sjFzQa79feIKJmMnVVVr_QPK
-VEJmyykRp1ogkMaJMTFLazOH0xYiEVZg04D51xJAKiBYQ1Do4v2oLBGiw7E9oafJSYB0PC4sUeDobIyquRnNW1uoyGOwv4pKrpbme5nsQFHq0cq8sJRDGKxv
-wGd6DBXNrDkenNAktTUZlZ6uiNekXN4-k04GvxDQr3AVJp0dHQzpYBFh3z2l-O3nzGGAAG_-ROarPc0sJUjKQDCoCPDRBsPdtry6fCoEVZR_3nMaxlRp_8iU
-szvMxyKyhre0bQ_yw2rVLGFjCXdDXpZwu5EgVA6HrQ_yJzzlAbGs7VtiF-h_xnrSJaKlGI-5_97y95_wlEojRxcicNiFLtcJkT_Rl8Kdv6vl77pQF_RwX641
-_JezDxRND_Mn5HH4GFtO3yZZjhRwWb1lMWuEX7i0VkNznMF1G-_q4jmC-RKNZJ5CxjGUzAmlkQnU-mw_A9hyftw_mMNlWsq_aN_2Nm
-}
-
-AWSEntityColoring(IoTSensor)
-!define IoTSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSensor, IoTSensor)
-!define IoTSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSensor, IoTSensor)
-!define IoTSensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSensor, IoTSensor)
-!define IoTSensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSensor, IoTSensor)
-
-sprite $IoTServo [64x64/16z] {
-xTO56jj030LXlGL9S_yBDohv2--w37yOnapsI_ttt_1tuev_CinCV0DLJqO-HyahK4tabtxO2m6uNV7gPMEfd_U_opTwGKJ83hrtcBROMm24VJKeMkuxLmEO
-5BVbtkPi2SsQ9EiLGrlkYvAK0mn1c6HR_G22aWuqixrUJl6WfFRwqYQaTI26RBSl6ksIr9DjzjT-vxv7nfGT5A7rVbAoN-sfljmF809ILvj-N-sJR5Vxkn8W
-jTOBPhqcVapz6E0d-mvX5j1FJRyIcbc3r9dbvv1-aU0drf_We1FRZqT-5lwjs-yVqxSnwacdUlK0kYNCjjyhAU4KrsxVgafA06Elbon00y2LfBRw1WvqazIi
-GROvDtgdV2s2qfTxKSRTMNkrdz1xjuCY0hJOAy5r__jSxXzV9SLIdn7Ly-x2xLer-lRhHnlFhrBV6VPB_VVV1m
-}
-
-AWSEntityColoring(IoTServo)
-!define IoTServo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTServo, IoTServo)
-!define IoTServo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTServo, IoTServo)
-!define IoTServoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTServo, IoTServo)
-!define IoTServoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTServo, IoTServo)
-
-sprite $IoTShadow [64x64/16z] {
-jPO7pYGh30PjRB3h_WT-RtVG08i6YVv3ANKgmWTOBR-4gifNAJKIoAWcp_5aaYxFi7nfhNfj0P0c3t0WQv6EUW9Lhgb0LPbe1TgJtcqFCwyRA5DVqBoTGe3B
-P6sWNEX-6gX1YAYvcygP90-l6tZj2rlbX9sdgKn2vTY9olaTwQgU4CVXXvmexsWqm4zZh7B4wroCF7NXbrlK3l6PN50Eu_HBNv8qbGqBm2zzoAhx-a2gt62n
-5nODe1MvHJrOKmY88gN57Kr5F6S3tZTbunRlPG4REq9x1faP4JbPR-95PlUbGFRkwG_QwxvOaGMLWRuG1PTr8mNey1lh2TD8M-iOK8UlqEQvwNxF86Qmi_9K
-NkJm9SZrt3IYG5g0BKhgkAarYUbNq7zz0viJT8W6CRuMQGT_zX_bdOi1rHBQYAl4Hx-D-GTpoCaRc_CV_YnOGGvV0yWY7tpV_25MA7FzpKqwMjx82_C_cCg-
-VWMY-qH4QstiypVhRSI-VwJr9uqxzlqhsXzPv1rHblCpLahb2GxK_Qz1vOxYEVNrSEGTitvDF7b0Llqmgjhkg2O_Ytw99VulCH9iV8as_VJ7vEg7F2PMFtkC
-NbrbHIDqlRLEBm-xRpbJcSaqcGIT-ial8zQ1R_T9ftto6xZQEDMpnRBuKOhbPp-9KLH7TpOR7Cwjtw2-7hJDlnk_0_w79O8ap2nfD_cnSCxll7x98C_hTzu_
-MWQwFP8__Ep-hO_9rVyIxRlru_lrw_ly3m
-}
-
-AWSEntityColoring(IoTShadow)
-!define IoTShadow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTShadow, IoTShadow)
-!define IoTShadow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTShadow, IoTShadow)
-!define IoTShadowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTShadow, IoTShadow)
-!define IoTShadowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTShadow, IoTShadow)
-
-sprite $IoTSimulator [64x64/16z] {
-pPO7bgim34NLBEdjVyEVmSw9YVWCddvFfLorA01z4yp2_55PFV56DFc0ROad8OksHCziQhsAjgOdaCRK4GSGlA03yFb-pPK0dALU3Y3k-WvuEHc0tgu-gC0n
-zARlfvUBve3KAvqVwLah--NhJknnEL1fHDm0y6Nv_MgYuYE3_zyF90q_L5KsT933Ywi24a4x_MusOneyVBkOi1nzmuQz-0A4yfdD3im-OyVq3Hj-Fvkjwfe0
-qfw-0cQ7-UrOO2FbLGVGrspoMol-1bkM09ozrSddx8awsVr10v9dtxi--oIvwwOypXm3U5dSexyXGWr0wj6lUs207ltGdJw0hBu2LXPtyfze0wJu37XPt5FV
-lFgznDcFrukoetWZwE1NfUPtwjXuV5xdRm1NloD26zVzAs1r_XqHtRYUFoVow5Vgxt-wJnVFhmahyOudj21qjV_4XzVUDHedps4ER8I_H_F4-NkW9UxYJ2Um
-UTuWZEblq-8CkwipJia5F-ELDT-8I9jDI-UhVc33FkmxTlI3FWCXEWqYrtm1xFWS-41-c_BZP_lVX8_FltioFb-OF-Pt982G3_k27LdqmmO9k0Envizuh_t3
-VX35ijzuu40cu1-T7oSsaZ_g4xU8nhJekpunqur0_jJpZm9dEDr6pg1luHy
-}
-
-AWSEntityColoring(IoTSimulator)
-!define IoTSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSimulator, IoTSimulator)
-!define IoTSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSimulator, IoTSimulator)
-!define IoTSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSimulator, IoTSimulator)
-!define IoTSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSimulator, IoTSimulator)
+AWSEntityColoring(IoTGreengrassCore)
+!define IoTGreengrassCore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTGreengrassCore, IoTGreengrassCore)
+!define IoTGreengrassCore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTGreengrassCore, IoTGreengrassCore)
+!define IoTGreengrassCoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTGreengrassCore, IoTGreengrassCore)
+!define IoTGreengrassCoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTGreengrassCore, IoTGreengrassCore)
 
 sprite $IoTSiteWise [64x64/16z] {
-xPG5ikj030HdnAlxt_U30ezXdSAKEs1iaM4zAISd9vLPn-rK0A0Vr1sWcW1IntJ6wbuba2Ej0zbhKEotq0RlUoYkRGGlNIjosoTVQd74GxuX7gfVa0VcPtrT
-JSYsdWIYPxK4h4qz00NilnO4mUnDFJe8Y12mPNi175Dx6G5gpXxyAa2PQDnFxaLMpve34IfMt-f9_EUbMFAbfU7xIGgiabFyMtygO9P1lwiUCYVwPxvDMF97
-Fmxx0VXAGkjZ_wMGMWR4byCJtB7tlXCt93_t2NYPI1HlMHpmMsNC4B5oW5_cdygTj_mowMRL0CQyah_CFxSwzByz_RT3gXGs6sK0_zknlgHNtEr9Nzq5UPdW
-Y_rrXB5dNL6z2jBt3cDjF4L1Q9LEtzlCD0dCd-IHzp-qNCHBCIFSPERjS-FGQktJ4-7bUXoBCFPnQkodvEJav2y
+fTO7ZaCX30JGCTM6-zzt1KP9lluEAlQM85dpQ6dsKtgfJig2W0K12m8M12m8M12m8611m8A01G4B0XO4B0XO431Usei0KZe5xlc2K-K2NEEvgRPy1GQBDw3v
+6QmH1GO31DNCWGfH1Wm2T8X-Ra7G6J08K96_rvXHbG2300N5Fa11KGACNMH-Bv-V08C07V8Pi_sl6WJeGFsk1UsQVmCD0DhFk5xoRw02fG2vg_OCbFL7ys-W
+07KXNckyC99_0-aiNVtrfsSJYUO_W6P1Ja2tKy3FYKZsBT6yOfUelVFMnRkTv_DQOqAs__AMaNfFo3mlK3C5_i_lgJl0yu2EG5xXwoVxFrqqaY_uL3sHVU0-
+_kcMV_DfDLPW_IldoZvFuzLrhW29vAMj9q75oU-P2g2UbwfcseJaHvCbx7xtwPEjf2zWTwl_rtV-8m1otbIhhwBuQRZWQPPVWhGzUCtlmjw3yRoN0nrd_-nB
+rZt_Us4KuFddXH7WdfVFmITZm6Hv-rodEmIO3b3Xf2am7Q22fpam7U34hJmV0cOGc45W1e4P16OGc45W1e4P16OGc45W1e4P16OG-0C
 }
 
 AWSEntityColoring(IoTSiteWise)
-!define IoTSiteWise(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSiteWise, IoTSiteWise)
-!define IoTSiteWise(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSiteWise, IoTSiteWise)
-!define IoTSiteWiseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSiteWise, IoTSiteWise)
-!define IoTSiteWiseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSiteWise, IoTSiteWise)
-
-sprite $IoTThermostat [64x64/16z] {
-xPU7VkuW2CKBYiBxl_1LpZSakRHspzFXByH_1alpyCNKjC-Xgj8OM9N7GAfrMhks9tbJvysSDtFUp7crdypJrE3d80CSGp4hOs0pcTR1qzJ_wAAsBIrdt9wb
-SkJLhCcccfaUS3AJXss96Ptuki_NBPwBj24f_0AUPOc72Z-FvtO1XypLEEERA_0LSF59LF0eyJoeUM3G_JpDctTTOjJn2BJm48fwwivJzmIhzoJXmHOrwtJd
-7UgdzmVUoItjVdk-s9_stvo69ActssaBPnxZAoOTXDaTar8Uez9Y5bcF55pawvHS-BQM5jTcnh58suKNnuxnev0fWmQ_1fAEyTE5bn1eqSXJLJDPU7Nh58DN
-qmupWBBoeiw0PySE_kDv-TBkcShWbwnnG-R_4XjJQNtbgHNCI7c1FVSV-bJaUQeuts9VgrqZZoN0-U9OY1_u84vvwBNyQv__jVxRZn-Kn2_apwFlBuVyEUVl
-SRe4WyRyFTLFU07gDjGfF7widtFzzb2jgh3azPlt3nue4LoOzu-yVy7N-9_thxn_ijyDBIphdtd_XcVxqaws-lUwJZ0Q3WTxvFFr2nr3jM5cidxbwsS9QTkp
-zJDVlrKsrk_NxHzUltzv_VxfzVktr-yVaMjIDpLmVUt--RNxzzT_F_nzVxt--_NpzGy
-}
-
-AWSEntityColoring(IoTThermostat)
-!define IoTThermostat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThermostat, IoTThermostat)
-!define IoTThermostat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThermostat, IoTThermostat)
-!define IoTThermostatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThermostat, IoTThermostat)
-!define IoTThermostatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThermostat, IoTThermostat)
+!define IoTSiteWise(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWise(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWiseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTSiteWise, IoTSiteWise)
+!define IoTSiteWiseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTSiteWise, IoTSiteWise)
 
 sprite $IoTThingsGraph [64x64/16z] {
-xTG5iWDN30NH5Zn9L_jVSARy7OufJCSCFQWQ_Rlyxt_J5-tzpKYhZpYNF67SMDJe4qO61kQH6Mv0p4UzcgoHzY9r6kH7VM6PkjjL6TRxoVelVTmzPi8zCg7s
-tNwA3DgurE5YghSNO5nEqcPpgEACcRQWzOxqImU9RU5EoKpQmaPFzUNhPHI0gu1xhqr2J-pX4kkt9abyYvFKcjtth9_rYGU-JlXz_qzGXpZS-YrYd_OZN8QQ
-xuz_SJ6fukXaF-rxk9XkJKzTfBgC1kW3vrNlc1hpqFTM4jpaFkzz7HLdzKDXZX-FUBR-m0oNOSQFLrE0kU41ZwUWx78sxT8_wXioC8Tmg0TzH-jkCdpqdItS
-RBQ8mFhX_jT-Fqe_seN4yTt1i7ayVwNl5sKcRNlg4d2CcYGUp-3zg5TBwoZ9EO1BIi2vM3hCWxu9wK1qOcekLiP84m77RpMkH-wJS-kaAO_f-z_NSIpnUZB2
-GJUcZgET6QqKj6uC38XTFR95RXAhdG2y96E-WcEkWjGJOuoSsWOBXxD5z4YNqKwqdjaaDsWPHrBRxItOFGjgzSna5wOYL_VhnPnqplsZwOKqoFt-e9bs9xaj
-RepMSutbw4VzE5ZfugHUzjwZFPpLPV0zU8squuHU6GDCW_NkoZdhp4hRHkYrgUFa7iWwHcWmQISXzPQLCNkCIsgLf1Aiz2vdTbMdPkUCd0EfjnMndQrT7ODC
-ecVrDgSFOBK9QM2p-e1Zs0byWrvLj3uJnEmwuwPVfU_3ZklN6yEEVeCP_Stzxt_V
+fPG9SkmW30LRW432zx_l7pogiOc_gONECcjtd4SgViCMj1TyC-2R0TyC-6R0DmE-6V3DW6y6V3FW3pH_KBEIH41IrhO8-0DEp8GVIH-1bQywVDNMp5ej2H2T
+0cl__B8RAf3Q8x3onmInn421EWNM_i0u2ICz0ajV8PQm84-1bP_pAVjmmu_0SuF-SduZyyUtHBABy1-1fX-QC_39Rw1s4NwV__3Y9YPmi0ibsutm-tJXrqqi
+OJUgJOGV0QWrLW__n1Q4tsy7Txk99UoBLhEQgas4toy_tsw261-jG6vsfmS_d-lc5cZ2IGBgx0VXKxytuy8l3AGff15AJtyGStlSJ1XKCyrg9kZaNypdDrCG
+Iu1Ki1VVweVcxNipKw4WHSWWvU47_e8bI4ArYYYW__LRrf_HoeTw_-cMK5EI6RJ_-fNKFP1f10Dp1G6r1Y-_F_GHK6g5Ka0hnGUPKhK09QT4dlmBi4z0ER6u
+XZDG6RHc0g0lVgRqhf0GjM49AGA22CKDgXPxyHkuWRfvO5wXVkyfKZBOJByZOYua_r1Z_en4hJ6GbM_UUo5tDm6GDlpiWPQYQlxg3rg6rbsGKWJC3NBrYPMV
+GCQ6oJyaylY6X2Vg9qk_sFZU_4CRffNmBVscMFbjx8Zz_YEvVNsJeGSBFzNnNNjthyEiwVHhwC6Rdm7lbN4P9gYxWBXbIEOtNdnlYNfcH22T6pJp1EepuH_z
+3ufyCWMWU9o1rsp-b_3_10pAzqAQZmqKcl-VyEU0GtQrYAbbC7yX_3bW3COfjCoW-Il3VmbW3aZeRmp_6IZcWWYubzPzHVWHk4W04fEiE9w1o-bVrdxG5wpy
+pS2n6JWs0yTcuDWC79k1OpDmR0QEpS0_
 }
 
 AWSEntityColoring(IoTThingsGraph)
-!define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraphParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraphParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
-
-sprite $IoTTopic [64x64/16z] {
-xTS5ajjG48JX7fw-_uKJQMVPeZ3ehtBX-ypGniz87dQQ5nzM9xbm8xdWEzxLLpqTUCrvpHV9m4j1igvuroOJKvAjVibZhk25uvoNq2SFxNd5QkLFNcF_EhoP
-uo5DbiZ21UEJxJiyIHR6Ow6rN0GONoHpZxTZ_5p1yF7mthu2dRFZbt9EZvz7fO-zauRt7kvuxs6aR_fMZF_KUEqzJuO0Pe9FYHaWGUvxCaS_k8OazxqtbofS
-vHrLZ-9I-vu7h3XrrzJDgGpOzlCAUJOVrEdpwkxvr_kRwoslzo9V7y-Ht-cVzBU__UrlV_lRtzwElMrwdVstcsxlJyJil-raFGBiN467OYED7hwLzImj5RnB
-T5PP6_PwtNzTbHbVowpgr_sttz7-EvbQP7Ntwhehm_HR_qZZf_O5
-}
-
-AWSEntityColoring(IoTTopic)
-!define IoTTopic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTTopic, IoTTopic)
-!define IoTTopic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTTopic, IoTTopic)
-!define IoTTopicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTTopic, IoTTopic)
-!define IoTTopicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTTopic, IoTTopic)
-
-sprite $IoTTravel [64x64/16z] {
-xPU7rg0g38G5qkRzN_Xgpg0db_LVtTxc51iVXXJAzel9me-BHBJzqYFwVcaHiktoiC_oYEI1v87aWUG3VpBV3XdYk2ZGzyi0ndxfWBPT0Sj6dwA7ux5yh3XU
-QUd00TE7Ci2tgWROYoG3siBhSrw_b6_j5T_DzMee7WXzmNViYlaGIEd_UKkjVE81Z3E-OHg8v95GkXmK-MPkqecB03BnOoX6dih8nw79DmUGlphm7i3PLpQU
-V49UnqyyCANijlFADBdn7t5lRQW7A9EM-4oSyH5lQMUgYmLEsOoxVnW_gTLr64ASVu-sy798QM6tz9xmC_lG4-yRUKriZT_iGTjQeHElyOkJfvf6sjpB03sD
-htoSqrOdpyQoz921sIw-9tQV_yEhAntHNjKl7T4ByfWlyM81Z6seh7m_DB3oSlwUcMl83fCVYTNuLGrEizcgXab1tVCiEHhEr8uHyCBVsjyYyHo4SpJHcAR5
-_kA_OLHS1N5E0QeS_wt_1ouP3TMyfGEYR_Tyukvno2S-DaUsTkA5B_dRQ-dDWgDlb7Z9tnAOZfHBl_0hTpiWI_tK-7LrVh0TY0EZwvLpN-Mnp1zR6nRiBMET
-2iISUzVvOyt_hWbSl02IL7jIFtGGUIPJC1EVyFGLUGA3RHxnoPBdPpywzOKlwrVTOJYRyrdOfgnVT_Kdm21_BULh_6xNxmP4sINvXPVr-sx-SjHTsY3-TFxJ
-WcUQROzvHl2hzb-zRm_vhzy_Slyg3sM0V-t--IltxrztVlXt_lgAy-klfVy
-}
-
-AWSEntityColoring(IoTTravel)
-!define IoTTravel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTTravel, IoTTravel)
-!define IoTTravel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTTravel, IoTTravel)
-!define IoTTravelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTTravel, IoTTravel)
-!define IoTTravelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTTravel, IoTTravel)
-
-sprite $IoTUtility [64x64/16z] {
-xPTNmjmW30ON0K9p_ml7i8rOBk1DppylhhD57_NsXw5MwY6PXUKWPh8SWbcgTulfgOyr7veFpOVc6_-o7ogArKC6MGuHud8Go671q53PicDXc1AzpXJk0mfe
-7aIXhFG0Ej7883W_Z_lvp0-EALzPOpBZ6uwqwsjZvPVKaxslZNf1m_izthzpxzILsTzlbJ9Ll_dyCiX4Vexatli9_ZEXwalw3eMSxiJG-y_xg_m21wXivsU3
-FgIrRwzQozFFOHE9fVk0Lowh-hLnSey4YAkVztU9K2PyZu9uNohnwQjiSTS4qjEFKXdEJvjdgC-lzuqzufxV__vRY9jaxqUf38w_udrV_sDVqy9r_udp-_Qx
-GrTNIwxzzlrdd_1We__W_6rIYQx_hiQF8mJCZHyJywS2UMxyyn64otu1XNpLbnfzWU1yDt_jT_q8oSrVO_bP7Nh2Pl_JngolZU7_hw2nG9gfd-y1TZt_0fI9
-_1qYrN7-vVMZRrzf48NoyVhvy_Nxv_k7h_tN_Fxr3-CR
-}
-
-AWSEntityColoring(IoTUtility)
-!define IoTUtility(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTUtility, IoTUtility)
-!define IoTUtility(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTUtility, IoTUtility)
-!define IoTUtilityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTUtility, IoTUtility)
-!define IoTUtilityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTUtility, IoTUtility)
-
-sprite $IoTWindfarm [64x64/16z] {
-xPS7ZWGX30INQFV_FtmqdEH9BA2B6qfXOfbimUsVaLLuYQgkNBogBnUd6lbMD0zzQFM1wWFL1wglU6RVaUBpaefOBW48vUA1v0h5T-JA3e9f99nrB74A841E
-asH03heh-i8a0zp9J_UT6Eq-hVkiu1TyAl4BlbDef_wvGdzSl3qrYm_u94qNJx_H5ZMXFoxU7fN8LFkj-FN-i-A_u5lngxuLt_SZIVJ7nPkVgZOUFok-Dtvw
-r_SfmuhV--sz8xxZfylGDRkHKVy55W8cqSd-Jtc7GZrpSPhr1GV4qdR7zoHy-bbq2w3kvd7X1qz6unS1bSlsDuRZdq7KtV6j_bT4QQtertyy_xC5M5y_8NWB
-iEwtmSk0k8vlyxVlMmtEyrT11hu5EAqVZ7qBiFTX-MFWMu1T_fZilts0zVwtlP7_Yd_BrB_WavClIbPz9J8_VltrbokhVhE-slu7yBrt0_-B-qVRlyP9YYvV
-tJz_SV_-jVF3-_prXVFh_-83
-}
-
-AWSEntityColoring(IoTWindfarm)
-!define IoTWindfarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTWindfarm, IoTWindfarm)
-!define IoTWindfarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTWindfarm, IoTWindfarm)
-!define IoTWindfarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTWindfarm, IoTWindfarm)
-!define IoTWindfarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTWindfarm, IoTWindfarm)
+!define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingsGraph, IoTThingsGraph)
 

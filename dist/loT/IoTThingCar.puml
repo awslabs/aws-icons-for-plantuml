@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTThingCar [64x64/16z] {
+xTTLei9G38JXfojKzxzQtFbw65m73_cHQDi_cKPJbHykvx-yoLm5F9FnN1NvdefSZLllnICfb8Wtu6yNVnPzphDhyloPp-D7mxrvMCByLSv767_Mq-_2PbxX
+PTtzb_CNpCX10hG-uFyudom9ymjZ9RRQzdR-LdTEFju5hmXiZE3fe1oPvthxXGsUmtrArvlmmAg-vkz7X0hTNI56GVymVpbVhfzmVjOzL8Fuxh_tuNDTpbTE
+ofqEmAldF7_vylVN1
+}
+
+AWSEntityColoring(IoTThingCar)
+!define IoTThingCar(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCar(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCarParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCarParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCar, IoTThingCar)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IdentityAccessManagementAWSSTS [64x64/16z] {
+xPM5SGH13C0Ai7xSVxLXJVmN7rzuDR2ePSWJ30O3uZ1SuSS9zFC0Fz9tOd34XtY7lRwoiCylUq9WTBCFnN0mMtrxdvPZx2rasV_O0GwbX9rFHD2Eq6KrxFrQ
+TVrctZgV3A9lmBt1aE9RaamtNiqOcI4JtqxSnTK7XpkVS0vfi837lEb_stsqo-fJ3i9jNOzc_6BtRaZ7hTc_TlrxM3W_f2pfKz-pVZzFLj_TqdMtohlkRw-l
+-_M42jjzmsBWFBVxpn5n8xRxnWe7_eyGWZpWc_vL_-T1VeP_dC5Wy0W
+}
+
+AWSEntityColoring(IdentityAccessManagementAWSSTS)
+!define IdentityAccessManagementAWSSTS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IdentityAccessManagementAWSSTS, IdentityAccessManagementAWSSTS)
+!define IdentityAccessManagementAWSSTS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IdentityAccessManagementAWSSTS, IdentityAccessManagementAWSSTS)
+!define IdentityAccessManagementAWSSTSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IdentityAccessManagementAWSSTS, IdentityAccessManagementAWSSTS)
+!define IdentityAccessManagementAWSSTSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IdentityAccessManagementAWSSTS, IdentityAccessManagementAWSSTS)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $LicenseManager [64x64/16z] {
+fTC7SiCm34JH1Vk2zxzlu8Zke9GCrctQ-xPL-BsnN_yQWm460mm660mm660mm620mG030TSdk4lT2NWUcuaVq6_l_OLjGFNKy-753wZgjyTzZm3G_O3QJZsN
+7tv0FmE0TnfnB8ttBQzxlm89nyR7bbV7ksTXV4xNthp0cPnwZNfzUczNlzzswddjDVRxRL6loszsxVN3zr8wdxls-kORRErVNX--vWBa39HSn_-zm9R819kC
+vVbNNo6rj5vhRwKAwjtpsYjjnKWNsAIpeZmyhxt--jpDvYn0pw-UrrvfjWaoRHcf0UtfUUq7a3g4PCi3wCbUJyzBNv3Px5Kgq38QCygBvnzz0L2PlZslVx_O
+QoJZjq-nrvldkTSEj8Gq1eTzDA3ptVFSQq4U0582CDxEttjWRdtLaM1BWzNpFFpqVOMKt4QpPow2wdWUVhf-tJUah4_7y_3JyyfMwd7_rbBfUnv-UdwTXNNa
+Dvw7dwu7TDGwbl8zvx6DNv_NVaRzVAgrcsTAl7ciRVqpa5uy1H02ZsWwySwLA11xcbVkDlU1v_MZ-y3S1sxSe9ZV1-O-a19_OKgw3qmluC_tmS0C1cOmC8E1
+6GpCO6060pCOcC703m
+}
+
+AWSEntityColoring(LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LicenseManager, LicenseManager)
+!define LicenseManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LicenseManager, LicenseManager)
+!define LicenseManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LicenseManager, LicenseManager)
+!define LicenseManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LicenseManager, LicenseManager)

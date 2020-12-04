@@ -1,14 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Lambda [64x64/16z] {
-xPQ7QWGn44CrFV__m-bcPHy63-b5ARTDw1qZXhtxLlhNloecjVsAIT7t-vNkaBw_fhDuap-XVVzycc_o1xJlPmcoxNyBW2BhMQDF1D3fZzO0W7Nyhl8e1U82
-g8R_Tl3U0hXjNW7LzmS3UDVDWtyxW7K1t1S0QG4aa6y1KC2cvcKB8262cWPldJrY28TDpKj89xuA1D1SP0P_jHRQ0CFK1k3uKLe626WZVdmQlBL92Tcw01pF
-0ArDkdOc8Gs0qLawD4HZamPiEIG0Xnt6yzTL1X0HZOETGOVKF0S0-C7Eed5pywegu2VnkHuEvTRFcHpAntl_cYaBre6VSkYGkBP-pgIX4y21dp8DiPdBtf-0
-NwzjjGucNcKxluFaQo_vti6BQwrmoxtle7_zwm4
+fPO7aiCm30EXIkR_3xwYaSQG6J65k5vs2O_e94BfxwJjaQ10WW892YGeaA10WW892YGeaA30mXbRgY-mVCAMv3Guy9qk0MXdWSClGK7kvpYyK85p3Zm9ibkW
+Exoi0j_oCWkKZtaMDE13VXty52IKJ_Y2cJeRk0Nab8gqBY6XViuBKAUW8ZcyLs0AS2uWNe6vNLu1FVC5UNxdBB6U1Hteb-h4FnUaycO1VIgeGFSBC6y5m1YT
+KQu23g_swFO2GtNYhI2XZT5Ke04UhxVnStG3n2-WAzlukaOdLB-0Ma4RYxiA9BPwl6xZRO6ArCNZTOq7VQrx0Jdm9CYeihwXksYfJlmIz36M2_0I6u7kuIEN
+H0NeXlHuxG2lqQAuW7WyZQz8V1kJokaFx6j4Iqog8rzGbDQ8A7fjaKXWndTL6cyAZ523-_WyDBH6yriAG9TWn_-7reYhC2zF-8gyJ7IEL83uAJ3ZpJbI0UAN
+m8xdDU9LiBpSUA3HEPhd8ilBnZSaNYCz5U1gp2TGykqn4Hovigq-POYt0bSIysxaPTHFbDSehr5Uexn6UNNveE0H53o2Wby
 }
 
 AWSEntityColoring(Lambda)
-!define Lambda(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Lambda, Lambda)
-!define Lambda(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Lambda, Lambda)
-!define LambdaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Lambda, Lambda)
-!define LambdaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Lambda, Lambda)
+!define Lambda(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Lambda, Lambda)
+!define Lambda(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Lambda, Lambda)
+!define LambdaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Lambda, Lambda)
+!define LambdaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Lambda, Lambda)

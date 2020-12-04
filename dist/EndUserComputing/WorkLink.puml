@@ -1,12 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $WorkLink [64x64/16z] {
-xTO52WCm38NXHzPOxt_VkM-1odpvSSA7Lb9_eompBb7i3RuWJfeyczxB6DpaBPX8ezUFzEcjQAVtcxgy4wuYx_80NGIuyZxn1a_r8e8lS8Y7lCakHXdoTPzD
-UlrLdzucFSik7VACGpJaNNYVtjxVAnyLln_jFdw_sdrLqc3IvXdoaJwzjVbucMhoWh0cxroYsEflb6Kh
+fTDNaiCm30HHPs86zp_lvaIpiIKMvl-rWuJW3TnZdPe1DGDg1jGCg1bGCw1cGCs0cW7zx7BwPnSAp1xTpyRJoDS_OVK3l8A7Ve2l0kW7-2g0Ve3NZX_WjUC7
+UB4F3e0N-o80Ni4xu3S2wFS31a_7T2a2DlhJieYWQxJDFgRD_ZHvezVYyHhzFlHY7-2DNkm3lD6BVO0tUXttHg_ZtkZ5FWvxiO_3Nkm3lD6BVO0tUh4Fy4Ol
+zl7aVxPuiO_9NoQ_h3WcBvCaNP_v1Ns0jt3imni1zlk1skCr_enySW2zo1S1z2AV6rxaSyEBVAAtSEGJVH4Wd-Ih0FbSVRt5G-02Yeuf8R1p2zaCP3EGpK0s
+0zaCP3EGpK0s0zaCl08
 }
 
 AWSEntityColoring(WorkLink)
-!define WorkLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, WorkLink, WorkLink)
-!define WorkLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, WorkLink, WorkLink)
-!define WorkLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, WorkLink, WorkLink)
-!define WorkLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, WorkLink, WorkLink)
+!define WorkLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, WorkLink, WorkLink)
+!define WorkLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WorkLink, WorkLink)
+!define WorkLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, WorkLink, WorkLink)
+!define WorkLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WorkLink, WorkLink)

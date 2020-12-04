@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemManagerOpsCenter [64x64/16z] {
+pPQ7SKD1448BW1drNwrpOCSS_7N6bdJfSJdS_gU8PtsMLL7okYESD7D9gmCQhwMVVzI0rwf_3-julFpo33yNKIy9rjP_o3Hni3Gzy9AVSUMtk6gqbbjSrJlV
+S5a1fnNFXiTwW8edlkz72Jh_XZCC56SQOLflorfFcdN76OqyOhJp549npvi64t6yDS4xSiutTxmQmFUMfoDp6WXkoiLqIjA23_TFvlsgrPxc_iTTinf_DU31
+DhGeAAxVl-G9W5iy9-vvNCOPNJiVRJiEPj_-i69Oh1tt9N7fe5ePc7Wrm94di3Gu7JvaDA3XEL-pmK1o931nCGWpzCo3669PyiXYtpCMKxmlsVJqpdic-EUR
+UB_vCfyDEjyDKFcyn1FU3OW57pRnMYnuLyMxmDj_qJq
+}
+
+AWSEntityColoring(SystemManagerOpsCenter)
+!define SystemManagerOpsCenter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SystemManagerOpsCenter, SystemManagerOpsCenter)
+!define SystemManagerOpsCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SystemManagerOpsCenter, SystemManagerOpsCenter)
+!define SystemManagerOpsCenterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SystemManagerOpsCenter, SystemManagerOpsCenter)
+!define SystemManagerOpsCenterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SystemManagerOpsCenter, SystemManagerOpsCenter)

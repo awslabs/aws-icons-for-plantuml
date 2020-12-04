@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ServiceCatalog [64x64/16z] {
+fPK9jkmg24MFD28w__d-LMZykHNoEhrDjNld2BBYpzNUbpsM7mhyKE270ZyK-A703mL-AF13WHyA_53m2rYP2e12hE-2_a9NmdsHlWXwJ-cui5IpPbKbNjLK
+q1D18m3QRZKm0K2M2FfJO02aVHTHaWZ1VmigG2tfWXNWAUWFWOB_HndSTXif4VIxm8J4t3OjGEpbMWmmyGz7lmdcr_NU1Ae4bDsyWi_YXE-nSQa2s6v2gQ7P
+fQy0gm2QyDq96Y7OLvZIfgbSbwJOYu8olWEpUoKellQY4TaZVjJFW9GlaRo25y-nzG8GWwED5CahIieBgBaLwE9r7MDTBVqaHsrMm2dlixhacuyKwqY4O0vL
+iPJlBRhjTruWYvy20S3MSdwMBk5byRwnbA_WVH8fpadmZMFuBe5oVU4LqaCG10CGWKJai4q1GrzuWKOTzKCk2uASpwLDj_oQbpt05lsp_PnzbkIN-JlFo-y0
+4JmgJwkmx_MRV8cZ-o5AF9UcyJnuGdtj7qs-DbfN5iXAGLOdNs0ll0C--Tvh0TdglvMOvCaRq3pdEy4klZ_Ft-Gr_kUyWZSlBppD-KhvkG46sU9h99-y5V2A
+_raPtndIkvLPEJLQbLDmLB6kWRm9Hl-QmDRxhNFgkf_Bh9xvNJ1-2cIsq1bxbiDs7Vy2yRqcFxug8F742Fo9iixX6Zz6yTkQ_FZQWIxLxSRIF9Riz5imlWLr
+2nwtDeuA_XICJC1-FMTYstVr9-u-dW83Ierdzoeg8dp6Fsf00DMv5TF0uZRGFE4JGP3WJd6G5OKnxuKPdmjwfTe1dnq1AEYSpmLx72kApkGv_ovG57D3xEAL
+_vLWpW_7yrV-bma8HTVp5puJv2ld3mNZK30E1UDGC0u5ur0m3WNZK30E1Vy1
+}
+
+AWSEntityColoring(ServiceCatalog)
+!define ServiceCatalog(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalog(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalogParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ServiceCatalog, ServiceCatalog)
+!define ServiceCatalogParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ServiceCatalog, ServiceCatalog)

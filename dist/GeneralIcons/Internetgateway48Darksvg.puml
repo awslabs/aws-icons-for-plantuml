@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Internetgateway48Darksvg [64x64/16z] {
+xPG72aGn20KlOCZzJxjz_-FZ62I5wj3IndJxLegYQC8cRM6JjfZG3MePt71JIrR7a7EwMYTrjIVzGM1T1cDnT-ew1tsM2J0wvhyu2g0ENW2iaeTmRxHDQ4SE
+-tmmsFO1BnYkpFV4JRaiOAu5RC8j3hVEyJc2keEzA1FXdaDTnhqE5qa-7C5doJtmtKjj7klT-WtmuOPreFnX1obJQqPVEyKEsZmT04KswLfCtgVpzy3zqPEs
+I0UVVowkdnzWdYR_mxIkpv47FkW4YZThYrbxdg8edW
+}
+
+AWSEntityColoring(Internetgateway48Darksvg)
+!define Internetgateway48Darksvg(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Internetgateway48Darksvg, Internetgateway48Darksvg)
+!define Internetgateway48Darksvg(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Internetgateway48Darksvg, Internetgateway48Darksvg)
+!define Internetgateway48DarksvgParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Internetgateway48Darksvg, Internetgateway48Darksvg)
+!define Internetgateway48DarksvgParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Internetgateway48Darksvg, Internetgateway48Darksvg)

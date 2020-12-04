@@ -1,14 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ElementalMediaPackage [64x64/16z] {
-xPO7aiKW28P1AU_-9zw1i99C6culZoc9vMC4zDV7ZxMdFKs9z1qu8m3oMsbfuDRaBRHs8n7DIzVvm9UL8ovHpAKX4SHqDXDu1As8cZrJIz_clnv4JlJCzR6K
-KX2hR3iPFQkAtDSi_W4uLWIWE--7rW1e-8AMtOCXoEwzMRf8ptabct75Tq_IdX-fxTTyLdh7nyWbRnF52hZFdvLFhFkEjoXvNp-sp1HuCttizuzr5lWR_QZo
-Ablz4ftY6Q7BPbSZrtaBV7NSj7kpIOcFGp2Ec_-GnjOlyDsvnOzuzKbVOwhm3MGS5ZQUyaJLUFrRV8-c5FYrKZCQBz5M0l-xrm-lT6gT_uZByhr-k7un0gul
-36FDsQr-kNxkjTwu9gcV1VqMZakWnqX5l_Sp555ttgltL_Bb-oid9hzt-_xxkng4yRcYBtc_rDzFzVVRTxmVK_z_h3tjQIy
+fTM7WlCW30FW342-zt_Xtp4Pw4_H3UjcnwSMuYOOqdwIoa6o0Ca290kGB42o0Ca290kGB42o0Ca2o8AohaKNO9Ak5uze41wXp-yoBr3QtRAqeXec_ZRkcsmG
+6bw_BBN9XfcEHMoBPskgGUZTyHw_HCDC0-lvqflVrQXXwWSD-DBx7DJOnATXxcErpurha1vVtI_AUmfxFBx6VahVLqiUb-zRgJrGZcUHHv1oBAws_xsnFuzw
+lVVFKm_YlrRNRs_i0-ptyGEkuxUL3bxUo0yPvWSFU7kR-7j-uL7UthwkQ-K_ojlj-ONfbl96lbmBBtnBU1lyDcmy7mRXxVPqu8TRnQNmDlXXF_cMylO33-Nj
+1nxAsmyyllMLzs-yLRxtSOQP7Byu-sc_-dSjnx2Kr_pivnKDmhk6v-FydkVd1PZvuxtIvmTqwruJ9XxzJKyJI-6Fit4GO_xvZ5BFhOmCddCyQt_xVZaRrZJp
+XdWY-_kqF8GyvNqHQ6lSmo7FgNmHs3zlwzpRGTRQFUq8XJsdnMxJ5UqTuMCOF7eYcecSOmmLK-c3gxqCF1blMMzPRrblMMzPRz8d2xwI1L_9Wdy
 }
 
 AWSEntityColoring(ElementalMediaPackage)
-!define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaPackage, ElementalMediaPackage)
-!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalMediaPackage, ElementalMediaPackage)
+!define ElementalMediaPackageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalMediaPackage, ElementalMediaPackage)

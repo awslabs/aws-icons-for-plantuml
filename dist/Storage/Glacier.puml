@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Glacier [64x64/16z] {
+fTC7ii8u40RXdf4coVS_xmRiAYo4sE3_XKhqXsFTbZyMczL3e1u2zH2eXq0z1EeXK0-1UWZK0s3VkpKL4G0HRTry1wojDO5rsdq1rjxr-h1vH9oVTkiNsMC2
+bZu4K8jlry1VHdi9cxw3MEuleZV0Bs3j3UmVxa8en0ciFVoBjr6nKzhslm6bvnqOxqyBz7y0NC7o3emtq02QRu7e2k1v1yORw3IzdfJ86GZlAW0T8k_0U0D6
+g-p2EL5jVqzLkAQM0VExCDv0eEV3tzSdM9kzljUHd83n1XAvdtYu_JttY7TWQ4x0k05G__GwTtfE6pT0oC_o4sZOj_u4b9Zp1Z43Yc_wKTMmAGz0QmA4sFMZ
+ZBxqYEKDWDpsmsarhIDo2XSGo8y-aLfc0hGu0GVRzviRw0hegpD0j_s0-hguNgriA4ZiUYNg-z844C53qLtVy56xHHTEWrtViJ5gF-UrlkkTDdu2wHaUkUi3
+7JiWht_lTEqB6Jj0YTTV_UW7r5SWF26hOM7renToV0CKa2e3YDhtIenlW2bNBosgjdt7nbUWKh04coxYqXjzh819LZaqjAgwPDMc3zfO0K4YGW1px-1LzRrF
+PAn02lTvrHiuPW362YI8gW2g2grkm343Ggs0eA__u5KETWEE6L1YB42qgZB4aAhoLjVEVW8CMO3J02-XPzrszXFGG7hK1z00hN90OWAEJy05G5etzuW8D_Dg
+oFdy2Sn7S2p0I5EcjSgiw_sfg6d70fn6kBMcggrrUoLDytpqbdu1bjL-nqFWU0WS3u7Z8N0y18w7mF4GE1u2nqFWJm
+}
+
+AWSEntityColoring(Glacier)
+!define Glacier(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Glacier, Glacier)
+!define Glacier(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Glacier, Glacier)
+!define GlacierParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Glacier, Glacier)
+!define GlacierParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Glacier, Glacier)

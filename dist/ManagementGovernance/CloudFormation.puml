@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudFormation [64x64/16z] {
+fP85SWGn30J7x97__zwGdAibAQ0kEDZjDlBEj1at60mm660mm620mG230GO330OO330OO30WmO0uWLuIaChm0c86HiQcE06n0WD07NFs0gHX1DINPptF_JKv
+0NaEp8H2RcP6ifOWpu6ATAdrd5AzJqEU0osDosgKRlb2bmBKtZCmB5zcFz6-65IcteA2Olfuv7mJ1vBZvnlg7m90wgOllAB-8L0JK4rVN5zdK85c-ZAKatyF
+s3uKmzT0HZFzh72Ztow1Xcpw_aNIm01CVnXqid-W0SU71OaF9adNpnRaQrywakblw95HVTyFL62OFkU6NtnzpWEZ9Q3nv_qxt1zSw2GjFtqZylBJaT9qQeP_
+H7qBrrVKzmFhxFCJ4T6qwrFzTTy__TGFEgY_RlktFzNtK7yPwrVVHVtb-JxgBziNeSjI75zyV-FuuliRnnVVtpY-_Cf_H9HV-1aFPDdu_aOSB3yOMC702WPM
+CB22WHKCh61W1GCh65Z1m0e6tW4
+}
+
+AWSEntityColoring(CloudFormation)
+!define CloudFormation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CloudFormation, CloudFormation)
+!define CloudFormation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CloudFormation, CloudFormation)
+!define CloudFormationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CloudFormation, CloudFormation)
+!define CloudFormationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CloudFormation, CloudFormation)

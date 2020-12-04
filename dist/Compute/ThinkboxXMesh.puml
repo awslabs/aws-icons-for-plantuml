@@ -1,15 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $ThinkboxXMesh [64x64/16z] {
-xPQ9ZlCm28G7R3Dv_nV-3sG5eHL1zQewuzsskRx8C5nNlTxrBhFVq1p0u34z1G1ayWXV0gYP0h9ES3Zd1pXumOHo-m2O9_nm7m2GOvuAACSdF6tRh_yWkkbB
-j_t6NhEaE06cQ9XiDKCy5VpsnBEMhZMWyHHLcQB1lolSOqt0dq_jADenQLN42AzBOFuK1iDmH1HJi2fU_JRlgE5j-F13_zAEdsdBAunPejRnrzYFRpASQGhV
-ICCxDXYIJTu-M7wXvcLZ26haInmrRpUMapxvOABGBsCcdhHnsTABdclEtkyAyPCarGf3amltOOH4NtEpX7uOilHyA9uEExxORuZVxJyB5VjT3cR_zVg5KBFL
-B-BdUeuVFiJFsgRNyTlbFxRuPVvq-R_5B_DtjFN3D8kVSqVOy5waglh5ZXVwGLK_3HB-g-ftLZcbC25b_OwdhEuVGBpvk7zziN_c_lrVFETdqR-x-O4A7sB6
-sVmXsnE7V1GIFU1ZR5lY1nylY_dHlZ-_di_Fv_Fxkzxr5m
+sprite $ThinkBoxXMesh [64x64/16z] {
+fPK7UYKn28CVumAv_u5JBEkBji0Mb5v-MI1dugBzDreGvKq3Rnfuqy2R1juqyAQ1DmsyQU1D0oyDfjci3RmoU5wVUbPbuBd1-8J7ULSOU6fWdqVV49ORUAhN
+QsqEiJEL_COG5Rzh7aFy4x_CrkLzxpC4U9PPyhSoVbkENYopukVhQcnTGb6cg-wq9yHKVfvG2649ZyhEtBu-dMpn8k6hJQUAvpkVN8CZpQR-WiV1TrXymD4s
+_u8tFTXuY_SoxFydFfHdTEwVQxZxdxoCoei1e-ENKIW-BCPuVk75GA9_xv-3hAtzAKy3HkTdnczoWx9BvTN0JtGmj_yRYfS84buD61sC-76Nn8HN0-RbuOjL
+x0VHCvu632nxGo57C-Lfe9DFZVwSxfwS3nv-2Y34MgVJCE5XC11OFkCM9jsVb0_7uTpRz_r3zBi8I_duf1xkRRFBBLivpZcF9Pyn2KbqD5dpZgUaz7YoS2D_
+v8FFRoQMNIm-dYe-N7k4ner0tdD-mK3QurqOG14YuS_48OVZI1hYoMwk1g723MDSyenmH6FXLVxmTvHd1DmYI7dLCjj1b2lN_wnKmaEWC2rvYYAV6F3kfRnN
+V3ZleQ-CzueFFZVF48agtgVyCMLAUPQ94BcYabPMytcDtk6ZoqUNZouVNJwwV9Hyq-2jQV3MDFW
 }
 
-AWSEntityColoring(ThinkboxXMesh)
-!define ThinkboxXMesh(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ThinkboxXMesh, ThinkboxXMesh)
-!define ThinkboxXMesh(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ThinkboxXMesh, ThinkboxXMesh)
-!define ThinkboxXMeshParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ThinkboxXMesh, ThinkboxXMesh)
-!define ThinkboxXMeshParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ThinkboxXMesh, ThinkboxXMesh)
+AWSEntityColoring(ThinkBoxXMesh)
+!define ThinkBoxXMesh(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMesh(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMeshParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMeshParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ThinkBoxXMesh, ThinkBoxXMesh)

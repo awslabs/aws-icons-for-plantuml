@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AppSync [64x64/16z] {
+fTD70kGe343HBv4akFzvPxeh8Tn5UO7s_zaatutzc3R73m4_1FmGy4F03u5-2FH3e1y2_H3eXq0_1FeUg5a544cbxViDq19n9D_qAr3rqTHcRjPA4f2RFW2M
+W6p1iwhrffz00yhz9iO-0XNK_D-vx_ihp_vrjdq4sYFV0Ksqj1zzTzdaSsE9nBLFwEKSjOQUvyYkDx2O0p21Ya0jcdTz8lVGGx42_fv4pkYF_GVl4x172ZQz
+Pj2sVI4jDn6Qj_dzXhWhPTihjKSWWyRpjEPUq6qFtX-px5_pE0Qxtf3rAWkv9P8l0stJDrAFG4QUtrjwfVhtleQ-FyhcxjSVI1JtJPzx09JyNl3QPtU_xmlo
+3jBr-nE8VKC_7oy9wcV7Kx5hxx_stm2m-6fQtBy9ZA_dBsXLjBy2BOh4Ipc1CIxtxw_WIE_EPznTmj_uUnxzME-_qlwcVkbvzmNr08m0F3h17lzVzFsOqlB_
+Il40Z0L8PEYzcm1YJzGaxD_rDem9b5GRe8-evkelrBtaCf-a-j9FG7XCwjTPNrzR-mbuLO3IVm1AyhKFm8CGwtiW8xRfmp5kWGBDT_qzaA7ufhy7J6E-zlU0
+Lw3vlb-1bjfI5m4rl-ad822fcdjtQqK1gTtl-n4-6EVvExTzN8ALf098oitVx7r_VunhVmYCGs0S0kCG68V0E0J68J0EWN48Z4DW70B_0m
+}
+
+AWSEntityColoring(AppSync)
+!define AppSync(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppSync, AppSync)
+!define AppSync(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppSync, AppSync)
+!define AppSyncParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppSync, AppSync)
+!define AppSyncParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppSync, AppSync)

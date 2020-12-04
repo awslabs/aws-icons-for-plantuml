@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AppMeshVirtualGateway [64x64/16z] {
+pTO7ZcqX30FG1SGFxt-r_q-9vbhWQvW-KK6KGrw12FwzGD56FKvqFGVz1B1DNS4_1tBgw3jkSpjVPdSaJV7GtKh3QnH98zvwaiT_C_N8unZ-Tt49PLo9TiZP
+TwlU_PcYpxtvNCw3V6YUbwQFiVN-E8rvpFYm0SmfEV6SULrnvEb_MbZVkt_OLqVsU6cCjtV3TiUT1qVq2ByVkkUzQl__QS_wqg3replEgoDdtmtAU7EGd8Uf
+RgFtGxV94mil3J1ulT6U5xUUvl31wdD_DH_o_AH7Dn_nUc0_v1-ET__44mkN7OCtsKvzhTx-8WZdzxn--VlppVNF-vRHz_ROr3_G-zFwXt8Uoa5VlsdU8aDo
+WsYz-YaavV96SNxK79YwOF8SLmvLf_NFFnsayk-zlpecUVJp1KTUbtrr-knrPlz-xPvzTzZtCnOFDO1P9ylqlQXwtGxOrtlLjh9bNwhj3i7d1Jpqu6q0UyyO
+s7Zk8pp7-UVYFm
+}
+
+AWSEntityColoring(AppMeshVirtualGateway)
+!define AppMeshVirtualGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppMeshVirtualGateway, AppMeshVirtualGateway)
+!define AppMeshVirtualGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppMeshVirtualGateway, AppMeshVirtualGateway)
+!define AppMeshVirtualGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppMeshVirtualGateway, AppMeshVirtualGateway)
+!define AppMeshVirtualGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppMeshVirtualGateway, AppMeshVirtualGateway)

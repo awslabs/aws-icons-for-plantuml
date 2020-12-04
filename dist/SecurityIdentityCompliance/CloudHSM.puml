@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $CloudHSM [64x64/16z] {
+fPM7igGW50KRa70k__-_kohpB9OLtXHTQLBtU36WDyg4_A3DW3O3sWneCw3DW6q6R3DWcm7R35WNE9XoZ07h0Yme0zO5O3R2nBUfhxLlKrzhtwQ-rhvDVIrz
+pyaZfE30XQJ6ogVpawFXicwMlXay5vABMShHGTBDx_ocHpK2v2_zr9HFp9NV-1ScIOvuLZpuTBzjlfRhRoObt7Cl7LB2Vtoz-SyCfa0y9M8f4PAKzUDhxPkZ
+IFu-w7Z_z-DhxSDpAHO-F1zj-jev_ek57uZMhLzHxsjs_imIJlPo_XhlryzVv8Xcz_MJ--ldXxVhrquoP3Czrwy6NpFV3eYoZqwMHYR-5N2nIANTlpdb_mVg
+EFz5TZHyQKiPYiP0hUFwNtoUNrdouAutG-3qg_Kpz4WAk2mfExpKS_brvfio5EMOLI0DWNeoy-tWK0IY8a7_KYzcVY090YZZNlowwxS00sO7eHr_mez-5qYC
+Ve5yhTzPIQz-jJUEMojjMnZyLK01yE2A8Xo3lmnOsmoTb20C_ZfWoX9e3DGEcm5uAOD_y-S1VmUAmx_vyu2r7GW6_wiHPlvw19Zuwn4ypEPV1thgPg1k1kfc
+e6u6wcQWRWRgPg1k1kfcu0y
+}
+
+AWSEntityColoring(CloudHSM)
+!define CloudHSM(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CloudHSM, CloudHSM)
+!define CloudHSM(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CloudHSM, CloudHSM)
+!define CloudHSMParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CloudHSM, CloudHSM)
+!define CloudHSMParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CloudHSM, CloudHSM)

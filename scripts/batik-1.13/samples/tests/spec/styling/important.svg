@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Test of the style element                                              -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: important.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <title>Test of CSS !important properties.</title>
+  <text x="50%" y="50" class="title"
+    >Test of CSS !important properties.</text>
+
+  <style type="text/css">
+     .t1 { fill: green !important; fill: red }
+     .t2 { fill: red !important; fill: green !important }
+     .t3 { fill: yellow; }
+     g > rect { fill: green !important; }
+
+     .t4 { fill: green !important; }
+     g > g > rect { fill: red !important; }
+     text { text-anchor: middle; }
+  </style>
+
+  <rect class="t1" x="25"  y="75"  width="100" height="100" fill="blue"/>
+  <text x="75" y="205">fill: green !important; fill: red</text>
+  <rect class="t2" x="175" y="75"  width="100" height="100" fill="blue"/>
+  <text x="225" y="190">fill: red !important; fill: green !important</text>
+  <rect x="325" y="75"  width="100" height="100" 
+        fill="blue" style="fill:green"/>
+  <text x="375" y="205">fill="blue" style="fill:green"</text>
+
+  <rect class="t1" x="25"  y="250" width="100" height="100" 
+        fill="blue" style="fill: purple"/>
+  <text x="75" y="365">fill: green !important; fill: red</text>
+<g>
+  <rect class="t3" x="175" y="250" width="100" height="100" fill="red"/>
+  <text x="225" y="365">.t3 { fill: yellow; }<tspan x="225" dy="15"
+     >g &gt; rect { fill: green !important; }</tspan></text>
+  <g>
+    <rect class="t4" x="325" y="250" width="100" height="100" fill="blue"/>
+    <text x="360" y="400">.t4 { fill: green !important; }<tspan x="360" dy="15"
+       >g &gt; g &gt; rect { fill: red !important; }</tspan></text>
+  </g>
+</g>
+
+</svg>

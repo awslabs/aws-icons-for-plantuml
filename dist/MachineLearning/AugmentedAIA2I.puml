@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AugmentedAIA2I [64x64/16z] {
+fPHRkgGi300B0YHfzx_UcJc2-R3Xlr8lvrgbajYsHxUq5JyC-6703mD-6F33W1y6_33WXm4_3FW-O2rJz0v8ahO6mjy71E0kD81Kra3uQw02KZCWAkGxbkis
+u6j0CsJjpm25fjfRku2_Y5ktJWFLVeY9ecyslbi5IlW6sgTmbvR0ulTRNtnJ8Ul2waCrwpvClXKGNTZujlWnawpQldPXuxjPIgz8d6NETsHczViKLjyQD-qV
+VT_xLfEe8F_i--mt2tITusUsLI2rEw3o-53cGAQy_0XuJTnaTIiyanpR784ABpy22IZc5H10uX1Q8artaAYp7m7emxJIxo5yquI4Nn9vzYC0Fh2OGlTDGQSP
+bjc_UVoQlwQG-fqB9VpwFly8W2PeuVV0e_MEAPYz_0Z0CxmArKT0OncdRsO_0a3vSJG1P7icckhYs-G7uz3k5MhGt3AGxfOEFxxP-lxZzxkmwYvGpQr1rfp3
+pqKZiFhUp3iDj9y1r6xFduvRVqOeyPcOpG8PirZy_l-n10drZiBavsSNllpQnxSiWRk5_zf5wtvW6IJUO4-qtVNBz3333_fsUwSWSH9YGQ9QCFnWkcctPmih
+g8z7bmesCVm0_ECnG7BLciT6c5L-49lP-14GEdqUfb05z1_z7h3Cs5-IzlT2p5Jjd_mUQ92g_NHgdwYIRENwzbi_I0Nn1xa3pNR-Er2WU1z4SG_AcClEVmSQ
+PFjyXEmpUTpDwdy7BA6n1u61RGFN4l3syov8dq8Wr55Q_GW4Glky0oqUQFNNG4BjZP9yiFXhW1t-iFXBeAGLyM3n8x3WMoR_C70T1gx3m7KOk0u3rs7WEWnS
+Xu7hCF0R
+}
+
+AWSEntityColoring(AugmentedAIA2I)
+!define AugmentedAIA2I(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2I(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2IParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2IParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AugmentedAIA2I, AugmentedAIA2I)

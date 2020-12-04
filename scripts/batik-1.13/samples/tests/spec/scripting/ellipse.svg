@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a ellipse' attributes                                  -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: ellipse.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500">
+    <title>&lt;ellipse&gt; attributes 'onload'</title>
+
+    <text x="50%" y="45" class="title">&lt;ellipse&gt; attributes in 'onload'</text>
+
+    <script type="text/ecmascript">
+
+    function initEllipse(evt, cx, cy, rx, ry) {
+        var elt = evt.target;
+        elt.setAttribute("rx", rx)
+        elt.setAttribute("ry", ry)
+        elt.setAttribute("cx", cx)
+        elt.setAttribute("cy", cy)
+    }
+
+    </script>
+
+    <g id="test-content">
+
+        <ellipse rx="1" ry="1" style="fill:orange" 
+              onload="initEllipse(evt, 120, 155, 80, 50)" />
+
+        <ellipse rx="1" ry="1" style="fill:crimson" 
+              onload="initEllipse(evt, 320, 155, 20, 50)" />
+
+        <ellipse rx="1" ry="1" style="fill:gold" 
+              onload="initEllipse(evt, '50%', 355, '20px', '10%')" />
+
+        <g style="stroke:black; fill:none; stroke-width:2">
+          <ellipse cx="120"  cy="155" rx="80" ry="50"  />
+          <ellipse cx="320"  cy="155" rx="20" ry="50"  />
+          <ellipse cx="50%"  cy="355" rx="20px" ry="10%"  />
+        </g>
+
+        <g style="fill:black; stroke:none; text-anchor:middle">
+                <text x="125" y="230" >rx, ry, cx, cy</text>
+                <text x="325" y="230" >rx, ry, cx, cy</text>
+                <text x="50%" y="430" >rx, ry, cx, cy (units and %)</text>
+        </g>
+    </g>
+</svg>

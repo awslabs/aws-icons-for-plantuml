@@ -1,0 +1,190 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- This test validates handling of the orient property on maker-start and    -->
+<!-- marker-end.                                                               -->
+<!--                                                                           -->
+<!-- @author vhardy@apache.org                                                 -->
+<!-- @version $Id: markersOrientB.svg 1733420 2016-03-03 07:41:59Z gadams $   -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+<title>Marker Test</title>
+
+    <style type="text/css"><![CDATA[
+        .markedPath { fill:none; stroke:black; stroke-width:.5; }
+    ]]></style>
+
+    <g id="content">
+
+        <text class="title" x="50%" y="40">Markers, Orient 2/2</text>
+
+        <g transform="translate(110, 120)">
+
+        <use xlink:href="markersOrientA.svg#grid" />
+
+        <g class="legend" stroke="none" fill="black" text-anchor="middle" >
+            <text x="20" y="-30">Middle w/quadTo</text>
+            <text x="120" y="-30">Middle w/ cubicTo</text>
+            <text x="220" y="-30">Middle w/ close</text>
+        </g>
+
+        <!-- ==================================== -->
+        <!-- The following 5 paths have two       -->
+        <!-- points, validating the various       -->
+        <!-- possibilities for middle orientation -->
+        <!-- when the segment ending on the       -->
+        <!-- middle point is a qadTo              -->
+        <!--                                      -->
+        <!-- in : quadTo                          -->
+        <!-- ==================================== -->
+        <g marker-mid="url(markersOrientA.svg#midMarker)"
+           transform="translate(0, 0)"  >
+
+
+            <!-- Out is a moveTo -->
+            <path d="M 0 20 Q 40 40 20 0 M 50 10" class="markedPath"/>
+            <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+
+            <!-- Out is a lineTo -->
+            <g transform="translate(0, 70)">
+                <path d="M 0 20 Q 20 20 20 0 L 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a quadTo -->
+            <g transform="translate(0, 140)">
+                <path d="M 0 20 Q 20 20 20 0 Q 50 0 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a cubicTo -->
+            <g transform="translate(0, 210)">
+                <path d="M 0 20 Q 20 20 20 0 C 40 -10 80 -20 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a close -->
+            <g transform="translate(0, 280)">
+                <path d="M 0 20 Q 20 20 20 0 Z" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+        </g>
+
+        <!-- ==================================== -->
+        <!-- The following 5 paths have three     -->
+        <!-- points, validating the various       -->
+        <!-- possibilities for middle orientation -->
+        <!-- when the segment ending on the       -->
+        <!-- middle point is a cubicTo            -->
+        <!--                                      -->
+        <!-- in : cubicTo                         -->
+        <!-- ==================================== -->
+        <g marker-mid="url(markersOrientA.svg#midMarker)"
+           transform="translate(100, 0)"  >
+
+
+            <!-- Out is a moveTo -->
+            <path d="M 0 20 C 20 40 40 20 20 0 M 50 10" class="markedPath"/>
+            <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+
+            <!-- Out is a lineTo -->
+            <g transform="translate(0, 70)">
+                <path d="M 0 20 C 20 40 40 20 20 0 L 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a quadTo -->
+            <g transform="translate(0, 140)">
+                <path d="M 0 20 C 20 40 40 20 20 0 Q 50 0 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a cubicTo -->
+            <g transform="translate(0, 210)">
+                <path d="M 0 20 C 20 40 40 20 20 0 C 40 -10 80 -20 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a close -->
+            <g transform="translate(0, 280)">
+                <path d="M 0 20 C 20 40 40 20 20 0 Z" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+        </g>
+
+        <!-- ==================================== -->
+        <!-- The following 5 paths have three     -->
+        <!-- points, validating the various       -->
+        <!-- possibilities for middle orientation -->
+        <!-- when the segment ending on the       -->
+        <!-- middle point is a close              -->
+        <!--                                      -->
+        <!-- in : close                           -->
+        <!-- ==================================== -->
+        <g marker-mid="url(markersOrientA.svg#midMarker)"
+           transform="translate(200, 0)"  >
+
+
+            <!-- Out is a moveTo -->
+            <path d="M 0 20 Z M 50 10" class="markedPath"/>
+            <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+
+            <!-- Out is a lineTo -->
+            <g transform="translate(0, 70)">
+                <path d="M 0 20 Z L 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a quadTo -->
+            <g transform="translate(0, 140)">
+                <path d="M 0 20 Z Q 70 -30 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a cubicTo -->
+            <g transform="translate(0, 210)">
+                <path d="M 0 20 Z C 40 -10 80 -20 50 10" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+
+            <!-- Out is a close : NA -->
+            <!-- 
+            <g transform="translate(0, 280)">
+                <path d="M 0 20 Z Z" class="markedPath" />
+                <use xlink:href="markersOrientA.svg#startMidEndCrossHairs" />
+            </g>
+            -->
+        </g>
+        </g>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

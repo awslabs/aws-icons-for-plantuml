@@ -1,0 +1,199 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a rect's x,y,width and height attributes in an         -->
+<!-- 'onclick' event handler. This is actually mostly testing a change in   -->
+<!-- the documents size.                                                    -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: suspendRedraw.svg 1733420 2016-03-03 07:41:59Z gadams $  -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+<svg id="body" width="450" height="500" viewBox="0 0 450 500">
+   <title>&lt;rect&gt; fill modification with redraw suspended.</title>
+
+   <script type="text/ecmascript">
+    var root = document.rootElement;
+
+    function setRect(target, color){
+        var t = document.getElementById(target);
+        t.setAttributeNS(null, "fill", color);
+    }
+
+    var suspendId;
+    function testSuspend(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "crimson");
+    }
+
+    function testUnsuspendRedrawId(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "crimson");
+       setTimeout("doUnsuspend(" + suspendId + ")",(time/2));
+    }
+
+    function testUnsuspendRedrawAll(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "crimson");
+       setTimeout("doUnsuspendAll()",(time/2));
+    }
+
+    function testMulti(target, t1, t2) {
+       root.suspendRedraw(t1);
+       setRect(target, "crimson");
+       root.suspendRedraw(t2);
+    }
+
+    function testMultiIdFirst(target, t1, t2) {
+       suspendId = root.suspendRedraw(t1);
+       setRect(target, "crimson");
+       root.suspendRedraw(t2);
+
+       setTimeout("doUnsuspend(" + suspendId + ")",(t1/2));
+    }
+
+    function testMultiIdSecond(target, t1, t2) {
+       root.suspendRedraw(t1);
+       setRect(target, "crimson");
+       suspendId = root.suspendRedraw(t2);
+       setTimeout("doUnsuspend(" + suspendId + ")",(t2/2));
+    }
+
+    function testMultiIdBoth(target, t1, t2) {
+       suspendId = root.suspendRedraw(t1);
+       setTimeout("doUnsuspend(" + suspendId + ")",(t1/2));
+
+       setRect(target, "crimson");
+
+       suspendId = root.suspendRedraw(t2);
+       setTimeout("doUnsuspend(" + suspendId + ")",(t2/2));
+    }
+
+    function testMultiAll(target, t1, t2) {
+       suspendId = root.suspendRedraw(t1);
+       setRect(target, "crimson");
+       suspendId = root.suspendRedraw(t2);
+       setTimeout("doUnsuspendAll()",(t2/2));
+    }
+
+    function doUnsuspend(id) {
+       root.unsuspendRedraw(0+id);
+    }
+
+    function doUnsuspendAll() {
+       root.unsuspendRedrawAll();
+    }
+
+
+   </script>
+
+   <text x="50%" y="40" class="title"
+    >&lt;rect&gt; fill modification with redraw suspended.</text>
+
+
+   <g id="test-content" font-size="10">
+      <rect id="rect.t1" fill="gold" x="10" y="50" width="80" height="40" 
+            onclick="testSuspend('rect.t1', 2000)"/>
+
+      <rect id="rect.t2" fill="gold" x="235" y="50" width="80" height="40" 
+            onclick="testUnsuspendRedrawId('rect.t2', 4000)"/>
+
+      <rect id="rect.t3" fill="gold" x="235" y="100" width="80" height="40" 
+            onclick="testUnsuspendRedrawAll('rect.t3', 4000)"/>
+
+      <text x="100" y="70">suspendRedraw(2000)</text>
+
+      <text x="320" y="70">unsuspendRedraw(id) @2s</text>
+
+      <text x="320" y="120">unsuspendRedrawAll() @2s</text>
+
+
+
+      <rect id="rect.t4" fill="gold" x="10" y="170" width="80" height="40" 
+            onclick="testMulti('rect.t4', 1000, 2000)"/>
+
+      <rect id="rect.t5" fill="gold" x="10" y="220" width="80" height="40" 
+            onclick="testMultiAll('rect.t5', 3000, 4000)"/>
+
+      <rect id="rect.t61" fill="gold" x="235" y="170" width="80" height="40" 
+            onclick="testMultiIdBoth('rect.t61', 2000, 4000)"/>
+
+      <rect id="rect.t62" fill="gold" x="235" y="220" width="80" height="40" 
+            onclick="testMultiIdBoth('rect.t62', 4000, 2000)"/>
+
+      <text  x="100" y="187">suspendRedraw 1000, 2000</text>
+
+      <text x="100" y="237">suspendRedraw 3000, 4000
+      <tspan x="100" y="249">unsuspendAll @2s</tspan></text>
+
+      <text  x="320" y="183">suspendRedraw 2000, 4000
+      <tspan x="320" y="193">unsuspend 1st @1s</tspan>
+      <tspan x="320" y="203">unsuspend 2nd @2s</tspan></text>
+
+      <text  x="320" y="233">suspendRedraw 4000, 2000
+      <tspan x="320" y="243">unsuspend 1st @2s</tspan>
+      <tspan x="320" y="253">unsuspend 2nd @1s</tspan></text>
+
+      <rect id="rect.t7" fill="gold" x="10" y="290" width="80" height="40" 
+            onclick="testMultiIdFirst('rect.t7', 1000, 2000)"/>
+
+      <rect id="rect.t8" fill="gold" x="10" y="340" width="80" height="40" 
+            onclick="testMultiIdFirst('rect.t8', 3000, 2000)"/>
+
+      <rect id="rect.t9" fill="gold" x="10" y="390" width="80" height="40" 
+            onclick="testMultiIdFirst('rect.t9', 4000, 1000)"/>
+
+      <text x="100" y="307">suspendRedraw 1000, 2000
+      <tspan x="100" y="319">unsuspend 1st @ .5s</tspan></text>
+
+      <text x="100" y="357">suspendRedraw 3000, 2000
+      <tspan x="100" y="369">unsuspend 1st @ 1.5s</tspan></text>
+
+      <text x="100" y="407">suspendRedraw 4000, 1000
+      <tspan x="100" y="419">unsuspend 1st @ 2s</tspan></text>
+
+      <rect id="rect.t10" fill="gold" x="235" y="290" width="80" height="40" 
+            onclick="testMultiIdSecond('rect.t10', 2000, 1000)"/>
+
+      <rect id="rect.t11" fill="gold" x="235" y="340" width="80" height="40" 
+            onclick="testMultiIdSecond('rect.t11', 2000, 3000)"/>
+
+      <rect id="rect.t12" fill="gold" x="235" y="390" width="80" height="40" 
+            onclick="testMultiIdSecond('rect.t12', 1000, 4000)"/>
+
+      <text x="320" y="307">suspendRedraw 2000, 1000
+      <tspan x="320" y="319">unsuspend 2nd @ .5s</tspan></text>
+
+      <text x="320" y="357">suspendRedraw 2000, 3000
+      <tspan x="320" y="369">unsuspend 2nd @ 1.5s</tspan></text>
+
+      <text x="320" y="407">suspendRedraw 1000, 4000
+      <tspan x="320" y="419">unsuspend 2nd @ 2s</tspan></text>
+
+      <text class="legend">
+         <tspan x="225" y="460">Click on the Rectangles one at a time.</tspan>
+         <tspan x="225" y="470">The rectangles should change color ~2sec after you click</tspan>
+      </text>
+-->
+   </g>
+</svg>

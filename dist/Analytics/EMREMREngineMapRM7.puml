@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EMREMREngineMapRM7 [64x64/16z] {
+xPO5bW9144CFa43kVzgr9aX9lx5rFaxbZxRfO9uy8G9Q1xxNDq7yFJu2t7VxrXu7zlcC-QK-1jathFPX-kEDXP0YG8cB_NE8ZI_eVU86YyEnJqs9INykzvds
+-xK-TlgwwTjyysDzVuqvw5OZRDWVs4Vlq-6fR-HtsSTfE1D_GFBEjpIO-hnaw3rNFe7k-f4m-_npUVpKoFQ-fEBwtLiwsIjyI29ukraQFdtKeDZw0K0DN-Ft
+x1n_QX_xnf_CCfy0b_jXlpUus1ym9P0ePsR6UaskUuyBVAVhFox7Jqr10Rzk7PDl2Q6VnPCdhm
+}
+
+AWSEntityColoring(EMREMREngineMapRM7)
+!define EMREMREngineMapRM7(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EMREMREngineMapRM7, EMREMREngineMapRM7)
+!define EMREMREngineMapRM7(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EMREMREngineMapRM7, EMREMREngineMapRM7)
+!define EMREMREngineMapRM7Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EMREMREngineMapRM7, EMREMREngineMapRM7)
+!define EMREMREngineMapRM7Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EMREMREngineMapRM7, EMREMREngineMapRM7)

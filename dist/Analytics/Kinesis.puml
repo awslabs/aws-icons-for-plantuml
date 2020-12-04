@@ -1,14 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Kinesis [64x64/16z] {
-xLPNWkKm21CTykv_tYs9_Sfqa-qx-ae3IuIs_H7un2VASro5LyFUOUEAqR6Fa_O96LU2wEWdggb4jmOKFZoXAM0ICF3MW5qZmFDg3Jo55uEp4SAR0m6iEWxc
-kGRGOXxESyUb0j1OJsEG7vUf191whb7G6_Do0G0IyyXtnBZDgvIT-N0HneGTH7mWNYQkyuJ9_3kBo-MoLOQfC14E-8lfHqFuE5PeP-vHXvVB_dZ76y8jxrmO
-7xnPrCmz9bvqC8MptKMgqdNAly5V3xxn4Uyzt9DtLOQxNV7c3qqNEcYBcaTcrNeQXYdZ1df4VC1UklQJF_4I_vVZjot5BnM0U6wj_rSAi5StVuh1yJn_xQFv
-E-VNhNvagNx2FrQ_8XAz_j7iNr7j_acQlx9_5ztD3_9JyqkgCS3bvkZS_9Pp-mEjaPzMTvcyZhXg5kHlsFySth3lxw-_7v_un5S
+fPHRjlKW28FZ3GNcFzx_SgojPRdTdaNUyvK4BA_KDgfliHF0JW0x0Um4i1F0JW0x0Um4Y1CWAm1m312HfVyK82i0q4u1iW94rDCEP0L8AASboWf027m8a4ll
+wWBA8K26NjKHG6S0CO3OZHd8Hm0nW8B45o2Sb2W6q73jhWO0cRu1n0Bo031508YPwWOWOW7fYLvpn8z2JBaKebhhPp_0SaTlOspACS1gwOye8dVqs15TbKfE
+ASOGmcS_0LLaH1_P6q_Qv_z9tW7SIWAUy2DztVQN0UJ6RBCVvE-g4K38rEQP_uSVwSFUBz9okAANGJ5Qp6yG9OKfUmy_ebk0hCMrpDcjlFvVpa_J_3ywwgys
+_gXl-nCHcHTeziUykP-vX1InqZE1lk-tyF1I2jFztc_NHb0rxwVdwCUVCjKl7UW3YA2fXLZQqq4Zodbwlmz07m30euKmvSWfmEgPG3l0j70lCyuLz1DuHr0B
+AC2rWVl_kRi3DG0U9VR_TsKHtaaDe22DCG9T9Mpz1X3xv_DJmXwW1X308b9xYWE06W3GAIGlxVssn8eeHbk_1MIGMEtzjiGcXm1zQxvagxtVbdW8KAkDNpP-
+6-4Ke4w0EW7g1AWJe4w0EW7g1AWJe4x0Nm
 }
 
 AWSEntityColoring(Kinesis)
-!define Kinesis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Kinesis, Kinesis)
-!define Kinesis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Kinesis, Kinesis)
-!define KinesisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Kinesis, Kinesis)
-!define KinesisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Kinesis, Kinesis)
+!define Kinesis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Kinesis, Kinesis)
+!define Kinesis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Kinesis, Kinesis)

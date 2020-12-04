@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $loTDeviceDefenderIoTDeviceJobs [64x64/16z] {
+tTPL0W8n38JX9-GFqllVbXSakuDaMdnm-IfPQ_kIy33hGKyCUcBG4tTzONunw8b1J_Jx9WsONXemlJHWUsr0nwUH_MCpw7cDh-MFFTFycZTYUKvvlmUMotJ-
+11pFEUbztNFLK_CYf07roYS_16m0CFmycmul9vBw_2ywVMgE9wUrAFQVEaolaNue-JnVW2ulzQZvXEGxnqUdXwlz3yv_sLj__Fhh_YE-kl_cvZRM_j-a-sNF
+yPVV6rvIzY7dAtFzm2NowGtdN__yhvbBuFtNpqZ-RzTVHdxUj-_90G
+}
+
+AWSEntityColoring(loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)

@@ -1,0 +1,504 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- 3D demo                                                                -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: 3D.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="body" width="640" height="480" viewBox="0 0 640 480">
+
+    <script type="text/ecmascript"><![CDATA[
+
+        // constants
+        var MAX_FOCAL_DISTANCE = 1100;
+        var MIN_FOCAL_DISTANCE = 400;
+        var INVISIBLE_FOCAL_DISTANCE = 20;
+
+        var OBJECT_COME = 1;
+        var OBJECT_GO = 2;
+        var OBJECT_PLAY = 3;
+
+        var _xOrigin = 320;
+        var _yOrigin = 240;
+        var svgNS = "http://www.w3.org/2000/svg";
+
+        // 3D object collection
+        var _objects;
+        var _currentObject;
+
+        // starting time for _animationState='OBJECT_PLAY'
+        var _time;
+
+        // object definition
+        var _points3d;
+        var _faces;
+
+        // svg shapes that represent the object
+        var _shapes;
+
+        // transformation matrix
+        var _matrix = new Array(1, 0, 0, 0,
+                                0, 1, 0, 0,
+                                0, 0, 1, 0,
+                                0, 0, 0, 1);
+        var _gElt;
+
+        var _minFocalDistance;
+        var _focalDistance;
+        var _incFocalDistance = (MAX_FOCAL_DISTANCE - MIN_FOCAL_DISTANCE) / 75;
+        var _currentPoints3d;
+        var _alpha = 0;
+        var _incAlpha = Math.PI*2 / 100;
+        var _beta = 33;
+        var _incBeta = Math.PI*2 / 117;
+        var _gamma = 33;
+        var _incGamma = Math.PI*2 / 117;
+        var _animationState;
+
+        // Animates the object
+        function animate() {
+                if (_animationState == OBJECT_COME) {
+                        comeObject();
+                } else if (_animationState == OBJECT_GO) {
+                        goObject();
+                } else if (_animationState == OBJECT_PLAY) {
+                        playObject();
+                }
+                animateObject();
+        }
+
+        // Makes the current object to come
+        function comeObject() {
+                if (_focalDistance+_incFocalDistance > MAX_FOCAL_DISTANCE) {
+                        _minFocalDistance = MIN_FOCAL_DISTANCE;
+                        _animationState = OBJECT_PLAY;
+                        _time = new Date();
+                }
+        }
+
+        // Makes the current object to disapear
+        function goObject() {
+                if (_focalDistance+_incFocalDistance <= _minFocalDistance) {
+                        switchToObject();
+                        _animationState = OBJECT_COME;
+                }
+        }
+
+        // Makes the current object moving for a time
+        function playObject() {
+                var newTime = new Date();
+                if (newTime - _time > 8000) {
+                        _animationState = OBJECT_GO;
+                        _minFocalDistance = INVISIBLE_FOCAL_DISTANCE;
+                }
+        }
+
+        // Animates the object
+        function animateObject() {
+                setToRotate(_matrix, _alpha, _beta, _gamma);
+                transformObject(_matrix, _points3d, _currentPoints3d);
+                _alpha = (_alpha + _incAlpha) % (Math.PI*2);
+                _beta = (_beta + _incBeta) % (Math.PI*2);
+                _gamma = (_gamma + _incGamma) % (Math.PI*2);
+                for (var i = 0; i < _faces.length; ++i) {
+                        buildShape(i);
+                }
+                _focalDistance += _incFocalDistance;
+                if (_focalDistance > MAX_FOCAL_DISTANCE) {
+                        _incFocalDistance = -_incFocalDistance;
+                } else if (_focalDistance < _minFocalDistance) {
+                        _incFocalDistance = -_incFocalDistance;
+                }
+        }
+
+        // Global initialization
+        function startAnimation(evt) {
+                var i = 0;
+                _objects = new Array();
+
+                var object;
+
+                object = new Array(3);
+                object[0] = buildCubePoints();
+                object[1] = buildCubeFaces();
+                object[2] = buildCubeColors();
+                object[3] = buildCubeAnimationDefinition();
+                _objects[i++] = object;
+
+                object = new Array(3);
+                object[0] = buildTriPoints();
+                object[1] = buildTriFaces();
+                object[2] = buildTriColors();
+                object[3] = buildTriAnimationDefinition();
+                _objects[i++] = object;
+
+                object = new Array(3);
+                object[0] = buildRectPoints();
+                object[1] = buildRectFaces();
+                object[2] = buildRectColors();
+                object[3] = buildRectAnimationDefinition();
+                _objects[i++] = object;
+
+                _gElt = evt.target;
+
+                _focalDistance = INVISIBLE_FOCAL_DISTANCE;
+                _minFocalDistance = INVISIBLE_FOCAL_DISTANCE;
+                _animationState = OBJECT_COME;
+
+                _currentObject = -1;
+                switchToObject();
+
+                // launch animation
+                setInterval('animate()', 20);
+        }
+
+        // switch object 
+        function switchToObject() {
+                _currentObject++;
+                if (_currentObject == _objects.length) {
+                        _currentObject = 0;
+                }
+                var object = _objects[_currentObject];
+                _points3d = object[0];
+                _faces = object[1];
+
+                // updates the animation definition
+                var defs = object[3];
+                _incFocalDistance = defs[0];
+                _incAlpha = defs[1];
+                _incBeta = defs[2];
+                _incGamma = defs[3];
+
+                // copy current object's coordinates to currentPoints3d
+                _currentPoints3d = new Array(_points3d.length);
+                for (var i = 0; i < _points3d.length; ++i) {
+                        var pt3d = _points3d[i];
+                        var cPt3d = new Array(3);
+                        cPt3d[0] = pt3d[0];
+                        cPt3d[1] = pt3d[1];
+                        cPt3d[2] = pt3d[2];
+                        _currentPoints3d[i] = cPt3d;
+                }
+
+                // clean container
+                while (_gElt.firstChild != null) {
+                        _gElt.removeChild(_gElt.firstChild);
+                }
+
+                // build svg shapes
+                _shapes = new Array(_faces.length);
+                var colors = object[2];
+                for (var i = 0; i < _faces.length; ++i) {
+                        var e = document.createElementNS(svgNS, "polygon");
+                        e.setAttribute("style", "fill:"+colors[i]);
+                        _shapes[i] = e;
+                        buildShape(i);
+                        _gElt.appendChild(e);
+                }
+        }
+
+        // Builds the shapes according to the current points 3D 
+        function buildShape(index) {
+                var e = _shapes[index];
+                var face = _faces[index];
+                var pointsData = "";
+                if (!isFaceVisible(index)) {
+                        pointsData = "-10 -10"; // hide the shape
+                } else {
+                        var pt2d = new Array(2);
+                        for (var i = 0; i < face.length; ++i) {
+                                projectPoint3d(_currentPoints3d[face[i]], pt2d);
+                                pointsData += pt2d[0]+" "+pt2d[1]+" ";
+                        }
+                }
+                e.setAttribute("points", pointsData);
+        }
+
+        // --------------------------------------------------------------------
+        // 2D functions
+        // --------------------------------------------------------------------
+
+        // Projects a 3D point on the screen
+        function projectPoint3d(srcPt3d, destPt2d) {
+                var x = srcPt3d[0];
+                var y = srcPt3d[1];
+                var z = srcPt3d[2];
+                if (z == 0) {
+                       z = 1;
+                }
+                destPt2d[0] = _focalDistance * x / (800-z) + _xOrigin; 
+                destPt2d[1] = _focalDistance * y / (800-z) + _yOrigin; 
+        }
+
+
+        // --------------------------------------------------------------------
+        // 3D functions
+        // --------------------------------------------------------------------
+
+        // Returns true if the face at the specified index is visible
+        function isFaceVisible(index) {
+                var face = _faces[index];
+                var p1 =  _currentPoints3d[face[0]];
+                var p2 =  _currentPoints3d[face[1]];
+                var p3 =  _currentPoints3d[face[2]];
+                return ((p3[0]-p1[0])*(p3[1]-p2[1])-(p3[0]-p2[0])*(p3[1]-p1[1]) > 0);
+        }
+
+        // Transforms according to the specified matrix, the specified 3D points
+        function transformObject(matrix, points3d, currentPoints3d) {
+                for (var i = 0; i < currentPoints3d.length; ++i) {
+                      transformPoint3d(matrix, points3d[i], currentPoints3d[i]);
+                }
+        }
+
+        // Transforms according to the specified matrix, the specified point
+        function transformPoint3d(matrix, srcPt3d, destPt3d) {
+                var x = srcPt3d[0];
+                var y = srcPt3d[1];
+                var z = srcPt3d[2];
+                destPt3d[0] = x*matrix[0]+y*matrix[1]+z*matrix[2] + matrix[3];
+                destPt3d[1] = x*matrix[4]+y*matrix[5]+z*matrix[6] + matrix[7];
+                destPt3d[2] = x*matrix[8]+y*matrix[9]+z*matrix[10] + matrix[11];
+        }
+
+        // Sets the specified matrix to a rotation matrix
+        function setToRotate(matrix, alpha, beta, gamma) {
+                // Assuming the angles are in radians
+                var c1 = Math.cos(alpha);
+                var s1 = Math.sin(alpha);
+                var c2 = Math.cos(beta);
+                var s2 = Math.sin(beta);
+                var c3 = Math.cos(gamma);    
+                var s3 = Math.sin(gamma);
+
+                matrix[0] = c1 * c2;
+                matrix[1] = s1 * c2;
+                matrix[2] = -s2;
+                matrix[3] = 0;
+
+                matrix[4] = -(s1 * c3)+(c1 * s2 * s3);
+                matrix[5] = (c1*c3) + (s1 * s2 * s3);
+                matrix[6] = c2 * s3;
+                matrix[7] = 0;
+
+                matrix[8] = (s1 * s3) + (c1 * s2 * c3);
+                matrix[9] = -(c1 * s3) + (s1 * s2 * c3);
+                matrix[10] = c2*c3;
+                matrix[11] = 0;
+        }
+
+        // --------------------------------------------------------------------
+        // Object collection
+        // --------------------------------------------------------------------
+
+        // --- Cube ---
+
+        // Constructs the animation definition
+        function buildCubeAnimationDefinition() {
+                var defs = new Array();
+                defs[0] = (MAX_FOCAL_DISTANCE - MIN_FOCAL_DISTANCE) / 75; // incFocalDistance
+                defs[1] = Math.PI*2 / 100; // _incAlpha
+                defs[2] = Math.PI*2 / 117; // _incBeta
+                defs[3] = 0; // _incGamma
+                return defs;
+        }
+
+        // Constructs the color palette for the object
+        function buildCubeColors() {
+                return new Array("#04a", "#025",  // front
+                                 "#4a4", "#252",  // back
+                                 "#a44", "#522",  // top
+                                 "#aa4", "#552",  // bottom
+                                 "#a4a", "#525",  // left
+                                 "#aaa", "#555"); // right
+        }
+
+        // Constructs the points array, anti-clockwise
+        function buildCubeFaces() {
+                var faces = new Array(12);
+                faces[0] = new Array(0, 2, 3); // front
+                faces[1] = new Array(0, 3, 1);
+                faces[2] = new Array(6, 4, 5); // back
+                faces[3] = new Array(6, 5, 7);
+                faces[4] = new Array(4, 0, 1); // top
+                faces[5] = new Array(4, 1, 5);
+                faces[6] = new Array(2, 6, 7); // bottom
+                faces[7] = new Array(2, 7, 3);
+                faces[8] = new Array(4, 6, 2); // left
+                faces[9] = new Array(4, 2, 0);
+                faces[10] = new Array(1, 3, 7); // right
+                faces[11] = new Array(1, 7, 5);
+                return faces;
+        }
+
+        // Constructs the points array
+        function buildCubePoints() {
+                var points3d = new Array(8);
+
+                // front coordinates
+                points3d[0] = new Array(-50, -50, -50);  // x,y,z coordinates
+                points3d[1] = new Array(50, -50, -50);
+                points3d[2] = new Array(-50, 50, -50);
+                points3d[3] = new Array(50, 50, -50);
+
+                // back coordinates
+                points3d[4] = new Array(-50, -50, 50);
+                points3d[5] = new Array(50, -50, 50);
+                points3d[6] = new Array(-50, 50, 50);
+                points3d[7] = new Array(50, 50, 50);
+
+                return points3d;
+        }
+
+        // --- Rect ---
+
+        // Constructs the animation definition
+        function buildRectAnimationDefinition() {
+                var defs = new Array();
+                defs[0] = (MAX_FOCAL_DISTANCE - MIN_FOCAL_DISTANCE) / 100; // incFocalDistance
+                defs[1] = Math.PI*2 / 200; // _incAlpha
+                defs[2] = Math.PI*2 / 217; // _incBeta
+                defs[3] = Math.PI*2 / 128; // _incGamma
+                return defs;
+        }
+
+        // Constructs the color palette for the object
+        function buildRectColors() {
+                return new Array("#04a", "#025",  // front
+                                 "#4a4", "#252",  // back
+                                 "#a44", "#522",  // top
+                                 "#aa4", "#552",  // bottom
+                                 "#a4a", "#525",  // left
+                                 "#aaa", "#555"); // right
+        }
+
+        // Constructs the points array, anti-clockwise
+        function buildRectFaces() {
+                var faces = new Array(12);
+                faces[0] = new Array(0, 2, 3); // front
+                faces[1] = new Array(0, 3, 1);
+                faces[2] = new Array(6, 4, 5); // back
+                faces[3] = new Array(6, 5, 7);
+                faces[4] = new Array(4, 0, 1); // top
+                faces[5] = new Array(4, 1, 5);
+                faces[6] = new Array(2, 6, 7); // bottom
+                faces[7] = new Array(2, 7, 3);
+                faces[8] = new Array(4, 6, 2); // left
+                faces[9] = new Array(4, 2, 0);
+                faces[10] = new Array(1, 3, 7); // right
+                faces[11] = new Array(1, 7, 5);
+                return faces;
+        }
+
+        // Constructs the points array
+        function buildRectPoints() {
+                var points3d = new Array(8);
+
+                // front coordinates
+                points3d[0] = new Array(-60, -20, -50);  // x,y,z coordinates
+                points3d[1] = new Array(60, -20, -50);
+                points3d[2] = new Array(-60, 20, -50);
+                points3d[3] = new Array(60, 20, -50);
+
+                // back coordinates
+                points3d[4] = new Array(-60, -20, 50);
+                points3d[5] = new Array(60, -20, 50);
+                points3d[6] = new Array(-60, 20, 50);
+                points3d[7] = new Array(60, 20, 50);
+
+                return points3d;
+        }
+
+        // --- Triangle ---
+
+        // Constructs the animation definition
+        function buildTriAnimationDefinition() {
+                var defs = new Array();
+                defs[0] = (MAX_FOCAL_DISTANCE - MIN_FOCAL_DISTANCE) / 100; // incFocalDistance
+                defs[1] = 0; // _incAlpha
+                defs[2] = Math.PI*2 / 217; // _incBeta
+                defs[3] = Math.PI*2 / 128; // _incGamma
+                return defs;
+        }
+
+        // Constructs the color palette for the object
+        function buildTriColors() {
+                return new Array("#0a0", "#a00", "#00a", "#a0a");
+        }
+
+        // Constructs the points array, anti-clockwise
+        function buildTriFaces() {
+                var faces = new Array(4);
+                faces[0] = new Array(0, 3, 1);
+                faces[1] = new Array(1, 3, 2);
+                faces[2] = new Array(1, 2, 0);
+                faces[3] = new Array(3, 0, 2);
+                return faces;
+        }
+
+        // Constructs the points array
+        function buildTriPoints() {
+                var points3d = new Array(4);
+
+                points3d[0] = new Array(20, 20, 20);  // x,y,z coordinates
+                points3d[1] = new Array(50, 50, 100);
+                points3d[2] = new Array(100, 20, 20);
+                points3d[3] = new Array(50, 100, 20);
+                return points3d;
+        }
+
+]]></script>
+
+<defs>
+        <linearGradient id="grad1">
+                <stop offset="0" style="stop-color:blue" />
+                <stop offset=".2" style="stop-color:red" />
+                <stop offset=".4" style="stop-color:yellow" />
+                <stop offset=".6" style="stop-color:green" />
+                <stop offset=".8" style="stop-color:cyan" />
+                <stop offset="1" style="stop-color:blue" />
+        </linearGradient>
+</defs>
+
+<rect x="0" y="10%" width="100%" height="80%" style="fill:black" />
+<rect x="0" y="0" width="100%" height="10%" style="fill:#004" />
+<rect x="0" y="90%" width="100%" height="10%" style="fill:#004" />
+
+<rect x="0" y="10%" width="100%" height="1" style="fill:url(#grad1)" />
+<rect x="0" y="90%" width="100%" height="1" style="fill:url(#grad1)" />
+<text x="50%" y="40" style="text-anchor:middle; font-family:Impact;font-size:36; fill:white;">Batik 3D</text>
+    <g id="container" onload="startAnimation(evt)">
+
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use transform="translate(598,447)" width="27" height="28"
+         xlink:href="batikLogo.svg#Batik_Squiggle" />
+
+</svg>

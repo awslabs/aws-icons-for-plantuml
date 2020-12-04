@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2SpotInstance [64x64/16z] {
-tPU7aYGn24DFO93__uSlKBLKgsZNJRYuscnuQeTP1d_vr48ctk6Dj5TPcAyWOxdXQTXMyeVshX-vx6SBzSiV1L_vihZCmXFA9za6gy0CDpZfC8yiczKucSex
-FmoSbGhTFvGfNPEdGVsyh0MupBbJ55U3x6aEBUR0Xm5iH5g6CpuZZoPfx27yPGC_9zYj0KJVCxnIfvo9QH0KhR9C-kH9Oip0gAeKa1puAdCrA3vMAqbqhWfa
-oYOsR_8Cr2zb95hDYC61zp41MP8tXGWeB-ajKqEtSN3ABvbNHsH4j3GBr0KaKt5ivJU4Lq3j-k2y5QGfhnCsUT7D4HU-HpJ-EAzn2Jp6wufXGPer-bsOFCoY
-UJCo35sxz-vGa6JQLdvRaln80el86nxxp3UXl5cIRXqACvlpB_KQdSp-ysPZ1j-vaYRnXtc9oryFy3AYaFBpzNl-Xqkcyg2eimLGEvrAwFj_pEqRzKCZi8lm
-FSNrUReWCfMN-ZKsDCbPFuLlohIeQltK-dtcrK3hjqu0Sd2zJZ6OZo-Ec0Utcs-3JbKvimQ3-oBcJOUIz_tBiV2F6GYkSNkt_VYjxSy3xHTmXe5XC8nJeYAN
-_l7z_lNSFwUF_ZbF_RFsxzrgvtB0I0EyO791-_Vp_O6bJUvTFuIUzuSf2xs_XBrqVyfQX-4Ftz_q_lYfzGq
+rPU5ZYin40I5gvgG__zh7mOwAjcMTS6-2mnKB-zEsaSBu3jvxbNJTiCZ2tPUJz5IjkoIZsfbTtp06Sfs6mGSwvLvuvdBnRW34dTvVCI0lN0Pj87euwuiDAcs
+WAiwuxkLPWETGUSkuOKCXCVnspeh5WRciySunBSfZ_badCu8GFWk0uPy0HMu-sh0Aw-OQiMzp0iF2GVjf6t4C-Tv99-uw-RhXtnx70-0Gl5dcL7bW_dgRdD_
+LoaAv77yjiQxBZxqRBxc_2RUTlbDE0amvUTvFprcF9dUjvJuXTlwNHLfy8W9JVZ4zXXlkyc13uC2cdIcct4RY8_wOyQFnuy_RbgVt_R8O75-B1juVgKMvjT7
+pC-PsU2iElDwfDXWbp4zLV-1jsCuFNY5sqo2l_JtOxMFrcy
 }
 
 AWSEntityColoring(EC2SpotInstance)
-!define EC2SpotInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2SpotInstance, EC2SpotInstance)
-!define EC2SpotInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2SpotInstance, EC2SpotInstance)
-!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2SpotInstance, EC2SpotInstance)
-!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2SpotInstance, EC2SpotInstance)
+!define EC2SpotInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2SpotInstance, EC2SpotInstance)

@@ -1,13 +1,9 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SageMakerNotebook [64x64/16z] {
-vPS54iCm30HDgU_q__-METACmhHbs48sO8SL4JlHqi5En9OlGYyYafJlRxnKrQ_1I-6w_1XJ0d6zZe_7IIT6tGVb0N7NAJg4xZ-Ra4zVQA7xfPI6WkjDVZqs
-qFpjzqjNGDmAzV8XBz3F_-qNgiL9z_ErpAkVlx-z_2eCwdhxaRZTBDJlTmErSVKBsSIr_28fAeJJbq5-IDaWcVqonTbl-F8Vxjk_VmtxlmY-GUtX2x_eiVwU
-lcZcw2SliC3-OuF7FxlViEFNy7v3Zzy7wMUFtnpOuyVX-yz1u-VZz1i-Vnf__jQ9E7J-kWek
-}
+sprite $SagemakerNotebook [64x64/16z] xPMr0G0X34NhK_RVbXPtYBu-Bj-WuUxacRI_4TgRLf3PXsNTUNZOCvuVh3ty_2RjTNvbWES7Ryz_Vl3_x_QOjP_TNvsVwf_EJ-UdyolQzy30_Z4Oi
 
-AWSEntityColoring(SageMakerNotebook)
-!define SageMakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
+AWSEntityColoring(SagemakerNotebook)
+!define SagemakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerNotebook, SagemakerNotebook)

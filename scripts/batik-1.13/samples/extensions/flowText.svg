@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Tests various text on a path                                           -->
+<!--                                                                        -->
+<!-- @author bella.robinson@cmis.csiro.au                                   -->
+<!-- @version $Id: flowText.svg 1733420 2016-03-03 07:41:59Z gadams $   -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="extension.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+<title>Test of Text wrapping stuff.</title>
+
+   <g id="content" >
+
+      <text class="title" x="50%" y="40">Test of Text wrapping stuff</text>
+         <!-- Space after size 40 'that' is aci 45 -->
+      <rect x="17"  y="80" width="200" height="400" fill="rgb(220,220,255)"/>
+      <rect x="233" y="80" width="200" height="400" fill="rgb(220,220,255)"/>
+
+      <line x1="27"  y1="70" x2="27"  y2="490" stroke="grey" fill="none"/>
+      <line x1="207" y1="70" x2="207" y2="490" stroke="grey" fill="none"/>
+      <line x1="243" y1="70" x2="243" y2="490" stroke="grey" fill="none"/>
+      <line x1="423" y1="70" x2="423" y2="490" stroke="grey" fill="none"/>
+
+      <flowText font-size="20" xml:space="preserve"
+                xmlns="http://xml.apache.org/batik/ext">
+         <flowRegion>
+            <rect x="17"  y="80" width="200" height="400"/>
+            <rect x="233" y="80" width="200" height="400"/>
+         </flowRegion>
+
+         <flowDiv>
+            <flowPara indent="20" bottom-margin="10" >This is an <flowSpan font-size="40" fill="crimson">ex&#x00AD;ample</flowSpan> of a very long string that is split &#x200D;across multi&#x00AD;ple lines via text wrap&#x0AD;ping.</flowPara>
+            <flowPara justification="middle" top-margin="10" left-margin="10" right-margin="10" bottom-margin="10"><flowLine>Now check if text wrapping handles a number of tricky</flowLine> situations: averylongrunonwordthatspansmultiplelines<flowSpan font-weight="bold">with<flowSpan fill="crimson">embedded</flowSpan>span</flowSpan>elements &amp; <flowSpan fill="green" dy="-.3em" font-size="80%">super</flowSpan><flowSpan dy=".3em"> or </flowSpan><flowSpan fill="darkgreen" dy=".3em" font-size="80%">sub</flowSpan><flowSpan dy="-.3em"> scripts.</flowSpan></flowPara>
+            <flowPara top-margin="10" justification="end">Now we are just <flowSpan font-size="30" fill="blue">about</flowSpan> to go to the next flow rect <flowSpan font-size="10">(note if the 'about' were included on the last line of the previous flow rect the line would not have fit and the whole line would have moved here).</flowSpan></flowPara>
+            <flowPara margin="10" justification="full">     I'll keep going because I want to make sure that it properly stops when it hits the end of all of the the flow regions defined. Also the last line includes text in a larger font size so it will not fit. Thus the end of this sentence will be cut off because the line size gets <flowSpan font-size="35">tall</flowSpan>er</flowPara>
+         </flowDiv>
+      </flowText>
+   </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../batikLogo.svg#Batik_Tag_Box" />
+</svg>

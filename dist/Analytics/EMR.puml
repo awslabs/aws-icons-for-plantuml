@@ -1,15 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EMR [64x64/16z] {
-xLQ7jfqm39CTx_p___OGxke8j-Hr5vt1b17UzGVZmeLqYrg7043BLNe3gJ9uqO3lJ86kglVjaE1LVknyMkChh5TLeAtn0-HLmV0rVXB0ZEVdNKNpJFWQ0mH-
-N6-mxwNhHioiTgC8s4Bnvcyot3p6toFlRhWTighxOJIZOO0qwA5q5s3GlbqnyYZVITHqM96NE5HrWzKnFndajrC5zCMiXXBQmzZKtq_J_jHVXWq4oGgU1a0_
-pxF0IDzq8G1a6SC6PAOUb3lHzwEXfJK090RA7Y2cvlDmwxDi1WY3x5bT8RqTHvuHN_0LfF58PGCV9plL5to7zAUwDucNmtmo4K14-cNXqhXOvpEaJklN_fe2
-KMVznvOF-S_qE1K_rgWHlsAeD8awaJ-XF4mu8RjZGEjK_eRna17Lq2ADu6Vh9nMuzx4Uut2gVhj2NG2hjVwHe9pqZtd_ocUXopYBcVvv_upN_hdxx-cMjx0l
--dSoDkZo_2XhBB4slzRdPpBy5y_l-Vwmlh-ixqyD-l7zxUFxu_h--eVYmeLF
+fPM9qkGW20O_G1Jq_TztAvAKvTQFUzZ_VNI7KJFZFs47sevV1lmou9S1lmpuPS0l0tuPyCj0lmpqOy2KGD8EWNuA66Do2FHJe82gDGPP6kYd0D3SpGWr3VH3
+e87ceoWebWLwSF9Te9RHJm6Wkhi1DVTFWG9egmIot3y5245rcpG6M7V_411GPIA6-0me9hBvUQ02RQx_kuqDAEs9rCJ_0cQlfjyoyFEpG68AJlmPK0O0AiRJ
+MWCulnS6Khyh5cGUn016uJTGEhy0N1-ZCXvd3I0CnE0bdr-0jbOFua4hUE0dNYLVlmhOseKMfw_Ajskkc6Ys_uGwlvgz4r38LAg2vdbWacQ9Ny7n3U0J3hd5
+KTG6cBjPvWlgxYkWve626ENvBlK9pq_V1izbf_rUY5Zc0pu_1t7_RgUvUF2_llhBOVu8nL7UvkUOFqZMJvV_11IGjYuVwnVyv3VGykCyF4XT-wV29OPO_eAW
+-xr4hT1CnFbXJ6e4Wh4DWBR_vEwceOavWLHvtyOnjYj2r_SeVRqA0g2u8mNYAp1-3v3QQyXwHW8AVvElNGb_2pJ2mh-0pYiJMlZm5HWHM5GXWAIwWFiRm3Gb
+zg_EM33z5TXmG2DGmcY0hdCOsCW33R08nU1UC67tnJW42gWoCKCyg0IW-EQV0eIWhNdDTyOfe81Q9R2dZ5CWpcDiNEhd0GEzww3zu2yEVi_zF03OEt_F0YCF
+n0QwCSXx5XZ706DYyLFgvm4bKF7-SlHN82VnBmBZCZ0k0-CoC2u3up8mBWFZCZ0k0xy
 }
 
 AWSEntityColoring(EMR)
-!define EMR(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMR, EMR)
-!define EMR(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMR, EMR)
-!define EMRParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMR, EMR)
-!define EMRParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMR, EMR)
+!define EMR(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EMR, EMR)
+!define EMR(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EMR, EMR)
+!define EMRParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EMR, EMR)
+!define EMRParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EMR, EMR)

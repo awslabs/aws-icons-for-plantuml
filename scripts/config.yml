@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 #
 # Hand curated config file for Release 7.0-2020.04.30 AWS Architecture Icon release
-# 
+#
 Defaults:
   Colors:
     CeruleanBlue: "#3B48CC"
@@ -19,1163 +19,1705 @@ Defaults:
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 Categories:
-- Name: ARVR
-  Color: MaroonFlush
-  Services:
-  - Source: AR-VR
-    Target: ARVR
-  - Source: Amazon-Sumerian
-    Target: Sumerian
-  SourceDir: AR & VR
-- Name: AWSCostManagement
-  Color: ForestGreen
-  Services:
-  - Source: AWS-Budgets
-    Target: Budgets
-  - Source: AWS-Cost-Explorer
-    Target: CostExplorer
-  - Source: AWS-Cost-Management
-    Target: CostManagement
-  - Source: AWS-Cost-and-Usage-Report
-    Target: CostandUsageReport
-  - Source: Reserved-Instance-Reporting
-    Target: ReservedInstanceReporting
-  - Source: Savings-Plans
-    Target: SavingsPlans
-  SourceDir: AWS Cost Management
-- Name: Analytics
-  Color: PurpleHeart
-  Services:
-  - Source: AWS-Data-Pipeline
-    Target: DataPipeline
-  - Source: AWS-Data-lake_Resource-icon
-    Target: DatalakeResourceIcon
-  - Source: AWS-Glue_Crawlers
-    Target: GlueCrawlers
-  - Source: AWS-Glue_Data-catalog
-    Target: GlueDataCatalog
-  - Source: AWS-Glue
-    Target: Glue
-  - Source: AWS-Lake-Formation
-    Target: LakeFormation
-  - Source: Amazon-Athena
-    Target: Athena
-  - Source: Amazon-CloudSearch_Search-documents
-    Target: CloudSearchSearchDocuments
-  - Source: Amazon-CloudSearch
-    Target: CloudSearch
-  - Source: Amazon-EMR_Cluster
-    Target: EMRCluster
-  - Source: Amazon-EMR_EMR-engine-MapR-M3
-    Target: EMREngineMapRM3
-  - Source: Amazon-EMR_EMR-engine-MapR-M5
-    Target: EMREngineMapRM5
-  - Source: Amazon-EMR_EMR-engine-MapR-M7
-    Target: EMREngineMapRM7
-  - Source: Amazon-EMR_EMR-engine
-    Target: EMREngine
-  - Source: Amazon-EMR_HDFS-cluster
-    Target: EMRHDFSCluster
-  - Source: Amazon-EMR
-    Target: EMR
-  - Source: Amazon-Elasticsearch-Service
-    Target: ElasticsearchService
-  - Source: Amazon-Kinesis-Data-Analytics
-    Target: KinesisDataAnalytics
-  - Source: Amazon-Kinesis-Data-Firehose
-    Target: KinesisDataFirehose
-  - Source: Amazon-Kinesis-Data-Streams
-    Target: KinesisDataStreams
-  - Source: Amazon-Kinesis-Video-Streams
-    Target: KinesisVideoStreams
-  - Source: Amazon-Kinesis
-    Target: Kinesis
-  - Source: Amazon-Managed-Streaming-for-Kafka
-    Target: ManagedStreamingforKafka
-  - Source: Amazon-Quicksight
-    Target: QuickSight
-  - Source: Amazon-Redshift_Dense-compute-node
-    Target: DenseComputeNodeResource
-  - Source: Amazon-Redshift_Dense-storage-node
-    Target: DenseStorageNodeResource
-  - Source: Amazon-Redshift
-    Target: Redshift
-  - Source: Analytics
-    Target: Analytics
-  SourceDir: Analytics
-- Name: ApplicationIntegration
-  Color: MaroonFlush
-  Services:
-  - Source: AWS-Express-Workflows
-    Target: ExpressWorkflows
-  - Source: AWS-Step-Functions
-    Target: StepFunctions
-  - Source: Amazon-AppSync
-    Target: AppSync
-  - Source: Amazon-EventBridge_Custom-event-bus_resource-icon
-    Target: EventBridgeCustomEventBusResource
-  - Source: Amazon-EventBridge_Default-event-bus_resource-icon
-    Target: EventBridgeDefaultEventBusResource
-  - Source: Amazon-EventBridge_Saas-Partner-event-bus_resource-icon
-    Target: EventBridgeSaasPartnerEventBusResource
-  - Source: Amazon-EventBridge
-    Target: EventBridge
-  - Source: Amazon-MQ
-    Target: MQ
-  - Source: Amazon-Simple-Notification-Service-SNS_Email-Notification
-    Target: SNSEmailNotification
-  - Source: Amazon-Simple-Notification-Service-SNS_HTTP-Notification
-    Target: SNSHTTPNotification
-  - Source: Amazon-Simple-Notification-Service-SNS_Topic
-    Target: SNSTopic
-  - Source: Amazon-Simple-Notification-Service-SNS
-    Target: SNS
-  - Source: Amazon-Simple-Queue-Service-SQS_Message
-    Target: SQSMessage
-  - Source: Amazon-Simple-Queue-Service-SQS_Queue
-    Target: SQSQueue
-  - Source: Amazon-Simple-Queue-Service-SQS
-    Target: SQS
-  - Source: Application-Integration
-    Target: ApplicationIntegration
-  SourceDir: Application Integration
-- Name: Blockchain
-  Color: Meteor
-  Services:
-  - Source: Amazon-Managed-Blockchain
-    Target: ManagedBlockchain
-  - Source: Amazon-Quantum-Ledger-Database-QLDB
-    Target: QuantumLedgerDatabaseQLDB
-  - Source: Blockchain_Resource-Icon
-    Target: BlockchainResourceIcon
-  - Source: Blockchain
-    Target: Blockchain
-  SourceDir: Blockchain
-- Name: BusinessApplications
-  Color: Crimson
-  Services:
-  - Source: Alexa-For-Business
-    Target: AlexaForBusiness
-  - Source: Amazon-Chime
-    Target: Chime
-  - Source: Amazon-WorkMail
-    Target: WorkMail
-  - Source: Business-Applications
-    Target: BusinessApplications
-  SourceDir: Business Applications
-- Name: Compute
-  Color: Meteor
-  Services:
-  - Source: AWS-Batch
-    Target: Batch
-  - Source: AWS-Compute-Optimizer
-    Target: ComputeOptimizer
-  - Source: AWS-Elastic-Beanstalk_Application
-    Target: ElasticBeanstalkApplication
-  - Source: AWS-Elastic-Beanstalk_Deployment
-    Target: ElasticBeanstalkDeployment
-  - Source: AWS-Elastic-Beanstalk
-    Target: ElasticBeanstalk
-  - Source: AWS-Fargate
-    Target: Fargate
-  - Source: AWS-Lambda_Lambda-Function
-    Target: LambdaLambdaFunction
-  - Source: AWS-Lambda
-    Target: Lambda
-  - Source: AWS-Local-Zones
-    Target: LocalZones
-  - Source: AWS-Outposts
-    Target: Outposts
-  - Source: AWS-Serverless-Application-Repository
-    Target: ServerlessApplicationRepository
-  - Source: AWS-Thinkbox-Deadline
-    Target: ThinkboxDeadline
-  - Source: AWS-Thinkbox-Draft
-    Target: ThinkboxDraft
-  - Source: AWS-Thinkbox-Frost
-    Target: ThinkboxFrost
-  - Source: AWS-Thinkbox-Krakatoa
-    Target: ThinkboxKrakatoa
-  - Source: AWS-Thinkbox-Sequoia
-    Target: ThinkboxSequoia
-  - Source: AWS-Thinkbox-Stoke
-    Target: ThinkboxStoke
-  - Source: AWS-Thinkbox_XMesh
-    Target: ThinkboxXMesh
-  - Source: AWS-Wavelength
-    Target: Wavelength
-  - Source: Amazon-EC2-Container-Registry_Image
-    Target: EC2ContainerRegistryImage
-  - Source: Amazon-EC2-Container-Registry_Registry
-    Target: EC2ContainerRegistryResource
-  - Source: Amazon-EC2-Container-Registry
-    Target: EC2ContainerRegistry
-  - Source: Amazon-EC2_AMI
-    Target: EC2AMI
-  - Source: Amazon-EC2_Auto-Scaling
-    Target: EC2AutoScaling
-  - Source: Amazon-EC2_Elastic-IP-Address
-    Target: EC2ElasticIPAddress
-  - Source: Amazon-EC2_Rescue
-    Target: EC2Rescue
-  - Source: Amazon-EC2
-    Target: EC2
-  - Source: Amazon-Elastic-Container-Service_Container1
-    Target: ECSContainer1
-  - Source: Amazon-Elastic-Container-Service_Container2
-    Target: ECSContainer2
-  - Source: Amazon-Elastic-Container-Service_Container3
-    Target: ECSContainer3
-  - Source: Amazon-Elastic-Container-Service_Service
-    Target: ECSService
-  - Source: Amazon-Elastic-Container-Service
-    Target: ElasticContainerService
-  - Source: Amazon-Elastic-Kubernetes-Service
-    Target: ElasticKubernetesService
-  - Source: Amazon-Lightsail
-    Target: Lightsail
-  - Source: Bottlerocket
-    Target: Bottlerocket
-  - Source: Compute
-    Target: Compute
-  - Source: EC2-Image-Builder
-    Target: EC2ImageBuilder
-  - Source: Parallel-Cluster
-    Target: ParallelCluster
-  - Source: VMware-Cloud-On-AWS
-    Target: VMwareCloudOnAWS
-  - Source: Amazon-EC2_A1-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2A1Instance
-  - Source: Amazon-EC2_C4-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2C4Instance
-  - Source: Amazon-EC2_C5-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2C5Instance
-  - Source: Amazon-EC2_C5n-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2C5nInstance
-  - Source: Amazon-EC2_D2-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2D2Instance
-  - Source: Amazon-EC2_DB-on-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2DBonInstance
-  - Source: Amazon-EC2_F1-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2F1Instance
-  - Source: Amazon-EC2_G3-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2G3Instance
-  - Source: Amazon-EC2_H1-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2H1Instance
-  - Source: Amazon-EC2_High-Memory-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2HighMemoryInstance
-  - Source: Amazon-EC2_I3-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2I3Instance
-  - Source: Amazon-EC2_Instance-with-CloudWatch
-    SourceDir: Compute/_Instances
-    Target: EC2InstancewithCloudWatch
-  - Source: Amazon-EC2_Instance
-    SourceDir: Compute/_Instances
-    Target: EC2Instance
-  - Source: Amazon-EC2_Instances
-    SourceDir: Compute/_Instances
-    Target: EC2Instances
-  - Source: Amazon-EC2_M4-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2M4Instance
-  - Source: Amazon-EC2_M5-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2M5Instance
-  - Source: Amazon-EC2_M5a-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2M5aInstance
-  - Source: Amazon-EC2_Optimized-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2OptimizedInstance
-  - Source: Amazon-EC2_P2-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2P2Instance
-  - Source: Amazon-EC2_P3-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2P3Instance
-  - Source: Amazon-EC2_R4-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2R4Instance
-  - Source: Amazon-EC2_R5-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2R5Instance
-  - Source: Amazon-EC2_R5a-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2R5aInstance
-  - Source: Amazon-EC2_Spot-instance
-    SourceDir: Compute/_Instances
-    Target: EC2SpotInstance
-  - Source: Amazon-EC2_T2-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2T2Instance
-  - Source: Amazon-EC2_T3-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2T3Instance
-  - Source: Amazon-EC2_T3a-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2T3aInstance
-  - Source: Amazon-EC2_X1-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2X1Instance
-  - Source: Amazon-EC2_X1e-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2X1eInstance
-  - Source: Amazon-EC2_z1d-Instance
-    SourceDir: Compute/_Instances
-    Target: EC2z1dInstance
-  SourceDir: Compute
-- Name: CustomerEnablement
-  Color: CeruleanBlue
-  Services:
-  - Source: AWS-IQ
-    Target: IQ
-  - Source: Customer-Enablement
-    Target: CustomerEnablement
-  SourceDir: Customer Enablement
-- Name: CustomerEngagement
-  Color: CeruleanBlue
-  Services:
-  - Source: Amazon-Connect
-    Target: Connect
-  - Source: Amazon-Pinpoint
-    Target: Pinpoint
-  - Source: Amazon-Simple-Email-Service-SES_Email
-    Target: SESEmail
-  - Source: Amazon-Simple-Email-Service-SES
-    Target: SimpleEmailServiceSES
-  - Source: Customer-Engagement
-    Target: CustomerEngagement
-  SourceDir: Customer Engagement
-- Name: Database
-  Color: CeruleanBlue
-  Services:
-  - Source: AWS-Database-Migration-Service_Database-Migration-Workflow
-    Target: DMSDatabaseMigrationWorkflow
-  - Source: AWS-Database-Migration-Service
-    Target: DatabaseMigrationService
-  - Source: Amazon-Aurora
-    Target: Aurora
-  - Source: Amazon-DocumentDB-with-MongoDB-compatibility
-    Target: DocumentDBwithMongoDBcompatibility
-  - Source: Amazon-DynamoDB_Attribute
-    Target: DynamoDBAttribute
-  - Source: Amazon-DynamoDB_Attributes
-    Target: DynamoDBAttributes
-  - Source: Amazon-DynamoDB_Global-Secondary-Index
-    Target: DynamoDBGSI
-  - Source: Amazon-DynamoDB_Item
-    Target: DynamoDBItem
-  - Source: Amazon-DynamoDB_Items
-    Target: DynamoDBItems
-  - Source: Amazon-DynamoDB_Table
-    Target: DynamoDBTable
-  - Source: Amazon-DynamoDB
-    Target: DynamoDB
-  - Source: Amazon-ElastiCache_Cache-Node
-    Target: ElastiCacheCacheNode
-  - Source: Amazon-ElastiCache_For-Memcached
-    Target: ElastiCacheForMemcached
-  - Source: Amazon-ElastiCache_For-Redis
-    Target: ElastiCacheForRedis
-  - Source: Amazon-ElastiCache
-    Target: ElastiCache
-  - Source: Amazon-Managed-Apache-Cassandra-Service
-    Target: ManagedApacheCassandraService
-  - Source: Amazon-Neptune
-    Target: Neptune
-  - Source: Amazon-Quantum-Ledger-Database_QLDB
-    Target: QLDB
-  - Source: Amazon-RDS-on-VMware
-    Target: RDSonVMware
-  - Source: Amazon-RDS_Amazon-Aurora_instance-alt
-    Target: RDSAmazonAurorainstancealt
-  - Source: Amazon-RDS_Amazon-Aurora_instance
-    Target: RDSAmazonAurorainstance
-  - Source: Amazon-RDS_Amazon-RDS_instance-alt
-    Target: RDSAmazonRDSinstancealt
-  - Source: Amazon-RDS_Amazon-RDS_instance
-    Target: RDSAmazonRDSinstance
-  - Source: Amazon-RDS_MariaDB_instance-alt
-    Target: RDSMariaDBinstancealt
-  - Source: Amazon-RDS_MariaDB_instance
-    Target: RDSMariaDBinstance
-  - Source: Amazon-RDS_MySQL_instance-alt
-    Target: RDSMySQLinstancealt
-  - Source: Amazon-RDS_MySQL_instance
-    Target: RDSMySQLinstance
-  - Source: Amazon-RDS_Oracle_instance-alt
-    Target: RDSOracleinstancealt
-  - Source: Amazon-RDS_Oracle_instance
-    Target: RDSOracleinstance
-  # No HiDPI version of Amazon-RDS_PIOP
-  # - Source: Amazon-RDS_PIOP
-  #   Target: RDSPIOP
-  - Source: Amazon-RDS_PostgreSQL_instance-alt
-    Target: RDSPostgreSQLinstancealt
-  - Source: Amazon-RDS_PostgreSQL_instance
-    Target: RDSPostgreSQLinstance
-  - Source: Amazon-RDS_SQL-Server_instance-alt
-    Target: RDSSQLServerinstancealt
-  - Source: Amazon-RDS_SQL-Server_instance
-    Target: RDSSQLServerinstance
-  - Source: Amazon-RDS
-    Target: RDS
-  - Source: Amazon-Redshift_Dense-Compute-Node
-    Target: DenseComputeNodeResource2
-  - Source: Amazon-Redshift_Dense-Storage-Node
-    Target: DenseStorageNodeResource2
-  - Source: Amazon-Redshift
-    Target: AmazonRedshift
-  - Source: Amazon-Timestream
-    Target: Timestream
-  - Source: Database
-    Target: Database
-  SourceDir: Database
-- Name: DeveloperTools
-  Color: CeruleanBlue
-  Services:
-  - Source: AWS-Cloud-Development-Kit
-    Target: CloudDevelopmentKit
-  - Source: AWS-Cloud9
-    Target: Cloud9
-  - Source: AWS-CodeBuild
-    Target: CodeBuild
-  - Source: AWS-CodeCommit
-    Target: CodeCommit
-  - Source: AWS-CodeDeploy
-    Target: CodeDeploy
-  - Source: AWS-CodePipeline
-    Target: CodePipeline
-  - Source: AWS-CodeStar
-    Target: CodeStar
-  - Source: AWS-Command-Line-Interface
-    Target: CommandLineInterface
-  - Source: AWS-Tools-And-SDKs
-    Target: ToolsAndSDKs
-  - Source: AWS-X-Ray
-    Target: XRay
-  - Source: Cloud9_Resource
-    Target: Cloud9Resource
-  - Source: Developer-Tools
-    Target: DeveloperTools
-  SourceDir: Developer Tools
-- Name: EndUserComputing
-  Color: Elm
-  Services:
-  - Source: Amazon-Appstream-2.0
-    Target: Appstream2_0
-  - Source: Amazon-WorkDocs
-    Target: WorkDocs
-  - Source: Amazon-WorkLink
-    Target: WorkLink
-  - Source: Amazon-Workspaces
-    Target: Workspaces
-  - Source: End-User-Computing
-    Target: EndUserComputing
-  SourceDir: End User Computing
-- Name: GameTech
-  Color: PurpleHeart
-  Services:
-  - Source: Amazon-GameLift
-    Target: GameLift
-  - Source: Game-Tech
-    Target: GameTech
-  SourceDir: Game Tech
-- Name: InternetOfThings
-  Color: ForestGreen
-  Services:
-  - Source: AWS-IoT-1-Click
-    Target: IoT1Click
-  - Source: AWS-IoT-Analytics_Channel
-    Target: IoTAnalyticsChannel
-  - Source: AWS-IoT-Analytics_Data-Set
-    Target: IoTAnalyticsDataSet
-  - Source: AWS-IoT-Analytics_Data-Store
-    Target: IoTAnalyticsDataStore
-  - Source: AWS-IoT-Analytics_Notebook
-    Target: IoTAnalyticsNotebook
-  - Source: AWS-IoT-Analytics_Pipeline
-    Target: IoTAnalyticsPipeline
-  - Source: AWS-IoT-Analytics
-    Target: IoTAnalytics
-  - Source: AWS-IoT-Button
-    Target: IoTButton
-  - Source: AWS-IoT-Core
-    Target: IoTCore
-  - Source: AWS-IoT-Device-Defender
-    Target: IoTDeviceDefender
-  - Source: AWS-IoT-Device-Management
-    Target: IoTDeviceManagement
-  - Source: AWS-IoT-Events
-    Target: IoTEvents
-  - Source: AWS-IoT-Greengrass_Connector
-    Target: IoTGreengrassConnector
-  - Source: AWS-IoT-Greengrass
-    Target: IoTGreengrass
-  - Source: AWS-IoT-SiteWise
-    Target: IoTSiteWise
-  - Source: AWS-IoT-Things-Graph
-    Target: IoTThingsGraph
-  - Source: Amazon-FreeRTOS
-    Target: FreeRTOS
-  - Source: Internet-of-Things
-    Target: InternetofThings
-  - Source: IoT_Action
-    Target: IoTAction
-  - Source: IoT_Actuator
-    Target: IoTActuator
-  - Source: IoT_Alexa-enabled-device
-    Target: IoTAlexaEnabledDevice
-  - Source: IoT_Alexa-skill
-    Target: IoTAlexaSkill
-  - Source: IoT_Alexa-voice-service
-    Target: IoTAlexaVoiceService
-  - Source: IoT_Bank
-    Target: IoTBank
-  - Source: IoT_Bicycle
-    Target: IoTBicycle
-  - Source: IoT_Camera
-    Target: IoTCamera
-  - Source: IoT_Car
-    Target: IoTCar
-  - Source: IoT_Cart
-    Target: IoTCart
-  - Source: IoT_Certificate-manager
-    Target: IoTCertificateManager
-  - Source: IoT_Coffee-pot
-    Target: IoTCoffeePot
-  - Source: IoT_Desired-state
-    Target: IoTDesiredState
-  - Source: IoT_Device-gateway
-    Target: IoTDeviceGateway
-  - Source: IoT_Door-lock
-    Target: IoTDoorLock
-  - Source: IoT_Echo
-    Target: IoTEcho
-  - Source: IoT_Factory
-    Target: IoTFactory
-  - Source: IoT_Fire-TV-stick
-    Target: IoTFireTVStick
-  - Source: IoT_Fire-TV
-    Target: IoTFireTV
-  - Source: IoT_Generic
-    Target: IoTGeneric
-  - Source: IoT_HTTP-2-protocol
-    Target: IoTHTTP2Protocol
-  - Source: IoT_HTTP-protocol
-    Target: IoTHTTPProtocol
-  - Source: IoT_Hardware-board
-    Target: IoTHardwareBoard
-  - Source: IoT_House
-    Target: IoTHouse
-  - Source: IoT_Lambda-function
-    Target: IoTLambdaFunction
-  - Source: IoT_Lightbulb
-    Target: IoTLightbulb
-  - Source: IoT_MQTT-protocol
-    Target: IoTMQTTProtocol
-  - Source: IoT_Medical-emergency
-    Target: IoTMedicalEmergency
-  - Source: IoT_Over-the-air-update
-    Target: IoTOverTheAirUpdate
-  - Source: IoT_Police-emergency
-    Target: IoTPoliceEmergency
-  - Source: IoT_Policy
-    Target: IoTPolicy
-  - Source: IoT_Reported-state
-    Target: IoTReportedState
-  - Source: IoT_Rule
-    Target: IoTRule
-  - Source: IoT_Sensor
-    Target: IoTSensor
-  - Source: IoT_Servo
-    Target: IoTServo
-  - Source: IoT_Shadow
-    Target: IoTShadow
-  - Source: IoT_Simulator
-    Target: IoTSimulator
-  - Source: IoT_Thermostat
-    Target: IoTThermostat
-  - Source: IoT_Topic
-    Target: IoTTopic
-  - Source: IoT_Travel
-    Target: IoTTravel
-  - Source: IoT_Utility
-    Target: IoTUtility
-  - Source: IoT_Windfarm
-    Target: IoTWindfarm
-  SourceDir: Internet of Things
-- Name: MachineLearning
-  Color: Elm
-  Services:
-  - Source: AWS-Deep-Learning-AMIs
-    Target: DeepLearningAMIs
-  - Source: AWS-Deep-Learning-Containers
-    Target: DeepLearningContainers
-  # Local file rename to process - monitor
-  - Source: AWS-DeepComposer
-    Target: DeepComposer
-  - Source: AWS-DeepLens
-    Target: DeepLens
-  - Source: AWS-DeepRacer
-    Target: DeepRacer
-  - Source: Amazon-Augmented-AI
-    Target: AugmentedAI
-  - Source: Amazon-Comprehend
-    Target: Comprehend
-  - Source: Amazon-Elastic-Inference
-    Target: ElasticInference
-  - Source: Amazon-Forecast
-    Target: Forecast
-  - Source: Amazon-Fraud-Detector
-    Target: FraudDetector
-  - Source: Amazon-Kendra
-    Target: Kendra
-  - Source: Amazon-Lex
-    Target: Lex
-  - Source: Amazon-Personalize
-    Target: Personalize
-  - Source: Amazon-Polly
-    Target: Polly
-  - Source: Amazon-Rekognition_Image
-    Target: RekognitionImage
-  - Source: Amazon-Rekognition_Video
-    Target: RekognitionVideo
-  - Source: Amazon-Rekognition
-    Target: Rekognition
-  - Source: Amazon-SageMaker-Ground-Truth
-    Target: SageMakerGroundTruth
-  - Source: Amazon-SageMaker_Model
-    Target: SageMakerModel
-  - Source: Amazon-SageMaker_Notebook
-    Target: SageMakerNotebook
-  - Source: Amazon-SageMaker_Train
-    Target: SageMakerTrain
-  - Source: Amazon-SageMaker
-    Target: SageMaker
-  - Source: Amazon-Textract
-    Target: Textract
-  - Source: Amazon-Transcribe
-    Target: Transcribe
-  - Source: Amazon-Translate
-    Target: Translate
-  - Source: Apache-MXNet-on-AWS
-    Target: ApacheMXNetonAWS
-  - Source: Machine-Learning
-    Target: MachineLearning
-  - Source: TensorFlow-on-AWS
-    Target: TensorFlowonAWS
-  SourceDir: Machine Learning
-- Name: ManagementAndGovernance
-  Color: MaroonFlush
-  Services:
-  - Source: AWS-App-Config
-    Target: AppConfig
-  - Source: AWS-Auto-Scaling
-    Target: AutoScaling
-  - Source: AWS-CloudFormation_Change-Set
-    Target: CloudFormationChangeSet
-  - Source: AWS-CloudFormation_Stack
-    Target: CloudFormationStack
-  - Source: AWS-CloudFormation_Template
-    Target: CloudFormationTemplate
-  - Source: AWS-CloudFormation
-    Target: CloudFormation
-  - Source: AWS-CloudTrail
-    Target: CloudTrail
-  - Source: AWS-Command-Line-Interface
-    Target: AWSCLI
-  - Source: AWS-Config
-    Target: Config
-  - Source: AWS-Control-Tower
-    Target: ControlTower
-  - Source: AWS-License-Manager
-    Target: LicenseManager
-  - Source: AWS-Managed-Services
-    Target: ManagedServices
-  - Source: AWS-Management-Console
-    Target: ManagementConsole
-  - Source: AWS-OpsWorks_Apps
-    Target: OpsWorksApps
-  - Source: AWS-OpsWorks_Deployments
-    Target: OpsWorksDeployments
-  - Source: AWS-OpsWorks_Instances
-    Target: OpsWorksInstances
-  - Source: AWS-OpsWorks_Layers
-    Target: OpsWorksLayers
-  - Source: AWS-OpsWorks_Monitoring
-    Target: OpsWorksMonitoring
-  - Source: AWS-OpsWorks_Permissions
-    Target: OpsWorksPermissions
-  - Source: AWS-OpsWorks_Resources
-    Target: OpsWorksResources
-  - Source: AWS-OpsWorks_Stack2
-    Target: OpsWorksStack2
-  - Source: AWS-OpsWorks
-    Target: OpsWorks
-  - Source: AWS-Organizations_Account
-    Target: OrganizationsAccount
-  - Source: AWS-Organizations_Organizational-unit
-    Target: OrganizationsOrganizationalunit
-  - Source: AWS-Organizations
-    Target: Organizations
-  - Source: AWS-Personal-Health-Dashboard
-    Target: PersonalHealthDashboard
-  - Source: AWS-Service-Catalog
-    Target: ServiceCatalog
-  - Source: AWS-Systems-Manager_Automation
-    Target: SystemsManagerAutomation
-  - Source: AWS-Systems-Manager_Documents
-    Target: SystemsManagerDocuments
-  - Source: AWS-Systems-Manager_Inventory
-    Target: SystemsManagerInventory
-  - Source: AWS-Systems-Manager_Maintenance-Windows
-    Target: SystemsManagerMaintWindows
-  - Source: AWS-Systems-Manager_Parameter-Store
-    Target: SystemsManagerParameterStore
-  - Source: AWS-Systems-Manager_Patch-Manager
-    Target: SystemsManagerPatchManager
-  - Source: AWS-Systems-Manager_Run-Command
-    Target: SystemsManagerRunCommand
-  - Source: AWS-Systems-Manager_State-Manager
-    Target: SystemsManagerStateManager
-  - Source: AWS-Systems-Manager
-    Target: SystemsManager
-  - Source: AWS-Trusted-Advisor_Checklist-Cost
-    Target: TrustedAdvisorCheckCost
-  - Source: AWS-Trusted-Advisor_Checklist-Fault-Tolerant
-    Target: TrustedAdvisorCheckFaultTolerant
-  - Source: AWS-Trusted-Advisor_Checklist-Performance
-    Target: TrustedAdvisorCheckPerformance
-  - Source: AWS-Trusted-Advisor_Checklist-Security
-    Target: TrustedAdvisorCheckSecurity
-  - Source: AWS-Trusted-Advisor_Checklist
-    Target: TrustedAdvisorChecklist
-  - Source: AWS-Trusted-Advisor
-    Target: TrustedAdvisor
-  - Source: AWS-Well-Architected-Tool
-    Target: WellArchitectedTool
-  - Source: Amazon-CloudWatch_Alarm
-    Target: CloudWatchAlarm
-  - Source: Amazon-CloudWatch_Event-Event-Based
-    Target: CloudWatchEventEventBased
-  - Source: Amazon-CloudWatch_Event-Time-Based
-    Target: CloudWatchEventTimeBased
-  - Source: Amazon-CloudWatch_Rule
-    Target: CloudWatchRule
-  - Source: Amazon-CloudWatch
-    Target: CloudWatch
-  - Source: Management-and-Governance
-    Target: ManagementandGovernance
-  - Source: Systems-Manager_OpsCenter
-    Target: SystemsManagerOpsCenter
-  SourceDir: Management & Governance
-- Name: MediaServices
-  Color: Meteor
-  Services:
-  - Source: AWS-Elemental-MediaConnect
-    Target: ElementalMediaConnect
-  - Source: AWS-Elemental-MediaConvert
-    Target: ElementalMediaConvert
-  - Source: AWS-Elemental-MediaLive
-    Target: ElementalMediaLive
-  - Source: AWS-Elemental-MediaPackage
-    Target: ElementalMediaPackage
-  - Source: AWS-Elemental-MediaStore
-    Target: ElementalMediaStore
-  - Source: AWS-Elemental-MediaTailor
-    Target: ElementalMediaTailor
-  - Source: Amazon-Elastic-Transcoder
-    Target: ElasticTranscoder
-  - Source: Amazon-Kinesis-Video-Streams
-    Target: KinesisVideoStreams2
-  - Source: Media-Services
-    Target: MediaServices
-  SourceDir: Media Services
-- Name: MigrationAndTransfer
-  Color: Elm
-  Services:
-  - Source: AWS-Application-Discovery-Service
-    Target: ApplicationDiscoveryService
-  - Source: AWS-DataSync_Agent
-    Target: DataSyncAgent
-  - Source: AWS-DataSync
-    Target: DataSync
-  - Source: AWS-Database-Migration-Service
-    Target: DatabaseMigrationService2
-  - Source: AWS-Migration-Hub
-    Target: MigrationHub
-  - Source: AWS-Server-Migration-Service
-    Target: ServerMigrationService
-  - Source: AWS-Snowball-Edge
-    Target: SnowballEdge
-  - Source: AWS-Snowball
-    Target: Snowball
-  - Source: AWS-Snowmobile
-    Target: Snowmobile
-  - Source: AWS-Transfer-Family
-    Target: TransferFamily
-  - Source: CloudEndure-Migration
-    Target: CloudEndureMigration
-  - Source: Migration-and-Transfer
-    Target: MigrationandTransfer
-  SourceDir: Migration & Transfer
-- Name: Mobile
-  Color: Crimson
-  Services:
-  - Source: AWS-Amplify
-    Target: Amplify
-  - Source: AWS-AppSync
-    Target: AppSync2
-  - Source: AWS-Device-Farm
-    Target: DeviceFarm
-  - Source: Amazon-API-Gateway_Endpoint
-    Target: APIGatewayEndpoint
-  - Source: Amazon-API-Gateway
-    Target: APIGateway
-  - Source: Amazon-Pinpoint
-    Target: Pinpoint2
-  - Source: Mobile
-    Target: Mobile
-  SourceDir: Mobile
-- Name: NetworkingAndContentDelivery
-  Color: PurpleHeart
-  Services:
-  - Source: AWS-App-Mesh
-    Target: AppMesh
-  - Source: AWS-Client-VPN
-    Target: ClientVPN
-  - Source: AWS-Cloud-Map
-    Target: CloudMap
-  - Source: AWS-Direct-Connect
-    Target: DirectConnect
-  - Source: AWS-Global-Accelerator
-    Target: GlobalAccelerator
-  - Source: AWS-PrivateLink
-    Target: PrivateLink
-  - Source: AWS-Site-to-Site-VPN
-    Target: SitetoSiteVPN
-  - Source: AWS-Transit-Gateway
-    Target: TransitGateway
-  - Source: Amazon-API-Gateway_Endpoint
-    Target: APIGatewayEndpoint2
-  - Source: Amazon-API-Gateway
-    Target: APIGateway2
-  - Source: Amazon-CloudFront_Download-Distribution
-    Target: CloudFrontDownloadDistribution
-  - Source: Amazon-CloudFront_Edge-Location
-    Target: CloudFrontEdgeLocation
-  - Source: Amazon-CloudFront_Streaming-Distribution
-    Target: CloudFrontStreamingDistribution
-  - Source: Amazon-CloudFront
-    Target: CloudFront
-  - Source: Amazon-Route-53_Hosted-Zone
-    Target: Route53HostedZone
-  - Source: Amazon-Route-53_Route-Table
-    Target: Route53RouteTable
-  - Source: Amazon-Route-53
-    Target: Route53
-  - Source: Amazon-VPC_Customer-Gateway
-    Target: VPCCustomerGateway
-  - Source: Amazon-VPC_Elastic-Network-Adapter
-    Target: VPCElasticNetworkAdapter
-  - Source: Amazon-VPC_Elastic-Network-Interface
-    Target: VPCElasticNetworkInterface
-  - Source: Amazon-VPC_Endpoints
-    Target: VPCEndpoints
-  - Source: Amazon-VPC_Flow-Logs
-    Target: VPCFlowLogs
-  - Source: Amazon-VPC_Internet-Gateway
-    Target: VPCInternetGateway
-  - Source: Amazon-VPC_NAT-Gateway
-    Target: VPCNATGateway
-  - Source: Amazon-VPC_Network-Access-Control-List
-    Target: VPCNetworkAccessControlList
-  - Source: Amazon-VPC_Peering
-    Target: VPCPeering
-  - Source: Amazon-VPC_Router
-    Target: VPCRouter
-  - Source: Amazon-VPC_VPN-Connection
-    Target: VPCVPNConnection
-  - Source: Amazon-VPC_VPN-Gateway
-    Target: VPCVPNGateway
-  - Source: Amazon-VPC
-    Target: VPC
-  - Source: Elastic-Load-Balancing-ELB_Application-load-balancer
-    Target: ELBApplicationLoadBalancer
-  - Source: Elastic-Load-Balancing-ELB_Network-load-balancer
-    Target: ELBNetworkLoadBalancer
-  - Source: Elastic-Load-Balancing_Classic-load-balancer
-    Target: ClassicLoadBalancer
-  - Source: Elastic-Load-Balancing
-    Target: ElasticLoadBalancing
-  - Source: Networking-and-Content-Delivery
-    Target: NetworkingandContentDelivery
-  SourceDir: Networking & Content Delivery
-- Name: QuantumTechnologies
-  Services:
-  - Source: AWS-Braket
-    Target: Braket
-  - Source: Quantum-Technologies
-    Target: QuantumTechnologies
-  SourceDir: Quantum Technologies
-- Name: Robotics
-  Color: Crimson
-  Services:
-  - Source: AWS-RoboMaker_Cloud-Extension-ROS
-    Target: RoboMakerCloudExtensionROS
-  - Source: AWS-RoboMaker_Development-Environment
-    Target: RoboMakerDevEnvironment
-  - Source: AWS-RoboMaker_Fleet-Management
-    Target: RoboMakerFleetManagement
-  - Source: AWS-RoboMaker_Simulation
-    Target: RoboMakerSimulation
-  - Source: AWS-RoboMaker
-    Target: RoboMaker
-  - Source: Robotics
-    Target: Robotics
-  SourceDir: Robotics
-- Name: Satellite
-  Color: CeruleanBlue
-  Services:
-  - Source: AWS-Ground-Station
-    Target: GroundStation
-  - Source: Satellite
-    Target: Satellite
-  SourceDir: Satellite
-- Name: SecurityIdentityAndCompliance
-  Color: Crimson
-  Services:
-  - Source: AD-Connector
-    Target: ADConnector
-  - Source: AWS-Artifact
-    Target: Artifact
-  - Source: AWS-Certificate-Authority
-    Target: CertificateAuthority
-  - Source: AWS-Certificate-Manager
-    Target: CertificateManager
-  - Source: AWS-CloudHSM
-    Target: CloudHSM
-  - Source: AWS-Directory-Service
-    Target: DirectoryService
-  - Source: AWS-Firewall-Manager
-    Target: FirewallManager
-  - Source: AWS-Identity-and-Access-Management-IAM_AWS-STS-Alternate
-    Target: IAMAWSSTSAlternate
-  - Source: AWS-Identity-and-Access-Management-IAM_AWS-STS
-    Target: IAMAWSSTS
-  - Source: AWS-Identity-and-Access-Management-IAM_Add-on
-    Target: IAMAddon
-  - Source: AWS-Identity-and-Access-Management-IAM_Data-Encryption-Key
-    Target: IAMDataEncryptionKey
-  - Source: AWS-Identity-and-Access-Management-IAM_Encrypted-Data
-    Target: IAMEncryptedData
-  - Source: AWS-Identity-and-Access-Management-IAM_Long-term-Security-Credential
-    Target: IAMLongtermSecurityCredential
-  - Source: AWS-Identity-and-Access-Management-IAM_MFA-Token
-    Target: IAMMFAToken
-  - Source: AWS-Identity-and-Access-Management-IAM_Permissions
-    Target: IAMPermissions
-  - Source: AWS-Identity-and-Access-Management-IAM_Role
-    Target: IAMRole
-  - Source: AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential
-    Target: IAMTemporarySecurityCredential
-  - Source: AWS-Identity-and-Access-Management_IAM
-    Target: IAMResource
-  - Source: AWS-Key-Management-Service
-    Target: KeyManagementService
-  - Source: AWS-Managed-Microsoft-AD
-    Target: ManagedMicrosoftAD
-  - Source: AWS-Resource-Access-Manager
-    Target: ResourceAccessManager
-  - Source: AWS-Secrets-Manager
-    Target: SecretsManager
-  - Source: AWS-Security-Hub
-    Target: SecurityHub
-  - Source: AWS-Shield_Shield-Advanced
-    Target: ShieldShieldAdvanced
-  - Source: AWS-Shield
-    Target: Shield
-  - Source: AWS-Single-Sign-On
-    Target: SingleSignOn
-  - Source: AWS-WAF_Filtering-rule
-    Target: WAFFilteringrule
-  - Source: AWS-WAF
-    Target: WAF
-  - Source: Amazon-Cloud-Directory
-    Target: CloudDirectory
-  - Source: Amazon-Cognito
-    Target: Cognito
-  - Source: Amazon-Detective
-    Target: Detective
-  - Source: Amazon-GuardDuty
-    Target: GuardDuty
-  - Source: Amazon-Inspector_Agent
-    Target: InspectorAgent
-  - Source: Amazon-Inspector
-    Target: Inspector
-  - Source: Amazon-Macie
-    Target: Macie
-  - Source: Security-Identity-and-Compliance
-    Target: SecIdentityAndCompliance
-  - Source: Simple-AD
-    Target: SimpleAD
-  SourceDir: Security, Identity, & Compliance
-- Name: Storage
-  Color: ForestGreen
-  Services:
-  - Source: AWS-Backup
-    Target: Backup
-  - Source: AWS-Snow-Family_Snowball-Import-Export
-    Target: SnowFamilyImportExport
-  - Source: AWS-Snowball-Edge
-    Target: SnowballEdge2
-  - Source: AWS-Snowball
-    Target: Snowball2
-  - Source: AWS-Snowmobile
-    Target: Snowmobile2
-  - Source: AWS-Storage-Gateway_Cached-Volume
-    Target: StorageGatewayCachedVolume
-  - Source: AWS-Storage-Gateway_Non-Cached-Volume
-    Target: StorageGatewayNonCachedVolume
-  - Source: AWS-Storage-Gateway_Virtual-Tape-Library
-    Target: StorageGatewayVirtualTapeLibrary
-  - Source: AWS-Storage-Gateway
-    Target: StorageGateway
-  - Source: Amazon-Elastic-Block-Store-EBS_Snapshot
-    Target: EBSSnapshot
-  - Source: Amazon-Elastic-Block-Store-EBS_Volume
-    Target: EBSVolume
-  - Source: Amazon-Elastic-Block-Store-EBS
-    Target: ElasticBlockStoreEBS
-  - Source: Amazon-Elastic-File-System_EFS_File-system
-    Target: EFSFilesystem
-  - Source: Amazon-Elastic-File-System_EFS
-    Target: ElasticFileSystemEFS
-  - Source: Amazon-FSx-for-Lustre
-    Target: FSxforLustre
-  - Source: Amazon-FSx-for-Windows-File-Server
-    Target: FSxforWindowsFileServer
-  - Source: Amazon-FSx
-    Target: FSx
-  - Source: Amazon-S3-Glacier_Archive
-    Target: S3GlacierArchive
-  - Source: Amazon-S3-Glacier_Vault
-    Target: S3GlacierVault
-  - Source: Amazon-S3-Glacier
-    Target: S3Glacier
-  - Source: Amazon-Simple-Storage-Service-S3_Bucket-with-Objects
-    Target: S3BucketwithObjects
-  - Source: Amazon-Simple-Storage-Service-S3_Bucket
-    Target: S3Bucket
-  - Source: Amazon-Simple-Storage-Service-S3_Object
-    Target: S3Object
-  - Source: Amazon-Simple-Storage-Service-S3
-    Target: SimpleStorageServiceS3
-  - Source: CloudEndure-Disaster-Recovery
-    Target: CloudEndureDisasterRecovery
-  - Source: EFS-InfrequentAccess
-    Target: EFSInfrequentAccess
-  - Source: EFS-Standard
-    Target: EFSStandard
-  - Source: Storage
-    Target: Storage
-  SourceDir: Storage
-- Name: General
-  Color: SquidInk
-  Services:
-  - Source: AWS-Marketplace
-    Target: Marketplace
-  - Source: Client
-    Target: Client
-  - Source: Disk
-    Target: Disk
-  - Source: Forums
-    Target: Forums
-  - Source: General
-    Target: General
-  # Monitor for addition of "_light-bg@5x" entry for Generic Firewall
-  - Source: Generic_Firewall
-    Target: GenericFirewall
-  - Source: Generic-database
-    Target: GenericDatabase
-  - Source: Internet-alt1
-    Target: InternetAlt1
-  - Source: Internet-alt2
-    Target: InternetAlt2
-  - Source: Internet-gateway
-    Target: InternetGateway
-  - Source: Mobile-client
-    Target: MobileClient
-  - Source: Multimedia
-    Target: Multimedia
-  - Source: Office-building
-    Target: OfficeBuilding
-  - Source: SAML-token
-    Target: SAMLToken
-  - Source: SDK
-    Target: SDK
-  - Source: SSL-padlock
-    Target: SSLPadlock
-  - Source: Tape-storage
-    Target: TapeStorage
-  - Source: Toolkit
-    Target: Toolkit
-  - Source: Traditional-server
-    Target: TraditionalServer
-  - Source: User
-    Target: User
-  - Source: Users
-    Target: Users
-  SourceDir: _General
-- Name: GroupIcons
-  Color: SquidInk
-  Services:
-  - Source: AWS-Cloud-alt
-    Target: Cloudalt
-    Color: SquidInk
-  - Source: AWS-Cloud
-    Target: Cloud
-    Color: SquidInk
-  - Source: AWS-Step-Function
-    Target: StepFunction
-    Color: MaroonFlush
-  - Source: Auto-Scaling
-    Target: AutoScalingGroup
-    Color: Meteor
-  - Source: Corporate-data-center
-    Target: CorporateDataCenter
-    Color: SquidInk
-  - Source: Elastic-Beanstalk-container
-    Target: ElasticBeanstalkContainer
-    Color: Meteor
-  - Source: Region
-    Target: Region
-    Color: CeruleanBlue
-  - Source: Server-contents
-    Target: ServerContents
-    Color: SquidInk
-  - Source: Spot-fleet
-    Target: SpotFleet
-    Color: Meteor
-  - Source: VPC-subnet-private
-    Target: VPCSubnetPrivate
-    Color: CeruleanBlue
-  - Source: VPC-subnet-public
-    Target: VPCSubnetPublic
-    Color: ForestGreen
-  - Source: Virtual-private-cloud-VPC
-    Target: VirtualPrivateCloudVPC
-    Color: ForestGreen
-  SourceDir: _Group Icons
+  ARVR:
+    Icons:
+      - Source: Arch_AWS-Sumerian_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_AR-VR/Arch_48
+        Target: Sumerian
+  Analytics:
+    Icons:
+      - Source: Res_AWS-Glue_Crawler_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: GlueCrawler
+      - Source: Res_AWS-Glue_Data-Catalog_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: GlueDataCatalog
+      - Source: Res_AWS-Lake-Formation_Data-Lake_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: LakeFormationDataLake
+      - Source: Res_Amazon-CloudSearch_Search-Documents_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: CloudSearchSearchDocuments
+      - Source: Res_Amazon-EMR_Cluster_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMRCluster
+      - Source: Res_Amazon-EMR_EMR-Engine-MapR-M3_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMREMREngineMapRM3
+      - Source: Res_Amazon-EMR_EMR-Engine-MapR-M5_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMREMREngineMapRM5
+      - Source: Res_Amazon-EMR_EMR-Engine-MapR-M7_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMREMREngineMapRM7
+      - Source: Res_Amazon-EMR_EMR-Engine_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMREMREngine
+      - Source: Res_Amazon-EMR_HDFS-Cluster_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: EMRHDFSCluster
+      - Source: Res_Amazon-Redshift_Dense-Compute-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: RedshiftDenseComputeNode
+      - Source: Res_Amazon-Redshift_Dense-Storage-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Analytics/Res_48_Light
+        Target: RedshiftDenseStorageNode
+      - Source: Arch_AWS-Data-Exchange_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: DataExchange
+      - Source: Arch_AWS-Data-Pipeline_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: DataPipeline
+      - Source: Arch_AWS-Glue_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: Glue
+      - Source: Arch_AWS-Lake-Formation_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: LakeFormation
+      - Source: Arch_Amazon-Athena_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: Athena
+      - Source: Arch_Amazon-CloudSearch_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: CloudSearch
+      - Source: Arch_Amazon-EMR_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: EMR
+      - Source: Arch_Amazon-Elasticsearch-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: ElasticsearchService
+      - Source: Arch_Amazon-Kinesis-Data-Analytics_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: KinesisDataAnalytics
+      - Source: Arch_Amazon-Kinesis-Data-Streams_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: KinesisDataStreams
+      - Source: Arch_Amazon-Kinesis-Firehose_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: KinesisFirehose
+      - Source: Arch_Amazon-Kinesis-Video-Streams_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: KinesisVideoStreams
+      - Source: Arch_Amazon-Kinesis_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: Kinesis
+      - Source: Arch_Amazon-Managed-Streaming-for-Kafka_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: ManagedStreamingforKafka
+      - Source: Arch_Amazon-QuickSight_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: QuickSight
+      - Source: Arch_Amazon-Redshift_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Analytics/Arch_48
+        Target: Redshift
+  AppIntegration:
+    Icons:
+      - Source: Arch_AWS-AppFlow_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: AppFlow
+      - Source: Arch_AWS-AppSync_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: AppSync
+      - Source: Arch_AWS-Console-Mobile-Application _48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: ConsoleMobileApplication
+      - Source: Arch_AWS-Express-Workflow_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: ExpressWorkflow
+      - Source: Arch_AWS-Simple-Notification-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: SimpleNotificationService
+      - Source: Arch_AWS-Simple-Queue-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: SimpleQueueService
+      - Source: Arch_AWS-Step-Functions_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: StepFunctions
+      - Source: Arch_Amazon-EventBridge_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: EventBridge
+      - Source: Arch_Amazon-MQ_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_App-Integration/Arch_48
+        Target: MQ
+  ApplicationIntegration:
+    Icons:
+      - Source: Res_Amazon-EventBridge-Event_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: EventBridgeEvent
+      - Source: Res_Amazon-EventBridge-Rule_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: EventBridgeRule
+      - Source: Res_Amazon-EventBridge-Saas-Partner-Event_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: EventBridgeSaasPartnerEvent
+      - Source: Res_Amazon-EventBridge_Custom-Event-Bus_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: EventBridgeCustomEventBus
+      - Source: Res_Amazon-EventBridge_Default-Event-Bus_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: EventBridgeDefaultEventBus
+      - Source: Res_Amazon-Simple-Notification-Service_Email-Notification_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: SimpleNotificationServiceEmailNotification
+      - Source: Res_Amazon-Simple-Notification-Service_HTTP-Notification_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: SimpleNotificationServiceHTTPNotification
+      - Source: Res_Amazon-Simple-Notification-Service_Topic_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: SimpleNotificationServiceTopic
+      - Source: Res_Amazon-Simple-Queue-Service_Message_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: SimpleQueueServiceMessage
+      - Source: Res_Amazon-Simple-Queue-Service_Queue_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Application-Integration/Res_48_Light
+        Target: SimpleQueueServiceQueue
+  Blockchain:
+    Icons:
+      - Source: Res_Amazon-Managed-Blockchain_Blockchain_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Blockchain/Res_48_Light
+        Target: ManagedBlockchainBlockchain
+      - Source: Arch_Amazon-Managed-Blockchain_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Blockchain/48
+        Target: ManagedBlockchain
+      - Source: Arch_Amazon-Quantum-Ledger-Database_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Blockchain/48
+        Target: QuantumLedgerDatabase
+  BusinessApplication:
+    Icons:
+      - Source: Arch_Alexa-For-Business_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Business-Application/48
+        Target: AlexaForBusiness
+      - Source: Arch_Amazon-Chime_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Business-Application/48
+        Target: Chime
+      - Source: Arch_Amazon-WorkDocs_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Business-Application/48
+        Target: WorkDocs
+      - Source: Arch_Amazon-WorkMail_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Business-Application/48
+        Target: WorkMail
+  Compute:
+    Icons:
+      - Source: Res_Amazon-EC2_A1-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2A1Instance
+      - Source: Res_Amazon-EC2_AMI_Resource_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2AMIResource
+      - Source: Res_Amazon-EC2_AWS-Inferentia_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2AWSInferentia
+      - Source: Res_Amazon-EC2_Auto-Scaling_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2AutoScaling
+      - Source: Res_Amazon-EC2_C4-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2C4Instance
+      - Source: Res_Amazon-EC2_C5-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2C5Instance
+      - Source: Res_Amazon-EC2_C5n-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2C5nInstance
+      - Source: Res_Amazon-EC2_C6g-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2C6gInstance
+      - Source: Res_Amazon-EC2_D2-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2D2Instance
+      - Source: Res_Amazon-EC2_DB-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2DBInstance
+      - Source: Res_Amazon-EC2_Elastic-IP-Address_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2ElasticIPAddress
+      - Source: Res_Amazon-EC2_F1-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2F1Instance
+      - Source: Res_Amazon-EC2_G3-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2G3Instance
+      - Source: Res_Amazon-EC2_H1-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2H1Instance
+      - Source: Res_Amazon-EC2_HMI-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2HMIInstance
+      - Source: Res_Amazon-EC2_I3-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2I3Instance
+      - Source: Res_Amazon-EC2_Instance-with-CloudWatch_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2InstancewithCloudWatch
+      - Source: Res_Amazon-EC2_Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2Instance
+      - Source: Res_Amazon-EC2_Instances_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2Instances
+      - Source: Res_Amazon-EC2_M4-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2M4Instance
+      - Source: Res_Amazon-EC2_M5-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2M5Instance
+      - Source: Res_Amazon-EC2_M5a-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2M5aInstance
+      - Source: Res_Amazon-EC2_M5n-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2M5nInstance
+      - Source: Res_Amazon-EC2_M6g-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2M6gInstance
+      - Source: Res_Amazon-EC2_P2-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2P2Instance
+      - Source: Res_Amazon-EC2_P3-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2P3Instance
+      - Source: Res_Amazon-EC2_R4-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2R4Instance
+      - Source: Res_Amazon-EC2_R5-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2R5Instance
+      - Source: Res_Amazon-EC2_R5a-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2R5aInstance
+      - Source: Res_Amazon-EC2_R5n-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2R5nInstance
+      - Source: Res_Amazon-EC2_R6g-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2R6gInstance
+      - Source: Res_Amazon-EC2_Rescue_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2Rescue
+      - Source: Res_Amazon-EC2_Spot-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2SpotInstance
+      - Source: Res_Amazon-EC2_T2-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2T2Instance
+      - Source: Res_Amazon-EC2_T3-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2T3Instance
+      - Source: Res_Amazon-EC2_X1-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2X1Instance
+      - Source: Res_Amazon-EC2_X1e-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2X1eInstance
+      - Source: Res_Amazon-EC2_z1d-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: EC2z1dInstance
+      - Source: Res_Amazon-Elastic-Beanstalk_Application_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: ElasticBeanstalkApplication
+      - Source: Res_Amazon-Elastic-Beanstalk_Deployment_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: ElasticBeanstalkDeployment
+      - Source: Res_Amazon-Lambda_Lambda-Function_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Compute/Res_48_Light
+        Target: LambdaLambdaFunction
+      - Source: Arch_AWS-Batch_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Batch
+      - Source: Arch_AWS-Bottlerocket_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Bottlerocket
+      - Source: Arch_AWS-Compute-Optimizer_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ComputeOptimizer
+      - Source: Arch_AWS-EC2-Image-Builder_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: EC2ImageBuilder
+      - Source: Arch_AWS-Elastic-Beanstalk_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ElasticBeanstalk
+      - Source: Arch_AWS-Fargate_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Fargate
+      - Source: Arch_AWS-Lambda_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Lambda
+      - Source: Arch_AWS-Local-Zones_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: LocalZones
+      - Source: Arch_AWS-Nitro-Enclaves_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: NitroEnclaves
+      - Source: Arch_AWS-Outposts_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Outposts
+      - Source: Arch_AWS-Parallel-Cluster_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ParallelCluster
+      - Source: Arch_AWS-Serverless-Application-Repository_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ServerlessApplicationRepository
+      - Source: Arch_AWS-ThinkBox-Deadline_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxDeadline
+      - Source: Arch_AWS-ThinkBox-Frost_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxFrost
+      - Source: Arch_AWS-ThinkBox-Krakatoa_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxKrakatoa
+      - Source: Arch_AWS-ThinkBox-Sequoia_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxSequoia
+      - Source: Arch_AWS-ThinkBox-Stoke_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxStoke
+      - Source: Arch_AWS-ThinkBox-XMesh_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ThinkBoxXMesh
+      - Source: Arch_AWS-Wavelength_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Wavelength
+      - Source: Arch_Amazon-EC2-Auto-Scaling_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: EC2AutoScaling
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-EC2-M5n_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: EC2M5n
+      - Source: Arch_Amazon-EC2-R5n_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: EC2R5n
+      - Source: Arch_Amazon-EC2_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: EC2
+      - Source: Arch_Amazon-Elastic-Container-Kubernetes_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ElasticContainerKubernetes
+      - Source: Arch_Amazon-Elastic-Container-Registry_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ElasticContainerRegistry
+      - Source: Arch_Amazon-Elastic-Container-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: ElasticContainerService
+      - Source: Arch_Amazon-Lightsail_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: Lightsail
+      - Source: Arch_VMware-Cloud-on-AWS_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Compute/48
+        Target: VMwareCloudonAWS
+  Containers:
+    Icons:
+      - Source: Res_Amazon-Elastic-Container-Registry_Image_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerRegistryImage
+      - Source: Res_Amazon-Elastic-Container-Registry_Registry_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerRegistryRegistry
+      - Source: Res_Amazon-Elastic-Container-Service_Container-1_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerServiceContainer1
+      - Source: Res_Amazon-Elastic-Container-Service_Container-2_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerServiceContainer2
+      - Source: Res_Amazon-Elastic-Container-Service_Container-3_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerServiceContainer3
+      - Source: Res_Amazon-Elastic-Container-Service_Service_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerServiceService
+      - Source: Res_Amazon-Elastic-Container-Service_Task_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Containers/Res_48_Light
+        Target: ElasticContainerServiceTask
+      - Source: Arch_AWS-Fargate_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Containers/48
+        Target: Fargate
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-Elastic-Container-Kubernetes_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Containers/48
+        Target: ElasticContainerKubernetes
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-Elastic-Container-Registry_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Containers/48
+        Target: ElasticContainerRegistry
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-Elastic-Container-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Containers/48
+        Target: ElasticContainerService
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+  CostManagement:
+    Icons:
+      - Source: Arch_AWS-Budgets_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Cost-Management/48
+        Target: Budgets
+      - Source: Arch_AWS-Cost-Explorer_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Cost-Management/48
+        Target: CostExplorer
+      - Source: Arch_AWS-Cost-and-Usage-Report_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Cost-Management/48
+        Target: CostandUsageReport
+      - Source: Arch_Reserved-Instance-Reporting_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Cost-Management/48
+        Target: ReservedInstanceReporting
+      - Source: Arch_Savings-Plans_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Cost-Management/48
+        Target: SavingsPlans
+  CustomerEnablement:
+    Icons:
+      - Source: Arch_AWS-IQ_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enablement/48
+        Target: IQ
+      - Source: Arch_AWS-Managed-Services_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enablement/48
+        Target: ManagedServices
+      - Source: Arch_AWS-Professional-Services_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enablement/48
+        Target: ProfessionalServices
+      - Source: Arch_AWS-Support_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enablement/48
+        Target: Support
+      - Source: Arch_AWS-Training-Certification_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enablement/48
+        Target: TrainingCertification
+  CustomerEnagagement:
+    Icons:
+      - Source: Arch_AWS-Simple-Email-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enagagement/48
+        Target: SimpleEmailService
+      - Source: Arch_Amazon-Connect_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enagagement/48
+        Target: Connect
+      - Source: Arch_Amazon-Pinpoint_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Customer-Enagagement/48
+        Target: Pinpoint
+  CustomerEngagement:
+    Icons:
+      - Source: Res_Amazon-Simple-Email-Service_Email_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Customer-Engagement/Res_48_Light
+        Target: SimpleEmailServiceEmail
+  Database:
+    Icons:
+      - Source: Res_AWS-Database-Migration-Service_Database-migration-workflow-job_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DatabaseMigrationServiceDatabasemigrationworkflowjob
+      - Source: Res_Amazon-Aurora-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraInstance
+      - Source: Res_Amazon-Aurora-MariaDB-Instance-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraMariaDBInstanceAlternate
+      - Source: Res_Amazon-Aurora-MariaDB-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraMariaDBInstance
+      - Source: Res_Amazon-Aurora-MySQL-Instance-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraMySQLInstanceAlternate
+      - Source: Res_Amazon-Aurora-MySQL-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraMySQLInstance
+      - Source: Res_Amazon-Aurora-Oracle-Instance-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraOracleInstanceAlternate
+      - Source: Res_Amazon-Aurora-Oracle-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraOracleInstance
+      - Source: Res_Amazon-Aurora-PIOPS_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraPIOPS
+      - Source: Res_Amazon-Aurora-PostgreSQL-Instance-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraPostgreSQLInstanceAlternate
+      - Source: Res_Amazon-Aurora-PostgreSQL-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraPostgreSQLInstance
+      - Source: Res_Amazon-Aurora-SQL-Server-Instance-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraSQLServerInstanceAlternate
+      - Source: Res_Amazon-Aurora-SQL-Server-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraSQLServerInstance
+      - Source: Res_Amazon-Aurora_Amazon-Aurora-Instance-alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraAmazonAuroraInstancealternate
+      - Source: Res_Amazon-Aurora_Amazon-RDS-Instance-Aternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraAmazonRDSInstanceAternate
+      - Source: Res_Amazon-Aurora_Amazon-RDS-Instance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: AuroraAmazonRDSInstance
+      - Source: Res_Amazon-DynamoDB_Amazon-DynamoDB-Accelerator_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBAmazonDynamoDBAccelerator
+      - Source: Res_Amazon-DynamoDB_Attribute_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBAttribute
+      - Source: Res_Amazon-DynamoDB_Attributes_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBAttributes
+      - Source: Res_Amazon-DynamoDB_Global-secondary-index_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBGlobalsecondaryindex
+      - Source: Res_Amazon-DynamoDB_Item_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBItem
+      - Source: Res_Amazon-DynamoDB_Items_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBItems
+      - Source: Res_Amazon-DynamoDB_Table_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: DynamoDBTable
+      - Source: Res_Amazon-ElastiCache_Cache-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: ElastiCacheCacheNode
+      - Source: Res_Amazon-ElastiCache_ElastiCache-for-Memcached_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: ElastiCacheElastiCacheforMemcached
+      - Source: Res_Amazon-ElastiCache_ElastiCache-for-Redis_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: ElastiCacheElastiCacheforRedis
+      - Source: Res_Amazon-RDS-Proxy-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: RDSProxyAlternate
+      - Source: Res_Amazon-RDS-Proxy_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: RDSProxy
+      - Source: Res_Amazon-Redshift_Dense-Compute-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: RedshiftDenseComputeNode
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Res_Amazon-Redshift_Dense-Storage-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Database/Res_48_Light
+        Target: RedshiftDenseStorageNode
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Database-Migration_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: DatabaseMigration
+      - Source: Arch_Amazon-Aurora_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: Aurora
+      - Source: Arch_Amazon-DocumentDB_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: DocumentDB
+      - Source: Arch_Amazon-DynamoDB_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: DynamoDB
+      - Source: Arch_Amazon-ElastiCache_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: ElastiCache
+      - Source: Arch_Amazon-Keyspaces_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: Keyspaces
+      - Source: Arch_Amazon-Neptune_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: Neptune
+      - Source: Arch_Amazon-Quantum-Ledger-Database_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: QuantumLedgerDatabase
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-RDS-for-VMware_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: RDSforVMware
+      - Source: Arch_Amazon-RDS_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: RDS
+      - Source: Arch_Amazon-Redshift_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: Redshift
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-Timestream_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Database/48
+        Target: Timestream
+  DeveloperTools:
+    Icons:
+      - Source: Res_AWS-Cloud9_Cloud9_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Developer-Tools/Res_48_Light
+        Target: Cloud9Cloud9
+      - Source: Arch_AWS-Cloud-Development-Kit_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CloudDevelopmentKit
+      - Source: Arch_AWS-Cloud9_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: Cloud9
+      - Source: Arch_AWS-CodeArtifact_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CodeArtifact
+      - Source: Arch_AWS-CodeCommit_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CodeCommit
+      - Source: Arch_AWS-CodeDeploy_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CodeDeploy
+      - Source: Arch_AWS-CodePipeline_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CodePipeline
+      - Source: Arch_AWS-Command-Line-Interface_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CommandLineInterface
+      - Source: Arch_AWS-Tools-and-SDK_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: ToolsandSDK
+      - Source: Arch_AWS-X-Ray_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: XRay
+      - Source: Arch_Amazon-CodeBuild_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: CodeBuild
+      - Source: Arch_Amazon-Codestar_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Developer- Tools/48
+        Target: Codestar
+  EndUserComputing:
+    Icons:
+      - Source: Arch_AWS-WorkLink_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_End-User-Computing/48
+        Target: WorkLink
+      - Source: Arch_AWS-WorkSpaces_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_End-User-Computing/48
+        Target: WorkSpaces
+      - Source: Arch_Amazon-App-Stream_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_End-User-Computing/48
+        Target: AppStream
+      - Source: Arch_Amazon-WorkDocs_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_End-User-Computing/48
+        Target: WorkDocs
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+  GameTech:
+    Icons:
+      - Source: Arch_Amazon-GameLift_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Game-Tech/48
+        Target: GameLift
+  GeneralIcons:
+    Icons:
+      - Source: Res_AWS-Marketplace-alrternate_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Marketplacealrternate48Darksvg
+      - Source: Res_AWS-Marketplace_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Marketplace48Darksvg
+      - Source: Res_Client_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Client48Darksvg
+      - Source: Res_Disk_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Disk48Darksvg
+      - Source: Res_Email_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Email
+      - Source: Res_Firewall_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Firewall
+      - Source: Res_Forums_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Forums48Darksvg
+      - Source: Res_General-alternate_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Generalalternate48Darksvg
+      - Source: Res_General_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: General48Darksvg
+      - Source: Res_Generic-database_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Genericdatabase48Darksvg
+      - Source: Res_Internet-alt1_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Internetalt148Darksvg
+      - Source: Res_Internet-alt2_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Internetalt248Darksvg
+      - Source: Res_Internet-gateway_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Internetgateway48Darksvg
+      - Source: Res_Mobile-client_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Mobileclient48Darksvg
+      - Source: Res_Multimedia_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Multimedia48Darksvg
+      - Source: Res_Office-building_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Officebuilding48Darksvg
+      - Source: Res_SAML-token_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: SAMLtoken48Darksvg
+      - Source: Res_SDK_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: SDK48Darksvg
+      - Source: Res_SSL-padlock_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: SSLpadlock48Darksvg
+      - Source: Res_Tape-storage_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Tapestorage48Darksvg
+      - Source: Res_Toolkit_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Toolkit48Darksvg
+      - Source: Res_Traditional-server_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Traditionalserver48Darksvg
+      - Source: Res_User_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: User48Darksvg
+      - Source: Res_Users_48_Dark.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_General-Icons/Res_48_Light
+        Target: Users48Darksvg
+  InternetofThings:
+    Icons:
+      - Source: Arch_AWS-IoT-1-Click_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoT1Click
+      - Source: Arch_AWS-IoT-Analytics_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTAnalytics
+      - Source: Arch_AWS-IoT-Button_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTButton
+      - Source: Arch_AWS-IoT-Core_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTCore
+      - Source: Arch_AWS-IoT-Device-Defender_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTDeviceDefender
+      - Source: Arch_AWS-IoT-Device-Management_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTDeviceManagement
+      - Source: Arch_AWS-IoT-Events_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTEvents
+      - Source: Arch_AWS-IoT-Greengrass-Core_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTGreengrassCore
+      - Source: Arch_AWS-IoT-SiteWise_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTSiteWise
+      - Source: Arch_AWS-IoT-Things-Graph_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: IoTThingsGraph
+      - Source: Arch_Amazon-FreeRTOS_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Internet-of-Things/48
+        Target: FreeRTOS
+  MachineLearning:
+    Icons:
+      - Source: Res_Amazon-Rekognition_Image_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Machine-Learning/Res_48_Light
+        Target: RekognitionImage
+      - Source: Res_Amazon-Rekognition_Video_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Machine-Learning/Res_48_Light
+        Target: RekognitionVideo
+      - Source: Res_Amazon-Sagemaker_Model_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Machine-Learning/Res_48_Light
+        Target: SagemakerModel
+      - Source: Res_Amazon-Sagemaker_Notebook_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Machine-Learning/Res_48_Light
+        Target: SagemakerNotebook
+      - Source: Res_Amazon-Sagemaker_Train_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Machine-Learning/Res_48_Light
+        Target: SagemakerTrain
+      - Source: Arch_AWS-Apache-MXNet_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: ApacheMXNet
+      - Source: Arch_AWS-Deep-Composer_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: DeepComposer
+      - Source: Arch_AWS-Deep-Learning-AMIs_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: DeepLearningAMIs
+      - Source: Arch_AWS-Deep-Learning-Containers_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: DeepLearningContainers
+      - Source: Arch_AWS-Deep-Lense_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: DeepLense
+      - Source: Arch_AWS-Deepracer_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Deepracer
+      - Source: Arch_AWS-SageMaker-Ground-Truth_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: SageMakerGroundTruth
+      - Source: Arch_AWS-SageMaker_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: SageMaker
+      - Source: Arch_AWS-TensorFlow-on-AWS_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: TensorFlowonAWS
+      - Source: Arch_AWS-Textract_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Textract
+      - Source: Arch_Amazon-Augmented-AI-A2I_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: AugmentedAIA2I
+      - Source: Arch_Amazon-CodeGuru_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: CodeGuru
+      - Source: Arch_Amazon-Comprehend_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Comprehend
+      - Source: Arch_Amazon-Elastic-Inference_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: ElasticInference
+      - Source: Arch_Amazon-Forecast_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Forecast
+      - Source: Arch_Amazon-Fraud-Detector_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: FraudDetector
+      - Source: Arch_Amazon-Kendra_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Kendra
+      - Source: Arch_Amazon-Lex_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Lex
+      - Source: Arch_Amazon-Neuron-ML-SDK_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: NeuronMLSDK
+      - Source: Arch_Amazon-Personalize_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Personalize
+      - Source: Arch_Amazon-Polly_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Polly
+      - Source: Arch_Amazon-Rekognition_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Rekognition
+      - Source: Arch_Amazon-Transcribe_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Transcribe
+      - Source: Arch_Amazon-Translate_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: Translate
+      - Source: Arch_TorchServe_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Machine-Learning/48
+        Target: TorchServe
+  ManagementGovernance:
+    Icons:
+      - Source: Res_AWS-CloudFormation_Change-Set_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudFormationChangeSet
+      - Source: Res_AWS-CloudFormation_Stack_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudFormationStack
+      - Source: Res_AWS-CloudFormation_Template_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudFormationTemplate
+      - Source: Res_AWS-OpsWorks-Monitoring_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksMonitoring
+      - Source: Res_AWS-OpsWorks-Stack2_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksStack2
+      - Source: Res_AWS-OpsWorks_Apps_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksApps
+      - Source: Res_AWS-OpsWorks_Deployments_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksDeployments
+      - Source: Res_AWS-OpsWorks_Instances_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksInstances
+      - Source: Res_AWS-OpsWorks_Layers_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksLayers
+      - Source: Res_AWS-OpsWorks_Permissions_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksPermissions
+      - Source: Res_AWS-OpsWorks_Resources_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OpsWorksResources
+      - Source: Res_AWS-Organizations_Account_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OrganizationsAccount
+      - Source: Res_AWS-Organizations_Organizational-Unit_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: OrganizationsOrganizationalUnit
+      - Source: Res_AWS-System-Manager_Automation_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerAutomation
+      - Source: Res_AWS-System-Manager_Documents_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerDocuments
+      - Source: Res_AWS-System-Manager_Inventory_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerInventory
+      - Source: Res_AWS-System-Manager_Maintenance-Windows_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerMaintenanceWindows
+      - Source: Res_AWS-System-Manager_OpsCenter_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerOpsCenter
+      - Source: Res_AWS-System-Manager_Parameter-Store_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerParameterStore
+      - Source: Res_AWS-System-Manager_Patch-Manager_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerPatchManager
+      - Source: Res_AWS-System-Manager_Run-Command_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerRunCommand
+      - Source: Res_AWS-System-Manager_State-Manager_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: SystemManagerStateManager
+      - Source: Res_AWS-Trusted-Advisor_Checklist-Cost_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: TrustedAdvisorChecklistCost
+      - Source: Res_AWS-Trusted-Advisor_Checklist-Fault-Tolerant_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: TrustedAdvisorChecklistFaultTolerant
+      - Source: Res_AWS-Trusted-Advisor_Checklist-Performance_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: TrustedAdvisorChecklistPerformance
+      - Source: Res_AWS-Trusted-Advisor_Checklist-Security_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: TrustedAdvisorChecklistSecurity
+      - Source: Res_AWS-Trusted-Advisor_Checklist_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: TrustedAdvisorChecklist
+      - Source: Res_Amazon-Cloudwatch_Alarm_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudwatchAlarm
+      - Source: Res_Amazon-Cloudwatch_Event-Based_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudwatchEventBased
+      - Source: Res_Amazon-Cloudwatch_Event-Time-Based_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudwatchEventTimeBased
+      - Source: Res_Amazon-Cloudwatch_Rule_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudwatchRule
+      - Source: Res_Cloudwatch_Logs_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Management-Governance/Res_48_Light
+        Target: CloudwatchLogs
+      - Source: Arch_AWS-App-Config_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: AppConfig
+      - Source: Arch_AWS-App-Wizard_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: AppWizard
+      - Source: Arch_AWS-Auto-Scaling_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: AutoScaling
+      - Source: Arch_AWS-Backint-Agent_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: BackintAgent
+      - Source: Arch_AWS-Chatbot_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: Chatbot
+      - Source: Arch_AWS-Cloud-Trail_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: CloudTrail
+      - Source: Arch_AWS-CloudFormation_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: CloudFormation
+      - Source: Arch_AWS-Command-Line-Interface_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: CommandLineInterface
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Compute-Optimizer_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ComputeOptimizer
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Config_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: Config
+      - Source: Arch_AWS-Control-Tower_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ControlTower
+      - Source: Arch_AWS-License-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: LicenseManager
+      - Source: Arch_AWS-Managed-Services_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ManagedServices
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Management-Console_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ManagementConsole
+      - Source: Arch_AWS-OpsWorks_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: OpsWorks
+      - Source: Arch_AWS-Organizations_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: Organizations
+      - Source: Arch_AWS-Personal-Health-Dashboard_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: PersonalHealthDashboard
+      - Source: Arch_AWS-Service-Catalog_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ServiceCatalog
+      - Source: Arch_AWS-Systems-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: SystemsManager
+      - Source: Arch_AWS-Trusted-Advisor_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: TrustedAdvisor
+      - Source: Arch_AWS-Well-Architect-Tool_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: WellArchitectTool
+      - Source: Arch_Amazon-CloudWatch_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: CloudWatch
+      - Source: Arch_Application-Auto-Scaling_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Management-Governance/48
+        Target: ApplicationAutoScaling
+  MediaServices:
+    Icons:
+      - Source: Arch_AWS-Elemental-Appliances-&-Software_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalAppliancesSoftware
+      - Source: Arch_AWS-Elemental-Link_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalLink
+      - Source: Arch_AWS-Elemental-MediaConnect_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaConnect
+      - Source: Arch_AWS-Elemental-MediaConvert_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaConvert
+      - Source: Arch_AWS-Elemental-MediaLive_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaLive
+      - Source: Arch_AWS-Elemental-MediaPackage_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaPackage
+      - Source: Arch_AWS-Elemental-MediaStore_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaStore
+      - Source: Arch_AWS-Elemental-MediaTailor_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElementalMediaTailor
+      - Source: Arch_Amazon-Elastic-Transcoder_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: ElasticTranscoder
+      - Source: Arch_Amazon-Interactive-Video_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: InteractiveVideo
+      - Source: Arch_Amazon-Kinesis-Video-Streams_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Media-Services/48
+        Target: KinesisVideoStreams
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+  MigrationAndTransfer:
+    Icons:
+      - Source: Res_AWS-Datasync_Agent_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Migration-And-Transfer/Res_48_Light
+        Target: DatasyncAgent
+      - Source: Res_AWS-Transfer-Family_AWS-FTPS_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Migration-And-Transfer/Res_48_Light
+        Target: TransferFamilyAWSFTPS
+      - Source: Res_AWS-Transfer-Family_AWS-FTP_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Migration-And-Transfer/Res_48_Light
+        Target: TransferFamilyAWSFTP
+      - Source: Res_AWS-Transfer-Family_AWS-SFTP_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Migration-And-Transfer/Res_48_Light
+        Target: TransferFamilyAWSSFTP
+  MigrationTransfer:
+    Icons:
+      - Source: Arch_AWS-Application-Discovery-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: ApplicationDiscoveryService
+      - Source: Arch_AWS-CloudEndure-Migration_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: CloudEndureMigration
+      - Source: Arch_AWS-Data-Sync_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: DataSync
+      - Source: Arch_AWS-Database-Migration_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: DatabaseMigration
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Migration-Hub_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: MigrationHub
+      - Source: Arch_AWS-Server-Migration-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: ServerMigrationService
+      - Source: Arch_AWS-Transfer-Family_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Migration-Transfer/48
+        Target: TransferFamily
+  Mobile:
+    Icons:
+      - Source: Res_Amazon-API-Gateway_Endpoint_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Mobile/Res_48_Light
+        Target: APIGatewayEndpoint
+      - Source: Arch_AWS-Amplify-Console_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Mobile/48
+        Target: AmplifyConsole
+      - Source: Arch_AWS-AppSync_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Mobile/48
+        Target: AppSync
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_AWS-Device-Farm_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Mobile/48
+        Target: DeviceFarm
+      - Source: Arch_Amazon-Pinpoint-Journey_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Mobile/48
+        Target: PinpointJourney
+      - Source: Arch_Amazon-Pinpoint_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Mobile/48
+        Target: Pinpoint
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+  NetworkingContent:
+    Icons:
+      - Source: Arch_AWS-App-Mesh_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: AppMesh
+      - Source: Arch_AWS-CloudMap_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: CloudMap
+      - Source: Arch_AWS-Direct-Connect_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: DirectConnect
+      - Source: Arch_AWS-Global-Accelerator_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: GlobalAccelerator
+      - Source: Arch_AWS-PrivateLink_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: PrivateLink
+      - Source: Arch_AWS-Site-to-Site-VPN_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: SitetoSiteVPN
+      - Source: Arch_AWS-Transit-Gateway_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: TransitGateway
+      - Source: Arch_AWS-VPN_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: VPN
+      - Source: Arch_Amazon-API-Gateway_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: APIGateway
+      - Source: Arch_Amazon-Cloud-Directory_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: CloudDirectory
+      - Source: Arch_Amazon-CloudFront_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: CloudFront
+      - Source: Arch_Amazon-Route-53_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: Route53
+      - Source: Arch_Amazon-Virtual-Private-Cloud_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: VirtualPrivateCloud
+      - Source: Arch_Elastic-Load-Balancing_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Networking-Content/48
+        Target: ElasticLoadBalancing
+  NetworkingandContentDelivery:
+    Icons:
+      - Source: Res_AWS-App-Mesh-Mesh_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: AppMeshMesh
+      - Source: Res_AWS-App-Mesh-Virtual-Node_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: AppMeshVirtualNode
+      - Source: Res_AWS-App-Mesh-Virtual-Router_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: AppMeshVirtualRouter
+      - Source: Res_AWS-App-Mesh-Virtual-Service_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: AppMeshVirtualService
+      - Source: Res_AWS-Cloud-Map-Namespace_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudMapNamespace
+      - Source: Res_AWS-Cloud-Map-Resource_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudMapResource
+      - Source: Res_AWS-Cloud-Map_Service_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudMapService
+      - Source: Res_AWS-Direct-Connect-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: DirectConnectGateway
+      - Source: Res_Amazon-API-Gateway_Endpoint_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: APIGatewayEndpoint
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Res_Amazon-CloudFront_Download-Distribution_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudFrontDownloadDistribution
+      - Source: Res_Amazon-CloudFront_Edge-Location_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudFrontEdgeLocation
+      - Source: Res_Amazon-CloudFront_Streaming-Distribution_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: CloudFrontStreamingDistribution
+      - Source: Res_Amazon-Route-53-Hosted-Zone_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: Route53HostedZone
+      - Source: Res_Amazon-Route-53_Route-Table_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: Route53RouteTable
+      - Source: Res_Amazon-VPC_Customer-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCCustomerGateway
+      - Source: Res_Amazon-VPC_Elastic-Network-Adapter_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCElasticNetworkAdapter
+      - Source: Res_Amazon-VPC_Elastic-Network-Interface_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCElasticNetworkInterface
+      - Source: Res_Amazon-VPC_Endpoints_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCEndpoints
+      - Source: Res_Amazon-VPC_Flow-Logs_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCFlowLogs
+      - Source: Res_Amazon-VPC_Internet-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCInternetGateway
+      - Source: Res_Amazon-VPC_NAT-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCNATGateway
+      - Source: Res_Amazon-VPC_Network-Access-Control-List_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCNetworkAccessControlList
+      - Source: Res_Amazon-VPC_Peering-Connection_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCPeeringConnection
+      - Source: Res_Amazon-VPC_Router_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCRouter
+      - Source: Res_Amazon-VPC_Traffic-Mirroring_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCTrafficMirroring
+      - Source: Res_Amazon-VPC_VPN-Connection_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCVPNConnection
+      - Source: Res_Amazon-VPC_VPN-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: VPCVPNGateway
+      - Source: Res_App-Mesh_Virtual-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: AppMeshVirtualGateway
+      - Source: Res_Elastic-Load-Balancing_Application-Load-Balancer_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: ElasticLoadBalancingApplicationLoadBalancer
+      - Source: Res_Elastic-Load-Balancing_Classic-Load-Balancer_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: ElasticLoadBalancingClassicLoadBalancer
+      - Source: Res_Elastic-Load-Balancing_Network-Load-Balancer_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Networking-and-Content-Delivery/Res_48_Light
+        Target: ElasticLoadBalancingNetworkLoadBalancer
+  Quantum:
+    Icons:
+      - Source: Arch_AWS-Braket_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Quantum_Technologies/48
+        Target: Braket
+  Robotics:
+    Icons:
+      - Source: Res_AWS-RoboMaker_Cloud-Extensions-ROS_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Robotics/Res_48_Light
+        Target: RoboMakerCloudExtensionsROS
+      - Source: Res_AWS-RoboMaker_Development-Environment_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Robotics/Res_48_Light
+        Target: RoboMakerDevelopmentEnvironment
+      - Source: Res_AWS-RoboMaker_Fleet-Management_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Robotics/Res_48_Light
+        Target: RoboMakerFleetManagement
+      - Source: Res_AWS-RoboMaker_Simulation_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Robotics/Res_48_Light
+        Target: RoboMakerSimulation
+      - Source: Arch_AWS-RoboMaker_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Robotics/48
+        Target: RoboMaker
+  Satellite:
+    Icons:
+      - Source: Arch_AWS-Ground-Station_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Satellite/48
+        Target: GroundStation
+  SecurityIdentityCompliance:
+    Icons:
+      - Source: Arch_AWS-Artifact_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Artifact
+      - Source: Arch_AWS-Certificate-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: CertificateManager
+      - Source: Arch_AWS-CloudHSM_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: CloudHSM
+      - Source: Arch_AWS-Directory-Service_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: DirectoryService
+      - Source: Arch_AWS-Firewall-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: FirewallManager
+      - Source: Arch_AWS-Identity-and-Access-Management_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: IdentityandAccessManagement
+      - Source: Arch_AWS-Key-Management-Services_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: KeyManagementServices
+      - Source: Arch_AWS-Resources-Access-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: ResourcesAccessManager
+      - Source: Arch_AWS-Secrets-Manager_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: SecretsManager
+      - Source: Arch_AWS-Security-Hub_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: SecurityHub
+      - Source: Arch_AWS-Shield_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Shield
+      - Source: Arch_AWS-Single-Sign-On_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: SingleSignOn
+      - Source: Arch_AWS-WAF_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: WAF
+      - Source: Arch_Amazon-Cloud-Directory_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: CloudDirectory
+        ZComment: "******* Duplicate target name, must be made unique for All.puml ********"
+      - Source: Arch_Amazon-Cognito_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Cognito
+      - Source: Arch_Amazon-Detective_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Detective
+      - Source: Arch_Amazon-GuardDuty_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: GuardDuty
+      - Source: Arch_Amazon-Inspector_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Inspector
+      - Source: Arch_Amazon-Macie_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Security-Identity-Compliance/48
+        Target: Macie
+  SecurityIdentityandCompliance:
+    Icons:
+      - Source: Res_AWS-Certificate-Manager_Certificate-Authority_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: CertificateManagerCertificateAuthority
+      - Source: Res_AWS-Directory-Service_AD-Connector_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: DirectoryServiceADConnector
+      - Source: Res_AWS-Directory-Service_AWS-Managed-Microsoft-AD_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: DirectoryServiceAWSManagedMicrosoftAD
+      - Source: Res_AWS-Directory-Service_Simple-AD_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: DirectoryServiceSimpleAD
+      - Source: Res_AWS-Identity-Access-Management_AWS-IAM-Access-Analyzer_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementAWSIAMAccessAnalyzer
+      - Source: Res_AWS-Identity-Access-Management_AWS-STS-Alternate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementAWSSTSAlternate
+      - Source: Res_AWS-Identity-Access-Management_AWS-STS_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementAWSSTS
+      - Source: Res_AWS-Identity-Access-Management_Add-on_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementAddon
+      - Source: Res_AWS-Identity-Access-Management_Data-Encryption-Key_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementDataEncryptionKey
+      - Source: Res_AWS-Identity-Access-Management_Encrypted-Data_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementEncryptedData
+      - Source: Res_AWS-Identity-Access-Management_Long-Term-Security-Credential_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementLongTermSecurityCredential
+      - Source: Res_AWS-Identity-Access-Management_MFA-Token_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementMFAToken
+      - Source: Res_AWS-Identity-Access-Management_Permissions_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementPermissions
+      - Source: Res_AWS-Identity-Access-Management_Role_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementRole
+      - Source: Res_AWS-Identity-Access-Management_Temporary-Security-Credential_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: IdentityAccessManagementTemporarySecurityCredential
+      - Source: Res_AWS-Security-Hub_Finding_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: SecurityHubFinding
+      - Source: Res_AWS-Shield_AWS-Shield-Advanced_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: ShieldAWSShieldAdvanced
+      - Source: Res_AWS-WAF_Filtering-Rule_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: WAFFilteringRule
+      - Source: Res_Amazon-Inspector_Agent_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Security-Identity-and-Compliance/Res_48_Light
+        Target: InspectorAgent
+  Storage:
+    Icons:
+      - Source: Res_AWS-Amazon-Simple-Storage_S3-Replication-Time-Control_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: AmazonSimpleStorageS3ReplicationTimeControl
+      - Source: Res_AWS-Amazon-Simple-Storage_S3-Replication_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: AmazonSimpleStorageS3Replication
+      - Source: Res_AWS-Snowball_Snowball-Import-Export_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SnowballSnowballImportExport
+      - Source: Res_AWS-Storage-Gateway_Cached-Volume_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayCachedVolume
+      - Source: Res_AWS-Storage-Gateway_File-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayFileGateway
+      - Source: Res_AWS-Storage-Gateway_Non-Cached-Volume_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayNonCachedVolume
+      - Source: Res_AWS-Storage-Gateway_Tape-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayTapeGateway
+      - Source: Res_AWS-Storage-Gateway_Virtual-Tape-Library_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayVirtualTapeLibrary
+      - Source: Res_AWS-Storage-Gateway_Volume-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: StorageGatewayVolumeGateway
+      - Source: Res_Amazon-Elastic-Block-Store_Multiple-Volumes_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: ElasticBlockStoreMultipleVolumes
+      - Source: Res_Amazon-Elastic-Block-Store_Snapshot_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: ElasticBlockStoreSnapshot
+      - Source: Res_Amazon-Elastic-Block-Store_Volume_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: ElasticBlockStoreVolume
+      - Source: Res_Amazon-Elastic-File-System_File-System_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: ElasticFileSystemFileSystem
+      - Source: Res_Amazon-S3-Glacier_Archive_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: S3GlacierArchive
+      - Source: Res_Amazon-S3-Glacier_Vault_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: S3GlacierVault
+      - Source: Res_Amazon-Simple-Storage_Bucket-With-Objects_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageBucketWithObjects
+      - Source: Res_Amazon-Simple-Storage_Bucket_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageBucket
+      - Source: Res_Amazon-Simple-Storage_General-Access-Points_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageGeneralAccessPoints
+      - Source: Res_Amazon-Simple-Storage_Object_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageObject
+      - Source: Res_Amazon-Simple-Storage_S3-Replication-Time-Control_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageS3ReplicationTimeControl
+      - Source: Res_Amazon-Simple-Storage_S3-Replication_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageS3Replication
+      - Source: Res_Amazon-Simple-Storage_Service-Glacier-Deep-Archive_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceGlacierDeepArchive
+      - Source: Res_Amazon-Simple-Storage_Service-Glacier_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceGlacier
+      - Source: Res_Amazon-Simple-Storage_Service-Intelligent-Tiering_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceIntelligentTiering
+      - Source: Res_Amazon-Simple-Storage_Service-One-Zone-IA_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceOneZoneIA
+      - Source: Res_Amazon-Simple-Storage_Service-Standard-IA_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceStandardIA
+      - Source: Res_Amazon-Simple-Storage_Service-Standard_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageServiceStandard
+      - Source: Res_Amazon-Simple-Storage_VPC-Access-Points_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_Storage/Res_48_Light
+        Target: SimpleStorageVPCAccessPoints
+      - Source: Arch_AWS-Backup_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: Backup
+      - Source: Arch_AWS-CloudEndure-Disaster-Recovery_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: CloudEndureDisasterRecovery
+      - Source: Arch_AWS-Snowball-Edge_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: SnowballEdge
+      - Source: Arch_AWS-Snowball_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: Snowball
+      - Source: Arch_AWS-Snowcone_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: Snowcone
+      - Source: Arch_AWS-Snowmobile_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: Snowmobile
+      - Source: Arch_AWS-Storage-Gateway_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: StorageGateway
+      - Source: Arch_Amazon-Elastic-Block-Store_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: ElasticBlockStore
+      - Source: Arch_Amazon-Elastic-File-System_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: ElasticFileSystem
+      - Source: Arch_Amazon-FSx-For-WFS_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: FSxForWFS
+      - Source: Arch_Amazon-FSx-for-Lustre_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: FSxforLustre
+      - Source: Arch_Amazon-FSx_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: FSx
+      - Source: Arch_Amazon-Glacier_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: Glacier
+      - Source: Arch_Amazon-S3-Standard_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: S3Standard
+      - Source: Arch_Infrequent-Access-Storage-Class_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: InfrequentAccessStorageClass
+      - Source: Arch_Standard-Storage-Class_48.svg
+        SourceDir: AWS-Architecture-Service-Icons_20200911/Arch_Storage/48
+        Target: StandardStorageClass
+  loT:
+    Icons:
+      - Source: Res_AWS-IoT-Analytics_Channel_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAnalyticsChannel
+      - Source: Res_AWS-IoT-Analytics_Data-Set_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAnalyticsDataSet
+      - Source: Res_AWS-IoT-Analytics_Data-Store_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAnalyticsDataStore
+      - Source: Res_AWS-IoT-Analytics_Notebook_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAnalyticsNotebook
+      - Source: Res_AWS-IoT-Analytics_Pipeline_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAnalyticsPipeline
+      - Source: Res_AWS-IoT-Greengrass_Connector_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTGreengrassConnector
+      - Source: Res_AWS-loT-Device-Defender_IoT-Device-Jobs_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: loTDeviceDefenderIoTDeviceJobs
+      - Source: Res_IoT-HTTP_Protocol_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTHTTPProtocol
+      - Source: Res_IoT-Hardware-Board_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTHardwareBoard
+      - Source: Res_IoT-MQTT_Protocol_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTMQTTProtocol
+      - Source: Res_IoT-Rule_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTRule
+      - Source: Res_IoT-Thing_Bank_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingBank
+      - Source: Res_IoT-Thing_Bicycle_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingBicycle
+      - Source: Res_IoT-Thing_Camera_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingCamera
+      - Source: Res_IoT-Thing_Car_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingCar
+      - Source: Res_IoT-Thing_Cart_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingCart
+      - Source: Res_IoT-Thing_Coffee-Pot_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingCoffeePot
+      - Source: Res_IoT-Thing_Door-Lock_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingDoorLock
+      - Source: Res_IoT-Thing_Factory_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingFactory
+      - Source: Res_IoT-Thing_Generic_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingGeneric
+      - Source: Res_IoT-Thing_House_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingHouse
+      - Source: Res_IoT-Thing_Lightbulb_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingLightbulb
+      - Source: Res_IoT-Thing_Medical-Emergency_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingMedicalEmergency
+      - Source: Res_IoT-Thing_Police-Emergency_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingPoliceEmergency
+      - Source: Res_IoT-Thing_Thermostat_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingThermostat
+      - Source: Res_IoT-Thing_Travel_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingTravel
+      - Source: Res_IoT-Thing_Utility_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingUtility
+      - Source: Res_IoT-Thing_Windfarm_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTThingWindfarm
+      - Source: Res_IoT_Action_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAction
+      - Source: Res_IoT_Actuator_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTActuator
+      - Source: Res_IoT_Alexa_Enabled-Device_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAlexaEnabledDevice
+      - Source: Res_IoT_Alexa_Skill_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAlexaSkill
+      - Source: Res_IoT_Alexa_Voice-Service_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTAlexaVoiceService
+      - Source: Res_IoT_Certificate_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTCertificate
+      - Source: Res_IoT_Desired-State_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTDesiredState
+      - Source: Res_IoT_Device-Gateway_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTDeviceGateway
+      - Source: Res_IoT_Echo_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTEcho
+      - Source: Res_IoT_Fire-TV_Stick_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTFireTVStick
+      - Source: Res_IoT_Fire_TV_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTFireTV
+      - Source: Res_IoT_HTTP2-Protocol_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTHTTP2Protocol
+      - Source: Res_IoT_Lambda_Function_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTLambdaFunction
+      - Source: Res_IoT_Over-Air-Update_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTOverAirUpdate
+      - Source: Res_IoT_Policy_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTPolicy
+      - Source: Res_IoT_Reported-State_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTReportedState
+      - Source: Res_IoT_Sensor_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTSensor
+      - Source: Res_IoT_Servo_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTServo
+      - Source: Res_IoT_Shadow_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTShadow
+      - Source: Res_IoT_Simulator_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTSimulator
+      - Source: Res_IoT_Topic_48_Light.svg
+        SourceDir: AWS-Architecture-Resource-Icons_20200911/Res_loT/Res_48_Light
+        Target: IoTTopic

@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $BackintAgent [64x64/16z] {
+fTHRmkes34NX9Kksj9tvZxStVXy8mRGzsS-iZznrNUsNb-ace9k0RWAw2UWce9k0RWAw2UWce7y3Cfg1jHWV0Nq7Xi6QzG_0_9etm4TMvN2WvGMONu0qY6VG
+WV4Ep3rGOANNe46-0NCBbD7gxIuqx0sOMo2maYw0rmcOEw0Whyz1mZW1SmS4JRe2ZjVhvWw0r0SWuTnlWCBAV5m1OxprLs0q3Le2DhetZtm2JfpxAn0mWb26
+yJEljOvl-ldCGq7_kOfzT0VRzHTWm90wSNwIcxRz6J2wf8vBNMi5um74vlmNC319Iao3TduS7azW_z9FELto8KYZQoqX_m4Wl_MpaHhG6aRJSmP3gawhhpr8
+wW2GUguSm63yQxz-7JgjhKTXtrSqg7NBzBQioW3BNHy0QFuSyUwRQ9lUmRDqVXUgfyeZNm7_s0Va-xkG3fG3rbzkvQU-uF8s3i00mg0MuCI7FeZBkn1O5U0g
+qDh0F_IDoyjK1L9bIGF2V9s0wTh3FAy0x7JtnwzU_zu7G4czDKyfFB1r_5h0CTUCElT6fbG6wvyXVwwV5d0Sc-it4tiSjutqnu50brJhLZpw1GZojHzWfOBr
+bmMjf39SMi3n13gCLw0RVGvydN9Yw_dLpnxz0WBC-tXCKqxCGLjz0KC6fL-hunN81cifWvo2nqKSqZ1SqKelEqx0hD7Zhxbx5UJZhDnPrxBhRSS2hclqgQa0
+Q59vG5twFP00VSuQewG2S5txFM3mSqiaESrRNVilW7e5CJLwbuAGjEltro0KW8-6RVizu00406FVxu7Xq6PWNThrtqz1gJbBSsxw2x3Tfhy573U1uoPmt0IE
+cy1n4pXk0iTDu4y
+}
+
+AWSEntityColoring(BackintAgent)
+!define BackintAgent(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, BackintAgent, BackintAgent)
+!define BackintAgent(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, BackintAgent, BackintAgent)
+!define BackintAgentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, BackintAgent, BackintAgent)
+!define BackintAgentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, BackintAgent, BackintAgent)

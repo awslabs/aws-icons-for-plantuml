@@ -1,18 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $IoTDeviceManagement [64x64/16z] {
-fTQ7Wgqm20JG8I70yFyV_Du5tQPkqTbowqaXiV1BuhVn3Xysm4Dk-0SZuCC6U9OR_ku8-B01Vjy0UTENOwmLlESPf0aWTjFJ1p0dC9mtV2WmZBG1QF2lVWca
-viweft_pMwVTwpQKttkVmFGFAz6bE2t3-SJ5-gcRUP31C07qDzu4ihPX25wPrcK0PFtaVPiu6HEGgJe5c56Jc5M6QrzcU3yT4Ek6J31g0RSoN7ghYNS6Pdne
-TaIboh0kV4uejoWcFsH2tzToNljW9o3HJxO7WRE1_yOlhFoq4HRqtVD7Fs2cgW8HYAgQOPpxFFM2ZfAAZWHFVHvycQ7c0quwXfkEsWIdFWz-0a8o5rQLeWlO
-cu17dr-yOaWzqpv_Q2_8W5xu_EGTGeMzda3grqd3387ntET7Fs3f6EI4qVr5wqqQnfNFTnyOlNq5MBtqa5bl2fmNFdUVXfKrTWnK_Ue9lEgnBdtkVi6I9CIh
-4jMfTpqDUkspVAR2g_-Pv81N9JZXF_fit_q7X1coRpn1_DRt_3anL33-1wBIHxF2VlO1sJSXj1MsSuaWVlJCsGLap1f9hatNHcZFxxn3efOpqFtX_HooUrxw
-wd1q0miI8LWxLtBtFFTyUKw8CVzd0O3MR4pQCRR7Kx-OoNAYPck-_5osL01jffldqPj0h1g8YOge2YhJkGq3nix1PntnKItGrp9dPlXQo-FzZYAuv-0pOm3w
-uX-Fw_nmH-7yaAFlIIpc-Hs5yNDEVDOHwvcdTnHVS-AhUbs6FTixF4cUnhiCh2ItYV_U9wrcc-J-b7_okNNwFfI_-gqCNGhoXg--Uobk-gHL3Uxw2XzvyfdF
-fpwV-dpgywdFfpwV-ki6_W4
+fPMBhhGW38Idq4ABx_-y_uN1wBhAcZ3drfFuVUf0bZZ59waFYKL1B0fYKH2BWbWKnA8W5WMnA8X5GKm5HSJcWfW8QW80AJD1F0fg1c0cGBeONl4AGDsz3nV3
+JzuDGAxUGqEz26PyaK-WPkgEpFYQ02aiyT7mo7klZQCcWIGz5aFhLT1kQ-kpOWyDfHikWlOXwBMHziJQg_qV_33OXw2T1Gb8zPZt3We5VPHZzi4VWeum1j3K
+BppTrG3VC_Xsy37YXufFS40ScS6tBzwGk176za-mEzu7twvyWXKpPVkcHP5kUMyZ5rx0g2iOcVFjWpS0AIlWuO3c123F-NRY5MnVeAwzYGf0vdmZpujt7cCi
+446Uystd1QRG28C89255P6W5RCutyWKI5IW9K7OX1bGtf5TyXaLaz9Ge75A40_KDB_1-iOL1HeTmYd_nnoe0_3NMaCkYF_csyzBlZymz9A_vnkUFWdFAAEO5
+tn9AK23bVsJW8IZnWZVaiOd5YTc-hJpYDnz0vo9raK9Y_AiizWVV5Aa33kJnGKIFl-D3Xg020bXtPNhUyCq5qCgJ158zgd8DoCSpNpb4neXW95NY1OXuu1EG
+d6DL0KHhU1_oJWlwkztphG38qPY7az5wY_Ty2mMWmt13iyoJOBi8-EhsBV0yJiOzW_yID4-0iCW7cY5_8sXLzY9FftBsk8JydO15-X3Sq0nv2fwA3EFYtuOy
+1VT55Y7z4F8Kt1O9I8r9jfcWLP4IRShF1SoCNnHiYu9jKR0j2hP5mROes1O5sw9WMnJy1G
 }
 
 AWSEntityColoring(IoTDeviceManagement)
-!define IoTDeviceManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
-!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTDeviceManagement, IoTDeviceManagement)
+!define IoTDeviceManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTDeviceManagement, IoTDeviceManagement)

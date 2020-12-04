@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $SageMakerTrain [64x64/16z] {
-xPDN5jqm24GDae2P_UytLUSH1RbzfjnVduj7bEElvZ_IBGBXrkLuJtFYWxUNjZe18jmyG83-AaC72My_7MaE0YyY39AkQnooF_uxYLuIFIwWu2Pi0w6F_23R
-FbKywntis650V-23sCzAy2H08qOnuyVu1zXkVGEawFXHKmcxzGDHTRgKRtkaTYy8BzdEqB8wJiQq1lZQTo0abr1lsp_zCQREgLTVi66EhvEswZM_agm-RQux
-N5AVON2iVjZlWFZvCKXmwXF0zxrASiaaKi_LlFMLy4_SgMTyANx1iyb3rj7GZtjVJyvCWcmxl_KLaBxndMJenlSoGT9sEaZepcTX-TESPgY1qEAB5WA4PVFK
-vYYpGFexn4Z0UrFHDXpWN0KZeTMljE1i1K4mvXNF1DMlD0Dd3M_pah90zIkY_HjEokUIymdfMvmoVZrwMnFK-LSy_JK19FtXfupqrmBmz6z8Fmiu8E_zB310
-VUjd0TNW-_zd0P8O-NwzeFg74Q2L-zi1Jp_HFlHuwrSoVpj5x_qR_cwVORS4BtpY5fxwWeV8yVVndwy
+sprite $SagemakerTrain [64x64/16z] {
+xTOt4W8n58FXNezm_zjI_OsHPsGrH975VflJdPZyyuz4fiUavgJYouyp_ZIw8swgcbFcthTgE57lfM46EYvTqXdOhVlQIpIf7yjpR_Yvb-1xhqrO3V32cvF7
+fVAptp8qlcDSWVUbuPVG3z_MWQsFM-_bOhaKUutZKk39gbc4r2__CfxLsyY4sdYJP0JU4mFv39SVSVSZoBqVGUxz279lHu3FJuZ0oWFKU2BIU4Yr_eZgxKUw
+_Q-x9VXod-Gj_J__F
 }
 
-AWSEntityColoring(SageMakerTrain)
-!define SageMakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
+AWSEntityColoring(SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerTrain, SagemakerTrain)

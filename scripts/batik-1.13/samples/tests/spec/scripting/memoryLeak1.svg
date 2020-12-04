@@ -1,0 +1,88 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of text children                                          -->
+<!--                                                                        -->
+<!-- @author nicolas.socheleau@bitflash.com                                 -->
+<!-- @version $Id: memoryLeak1.svg 1803034 2017-07-26 12:00:06Z ssteiner $                                                          -->
+<!-- ====================================================================== -->
+
+<svg xmlns="http://www.w3.org/2000/svg" id="body" width="450" height="500" viewBox="0 0 450 500">
+  <script type="text/ecmascript"><![CDATA[
+    var inRegard=false;
+    var elems = new Array
+     ("t1", "t2", "r1", "r2", "c1", "c2", "ts1", "ts2", "xxx");
+
+    function regardStart() {
+      inRegard=true;
+    
+      var elem;
+      for(var i=0; i<elems.length; i++) {
+         var elem = document.getElementById(elems[i]);
+         regardTestInstance.registerElement(elem, elems[i]);
+         elem.parentNode.removeChild(elem);
+      }
+
+      setTimeout("checkElem()", 10);
+    }
+
+    function checkElem() {
+      regardTestInstance.checkObjects(elems);
+    // setTimeout("regardTestInstance.scriptDone()", 30000);
+      regardTestInstance.scriptDone();
+    }
+]]></script>
+
+  <defs>
+      <rect id="xxx" x="10"  y="150" width="100" height="50" fill="purple"/>
+  </defs>
+
+  <g id="test-content">
+    <g style="font-size:20" >
+      <text id="t1_bg" x="5"   y="135" fill="purple" >Simple Text</text>
+      <text id="t2"    x="155" y="135" fill="crimson">Simple Text</text>
+      <text id="t1"    x="305" y="135" fill="gold"   >Simple Text</text>
+    </g>
+
+    <g>
+      <rect id="r_bg" x="10"  y="150" width="100" height="50" fill="purple"/>
+      <rect id="r1"   x="160" y="150" width="100" height="50" fill="crimson"/>
+      <rect id="r2"   x="310" y="150" width="100" height="50" fill="gold"/>
+    </g>
+
+    <g>
+      <circle id="c_bg" cx="60"  cy="235" r="25" fill="purple"/>
+      <circle id="c1"   cx="210" cy="235" r="25" fill="crimson"/>
+      <circle id="c2"   cx="360" cy="235" r="25" fill="gold"/>
+    </g>
+
+    <g style="font-size:15" >
+      <text x="5"  y="290" fill="purple">Some 
+        <tspan id="ts_bg" font-weight="bold">Complex</tspan> Text</text>
+      <text x="155"  y="290" fill="crimson">Some 
+        <tspan id="ts1" font-weight="bold">Complex</tspan> Text</text>
+      <text x="305"  y="290" fill="gold">Some 
+        <tspan id="ts2" font-weight="bold">Complex</tspan> Text</text>
+    </g>
+  </g>
+</svg>

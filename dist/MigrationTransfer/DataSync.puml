@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DataSync [64x64/16z] {
+fTI93kmW28NXNweLzFsVzowpM-WiuIIJ_NnH7AfnUfZTnvA09G5B0fO4B0bO4h0aO4d0ae0b0Ki2bWJi1DYt0aZj7m0BWLQuf_QtW4M0GAbxrzu4obl00g10
+UzpZ0s0UA9V6FRqWUWwOoxRKLJlKKy3tT-Ywf45lcsmXuFg5geSKhgbVz7TGKtU0Kfk4WBzzzVz4AVtA-Fvmnp__f0dLzmy0g9q13V7z1T0AvylKGQhlZzVX
+8NOE251srn_FklItwznRWRRsdm1KjmjEs61t_GlG4BzCFXl5zI-0uBSndcBp_M5MKFi6g6n1VnYOZ_hi50twmu98wT45L5q_1e0zxAllyuZPzNTDS-VdmdpL
+bmgRMmDz06ED-JIGunhg9K5_Q97War8EdpEznlSRyBxVNWTow9i0HEUt--na7SVIxq1dZTJRLctnSxpKAuWDuPXcpxvKrPE-G7El0FHtkx3srJsZ57s_J7CP
+Nby0bwW_bm6q8S4_c7DWlW8DAfUC4VOjwi_r1Vdf2dC5jC1FCvW7m4J6By1y02vV0JC9p2Gmay1C0ZC9p2Gmay1C0ZC9p2Gmay1C0dy1
+}
+
+AWSEntityColoring(DataSync)
+!define DataSync(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DataSync, DataSync)
+!define DataSync(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DataSync, DataSync)
+!define DataSyncParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DataSync, DataSync)
+!define DataSyncParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DataSync, DataSync)

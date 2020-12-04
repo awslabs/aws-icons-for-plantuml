@@ -1,13 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Outposts [64x64/16z] {
-xPO7RWCn30INHKlz_yMHQSCWZ7PKUg9nByFgSlDlSZZ4C5LrRkeKtB7OqGUW8u8kqEZh1CPCGc5zNrDFGk2c7htqMbkv8Pq0VajV2XWqMAjyrcgOGQ8p_FGh
-BhneX-A-Cuu2BwSt21zXAdOr_MFK3d5xue9njNb_bC6Nfnkx-qQVqASVRWkdntL_2lpf8p6muHCmaba_auYil_VJeSLdovynRB7ya8twape_eyUUNzZBhtB3
-9Rx7dv5irr_uL_xnZ-_mA7ZN9rvW_n1A192y0iRiebXO1bf4stTThBJKXSNyOnmERm
+fTO5bWCn30DGEoJr_WTUcWwcqVDRgmnVWI8k6P7qUv0iGB80oG8a2v0iGB80oG8a2v0iGB80eg0LD_FQLG6M1TtjdIeAi4h_XNsCNipAga2CxuVgPcrLiFJD
+_7XIColkdrUnycuDnvEsdV2unp03S4x0UtChST-ju5BGjsq8--wRnmmYlfbP0vhRDTw2VfZL0S3j7W_wyfwysMq9uVMRZOl7F_pzKddgyRSepzcxrSFRNuRx
+qiy5_Rt_fuVoSq7Ra1cE3E7dWb6U7ieJSvxpX_8CU2ZFbJ-ZFREUWVb3UGOybEVivvlAC-2XF0CUoZFWeJm37iepuA4y0nxAC-2XF0CUoZFWeJm37iepuA4y
+0nxAyzFl7-O2YeB-A9Z_x2ZFRSgtqnJb2TXVpiivL85lopukjPy3aOXdrZFhcVNCUcOzfKyMl985hsJ1Dm
 }
 
 AWSEntityColoring(Outposts)
-!define Outposts(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Outposts, Outposts)
-!define Outposts(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Outposts, Outposts)
-!define OutpostsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Outposts, Outposts)
-!define OutpostsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Outposts, Outposts)
+!define Outposts(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Outposts, Outposts)
+!define Outposts(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Outposts, Outposts)
+!define OutpostsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Outposts, Outposts)
+!define OutpostsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Outposts, Outposts)

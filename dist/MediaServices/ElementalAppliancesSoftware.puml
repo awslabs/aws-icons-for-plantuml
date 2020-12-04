@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalAppliancesSoftware [64x64/16z] {
+hTG5clD038DXXqRg_G_yGybJi1vdjLg6zoibmRJHsV4wc06O0PW1c06O0PW1c06O0PW1c06OWIHBjBTa87sSMDw3sNSVGleXF3f-20_Nm_KuxUF_FW8nxPp7
+ITzu22SzN0_NGtasF9IdSVvSFNzs_gOd6Xl5Q0Pe1gW3Ozk63506zlYtNGKe0iSIiVp_EEe0oy1OhxTzlG_hg08i0ql4XkksY0L5W6KW8f-vFBQLvvl_-htm
+yRRPp_jzdwllVqvvDZo4py3qggzl7ifpEdOt06Ex7aT5W7K0LtZD3BnFUSw7yFrXL07A08w80z-dVF-gp68D3-NPy52U3G_bsV1GdcYCQgwdw-bwkfwkf-lf
+Uafl1Yvcu686_W8
+}
+
+AWSEntityColoring(ElementalAppliancesSoftware)
+!define ElementalAppliancesSoftware(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalAppliancesSoftware, ElementalAppliancesSoftware)
+!define ElementalAppliancesSoftware(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalAppliancesSoftware, ElementalAppliancesSoftware)
+!define ElementalAppliancesSoftwareParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalAppliancesSoftware, ElementalAppliancesSoftware)
+!define ElementalAppliancesSoftwareParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalAppliancesSoftware, ElementalAppliancesSoftware)

@@ -1,16 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Neptune [64x64/16z] {
-xPQ7ZiCm34CfoRO6__zxRpZDxKmSTjcPyLn89bZLF-kff_YXMsnb-5Ja-_4bkAARu4EYpPCyYsSN06AjZpVrPWe0BNWETm7Cyslz6Ls0LZo13w0doP_jS86T
-m1E8Fqjb6GOFUKVdvj9sXczRl9_ZqV_QRjBb90yT-TLsytiOS8xl3O2Do7bSLHcZ2Q1-ZlU7WI2Yxrg-crUTuyTqZ3TxaA9jH97Ci_nQSrNcv_TlFBdFh-AV
--y_Av2P_w1-c0NQVBuCg6Y_wjsJXcL2MIFtDI_9FkXXzvQKIMpp4VxUNeMWV1mq2TFxDwpHmyOkgIY7mbL28Z4t_JQkBTOyf7qqx1RfsbWEjYZl-os62hseS
-07H2J22vwp-I5JvwUrTV4Zp2bWNOPkb7_kDNpUCoM5THQDKXlv60W01sdUTywx2iL0nUurbPhEavFknNLqAo2pGgnWCKEShFN-Tq5exrzu_oixxbfo7O83RQ
-HlrR-KcI2pzVB0NqgF_EUEIdgfcgbWC2NJindS_vtCxF64q5K-8S0akcD3Ac-HWg_JW_yqthxY_vorXoHm44Z_QVv9U3oUSxpuGOdDVpZmwD6W90yyR_TmS0
-1Rfxylhy410VW0R96_CBEvppxURyD32s-UFvZGdq3adUd1_fYw5kpw_CsVZxy_Cy_5SzzTGh
+fPM74gms301NSfC4__-zYI4NE1_clHdlbAkxD8qT7_m5cnEBWLWCn68W5WEn68Z5G2m6OZ4GYu4OiPgJ2e18ojN-41ZaB0n8Rc-1Bri1IQKsE_xQQaa0UY_C
+_Gfa6-z1oq3nYvdV8FlZJSnG_MBYAsNs50hgDvvzy9W43FpEn2yn2PJ1zsUV_7m6cT7tPn-oZO6MwVZ0asyAa4eryuZxymSVUV3dymS-2MntlsEj91K14Usd
+uXtmIM3R1d_0vxwV_lRgn-1NGUeLwFxswiUNN-dS0bldrO-kVGoXU47ym-6V0V1Pu0A6QTvE3ZyzsgQe-NyesJ8w-Zq0Q7lm5L0Vht_qjm01AJRwS1k_0cZr
+qUz053gQIwsjrLfoadmUF_p0eFd5w4UqOO2xgK0z0udahtx7QiavQKgvD8zEXjO33Up5ts96XYo8KFpDVmqS-Ai_3nIaUVlJyUS1eKL4Gzvy_mqqHMfuEuVR
+uSsNdq2Z8y3V71-oVmUK4WLG_Ln_lFWPaDByUqrqE4eTzOYvltdcG3Jr2T9GYXUqfuf2ETAlpyzA4ZvOezE63MxkduHPgxMPHJH5staT8TYm74pyyIby-Ghe
+rByOVKkGB2eqY8a_2u1ne7GqujTNwYnGqKHoJq3fxoBYnpSepu42vm0x-B0gxzVVAr1y35W1QiZfIroS_YtW2aYgpJt-bTtQEGng4GarKr8CWVqUsFnf_xRZ
+lnnu387z35puiNz_fhZzBtWMoHxVT7y8ZCGhlYy6ziN0lXZO5mFxOc1V3EoBWNqni2y6_W4
 }
 
 AWSEntityColoring(Neptune)
-!define Neptune(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Neptune, Neptune)
-!define Neptune(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Neptune, Neptune)
-!define NeptuneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Neptune, Neptune)
-!define NeptuneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Neptune, Neptune)
+!define Neptune(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Neptune, Neptune)
+!define Neptune(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Neptune, Neptune)
+!define NeptuneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Neptune, Neptune)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AuroraMariaDBInstance [64x64/16z] {
+xTS5aaCn30FG0qI9xt_QvTL46GTSBvHKTElt6UrAWc1oMeTGWTG0S65wRf4e2dEg1BUQyNJy_2naK59B-wKUuAVZOTXwyDFrRAW60ZRmjVTGhxRudeqcNiUz
+cd_mAwTHwyNyouJIQytNiLVRrlujhcVDpsElTJV8DlW-Gsae--r_dwT7bnBrS7BksqIVUY5ETSAhCyI0pon_E3s8Ug383p6l-GTl8urwNMiMzynL-1hqsfLT
+VxVdPJXtiFvRp8zDZxZ-1Lx5-kUNnFc7_-u6m2xd1cWTAxaRCBzbluArqyNCnbzhNW4
+}
+
+AWSEntityColoring(AuroraMariaDBInstance)
+!define AuroraMariaDBInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraMariaDBInstance, AuroraMariaDBInstance)
+!define AuroraMariaDBInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraMariaDBInstance, AuroraMariaDBInstance)
+!define AuroraMariaDBInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraMariaDBInstance, AuroraMariaDBInstance)
+!define AuroraMariaDBInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraMariaDBInstance, AuroraMariaDBInstance)

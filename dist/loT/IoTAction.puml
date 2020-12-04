@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTAction [64x64/16z] {
+pPS5hWCn30M5KU33_KzRTBcTJElI4wsydXUc_ozM2oNGlNe63YLexT2lvkw3LHOEVq0LSzWWdy3qKKv7N1im7j-sc7hcE-d6QRG90ufD1n8Yog2S1-9J6xWk
+ATW2xcnRWHWwRH1_1XIl38XdWs08zmPYpHgU3PYVBzdRV26U3KJreuGRyzlniQyIhxPrv5aVuFFrvqsRUIuzebNDlm7p9pxA_TEl9zRFwzSlux4cHdB_Ik-V
+dCLu_lo0H8DNStx2Vd8nHQ_W0sgVlZ_axozyf7V0a_UtaRu_FcPG0TVtvw4lsFmp_txWvm_4IBtTLFrNAl3uaWBOQmZqqre2
+}
+
+AWSEntityColoring(IoTAction)
+!define IoTAction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAction, IoTAction)
+!define IoTAction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAction, IoTAction)

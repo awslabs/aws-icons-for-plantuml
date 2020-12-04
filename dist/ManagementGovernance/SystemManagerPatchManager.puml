@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SystemManagerPatchManager [64x64/16z] {
+vTM5RSHG48R10cQbl_zgWvRs-Cxxmla4nZ53VdPbaRF8MU6z0GmvsyIKC_4R10O-cm06FfMtsiDDuQnAWbhnKPdvNh_zhFPuRD-rwFqIltxzocdxlC_tvhvh
+VrwfTBjzeUQ-mEEU0MyF-tY7W1blRyI311ZmpVS6UWo3NsDl00FU6y289w0muma4AJpEEz9-1-zs-inzYenyTzCRVA9-h5y_VsVz1p_gr3kh7lLboHVQwsvx
+Q9LPq1ie1Zx06sVW0vIf3nZmeD8Ra6dDXpKVHdvspm
+}
+
+AWSEntityColoring(SystemManagerPatchManager)
+!define SystemManagerPatchManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SystemManagerPatchManager, SystemManagerPatchManager)
+!define SystemManagerPatchManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SystemManagerPatchManager, SystemManagerPatchManager)
+!define SystemManagerPatchManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SystemManagerPatchManager, SystemManagerPatchManager)
+!define SystemManagerPatchManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SystemManagerPatchManager, SystemManagerPatchManager)

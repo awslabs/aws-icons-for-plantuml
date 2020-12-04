@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticBlockStore [64x64/16z] {
+fTHPZiGW38JX8c1mcVlVTvI8teXmqBYU-_ixEx-cpjfY30OO330OO330O83108C11WCC12QFCIU0iIVFV_gySGg7ur4U0nbhNm5v20WWIqy1gXiGe2YW2yy2
+D2TGJtvwNNXc95q66f3ryk-0STenBa4jEQK40Ed8fLw-uFZ4Xfy3Ud59-5sIqqZJpuOttYT0ojAQylnTbPm0qNd3szqdo7GD14bl6_uUk3y71T3xXhUx1x9K
+LPBNyGF3JnlURlvs_OQVPsEpfqe-4iRzawOFtcR_CzL7RvxdXZVFSyERvxdXBUejwitptF3cUMvuypmtl7cU6zuypmrldkU6Dyzpmvld6VLyzWbrueB4znwz
+0AdKfZodhPO423zxybPltw_Axwqzgrrhae-KJdbzltXDb6DBVq3UgNc2WrEWVoHWPXc9jWfeGfuUvTv_l01gjWmqeBmyX-zVlWBDp0bKG5wUm_UtRq0rSmC2
+r9VdyFtb0J5x21JWxJbyV_bizXZ8NvxQFm6CEG6CyRq-vdZRyTsSSRqU3FHWe0S3FHZemK0F1demq8E17Wpy0G
+}
+
+AWSEntityColoring(ElasticBlockStore)
+!define ElasticBlockStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticBlockStore, ElasticBlockStore)

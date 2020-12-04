@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticContainerRegistryRegistry [64x64/16z] {
+xPS53eGm54IZpSVlVzhrfJw4GIiJGL_zstGNoIgni5P3ubeQ9sNXn6fr-bvHowrlOxE8lDOKncLg13MmpCkPlBz6aTSH_aCqVqpppZVCIqayl_uyVzVpX-qF
+yuGiVgtzxpX-p3V9sRy2vr-g_I_o7S7Vr_wRq-mVsAchPjhVVpHW_0N4VuAlza_bJsN5VmNvxVdx7znGFpHi_Q8VBYd09gsEfhanDDDTz0G
+}
+
+AWSEntityColoring(ElasticContainerRegistryRegistry)
+!define ElasticContainerRegistryRegistry(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticContainerRegistryRegistry, ElasticContainerRegistryRegistry)
+!define ElasticContainerRegistryRegistry(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticContainerRegistryRegistry, ElasticContainerRegistryRegistry)
+!define ElasticContainerRegistryRegistryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticContainerRegistryRegistry, ElasticContainerRegistryRegistry)
+!define ElasticContainerRegistryRegistryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticContainerRegistryRegistry, ElasticContainerRegistryRegistry)

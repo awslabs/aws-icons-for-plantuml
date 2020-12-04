@@ -1,14 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $StorageGateway [64x64/16z] {
-xPC7ZkCm34K_crZkV-0T0gCOMSUo4vGjuvTU7gkSVnytDvNX7f7rcHxAQDZYamZQggWG07i_EOCiiciF1JZUr0dogBg2mU_v0bbyFcNiyZ6iUXlNV8BdCmvI
-090h4NnVRMdBog3p0AKOkuq7EAhIhaoI4RdZktU1NsZ_kBO1hTFfuxZ907HPWHF0MxxT6rblOG3YMp0J9W8HwvXE30RvSNcZfgm40DG008zPYXskKM2LJOK0
-a9arN1cW6K6X1-df-vq1P55VPDElBjk5IAz7_DYE0fRjc7J_tNv_Ol0im7DFsIoVu9Lf162shvqHDFyuQkbJRt8EeDidjBBvLelwso_fFLTkGzVDLupb_DhN
-xc73fzymOhM_wUThlnnyV7vE_Gh2M9tVjUyAQ1xX3DZ2BmF8Si6GiSe_UgSdhFmpRl_sRn-YzBjFAbTzHXFFViFN_F0lOl7TtyBDpIy
+fTC7SiKW30RX5LtY_kTDPMm8ZbBuqyktzZ1-EgqvgzzC3mDw6D33W1u6z32WXm4z3EXXG0y3-Xp8KG19vQV0eqvSaxtmawy28TNMMab0T0CF7AHUPv0WR07F
+Do6qwH2B6zXzH9hg5AYGtxyy1nxkVlnkleCIW52smEuZQNiE0cDv3vYkWpbvtK1w0n7g5h0rq13LBP0_Bno9sndO6gW4NRO0s0xHra2Q_1w0MBu4R0va8Eht
+WV3rWHv-12A4hEe4IWJI7B0xaA3y_79EQy2kG8CwenA328Y4zLMSeUxUD15ld8LbOKe4qeCtkI-V08dvpQYsMb8095-7W3nv6Be52ECavli9TNeC70_oSISb
+2Y0XVRGo5tlsGXl-8pIVWEIcsi2zVYJRxSExgk-i986WgWnM24--WDhbbsSXZr-vvs-1qEpsEcts2TgZRmAvULvRom7AipSDWEzXvSsMrIXcZbS9kIspRQvN
+ROTUV-7Dy_eBRvxNNtZpl9vwFVNw2s-Urrzus_qUw8utp-lmtV7cUHs-EzuyhyDtnvldTVZkUFEy3jyTRvxNrlS0dxCfmETqNzy30O1WKs3yol7TdEdtwuU1
+VXZeXu5-6EY7WNuOw8U1VXZeXu5N
 }
 
 AWSEntityColoring(StorageGateway)
-!define StorageGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGateway, StorageGateway)
-!define StorageGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGateway, StorageGateway)
-!define StorageGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGateway, StorageGateway)
-!define StorageGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGateway, StorageGateway)
+!define StorageGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, StorageGateway, StorageGateway)
+!define StorageGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, StorageGateway, StorageGateway)
+!define StorageGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, StorageGateway, StorageGateway)
+!define StorageGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, StorageGateway, StorageGateway)

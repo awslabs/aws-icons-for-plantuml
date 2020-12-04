@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AppFlow [64x64/16z] {
+fTJNTiGm20JGKTV0__zlZfKYetZn0vEoJznZofh_Cpzd_0k308C0Wm2308C0Wm2308C0Wm2308E010490X84v0MO2VVK4v0NeC9c783um036hOM2VBGWFf1H
+xZCOGBU0k407fXbYHJhgNI2X7Lj8QBRU0ohIkSO6s7e7cC3W2MGKK-y01OKxUuJZGxqy36-Nj_6qGpc0ZfLv7nvdBmceJpiK6wQ_-eQq6xcI-R13iQd83yFh
+kPQ5ljNledDu0D2v0EVv2uhy7Vuqbv0hAabtVWEWYBcytSp8VS7E_XBQ6g8Ptj5CHlrqFns9Fsi4EbVEPhfplq2_FceHEpncrFqwQZJrPdS_Z1cUESHhTxm3
+PdTJhcG0TLURG_pfwwc-eFuy1u1UCbVsBCqSlVg15VijJhYo6t6UNm2KDcMV3bSzJ5yVvoVIxs_bYwM90LHsW24cPdVFWAgv7pc10P0Ee7SWeudDsfq7w1sO
+04NEawO7g04AYiXnqdG1DG21ASTAw4Ojq93bF0c__W0IJ5OxVhq5EameBu1km8bJ7mGq26WGq22WGK23W0O13G8Q13G8Q13G8A11G8F05m
+}
+
+AWSEntityColoring(AppFlow)
+!define AppFlow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppFlow, AppFlow)
+!define AppFlow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppFlow, AppFlow)
+!define AppFlowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppFlow, AppFlow)
+!define AppFlowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppFlow, AppFlow)

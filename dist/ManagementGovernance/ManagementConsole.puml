@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagementConsole [64x64/16z] {
+fTI7ZiGW40FGeUFX___tq60TADcm1L_P-XoQWdlgSyejE2p0OG4E2t1OWCC271RWi0271JWgMBsNZ-DglNlv8dC4klXFfs2-qklMuzbNUbsyYFp_CS--qklM
+uzbNUWNzwppxIgzRZsTVwVNx_MEKEVNQ_QT7-UAPhSSllaPBPS7NFeabmVBUwsgxYk9YT1A155cmzxCWY0JV_-oP3_OCxxt-Sqke7V4v2_QU1L6a99_099So
+2_QU1RbpN9B7Ekuz2uf8kFh0phrdGU9UHYVYnlxFRTnu1c6CrOd5LLiIZv5t7Z6Eopjn1IZz0K178V0axdtcPgNkBCv6u-T9VETzgWOoBDc6NgFxr4VU3oei
+bQiPll4ADxsxUcozywK__dyzsVYpTul7VltyUApeAIAPwvUdnwFNKhgq0KWi9VBaTrsmU1QqYxT42UCOMSAOV0H3Z-7RAy_d9NWV2itDO_Xsyraay-bwByjN
+Z-7RrHUHsEaiu2tXvZ5yctuM10bb59J-jFECkyVmZNufiBZIdpgna5yysWZzMb2Iaw0QnCLC_kpRnMkjgacS7wUk5ZnwXdvDviWLpCwtkzTYwK--zjUSUlt0
+FsSMYEMbztklY_TtptmwXUaF2zfXGJiiQ8S5xR2W7HQqmu9sMD0E2_u
+}
+
+AWSEntityColoring(ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagementConsole, ManagementConsole)
+!define ManagementConsole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagementConsole, ManagementConsole)
+!define ManagementConsoleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagementConsole, ManagementConsole)
+!define ManagementConsoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagementConsole, ManagementConsole)

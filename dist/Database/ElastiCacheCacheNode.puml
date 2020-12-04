@@ -1,14 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ElastiCacheCacheNode [64x64/16z] {
-xPVLOaCn24093l__mIlKlVVEjvoNw8bNW8zYB0BE8OjSH1WTxM6v0XjxtJFJLHQWhGneBDCH5eAUQPsZ7caflMhQJO-m0jmj8D9X5PvHwyZKTRvcZlPbdIyt
-V1BbRcCe1giWe8og8XXIu7tVCYEnpwOKZ8nmaAeQgLKT4NJNvyhsND5tur4YyD7dX-lts6VKjLRHBI_x8ssVGOtsZZwyuYli1A2D8mVVDxGV4VhSDuUHSkAR
-ghPl8lHy_H5cwIV-U67zxK51DP_dlllhvo-L7I3PWn34mli3ouZayDrc-lt4Y--d8LKUZ9qbW24g1ADdhLeknXr_0T_eJt_wqv_-zAS__VV-Vtxd__VtnW_l
-ZL_U6J-zDtvxP_putlZr_V7p-ta3
+xT854i8m04JH0-I7lVzfSNQctYuE-IFHXrQV4fkAiOkvIxdhS6sgxxEVE_TMNUwNlMvL07cd-xM7tXU0ukLwxzkNlGAeThoSNTTxWfVJldIzp-lDrynphhlq
+zr_b5VgT0IJV7tCWyLoqNqImsXiXgS3IypFqylqBg83M-A2lzCqtttpppJVVF7TwfTwiEyiz2KVf2z0XbIYvcBk0_qO7
 }
 
 AWSEntityColoring(ElastiCacheCacheNode)
-!define ElastiCacheCacheNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
-!define ElastiCacheCacheNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
-!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
-!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElastiCacheCacheNode, ElastiCacheCacheNode)
+!define ElastiCacheCacheNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElastiCacheCacheNode, ElastiCacheCacheNode)

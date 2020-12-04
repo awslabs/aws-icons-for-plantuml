@@ -1,0 +1,1141 @@
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!-- ====================================================================== -->
+<!-- A 52 card deck.  The face cards don't have faces :(                    -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: default.svg 1733420 2016-03-03 07:41:59Z gadams $          -->
+<!-- ====================================================================== -->
+<svg width="1000" height="450" viewBox="0 0 1000 450" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css"><![CDATA[
+   text { font-family:serif }
+   ]]></style>
+
+  <defs id="cardDefs">
+    <symbol id="heart" viewBox="0 0 102 109">
+      <path d="M51,109 c7,-35 51,-59 51,-80 c0,-16 -10,-29 -22,-29
+        c-16,0 -29,13 -29,29 c0,-16 -13,-29 -29,-29 
+        c-12,0 -22,13 -22,29 c0,21 44,45 51,80z"/>
+    </symbol>
+
+    <symbol id="diamond" viewBox="0 0 72 112">
+      <path d="M36,0 c -7.91,21.2 -20,40 -36,56 c 16,16 28.09,34.8 36,56 
+               c 7.91,-21.2 20,-40 36,-56 c -16,-16 -28.09,-34.8 -36,-56 z"/>
+    </symbol>
+    
+    <symbol id="spade" viewBox="0 0 100 106">
+      <path d="M50, 0 c-14,30 -34,46 -42,54 a 19.5 19.5 0 1 0 33,15
+        c0,23 -6,33 -20,33 v4h58v-4 c-14,0 -20,-10 -20,-33
+        a 19.5 19.5 0 1 0 33,-15 c-8,-8 -28,-24 -42,-54z"/>
+    </symbol>
+    
+    <symbol id="club" fill="black" viewBox="-3 0 103 112">
+      <path d="M38.5, 70.3198 
+        a 22.5 22.5 0 1 1 -5 -32 a 22.5 22.5 0 1 1 32 0 a 22.5 22.5 0 1 1 -5 32
+        c 0,20 6,38 22,38 v4h-64v-4 c 14,0 22,-18 22,-38"/>
+    </symbol>
+    
+    <symbol id="card" viewBox="0 0 100 160">
+      <rect rx="8" ry="8" x=".5" y=".5" width="99" height="159"
+        fill="white" stroke="black"/>
+    </symbol>
+    
+    <symbol id="card-back" viewBox="0 0 100 160">
+      <use xlink:href="#card" width="100" height="160"/>
+      <pattern id="blue-diamonds2" patternUnits="userSpaceOnUse" 
+        x="0" y="0" width="24" height="24" viewBox="0 0 24 24"
+        patternTransform="scale(.785674, 1.031197) rotate(-45)">
+        <rect x="2.5" y="2.5" width="8" height="8" 
+          stroke-width="2" stroke="blue" fill="none"/>
+        <rect x="13.5" y="2.5" width="8" height="8" 
+          stroke-width="2" stroke="blue" fill="none"/>
+        <rect x="2.5" y="13.5" width="8" height="8" 
+          stroke-width="2" stroke="blue" fill="none"/>
+        <rect x="13.5" y="13.5" width="8" height="8" 
+          stroke-width="2" stroke="blue" fill="none"/>
+      </pattern>
+      <rect transform="translate(10,10)" x="0" y="0" 
+        width="80" height="140" fill="url(#blue-diamonds2)"
+        stroke-width="2" stroke="blue"/>
+    </symbol>
+    
+    <symbol id="card-heart" viewBox="0 0 100 160">
+      <use xlink:href="#card" width="100" height="160"/>
+      <use xlink:href="#heart" x="27" y="6" width="25" height="25" fill="red"/>
+      <use transform="scale(1,-1)" x="48" y="-154" width="25" height="25" 
+        xlink:href="#heart" fill="red"/>
+    </symbol>
+    
+    <symbol id="card-club" viewBox="0 0 100 160">
+      <use xlink:href="#card" width="100" height="160"/>
+      <use xlink:href="#club" x="27" y="7" width="25" height="25" 
+        fill="black"/>
+      <use transform="scale(1,-1)" x="48" y="-153" width="25" height="25" 
+        xlink:href="#club" fill="black"/>
+    </symbol>
+    
+    <symbol id="card-diamond" viewBox="0 0 100 160">
+      <use xlink:href="#card" width="100" height="160"/>
+      <use xlink:href="#diamond" x="27" y="7" width="25" height="25" 
+        fill="red"/>
+      <use transform="scale(1,-1)" x="48" y="-153" width="25" height="25" 
+        xlink:href="#diamond" fill="red"/>
+    </symbol>
+    
+    <symbol id="card-spade" viewBox="0 0 100 160">
+      <use xlink:href="#card" width="100" height="160"/>
+      <use xlink:href="#spade" x="27" y="7" width="25" height="25" 
+        fill="black"/>
+      <use transform="scale(1,-1)" x="48" y="-153" width="25" height="25" 
+        xlink:href="#spade" fill="black"/>
+    </symbol>
+    
+    <symbol id="h1" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="60" height="80"/>
+      <text x="8" y="28" style="fill:red; font-size:27;">A</text>
+      <text transform="scale(-1,-1)" x="-92" y="-132"
+        style="fill:red; font-size:27;">A</text>
+    </symbol>
+    
+    <symbol id="h2" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      
+      <use xlink:href="#heart" fill="red"
+        x="40" y="40" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#heart"  fill="red"
+        x="40" y="-120" width="20" height="20"/>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">2</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132"
+        style="fill:red; font-size:27;">2</text>
+    </symbol>
+
+    <symbol id="h3" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      
+      <use xlink:href="#heart" fill="red"
+        x="40" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="40" y="70" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#heart" fill="red"
+        x="40" y="-120" width="20" height="20"/>
+      
+      <text x="8" y="28" style="fill:red; font-size:27;">3</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">3</text>
+    </symbol>
+
+    <symbol id="h4" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="40" width="20" height="20" />
+      
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">4</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">4</text>
+    </symbol>
+
+    <symbol id="h5" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">5</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">5</text>
+    </symbol>
+
+    <symbol id="h6" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">6</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">6</text>
+    </symbol>
+
+    <symbol id="h7" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">7</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">7</text>
+    </symbol>
+
+    <symbol id="h8" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+
+      <use xlink:href="#heart" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="60" y="70" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="40" y="56" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+
+      <text x="8" y="28" style="fill:red; font-size:27;">8</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">8</text>
+    </symbol>
+
+    <symbol id="h9" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+
+      <use xlink:href="#heart" fill="red"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#heart" fill="red"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="17" y="-125" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="-125" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="17" y="-102.5" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="-102.5" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">9</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">9</text>
+    </symbol>
+
+    <symbol id="h10" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <use xlink:href="#heart" fill="red"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#heart" fill="red"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#heart" fill="red"
+        x="40" y="47.5" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#heart" fill="red"
+          x="17" y="-125" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="63" y="-125" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="17" y="-102.5" width="20" height="20" />
+        <use xlink:href="#heart" fill="red"
+          x="63" y="-102.5" width="20" height="20" />
+
+        <use xlink:href="#heart" fill="red"
+          x="40" y="-112.5" width="20" height="20" />
+      </g>
+
+      <text x="2" y="28" dx="0 -4" style="fill:red; font-size:27;">10</text>
+      <text transform="scale(-1,-1)" x="-98"  y="-132"  dx="0 -4" 
+        style="fill:red; font-size:27;">10</text>
+    </symbol>
+
+    <symbol id="h11" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <text x="10" y="28" style="fill:red; font-size:27;">J</text>
+      <text transform="scale(-1,-1)" x="-90"  y="-132" 
+        style="fill:red; font-size:27;">J</text>
+    </symbol>
+
+    <symbol id="h12" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <text x="6" y="28" style="fill:red; font-size:27;">Q</text>
+      <text transform="scale(-1,-1)" x="-94"  y="-132" 
+        style="fill:red; font-size:27;">Q</text>
+    </symbol>
+
+    <symbol id="h13" viewBox="0 0 100 160">
+      <use xlink:href="#card-heart" width="100" height="160"/>
+      <text x="8" y="28" style="fill:red; font-size:27;">K</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">K</text>
+    </symbol>
+    
+    <symbol id="c1" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="60" height="80"/>
+      <text x="8" y="28" style="fill:black; font-size:27;">A</text>
+      <text transform="scale(-1,-1)" x="-92" y="-132"
+        style="fill:black; font-size:27;">A</text>
+    </symbol>
+    
+    <symbol id="c2" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      
+      <use xlink:href="#club" fill="black"
+        x="40" y="40" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#club"  fill="black"
+        x="40" y="-120" width="20" height="20"/>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">2</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132"
+        style="fill:black; font-size:27;">2</text>
+    </symbol>
+
+    <symbol id="c3" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      
+      <use xlink:href="#club" fill="black"
+        x="40" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="40" y="70" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#club" fill="black"
+        x="40" y="-120" width="20" height="20"/>
+      
+      <text x="8" y="28" style="fill:black; font-size:27;">3</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">3</text>
+    </symbol>
+
+    <symbol id="c4" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="40" width="20" height="20" />
+      
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">4</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">4</text>
+    </symbol>
+
+    <symbol id="c5" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">5</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">5</text>
+    </symbol>
+
+    <symbol id="c6" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">6</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">6</text>
+    </symbol>
+
+    <symbol id="c7" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">7</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">7</text>
+    </symbol>
+
+    <symbol id="c8" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+
+      <use xlink:href="#club" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="60" y="70" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="40" y="56" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+
+      <text x="8" y="28" style="fill:black; font-size:27;">8</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">8</text>
+    </symbol>
+
+    <symbol id="c9" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+
+      <use xlink:href="#club" fill="black"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#club" fill="black"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="17" y="-125" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="-125" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="17" y="-102.5" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="-102.5" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">9</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">9</text>
+    </symbol>
+
+    <symbol id="c10" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <use xlink:href="#club" fill="black"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#club" fill="black"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#club" fill="black"
+        x="40" y="47.5" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#club" fill="black"
+          x="17" y="-125" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="63" y="-125" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="17" y="-102.5" width="20" height="20" />
+        <use xlink:href="#club" fill="black"
+          x="63" y="-102.5" width="20" height="20" />
+
+        <use xlink:href="#club" fill="black"
+          x="40" y="-112.5" width="20" height="20" />
+      </g>
+
+      <text x="2" y="28" dx="0 -4" style="fill:black; font-size:27;">10</text>
+      <text transform="scale(-1,-1)" x="-98"  y="-132"  dx="0 -4" 
+        style="fill:black; font-size:27;">10</text>
+    </symbol>
+
+    <symbol id="c11" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <text x="10" y="28" style="fill:black; font-size:27;">J</text>
+      <text transform="scale(-1,-1)" x="-90"  y="-132" 
+        style="fill:black; font-size:27;">J</text>
+    </symbol>
+
+    <symbol id="c12" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <text x="6" y="28" style="fill:black; font-size:27;">Q</text>
+      <text transform="scale(-1,-1)" x="-94"  y="-132" 
+        style="fill:black; font-size:27;">Q</text>
+    </symbol>
+
+    <symbol id="c13" viewBox="0 0 100 160">
+      <use xlink:href="#card-club" width="100" height="160"/>
+      <text x="8" y="28" style="fill:black; font-size:27;">K</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">K</text>
+    </symbol>
+    
+    <symbol id="d1" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="60" height="80"/>
+      <text x="8" y="28" style="fill:red; font-size:27;">A</text>
+      <text transform="scale(-1,-1)" x="-92" y="-132"
+        style="fill:red; font-size:27;">A</text>
+    </symbol>
+    
+    <symbol id="d2" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="40" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#diamond"  fill="red"
+        x="40" y="-120" width="20" height="20"/>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">2</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132"
+        style="fill:red; font-size:27;">2</text>
+    </symbol>
+
+    <symbol id="d3" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="70" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#diamond" fill="red"
+        x="40" y="-120" width="20" height="20"/>
+      
+      <text x="8" y="28" style="fill:red; font-size:27;">3</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">3</text>
+    </symbol>
+
+    <symbol id="d4" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="40" width="20" height="20" />
+      
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">4</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">4</text>
+    </symbol>
+
+    <symbol id="d5" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">5</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">5</text>
+    </symbol>
+
+    <symbol id="d6" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">6</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">6</text>
+    </symbol>
+
+    <symbol id="d7" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">7</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">7</text>
+    </symbol>
+
+    <symbol id="d8" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="60" y="70" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="56" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+
+      <text x="8" y="28" style="fill:red; font-size:27;">8</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">8</text>
+    </symbol>
+
+    <symbol id="d9" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+
+      <use xlink:href="#diamond" fill="red"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="17" y="-125" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="-125" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="17" y="-102.5" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="-102.5" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:red; font-size:27;">9</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">9</text>
+    </symbol>
+
+    <symbol id="d10" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <use xlink:href="#diamond" fill="red"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#diamond" fill="red"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#diamond" fill="red"
+        x="40" y="47.5" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#diamond" fill="red"
+          x="17" y="-125" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="63" y="-125" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="17" y="-102.5" width="20" height="20" />
+        <use xlink:href="#diamond" fill="red"
+          x="63" y="-102.5" width="20" height="20" />
+
+        <use xlink:href="#diamond" fill="red"
+          x="40" y="-112.5" width="20" height="20" />
+      </g>
+
+      <text x="2" y="28" dx="0 -4" style="fill:red; font-size:27;">10</text>
+      <text transform="scale(-1,-1)" x="-98"  y="-132"  dx="0 -4" 
+        style="fill:red; font-size:27;">10</text>
+    </symbol>
+
+    <symbol id="d11" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <text x="10" y="28" style="fill:red; font-size:27;">J</text>
+      <text transform="scale(-1,-1)" x="-90"  y="-132" 
+        style="fill:red; font-size:27;">J</text>
+    </symbol>
+
+    <symbol id="d12" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <text x="6" y="28" style="fill:red; font-size:27;">Q</text>
+      <text transform="scale(-1,-1)" x="-94"  y="-132" 
+        style="fill:red; font-size:27;">Q</text>
+    </symbol>
+
+    <symbol id="d13" viewBox="0 0 100 160">
+      <use xlink:href="#card-diamond" width="100" height="160"/>
+      <text x="8" y="28" style="fill:red; font-size:27;">K</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:red; font-size:27;">K</text>
+    </symbol>
+    
+    <symbol id="s1" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="60" height="80"/>
+      <text x="8" y="28" style="fill:black; font-size:27;">A</text>
+      <text transform="scale(-1,-1)" x="-92" y="-132"
+        style="fill:black; font-size:27;">A</text>
+    </symbol>
+    
+    <symbol id="s2" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      
+      <use xlink:href="#spade" fill="black"
+        x="40" y="40" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#spade"  fill="black"
+        x="40" y="-120" width="20" height="20"/>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">2</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132"
+        style="fill:black; font-size:27;">2</text>
+    </symbol>
+
+    <symbol id="s3" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      
+      <use xlink:href="#spade" fill="black"
+        x="40" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="40" y="70" width="20" height="20" />
+      <use transform="scale(1,-1)" xlink:href="#spade" fill="black"
+        x="40" y="-120" width="20" height="20"/>
+      
+      <text x="8" y="28" style="fill:black; font-size:27;">3</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">3</text>
+    </symbol>
+
+    <symbol id="s4" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="40" width="20" height="20" />
+      
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">4</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">4</text>
+    </symbol>
+
+    <symbol id="s5" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">5</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">5</text>
+    </symbol>
+
+    <symbol id="s6" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="60" y="-120" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">6</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">6</text>
+    </symbol>
+
+    <symbol id="s7" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">7</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">7</text>
+    </symbol>
+
+    <symbol id="s8" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+
+      <use xlink:href="#spade" fill="black"
+        x="20" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="40" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="20" y="70" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="60" y="70" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="40" y="56" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="20" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="60" y="-120" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="40" y="-104" width="20" height="20" />
+      </g>
+
+
+      <text x="8" y="28" style="fill:black; font-size:27;">8</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">8</text>
+    </symbol>
+
+    <symbol id="s9" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+
+      <use xlink:href="#spade" fill="black"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#spade" fill="black"
+        x="40" y="70" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="17" y="-125" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="-125" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="17" y="-102.5" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="-102.5" width="20" height="20" />
+      </g>
+
+      <text x="8" y="28" style="fill:black; font-size:27;">9</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">9</text>
+    </symbol>
+
+    <symbol id="s10" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <use xlink:href="#spade" fill="black"
+        x="17" y="35" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="35" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="17" y="57.5" width="20" height="20" />
+      <use xlink:href="#spade" fill="black"
+        x="63" y="57.5" width="20" height="20" />
+
+      <use xlink:href="#spade" fill="black"
+        x="40" y="47.5" width="20" height="20" />
+
+      <g transform="scale(1,-1)">
+        <use xlink:href="#spade" fill="black"
+          x="17" y="-125" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="63" y="-125" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="17" y="-102.5" width="20" height="20" />
+        <use xlink:href="#spade" fill="black"
+          x="63" y="-102.5" width="20" height="20" />
+
+        <use xlink:href="#spade" fill="black"
+          x="40" y="-112.5" width="20" height="20" />
+      </g>
+
+      <text x="2" y="28" dx="0 -4" style="fill:black; font-size:27;">10</text>
+      <text transform="scale(-1,-1)" x="-98"  y="-132"  dx="0 -4" 
+        style="fill:black; font-size:27;">10</text>
+    </symbol>
+
+    <symbol id="s11" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <text x="10" y="28" style="fill:black; font-size:27;">J</text>
+      <text transform="scale(-1,-1)" x="-90"  y="-132" 
+        style="fill:black; font-size:27;">J</text>
+    </symbol>
+
+    <symbol id="s12" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <text x="6" y="28" style="fill:black; font-size:27;">Q</text>
+      <text transform="scale(-1,-1)" x="-94"  y="-132" 
+        style="fill:black; font-size:27;">Q</text>
+    </symbol>
+
+    <symbol id="s13" viewBox="0 0 100 160">
+      <use xlink:href="#card-spade" width="100" height="160"/>
+      <text x="8" y="28" style="fill:black; font-size:27;">K</text>
+      <text transform="scale(-1,-1)" x="-92"  y="-132" 
+        style="fill:black; font-size:27;">K</text>
+    </symbol>
+    
+  </defs>
+
+  <use xlink:href="#h1"  x="5"   y="5" width="65" height="105" />
+  <use xlink:href="#h2"  x="80"  y="5" width="65" height="105" />
+  <use xlink:href="#h3"  x="155" y="5" width="65" height="105" />
+  <use xlink:href="#h4"  x="230" y="5" width="65" height="105" />
+  <use xlink:href="#h5"  x="305" y="5" width="65" height="105" />
+  <use xlink:href="#h6"  x="380" y="5" width="65" height="105" />
+  <use xlink:href="#h7"  x="455" y="5" width="65" height="105" />
+  <use xlink:href="#h8"  x="530" y="5" width="65" height="105" />
+  <use xlink:href="#h9"  x="605" y="5" width="65" height="105" />
+  <use xlink:href="#h10" x="680" y="5" width="65" height="105" />
+  <use xlink:href="#h11"  x="755" y="5" width="65" height="105" />
+  <use xlink:href="#h12"  x="830" y="5" width="65" height="105" />
+  <use xlink:href="#h13"  x="905" y="5" width="65" height="105" />
+
+  <use xlink:href="#s1"  x="5"   y="115" width="65" height="105" />
+  <use xlink:href="#s2"  x="80"  y="115" width="65" height="105" />
+  <use xlink:href="#s3"  x="155" y="115" width="65" height="105" />
+  <use xlink:href="#s4"  x="230" y="115" width="65" height="105" />
+  <use xlink:href="#s5"  x="305" y="115" width="65" height="105" />
+  <use xlink:href="#s6"  x="380" y="115" width="65" height="105" />
+  <use xlink:href="#s7"  x="455" y="115" width="65" height="105" />
+  <use xlink:href="#s8"  x="530" y="115" width="65" height="105" />
+  <use xlink:href="#s9"  x="605" y="115" width="65" height="105" />
+  <use xlink:href="#s10" x="680" y="115" width="65" height="105" />
+  <use xlink:href="#s11"  x="755" y="115" width="65" height="105" />
+  <use xlink:href="#s12"  x="830" y="115" width="65" height="105" />
+  <use xlink:href="#s13"  x="905" y="115" width="65" height="105" />
+
+  <use xlink:href="#d1"  x="5"   y="225" width="65" height="105" />
+  <use xlink:href="#d2"  x="80"  y="225" width="65" height="105" />
+  <use xlink:href="#d3"  x="155" y="225" width="65" height="105" />
+  <use xlink:href="#d4"  x="230" y="225" width="65" height="105" />
+  <use xlink:href="#d5"  x="305" y="225" width="65" height="105" />
+  <use xlink:href="#d6"  x="380" y="225" width="65" height="105" />
+  <use xlink:href="#d7"  x="455" y="225" width="65" height="105" />
+  <use xlink:href="#d8"  x="530" y="225" width="65" height="105" />
+  <use xlink:href="#d9"  x="605" y="225" width="65" height="105" />
+  <use xlink:href="#d10" x="680" y="225" width="65" height="105" />
+  <use xlink:href="#d11"  x="755" y="225" width="65" height="105" />
+  <use xlink:href="#d12"  x="830" y="225" width="65" height="105" />
+  <use xlink:href="#d13"  x="905" y="225" width="65" height="105" />
+
+  <use xlink:href="#c1"  x="5"   y="335" width="65" height="105" />
+  <use xlink:href="#c2"  x="80"  y="335" width="65" height="105" />
+  <use xlink:href="#c3"  x="155" y="335" width="65" height="105" />
+  <use xlink:href="#c4"  x="230" y="335" width="65" height="105" />
+  <use xlink:href="#c5"  x="305" y="335" width="65" height="105" />
+  <use xlink:href="#c6"  x="380" y="335" width="65" height="105" />
+  <use xlink:href="#c7"  x="455" y="335" width="65" height="105" />
+  <use xlink:href="#c8"  x="530" y="335" width="65" height="105" />
+  <use xlink:href="#c9"  x="605" y="335" width="65" height="105" />
+  <use xlink:href="#c10" x="680" y="335" width="65" height="105" />
+  <use xlink:href="#c11"  x="755" y="335" width="65" height="105" />
+  <use xlink:href="#c12"  x="830" y="335" width="65" height="105" />
+  <use xlink:href="#c13"  x="905" y="335" width="65" height="105" />
+
+<!--  <use xlink:href="#card-back"  x="5"   y="5" width="65" height="105" /> -->
+</svg>
+
+
+
+

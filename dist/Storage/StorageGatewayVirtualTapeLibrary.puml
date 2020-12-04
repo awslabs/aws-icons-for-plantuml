@@ -1,15 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $StorageGatewayVirtualTapeLibrary [64x64/16z] {
-xTS7SXKx48NXqxdF_XVy7gYc1kH9bYyPVd1KVzLojl6jagKElBXKOKwuc1ny-RkhC-zuT_w7UoyPZxL7YOebRpG0rU9U33TqBdbX0i8OemAiUbG3HWKGwtxR
-6iI7lT9G-N6F3j1VyDb6US4Rg_225pA-zgLcik2HhHYZBG2gFnKB_f10Vekllt_UehhBPJhswgwmPw_5hS1USAlqmVkOgcgI9TjPaUog8ac_zKOonmuhiZ5g
-icpSBKdQZPSc3Lj9ndRvn9QHBTS-DhBlbN7Is1iJbxwtqNsPZrd3tXYvya86fja2wZEOBY1NNgTL6sqMvalfYzvklC--W9gzt-oNUPUG2UGyMsovy6DMiPUa
-ZGidzfHCN7ebUpzmiiP6qlUn9lNQ8yZMdLEtbNICjCd0ZKUHB3UB9fawIf8TRZuESUiHl2tmuA7PlAXJyUW1KJNJDvcPoW_w_ldFM_MRobPyyb0k-fnQzesf
-VlB_VFcNwkZduwEVE_gfWqTnBZ6LdAkdlvyNZb_gVm
+xTHL0iCm30FGhu6S3z__j6EAlAhCqLZU6pRnXGJjiaNlJRDu3sG_oHdeu0sVjFTuD--hBjwwUdzwx-EjdmTwU-_kVM7-aSR-xQ9V_leh7i-OVsDufe6dFITs
+slCc7phj0T2Tq2aVtjN_TThJ4g9E-kDZd3yvLiTAZtm0qMtM9-aJ-Sx_N__ZHn-_HiUl_Gxr-j5fidurrzubdsR_AnunU_CqtRpdoEdoVSgcAVYbv0e
 }
 
 AWSEntityColoring(StorageGatewayVirtualTapeLibrary)
-!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
-!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
-!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
-!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibrary(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)
+!define StorageGatewayVirtualTapeLibraryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, StorageGatewayVirtualTapeLibrary, StorageGatewayVirtualTapeLibrary)

@@ -1,13 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Forecast [64x64/16z] {
-xTHNOiGW38JXaGG2JUv_tZIb5xoGdkL_SVtS3R-htMxNH5MTRnPzMAG7KFbc5SFoh3xoMWRrt0Vslcyyg41Q4t_F7pqOWtOoEET3S9-bdVCLQbabvtq7ueBP
-YY-ehTxcP5EVz1r2msqIRAYd-QWb4pWDjRdBZ7VSPwGXI4vvXJz-zuO-wJkKaN7QvxoB013fAruG5QAgm9oFsnei5sbplW5PM_IQMQpvnzPyUDPNFRAoxCMh
-bmzu8za-uFL7_VRswDkZZvEz52kQNgzd9RqLCyn-lrddpFZzE6Z6wraU-XXtu24O9nXuLpbEdP_KRhUx0W
+fT9NkkCW44JX9dRQ_tu72JpYMkNqzNd_Im44nx1-JuC36XpGu8061pGueC413GveS4230neSqDy6EfrT0_fv07g-UVfKcXDrUlxTBxuyt_odJrYyBi_0g-1s
+pW_FmCE1bXuDVZ1U0Gy6cAu6txjvD50fFNuNFmUytX_VmKq47WyKoZtFoX0vl_Hme1Dnswu0qUuDUXMfUPMeIAFSUs_86_JATCM75v4ElK5VgFGLo-K5U0DU
+Y5YkBY_0szqFeAtCsaTlDv-fQQ5P-UpjoGkH35zQQ-KhRyktUfQfwF1D1hrx0TwcJxJgfzVb--dvuGLusvzVcqwls0lsUyihzeAzzbcJpLVa1NYxlfzVUbbU
+WBVXooXzumLuIoJ3vBzUiPUllM8lKIzlVVti1NZxnGlm1hr-xmrwZNf5tf-z_kZzoRE8_FSYKg__rw7tltx6TlYpwMVG--Ppch6PrZGxV9fbHTullwSmv1rw
+-zxxuRyCUezwDvZ2TXySyE201mSyEE310GyEU730WmCU7F3Wm3y
 }
 
 AWSEntityColoring(Forecast)
-!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Forecast, Forecast)
-!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Forecast, Forecast)
-!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Forecast, Forecast)
-!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Forecast, Forecast)

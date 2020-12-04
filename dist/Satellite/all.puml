@@ -2,29 +2,17 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
 sprite $GroundStation [64x64/16z] {
-xTHLWkn640NHI2ZAk__r3WZcoo39Vjod6K9SLJ-bbnTj7iSrUsjZbXxbAzbvVxA41fRjGu1DrKs9jUQ0HKyOgZkKU3U838VeDnUWZdTeBJoo1zwnfLkhxrXt
-C22Jo9jxi99cP8ySHWPZrIsgsMZB89SpLwbkKirAmbXhIVM0D03RweSCydQjBnqtfavrpVm2en5h7jR5Q-VlT5tf1vOV7CyCBCzdlzWlVD_t8Ir2vtCmLHSe
-Q2eDsbwM9YaDl2xHCeOqYRDlT2rZgYxHWAuorjwNiwRHwYeDY6gqhTSWElHcXw5_tmN76gnj_Ov1LpCmiqjJYQe1n6UVW4-LEbsrxTRbwTV0mRfKfMIeukg0
-a6QmyLgpFXWrdRWp2_QgIIXOKYSQPEb6FwHrzClOzgHkhV_itGt8fNhMizUgX_siO5lvmtxf3-nV_VYFVOxHjxvFVz83R3rmlvzzCpJQfxfBX-DD_OHUNju1
+fT87pdCh38JXmHHx3FjVxnKYvzD9BkMNcFJolAd-Z9lPUduPyCk0NmRyCk2N0RyC-6N0BmD-6V1L8CS01Ccs3_WyaF2tj0tuR1O0oMgq8a3GJM3AXoafPQC6
+O1BOU0O8cV_UVKGmldRo4T8H96S18Yc8VE_epJEWAc8APDgFvzuxtIsg0WYcegIHgu2lHY0AXFFzazUqz3nwJm1GkDhHn-4FWRhY2eWWy12etm7gCq5K1P8-
+cmVgTm3hbMcWVWS0wGi8V-VZhgddyAz0HEuN6VqYehXxW944ZBD0_Gue0dyyG7BvJwW_0O6uUq5wF06d0hhnhm038jqWZoyGLo1nuzy10u8vm8yNb094qp5R
+-VSxG8x8mnT0W4J1M5Zw-ltF1xllCQ2u9q14miQ_0jfLP4GM0D7y-Ha4QUdV0Szu9kfzx3u2jl7l00K80KXEOmyYMW2KE_yE99Jn3KQeEmDwK7dmTUQBMGA0
+I1vzdVZN5t7sTUB3q7rdNoUVlvy-E_kwzNxszUNrVzxFlcwzdttTUZ_xklL-zdNh_TRxhVTB_mJQnjUjz-7RnjUjz-7RolTr-xcS1zegK8Qdby_bRCEtkfbl
+ntOPQ9U1TXbebu5s6MYNWNOPQ9U1TXdu3m
 }
 
 AWSEntityColoring(GroundStation)
-!define GroundStation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, GroundStation, GroundStation)
-!define GroundStation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, GroundStation, GroundStation)
-!define GroundStationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, GroundStation, GroundStation)
-!define GroundStationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, GroundStation, GroundStation)
-
-sprite $Satellite [64x64/16z] {
-xTO5ekn644DHbPggfEn_kuyPsqxoSUum73FXPtKf7by3RHvj07psqqVJ6wzZkGxuYxzuttRQspdwIFcSTpK40qoVyXKnvvYBIEzx--7PFHP1n2ArwrspCO9z
-oPLaPVN8slJM0DZ7w0I6N4NSQkzvPs2Kxwg1I4yacwKjxuLMjkwoYyY9HMhFEz7bbpFJa0s1jkSLrEi1YbHfONh3Uw2iLpanRUrvHRVUv1xoG6ru9_AzJ-J4
-j3Ry27tGux--yrvexqVl1IphU-y9TB_LIQ1Pttid1b__qre4isrvaMxq2rmZm2MpRtdCVoRaMseh1n4zRGjpopDMObcgDLeW-f8jUQ5slAi12CRjSnif-sc-
-jE7bsn63SsN9zlDQoJqlsMvHjb_laDu__bkCUiM3XyuVBc8-7pydA1_niZeuIpVL37JvwFdBsO2u2MZf4-S_kzReVQoopvq_VT_b-k5xV_57U-s7wc3vof_e
-l_DWEnEVHnkdmf_GDG
-}
-
-AWSEntityColoring(Satellite)
-!define Satellite(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Satellite, Satellite)
-!define Satellite(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Satellite, Satellite)
-!define SatelliteParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Satellite, Satellite)
-!define SatelliteParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Satellite, Satellite)
+!define GroundStation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GroundStation, GroundStation)
+!define GroundStation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GroundStation, GroundStation)
+!define GroundStationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GroundStation, GroundStation)
+!define GroundStationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GroundStation, GroundStation)
 

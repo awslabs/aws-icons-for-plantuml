@@ -1,13 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $DynamoDBItem [64x64/16z] {
-xTS5hkL034JHQhHT-r_mM7eC0SlpELUipWbJ8rrPQtCOXIife5ofR7W3RDlBU9-Ul8xtoSLtl4zENl2-Vl5Zho-rjO9B8-YxafuELt5VbPUinNsZ9xtrQNGH
-zTNHB81NtB45lTulrKah8Tz8mQtX9kI5hBZBQ25lLDmtdGPy8UVphTSolYLz9slc-CLfn4-ouPORHSHN1my3x05_4e9B3XKnNynD0xmg96lGevehdNCglOQe
-Hn5Uqegmz-eqnoODYFjJfqz6sB_jvbNUPoTlyZxzFzyVLLjC0B75L0k-kEJ-vyvV_lhbxv-uF_pX3t_umsVdJ-dvM_xxdPs_PkVFwVu1
+xTM50SCm30NH0Npntt_QOXWjgrnTkSaBWzuUUudTViLhDM1dgDbpBzLvHbLu9bbznnDjHfzRD2o9pGCqwghpclXiyUDHEbBkmpT0TlZstRV_6NEZ5otg3cNd
+-PTUVlvB8sxtunD7jNxQRzm__ANz6R1Jt7__qeSF7pvyt7_Tzy-tTmO
 }
 
 AWSEntityColoring(DynamoDBItem)
-!define DynamoDBItem(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
-!define DynamoDBItem(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBItem, DynamoDBItem)
-!define DynamoDBItemParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBItem, DynamoDBItem)
-!define DynamoDBItemParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItem(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItem(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DynamoDBItem, DynamoDBItem)
+!define DynamoDBItemParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DynamoDBItem, DynamoDBItem)

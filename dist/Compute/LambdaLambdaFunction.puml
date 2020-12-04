@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $LambdaLambdaFunction [64x64/16z] {
-jPU7ZiGm24GNOaZ-_uUtU6szmvghretA5XY64Yluzg-m9_x8F2BpxCYCutTHlELr5bpP_AVi8w-fsvwOULnv_8mzv8p_R2JqVGJlMirLJJqdB0gjiqqRxMtz
-WXvFUzZdTkiEdrfVkVipIdv43UUl6apJXydFWX0YzWazXaJ6X73clpLkp1ITV4N3GfKGdGv_8X5RVDV1vKtn3pMnv4_QQf9_Urfahxm6dB_Xay31Btoo-iH7
-Mnmlp0Hm1L6YbeduClc6QwrWwH6c2Hk_HG945JEo5mWQIxE8AfuHaDycuENRYcyIG3LBU35v5uSMcgdqpMWHfQm5sCZJHNUSoUiE-GWV-eIaJA1g17Mifkjq
-6YzE4SGyGvJMWzFu5ASetlmJFlAPvvh08OgKxUzr6mamJ3M0oiUtjypbAVgSZ-kWYeTOy8MyIi0Ll_QFMNsVG4oTKFA3AayHy-CngF9yItsA8FByeaeVcJmM
-db_EJvMd47sCEJyCe8eWN4vHFb7QJnre5Fdo47SuvJDP9TzMUul8Q_pmOUSRyaGY0JnyLSKrX3oJXqzGVBKyau9FL-lx2o5g8YtulB_g-zEqF7d13-HvVyTy
-ynxj6WJixMtfAVB-Bll32QOyTk3i3tL_oK_NjcAodexQYGpS5c0PlgkTc09YVzFxeuRU7_N-Ag7tLxq_2uZzUMD_jxtxm_xzPV_-j7z_sxy_xjzVz-_F-tW
+pPS7RiKm34Cn3TfTzpzjTykMq7EYpYyiG-AJcG1UTnSSUerle8u6F5N6x4-TqQ4XUmxlL1p36kuzUbzU2BPujb6XsUB9Ns43A8WDS8FXzCToeQr_ed7pr01p
+n9CuC-Ox3LAars0-arBopboX0MXdNYSDw8Xd0pn3mm0kMFEJ-S1R1hWymG3pkHgUyoiKmDVUzn_GuCd0TeLfeG7dY6S3p2UkuLgRloC3nxntuIiNstmOM24B
+dlB31ffy6j1E5-ah2oOOC5Rm7eMT1RmRM3KbpLp6bYfuJ2Sl45hZwJ-lVk1p22FplF-vllZxDgOJAiT6KZ2BKuVvMB0uVVuW0o5OBRxSxnnPT-05u2GVE3He
+bNr_EWwuXFOks5ZeubpgQuHL5dp__lxzzyFtto-XnVZrznkR-CxxzOBZ0G
 }
 
 AWSEntityColoring(LambdaLambdaFunction)
-!define LambdaLambdaFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, LambdaLambdaFunction, LambdaLambdaFunction)
-!define LambdaLambdaFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, LambdaLambdaFunction, LambdaLambdaFunction)
-!define LambdaLambdaFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, LambdaLambdaFunction, LambdaLambdaFunction)
-!define LambdaLambdaFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, LambdaLambdaFunction, LambdaLambdaFunction)
+!define LambdaLambdaFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LambdaLambdaFunction, LambdaLambdaFunction)
+!define LambdaLambdaFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LambdaLambdaFunction, LambdaLambdaFunction)
+!define LambdaLambdaFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LambdaLambdaFunction, LambdaLambdaFunction)
+!define LambdaLambdaFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LambdaLambdaFunction, LambdaLambdaFunction)

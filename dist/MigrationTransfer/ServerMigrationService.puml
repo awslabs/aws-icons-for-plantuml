@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ServerMigrationService [64x64/16z] {
+fTM5WiCW48JX0G9PUV_dFQjmwGwfx9pBzzSJuTlfHfmc0veCQ3AWoO0c0veCQ3AWoO0c0tfVnUFAEa0yucGTO5wE0qvlGlJA_3eGlJA_3aIlnAy3qMDk-hF0
+kHz0RVjfuEXrteIh_raTwm3nElsF6Wr0NmUUt_wzaS3h_cSR46u2zVSzF7uDPQkbj16zKQz7BmMNjUZjbSU_e_I_kx97Rozu6VlrZY3UxlwmwUSA1l56lH9V
+KJRYxLM_uMSZUbluk5604RrHhq9MKOWtwbbW1phnnZmDRAZoegU1WIBoibTs0qI4UADUkHVYZNfbr_zdn5lqCT3GBjyGRy67m036zLlYxUXZe0ERt4QyHJy3
+Uoz0axc33sDdvjBb_wQlWTVWIvrw-Z2b4pPB1dmP0EQdTS0N0UgL-5M0Uer-6Q1UcVStl3BlRtXbtgatwZNwqpinZldrdKZ6l7_sJFHam9C1JmOy6V1am9C1
+JmOy6V1au1i
+}
+
+AWSEntityColoring(ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ServerMigrationService, ServerMigrationService)

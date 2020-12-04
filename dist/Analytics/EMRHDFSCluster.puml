@@ -1,14 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EMRHDFSCluster [64x64/16z] {
-nPU7pi8m38HnbkDx_mV-LJ1gvFmfq6ES1lDJFHAFowSbkyxW7RjCNiO5e_8PNkjDxIHV_6qwoLT_cu54yetaeSBniCpm1g0nyIy0-YjHLA2bV5NTyfVj5H-a
-8vu_qUTzo8PHdl_wR1uA0DsCxu1k7couwDKcwviExMYunrviltePesJjkW9MTalwplUccre_u9C1biOqrEaMb3LVR8YHUv3YBQnBlauvSWyawyIt7cNkUeXc
-osf0v0N_IQU0uAwPxnfaWHT_icafcFao5rsTOBSgnVZx3OryXBKakruW8CjDzOWFPeiNW34EEE1RXEyvU9Bl4VRlaIjWzQQIBolUVPOfYTP3l1Uymq4rdesb
-_R9ifoOVu0dxgVYn-QFE3tj-oVj3tr-YVj3rYw-VVFrc-mVTl_Z-oVPlSduWvXTgVYBdDsv-56v-_U7y39MVxW-9sfz-ix-Dokp-IkxF7z0V
+rPU7SKCn34C702pjFsrwS2PXKqTzLoHkF3vyzJ9VNCIP-ZXmZEVJUL4lm0D7UHpbSPG7zlbs7H3LR0HaQK1n2qSErhXIb9fv-aXNwba25Kqyn2Rn95pGLNuO
+RjKBV8Z9adfpN3K0dASr9RsBPEmyOdPqb1QyYmPlyX5jyXPCl3v9vOoV5c20-Ty7a09VBhkqO8UVae-G1K_4i7LDmHjiIs3DSrwGyFlpY_2Qzrossiyja3KA
+tYoy-y6AprC7lV5BAxFDloNl5ctUBVfylNxH-M6UAFcONgpVqtdbkxZUFse3hFUloqkJ4jVxfpJ04BCHMlCk8gjv7kVLyyUfTtmMltK0izNx6UT7ySyzFx_V
+_KFQul4qtWt8-Nhw1
 }
 
 AWSEntityColoring(EMRHDFSCluster)
-!define EMRHDFSCluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
-!define EMRHDFSCluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
-!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
-!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSCluster(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSCluster(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EMRHDFSCluster, EMRHDFSCluster)
+!define EMRHDFSClusterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EMRHDFSCluster, EMRHDFSCluster)

@@ -1,17 +1,18 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $IoTThingsGraph [64x64/16z] {
-xTG5iWDN30NH5Zn9L_jVSARy7OufJCSCFQWQ_Rlyxt_J5-tzpKYhZpYNF67SMDJe4qO61kQH6Mv0p4UzcgoHzY9r6kH7VM6PkjjL6TRxoVelVTmzPi8zCg7s
-tNwA3DgurE5YghSNO5nEqcPpgEACcRQWzOxqImU9RU5EoKpQmaPFzUNhPHI0gu1xhqr2J-pX4kkt9abyYvFKcjtth9_rYGU-JlXz_qzGXpZS-YrYd_OZN8QQ
-xuz_SJ6fukXaF-rxk9XkJKzTfBgC1kW3vrNlc1hpqFTM4jpaFkzz7HLdzKDXZX-FUBR-m0oNOSQFLrE0kU41ZwUWx78sxT8_wXioC8Tmg0TzH-jkCdpqdItS
-RBQ8mFhX_jT-Fqe_seN4yTt1i7ayVwNl5sKcRNlg4d2CcYGUp-3zg5TBwoZ9EO1BIi2vM3hCWxu9wK1qOcekLiP84m77RpMkH-wJS-kaAO_f-z_NSIpnUZB2
-GJUcZgET6QqKj6uC38XTFR95RXAhdG2y96E-WcEkWjGJOuoSsWOBXxD5z4YNqKwqdjaaDsWPHrBRxItOFGjgzSna5wOYL_VhnPnqplsZwOKqoFt-e9bs9xaj
-RepMSutbw4VzE5ZfugHUzjwZFPpLPV0zU8squuHU6GDCW_NkoZdhp4hRHkYrgUFa7iWwHcWmQISXzPQLCNkCIsgLf1Aiz2vdTbMdPkUCd0EfjnMndQrT7ODC
-ecVrDgSFOBK9QM2p-e1Zs0byWrvLj3uJnEmwuwPVfU_3ZklN6yEEVeCP_Stzxt_V
+fPG9SkmW30LRW432zx_l7pogiOc_gONECcjtd4SgViCMj1TyC-2R0TyC-6R0DmE-6V3DW6y6V3FW3pH_KBEIH41IrhO8-0DEp8GVIH-1bQywVDNMp5ej2H2T
+0cl__B8RAf3Q8x3onmInn421EWNM_i0u2ICz0ajV8PQm84-1bP_pAVjmmu_0SuF-SduZyyUtHBABy1-1fX-QC_39Rw1s4NwV__3Y9YPmi0ibsutm-tJXrqqi
+OJUgJOGV0QWrLW__n1Q4tsy7Txk99UoBLhEQgas4toy_tsw261-jG6vsfmS_d-lc5cZ2IGBgx0VXKxytuy8l3AGff15AJtyGStlSJ1XKCyrg9kZaNypdDrCG
+Iu1Ki1VVweVcxNipKw4WHSWWvU47_e8bI4ArYYYW__LRrf_HoeTw_-cMK5EI6RJ_-fNKFP1f10Dp1G6r1Y-_F_GHK6g5Ka0hnGUPKhK09QT4dlmBi4z0ER6u
+XZDG6RHc0g0lVgRqhf0GjM49AGA22CKDgXPxyHkuWRfvO5wXVkyfKZBOJByZOYua_r1Z_en4hJ6GbM_UUo5tDm6GDlpiWPQYQlxg3rg6rbsGKWJC3NBrYPMV
+GCQ6oJyaylY6X2Vg9qk_sFZU_4CRffNmBVscMFbjx8Zz_YEvVNsJeGSBFzNnNNjthyEiwVHhwC6Rdm7lbN4P9gYxWBXbIEOtNdnlYNfcH22T6pJp1EepuH_z
+3ufyCWMWU9o1rsp-b_3_10pAzqAQZmqKcl-VyEU0GtQrYAbbC7yX_3bW3COfjCoW-Il3VmbW3aZeRmp_6IZcWWYubzPzHVWHk4W04fEiE9w1o-bVrdxG5wpy
+pS2n6JWs0yTcuDWC79k1OpDmR0QEpS0_
 }
 
 AWSEntityColoring(IoTThingsGraph)
-!define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraphParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingsGraph, IoTThingsGraph)
-!define IoTThingsGraphParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraph(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraph(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingsGraph, IoTThingsGraph)
+!define IoTThingsGraphParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingsGraph, IoTThingsGraph)

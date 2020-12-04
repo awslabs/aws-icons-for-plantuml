@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Tests various altGlyph uses                                            -->
+<!--                                                                        -->
+<!-- @author bella.robinson@cmis.csiro.                                     -->
+<!-- @version $Id: fontBounds.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+   <title>SVGFont - Text/Font Bounds computation.</title>
+
+   <text class="title" x="50%" y="40"
+    >SVGFont - Text/Font Bounds computation.</text>
+
+   <font horiz-adv-x="150">
+      <font-face
+           font-family="FOPFont"
+           units-per-em="250"
+           ascent="200"
+           descent="50"
+           alphabetic="0"/>
+ 
+      <missing-glyph horiz-adv-x="150" d="M20 0 V240 H100 V0 z"/>
+      
+      <glyph unicode=" " glyph-name=" " horiz-adv-x="100"/>
+      
+      <glyph unicode="F" glyph-name="F" horiz-adv-x="100">
+            <path style="fill:none;stroke-width:25; stroke-linecap:square"
+                  d="M13,0 v162 h80 m-75-87 h50"/>
+      </glyph>
+      
+      <glyph unicode="O" glyph-name="O" horiz-adv-x="130">
+         <ellipse style="fill:none;stroke-width:25"
+                  cx="63" cy="82" rx="40" ry="82"/>
+       </glyph>
+      
+      <glyph unicode="P" glyph-name="p" horiz-adv-x="120">
+            <path style="fill:none; stroke-width:25; stroke-linecap:square"
+                  d="M13,0 v162 h60 a 25,43 0 1 0 0 -86 h-55"/>
+      </glyph>
+ 
+      <hkern g1="F"  g2="O"  k="5"/>
+      <hkern g1="O"  g2="P"  k="4"/>
+   </font>
+
+   <text x="150" y="200" 
+         style="stroke:lightgrey;font-family:FOPFont;font-size:120"
+       >FOP</text>
+
+   <svg x="150" y="201" width="162" height="20">
+      <rect x="0%" y="0%" width="100%" height="100%" fill="#88F"/>
+      
+      <!-- This svg element is designed to only intersect
+           the wide stroke on the text.  If it doesn't
+           properly include the stroke (from the
+           SVG font defn) in the text rendering bounds it will skip
+           the text entirely resulting in nothing being drawn on
+           top of the rect -->
+      <text y="-1" style="stroke:black; font-family:FOPFont; font-size:120"
+       >FOP</text>
+   </svg>
+
+   <text x="225" y="250" class="legend">The bottoms of the letters should
+    <tspan x="225" dy="1em">appear in black on top of the blue rect</tspan>
+   </text>
+
+</svg>

@@ -1,15 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ElasticBeanstalk [64x64/16z] {
-xPM74gDQ34FbAlx_YzzSF1aklKrvkulI4v_W9XXM-lJf4vcPV4gd2Ph4-O2c0L0p4m3EsxX0eYWweBoDsuHG8Rp5AspePT0xUAp25Jum8gzclmnCm010ylRX
-qprR1O2v0ddE6wBl7G0bQmP-fPCAThYu2tH8rc-8Krx0HIaJ5R0Jce69jwetOLqZyx1vqg-R_dYTxNNku_F_T_ZqKc8SJ261M7ucOm4umBtM-oeV4IoRxZjT
-P3TUkghbaBfHBsKpWNuwAG360ujihLXkyzuvEAjm4RPipA8l88xvWFuIQdn8hV49dx0-e1eYKbiJ2kqiSjo_YM_r6tpQfgQT_bLWjt5U-GlObLVLROhuXIWq
-qW1ky2dRwVV-eABEDnppZyc6T1oOC0KGDJOdrOc_-XTCWmof0i0F_Qke_LQmQPmVKDdabGiICuiljPca0OtZZGkYowYQAQ738r7UyDM_TyU7DhtWI_Qu_kIe
-n_mpSEBv9_D3vh2dJvy-_GS
+fTHRplCm20RXmOvv_Ur_mV_H5Gfft5Hm_qmfbYB5-9CPvr4ne690nO2A0HK3AWPK3AWOK36WOa35W8e1bGAtVdG3h8rFWVVQU8rzABpZ7UZ3vQC3_R4Ftlrr
+WmxjEt_0K1nnGF_6EnpIEJ3SntZeEoqzOySwG7laOIW50Cp07lY1IIdGOTmTudgz7h91SxaV_dS6VFOzhkS0uF8rnd7nCorhuHlDlT7q2ZIiN_oKJWl7-S0b
+1xq20w1dFuCRTDSRBr-51fPy10nREkqV0H_Gib-10Kkc--N0I7u5sZfTVZ-T0vsM_0eOhZInKGG6blmAmEM7GTS09By2aFvuzjhv6Vl7uU5yXJVxntHwVdX8
+ht2zNuo3Ntqiim9m91yBCFB-4LlUOltirQ2Dk5_swuFisSSS0CJ9pll7L-pEJnq6yV3d-tMi3qd9fyA2QnJBnDpv25Xu2PHcvwTYxhnsVZxm2hyBi4RNsVcP
+lEasCBS1qFti_7pWjVFpWTVEpmTUEp_rO7mM0tCtLJ-hVbRzhFfPzRFgPzNFhIy6Veg1dsBWDm
 }
 
 AWSEntityColoring(ElasticBeanstalk)
-!define ElasticBeanstalk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticBeanstalk, ElasticBeanstalk)
-!define ElasticBeanstalk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticBeanstalk, ElasticBeanstalk)
-!define ElasticBeanstalkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticBeanstalk, ElasticBeanstalk)
-!define ElasticBeanstalkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticBeanstalk, ElasticBeanstalk)
+!define ElasticBeanstalk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticBeanstalk, ElasticBeanstalk)
+!define ElasticBeanstalk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticBeanstalk, ElasticBeanstalk)
+!define ElasticBeanstalkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticBeanstalk, ElasticBeanstalk)
+!define ElasticBeanstalkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticBeanstalk, ElasticBeanstalk)

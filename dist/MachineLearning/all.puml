@@ -1,393 +1,449 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-sprite $ApacheMXNetonAWS [64x64/16z] {
-xPM7Zjum38D9oKFg-xzlfucBSxxVJZ4wYP7vGHFqfzzL__LVcH6PFyT6SyDtMMdnD73xpjBSZG3WxKaQZO3L64ZsQW3RSUO6b5l6uO37MV3rds70IGeLg2--
-x77sosEV7eYwJPxnSTN1NGdTtW9c1So0cc-VmNmmH7vDj_8wkXvFXlWzLXR07YoW68zh6qe-eEjztHgdDknw2Dv_pafOF-FNYzO0E-LLxjIGBTzYy5IvSqFu
-ca-O-07SkYU-UQxuG16Vck1rUYdU4SkservuRP2svy9Nz6Nv4wyDrlPEVDlowflw-9INIDrj-OvonfTr_G5_mU_xdsHkUVstaYEqFnClqUOyxwgZWSGwFZZz
-jcY0ZJpOtlED8wwjoXzWrzIjptmtRK9N-gi9sjstoRkFst9w-gR45OzKFYhZbGi4c5VxRb_vSJEKHBmylNoo70DiCYFVd62ECXzVym5Mu1lhDfJ9YaVXmYrt
-tazuVl39rPvD1kpBwN8VNNqhxveSvVmCwmIyN_sxEvJLYRBnxjziUGWh8giUAfND4sLETx-X_kk_lW
+sprite $ApacheMXNet [64x64/16z] {
+fPK7WkGW30HB94ds_zzxmSiO6t6HtXog20qUMqUNQJ6-AV1DWMyAV5FWcmBV5FYcm3S5lYdmEu4iIGH4KcbH47b_my8ZagDWy55G079fQggjP83PCFWWg41g
+ppse2IWhWKT11cdp9hO4QI7m812egnOgI0i2dwA2wBh69Z090c-2s4WJQKEWCiyWyEM9Qz_uXs2kOUQzcZzBBDUd8IWwnHVfKuUaPfe-TUWgligxnDfDzlVy
+cFLOYIu5XyVqgTyPYrZmKH3FNrz4Dejy5035V1PamABWY080gMz11S2Yu8W2q6a3ce0qi2WueW3SAv2Vnx2QTTuYVmcIsE17XUCRk2z5u0ztuScxVtKskXmy
+HFxeMEVlSp2w7FDVyaVatUlpMGBZcx_a7Ipm2cQH5sp5U-0ROcQ1J-YIzyYdKUFWC_LOyZxnfP-CYM_aurZo_kRJPq_VlCDn2IBlBnxKRi4n8kWb09luIw0m
+jg_dnLVoDG-1ClDkXSubYjrvyWvsVSqWxSsF-wIWDd8yKiXV8asGTF2QG3gLksV1EtoU1mt8rllFG7M_Bq_aUohYNU3bWi0hKEpJmlpYUhu4YNGBB860V9Po
+2HB9tlnBu4BktptkhtzY6NJYtmA3xBV0AnIF-9EFWcHTCCK4ciry40YqbQ22gFlC1u5d49q5JI3r5YB_Rg49IB4Xq2AFVGpy9GW6Re41KlrEuAFWq9B64b9H
+VoRoNH3ZoqpyXk3S59oRWdDJS6uApat1kIauDmNdfk0x
 }
 
-AWSEntityColoring(ApacheMXNetonAWS)
-!define ApacheMXNetonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
-!define ApacheMXNetonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
-!define ApacheMXNetonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
-!define ApacheMXNetonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ApacheMXNetonAWS, ApacheMXNetonAWS)
+AWSEntityColoring(ApacheMXNet)
+!define ApacheMXNet(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ApacheMXNet, ApacheMXNet)
+!define ApacheMXNet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ApacheMXNet, ApacheMXNet)
+!define ApacheMXNetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ApacheMXNet, ApacheMXNet)
+!define ApacheMXNetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ApacheMXNet, ApacheMXNet)
 
-sprite $AugmentedAI [64x64/16z] {
-xPQ7akGm24GR42By__zUi3suLCkSF5VnGczoUYAuqKx-dVglK5kEFjGaW4zE0TRuY7O6Xfmh1440YCLJEWOWdcd72XCZNHcWuOzJdrSU0imJim7mmzI1odMW
-WYh6mzIbuuCGEzm8P9a7FyKNVa9ofu4HUV62bJT0zxpdYn_5Lt9d0-9N_64PRlaCnaWNp1slql8P30R06_vGnsSGs0JsktpwZ3H8zWhfUFTSnV2EDa7DN8RY
-nJCaLeCtHenZGlIQd9m4cbSMaq6MfTw9UaseCJ2ENt5NeO2j2UZNpitR9bSInQU18ainwxIak2EKGufFXHIj173FUnql_D9p1yGo6zu5Limb9S-rv6ZzfvWA
-YD_yAgy2WgZb0PhbybeWtEECMXHHjFo8bt7eEBbC0T9OeZ9Q_Wnk36WOOPvR8Oi0v5Lrdt_rt5-HPsGGv3WUW7jvDW3rjvEdTbygHC4PSTi3O6zshbK1YdxY
-OXBiFH_B6w_ZVkdYAwK9_k92Xspc9mGOSVPS6tviDn0Zq1ptw1d6cu0EVlU_2sIR_jMiD_Bgwpgpeuw2nQ8CtBkWn62B39Txt8yKCNB7brE82JTk81F07_4n
-yD8uYJZgSyiDN-z3FI9S2PWdhbdQy1FGk4yESemUAscvq01RtypClKA0ULUwU0Q-vsiV6dUbZp--LAPUtcjClrLODs1rxP6aYHNWntoxHJBY8Hw4yLNq2T-9
-dl8PtYh_DltNTm
+sprite $AugmentedAIA2I [64x64/16z] {
+fPHRkgGi300B0YHfzx_UcJc2-R3Xlr8lvrgbajYsHxUq5JyC-6703mD-6F33W1y6_33WXm4_3FW-O2rJz0v8ahO6mjy71E0kD81Kra3uQw02KZCWAkGxbkis
+u6j0CsJjpm25fjfRku2_Y5ktJWFLVeY9ecyslbi5IlW6sgTmbvR0ulTRNtnJ8Ul2waCrwpvClXKGNTZujlWnawpQldPXuxjPIgz8d6NETsHczViKLjyQD-qV
+VT_xLfEe8F_i--mt2tITusUsLI2rEw3o-53cGAQy_0XuJTnaTIiyanpR784ABpy22IZc5H10uX1Q8artaAYp7m7emxJIxo5yquI4Nn9vzYC0Fh2OGlTDGQSP
+bjc_UVoQlwQG-fqB9VpwFly8W2PeuVV0e_MEAPYz_0Z0CxmArKT0OncdRsO_0a3vSJG1P7icckhYs-G7uz3k5MhGt3AGxfOEFxxP-lxZzxkmwYvGpQr1rfp3
+pqKZiFhUp3iDj9y1r6xFduvRVqOeyPcOpG8PirZy_l-n10drZiBavsSNllpQnxSiWRk5_zf5wtvW6IJUO4-qtVNBz3333_fsUwSWSH9YGQ9QCFnWkcctPmih
+g8z7bmesCVm0_ECnG7BLciT6c5L-49lP-14GEdqUfb05z1_z7h3Cs5-IzlT2p5Jjd_mUQ92g_NHgdwYIRENwzbi_I0Nn1xa3pNR-Er2WU1z4SG_AcClEVmSQ
+PFjyXEmpUTpDwdy7BA6n1u61RGFN4l3syov8dq8Wr55Q_GW4Glky0oqUQFNNG4BjZP9yiFXhW1t-iFXBeAGLyM3n8x3WMoR_C70T1gx3m7KOk0u3rs7WEWnS
+Xu7hCF0R
 }
 
-AWSEntityColoring(AugmentedAI)
-!define AugmentedAI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, AugmentedAI, AugmentedAI)
-!define AugmentedAI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, AugmentedAI, AugmentedAI)
-!define AugmentedAIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, AugmentedAI, AugmentedAI)
-!define AugmentedAIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, AugmentedAI, AugmentedAI)
+AWSEntityColoring(AugmentedAIA2I)
+!define AugmentedAIA2I(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2I(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2IParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+!define AugmentedAIA2IParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AugmentedAIA2I, AugmentedAIA2I)
+
+sprite $CodeGuru [64x64/16z] {
+fPG7ejqW30H5CMZX_lSDYd69MT8qlvSPcddAgPIo0cS0pW2S0JW3S0RW3C0PW3C0Pm2_3uZm0F71VUK1ueFxcm3nGVtV1x04ZlqcvZM0R-2Gi0i4MGDO0k4A
+r1o3I8Yvg9vwM9S05h0bb2WtiOn0Ddq9W0HCJqDBHrMjnyzlv-gN04XW44Noi_fHY9K3WkbIz4NP1i184kerzlmYalHl_IfownBk6HGMQ5Y9pzhBvMkIg4hy
+nePNp0Vna3G-pHKK4cXhO3W0DDaiylYKhQ7dpqhyjao_m2fIJJfiv7CgKTT0MmD1AZ2bO9EsrBELnBy2Ch3FQf64w_vgChNQzp8WVgC-kA_4Rsp-G35npj--
+dn2_iVs37Tzx_ow8tpxdXoGPTdplyri3RGtOekrB6OrpvEkbNDT08u4e-RKLh-Vt3V7Rw_vSlWBN_QbA0eq5iWG53FjYWHfizIJGQ23Q31xi2A8kN3uFuCNK
+IQ1j0bzVASHl6vz3_4PzAASHg8-Dpw0-kBy9o0Ti0dqJYF8B4Pj0tmKen7S6-YuGb-dJGDy5Whm8s0NwBb15T1gVoqHy5aZNhACal24-2q1k5Dj0tmUAJ0e-
+4Fz_Zx4x0zqPwCv0TmQwCz2TWUuCT6UWEmC_
+}
+
+AWSEntityColoring(CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CodeGuru, CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CodeGuru, CodeGuru)
 
 sprite $Comprehend [64x64/16z] {
-xTG7cjim34JXGI49ZEz_tqHqBzHdCZthVulhWxhuL_Zuo5OV96TKF9AOwxtUAfC3Akg1Dm9zm4pF-zvB7x3Uq_k0zVv-m7n_Fs2-dndG-ppRUkilxmVizoau
-QGnSQBxRwrbZcfu0x_QlwJ_Jfug8PiYLJ_KzMU_9pEp_BtxMzaSnLQ-vqXlJSIHrhq_JHuKi6GAfaTaSyBqUJuna2ZpPXQ2CU-Opadwpq1IqoUqFIFAYmIRx
-Wl9mE4Pz-aMUdbVI4BpXQAC-S16dv_gqm88wwXaNcQV7cVxU_GgVfz7GvlhQ3vy2w8SOCjv_vIfl3tcGrI4UToV3tlv3ygBsHIRiS7e-whDT9S-23cbRJnQW
-pLv_rkX0RdtP1itsAab7stf3hDq_2cBRVaFkz8UztXnIP6_vQg-XzoV9WOOXpSkH2Gxb61agdNDD0AegC2uob5eLZOiQDifbhNuN_8jyV7m3
+fTHNekCm34DHK7PiKDh_UbFSpK2PGlnCFVU5QTIRvQRlUJBWoO0d0vuCU3BWoO0d0vuCU3BWnmhYREu6XCVtREe6bETzUAyV4DwZBy2Z6n3UW-VmAo2y1yyH
+6Bi1uJruFe2X6n3UW_y4ojmB2E_1S_eL4DuFVyww9mIFOwJX7D_xLyzuoL_uymJXLQ1AxzfJ-2gzQq_XwzVzxhZivYby_HTFuUlfnGd1K_WglMjFuQlqhZs5
+h-VzSOUV1hFX4G9rto-_69FVYVNOuhidJ036QHeHlf64Lu4PAEjlol6bghqE60PkAp2-9toztR__uHEO5dCy4SkJA7oLtia18u-Dsod2LvUZOUQnuy48tmdS
+ty37duIl_-BvvN6PdokOhe-_SDzV-X43YMNXoGo-Sy8CpBjVVgzzFp32tWWWv-EjfBqEq3w1zQSRBsl2oq21EK13uSqtuUK9mCS33Bv9NwFj-oPzbTwLRzBN
+w9T9trPltNrymR8Y_18m_9ZvEULRE9XX_fujStVbMvNpoyvFXV3TW5pmYK1B1beoq9A1bWoqPA0b0oqPQCd02m
 }
 
 AWSEntityColoring(Comprehend)
-!define Comprehend(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Comprehend, Comprehend)
-!define Comprehend(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Comprehend, Comprehend)
-!define ComprehendParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Comprehend, Comprehend)
-!define ComprehendParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Comprehend, Comprehend)
+!define Comprehend(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Comprehend, Comprehend)
+!define Comprehend(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Comprehend, Comprehend)
+
+sprite $DeepComposer [64x64/16z] {
+fTDPhk0W34JHCWxOXlsljoT44dVgIKZK_xcPYFCPNVik3WDn68Z3G1m6uZ0GXu4u3CHX80u3yGeejbQQ6VFOtWeahoXRZz0AYfbzl81O6W1i1f87Tb_Yz4Ry
+Lc1v-_XlG04rTwVUY8__EL1cW7WZFWM0rbQ0UIC-adUt5M3UY8_aKs3FH_8fiESZ-np8lbCVBozYRe2wknFVgO_70sBUrfryVQS-NXveopln_UFTQgtDbYy0
+e3v7V4_UBy7Sydw9gAyHtny_ZwoeQf7RvxMlxyjN07eVIkRj0l5zUWNKuzdqIGkexm540Le4yQArjLQl0a0QzHrGY0Vrk5UgE-3K0_RGLWG2n3_VBYqYHQkj
+Kq5zkxKBvYBo-rlUYRyU3aZryDf-zFxrqPSNb5ZxoVl7tqUvGUBbWtidVWOKDVdWthz-1WIUVN3lnFT5aW_kdVYUh--Oxu9x9xwdvw_hK-px_dx_Sf-gVH_b
+_lxbbM9-CD_lyoU0nptc1_FT2-Ro7ydyOBv7Ku5eYppcH_PhGSVyM7upaFqA268lODclW4At0bwWsSz0O7kU_GgeR6brvaUd2xhaZmBZC30E0-CmC0u3up0m
+3WFZC30E0xy1
+}
+
+AWSEntityColoring(DeepComposer)
+!define DeepComposer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepComposer, DeepComposer)
+!define DeepComposer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepComposer, DeepComposer)
+!define DeepComposerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepComposer, DeepComposer)
+!define DeepComposerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepComposer, DeepComposer)
 
 sprite $DeepLearningAMIs [64x64/16z] {
-x99decOX24CFY0fv-r_l5APyvHNllwddzf88KVrs_ES_jLU--NQNBh0CyD8ZwO2bZco8wSy6POmru6pWB4c3fRgXO4gQX0uKrkM2tGFL7_sejzPlpE-vhE_A
-LNr-o3Iaxk94mWXxo7ex61wEbKwK0KHWULEFp06Cr95W1bkQj44E6BiBozIPmYf8gGqgm5jzbM2-jBuDm5QltI-aBf1OgVMg2KG7De3ExjhijNuP34Bb8ISc
-fkdxml2jtmwHMbK63YN3WNrXU0N-OwxA28UGfc5nC4XSKlejT6UeLhNLIirtK-YGdVrI0ImrjrMmLaVgXDuXw8mdc9Dt7StltqPfu-_BBG8CPkKiDUKENVLS
-tObXdky7dn3ry1OBLNyhPsiQBBt1OdwluexCRdSJjr_MvtRhem0048QXg7_NY7X0PyviskJxV3s_lX_-7zOFro_s3_Ol-WVv5_kd-pVdX-QNvgVcj_A3yWlp
-a_ERywFpQxnMgmC
+fPQBhkWe24KtAWBs__zt8lOqjZ3tvPwvhoPh2VZ8qJoIfiVOeS0E1NOei4E17GhiK6270ZiKsA70Ca4ZK4i4TNv_2omH5CoK85ZVwIMmA6YWhftmhQ01B0pK
+NM1HGEYgsX738iAWVGOM1S3w8yOvG5OItlRrwRqBlA_lINZR-YVP14p0tN-JJM29WE3P1Bq0QBJDVoNXRV8qLtag4AVd3lZ-xqbuOv3Fy1P81L159Ot54DZv
+9MXE_-zHpfTttWK0Il_5NKYNjvlteVClBzD8bZUpoNS2w6U8dOhChMrVViJbdVUXiy_0GQ28__xXFuBkonjcsZq3dguAaF-E_k57M5wRqol2IW1hzsz2Ry7O
+1PqRQD4GqoVaCkb-Bn9-B9gyQ0PGWESwBqPKkJPHBQWI-2bGeBG27r5yaLWBl7T00k-2YcPc3GXlebIWDw0Lq5o54tuOGRsARvG1L2z10V7s4dxyBrzHH1z-
+LaEQyB5-pyzBn40bVvGhgchaa_bvV5N709BdVGlya7l_QEtVazb0eQh2NPbA1NGcyCF4pu-njxsVwPcocl1XUWA_Tg4_v_Sfe5Nkm6gTQnLTIVZnkZ-BPZy7
+VcuAkcvnFXQmtLyp8RY0u17TutnM060s3SIpSQ-2Peg-8oCl07Xk5Ebg8y_82rYyyNOS_f-F1Tny0rhp3VjVmSWBSBvYUup-Ht2D6081FF5-7y1bM3_NVFWe
+i88xOdVMPgxlvSr70OF4XDRWTyFdvvh5Hm5Xxgg0x9NkxVXjtlae06nsWPZxWNdnKL3kzKDyd65zJzO_3tk5y_wZu9wpZOyWdtzMGG6n-Lw-qcX-Dmky2z9O
+ceq_55o7WkjGS1qAhaF1TIYu3WNNeU0w5Fm7
 }
 
 AWSEntityColoring(DeepLearningAMIs)
-!define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
 
 sprite $DeepLearningContainers [64x64/16z] {
-xTHdTiD020JWeIqmkVzvKrPErLkluj_-t0i2pnFcBqzFJs67v4CIDz9yX65qLRLXy5ywtzM0SYf8VgZhZQUZRJZzv-kzXCGxXnqlkcE-lfg38bzkZsn1yiOH
-l630sBVyLU3yr8BcLWiW4aUzuBC-cmmujmBoBhxdhraEcxaMDnfeJhE40_wPHG8mlilYqWnf-BkZSmlStM3p68Oa1n1ScLKAVFRYm5HCA0Cn0qBSIvyrDQUg
-CZZPdWqq1w84oGKzdMOl_Ndc68AqsomB1Sa_33OV0qgsI9EAMYUubcJFrexaGezOIP8jHxrwPFC1YlvSKOa-TT-QetTL3HVOUVVtb8UNW9wtHpVCWbCxf4xr
-mYigmkMp_9JEdfxJEnYAUmdDQl8iCBXdoEMH_L9xBinTsL7aVhIrWErdMwlx8-ecmHOCtb50SQrrbt3ScwyDnWs7rBgxDdSSYv-O0clk1Q1vRkw0yv9IG4Vn
-Xt90abVbN36FpAhAuNfQk9qAnGywcl_LESBDxDv_xTFJqni
+fP97beGm4CLKZh_i-zzt7duTW3RZXTM1bSGdQ4wTKdxnpO1l1dmpu9i1tmpuPi0t0xuPyCs0RmPyC-2R0TyC-2mG69ZM0Py44Y_YEk2_WGhba0gKHU3kXzDv
+otk7FGTkVkPh99ACGNuEN7n1EGv6FetFc9u3PpyIJZEINXovWvLVENZxBwby1sZXXxTlvBUKYCgG7mFjenVGQxvzLaEHWHsosSp_18pipY2xApC8nvBHYc0p
+lttyylB7NLJWe2gIZqKLZA29_meKxFuc1kBhHJ8bGeMiYT--0yweW3ulSY0V3MdYjzU0Hv9a55Mejq0x1G8F16duWbog9dxpAVeIXZ-84tyPYCGZOW6mYTy2
+2-opn3JnMH66dGsADFENzq016BhqunjQ1GfWgMfmzoEbBGA1f2ytFvCMJw60pbpzYYqUev5r3xGle7y34TEDYv-8xPz0WQexPz-XFWSg9FtIJcJCdmBLY5hu
+BH0U0ZA2bhuRfbcWGf1hGhy60cJ_2QIXky_yQw0b8EaIo0R91nF_7b04B9OwJbXp14Br5nF_7cXAnfbG_ClCx-sEIWe6cCKilp3pUvlYKsx-Pg1l1lfce6y6
+-cQWRmRwPg1l1lfce6y6-cQWRmRwPk0F
 }
 
 AWSEntityColoring(DeepLearningContainers)
-!define DeepLearningContainers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningContainers, DeepLearningContainers)
-!define DeepLearningContainers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningContainers, DeepLearningContainers)
-!define DeepLearningContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningContainers, DeepLearningContainers)
-!define DeepLearningContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepLearningContainers, DeepLearningContainers)
 
-sprite $DeepLens [64x64/16z] {
-xTLbmg0m38JXIT96XlkVTmLPjvJrZnVvz-2q_FjwUae_2fOdmptPQUAg0fC2O3PuGgOVxUTtduB65GJcne_Q9gBb-Kb_ngTxhliq0B1Sz2NGEHLIQzumk6qS
-i2LV4DAT5DIAJnW321fopIjJ9Abhde9a5HF29U-G84FWQvu340465pt3H2pkVl__eZT-adLyAUIJeCKVBsqtP_8cIxQgY7JiUKOKcrm1TTWO1bT0YwqCmyCH
-snRmy05ZfuIIp2Yo8lVBoURy8sTZ6nBQct-eaAl18Qa2RV22Vdx4wjp-u2UDvlp7EUxzFo95bbcHh5hqWPsfzhqPh_ENIC-d1T_Nz6S-zxql-lVtVyUdIDxn
-hE8jdtdB9v1tVApxY8_swSM_hQUdrm
+sprite $DeepLense [64x64/16z] {
+fTHNcgGm40JXR92wZEv_tdKQBNpg65lv_WSUvndk-Ree1g8OY68WYe4e1g8OY68WYe4e1W83NMjkafaaDGm41dHvNrv6WS20z789cpVmmTxH6_XWx-WDVEo-
+zsxkZjx0n_Atnz3S7Rs1Z-KdVvoF6K1luEFoKpR9feU1Z-MVUhXtyqFTtTbRmDvyr-bTpK-rx_cuZc_jEhwZnwthx_CkslGKoFVybCTvICtVl8F7mFxybtVm
+YJvy5betlta7d-Z3hzsyWq_qmTx19_fWx-1pzpIdG6AW0-_-V-3VVuoIlspp4B3U_lgOllNdEu7am27fduz_NjB1WSH0ayvs-n-qKseOI0myP5VCVVqC890O
+aEYNHe74WAxDfo31Om2Vw8EzWyytpx-qVU0JVR1tyFaTxmcRVcjym-VbJSyV-DpyUWgmyPw_R-N8So3H1_dt0_lvKs2y6v301_dFxi7T1_dn3H_a1_hSpt-E
+_42Vw8FyG9yJR3x8ZyG5RlE5m2W6HZ4mYe5H38nYO1G3enWOnS1l
 }
 
-AWSEntityColoring(DeepLens)
-!define DeepLens(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLens, DeepLens)
-!define DeepLens(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLens, DeepLens)
-!define DeepLensParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLens, DeepLens)
-!define DeepLensParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLens, DeepLens)
+AWSEntityColoring(DeepLense)
+!define DeepLense(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepLense, DeepLense)
+!define DeepLense(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepLense, DeepLense)
+!define DeepLenseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepLense, DeepLense)
+!define DeepLenseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepLense, DeepLense)
 
-sprite $DeepRacer [64x64/16z] {
-xPK7ZkGm30IBfCIW_Vz_RmbOs2XVHdGXzi3CBSpwJpmyF3nKDNyOwqC5GCI6PwsVulCT1Y3wYWY0HlmiX_8UcN5zNyR5kCsGSJ51ubrV86EEOOBakYVy5VbO
-IBUiYTpFKD2CJtjPguPQh3MOFwrlsDUy2k2hZWsKQMDca5_JOYlGdYKFosFpNOiJdINKClB6QnckkyESDc9T342Ghb_7tKq5qBmgDbRx1DFelSZn0AMWDhok
-Wk8PkcSHL62iGjS1VN_qWROehxUpThB43k6ElHTIAuVizWlDclWAnY5-7wOZIeWL0kDTSmwv73zCVrdR9Rhyx1mpgzCrAT2XWpYVtrU6CrlreMV8CDlvtNFT
-s2U0dCXUKA8E_kdS1NMiFmA97J-OGlJTvuSbuyVzXP0lru9BPFQv1RfYXR_IGvtkLoBUeHDlcLYlAa69bn0QIUJWlnsm5nJC7jsHYHWCTnU4UNe_mJ2grtOD
-wXrlI0fNqmPIv_XEtT-eQdJy81DqlVq3TFAR-au4DDuoHodWcPk9bKWT_USEKKtBAiES3xWT_JyG1NydGViHRPH6Zyz_WCOxAJ8_V1iYeltJYQgpR7gkVyJ3
-myF33m
+sprite $Deepracer [64x64/16z] {
+fCmn0G0W402XIVNw5pQ0lq40xkoCzYyCmY0CmY0CmY0CmY0CmY0CmY0CmY0CmY0C7bzrcDqu3090U00Xe7l_-wvm6Zt5pklNjly6XIIsRxNTgR28g8qPJ_UU
+lyWO7ZUttZTXkGxDp73UT3xwXnK8wCnDkZGp0VpltXh8KUU44PaTACoZ_tdqN3HFePuPfhPInSx-CU3QNV8XQ3CcdFrpG0L4vPsXqz08OHxzSl_iXV7bYoIe
+1NJlHzyUdtt-VWe-nfZvmalUpzy3vdJb4jLSk8pt-aD0Ck_xxm4XD7kThY3cFdH_X5D1CnvzwnnqTjjImFFWN2mdyknxW6Ar6H9LCVpeHOMH4ysZtmAfRSBA
+1n1vUHqBCntD_D8RNYsz_vbVkNc-2T3fm3BpsGkhMOJShs7s2lix31QPYkVowA4NyBAkcZ1oJCFpmtkbPuy7rC2hJIG57umypVsvFFQd1DkzueQa8U97Vxod
+dxqp7Atz-Y4WIm7hJjjCGVP6j_Ed43_LqHB8x76WIANmueYZ-UliXOJQNuE93KO539hCXMK4vDlHGtLlAshNEgCCVB3CN9Hk8RUFNgK2yjq7dbtM9Tj4Cf1l
+lP2H9I2BLIyVfIog6umqx5jlM8NmebKmGo6DaxX2vFPlzqcJl5mBB19LkH_soiNpw8y1YepQbtEvoCWwkOZeY3pxFU2cligx_wNCWG000020883zVOSeWC8W
+3C8W3C8W3C8W3C8W3C8W3C8W3C8W30O
 }
 
-AWSEntityColoring(DeepRacer)
-!define DeepRacer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepRacer, DeepRacer)
-!define DeepRacer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepRacer, DeepRacer)
-!define DeepRacerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepRacer, DeepRacer)
-!define DeepRacerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepRacer, DeepRacer)
+AWSEntityColoring(Deepracer)
+!define Deepracer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Deepracer, Deepracer)
+!define Deepracer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Deepracer, Deepracer)
+!define DeepracerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Deepracer, Deepracer)
+!define DeepracerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Deepracer, Deepracer)
 
 sprite $ElasticInference [64x64/16z] {
-xPQ7ZYGv34EV9CiAy__VUy7TnkGATqYxEqJiy0gc8BBSlxT-zAFwBr2ePIzD6NMNBWFmwWu5PDx37JIc87E0fOFcdQE3TtSDGAAxq-2IYKr5BmLQUmWNJKn1
-TVE9lNsidPj8yFPt_5OgTkwTqJq-yM6ZNWgzmPjLRpu0pRZAJyjkuPKVk05N-IMHLtuYCCO5Fh_aUo2pwvnFGzRioddBTrLtWTVPwWXOzXIOtVb-xHmaleFt
-ZgM2B6wlSbNjuts_H6-ED-KrBkKWWjNh4lctl7PdzTwVh6sADr0SyUNOvajaxkydexV9xtb1M8mlVkpKspEGLSVydbezZvi6SyrWnFfMyv17yZcnFUM9zTP0
-qMDU7yF7Ky4_v5UPGhx42JyU7YROUtu2uFE4htmKVWhLyORlQJu5lkVt-5phaHy7-zphVhY_5Ggn_0eV-JImwkzKllEppi-8zto0ngNybeF6s_ncp8YrNNNU
-7xljDvz3012lKgtJ_jlnJQpgKGlcqmr4iJxZSsSy0IbTXwcgPOiwuz-w4JN5gbm0dGFmItpcukt5iKu1DGKOGXpEZr6xFZiPXTIkGGCEto9xz2j43zwPBSnd
-VOAr4ISb_3Q_Iat63f0hkIr-gtnpVnXeA_d4hITUsy2nYPWWaOmMpCnWlr64kdG9mQihieIdehiYE-BM_QrpoSJ_xpNoTzEFVlGt
+fPM7akiw34EXnXB___--mS0ZNyNAQyAMr7D8UgbixEFRs3jvACX3GHuAyb2GXu8y5EIX80y5UIZ8Nu9U-YregFPJa7l1A02AynwO_akGEu5Ne7G0mmfG1X-E
+lI0t0f9T5W04Hy5hY3Sl0KisrnHiN1UnlOVOy7aNZJltFGhiFSI67oppuYdG46qHl7cmzHtVQZCEuKisVCQ6Dp3ctxnl-BofMX--eWx-l7ZVy6ccsWyFU3Y0
+VyTdVFC5nXdgl-Jpc-yWs_tDVnQy0IR1mEIP1g3nSR4l_W-15m2edkcLjn40XWHkFdTpvQUW0yLPjpLoyo1PFF7srS9d2ZWWE--W8b80VRK0FUuO7woy181B
+5Bhdp-XC_xE5bPS0o7JJlSXqr50gEjjuPbXuHNmZUVC65BLGu17YbJTFWRgSzJCAOAhVlAEmyrB7crV8LtBfzn94qzGEPipR5wzCIjUVzxkwjeeo8XggzNkh
+jloDe0_MqIGPCnMcYq773zvKEgg60V8HDFImkTKR_iFwFZ_8JFmK6C0qrrHlFhH8uLf7IoClmTn5CC5yyUMUUQ287nNYdn5SHq9yh7mspip9ctWmkGhKHWb5
+_8mNC4R2E6a0lKkmpygp1HLd5yKpbmvs4Vy4u2ht-VUVzKUbgxu46_wZBiJhrZGPE7YnV-AzUYvy1nUOuqQKyW_rcLpuVfzBBR4l_FNccJzv0qmFTGPMVXLm
+Sjv6hPClh2w-eeVNkl2Bm02CJmu0SVE6yk140Lzu2jOjB42R_JSCuQEAREWBBy6wXKuLNVeqOwfMCy9G5_vRe7ya4erd1m0DmW4M_biWijCIcT6w-3bKjBRm
+4gpfyyDu9lg8zrcuVWYY5bs3NLwy1E_yi-0w55o7WkjGS1qAhaF1TIYu3WNNeU0w5Fm5
 }
 
 AWSEntityColoring(ElasticInference)
-!define ElasticInference(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ElasticInference, ElasticInference)
-!define ElasticInference(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ElasticInference, ElasticInference)
-!define ElasticInferenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ElasticInference, ElasticInference)
-!define ElasticInferenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInference(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticInference, ElasticInference)
+!define ElasticInference(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticInference, ElasticInference)
 
 sprite $Forecast [64x64/16z] {
-xTHNOiGW38JXaGG2JUv_tZIb5xoGdkL_SVtS3R-htMxNH5MTRnPzMAG7KFbc5SFoh3xoMWRrt0Vslcyyg41Q4t_F7pqOWtOoEET3S9-bdVCLQbabvtq7ueBP
-YY-ehTxcP5EVz1r2msqIRAYd-QWb4pWDjRdBZ7VSPwGXI4vvXJz-zuO-wJkKaN7QvxoB013fAruG5QAgm9oFsnei5sbplW5PM_IQMQpvnzPyUDPNFRAoxCMh
-bmzu8za-uFL7_VRswDkZZvEz52kQNgzd9RqLCyn-lrddpFZzE6Z6wraU-XXtu24O9nXuLpbEdP_KRhUx0W
+fT9NkkCW44JX9dRQ_tu72JpYMkNqzNd_Im44nx1-JuC36XpGu8061pGueC413GveS4230neSqDy6EfrT0_fv07g-UVfKcXDrUlxTBxuyt_odJrYyBi_0g-1s
+pW_FmCE1bXuDVZ1U0Gy6cAu6txjvD50fFNuNFmUytX_VmKq47WyKoZtFoX0vl_Hme1Dnswu0qUuDUXMfUPMeIAFSUs_86_JATCM75v4ElK5VgFGLo-K5U0DU
+Y5YkBY_0szqFeAtCsaTlDv-fQQ5P-UpjoGkH35zQQ-KhRyktUfQfwF1D1hrx0TwcJxJgfzVb--dvuGLusvzVcqwls0lsUyihzeAzzbcJpLVa1NYxlfzVUbbU
+WBVXooXzumLuIoJ3vBzUiPUllM8lKIzlVVti1NZxnGlm1hr-xmrwZNf5tf-z_kZzoRE8_FSYKg__rw7tltx6TlYpwMVG--Ppch6PrZGxV9fbHTullwSmv1rw
+-zxxuRyCUezwDvZ2TXySyE201mSyEE310GyEU730WmCU7F3Wm3y
 }
 
 AWSEntityColoring(Forecast)
-!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Forecast, Forecast)
-!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Forecast, Forecast)
-!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Forecast, Forecast)
-!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Forecast, Forecast)
 
 sprite $FraudDetector [64x64/16z] {
-xLO7cgPG20iT_Ez_trtmVKvpT6TxOuerBm4XkatyZ_yHPl7rw180aFfQl83T6VgLy0It2C9N2d1ORnJnbSNRbGloAyk7Pewlhw03p003_fKBC1fhXuGF2odh
-8kGkmGXi7rs0kdmZGIOL-N0Hj3SfaqGnLYtISYcCUm4TFDk4F7L7HzufydN3teS5Nkk2Pckt3uSn2WNnbCwShjxeBY-l-f3tOIHFnu7FzKXtEFHQG388U_09
-by0k1JHl4jIo1B2TsDqZ3uaN8MYCBGudS9OjEHot3x4OY2vuFVaI0MBknbVZbKgibStaZw5_4gIVKLNJsvJlvTr1W2Ke2VLq0V589O2jDWNNEvtdLJQZeo3O
-qmL4JmGneyaLUaulgsy7GWU9GHy6yiv0WTm8UUT_2dcYHsNpbdhVnTEKj_ozEIP6Egc2x7rTuFE-qqoTQmOwE1o-4TNWbytogSSdOS9cY8yaRH4s_f1Jv-ub
-uauGXJuSil3mXHTxmj-y1clDyQeh3S3pwV2c_wME8KdmpCBedzGIV6DX38gDmH8xeWW-5b02tVJQWzh33M1qc1CWyrgAIcVmbg2wTT0WK5GG06LOpys4zdZA
-ZOC_lKTZ6c-Q8LJ4Sb_8RkXV-MyIs6kksdAc6_edVXcO0c0HmdZ3B715FpoSdNyStW80x0x4P7H5xxJg__osogpb9br4Eo7FwBI3nwzSMEAK0l4ucq4304dk
-VpSV6k6Gjt1IdINY_ai5RpoenbZpYxvUGZJV-i_oh_mbttzhBCRtlouKP3Q-_zKBp6XyVMH4RVzO_8zF
+fPI9agmW300x14YY__-_hmWxZ8NlikozvkhUGA7-U-otz3lnCX0l0_4o42y3yJ8GBmFnCX0l0_4o49U0Wjg3mEQJF0p4GYbk1VL7WLW8uxE8FmXiVhX1ynlz
+Ju5zVYy0rTojhCqqc9_NTWlSzwyLGFjrCuKSGD7x1F755S3Tyc-njPbATJChDDj8_qh9vLi5-svc6ntxBAFQXTrlb1ZAZq_wPfxH7ByXTc7pXnZkyZC_sjFl
+hPjR0dNthoWrN10-b5f8Igw-KEnllY53zqQEe0oa506acpNfTkM8ZVoW-zn8xq2rFkPlieq-_JrGXnu6FxfQ5GPg2ktcRm4Ni0X5Xo-eoPg_L-Xt_zXqMlWy
+Uaena9wZ5EXAsVrlm1K4QKWUW_1HAHHtXwo9GT_yv7h_2C64FWzJ1__uBbH5VVEJx_MdKH5a59McrA-VFN7V_6HU_-583bA7Np31lhw1vQFDJvO_lF4mYrEy
+_263cv-i-QCYaVxs_vqL_8tl91u1s9o_5velEcA89vi_S0MXHF-ilw9jVbxA-5sebUAJpK_o_AXGOVW6BjIFty3aEy_c9-b027qke7OoCFNQ45yiVm_eF7_v
+k3SGRQqArEtkdlv6E60EFdU0teL4MWVKBwI_qG1SQJ6GOLXLhTqhb2rmzqCmHHgWteL1gQtLCb-1uXTkVfy7y8Dqr_KOx1RO_KBFQo7Fubo4zp5_SozxuEux
+n744wrguy1Cmq3_wbJh-xFuUyCLvN0dmu_2vpGMDUq2i8HV_6mWLA4TKFdZS0m3jugz0a3IWXYkYgUy1HPfV_1LGDA80nMVlj_Z6kGBoi_CsS_yPE9EBByVn
+971EFlChUZmAd2iG974y2foNW8fewWy2vs8vZmBdoy3vCd2-39ml0-VBmFaoSBuCd2y3vyl0Bm
 }
 
 AWSEntityColoring(FraudDetector)
-!define FraudDetector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, FraudDetector, FraudDetector)
-!define FraudDetector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, FraudDetector, FraudDetector)
-!define FraudDetectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, FraudDetector, FraudDetector)
-!define FraudDetectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, FraudDetector, FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FraudDetector, FraudDetector)
 
 sprite $Kendra [64x64/16z] {
-xTDLWbmn34JH4jXILVQ_te1dVfhjC9rck7gix-E__rXpG_5HxjZY3mPCnDmGcBehKTfG6BfheCHCTWnLh5dCk9HyqHlOS0sCrHiksOjUtM9pFRxeAtor_XBV
-7bnqZSzwsu5lxEtP-c-e7zV_xpcUcwzwt3Wx_-k5Nx7_MEbcdiNZdfJA0PW1i7hLq-s2Kmb4KM85a8VzLC9AxzgGXzi_OPGgtACa6gOyztiQMWmiGJMCDVRx
-YPGSNcG7N4fCrUxvqtAq9a9BOAhXqkxvEsIcDMDPhO7QlNwQS16cTmugqDhUVY94-DVt5sjCs9gntwz_9uQMWLmJ3_g1AHh6stjG4tdIDumgm28Cg7K-dVHA
-XDG10D5I0dNKqv6Ks4s92GFcII-kitUzAuUp7WuOcBmb9c2H6GR0gOS34lTugzC0mABpsO2AUpnQObSr9TqCEBK6jA6_PS27GEbh1JnXr3SCW9M-GKtgk_Zl
-lqy
+fTO73kii44NXGvqxzlxN-nUSWWpluOWhHVqxPDGIpMVJrN6-6V3DW6y6V3FWcm7V3FXcm5zJvk5IjOdFF5uo6tsWFZkXW9aD7bpF0itRnBj0xqyRmpxU9jv_
+yJRnwnCwRwDV1tfllUU7sNkxteRl_-24tbllru7Hs-0NWOLV11P-6HZzqVjrOFH7xzU1qHzVptAQ-ECNhua_tlxH2HD_tFmOCFkhFpe_14e286QR-pRmUQ06
+W010lhp-vBajI0N2zN294ArvFVJc1RBUgn2bYAI9FtnSXTAUZkrwWoH3aYP-4WXaL-LQaYgOalxVwCT09SWhX59BQe54L5NRuCT0ehWWlQ-lCj1xeuT-xY0l
+15tBHAd_dLjvWNkakAiDf4JHPtT_Eq64__tdFnAOCbdVJVmnzVvzl_Vg_HW0zqowOge4ALBKh_D3eBrjKAz084jW2zy52j4zGvQh1e9K25huFj3UJa00Wac1
+8lKxEpy62iYzHY1akIB4cpyxFmOImThnScySuisVdHy3iLtV4YM0MI3U_DdvCP21c79E0C5aWT3xLu3vYhiIrqA9O-1y1IBp9RbxBJbNkQi5r0VETs0slq-n
+qK3g_Uy1wFnlWK1G9Wp-Xm1G1_yya0XLlLy7ndL-At1k1ixDmBaPE3S3vsRWt0py2m
 }
 
 AWSEntityColoring(Kendra)
-!define Kendra(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Kendra, Kendra)
-!define Kendra(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Kendra, Kendra)
-!define KendraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Kendra, Kendra)
-!define KendraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Kendra, Kendra)
+!define Kendra(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Kendra, Kendra)
+!define Kendra(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Kendra, Kendra)
+!define KendraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Kendra, Kendra)
+!define KendraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Kendra, Kendra)
 
 sprite $Lex [64x64/16z] {
-xTG5ekGW48JXWgQjSl_xBbc3F9aXhCi_BbyS-7lql_-5lPSlyO9tQmlU8APlXxBaxU3RbKLFvZL-UbhsYKlA0hGxNYuvcuZTy6_s4ttMJoafzNDwnvUlrqiT
-rqxUFt_pcVoP-w_jQyheJtdB1qQ52k2UJny5ytmwAtLZ_sFa7dFvdZ_MPeEQRtkPfXg1N6gZ2dim__ZvrhfFljtntebECrCqCejSlLV9XGkb5z3EePDtzm98
-M2vuXtRUEBoZrog0aYjUwic7RwZYJ9K2N_7eVFOAFKAxg8YL_UzyzbuG0Q1I8VdKCvopJw1Hu0hB2Xd-MSChAzAxaGrF1T80bFvS_9OVny-bnJX-zto3Q8Uk
-5RxZ5JqLz6B7qrG1L6lEBTzJb61lrpEd3yUYLviAdgMTjHLlkEOdB_XKy7bkKmeu6QZdUmlUpW3lNWzkPe1tp-qCQFj-J2txEM3ybiAJlrF_-zy7
+fTHPZWCX38JXCfjjkFzz1tes71o9oFKQVN-s1l77xjev3GOq6D1WG8C13GOq6D1WG8C13GOq4B1U6y4VjJFWUCFDYC-T7X1_03jpl7xYsV4AiqLXlDcz5pzm
+UFzlN0q_u7Xr_Tk0__aN-jtZtmRklLnuxr7-ytBjrVD-e5j__7l6Y-Fx9ruSttV_yN7kSuw_3lIrqpFXxQWP_nSWq1oRky0T7Vu9DApHuyqZtoh_xZZEVGle
+y-8CsRDGW2ejFzRtzaSigBzUHIhMCa3yvyNn_TStWF-y2f0uON8GEyUvlmGmL_V_8g68vDIOa9pZt6rW-QoRvupCcR98CbuSlm84qird09K0f0hmxiNnCo1L
+TayJDb03AgWPBuTtpa96rUaBm0HKuyNn_SKNvCe9G1QXLo-ExzOtpBMIQsrjEUl5yTruoIaXgn3cok75yNttSnL96eX0SdhfpbxzMb6MMz-Dbqm0MFNUz_Ck
+qZdF3py0qBxyU4wqPhqVQB0ZsIwbQhmVKDd6z0G0NXEntWzqtIO4OWNEMtbS1XB0owlZRmAQWCUhuwy2UVaZCEu31KMFmBWBs1aV2unWO0G38nWOmS081aOm
+C8A14GoCOE0B
 }
 
 AWSEntityColoring(Lex)
-!define Lex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Lex, Lex)
-!define Lex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Lex, Lex)
-!define LexParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Lex, Lex)
-!define LexParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Lex, Lex)
+!define Lex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Lex, Lex)
+!define Lex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Lex, Lex)
+!define LexParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Lex, Lex)
+!define LexParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Lex, Lex)
 
-sprite $MachineLearning [64x64/16z] {
-xTO5qXin30NW9xBWl_zzErPuo7RARLvewLibfWb-LpwXsoT1ncaCu8SVNtMOVFNrce__-3I9-UcUxtWd5bXVI1gdFeIixn46DmAF4vy6H6-mY5Ib4tBNTrcz
-NY-IlK6oNpzWvSWocVvwI4zyr42MKlkEGQeYjxrBbZtv6X25RlkP5ry398Wzx_sfxVrc8XEwuGS1bXK2dLuWzwg6N7bdo62GWBocBoUAExA5J_1aW_hAzfLC
-MPtUMdZ_YgpklmfDaQUo1kYo_Z3OrJk1vDgICq9PImzOr_UvfsW_qD2erbwovm_GpIxj_S1xVsyBHVVVQ_tSyjAba-dccQz349eBFpUpdsLNtutHIS7ACsmA
-6jDVsiyVlSQy6dzfuC7TU0OY4fS73upr-0_kCTYjM2B2VYEboDtv6mA9v_bRGaQwl_vGbtruczV7hW_BUl46g_0wM3zITFe7xspu95YMWSQpZsrVgI26PKqV
-8_josVVT-XHz8nLefH7qnFSwfeDWEU_Ha_7CFsPBe7_AiQ-yrepyn___VBpbQUB5lv4Vvy7oJlXHbjuA_eLy0m
+sprite $NeuronMLSDK [64x64/16z] {
+fCmn0G0W402XIPN-XGtWRqS0xkoCzayCn40Cn40Cn40Cn40ClDBA15jM40QYnHG2xd-__rZYoPEk_fDvGu_t1WgKtmfQIkttWl4RWMK0oAO5mMj1Bm1g_MO8
+NWjEiFIbALy5GmlQHRDw1b2_28OIM0AoFOCGGGf-h7x9zeK0aWd1s8lpRH7XcaMNGNxmZAtwgWG0QRbaa1iViN7QIBqdj5jW8iW7de7SOnKgYdj1ZQri2KZV
+UU1nFsXt_n3q1loENqzM-rNrfs3Zf-8fo40frr--8n7ybFmm0EOEkBTOK1Vy5BoVJTt9NnkgB87WvyPRmjsn45nH9Bub-FdW3SJ7YFr30PsQdp_vZEeLYIQk
+dt4dyat9Kn0yuCFvhAAUdIifJlrw9lWPV4Bp2lJeJpJwkmj-FkVF11miztQ_jNWN_8pyCz0AK2fOTJrFvZVlWf-n_WLjiAUjuRJhMWhU1JyNVp9vZCuvqDFT
+Czg3Ty7Fcn-0a-Vk9tzZyUHtV8QDZD80Hf7Ta7VUVyCt50FyuXsmWlh1k-0dyNliyGVqJzu5Jq7i0UR7Ci6xu2d8rmBoxdJlFSMxu6TS2B4On0Jl6q_VtJzV
+VFhPttx7Po3xAUXOko_2iFjeovfd6O3Yfo0Z4wSW8LaSROywdeB1ysjCSlfes_XDC0URaD17syxlWkaylv-qfJZQdhmGpCvl1zt3A7WXc1ojNxG_PgHu2bIG
+9y0d7eCHl1BCgsqCH0iEAOWW8uWemMl1jCJOzbAy5imXQ-DV28wNWkEbu7WfE5uAZfU2uwNWU2auNWf-0G
 }
 
-AWSEntityColoring(MachineLearning)
-!define MachineLearning(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MachineLearning, MachineLearning)
-!define MachineLearning(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MachineLearning, MachineLearning)
-!define MachineLearningParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MachineLearning, MachineLearning)
-!define MachineLearningParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MachineLearning, MachineLearning)
+AWSEntityColoring(NeuronMLSDK)
+!define NeuronMLSDK(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, NeuronMLSDK, NeuronMLSDK)
+!define NeuronMLSDK(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, NeuronMLSDK, NeuronMLSDK)
+!define NeuronMLSDKParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, NeuronMLSDK, NeuronMLSDK)
+!define NeuronMLSDKParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, NeuronMLSDK, NeuronMLSDK)
 
 sprite $Personalize [64x64/16z] {
-xLQ7akim25oQ1Bd__zwxYumqwQIy_hBJBCOBQ2dsxa_56s_4QtGdUv6FLno4Avvs45q806WxFQf48u24WJwEJFQ8Xyw0z9rF-au1wdVJ3H3VPwsByuWKUZ5M
-9yYzT5yYVYFcWUzoOE2D4SOOO8lfm6hfPdG3m6gc32Gl28M8wvKGm3orCq0YdKULlMIgWn7kCRpbfHHMXHz11RAwg1qOeaZ0IG-oQ80Aa0viIw3TJc2a2yHA
-feyHc3Q_fuOsOirt6N5W94J9P_Wvty5R7viM7WASOkulsyOf_HWOGAjQIES3c06VVTtt5e2lCza7pRA1CM1JbJvSmczKdtpnGq3Mkn5ayiSOset90yXd_WgE
-mx7HxEmRzmO8clhvQZK78lKhjfP2UcJz6knZityeMjQlG81MgoXO4WnDOmM1prvL7C0sMuc6DJ_X1rZpO-p5_COQruKqv4WLewE7-oEnzeT1NzbV3efwVyRL
-_SbezVg_ihzJX1fvrxFlHufG8WJavsRdfDTGm6BnRCwonWDVVqeFlY-86-KUlnEXe4WwAUCiU0dV9E1LWUTW62FzFApwSQcrz5T_OlzKlF765m
+fPK7akKm24GR926mxt_VBGE_7F1EKazGfVSKmVgU-HgfiKM1BGfiKM2B0biKsAB05WMsAB15WIqAx4n5MRuLs1U23epl1FQLe7qliFy9vc0SqQy5zYwOZ4YB
+dV1u4rJUJfh7-E1A0Ckhm5u40q0_D9IupWwWlmci2Zh0YLsEem6j2bxuEFI0P0pvICQheE03a5mpmKCz5585bHT0B1yFmCmC75okO7p3As4SmoIWYNga0IJf
+VFBRdU_WN0LV3uzoKupsv6y21MOCBKWPeMd0Z2EG1tyJTBHZ8B3bXe7k0WQ5fnN-Af3fLq1gvhCnVswJV1IWyY4uGuYspWSom7dz51gvyrKmGUQ9ulF_GVe6
+kjpuAkZevd52GC4tD5Lc4DgDBmA6c6S0xNpD0eu3HQzy27J6j3wODdXQy1CKhvAc5ju52epOTZv5SEyCKF9G5zoQwdR66bn0mJD8yocpy-4P8soLdpWYkV-9
+q9Wg8Bd_IohF09Wqpx-Xdmsb-SgxNbDu6yEPk7y2jmo3ylwhOBj6dOptXrlY_JrI-BmwEJHpN38_xt_AGx3TalN7CLnorb-_2-wyng4h7e9F_MiEfs0h2zZY
+ybXFV38WCJthFG_U0DdoyRMPT0DeMbP_uUyH87fYzD_M601wl4HWQE7B3g0kqBF_Qwo3qFIPlGXQhi1d59a1vvbK_bNGhQH78LU-2WP0OfdXLIWKqig_2Rpq
+4mTaTW8eRgFmBYWHwblWaNCzXGz1YNbBe_m0svdAfw0cFeJsIE6_4anWV2NOlnMmbHJ-2y5hRloIO5yKx8k2VL6mBmhsHS6-ADWN1VkYu1y
 }
 
 AWSEntityColoring(Personalize)
-!define Personalize(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Personalize, Personalize)
-!define Personalize(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Personalize, Personalize)
-!define PersonalizeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Personalize, Personalize)
-!define PersonalizeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Personalize, Personalize)
+!define Personalize(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Personalize, Personalize)
+!define Personalize(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Personalize, Personalize)
+!define PersonalizeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Personalize, Personalize)
 
 sprite $Polly [64x64/16z] {
-xTPNOZ8x38RXJx8w-z_lcHfYwXZEttaIkF8hffXIluMFZtJxnckKeoCroD1CDyRZ0mnsgir9ne_0eFL5O0nvfuzao1kzLpzWlEy7ZFVTWE6UU4A0lDGROK7W
-b_hALGptlMmwtlVUxDErJTJpGCyqu_BfAPTQ21kIFDpRzBoiZYcpc9W0q6TzhghcfyNvi5E1bkzSls1mFknLUf4oswDiQ0zxNB34B6gJ3AixqhF2Uranoze5
-AEibkKuHQDtNlNPtR268zG2uxagShSlDbYU7R7qnecuAyJ8zoveGSawMtcKUfh21-q_aR6thmTkoaTwWNtshAeVyZ3uqzkFthdzm_7Rgf_NNRpj_WT_hMThE
-0tnv_zpcaf47lh-b675h_pXQtH7VP1darlvjy3eawTRAWSzp1yMjgLa7wQq12gcZ1EJTmUVO0PG2RP-Gpc2hqyW1b3D0ecRQ2220BGbHntd3YffND80PyiBl
-oiYQnJ8kwcNB1AztXDVluUFZFm
+fTLPZkKW38NXmsp3_lVRIdCLuvX2I3wgr_-xcL3HVcsxQiTEW9q0Em5s0km4s0cm4s0dm4w0dG3B8fQ5TWUm37hr1j0zlRi1RCzB7u5o0UYUfQS4v3EmwLbw
+oa0w0vkUfQS2n3EmwLbwga1iHy3s4y2xG4V0z1E80f00bpsJREdfkcVL7u6-xUyFK--wjq3DAQLScW2wxqkFEURtkMLv4KK0rVT3tu2GSYavFaArG7_szchq
+hBodi8Hv83Pzbru3Uca3z3cvVZKYzGcLUQOtVR_gAGDD0rs0tUYpE8-qwM-11bG5T0LWcG3hXvoG9sJxRdhW0O3VtxEAC3tR0wmtUmQ4M0xKfk-s1pvzG7i1
+q_URNlulsBvVzdEc5w3b8Zsh-s_qplGlq13a-Irz0sYPwcKpuNVo_WeYhUkogFg4pEj-VK0nlHd_FXlxAHS4ElO294GsG4JM_VWR0981Al3f_mRQ3WZ8kZy3
+eKbSKcDp0UC4K01YQVDx2W1Y-pw1SGIuG1Ro8sJ0z0U0Qmh_urIPAUDPLlq1aCV6Spz1zMT09a8o_H6mKxqF64vWE87X18OJ64vWE87X18OJ64xW7m
 }
 
 AWSEntityColoring(Polly)
-!define Polly(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Polly, Polly)
-!define Polly(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Polly, Polly)
-!define PollyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Polly, Polly)
-!define PollyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Polly, Polly)
+!define Polly(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Polly, Polly)
+!define Polly(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Polly, Polly)
+!define PollyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Polly, Polly)
+!define PollyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Polly, Polly)
 
 sprite $Rekognition [64x64/16z] {
-xPHN6jim38D1YGk-_u5hCSfgFpcZkmqUl7yOXCVsf-gZZvZXxf5y2_Okc6gMh-81GBgQk_KsBE8rFfjUSzCRq5xBmA_oTC1UBp3ZKfyB-ajmTBchBzih1Yw0
-D5Kj5-LmVDw07UZ1sQK9nClWoGvIxkkceKWAyXZan7MxLqWPEDfXR14kOgPWZD0HHwLLGGhTw6Osivus0-1kSnYW8SSbmetOvJCKQdg3paiMckPzS8JukVy8
-XPtBSzX1V2kIOzdsHOujSek2h4uV3A2Z7A-OR7rJT8vzOOXVuZLmFJwdIKaRJwauloQfy-i2H7XRq7b-Fz-mZrE6M3_z6U9uFlzvF6_vovgtlAtuGkUG9OiJ
-tlDsVbtEN-UdFptcbMmWFI_v-hh_GXDzExqceSPjN-fywG9zcYmKXGfuuY-QVB_O7nReqC6ZjPXZDO7DxweoBgNmiK3KHpUlP3jjjh5WfLif9NTSwWCUch5g
-KskY2hSM1qv3uxVT2X__00klPTpxAWfKw6EyxWRbbNQ1PALlV0O_rTSzIMQOJBS0ybbSNN1HBoo0U1eVrrjlkzGv6uI_WjyhUtMwbjtXwRoZjOOuK4BoZFUn
-4FLa_N_36Y2-7SgX5xnkMFN9Bkng5US9ll0IHts3R-ep-UFyEV6pk6jxJWfHhURV4nMxR7jVwJNetwAFFle2
+fTC9ZlKe30JWyeAnoVtlEyBe2I78z1zHlI_r6KSFFwSUOtlY4eXB82w1k0JY4eXB82w1k0JY4eXB88v0BKm44Alz0SG1A0JCwFy2iG760BXOzMf5teMzdu02
+A3vJ2E1t8DQu03gUWAeMIm4WEm9xNu2oF06fxaQWUihMBy3uVu15PMplNkbjXRLV0GjNW8gF60DSlG9o1DO-GoCKK9ynWFDpFIPYnW0FMn-_vsntXlpPPvG8
+WeOp0EkbZXbWNVchxu170KN4qdS1z-_L3_qs-mNSnrlsIyspCuhdR2yTEVGd82XvXkoRPx8_PWD-0De463KCdAjK7yblncoW7e0s0ShrzN2ThVS9vZlG9W14
+A3Hse8B6AZlG9e3V_0qmq9Y_0sq2bFjBRC1lV_CTQ1DWM5HGBmhL0GZraa1xtt_P-Wae90-HrEY7vDA0vGu7e4sW0XtXxAEVG0YzNtfL83vpwBUSxO1bVtp9
+VdxAzMSE_POlu09uzBzuH3NBMy3k2l8bX_vuyGkmt2e6wXm_i_UR0PwdLf-NAklvknFGbWWe8XI0b5gh2G7iuG8SWBqV1EfxCtwX4bctSWRQ6gUnlHTXOj7y
+ddFv4x3rMp0W7ZEk02my0Tc0jW4AWCqZOuAU4cz0s-EZGqn0MkK7s0wqKzmO8vHFGD-1TamkdY_1aNVWUGSo4x0Vm4l_Em1T-jy1Mlh_2iWF09R-Lq31I_yR
+K1MmfVy9sExXymae1BPO-j-0aQL_1poNm7C9F9V0Smayby1p2JoNm7C9F9V0Vm
 }
 
 AWSEntityColoring(Rekognition)
-!define Rekognition(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Rekognition, Rekognition)
-!define Rekognition(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Rekognition, Rekognition)
-!define RekognitionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Rekognition, Rekognition)
-!define RekognitionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Rekognition, Rekognition)
+!define Rekognition(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Rekognition, Rekognition)
+!define Rekognition(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Rekognition, Rekognition)
 
 sprite $RekognitionImage [64x64/16z] {
-dPVX5gCw28GDIO2Pzt_WkrOufh9wtSw_LZy24yA9sxrag8Exu3Pa-oTrTNxBjR-ccnC0uQQxp440zDbU1Z3GPszdG9c6NIyZT9MQr7GIthVVDHoajkrtJH0k
-xusK_aVh--8aNjKWqq22867pZA6l0WmdWEWV0FIHTS__3z1tch0vzlod7S56nYOXJrKR2NprcoX0Mb2Jz7PVk8ErKTh4cRS2UflxkL1DYr63a_qUdxUxdm44
-n9hXoAuI4EFULsG94rXNSNYUF8wdZM6kwsi2Wn5DGJq2LUNUsJUo1kkannPKUO-ZFP99N0ZD_-GeXmNdyNvBvoROJry_M8yu3VHnbIKNZTW0lRXdG8j7MLkO
-SN0jWmU5U8nS5hR-aPha33uybZNhhSUMZwpemeF4maiuB-JuAb_pZGjlW0KVYLiKObjofmsLRtEsbJVWOfidLVX0SfMlV8tuoeUOLzvW2P79zpXyIgwy4EF2
-6uXirnzu1KdeZc3XXUXHnpsVW_9p80MaFwrVwyynAI06o77wFqX9_jx_d1M3v1vvLl-1s_sVvo2Q8FHf_qVjFnhEGQIksyeZ-u_wrV-T7CcpJD7I_-VhzVoH
-PS3Vdx_L24dUBdWz_rd-EOea4zXvlSWlyoU7tievaKCILn5-l4jV5yq2v6Y8us4pL7aSki3sEAaEbsXtwlQacQcEeupGE7n5Tt8-u8DC5udjLE3oiNu-uf9R
-DIg--rElQENgaovMF09ulxbN1DwSx0LVxmacLrgNgvyHMl5K9mdQEAjetR3KfQJVuZbiGBZECSPK1u4iAaVf0mxTvDg2rbSNvHd_vBnyV-XPIpEym4EjoH-r
-xvlbQxogAGbRuys_uR5YeIUktTd9YhUul9O6g9T_8tf9VW0WT4XRl-K8qCSbA6X_gRrRJWpRvI0Gz4L15Eja1XGYVCfMHLh5isUdckyopM-v8YUaukyro8-Z
-_ISyRmXg_0cFUKgGcBz_L9Am_Xly7m
+rPLdRiOm34F_KmPq_zDsjmg85rTAEjb-o_AZHbR-QUbDbrZN24Qj0S-AaG4Pjdcov1AcNTqW9WOuEJPWsiMJPHeLOB35OG4CMcCEC_WCtwtZXlULnJWPU7HP
+Z1su0x9cWwXTpbT092W0qZCE_jFqWaJ6S_Izz3mlOEUkuYsJfmz9YRnQl9o7_EljIv_FV8lHtZs_Z9hoiYz3liwxIxnCG_wLkSGNSe-lxtdaiydZ-KldJvWf
+FA-FVElwK-IOdr__z-y_DYGsS8vvsxX9JtmnqRd_SrGX208knkkJSUrnVlxQANKUXgUzhJJm5EYdyGo01_Ypmk5K5mTDS7GGUmCE6_dKPZo5uiO0pmODlFWa
+WCg9XwOfCni0tXOqE1FWCm4-TuZyZte4
 }
 
 AWSEntityColoring(RekognitionImage)
-!define RekognitionImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, RekognitionImage, RekognitionImage)
-!define RekognitionImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, RekognitionImage, RekognitionImage)
-!define RekognitionImageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, RekognitionImage, RekognitionImage)
-!define RekognitionImageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, RekognitionImage, RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RekognitionImage, RekognitionImage)
 
 sprite $RekognitionVideo [64x64/16z] {
-dPTjsl8g38GbtpFxN_1vwmENKQpsEF_KtY4JIAItSub5WOTGQNBxNz8eFgj2BzEZ282eZ4DP802MZui14YpNyGWedZXqCOB6xdTuaIYz_Iuha35klyj1b5ml
-fEW_zUUbI5po89uWGP18VyI8Im6i200y100iMxxzUm0zQ2BTZlmz_uBPYar2FhbE4WZjPW8WSr9ErZWtNk1-K8RZaNS0SPfxMsXBYzD3aNgE-zdkSmKG43r3
-MwTAGDXvNR4iED1NATJgF3PyatAjMpq1uumMODpZlDFSktn6UZ0bxtaatYbdQzjY5Yv4hE_aM1taHfCyrXYhSWxgewlalloCCy2oL-NYva4SGBnKBu4nV_9z
-yu2nWazg6bYH1f3zYvrVDPQUzKtdbXkedTTAUSFBhBoGzcG_WD7v016ZyyjkJYDvMrmhG-S9sCRdo_E9QbJdCKTkurk-IJpbG_WhFsprVUDrDb-GdHV2NldL
-z_uZl-OT5jyVT5pW9K70JjR_wjyn_t8QRwHq_hp-1CcKlVvZxkFN_MVfk_r_QXixFN-jZngFwHUCf_Elf7LUCiRP-TyV_xt_UY7aQlyl-tqKoSDPnQkgpPys
-z3ftAqA_p3y1go-w3CZVWM1D8wVpbnCxuYmfIkP-CswVv2jLkzjOiddSj4Z_W1k9LKMqxoSkT-l-4PUrLRRZHttsAzfszLbLtF4PeFJaNZ7nKQHkUBydfBpI
-qQv-ISIEBob9CAtTVpNHV0LP9_WoG82eS3FpA11edKnYVC8HV-bsfVOgoXVyoBczVyJ3oqXynvV6a7_gkMhnChvh18diyVmTBkCzxNWzdSet-EYNrtu0zij_
-4hebRm28C1dzNOu0orw2Wld6koOE4PM72WGQtJI9hNJY4veYokMsYyopoW_ro3gKuNhIaKN8Zb-NaVUAwY_ueGIHaJpmdvIy2_xxIoM9rD_W_m
+rPVPSaCn24FVmJFy_zTsBrFT76eJkkgj5aV6MvF4dvRRg-vXxQeMp6hmmuHhSJS02ZLXiAK3eXDWAWbeq9WmEVyweDxgLi0ogF1BGF-KSfWRo96wFGWGqqkS
+0jJ2Q0x0AZNAuwiQS1qtbZPGJn_MRO3TQWRauvRF4h8AC__EkP0FuWruC-MbzeYtAMysvMrjUKS-K-wTFsp2fsB43_P_VFxhvFwvcBh_m2V11wXa_Nw-_lt7
+ARy-xCpDZZV-VoalTJLEl2SkdOaK9pU5U6PZYRPEE4oFBYJ8Q6sNtxIiWOVBJiYkj753tBPu09sbliTpN4nhu22yNOxD8utPYCFzFiPbuTjxBJWGH3ClDKYN
+lE8GuPz_MnMyAMrn510pVlR3AFwZ7W4
 }
 
 AWSEntityColoring(RekognitionVideo)
-!define RekognitionVideo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, RekognitionVideo, RekognitionVideo)
-!define RekognitionVideo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, RekognitionVideo, RekognitionVideo)
-!define RekognitionVideoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, RekognitionVideo, RekognitionVideo)
-!define RekognitionVideoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, RekognitionVideo, RekognitionVideo)
+!define RekognitionVideo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RekognitionVideo, RekognitionVideo)
+!define RekognitionVideo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RekognitionVideo, RekognitionVideo)
+!define RekognitionVideoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RekognitionVideo, RekognitionVideo)
+!define RekognitionVideoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RekognitionVideo, RekognitionVideo)
 
 sprite $SageMaker [64x64/16z] {
-xPQ7rgKw28KtXEh__kzxLrHMFDLufyySxELBtH2Mtz4-zh4GhrkNk8mhWBPYqG3eDTePq7vaAi3zy7awPQkxOmperWR9ITm8vAEW3NC2sGmT343gYQZkrex4
-LDCTxP6VwuJtLkOJldhcPtmVhITyYERofVDyiXnu1y2vo1IVt4_W0o-mXcuJ_6Rtl32OwOoF5tmGUgSKSIRxbjMI8x-a-VfPpsI_oIna4n7XHdJspX4wqrpw
-BufTmbfUUDHGFCSxMFvAcaFE4cPPlpdX-I0OfEx0UICw03JU2EmvRr-BzQ9pAydsQhAX2NJy-98FNfKR-ncQrJATuHdWKNzg3M8IGEk7VCk3xAR_ANiaIDME
-AqZVyIqF8YXtFlv017_N_ttsMcZ5BJhm0ZFe2Tzs4J38xtX7DydtzTStBVqFKo8XW64d-edT_r8n-F8ZmdC-zkboXcoy4GP_gj_XFssh7u1GyQV-CwREQ-uv
-glzJ_dkC7xOlDtUyGcVYbtDfdwZqj_Cn4xz7q23ApD9_vwVYhrez4uW8vN-p_302CnEQNEPpz3yPu9paoLPQ8OVnSwzPyQdKmncGw-jt1TmAHDVpXmguhI8d
-P29_cSoVVah-Dfy_pkUl6illQ1_xs7y
+fPLhsh0g24MpLDes__aUqMqfB-UxoOzkJsk9WNRx8Mxadu5D0JO5s1HWKu1D0JO5s1HWKu1D0Vv7a498Gn13oFydW2l8vr6Z6IG5lRx-Hm1785S5ed8XjMEi
+3smA3az1LBhFeMUXRuSVAJWy53eq5EytYH_neia8O0HrugTKdi4hSLDmU1n79ZLu2fY24JZyxV7ANfAFGvRuOxxYAh2yE3n8yJ0yEQl2ykBmsEL1nCd_ptZC
+F0MAEtnPyLGJxO9CFbF0d9BbPq7kI-K6TBop0gVUVj4MW-7BJ8VSkhyTnc88Kmh96iehEFLDzA6dKTLwqZQMSrZvCZft9D8lIMWA5D9m78OldGSaJaL0bBdu
+zoluoPS6QURvuokJFFvs-58XZOIFRpL_9n3rT8d3Ky3ASU3H3MSJ4AVFvKjzEZL1Q0QPqWv7vcqzkZo8XDoAXXeBdtAlepxyNnvNvXmwFvUHctgJEdp152__
+2KBectfFofb_5qXyUHdBUUbWJihmvxTofF6zas44edtEI_ACfFLl1pI-5mAheAyinieNSEMWy_rFW4LmwiFFHluD6Kq0va4-Sb2xdzpavo8K7OuVWpmRcALV
+mk4B8hU2oZD4bFn3NkfWmB_p9Ghn9Nzu_EFmDOWltm_m-CVmGi7RXNDaXry4hRvi1J4yDtN36q5k7SJghpnRp_1MWCgg0mM0J9jouFgml1MKDb12APhlz5DW
+IpZyAY2OsoHqsD0lmJ2y9oXoSYdDFyKHXdS59OSWx0Ezn1o6fy0Dk67u3S6pANWs1S-cuDaKF9k2PrFmR0gUJS5_
 }
 
 AWSEntityColoring(SageMaker)
-!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMaker, SageMaker)
-!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMaker, SageMaker)
-!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMaker, SageMaker)
-!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SageMaker, SageMaker)
 
 sprite $SageMakerGroundTruth [64x64/16z] {
-xTO7SkqW30NGAmbK-FlVxxSr3BmEpjIKcqvoRACHoci_Cd_vYzPecQXwNJi3REs8CS1-JKS1vFnm5q04A761Au4qxunyYbomNPstZ7Qc0dK-aE_eg011-qz4
-jmMfiUOCKaKTVX8bS2mzAFwzyEwj1M73SslfJMFwaYMHRQ-j2Nnu1pE8iUd3uxpbz9RTW4sVkVF107dmsXiuMYVf-sNrh0R3rdqBqjw2XvYTqAjOOj4wMW5M
-xdzPxy-EqgScalnbzY_4PziLBNfp2tdd6HrLbFjx0dNqCVYzRr7gIUvs7GG5ZPy--KhWw7v6m90jtwkcgFUpA8lefSR2Y_SQtK-BY3Wu08xF_ho-4Z06bith
-L5I1BtrDQWpo5hSDes02syfxxk6Wt9n1DFed1620F_cxNIlw_DM-uFbSR_rzUyS9ZKWLaB6QEth3xzhRyy49G7ZMOXwGpyEtNxxaLqAUmZ8MboFOmNDwD6Es
-N2pZW2mIDpvwRdpiUnFgOVkI1pW3w1KlmxFf4PFXPSUJ3qy0GCCxRVWSOjrhFQ9y-ZwwOk-VlwK7PP3U2AJRBpxiy8Lxn53ioaiGaoYthUA75MjNykYtuV1g
-8_eLVvVBtijTlFt0_EKl_m4
+fPK7ekCW34G56CJOzx_lVZ4kM56sCR_4xJsBcXv7mxJFO560HG4M1LWKO560HG4M1LWKO560BuAQKhq4Mqhjcm2Xe6NvoJ1eJNPSlWWG2BI8o6PSgkF_LaHy
+2HFl19lHR0EhiAVJHma13uF4OZXFwjc9XIOlW1DaaQp6C-UHXYK4F4GQgOcdW2KuGS3tY3UsQ1FHL_wQBnn3psl0WzJpZvxMnA8k0OzL7YSIrFztF1nFGT60
+tzzu5MaKj9DlVOf8zVmiQ5mg7R3tvHyWs-cJiHWSlyzqQcFsZt_NOaXJ2TKRzbkGxKdmrTDRpPhDnkWml7aAhELCu-5bs8J2so3Y-9qye1kkGmgcmUzNrF6M
+0LdbRU8Hyztp58YbOkOnDM2pZw81pu0ZTxQ_Ui56IubuHaIdIP26GLFIP-oRYf3l8O-1s32QGyUnYDvyRHn7itpbKTgeeensv2pIxaQmiC7tWFzS2mKezzpP
+KkAcpbO4xPy413V-bVwQmUIxupFx_ueLpe6pPZoysZpd8VaxbUD_uueagfAW9EOl5uRy7IivF_ieBju41FZrqE-GVw8Y-xGFiNxQ68x64yVR8EmNJy5sdbry
+VoVWTn9-L_nxVYUHvKocxU_vVV1oXpmY_WZv7JU4wJ3Y3yUtw-0gOUPhmBy4OnFznjlKpPvtWfPeyFMJJhLxdW9dKEk8T_-fqG0yxmLcABlnRlnAnOZZdS1F
+9CRuEuwF1UA2AOuF1VcDPypnF0LX4CRn2u9ZKN0i2ev5mR4eE1O5nwBWM1GSYu9V
 }
 
 AWSEntityColoring(SageMakerGroundTruth)
-!define SageMakerGroundTruth(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
-!define SageMakerGroundTruth(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
-!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
-!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruth(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruth(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SageMakerGroundTruth, SageMakerGroundTruth)
+!define SageMakerGroundTruthParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SageMakerGroundTruth, SageMakerGroundTruth)
 
-sprite $SageMakerModel [64x64/16z] {
-pTTNelCg30HW98eqi_y5tsC8KOu9JhdjdvSqV-wUGFep8pK_VinLFk8LeEdyf4QWlg-pymZ6HgM2Hpo_fwMHG6aalAHK7AGLW6po1hylcJiq4fxlQtsbrKcw
-phCm3cFvQPDb8sAaoR9hIxQ_AwcRzI_HUQWRhwN8xQJeCuvng3jV0I2Fam9TVUw7klMPHt0xAVcfptTMMvNVlW6vZa_vbSy0u7Bs-ifR7G49elto6NF_zvuO
-8Ljo-FGZZIJofJyak_S2MFYUYl5-xuiON4GQ2A8CtyejHigrpybWntkRjuB6GO7NlatVdKgQFk9f-dRMnKbgzv7kYwewN7yINzBBgN1wMJppXpBuxurXrb4y
-LLNIwlFmFdoa8fvKkR-F1REFeFiAeZvhYexolLMaDypO3yvphgE6K9uqrUbsQdr1wnvsn0_lH0Lzzy241rmCwDxZ_06M37ZBgw_UG11sxMF_szahZkXhduoW
-oTadRTOwB_uGh3xbqj_-zX47SGyN7zbvmkxnBpniS_pBlG7ztYjwLuMNh9zu0vtmkoyWNIzyrOYaUSF9yAD4UWDWun-373Vyy0qiZIEsFZy2t2I0Ndm51573
-Gyhu6MrzVllxmvMVLABqUkXy-09Y_YvBVyp-6eKatISHURZ-1e1bsr_HdmT0MVklj7x_R_ep-dlZ8xBszqn-xOl3yrpoSpykItxBQzQRZmSVX07sZc-zIC8x
-67_hrvvDjTwAB3nX1iBuSliZo4v8U5XAunxKIoyuGheOJhwV1TEqz_s8oqzcOvzy36hpzVXHV3JswcFyU3r-BNq0kFZT-7K_VWuVu-TFn-_Tn_e_dpzq7pzz
-Fdzn-cRNjmTXZ_EdaIP_O_u6p__5_74_V_qpynS
+sprite $SagemakerModel [64x64/16z] {
+pTT9hY0n28FXlOda-z-sbzOlH8UysQiYnLVpwByPIIoVkIHMJpe4vP8dh1vq7CgbLgR5gZQyLIYlEc5vq31k-kHp5CvgvVGuZgFtu7Fu2drpAmQnTpil39Oa
+tpppk7vQjBxxtbhOgC5RahdzZ1VUd_NEVNBnqF696FJsjce-Xx5tgzShJs4hcXCQRXcYhk0J8_Jscu-ZFuu7NVdUhUHRFOy9FGuLGfz9-WpNx15w37_Ai_e-
+NstRjFEy6t7yf5SldZ-ToJEZdxvf90O-O_1uZugvhxzTqUoevkVl27uPy7ZJYxpCL7oxnqxVMBUC_jApzqgkNj8dF2ubq4zwtpppl7xGLyyqR__NL-Vj7fyz
+7nkJDpZ3kUhkeeSlWtZTUFjB2DXf8YM6laLJohj4iDW7lndGsuWtRlcFvXy
 }
 
-AWSEntityColoring(SageMakerModel)
-!define SageMakerModel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerModel, SageMakerModel)
-!define SageMakerModel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerModel, SageMakerModel)
-!define SageMakerModelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerModel, SageMakerModel)
-!define SageMakerModelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerModel, SageMakerModel)
+AWSEntityColoring(SagemakerModel)
+!define SagemakerModel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerModel, SagemakerModel)
+!define SagemakerModel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerModel, SagemakerModel)
+!define SagemakerModelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerModel, SagemakerModel)
+!define SagemakerModelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerModel, SagemakerModel)
 
-sprite $SageMakerNotebook [64x64/16z] {
-vPS54iCm30HDgU_q__-METACmhHbs48sO8SL4JlHqi5En9OlGYyYafJlRxnKrQ_1I-6w_1XJ0d6zZe_7IIT6tGVb0N7NAJg4xZ-Ra4zVQA7xfPI6WkjDVZqs
-qFpjzqjNGDmAzV8XBz3F_-qNgiL9z_ErpAkVlx-z_2eCwdhxaRZTBDJlTmErSVKBsSIr_28fAeJJbq5-IDaWcVqonTbl-F8Vxjk_VmtxlmY-GUtX2x_eiVwU
-lcZcw2SliC3-OuF7FxlViEFNy7v3Zzy7wMUFtnpOuyVX-yz1u-VZz1i-Vnf__jQ9E7J-kWek
+sprite $SagemakerNotebook [64x64/16z] xPMr0G0X34NhK_RVbXPtYBu-Bj-WuUxacRI_4TgRLf3PXsNTUNZOCvuVh3ty_2RjTNvbWES7Ryz_Vl3_x_QOjP_TNvsVwf_EJ-UdyolQzy30_Z4Oi
+
+AWSEntityColoring(SagemakerNotebook)
+!define SagemakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerNotebook, SagemakerNotebook)
+!define SagemakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerNotebook, SagemakerNotebook)
+
+sprite $SagemakerTrain [64x64/16z] {
+xTOt4W8n58FXNezm_zjI_OsHPsGrH975VflJdPZyyuz4fiUavgJYouyp_ZIw8swgcbFcthTgE57lfM46EYvTqXdOhVlQIpIf7yjpR_Yvb-1xhqrO3V32cvF7
+fVAptp8qlcDSWVUbuPVG3z_MWQsFM-_bOhaKUutZKk39gbc4r2__CfxLsyY4sdYJP0JU4mFv39SVSVSZoBqVGUxz279lHu3FJuZ0oWFKU2BIU4Yr_eZgxKUw
+_Q-x9VXod-Gj_J__F
 }
 
-AWSEntityColoring(SageMakerNotebook)
-!define SageMakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-!define SageMakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerNotebook, SageMakerNotebook)
-
-sprite $SageMakerTrain [64x64/16z] {
-xPDN5jqm24GDae2P_UytLUSH1RbzfjnVduj7bEElvZ_IBGBXrkLuJtFYWxUNjZe18jmyG83-AaC72My_7MaE0YyY39AkQnooF_uxYLuIFIwWu2Pi0w6F_23R
-FbKywntis650V-23sCzAy2H08qOnuyVu1zXkVGEawFXHKmcxzGDHTRgKRtkaTYy8BzdEqB8wJiQq1lZQTo0abr1lsp_zCQREgLTVi66EhvEswZM_agm-RQux
-N5AVON2iVjZlWFZvCKXmwXF0zxrASiaaKi_LlFMLy4_SgMTyANx1iyb3rj7GZtjVJyvCWcmxl_KLaBxndMJenlSoGT9sEaZepcTX-TESPgY1qEAB5WA4PVFK
-vYYpGFexn4Z0UrFHDXpWN0KZeTMljE1i1K4mvXNF1DMlD0Dd3M_pah90zIkY_HjEokUIymdfMvmoVZrwMnFK-LSy_JK19FtXfupqrmBmz6z8Fmiu8E_zB310
-VUjd0TNW-_zd0P8O-NwzeFg74Q2L-zi1Jp_HFlHuwrSoVpj5x_qR_cwVORS4BtpY5fxwWeV8yVVndwy
-}
-
-AWSEntityColoring(SageMakerTrain)
-!define SageMakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerTrain, SageMakerTrain)
-!define SageMakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerTrain, SageMakerTrain)
+AWSEntityColoring(SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerTrain, SagemakerTrain)
 
 sprite $TensorFlowonAWS [64x64/16z] {
-xPM7Zjum38D9oKFg-xzlfucBSxxVJZ4wYP7vGHFqfzzL__LVcH6PFyT6SyDtMMdnD73xpjBSZG3WxKaQZO3L64ZsQW3RSUO6b5l6uO37MV3rds70IGeLg2--
-x77sosEV7eYwJPxnSTN1NGdTtW9c1So0cc-VmNmmH7vDj_8wkXvFXlWzLXR07YoW68zh6qe-eEjztHgdDknw2Dv_pafOF-FNYzO0E-LLxjIGBTzYy5IvSqFu
-ca-O-07SkYU-UQxuG16Vck1rUYdU4SkservuRP2svy9Nz6Nv4wyDrlPEVDlowflw-9INIDrj-OvonfTr_G5_mU_xdsHkUVstaYEqFnClqUOyxwgZWSGwFZZz
-jcY0ZJpOtlED8wwjoXzWrzIjptmtRK9N-gi9sjstoRkFst9w-gR45OzKFYhZbGi4c5VxRb_vSJEKHBmylNoo70DiCYFVd62ECXzVym5Mu1lhDfJ9YaVXmYrt
-tazuVl39rPvD1kpBwN8VNNqhxveSvVmCwmIyN_sxEvJLYRBnxjziUGWh8giUAfND4sLETx-X_kk_lW
+fPK7WkGW30HB94ds_zzxmSiO6t6HtXog20qUMqUNQJ6-AV1DWMyAV5FWcmBV5FYcm3S5lYdmEu4iIGH4KcbH47b_my8ZagDWy55G079fQggjP83PCFWWg41g
+ppse2IWhWKT11cdp9hO4QI7m812egnOgI0i2dwA2wBh69Z090c-2s4WJQKEWCiyWyEM9Qz_uXs2kOUQzcZzBBDUd8IWwnHVfKuUaPfe-TUWgligxnDfDzlVy
+cFLOYIu5XyVqgTyPYrZmKH3FNrz4Dejy5035V1PamABWY080gMz11S2Yu8W2q6a3ce0qi2WueW3SAv2Vnx2QTTuYVmcIsE17XUCRk2z5u0ztuScxVtKskXmy
+HFxeMEVlSp2w7FDVyaVatUlpMGBZcx_a7Ipm2cQH5sp5U-0ROcQ1J-YIzyYdKUFWC_LOyZxnfP-CYM_aurZo_kRJPq_VlCDn2IBlBnxKRi4n8kWb09luIw0m
+jg_dnLVoDG-1ClDkXSubYjrvyWvsVSqWxSsF-wIWDd8yKiXV8asGTF2QG3gLksV1EtoU1mt8rllFG7M_Bq_aUohYNU3bWi0hKEpJmlpYUhu4YNGBB860V9Po
+2HB9tlnBu4BktptkhtzY6NJYtmA3xBV0AnIF-9EFWcHTCCK4ciry40YqbQ22gFlC1u5d49q5JI3r5YB_Rg49IB4Xq2AFVGpy9GW6Re41KlrEuAFWq9B64b9H
+VoRoNH3ZoqpyXk3S59oRWdDJS6uApat1kIauDmNdfk0x
 }
 
 AWSEntityColoring(TensorFlowonAWS)
-!define TensorFlowonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
-!define TensorFlowonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
-!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
-!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
 
 sprite $Textract [64x64/16z] {
-xTMrWGHR44DH5PUq-SUxpFZcWpV7QRpDeF_3rTKLvulL1GfVjOxTbFEJJQGERKRaHoqLWZfIiCyGKiDvrXlrKGCX3MpFUdtf6o6j6V_X_ZbFHx0dFRxsiuKu
-x3lqoU3Hx47FgSmQVfYtSm_zTxy9cBl1alhae6zOyy4MRFG1_-uBoGa3B9U1o7ZL1tsZ6F3gBaCgOVxge5yapKQF6a6tYuu_ZO4L7qY3MhIqJ_XNpqKDvgO0
-Wr4gC5moFAg_UiSzboe25PI86kpP_ciqWKBTI6hJe_3579r_8cR2YPnP9RWFmeZYmVw9HqxSQndQNcQyobzwDP8iq8EaThaFB1Orp_QtNhETWJJJcqKtU7h_
-mmnmrDFu0nWzf9r7_D9_KTX2I-gwPvZ1YAVtNwAv4adfHWmKBNJw_3rQ11lm38SDpNZX-plmPOTx3iTiTM6lTNWlkUq8wk9UQiUZ6Eca_ufTivGE-hF_p-Kz
-l-zh_jN-pN7MOx-5dD5H_uFM4SuFgF_6rTNL7G
+fPC7ikOs3CP05PFVy_tlc-7uDQiasHN-ucc0LMEDBxbcT1ZGOK270Hq6T1ZGOK270Hq6T1ZGOK270Hq6j0yOCtOD0Uq3pCm1xGCmJy76W0PYoJwWNQ0mOgk0
+TW56rW7j0X1lVWVy6otO-LyY3Fx8nlSCZFwIM02HWS7_q1BlhRNkB__11dyLwCQ3jVau3_uSS0DAQwrcuOeNipy6EYdvrRl7PT3-tHy3LnhTleRV-Ct27m81
+FGfGQpKmxwCVRty856eOTYcv3BnXmwLS-5y1XwYKq4CKB8mUU_yLu27KIzAKSgUaa-pz35o2f4k5nAGB2nZz6FsaqG8JXDHAePGg1NZX6iOVCViExfHC99sc
+f71L-kJ7v1j9TH89206a_yKlFzP-YSdtilHZy0DSeFGaHJmF2CEdyIVp-dqOtgZweL42Okd7svT_yE2FI_84Onv_alvlU0L8Qe1BQp_IVz4mLQXPy0eboZEV
+nVYJqPTHr04Ce4M5KBBnHy8mZvQsjV02heUzFmOebnJF1CprnSg_vu0QIJ60gb-i_0oCg1SIQw4NApy3CmeFpSn-1fPeoUol0qxv__wzydV4YtiJ41kA9lzF
+rs3mZmBtOU0-3Do7WVimS1y6xiF0VHYu3mFtOU0-3Fm3
 }
 
 AWSEntityColoring(Textract)
-!define Textract(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Textract, Textract)
-!define Textract(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Textract, Textract)
-!define TextractParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Textract, Textract)
-!define TextractParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Textract, Textract)
+!define Textract(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Textract, Textract)
+!define Textract(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Textract, Textract)
+!define TextractParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Textract, Textract)
+!define TextractParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Textract, Textract)
+
+sprite $TorchServe [64x64/16z] {
+fTO7ikCW60JX1WpCIFS_xqQLwg4ViO6fuDYVSz1yVReMvqt0cu0t0My2tWIy2NWJy2RWJS0heEVw1iJUanpw6n1xJ_8chG6_0Zr1_tsirVO6UDYOfolFG7u1
+F6wIgq26CWVyMCm5JGrwtAJtdKjttoNeKy0pe4FMlKnfXTIdWECUkHe0jK_dk4SkzP9Aa_woRr0qMsz_q_UtN8KQ-yFZ1CNslAV5_W5ailm2P5BiHw22tZ_E
+YK_eHm2g_GfK2Fq0L9Az018VJVeRo3IlW0PIw6z0O2y1Q5BiBw1Il0OAHLBeBw3Gl0OgMGDmV0KotMkWWGRW-0eav3NGhrwJ_Z0uJiEWNq3iZz1707HjqYVa
+DT2vUyK-qxq6EadtGb-edcvy_Uuz-qO-ra3Xeozxz0Ql0UWQW6DOfXqhe94qRkmRoIiWKPVzaQd7Er19MlSTz0v0rMFd0oWalm1AP8N-0JYJNu12Kkm3aEQ0
+CdJ7FW1Af1w0daZTzgoF3u6Y0L21B3i2vmGuAb3QNRS2V7mjzX7m1o3byYav0HJvNkmZSBWLk9RhNGVWl84mNt_y71Rw6mZpT4E_1PoRmBa9d9l0kGcScy2v
+2PoRmBa9V0S
+}
+
+AWSEntityColoring(TorchServe)
+!define TorchServe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TorchServe, TorchServe)
+!define TorchServe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TorchServe, TorchServe)
 
 sprite $Transcribe [64x64/16z] {
-xTG5ikCm48JXrl1qxd_U1LL0ZsKlmrSKy6yIyFVqtt-TyLJnaCGp8tb4GCCN0F9OxnS-z02Gntek6X90ValF0F9R-dc2Gttx5DT-dk18dvZasXyvmUmxfo8R
-aAy0r7Q_qZ4c84xrKpTziozDikChLbmrjtjUxekW0rUvqtUwgPfddxb--y3Li9g_tCrlrNn7340Zgofi0DuKt0K_q3gJguw1fibTVfnBSL758nJQF2yW7-Uf
-oTVrG97T94sQz36_DXVlZP_3ICheQa6JYY8TkTlFotECW2igowvzvbPVK9RNjK-OeR8SCSPM7_2B8sJf4xhVEvBn3RtzujuHz6Uz-dwVSARbRVmiR-FdlZb-
-mZd-vNLg_WYAP2R9sS_hLpRP3-_q0ULLrRhJr5XWxLzEu1SgM6CbnTSrHh_ySI2vn-0lSu5nJytBTt6H0yfDXhWm19fDJgM0yS3bGu013FK8jm58SfT11D1Y
-AguqkAs0MN_L5Lzayu2SzNcTnJ_BV_zz1W
+fTK7agqm34JHbeE2lV_r_WWOsHeeoZqvdFioQ3m9n-jiCs2R0TiCs6R0DWEs6R3DW6q6R3DW3u44F-8rO0y1B5i3zX00t4q0W3e7xBxOw-KJKAQ0kSLUJozv
+2PXVxFNqKe3i0ZOjzdfwgK2w1spUv77iz5BlZsFWBVOgWciavm9lpey9ZO1Sis2nrykyUOkzllduFW3y_UXzUmwy-nPWpea0IeLrcgo-pRfWZEeIy6jpe0AW
+mg8gN0XW_qhMnVj01fAC-w1cdRm6VWGIyEsGrboW06Bs9T3k0HxyAG0uFmA4Ub7W_-TNFm8C6lBHQ-2RPTH3tjvZhv47DF10v7Nr2XhO9IAlYnUaBrvdpyZj
+YzV5bzOY_t1Uy3x7_k6yuEy_HFxvlD1k8_pxqJz_x5ZizUuhqi_Uthq1qluky72BVQkWe-J6iq_3zxldqxj0HldvvTpl0GAt4GYEAP7l_kBdG0Pun2BVtUF7
+H3m2bHmtYtmV3vyG050HDLCk09AQs-n702W986R2DMARD_ipK07W_tNNSfo_n89vVmK8G6r-5YxolPMXFmJw28nz2FJDGDyCzCr0tmpqpK3V3FJDGDyCzCt0
+Rm
 }
 
 AWSEntityColoring(Transcribe)
-!define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Transcribe, Transcribe)
-!define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Transcribe, Transcribe)
-!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Transcribe, Transcribe)
-!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Transcribe, Transcribe)
+!define Transcribe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Transcribe, Transcribe)
+!define Transcribe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Transcribe, Transcribe)
+!define TranscribeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Transcribe, Transcribe)
 
 sprite $Translate [64x64/16z] {
-xTPLWYCn38JXacIBSl_xReER9gHbclzbyAiudFn3-kopC3qLkJR_qgBY7UTu6C8KQS4RHBVQFc3hJxro-VrsRAq38oTunUVXUpiFADhN-fJJW4E-rjzoFq5a
-p3w-ndFlsutOE6PlP7MFqKm4x103jEpJbzhibm7Gu3K_qjMd08DNlCdshttubC5Bde7ObZoNecbMlOEXULVPDpWuvqBEUSq7SGfyknUFo4lUe6dRjpss522l
-U45a4W-VMmf-Cs1ecHaWDsVudLTzFH3TblzRQ_V-riV0gnZcKqHnvpFV3HnFz0Rxw4540CLBtw7RY-7LEzCSOCzec6UwZNspuQyr-AlR_zhX8_RpUVtvUtZc
--6OVaK4K6V7EjxYq-62Q0cYAuvKtNADOl330Km3BIn_oeSLFCNpSeJbyiSKFoh2grnONduBU8Ldq2iZLEm4KHQ-OaeiF0IHhNW42GmuVIY02QHIy0YPmXWmV
-3K2B400IRxsHfI22s_0fr1TYZQHm_iZPPvpEdwCetdyo_cVuew9lqE_o3lBXzPQNRXMV7MYgUdoYEn9Olay9Ks70VLxzB6iHfdTPv1_IPvzz0G
+fTG7hkmW34RXGxLDzh_VzmWQXM2a6ud_zlATgOpk9zjLFpiCs6703WDs6B33W1q6x31WXm4x3DWKYCmBCWBqXRm4l3VblQZt68lxW4q3VGQavoPao2xmboVF
+WI3l_UaBb2S0icpZRVQQeUgzhPUDjzbh0j6-Cdnn0UVjyVT2_puJkuza5t3-5uYCzUyhvFkzohADDvqsl1Rk5N7plWTayPexp_BDMoGkNYD4-UWLq6KIWgZu
+jOqlL8hkjl7D-n0jX07YSY8tlgrUA9QHsuCBEDyMdr4JydJ_ZMq3hU_jG-oVmiO77sZtPby9AQL0DUV51zhOv1EnZsIsUlM1DWN6YDONKRFL-q1R0uKoVNtv
+vqWw_mGYQdrAN7paEP8RtmnisS_x8xdnRUjjx_Mp7u6K5gzV_GY4i7hT-BRpEVqVfBxPg_FhXcVQo-lYuzwRXPiGtP7eVfs__LR9gfdgl7Rl0p6-lGL42Egz
+xdo2zFP22CX7Nm3Aork6hD-yS4zcdm7opbyhLoZtk_wyv42e5KZL-pLGI0qiKNuUGlzUC-2z2rHhqApQpulOc5RnlWVMmVIIzfxpVTxR27Xltlj0fFOlMs_E
+-q25QZtmpVj0ubup_9pV1MgyVOluHNF-5_2pxHP_4BWE0zTXu3eCN8U1wp1m7GQkmy1r6FW7
 }
 
 AWSEntityColoring(Translate)
-!define Translate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Translate, Translate)
-!define Translate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Translate, Translate)
-!define TranslateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Translate, Translate)
-!define TranslateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Translate, Translate)
+!define Translate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Translate, Translate)
+!define Translate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Translate, Translate)
 

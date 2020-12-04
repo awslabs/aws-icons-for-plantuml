@@ -1,14 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $ElementalMediaTailor [64x64/16z] {
-xPI7SWCX44CbE5Rv_nzEmnxDff3bCir5BbUVA5fukLyzzPJqB_e0ZlCEWm30SOvM0vhc_nc-W_5n3AAVusEUn3O_Zk_yCQgqEg2ll82kQcOSt_d1KfP-hQFh
-OjXjlAQZkPk3uBWSFB0M2rpyVEwtqHe-7UrFBNWm3wG1BNURMFDv82BbRfTv4wJTghmdUhRlM4fyE6ZpqpGgV0Uw0tLSy_wQRtqEdjzI3iufwCtyiegIG-JA
-sQZYLBbrYKO60MftvsERNOwF8uljIowNUPW3Tq59AvpjMdpk-KWhit4dV_MkdVn1jsHvILJud5vEiCRdm6rOvTtTD7KbNdahjDEKrZp1I4KqHYgT8AW_LaxU
-GTrrFwsld01YSnNbryXlnclbkHUfd451VdloTjpRGCQL7nvHMJeOLpxeWTSbzz_qZioVbupVdvvwwWq
+fTHjSeOW30JW88HDxt_X3g9TGOYToVxfvxCQYI_0rFz4no1OW601WWK85Y1OW601WWK85Y1OW601WWLm2t9AsI_0la0FENCKfm3Rf9EMLfBgBeuNoTSG8dMR
+9IqP0DNv7QVuyff4j7ayV159-XzVsy05fmTzAv13ltpDqkR6vK5V-vzyVrwa0dyUzDU1PiUdDkJp-GCOdh-s_zXx4PtENtKw_oBYUN2K97z9XS3trAVAROZ-
+_SRRxAbv26nuUvizDHlPyFOsUMfwrDwmzFRsYZbLzzvsIyJekTLaz2nWyjHGkNXhR_lNW3yudWMSeQ7xPleRwNcRt-7SH-wlRUxpUDx8LKJq-Y2v3aFxBNZU
+xjFk5xkR2c_fg5YS7zDzweORmKUI0CyRz-VjDPqUlkV-R3uLlpqRvlt1jpTm0_EuJ9p8ypPSyhdCzDZxezeuyZIAfkQnySgxnhW_dAG_HVeXkF-1cqYDmkS0
+-Z7ru1N7_T4qJ48_XV_tz7Sli_FMxvEUWuzPUpu6UWu-PEdv6FJsoe76qB-ZcTVFYdNe5w7Vn_D6luzz523YBUejwYtgBUejwYtgpVN1WfzWmK-mu1S
 }
 
 AWSEntityColoring(ElementalMediaTailor)
-!define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaTailor, ElementalMediaTailor)
-!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalMediaTailor, ElementalMediaTailor)
+!define ElementalMediaTailorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalMediaTailor, ElementalMediaTailor)

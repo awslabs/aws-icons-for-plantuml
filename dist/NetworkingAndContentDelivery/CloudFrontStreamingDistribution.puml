@@ -1,15 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CloudFrontStreamingDistribution [64x64/16z] {
-rPU9SWGX24ILGON-___DwLQiwHhA33cf8zbTNmjUGFbEgszs2nNjvWu0xjPLFWTtnycyRqkelICsUdknFXwVTP-sTYnnrwFPdeBOwYl7P74KxPLk5ojUcmDe
-rtGT07eD1dG0emQ--r52E_mo1d70I9jSCC3b0XyqMfKKnnHWtSxk0XnG1unLQNRYex4DiBBB5pjlem1Uz_dgW9m4ZnBn_Ftghb90nFCIB7V1oNlYEG9Vfsyb
-vDdQue3nzCop0_Qn-Briy7IAPFbldwTPfoUx_18rkR_1Km0QZ3dYttJgr3jydNuRXR_1Bw1ZtEC7_FqWz7jyXzUtCDezlW7_di-kNtB_ykSdVtwLnuWoht9n
-V_Z-YaFFlCA5xo-_7zCZwC8lNz7xiGYnmEGPdswl_x70v0cdMUdzdiJa6P_lD-KF4X102AVyySXVBF3AJvpp5-LF5XZ089povqN-LapJ87z7zOCIJlL3NBye
-uLI_nFMJ4avZm_gjY9ID-etgHpAg7tFrQwv-hidwFTS_vFkNVF-Kxz_o_ME-Vyttptbx1W
+vPS7ZeD054CFOCFS_xJRB2N1ccynd-snIWBZz-Xj_EA0-4W7XQSBtq9swLkuGa_dRkTmbZkJYTwW17SIq6aFeo7GkPE7SYiF5BF0uU7KEwjEYcakJrMXPk2z
+79MP7_JvmZCV-bZbAI0iFl5EO9sd49TbtaSMMca3gB-1pqFeylWqVbpWznv_MopRl3ZqUVumZoVdDTRdRt_sTPxX-W7eFE6TceUm6oySF7lzKuA74Z5TYAbS
+e960swvmWVWR7lX28Bx2QRA9000DD-9MvaIWL7RNMLZZky_Rea0ZSN5CWlG2aWNM3DMzg8QbdrbMxFNV7sipMxZ2oo_OI0P4Mc5PGi1Tu4qYqUd28S3bZpYm
+-_Lr2vszy17AyOlp2W
 }
 
 AWSEntityColoring(CloudFrontStreamingDistribution)
-!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
-!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
-!define CloudFrontStreamingDistributionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
-!define CloudFrontStreamingDistributionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistribution(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistributionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)
+!define CloudFrontStreamingDistributionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CloudFrontStreamingDistribution, CloudFrontStreamingDistribution)

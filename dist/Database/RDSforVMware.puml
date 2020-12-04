@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $RDSforVMware [64x64/16z] {
+fTE7clCe58DXqSoHyFrVx_xEUORWMM0BcbxUBucBViRDR3qT1dGOq650Xm4T1dGOq650Xm4T1dGM67s4Rnw0Bwuzu9Cs7biVk7i95W1muyCwu3m0vDfp7N1k
+Z-VIQnrmpe_dqgy3pkcUI_y4Baq2vU7TStFzFdmMC8vR-fv90G12wl2zlSyObZU1flTOdICMesXM8f18NjSqq5u1ImX-AAjyZmH8HY1F0cqCP039FV9b9j6k
+X8yl0GZNtmBj6_27aFlt-Am6eFmEj6yW8fXyW9KK0_pu0_HbuFSpQ3rm8L3TQrZtB83njTO34NKGsOPZsZqZojItzsFYMKn_5W4CFYFFVLE03JwZBmCYVMds
+-BwCD7Z9wlLdrVmdVbO1Mta2-UkfFWBoW0KahdohGBGVZroD4grc0Fe42X2vziq2aCpzUmyl0KZS-QOCe5y__Vu59Fdbk_O-bZAxVYJbw7hlcuk0M2efYRK4
+1CctysF00eO5qpBGvW7L_FFwS_MRQrZSUHPDXjUc7lZmW4lZ64CTZoYvymR4Dmy04hzUEty1MQszU2Xuflw-zWKexTd8AQP_vpDmDPzyyU6IQapgMth0siyc
+D-BNQ-vzOm3Gr6lYO_U-hLVtwsry3zoxmDRB_Jw0-RpZVXk8c2tAvtuRq7RkJmBtOU0-3Do7WVimS1y6xiF0VHYu3mFtOU0l
+}
+
+AWSEntityColoring(RDSforVMware)
+!define RDSforVMware(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RDSforVMware, RDSforVMware)
+!define RDSforVMware(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RDSforVMware, RDSforVMware)
+!define RDSforVMwareParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RDSforVMware, RDSforVMware)
+!define RDSforVMwareParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RDSforVMware, RDSforVMware)

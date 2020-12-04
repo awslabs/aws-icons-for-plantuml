@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Illustrates how a SVG Normalized Path does not have loss of precision. -->
+<!--                                                                        -->
+<!-- @author andrest@world-affair.com                                       -->
+<!-- @version $Id: normalizedPathTest.svg                                   -->
+<!-- ====================================================================== -->
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    onload="normalizePaths();">
+  <script type="text/ecmascript">
+    function normalizePaths() {
+        var originalPath= document.getElementById("SamplePath");
+        var normalizedPath = originalPath.cloneNode(false);
+        
+        var list = normalizedPath.getNormalizedPathSegList();
+        list.insertItemBefore(list.removeItem(0), 0);
+        
+        document.getElementById("overlay").appendChild(normalizedPath);
+    }
+  </script>
+  <title>Normalized Path Test</title>
+
+  <g id="background" transform="translate(10,10)" style="fill:none;stroke:black;stroke-width:2">
+    <rect x="0" y ="0" width="430" height="480"/>
+    <rect x="5" y ="5" width="420" height="20" fill="gray"/>
+    <text x="10" y ="20" stroke="none" fill="yellow">Normalized Path Test</text>
+  </g>
+  <g id="canvas" style="fill:none;stroke:darkgray;stroke-width:10" transform="translate(75,60)">
+    <path id="SamplePath" d="M0,50 C0,0 50,0 50,50 S100,100 100,50 h20 l20,30 v-30 
+      c0,-50 50,-50 50,0 s50,50 50,0 L 280,50 v60 h-60 v40
+      a50,50 0 1,1 -50,50 A60 80 0 0,0 150,300
+      Q125,350 100,300q-25-50 -50,0t-50,0q-40,-20 0-80T0,150
+      l-40,-10 V380 H150 a25,25 -30 0,1 50,-25 l 50,-25 
+      a25,50 -30 0,1 50,-25 l 50,-25"/>
+  </g>
+  <g id="overlay" style="fill:none;stroke:lightgray;stroke-width:3" transform="translate(75,60)">
+
+  </g>
+</svg>

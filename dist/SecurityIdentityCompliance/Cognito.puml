@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Cognito [64x64/16z] {
+fTC7kYeX44JXWYPqDVlVx_icWiz1z7RT7FwZJk1i-c6rZyu0dG4w0tG6w0oOCs3EW3a3vWoOCs3EWFL02LXFdhsH5LyjFdjZH5g_X0hKPsy0kGu8yhTUyBRw
+Ym_lFl_cAyUfhBmz-YnHzk_MtXvynBQyzk_RV4B89G5rym1-zLT5rfwsxVNvLmJo_2B8b0_UZhru1KYo87xjRVIC46KDoDzuNDFRI__D7tp1lNnvJdqV3v-1
+M4fAfGgGBi-rjzrdz7kwzET0hhrjVk1aZagUdXzV_oRLTi-NTS-rjm2agUVg-U--S9notDgFjq6L020c_I_GvbwwLy4rwONTjwdlbx82ICUp0C8Gs7phVXBG
+W7YX6X0u1DeTYCYJG4GSI1ZFYhOxKF6uoWfmM0MKzzeG28_U19ddD2efI8FlWTa0xSzTo88u-6L0WSutgS3Wbm4Y62lgnIU-pJtC12WRd_jv842D0XpyuVKl
+0e9iMo3sMt3mwq05k7sPdFzrG12tm73zZNuTO43KCr038gT-7e0KgXP1vzsl0u9hcNC_3vYc28JOTVVBmBW7xmeqPw0v0yqPQCv0SmQQCz2SWUOCD6VW7m
+}
+
+AWSEntityColoring(Cognito)
+!define Cognito(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Cognito, Cognito)
+!define Cognito(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cognito, Cognito)
+!define CognitoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Cognito, Cognito)
+!define CognitoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Cognito, Cognito)

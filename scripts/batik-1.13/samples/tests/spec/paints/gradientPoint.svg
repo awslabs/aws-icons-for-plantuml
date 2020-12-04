@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Gradients on Points.                                                   -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: gradientPoint.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+   <title>Gradients on Points</title>
+   <text x="50%" y="45" class="title">Gradients on Points</text>
+
+   <g id="testContent">
+
+      <defs>
+         <linearGradient id="hGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
+                 <stop offset="0" style="stop-color:crimson" />
+                 <stop offset="1" style="stop-color:gold" />
+         </linearGradient>
+         <linearGradient id="vGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+                 <stop offset="0" style="stop-color:crimson" />
+                 <stop offset="1" style="stop-color:gold" />
+         </linearGradient>
+         <linearGradient id="hvGrad" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+                 <stop offset="0" style="stop-color:crimson" />
+                 <stop offset="1" style="stop-color:gold" />
+         </linearGradient>
+         
+         <radialGradient id="rGrad" cx=".5" cy=".5" r="1" gradientUnits="userSpaceOnUse">
+                 <stop offset="0" style="stop-color:crimson" />
+                 <stop offset="1" style="stop-color:gold" />
+         </radialGradient>
+      </defs>
+
+      <g style="fill:#eee;stroke:black">
+         <rect x="75" y="100" width="300" height="20"  />
+         <rect x="55" y="120" width="20" height="300" />
+      </g>  
+
+      <g style="fill:none;stroke:black">
+         <rect x="75" y="120" width="300" height="300" />
+         <line x1="150" y1="100" x2="150" y2="420" />
+         <line x1="225" y1="100" x2="225" y2="420" />
+         <line x1="300" y1="100" x2="300" y2="420" />
+         
+         <line x1="55" y1="220" x2="375" y2="220" />
+         <line x1="55" y1="320" x2="375" y2="320" />
+      </g>  
+
+      <g style="text-anchor:middle; fill:black; stroke:none">
+         <text x="112" y="115">hLinGrad</text>
+         <text x="187" y="115">vLinGrad</text>
+         <text x="262" y="115">hvLinGrad</text>
+         <text x="337" y="115">radGrad</text>
+         
+         <text transform="translate(70 170)rotate(-90)">No Scale</text>
+         <text transform="translate(70 270)rotate(-90)">Scale Up</text>
+         <text transform="translate(70 370)rotate(-90)">Scale Down</text>
+      </g>  
+
+      <g stroke-linecap="round">
+         <g stroke-width="50">
+            <line transform="translate(112,170)" stroke="url(#hGrad)" />
+            <line transform="translate(187,170)" stroke="url(#vGrad)" />
+            <line transform="translate(262,170)" stroke="url(#hvGrad)"/>
+            <line transform="translate(337,170)" stroke="url(#rGrad)" />
+         </g>
+      
+        <!-- Note that I wanted to scale this even more agressively
+             But it appears that very narrow stroke-widths just get
+             clamped to something like '0.0001' - Odd! -->
+         <g stroke-width=".005">
+            <line transform="translate(112,270) scale(10000)"
+                  stroke="url(#hGrad)" />
+            <line transform="translate(187,270) scale(10000)"
+                  stroke="url(#vGrad)" />
+            <line transform="translate(262,270) scale(10000)"
+                  stroke="url(#hvGrad)" />
+            <line transform="translate(337,270) scale(10000)"
+                  stroke="url(#rGrad)" />
+         </g>
+      
+      
+         <g stroke-width="50000000">
+            <line transform="translate(112,370) scale(.000001)"
+                  stroke="url(#hGrad)" />
+            <line transform="translate(187,370) scale(.000001)"
+                  stroke="url(#vGrad)" />
+            <line transform="translate(262,370) scale(.000001)"
+                  stroke="url(#hvGrad)" />
+            <line transform="translate(337,370) scale(.000001)"
+                  stroke="url(#rGrad)" />
+         </g>
+      </g>
+
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

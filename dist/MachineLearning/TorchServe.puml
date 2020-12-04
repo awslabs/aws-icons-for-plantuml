@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TorchServe [64x64/16z] {
+fTO7ikCW60JX1WpCIFS_xqQLwg4ViO6fuDYVSz1yVReMvqt0cu0t0My2tWIy2NWJy2RWJS0heEVw1iJUanpw6n1xJ_8chG6_0Zr1_tsirVO6UDYOfolFG7u1
+F6wIgq26CWVyMCm5JGrwtAJtdKjttoNeKy0pe4FMlKnfXTIdWECUkHe0jK_dk4SkzP9Aa_woRr0qMsz_q_UtN8KQ-yFZ1CNslAV5_W5ailm2P5BiHw22tZ_E
+YK_eHm2g_GfK2Fq0L9Az018VJVeRo3IlW0PIw6z0O2y1Q5BiBw1Il0OAHLBeBw3Gl0OgMGDmV0KotMkWWGRW-0eav3NGhrwJ_Z0uJiEWNq3iZz1707HjqYVa
+DT2vUyK-qxq6EadtGb-edcvy_Uuz-qO-ra3Xeozxz0Ql0UWQW6DOfXqhe94qRkmRoIiWKPVzaQd7Er19MlSTz0v0rMFd0oWalm1AP8N-0JYJNu12Kkm3aEQ0
+CdJ7FW1Af1w0daZTzgoF3u6Y0L21B3i2vmGuAb3QNRS2V7mjzX7m1o3byYav0HJvNkmZSBWLk9RhNGVWl84mNt_y71Rw6mZpT4E_1PoRmBa9d9l0kGcScy2v
+2PoRmBa9V0S
+}
+
+AWSEntityColoring(TorchServe)
+!define TorchServe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TorchServe, TorchServe)
+!define TorchServe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TorchServe, TorchServe)

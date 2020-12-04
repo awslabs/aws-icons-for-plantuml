@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ShieldAWSShieldAdvanced [64x64/16z] {
+xTO7TWCX38JX0ypFq_rFcnxciRC6d5uyYIlwP7dTg1ySf7fxz9otOP3preSMR-a0ihfsY0Ji336jNG-HPUl6wmf9Oc-8rFHoeeZmChPsekxK9nRHWel-g2b9
+vLP4QVYEWUTxntcMVfosNs7N6zkxnSfRs3lVx6_-vc_-vf5uc-z9pz9Z_fRvDOHssHE-S_mZsl89k4_uSMgGb0EqkMy-zcXiO4XwRoIyVEvzcPwozptxlkpt
+1nZkaaCnzLhw2eyatE1Adrk8ikVeLTZ7Rg-Xnm2I41x83FjiK2Z2vFZdsvA5PtiJ-2IQ_FxZdDjGaTm9f_SAymL8lh6_TIRSXSomLpFjk7bceICeYOz_xOI1
+XjeAnBG_CVS
+}
+
+AWSEntityColoring(ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvanced(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvanced(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvancedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvancedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)

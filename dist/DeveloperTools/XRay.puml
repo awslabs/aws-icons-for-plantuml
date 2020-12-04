@@ -1,16 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $XRay [64x64/16z] {
-xPO54kim44FbtRKNTF_pVl8q4q_QDFbCRo0eWsIgtv3__8UJhrLNZDxxoE9NgOTW8dw_14O3T4JuK42ID-KEM78I2ZZlrGuu7n9o0C4xVMzhXNIqkXu6Euo7
-D-Lcuv8HYNPml676CNZ5lCvQuG0qObmfWFRCBUaa6OUc7Q7WMJSvZNZR059mbgmMUPgz0balO0AjdwNG0Udr6jUp56XelZf4aijZzfS5qD5o_Rlo4qkNoMYl
-nhCi7rXk3G2QBOsYG_dS7U5UtO0cgjA0jLk7Y8yZZwM0nUn_6A35tNpmv_hD6AP0WjpwBBjbX0F-hdw1BNqkWzGRVK2v1MdaFeVvQZT5plndGFQrXrTnbqv3
-ydd-KqPT6aX3Sejjkpb2WmJ9XEpQFlMFsCWuMGyDiE3OZL2pXtw-3ZjRHUWDHaNmuLjhcpwWx40xMyvP7jiI4hde4qBNT_iHMO8vXc3SwQiWTMKHFzDVWOha
-KS-4Njr1_9dUqQ_f7SQgT6XcQvaApohQrOrq3b313YacMXqusGAxxkX5GsTTfC795KUxTGG8dhuvXmCOvFOuds-UOJGUnuRxXvXY223T8xmB8C6w1yiLcCn9
-SnSolN_2a_ocCophD-K___a8
+fPRN0gmg300d54c2__-xjnpEYYZg0xFjQSP2MVs7lQ3F-6B05mE-6F35W2y6V37WYm5V3FXYm1S3FWziKO2GoYJmxMSEmhNmxMk0aDLCImBIQs2Y2z8FcY3Q
+oBjlGZ1t-r7kWLS_8UO-1ZORUV4DocKOCw99aAIJmFtmyJOF0WqfGs3g2yMlWGr2qH8GxO6vRp2PYR6DOJYFvTmlX24ti25s3TIvFm-C8z7ySy0YtPy41BYC
+GZq52X3UTYHDCen2yslNetqjvo9m3jGU49BFi968M0_K8x0HHazJ493R9Y1aEwX78BATxH8uaA6G2QFV0eAD8o6fcBkM9ECILEJkLuUJBf27_KYqEp3nAzX9
+5xlkAVtuSp_qwuzTxyNGDmIP-HlI9uBv1UrpDn5dVXz_6KUYrOx5er1cVbM8xV3YTz-aQHe8DlLh0P9v8f_Sd--PQ5OIY3xurGAe2php5VcxmcpcDpGrP-8R
+c4aiDb1l67JtvBTVipNVFtr_y7_TBxyAElCLQTqlFv5dVYPvuyDl1sB0Xd-MTxyAMxtv6V63Tx-0rVlwATvvzMj4V0oO4FtCg-y1iND0XU0ZtPy7o7wG8PXF
+0_j3806fcBkrXoY_q_o7GDN0GL2VqVodGBKS1IHcymUQlzSN_9NchmJsnS2-6DWN0_jYO5yCx8k1VJ6mBmRsnS2_
 }
 
 AWSEntityColoring(XRay)
-!define XRay(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, XRay, XRay)
-!define XRay(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, XRay, XRay)
-!define XRayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, XRay, XRay)
-!define XRayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, XRay, XRay)
+!define XRay(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, XRay, XRay)
+!define XRay(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, XRay, XRay)
+!define XRayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, XRay, XRay)
+!define XRayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, XRay, XRay)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Snowmobile [64x64/16z] {
+fPQ7ajuW30O_qQGFtlzvKtpM_11AacEdC2wxBl8LTjW1tS3B02y3l0pmCi3B02y3l0pmCi3B0BU1ae8800cfR09xFmSCXBm9hEr7IKNLJ3L70I1v2cpy8dxs
+nqW2XEARHpy1KkQNc04atzZx5e2qd89684w1MHVTZJ43OGZCla2Ct0NAV0ULFT7rVI2DWTe7Cg1qTeymJg5s0GCAUGv4YFM1sWKY8frjG93wGEq20kFC_0JM
+1MeVKAwORY1tWJe46B0cz3SWNQr-0W287Pq2wEnNzxbYy0FovFiZ_8kV45T-FVdzRv62iF9nkdydcfa2_-y_Oynu7dtsdOF_1iBHhoUVhkxl_-ppIrN8qRS8
+HFF5VOr0L63t_ZrI3G-A1_FvusKzVyS_zW1V7DzSVt_E8nXflZY-6URltydoRCdW2x_mlUGpmvMV47ylSRZ_-FeHlYd8Qvy0dsL-VwJvPW5ixTU8-7IYlFEJ
+wFfdgeBCZK-WV3RM98YHQxyMmCw1ylw5sCmlGdWAA93vi9l_Bk1w98T06tqAeBj0SRqBj3y30SZhG7nrv_Kzu2H0T0va-BCFWJO7L039x0EM1GX6Je6s2DGY
+049ICzRd7q40KZZp-bEWQi10B5nYRHEer1H4096Ob5kQ1mxmGBiCjCj0kmoqoq2x3BJBGBiCjCj0kmoqoy1F
+}
+
+AWSEntityColoring(Snowmobile)
+!define Snowmobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Snowmobile, Snowmobile)
+!define Snowmobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Snowmobile, Snowmobile)
+!define SnowmobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Snowmobile, Snowmobile)
+!define SnowmobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Snowmobile, Snowmobile)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Users48Darksvg [64x64/16z] {
+pPM7RSKm44CN8E7zfqrFpZYBUgx89uebyHuDg2vtInFFzfJrhy0at5Rtv1BZjYQUCww_ri2ieCIlgxkdrivuTTWCerj-OJwcgPb7UH_aUq_8y_ofcTVcdzTV
+pVirDJyVrI2purqpKupRQ9RKulsfNqnbXuH1f4l1L9_U6Q-1EyDbSm3YwyvWlXNtKoDI0E0OeC2teLoKYxMT40K-9EFOFRoly1hi56VUJV_EZoyEZNcuOtZ_
+iE3z1D7vEHfm3U-wH1-P04STeQkfTPEaL5Un_7Vo6C-ka4URVIuuxl9109ng5BAHPukhhlFQly4X67a_nEiYl-oHW4SznH_GA_BB2VowtW4
+}
+
+AWSEntityColoring(Users48Darksvg)
+!define Users48Darksvg(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Users48Darksvg, Users48Darksvg)
+!define Users48Darksvg(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Users48Darksvg, Users48Darksvg)
+!define Users48DarksvgParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Users48Darksvg, Users48Darksvg)
+!define Users48DarksvgParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Users48Darksvg, Users48Darksvg)

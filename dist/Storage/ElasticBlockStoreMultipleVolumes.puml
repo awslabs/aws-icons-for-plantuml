@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticBlockStoreMultipleVolumes [64x64/16z] {
+xTI53SD044HHKM3YGF_LXc5rfANmV87ncNsxb1X3ho37NCVxQNbtWyvFtIrpN5ifJbyqGQRWPO1Coyix4FjL1u8YSQBoIW3J0KeFfUz-5cP_CsPVPl8Ybs_D
+tlnkt4VuQv_Wpz7JqzC7nf-_yX1AzdwlgKJlz_4OEm
+}
+
+AWSEntityColoring(ElasticBlockStoreMultipleVolumes)
+!define ElasticBlockStoreMultipleVolumes(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticBlockStoreMultipleVolumes, ElasticBlockStoreMultipleVolumes)
+!define ElasticBlockStoreMultipleVolumes(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticBlockStoreMultipleVolumes, ElasticBlockStoreMultipleVolumes)
+!define ElasticBlockStoreMultipleVolumesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticBlockStoreMultipleVolumes, ElasticBlockStoreMultipleVolumes)
+!define ElasticBlockStoreMultipleVolumesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticBlockStoreMultipleVolumes, ElasticBlockStoreMultipleVolumes)

@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AuroraMySQLInstanceAlternate [64x64/16z] {
+xTC5ZiCm64JX0sJikVzfbtuzhGMXART-1OFwbPBuITB9SaqnfvZJo7sk4GKSbNDtIKlgSK_b9RKQJFgDKN_ZfjUm75dL0--csk9fswkfQgxn_uSTyEHXM4h6
+Nigz7NhZsUp7l7cDwXb_zFzdm8knOdBMCzdmH5B_7Hfh76rwziPoJoUyTOFhV_hffvz--kcdXusptAkVrtWhp1HpoZcr03z3tm
+}
+
+AWSEntityColoring(AuroraMySQLInstanceAlternate)
+!define AuroraMySQLInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraMySQLInstanceAlternate, AuroraMySQLInstanceAlternate)
+!define AuroraMySQLInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraMySQLInstanceAlternate, AuroraMySQLInstanceAlternate)
+!define AuroraMySQLInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraMySQLInstanceAlternate, AuroraMySQLInstanceAlternate)
+!define AuroraMySQLInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraMySQLInstanceAlternate, AuroraMySQLInstanceAlternate)

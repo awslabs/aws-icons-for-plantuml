@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $VPCPeeringConnection [64x64/16z] {
+pPS7SiGm24KFy7wozpzjgfbnz34QJ1hRPC43hIfw_6FXa04ADvo8LDGDxTAWbRUesMNGwKojDlPGTeD5o9yfyNhyTUr0APvNNaMNutaB6j5JXLO-7V87yMMX
+3BSw4UC76sEFxkDlBIZiklNSuIdCUWhkyTHMjSRulJXVuzekreeNXpHuT5Rd3aJyXkPSKC93C9UOZOcY361-3Ik6rBR4axsYOiMV3kLXvWwMkEV_gzLNACz6
+B3ocolOiJbBmyb73h8hs6svHWaZxxv8l-Y_gomtIno-VFy_aulF72XG9H35_YLAHWLJhXrqIqr__ymrehndoq_rxU7vCpw_X-Jaulm5ev0zoN9tynJLCywTf
+_kR287yiMx37v_dpF7_FRI3plNU0lWvvqCplJ_SzpEwFVK6HlFnVUGK
+}
+
+AWSEntityColoring(VPCPeeringConnection)
+!define VPCPeeringConnection(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCPeeringConnection, VPCPeeringConnection)
+!define VPCPeeringConnection(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCPeeringConnection, VPCPeeringConnection)
+!define VPCPeeringConnectionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPCPeeringConnection, VPCPeeringConnection)
+!define VPCPeeringConnectionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPCPeeringConnection, VPCPeeringConnection)

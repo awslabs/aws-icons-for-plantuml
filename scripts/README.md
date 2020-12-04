@@ -2,40 +2,51 @@
 Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 -->
+
 # Generating the PlantUML Icons for AWS
 
-If you would like to have customized builds and/or experiment with *PlantUML Icons for AWS*, you can generate your own distribution of icons and PUML files for local use.
+If you would like to have customized builds and/or experiment with _PlantUML Icons for AWS_, you can generate your own distribution of icons and PUML files for local use.
 
 ## Prerequisites
 
 To generate the PlantUML files locally, ensure the following is prerequisites have been completed:
 
-* Python 3.6/3.7 and packages from the `requirements.txt` file.
-* [Amazon Corretto 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) or [OpenJDK 8](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-* Download the latest [AWS Architecture Icons - Assets - PNG](https://aws.amazon.com/architecture/icons/) from here, unzip,  and copy the PNG file contents from `AWS-Architecture-Icons_PNG/Light-BG` directory to `source/official` directory.
+- Install Python 3 and packages from the `requirements.txt` file.
+- [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `AWS-Architecture-Service-Icons_20200911` and `AWS-Architecture-Resource-Icons_20200911` to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
-  the folder structure should look like this:
+  The folder structure should look like this once the directories have been copied over:
 
-    ```
-    ├── aws-plantuml-icons
-          └── source
-              ├── AWScommon.puml
-              └── official
-                  ├── _General
-                  ├── _Group Icons
-                  ├── Analytics
-                ...
-    ```
+  ```
+  aws-icons-for-plantuml/source
+  ├── AWSC4Integration.puml
+  ├── AWSCommon.puml
+  ├── AWSRaw.puml
+  ├── AWSSimplified.puml
+  └── official
+      ├── AWS-Architecture-Resource-Icons_20200911
+      │   ├── Res_Analytics
+      │   ├── Res_Application-Integration
+      │   ├── Res_Blockchain
+      ...
+      └── AWS-Architecture-Service-Icons_20200911
+          ├── Arch_AR-VR
+          ├── Arch_Analytics
+          ├── Arch_App-Integration
+      ...
+  ```
 
-## Configure
+## Configure to Build Icon Set
 
 ### Configuration File: config.yml
 
-The `config.yml` file is used to map specific file names to AWS categories, and set  the name and parameters set for each category or individual file when running the `icon-builder.py` script. The included configuration file is based on the latest release of the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).
+The included `config.yml` file is a curated file that maps specific file names to AWS categories and then sets the name and parameters for each category or individual file when running the `icon-builder.py` script. The included configuration file is specific for the release of the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and the referenced release tag.
+
+If you are using the `config.yml` file as the basis to incorporate a newer version of the AWS Architecture Icons, you may see an _Uncategoried_ category of mismatched entries.
 
 For general categories, the `Color` attribute is set to match as closely as possible the color represented for that category. For example, in the AR-VR category, the color for Amazon Sumerian is `#CC2264`, or approximately Maroon Flush. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-icon.
 
-On top, each AWS service is mapped to it's primary category.
+In the curated `config.yml` file, each AWS service is mapped to it's primary category. This then maps to the specific PUML file referenced by _Category/Filename.puml_, or are included in the _Category/all.puml_ file.
 
 Next, install the python packages from the `requirements.txt` file. Depending upon your operating system, this may be through `apt`, `yum`, or `pip install` if using a virtual environment. The two requirements are:
 
@@ -44,13 +55,31 @@ Next, install the python packages from the `requirements.txt` file. Depending up
 
 For PIP users, simply run `pip3 install -r requirements.txt` in your environment.
 
-## Run
+## Verify Dependencies and Process
 
 To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags..
 
 ```bash
 $ ./icon-builder.py --check-env
 Prerequisites met, exiting
+```
+
+### _Optional_ Create New `config.yml`
+
+If you would like to start from scratch, delete the existing `config.yml` file and run the `icon-builder.py` script to build the `config-template.yml` file with only the default color and size set. You can the rename to `config.yml`.
+
+```bash
+$ ./icon-builder.py --create-config-template
+../source/AWSCommon.puml
+Successfully created config-template.yml
+```
+
+To process all the files, run the command with no parameters. NOTE: This will take at least a few minutes to complete, and the script with launch multiple Java processes to generate the icons.
+
+```bash
+$ ./icon-builder.py
+../source/AWSCommon.puml
+Successfully created config-template.yml
 ```
 
 Next, run the same command without `--check-env` to create all new icons and update the `config.yml` file.
@@ -63,12 +92,21 @@ From a logical point of view, the following happens:
 1. Cleanup: all files and directories from `dist` folder are deleted.
 1. AWSCommon.puml and supporting PUML files are copied to `dist`.
 1. All files ending in `_light-bg.png` are processed in the `source/official` directory:
-    * Matching files will have a `Target` name and `Color` setting applied.
-    * Non-matching files be set to Uncategorized with default `Target` and `Color` settings.
+   - Matching files will have a `Target` name and `Color` setting applied.
+   - Non-matching files be set to Uncategorized with default `Target` and `Color` settings.
 1. For each file, the source PNG will be resized, preserving transparency if set.
 1. A PlantUML sprite is generated.
 1. In addition to single AWS services PUML files, a combined PUML file, named `all.puml`, is created for each category.
-1. A markdown table with all AWS services,  image/icon, and the PUML name is generated.
+1. A markdown table with all AWS services, image/icon, and the PUML name is generated.
+
+## Build Notes
+
+### Release 7.0-2020.09.11
+
+This is a makeover release where all items have moved. Of note:
+
+- Separate directories for Service icons and Service resource icons
+- Resource icons only have 48x48 pixel icons (Res_48), while Service icons have 16, 32, 48, and 64 sizes. To accommodate 64x64 icons, Apache Batik is used to generate the icons directly from the SVG format files.
 
 ## License Summary
 

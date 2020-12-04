@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN" "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd" >
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ======================================================================  -->
+<!-- Modification of a polygon attributes                                    -->
+<!--                                                                         -->
+<!-- @author nicolas.socheleau@bitflash.com                                  -->
+<!-- @version $Id: path_pathSegList1.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ======================================================================  -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css"      ?>
+
+<svg width="450" viewBox="0 0 450 500" height="500" id="body">
+   <title>&lt;path&gt; getPathSegList &apos;onload&apos;</title>
+
+  <text x="50%" y="45" class="title">&lt;path&gt; getPathSegList() in &apos;onload&apos;
+  </text>
+  <defs>
+     <path id="segment_provider" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+  </defs>
+  <script type="text/ecmascript"><![CDATA[    
+        function getNumberOfItems(evt) 
+        {        
+           var elt = evt.target;        
+           nb = elt.getPathSegList().getNumberOfItems();        
+           var text = elt.getOwnerDocument().getElementById('test1_text');        
+           text.getFirstChild().appendData(" "+nb+" segments");    
+        }
+        function clear(evt) 
+        {        
+           var elt = evt.target;
+           elt.getPathSegList().clear()
+           nb = elt.getPathSegList().getNumberOfItems();        
+           var text = elt.getOwnerDocument().getElementById('test2_text');        
+           text.getFirstChild().appendData(" "+nb+" segments");    
+        }
+
+        function getItem(index,evt) 
+        {        
+           var elt = evt.target;        
+           nb = elt.getPathSegList().getItem(index);        
+           var text = elt.getOwnerDocument().getElementById('test3_text');        
+           text.getFirstChild().appendData(" "+nb.getPathSegTypeAsLetter()+" ("+nb.getX()+","+nb.getY()+")");    
+        }
+
+        function insertItemBefore(evt,fromIndex,index) 
+        {        
+           var elt = evt.target;        
+           pointProvider = elt.getOwnerDocument().getElementById('segment_provider');
+           point = pointProvider.getPathSegList().getItem(fromIndex);
+           nb = elt.getPathSegList().insertItemBefore(point,index);        
+           var text = elt.getOwnerDocument().getElementById('test4_text');        
+           text.getFirstChild().appendData(" ("+nb.getPathSegTypeAsLetter()+")");    
+        }
+        function replaceItem(evt,fromIndex,index) 
+        {        
+           var elt = evt.target;        
+           pointProvider = elt.getOwnerDocument().getElementById('segment_provider');
+           point = pointProvider.getPathSegList().getItem(fromIndex);
+           nb = elt.getPathSegList().replaceItem(point,index);
+           var text = elt.getOwnerDocument().getElementById('test5_text');        
+           text.getFirstChild().appendData(" ("+nb.getPathSegTypeAsLetter()+")");    
+        }
+
+        function removeItem(evt,index) 
+        {        
+           var elt = evt.target;        
+           var nb = elt.getPathSegList().removeItem(index);        
+           var text = elt.getOwnerDocument().getElementById('test6_text');        
+           text.getFirstChild().appendData(" "+nb.getPathSegTypeAsLetter()+" ");    
+        }
+
+        function initializeAppendItem(evt,fromIndex1) 
+        {        
+           var elt = evt.target;        
+           pointProvider = elt.getOwnerDocument().getElementById('segment_provider');
+           point = pointProvider.createSVGPathSegMovetoAbs(150,200);
+           nb = elt.getPathSegList().initialize(point);        
+           var text = elt.getOwnerDocument().getElementById('test71_text');        
+           text.getFirstChild().appendData(" ("+nb.getPathSegTypeAsLetter()+")");
+           point = pointProvider.getPathSegList().getItem(fromIndex1);
+           nb = elt.getPathSegList().appendItem(point);        
+           text = elt.getOwnerDocument().getElementById('test72_text');        
+           text.getFirstChild().appendData(" ("+nb.getPathSegTypeAsLetter()+")");
+        }
+
+        function setAttribute(evt,pointsList) 
+        {        
+           var elt = evt.target;
+           var points = elt.getPathSegList();
+           nb = points.getNumberOfItems();        
+           var text = elt.getOwnerDocument().getElementById('test81_text');        
+           text.getFirstChild().appendData(" "+nb+" points");
+
+           elt.setAttributeNS(null,"d",pointsList);
+
+           nb = points.getNumberOfItems();        
+           text = elt.getOwnerDocument().getElementById('test82_text');        
+           text.getFirstChild().appendData(" "+nb+" points");
+        
+        }
+
+        function setAttribute2(evt,pointsList) 
+        {        
+           var elt = evt.target;
+           var points = elt.getPathSegList();
+           nb = points.getItem(1);        
+           var text = elt.getOwnerDocument().getElementById('test91_text');        
+           text.getFirstChild().appendData(" "+nb.getPathSegTypeAsLetter()+" ("+nb.getX()+","+nb.getY()+")");
+
+           elt.setAttributeNS(null,"d",pointsList);
+
+           text = elt.getOwnerDocument().getElementById('test92_text');        
+           text.getFirstChild().appendData(" "+nb.getPathSegTypeAsLetter()+" ("+nb.getX()+","+nb.getY()+")");
+        
+        }
+
+   ]]></script>
+   <g id="test-content" transform="matrix(1.0 0.0 0.0 1.0 -140 -91.37931)">
+
+        <!-- onload="getNumberOfItems(evt)" -->
+        <text x="180" y="160" font-size="11">getNumberOfItems</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+     <path  id="test1" style="fill:gold; stroke:orange; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" onload="getNumberOfItems(evt)"/>
+     <text x="160" font-size="9" y="290" id="test1_text">
+        path with
+     </text>
+
+     <!-- clear(evt) -->
+     <g transform="translate(150,0)">
+        <text x="180" y="160" font-size="11">clear</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+     <path  id="test2" style="fill:gold; stroke:orange; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" onload="clear(evt)"/>
+     <text x="160" font-size="9" y="290" id="test2_text">
+        path with
+     </text>
+     </g>
+
+     <!-- getItem(evt) -->
+     <g transform="translate(300,0)">
+        <text x="180" y="160" font-size="11">getItem</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+     <path  id="test3" style="fill:gold; stroke:orange; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" onload="getItem(1,evt)"/>
+     <text x="160" font-size="9" y="290" id="test3_text">
+        Item 1:
+     </text>
+     </g>
+
+
+     <g transform="translate(0,150)" >
+        <!-- onload="insertItemBefore(evt)" -->
+        <text x="180" y="160" font-size="11"  >insertItemBefore</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+        <path id="test4" fill="#ffd700" stroke-width="4.0" 
+           d="M175 200 L175 250 225 250 225 200z" 
+           stroke="#ffa500"
+           onload="insertItemBefore(evt,5,1)" />
+     <text x="160" font-size="9" y="290"  id="test4_text">
+        inserted seg
+     </text>
+    </g>
+
+     <g transform="translate(150,150)" >
+        <!-- onload="replaceItem(evt)" -->
+        <text x="180" y="160" font-size="11"  >replaceItem</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+        <path id="test5" fill="#ffd700" stroke-width="4.0" 
+           d="M175 200 L175 250 225 250 225 200z" 
+           stroke="#ffa500"
+           onload="replaceItem(evt,3,2)" />
+     <text x="160" font-size="9" y="290"  id="test5_text">
+        replaced seg
+     </text>
+    </g>
+
+     <!-- removeItem(evt) -->
+     <g transform="translate(300,150)">
+        <text x="180" y="160" font-size="11">removeItem</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+     <path  id="test6" style="fill:gold; stroke:orange; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" onload="removeItem(evt,3)"/>
+     <text x="160" font-size="9" y="290" id="test6_text">
+        Item removed :
+     </text>
+     </g>
+
+
+     <g transform="translate(0,300)" >
+        <!-- onload="initialize/appendItem(evt)" -->
+        <text x="180" y="160" font-size="11"  >initialize/appendItem</text>
+     <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+        <path id="test7" fill="#ffd700" stroke-width="4.0" 
+           d="M175 200 L175 250 225 250 225 200z" 
+           stroke="#ffa500"
+           onload="initializeAppendItem(evt,1)" />
+     <text x="160" font-size="9" y="275"  id="test71_text">
+        intialized seg
+     </text>
+     <text x="160" font-size="9" y="285"  id="test72_text">
+        appended seg
+     </text>
+    </g>
+
+     <g transform="translate(150,300)" >
+        <!-- onload="setAttribute(evt)" -->
+        <text x="180" y="160" font-size="11"  >setAttribute</text>
+        <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+        <path id="test8" fill="#ffd700" stroke-width="4.0" 
+           d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" 
+           stroke="#ffa500"
+           onload="setAttribute(evt,'M175 200 L175 250 225 250 225 200z')" />
+
+     <text x="160" font-size="9" y="275"  id="test81_text">
+        before
+     </text>
+     <text x="160" font-size="9" y="285"  id="test82_text">
+        after
+     </text>
+    </g>
+
+     <g transform="translate(300,300)" >
+        <!-- onload="setAttribute2(evt)" -->
+        <text x="180" y="160" font-size="11"  >setAttribute2</text>
+        <path style="opacity:0.5;fill:#eee; stroke:#aaa; stroke-width:4" d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z"/>
+        <path id="test9" fill="#ffd700" stroke-width="4.0" 
+           d="M150 200 L200 200 C 210 180 250 240 220 250 Q 210 275 200 250 L 182.5 237.5 150 250 162.5 212.5z" 
+           stroke="#ffa500"
+           onload="setAttribute2(evt,'M175 200 L175 250 225 250 225 200z')" />
+     <text x="160" font-size="9" y="275"  id="test91_text">
+        segment 1 before
+     </text>
+     <text x="160" font-size="9" y="285"  id="test92_text">
+        segment 1 after
+     </text>
+    </g>
+
+</g>
+</svg>

@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Test of adding/removing event attributes                               -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: eventAttrAdd.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<script language="text/ecmascript"><![CDATA[
+  var root = document.getRootElement();
+
+  function adjust1 () {
+    // Ensure we can add event attr.
+    root.setAttributeNS(null, "onzoom", "setRect('a', 'lightblue')");
+    root.currentScale = 1.1;
+    setTimeout(adjust2, 500);
+  }
+
+  function adjust2() {
+    // Ensure we can modify event attr.
+    root.setAttributeNS(null, "onzoom", "setRect('b', 'lightblue')");
+    root.currentScale = 1.0;
+    setTimeout(adjust3, 500);
+  }
+
+  function adjust3() {
+    // Part 1 ensure we can remove event attr.
+    root.setAttributeNS(null, "onzoom", "setRect('c', 'lightblue')");
+    root.currentScale = 1.1;
+    setTimeout(adjust4, 500);
+  }
+
+  function adjust4() {
+    // Part 2 ensure we can remove event attr.
+    root.removeAttributeNS(null, "onzoom");
+    setRect('c', 'gold');  // It should stay gold.
+    root.currentScale = 1.0;
+    if (inRegard) {
+      setTimeout(done, 500);
+    }
+  }
+
+  function done() {
+      regardTestInstance.scriptDone();
+  }
+
+  function setRect(id, color) {
+    var elem = document.getElementById(id);
+    elem.setAttributeNS(null, "fill", color);
+  }
+
+  var inRegard  = false;
+  function regardStart() {
+    inRegard = true;
+    adjust1();
+  }
+]]></script>
+
+  <title>Addtion/Modification/Removal of event attributes.</title>
+  <text class="title" x="50%" y="40" text-anchor="middle"
+    >Addtion/Modification/Removal of event attributes.</text>
+  <text x="50%" y="55" text-anchor="middle"
+    >Click Rect to start test</text>
+
+  <g id="test-content" onclick="adjust1()" text-anchor="middle">
+    <rect id="a" x="50" y="100" width="250" height="50" fill="crimson"/>
+    <rect x="310" y="100" width="25" height="50" fill="lightblue"/>
+    <text x="175" y="130">Event Attr Add</text>
+
+    <rect id="b" x="50" y="175" width="250" height="50" fill="crimson"/>
+    <rect x="310" y="175" width="25" height="50" fill="lightblue"/>
+    <text x="175" y="205">Event Attr Modify</text>
+
+    <rect id="c" x="50" y="250" width="250" height="50" fill="crimson"/>
+    <rect x="310" y="250" width="25" height="50" fill="gold"/>
+    <text x="175" y="285">Event Attr Remove</text>
+
+  </g>
+
+</svg>

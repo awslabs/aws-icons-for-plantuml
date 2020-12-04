@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $RDSProxyAlternate [64x64/16z] {
+xTQ50G9134JH0jXD-gyME_auoGJd1ZjxQy7yGzAIKJKHDJdnoTaY4fWqbC3fbOrixlhMMj2p9CRI3AytlPtvTlAQwfy7MF8qa9q_VeZecKJIEtuufFG_mvp7
+yfhsJQt_QfWt31xmGdxBizubtof-_nZkdTrTXkh6F27U53ziMzZJ4zliXJpZw7oEuTSyB-VzrxrhdkM01pmznlsTr3opr_sdVluNl_Z5Tz5RzVztrKiDeDXg
+2cTR2dsAd2ZwDx81
+}
+
+AWSEntityColoring(RDSProxyAlternate)
+!define RDSProxyAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RDSProxyAlternate, RDSProxyAlternate)
+!define RDSProxyAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RDSProxyAlternate, RDSProxyAlternate)
+!define RDSProxyAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RDSProxyAlternate, RDSProxyAlternate)
+!define RDSProxyAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RDSProxyAlternate, RDSProxyAlternate)

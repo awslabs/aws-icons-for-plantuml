@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AppMeshVirtualService [64x64/16z] {
+xTK5hiGm40FG0zYjxt_Q3rkmr96JQ9cyE5MUCYdguuDUNi0hvcuUlJo_LymZ_TVZ59xhYJLdUcpX-NxvFjih-BFd1yzOFmvR1lqSE33cHOzsEUuznbvYy9wX
+xPMzsolUHUZVl92o_8PNz73cwBrAewC65JsNx-9tk9JH0xHtCrwrKtoztbcxpjvTJgwTILtlVYkNXZmEdf9xFyDxqtaU5_fwGN3Sgt3NNU_n30y4B4a-hoTx
+3Dm_c7ti9o_OfJccrlneUh5x_wdUMOUnUi2PeyTUz-u_zZ5-Vd1tW68GGhVKZWVIjZQTC-tJkEKndgzFdg7BzN-sNwBpOdvc8l_c5m
+}
+
+AWSEntityColoring(AppMeshVirtualService)
+!define AppMeshVirtualService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppMeshVirtualService, AppMeshVirtualService)
+!define AppMeshVirtualService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppMeshVirtualService, AppMeshVirtualService)
+!define AppMeshVirtualServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppMeshVirtualService, AppMeshVirtualService)
+!define AppMeshVirtualServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppMeshVirtualService, AppMeshVirtualService)

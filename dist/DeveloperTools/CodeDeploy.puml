@@ -1,16 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CodeDeploy [64x64/16z] {
-xPNRqiGe28GR5H3w_TztAyQ9_qLI4xTsx-Rx3mEZ3KsE-J_numSd_rARqTtTUunaKnrM1HEf5ZiLcBqUCW5KpqzKJxwL7-fY4O9ETaY45Q1qlckkGF4a6uoP
-D3IUZbhoXRn2B9aCb1mK19DqGGb-aqUPkwYZ_JGmAZV8bmBCWZfT2iw02JaNgLyBr8-S7PKvO4Nd6IbACXzOwyl-740_OKDxrezpjPfUOQ1opUTyTW-x5aNo
-OiNiAFa0_REsUYulApO-w2kSgqzR-eREhmOOaEHWU35-CjgHpEmy6pUCNU6grfCqEBERcWVfK3BSL7sTZSMQh69Gd8fkWa6D3is6WMWy3I27Kjsj0jfGW6hk
-LW154OXwTvKZV1WVuic3Niw-8qd3WPvBmqVdZTxNzum2bEHQkMOc6-3t-ig_Pdnb1icLrISzzDh5WlXRhLmnNMxrcIRh6KNzsz_HPZBcrxo5KIyBz6lYlyNe
-iySjdClBykGQHcU36vOzuzZgUU7wkGzaJVLaOVfZJbR2_k89p6GMkQE-V8ynW1iv4FaA1khAugCgEthEIP8gdIFRrRCNPwOWFBclfm5A6jHHazlw1jYSkg0c
-D_K1AC-RagF0ffuE-FcmP5R8_lmEz439-UBUrIUzPeEH5PhCRNqo0vAPuIFRrYSLUXRQrmz2anSx-k9su6uBsT3V8laMjpjwleNtv7_CZn__
+fPK7hkCm4CKuwc_i-vzteUyY8QiKmFmr2aZNSVn27sZlyOS1VnZmXm5_6F270NyOy8S1VnZmXm5_6sWv1WCin5pV1lnD81ipbkewu2kK04A0t3A4212FmWz-
+wNAH84igq5G2aDJvvYj2Q98oGPr05zkrhC--38fS4bHrAgXJ3EfhOA7Rtw8gfeD0KQU5AR3s5J3v7v6iWqpK7MWZiF3ZhRlHT6gWEn3kmC8lSAqqJ1TJoaZg
+B7qPUQIYNtwawAHSPtNbPu9Vf9wwJq3IQ4LDWSq7WkeNWUfNe19klq6T0jiKA0I_iUDCd8xf9f8q0jiK29JXW_mEmF3hY7L_10IgAPZ58XUuSZGBiKg6rFfR
+8JL17O5j10fcd9I6PKv2Csha94Qoxi0s0WcmN5ih0OwHBRNLR63NgtAiwsORWMvD4mnr32HOEuJQSvC_0ZQT_WmKzodGBgFPmky1g7uJCB-HaOPIOE5lRb3M
+zu87ogpRojyyGj2uc3wOTZz1Q4j_ysgGf_llecBkzzdBqjhVt7jTz_nSP9B_1J9OrSA_0zN0EwtgzbMEMMYGf9K_0fwolqEvQEdFWSxoOqzZVUcFG6I5hGBR
+AX2m_pa6-hk_TN-wTYyFXE_-Dlk2oUzyzxV3LpmVmwdEll_eLyZkaL8XpRx_v2U8fvKXQFBzkwzu36CbzD-6pRv_znEaUmeAXE5tllfRTtHCuN4etHzyzRTc
+P67k3Og_-lxLtpoVWrkQ3_ybiB_pEvwetbdvVlZx1tzp-NlV3tzV-KlaBtH_5KYiCF-Fxe_04l-8zeU1_M5WVnZO7mRsXu7zOM1_6DWV1lQ7WNy
 }
 
 AWSEntityColoring(CodeDeploy)
-!define CodeDeploy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeDeploy, CodeDeploy)
-!define CodeDeploy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeDeploy, CodeDeploy)
-!define CodeDeployParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodeDeploy, CodeDeploy)
-!define CodeDeployParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodeDeploy, CodeDeploy)
+!define CodeDeploy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CodeDeploy, CodeDeploy)
+!define CodeDeploy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CodeDeploy, CodeDeploy)
+!define CodeDeployParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CodeDeploy, CodeDeploy)
+!define CodeDeployParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CodeDeploy, CodeDeploy)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SnowballEdge [64x64/16z] {
+fTHRhi8m38JXoTsJx7-_HnOMb2ODqV4lNh-XTrwIJUqXEWVe7A1pWCu1EWVe7A1pWCu1EWVe7E2b6d5GA0y-ux2qz1KeyliKMWRAoaUKiskG4LSU44e2h2WY
+W2OYyNBiqW1PUZBXK-FRLtnAEYkozgfUPMHIhAHAqwMN5_FzvcarV5N5UdintzUU4PUYp5xCzxMtZAsycEyxpuqNyttdkV5Yld_xY7LnycA-VtayDNlfrhTV
+diBMzvtdWUyxJw-dr_F0zvtdWUyxJz52-AUlfPIgud--GMkYnVZi-_JyaSme2T1VHbQryVt-_2lN4XEq_CDttYf0GceaQq84yjRF0q3YfmXilJRzFyaS4B9G
+Vln_cmPQGY83j23KKtdq6VTO0JHcXCOMa5a1rBLdvpJ0WjVVDv8DWKn0MVc8qYzzpZvz7Yc0P5hx1XJE0tNr_vpzTF8Fvzy0L7BXUusOkbr_qXubcXzzqtJ_
+IGA5rCpl1-RdBm6y38pzmFVphwS2P5hcJmQkxn_VgJyQUB__1OMNpEy7hjyVtf9nEb0rJesZWUU6Ss0u1uPpO3W7XdDWE0U6Ss0u1uPpO3W7_W
+}
+
+AWSEntityColoring(SnowballEdge)
+!define SnowballEdge(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SnowballEdge, SnowballEdge)
+!define SnowballEdge(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SnowballEdge, SnowballEdge)
+!define SnowballEdgeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SnowballEdge, SnowballEdge)

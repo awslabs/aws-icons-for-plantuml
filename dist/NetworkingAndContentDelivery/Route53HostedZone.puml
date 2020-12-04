@@ -1,16 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Route53HostedZone [64x64/16z] {
-jPO7UYin28GbrE2__trVaJVcitWbk4pY9ZFi30kooXjHurBlVmsBwng2nKn2IlrBWWNjp0XdT8FrH_e0w2VzJD01HebeR2pn5OErm5oLB3PQYKwXDGEctDYB
-hNI_tE9b0jOQc9JeT7pbDrKrW5b-OVhIfM_4ggmhk3G5t8gBtj2Ra7dMS8BUdOobgckunBYaC1-BQZNLQGRziNOb1Q-X9ql09RkP7BnaCslULS_jNc7b-GjK
-hjvvphzMbv9qi2dYoT8Ld8-I5NBz0tgqmyZmnranO-MARt4XWN2v2JLbVmP3yds-X7ADxFL7y9_X1_-6bWGKAo_U_rRUrtyjt_yF0fwRFtUJS1yv-V5taWzJ
-6lqkmAsaO5YuzzaUYAEN7q95ysGdLcC-nvzO3REOAy1R-C_hf_fUcCV2ujQJtuJw4-thl30--G4Qp_x-Zt0QInvVN0ehj_yjC6U8WVL4wGnCpfEwzczfg5s9
-1-1XWAsG8f3N3Xpncsa0-37NuQTW06pMlmgx0beui5xf3viXnLJpg3EpwGpaW2f3sHxhjJ0CG8S4xjyWq_YwfTss8oaPN1TL4NKfpsG8x6INvZexDcfewnn4
-ocVn4m
+pTN9aOK048BX03wUvf_jdALwbjRPE5ByuExvlvLDc7RGLhoFTzfePSOFq7Z5qvbEEwvPf2Dct2Kl490fCPrgb4wpC-Dd5Rmkgs2-gkdZ1dKTC5_3hWJT7zUr
+0V-om0PlGGhV5zp7pnSyt7Vx19hOygy2ZcL1EhxaON1sy_Tvv27l8TzM7l7Fpp-_UVx1uApuVEVp1rdoxiyt05dpxiqtiiVx5x0z-Xw5UtpZ6tdE-sC-_s3_
+Ra6-x_a9REU_y_yRo7Rzg3ghSMaBnvTf6Lq-XbEngK6Cx0iQdniayx2FhtJC6qP_5hsJuQY-VfcgxQi220zUS4MlT1IzL-5x7Sv_hZS
 }
 
 AWSEntityColoring(Route53HostedZone)
-!define Route53HostedZone(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53HostedZone, Route53HostedZone)
-!define Route53HostedZone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53HostedZone, Route53HostedZone)
-!define Route53HostedZoneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53HostedZone, Route53HostedZone)
-!define Route53HostedZoneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53HostedZone, Route53HostedZone)
+!define Route53HostedZone(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Route53HostedZone, Route53HostedZone)
+!define Route53HostedZone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Route53HostedZone, Route53HostedZone)
+!define Route53HostedZoneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Route53HostedZone, Route53HostedZone)
+!define Route53HostedZoneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Route53HostedZone, Route53HostedZone)

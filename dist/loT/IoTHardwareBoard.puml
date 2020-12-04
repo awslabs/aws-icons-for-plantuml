@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTHardwareBoard [64x64/16z] {
+pTS7giD038HXsYlI0hh_QTDdKmOBpye1_QycyUTUetDspGiOhMkaSahdC8uN8gU_alyFcuLB_cuCpHU21qUX-01_cnsNjm3zN_5zi-M8gtNnj4A2eWxrO0NF
+IyJzsopn-8VpRKzRXDP8xiTKF0Ayp7pOvWXecxF7FvypAlXhF0BDymZsBZ-YTR1t_QDaAwOUBoFpOzERuVK_r4Yl_Rb7TM_NrhrbJVzOCsFLuy_ntdMlhp_s
+r1TzeGu-2hn17U-_SCVxEw-P7kPHlNyjtpyh8_1OvFNd1m2Z5vNd9otYSWMDW1jt1W
+}
+
+AWSEntityColoring(IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTHardwareBoard, IoTHardwareBoard)

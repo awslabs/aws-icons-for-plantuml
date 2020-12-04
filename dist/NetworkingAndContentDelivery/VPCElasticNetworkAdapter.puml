@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $VPCElasticNetworkAdapter [64x64/16z] {
-nTS7pkim30FWU5ky_tqxY1WsAcKWUeF_7bzRCSF9zcyIVBn9zl00IFHu0RhJepeziiTt0QB3rmnqZzygK3r-wyyhe8zoi1V4T1L1-_oVNK5ek0wzNS4jZiB_
-PGLwswRBS6wpWi37lXjMe7qkfUHmXSqAw6LKT1bMe7mVFfn7Lq3_PO9skIqaZGfqV_tZ0ovIPmMc5_HS3gFt0ktrjjHRcXMS-63kFjEpWXFVeH9NlrQWlTbY
-MlrQWUqR3-aEuQilshC2sy__gn1-ZTgpWYlVTfyCpmeydXMS-thcMK7WSDhNyVpXcPV-ZG3xrvFNRtcLa_wqtt9jFwcRlVriRqVlFvQlOHNC-3Qg_LTv0DBc
-QnIcVASL4UZZHpy_8ByhI-C2o9HrUEstcFlYAwGKeU_VRqjUXzT-c94EeSnvVnGrlFODQ-Zd56fu-dd-PcTJ4rNXTrBC9Om-p_NZPmLPVg6t_FIEzOlUiNxI
-EzVlvhb-O7VNoTRmJEXtV1d3Fxb-o_GS_kdrPzc7TtWE_zWxhvyBX_z_zm-VvFzw_zJ_t_qZxr__s_tpUTu
+rTVLOSD040N00kObrt-t-GcjMBSEUCqmEgRn524zZgxNzMbwNQ_hTNqcVH3ej3-OJ_-W5pY93mYvnQiFJFBizcFe30JaSkj2TlD_xWCDFy2kTn8l6nU0ZvU9
+Nb3yJ2-8wazdGL1y5ZvgVBcDEeJg3mfUUi4Dd-83ZVG7EFAbmhBo0ypwMWN8VHzef3yWj-klUlC-CEOzPCSd6xnwC35-2j_sAG3AszF-ozgh7ZBXJyVlo8xV
+vzMFg56IBeNVzauzTVvCQUNNehFUUu07hn_fhb-vatmUktx7fIYyH2RsButzq_J-7_p9_f7-_XNIz7zxVlZZyzCVdXy7uv_66m
 }
 
 AWSEntityColoring(VPCElasticNetworkAdapter)
-!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
-!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
-!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
-!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)

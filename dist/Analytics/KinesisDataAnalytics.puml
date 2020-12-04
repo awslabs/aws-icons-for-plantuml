@@ -1,15 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $KinesisDataAnalytics [64x64/16z] {
-xPO73kCm30INdPJ-_zz32W4XiPBuUXkKrA6NibN6Ry5__bEUztSHzHM-m-_l65_ZnpVw2Rs_4-HN-0MwlpFe-0eKtfM-iW6g3Y1V5w0r_he2t8qNW_EyNuGk
-882TzjVh6a1U9_trkga0QPn_ZC7U5GWWzJmTWU_9omK0ICmZtpGJtk_o8dNo2cF25IA-4SV1RJITlCQOSuxAC1Kcmer3FmbBuGeXN6j4rPWNhbzVUTzu9yS5
-Ob4pZsQxl8G0a7MyArsPy82F7Mbq6-_8Mgjak9irELwGBeGBEhwQ31EIhzQh_JpcfPnsoqyw3SV4NjOUlwhhWgBFCFp3-wUeEHwP3d_x_BH_rEh6Ju1ZpIBp
-qKyY8blyxVmn0fvz1n6u_NVpjyQpxwFzBQMzyYs-crbyv3k1_77y4XSs_cxzzDMNf8s_NRzvAbA8Y2jXaz_xnSl-GJuL0J1G2Ttus_rBQeoBBrC_zGso5ZhX
-R_RlhV_k_41rtY-YvKa-uU_FJufitov-80OT-Blpcq91pZ23EC4LwY0zzlt8FsJJlrSdYMx9ZwdnM_2V_tm1
+fPG7rkOW30D5n_BzpxibCO-4H_ZPHLylCq5EaLdg8kKTEHJ8eK0E1N8ea4E170haK2270XuAE1C0smAIKtvNm9a0gBi2pWGUHJO5d0a2acmAE1DaEDaKqF8U
+dKFQ5B3bDReCv3q11u6_mGZ4BG47GK8G4xYT8N8GLDY-Amv0p3y9E0fY4qZs0E1ZBWi1EGf2hrwYnnNdGqmfvrBADmy8fLMlRTavUeSnKzuZaQqw_AMmb9nY
+2Duxvxxv31IoLM_Tgpooxdyrf_qp1Q2NR-tBYcS44Al8hFkwlwLu02xcAZtrR_dMtgrviaPdrPDPnYpMRueKtAFxNRvL7mMSHqgoxjESyl-u_lnO_vMj-PKg
+d_bf_rqTLbaSFxHuVCLtWRwFtoHjW2I-qrUWEfm_Lqe02L2c0Ne5xGAFtATmyrpnOdmJ0DAcu9BSF5Uy6A_aC0NpSH1u0Dvu4-WeI41bumS1_iPu4-WW41jY
+v_dQyC2B3eA4SBzsdhRX9Ty47kMUuOEdWKlU10v2ii3uQ-7a3g-FqWwsVlpD9gziAN1iFBVvBeX88yyrFmwnRlCp0I3_mOz3n5TMl1g_lduiUEKY8cFqKA27
+0ZqKwA503mLwAD13WHuAz53m6m
 }
 
 AWSEntityColoring(KinesisDataAnalytics)
-!define KinesisDataAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)
-!define KinesisDataAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)
-!define KinesisDataAnalyticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)
-!define KinesisDataAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, KinesisDataAnalytics, KinesisDataAnalytics)
+!define KinesisDataAnalytics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, KinesisDataAnalytics, KinesisDataAnalytics)
+!define KinesisDataAnalytics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, KinesisDataAnalytics, KinesisDataAnalytics)
+!define KinesisDataAnalyticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, KinesisDataAnalytics, KinesisDataAnalytics)
+!define KinesisDataAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, KinesisDataAnalytics, KinesisDataAnalytics)

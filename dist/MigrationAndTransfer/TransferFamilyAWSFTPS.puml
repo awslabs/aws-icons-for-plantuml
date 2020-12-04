@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $TransferFamilyAWSFTPS [64x64/16z] {
+rTP7ZaCn38FXFJM0xd_QwSOV250WqwdSFBUFwINVAz8XbpvEE0KMfy3bVi6_D0jm53ZSAy0mCJbJaxDWSAT0fCmvK3FpElJPUGe8djtUQy-tdnJBKw3d-1GU
+DlVaSLw4HF7TCrCuwRrUpu-UFoPtzkt7DaPUhTV8vwcFPSdY4qz1vIDFGUL3Jq7bSqy1VEufW6zw2k0RdWBuhgSW7Kz1Efw2j3mdB4_UnkilgPBfvqzTKZkU
+Vzjhaf8YHpuPiPqOssla5yIBHsJulsmz_r4yp7l-oXDNFBdc5mp9y_Lzj7BgQOXB7yNdFuC_Fry
+}
+
+AWSEntityColoring(TransferFamilyAWSFTPS)
+!define TransferFamilyAWSFTPS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TransferFamilyAWSFTPS, TransferFamilyAWSFTPS)
+!define TransferFamilyAWSFTPS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TransferFamilyAWSFTPS, TransferFamilyAWSFTPS)
+!define TransferFamilyAWSFTPSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TransferFamilyAWSFTPS, TransferFamilyAWSFTPS)
+!define TransferFamilyAWSFTPSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TransferFamilyAWSFTPS, TransferFamilyAWSFTPS)

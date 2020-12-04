@@ -1,0 +1,340 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Tests text content interface for the various text cases                -->
+<!--                                                                        -->
+<!-- @author bella.robinson@cmis.csiro.au                                   -->
+<!-- @version $Id: text_content.svg 1733420 2016-03-03 07:41:59Z gadams $        -->
+<!-- ====================================================================== -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500"
+  viewBox="0 0 450 500" 
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<script language="text/ecmascript"><![CDATA[
+  var svgns   = "http://www.w3.org/2000/svg";
+  var xlinkns = "http://www.w3.org/1999/xlink";
+
+  var ids = new Array("simple", "tspans", "dxdy", "xy", 
+                      "tp_start", "tp_middle", "tp_end", "test",
+                      "tp_ag_middle", "ag1", "ag2", "ag3", "ag4",
+                      "ligature", "tp_lig", "lig2", "tp_lig2");
+  for (var i=0; i<ids.length; i++) {
+    var elem = document.getElementById(ids[i]);
+    showCharactersInfo(elem);
+    showTextInfo(elem);
+  }
+
+  function showTextInfo(elt) {
+    var group = elt;
+    var text  = elt;
+    while (group.localName != "g") {
+      if (text.localName != "text")
+        text = text.parentNode;
+      group = group.parentNode;
+    }
+    var bbox = text.getBBox();
+    var x=bbox.x+bbox.width+10;
+    var y=bbox.y+bbox.height*.6
+    var t = document.createElementNS(svgns, "text");
+    t.setAttribute("x", ""+x);
+    t.setAttribute("y", ""+y);
+    t.setAttribute("font-size", "10");
+    var str = "len: " + elt.getComputedTextLength();
+    var idx = str.indexOf('.');
+    if (idx >= 0) {
+      idx += 4;
+      if (idx > str.length) idx = str.length;
+      str = str.substring(0,idx);
+    }
+
+    var tn = document.createTextNode(str);
+    t.appendChild(tn);
+    group.appendChild(t);
+  }
+
+  function showCharactersInfo(elt) {
+    var numChar = elt.getNumberOfChars();
+    for(var i=0; i<numChar; i++) {
+      showCharacterBBox(elt, i);
+      showCharacterStartEndPosition(elt, i);
+    }
+  }
+
+  function showCharacterBBox(elt, index) {
+    var group = elt;
+    while (group.localName != "g")
+      group = group.parentNode;
+    try { 
+      var box = elt.getExtentOfChar(index);
+      var mat = elt.getTransformToElement(group);
+      var root = document.getRootElement();
+
+      var pt0  = root.createSVGPoint();
+      pt0.x = box.getX();
+      pt0.y = box.getY();
+      pt0 = pt0.matrixTransform(mat);
+
+      var pt1  = root.createSVGPoint();
+      pt1.x = box.getX()+box.getWidth();
+      pt1.y = box.getY();
+      pt1 = pt1.matrixTransform(mat);
+
+      var pt2  = root.createSVGPoint();
+      pt2.x = box.getX()+box.getWidth();
+      pt2.y = box.getY()+box.getHeight();
+      pt2 = pt2.matrixTransform(mat);
+
+      var pt3  = root.createSVGPoint();
+      pt3.x = box.getX();
+      pt3.y = box.getY()+box.getHeight();
+      pt3 = pt3.matrixTransform(mat);
+
+      var p = document.createElementNS(svgns,"path");
+      p.setAttribute("d","M" + pt0.x + "," + pt0.y + 
+                     "L" + pt1.x + "," + pt1.y +
+                     "L" + pt2.x + "," + pt2.y +
+                     "L" + pt3.x + "," + pt3.y + "z");
+      p.setAttributeNS(null,"stroke","grey");
+      p.setAttributeNS(null,"fill","none");
+      group.appendChild(p);
+    } catch (e) { 
+      // System.err.println("Err: " + e);
+    }
+  }
+
+  function showCharacterStartEndPosition(elt, index) {
+    var group = elt;
+    while (group.localName != "g")
+      group = group.parentNode;
+    // var mat   = elt.getTransformToElement(group);
+
+    try {
+      var p1 = elt.getStartPositionOfChar(index);
+      var u = document.createElementNS(svgns,"use");
+      u.setAttributeNS(xlinkns,"href","#dot");
+      u.setAttributeNS(null,"transform",
+                       "translate("+p1.x+","+p1.y+")");
+      group.appendChild(u);
+
+      var p2 = elt.getEndPositionOfChar(index);
+      u = document.createElementNS(svgns,"use");
+      u.setAttributeNS(xlinkns,"href","#box");
+      u.setAttributeNS(null,"transform",
+                       "translate("+p2.x+","+p2.y+")");
+      group.appendChild(u);
+
+      u = document.createElementNS(svgns,"use");
+      u.setAttributeNS(xlinkns,"href","#line");
+      var ang = elt.getRotationOfChar(index);
+      var x = ( p1.x + p2.x )/2;
+      var y = ( p1.y + p2.y )/2;
+      u.setAttributeNS(null,"transform",
+                       "translate("+x+","+y+") rotate("+ang+")");
+      group.appendChild(u);
+    } catch (e) { 
+      // System.err.println("Err: " + e);
+    }
+  }
+
+  function regardStart() {
+    regardTestInstance.scriptDone();
+  }
+]]></script>
+
+  <title>Text content interface test.</title>
+  <text x="50%" y="45" class="title">Text content interface test</text>
+  
+  <defs>
+    <rect id="box" x="-2.5" y="-2.5" width="5" height="5" 
+      stroke="red" fill="none"/>
+    <rect id="dot" x="-1" y="-1" width="2" height="2" 
+      stroke="none" fill="green"/>
+    <line stroke-width="1" id="line" stroke="#0CF"
+      x1="-2.5" y1="0" x2="2.5" y2="0" />
+    <path id="Path1" style="fill:none; stroke:blue;" 
+      transform="scale(0.30,0.50)"
+      d="M 50 100 C50 0 350 0 350 100"/>
+
+    <font horiz-adv-x="600" id="stroke">
+      <font-face
+        font-family="Stroke"
+        font-weight="normal"
+        units-per-em="1000"
+        ascent="1000"
+        descent="250"
+        alphabetic="0"/>
+      <missing-glyph horiz-adv-x="600" d="M0 0 V75 H50 V0 z"/>
+      
+      <glyph id="MyABC" unicode="ABC" glyph-name="ABC" horiz-adv-x="1800"
+        d="M661,-13l-300,750c-3,8 -10,12 -18,13c-8,0 -15,-5 -19,-12l-320,-750c-4,-10 0,-22 11,-26c10,-4 22,0 26,11c0,0 63,147 131,308l329,0c64,-160 123,-307 123,-307c4,-10 16,-15 26,-11c10,4 15,16 11,26zM190,320c68,159 137,320 153,358c15,-38 80,-199 143,-358l-296,0z
+        M675,750c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l224,0c158,0 241,111 241,221c0,81 -45,162 -132,200c87,33 132,104 132,175c0,96 -83,194 -241,194l-224,0zM900,710c138,0 201,-80 201,-154c0,-74 -63,-154 -201,-154c0,0 -170,0 -204,0c0,151 0,292 0,308c33,0 204,0 204,0zM900,362c138,0 201,-94 201,-181c0,-87 -63,-181 -201,-181c0,0 -170,0 -204,0c0,19 0,181 0,362c33,0 204,0 204,0z
+        M1100,355c0,-218 126,-395 282,-395c93,0 180,64 233,172c5,10 1,22 -9,27c-10,5 -22,1 -27,-9c-46,-93 -119,-149 -197,-149c-133,0 -242,159 -242,355c0,196 108,355 242,355c78,0 151,-56 197,-149c5,-10 17,-14 27,-9c10,5 14,17 9,27c-52,107 -139,172 -233,172c-155,0 -282,-177 -282,-395z"/>
+
+      <glyph id="MyDE" unicode="DE" glyph-name="DE" horiz-adv-x="1080"
+        d="M20,750c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l224,0c165,0 241,205 241,395c0,190 -75,395 -241,395l-224,0zM244,710c132,0 201,-179 201,-355c0,-176 -69,-355 -201,-355c0,0 -170,0 -204,0c0,37 0,673 0,710c33,0 204,0 204,0z
+        M920,0c0,0 -344,0 -380,0c0,19 0,192 0,362l251,0c11,0 20,9 20,20c0,11 -9,20 -20,20l-251,0c0,151 0,291 0,308c36,0 380,0 380,0c11,0 20,9 20,20c0,11 -9,20 -20,20l-400,0c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l400,0c11,0 20,9 20,20c0,11 -9,20 -20,20z"/>
+
+      <glyph id="MyA" unicode="A" glyph-name="A" horiz-adv-x="780"
+        d="M661,-13l-300,750c-3,8 -10,12 -18,13c-8,0 -15,-5 -19,-12l-320,-750c-4,-10 0,-22 11,-26c10,-4 22,0 26,11c0,0 63,147 131,308l329,0c64,-160 123,-307 123,-307c4,-10 16,-15 26,-11c10,4 15,16 11,26zM190,320c68,159 137,320 153,358c15,-38 80,-199 143,-358l-296,0z"/>
+      <glyph id="MyB" unicode="B" glyph-name="B" horiz-adv-x="630"
+        d="M20,750c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l224,0c158,0 241,111 241,221c0,81 -45,162 -132,200c87,33 132,104 132,175c0,96 -83,194 -241,194l-224,0zM244,710c138,0 201,-80 201,-154c0,-74 -63,-154 -201,-154c0,0 -170,0 -204,0c0,151 0,292 0,308c33,0 204,0 204,0zM244,362c138,0 201,-94 201,-181c0,-87 -63,-181 -201,-181c0,0 -170,0 -204,0c0,19 0,181 0,362c33,0 204,0 204,0z"/>
+      <glyph id="MyC" unicode="C" glyph-name="C" horiz-adv-x="650"
+        d="M0,355c0,-218 126,-395 282,-395c93,0 180,64 233,172c5,10 1,22 -9,27c-10,5 -22,1 -27,-9c-46,-93 -119,-149 -197,-149c-133,0 -242,159 -242,355c0,196 108,355 242,355c78,0 151,-56 197,-149c5,-10 17,-14 27,-9c10,5 14,17 9,27c-52,107 -139,172 -233,172c-155,0 -282,-177 -282,-395z"/>
+      <glyph id="MyD" unicode="D" glyph-name="D" horiz-adv-x="630"
+        d="M20,750c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l224,0c165,0 241,205 241,395c0,190 -75,395 -241,395l-224,0zM244,710c132,0 201,-179 201,-355c0,-176 -69,-355 -201,-355c0,0 -170,0 -204,0c0,37 0,673 0,710c33,0 204,0 204,0z"/>
+      <glyph id="MyE" unicode="E" glyph-name="E" horiz-adv-x="580"
+        d="M420,0c0,0 -344,0 -380,0c0,19 0,192 0,362l251,0c11,0 20,9 20,20c0,11 -9,20 -20,20l-251,0c0,151 0,291 0,308c36,0 380,0 380,0c11,0 20,9 20,20c0,11 -9,20 -20,20l-400,0c-11,0 -20,-9 -20,-20l0,-750c0,-11 9,-20 20,-20l400,0c11,0 20,9 20,20c0,11 -9,20 -20,20z"/>
+
+    </font>
+
+    <altGlyphDef id="MyAltGlyphDef1">
+         <glyphRef xlink:href="#MyA"/>
+         <glyphRef xlink:href="#MyB"/>
+         <glyphRef xlink:href="#MyC"/>
+         <glyphRef xlink:href="#MyD"/>
+         <glyphRef xlink:href="#MyE"/>
+      </altGlyphDef>
+    <altGlyphDef id="MyAGTest">
+         <glyphRef xlink:href="#MyA"/>
+         <glyphRef xlink:href="#MyB"/>
+         <glyphRef xlink:href="#MyC"/>
+         <glyphRef xlink:href="#MyD"/>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef4">
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+            <glyphRef xlink:href="#MyC"/>
+         </altGlyphItem>
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyC"/>
+            <glyphRef xlink:href="#MyD"/>
+            <glyphRef xlink:href="#MyE"/>
+         </altGlyphItem>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef5">
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+            <glyphRef xlink:href="#MyA"/>
+         </altGlyphItem>
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+         </altGlyphItem>
+      </altGlyphDef>
+  </defs>
+
+  <defs>
+  </defs>
+
+  <g id="test-content" style="font-size:18">
+    <text id="simple" x="25" y="100">Simple Text</text>
+    <text x="25" y="130">Using 
+      <tspan id="tspans" fill="blue">Tspan</tspan></text>
+    <text id="dxdy" x="25" y="160">Tspan 
+      <tspan fill="blue" dx="2 -1 0 -1 2" dy="-5 10 -5 -5 10"
+        >Dx/Dy</tspan></text>
+    <text id="xy" x="25" y="190">Tspan 
+      <tspan fill="blue" x="85" y="195"
+        >X/Y</tspan></text>
+
+    <g transform="translate(230,65)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_start" style="text-anchor:start">
+        <textPath xlink:href="#Path1" startOffset="50%">Text <tspan fill="red" dy="-10">on</tspan><tspan dy="10"> a Path</tspan></textPath>
+      </text>
+    </g>  
+
+    <g transform="translate(230,125)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_middle" style="text-anchor:middle">
+        <textPath xlink:href="#Path1" startOffset="50%">Text <tspan fill="red" dy="-10">on</tspan><tspan dy="10"> a Path</tspan></textPath>
+      </text>
+    </g>  
+
+    <g transform="translate(230,185)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_end" style="text-anchor:end">
+        <textPath xlink:href="#Path1" startOffset="50%">Text <tspan 
+            fill="red" dy="-10">on</tspan><tspan dy="10"
+            > a Path</tspan></textPath>
+      </text>
+    </g>  
+
+    <g transform="translate(10,210)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_ag_middle" style="text-anchor:middle">
+        <textPath xlink:href="#Path1" startOffset="50%">glyphRefs: "<altGlyph 
+            rotate="10,10,10,10,10" dx="0,2,2,2,2" dy="0,2,2,-2,-2" 
+            fill="green" xlink:href="#MyAltGlyphDef1">No Match</altGlyph
+            >"</textPath>
+      </text>
+    </g>  
+
+    <text x="170" y="270" id="test" >phRefs: "<altGlyph
+            rotate="10,10,10,10,10" dx="0,2,2,2,2" dy="0,2,2,-2,-2" 
+            fill="green" xlink:href="#MyAGTest">No Match</altGlyph
+            ></text>
+      
+    <text id="ag1" x="5" y="300">5 valid glyphRefs: "<altGlyph 
+        fill="green" xlink:href="#MyAltGlyphDef1">No Match</altGlyph>"</text>
+
+      <text id="ag2" x="5" y="330">2 altGlyphItems, both
+      <tspan fill="red">invalid</tspan>: "<altGlyph 
+        fill="red" xlink:href="#MyAltGlyphDef5">No Match</altGlyph>"</text>
+
+    <text id="ag3" x="5" y="360">2 altGlyphItems, 2nd valid: "<altGlyph 
+        fill="green" xlink:href="#MyAltGlyphDef4">No Match</altGlyph>"</text>
+
+    <text id="ag4" x="5" y="390">5 glyphRefs, dx/dy/rotate: "<altGlyph 
+        rotate="10,10,10,10,10" dx="0,2,2,2,2" dy="0,2,2,-2,-2" 
+        fill="green" xlink:href="#MyAltGlyphDef1">No Match</altGlyph>"</text>
+
+    <text id="ligature" x="5" y="420">ligature <tspan  
+        font-family="stroke" fill="green">ABCDE</tspan></text>
+
+    <g transform="translate(10,430)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_lig" style="text-anchor:middle">
+        <textPath xlink:href="#Path1" startOffset="50%">ligature <tspan  
+        font-family="stroke" fill="green">ABCDE</tspan></textPath></text>
+    </g>  
+
+    <text id="lig2" x="235" y="420">ligature <tspan  
+        font-family="stroke" fill="green">ABC</tspan></text>
+
+    <g transform="translate(235,430)">
+      <use xlink:href="#Path1" style="fill:none; stroke:blue; stroke-width:2"/>
+      <text id="tp_lig2" style="text-anchor:middle">
+        <textPath xlink:href="#Path1" startOffset="65%">ligature <tspan  
+            font-family="stroke" fill="green">ABCDE</tspan></textPath></text>
+    </g>  
+  </g>
+</svg>

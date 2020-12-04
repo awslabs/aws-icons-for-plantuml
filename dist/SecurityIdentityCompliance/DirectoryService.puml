@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DirectoryService [64x64/16z] {
+fTLNaiCm38DXXAuWxt_UBKhHk8XI1dZ_VblQJSBMzcHR7SK0nG350CK0nO2B0HS3BWPS3BWOS37WOi35W8i15mDUPnYPDJt6blY18wH-w0uotmtaVlGIhUqn
+jCptZv1xPxg-FmOCfrdF7mEuhE_zu7aOmBxtizzccvOll1_z_3hvWB-EN85vNHwOtlV1xxnX8Ra3-zipV_-o-lwlEpIih_SdsVUUUlQzlxrX9ha1U_MlG6JU
+Yo_IbXcbKZsBZwl7U-uamDtmsdBmB3uoxmJs1x0iyx8QC1qyYu-JFmum65cs0il1i_Z8FK3MmD4pokxUtm4y_SBFfdiVgTzON-3YQm10u_sFE_eQi5jlPsvN
+Vxx4wyYwXe_C-u2FpFk0Z-BxQ_eO_Vrg-V1il5c8WH038GP238GO234GOY34G8Y140CX1a8CX1W8CV0B
+}
+
+AWSEntityColoring(DirectoryService)
+!define DirectoryService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DirectoryService, DirectoryService)
+!define DirectoryService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DirectoryService, DirectoryService)
+!define DirectoryServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DirectoryService, DirectoryService)
+!define DirectoryServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DirectoryService, DirectoryService)

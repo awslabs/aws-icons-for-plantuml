@@ -1,0 +1,384 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- A star field                                                              -->
+<!--                                                                           -->
+<!-- @author shillion@ilog.fr                                                  -->
+<!-- @version $Id: starfield.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="450" height="500" viewBox="0 0 450 500">
+  <title>Starfield</title>
+
+  <defs>
+
+    <!-- ######################################################################### -->
+    <style type="text/css">
+      <![CDATA[
+          .title {
+              font-size: 52;
+              font-style: italic;
+              font-weight: bolder
+          }
+          /* Colors */
+          #background {
+              fill: #080014
+          }
+          .fps-label, .fps-unit, .help, .title {
+              fill: #ddf
+          }
+          .button-back, .gauge-back {
+              fill: #edf
+          }
+          .button-fore, .gauge-fore {
+              fill: #769
+          }
+          .panel-back {
+              fill: #347;
+              fill-opacity:0.3
+          }
+          .star {
+              fill: white /*url(#star-fill)*/
+          }
+          .stop-c1 {
+              stop-color: white
+          }
+          .stop-c2 {
+              stop-color: #ffc
+          }
+          .stop-c3 {
+              stop-color: #aa8
+          }
+          /* <text/> default property values */
+          text {
+              font-size: 9;
+              text-anchor: middle
+          }
+          /* The property values for a <text/> preceded by another <text/> */
+          text + text {
+              text-anchor: start
+          }
+      ]]>
+    </style>
+
+    <!-- ######################################################################### -->
+    <radialGradient id="star-fill" gradientUnits="userSpaceOnUse" 
+                    cx="0" cy="0" fx="-5" fy="-5" r="30">
+        <stop class="stop-c1" offset="0%"/>
+        <stop class="stop-c2" offset="20%"/>
+        <stop class="stop-c3" offset="100%"/>
+    </radialGradient>
+
+    <!-- ######################################################################### -->
+    <g id="plus-button">
+        <circle class="button-back" cx="10" cy="10" r="10"/>
+        <rect class="button-fore" x="8" y="4" width="4" height="12"/>
+        <rect class="button-fore" x="4" y="8" width="12" height="4"/>
+    </g>
+
+    <!-- ######################################################################### -->
+    <g id="minus-button">
+        <circle class="button-back" cx="10" cy="10" r="10"/>
+        <rect class="button-fore" x="4" y="8" width="12" height="4"/>
+    </g>
+
+    <!-- ######################################################################### -->
+    <g id="gauge">
+        <rect class="gauge-back" x="0" y="0" width="150" height="20"/>
+    </g>
+
+
+    <!-- ######################################################################### -->
+    <script type="text/ecmascript">
+      <![CDATA[
+        //
+        // Global declarations
+        //
+        var starIncrement = 5
+        var numberOfStars = starIncrement
+        var unitCount = 1
+        var units = document.getElementById("units")
+        var stars = new Array()
+        var controlPanelMoving = false;
+        var showControlPanel = false
+        var helpText1 = "Click on the title to show the control panel"
+        var helpText2 = "Click on the title to hide the control panel"
+        var startDate;
+        var nframe;
+
+        //
+        // Decreases the number of stars. If numberOfStars is at his min value,
+        // do nothing.
+        //
+        function decreaseNumberOfStars(evt) {
+            if (numberOfStars == 0) {
+                return
+            }
+
+            for (var i = 0; i < starIncrement; i++) {
+                stars[--numberOfStars].freeze();
+            }
+            updateText("number-label", numberOfStars)
+
+            unitCount--
+            units.setAttributeNS(null, "width", unitCount * 10)
+        }
+
+        //
+        // Increases the number of stars. If numberOfStars is at his max value,
+        // do nothing.
+        //
+        function increaseNumberOfStars(evt) {
+            if (numberOfStars == starIncrement * 15) {
+                return
+            }
+
+            for (var i = 0; i < starIncrement; i++) {
+                stars[numberOfStars++].activate();
+            }
+            updateText("number-label", numberOfStars)
+
+            unitCount++
+            units.setAttributeNS(null, "width", unitCount * 10)
+
+        }
+
+        //
+        // Updates a text element content.
+        //
+        function updateText(id, lbl) {
+            var elt = document.getElementById(id)
+            var grp = elt.parentNode;
+            var newelt = elt.cloneNode(true)
+
+            if (newelt.firstChild == null) {
+                newelt.appendChild(document.createTextNode(lbl))
+            } else {
+                newelt.replaceChild(document.createTextNode(lbl), newelt.firstChild)
+            }
+            grp.replaceChild(newelt, elt)
+        }
+
+        var itv;
+
+        //
+        // Starts the animation loops.
+        //
+        function initAnimations(evt) {
+            for (var i = 0; i < starIncrement * 15; i++) {
+                stars[i] = new Star()
+            }
+
+            for (var i = 0; i < starIncrement; i++) {
+                stars[i].activate()
+            }
+            updateText("help", helpText1)
+
+            itv = setInterval("animateStars()", 10)
+ 
+            startDate = new Date()
+            nframe = 0
+        }
+
+        //
+        // Animates the stars.
+        //
+        function animateStars() {
+            for (var i = 0; i < starIncrement * 10; i++) {            
+                stars[i].update()
+            }
+            if (nframe < 10) {
+                nframe++
+            } else {
+                var d = new Date()
+                var dt = d - startDate
+                var val = Math.round(10000 / dt)
+
+                updateText("fps1", val);
+                updateText("fps2", val);
+                // System.err.println("FPS: " + val);
+                startDate = d
+                nframe = 0
+            }
+        }
+
+        var controlPanelDy;
+        var controlPanelSgn;
+
+        //
+        // Shows/hides the control panel.
+        //
+        function animateControlPanel(evt) {
+            if (!controlPanelMoving) {
+                controlPanelMoving = true;
+                showControlPanel = !showControlPanel
+                if (showControlPanel) {
+                    updateText("help", helpText2)
+                    controlPanelDy  = 20
+                    controlPanelSgn = 1
+                    setTimeout("controlPanelAnimation()", 50)
+                } else {
+                    updateText("help", helpText1)
+                    controlPanelDy  = 0
+                    controlPanelSgn = -1
+                    setTimeout("controlPanelAnimation()", 50)
+                }
+            }            
+        }
+
+        //
+        // Animates the control panel.
+        //
+        function controlPanelAnimation() {
+            var elt = document.getElementById("control-panel");
+            
+            elt.setAttributeNS(null, "transform", "translate(0 " + ((controlPanelDy - 100) * controlPanelSgn) + ")");
+
+            if (controlPanelDy < 200) {
+                controlPanelDy += 20
+                setTimeout("controlPanelAnimation()", 50)
+            } else {
+                controlPanelMoving = false;
+            }
+        }
+
+        //
+        // The star object.
+        //
+        function Star() {
+            this.element = document.createElementNS("http://www.w3.org/2000/svg",
+                                                    "circle")
+            //
+            // This method activates the star.
+            //
+            this.activate = function() {
+                    this.isActive = true
+                    this.dx = (Math.random() - 0.5) * 100 + 1
+                    this.dy = (Math.random() - 0.5) * 100 + 1
+                    this.dr = Math.random() / 5
+                }
+
+            //
+            // This method freezes the star.
+            //
+            this.freeze = function() {
+                    this.x = 225
+                    this.y = 225
+                    this.r = 0.01
+
+                    this.isActive = false
+                    this.updateElement()
+               }
+
+            //
+            // This method updates the star size and position, if
+            // the star has been activated.
+            //
+            this.update = function() {
+                    if (this.isActive) {
+                        this.x += this.dx
+                        this.y += this.dy
+                        this.r += this.dr
+
+                        this.dx += (this.dx > 0) ? 1 : -1
+                        this.dy += (this.dy > 0) ? 1 : -1
+                        this.dr += 0.04
+
+                        if ((this.x < -20 || this.x > 470) ||
+                            (this.y < -20 || this.y > 470) ||
+                             this.r > 30) {
+                             this.freeze()
+                             this.activate()
+                             return
+                        }
+
+                        this.updateElement()
+                    }
+                }
+            this.updateElement = function() {
+                this.element.setAttributeNS(null, "transform",
+                                            "translate("+this.x+" "+this.y+")")
+                this.element.setAttributeNS(null, "r",  this.r)
+            }
+
+            // Start as inactive...
+            this.element.setAttributeNS(null, "class", "star")
+            this.freeze()
+            var stars = document.getElementById("stars")
+            stars.insertBefore(this.element, stars.firstChild)
+        }
+      ]]>
+    </script>
+
+  </defs>
+
+  <!-- ######################################################################### -->
+  <!-- ######################################################################### -->
+  <g id="body" onload="initAnimations(evt)">
+    <rect id="background" x="0" y="0" width="100%" height="100%"/>
+
+    <g id="stars"><!-- Used to store the stars --></g>
+
+    <!-- The control panel -->
+    <g id="control-panel" style="opacity: 0.7" transform="translate(0, -100)">
+
+      <text class="help" id="help" x="50%" y="170"/> <!-- set by script -->
+
+      <rect class="panel-back" x="0" y="-190" width="100%" height="70%"/>
+
+      <!-- The title -->
+      <text class="title" x="50%" y="150" onclick="animateControlPanel(evt)">
+        Starfield
+      </text>
+
+      <!-- The controls -->
+      <use xlink:href="#minus-button" transform="translate(90 20)"
+           onclick="decreaseNumberOfStars(evt)"/>
+
+      <use xlink:href="#gauge" transform="translate(150 20)"/>
+
+      <rect id="units" class="gauge-fore" x="150" y="20" width="10" height="20"/>
+
+      <text id="number-label" x="195" y="33">5</text>
+      <text x="205" y="33">Stars at a time</text>
+
+      <use xlink:href="#plus-button" transform="translate(340 20)"
+           onclick="increaseNumberOfStars(evt)"/>
+
+      <!-- The frame rate labels -->
+      <text class="fps-label" id="fps1" x="20" y="-80"/> <!-- set by script -->
+      <text class="fps-unit" x="30" y="-80">Frames per second</text>
+
+      <rect class="panel-back" x="0" y="560" width="100%" height="70%"/>
+
+      <text class="fps-label" id="fps2" x="20" y="583">0</text>
+      <text class="fps-unit" x="30" y="583">Frames per second</text>
+    </g>
+  </g>
+  <!-- ============================================================= -->
+  <!-- Batik sample mark                                             -->
+  <!-- ============================================================= -->
+  <use xlink:href="batikLogo.svg#Batik_Tag_Box" />
+</svg>

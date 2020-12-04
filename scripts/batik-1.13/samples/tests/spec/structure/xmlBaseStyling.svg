@@ -1,0 +1,112 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!-- ====================================================================== -->
+<!-- xml:base processing test.                                              -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: xmlBaseStyling.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+
+  <title>Test xml:base and styling</title>
+
+  <!-- ============================================================= -->
+  <!-- Test content                                                  -->
+  <!-- ============================================================= -->
+  <g id="testContent">
+    <text x="225" y="30" class="title">Test xml:base and styling</text>
+    <text x="225" y="50" style="text-anchor:middle; font-size:12; font-style:italic">This file is using the defs.svg file to get the external resources</text>
+
+    <!-- ############################### -->
+    <style type="text/css" xml:base="../../resources/svg/" ><![CDATA[     
+      .gradClass {
+        fill: url(defs.svg#extGrad1);
+      }
+    ]]></style>
+
+    <defs>
+      <g id="board">
+        <rect x="0" y="0" width="80" height="80" style="stroke:black; fill:none"/>
+        <rect x="80" y="0" width="300" height="80" style="stroke:black; fill:#eee"/>
+      </g>
+    </defs>
+
+    <use xlink:href="#board" x="40" y="70" />
+    <use xlink:href="#board" x="40" y="150" />
+    <use xlink:href="#board" x="40" y="230" />
+    <use xlink:href="#board" x="40" y="310" />
+    <use xlink:href="#board" x="40" y="390" />
+
+
+    <!-- ############################### -->
+    <!-- ############################### -->
+    <g>
+      <use xlink:href="../../resources/svg/defs.svg#xmlBaseStylingElement" x="80" y="110" class="gradClass"/>
+      <text x="130" y="90">xml:base on &lt;style></text>
+      <text x="130" y="104">the base URI is: ../../resources/svg/</text>
+    </g>
+
+    <g xml:base="../../resources/svg/">
+      <use xlink:href="defs.svg#xmlBaseStylingElement" x="80" y="190" style="fill:url(defs.svg#extGrad1)" />
+      <text x="130" y="170">xml:base on &lt;g> enclosing the &lt;use></text>
+      <text x="130" y="184">the base URI is: ../../resources/svg/</text>
+    </g>
+
+    <g xml:base="../../resources/svg/defs.svg">
+      <use xlink:href="#xmlBaseStylingElement" x="80" y="270" style="fill:url(#extGrad1)" />
+      <text x="130" y="250">xml:base on &lt;g> enclosing the &lt;use></text>
+      <text x="130" y="264">the base URI is: ../../resources/svg/defs.svg</text>
+    </g>
+
+    <g xml:base="../../resources/svg/">
+      <g xml:base="defs.svg">
+        <use xlink:href="#xmlBaseStylingElement" x="80" y="350" style="fill:url(#extGrad1)" />
+      </g>
+      <text x="130" y="330">xml:base on &lt;g> enclosing a &lt;g></text>
+      <text x="130" y="344">the base URI is: ../../resources/svg/</text>
+
+
+      <text x="130" y="363">xml:base on enclosed &lt;g> enclosing the &lt;use></text>
+      <text x="130" y="377">the base URI is: defs.svg</text>
+    </g>
+
+    <g xml:base="../../resources/svg/">
+      <use xml:base="defs.svg" xlink:href="#xmlBaseStylingElement" x="80" y="430" style="fill:url(#extGrad1)" />
+      <text x="130" y="410">xml:base on &lt;g> enclosing the &lt;use></text>
+      <text x="130" y="424">the base URI is: ../../resources/svg/</text>
+
+      <text x="130" y="443">xml:base on the &lt;use></text>
+      <text x="130" y="457">the base URI is: defs.svg</text>
+    </g>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Batik sample mark                                             -->
+  <!-- ============================================================= -->
+  <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+
+
+</svg>

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $AuroraAmazonRDSInstanceAternate [64x64/16z] {
+xTC7iiD020FG0on6zp_jBoHoOSO5EJsh5CYGvxvubLWfEcPSvepCcGL7ATbhbrlsLBbHDi3g9pohdVV6iEVzyVbytrCoM1HBFagB-UKpHEL5NMu6Apv_hYxD
+Ldq4wHE5lvlPKF1vTxw-_pZzvJPImBBg0J_fytzcd6352tanRwboKFB6QcoAtb8jUNuMLl7SGD7RtFD2ojwLwuV90uBte1nfrp_YulsZW-A9R02mmzzx_NRV
+VVVTir4vkoPmUcUlSS2qD30wrxU0506_Gdu1
+}
+
+AWSEntityColoring(AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)

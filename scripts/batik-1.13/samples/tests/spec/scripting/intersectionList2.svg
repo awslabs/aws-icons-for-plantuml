@@ -1,0 +1,394 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Testing the getIntersectionList interface on the svg:svg element.      -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: intersectionList2.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500" 
+  onload="onLoad()"
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+  <title>Test of getIntersectionList interface</title>
+  <text x="50%" y="40" class="title">Test of getIntersectionList interface</text>
+
+  <script type="text/ecmascript"><![CDATA[
+    var svgns = "http://www.w3.org/2000/svg";
+    var root;
+    var rect;
+    function onLoad() {
+      root = document.getRootElement();
+      rect = root.createSVGRect();
+      doCheck("painted");
+      doCheck("fill");
+      doCheck("stroke");
+      doCheck("all");
+      doCheck("none");
+      doCheck("visible");
+      doCheck("visiblePainted");
+      doCheck("visibleFill");
+      doCheck("visibleStroke");
+    }
+
+    function setRect(r, x, y, w, h) {
+      r.x      = x;
+      r.y      = y;
+      r.width  = w;
+      r.height = h;
+    }
+
+    function doCheck2(svg, rect, base) {
+      var elem = root.getElementById(base);
+      var lstE = root.getElementById(base+"-lst");
+      var chkE = root.getElementById(base+"-chk");
+
+      var lst = svg.getIntersectionList(rect, null);
+      if ((lst.getLength() != 0) && (lst.item(0) == elem))
+           lstE.setAttribute("fill", "gold");
+      else lstE.setAttribute("fill", "crimson");
+
+      if (svg.checkIntersection(elem, rect)) 
+         chkE.setAttribute("fill", "gold");
+      else chkE.setAttribute("fill", "crimson");
+    }
+
+    function doCheck(name) {
+      var svg = root.getElementById(name);
+      setRect(rect, 110, 10, 40, 40);
+      doCheck2(svg, rect, "path-"+name);
+      setRect(rect, 180, 10, 55, 40);
+      doCheck2(svg, rect, "simple-"+name);
+      setRect(rect, 285, 10, 30, 40);
+      doCheck2(svg, rect, "complex-"+name);
+     }
+
+    ]]></script>
+
+  <g id="test-content" >
+    <g pointer-events="painted" transform="translate(0,40)">
+      <rect x="5"    y="5" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">Painted</text>
+
+      <svg id="painted" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-painted" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-painted" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-painted" font-style="italic" pointer-events="painted"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-painted-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-painted-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-painted-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-painted-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-painted-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-painted-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="fill" transform="translate(0, 90)">
+      <rect x="5"    y="5" width="440" height="50" fill="#EEE" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">Fill</text>
+
+      <svg id="fill" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-fill" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-fill" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-fill" font-style="italic" pointer-events="fill"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-fill-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-fill-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-fill-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-fill-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-fill-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-fill-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="stroke" transform="translate(0,140)">
+      <rect x="5"    y="5" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">Stroke</text>
+
+      <svg id="stroke" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-stroke" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-stroke" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-stroke" font-style="italic" pointer-events="stroke"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-stroke-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-stroke-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-stroke-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-stroke-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-stroke-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-stroke-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="all" transform="translate(0,190)">
+      <rect x="5"    y="5" width="440" height="50" fill="#EEE" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">All</text>
+
+      <svg id="all" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-all" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-all" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-all" font-style="italic" pointer-events="all"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-all-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-all-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-all-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-all-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-all-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-all-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="none" transform="translate(0,240)">
+      <rect x="5"    y="5" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">None</text>
+
+      <svg id="none" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-none" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-none" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-none" font-style="italic" pointer-events="none"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-none-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-none-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-none-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-none-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-none-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-none-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="visible" transform="translate(0,290)">
+      <rect x="5"    y="5" width="440" height="50" fill="#EEE" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">Visible</text>
+
+      <svg id="visible" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-visible" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-visible" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-visible" font-style="italic" pointer-events="visible"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-visible-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-visible-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-visible-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-visible-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-visible-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-visible-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="visiblePainted" 
+      transform="translate(0,340)">
+      <rect x="5"    y="5" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">VisiblePainted</text>
+
+      <svg id="visiblePainted" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-visiblePainted" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-visiblePainted" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-visiblePainted" font-style="italic" pointer-events="visiblePainted"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-visiblePainted-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-visiblePainted-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-visiblePainted-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-visiblePainted-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-visiblePainted-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-visiblePainted-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="visibleFill" 
+      transform="translate(0,390)">
+      <rect x="5"    y="5" width="440" height="50" fill="#EEE" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">VisibleFill</text>
+
+      <svg id="visibleFill" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-visibleFill" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-visibleFill" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-visibleFill" font-style="italic" pointer-events="visibleFill"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-visibleFill-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-visibleFill-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-visibleFill-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-visibleFill-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-visibleFill-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-visibleFill-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+
+    <g pointer-events="visibleStroke" 
+      transform="translate(0,440)">
+      <rect x="5"    y="5" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="105" y1="5" x2="105" y2="55" stroke="#000" />
+      <line x1="175" y1="5" x2="175" y2="55" stroke="#000" />
+      <line x1="255" y1="5" x2="255" y2="55" stroke="#000" />
+      <line x1="345" y1="5" x2="345" y2="55" stroke="#000" />
+      <text x="25" y="35">VisibleStroke</text>
+
+      <svg id="visibleStroke" fill="black" font-size="16" 
+                        font-weight="bold" text-anchor="middle">
+        <path id="path-visibleStroke" stroke="black" fill="white"
+              d="M115,45 c 0,-15 15,-30 30-30 v30z"/>
+        <text id="simple-visibleStroke" x="210" y="36">simple</text>
+        <text x="295" y="36" pointer-events="none">c<tspan fill="blue"
+              >om<tspan id="complex-visibleStroke" font-style="italic" pointer-events="visibleStroke"
+              >pl</tspan>e</tspan>x</text>
+      </svg>
+        <rect id="path-visibleStroke-lst" x="160" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="path-visibleStroke-chk" x="160" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="simple-visibleStroke-lst" x="240" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="simple-visibleStroke-chk" x="240" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+
+        <rect id="complex-visibleStroke-lst" x="330" y="15" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect id="complex-visibleStroke-chk" x="330" y="35" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+    </g>
+  </g>
+</svg>

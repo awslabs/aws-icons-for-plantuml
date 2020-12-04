@@ -1,0 +1,201 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Test description here                                                     -->
+<!--                                                                           -->
+<!-- @author bill.haneman@ireland.sun.com                                      -->
+<!-- @version $Id: textProperties2.svg 1733420 2016-03-03 07:41:59Z gadams $                                                             -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg width="450" height="500" viewBox="0 0 450 500"
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+     <style type="text/css"><![CDATA[
+       .Caption { font-size: 8; font-family: dialog; font-weight: normal;
+                  font-style: normal; stroke: none; stroke-width: 0; 
+                  fill: black } 
+       text > tspan { fill: blue; }
+       text > tspan > tspan { fill: purple; }]]>
+     </style>
+
+    <script type="text/ecmascript"><![CDATA[
+       var inRegard=false;
+       var root;
+       function regardStart() {
+          inRegard = true;
+          doChange();
+       }
+       function doSet(idx, attr, tv, tsv, ttsv) {
+         var t   = root.getElementById("t"+idx);
+         var ts  = root.getElementById("ts"+idx);
+         var tts = root.getElementById("tts"+idx);
+         if (tv)   t.setAttribute(attr, tv);
+         if (tsv)  ts.setAttribute(attr, tsv);
+         if (ttsv) tts.setAttribute(attr, ttsv);
+       }
+
+       function doChange() {
+         root = document.getRootElement();
+         doSet(1, "visibility", "hidden", "hidden", undefined);
+         doSet(2, "visibility", undefined, undefined, "hidden");
+         doSet(3, "visibility", undefined, undefined, "visible");
+         doSet(4, "visibility", "visible", undefined, "visible");
+         doSet(5, "visibility", undefined, undefined, "hidden");
+         doSet(6, "visibility", "hidden",  undefined, undefined);
+
+         doSet(7, "display", undefined,  "none", undefined);
+         doSet(8, "display", undefined,  undefined, "inline");
+         doSet(9, "display", undefined,  "inline", undefined);
+         doSet(10, "display", "none",  "inline", "inline");
+         doSet(11, "display", "inline",  undefined, undefined);
+
+         if (inRegard) 
+           regardTestInstance.scriptDone();
+       }
+    ]]></script>
+
+   <rect fill="gold" stroke="crimson" x="15" y="15" width="70" height="25"
+         onclick="doChange()"/>
+   <text fill="crimson" x="50" y="32" font-weight="bold" text-anchor="middle"
+    pointer-events="none">Change!</text>
+
+<title>Text Properties</title>
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent">
+        <text class="title" x="50%" y="40" font-size="15" >
+            Text display and visibility.</text>
+
+        <text x="50%" y="74" text-anchor="middle"
+         >Visibility on text &amp; tspans</text>
+        <text x="50%" y="250" text-anchor="middle"
+         >Display on text &amp; tspans</text>
+
+         <g stroke="black" stroke-width="1">
+         <rect x="12.5" y="82" width="425" height="25" fill="#EEE"/>
+         <rect x="12.5" y="107" width="425" height="25" fill="#CCC"/>
+         <rect x="12.5" y="132" width="425" height="25" fill="#EEE"/>
+         <rect x="12.5" y="157" width="425" height="25" fill="#CCC"/>
+         <rect x="12.5" y="182" width="425" height="25" fill="#EEE"/>
+         <rect x="12.5" y="207" width="425" height="25" fill="#CCC"/>
+         <line x1="325" x2="325" y1="82" y2="232"/>
+         <line x1="381" x2="381" y1="82" y2="232"/>
+
+         <rect x="12.5" y="257" width="425" height="25" fill="#EEE"/>
+         <rect x="12.5" y="282" width="425" height="25" fill="#CCC"/>
+         <rect x="12.5" y="307" width="425" height="25" fill="#EEE"/>
+         <rect x="12.5" y="332" width="425" height="25" fill="#CCC"/>
+         <rect x="12.5" y="357" width="425" height="25" fill="#EEE"/>
+         <line x1="325" x2="325" y1="257" y2="382"/>
+         <line x1="381" x2="381" y1="257" y2="382"/>
+         </g>
+
+         <text class="Caption" x="335" y="97" >---, ---, ---</text>
+         <text class="Caption" x="335" y="122">---, hid, vis</text>
+         <text class="Caption" x="335" y="147">---, hid, hid</text>
+         <text class="Caption" x="335" y="172">hid, vis, hid</text>
+         <text class="Caption" x="335" y="197">---, ---, ---</text>
+         <text class="Caption" x="335" y="222">---, ---, ---</text>
+
+         <text class="Caption" x="391" y="97" >hid, hid, ---</text>
+         <text class="Caption" x="391" y="122">---, ---, hid</text>
+         <text class="Caption" x="391" y="147">---, ---, vis</text>
+         <text class="Caption" x="391" y="172">vis, ---, vis</text>
+         <text class="Caption" x="391" y="197">---, ---, hid</text>
+         <text class="Caption" x="391" y="222">hid, ---, ---</text>
+
+         <text class="Caption" x="335" y="273">---, ---, ---</text>
+         <text class="Caption" x="335" y="298">---, inl, non</text>
+         <text class="Caption" x="335" y="323">---, non, inl</text>
+         <text class="Caption" x="335" y="348">---, non, non</text>
+         <text class="Caption" x="335" y="373">non, inl, non</text>
+
+         <text class="Caption" x="391" y="273">---, non, ---</text>
+         <text class="Caption" x="391" y="298">---, ---, inl</text>
+         <text class="Caption" x="391" y="323">---, inl, ---</text>
+         <text class="Caption" x="391" y="348">non, inl, inl</text>
+         <text class="Caption" x="391" y="373">inl, ---, ---</text>
+
+       <g transform="scale(1.25), translate(0, 10)">
+        <text id="t1" x="20" y="70">Text <tspan id="ts1"
+          >tspan 1 <tspan id="tts1"> tspan 2</tspan
+          > more span 1</tspan> finish text</text>
+
+        <text id="t2" x="20" y="90" >Text <tspan id="ts2" visibility="hidden"
+         >tspan 1 <tspan id="tts2" visibility="visible"> tspan 2</tspan
+         > more span 1</tspan> finish text</text>
+
+        <text id="t3" x="20" y="110">Text <tspan id="ts3" visibility="hidden"
+         >tspan 1 <tspan id="tts3" visibility="hidden"
+         > tspan 2</tspan> more span 1</tspan> finish text</text>
+
+        <text id="t4" x="20" y="130" visibility="hidden"
+         >Text <tspan id="ts4" visibility="visible"
+         >tspan 1 <tspan id="tts4" visibility="hidden"> tspan 2</tspan
+         > more span 1</tspan> finish text</text>
+
+        <text id="t5" x="20" y="150"
+         >Text <tspan id="ts5"
+         >tspan 1 <tspan id="tts5" > tspan 2</tspan
+         > more span 1</tspan> finish text</text>
+
+        <text id="t6" x="20" y="170" 
+         >Text <tspan id="ts6" 
+         >tspan 1 <tspan id="tts6" > tspan 2</tspan
+         > more span 1</tspan> finish text</text>
+
+
+        <text id="t7" x="20" y="210">Text <tspan id="ts7" 
+         >tspan 1 <tspan id="tts7" 
+         >tspan 2 </tspan>more span 1</tspan
+         > finish text</text>
+        <text id="t8" x="20" y="230">Text <tspan id="ts8" display="inline"
+         >tspan 1 <tspan id="tts8" display="none"
+         > tspan 2</tspan> more span 1</tspan
+         > finish text</text>
+        <text id="t9" x="20" y="250">Text <tspan id="ts9" display="none"
+         >tspan 1 <tspan id="tts9" display="inline"
+         > tspan 2</tspan> more span 1</tspan
+         > finish text</text>
+        <text id="t10" x="20" y="270">Text <tspan id="ts10" display="none"
+         >tspan 1 <tspan id="tts10" display="none"
+         > tspan 2</tspan> more span 1</tspan
+         > finish text</text>
+        <text id="t11" x="20" y="290" display="none"
+         >Text <tspan id="ts11" display="inline"
+         >tspan 1 <tspan id="tts11" display="none"
+         > tspan 2</tspan> more span 1</tspan
+         > finish text</text>
+    </g>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

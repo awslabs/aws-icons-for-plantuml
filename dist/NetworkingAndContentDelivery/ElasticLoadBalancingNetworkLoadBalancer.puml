@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticLoadBalancingNetworkLoadBalancer [64x64/16z] {
+pPS7ZWCn30CVG2B-_skl7s71XRlcbIWzyPY2LotjYGrV5g30mIR4r7WYNUq6pRb75_6pm-HsZJq6qMSBjBlrqFxaN3XGDp96tGevTSWQ9qfIztpHSkh0mC_K
+bkezqieBZFTLjl03u6Es0qS2PpoiFEkPewCiByJmAvnTk73aMzrAwmKfJ04yXjq7VbVli3eRyV9Fe4z6mxE6SFLf38NPB_fvnVCYZmMFDI-Wnlyfp__XlV_v
+-J6uVc7yF3OyU2D-6UNFw80-oK_73mPVFnZKBoAldsdzplj7th_o_fdtxtn-yFCBX_abdP_o-QqQWldHU63mU7xEvtU_XewkSK8MM9S____apTBU4bW60W3H
+djXU0G
+}
+
+AWSEntityColoring(ElasticLoadBalancingNetworkLoadBalancer)
+!define ElasticLoadBalancingNetworkLoadBalancer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticLoadBalancingNetworkLoadBalancer, ElasticLoadBalancingNetworkLoadBalancer)
+!define ElasticLoadBalancingNetworkLoadBalancer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticLoadBalancingNetworkLoadBalancer, ElasticLoadBalancingNetworkLoadBalancer)
+!define ElasticLoadBalancingNetworkLoadBalancerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticLoadBalancingNetworkLoadBalancer, ElasticLoadBalancingNetworkLoadBalancer)
+!define ElasticLoadBalancingNetworkLoadBalancerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticLoadBalancingNetworkLoadBalancer, ElasticLoadBalancingNetworkLoadBalancer)

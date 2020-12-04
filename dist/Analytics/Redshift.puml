@@ -1,14 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Redshift [64x64/16z] {
-xTLLeYiv48DX5RX0tlz-9t0OxSvSpl_-9StYRzczUzsLSIghUzkcg-0fKS_cScKNP3v6n1XkWbDMNCi1UVD_dIw0DnSoIFA3Kc0BF62V_tBmsmPoyiDcOgnu
-RNvOwvg713ye16jUFxl-kkQh_E6X6PSU7YMlMlIJdUFrypUoELSzhtLbHcHMatEItFAlgxh5jm5Qnxr33NhSYt0g-hX7jTpW0wUSXpqLChZhcuyrXDpq8MB5
-IpCmTdq20dbu3WMzwmr9Hv0p1H3k-veEY0t01B7h0wAGamHy5cpNKm4jiWQCiUyBshoaE9MxtX6Jbzf5arl-H83cgtQyGGJZi6ye6_BBF0rwo_6p3N0UzsGt
-R_BaKUz8VbAk-FXgluFVfv_ljtAXji_ssvfBfJtijuzJ_h3VbbokmnKlKe_cNW_p_J3WlsNtxlq7
+fTK54kGw30RXba5Wt_-y3r9UYaAr_eUAlXvEuch-CFjpiHc8pK1i1c8p49k1s0p4PY0s0sCpC6u2rciH0H0fjTjTO5m5j99MzJ8mSa05aDhLp2FSJ7iLGFf5
+OAH00-b-_Woi2TGS6ET0Xtxz8NPeAJ3E0K7llWL5_Bnn3e37JS0W-tC0oat0vCgV0m3DSy0QFFeLW0gKflwRrbQ0-kp7yc6LOrAE2SUg-OiVoqU4jSLMgAcx
+l_gn_9gRgPgvnx4FVYoVfaqZFlXnwLs0ul71ZolVa0Rzhtt1ebCtV8jA2uWFVYIl05X0n0UV0mMAhU_ctQU0WqSi7n_yYF0YnPRlbFZbuuCV3i0Hi2xexpu-
+-4RrHes81k1_-7Zt5Gq3gGsgqFxqyUexqeLZFGmv-NZp0I3XMgYXbBEFvUVzypTTtnsWoSVoyzeBkdu79j0Z-rX-NdYjoEcya7qiFvEl07OAP1_BpvCtw1KP
+nvvyB3__z9rsFAP0yh7yF3s_U4V6sfEFkVQx7mL0Hmey-FcxZoR5ngzzyVENp_lYvuCV7_mA27uNC2JxSw23NGSKUlOfqA1e9Au2DRBF0HEWD3MFGxhr9e1e
+NFaS65P9grbd_-jhT6rL142aDlNr6MIV0m-xy9k1kHcOcu6v6PYRWRaPc9k1kHcOcu5_0G
 }
 
 AWSEntityColoring(Redshift)
-!define Redshift(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Redshift, Redshift)
-!define Redshift(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Redshift, Redshift)
-!define RedshiftParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Redshift, Redshift)
-!define RedshiftParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Redshift, Redshift)
+!define Redshift(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Redshift, Redshift)
+!define Redshift(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Redshift, Redshift)
+!define RedshiftParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Redshift, Redshift)
+!define RedshiftParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Redshift, Redshift)

@@ -1,0 +1,202 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- <text> styled with a list of font families, must                          -->
+<!-- choose which font renders which glyph                                     -->
+<!-- Also, matches SVG font by weight and other style                          -->
+<!-- properties if possible.                                                   -->
+<!--                                                                           -->
+<!-- @author bella.robinson@cmis.csiro.au                                      -->
+<!-- @version $Id: fontChoice.svg 1733420 2016-03-03 07:41:59Z gadams $     -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+<title>SVGFont - font selection test</title>
+
+    <style type="text/css"><![CDATA[
+        
+    ]]></style>
+
+    <g id="content">
+
+        <text class="title" x="50%" y="40">Font Selection Test</text>
+
+        <defs>
+
+            <!-- ============================= -->
+            <!-- SVG Font Definitions          -->
+            <!-- ============================= -->
+
+            <!-- This is an encoding of Microsoft's Georgia font    -->
+            <!-- in SVG format (as allowed in the license). For the -->
+            <!-- true type version of this font, refer to           -->
+            <!-- http://www.microsoft.com/truetype                  -->
+            <!-- It has been converted to SVG using Batik's         -->
+            <!-- true type to SVG converter (ttf2svg).              -->
+            <!-- Styling has been added for testing purposes.       -->
+
+            <font horiz-adv-x="901" fill="#6666FF">
+                <font-face
+                 font-family="SVGGeorgia"
+                 font-weight="normal"
+                 font-style="normal"
+                 units-per-em="2048"
+                 panose-1="2 4 5 2 5 4 5 2 3 3"
+                 ascent="1878"
+                 descent="449"
+                 alphabetic="0"/>
+
+                <missing-glyph horiz-adv-x="2048">
+                   <path d="M256 0V1536H1792V0H256zM384 128H1664V1408H384V128z"/>
+                </missing-glyph>
+
+                <glyph unicode=" " glyph-name="space" horiz-adv-x="494"/>
+
+                <glyph unicode="G" glyph-name="G" horiz-adv-x="1485">
+                    <path d="M1471 567Q1447 564 1407 558T1341 539Q1311 524 1299 497T1286 432V322Q1286 202 1287 160T1291 91Q1158 31 1026 -1T767 -33Q631 -33 505 18T285 163Q190 258 134 394T78 698Q78 860 131 998T283 1239Q378
+1339 509 1394T791 1450Q911 1450 1000 1421T1157 1351L1198 1419H1278L1287 923H1205Q1184 1005 1153 1084T1073 1227Q1024 1290 954 1327T785 1365Q678 1365 594 1322T448 1192Q387 1109 354 985T321 708Q321 573 353 454T448 247Q510 158 603 107T814 56Q902
+56 974 83T1077 140Q1085 192 1085 245T1086 335V413Q1086 455 1075 487T1027 535Q994 550 938 557T849 567V640H1471V567z"/>
+                </glyph>
+
+              
+                <glyph unicode="S" glyph-name="S"  horiz-adv-x="1149">
+                    <path d="M981 651Q1026 601 1047 542T1069 403Q1069 215 930 93T585 -29Q490 -29 395 0T231 72L188 -1H108L94 485H175Q200 395 233 323T322 187Q374 128 443 93T605 58Q674 58 725 76T809 127Q841 160 856 204T872
+307Q872 392 824 465T681 577Q616 603 532 634T387 694Q267 748 201 835T134 1064Q134 1145 167 1215T261 1340Q319 1392 398 1421T563 1451Q661 1451 738 1421T880 1351L921 1419H1001L1009 948H928Q906 1029 879 1103T807 1237Q764 1295 702 1329T550 1364Q455
+1364 388 1303T321 1154Q321 1062 364 1002T489 902Q562 867 632 842T769 787Q829 761 884 728T981 651z"/>
+                </glyph>
+
+                <glyph unicode="a" glyph-name="a" horiz-adv-x="1032">
+                    <path d="M1006 18Q959 1 924 -9T843 -20Q765 -20 719 16T659 123H653Q588 51 514 13T334 -25Q223 -25 152 43T80 221Q80 278 96 323T144 404Q169 434 210 457T287 495Q332 512 469 558T655 630V729Q655 742 650
+779T626 849Q606 886 570 913T466 941Q420 941 381 926T325 893Q325 873 334 834T344 762Q344 727 313 698T225 669Q175 669 152 704T128 784Q128 830 160 872T245 947Q290 975 354 994T479 1014Q563 1014 625 1003T739 953Q790 916 816 853T843 689Q843 546 840
+436T837 194Q837 155 850 132T892 93Q907 84 939 83T1006 82V18zM657 546Q572 521 508 497T389 437Q339 403 310 357T281 246Q281 163 324 124T435 85Q506 85 560 119T651 201L657 546z"/>
+                </glyph>
+
+                <glyph unicode="d" glyph-name="d" horiz-adv-x="1176">
+                    <path d="M1152 18L808 -4L793 10V102L785 104Q733 46 657 9T499 -28Q415 -28 337 9T200 115Q141 184 107 281T72 495Q72 602 109 698T211 866Q272 933 360 973T541 1013Q610 1013 676 996T791 951V1294Q791 1336
+777 1370T738 1423Q710 1442 663 1450T560 1463V1525L963 1548L978 1533V203Q978 168 991 144T1031 102Q1050 90 1086 87T1152 83V18zM791 191V768Q783 794 765 824T720 879Q691 904 652 920T561 937Q501 937 451 906T361 817Q324 761 303 675T281 483Q281 399
+297 331T351 203Q386 147 440 113T570 79Q650 79 702 114T791 191z"/>
+                </glyph>
+
+                <glyph unicode="g" glyph-name="g" horiz-adv-x="1043">
+                    <path d="M917 102Q957 64 980 16T1003 -103Q1003 -174 972 -236T878 -345Q811 -392 718 -418T488 -444Q264 -444 153 -379T42 -187Q42 -85 122 -26T326 38V52Q296 61 264 74T209 106Q183 127 167 155T151 226Q151
+279 188 323T302 400V415Q206 460 153 530T100 694Q100 834 204 924T472 1014Q517 1014 561 1005T652 982H996V886H764V880Q801 837 819 785T837 683Q837 553 732 463T486 373H365Q342 365 317 344T292 287Q292 250 313 231T364 204Q393 196 431 194T511 191Q555
+190 631 185T740 179Q786 177 832 157T917 102zM647 687Q647 804 600 873T466 943Q419 943 386 924T331 868Q311 835 303 789T294 693Q294 582 342 512T468 442Q554 442 600 511T647 687zM839 -140Q839 -84 813 -48T734 1Q706 5 619 10T417 15Q309 -6 264 -55T218
+-183Q218 -218 233 -250T285 -309Q320 -335 379 -351T523 -368Q670 -368 754 -312T839 -140z"/>
+                </glyph>
+
+                <glyph unicode="r" glyph-name="r" horiz-adv-x="839">
+                    <path d="M827 859Q827 808 802 769T725 729Q669 729 640 758T610 822Q610 844 613 862T620 898Q573 898 510 860T403 752V178Q403 143 416 121T459 88Q484 78 523 73T592 66V0H72V66Q95 68 119 70T162 78Q190 87
+203 109T217 168V777Q217 808 203 838T162 886Q143 898 117 903T61 911V976L389 998L403 984V845H408Q470 926 546 968T685 1010Q748 1010 787 969T827 859z"/>
+                </glyph>
+            </font>
+                 
+            <font horiz-adv-x="901" fill="#FF0000">
+                <font-face
+                 font-family="SVGGeorgia"
+                 font-weight="bold"
+                 font-style="normal"
+                 units-per-em="2048"
+                 panose-1="2 4 8 2 5 4 5 2 2 3"
+                 ascent="1878"
+                 descent="449"
+                 alphabetic="0"/>
+
+                <missing-glyph horiz-adv-x="2048">
+                    <path d="M256 0V1536H1792V0H256zM384 128H1664V1408H384V128z"/>
+                </missing-glyph>
+
+                <glyph unicode=" " glyph-name="space" horiz-adv-x="494"/>
+    
+                <glyph unicode="G" glyph-name="G" horiz-adv-x="1653">
+                    <path d="M1649 577Q1618 574 1594 570T1534 554Q1493 541 1480 511T1467 448V283Q1467 233 1468 203T1471 127Q1371 67 1176 14T816 -39Q662 -39 527 8T290 149Q188 242 130 380T71 696Q71 862 126 1003T285 1246Q387
+1347 533 1402T858 1457Q979 1457 1082 1428T1252 1364L1314 1419H1401L1410 901H1322Q1246 1134 1140 1247T872 1360Q680 1360 576 1192T471 729Q471 416 573 239T864 62Q952 62 1020 88T1127 150V438Q1127 474 1114 498T1062 541Q1032 555 987 564T912 577V655H1649V577z"/>
+                </glyph>
+
+                <glyph unicode="S" glyph-name="S" horiz-adv-x="1329">
+                    <path d="M664 -38Q534 -38 422 -6T231 70L162 0H77L64 513H150Q179 440 224 359T328 214Q389 147 464 105T641 63Q777 63 849 129T922 297Q922 380 861 436T670 534Q586 561 516 584T383 631Q240 688 171 794T101
+1031Q101 1114 137 1190T242 1328Q308 1385 411 1421T635 1457Q753 1457 856 1425T1018 1359L1079 1419H1166L1174 935H1088Q1058 1013 1018 1094T932 1230Q883 1288 819 1322T669 1357Q561 1357 493 1296T424 1145Q424 1060 483 1006T669 911Q743 886 820 861T957
+813Q1102 757 1177 659T1253 414Q1253 322 1210 236T1094 93Q1014 30 909 -4T664 -38z"/>
+                </glyph>
+
+                <glyph unicode="a" glyph-name="a" horiz-adv-x="1220">
+                    <path d="M1201 21Q1157 2 1097 -14T970 -30Q847 -30 789 6T710 111H704Q670 77 639 53T571 12Q524 -10 481 -20T359 -31Q243 -31 161 37T79 219Q79 284 97 329T148 410Q178 442 217 463T304 502Q394 535 520 570T704
+634V730Q704 755 700 796T683 865Q669 897 639 919T560 941Q516 941 487 929T439 903Q442 883 456 842T470 763Q470 746 461 721T435 680Q412 660 384 649T296 638Q212 638 169 678T126 784Q126 840 170 884T279 958Q342 988 424 1004T576 1021Q673 1021 754 1010T900
+962Q962 927 998 861T1035 687Q1035 574 1031 419T1026 215Q1026 170 1039 144T1081 105Q1098 97 1134 96T1201 94V21zM704 542Q648 523 593 499T503 447Q466 419 445 376T424 273Q424 195 459 160T547 125Q602 125 637 147T700 203L704 542z"/>
+                </glyph>
+
+                <glyph unicode="d" glyph-name="d" horiz-adv-x="1358">
+                    <path d="M1351 21L858 -8L843 6V98L836 100Q787 47 704 8T535 -32Q333 -32 202 118T71 506Q71 717 217 868T572 1019Q654 1019 726 1001T841 957V1284Q841 1321 826 1353T786 1404Q755 1426 709 1435T615 1449V1522L1155
+1548L1170 1532V221Q1170 183 1182 157T1223 116Q1244 105 1284 100T1351 94V21zM841 199V764Q834 787 822 815T787 868Q767 889 734 905T658 921Q558 921 494 808T430 489Q430 408 441 344T482 226Q511 173 556 143T666 113Q727 113 767 136T841 199z"/>
+                </glyph>
+
+                <glyph unicode="g" glyph-name="g" horiz-adv-x="1181">
+                    <path d="M1178 880H958Q997 836 1016 787T1036 685Q1036 616 999 556T902 457Q841 418 759 396T581 374H418Q406 365 392 346T377 308Q377 264 412 247T539 228Q630 226 723 221T856 214Q914 211 971 191T1070
+137Q1116 102 1146 48T1176 -78Q1176 -154 1140 -221T1028 -337Q949 -388 839 -416T565 -444Q302 -444 165 -380T28 -188Q28 -109 102 -58T332 -2V10Q240 41 189 92T137 212Q137 254 157 283T210 334Q238 353 278 366T345 388V399Q210 449 147 521T83 697Q83 844
+218 932T562 1020Q630 1020 693 1009T790 988H1178V880zM709 689Q709 806 672 874T558 942Q519 942 490 924T443 870Q426 836 420 791T414 697Q414 588 452 518T560 448Q632 448 670 511T709 689zM877 -151Q877 -117 858 -84T773 -29Q737 -23 655 -21T428 -19Q393
+-49 370 -90T346 -189Q346 -214 360 -244T404 -300Q439 -329 482 -345T612 -362Q741 -362 809 -312T877 -151z"/>
+                </glyph>
+
+                <glyph unicode="r" glyph-name="r" horiz-adv-x="1065">
+                    <path d="M1054 809Q1054 733 1007 676T883 618Q810 618 760 655T709 764Q709 799 714 818T723 855Q677 853 626 823T536 743V194Q536 159 547 136T584 100Q606 89 655 82T727 73V0H58V73Q83 75 108 78T152 88Q184
+99 196 122T208 182V764Q208 800 191 828T150 874Q132 886 105 894T44 905V978L521 1004L536 989V844H540Q609 924 686 969T848 1015Q941 1015 997 958T1054 809z"/>
+                </glyph>
+
+             </font>
+        </defs>
+
+        <!-- The characters 'G', 'a', 'g' and 'r' should use the SVG version of Georgia, -->
+        <!-- the others should use SansSerif -->
+
+        <text x="50" y="150" font-family="SVGGeorgia, SansSerif" font-size="35">Georgia</text>
+
+
+        <!-- The characters 'd', 'G', 'a', 'g' and 'r' should use the bold version of SVG Georgia -->
+
+        <text x="50" y="225" font-family="SVGGeorgia, SansSerif" font-size="35" 
+              font-weight="bold">Bold Georgia</text>
+
+
+        <!-- The next two lines should only use the SansSerif font -->
+
+        <text x="50" y="300" font-family="SansSerif, SVGGeorgia" font-size="35" >SansSerif</text>
+
+        <text x="50" y="375" font-family="SVGGeorgia, SansSerif" font-size="35" 
+              font-style="italic" font-weight="bold">Bold Italic SansSerif</text>
+
+        <!-- description for each test -->
+        <g font-size="10">
+            <text x="50" y="170">font-family="SVGGeorgia, SansSerif"</text>
+            <text x="50" y="245">font-family="SVGGeorgia, SansSerif" font-weight="bold"</text>
+            <text x="50" y="320">font-family="SansSerif, SVGGeorgia"</text>
+            <text x="50" y="395">font-family="SVGGeorgia, SansSerif" font-weight="bold" font-style="italic"</text>
+        </g>
+       
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

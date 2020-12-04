@@ -1,15 +1,18 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $DeepLearningAMIs [64x64/16z] {
-x99decOX24CFY0fv-r_l5APyvHNllwddzf88KVrs_ES_jLU--NQNBh0CyD8ZwO2bZco8wSy6POmru6pWB4c3fRgXO4gQX0uKrkM2tGFL7_sejzPlpE-vhE_A
-LNr-o3Iaxk94mWXxo7ex61wEbKwK0KHWULEFp06Cr95W1bkQj44E6BiBozIPmYf8gGqgm5jzbM2-jBuDm5QltI-aBf1OgVMg2KG7De3ExjhijNuP34Bb8ISc
-fkdxml2jtmwHMbK63YN3WNrXU0N-OwxA28UGfc5nC4XSKlejT6UeLhNLIirtK-YGdVrI0ImrjrMmLaVgXDuXw8mdc9Dt7StltqPfu-_BBG8CPkKiDUKENVLS
-tObXdky7dn3ry1OBLNyhPsiQBBt1OdwluexCRdSJjr_MvtRhem0048QXg7_NY7X0PyviskJxV3s_lX_-7zOFro_s3_Ol-WVv5_kd-pVdX-QNvgVcj_A3yWlp
-a_ERywFpQxnMgmC
+fPQBhkWe24KtAWBs__zt8lOqjZ3tvPwvhoPh2VZ8qJoIfiVOeS0E1NOei4E17GhiK6270ZiKsA70Ca4ZK4i4TNv_2omH5CoK85ZVwIMmA6YWhftmhQ01B0pK
+NM1HGEYgsX738iAWVGOM1S3w8yOvG5OItlRrwRqBlA_lINZR-YVP14p0tN-JJM29WE3P1Bq0QBJDVoNXRV8qLtag4AVd3lZ-xqbuOv3Fy1P81L159Ot54DZv
+9MXE_-zHpfTttWK0Il_5NKYNjvlteVClBzD8bZUpoNS2w6U8dOhChMrVViJbdVUXiy_0GQ28__xXFuBkonjcsZq3dguAaF-E_k57M5wRqol2IW1hzsz2Ry7O
+1PqRQD4GqoVaCkb-Bn9-B9gyQ0PGWESwBqPKkJPHBQWI-2bGeBG27r5yaLWBl7T00k-2YcPc3GXlebIWDw0Lq5o54tuOGRsARvG1L2z10V7s4dxyBrzHH1z-
+LaEQyB5-pyzBn40bVvGhgchaa_bvV5N709BdVGlya7l_QEtVazb0eQh2NPbA1NGcyCF4pu-njxsVwPcocl1XUWA_Tg4_v_Sfe5Nkm6gTQnLTIVZnkZ-BPZy7
+VcuAkcvnFXQmtLyp8RY0u17TutnM060s3SIpSQ-2Peg-8oCl07Xk5Ebg8y_82rYyyNOS_f-F1Tny0rhp3VjVmSWBSBvYUup-Ht2D6081FF5-7y1bM3_NVFWe
+i88xOdVMPgxlvSr70OF4XDRWTyFdvvh5Hm5Xxgg0x9NkxVXjtlae06nsWPZxWNdnKL3kzKDyd65zJzO_3tk5y_wZu9wpZOyWdtzMGG6n-Lw-qcX-Dmky2z9O
+ceq_55o7WkjGS1qAhaF1TIYu3WNNeU0w5Fm7
 }
 
 AWSEntityColoring(DeepLearningAMIs)
-!define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
-!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepLearningAMIs, DeepLearningAMIs)

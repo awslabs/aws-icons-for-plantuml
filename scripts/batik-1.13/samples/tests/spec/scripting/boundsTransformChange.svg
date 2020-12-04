@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a circle attributes                                    -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: boundsTransformChange.svg 1803034 2017-07-26 12:00:06Z ssteiner $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" id="body" width="450" height="500" viewBox="0 0 450 500"
+     onload="updateGroup1()">
+    <title>Testing Update engine when bounds and transform change.</title>
+
+    <desc>This tests changing the bounds of an object then changing a
+    a parent's transform to ensure the dirty regions are properly
+    computed.</desc>
+    <script type="text/ecmascript"><![CDATA[
+        var inRegard=false;
+        var time1 = 90;
+        function updateGroup1() {
+            var elt = document.getElementById("g1");
+            var fs = Math.cos(time1*2*3.1415926/180)*12+24;
+            elt.setAttribute("font-size",fs);
+
+            var x = Math.cos(time1*3.1415926/180)*100 + 225;
+            var y = Math.sin(.5*(time1+90)*3.1415926/180)*150 + 250;
+            elt.setAttribute("transform", "translate("+x+","+y+")");
+            time1 += 20;
+            if (inRegard && (time1 >= 270))
+               regardTestInstance.scriptDone();
+            else
+               setTimeout('updateGroup1()', 100);
+        }
+       function regardStart() {
+          inRegard = true;
+       }
+    ]]></script>
+
+    <g id="test-content">
+       <g id="g1">
+           <text text-anchor="middle">Squash the Bug</text>
+       </g> 
+    </g>
+</svg>
+

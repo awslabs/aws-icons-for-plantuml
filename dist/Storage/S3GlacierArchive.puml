@@ -1,13 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $S3GlacierArchive [64x64/16z] {
-xTO5ZaGn38DXfvJu_WTUfbJE3ehx2Gl_u2CycILYvd-3oG8M_ug1_nYp08APuHzEpl73FtiVFoRfgFMyl3xxbT-Wes91sl-zaM4eJ792z6AFqiZ0fHv1jlB7
-wx8Nlv4mo0NPxxCS-iSBqtsnKR-ixlK7pLyhRFFTsoR4GH1Kebx8Z983JicGjQ6qUk79h2bMBsoY_FuF_7xrxq_RUwwsyy_UsswfVW3ryPSDylIdF_tfJt_w
-qv_-z3vs_jch1Tfpd__WL1Qmg3XsfjGBp_8A
+xTO5SWCn58FXeO9Aklzf6yxpA63_OTB0ahvbyer5-uDv1lFCiVwxny5ooAF1UBypV86-ASyMvjcZlDyKoV5UH_fldpeY-S8ySuFUendoBnytA_Hg0_noH96c
+qlMIIrdjdAx_r3fnA5qVRJj7D7Z-j2CUzDwb-VRR2UGTPmlwAjNaE_KngMEsVzdZh_lrNSifwD-jYe6lGl1luEF-X_TV0Kar1RorpdjzyO2t8WUz_xxYqj7t
+hnVU9hu_z-LVt_z7-_-Z_5Oo0G
 }
 
 AWSEntityColoring(S3GlacierArchive)
-!define S3GlacierArchive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
-!define S3GlacierArchive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)
-!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, S3GlacierArchive, S3GlacierArchive)
-!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, S3GlacierArchive, S3GlacierArchive)
+!define S3GlacierArchiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, S3GlacierArchive, S3GlacierArchive)

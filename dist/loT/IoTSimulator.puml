@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTSimulator [64x64/16z] {
+tTU5hiCm38LXeLMdalp-JtllLkw_o9OpA9oniwyCYPqqEgGTBsdGI9epBHo_afm5IN6t57kt5lDIgIwjNUpZbOkvLZ9NivuJQFUOWE-7ZvujeI-BNrQNNjr3
+R_7Au7Yky-9xqJ7Yd3UUjsxvvHmRZb-MmUE35-uuxq14OK5ZZEtqF3KK0N2cTnk_dP0qU-k7hv4NJey9l2Nzk584WKzSvKDEln1pulvHD1LxJPup2VtLQ3Lf
+pbp9i-EIzfZd4Ujl1_e2--ljPxRml2VKPh-ine77lntXcLzlFum_uEzz_R84Fph_
+}
+
+AWSEntityColoring(IoTSimulator)
+!define IoTSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTSimulator, IoTSimulator)

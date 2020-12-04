@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTHTTP2Protocol [64x64/16z] {
+xSz50iCm34JHLM2InTp_j0K5nkLABbS_32-n-I71MLGhwHwXsiKZMCdfgqHUBXNbSb_YqwTFdpvz-lJgqHxEFj3pte8U6AzxkxBZSGFjIKiJVd_mvBhNZYpO
+-WRGkhrjGZ6lUnUzTU8jZelnpnyQVWlGxNLEr7a3VY-vjY3SxNdUG_vQvUD2BH6EvDiQRzLwcXpy_krj0G
+}
+
+AWSEntityColoring(IoTHTTP2Protocol)
+!define IoTHTTP2Protocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2Protocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)

@@ -1,14 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2Rescue [64x64/16z] {
-h987ieCm30KZIthh-r_u5uen7MQowU6jok3Fjx1NREIIl2HBfoUy9vikG17-c8X1MRghV5vID4zGMgLt2ChKljpSaUC9fW7Esel6QU2_2yHXTpeE9mYm8USd
-Vlf0dlX-vtlBlVRDLHU_oksDRm7qFX3ss7T6_EZdlP-0VBs_2yWdlcbgrVlZEx9RtpJ5rltRbJjVa6VtBq4tVWxwYT-kdleEkZe_0h_mZHOjwdsLBd3kH-zK
-b0EYzl_7gMzjUcU7jmtipFVvQm4yr0W7IiiS-cOci04jeIKh6nY_x7m1jJ9HYRKVj6j3IXlVsA2rBpROpazVqDwNB-IHts-SUpzt9_Ut_Jeb00200H3OlpKX
-pZ8_inSW_tpkdyuFpY_k3-sltW-yNte_yNxZ_y3_nV_J_xVpW_EByvFpc_EZywloC_Ax-eFw2_eJ-Xlw8_kh-xD7
+xTS5YWL138HXj4cUtl-sY_umHKBDfjVt5T8stxZrywSatfKn9clAoPGJE8tJKRz6fvjgc0lI31USfF4ui_blyjVs_7ZFngLnrb-Zyd7M1odQtaVXEGRhkPiF
+dlxEArVFYF51IpntPEVxgqxbOdtGI6hQsNZTUmtTsVkA4mPQVwMhZF6o-VKC8WTM-T3KBnDYlDwhN-4Hj9hsdd_vdtZzIquknbUFRmQvsET7kgeibXYzFvA1
+pVVNjV4mgO7eDE__BD_VSElZKlkmdait_NxDlv_xts-IukKMw3sP_h-G54_TUdBql-R_awmJFdV_twdbnlnXKHzm6eFipz_8M9EH_lwy0G
 }
 
 AWSEntityColoring(EC2Rescue)
-!define EC2Rescue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Rescue, EC2Rescue)
-!define EC2Rescue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Rescue, EC2Rescue)
-!define EC2RescueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2Rescue, EC2Rescue)
-!define EC2RescueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2Rescue, EC2Rescue)
+!define EC2Rescue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2Rescue, EC2Rescue)
+!define EC2Rescue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2Rescue, EC2Rescue)
+!define EC2RescueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2Rescue, EC2Rescue)
+!define EC2RescueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2Rescue, EC2Rescue)

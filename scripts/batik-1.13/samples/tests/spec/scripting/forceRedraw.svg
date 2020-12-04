@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a rect's x,y,width and height attributes in an         -->
+<!-- 'onclick' event handler. This is actually mostly testing a change in   -->
+<!-- the documents size.                                                    -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: forceRedraw.svg 1733420 2016-03-03 07:41:59Z gadams $  -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+<svg id="body" width="450" height="500" viewBox="0 0 450 500">
+   <title>&lt;rect&gt; moving display updated with forceRedraw()</title>
+
+   <script type="text/ecmascript"><![CDATA[
+    var root = document.rootElement;
+
+    function setRect(target, color){
+        var t = document.getElementById(target);
+        t.setAttributeNS(null, "fill", color);
+    }
+
+    var suspendId;
+    function testForce(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "crimson");
+       root.forceRedraw();
+    }
+
+    function testForce2(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "crimson");
+       setTimeout("root.forceRedraw()",(time/2));
+    }
+
+    function testForce3(target, time) {
+       suspendId = root.suspendRedraw(time);
+       setRect(target, "blue");
+       root.forceRedraw();
+       setRect(target, "crimson");
+    }
+
+    function moveX(target) {
+       var e = document.getElementById(target);
+       var base = e.getAttributeNS(null, "x");
+       for (var x=0; x<350; x++) {
+          var v = (1*base)+x;
+          e.setAttributeNS(null, "x", v);
+          root.forceRedraw();
+       }
+    }
+    ]]></script>
+
+   <text x="50%" y="40" class="title"
+    >&lt;rect&gt; fill modification with redraw suspended.</text>
+
+
+   <g id="test-content" font-size="10">
+      <rect id="rect.t1" fill="gold" x="10" y="50" width="80" height="40" 
+            onclick="testForce('rect.t1', 2000)"/>
+
+      <rect id="rect.t2" fill="gold" x="235" y="50" width="80" height="40" 
+            onclick="testForce2('rect.t2', 4000)"/>
+
+      <rect id="rect.t3" fill="gold" x="10" y="100" width="80" height="40" 
+            onclick="testForce3('rect.t3', 4000)"/>
+
+      <rect id="rect.t4" fill="gold" x="10" y="170" width="80" height="40" 
+            onclick="moveX('rect.t4')"/>
+
+      <text  x="100" y="67">suspendRedraw 2000
+      <tspan x="100" y="79">immediate forceRepaint()</tspan></text>
+
+      <text  x="320" y="67">suspendRedraw 2000
+      <tspan x="320" y="79">forceRepaint() @1s</tspan></text>
+
+      <text  x="100" y="110">suspendRedraw 2000
+      <tspan x="100" y="120">fill='blue'</tspan>
+      <tspan x="100" y="130">forceRepaint()</tspan>
+      <tspan x="100" y="140">fill='crimson'</tspan></text>
+
+      <text x="225" y="230" class="legend"
+       >Loop on x with forceRepaint</text>
+   </g>
+</svg>

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Braket [64x64/16z] {
+fPHNekCm30CXDkZT_y9hfT8AbRAQ3_U1HQGm4T_WPxWPmCq0RWPmCu2R0TmCu6O0DmEu6S3D0DQi56r0inJ00XDd79kuR-os2S655C02XP42Yn1eteGqyr2q
+kF7Ppo4t_Ed7__YM_5ZwklG5-iOFbOOcvKPaA82_yHNlqBJybI-seWr_R6hVvA31c8X1djo0I1HBDsREVWHWAz_jG2QVsRUGF7qzlt4LuE60_-hd5G0Q9thT
+NnqmhtxulUol3Z30Ppy5HEgl2l3KVV9xCNyPq21H-VqBdtdusU-h_Z82HAWSs8lVb_tbSZqK0ttr-vl-GjN2WB4HE_32xylv5LUKbBB_6mjV0D6nuGU_q_LW
+wYy09sb03B_9WTT-h_fJ20SD_YnuuOUxcSo-tiOmKgl-Cg_ps_dzHYxd7xpuSPr7WKVsqg_wSm1DsYtbv_uCaEV5p_svI_Rr8hhvwR_TcVmPJRu0Nlysl_6Z
+0S7Qvnk_gQgJ3hIWIo9t--fJbRSI_JAwZEs9vFF5TyX8SNVsk7vYDWgJ--Q0YTaN-6CbG8lRm6apCVaDl2y4KFAZpxCFNEq6jEZz2v_J-usXm_O--CBdkR_1
+i6-GOP4s5JtXqiHo8Z_JtxBhzrs_x_fzr--xVj_r-rj_C-1lC-1lC-0V
+}
+
+AWSEntityColoring(Braket)
+!define Braket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Braket, Braket)
+!define Braket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Braket, Braket)

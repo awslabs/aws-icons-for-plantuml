@@ -1,51 +1,41 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-sprite $Blockchain [64x64/16z] {
-xPE5WSGm30HNkEw_ubV-c9ar8GicRBoAHXP7WOPV2g0hFyQbSCFtb_ljjzz--ymvt3yyuLCnHrBs39KdV7Z-4t34pj1nqW-wcP4b9QrWrf3Jq1bd-0vLA06a
-JKFB6bAdeP_bonYc8o9OXw766jPX37cE3v75_TTmUVyrzBZm_TNGBtf_rt-_w_-Vw__Vry-_zjjlltrUIcxuLt0_7shNe885SXNu1lu
-}
-
-AWSEntityColoring(Blockchain)
-!define Blockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Blockchain, Blockchain)
-!define Blockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Blockchain, Blockchain)
-!define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Blockchain, Blockchain)
-!define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Blockchain, Blockchain)
-
-sprite $BlockchainResourceIcon [64x64/16z] {
-xPD50e103CIeqFx_nRWxp979RKE3R_5d2264-19hZLqRN-SP2z9snfjyPsRAShaARqoiJ7FSuxWuxZrsvgxNZkNqtiXezhraXyxthwEPxpyx_AZNbFOaxNGs
-nDwqlJKgJlgYePqMKHKvCjq2x-7xHzyV_ltm_mVzVz7zW-xVFqC88QG6
-}
-
-AWSEntityColoring(BlockchainResourceIcon)
-!define BlockchainResourceIcon(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
-!define BlockchainResourceIcon(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
-!define BlockchainResourceIconParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
-!define BlockchainResourceIconParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BlockchainResourceIcon, BlockchainResourceIcon)
-
 sprite $ManagedBlockchain [64x64/16z] {
-xTK5ejn038DX6MJv_XTU31H3vRxvbk6VSD9_cM4OXc969DLNA0qmCm3EFetFJEfMfSEgJv4Zr8iovCcS_Id5gG4SNyrlWhrX_xy17UwploOUwSL9IPofYvFQ
-oGspJCoSMAYbZHwfUfA5-_GsB56g1nMgmxJHatXm-RCt05Pf2GKUKl0mc3PwDp911pn1qY9XA0JfLcvcG6tryNh922RKxL4HMSyceMdhflPwLUdTlrV3r3yK
-LN0Tc7yYt_CFc-VVCF7lzMNlzUVh-aEiwo_ua00tjv--i_tuNdLoNjv_VkN-EodsrnJgWmBLNt4SxcMcdJ5t1wYD4ze-ELAze85zYXA8cixV1bUVfLYl7zLN
-w7tzAlLVQXY6uGu
+fTK5bYH1549HmZxq_ZSy9yg5AODsURSyapUhJxRknn1W2304608C0OO0Gu0Xm11W2304608C0OO0G-3_zUmD0FfOF_IhuReslknhrttk2rwpRs5-qqy0iwxt
+mMp0A3-Vzxg_4mVGVM_p-VGeB0FuVXrp0uoF-eP16c02wuD-ef4Mw6YcrzF5Bz83WEiVWPrxO9NjvG8Bs3u4T0SqOA-vxuwlTzjV09pcljivu7jT-jDdzrrL
+DNJVwxu7x7Txq_TAUxsz_gIz_fUzllzsx--_oru_Vjp0Uj7_z4HI2EWHc9r-OvG1z30s39iluDJpLQy2fiaBD-whNjC12-ZsFf05-aF-zAjNlHQ0-N0o6wG5
+v7OwVnN9MWD0MwG7PCVLSLsRD7lLwtB-RdqK_Kp__JDH8Q0GK0We11G22W65W4908Q0GK0We11G2Vo7m5mB_
 }
 
 AWSEntityColoring(ManagedBlockchain)
-!define ManagedBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ManagedBlockchain, ManagedBlockchain)
-!define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ManagedBlockchain, ManagedBlockchain)
-!define ManagedBlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ManagedBlockchain, ManagedBlockchain)
-!define ManagedBlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagedBlockchain, ManagedBlockchain)
 
-sprite $QuantumLedgerDatabaseQLDB [64x64/16z] {
-xPO5Zi0W50MVVE7-5rvZlILXNISsaVdrmdZWdt_-wSgm9JcY-gLncW18YiIrkLwG9q5dTSzXNI50knFQqE6CEudOwmEn65ixUTFZ76ghXrQ3ztekpt-p9vY7
--nV4Peye0ehgxlduSZu_xVPZbEThG_9653N62_hx5zYEoFaslAW_ylFxp9UzVnsUHDsh7-lg_LFVM80Jw5Ivw0NSp3P7PMODq-ofyKZHY-jl0tIRXMioUARh
-VenEgyr4TLC17bIATJ-vxdiCAIKVz2KzwOFkzPJW04zqenyXoHqyqsNlknun8UzLZtJH4pMjU4USwrZqo9vwn_IZBivVuDCrhojg37lt-oi1e2CoCsm2o9Tz
-lvqXuWPIysnUqa-T_B3_rthzzCUlt_lxXvVlNpvZ__Jo_Ti___np2G
+sprite $ManagedBlockchainBlockchain [64x64/16z] {
+xPG53eDG0CLY4_p-fyMb8LzmVTsmakAGdOOGGeZ_YCcEEPdicDF_3NmDpj87_mcmRoUOcU3O6uvzYklwxuf-mhMB32i3zfXdtxalUZJcleCzvDRz-kC7x0FZ
+zGChx_-cFVYNJ79TluArxz_gxuTf0qPfTASXX12Y
 }
 
-AWSEntityColoring(QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
-!define QuantumLedgerDatabaseQLDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, QuantumLedgerDatabaseQLDB, QuantumLedgerDatabaseQLDB)
+AWSEntityColoring(ManagedBlockchainBlockchain)
+!define ManagedBlockchainBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagedBlockchainBlockchain, ManagedBlockchainBlockchain)
+!define ManagedBlockchainBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagedBlockchainBlockchain, ManagedBlockchainBlockchain)
+!define ManagedBlockchainBlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagedBlockchainBlockchain, ManagedBlockchainBlockchain)
+!define ManagedBlockchainBlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagedBlockchainBlockchain, ManagedBlockchainBlockchain)
+
+sprite $QuantumLedgerDatabase [64x64/16z] {
+fTO7TkCm40DGJCNa_XVUY6uIJJ7SHwGXvIFDAZmbLnBNS7E0cmFS7E3c03S7k3d0pG5k3d1pW9i3t1puWcugQ14r_tEWmu8kOZd9rTi1r3mooSnmKm2OBPoz
+0Xhzty0LaBpFvRiFZyO0RCLBu-E15Gya-_oVbs2VnbSzeD7xK2nxQnCUcGyQrh2jUjA6ZvzLFthyabptDvdvslNL-M5clXOyPxvUtjdYUCNFFJ_ThhwU_Zc0
+JyuzJxtpzM8IvpyNSExPUlpcsrTZ0G1wC1SH9u3MyUhf03m7lWvFkW271p1wdJWozFL-_1tbiP97plsGTxu0jZoy09JVh7t_tXi0Q-RIi_K5JsOhUVJCVFPa
+CtU-NbuU0LeVF1R6tgjvmojsrySUTdsqdtkssgNtWBDByZjtFlLv_cDBXfk0f0YlkV5LeNX41C_4wCY-yrKCqvSLzIH7ddU-fNsUpumzPxxOClMS-LhmxBqW
+nmC1uIYTTo160m4OXxdwKa23tK0eeBp9rPVZ_VYfOkRp-kcypTKN1_TVpbcokZ1SHPeKjU1VgLd8FL-xldPzxVhQzRNhQzVNr6yE_6mE_6mE_0C
+}
+
+AWSEntityColoring(QuantumLedgerDatabase)
+!define QuantumLedgerDatabase(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabase(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabaseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabaseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
 

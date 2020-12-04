@@ -1,15 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
-sprite $Workspaces [64x64/16z] {
-xPO73jim34MfnPNxtxUGskyQ4I8ADbR6pnvFt67yu_JJJsftQAj4pIxZd2WH9Rb6IoQgrbqe2dziczRIEJnh_qvCl4TR8yhYVkRx8zxT2BpPaS8iE15UBMKZ
-yFydCHwHbQ0aJ9JrbCA_ZmaGZbhn0uEpuv6IGmZfDS_THZa7xgfFnQcsu1-T6YdarEETIY_ZxPSyxlL8PKfpXHC7l14bTGS_bqdMlD9HRkPvjeWuulCfKvFx
-9UOh4bZAb3xdc2yeO4fFvLFVup4vQMgVJHx-LdjgtstUgceP6CPdoGjHiyU9pqSQCBvBtbgt1LwASRCZ3SqzuD4RWw_M7w7UpMuH3rkTpyxY9xwPPhOL3qar
-LxJ_mPipaKGyXFgTUTVgNFGotrKesHtUMlF6b_ak8wftU9SiInv6x0K_6bBs5j7COnAs5o7unIzui8Z1Jnjaxuy0-6c3HG807e7l2mvtVh71upGa2WAFqa11
-u64QglaDcVf7wgUV_W
+sprite $WorkSpaces [64x64/16z] {
+fPK9jgKW34IPauBzxxVH_9S76dfATV-PUq-9GTaEcMdlm2c0Km2d04u1d08u1N0Au1J0AO1JWBUWnbZ_Me2deAKminX-By0ke3pXMgCOldqCWSMNIHTXGaWt
+JNUVr0w2bQvpOIQbBbwCrwTi2w1fSI92Qm_vtSzb5Ki0pRK2W59I8ZRMRNrlmuCFcG7EGca92TsRscZFnbz0NQhFR7DGZ8rSUL2I4dB1iGd_5TpRaCyyC96c
+zz4OvNkwofcNpqdkeoMWUp98qoq-A7zeiF3TvAL_23ik-_BWkyMpxjz6oo0--6xmmEF-wQ5ezEAxmRzlGlivb0RVJJvFNkUNajeClXlyN5RrJCdvOOd1zmkY
+ZKSbi5o47kmptv7cGkLhvFM9559ZjdaDIWYHzFv_tqpjuddZsU0xA5wWy8ABu3vJjF5iy1qe7vwXaVMSObrvDlWEK4mtZoMoFivEAyy6lu-oHjRNp9JfoxF1
+zz_mCWNroxF1zpClGzYOb6U3xoOF_id4GrQU3RxV03rui1gsOsdm7JAAEmz5wifpDm8PnPKNWJwOpxpEWLHOUAmlDflNG2iiFFJ5jcIS15f1UTRgAtyMI0Nb
+jVhE7mLQGH-dcM7mHu5M-3pECMFmPu5Ka1H8BFuia0ftzKyC_lS2Yf6mnE2F0ZCRxnGCfs0u1SCf64x1S0g6Kp2SWk4K3ATWE0M_
 }
 
-AWSEntityColoring(Workspaces)
-!define Workspaces(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Workspaces, Workspaces)
-!define Workspaces(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Workspaces, Workspaces)
-!define WorkspacesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Workspaces, Workspaces)
-!define WorkspacesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Workspaces, Workspaces)
+AWSEntityColoring(WorkSpaces)
+!define WorkSpaces(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, WorkSpaces, WorkSpaces)
+!define WorkSpaces(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WorkSpaces, WorkSpaces)
+!define WorkSpacesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, WorkSpaces, WorkSpaces)
+!define WorkSpacesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WorkSpaces, WorkSpaces)

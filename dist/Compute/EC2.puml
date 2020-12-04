@@ -1,13 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2 [64x64/16z] {
-xTP5bWGn30DGevpxNtWmk_ABtCFGMkU7QVtOt7CFiWkcFAKFXjx5ungJdFgsfVWrFctWvvbx65PPF8t0dyfRBHZ6VXU1F5dLrrb8YTjyL8eLL54cMN6JTsdY
-GuyCKRz49H8JRxkjfaysRB_tlFsTwdtDnb_8tYVgAyOVRhqtZwDFVqg-UVmGsLr4xt7sAGwWbglsNjMFVc_neoy0VlJd_jk-VtlFzy-UuuCdwxVJUxf_YEVx
-jyry_CJJy_i5uoVt5_7a_YIUtD_Kq_U3U_v-SSypzx1ydnV_DTxY6XzxI9zyxsVrn-QUUnu1
+nTG7ha8n44FHKA_P_uBfp5Ean8molvXUZcKgR3bdSkf3iO1Y0SK2YWKK2oWMK2oWM42n05jmRCCSjm9iGPjaMy0a7pzQ7lSQJyQVZIVZpyRZV0JyWefdsRVs
+EdiyDKuBdd_nus_j8UtREDRtUlHLVcJ9uxo6--rNkVTAU9oNsH-PxvUKy3Wlipyosny5f_R8cbTyQsRxCViVWO_olZqoy0e_tG_djpyEl1AUO8iUupEl7vnN
+mkEy_FvNd5V2uxo-xWUS5ys4LvpNxF_po1RdrVz_nwcByqfud5V2uxn8nFXSWVColwM8yqfud5V2uxmIdiwFWuqYfp4_uRqDNoEVgbVLg-fLzQfwMLyik1GB
+BiM26m
 }
 
 AWSEntityColoring(EC2)
-!define EC2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2, EC2)
-!define EC2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2, EC2)
-!define EC2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2, EC2)
-!define EC2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2, EC2)
+!define EC2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2, EC2)
+!define EC2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2, EC2)
+!define EC2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2, EC2)
+!define EC2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2, EC2)

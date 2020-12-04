@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $RedshiftDenseStorageNode [64x64/16z] {
+rTS7SiCW58JX0-mYxd_QzFWVs6746_TDZ_aaqN5_yLYNM5TnINMlPtlK2tZfMgzhlQxrqXNjz-DTuoB5Hf32T-q_WXUUd7CFZJ1xdt5XQXF2cf4hdfkZvbcm
+zjdDflN2DskPh7Rw1OpIPKyjcaxklsv6_s1eqK_nvACUZLz6_zy78hFd3j_1nz1PUalwGSPxh8u7FlakgKa2V7E28uCt9POUdhvBEYWp--xWSNypojDhotTy
+yVbfKpmv6DFXkRYd_c-Kd7EavoVZHsrZ_11RZl7VkcByrkVFKPv_pgUehn_TTro_lCsTVc_vPmFPy5p0vVs3vDCN3uIgxP-P767fw-S7dt9YfmzvZ_CJCQKP
+GDUT7zslyEYoXr_Xt-xz1tbBtyE_M3u1
+}
+
+AWSEntityColoring(RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RedshiftDenseStorageNode, RedshiftDenseStorageNode)

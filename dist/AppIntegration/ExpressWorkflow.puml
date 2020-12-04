@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ExpressWorkflow [64x64/16z] {
+fPG7TXqn30EngWHr__Ec9zedHaXipcjkCshyPiJkp02J0IO3J0QO330PO3B0P83909C1Adh1qtI0WehlF3BWl3A0RlD1LG5tiNmdRG8c0duF54oIzc2AW7z3
+hKy3r2luFJ20SPp_v9Vl-lu5qrMWFq0pEKWk0mELUXBz31ZkDE7xlhKhHVd-tdB4h4FxBdtQq7x7mOoNgVmdvnFWwnaDOC24Fr3VppXG615-HVTNeABlL614
+_y61xSzne4V__Akz_L-fVGHWRlyalF_4Syx1Oz9tlcbeF7vG_-QFomKKZFF_slZ8_21ocHz_mJ_p4xgelCpFSOs2-_piRwdud_c9dvyG4FFZVlTtOFact4Fq
+Gs2TWVdoNVhywQ_JlrCP0kiCcF0xGs25G9W2XIqL60_GA5aYqF2TH_ltm0G6hQ1AFmIEYIOW_NkWm7uEjhdmD_VrtOM_kPr_JwBsr-N-NGIM2eo2fz5T1DOH
+45pyN60b0oiPMCd0IWPMCh2IWPKCh6JWAm
+}
+
+AWSEntityColoring(ExpressWorkflow)
+!define ExpressWorkflow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExpressWorkflow, ExpressWorkflow)
+!define ExpressWorkflow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExpressWorkflow, ExpressWorkflow)
+!define ExpressWorkflowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExpressWorkflow, ExpressWorkflow)
+!define ExpressWorkflowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExpressWorkflow, ExpressWorkflow)

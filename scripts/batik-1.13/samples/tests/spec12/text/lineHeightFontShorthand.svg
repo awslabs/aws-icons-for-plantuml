@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Image element references an SVG file                                   -->
+<!--                                                                        -->
+<!-- @author Thierry.Kormann@sophia.inria.fr                                -->
+<!-- @version $Id: lineHeightFontShorthand.svg 1733420 2016-03-03 07:41:59Z gadams $         -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" version="1.2"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <title>Test CSS 'font' shorthand 'line-height'</title>
+    <text class="title" x="50%" y="30"
+         >Test CSS 'font' shorthand 'line-height'</text>
+
+<style type="text/css"><![CDATA[
+  @font-face { font-family: "bolder"; src: "Courier" }
+  .f1 { font: 20px Serif; }
+  .f2 { font: 20/2 SanSerif; }
+  .f3 { font: 20/1 times; }
+  .f4 { font: bold 20/.5 monico; }
+  .f5 { font: italic 20/30px times; }
+  .f6 { font: bold italic 20/15px times; }
+  .f7 { font: italic bold 20/15px times; }
+  .f8 { font: 700 20/1em times; }
+  .f9 { font: 700 20/75% times; }
+  flowRegion > rect { fill: none; }
+]]></style>
+
+   <g id="testContent" font="8pt sanserif">
+      <flowRoot><flowRegion
+       ><rect x="10"  y="60" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f1"
+        >font:<flowLine/>20px Serif</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="100" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f2"
+        >font:<flowLine/>20/2 SanSerif</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="180" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f3"
+        >font:<flowLine/>20/1 times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="240" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f3"
+        >font:<flowLine/>bold 20/.5 times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="300" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f4"
+        >font:<flowLine/>bold 20/.5 times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="330" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f5"
+        >font:<flowLine/>italic 20/30px times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="10"  y="420" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f6"
+        >font:<flowLine/>bold italic 20/15px times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="225"  y="60" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f7"
+        >font:<flowLine/>italic bold 20/15px times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="225"  y="120" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f8"
+        >font:<flowLine/>700 20/1em times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot><flowRegion
+       ><rect x="225"  y="180" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara class="f9"
+        >font:<flowLine/>700 20/75% times</flowPara></flowDiv></flowRoot>
+
+      <flowRoot font-size="20"><flowRegion
+       ><rect x="225"  y="230" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara line-height="1.5"><flowSpan line-height=".75"
+        >para: 1.5,<flowLine/>line:.75</flowSpan></flowPara></flowDiv></flowRoot>
+
+
+      <flowRoot font-size="20"><flowRegion
+       ><rect x="225"  y="290" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara line-height=".75"><flowSpan line-height="1.5"
+        >para: .75,<flowLine/>line:1.5</flowSpan></flowPara></flowDiv></flowRoot>
+
+      <flowRoot font-size="20"><flowRegion
+       ><rect x="225"  y="350" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara line-height="1"><flowSpan font-size="6"
+        >blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</flowSpan></flowPara></flowDiv></flowRoot>
+
+
+      <flowRoot font-size="20"><flowRegion
+       ><rect x="225"  y="410" width="200" height="90"/></flowRegion>
+       <flowDiv><flowPara font-size="6"><flowSpan
+        >blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</flowSpan></flowPara></flowDiv></flowRoot>
+
+   </g>
+</svg>

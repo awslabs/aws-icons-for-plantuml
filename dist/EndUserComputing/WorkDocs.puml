@@ -1,13 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $WorkDocs [64x64/16z] {
-xPP73iCm30IN145AzF__ctle21kubxcvpBXRobFmyjB3PsYqxvWbUD-y87p0uLDPAG22zhCWua0iyNCGeFn1WF870SeV12X_4A3z6k1z8a3u9K3xH83mIu3s
-YG3Xbm3j4m7Ahm7Uhm7UPmCEqTv48bKiJJHT191l0BGblWXymVbd-ew--p8_SvclUkprcnrx_MR7Nh_giTSViVJwZ_LRM-Rt_ey_CSzl-kcR5m0lsBmVe8d1
-_9KWUfw2bvSF
+fTH7OWC124FHz21n__EcT_qXjj6KtVjBYlU8UyXf6T0oe6L0ou2M0Iq3MWQq36WPqDTkhcZN702VTWwahzmGI2_oruU1z0B_E0J2AtqDWVHAFmNIA_mOIA_m
+Oo2zmay1y0eVWTahV0Hch_270QDN-kA0ZLxfEM0RlS9pmBRHApm6_3hq2ay1lmszqcV0xqEly1dmnz0hV0JyELszJlhpnrs3DtjUeHSDZseLUXpx0k_4hr7s
+1TxenRx06xtO5tYZ5_i2R-7O5tWBnxx0MwAZnhx06xrEzqQlqxtHYtoZjt3a6xs58z_ffwEQlj4RlSWtUgCN-KPlz2BVw2qS-Nxrfozz--PqVWE-ZHCk_CM1
+NWPw6UXbe9U1NWPw6UXbe9U1Pm
 }
 
 AWSEntityColoring(WorkDocs)
-!define WorkDocs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, WorkDocs, WorkDocs)
-!define WorkDocs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, WorkDocs, WorkDocs)
-!define WorkDocsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, WorkDocs, WorkDocs)
-!define WorkDocsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, WorkDocs, WorkDocs)
+!define WorkDocs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, WorkDocs, WorkDocs)
+!define WorkDocs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WorkDocs, WorkDocs)
+!define WorkDocsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, WorkDocs, WorkDocs)
+!define WorkDocsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WorkDocs, WorkDocs)

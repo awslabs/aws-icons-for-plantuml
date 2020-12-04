@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $IoTThingTravel [64x64/16z] {
+xPVNiWCX34FVF6lsGV__jRVV95h48AStfHiVkXY2ErD-QV9n4VxDPq4ABqdWDKaUbeOyJ5sD3mhcZooU0PxWRUvmJYcSnF-BI_PO0E0acvTBlISdlC2Nls10
+y-mReVYl1atC7_7ZRhJ_8APyvleVOrpoF9fkPFqSklElDzE4fu30vpo59Cw4tl-oJoN_BLq5PV-gFWCr_tLPnlmntcKPlDYiFi-uu5t_hGWQjE4V4Z9BlCRZ
+DxqPwwTyG4ER-4SKY5F7u1cmUTwed2zvlVzp1smNn_NFY4-JRyo31k3uJvoY8TRFuGavaOVBOnC9-_pKFAhdf-WGglmrxr-dtnzFlW1VyG9-d_zVtlprzGa
+}
+
+AWSEntityColoring(IoTThingTravel)
+!define IoTThingTravel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingTravel, IoTThingTravel)

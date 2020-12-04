@@ -1,0 +1,445 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- This example validates the handling of viewBox and preserveAspectRatio    -->
+<!-- for <image> elements.                                                     -->
+<!--                                                                           -->
+<!-- @author vhardy@apache.org                                                 -->
+<!-- @version $Id: svgImageViewBoxOverflow.svg 1733420 2016-03-03 07:41:59Z gadams $  -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+<title>&lt;image&gt; and viewBox &amp; preserveAspectRatio</title>
+
+    <style type="text/css"><![CDATA[
+        .label { text-anchor: middle; }
+        .oddRow { fill:white; stroke:black; }
+        .evenRow { fill:#eeeeee; stroke:black; }
+    ]]></style>
+
+    <g id="content">
+
+        <text class="title" x="50%" y="30">viewBox &amp; preserveAspectRatio</text>
+        <text class="title" x="50%" y="50">on svg &lt;image&gt;, overflow="visible"</text>
+
+        <g id="table" class="label" transform="translate(80, 60)">
+            <rect         width="110" height="20" class="oddRow" />
+            <text x="55" y="15">meet</text>
+            <rect width="110" height="20" class="oddRow" transform="translate(110,0)"/>
+            <text x="55" y="15" transform="translate(110, 0)">slice</text>
+            <rect width="110" height="20" class="oddRow" transform="translate(220,0)"/>
+            <text x="55" y="15" transform="translate(220, 0)">unspecified</text>
+
+            <g id="yMXX">
+                <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                <text x="-5" y="40" transform="rotate(-90,-5,40)">yMin</text>
+
+                <g transform="translate(0,40)">
+                    <rect x="-20" y="20" width="20" height="40" class="evenRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMid</text>
+                </g>
+
+                <g transform="translate(0,80)">
+                    <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMax</text>
+                </g>
+            </g>
+            
+
+            <g transform="translate(0,120)">
+                <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                <text x="-5" y="40" transform="rotate(-90,-5,40)">yMin</text>
+
+                <g transform="translate(0,40)">
+                    <rect x="-20" y="20" width="20" height="40" class="evenRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMid</text>
+                </g>
+
+                <g transform="translate(0,80)">
+                    <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMax</text>
+                </g>
+            </g>
+            
+            <g transform="translate(0,240)">
+                <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                <text x="-5" y="40" transform="rotate(-90,-5,40)">yMin</text>
+
+                <g transform="translate(0,40)">
+                    <rect x="-20" y="20" width="20" height="40" class="evenRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMid</text>
+                </g>
+
+                <g transform="translate(0,80)">
+                    <rect x="-20" y="20" width="20" height="40" class="oddRow" />
+                    <text x="-5" y="40" transform="rotate(-90,-5,40)">yMax</text>
+                </g>
+            </g>
+            
+            <rect x="-40" y="20" width="20" height="120" class="evenRow" />
+            <text x="-25" y="80" transform="rotate(-90,-25,80)">xMin</text>
+            
+            <g transform="translate(0,120)">
+                <rect x="-40" y="20" width="20" height="120" class="oddRow" />
+                <text x="-25" y="80" transform="rotate(-90,-25,80)">xMid</text>
+            </g>
+    
+            <g transform="translate(0,240)">
+                <rect x="-40" y="20" width="20" height="120" class="evenRow" />
+                <text x="-25" y="80" transform="rotate(-90,-25,80)">xMax</text>
+            </g>
+    
+            <defs>
+                <g id="row">
+                    <rect width="110" height="40" transform="translate(0  ,20)"/>
+                    <rect width="110" height="40" transform="translate(110,20)"/>
+                    <rect width="110" height="40" transform="translate(220,20)"/>
+                </g>
+            </defs>
+
+            <g id="evenRowBlock">
+                <use xlink:href="#row" class="evenRow" transform="translate(0,0)"/>
+                <use xlink:href="#row" class="oddRow" transform="translate(0,40)"/>
+                <use xlink:href="#row" class="evenRow" transform="translate(0,80)"/>
+            </g>
+
+            <g id="oddRowBlock" transform="translate(0,120)">
+                <use xlink:href="#row" class="oddRow" transform="translate(0,0)"/>
+                <use xlink:href="#row" class="evenRow" transform="translate(0,40)"/>
+                <use xlink:href="#row" class="oddRow" transform="translate(0,80)"/>
+            </g>
+
+            <use xlink:href="#evenRowBlock" transform="translate(0,240)"/>
+    
+            <rect x="-40" y="380" width="40" height="40" fill="white" stroke="black" />
+            <text x="-15" y="400" transform="rotate(-90, -15, 400)">none</text>
+            <use xlink:href="#row" class="oddRow" transform="translate(0,360)" />
+
+            <line x1="55" y1="20" x2="55" y2="420" stroke="black" />
+            <line x1="165" y1="20" x2="165" y2="420" stroke="black" />
+            <line x1="275" y1="20" x2="275" y2="420" stroke="black" />
+        </g>
+
+        <g id="testCases" transform="translate(80, 80)">
+            <defs>
+                <rect id="hViewBox" x="12.5" y="7.5" width="30" height="25" stroke="red" fill="none"/>     
+                <rect id="vViewBox" x="72.5" y="7.5" width="20" height="25" stroke="red" fill="none"/>     
+            </defs>
+
+            <!-- xMinYXXX XXX -->
+            <g>
+                <!-- ... YMin XXX -->
+                <g>
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMin" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMid XXX -->
+                <g transform="translate(0, 40)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMid" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMax XXX -->
+                <g transform="translate(0, 80)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMinYMax" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+            </g>
+
+
+            <!-- xMidYXXX XXX -->
+            <g transform="translate(0, 120)">
+                <!-- ... YMin XXX -->
+                <g>
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMin" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMid XXX -->
+                <g transform="translate(0, 40)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMid" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMax XXX -->
+                <g transform="translate(0, 80)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMidYMax" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+            </g>
+
+            <!-- xMaxYXXX XXX -->
+            <g transform="translate(0, 240)">
+                <!-- ... YMin XXX -->
+                <g>
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMin" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMid XXX -->
+                <g transform="translate(0, 40)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMid" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+                <!-- ... YMax XXX -->
+                <g transform="translate(0, 80)">
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="xMaxYMax" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+            </g>
+
+
+            <!-- none XXX -->
+            <g transform="translate(0,360)">
+                <g>
+                    <g>
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none meet" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none meet" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(110, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none slice" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none slice" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+
+                    <g transform="translate(220, 0)">
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none" x="12.5" y="7.5" width="30" height="25" />
+                        <use xlink:href="#hViewBox" />
+
+                        <image xlink:href="../../resources/images/svg3.svg" overflow="visible" preserveAspectRatio="none" x="72.5" y="7.5" width="20" height="25" />
+                        <use xlink:href="#vViewBox" />
+                    </g>
+                </g>
+
+            </g>
+
+
+
+        </g>
+
+    </g><!-- "content" -->
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

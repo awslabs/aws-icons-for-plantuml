@@ -1,13 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $EC2P2Instance [64x64/16z] {
-xPS5jiCm40EzgDp_mX_MPLOvC0-A4v1U3EsfMCGDh-S9uEAhOn36z-FNQVeU1O2Bhmba57vqOevukjy89kHhaQoVMcoIP_rEFExB8zSlNzdVqhyKcqiqKwf_
-HSThp4UXHFyA32N5pdiYVmL2HEki2fTMRpc_ZxRUH5Q_6-rR9L3acVEVpI_sJcf0didlkB_oKOCzf9y3W1BzQqM-aIG18_jFTxVjpJln_6_k_qWdy-_4aKxv
-ZW7vJzpd1zRSth-uR-fINtEc_u-E_u-ENyluBm_aj_G_Nl-xrj_y_c7PVpsyVtry__mulm
+xTS54eCm50JGqSwNolrlsx5jSTXWaR-uF5oIJrOH4LaRPkd32vKi_MTZZlM241wfm1zm_JFpSVynp__ZtFtlhB2uAk65zFZQYMACzL0hNf1bpr__Ba_tuBJl
+S_h-zzP-p5tgTMzu3XEz86TvGHWlyVsFxt_S_oCzaGny1VM7y1da2m
 }
 
 AWSEntityColoring(EC2P2Instance)
-!define EC2P2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2P2Instance, EC2P2Instance)
-!define EC2P2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2P2Instance, EC2P2Instance)
-!define EC2P2InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2P2Instance, EC2P2Instance)
-!define EC2P2InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2P2Instance, EC2P2Instance)
+!define EC2P2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2P2Instance, EC2P2Instance)
+!define EC2P2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2P2Instance, EC2P2Instance)
+!define EC2P2InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2P2Instance, EC2P2Instance)
+!define EC2P2InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2P2Instance, EC2P2Instance)

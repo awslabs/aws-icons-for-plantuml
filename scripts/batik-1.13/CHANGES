@@ -1,0 +1,1684 @@
+Change Log
+==========
+
+The following log records some of the most important changes.
+Bug fixing is an ongoing task, so it is implied in all sub-releases.
+
+1.12 -> 1.13
+------------
+
+BATIK-1276: Allow blocking of external resources
+BATIK-1275: Refactor shared resources.
+BATIK-1274: Add .gitignore
+
+1.11 -> 1.12
+------------
+
+Java 7 or later is minimum runtime required
+
+BATIK-1203: ImageTagRegistry forgets to reinitialize cache
+BATIK-1251: Correct policy file in Squiggle
+BATIK-1253: build.sh referenced from build.xml
+BATIK-1257: Rasterizer - insufficient permissions when transcoding to PDF
+BATIK-1272: Update Xerces to 2.12
+
+1.10 -> 1.11
+------------
+
+BATIK-1232: Zip release should use mvn jars
+BATIK-1233: Add policy file for batik-rasterizer
+BATIK-1234: Tools cannot be run using java -jar xxx.jar when built with Maven
+BATIK-1240: Java 11 compile error
+BATIK-1249: Fix Java 11 module error
+
+1.9 -> 1.10
+-----------
+
+BATIK-906: Should never use Error to report runtime errors
+BATIK-1123: Missing import of ImportInfo class
+BATIK-1125: Rasterizer fails with base64 embedded png
+BATIK-1140: Show line numbers on exception
+BATIK-1142: Remove e.printStackTrace for BridgeException in SVGAbstractTranscoder
+BATIK-1157: Wrong value for default JPEG quality in documentation
+BATIK-1170: Incorrect ColorConvertOp alpha handling breaks masking
+BATIK-1196: Run batik tests from junit
+BATIK-1197: Make jython and rhino optional
+BATIK-1198: TIFF transcoder looks for invalid class name for its WriteAdapter
+BATIK-1200: ImagingOpException: Unable to transform src image
+BATIK-1204: Remove hashtable
+BATIK-1212: Show real error on URL failure
+BATIK-1216: Compile error on Java 10
+BATIK-1222: Only call DOMImplementation in deserialization
+
+1.8 -> 1.9
+----------
+
+- Maven build support
+- Java 6 or later is minimum runtime required
+- FOP-2489: An SVG file using markers is not rendered by FOP 2.0
+
+1.7 -> 1.8
+----------
+
+1. Bugzilla problem reports fixed:
+
+    42408, 43411, 43847, 43950, 44553, 44590, 44919, 44936, 44966,
+    45112, 45114, 45117, 45397, 45520, 45883, 45958, 46072, 46124,
+    46202, 46227, 46430, 46431, 46513, 46855, 46871, 47201, 47202,
+    48182, 48411, 49889, 49968, 50006, 50100, 51908, 42395
+
+2. New features
+
+  * Support for the printNode() script function.
+  * Support for the Window and Location interface subsets from
+    SVG Tiny 1.2.
+
+3. Improvements
+
+  * DocumentType nodes are now created for XML documents where one was
+    supplied in the markup (although only the name, publicId and systemId
+    properties of the DocumentType object are filled in).
+  * Dynamically created <script> elements inserted into the document are
+    now executed (at most once, as with HTML).
+  * The location bar in Squiggle is now updated if the requested document
+    followed an HTTP redirect.
+  * Improve Batik's Rhino class shutter so that it works with Rhino 1.6R7.
+  * Allow SVGGenerator2D to embed fonts that weren't obtained from the
+    standard AWT font lookup mechanism.
+  * ttf2svg no longer outputs hkern elements outside user-provided glyph range.
+  * Batik now tries to access content in HTTP error responses (for example, one
+    is able to setup custom content for missing - HTTP code 404 - and/or other
+    erroneous situations).
+  * Internally registers not only font families but also makes font available
+    through their font names.
+  * All CSS font weights are now handled for font selection
+  * Compatibility with GNU Classpath, OpenJDK and other open JVM was improved
+    (image I/O is now used by default, over the Sun proprietary classes).
+
+4. Bug fixes
+
+  * Better DOM serialization code.
+  * The prompt() script function now returns a proper ECMAScript String
+    value instead of an object.
+  * Changes to a CDATA section in a <style> element are now detected.
+  * Fixed tight bounds calculation for Quadradic Bezier curves.
+  * Now uses float for Document Dimensions.
+  * Ensure motion animations that are removed from a document don't
+    cause an NPE.
+  * Animations that become frozen are now not incorrectly deprioritised
+    compared to other animations on the same attribute.
+  * Avoid canvas repaint problems that occur in some circumstances when
+    it is being resized.
+  * Exceptions are now thrown if an invalid QName is passed to
+    DOMImplementation.createDocumentType().
+  * DocumentType.getName() now returns the correct value.
+  * Fixed SVGLocatable.farthestViewportElement to return null when
+    called on the outermost <svg> element.
+  * JavaScript fragments using different types within the one document
+    (such as text/javascript and application/ecmascript) now share the
+    same script interpreter.
+  * Exporting 256 color indexed PNG files in Squiggle now works.
+  * Avoid an NPE in ttf2svg when resolving substitutions for Arabic script.
+  * ttf2svg now correctly writes out kerning pairs for characters that have
+    no name.
+  * SVGGraphics2D now serializes font-size values in style="" attributes
+    with a unit.
+  * Avoid an NPE when disposing a document that had animations targetting
+    CSS properties on elements that subsequently became display:none.
+  * The startOffset="" attribute on textPath elements now allows negative
+    percentages.
+  * Correctly handle individual missing <view> attributes by looking at
+    the closest ancestor SVG element.
+  * Fixed HeadlessExceptions related to WMF transcoding.
+  * Font families containing numbers (like "Univers 45 Light") no longer
+    cause errors.
+  * Compiling on Oracle JDK 7 and JDK 8 now works.
+  * On Windows, spaces within environment variables like JAVA_HOME no longer
+    cause errors (JDK 6 and above default install location were moved from
+    the system drive root to a Java folder inside Program Files).
+  * Fixed a manifest issue affecting several Jars which prevented proper
+    integration with NetBeans and other third-party IDEs and tools.
+  * Several fixes for Rasterizer Task contribution (which was not building
+    in Linux nor Cygwin and more).
+
+5. Misc
+
+  * Minimum required Java version was raised to 1.5.
+
+
+1.7beta1 -> 1.7
+---------------
+
+1. Bugzilla problem reports fixed:
+
+    26815, 28344, 35165, 36570, 37496, 38498, 40163, 40727, 41205,
+    41820, 41947, 41955, 41988, 42014, 42021, 42032, 42075, 42118,
+    42137, 42168, 42169, 42196, 42209, 42210, 42212, 42221, 42228,
+    42255, 42258, 42311, 42312, 42333, 42381, 42386, 42479, 42504,
+    42505, 42543, 42645, 42651, 42697, 42698, 42807, 42961, 42963,
+    442968, 3022, 43043, 43045, 43165, 43194, 43195, 43370, 43418,
+    443446, 3638, 43657, 43744, 43760, 43764, 43787, 43854, 43871,
+    443904, 3953, 44029, 44054, 44092, 44146
+
+2. New features
+
+  * xml:id support (http://www.w3.org/TR/xml-id/).
+  * ElementTraversal support (http://www.w3.org/TR/ElementTraversal/).
+  * Enhanced DOM Viewer window, contributed from Ivan Andjelkovic,
+    a Google Summer of Code student.
+
+3. Improvements
+
+  * Support for cursor="move" on OS X, and cursor="help" on all
+    platforms.
+  * Improved conversion to/from WMF.
+  * data: URIs now supported as external stylesheets, scripts, filters.
+  * SVG 1.1 feature strings now reported.
+  * The viewBox="" attribute on <svg> is now animatable.
+  * Implemented SVGSVGelement.getViewBox().
+  * A document's document element can now be replaced.
+  * Performing animation hyperlinking backwards is now supported, as
+    well as using <a> elements to hyperlink to animations.
+  * Updated pdf-transcoder.jar to one built from FOP 0.94.
+  * Squiggle's View Source window is now syntax highlighted.
+
+4. Bug fixes
+
+  * XPath interface objects now exposed to ECMAScript.
+  * The three other MIME types for ECMAScript are now really supported
+    (text/javascript, application/javascript, application/ecmascript).
+  * Pseudo-elements now parsed properly in CSS selectors.
+  * Avoid null pointer exception when event-base timing specifiers
+    in animations reference an element by ID within a <use> shadow tree.
+  * Invalid min="" and max="" values on animation elements now ignored.
+  * Corrected CSS cascade order for rules of equal specificity.
+  * Fixed CSS :lang() processing so that it matches case insenstiviely,
+    using xml:lang="" as well as lang="", and using proper hyphen-
+    separated tokens.
+  * Gradients with gradientUnits="objectBoundingBox" disabled when the
+    bounding box has zero width or height.
+  * Avoid an array index exception for certain degenerate motion path
+    animations.
+  * Fixed mouse event button reporting.
+  * Avoid null pointer exception when cloning <symbol> and <image>
+    elements.
+  * Make empty <filter> elements result in no rendering for the
+    filtered element.
+  * SVGStylable.getPresentationAttribute() now returns null if the given
+    presentation attribute is not specified on the element.
+  * Specifying textLength="" on text elements that have non-text nodes
+    as their first children now works.
+  * Avoid numerical accuracy issues when sampling frozen animations.
+  * Event listeners are now removed when <text> elements are removed
+    from the document.
+  * Invalid SVG 1.0 feature string removed.
+  * Ensure animation elements are properly deinitialised when they are
+    removed from the document.
+  * Allowed animations in <use> element shadow trees to have syncbase
+    timing specifiers that refer to elements outside the shadow tree.
+  * Fixed bug in DOM event removal/dispatch.
+  * Ensure the animation engine is resumed if it is sleeping when a
+    beginElement() call is made.
+  * Avoid a null pointer exception in JSVGScrollPane if the document
+    doesn't return a bounds.
+  * Avoid a null pointer exception when painting a GraphicsNode on to an
+    SVGGraphics2D.
+  * Rasterizer -cssUser command line argument now resolved against
+    current working directory.
+  * Fixed bug in key event dispatching code.
+  * Decrease memory required for storing animation elements' previous
+    intervals (used for hyperlinking).
+  * Avoid infinite loop for animations with multiple, identical begin
+    (or end) instance times.
+  * Ensure TIFF and JPEG codecs really aren't compiled unless the relevant
+    Sun classes are present.
+  * Avoid null pointer exception when accessing animated marker orient
+    values.
+  * Patched Rhino so that the ECMAScript debugger runs on OS X.
+  * Ensure the animation engine is initialised before the SVGLoad event
+    is dispatched.
+  * Restored exception throwing from bridge classes when required
+    length attributes are missing.
+  * Duplicated codec classes removed from awt-util jar.
+  * Avoid null pointer exceptions in DOMMouseEvent objects.
+  * Motion animation transforms are now applied after the transform=""
+    attribute.
+  * Fixed bug in DOM event default action invocation in SVG 1.2 documents.
+  * Fixed bug in CSS class name matching, which occured only when an
+    element was declared to be a member of multiple classes, where one
+    is a prefix of another.
+  * Fixed bug on OS X where the zoom interactor overlay was not shown.
+
+5. Misc
+
+  * Official maven artifacts are now supplied.
+
+
+1.6 -> 1.7beta1
+---------------
+
+1. Bugzilla problem reports fixed:
+
+    22260, 25428, 28337, 29417, 29552, 32415, 34217, 34234, 34364,
+    34847, 34938, 35349, 35480, 35549, 35655, 35661, 35683, 35722,
+    35727, 35773, 35878, 35976, 35977, 36165, 36253, 36278, 36309,
+    36455, 36483, 36485, 36493, 36511, 36613, 36614, 36615, 36743,
+    36745, 36746, 36747, 36769, 36889, 36924, 36933, 37276, 37497,
+    37890, 37891, 37892, 37986, 37989, 38045, 38158, 38176, 38178,
+    38183, 38379, 38475, 38497, 38549, 38558, 38568, 38750, 38775,
+    38782, 38785, 38831, 38872, 38930, 38932, 38933, 38990, 39032,
+    39058, 39202, 39297, 39303, 39318, 39361, 39751, 39755, 39784,
+    39831, 39838, 40098, 40167, 40336, 40368, 40392, 40393, 40397,
+    40403, 40405, 40594, 40605, 40631, 40681, 40686, 40857, 40898,
+    40927, 40994, 41079, 41165, 41216, 41234, 41288, 41329, 41331,
+    41336, 41473, 43954
+
+2. New features
+
+  * DOM Level 3 Core/Events/XPath support.
+  * Improved WMF transcoder support.
+  * Override style declaration support.
+  * Near complete SMIL Animation support.
+  * SVG 1.2 features:
+      * resource documents
+      * shapechange and RenderedBBoxChange events
+      * SVGGlobal startMouseCapture/stopMouseCapture methods
+      * handler elements
+
+3. Improvements
+
+  * The SVG namespace declaration is now not assumed for the document element
+    when an SVG declaration is not present.  Certain non-conformant content
+    will now be identified as being in error.
+  * New MacRenderer implementation that avoids 10x slowdown on
+    Tiger.
+  * Mutations to flowText contents now cause the rendering to update, and
+    flowRegion objects are now rendered.
+  * Support for normalized path segments on SVGAnimatedPathData, thanks to
+    Andres Toussaint.
+  * Updated pdf-transcoder.jar to one built from FOP 0.9alpha1:
+      * This fixes text being drawn as text in PDF.
+      * JPEG streams being embedded as JPEG.
+      * Default bitmap dpi is 300.
+      * Most gradients and patterns are now correct (pattern overflow isn't
+        handled properly although most of the code is present), and
+        gradients with complex repeats are rasterized due to difficulties
+        expressing them in PDF.
+  * Transcoders with the KEY_EXECUTE_ONLOAD hint set force the document
+    to be dynamic.
+  * Added JIIO codecs to Batik (not enabled by default)
+  * Support for finding XML Parser through JAXP.
+  * Enhancements to ArabicTextHandler.
+  * Update Manager's MIN_REPAINT time is now adjustable.
+  * GraphicsUtil warning about Graphics from BufferedImage
+    w/o BUFFERED_IMAGE hint is now controllable with property.
+  * JSVGScrollPane now has 'scrollbarAlwaysVisible' mode.
+  * Improved Path parser so it is more conformant.
+  * Updated Rhino to 1.6R5.
+  * Documents in Squiggle's Go menu now have the full URI as a tooltip.
+  * Better version number reporting from org.apache.batik.Version.
+  * Implemented SVGPathElement.getPathSegAtLength.
+  * Implemented 'getFunctionName' for built in CSS functions.
+  * Exposed SAXDocumentFactory's parser to subclasses.
+  * Added a -snapshotTime option to the rasteriser.
+  * Now using Apache XML Commons External, for SAC, DOM 3 Core, SMIL Animation
+    and SVG 1.1 DOM bindings.
+  * Encoding as specified in a Content-Type header's charset parameter is now
+    honoured when scripts are loaded.
+  * Changed InterpreterFactory so that multiple MIME types can be associated
+    with a given Interpreter.
+  * text/javascript, text/ecmascript, application/javascript and
+    application/ecmascript are now all supported as script types for Rhino.
+    Processing of application/ecmascript is as specified in RFC 4329.
+  * Improved integration when running under Mac OS X: Squiggle's menu bar
+    is now at the top of the screen, the application window has a proper
+    name and functional About/Preferences/Quit menu items, and a Squiggle.app
+    application bundle can now be created.
+  * JAR files now have Implementation-* attributes.
+  * Added an interface for all ImageRenderers to get/set RenderingHints.
+
+3. Bug fixes
+
+  * SVGMatrix.rotate now takes deg rather than radians.
+  * Fixed mouseout/mouseover tracking, which regressed some time between
+    1.5beta5 and 1.6.
+  * Fixed misplaced glyph for mixed LTR and RTL text.
+  * Fixed handling of tooltips from title elements.
+  * Fixed rendering error (bug 36511).
+  * Fix for broken event propagation across 'use' element shadow tree boundary.
+  * Fixed a bug in the handling of 'x', 'y', 'width', 'height',
+    on feImage elements.
+  * Fixed bug in EventTarget.{add,remove}EventListenerNS wrapper
+    for Rhino.
+  * Fixed memory leak with dynamically added title tooltips.
+  * Fixed bug with update regions and filters.
+  * Fixed a problem with feSpotLight and feSpecular lighting (bug 36745).
+  * Fixed bug with event removal for multiple events and the same target
+    (thanks Andreas).
+  * Fixed problem with lowercase 'European' vowels (accented vowels).
+  * Fixed duplicated fragment identifier bug.
+  * Fix to allow transcoders that execute onload to work with SVG 1.2
+    documents.
+  * Fix incorrect reporting of modifier key states in DOM UI event objects.
+  * The broken link image works again now.
+  * Convert "" to null for namespace URIs given to public DOM interfaces.
+  * Gradient scaleback is now 0.999 rather than 0.97.
+  * ttf2svg now emits a document with an SVG namespace declaration.
+  * Include the o.a.b.ext.awt.image.spi.{ImageWriter,RegistryEntry} service
+    resource files in the codec jar.  (Fixes problems with data: URIs for
+    images when Squiggle is run from the jars.)
+  * Fixed problem with ZoomAndPan handling overriding user disabling of
+    interactors.
+  * More sensible handling of source 'URLs' in svgrasterizer.
+  * Greyscale sources are now treated as if they have sRGB Gamma.
+  * Fixed SVGTextContentElement.getExtentOfChar to use glyph metrics rather
+    than the glyph shape bounding box.
+  * Changed Errors to UnsupportedOperationExceptions for unimplemented methods.
+  * JSVGViewerFrame uses reflection for the Rhino debugger to enable
+    compilation without Rhino.
+  * Fixed phantom 'double click' bug.
+  * Handle 'style' elements added and removed from the document when they are
+    not at the root of the addition/removal.
+  * Make CSS engine not throw an NPE for extension elements that don't expose
+    an OverrideStyleProvider.
+  * Fixes for text-on-a-path with glyphs who's geometry doesn't "start" at 0.
+  * Various deadlock fixes.
+  * Fixed bug where writing TIFF with JPEG compression fails.
+  * Fixed significant performance bug in creating geometry (it was
+    parsing the entire path for each entry in the path, O(N^2)).
+  * Fixed SVGTextContent interfaces on FlowRoot elements.
+  * Fixed NPE when reloading an SVG 1.2 document quickly.
+  * Fixed bug where mousing over 'a' elements would result in exceptions.
+  * Avoid NPEs when loading scripts from file: URIs.
+  * Fixed flowText regression by rebasing off SVGOMTextPositioningElement.
+  * radialGradient has a default value of "50%" for 'r' (thanks Tonny).
+  * Fixed bug in key event dispatching when compiled under JDK 1.3.
+  * Avoid precision errors in stringification of transform list values
+    (thanks Nick).
+  * Unmaximize Squiggle window if the "Automatically resize window when
+    loading documents" option is turned on.
+  * Fixed improper rendering of the batik70.svg sample under OS X.
+  * Fixed synchronization bug in the SVG generator.
+
+4. Misc
+
+  * Code now compiles under Java 1.5 and 1.6.
+  * Lots of code/javadoc cleanups.
+  * New Forrest-based website for Batik.
+  * New about box/splash screen.
+  * Visual refresh for Squiggle's toolbar icons and Preferences window.
+
+
+1.5.1 -> 1.6
+------------
+
+1. Bugzilla problem reports fixed:
+
+         28035, 28188, 28429, 28432, 28487, 29110, 29891, 30580, 30584,
+         30739, 30923, 30925, 30948, 31603, 32108, 32435, 32872, 32951,
+         33242, 33733, 33890, 33923, 33986, 34030, 34041, 34115
+
+2. SVG 1.2 Features:
+
+ * All SVG 1.2 elements/features have been moved from
+   the Batik namespace into the SVG 1.2 namespace (except for
+   flowText which remains, due to some loss of functionality
+   with the current flowRoot and potential spec instability).
+ * Implementation of SVG 1.2 flowRoot element (text flow into
+   arbitrary regions with bidi support).
+ * There is now an SVG12CSSEngine which has support for new
+   properties in SVG 1.2
+
+3. Improvements:
+
+ * Massive performance improvement (>10X) for drawing on Mac OS X.
+ * Document.getElementById now uses a Hashtable to speedup lookups.
+ * JavaScript can now be used in an Applet out of the box.
+ * Added support for 'font' shorthand property.
+ * Added support for 'deselectAll' SVG DOM call.
+ * getEncolsureList and getIntersectionList are implemented.
+ * Added support for get[Screen]PixelUnitToMillimeterX/Y
+ * SVG DOM getTotalLength, and getPointAtLength are now implemented.
+ * Support for preserveAspectRatio DOM methods.
+ * Squiggle browser now has a 'Save As' menu item.
+   * Can toggle if xml:base should be added to saved SVG.
+   * Can 'pretty print' saved XML for readability.
+ * ExtensibleSVGDOMImplementation no longer exists,
+   the SVGDOMImplementation is now extensible.  There is a
+   new baseclass ExtensibleDOMImplementation that provides
+   extension capabilities to any DOMImplementation subclass.
+   As a result the name of the services meta-file has moved to:
+    'org.apache.batik.dom.DomExtension'
+   from:
+    'org.apache.batik.dom.svg.DomExtension'.
+   People with DOM extension will have to update the service file
+   accordingly.
+ * ExtensibleDOMImplementation now allows 'extension' elements in
+   the SVG Namespace (they are always lower priority than 'buit ins').
+ * When a new Document is loaded a new BridgeContext is created for it.
+   As a result each document now get's it's own CSS engine.
+ * ttf2svg now supports 'auto ranging' so it looks at the font
+   to decide what to output.
+ * DOM will now detect when the child passed to insert/remove
+ * AbstractParentNode will now throw a DOM Hierarchy exception
+   if you try to append a node as a child of it's self (PR 34030)
+ * Anti-aliased clips (hqClip patch).  This can be disabled by setting
+   the transcoding hint to vector or print (so content doesn't get
+   rasterized). PR 29110.
+ * Control of tiled image rendering based on rendering hint.
+   Using this hint may greatly increase the amount of memory used.
+ * The Marker interface now has a 'getCharIndex()' method to
+   get the index of the character the Mark is associated with.
+   node is not the child of the node insert/remove is called on.
+ * DrawImage now defaults color model to sRGB_Unpre if the destination
+   doesn't include alpha.
+ * The pattern element now shares one rendering tree across all
+   references.
+ * Some improvements for Kerning in SVG Font (faster)
+ * Arabic diacritics are now positioned relative to the right edge
+   of the base glyph. Bug 28429
+ * Basic DocumentType implementation, if present DOMUtilities will
+   now emit a proper doctype specification
+ * GVT Tree walker can now be given any node in the GVT tree and it
+   walk just that subtree.
+ * Many places now use getResource as Stream instead of Resource
+   bundles where localization is not wanted/needed.
+ * Tweaked UpdateManager repaint scheduling alg.
+   It now tracks when the rendering goes 'out of date'
+   with the document and runs runnables until it is out of
+   them or MIN_REPAINT_TIME is exceeded.
+ * Arc2D now translated to path with elliptical arc commands
+   in SVGGraphics2D interface.
+ * JSVGScrollPane now uses bbox of geometry if no viewBox is provided.
+ * Refactored the text and flow bridges so make things cleaner.
+ * Implemented textLength to return the value of
+   getComputedTextLength when the textLength attribute is not
+   set.
+ * Potentially large optimization in BBox generation
+ * The DOM tree viewer now has an option to hide text nodes that
+   only contain whitespace.
+ * The DOM tree viewer now includes the id of an element in the
+   tree view if it has one.
+ * Improvements to empty bounds handling, should decrease update areas.
+ * GVT Render requests are now compressed.  This helps when doing
+   live resize of large documents.
+ * Some refactoring/restructuring of svggen.XmlWriter to potentially
+   make it a pretty printing DOM serializer.
+ * Latest pdf-transcoder from FOP which supports '-dpi' switch.
+ * ScrollPane now should do a better job of fitting document w/o
+   scrollbars
+ * title and desc changes are now dynamically tracked.
+ * ScriptFactorys now loaded via Services interface.
+ * Made the JDK image loading Mediatracker static
+   (so others could use it easier).
+ * ParsedURL now uses the current Batik version as it's default
+   UserAgent
+ * Rationalized Text Selection code.  Copy to clipboard is now done
+   by JGVTComponent only if 'unix style' text selection is requested
+   (default).
+
+4. Bug Fixes:
+
+ * Fixed all known memory leaks with loading images.
+ * Changing documents in JSVGScrollPane now works properly.
+ * Fixed a small memory leak when changing xlink:href on a
+   use referencing a local element.
+ * No longer uses Thread.interrupt.  On some JVM's this can confuse the
+   class loader.
+ * Adding elements in the 'null' namespace nolonger causes a NPE exception.
+ * Fixed colorspace error in ColorMatrixRed.
+ * Line element no longer has a fill associated with it.
+ * Fixed bug #29416 - problem with empty quotes in CSS.
+ * Fixed bug #34210 - element selectors are now case sensitive
+ * Index out of bounds error fixed in linear gradient.
+ * AOI problem in PrintTranscoder now fixed.
+ * Null Pointer exception when PrintingTranscoding documents
+   using SVG fonts is fixed (the BridgeContext was being
+   disposed of too early).
+ * PrintTranscoder now uses UserAgent to report exceptions
+   rather than silently swallowing them.
+ * Fixed some minor bugs in the GlyphLayout code for flow regions.
+ * Very minor tweaks in JSVGScrollPane.
+ * Applied patch 28188, fixed tooltip text & title text, thanks Glen
+ * Applied patch 28487, fixed enabled/disabled state for
+   toolbar buttons, thanks Glen
+ * Fixed bug in text selection (programatically selected text wouldn't
+   clear properly.
+ * Fixed bug 23035 - Xlink attributes initialized with wrong values.
+ * Fixed Bug 28785 - 'a' element not clickable with namespace prefix.
+ * Bug 30584 - Concurrent Modification believed fixed (couldn't get
+               test case to fail after fix).
+ * Bug 29891 - Rasterizer problem if w/h == viewBox w/h
+ * No more 'flicker' when panning a dynamic document.
+ * CmapFormat4 now clips charCode 0->65534.
+ * All Object.wait calls are now in while loops to prevent spurious wakeups.
+ * DOM keypress events will now be generated for so called
+   Java 'action' keyEvents (previously only keydown/up were
+   generated).
+ * Fixed a bug in the PNG Encoder for some 1,2 or 4 bit/pixel images.
+ * Fixed bug in PackBits TIFF files with multiple IFD's
+ * The 'debug' messages are now synced with GUI messages.  Also they
+   are localizable.
+ * Tweaked the way we generate paths to avoid a bug
+   in the Mac OS X Java implemention where a close
+   followed by a moveto didn't join the path properly.
+ * Fixed width/height change onload bug in transcoders submitted
+   by Simon Mieth.  Thanks!
+ * Fixed a bug with CSS shorthand properties not being set by presentation
+   attributes.
+ * DOMImplementations now return empty documents if
+   qualifiedName in createDocument is null (PR 32108)
+ * Fixed 'flashing' with JSVGScrollPane.
+ * Fixed PR: 30923.  Text children now respect display and
+   visibility properties (including dynamic changes).
+ * Fixed visibility update bug reported by George Armhold.
+ * Fixed visibility bug on image elements.
+ * getBBox should now work per the specification.
+   a) fill="none" will still give bbox
+   b) It is now the tight bounds of the geometry
+   c) It does not include the stroke anymore.
+   d) When called on 'undisplayed' elements returns null (not sure
+      what the spec really says about this).
+ * Modification of use element's width/height now works.
+ * Fixed potential interrupted bug in the RunnableQueue class.
+ * The document loader cache now uses soft references to avoid
+   being a memory leak.
+ * Improved the xml:space support.
+ * textPath no longer supports 'position attributes' on it's self
+ * textPath now supports progression position attributes provided
+   by parent/child tspan/text nodes.
+ * systemLanguage, requiredFeatures, requiredExtensions now all fail
+   to match when given an empty string (as specified by the SVG
+   specification). Bug #33242 (thanks Rick Graham).
+ * Fixed potential synchronization issues in JavaScript intervals.
+ * Small optimization in Event dispatch.
+ * Removed debug print from SVGOMAnimatedPreserveAspectRatio.java
+ * Synchronization fix in SoftReferenceCache.
+ * SAXParser now includes 'ignorableWhitespace' when building the
+   DOM tree.  I also tweaked the way text and CDATA sections are
+   created.
+ * UpdateManager is now always the 'source' of UpdateManagerEvents
+   previously in some cases it was an inner class.
+ * Fix for masks when using Alpha Premultiplied (Mac OS X).
+ * Improved consistency of events from the RunnableQueue.
+   Calling suspend/resumeExecution should now always generate
+   a runHandler event (although the events may be "compressed"
+   so suspend/resume may only generate one resume event).
+ * Fixed bug in handling kerning elements with multiple glyph entries
+   in g/u 1or2.
+ * Removed use of 'getTagName' to use 'getLocalName' to avoid issues with
+   prefixed svg elements.
+ * Fixed a mistake in the generation of SVG fonts that include
+   arabic forms (PR 33733)
+ * Fixed handling of complex paint types (base types with
+   fallbacks).
+ * Fixed CSS SVG DOM interfaces for complex paint types
+   (see bug 33923).  Added new test for same.
+ * Text Selection events are now generated even when the
+   done event is not over a graphics node.
+ * The double '#' bug is gone in the SVG Pretty Printer. PR 33890
+ * The worst of the 'extra spaces' problem with the pretty printer
+   is solved.
+ * Fixed updates to SVG Font based text (PR 34041)
+ * Bug fix in NumberParser (thanks dvholten)
+ * Fixed bug 34115 - CSSStyleDecl doesn't collapse properties.
+ * JSVGCanvas no longer holds cached viewBox so it responds
+   properly when viewBox is updated in SVG content.
+
+5. Misc:
+
+  Documentation updates
+  JavaDoc will now reference W3 and JDK docs
+  Updated MAINTAIN file
+  Splash/startup screen now embed font (a little simpler SVG as well).
+  Some Rhino improvements.
+  New Tests for bugs.
+
+  Thanks to everyone on batik-dev/users for reporting problems and
+  working on finding solutions.
+
+
+1.5 -> 1.5.1
+------------
+1. Security:
+
+   A script security issue was reported in the Batik Squiggle
+   browser. Squiggle uses the Rhino scripting engine and some features
+   of that engine can be leveraged by malicious scripts to gain access
+   to otherwise protected resources (like the file system).
+
+   The Batik team has worked with the Rhino team to fix the isssue
+   that was reported and the Batik 1.5.1 patch release addresses the
+   issue.
+
+2. Features:
+
+   Rhino JavaScript Debugger now integrated with Squiggle.
+   Better line numbers in error messages.
+   Zachary DelProposto's Scroll pane class is added.  Allows for
+      scrollbars on SVG documents.
+   Cool solitaire examples in SVG.
+
+3. Performance fixes:
+
+   Parents who have children added/removed no longer invalidate
+      their entire area.
+   When a element is removed or CSS properties changed all next
+      siblings are not repainted unless CSS rules change them.
+   First event dispatch is much quicker than the past.
+   Switched to Xerces 2.5.0 to improve performance of data protocol.
+   Changes to paint properties on text is now _much_ faster.
+   When using many objects from an external file the file will only
+     be loaded/parsed once.
+   Modifying x/y and some viewBox changes on SVG elements is now much
+     faster.
+   Better JPEG embedding in PDF.
+
+4. Conformance:
+   Batik now passes all non SMIL-Animation tests from the SVG Working
+     Group beSuite.
+
+   @font-face CSS property and font-face elements are now compliant
+     with SVG specification.
+
+   Changes to the 'class' attribute now update rendering tree
+     correctly.
+
+   selectSubString now implemented.
+
+   Dynamic modification of display, and marker properties supported.
+   SVG 'a' element respects 'preventDefault' on event object.
+   Pattern element no longer applies object bounding box transform
+      if viewBox is specified.
+
+5. Bugs:
+
+   Fullscreen mode (F11) works again.
+   getExtentOfChar() returns bbox in text elements coordinate system.
+   SVGPoint now supports matrixTransform in more cases
+   clientX/Y now correct when target is a text element.
+   Bugfix in parsing some TrueType fonts fixed.
+   Now applies the 'all' media type to all content.
+   Image transcoders default to 400x400 rather than issuing an error
+     (consistent with viewer).
+   The properties opacity/filter/masking/pointer-events now work
+      on SVG elements.
+   Clearing text selection now works
+   Zero width/height image elements now work properly.
+   BBox info is correct for zero width/height items.
+   Fills/strokes text when text-rendering is set to geometricPrecision
+      rather than using drawGlyphVector.
+   getCssText() returns the relative version of URI's
+   SVG Graphics2D outputs correct rendering hints for text.
+   TextNodes returns the correct bounds.
+   Proper text child set as 'target' of events.
+   Events handled correctly for documents that reference the same
+      image multiple times.
+   Image are displayed as 'broken links' instead of being an error.
+   FeColorMatrix now respects color-interpolation-filters property.
+   elem.style.setProperty now works for shorthand properties.
+   Fixed race condition in JSVGComponent.set[SVG]Document.
+   Fixed several memory leaks dealing with use element.
+   Glyph element's 'd' attribute uses inherited winding-rule.
+   SVG 'style' element no longer generates multiple 'xml:space' attrs.
+   SAXDocumentFactory now generates only one CData node for each
+     CData section in source document.
+   Memory leak with addEventListener and objects that ref event target fixed.
+   Click events now allow a small amount of 'slop'.
+   Fixed bug in rendering with Double Buffering.
+   Clicking on the Canvas no longer clears the system clipboard.
+   No longer recascades elements in use tree from foreign documents
+   Now supports CSS properties with the max negative 32bit int value
+   Now supports more JPEG image types.
+   No longer throws a Class Cast exception when using named colors
+     as the fallback for icc-colors
+   clearTimeout, clearInterval no longer throw exceptions for null
+     objects.
+   clipPath now respects clip-rule when using 'use' element.
+
+  Bug PRs: 12536, 23030, 23038, 23079, 23177, 24919, 25251, 25463
+
+
+1.5beta5 -> 1.5
+---------------
+
+1. Features:
+
+       - With JDK 1.4 text-rendering="optimizeSpeed" will render
+         non-anti-aliased hinted text (for axially aligned text).
+
+       - The pointer-events property is now handled correctly for elements
+         without fill or stroke paint.
+
+       - Improved stroke accuracy when shape-rendering="geometricPrecision"
+
+       - JSVGComponent.setSVGDocument with 'null' now releases all
+         heavy resources and makes the Canvas display only Background.
+
+       - Many memory leaks fixed.
+
+       - Transcoders and JSVGComponent will now accept any Document
+         and convert to a Batik SVG Document if needed.
+
+       - Script interpreters are loaded lazily.  This means that unless you
+         use them (by having event attributes or script elements) you
+         don't need any script engines.
+
+   Performance Improvements:
+
+       - Image drawing is now 5-10x faster, for most raster images.
+
+       - Significant performance improvement for patterns that are
+         filtered or have filters applied to them (take Batik70 for
+         example).
+
+       - AbstractParentNode insertNode, removeNode, replaceNode are
+         now much faster for Parents with many children.
+
+
+   Library changes:
+
+       - Updated to the Rhino 1.5R41 library
+
+   Others:
+
+       - Added control of floating point precision used in SVGGraphics2D
+         (see the org.apache.batik.svggen.SVGGeneratorContext class)
+
+       - Batik now almost never opens image URL's twice.
+
+       - JSVGComponent/BridgeContext now has three levels of interactivity.
+         STATIC, INTERACTIVE, DYNAMIC.  With increasing memory overhead
+         and build time requirements.
+
+       - Improved test environment with automated memory leak, performance,
+         threading and interactivity tests. There are now over 1000 tests
+         in the regard regression test suite.
+
+       - Window.parseXML now returns a Document when no 'host'
+         Document provided.
+
+2. Bugs:
+
+       See: http://nagoya.apache.org/bugzilla for details on each bug.
+
+       - 6526 pointer-events does not work for fill="none" stroke="none"
+       - 6683 JSVGCanvas - Problem adding to JScrollPane
+       - 6951 see samples/tests/spec/paints/linearGradientLine.svg
+       - 8854 Fix feImage implementation according to latest SVG 1.0/1.1 c
+       - 9981 Improve Documentation on Scripting with Java
+       - 9994 text-decoration:underline is incorrect with tspan elements.
+       - 12013 Squiggle renders jagged curves/paths 12079 transcoder.wmf
+       - 13870 Language Code errors
+       - 14011 problem using rasterizer with the headless option
+       - 14673 not-so-pretty text rendering
+       - 14788 TranscoderInput(XMLReader reader) does not seem to be implem
+       - 14789 TranscoderInput(Document document) is incorrect
+       - 15348 SVGGraphics2D should not export scientific notation on CSS p
+       - 17168 SVGGraphics2D has package level protected on DOMGroupManager
+       - 17863 API to get Version info
+       - 17965 SVGGraphics2D adds 'font-size' attribute to 'line' and 'circ
+       - 18143 Removing attribute using Element.removeAttributeNode doesn't
+       - 18566 JSVGComponent packs its parent window
+       - 18640 Problem with setSVGDocument
+       - 18840 A few issues with the Batik source
+       - 18841 Problems with imports in Batik source
+       - 19017 error when attempting SVG to PDF conversion
+       - 19363 zero width on rect element causes error
+       - 19392 Bug in "org.apache.batik.dom.util.DOMUtilities.java"
+       - 19865 Exception rendering linked PNG file.
+       - 20147 JSVGCanvas doesn't function with JInternalFrame
+       - 20201 incorrect gAMA chunk for sRGB
+       - 20331 bug on batik SVG DOM implementation on the SVGPathSegArcAbs
+       - 20332 bug on batik SVG DOM implementation on the SVGPathSegCurveto
+       - 20811 A rect disabled because of zero width or height doesn't get
+       - 21125 XML comment cause css parser to abort parsing
+       - 21259 Drawing on an SVGGraphics2D and then using JPEGTranscoder pr
+       - 21352 XML comments inside script elements treated as script code
+       - 21358 Dynamic Update of content referenced by a <use> does not wor
+       - 21361 Bug on SVGPaint implementation
+       - 21362 Bug on CSSStyleDeclaration on URI reference
+       - 21374 Implement conformant Java Handler code
+       -       Viewer now properly displays w/h x/y locations in
+               'viewbox' coordinates.
+       -       Fixed dirty regions for nodes that change size then
+               position in the rendering tree (where the new position
+               has a different rendering transform).
+       -       Fixed handling Fragment URL's with colon's in them.
+       -       Batik no longer considers all @font-face rules a syntax error.
+               Batik now just ignores them.
+       -       Fixed use elements in Documents with no base url.
+       -       Runs of RTL Text now work with JDK 1.4.
+               Nested embed and bidi-override properties should now work.
+       -       Fixed bug setting viewBox on outermost SVG element as
+               described in:
+       http://koala.ilog.fr/batik/mlists/batik-users/archives/msg03513.html
+       -       JSVGComponent/Canvas now repaints when it changes size
+               (even when no viewBox).
+       -       Modifying zero W/H rect, circle, ellipse now works properly.
+       -       Fixed the handling of kerning attribute.
+       -       JSVGComponent.setSVGDocument with a Document that has been
+               previously viewed in the Canvas now works
+       -       'style' and 'script' elements no longer include the contents
+               of XML Comments (unless inside a CDATA block).
+       -       Fixed a with absolute x/y attributes in non-text
+               progression direction.
+       -       Fixed JSVGComponent when it's working threads are
+               interrupted.
+       -       RhinoInterpreter once again binds the Global Object
+               as 'window'
+
+
+3. Extensions:
+
+       - Updated multiImage element to match WD.
+
+
+4. Documentation:
+
+       - Updated the FAQ with frequent questions on UpdateManager, DOM
+         updates and visual updates.
+
+       - Updated the implementation status page and the home page.
+
+
+1.5beta4b -> 1.5beta5
+---------------------
+
+1. Features:
+
+   Library changes:
+
+       - Xerces 2.3 is now the default parser. The parser can still be controlled
+         through the org.apache.batik.util.XMLResourceDescriptor class.
+
+         ** NOTE **
+
+         While the general performance of the Xerces 2.3 parser seems equivalent
+         to those of the Crimson parser used previously, there is a notable exception
+         in the handling of long attributes. This makes a very visible difference
+         for SVG content that uses embeded images through the 'data:' protocol which
+         can be extremely slow with Xerces 2.3. The bookOfKells.svgz example, which
+         used the data: protocol for rather long images has been removed from the
+         distribution as it does not load in a reasonable amount of time when using
+         Xerces.
+
+       - Rhino version has been updated from 1.5R3 to 1.5R4 allowing to fix
+         BR #11968 (DOM access functions should return ECMAScript strings).
+
+       - Removed SAX and DOM sources from the Batik project. Now use xml-apis.jar
+         from xml-commons.
+
+   Others:
+
+       - currentScale/Translate now implemented (get and set).
+
+       - Implemented getScreenCTM, fixed getCTM (SVGLocatable)
+
+       - onzoom, onscroll, onresize events are now implemented.
+
+       - Integrated pdf-transcoder from FOP.
+
+       - Ctrl-K/L work in fullscreen mode.
+
+       - initial support for SVGList ( provided for SVGPointList in
+         <polygon> and <polyline>, SVGPathSegList in <path>, SVGLengthList
+         in textual elements, SVGTransformList in graphical elements )
+
+       - RFE #12735 : added support for dynamic modifications of 'xlink:href' in image element
+
+       - Now skips reading the SVG DTD unless validation
+         is turned on (improves load times for small docs).
+
+       - glyph-orientation-horizontal now works.
+
+       - linearGradient's can now be anti-aliased (radial gradient
+         anti-aliasing also improved).
+
+       - PNG Transcoder can now produce 1,2,4 & 8 bit indexed PNG's.
+
+       - rasterizer can now be used in headless mode (JDK 1.4)
+
+       - JPEG files now have X/YDensity set according to -dpi option.
+
+       - Batik Docs now include a dependency graph for the jar files.
+
+       - In ECMAScript, add the ability to pass an Object instead of a
+         Function to the Window.getURL() method in which case the
+         operationComplete method is called once the URL is retrieved.
+
+       - SVGUserAgent now controls the default font-family
+
+       - Added max-width and max-height support in the rasterizer infrastructure
+         (contribution by Henri Ruini, Henri.Ruini@nokia.com)
+
+       - Improvements to the WMFTranscoder by Luan O'Caroll
+
+       - Added better error reporting for external scripts: errors now include the uri
+         of the external scripts in addition to the line number which is convenient
+         when an SVG file references multiple external scripts.
+
+       - Modified the way SVG public identifiers are mapped to system identifiers.
+         The resource file now contains the mapping to the correct SVG DTD instead
+         of only containing the allowed SVG 1.0 system identifiers for a hard
+         coded DTD.
+
+       - Added support for cursors.
+
+Bug Fixes:
+
+       - clientX/Y values in MouseEvents are now returned in screen
+         pixels (it had been the viewBox coordinate system which was
+         convenient but wrong and problematic for some cases).
+
+       - Changed default extension for TIFF files to '.tif' from '.tiff'.
+
+       - Fixed bugs in screen updating when the size/location of the
+         root graphics node changed, and when transform on group
+         changes after bounds on a child.
+
+       - ToolTips no longer 'hang around' under JDK 1.4.1
+
+       - The JSVGCanvas no longer steals focus and pops forward whenever
+         the cursor passes over the canvas.
+
+       - The JSVGCanvas will no longer thrown an exception if an SVG
+         document is set prior to the component's size being set.
+
+       - Text anchor for vertical text.
+
+       - For corrupt/incomplete JPEG images now shows what it can.
+
+       - Fixed bug with Indexed PNG's that have a bKGD chunk.
+
+       - getRelatedTarget fixed for mouseout event.
+
+       - glyph-orientation-horizontal/vertical no longer require a unit
+         as per the SVG specification.
+
+       - Fixes for 'jar' protocol.
+
+       - Fixed compressed Tiff writing.
+
+       - Missing Glyph's are now rendered correctly.
+
+       - Text selection now works better with altGlyphs.
+
+       - PrintTranscoder no longer scales 'real world' units wrong.
+
+       - Fixed a bug involving the 'use' element with a width/height in
+         an SVGFont referenced from external documents.
+
+       - Collaboration with Philipe Converset (Qarbon) on an extension to define
+         margins in filter regions. This is now supported in the Batik namespace.
+
+2. Bugs:
+
+        12389  Focus issue in Squiggle's URL text field
+        12121  Cursor in URL field disappears
+        12168  MarkerShapePainter delivers wrong PaintedArea
+        12239  [PATCH] Moved some method local variables into class
+        12954  add support for stroke-width:0
+        15162  PNGTranscoder gives error message about TIFF transcoder
+        17167  stroke-dashoffset does not support negative length
+        13713  <use> element fails when using percentage values x/y coords
+        17183  baseline-shift doesn't refer to parent "line-height"
+        15063  Version-dependent code in package org.apache.batik.gvt.font
+        12736  Allow non-element nodes to be added to g and svg elements.
+
+       - Added Units resolutions to CSS rects
+
+       - 'd' and 'points' can now be empty on <path>, <polygon> and
+         <polylines>
+
+       - Now support the transform attribute on the <switch> element
+
+       - Fixed class loader delegation bug in RhinoClassLoader
+
+       - Patch from Keiron Liddle fixing PNGTranscoder KEY_INDEXED hint type
+         issue (was Boolean instead of Integer)
+
+3. Extensions:
+
+       - Binary distributions now include jar files that can display
+         extensions.
+
+       - The multImage element can now reference SVG images as well
+          as raster images.
+
+       - flowText now supports vertical-align.
+
+       - flowText now uses 'flowRegion' and 'rect' to describe flow
+         areas.
+
+4. Documentation:
+
+       - Status of Batik implementation of SVG DOM.
+
+       - Diagram showing the various Batik jar files and their relationships.
+
+
+1.5beta4 -> 1.5beta4b
+---------------------
+
+This is a patch release fixing a bug on linking.
+
+
+1.5beta3 -> 1.5beta4
+--------------------
+
+1. Features
+
+  - Squiggle Browser:
+
+       - the F11 key lets users enter the full screen mode or exit the
+         full screen mode if they are already in that mode.
+
+       - the Browser can now handle XML files which contain a stylesheet
+         declaration referencing an XSL transformation. If that transformation
+         generates an SVG document, Squiggle will display it.
+
+         By default, this feature is disabled because it requires that
+         the user either uses the JDK 1.4 (or greater) version (which at
+         this time is not a requirement for Batik) or that an XSL transformation
+         engine (such as Xalan) be in the classpath.
+
+         To enable the feature, uncomment the following line (i.e., remove the '#'):
+
+         #org.apache.batik.apps.svgbrowser.XMLInputHandler
+
+         in the:
+
+         resources/META-INF/services/org.apache.batik.apps.svgbrowser.SquiggleInputHandler
+
+         file.
+
+  - Scripting:
+
+       - Added the ability to use an ECMAScript object providing an handleEvent
+         method for the listener argument of the addEventListener method on DOM objects
+         (previously only ECMAScript functions were accepted as parameter). [RFE9149]
+
+2. Bug Fixes
+
+  - Images - bounds/hints now updated correctly when changed via script
+  - Local refs now work with null Document URL.
+  - Double buffered rendering now updates correctly on Mac OS X.
+  - ParseXML no longer assumes doc is SVG.
+  - Squiggle can now do Http authentication.
+  - SVG Font bounds fix
+  - Text layout fix (anchor and textLength)
+  - Adding/Removing children no longer invalidates entire parent region.
+  - handling of position attributes (x,y,dx,dy,rotate) on emtpy tspans has been fixed.
+  - Fixed improper handling on <altGlyphItem>
+  - Removed unnecessary font matching with <altGlyph> which can be found
+  - 'stroke-dasharray' now works with units,
+  - fixed bugs (CSS !important rules, DOM replaceChild on the root element,
+    SVG paint parsing, CSS percentages).
+
+
+1.5beta2 -> 1.5beta3
+--------------------
+
+1. Features:
+
+  - Squiggle Browser:
+
+       - now keeps a history of recently visited URIs
+
+       - offers more control over the security features
+
+  - Enhanced Security Support:
+
+       - downloading of all external resources can now be
+         controlled through the UserAgent. This includes
+         scripting (as before) but also <image>, <use>, and
+         all elements which may reference external resources
+         (over 15).
+
+       - users security policy now takes precedence over the
+         application policy. Users can set the java.security.policy
+         system property when starting a Batik application and it
+         will take precedence.
+
+  - Interactivity and Scripting Support Improvements:
+
+       - filter, mask, gradients, clip, pattern and marker are now
+         updated when the geometry of the referencing graphical
+         element is dynamically changed.
+
+       - implementation of keyboard events (KeyEvents from DOM Level 2
+         Working Draft). In the near future, the batik team will
+         implement the TextEvents from the DOM Level 3 Events module.
+
+       - Newly supported elements (can now be modified by scripts):
+         <svg>, <image> and <text> element children (such as <tspan>);
+
+      - Support for addition/removal/modification of stylesheets
+
+  - Misc:
+
+       - external scripts can now be gzipped.
+
+       - added getPixelUnitToMillimeter to UserAgent classes
+         NOTE: the getPixelToMM and getPixelToMillimeter methods will be
+               removed after 1.5b3 is released!
+
+       - Improvements in the support for the <flowText> extension
+
+      - Added support for attribute/id/adjacent selector and :first-child
+        dynamic updates,
+
+2. Bug Fixing:
+
+  - #1075, #4834, #5233, #5347, #5806, #6642, #6683, #7053,#8330, #9740,
+    #9058, #9067, #9304, #9429, #9520, #9779, #9804, #9272, #9276,
+  - bug in feColorMatrix
+  - DOM: getElementByTagName, invalidateElementsByTagName, cloneNode(false)
+  - mouseout bug on <tspan> fixed
+  - File->Open dialog bug on JDK 1.4 fixed.
+  - Memory leak fixes
+  - ttf2svg now emits kern elements with the proper sign
+  - MultiImage now respects xml:base
+  - Fixed mouse location bug
+
+3. Documentation Update:
+
+  - Many additional links have been added to the Batik documentation
+    as well as improvements in its structure and content, thanks to
+    the work of Robert Di Blasi.
+
+
+1.5beta1 -> 1.5beta2
+--------------------
+
+** Note on the new security support **
+
+- Scripts are now run in a sand-box by default for the Batik sample
+  applications (the Squiggle SVG Browser and the Rasterizer). Users of
+  the SVG toolkit who what to run scripts securely need to add
+  security support in their application and may use the work done for
+  Squiggle as an example
+  (e.g., see the org.apache.batik.util.ApplicationSecurityEnforcer class).
+
+- There is a known limitiation: scripts loaded from a 'file:' url
+  cannot access (i.e., load files) under the same root. This is not
+  true for scripts loaded from a server (e.g., 'http:' urls).
+
+1. Features:
+
+  - Scripting support for styling properties:
+
+      - Most of the CSS properties and style attributes can now
+        be changed dynad:/work/dev/svg/apache/builds/batik-1.5beta3/mically. See:
+        http://xml.apache.org/batik/supportedProperties.html
+
+      - Added support for style and class attributes dynamic updates
+
+  - DOM support:
+
+      - Implementation of SVGLocatable including SVGMatrix
+
+      - All class members of type: SVGLength now works on most of the
+        graphical elements (rect.x.baseVal.value)
+
+      - Implementation of CSS DOM (getStyle, getComputedStyle...)
+
+  - Events/Interactivity:
+     - DOMFocusIn, DOMFocusOut and DOMActivate event types are not supported
+
+  - Security:
+
+     - Secure scripting is now in place. Scripts in ECMAScript or
+       Java code are run in a sand-box by default. The Batik browser
+       (called Squiggle), has the following security options:
+        . secure execution of scripts can be on or off.
+        . scripts for a given language can be disabled/enabled.
+        . scripts can be constrained to come from the same origin
+          as the document referencing them.
+       In the Squiggle SVG browser, the security options can be set
+       through the Preferences dialog, in the browser options panel.
+
+  - Misc:
+
+     - xml:base is now supported for the image element.
+
+     - <flowText> extension element that flows text into multiple boxes.
+       Trying to track the SVG 1.1 Working Group on this element.
+
+     - getURL, parseXML supported in the Window object.
+
+  - Testing:
+
+     - Improved test infrastructure. There are new tests for handling
+       automatic regression testing of scripting features and there are
+       more tests (801 now) in the regard regression test suite.
+
+2. Bug Fixing:
+
+  - Fixed bugs with textPath w/ text-anchor, and textPath w/ multiple
+    trailing tspan elements.
+
+  - Work around for RenderingHints when Batik Jars loaded multiple times
+    in the same JVM (through different class loaders).
+
+  - Fixed a bug with X/Y Resolution for Tiff.
+
+  - UIEvents are not dispatched properly on <text> children (<tspan>...)
+
+  - <a> is now supported on <text> element children
+
+
+1.1.1 -> 1.5beta1
+-----------------
+
+** Note on enhanced scripting support **
+
+- Support for DOM Core and DOM Events (Mutation events and UI events)
+
+- Limitations:
+   - No support for dynamic modification of CSS properties.
+     In particular, setAttributeNS of presentation attributes
+     such as 'fill' or 'stroke' or modification of the 'style'
+     attribute are not supported.
+
+1. Features:
+  - Enhanced scripting support: it is now possible to modify
+    SVG documents through scripting
+  - Tiff Transcoder now takes FORCE_TRANSPARENT_WHITE hint.
+  - Tiff Transcoder now writes resolution tags.
+  - Implementation of SVG 1.1 solidColor element (in Batik extensions)
+  - Implementation of multiImage element (a Batik extension).
+  - Event compression mecanism (e.g., concatenates mouseMove events)
+
+2. Bug Fixing
+
+  - textLength now works in all cases except nested textLengths.
+  - 'image' element now respects xml:base.
+  - Renderer now reuses image buffers more often.
+  - Speed improvements in cases with lots of tspans.
+  - Filtered Raster Images now _much_ faster.
+  - Things mostly work with current Mac OS X JVM (still some trouble with
+    images/filters).
+  - Applying a ICC Profile no longer messes up alpha channel in some cases.
+  - PNG Transcoder now always writes sRGB chunk.
+  - feImage image positioning fix
+  - <use> bridge fix,
+  - SVG generator <use> export fix
+
+
+1.1 -> 1.1.1 Release
+--------------------
+
+1. Bug fixing:
+
+    - dx/x and dy/y now work when combined.
+    - clip-path now takes transforms into account
+    - AbstractRable constructors problem fixed.
+    - Put in workaround for worst of Mac OS X text problems (layout
+      still isn't 100% correct in most cases).
+    - Removed code that is no longer needed in GlyphLayout
+    - Fixed the last text layout issues on Mac OS X (GlyphVector was
+      returning the metrics for the first char for all chars in the vector.
+      We now use the difference in defaultGlyphPositions to get the
+      character advances).
+    - Fixed JViewerFrame issue with large (width/height) documents.
+
+2. Improvements
+    - Text bounds computation is now much faster
+
+
+1.1rc4 -> 1.1 Release
+---------------------
+
+1. Bug Fixing and Improvements
+
+    - Code factorization in parsers.
+    - Parsers bug fixing.
+    - Added examples (maps, bookOfKells example, sunRise, mathMetal).
+      Maps are a contribution of Andreas Neumann,
+      MathMetal is a contribution of Christophe Held.
+    - Added default xmlns and xmlns:xlink on root <svg> in generator
+    - Integrated Ant task contribution from Henri Ruini
+    - Improved error dialog (now includes details with the error stack trace).
+    - Printing fix.
+    - text-anchor fix.
+
+
+1.1rc3 -> 1.1rc4 Release
+------------------------
+
+1. Features:
+
+    - rewrite of rasterizer thanks to Henri Ruini's contribution
+    - improved image handling strategies in the SVG generator thanks
+      to Paul Evenblij's contribution.
+    - 'requiredFeatures', 'requiredExtensions' and 'systemLanguage' on
+      graphical elements
+    - anchor on raster images and SVG images now works properly
+    - anchor inside a SVG image now works properly
+    - <a> inside <text> or <tspan> is now displayed
+    - many tests added (transcoder...)
+    - SVG viewer: added dialog box at start up time while loading classes
+    - SVG viewer: limited number of files in history
+
+2. Bug fixing:
+
+    - memory leak fix
+    - DOM core serialization
+    - Parsing of CSS comments
+    - SVG generator fixes (bug 4945 and 4389)
+    - rasterizer fixes
+    - text now works with JDK 1.4b3. Remaining issue with
+      BufferedImages.
+
+3. Improvements:
+
+    - general performance improvements in the build and rendering
+      phases of the viewing component (for example float parsing
+      has been improved).
+
+
+1.1rc2 -> 1.1rc3 Release
+------------------------
+
+1. Features:
+   - Support for xml:base
+   - TextSearch dialog is available (with a zoom option)
+   - Full support for Alternate Stylesheets
+   - Full support for CSS Media (including a way to define custom media)
+   - Changed Text Selection UI. (selectable in the preference dialog)
+     Added Text Selection API to GVT & swing packages
+   - KeyStroke on the JSVGCanvas (for pan and zoom using keyboard)
+   - SVG Font: The font lookup now takes into account namespaces
+   - Provide a way to set the quality of an exported JPEG image
+   - Printing now uses the CSS print medium
+   - More complete handling of partial URLs
+   - Two new extensions solidColor (a single color 'paint server' acts
+     similar to the gradients and pattern fills/stroke), & paintSwitch
+     similar to a switch element but children are paint servers instead
+     of graphical elements.
+
+2. Bug fixes:
+   - Fix in gradient element boundary conditions
+   - Fix and performance improvements in lighting filters
+   - Fix in PNG encoding for BufferedImage' subimages.
+   - feDisplacementMap fix (array out of bound exception)
+   - font lookup now uses namespace properly
+   - 'enable-background' now work on <svg> element
+   - zero length on <rect>, <circle> and <ellipse> disable the rendering
+   - linear gradient with x1=y1=x2=y2
+   - printing now supports SVG URI fragment
+   - Javadoc improvements and clean-up
+   - Source clean-up
+   - DOM: getElementsByTagNameNS now works properly
+   - SVGDOM: huge cleanup of the implementation
+     (preparation for dynamic features)
+   - CSS parser bug fix
+   - Bridge: 'overflow' on SVG <image> should now work properly
+   - GVT: cleanup the API - GraphicsNodeRenderContext is now obsolete
+
+
+3. Testing
+
+   - Reorganized tests (see samples/tests subdirectory)
+   - Improved test reporting (i.e., better HTML report)
+   - Simplified test infrastructure configuration files.
+   - Lots of new tests (see samples/tests/structure/styling and
+     samples/tests/spec/structure for examples) and
+     samples/batikCandy.svg.
+
+
+1.1rc1 -> 1.1rc2 Release
+------------------------
+
+1. Bug fixes:
+
+  - 'preserveAspectRatio' now works properly on both raster and SVG images
+  - bug fix with the 'clip' property on <symbol>, <image>, <marker>
+  - thumbnail bug fix (sometimes the area of interest became hidden)
+  - filename filter added to the file selection dialog in the svgbrowser when
+     exporting as PNG and JPG
+  - Infinite loop removed. Elliptical arc may cause an infinite loop if the end
+  point of the arc was the same than current point in the <path> datas.
+  - SVGGraphics2D can now generates SVG Font on demand
+
+2. Improvements:
+
+  - Added new custom filter extension (look at the samples/extensions/histogramNormalization.svg)
+  - Added tooltips on <title> and <desc>.
+
+
+1.0 -> 1.1rc1 Release
+---------------------
+
+1. Enhancements:
+   a. HTTP headers fields (useragent/accepted...) now implemented.
+   b. Anti-aliased gradients (when color-rendering set to quality).
+   c. Small patterns are now much faster
+   d. Ability to flush cached image data.
+   e. full horizontal and vertical kerning now implemented for SVG fonts
+   f. added support for orientation and lang <glyph> attributes
+   g. improved support for Arabic text, includes handling of Arabic shaping
+      and ligatures for both SVG and system fonts
+   h. improved text selection
+   i. improved text rendering speed
+
+2. Bug fixes:
+   a. PNG files now use the proper gamma when reading/writing
+   b. Off by one bug in image rendering fixed (background shows
+      through on the left and top of image).
+   c. Fixes in Base64 data handling (encoding/decoding)
+   d. Absolute URL's shouldn't require document URI.
+   e. color-interpolation-filters should now work :)
+   f. fixed bug with font sizes < 1
+   g. fixed problems in text chunk algorithm
+   h. fixed bug with empty text nodes
+   i. text decorations are now handled properly
+   j. bidirectional text (including selection of it) is now handled properly
+   k. fixed problem with alignment of vertical text
+   l. fixed problem with em and ex unit conversion when font size
+      is not a float value (eg medium)
+
+3. Misc:
+   a. Now have automated tests for base64
+   b. Now have automated tests for ParsedURL
+   c. added some more test files for text and fonts
+
+
+beta2 -> 1.0 Release
+--------------------
+
+1. Completed SVG Font Support.
+
+2. Added vertical Text Support.
+
+3. Major rework of the Batik documentation.
+
+4. Added thumbnail
+
+5. Bug fixes.
+
+
+beta2rc9 -> beta2
+-----------------
+
+1. Contributions
+
+   a. New contribution of a True Type Font to SVG Font converter that allows
+      a set of characters from a True Type Font to be converted to the
+      SVG Font format. This contribution was made by David Schweinsberg
+      of SteadyState (david@steadystate.co.uk). This contribution comes at
+      the right time (i.e., as we just added SVG Font rendering suppor).
+
+2. Improvements & new features
+
+   a. SVG Font support. Initial revision of the soon complete support of
+      SVG Fonts.
+
+   b. New image encoder/decoder infrastructure. This allows a flexible
+      handling of new raster image formats.
+
+   c. Improved PNG encoder/decoder which now support the gamma chunk
+      properly.
+
+   d. Additional tests for SVGGraphics2D.
+
+   e. Additional samples (mostly new SVG Font support examples).
+
+
+beta2rc8 -> beta2rc9
+--------------------
+
+a. Polishing of existing features.
+b. Bug fixes.
+c. Improved test infrastructure.
+
+
+beta2rc7 -> beta2rc8
+--------------------
+
+1. Improvements
+
+   a. Full blown in-bound and out-bound linking support. See the
+      two new linking examples in the samples/test directory.
+
+   b. Improved CSS error handling.
+
+   c. New test infrastructure.
+
+   d. Beanified SVG JComponent: see JSVGCanvas.
+
+   e. Enhanced features in SVGGraphics2D to manage style properties.
+
+   e. Improved error handling in SVGGraphics2D
+
+2. Bug fixes
+
+
+beta2rc6 -> beta2rc7
+--------------------
+
+1 - SVG Viewer Improvements
+
+   a. Added support for double buffering (controllable by an option).
+
+2. General
+
+   a. Added line-number in error messages when parsing invalid
+      SVG document.
+   b. Maintenance and Bug fixing.
+   c. JSVGCanvas is now a JavaBean which can be easily configured
+      in IDE tools to add SVG viewing support in an application.
+   d. Support for rendering hints such as text-rendering and
+      shape-rendering.
+
+
+beta2rc5 -> beta2rc6
+--------------------
+
+1 - new implementation of the swing component and viewer.
+
+  a. it is now possible to interrupt while loading, building or painting
+  b. rotations are now applied on the image in real time. document is
+     repainted when the mouse button is released.
+  c. real time zoom on the image with SHIFT+BUTTON 2 Drag
+  d. progressive rendering has been improved
+  e. toggling debug traces on/off to see performance is now possible
+
+2 - new implementation of the bridge package
+
+  a. code cleanup
+  b. percentages are now handled correctly (both for xml attributes and CSS
+     properties - samples/tests/percentagesAndUnits.svg)
+  c. error handling has been improved
+     (line number will be available soon)
+  d. the building phase is now 30% faster
+  e. bug fix with <pattern> (samples/tests/pattern*.svg)
+  f. <marker> is now conformed to the current SVG spec (as of March 15)
+  g. percentages are now handled correctly on the outermost SVG element (need
+     to do the same for the ImageTranscoder)
+
+
+3 - Transcoders. There are two new transcoders:
+
+  a. WMF -> SVG Transcoder. This is a contribution to the Batik project from
+     Luan O'Caroll (Luan.O'Carroll@boimail.com). You can run the transcoder on
+     a set of Windows MetaFile (WMF) using the
+     org.apache.batik.transcoder.wmf.tosvg.WMFTranscoder application.
+
+  b. Printing Transcoder. This implementation of the Transcoder interface will
+     print a set of SVG document to the default printer (see
+     org.apache.batik.transcoder.print.PrintTranscoder).
+
+4 - Misc.
+
+  a. support for System colors (see: samples/tests/systemColors.svg)
+
+  b. Creating custom Graphics2D implementation is now easier. A generic part of
+     the SVGGraphics2D has been moved into a new package:
+     org.apache.batik.ext.awt.g2d.
+     This new package facilitates the creation of transcoders that will convert
+     SVG documents to an arbitrary format by providing a Graphics2D implementation
+     for that format that Batik can use to draw an SVG document (Batik can use
+     a Graphics2D to paint an SVG document).
+
+NOTE: Known regressions.
+
+  a. next, previous and thumbnail have been momentarily removed from the viewer.
+  b. error messages are printed in the console and not in a dialog.
+  c. the partial internal linking support has been removed until
+     a full implementation of linking can be done.
+  d. printing has not been reintegrated into the new viewer.
+  e. regressions may appear for scripting as it has been added in a hurry for
+     this release. A clean pass will be done soon.
+  f. text regression on tspan handling where dx/dy are temporarily not working.
+
+
+beta2rc4 -> beta2rc5
+---------------------
+
+a. Text improvements.
+b. Improved rendering (now uses tiling for faster panning).
+c. Bug fixing.
+
+
+beta2rc3 -> beta2rc4
+--------------------
+
+a. Handling of overflow property on <svg>
+b. Filter and pattern optimizations
+c. Color profile support
+d. GVT optimizations
+
+
+beta2rc2 -> beta2rc3
+--------------------
+
+a. Handling of the visibility property
+b. Handling of references on gradients, patterns and filters
+c. Baseline shift on text
+d. Full support for markers.
+e. Optimizations in filters and GVT.
+f. Bug fixing (e.g., stroke's dash array)
+
+
+beta2rc1 -> beta2rc2
+--------------------
+
+a. A lot of new text support (text length, letter and word spacing).
+b. Some support for markers (not complete yet, but should be complete
+   shortly, probably by next week).
+c. Some support for views (in linking).
+d. Cleaned up bridge code.
+e. Improvements in the filtering code (there a some minor regressions
+   which will soon be taken care of).
+
+
+beta1 -> beta2rc1
+-----------------
+
+a Improved text support
+b. Full filter implementation.
+c. New Transcoder API.
+d. Simplified package organization

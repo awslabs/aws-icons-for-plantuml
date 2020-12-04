@@ -1,0 +1,571 @@
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+sprite $IoTAction [64x64/16z] {
+pPS5hWCn30M5KU33_KzRTBcTJElI4wsydXUc_ozM2oNGlNe63YLexT2lvkw3LHOEVq0LSzWWdy3qKKv7N1im7j-sc7hcE-d6QRG90ufD1n8Yog2S1-9J6xWk
+ATW2xcnRWHWwRH1_1XIl38XdWs08zmPYpHgU3PYVBzdRV26U3KJreuGRyzlniQyIhxPrv5aVuFFrvqsRUIuzebNDlm7p9pxA_TEl9zRFwzSlux4cHdB_Ik-V
+dCLu_lo0H8DNStx2Vd8nHQ_W0sgVlZ_axozyf7V0a_UtaRu_FcPG0TVtvw4lsFmp_txWvm_4IBtTLFrNAl3uaWBOQmZqqre2
+}
+
+AWSEntityColoring(IoTAction)
+!define IoTAction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAction, IoTAction)
+!define IoTAction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAction, IoTAction)
+!define IoTActionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAction, IoTAction)
+
+sprite $IoTActuator [64x64/16z] {
+pTQ7RWCn30DGh1jKX___Qpi5r333qDPr4JEodXpSRlyq-4ZDdkXIsxe-0Pm2frzBlduSkNlFKe5d5ZqL0r_n_Bn_IXQtvm76X_HvNSPzBnVCeRIhHJ_Vye0f
+_v7P5JfWo2Y-YsOtG6oUyRrwfbgnFB9cRodJynE-iJ_5jN8g3nedZzy-uH_KSqFEjfVrANapny_NsQFcUO3tkEtXlB_O7wo7tgfF3Dw_Ka_gmAS7o4-ykeVx
+bxH9GUW1qKgfyqoTPuWN1inqbNBLxnSzljEBmvN_adFByyMg3XFxVdbu0Yzw1dC-g8xXePHI-Am0w7basVeiPPq_MxsdxYuhnwzLF3_OYVSxi5y9-KB-tbzy
+04Nx3ta5
+}
+
+AWSEntityColoring(IoTActuator)
+!define IoTActuator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTActuator, IoTActuator)
+!define IoTActuator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTActuator, IoTActuator)
+
+sprite $IoTAlexaEnabledDevice [64x64/16z] {
+xTO7RWGX50DGrIzC2lS_RJhZ0Okr-9kUM8sYDvNMlakmbIncifmXpwKEFF6rMCPDwdEpcFjVMTvTNEdnWHxdxFg2ER7ZmJ3EgrxKZGUmkgJpEfeXpSPpPe1X
+rVdZMsFCyK-MdbpqsmGBNi3uuODpjXi_ySRe1TIp63CdlEHvU-7IfPwbgfmNi9xrASRtWl5X_89Bz-_p_xvT73z5nazw_7gFfDSBA0-tVl023EZz-bMvYElj
+wyBh1J3Vtg-_0G2b0opuqjEnGEuztTHFRlnqWQCUmjt-NLuyXcoT7pGVVdvXZ1Ql2S76ctm_V_tvdQMQuJX_wGHd9PNIUchAjrFIcadWRv17
+}
+
+AWSEntityColoring(IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+
+sprite $IoTAlexaSkill [64x64/16z] {
+xTU7KYqn38FXgPuuzyA-_zFIGPX_WiOREkZqycbxExvAiXNWTi3RsUGv2pynj_G-_ntDJ1LqXou5tYo8JP_lwFDvkdxaoqJ7fw8uJutFnklxHQNpN9iJNnkl
+BICL5C0N7aK_kg42-CAfxpUmK87nPOPhQtTUd9Eg0kFBU6Awrbx_0kTFQwyzowB0-i8LxpcDzE4yEKVWH_e_Vxow_WojFxlhh_TvqhE0FDp-enQWsk-_fdRY
+7FnSU1PavUdtd_Uxll48Si6NNavlnBqlJg_W2uy2ZKY0k-FtkFDPqZb_OCQxdxyeHiCp0Tpmo1Vqk-VlnSysbu_DwvSZU-7wEBiKOtnQAotyPN8D
+}
+
+AWSEntityColoring(IoTAlexaSkill)
+!define IoTAlexaSkill(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAlexaSkill, IoTAlexaSkill)
+!define IoTAlexaSkill(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAlexaSkill, IoTAlexaSkill)
+!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAlexaSkill, IoTAlexaSkill)
+!define IoTAlexaSkillParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAlexaSkill, IoTAlexaSkill)
+
+sprite $IoTAlexaVoiceService [64x64/16z] {
+xTC5heCn30DWqGzk9Vd-ftsOGQPqJiRaSRIlN3vOy1FnSHN_yIX4S1t1TQxXcSmilCn3ULXAtlBi_etsxxD_d_sRWPCzNBJNEhz_xPZKtaXplxJtt3vstuRx
+fmV_Rv8U63QWlUUxdpp1Ms4DmSXlEsk-DgUzvR3OQpuUb9x_xfz1gzh3F1_Iw_lNnFoLvz0pwIshB-PzD01nVkFRAy_lE4HuuJjFQM1s8weraBlk_iD4_o-X
+xitCy67Q4q5Oy1HQUjBfpfhtJV2HyWq
+}
+
+AWSEntityColoring(IoTAlexaVoiceService)
+!define IoTAlexaVoiceService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoTAlexaVoiceService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAlexaVoiceService, IoTAlexaVoiceService)
+!define IoTAlexaVoiceServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAlexaVoiceService, IoTAlexaVoiceService)
+
+sprite $IoTAnalyticsChannel [64x64/16z] {
+rPU53iCm34I5bUr1_lzlDz6LpecS6reSwRsIgUqNmv-XqOBXufh0rr0UVfO7zorUkdy8NE0H4-2q0CoSODapC0fF3K4rwwe2P8iW87n9iFzsKHRuCQWWDvcV
+8aihBWYIFy5lpRlvkqUue9RFRKkbWjmGB2rpv6mWIT6x83jRsb2Gl9xagD1uJYV6UCFB9i6hXL_bItmazw-_lp9F2Yl8dMO2OzBry3B8NqBZl590iPAdKgmq
+jBovvJVVxn_TjMbtuy1jrFzupW3N-hSLvmTeZdC-xM2cpK_JvhTf-uErAa_n-hm1BknlregXulh-xt--_r_a_H-Xylh_es9eVn4F
+}
+
+AWSEntityColoring(IoTAnalyticsChannel)
+!define IoTAnalyticsChannel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsChannel, IoTAnalyticsChannel)
+!define IoTAnalyticsChannel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsChannel, IoTAnalyticsChannel)
+!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsChannel, IoTAnalyticsChannel)
+!define IoTAnalyticsChannelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsChannel, IoTAnalyticsChannel)
+
+sprite $IoTAnalyticsDataSet [64x64/16z] {
+xT6r0S0m44FHMcwq_xHXHZFUxmBFo4o2NZLx_kJ5OobBh_2KcjxhU3n7x7uiL_-PUBtp9wQ8Ixbxz_sBnnPnBNVlld_n-2XBB_SN_lwNjpbxz_sBroXRhrzW
+3o2jrwe2hvX9FG
+}
+
+AWSEntityColoring(IoTAnalyticsDataSet)
+!define IoTAnalyticsDataSet(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
+!define IoTAnalyticsDataSet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
+!define IoTAnalyticsDataSetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
+!define IoTAnalyticsDataSetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsDataSet, IoTAnalyticsDataSet)
+
+sprite $IoTAnalyticsDataStore [64x64/16z] {
+xPS55eDG40EV8Qdj_KzRz_vcuE4oEClWGMAiRFMahgeaUHFv3jl0fgB-VxsiR_pAGUVrst9uo0z2Kjx0pzqEyFvlHRx4bnVASbNsxoIoX3uJu4UKpWxqhvZu
+alz1_Zs3VQ1p_zxNdQNv2e_85-ZeQsjiyDq2zVENc8r-DCwlMKFr-p_XDiZFalAxva_DyoTJ0nzecBzAzr_J_ANMiUPdF7xUC7zDlz-fleLuDln_iOW80csc
+WPpyvYvZl9m
+}
+
+AWSEntityColoring(IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+
+sprite $IoTAnalyticsNotebook [64x64/16z] unyqW9DKC0pr4nrOWqm_khVm-7fuw1_6yKTZ_OC-_YZKFnf_-07Dus-Gwn_syKVlz4yu_6cf7rCz8VsZyJTQVex6tsZyZSRVQFzlu04
+
+AWSEntityColoring(IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+
+sprite $IoTAnalyticsPipeline [64x64/16z] xTMb0G0n4011VUhwh_QP-SEmOu9h4wqO03duSpULNYSl_V7kkN-HGwyFGlSo6wRvzKT2Jp-Xv_tC_l-i680M
+
+AWSEntityColoring(IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+
+sprite $IoTCertificate [64x64/16z] {
+vPO5SiHG34E70lgb-v-s6530pnENMorRUlaycuSVB4sgi4rRrLfsrMZNHHfAEKxb76SdntEl4hcPNCRxBC3s-03gaPUvj2qhk8TQO27kAHvRleeZNfWs_6H3
+lSbrZU_tk5eG32zhhKvVxHqwO35vIUEXCypxm7KKyWu4l5B-U84RRUiHFyvyqCHaXxoEl7JK3V2MYl1FcB_w-l7-WMH-0GNuYEUlQQF-yla577WtD0cQ2VcU
+XkvyRa4Zu2d7nMwAr_qs7GpcLNFh__-kvgdw3On4LPPc7GgrUyy01m7-PJnK_WLlNygyNbNbDQkLU9aAlEIzgF0JKkCTAF6Uh_0zxn-M19KVfIS
+}
+
+AWSEntityColoring(IoTCertificate)
+!define IoTCertificate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTCertificate, IoTCertificate)
+!define IoTCertificate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTCertificate, IoTCertificate)
+!define IoTCertificateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTCertificate, IoTCertificate)
+!define IoTCertificateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTCertificate, IoTCertificate)
+
+sprite $IoTDesiredState [64x64/16z] {
+xPS53iCm40H5WRqK_l_QmfRNELqDvOx0f4dCi7uVGA8G35CrmoVJZPxlGohUv_hQxYpulVxYZqMzVOckA_oAuVO_127JHyAx-KHyBxEfhva6M8rFOb_9_7-A
+zl_x-xVb35_dasfVU8KFXtVt_SAd-AI1JrxfWxop_nz_nMPzPjtu1epn_alc8epTw-E4VkZ6f-3wwmnVUujP4sDIey3t_czGjFxcjZz6ww3z7-EFVqZVUFtc
+K--FbNvmkueowg__9ssqVR9K9o2MF94cvotb3B0NgfzUUlBzcHQDIJjwntyVjW
+}
+
+AWSEntityColoring(IoTDesiredState)
+!define IoTDesiredState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTDesiredState, IoTDesiredState)
+!define IoTDesiredState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTDesiredState, IoTDesiredState)
+!define IoTDesiredStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTDesiredState, IoTDesiredState)
+!define IoTDesiredStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTDesiredState, IoTDesiredState)
+
+sprite $IoTDeviceGateway [64x64/16z] {
+xTS52WHH30DGR2L_fVS_xUgdOobaN8CLmXjN6p970CWrxz6ZX-8Hjvf7LAeUlDCzeif4Zu1RKJS6f_Y6Si7xHBZeyyYuilyE29UyamQNlIEVTCyEcRNtDfvF
+u54z5k3DhW2I5wqz_kdgRzadmOzr_6m9vs-curzvf7NnELVyqjaluFwndZwv7s7_HM_TVAunmlstN1zc77_uFAZVF_oJgPqdyrdsLLvLolwZneil1i5xQ2Dx
+skcUbKds8_s_gCU_o94t
+}
+
+AWSEntityColoring(IoTDeviceGateway)
+!define IoTDeviceGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTDeviceGateway, IoTDeviceGateway)
+!define IoTDeviceGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTDeviceGateway, IoTDeviceGateway)
+
+sprite $IoTEcho [64x64/16z] {
+xPS53WCn30H51GV__zfo3pVI-XWymi24CMyN9t_KwbtwyBQKKEWOXUvWcQhQKGBbvmppqhxFzp4-pEVOzhUfbmBlOtW_kuBB-cz0lRGFs8jlllaorXTT2dFI
+ZZq_blGBXV3ZvpfDSHESttiQFmTLfrl_kpk_pJVVVBl_S3wl_e2WkB7_9mv7stmZhfI6ntB3F04
+}
+
+AWSEntityColoring(IoTEcho)
+!define IoTEcho(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTEcho, IoTEcho)
+!define IoTEcho(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTEcho, IoTEcho)
+
+sprite $IoTFireTV [64x64/16z] {
+xPJ50SD040DV0ONKVxKXC-dCgFaPPWyMU6YCGNzk0tsCvRC7dNtxzg_uK-EtYN97p3dsEku3ocUyCmt0ndKH4JYzsFSPCMhpLET6dhgNPn9G-GiEB0XVHqXl
+iDxN8RhN7rBSVyAttu-r-BmEiJNwhnNxgB1n_yxrOSm7
+}
+
+AWSEntityColoring(IoTFireTV)
+!define IoTFireTV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTFireTV, IoTFireTV)
+
+sprite $IoTFireTVStick [64x64/16z] {
+xTJ50OH004FHqxZrN-swIxA2atz_CDx6IocbmhT5mdd_Ulkd3m_-r_MQhRzn5qyLy25yCcJWuI0YzItWBtZccms7mF2XlzqNVqFjnOPWsVh3ymhN_zmxVU5y
+_y5TO_xn8_-Ulmdw-T__TCV_Vp__v2tzmUURKafj0G
+}
+
+AWSEntityColoring(IoTFireTVStick)
+!define IoTFireTVStick(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStick(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStickParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTFireTVStick, IoTFireTVStick)
+!define IoTFireTVStickParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTFireTVStick, IoTFireTVStick)
+
+sprite $IoTGreengrassConnector [64x64/16z] {
+xPHL0eGm30M_rYNtF-qgLXcAwniyoGIl3O8GGeXB1OonxK1HjibtIUXd--Bwl-svje6RydstYlohfNoxWk_thTnj917thOblw9-R-MVVTvg2pxNmNk7vkSRS
+Ve_xx__-XlSlUFzKI77sc_w0iFkZx_X1DFEDkJRm6m_0npnq36GXX11l
+}
+
+AWSEntityColoring(IoTGreengrassConnector)
+!define IoTGreengrassConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTGreengrassConnector, IoTGreengrassConnector)
+!define IoTGreengrassConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTGreengrassConnector, IoTGreengrassConnector)
+!define IoTGreengrassConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTGreengrassConnector, IoTGreengrassConnector)
+!define IoTGreengrassConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTGreengrassConnector, IoTGreengrassConnector)
+
+sprite $IoTHTTP2Protocol [64x64/16z] {
+xSz50iCm34JHLM2InTp_j0K5nkLABbS_32-n-I71MLGhwHwXsiKZMCdfgqHUBXNbSb_YqwTFdpvz-lJgqHxEFj3pte8U6AzxkxBZSGFjIKiJVd_mvBhNZYpO
+-WRGkhrjGZ6lUnUzTU8jZelnpnyQVWlGxNLEr7a3VY-vjY3SxNdUG_vQvUD2BH6EvDiQRzLwcXpy_krj0G
+}
+
+AWSEntityColoring(IoTHTTP2Protocol)
+!define IoTHTTP2Protocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2Protocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+!define IoTHTTP2ProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTHTTP2Protocol, IoTHTTP2Protocol)
+
+sprite $IoTHTTPProtocol [64x64/16z] {
+xT853eGm50RXsCeqyj__jiG8hlNspIxEXwkGUDXRFJNfFw_wZfwNpRcUDKTF-QGy-EJAz-RDcpTlthpvUR4yDolPww847YHsy_KyyEDeDWzuUGTfpWzx7h_h
+ztz-KZ5-cjdtRcRSeUVzzo-nJjneybzFB_bwoSDdRG
+}
+
+AWSEntityColoring(IoTHTTPProtocol)
+!define IoTHTTPProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTHTTPProtocol, IoTHTTPProtocol)
+!define IoTHTTPProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTHTTPProtocol, IoTHTTPProtocol)
+
+sprite $IoTHardwareBoard [64x64/16z] {
+pTS7giD038HXsYlI0hh_QTDdKmOBpye1_QycyUTUetDspGiOhMkaSahdC8uN8gU_alyFcuLB_cuCpHU21qUX-01_cnsNjm3zN_5zi-M8gtNnj4A2eWxrO0NF
+IyJzsopn-8VpRKzRXDP8xiTKF0Ayp7pOvWXecxF7FvypAlXhF0BDymZsBZ-YTR1t_QDaAwOUBoFpOzERuVK_r4Yl_Rb7TM_NrhrbJVzOCsFLuy_ntdMlhp_s
+r1TzeGu-2hn17U-_SCVxEw-P7kPHlNyjtpyh8_1OvFNd1m2Z5vNd9otYSWMDW1jt1W
+}
+
+AWSEntityColoring(IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+!define IoTHardwareBoardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTHardwareBoard, IoTHardwareBoard)
+
+sprite $IoTLambdaFunction [64x64/16z] {
+pPS7SiKm24IdCWAdtF-qwM7i5rOIwQHyVvOdhN2__yVXR_4fbD60m-leJytep5sFsMXPlva7QafhjjStlOoOUcS3lQYPuWTusniWtWNmBAwMaDJxrgMQFf5Z
+TgIyDm1pcjS3H6R0wm76lIWQrxx9rIf3QFoniG9yozWqu4i-b04zGwmCa6Ui3M2pRq3pvZ1WIvvY7YMi82NthrW03bFxA1fuPM1cttsafFYOyhxk4IGSW9PQ
+dp_zouvedaBk_HJRF0m4oi2h_4YrozE0p-gGjYiVD7354a1PqS6XwYxfuspOKywZGl0YJTudF6UZ8_9oarlWnVKFtQxMf_XOB0gybqsBp8uDdfShDJqRL1oC
+tDMsmHVNompe1g5yB698MJo08BPaMjn-lbRFRvkuIw6BQwbV4r05tIoW-4Fl3tpwywFQ-_OJxq-CwDCC0VSYWFx7U0G
+}
+
+AWSEntityColoring(IoTLambdaFunction)
+!define IoTLambdaFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTLambdaFunction, IoTLambdaFunction)
+!define IoTLambdaFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTLambdaFunction, IoTLambdaFunction)
+!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTLambdaFunction, IoTLambdaFunction)
+!define IoTLambdaFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTLambdaFunction, IoTLambdaFunction)
+
+sprite $IoTMQTTProtocol [64x64/16z] {
+xT1L0eDG30NHB-IcalsljZguKoyPN0xo_4lImXxGLEbSgqgTjB8wzsNLqGgEUe3ZViU73ny-VFZmuUbLNZFxPkyJlTXpzhRUISfTZMpQ2syQQDgNg-ffnMQ6
+DpnqcQVgrNgtjqSyKlAKs_F5_b9z_1_m6lRi37iEVSohwpidREWUjNFD2v-kz_I0fmVyHpi3
+}
+
+AWSEntityColoring(IoTMQTTProtocol)
+!define IoTMQTTProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTMQTTProtocol, IoTMQTTProtocol)
+!define IoTMQTTProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTMQTTProtocol, IoTMQTTProtocol)
+
+sprite $IoTOverAirUpdate [64x64/16z] {
+xPQxja8X44CxrXae-F-_lSrLYRXrCaixql3Sl6AMPtvRHqTnKmaM3PDkyQpYvalLng6TnFUkxl3Kv-FSopZr9zR1yLZKAxmeX_C2Lv6N2l4ybjaaQT9F-CZp
+4T1j11HoLriW_9H532SXgYu4vqP-DvWrUD154rwC-TX5ViFO9tumtmJeEoySt4rQ1YzucPyUxmT93IW6aSuxRBw9UTa8o5BMyQyjGEqz_yfJQE9rsT3ilmlc
+0NXDoyetI2pmeVmmlzvWQOkVPRw5nuExzlvTLZDvrJJvwUBiDTD7Hty
+}
+
+AWSEntityColoring(IoTOverAirUpdate)
+!define IoTOverAirUpdate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+
+sprite $IoTPolicy [64x64/16z] {
+xPE5SiGm30M73lP8__-rvMf6USsBHowtUsZO91R4b_CFdcDNJxpEr_jX6FLv6JNz_ARb7m62jXyaFJzIR_gHUizdpcVk-OzJySkVgVXFrL_oLJudy_pJyPlF
+7o-q-eU2xn-59IVRFweh_lwgSwf3xFbLrvd1-ElKwsQJVwkdDD8_BgHsHzrdZhNflvsQLHyMkyuatjVX2LWfdxtucffKqJ9Ch_ZxegTo1gtZwdEMT5V3-y1U
+z5WywsdL1o3rtlqHlIP-B_fP-oygwtS_BVE7wYBXwaVq38wlFq6gnEWZFhP_m_e1S79wnAOFgdEECLZk1dac2o_8Q1IKlJT6osWSiJk8-jNySmy
+}
+
+AWSEntityColoring(IoTPolicy)
+!define IoTPolicy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTPolicy, IoTPolicy)
+!define IoTPolicy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTPolicy, IoTPolicy)
+!define IoTPolicyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTPolicy, IoTPolicy)
+!define IoTPolicyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTPolicy, IoTPolicy)
+
+sprite $IoTReportedState [64x64/16z] {
+xPVL0OGm40K_SUY_slFZnTsJmI8xkErL2eiLpZ9mr05qHoZTvMoXl5sMpBJlThqyT7XYVs6mz1UE-do-DlpXy_xmUUhpBz2ZF_pXOqcKPbEVBtnBflxoXrrH
+ElzRuzPew6FsPLs0o_u3j_CFtAu_I73_AIdQluJHHZfAirEwvfc_pAZu9c3f4y3PBtyjXIS
+}
+
+AWSEntityColoring(IoTReportedState)
+!define IoTReportedState(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedState(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTReportedState, IoTReportedState)
+!define IoTReportedStateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTReportedState, IoTReportedState)
+
+sprite $IoTRule [64x64/16z] {
+xTO53W9H40JH6DABpFrFYzDhCqdXMjYNFDpYlP9Bjm1t-SwLNWvxi5u-nipF8-8Mxy5rFfxaNNczq6kuFWyXxwghhPkgNtQb92EFvbI3EmshEA_Gl8Bpp3_C
+QzolUPiRl7f3RayddtljeflMUCYvFFO8NO5lxpJn81RO-x7sBXlkfIPPvdxSCtr4GQ4llZ-v7_KS__T___T_hsgBUga1_mN1N-ZfDVzZLHSihFbrn9ks1G
+}
+
+AWSEntityColoring(IoTRule)
+!define IoTRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTRule, IoTRule)
+!define IoTRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTRule, IoTRule)
+!define IoTRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTRule, IoTRule)
+!define IoTRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTRule, IoTRule)
+
+sprite $IoTSensor [64x64/16z] {
+xTI5SiL028NXqGm_5Tx_QUlN0hizmzPxprZiWnWRFpG0UCzkdANNkb-1d0QlzdIVwhLvFgJpGtHVNsgS8hOVVnAjlLv0zyAh1EOdvjwa5oISRLso8Vfwha7t
+C3fXqIlWGlFPI2rEMMVAfSy2Inwq0e0DtvJcXnmaVpFae7Z672hlx_YRYLU-_w50rEr91rp-VhcTZwTAuFNurju6WqgHLqyHYnH7zr56zOqv5TBsLqyhgzuN
+FH_fupLv02tAL9xNfAj4prksjAh8ldulklUBunmYUUTGvPoRx4-BHVweigVshdWxyEmH_854zEvVJ_QDVB_tM2iGFo6F
+}
+
+AWSEntityColoring(IoTSensor)
+!define IoTSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTSensor, IoTSensor)
+!define IoTSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTSensor, IoTSensor)
+!define IoTSensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTSensor, IoTSensor)
+!define IoTSensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTSensor, IoTSensor)
+
+sprite $IoTServo [64x64/16z] {
+xTG5RiDG50LHKM6C-zzjnIEptsqu6U67avZ7-_Rf4t7oi4VnHrTdESDOyOn6ubcCptc1eyn_DpXYFEr5bdhnBVtqbiFtUM-_UCi3Rm_irv_rSrwEeYrukSJH
+MRzoEb3oZjlOkw5j0ABpn_EXSltr5jo_xxgV7cpW7-7zuJ_UpqpYcHHwkw4N_u8L_9GqZYfU4FhfAd3MBpS7VhgxuACUmZzrdpxz0G
+}
+
+AWSEntityColoring(IoTServo)
+!define IoTServo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTServo, IoTServo)
+!define IoTServo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTServo, IoTServo)
+
+sprite $IoTShadow [64x64/16z] {
+pTQ5ZaGX30NGs9Eoql__slMR3LmwLCOwYXoSvEbpXln4pZP1P9gGCH8ytq8lJYHZd7CYV9PtnZZdkhtLRAnxBjZNIsaNktPJNDvkmDDsnTCW0rwRQv7KZegl
+7nBU2yeCUZ7puWtyfSKR08WW5v2E1pnGwtOaug7mRqS6Al1Ucnv_g8U-iLdfwV5YUvdu_uDCuzMLxuIGbuZV1x3mlFuE_pBkFxxjyNUhKpq_sVDRl003Xomy
+tKWYgCKupxVGb2FRTpqa5LVp-yCz4esVtimbOy-ROopJt5lhohxDF4-CqmZBgwwygiDJTpwFu4Fb6VzUyZJTFUPvkzYVb_O_6CzqV_HX_l7n2G
+}
+
+AWSEntityColoring(IoTShadow)
+!define IoTShadow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTShadow, IoTShadow)
+!define IoTShadow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTShadow, IoTShadow)
+!define IoTShadowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTShadow, IoTShadow)
+!define IoTShadowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTShadow, IoTShadow)
+
+sprite $IoTSimulator [64x64/16z] {
+tTU5hiCm38LXeLMdalp-JtllLkw_o9OpA9oniwyCYPqqEgGTBsdGI9epBHo_afm5IN6t57kt5lDIgIwjNUpZbOkvLZ9NivuJQFUOWE-7ZvujeI-BNrQNNjr3
+R_7Au7Yky-9xqJ7Yd3UUjsxvvHmRZb-MmUE35-uuxq14OK5ZZEtqF3KK0N2cTnk_dP0qU-k7hv4NJey9l2Nzk584WKzSvKDEln1pulvHD1LxJPup2VtLQ3Lf
+pbp9i-EIzfZd4Ujl1_e2--ljPxRml2VKPh-ine77lntXcLzlFum_uEzz_R84Fph_
+}
+
+AWSEntityColoring(IoTSimulator)
+!define IoTSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTSimulator, IoTSimulator)
+!define IoTSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTSimulator, IoTSimulator)
+
+sprite $IoTThingBank [64x64/16z] {
+xTS7hW8n38HXjVVWf_d-fwM3fMZaE6iw39tifpBP5dkn04GVz_8_pq2A78eSxk4jcQh_VvW7w7dTYHvmxmDwCveCUMIIVj4GyBHU7JToq1Fsdza_4puyGAFv
+SwpZ_XJbmJpDZvn7UuOznmG-xW_vitFyE41uEsJ8MyzpZF2EXNSHUUgUgTv70g_xQxkPrlyXTMz0PVuEAVLVzpRkNR2moFVxEoJT_vBOCuzz__mPpr_Vn_qv
+5qdvE7KVpz-2JXRL-vSNyA0zIQvz-GRuWJVWhxb--Vd7PmS
+}
+
+AWSEntityColoring(IoTThingBank)
+!define IoTThingBank(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingBank, IoTThingBank)
+!define IoTThingBank(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingBank, IoTThingBank)
+!define IoTThingBankParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingBank, IoTThingBank)
+!define IoTThingBankParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingBank, IoTThingBank)
+
+sprite $IoTThingBicycle [64x64/16z] {
+xTS5ZaCn48DXKS4ZcFkVTZ7Ihq37AgDt2x7obHxdWqMIpCDL_CVhY1ZkOxZFqcSHCzLpybfUBKVvbgjvnaTxAk_fZlL9dEUvyTK2EchvXV7szzUOV5ZVSeod
+g7tm_CZbrxBDpAsENNuY_KZkz-FjgDJ5UOtPIWg9b3xaKos__tBj8hCP907od7IVlFRTPma9ikscTP9PUtnh6E4F_7uqRKaoOhRt6GBoaCwlTq9zEVcM8xnP
+VXHuoiepjrDJsNkpiMJkkt9VRZynUMRuxOSXUYgDpxJdHuZF-G_T4Rc2pnCvYIFu5Qy_FZwCVwXy0m
+}
+
+AWSEntityColoring(IoTThingBicycle)
+!define IoTThingBicycle(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingBicycle, IoTThingBicycle)
+!define IoTThingBicycle(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingBicycle, IoTThingBicycle)
+!define IoTThingBicycleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingBicycle, IoTThingBicycle)
+!define IoTThingBicycleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingBicycle, IoTThingBicycle)
+
+sprite $IoTThingCamera [64x64/16z] {
+xTS5ZaD130DGqO9d8VS_RRdHZ_ojYIMLw-B0AoJ5kBDWbyd5HVpRmuZ9ESpDhFfeHVfevhdyfAQv90Hvx3AefMsVrr7JzF1yPjqlLXlrr_TP9hL7nqFt3wrm
+nVY6LVycNl9Sc7hHFa3vd2yUdE9L_IEa_spv77BOo_ej3VlCp8ySUFw7cdP8swFhCuOtwlzJHf-s1msy_cNy_d66uGESCBpz_YF_YPhlwBt_vEUFxQEKxfHB
+VtvUteVs4GrUnFltJyuPkO0FatE6mI_u_-FjX-5ldYq
+}
+
+AWSEntityColoring(IoTThingCamera)
+!define IoTThingCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCameraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCameraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCamera, IoTThingCamera)
+
+sprite $IoTThingCar [64x64/16z] {
+xTTLei9G38JXfojKzxzQtFbw65m73_cHQDi_cKPJbHykvx-yoLm5F9FnN1NvdefSZLllnICfb8Wtu6yNVnPzphDhyloPp-D7mxrvMCByLSv767_Mq-_2PbxX
+PTtzb_CNpCX10hG-uFyudom9ymjZ9RRQzdR-LdTEFju5hmXiZE3fe1oPvthxXGsUmtrArvlmmAg-vkz7X0hTNI56GVymVpbVhfzmVjOzL8Fuxh_tuNDTpbTE
+ofqEmAldF7_vylVN1
+}
+
+AWSEntityColoring(IoTThingCar)
+!define IoTThingCar(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCar(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCarParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCar, IoTThingCar)
+!define IoTThingCarParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCar, IoTThingCar)
+
+sprite $IoTThingCart [64x64/16z] {
+xTS5hiD038HXqOE_vFkVjipU7TaAmvHN-GhZKcna0L0NNVdLaqX33Wqvcw8t5Rsfu2xZzK3Qlmy5MQCNPSzG_f9DpljE09hC3vcc7Z6_aDVzwTSVyWRyL_r_
+o5FZwFd5lPZfjg4t0C7r_BHteWj_NIhp3hmZqil-_Ist5FJbo6tZNlTtZU0XRu97V771UztVQ-4VClrlQgyuw74HlbAGEHh-_3JtjLZC_-h-ylEprFokSP-_
+pTZ_FyNJt6-Q_d_s8PxD2FO_LZ-Ad
+}
+
+AWSEntityColoring(IoTThingCart)
+!define IoTThingCart(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCart, IoTThingCart)
+!define IoTThingCart(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCart, IoTThingCart)
+!define IoTThingCartParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCart, IoTThingCart)
+!define IoTThingCartParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCart, IoTThingCart)
+
+sprite $IoTThingCoffeePot [64x64/16z] {
+xTT5aWD144FHbU6RTF_RphOpejJA6ZF83A-fM2yMWF1o5__pJEHA3bTo3aClb_pNFfVQ7k1ftbziWFG_bjcxBLjFpVPApwGl1nsykoOrpUiFmByzPE-FjNhp
+_oh6de5dnfiTNkj9vGUW5K-u_iVaMVTQAx2ZyKi28EC5SAnYoWkWwxNCiUi5ZAwFyyD37FjzzQh97j7r6deQvQSqECR-Qzshut7-e4bV2o3qdyblM-CN_WHQ
+NX2A5rT-sGD067-iXvQNkDvlhM-CVwn7HVQzrFGoNDlWUt6-d-lzuUhvypKRE3nj_V7pBvO_
+}
+
+AWSEntityColoring(IoTThingCoffeePot)
+!define IoTThingCoffeePot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCoffeePot, IoTThingCoffeePot)
+!define IoTThingCoffeePot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCoffeePot, IoTThingCoffeePot)
+!define IoTThingCoffeePotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCoffeePot, IoTThingCoffeePot)
+!define IoTThingCoffeePotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCoffeePot, IoTThingCoffeePot)
+
+sprite $IoTThingDoorLock [64x64/16z] {
+xPTL0W8n44E_a0ns_zFYrDkG5cSVBWz9PcttOG00kNcAF_aG6DI1GHsM-IGSzbQYHr0VHUxsKU4vVl7rNSgg-FdSTyY-UwdNXwFkEt8_IKxBFosXqm_6LUnl
+ZYX5DRzidjxiczhVogya-lDValnv_mQe_V7vq-V_zSjVXjXVXfZ_5OFky__F-ujU8Vbzi-_GV3r_tNVFglrnt_7DlhxyVS3-o_FslnJ6VHlUVnxv0FlCuvV9
+Vpq7
+}
+
+AWSEntityColoring(IoTThingDoorLock)
+!define IoTThingDoorLock(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingDoorLock, IoTThingDoorLock)
+!define IoTThingDoorLock(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingDoorLock, IoTThingDoorLock)
+!define IoTThingDoorLockParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingDoorLock, IoTThingDoorLock)
+!define IoTThingDoorLockParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingDoorLock, IoTThingDoorLock)
+
+sprite $IoTThingFactory [64x64/16z] {
+xTS5RaGn40HHKQ0TyFrF6qv96hbbUJv31HRVWc6XxYn9wXmiuc-lWRASafnAqrTN_wgU4-tLsrjvr4zjB-9uz0gUZ9TAtbFELubUkfxmOJ4QxyUVqpJeIQA1
+-GlptlHaFUKz5OaIFjvfT_wui7sdlV5Nqt-NznIyMx_ygyPtrp_7Tkxz_5NZU-DlMioBpED_uLXs_3IJr-oUxFeD_mRt3qgQmJ-Fp5_1Zur_9JmjxcFndEZ9
+-MVZWTwRitRw-McmkJw_acZv3-1b1zy_Rh-BFW4
+}
+
+AWSEntityColoring(IoTThingFactory)
+!define IoTThingFactory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingFactory, IoTThingFactory)
+!define IoTThingFactory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingFactory, IoTThingFactory)
+!define IoTThingFactoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingFactory, IoTThingFactory)
+!define IoTThingFactoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingFactory, IoTThingFactory)
+
+sprite $IoTThingGeneric [64x64/16z] {
+xPT55iCm44EtbJUw_scBOUlDisee_cAI-O4nyyt0bUYdb__tOQ1qYqeTIVgCY4Erhlak7nEMFw5y11Ju26dlJxZ-f6cV4i_7ZH9VtbmIHLgUlytEvtnK-jEM
+KNwcFvcnZnf_8Yw_Nladzm6-J-w3RNzYSz0eFvcTelphGglo6VgJOFb-_kfz-lus-EIKdnvkn_MV6k6_mVXJDNvMZz__-Sy47Ehzf0jbq0GylUVwvU-Fvm8
+}
+
+AWSEntityColoring(IoTThingGeneric)
+!define IoTThingGeneric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGeneric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGenericParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGenericParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingGeneric, IoTThingGeneric)
+
+sprite $IoTThingHouse [64x64/16z] {
+xTTLWW9138JXfvNgjVkVTl4VwnHfPBpmpdn8WitVm299xk9LVl5gYE6vFCXLglxFnM-QuAGxdryrJRtXuw64wyHwaMRF-YULHi_AkpPvZprhgd6kv_iFgTpo
+tW4fFJ_JZKp_ufPdFFq-pswGtfktB1KtFyUfcVvxJZNsS7i7qVpodbIz31-0B-7yk1JbBv6BROZrUhqNEVL_P-J2azXh79vutzX_qeKNINlYRX4hklT-VfzL
+3-dk_q_tFf_7VQaygUx-W9TXxhyillki
+}
+
+AWSEntityColoring(IoTThingHouse)
+!define IoTThingHouse(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingHouse, IoTThingHouse)
+!define IoTThingHouse(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingHouse, IoTThingHouse)
+!define IoTThingHouseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingHouse, IoTThingHouse)
+!define IoTThingHouseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingHouse, IoTThingHouse)
+
+sprite $IoTThingLightbulb [64x64/16z] {
+xTS55i9040FGPqWMcVkV5YVrUPEw1LdzIBqsim20LmpbTmyX7JdGaIFLUlFYJmrmPYoVy8tgsSDuSy7KQN-iqQEIk6TViILuv-EyRsnUc1T_c7rP7JMhKl32
+E1Y7sp7lcPXdx_my8tbM1_P0iHvRVwdE8xR-EDxLe-YX-6msIst_uo0BPVyZE7vxp-HHps_a6o0VF-cbuoTJy6RZUyRpZEy7Ed_vVKKUNNzC0dCMbf_p-yVt
+BFNrPpDQVsDSVudf-_hLWF4kmDCyxrzsFtwU
+}
+
+AWSEntityColoring(IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingLightbulb, IoTThingLightbulb)
+
+sprite $IoTThingMedicalEmergency [64x64/16z] {
+xTT50e9G08JXhQEBkVzfRNYTGyElmEgZaniBxtAJkVpbqP380P43StXMfdfkocEemG_5F39LU6IRt0yr-a76FQCrU_pBUmmr-A7D-niBVYZds_S_Xjv-gCi_
+oXv3CS-u7yfvMitbrVNNzfz-_DJpHpr_ztxzQlSl_VwfthytyFoHdf_gyrjzVzYdloSywlWixvyKEIdm5Ru_Bh-DNW
+}
+
+AWSEntityColoring(IoTThingMedicalEmergency)
+!define IoTThingMedicalEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingMedicalEmergency, IoTThingMedicalEmergency)
+!define IoTThingMedicalEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingMedicalEmergency, IoTThingMedicalEmergency)
+!define IoTThingMedicalEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingMedicalEmergency, IoTThingMedicalEmergency)
+!define IoTThingMedicalEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingMedicalEmergency, IoTThingMedicalEmergency)
+
+sprite $IoTThingPoliceEmergency [64x64/16z] {
+xTS54iCm34JHeS8lwVwtxL1GtimMmjaol49a9NOiB013DsFvmuCVmVq8xgVemuhqOKRuspezLNnVPomFuexd0V8TuVFskrUlqRbpThS_8gP7ngeV054Be7d2
+s7xD-vhVsxpW-IZbx7lag37g9_mPmDx-ecd6y5JnVPqn_4rx73zKFwF_pFf7a-oZc95y7hyXaiVlE1x1RNylyRlNVuW2ujMl-VI4_VxDRmU__-BM5YJk7Fz8
+-VZuUKlOz4qIDlellNCrynzSFyxySOG9y6WJy6MkNmu_VTu
+}
+
+AWSEntityColoring(IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+
+sprite $IoTThingThermostat [64x64/16z] {
+xPU53iGm34D5O_h_hpsC52bswnoZ3mDlMxdTtap3GUBd8VoV7owGmBK4hlK8VaigpUEjyZmyRff7cWHPAgMhOSv7XvkIhpjIlFqF-IDaO2ruqFx0a1fa_NlM
+vC4GKZnuLOx9ZB7K_KPFCb5-GDuaUMm9VD9h-Gcoi6wYctNRIlrFLZxt4RulydmGYZJBkf0tSTxrMbu__strX-qd-NhxGOJQvVQJ1L3zdryvovi1VC0LFrRd
+OJ5_XdHmwFaFf-dHRCtp2mISrJ9GaSSCh3zezVRufmsuv3TXIpw_Vj-uVyZlNvw-Vq9fVihXBUTltW0_SGF-dkUNF_zyxG4
+}
+
+AWSEntityColoring(IoTThingThermostat)
+!define IoTThingThermostat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingThermostat, IoTThingThermostat)
+
+sprite $IoTThingTravel [64x64/16z] {
+xPVNiWCX34FVF6lsGV__jRVV95h48AStfHiVkXY2ErD-QV9n4VxDPq4ABqdWDKaUbeOyJ5sD3mhcZooU0PxWRUvmJYcSnF-BI_PO0E0acvTBlISdlC2Nls10
+y-mReVYl1atC7_7ZRhJ_8APyvleVOrpoF9fkPFqSklElDzE4fu30vpo59Cw4tl-oJoN_BLq5PV-gFWCr_tLPnlmntcKPlDYiFi-uu5t_hGWQjE4V4Z9BlCRZ
+DxqPwwTyG4ER-4SKY5F7u1cmUTwed2zvlVzp1smNn_NFY4-JRyo31k3uJvoY8TRFuGavaOVBOnC9-_pKFAhdf-WGglmrxr-dtnzFlW1VyG9-d_zVtlprzGa
+}
+
+AWSEntityColoring(IoTThingTravel)
+!define IoTThingTravel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingTravel, IoTThingTravel)
+!define IoTThingTravelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingTravel, IoTThingTravel)
+
+sprite $IoTThingUtility [64x64/16z] {
+xTS53iCm44HHKU6NVF_J5iEm7Uqgd2a4dy3iDBC0M8UX_Ev1Jv13a4EdJr9wVH8pkAUTIz3JwyaY-wfOkDVBJwe_u-PmdYBbkRVyC1FrH3t_wi_eX1LGaRfF
+CLyoJ_sLpbj-KSyWNXm_Azur_f9b44yMtHjNHewNxCJd0QB-AeoV1eUUTsMFrzFloIBvOql8_fpSzPz9lpy2kFjVbKJBt-dJ9UD3hR_YwyVm0dZ41VWyzo-x
+7pyl
+}
+
+AWSEntityColoring(IoTThingUtility)
+!define IoTThingUtility(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtility(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtilityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtilityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingUtility, IoTThingUtility)
+
+sprite $IoTThingWindfarm [64x64/16z] {
+xTTH5i5G38JX9vY-PF-h1S0SafF-03e0kHyaqCQ7HPAgYsVvoMj40FS0xdc6ZoeNLU2z_dgltEkGsjycNQy7-E1UkQ_xvqNQVs7lDJW_gpbf-w1U4lREmVni
+OQl_IiBzeTISdwv3-syrw0VWivNu-oVw_V7dujvUGJg_tDjRCDBrXqN4sohcBypu-JaQIFzj2VSXmVbTnCdNUJI__BvFzdcMYLUFpv-n_Hc0ymVupFsNoRy-
+Qm
+}
+
+AWSEntityColoring(IoTThingWindfarm)
+!define IoTThingWindfarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingWindfarm, IoTThingWindfarm)
+
+sprite $IoTTopic [64x64/16z] {
+xTTL0i8030FGhxda_gT5fXcIb2-imLlUNF61QPxapxmeX7n3lr_rzGI8rr7VJ03bf3PUJaKqLZUpNztwGHqxu-0HysJ0B8Rww46SVIr73vfAuZnJoeFyLg6Y
+yJXwyBTcdSV8z7FYqw_Q_WyDHVI4D_4UbXflzd_dvNuSyIQVvzEdJvy-VVhqZUN6HowGJRkfvULn4xlp4GsHjZ5fuQ8qOZ4u6e8VcpC
+}
+
+AWSEntityColoring(IoTTopic)
+!define IoTTopic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTTopic, IoTTopic)
+!define IoTTopic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTTopic, IoTTopic)
+!define IoTTopicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTTopic, IoTTopic)
+!define IoTTopicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTTopic, IoTTopic)
+
+sprite $loTDeviceDefenderIoTDeviceJobs [64x64/16z] {
+tTPL0W8n38JX9-GFqllVbXSakuDaMdnm-IfPQ_kIy33hGKyCUcBG4tTzONunw8b1J_Jx9WsONXemlJHWUsr0nwUH_MCpw7cDh-MFFTFycZTYUKvvlmUMotJ-
+11pFEUbztNFLK_CYf07roYS_16m0CFmycmul9vBw_2ywVMgE9wUrAFQVEaolaNue-JnVW2ulzQZvXEGxnqUdXwlz3yv_sLj__Fhh_YE-kl_cvZRM_j-a-sNF
+yPVV6rvIzY7dAtFzm2NowGtdN__yhvbBuFtNpqZ-RzTVHdxUj-_90G
+}
+
+AWSEntityColoring(loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+!define loTDeviceDefenderIoTDeviceJobsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loTDeviceDefenderIoTDeviceJobs, loTDeviceDefenderIoTDeviceJobs)
+

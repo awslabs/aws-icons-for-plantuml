@@ -1,14 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $DataPipeline [64x64/16z] {
-xTG5WgHG30JGoeydzp_lIlj8s1qtNWjMXKDDThjTvelQ373Miosi1QxdYCXsS1SZEYEUlkDa334NiD5J3qEm13TuGUe9YBB2BhoAa4_OVL3TivxIhmMD1I80
-V_-N6rOzGG308j0w_060rrE4Y9N1knrMBXBrR-dkMLS6h_hRlufhv075NpRrhn4TZfbKzUOwzNd_-tuawX46xRyTopXAXMKQz7P6LoliqVvXeMEJTxLDVJOp
-nfBHEaM6_f7to74mzSNT1SGZEaKsZj-mwH0P-yV_79qZs_skGVzVlqQVlh_tNtxzQOte57cZ-ryZGc6LWslaRPv_LbK6wuXFaJTv_pcqgnKQ8pr57kqdmCn0
-ri7J8qu0oElawP6CoDgMSSdiThlV
+jTLNRiH038DXkG-b-vytbOZRc2b4-BpVZtL7RqriEmzc06O0PW1c06O0PW1c06OWpK2QWJG3QGRI3AGCpCCmDnb85LZYRGjK85LWY7MD0L2-6zZ6YAaXehK8
+R5F4k6hF07bqjYf_3emnjpRkT6njZb7vSo02rxK8uJdNv_x_ySl_pwdp1-cvo_K38j0-hXy0xPTutu9zzFlcUD_Sz_oVolCdJvwHfv5Q7if_J3pE-__NFgNt
+_Z_mprwzKEWXFQSyfEUKX_ISyg0luLDvq9VmgJpeI_XK7lGbV2eF-X8-bGTz2P_AWxvsBtVpACxrzKNpllFps_SbV6hFUV_Vzm__dnF_d-Ft8qM0F-buBiNG
+Mvc1CWDb1ieCb1aeCr1ceCn0cO4o0sK6oWoy0W
 }
 
 AWSEntityColoring(DataPipeline)
-!define DataPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, DataPipeline, DataPipeline)
-!define DataPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, DataPipeline, DataPipeline)
-!define DataPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, DataPipeline, DataPipeline)
-!define DataPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, DataPipeline, DataPipeline)
+!define DataPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DataPipeline, DataPipeline)
+!define DataPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DataPipeline, DataPipeline)
+!define DataPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DataPipeline, DataPipeline)
+!define DataPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DataPipeline, DataPipeline)

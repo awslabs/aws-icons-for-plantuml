@@ -1,16 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $KinesisDataStreams [64x64/16z] {
-xTO5mkCu30NW9zcYv_lVTnEdTHTAwV9Cln-AJYGP-P_mzLMUF4Jm0mxdGL4yB_va-qJdeI5vNa5M9iOFTFYwqaS9h6Q6zba0jmfqVa2lpKgXnTDArWKQu3oj
-59gS710ldl2x-rO7f2TFSa23Kva0qgDEXw2No2kQ091cdbLyAfmNsUPjELLO4qmYgcsNzmCtNcM_HJu6cU6zgGWEmJjILkAyHTuzYXmxRcfwbVYANB4JRTtS
-OodU5mr0y-HIwLq5l-Dy9ErIxyZYvWYxAYDyOuVa4tcjzupw23QijTQznk1RyjPfdJJ1XGQhYGIVgrjx6wb0ZwnAtv-nLE9L_AlgmG1wNVilNythxDVwrL6_
-1FIecnVT3MXSNlSV5Kib9kExuoU6eSKL4oq3GF6UdELTeWkSWfgPp_mJDYX0vylvSyny1ZGtvFoVw9aGo1lp5tFosSfy_OU-s9wgtrQ-XhwhslvPqVec3C77
-N23EgQYemTyP3d-wUDarYpxkXchmDzPl0_hea4rIPTCOiWFYSVE-uX0_5cFLB40LOEWEg3VshrOa4yfDeQrJnNplFaFx_OKKCMRxCIxjHuU_lty7fBMi_J_0
-R1l8cVD31n0KR9IENV2kahld5uNMg8ai0-pS-MdsH5qcK0VizFdD03HpwmfeV71-B1DCwdoil1wVNpFSe_ZVylNr2m
+jPJhqgqW34D3kQPz_-SzjweW7zlj37FM_on9LBYYFL3lS5F0JG4t1TmKS5F0JG4t1TmKwAP0LmBWjK1Lb_ct0bq9WFPMe2k1eBxTG5U2YFnsH5q92W9V2lJW
+Fbr0VYdGazjq1IZl13e9n8C9IAy4EWao8Wz1U3EYJeA6uztL022LRmAT1UaKi0W0I2hrGQ0_1B5NhqdmZo0nvLnAhVLp7g1UrHkTLf84p2ppWgnwLHTNEBNa
+5AD82E5plW1LjLVtxeq3p_t_DNS1Muv0Bt-shu_x9G2faSlkp_sTAW12AesTzhVysJwiyvsMmb4z3vQHzVb7HOvXwExbp-gpGDUmPk--vh_br-Slm_d_yMg_
+slYHR-zlk95Q-ojgMGA2fDFvyFtqinHl4ic4atIlOFVlDrCTbck4o2Q0bCPM192RmEp-_pWrOhmx10u5c0JM1O9od5ly__KDXiFpg31iO5q0y5mXz1xLhqJd
+K0mZcWkc5OQNANubEzuAYPV0Pa6-Ll1Bf1pjUVQN0k4bi4d0C-xtTwLgw7dF0BomIL0Ghn7AjSkTLTwkzlM89pq8rrwhvq-20FPFmVdNdzxzM72LTm7WbZ8i
+wldX2yZB_FWb1jNxf2JWnIl6FhOI9EJvjzBX-OaVyjONqm4AKFNgB_oOj_ubpu9OoLOY86sTdqSS6Vz_th2P8Jz2ltzouvUywGFyWMqAR5DWcmBR5DYcm3O5
+jYcmJO5j2du3
 }
 
 AWSEntityColoring(KinesisDataStreams)
-!define KinesisDataStreams(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, KinesisDataStreams, KinesisDataStreams)
-!define KinesisDataStreams(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, KinesisDataStreams, KinesisDataStreams)
-!define KinesisDataStreamsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, KinesisDataStreams, KinesisDataStreams)
-!define KinesisDataStreamsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, KinesisDataStreams, KinesisDataStreams)
+!define KinesisDataStreams(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, KinesisDataStreams, KinesisDataStreams)
+!define KinesisDataStreams(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, KinesisDataStreams, KinesisDataStreams)
+!define KinesisDataStreamsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, KinesisDataStreams, KinesisDataStreams)
+!define KinesisDataStreamsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, KinesisDataStreams, KinesisDataStreams)

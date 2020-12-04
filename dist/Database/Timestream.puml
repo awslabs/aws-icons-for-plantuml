@@ -1,15 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $Timestream [64x64/16z] {
-xTO5akGm38LXWILBUlU_xpgfPWYiQmhx7sZymk3watxz0l3VSCWSNPwVmnNUX6cDfNaKS5nd6rJKl8_SL8Yu1N2CPrk-NOLRLM5CcZZ4cRs0jpNgp87QJ_Zp
-V532-nf17Ly_2ipuVippnoqD11_qr1B0CqOQ7VJXJEfHzR3xN8aiZlb4BLydqMQZfa94ueKyvWEN0rY5HwBD8u4J_du2FJmxuz-QypZbtm_VrZ4rVpOiLLwk
-Hy8S-EeLUFLk8g895naGHhJXIHDuyQwjaHYf39cywOsfHU6sst1P_i4CfHJC6LlRhuo9rNjcZJ8NltxaA9In9B2v_L1XGjSusLQ0fMHkiUFNhrP6zr6FOiz0
-eTk8EPMwvVv51jU6RnHmuf4CgKI1K_j_a2xjUZ3AfiyF7gNKKOZLkLcUFFwwAGM2A02OexvxV_VUgPMIaoYP6PDjUEh0g_TMA2MfKcOcaWqlfF5yuxuSFsM5
-MX8fVFVPcSHw5Yuj_gaiR9__lJ4HYxQHQZ6hFAQQsBj-PhUsAcrb-jAU7s5jVRmyHqhWqbzUFtFBJz-_vySFy-EN-V7J_FXjVlmuFtwT7p_Fz-lNFm
+fTLNOiCW48JXOMcx0_S_Ro8Z5mGYXNd_VbkTpzbYUZzk1hWPu6Q0cm5k1hWPu6Q0cm5k1hWLcFiSlJW7m3a9KOV0qcUForp8zu6hbWFuc5NDJ7EAZvpN8J3r
+4N1HB-SW7uay1aQVWMYJawW2w10OlI3TN0L1i24mUC0u3oHu-zYjJvm71DBrxZpYBA22YxSxtyx_kVVv7xpDlSgH22chaQPwNl-GcXy3fVTa3kFzfpRnrdpf
+_J6DuNt_9tqSmyHRywNpmynklJLVbfuBRysNfMVpljr6G7SdDL_kVORGscRUIjlJw-ZRKWHSCdLpNqwFn7wApwdWnfVJGvBrNiuNGxAOF5oyyUNXipiI8MMp
+pZCcCmljDJ3tvV2Nzv-yFDlPytRlo_FyvtR_VVfND2nycLm_XIEPJfo6mCyUOXIaro64ltg8MVeu1xhmPVJEGOnjPZ6fBRoLmOivE2Dp84r-E7vdPV27Sfg1
+GEOVZXy8ElX70A-5XG_udezPxTCV0OJy2ryiolJ-yu7ap_-_V8_j-z_xSu90BdtRn_4F2rpwFc1kulcpB-oMuVcvkNUmcq14OBUf3n1E0mfazfjvEZYT1DBZ
+eAU1sWS4aCmkOD4rFWtKFb3IUGEQiT0q1G4WojcQlmHA5lJpJSy3TGYq6x1zVyL7vMBDrx8ObxEw6QYRWRePg9k1kXcecu6w6QYRWReP-08
 }
 
 AWSEntityColoring(Timestream)
-!define Timestream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Timestream, Timestream)
-!define Timestream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Timestream, Timestream)
-!define TimestreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Timestream, Timestream)
-!define TimestreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Timestream, Timestream)
+!define Timestream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Timestream, Timestream)
+!define Timestream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Timestream, Timestream)
+!define TimestreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Timestream, Timestream)
+!define TimestreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Timestream, Timestream)

@@ -1,16 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $RDS [64x64/16z] {
-xPO7SiCm30IF3Ut-_zx4DcMBcH6Keapt9kvSi84b_eStRxZnrn8g4uyCtJYChTYm93uD6yh45psht-N6EFDRVDV_QBal3IqO9zpr9fcliGV8zT2qVku1SfsI
--xD4njJF_3WBm7xNi_eZp6SRXLlv5yyQUZ0YNFqu_lfAXgcCteUe1RVlbWBdK5l1YzADyIiwKDfGDLCTzr1ZgJzdAqD5jRN_Mg4CT_8xstinKj2S2zuWP4Et
-qmXyj5llFj14pM-OZWP06AC0tPdhLb1aJd6hMAXj9eUKU_XCLs048sQAk8xUQcrzgC_aYc0CG9Xk3pFszByWJukQRZ1rwjCNBeLsVyvDKdrbl7oCVGB3-j9g
-jiC6K35M7oYrZnkz5c3r1VgzBqi2bwQo-EFOTvJWKWN3pLJD_6l_e-0m1pZGWhk_7XUxJtPqnY7r6U0uVvyPMkCOUaNHcDK1TRpojsxZnz22ccNmpAug3xyV
-v6z81Vhf1cqDKExvUsFFtmeqOvn1sl0aVpdsvPj3flj7a7_Ulthy2jflzizy_xwHxDyNpW-Bk71-NJy_BvxVb-yFL-ylr-vFr-vlAjE_Vd_y_VtLPQANxy__
-mvitdm
+fTDPsgGm28NX0nb1zx_UBjIKvFb3JpdNlf-pZiblrkFfPa0t0xePqCs0RWPqCw2R0TqCw5R0UyQpc1FkySfZJF_e4NYIlxW52ZtvGCmfyk83CU-HLn-8kOJU
+1s8U-p3WUUI9z0vK3GB5-ELbuOSo7WMwZ4N-nQtan9-bN9hytEzzJvYMMX0ubhm2u5ng-woMp03gEd3y27HH9UJfBVGC4gbj3jn-3ZH6LGLIyu7AW0Y1wXmm
+xmETWSlRxCdLQayHWFaCWDeSE7oW0bH4pHU66nVp8eM0CWKE5oX0alTRxhMKb4gvRjkyBGFP1uutq82gEhoVyrA1ulqR81JtBy-13iWRMFX3EqXVZznUtJ8S
+8jI5FogoypRYz1aJ0Eypojgpyzs_0CxT-RJs0eXEpw-t-bdhegglxq1R-IE1lPy7w2COB4il19PnT9rvjUB3qPVU0iC1eDBa-_W9W5gW4j0ay8ScSvSdsEWp
+sCZyfRbBu6sDW6nUUs72RJat1LI0yGE6_j36tVpxyxvFbDbqwCVkzw_Jklah5NeVo42gyiKruVquG-y31JRYpmYsej-5tWUq9i8picjn-wtNUWTi8hsBeoEp
+zC052IumhuAk057aZPCUGK3e3W0QUEN1uy3bTUMDy-1nuFAwy3EF0-P7u7H-vd7Wzdhxy_KpZmEFrzkF09vH7C3OQ9aV0LxvO-bPdvaVWM3wsvdV2foRWNCp
+S6u6pit0kHauDmFdPk3S3Fm2
 }
 
 AWSEntityColoring(RDS)
-!define RDS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, RDS, RDS)
-!define RDS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, RDS, RDS)
-!define RDSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDS, RDS)
-!define RDSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDS, RDS)
+!define RDS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RDS, RDS)
+!define RDS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RDS, RDS)
+!define RDSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RDS, RDS)
+!define RDSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RDS, RDS)

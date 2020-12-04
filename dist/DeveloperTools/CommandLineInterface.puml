@@ -1,13 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 sprite $CommandLineInterface [64x64/16z] {
-xTO54iD034DH1nOitV--7TmfsLMPyWSBBmp6PxIrHJcSoukSd-5i9jTurfSkLIBV210EEfZK8bynJIpMtHOYZ3NqN0lRubZgJRvHgaL-NgJcoAl5ny-5a1m_
-gSH3wFcUTthdFPvjQhpBcpNUw9C5o3vVGEwJ1SW-Nq3kamLeFb-0xi5YqpthxvDLtkpPBU2A7vpxoNvmUDzBzeDpjhsScXySh6KlQVtx_BRzPntynkFV-Txd
-7_xKjulZslxxNv-VCF9iVhhykcVP-qAV7ttulZS_wlFhoL_m6MrjxG
+jT45TWD140FH2MUallzrGmeigXthMMRuPLZyR9gzdWzX0640OG1X0640OG1X0640OG1HOEd7FtORV-bFiBuF6FztSO5BFAxoowKUni_m-CsP-jbyV-tq-_y6
+Q3sCd_Aq7iPFULeFuwSyD_x51-GrUMBfxyUp3yXhybpwfz45v3LgyYxWFULTm7lAku3tbFU1tlj0xtt0UsAnXp5UWULwlmWyxpuVw3qT1tfFnu7USyd7QWfq
+dh_yoAFt53-RzPvhdR_t76WyNaZOMQ-bdgcdzUWzhKVlQJrwJ-iXNyRJUiZNhp_TKYwVaQ-hFUIBPh2JJm8L1YeCL1YeC51XeC90XO4A0nK6tW4
 }
 
 AWSEntityColoring(CommandLineInterface)
-!define CommandLineInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CommandLineInterface, CommandLineInterface)
-!define CommandLineInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CommandLineInterface, CommandLineInterface)
-!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CommandLineInterface, CommandLineInterface)
-!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CommandLineInterface, CommandLineInterface)

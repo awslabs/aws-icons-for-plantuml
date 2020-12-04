@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $QuantumLedgerDatabase [64x64/16z] {
+fPQ7Skim30GFOiLH__-zRmJ6Gpq9mXHksYNnhhij_j20_Wqt0zmCS3F0pG0t0zmCS3F0pG0t0zmCS3FmSbjEXm2072dNhayYNyk11qTv9hxzCeNQJEcjPilb
+AC350QIcZzkW7i0H19QU8Ssx4Pj4bs09Waww0OW-y7myV2uV-iJrnGqqSNprV22rPw0bmFFLyOibIkjgSc_5v3nzFp1k_jVZn_Tr-kFcazIQayp7hwHSzUB3
+r-cFvNi4lav_X3u3NwS_GfyQCFqH-N5WJColD2f-rDikMjP--UFoKSp7uhuLYxS_xAH7CrydvlS9e6jx_W0Q04cNLaMa4f3_jnOHAVhbaqM0FY-szrrn4VXa
+BmHe9w9US1RxXTh-zDS3QLvokRXl1IJonyyl039nmRossWxyzK1IlOPUMxljRbfNZVnXlam0Vt_vTGOAVcJcsovh-puABK3zOyrkkqzKFtn8fGKMwZwPV5yF
+04TfVuxscWKaHPo0U_lrX8a8_kYlPtRWZy5MqiyzKkdUAqFaJwYgD3oViM-GWS_ODqAVZY_eVg13-EBj5uWRQ8B2py1O922rPw0TG28_0-TOrFN-ESPw_opq
+cVuzCEhx_RFo4_Cji60lw_YlD8PC_nm1335_At1k1ixDmBaPE3S3vsRWt0oScu5pCt1k1lu1
+}
+
+AWSEntityColoring(QuantumLedgerDatabase)
+!define QuantumLedgerDatabase(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabase(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabaseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
+!define QuantumLedgerDatabaseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, QuantumLedgerDatabase, QuantumLedgerDatabase)
