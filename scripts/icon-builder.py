@@ -15,6 +15,7 @@ import re
 from multiprocessing import Pool
 from pathlib import Path
 from subprocess import PIPE
+from collections import OrderedDict
 
 import yaml
 
@@ -96,11 +97,17 @@ def verify_environment():
         sys.exit(1)
     # Verify other files and folders exist
     dir = Path("../source")
-    q = dir / "AWSCommon.puml"
-
-    if not q.exists():
-        print("File AWScommon.puml not found is source/ directory")
-        sys.exit(1)
+    required_files = [
+        "AWSC4Integration.puml",
+        "AWSCommon.puml",
+        "AWSRaw.puml",
+        "AWSSimplified.puml",
+    ]
+    for file in required_files:
+        q = dir / file
+        if not q.exists():
+            print(f"File {file} not found is source/ directory")
+            sys.exit(1)
     q = dir / "official"
     if not q.exists() or len([x for x in q.iterdir() if q.is_dir()]) == 0:
         print(
@@ -169,7 +176,10 @@ def build_file_list():
         )
     )
 
-    return sorted(resource_files + service_files, key=lambda path: str(path).lower(),)
+    return sorted(
+        resource_files + service_files,
+        key=lambda path: str(path).lower(),
+    )
 
 
 def create_config_template():
@@ -182,7 +192,6 @@ def create_config_template():
     dupe_check = []  # checking for duplicate names that need to be resolved
 
     for i in files_sorted:
-        print(f"processing {i}")
         # Get elements needed for YAML file
         category = re.sub(r"\W+", "", i.split("/")[-3].split("_")[1])
         target = Icon()._make_name(i.split("/")[-1])
@@ -202,7 +211,11 @@ def create_config_template():
         # Check for duplicate entries then append to
         if target not in dupe_check:
             category_dict[category]["Icons"].append(
-                {"Source": source_name, "Target": target, "SourceDir": file_source_dir,}
+                {
+                    "Source": source_name,
+                    "Target": target,
+                    "SourceDir": file_source_dir,
+                }
             )
             dupe_check.append(target)
         else:
@@ -215,8 +228,16 @@ def create_config_template():
                 }
             )
 
+    # With the completed dictionary of entries, convert to an OrderedDict and sort by Category -> Target
+    # The sorted template file makes it easier to review changes between new icon releases
+    sorted_categories = OrderedDict()
+    for category in sorted(category_dict):
+        sorted_categories[category] = {"Icons": []}
+        sorted_categories[category]["Icons"] = sorted(
+            category_dict[category]["Icons"], key=lambda i: i["Target"]
+        )
     yaml_content = yaml.safe_load(TEMPLATE_DEFAULT)
-    yaml_content["Categories"] = category_dict
+    yaml_content["Categories"] = dict(sorted_categories)
 
     with open("config-template.yml", "w") as f:
         yaml.dump(yaml_content, f, default_flow_style=False)
@@ -264,9 +285,11 @@ def worker(icon):
 
 
 def main():
-    verify_environment()
+
     if args["create_config_template"]:
         create_config_template()
+
+    verify_environment()
 
     # clear out dist/ directory
     clean_dist()
