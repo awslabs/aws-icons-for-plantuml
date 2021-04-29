@@ -318,7 +318,7 @@ General | User  | ![User](dist/General/User.png?raw=true) |General/User.puml
 General | Users  | ![Users](dist/General/Users.png?raw=true) |General/Users.puml
 **InternetOfThings** | | | **InternetOfThings/all.puml**
 InternetOfThings | FreeRTOS  | ![FreeRTOS](dist/InternetOfThings/FreeRTOS.png?raw=true) |InternetOfThings/FreeRTOS.puml
-InternetOfThings | InternetofThings  | ![InternetofThings](dist/InternetOfThings/InternetofThings.png?raw=true) |InternetOfThings/InternetofThings.puml
+InternetOfThings | InternetOfThings  | ![InternetOfThings](dist/InternetOfThings/InternetOfThings.png?raw=true) |InternetOfThings/InternetOfThings.puml
 InternetOfThings | IoT1Click  | ![IoT1Click](dist/InternetOfThings/IoT1Click.png?raw=true) |InternetOfThings/IoT1Click.puml
 InternetOfThings | IoTAction  | ![IoTAction](dist/InternetOfThings/IoTAction.png?raw=true) |InternetOfThings/IoTAction.puml
 InternetOfThings | IoTActuator  | ![IoTActuator](dist/InternetOfThings/IoTActuator.png?raw=true) |InternetOfThings/IoTActuator.puml
