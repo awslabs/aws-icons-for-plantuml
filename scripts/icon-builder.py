@@ -36,6 +36,7 @@ dir_list = [
         "filename_regex": "[^.]*_(.*)_\d*\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
         },
     },
     {
@@ -48,6 +49,7 @@ dir_list = [
             "BusinessApplication": "BusinessApplications",
             "CustomerEnagagement": "CustomerEngagement",
             "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
             "NetworkingContent": "NetworkingContentDelivery",
         },
     },
@@ -58,10 +60,11 @@ dir_list = [
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
+            "loT": "InternetOfThings",
             "MigrationAndTransfer": "MigrationTransfer",
             "NetworkingandContentDelivery": "NetworkingContentDelivery",
             "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
-            "loT": "InternetofThings",
         },
     },
 ]
