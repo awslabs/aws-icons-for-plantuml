@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Containers [64x64/16z] {
+pTG7hkim34JHaLY6sV-2Vt5539bqa7fHNZsJ9fjVBxZbrx8rvQ7BTebF3l390Juvm2S7M0sOfGEi1bhpKRbdwJttBBqlFXyme7ism7oWm_9FWVb0w-ugoG2J
+viStT3_BFECgRW1WBkBZ4czjUc3LwMaqUyox04RwaWBoY3T0_EuS2A1N_VHyZmV96hfTyWhew2WB8BNtXkxaQC0wcXLU03k_6XMGp5k3vFU33kZH1vSwq6MO
+kSbS1_gzZrW636XRk4lSiAT77uilBkUbWO_2i_AnFVyzd3JqGLBHfAn1VEI398JdBKJWOn-BToVTIFhwm_9DvMFshPCAqg5adtxmURgttCVFUrO-JhrEdfMF
+mhFoiNh-gcVkoI1zFt-7WoWWCp_5anRFeQSShhy-Qhu_ZxoXfM5DkGpmu1bxFCidpyf7uJdmrreyZpxqc0nJvzpYp-EL8kbP7y_wUDR7ipvA_-J0BQgUzP7x
+9mTkJmxS_bV8avNWr_iB
+}
+
+AWSEntityColoring(Containers)
+!define Containers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Containers, Containers)
+!define Containers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Containers, Containers)

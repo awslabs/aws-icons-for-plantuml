@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Chatbot [64x64/16z] {
+fTE9agqW38JX1YL9X_T_t-i0i-2HM7NvQvdrw_Aey3DRfnznSu2R0zmSuEO0DmUuES3D0MuEt8sKfzO3DuxdP3d0gHEYgdAheDXgm2T_uEaUw9EtuJtqN7iR
+taFFjRVXFVHSUnlUPw-gHXCHKaMKQs_3--GJKAW0ldx6GQwz3Uz_lOWOhPH2QYaQUlFH-lE_-6dW_7_leUUxzz3ptNle-Uxzyg8jQ-uh4JaXl7htRXWb8pF-
+_dJrxftIAiXaIb9QOkozUsVlHBayxqL-7iZG1yzNJvN-_W9VNgHCoOiNj0gfmEKJRYMDl2B9U7nizr1r9BqJqC2dn3-7wUHdYhpsYk8jhZkmzWBrju42vTh_
+_1nwFlkIkkUPa6rIaf5Az-sR9ty0pJCZ7u2oDz2HSFHlWPFyz8fJcYyGz-djDUHsvxHvpJ3omvzWzqVojiAV1D9Mpkx7ZwqQU0yzkw_BwtVtuFglkg_t--VZ
+_ldLylwrkg_FpyzRY-StwhxExy_Su_lpK_Sry1vwrhy31l6tWGFsuEjqVeC1HURafm554ZDTLm2R_NtWfQHS-EejbP-GvIf3VcjwuQlVmjdVw-aU1Bu6tcC_
+2hp7VXHuN_ZrW9fVcVeezYCFMlYTWRevK3S7wkP0tHoecmDrS-0V
+}
+
+AWSEntityColoring(Chatbot)
+!define Chatbot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Chatbot, Chatbot)
+!define Chatbot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Chatbot, Chatbot)
+!define ChatbotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Chatbot, Chatbot)
+!define ChatbotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Chatbot, Chatbot)

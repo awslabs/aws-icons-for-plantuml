@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleEmailServiceEmail [64x64/16z] {
+xTHN3i9038JXzzJxdvO-AoRYbp8E7Kmd_knes_mkyO_X66DTAyfQKURwBF7-wdl1dzudtK3CfpO4OycVkRxbl1STIrv3e77OuClzlSYgkEM7L_Xm0zIyS_Tp
+pfMPpjs5kX_YpTfGuTxrBJcydBkVmIDtxobhkBpLmQe-Skoz1JTdhpJax3qHENjFHSvUqIiPHewzj-Fcx9qmPs_8UTRVpuN02tciznhk9bk1OFxXMxR-U1Bg
+w_-X-qyBbGkGrzVI-GCS2e2F3b3tnBc0EnevBk0UctC5ymbVYfGlISxT38Lu9p-FTRur_h47
+}
+
+AWSEntityColoring(SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SimpleEmailServiceEmail, SimpleEmailServiceEmail)

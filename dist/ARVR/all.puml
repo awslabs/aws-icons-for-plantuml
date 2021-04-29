@@ -1,0 +1,32 @@
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+
+sprite $ARVR [64x64/16z] {
+nTLNbgH044DHfOzWPl_RRIyy94VPHl_tLU7Rty_Niykru-g1tpSwFwy5V33WWm4V3FXWm0S3FXYOv02z6g0V2qnwm3wz6A1N0_HgW5uEqCi1-bMWfjkL2yz0
+GuWt2wYddW53l3-4W7Rj9m_1_3RG46vyGlTfh8YNlg3shq91ll06X0S3whclI4yMKQwyFxcHMiTt0ntV2NHyBz3n_K37zmDx_-_CCs0cUGOIa0JFG4OfoAAV
+tDvjXXsyttik1dzRY4VlJtpzV1mhwj7xoZDWQ6lk8KuV80PVhto-95QUWHXiuIt0fe-08TgQH__OuXdm22nFUR3bfOh0OOdHBu6fbNcRxqB9wMkv-Jnw1ixd
+rwCN0_HwW5uAqAi1UZL0hmRerG2z6g1N0_HgW5uDqAi1UZL0hmRerG2z6A3_F_3pVxzN
+}
+
+AWSEntityColoring(ARVR)
+!define ARVR(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ARVR, ARVR)
+!define ARVR(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ARVR, ARVR)
+!define ARVRParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ARVR, ARVR)
+!define ARVRParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ARVR, ARVR)
+
+sprite $Sumerian [64x64/16z] {
+fTM9RkmW38NXOnjZ7_B-xtir2ReaWqWrmbgwVdyMeEKykPwOXfi1RWQu6U1cW9i1RWQu6U1cW9i1_XG8D_D7WBy479_Hk0NQgm-HEdY5U8H1SmJQIo0D02oo
+Z-ByrE0ZqDO11qp4WD8z-eLXuoMsLI0KKYd244YTVG-qHQ009KapChs_Cq5_YoNxT3y5ga3ZjWhNGpZiOmGn5hGz0hMKUbsyFfSn5EAfW2hWEQRT0Ya08C6m
+xDAi1z856Yw0rfpz6P1FsI4S8p8sKW4i-yo-qQ-Rhl3Pdu5Gm9U-ANWETF8za5KWiVJIpSr7y14mm5U-84aoOQl3L01P-xXkN173r3gu0r9ZxPi3Pe3Jw_py
+LI2U-UPRAA112ZIU_dhrNFen_uzU3d_jNv9yzoEGvHAbd9_t6ibtNwq7-ZNxIUnFyxSlk1scyyouTFs3RxTt3gdahxxTzsz-Uxxw4GWfLA59_V9yzprWGAKg
+Aw3vzFpRDugH7qyMvPVd7pwDZUp-Cod-y7ppB42qTlSXaBXxllW2uzaPddJuy2DmVFlCncZNt3sJh2M7v-MFftTe6tFwCGOfm_FonyD3ynvyUbR1pVFqzu03
+qPP-_izo-diWfB-xoMUIL6ZmFXy_FOBVVVzxe00iQ-NN75CW5P8t_ma4KDmWoSdFWLQ1mk4RASYpOYl_3D20EdpB_j8Divy3_Jrg_lSLqVTWJduHQ0xuvQD5
+NxIozdCW5HAg8KX2I38XdFmwq2hEyTOSKiE1cFrRW0KmzgS193Zxrq3Bx9-mrbdF_cWli_1RWMCpS6m6Zit0iHauDWF7Pk3O3Fm3
+}
+
+AWSEntityColoring(Sumerian)
+!define Sumerian(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Sumerian, Sumerian)
+!define Sumerian(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Sumerian, Sumerian)
+!define SumerianParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Sumerian, Sumerian)
+!define SumerianParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Sumerian, Sumerian)
+

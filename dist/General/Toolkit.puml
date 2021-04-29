@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Toolkit [64x64/16z] {
+pPS7RiGm30G_i8J-_zhqP0sEa0Mjb1EQG7Bci3xNzTYhwX2lgYFwla7bTP_MFSE5gg61I104UcXWu548pD6GQGLr21wZvUxSyDcHksWZ8OEh-PdCM_GzIDnr
+SSHoJoArwrlUeYweGdd7UzS4lWmphxSj-ANCU-j13oloJT2RYlnUuFs0xv1hcL-hFZ7Z8tuPnAyddeArJ2UUWez3BzSZpmZIclCuR8dd20MZuqz1veaBWinV
+RaTQYuBArq_XhXduZbTL4mGU-5wGUOiG8V28lXDaNfSI1PalkMJ1WAyBRt30RvuWuVSfQ0DNd3mD-duYlU_nWkBx80tMz-Nc-GjMVFiw6nYzdkMPJEUvH7Cq
+1S-6HESGCNWstA5n9Udi0sn2qN3u_VhOwna
+}
+
+AWSEntityColoring(Toolkit)
+!define Toolkit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Toolkit, Toolkit)
+!define Toolkit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Toolkit, Toolkit)
+!define ToolkitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Toolkit, Toolkit)
+!define ToolkitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Toolkit, Toolkit)

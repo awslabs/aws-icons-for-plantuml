@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RekognitionImage [64x64/16z] {
+rPLdRiOm34F_KmPq_zDsjmg85rTAEjb-o_AZHbR-QUbDbrZN24Qj0S-AaG4Pjdcov1AcNTqW9WOuEJPWsiMJPHeLOB35OG4CMcCEC_WCtwtZXlULnJWPU7HP
+Z1su0x9cWwXTpbT092W0qZCE_jFqWaJ6S_Izz3mlOEUkuYsJfmz9YRnQl9o7_EljIv_FV8lHtZs_Z9hoiYz3liwxIxnCG_wLkSGNSe-lxtdaiydZ-KldJvWf
+FA-FVElwK-IOdr__z-y_DYGsS8vvsxX9JtmnqRd_SrGX208knkkJSUrnVlxQANKUXgUzhJJm5EYdyGo01_Ypmk5K5mTDS7GGUmCE6_dKPZo5uiO0pmODlFWa
+WCg9XwOfCni0tXOqE1FWCm4-TuZyZte4
+}
+
+AWSEntityColoring(RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RekognitionImage, RekognitionImage)

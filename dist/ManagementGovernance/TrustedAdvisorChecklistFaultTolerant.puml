@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TrustedAdvisorChecklistFaultTolerant [64x64/16z] {
+rTK7QWGn40J01rI3_lzRcpmEMizfCEBwSgYDlSow7vtiUNIIsUhvLx-Uq_UCF0oySw_m0u-r80U-vhSpsbX_uKT-5Nxa5sJI7qpxTz_BoCD53pdoP7BzG0Rz
+D-q_81Uldt7_Sw7_xpG_aC7y23pEZy1pnVmrF-pw0pYR7oKdy-Cp4F1o_yjeXOF-rp-ndH_Pu79cThvRuC1H_rFUdlXLdsiy9slvxlKz2_KC7Vcoetbr0SMd
+BASRsBpfH1qBzQjUehBUAQzHLVLw_5U_-lvt19eyksMbUV2AIUkgwVm9DFX3vjxGvzcdmM_d0m
+}
+
+AWSEntityColoring(TrustedAdvisorChecklistFaultTolerant)
+!define TrustedAdvisorChecklistFaultTolerant(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TrustedAdvisorChecklistFaultTolerant, TrustedAdvisorChecklistFaultTolerant)
+!define TrustedAdvisorChecklistFaultTolerant(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TrustedAdvisorChecklistFaultTolerant, TrustedAdvisorChecklistFaultTolerant)
+!define TrustedAdvisorChecklistFaultTolerantParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TrustedAdvisorChecklistFaultTolerant, TrustedAdvisorChecklistFaultTolerant)
+!define TrustedAdvisorChecklistFaultTolerantParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TrustedAdvisorChecklistFaultTolerant, TrustedAdvisorChecklistFaultTolerant)

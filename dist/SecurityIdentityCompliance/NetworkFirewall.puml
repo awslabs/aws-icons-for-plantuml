@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NetworkFirewall [64x64/16z] {
+fP67jjmW30Ml14Ywylz_RvAt3PxDufF3R7EReIo_4Gkymyq0DmFS370pmCr0RWPoCv2RWUo1gyVxG4u3NWK0fFXT82U1q1-rrgg0-ZgGru01DLwb2ZJotizH
+5nzM8gYhG9u30OdJOcmHo7D0uQVT40Ivzdl0K7d2KMX5I_lkzu225meK441yxISPg5VVWHgC1hdnamRZbThuGqExyRCX-9KGkVChkA3WnWzT-XNQ5ZuBK1uB
+rHeptnL0--Q7eF8dmmP06YT44vIvJu6_ZbYW0h5feQ1C_GRxf2XA4zHfGE4pNxGVio4Ui-04HvduWPQTG2FPvW75nFVtwbKRay-vj-aIwimtl8u5a4WK_b3W
+Lx_15-DND4Yy1WwKwVYShD_U8NC8Mhuc4BHJeo38iv_Glf46H3u23gD2xH_jYSLpLyz-VMq0KJEBP3u3ACHl2eoVmF7n2U7pjsKcynKGBIXe_gO2oYSFlmSS
+oc4ZNW45IeCFco_17ZY6W07Lh83POPN6qH-F-V1x81G0IevqP-BpuH_PYGBFNonz7kU0IZzsVC6xVmwWzcD3-Q3GVjYwVmeGRVHZjWS-yO-LdxT-3w1E_2Hj
+wVU0oipF6xy73FPb_yfg_tf04F_z_us1W31dQnZdtVrhm34iWJfEnrP-du50ZO-Z2dG_rduFP0C04G1QRlnv8BsgQccH1lCNTkVtGCSmO3drru41PYxy7bWn
+yJS2nsRWs0mScu5ZCt1i1exDmB4P-0i
+}
+
+AWSEntityColoring(NetworkFirewall)
+!define NetworkFirewall(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewall(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewallParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewallParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, NetworkFirewall, NetworkFirewall)

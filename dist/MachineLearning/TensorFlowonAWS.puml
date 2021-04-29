@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TensorFlowonAWS [64x64/16z] {
+fTG9Zk0e38NX1zZWH-v_tr5G4O7Dz8PxgVNx4m72pjEEK-FmCi3B02y3l0pmCi3B02y3l0nmpWbNLTLw3dXFPxNWcwmX43rN_U9SH6jLAGb0gUS0Ju4o7hci
+WMQW70EC0GLoyujOCw2704EW8DNJBcX2YG7wG4RvlstCI2uGVOBiS0s82qIVeIiNGFP0tWBUDmZjcvgG4f8kWUBNW2v0pa3Bu-42vBe4t57YOUOPADzPAcq6
+_F0Sa7a6lZTfPd_iQvfdO5a9FGPwr2q3QcvqBCF1Xu02OlH-B8DOz25GWDmO0ZMF1Jtuxhq0nHYUNbvl1z-Tvy_MpvdRCRnvFmFGwVqEwCyNyq085Zy3jddo
+kmNcTdpU1DNxpegwUPhW1MFPRVCA3RvNjDsJhnrdr_dwXvviG3Nx8zzEdYbPz0grWwz7pvElPjuRj1yzWnSqCtEUABqVFRqlmzlkUqvlvUJfFBADsRt2Ha2Y
+v-RRTo0sRz3tmz5pzO9lJrVVK-9u3q23fvdEWxZkwUehwlZO4bBxVBZITBkS-Z98VGmLo3Qzlz8IpCvUeJy12Y0slPNbIXD8y7CoR0PUeyEFjsbp4HkohVEi
+tf0v0sm9gQPKtm_V8bf2s_qMgCZz2x1YZF8Ror1pVWieoX8Oo-3kLdFU1GIPIy2CszEBHU_V8Cr5TDCIXFG-11eWZ04JOAoZyp700kWex3eRnpWV0xrb82jd
+m3IF8p37-nZeJH9ila43IkCopi-0Ix1_0Re9VWRYy3YBlmiybu7dCl1S1fxBm7CPU2u3psNWFm
+}
+
+AWSEntityColoring(TensorFlowonAWS)
+!define TensorFlowonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TensorFlowonAWS, TensorFlowonAWS)
+!define TensorFlowonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TensorFlowonAWS, TensorFlowonAWS)

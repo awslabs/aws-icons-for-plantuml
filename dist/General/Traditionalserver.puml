@@ -1,0 +1,9 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Traditionalserver [64x64/16z] xP150G0W0CGA8FtR4W3P2z_-f_ai8W5ovdXz7h167zkyh5__l__vl__xlthrwjMhLwyUE5sVMNuO1G
+
+AWSEntityColoring(Traditionalserver)
+!define Traditionalserver(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Traditionalserver, Traditionalserver)
+!define Traditionalserver(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Traditionalserver, Traditionalserver)
+!define TraditionalserverParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Traditionalserver, Traditionalserver)
+!define TraditionalserverParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Traditionalserver, Traditionalserver)

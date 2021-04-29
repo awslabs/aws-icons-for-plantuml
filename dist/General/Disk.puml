@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Disk [64x64/16z] {
+tPU5hGD144CRyEZwh_RZyRsrP4tOuOpVCaulh9hLG5SfW5Mi86kMahmvpRZ9EE9nMpG5T6JmD7W275mnxdq61wDIdAqvpcO1dYGGuE0FIi-06_7ZcA-zd_hQ
+zw75PmdYOrupTVhEl1yEFEHcYlWzllyinmC-V-w-ZdXEMhM92ZdazrdE4fTIm-AVsg16Di_FltEUniVdytdxTVklEtxS-ArW_EByqIdtkjFyrIMcOFrmwvVc
+gCcU-Kd9-YdUKFV2Q7F_wEvV_VtJ5y3ZCWMwxm54O6sSdyBpcne7mFO1r7jWf6S6sGDs6RnzV_2J9ha1bT5Txs--49txwmlh6m
+}
+
+AWSEntityColoring(Disk)
+!define Disk(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Disk, Disk)
+!define Disk(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Disk, Disk)
+!define DiskParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Disk, Disk)
+!define DiskParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Disk, Disk)

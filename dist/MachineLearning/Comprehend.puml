@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Comprehend [64x64/16z] {
+fTK7hkiW48NXGva6-z_lUo37OUB99HA_MjftqcsDap1-PeS3TZXWXmDsE6270tOuO8S3TZXWhvGUyMR0US8psWnuJ-nBsm7lHNq9sm7lxSCdsGvuRnzUzmFU
+suVV33ozURyP2Bmvlni8l3c_6_2UyztmoBC4yDU1FtpDLmbL_xVthzJ781tzx2toyK0BlSLU0zyMF-zdLLwJnMlWsziJHY9OezLhuDljbKQgj2REQ-3Ro_jk
+uhm6leNUFZoLb59X3NmpuwUtrNC2Kav0vi2twQK4iIg9Lg2Agae1AF1jUCApwxKZ3ptY1FxYWtGcI7edI7ll1mf4tn6g1bxjwm2ohY6f1hvPcFy1t2ydy8nt
+nH9cPCfWv-ky_lHItf7LCcEpsEl3_y-YejS_2dmue2X3vL6zZgopm8S36TCdfE5vpisyLrxInL_YEiScYBvodh54jbHGRfzHDVOcIxfwpSWoFQSv5VexS-dO
+gaZ32q2wr9sF1mGqtu9DJ-fy3ttxtVVGjzzzlppBb-Zoiy3twV57R7OVtDJxUq3uUxRnlONPMWLcxFtl0mdCX6pc_Ey3Wf6QcVE_3p0HYOsStmo4ENyoq0y7
+-k50FnpeXmFzSA0V3lJ3WNy
+}
+
+AWSEntityColoring(Comprehend)
+!define Comprehend(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Comprehend, Comprehend)
+!define Comprehend(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Comprehend, Comprehend)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2InstancewithCloudWatch [64x64/16z] {
+pTO7YiGm341Hwl0j0xh_QRVB7YFafcsValhI4wB_9OwwnrQI0qbE6VZ5rNeQVrnTxZvwTx-kk4NUbwJdtthXgolFS-UUiLFVNBMHfVVSJUnwmkbz7roD7Izk
+HQ6ryEkxUUKhWCgsBy6R2h3Zbv-SsCFAmyJZVRm1x-4zSSfOjJ7duuEdLsto4VYGMtOpjxsvIjjnu6CklDVFxjJ3k85zNu421XU-E8-bwDh7R_xmR9Fpp3qB
+ptirVdxT5IzjVSLQl3zMk_xw1ABtns_0hbNnP-Dzotd4S--3p1Hw9rx15_dz3SG-taAXv_r6MQzPhrclMQzPh-xv_xF_Lyd-lm-U6uuRtqq6mbtQol7t4joI
+XFsxNW4
+}
+
+AWSEntityColoring(EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)
+!define EC2InstancewithCloudWatchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2InstancewithCloudWatch, EC2InstancewithCloudWatch)

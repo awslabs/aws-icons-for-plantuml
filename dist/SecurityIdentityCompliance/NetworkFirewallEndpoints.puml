@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NetworkFirewallEndpoints [64x64/16z] {
+pPS5biGm34CFyBKlzp_jCdfLZLFMWu7qor1ondq5W80rhFWjIJEmbPYa1IeM3TebBF6f3kwFKyD1Ica-x88U5PbJi8lz2Fq6ITuQTK-G_vkdqP2SWQqh6-Ii
+4EgNy3ywX7vOVk9o4o0Jtbt9QYJW3iCPU490pKy_1fw7t0u4Z4u50kHpDwtn_7Bl01KB1ra3bHFPKmbAnm0gFo8lylK0ffcBrSTb0940tEhVN4q0SA-R-hii
+0l0t8vL3nA9Kl6Tv73zMyQeDCCtFt_q9o4mwOxFn_VMRwo_NhrFc6-hZlfXGhryLe5cUSZQsyEhpFgGjGAvvdi0P47ZxE_Fc_HaIoCAsancShVFBzlbf-_os
+VNxSFhzkdv-tp-_Rzm_Rzo_Rzq_Rzs_Rzuz-2honNW
+}
+
+AWSEntityColoring(NetworkFirewallEndpoints)
+!define NetworkFirewallEndpoints(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpoints(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)

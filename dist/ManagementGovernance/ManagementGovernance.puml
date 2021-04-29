@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagementGovernance [64x64/16z] {
+nTLdcY8n38HXEQlalVzr9taRr7ue41E__sz1v_7tmQUq6x8xxWfCkF350Nnn05ySm1S7yCK1V740Nnmmy87UhdKom3s6k99UU-1xJX-9j75K9AroFm-OOMj8
+hXyLwNfKf7vKaenZG9VV1wfSXhpNLPUcRpc_3vHqyJvTZUNLUxljqUgrlddrtZRlKvVtwhrn3-RLU-CU0Uy7LB4LywrLNdlekznjFFRWzP2th_ere9_sQq3g
+BO-GD-uHy6Czz-cKBlz_uAxNzfRaUkhYySYlsFz_A-HBenwF_8fxx7wU_3wGslFU3yYJNiivoQMK9_n8hkDMqCs3Un_z_m3tFkxX_AJUS6bi7ivFwerxE3-f
+D-xX_AJUk8VpyyENUbJsyWsFvOy1f7jbKByo6awfT1nvFnt8Qhw8zmCgmqx5_AJU0juFIC6HxbKPrC_8fx22U3U0qLaAxkENqVlu0FVn0UxZ0zp71xoF3p0V
+7-0-Fk3zlo_y_D_t2W
+}
+
+AWSEntityColoring(ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagementGovernance, ManagementGovernance)

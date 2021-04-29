@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Honeycode [64x64/16z] {
+fPM7SWGX242n2_p__sPWcOFBZfgCf9VtfAmShc9kOdZWfG0l1NWfm4i1NWheKa2N0heKq5umna50Ey6i07Lk1RGHD82S0TfEG4l1o90wOa-Gneb_2sO1g9yY
+ofv_2vemNwuJxmBDEO-e6mbIt_CkcD8p-xPO5bDwEJQy2sHcFZx9VDS6Yc4pcpw-CJmP_NRBazGvGibFC-mRdFhj9lyI2fVCmp3KEhKDItv2CK9gjNDzW2gO
+6SQQxzg3BeTuBxnspU30qmZd9ZlNsZ0GptnzUc1vUFknQNb_uD_t1pN-ofErh8Mxy2-U47_Vd__nfF_hKRvuFFC4TSFZBO-tF9vv-isFoEEPfyZh42AFPvu2
+BpVAUHVmYiz8HCxBGdJU1SoHXufaF2IHnLNoub5v3dm2QENXKu8yYSAJ_EPHUGxvZmHWzJ-Br3ulU5IUO_rTpzN-oSc-GcPsteCr0a_Kv4JXYKPAmzVwccVd
+ROyAhz_BXztX3S_Mls6PvAVz5lPw9dnFBzu5NL9qn1ukMqJ2-qkRyr50zPCujKSM5X4adyMRvq_jbhcEhgebhFKrpvQkPoxflgfOynmpDyeQwbNiU2RFl947
+gX7Fl3_AsMOPPt7aNU1GV1REl0liETPIa2oEl0jibjRAfO0t0hi_Nx7XNR2B5tydu4i1NmhuKi2N0huKyAM0BmLyAVW1
+}
+
+AWSEntityColoring(Honeycode)
+!define Honeycode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Honeycode, Honeycode)
+!define Honeycode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Honeycode, Honeycode)
+!define HoneycodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Honeycode, Honeycode)
+!define HoneycodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Honeycode, Honeycode)

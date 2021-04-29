@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Panorama [64x64/16z] {
+fTC7akmW48DXGHCaVF_xFkyRYlBqTB41RQZu_SwCryErp-ameCE03WCw3EWmeCE03WCw36WRwBL-4z0kK72lR0FQ12fIhGbr5z0ca58dErAF5lWPw7rwPDxB
+w9k0VA3YNft7d_yt0Rb0UrrpUzq-wzrGk0d8BOFhp6cuP-Gcu3ti1Vb_3MZaBk3zkcQkMx0DU5zGo8BoyDk0zyoub_dfkVThwvgzPwyjzluMAF8z0qY-C4Al
+m6TODIJlH-Zrvlkz1YDPKRqVeTV3uxNsLO9z-15wFNmgfHWAoORowOVpg7q6fZVUIsXi2Ttvpq05aAnHxxvXVfc17tfRBnc0wSsp5okDzm8_vCQQ82t_li0F
+-HaanPw17x_n3FpuZMVWH-WLUmP-X5wnP-17w1Lx1dxynZFmupUUWH-X5-C5VeHUZ1Vu4NentWWMUdtlc-Krx_EQrTWh0sbjUcdwj0RaXx-MD_H7pFdNNgJ2
+7lwQGgZlzw1ulm85_U5de8FZkSZFG4Dz-1bepe-ID9UAxXbWIhXjT_uA_T3xgbbLCMlEpm3HXvl2aGtjwMS0DduOoA3tTw31Elj-xMiPrViP-E4gdL_te6rM
+vngbo5yZdC8z_5dWEWnSXu7hC70T1gx3m7KOk0u3_m
+}
+
+AWSEntityColoring(Panorama)
+!define Panorama(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Panorama, Panorama)
+!define Panorama(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Panorama, Panorama)
+!define PanoramaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Panorama, Panorama)
+!define PanoramaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Panorama, Panorama)

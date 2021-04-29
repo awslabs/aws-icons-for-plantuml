@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticContainerServiceECSAnywhere [64x64/16z] {
+tTV7UiGW34NX7TyHBFp-Jvlc8f8xI658dRjnqo_tjltTW0_dKm5s3dMQG-zXNhkVxM20UihKojN3rARt_jCxKRokzzwtXTorU5-OQTjk-sGdMhzKVR89kaYz
+bkccU-WokBIYhaONYujL8zc2-ey51JHb6m9jtr-3WqqGhtptqY3sY3Tf4FW2O0R8jGybz-pxB7vV47hdjxmtoBmCV6yoZyEj4-w9l0Fr-23ttEcRE1cso9Dx
+4f_ayNqsN3f_wzUFBNh8V1tTFnNs9FVloEEv__d1deNdL-mBUuBdP-Yzs4vVPPjXyltX6QvI6zJTLzud_tOeIE9lAEcCfFyeC6bWIGTvzKkyCj-izFCjB20h
+cDTvZGKwxz0cFk7PKvCZatUGJVhstnVTuacTVFvEfQrmtmHR_8Nzuta6
+}
+
+AWSEntityColoring(ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhere(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhere(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhereParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhereParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)

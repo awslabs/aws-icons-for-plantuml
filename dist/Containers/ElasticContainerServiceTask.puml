@@ -1,0 +1,9 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticContainerServiceTask [64x64/16z] xPGd5i0m3CNeD_BzRrjcqZQ3UKWeIoXFzYoOBlZmLT_tCpBx2iRwiT4N2Np-Bq4_-FJF_A1_VFgdV_h7lo2ZRrT-6Xu
+
+AWSEntityColoring(ElasticContainerServiceTask)
+!define ElasticContainerServiceTask(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticContainerServiceTask, ElasticContainerServiceTask)
+!define ElasticContainerServiceTask(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticContainerServiceTask, ElasticContainerServiceTask)
+!define ElasticContainerServiceTaskParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticContainerServiceTask, ElasticContainerServiceTask)
+!define ElasticContainerServiceTaskParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticContainerServiceTask, ElasticContainerServiceTask)

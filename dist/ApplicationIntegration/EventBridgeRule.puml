@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeRule [64x64/16z] {
+xPO5ZaGn34CFy2pr_hTTuGShggFyvHcB1lnSI6dzIhq5FC8VyW8UXNqYBq0THdMR04qS9loLaK6EvmxC-SNfbLHKSa4Es5TIytK707dTRV34BocqdfJnF6Zk
+iiKHep4fbExkSnu7XIVfvWEGBGatRrQE0m2LrGKg_H1NQVwpxmbu2X2WvceApHErnJEFxkYC5m0muCrcYokTb5WpyiMRSVzIrvyTdYiBAE0Ui0iah71rzbzQ
+cqLSlaI4YhexdjkTyHVh0DVD2hx8Murh_9hBIuB8XnDJ-m1LMMBmX0FmOMlq2WBK3KWllovFpUSQ3jfCl6RyCdwkh-L_Nczz
+}
+
+AWSEntityColoring(EventBridgeRule)
+!define EventBridgeRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EventBridgeRule, EventBridgeRule)

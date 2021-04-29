@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Snowcone [64x64/16z] {
+lP87pkKW30OD3kMpxt_VvIsaXo9P-kVrCXCQBkG1gGEC0HW3C0PW3C0OW340Om3608m160Cm1c0Cm1ZuCWD_4ux0o8_KnH-1lf_8fUyf92P-1V0WEqhTDV3q
+ce8yV4-nluYfn1y1kGUO0e3aFuZ5YUJoFI2tG216mT5Rh-P6V0z8uRfsjHBUKzXeUov1hluHo4Jvzr8hpu2Zz5o2NFqMI8wSBxIN9-UlyHAG8n29_0gEhbEG
+8q0keyDW5sKdKWJM0e72bv-0uATiESUUdyZDPnzxVaPfpAPGtAulpHy5qjnlYn31zGqZjgcl-PwQln-OvfER-_ddUrI8KM12nQtuCl9H_JJovV2FyPy-5dmv
+_6FzJXzh_ek_zSNgoyZ7WYyMd_WJMlIPEl2IVu0tXuy5NqR-7j21BoCVpTURxsUumqVpMo3JV-R-ZuGze4SWROKe3_1aO-Q8IlDL1c14ymq1DGRK651ZG8q1
+DGRK651ZG8q1DGRK651ZG8s1Vm
+}
+
+AWSEntityColoring(Snowcone)
+!define Snowcone(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Snowcone, Snowcone)
+!define Snowcone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Snowcone, Snowcone)
+!define SnowconeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Snowcone, Snowcone)
+!define SnowconeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Snowcone, Snowcone)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTAnalyticsDataStore [64x64/16z] {
+xPS55eDG40EV8Qdj_KzRz_vcuE4oEClWGMAiRFMahgeaUHFv3jl0fgB-VxsiR_pAGUVrst9uo0z2Kjx0pzqEyFvlHRx4bnVASbNsxoIoX3uJu4UKpWxqhvZu
+alz1_Zs3VQ1p_zxNdQNv2e_85-ZeQsjiyDq2zVENc8r-DCwlMKFr-p_XDiZFalAxva_DyoTJ0nzecBzAzr_J_ANMiUPdF7xUC7zDlz-fleLuDln_iOW80csc
+WPpyvYvZl9m
+}
+
+AWSEntityColoring(IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)
+!define IoTAnalyticsDataStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsDataStore, IoTAnalyticsDataStore)

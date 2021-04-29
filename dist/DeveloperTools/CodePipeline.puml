@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CodePipeline [64x64/16z] {
+fTK7ZWCX38LXq_4pzp_lQcIcYW1Qlwqftv-Uu1nFLdyFnW2C0HW3C0PW3C0OW340Om36m4lc6DQB-OUlZlRcnzvHvfsR4CcFVAQyUHy4AWCVYR4No9I67jWB
+b0qFguVLm-enyRpZCV6yup7nFI1JZubdzN9xVou1nnyW-T6SUbOl__QilWSI0TYw2PaowzHhe53U34GgtATU0sulK2C5lYPtWFVVFpx-kWanael7mdYEGeXP
+vTiBT1HdDo4GVoRNfXvhBrEFjPUXvmBTsil89xe2IoyFpz0vT_s_zdBvwd9_LYPKql-nzaAnCweu5eZ1xgp6JP_9AMUAUhc1iUyJEGOKrFxNywONPFBek_vB
+v75uhBrKelhvJAoEidgilLJNdQVEYJAwnzeBUqe7kn-DWijZxGNX24HYvQxYuR7sWiJtlHSPBu-r5m2P2le-7cilW7VuvR7sWfX-Uwoz01CFzMtYPUgXlasy
+J3tKjxSFTRnoBBmyrBUNNmoVGFi4QdakVrVndlecas6wPWmqOw0P0yqOQCP0CmQQCT2CWJy
+}
+
+AWSEntityColoring(CodePipeline)
+!define CodePipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CodePipeline, CodePipeline)
+!define CodePipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CodePipeline, CodePipeline)
+!define CodePipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CodePipeline, CodePipeline)
+!define CodePipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CodePipeline, CodePipeline)

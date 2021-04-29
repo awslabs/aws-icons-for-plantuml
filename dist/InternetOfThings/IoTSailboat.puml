@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTSailboat [64x64/16z] {
+xPS5RWH130I5ArTe_l_QCBLYMTDs-AwFRrsrFB1-Hm1YG3zdYCCGv-ZohvzU16lmIlqQtZaRaUm_RsaTVvnpIh8sDBk2xeLTL6qONFdt6s8gM5yj0FJNHIg8
+JVuv7mKU3ud0uPE_QxxUYLrUJpkgh7bD9ZWCVgr4OF7Bu0s1mQl0vvKvSa5reUZFJLu5BLuP3BuyxG05BuO1ltZNYeJ5vokz7FAu_FeMVfvpU4gps1XiPTMy
+YuE3ENxEYyCQFqjnrEDNZPOySx-1x-y_q-FlpvyEg2wWtcIlT_ssvwyXzC_c3W
+}
+
+AWSEntityColoring(IoTSailboat)
+!define IoTSailboat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTSailboat, IoTSailboat)
+!define IoTSailboat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTSailboat, IoTSailboat)
+!define IoTSailboatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTSailboat, IoTSailboat)
+!define IoTSailboatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTSailboat, IoTSailboat)

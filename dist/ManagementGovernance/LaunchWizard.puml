@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LaunchWizard [64x64/16z] {
+fTC7SkqW38LX6GpI4VlVxuC8bnUGcGadlNp_N3UC4tyy39i1R0Qm6S1c09i1R0Qm6S1c09i1V4quzftLvFSFAszBT8r58brxlG9TU9QsqxpKtL-xrxzwCNy7
+x5X5ObrUU5lt-ZvMOQex7m_VYtdt4CotG9fxwLu_FNmltQlhGsmxpCV-WppJpq1-N_AJ-ew9LtnElEbcG9_vDla1dGL2UdC-ABP03dtHyNU0plzv-0b4Caxa
+U0j8JXHoHfySb15RyRx-ljVdcNrpd1JNlWU4cIBppG-fF4ZpM7jzZjzuf50vyEEnyXQ8-UQCH8rtZvMtm8lZDDuzrbwdtBz-uwOSxlqpRkJloTAhnsrhV_68
+DWxP2wouUSfm0YxNctEktsNd5RXSBuv8RG7Jm9f3ED79Z6cWV705lEDlCrzy_jo9aU44ogy0tjm2_ioN6LVRCb3QFBuEc2yZTmASVmMARU1E8DBS5u-tBRoj
+SHcvi0rrzKiW-txq9T6fcem_EyWc0AxlUUerK1wuShQXhdu9PDyFtWALEriSlmLYL7SBRrDT159q_JemMzaCbCr0sGoKpK3P39JDGDaCbCr0sGpy0m
+}
+
+AWSEntityColoring(LaunchWizard)
+!define LaunchWizard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LaunchWizard, LaunchWizard)
+!define LaunchWizard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LaunchWizard, LaunchWizard)
+!define LaunchWizardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LaunchWizard, LaunchWizard)
+!define LaunchWizardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LaunchWizard, LaunchWizard)

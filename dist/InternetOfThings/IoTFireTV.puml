@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTFireTV [64x64/16z] {
+xPJ50SD040DV0ONKVxKXC-dCgFaPPWyMU6YCGNzk0tsCvRC7dNtxzg_uK-EtYN97p3dsEku3ocUyCmt0ndKH4JYzsFSPCMhpLET6dhgNPn9G-GiEB0XVHqXl
+iDxN8RhN7rBSVyAttu-r-BmEiJNwhnNxgB1n_yxrOSm7
+}
+
+AWSEntityColoring(IoTFireTV)
+!define IoTFireTV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTFireTV, IoTFireTV)
+!define IoTFireTVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTFireTV, IoTFireTV)

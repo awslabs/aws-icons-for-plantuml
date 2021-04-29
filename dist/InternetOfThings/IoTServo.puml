@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTServo [64x64/16z] {
+xTG5RiDG50LHKM6C-zzjnIEptsqu6U67avZ7-_Rf4t7oi4VnHrTdESDOyOn6ubcCptc1eyn_DpXYFEr5bdhnBVtqbiFtUM-_UCi3Rm_irv_rSrwEeYrukSJH
+MRzoEb3oZjlOkw5j0ABpn_EXSltr5jo_xxgV7cpW7-7zuJ_UpqpYcHHwkw4N_u8L_9GqZYfU4FhfAd3MBpS7VhgxuACUmZzrdpxz0G
+}
+
+AWSEntityColoring(IoTServo)
+!define IoTServo(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTServo, IoTServo)
+!define IoTServo(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTServo, IoTServo)
+!define IoTServoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTServo, IoTServo)

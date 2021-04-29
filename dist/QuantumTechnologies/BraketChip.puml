@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BraketChip [64x64/16z] {
+rTP7pa9130FWxPH5xd_Qlu8LPFo44wffRyedfb7YKp9-iblwDxWOBkTq_RZUx_ybpY-mk4Icuz6UHbJqk9n5JzViKPZ9JyCFaT3HfkTp2urRqui9eofu85nB
+2uwOVlhUVt-4JgVmRDaZq_TYzuxyK0doUltupAseUHuXUyhjdcrkQNXSFC_pgXZhP_Ydxb_OwqUyvD5gUFv1gSmVTPxdAj-FSxRZYHlZvvdZnVOOUFQSGn-c
+_qtNw_7hP4_hPtZvkR4ydv-UZwZxyuMzVfaD9ua_tOi5uV-lekwkVZKyLDVlblzDtUF_JJbT7vEydn4Vc6y
+}
+
+AWSEntityColoring(BraketChip)
+!define BraketChip(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, BraketChip, BraketChip)
+!define BraketChip(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, BraketChip, BraketChip)
+!define BraketChipParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, BraketChip, BraketChip)
+!define BraketChipParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, BraketChip, BraketChip)

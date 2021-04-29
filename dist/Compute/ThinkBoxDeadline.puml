@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ThinkBoxDeadline [64x64/16z] {
+fTNjilCW20JWHPJbtFy5ln_4LbChEJFk_sShr36SOhz9kuU71Jmiu6413mjuMC330XuMyB203mNreO1fWG9Iqm8c1HMHqf82RWkQ05NH2hOdo7m1r4nXrcoR
+hQz0CGkVvhjl0ccyUTrCiJbw9SdXgm3wEsyAg37IVVkl4xyCFfVPLTWkhotpVV0f2hqkGFT0INmVV4g_W6_V2b1ttb3isoMOl5L0zhv-Rb9Wisy5pzxUcvIc
+C0wlG379VPyYRZ_vtxFxABGFxukd0be09RkF0Y0sjtXVVAoj68UdZKqktXTFYf3TLsaqnPkltbEFQ_2QUD_vM7WCJikyRxoWc05gVF2-yHAGVFIU-DezC--h
+jm9XnV3Cl7zw1I1oyUwPUR_v6bSTW77opBnF7l6EQ2aVdez-Va19xRx9wrLyzZ4u9n-5-dhQ7doBmM--lyWLvT7RzIkp7o-osPENFhYKju_2EIBSUXJwxAqN
+JcaGyhjdxDs7Lm3szTks-eW9YdltJI3bxdNiOlMH6Y-II1ozKMTVCUrYycj4551ozkrZ5wb_dRF2nk3AMn9V9DZm_HAi1RxBvFjdUKtc_UtxV_OjcNSMj0gB
+JUwIUMy280RVnxECVppnMSZGkSyBphoVUZ_rVkhzr7lg3mj-3Wj-3Wl-0W
+}
+
+AWSEntityColoring(ThinkBoxDeadline)
+!define ThinkBoxDeadline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadlineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadlineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ThinkBoxDeadline, ThinkBoxDeadline)

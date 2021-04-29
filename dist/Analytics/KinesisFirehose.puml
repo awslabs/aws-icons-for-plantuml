@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $KinesisFirehose [64x64/16z] {
+fTC75jmm20JGKGC1zxzlOddpiBoLCAzidIziI_8gyqDuZoG1IGAI12G9I1AG9219G9A09W5D0fe4r866EB3wwlqme0vqI1pGCzuF0kg0zmE0EZ0muu0wG209
+0-eHD0a3Uaa3Xm7T1YWp2kWrZ1ATG6y0sWm1kaSQKCSQWd5aqxxqMsFLsGk0qdf5RVNsI3_sfGEbiyWShHu8om3G1dy0zkd7kVOWvjbNlrMSXWEZRVqzarh1
+cTLd4Uw7qOI9Hczhi9Tz_p2PHg-F_WgN8XruJFTw_GRKO_GvLsLS-_AtpuE8Hgl0w_uSFdef1VT-B_y6-B_-yFwt-TTnVZr_z_a_tJyQ7-wVYFTl4MhLdnzT
+dzzafiVp4_csV-OSgtzewv9z2rA_x4HJpxb_LONMYglltMiSCBkT7wMrOkqDpS_FMy0MuE42T9RZ7Ow8V0Pi1neARPvy0Mm3AhgeHW2x0Xr3LKE0NO29fXe4
+x08qY4O1Sq3GLQE0ES1W3GFc6H0D0-RfqFV9zlMNliM1lHy7pADcSS2sn05B0fO4B0bO4h0aO4d0ae0b0Ki2bWJ-
+}
+
+AWSEntityColoring(KinesisFirehose)
+!define KinesisFirehose(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehose(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehoseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehoseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, KinesisFirehose, KinesisFirehose)

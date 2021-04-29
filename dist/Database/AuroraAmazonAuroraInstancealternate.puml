@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraAmazonAuroraInstancealternate [64x64/16z] {
+xTS73iCm20NG0_WRxd_Q3WkB4XaXHBhzkpwgN_T8-5E2L0fOGXK-KkI0uPoAyMaj20K_L86BEyrBURV7lB1rJYn3u2N6q-E0XSV2EmczVG8iirxbUbraQ-pR
+qOyqEN7e5uiMYNtNHMIKMj-tuRdBeYPFGLz5psVpHB-_lmI0vn6D6P1t5B4tdxz5TprEzxQFAVGuUdkxlYVVTyS7tryr6KyLx_n8QCUdV7-sttxxxQKK-6Yj
+iFz0nVqNHZxsCHUu9CzB-w-TFoLN
+}
+
+AWSEntityColoring(AuroraAmazonAuroraInstancealternate)
+!define AuroraAmazonAuroraInstancealternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraAmazonAuroraInstancealternate, AuroraAmazonAuroraInstancealternate)
+!define AuroraAmazonAuroraInstancealternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraAmazonAuroraInstancealternate, AuroraAmazonAuroraInstancealternate)
+!define AuroraAmazonAuroraInstancealternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraAmazonAuroraInstancealternate, AuroraAmazonAuroraInstancealternate)
+!define AuroraAmazonAuroraInstancealternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraAmazonAuroraInstancealternate, AuroraAmazonAuroraInstancealternate)

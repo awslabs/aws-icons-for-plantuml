@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagedServiceforGrafana [64x64/16z] {
+fTJNOWGX28LXh73q_TytcIK5HvWKJzhLzwzR3FP9FDw6mm0E0pWCu320mm0E0pWCu33WiDQPvQT0x0kzbd8kjRRUsGs4NYZtLcl9ARqwsWe3u-uRzUyMzzvg
+AObw51ZtGARzHMoU5_MtW5315kZK90YCMw0HOmkmxqNz4aW9zrs-IX0OQq2emWb4NdYiWReTNwj5WesFsUFlU_8smDHydsDl0vNa9Xk_ZXNx9K1vFxbw_Eo7
+7j_pEG4_-r48WIVz77pSBEgk1vN05tenNKhKND-f1xvUB9VQEh-R7lXC6Bu7o_TjZ3oeB1zbLhzVP_Pze-Ks5d8y7dnE-lVH8_H2TUWUFIBVI3uztxoms83l
+K_e-IJT-_wVaUg5sv9cgyUFFVXJgnW_KF_gHI8mVZnwE5yg_zt3lJ_szX_gvtd-sVZnwgBS19CBrfroPNiO0Ihz04ST3_TnU0ZEZTW_rDj2eRe7OG_tSNWAp
+Hm_rSti9p1uzfcv_2U80L-ktGACM1gJNJEzZuxT09l42t4gwR6cgZLy3e8JLVpvihbsmRZe1fl8TurOkckp3Mky5AZLzM3rnDZJsDf39d7Yy5dat03sn3BF0
+-m5XZFjylmNYkVumC0y3yp0m3mFpC30F0_CmC0y3Rm
+}
+
+AWSEntityColoring(ManagedServiceforGrafana)
+!define ManagedServiceforGrafana(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafana(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafanaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafanaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagedServiceforGrafana, ManagedServiceforGrafana)

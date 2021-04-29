@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FreeRTOS [64x64/16z] {
+fPM7RiCm34HFW-Ea___VmW4Xgr4y05rta_Tmf1Ud-4ti8jmKS5F0JG4t1TmKS5F0JG4t1TmKS5F0JG4t1TmGB7mjRs8XM7Z3gwYxhxoR2UHv145LDLzu0V35
+ypSFe8u6ZH5NhOEV_hdoLUGSeJMEs3UlCUuS6Vy8lbtoZYIIO1Uy1z-k-WliaDQrVoY3Rp_tvnLmqe6wx4z6WnQ2vVWfa539YWJep8kgUIJujimlICgCb91T
+4sIPFz8YNxmX-MS4rEDdWZxmpKef9v-Inyyu4ZZvN8gklCxx4oXddWfPzXVyoEZlai3_l0UpzfyIl070L_y40Fh0E_J3m2YeCryWhaXtlEMSFxn_McJadFNW
+zNWXawom3vzorbSyoi4NFFEZVvlx8_Yl_eVbaczZVnCV-pC-yuU0SVnEdeuaJlAQLm3GE9KLyf-lK7uIvy_5-Qij11asyuRCI9o_L_r3u82Tl07EoDFy8J2W
+8lYAP7pYQQO7Fnfa84bAae3id7XHlTrV26Y86ATSxSzL1S670CLJiWBEYVldpVoHWsVEN7WZUSj7xdWkFAF_bAAibLguzX-2lkxlp8IjpzdWGz3eSVpk1N7y
+I3BuFirVxJ4LnaZm_UHVPV0CVWXC7oEYF1DyRpVXNRnl2lgce6yA-gQWRmhwfg1l2lgce6yA-gQWRmhwfk0F
+}
+
+AWSEntityColoring(FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FreeRTOS, FreeRTOS)

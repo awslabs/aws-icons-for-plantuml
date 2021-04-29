@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Organizations [64x64/16z] {
+fP9PUWGX20PHRFM7-zyt8nc-wKrzeBBsKgKXuacVqnuW640mW600mG220GG320OG320OG320O42megPKrm5P15gc3xcj0Z8Dz4B4lJDHMGHa5ZZ6ohwBOngG
+ju19gVf6QlfSJ09Yl2nUpl-5Cjj2azS0--P_W-J-Ydov-sMCxJV8ilFbvgEFiS47sRU-t7p0ncRV0EnzkVksz1WSDhxpyD5JCdlZEmyVAS5zx7rP-jZxilIn
+zyNzVlMR-TZv7gX4vUJR-RNhdUy1Eptk7wVJlFCzOAUd3R_P2OApyprWot9Ax5jtzhu7EjC7xhYozps0bdF3WxqlMBBtFS2y2SWwa3DUcVgjNaZ9VpkCve6P
+JnlWp7nkPrAwN6R2BQ1tlyYFnz_FX5j0TU7BqeVvfq0jfL1YBjqk6pCJCNF5O5ocSNcS0teAa5FiCljb_gxju1JGmMtlxkVB39ZUPg36mfUb3_rduSlEDwA-
+HdrT-BBq7Q5K3FU93SeYvh6HPhvc-bBDBtx9CWA7NwQPhx80xsWmeC601WCQ36WmeC601WCQ36WmeC601WD_
+}
+
+AWSEntityColoring(Organizations)
+!define Organizations(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Organizations, Organizations)
+!define Organizations(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Organizations, Organizations)
+!define OrganizationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Organizations, Organizations)

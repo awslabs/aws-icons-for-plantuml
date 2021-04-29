@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DatabaseMigrationService [64x64/16z] {
+fT87Za8n38JXzCJZtF-yYmaehs5BwrzbwpSKWs-aD7u7vm2S0t0Em3a0vm2S0t0Em3a0vm2S0_Wvq6jEKYwrZPy3U1veAKXHUdzJnXwm_Kld_Q2ZbTT8tGEM
+Jw7GfPxsWEKf5D2j6EcJvSVBu-u3VJDzA8JRyz-UJF_m_iM39yEtdZxds_VBHq-61wZNae-VdxCdmw-EGFnzW5KFnTFoh7eedfPdrKFnj3pVVSPjOCIxf-Nv
+VlyqBWCrXWTFo_FL9xbuwuC06hqL-JazUUBLnJUgAHoAkL7MFD_VF-gjrb9gRPqatVF5Nx8zgnwsPzN3zlnq_-sZwVdv_fBSt_Pyll-WDntc_NU_xbywIe3j
+-N3_iUyFG3nipnz_Jpnipwg7xLdri3tZ-VuHxspF9UJh_LiC7IlRexvFzhr_htB_Zc-6bwZ6q_rpno7RCu3Z_I_Pdg6cUahzOQ0c759zQEkC1L9A-_uxsxFg
+iVpyjyVoyzyUoqz-JZnl_vHuPQ1sbe5QbJDEYPMWHjCvC9q3qpamdGFJEJ2T0zCvC9q3qpdm1m
+}
+
+AWSEntityColoring(DatabaseMigrationService)
+!define DatabaseMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DatabaseMigrationService, DatabaseMigrationService)
+!define DatabaseMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DatabaseMigrationService, DatabaseMigrationService)

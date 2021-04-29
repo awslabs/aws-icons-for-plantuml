@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppMeshVirtualRouter [64x64/16z] {
+pPTdTWD1388F03jx_zEcyuFta9GepKermsSquwQz7xZmKIjKjRWJ8XOtqLvVe9ax-YI-Eqosdl4OH2yDrRPRPJO3VKXUaD9sqCjy4oGF7KXqwRp_2L41Jvgw
+6CnrImhhEmYcV7xPFpvb_KG4bF6gOpxTcn5DVBG1SCHT85ZmjEr4NfwIVrEe5JE50mifD6_agvsfUhxQ6MhUCdW0q7dHtblWTSJ6IwTKuwtVupYHSbDlqYvp
+PZppge3BiE2fr-gIDsMNZpLFg7RyBVng-Nla0ondmyVUWCZ3WSoFhpzPkEJdzm-mIZKU5Q_VQSNVuJ9_4S29dUa3IxVoEwk4l4qWk60ByKaNRL0cf3F4XmPu
+8rJqgyhPXVKCCum4eYwqvdv-kVIXtQHBZ37z_DJBdEUtVa5u4zCljUdx-VatvlVzzSF--YKNclhrwpVLDZeVsGFNCm
+}
+
+AWSEntityColoring(AppMeshVirtualRouter)
+!define AppMeshVirtualRouter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppMeshVirtualRouter, AppMeshVirtualRouter)

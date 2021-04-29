@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RoboMakerCloudExtensionsROS [64x64/16z] {
+tPO7hkKm30CFC1Ey-vzsky5m4K7RonTAYZas88koN_zQ2FuS3l0mSe5kE5_2QMHUzOWakhnTcJZwuE6zOOO0a8DbYVeyuA6WLuITT-P3sIcYWTQz7lZWG_vP
+yZ-5iuozih8NVpOOrfGXKLGjLsaXqF-N9DNMrEk9SPE22zZ-0T3e1fCGTSPInGgJIRpLc8StBZZooII4p_fG0WV-eWO8F-KF_5gVxuQiVRcM9bKzp_u_zx8s
+iD_LZF-2HtRJxxhgLvnFagSXel8X_zHtvR9DIYgrz42gst9clHAFcPvR_YaU-ZqUeO3wXERDUpnY0vWJ8MqsaYho0vW4L9rR1zESl-5e6GEGAm2sJnp9yInw
+Yw7tf6lr0h_FYzdK9MUfXJi_Rx8zKoFTG8ralJ_r-T7-oy360nZ_z_hEzwUsUMA_Fysj_VjhrcbkHFwF-kN7wOVECicM--jw_bBbJwf4u8gCNhEBPBuQXNyg
+KiC_NetCZSeIjHSoP7ZtzUd4qENV5oXR57xAVzkCrIJpa8DAPoluNnqCxm4
+}
+
+AWSEntityColoring(RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)

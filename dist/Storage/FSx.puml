@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FSx [64x64/16z] {
+fCmt0SD0002nCRdd3zYZUvK0g8N_XT-9C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C0Y3C1WO30mcnia4ks4G1gAZNN3_0xSE3PY7gsIon_wVJUg5uBhZaw1FWSjA
+NByPLrYZ4lGf4AnuQmgmg320QWPz2WJHLWmqVgPhjOG-Sl10VhM9VGesFY3RAOZucp3H1xxll4Etav2v2m7u4zyhlYM11q2GVEJrpYSeDq40Tjsle2pu6GNl
+0WNssTTy4q3YM051yrzUxJUgwY_0262xhy3cx9_vTtW0eu9rBiCpW2ZuUMsDgG3YjWJBWiz-TcFA4YIWDJy5-qdyuSs0gFafE5iXoHk3IlvHm8CNw5n1mPy2
+Gew6pkiTNlAd841ZxtnCXah-533izIxlCv0l-60Rf-O4dhE_ue1_vfC041406Ttdgp7eaKzlVQM5CX7nA5_NrGYf6ktapxGga_yfPGu4000000G1xEyxH064
+GHY4GHY4GHY4GHY4GHY4GHY4GHY4GHY4GHY4mG
+}
+
+AWSEntityColoring(FSx)
+!define FSx(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FSx, FSx)
+!define FSx(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FSx, FSx)
+!define FSxParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FSx, FSx)
+!define FSxParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FSx, FSx)

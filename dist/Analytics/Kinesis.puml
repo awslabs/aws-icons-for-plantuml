@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Kinesis [64x64/16z] {
+fPDXTgCX24LH00Nslz_fXxR6rDDmnjic-VMk3rKzqV-WxUYbG2y5UYdGIu5U2lHIe9S2lHJO8SOjBx23033VmCnE-RJ03e9IDIsmWw22fWMs2vXKbQ2d1JRO
+bXPWpGfi5s1KBz2p0ji532qAe2O5jWiwqAX1IO4jvWRqyOEv4LQynwrjKET65Ca8LfvXxC0K243XhejF-GOI8n2KDaq0-ABuaDTIrERAD5A2052GP0W_x5-3
+EWGT0R1f85JXeLH48cPvQCUy2PHc-cq0bDcz2M4jiC1ptbg1sdJ0DRfpI8QqDH7XBsJFBvHUTxsjxaJyzFxYEFz2kG0K4frqOHhT4_q7ZUhQzbN-gKuFY7pE
+B-Qsp-xCJ-tpFR0ptzLnxru6z34VWaG-rrz6_yN_x5zxsJ_zV7vcVvpVQl2UZljZmVlz6PVdRGJ_TNzdMDRzNP4OWhajWVlR-mdY_P2iE_ZsVbO3Tz_UxuF6
+-_qr0nB7429jZU1BK8hE6a0wPi0rmucPzxcyn2z1wJydWIjw5lYFW4773twtAAAFvq-1_mWqLkrG8uvGeiudWIz1KAE5La0rImXy5tIWiJhR2vdy433qc1rj
+8vCF0S4woPJ0Tm6ME4asImfy5p2laqm9VCC213kGoGz1gPOM-440Q6c17mH0bXRuGI3TqW8_28Aam2y5VYdmIu5V2lnIu9S2lnJufU0V
+}
+
+AWSEntityColoring(Kinesis)
+!define Kinesis(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Kinesis, Kinesis)
+!define Kinesis(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Kinesis, Kinesis)
+!define KinesisParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Kinesis, Kinesis)

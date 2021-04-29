@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Multimedia [64x64/16z] {
+xPO73WCn20G_0EB_lutgo9iEdAxPcxeHWpjnn98N1TvAO4sUBmd1yMb3JZN3Tp7Ako1_c1Fo4VmaHe8nLnk_gL4-hJruHb7WzLZbUNTLaWSZGOe74VSN3_2I
+uI-UQ6NIF9tGw7zu5zwzmWUyX6Lv1f7aN-jgbIT3b7WYtVPkNyU_n_ptrv_AOOtzrzp__VF7WfjctAV-QFqpllNgRw_-x_t_ezg1N_UlYuy_XbkQ6eCGizt-
+gOj4BJxAEAhIImy
+}
+
+AWSEntityColoring(Multimedia)
+!define Multimedia(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Multimedia, Multimedia)
+!define Multimedia(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Multimedia, Multimedia)
+!define MultimediaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Multimedia, Multimedia)
+!define MultimediaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Multimedia, Multimedia)

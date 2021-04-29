@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Email [64x64/16z] {
+xTO56i9034JX2wHVxdzQt0PUkefdSDW_rGtrWMGocMKW7-IzAUBR2-3wMwssX_K_5MbPk8k70WMk7WeKk7ek47FmN84rU2p073mNO0wUXp1dh-T6oCtHX-Eu
+BdjUJ_wEFGzc3fw6Coyi_nIxcswLFkvFeOSTlT2h5JttHVcbzlmJNZZ_WCSVY_DFHFNyCpn8F0c6-yzm_nlklnFxVuiMClh_zmlN3zRFpT-OJ2Qp1G
+}
+
+AWSEntityColoring(Email)
+!define Email(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Email, Email)
+!define Email(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Email, Email)
+!define EmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Email, Email)
+!define EmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Email, Email)

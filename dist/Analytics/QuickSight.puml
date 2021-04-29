@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $QuickSight [64x64/16z] {
+fT5Rig0W38JX3c2Wm_xNEnSh7d1KXghq-_ShmBUrnUfz30OO330OO330O83108C11WDciO050nOCs1GGR4tcW4q1IDwOe4q1cmB8EqVGeurTtXQURJ6xDlmo
+S0YIFlqPGE7_0Wh9G7tpvduPoAXDKLwzkLy5ahHMj_qpa94rGNTzKsrpG040fNrvk_CA07K455BrgEtRtmC2LGYlASJjjvy33GTPqEuyO-bjzfdCQ1FVy2EG
+WPIG1oTtlFtmN72zIVMBtF5sSLBapiaTRoSlTE_Sj-FDkNld-zwvU-VxthbxvyDpvPsRNRuvdppN_kHde8deuCDpvPsRKG4CFdj--i6DaDO4VFeHw9ClUkFM
+S907sgkd-swt9HnsZKXa0fz-1Fe8iAJit7S0mF7bUVeH40XGR9xchFpqFFqLKAWrPFjt2y_JUw30p2JPOmlFrdy25OSfYZstyEmZa048xMLBFmArgBrlmtTR
+RSDtIsgVs_0TnRuNzRRXfToMNoUVFc5hyk6tN-7X0u4U3FHWe0S3FHZemK0F1demq8E17WpqOE0t
+}
+
+AWSEntityColoring(QuickSight)
+!define QuickSight(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, QuickSight, QuickSight)
+!define QuickSight(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, QuickSight, QuickSight)
+!define QuickSightParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, QuickSight, QuickSight)
+!define QuickSightParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, QuickSight, QuickSight)

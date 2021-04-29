@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $MachineLearning [64x64/16z] {
+nTM7Sjmm30JG1KYYqFd_xuqbY3Bk83apIjkfBc-F_VJ_n-qgUXLvoyul_Qsk_db1-0S5nJyi2Fzu1E6V5uH_NX3-SS7tNkKe42a5nPS6RG1rtGe07gNWqdlM
+RJ3GrGOQ0KrAmVAre0DDpKmOR0nLOO1pmvttq12BCDk8mNUmfjpvJJT9Vkt2mD2S6o_Ro7NtNS970P6-viwhXLUCvMCNf1HSUx_mfa8OfU3QkmrDFg9A4EsK
+Ht7hpP9F1G3utS_ge-7DcmfOEkGxRmtTeg0lBo-N2KrVCrF101Wqjd4Gs7Ql84a5ZEBtWZ3DNBS6tb1u6uJ-LI0OnS_WO5qzD3oTlvOBYAgVuSqZ2l7FX8y2
+EGiQfFfvU6jsUY5PteZJit3bv-ux8ATN1Y_NeU71eOkVBi2nUOfnRaTumJXyj-eZ0hQTTU1Oogzn7zxGpMxzrovsO5y9PejaRzzvZe_U6dJpwpB8EVvSKBr8
+siJDUwoV7Pw7heBgyrsmvVtSl_GuNdW5sznbIpv-4TkNprBrKu0HkwRXbS6n5jqYQIZLJ--WiL-YtHE8FhrGve9XaULpb6BvOnXz6x-2n3qDtrOk_5JOF4z1
+p3_wbibZkV7JBKv1-2Dn-ECYhDnuYslqwjq81B3zsi_XNhmnr0RBk__uA3xUW_7YbH2q-boWwBvkisLFKFSRdmiwIESq1fjdprkTN_fS4BI3P7hswqsvyRbW
+2a3R9C9Bk0xQUwgl1HwJcDRGlCDT6z3KznHV2c8IJNY_Juf6yJ0UgRuMn2J6iV8idbFyPO6lRoOpVqlnfI3LNANuPmNXdnU4VrxWuHyNX7zU4FvvGVZd1Rl_
+KNN5D_p_voS
+}
+
+AWSEntityColoring(MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, MachineLearning, MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, MachineLearning, MachineLearning)
+!define MachineLearningParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, MachineLearning, MachineLearning)
+!define MachineLearningParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, MachineLearning, MachineLearning)

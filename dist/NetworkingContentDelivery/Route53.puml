@@ -1,0 +1,19 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Route53 [64x64/16z] {
+fPJHSgmm28P_01A8x_--Pw2CDJsRlP6BL9pzFX2nyIdyIymzugKWNWhYfI1U2kAb85uAugKWNWhMTy6SHq7pVmGJjcLu2WpZhs3j0WUWJ_mfKEowudS1Op1u
+_hWCc1CmhnW4Df3lWhK99BjNWDHKKA99WAWA0Pejo2vOJu51gh0I0B1r6moaibeNw2PO3y44_mxU7qDvlWRQPkZhL-0WZ_3nd3_NBExvPqLWRlmj8CoQ8BIt
+QWW0oF0IJ4LDRu3c1tu9ih926G0pKxBkwI1c1a1IqpF89zuWnOzm4o9YiPn1PfofJXyrF8P-ufVMwe7Etm9XBx_pmV1iO9u44ve7-MT-JMY4G-CWq9oyOfpu
+nTaxSHo2ipB8Zxp18mGd7bBFSEOdvWezyPweOPnvnrZh6nzkcD_gtxnpneYGlgZ-8mR6r-TVIugVKDLSP5DLnYoUw_wP9rfhWLVnVZS-O971QIOwyWEsrimZ
+cV__9Hfc7dRYYIBRptlvCpKl7DojU0x0YGwyvVG2KibW4THZAm6zKWBF1lGZ7w1LvJjzhEA0zfD8tiN6R-KTSliUgyXt0_F7ze5doWEnVWLCpLFp3iwC8lxZ
+0vhbjLErCIG7BpO6OxH8CVFmMt1jksVmJeq06Zq-7iyT3YjTyzVDpvpUskBJDtZlK_Cjc5bQiVRunDyBrVpr--qDZEy2WtN_BRXkGRqv-YumK7q7tddnBH34
+Ma7WSH8C1dblKKVoBN1m3Hw0sFmhcCO0DAhyZ3kkZY9xzGMeTtOBHhAGKOIaPUTReE1cl1pYTLsNvjqmGsBZjmvWTzKf0BlpNJX30OkDtmJzwpQ40e1wpw2Q
+uXad_hgxfNAKGVjY206Gf4_ylOd6DR-rpu-ruJD_tOWhWUo7DWAQFVEx86CGQFIVAD61FmaIPKv9nu4_2vO2-aXF_5dWlgL7VXUSumF_Jd2z55ml1TTBmVLI
+SBqKN2y5rql1Fm
+}
+
+AWSEntityColoring(Route53)
+!define Route53(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Route53, Route53)
+!define Route53(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Route53, Route53)
+!define Route53Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Route53, Route53)
+!define Route53Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Route53, Route53)

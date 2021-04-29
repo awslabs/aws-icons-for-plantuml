@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RoboMaker [64x64/16z] {
+fPNHkcum30LNqhJ9Ij__VS-1psyhN7HkW1c0yebumNzmCi3902S3d0nmCf2JWPmCv6GWtmBHQctlWNmCk0bMnFmva0y1BujOMwjBHXyBUHymeFYvPU_-6l0M
+t51e7DTFqXNwxkSY0SuLCv9Li28r66OVVZPOWv8xBX1h_p61E0Tny0ra0HbSAQZSgIZafz-W5KfNvKhmm8Fabvy6I1p-o9UVZEjn5L1_3UHV_lg2OX0UVFiP
+0XWt0fMiyBV0MJLcAggYSSK7ds--ccMYaB17doz-qyXKk6t7ZrQmKbey1_A20z3zcu5eAIfhuYcGLzYSP3axhG0QOs3qGzj-4YLu8WhGXi3ecsbcDi1vmGKs
+10QV5faEYUILK5IEWHpWecToGE1Z87_KxU8BOkjS2GWFHhy1Y-cmpFj0HUN1u5SKUAQ2-HGGuO-hJu5cyZZy4BZz5dh-u7eLdWjHrBW7J4jmmM6y17hFFnHi
+EY2GBI0GO0k8yXBebu1ABXWY6secMT4OA5nGuINGJm6Q6SgH8MnTYT-12qefSGxqKo00mFRZDnhQFYwmmNOVWFD4FmKQMku-1O1kimf0kFkigAFVCra5Fp_P
+hEKnMtdoKKQ_PuFOxW-GPryXCVYz8UB9pvFVu1NrtH_vu_kdFpBhvwoVitv--LBU_IHjyQlU-LaLQFtDpyq7Z8E_u5z-hdu9tlk16YXnu0C5Rd0--YCZptxw
+VzedlFWZ-GO7VoRG9mDzCj0d0tqoq2S3VJBG9mF_
+}
+
+AWSEntityColoring(RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMaker, RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMaker, RoboMaker)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticContainerRegistry [64x64/16z] {
+fTM7ZiCm30DGR_B-_uUlSKgWHcJ5W7HxF4QUnK-Da-fh8HY0O0220GW681Y0O0220GW6u2MWlGJ03QWffUe6m0beAUMMzmdoTa3_oAjx9y7pHUfEADqAsFhs
+4R__jqkmVSyfTunnaB1flSrl3XAUkbu3_tx_dc0CF0-eXf5GDru3R-vM_kJRNclcduMQKjdwdCfm3zCrE6VygNXdGHlIyHLEW3PapUtGgpJmVWyXvH_F0uyn
+DwI6a1VFTw_MlrzNJxvuhPc-FZnTFzSCkFWSWk6vztF06iG4bkVEjvyDwNa-lGoEF7SUXvu77fxdWOVdUU3XUHvuH3sY7fxdthUaxptFZH_N0JxnD7tLANZr
+Qq2TlkjYbOVdkNezVF6mVMeWoTNNvU4OTLxJbX_vaq2IYozfFT7VECEJyvuakJx_yT8yo_AyyqdRto_DAikJyvz0mr_DJQqoFQac5w_Mbx8zENVRwZLlQsqy
+-UrLNe6FsdXDvEsrWwpYjYwLfbVhhhSdCWDThTlUBRmMNohg6VMCUaOzNHyC-0i6_0K3_W4
+}
+
+AWSEntityColoring(ElasticContainerRegistry)
+!define ElasticContainerRegistry(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticContainerRegistry, ElasticContainerRegistry)
+!define ElasticContainerRegistry(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticContainerRegistry, ElasticContainerRegistry)
+!define ElasticContainerRegistryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticContainerRegistry, ElasticContainerRegistry)
+!define ElasticContainerRegistryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticContainerRegistry, ElasticContainerRegistry)

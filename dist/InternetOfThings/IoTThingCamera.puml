@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingCamera [64x64/16z] {
+xTS5ZaD130DGqO9d8VS_RRdHZ_ojYIMLw-B0AoJ5kBDWbyd5HVpRmuZ9ESpDhFfeHVfevhdyfAQv90Hvx3AefMsVrr7JzF1yPjqlLXlrr_TP9hL7nqFt3wrm
+nVY6LVycNl9Sc7hHFa3vd2yUdE9L_IEa_spv77BOo_ej3VlCp8ySUFw7cdP8swFhCuOtwlzJHf-s1msy_cNy_d66uGESCBpz_YF_YPhlwBt_vEUFxQEKxfHB
+VtvUteVs4GrUnFltJyuPkO0FatE6mI_u_-FjX-5ldYq
+}
+
+AWSEntityColoring(IoTThingCamera)
+!define IoTThingCamera(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCamera(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCameraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTThingCamera, IoTThingCamera)
+!define IoTThingCameraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTThingCamera, IoTThingCamera)

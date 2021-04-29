@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DirectoryServiceSimpleAD [64x64/16z] {
+xTO7RiKm30JH0ymOklzfqnD10E7zfjAJHN5zfDmzld5WayiMXsrFcmi2nrvxwBTd2DZcZD7sppmD85-xtXcOx01eSPVP_fq7qF0Rjx60HRLE-yOrPFhM06Qx
+LW5gxuty4AngjaUVhs4-sPTylTf6-ncop-CK0EHqXxemQyGBN2bYuMi-IL4WN-LYRugTJm_-v63pjGEik3UtNseSpXMP3-gitk0Dlk3h9bpe68iNFFFrQejz
+MXx0lf-yxqVV2xZXJtds06nuEOt1IyYk_zZnvtoj__Vvdo9xbXhA1JuEm-ixndnFvmeQU-SuVbVk0G
+}
+
+AWSEntityColoring(DirectoryServiceSimpleAD)
+!define DirectoryServiceSimpleAD(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DirectoryServiceSimpleAD, DirectoryServiceSimpleAD)
+!define DirectoryServiceSimpleAD(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DirectoryServiceSimpleAD, DirectoryServiceSimpleAD)
+!define DirectoryServiceSimpleADParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DirectoryServiceSimpleAD, DirectoryServiceSimpleAD)
+!define DirectoryServiceSimpleADParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DirectoryServiceSimpleAD, DirectoryServiceSimpleAD)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTAlexaEnabledDevice [64x64/16z] {
+xTO7RWGX50DGrIzC2lS_RJhZ0Okr-9kUM8sYDvNMlakmbIncifmXpwKEFF6rMCPDwdEpcFjVMTvTNEdnWHxdxFg2ER7ZmJ3EgrxKZGUmkgJpEfeXpSPpPe1X
+rVdZMsFCyK-MdbpqsmGBNi3uuODpjXi_ySRe1TIp63CdlEHvU-7IfPwbgfmNi9xrASRtWl5X_89Bz-_p_xvT73z5nazw_7gFfDSBA0-tVl023EZz-bMvYElj
+wyBh1J3Vtg-_0G2b0opuqjEnGEuztTHFRlnqWQCUmjt-NLuyXcoT7pGVVdvXZ1Ql2S76ctm_V_tvdQMQuJX_wGHd9PNIUchAjrFIcadWRv17
+}
+
+AWSEntityColoring(IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)
+!define IoTAlexaEnabledDeviceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAlexaEnabledDevice, IoTAlexaEnabledDevice)

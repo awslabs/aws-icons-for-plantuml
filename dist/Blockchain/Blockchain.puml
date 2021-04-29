@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Blockchain [64x64/16z] {
+nTDNSiCm38HX519BtV_26L2YEoLEDcLJyV3zARRnxsltRsDjTQpWPQjs36G0P01a06G0P01a06G0P01a06G0P01S8C05pZrO3zQ3zM0zM0_MW_MuyktxWSxR
+28Jfc0N2PCmYgjwlDty4N6nC7FPuXUhzAcz-3vXYp0ng61CFyHXxyxd3LyrLc8KQYeg8LeYbTybhujlkJTrT5IOY1ibB30aznFBoYM-xjxqJjTQ0E00rrBns
+D_VjqUyRlk_IjmTVtBtUlEUrviLCnM2IdrLKHNpy_PfNEVLmT_Cu7hzmixmouQZMhpFV9ez_zxb4K--YnqGS9hT32bJkgnEFalDS0T2_6rVu_OftVz_wgt5u
+8j0z4UYU27HF1Bed0XE_6i2RNmzC_7fWujS34xyUcFZrm9Llh6-iRwnlh6yBdWfiL20z5zZ8m4O6jjo5d5GQ_drV
+}
+
+AWSEntityColoring(Blockchain)
+!define Blockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Blockchain, Blockchain)
+!define Blockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Blockchain, Blockchain)

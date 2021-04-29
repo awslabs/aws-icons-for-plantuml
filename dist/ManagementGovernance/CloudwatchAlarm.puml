@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudwatchAlarm [64x64/16z] {
+xTI54SCm50JH0lPct7-rOJWf-4_XU0SiUk5u-h8446iEHTeRv12zSns794_l4vMvscdLEr3gVLxq_LoHpvzVWvx1rq_-zBqWyqJS4R91CJnDzUGyAjVZsHC3
+1DxwJg_z_xZpDEd6F_YMvzkyJp_5qrJsTBtSszBiPp_xsLVktznOUhPNmOybyjQUR_PlRma
+}
+
+AWSEntityColoring(CloudwatchAlarm)
+!define CloudwatchAlarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CloudwatchAlarm, CloudwatchAlarm)
+!define CloudwatchAlarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CloudwatchAlarm, CloudwatchAlarm)
+!define CloudwatchAlarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CloudwatchAlarm, CloudwatchAlarm)
+!define CloudwatchAlarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CloudwatchAlarm, CloudwatchAlarm)

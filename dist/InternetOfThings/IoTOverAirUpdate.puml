@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTOverAirUpdate [64x64/16z] {
+xPQxja8X44CxrXae-F-_lSrLYRXrCaixql3Sl6AMPtvRHqTnKmaM3PDkyQpYvalLng6TnFUkxl3Kv-FSopZr9zR1yLZKAxmeX_C2Lv6N2l4ybjaaQT9F-CZp
+4T1j11HoLriW_9H532SXgYu4vqP-DvWrUD154rwC-TX5ViFO9tumtmJeEoySt4rQ1YzucPyUxmT93IW6aSuxRBw9UTa8o5BMyQyjGEqz_yfJQE9rsT3ilmlc
+0NXDoyetI2pmeVmmlzvWQOkVPRw5nuExzlvTLZDvrJJvwUBiDTD7Hty
+}
+
+AWSEntityColoring(IoTOverAirUpdate)
+!define IoTOverAirUpdate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)
+!define IoTOverAirUpdateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTOverAirUpdate, IoTOverAirUpdate)

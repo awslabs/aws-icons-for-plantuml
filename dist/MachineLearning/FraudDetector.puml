@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FraudDetector [64x64/16z] {
+fPK7ZiGm30CfMuNQ_F-_1mdU4lXQ4098dp7J-NtYs_YUl2d8cuAyASYRWhmfo9k2l2d8cuBy48J5PK6-1GE0n4N1cnzGLyYr1cy-e2GDTadmvXsU9A6y83YD
+Rvdqugy8yXM1qmKN1My-101iGEA28D-XJOoahGfcmRy5USf49ACg603etu8pJunCic0n7x0d_ACWpr5u2K9Gc0WxYcY1o5yy8JMbZE8cs5btDJ3_ujFW9HX5
+zhI3rXbiunzv3gKBJCoW5jRng6bu4IxsoJ-s0fOS47GajkTWm3_vJI0I0WqCzTUpGBVrE8HXdlfl0WVWEH5z-81uJ7H4WmoD4xy99X0PcCcEeKbtKu4u6Hk_
+13uWne41xGTn2VH9jSl9dM-1GQO0i1m8pET7rI6a2b1o1uBS-H9WT7dB302HIo082cJg12QzR-c9Nub62ErFuNozap2EzVXDJ4xuIR3nLYqMtofQuOOW1yAN
+Q-DN_x9mzQzWSe2BBrW6Anl_MDSlIk8bgn1AZ2TVYqFOsVY73uYYW9cAUFA9Cm-oS-BVjt5sUQu2vH9vVK8mASALdM-10TOVaXQ8r2Bf85bBc7ncvqkW40mc
+HCim4OG4sGuv_w0sVjq71IO034vWf0CQz8bsyIFVy7tbGZ191J0LcYveNN1WyYJuRlZC7D9JH4qqqtLgFq20dGJxyFr9axOe-bi6CMOo-kOAb3_pYL7J75WN
+ls82Y010iGFwCs-eC-84n7t0cw_wOqmDZarmxCDdzJG0i3o7Ju6_-G-1wqIa0PEFJ7SMimcC3dlpBm4505GmJX_LNJ21UFClWI0U8H1Vlfy5uZpnBI0AZ9h-
+8JZbw3J9Oc2FIuBZAM2JZdXS4XmlmOJH8CLT41mlGKu08n_N1Csk1WmMSqbmlBE8QuBZfk2uAJXk2ewRWkEcuBWfE6uAZfk2Bm
+}
+
+AWSEntityColoring(FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FraudDetector, FraudDetector)

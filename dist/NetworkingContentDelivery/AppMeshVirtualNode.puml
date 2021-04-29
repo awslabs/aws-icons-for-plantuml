@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppMeshVirtualNode [64x64/16z] {
+nPS7SiGm30CVG9po_zUckM-GC8QlO9gBLeMaCDBRwrMnld7blARXSzsB3yD6taSsvcjMoE_27FDJScyzx_yF_3_3QvfunkV_sG0PqFHw8lx09vt9luP9QLH_
+jrhbUCc7WAzJPicZriYpANaKQySBVArg-DeHu9biyhNJNulnl0xuQNxYjE9k_fxtLcJu4XerkMtZhvaIVv3tPbTxgTs_74Em-dR_evMXMpxrF_Bqlt3yaAV_
+AUBrwvPkU2PWy9FKyAW_Kn8zpzZHqht_tS2xah1yBShyiwxpJBRdPUSl1CFnolpJkm7uSOpYJru2plL3CCtTLzMm_aTj2nuxklC_JPZJV_nFjanx_wCaBFtq
+-MdKnVERDl_KAywl-VcP7Rpc_a1v_lNtB-MuhjvVNwyF
+}
+
+AWSEntityColoring(AppMeshVirtualNode)
+!define AppMeshVirtualNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AppMeshVirtualNode, AppMeshVirtualNode)
+!define AppMeshVirtualNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AppMeshVirtualNode, AppMeshVirtualNode)
+!define AppMeshVirtualNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AppMeshVirtualNode, AppMeshVirtualNode)
+!define AppMeshVirtualNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AppMeshVirtualNode, AppMeshVirtualNode)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCCustomerGateway [64x64/16z] {
+pPS74iGm20CV8CtS_rzxlIeamjOrfYMODRZ3xey5LmbGOA8JeXHEk1OPe5b7D3PbykaweDZ8dvi6zO0LnHREQY8rmetW5tYbPTDxBu9QJTaw9e9ooI_hLxMW
+m4L7tjQVTCPRax8srTQkhySC3sFMRy0S3sDbMdBU6FccD_C0FKzYoSic5BxUUigZpqFTtd3u-84duAOGNFYg0-4lmSFBtKpuKSdvFFvy_kBrq_s3_lv9z-_i
+-Ndozklp_-FxBxs_m_SZVR_2zpDzlyFy8SnVqlmfpD_o_37FN_FyES_Vy_eXhr_o-YclttmGIVtwnt8
+}
+
+AWSEntityColoring(VPCCustomerGateway)
+!define VPCCustomerGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCCustomerGateway, VPCCustomerGateway)
+!define VPCCustomerGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCCustomerGateway, VPCCustomerGateway)
+!define VPCCustomerGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPCCustomerGateway, VPCCustomerGateway)
+!define VPCCustomerGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPCCustomerGateway, VPCCustomerGateway)

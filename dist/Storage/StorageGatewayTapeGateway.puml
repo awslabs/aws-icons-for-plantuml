@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StorageGatewayTapeGateway [64x64/16z] {
+xTO53eHG38JX66xtl-t6Th0_jBCkJ0JhXzF7z7bfhhc3AkKTs3cDiZb8QnoRrpOfNTzsDuE2S0VX2SP-2c9upfVuqv_-zDoOFD-iulgwsSRo3INlDw3LSift
+KCqxOAzItW5xvhHRzbYs7ZtpdaVFLdFiXShz6w1jTSBJ_u0s7ljLQRDy_8ONnxsc_URd9kVvG9PNtVrUURD_sVtZmYRmpljJ6-zlgTdm_OKTh38PNiN0ozlx
+X-RC_gMsl8tLFvjzhFwTzQe5lLuEnoyrRkJ6-4a9nl-GX_4yn-MlpmK
+}
+
+AWSEntityColoring(StorageGatewayTapeGateway)
+!define StorageGatewayTapeGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, StorageGatewayTapeGateway, StorageGatewayTapeGateway)

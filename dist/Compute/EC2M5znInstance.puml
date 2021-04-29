@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2M5znInstance [64x64/16z] {
+xPT35WGn00Lty-BS_xJ3FurOYwXYL9kwAyYRXB8_V_iaYovzdKXRdu0i7upkTt3y-pd_-_mZHuafESU_taTHvtFu6BX2m-V_LvuvDNrY62x_GOpjfxygqqa-
+G1sxyrDJV4em6uD65Z__feyH-AddtwJKr-b-GjU-__Vplylplyz_EXtuu_u_RByhNW
+}
+
+AWSEntityColoring(EC2M5znInstance)
+!define EC2M5znInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2M5znInstance, EC2M5znInstance)
+!define EC2M5znInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2M5znInstance, EC2M5znInstance)
+!define EC2M5znInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2M5znInstance, EC2M5znInstance)
+!define EC2M5znInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2M5znInstance, EC2M5znInstance)

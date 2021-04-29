@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTEcho [64x64/16z] {
+xPS53WCn30H51GV__zfo3pVI-XWymi24CMyN9t_KwbtwyBQKKEWOXUvWcQhQKGBbvmppqhxFzp4-pEVOzhUfbmBlOtW_kuBB-cz0lRGFs8jlllaorXTT2dFI
+ZZq_blGBXV3ZvpfDSHESttiQFmTLfrl_kpk_pJVVVBl_S3wl_e2WkB7_9mv7stmZhfI6ntB3F04
+}
+
+AWSEntityColoring(IoTEcho)
+!define IoTEcho(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTEcho, IoTEcho)
+!define IoTEcho(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTEcho, IoTEcho)
+!define IoTEchoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTEcho, IoTEcho)

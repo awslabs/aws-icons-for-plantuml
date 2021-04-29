@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraSQLServerInstance [64x64/16z] {
+xTTNGiGm38JXTpVT_xHKan-HIP4DR1tO9kLBhtObAS6CQeAkPIXCVJ3VkKNYKPIZufpa6O_hd_Npr_BECfxpXVSIzLtbqcCqxBDkTUdqQYxEP-QRJSiYgQpd
+lpbFfmheFCnvfas7XVGUn_BteWV2gpbZJW3jm5SW7-shtpT8bTvlr5FndanuCkkVNWCIzKMbuaSuhTFSzAyplAvBEU1bCU2Bg0Myk6B6FVb_Rpzfq8lBTjoJ
+__Vpsz_8xFQxFMzc3NVxsxy5lH-eFkBsB-IAjh_kYekDtgHquzS_klknFFS0fWSnSkf1JM6owwythm
+}
+
+AWSEntityColoring(AuroraSQLServerInstance)
+!define AuroraSQLServerInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraSQLServerInstance, AuroraSQLServerInstance)
+!define AuroraSQLServerInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraSQLServerInstance, AuroraSQLServerInstance)
+!define AuroraSQLServerInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraSQLServerInstance, AuroraSQLServerInstance)
+!define AuroraSQLServerInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraSQLServerInstance, AuroraSQLServerInstance)

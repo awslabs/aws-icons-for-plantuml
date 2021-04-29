@@ -1,0 +1,9 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTAnalyticsNotebook [64x64/16z] unyqW9DKC0pr4nrOWqm_khVm-7fuw1_6yKTZ_OC-_YZKFnf_-07Dus-Gwn_syKVlz4yu_6cf7rCz8VsZyJTQVex6tsZyZSRVQFzlu04
+
+AWSEntityColoring(IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)
+!define IoTAnalyticsNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTAnalyticsNotebook, IoTAnalyticsNotebook)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FSxforLustre [64x64/16z] {
+fCmv0S80542n4TxtBvWHwDqc0jAFzu7NZZ08Wp08Wp08Wp08Wp08Wp08Wp08Wp08Wp0O30Q3mM0m60m6W_bGIXQ95iCm39HPxltl-y5j7kDiWgFWAI1j9xjT
+0F7w960x1PZuKAsILUdUYm_yhSrw9uIV7s4xSV9FbIvCbIeV-Buqrru4yhy3rL_uXJW5A7YqF_2dexiJiX88f-XUhSoNFeOnGs0SAsbpdNJ17qxcq_KlFr8f
+uk8q9H2FiAJwAt_h4u5PjqNOnBe3LRxoBmFc4ZGAqOgQBeem_QM_NVaETbJ23nr5HRtoJm4vJvVpey3f4GIPyDT-U9BbY6wnYOBk5mBh9g4F_OYZiZ-Lvf-X
+75_dAHop6vfT-W_fHz3ZjtGw9q0W080Wrk_uzqiFt1i3wVARQJU0iur3O0WCWI4m148W148W148W148W148W148W148W148W148W13u
+}
+
+AWSEntityColoring(FSxforLustre)
+!define FSxforLustre(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FSxforLustre, FSxforLustre)
+!define FSxforLustre(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FSxforLustre, FSxforLustre)
+!define FSxforLustreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FSxforLustre, FSxforLustre)

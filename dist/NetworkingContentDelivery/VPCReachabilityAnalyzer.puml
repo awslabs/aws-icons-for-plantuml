@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCReachabilityAnalyzer [64x64/16z] {
+xPR74UD04CG20BJAFzgp_L8DgQuvR_0biNxCypT1WBLDSAy7rtfmfsyF8Vxs5EESfu0PQpCzNtZo1httvJtkvm-3By2x_P-h0VmyG7IAXywBdprTwzF_8Pe7
+ujSF9ZYVJJ_0ezM3m103idZoA_ZlM-PaSFnGsS75yhqEUG7hhChut4jz641At-cu3lSwI3WlJhZHlVY94Boq6z-c2ixhzsxZSUxFxrxt-lvsIRNM1MpURn_G
+jdfyg_YTyQVbe_y-Km81x6m8Zyq22EDph_LZcrJxLXS0AnqSdYpXDAsgmuwfo6-3NpQlinzqCNz9bEIg0xZmNJpvNQlR5xWUztgmq9j3-4tu2
+}
+
+AWSEntityColoring(VPCReachabilityAnalyzer)
+!define VPCReachabilityAnalyzer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, VPCReachabilityAnalyzer, VPCReachabilityAnalyzer)
+!define VPCReachabilityAnalyzer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPCReachabilityAnalyzer, VPCReachabilityAnalyzer)
+!define VPCReachabilityAnalyzerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, VPCReachabilityAnalyzer, VPCReachabilityAnalyzer)
+!define VPCReachabilityAnalyzerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPCReachabilityAnalyzer, VPCReachabilityAnalyzer)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagedBlockchain [64x64/16z] {
+fPG7ZiGm30CfoHHr_t_mjQoDB9pD5GqQKMRIenFv6_YCcW4r0se6r0oe6L0pe6P0pO2Q0JK3QWRK3AWPK3EWPa0tjFpa68F_z3CC1nP_zzE_l45oE83ueq_0
+kLeq6F_Y3u1FDt40u_V-WANEP1BWRtt2BXuZy5lVaDe3HEGrjJrswIgGh_mLo5ZaYyqhVmO2YtYnFJDiyslwcVma4p4t4-v8paq6OlDh-lWc4MiV_jm7kr_J
+zmX7mWmyDizxH8J3Blnw-4CQI01p4v_miVCJ1vExNsTVf78wP9xz73d0tQzlFyX06c37diS_zeC1k_3hTC_ChlTYNFewdfyGSrDmXpZt_V7j0UAy7GkNCbzS
+VwKlI9_-UHltdsezeLTGYpk_v7wf8xIuyoiGsaWWfSMTByVOT0DrviOl6K9F45DVtFWbXr6Bz5sNJluE0GHJKWu3FBLpvvS-jKcaBhdpIn97U8pKI-xyqY-O
+VYjGpK0r0zKCL3DGTtJzwlhLzQlhLzUlhbzTlsxzPk2j6NXh1Zu
+}
+
+AWSEntityColoring(ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagedBlockchain, ManagedBlockchain)
+!define ManagedBlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagedBlockchain, ManagedBlockchain)

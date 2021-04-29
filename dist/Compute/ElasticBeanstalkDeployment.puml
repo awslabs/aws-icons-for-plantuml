@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticBeanstalkDeployment [64x64/16z] {
+xTN5UiKW54NXKUIG0U__jBN8Xgwo-ShawhaIxCTY-QvY_OuOnWhNH84grqEeZeqIwp2oySeM8pNqN9HKen_5wW4Q7POv9UfK0ivvLXbuqS5SbobMUCvpJq2Z
+8RcoXcVZCHroiUtgHv6kVaEyz4bU8voJshagoDVzY6R8jFY01n_mucDUt7kboMUbdQ7VUQ3IUN2YR8hn_47dJOH72BZPLSVfS-DU3ClP-__oVpqHGcdF-y_d
+wF8wvfflQ_EbjltKsxVJdZPyfMPVugcv6E_Pcjnvzzhf-zzy1VUUBrNiVDU7B0Qt7W5jOnJJQnrZFWy5v2Fvjt_xjt_x5uXF
+}
+
+AWSEntityColoring(ElasticBeanstalkDeployment)
+!define ElasticBeanstalkDeployment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticBeanstalkDeployment, ElasticBeanstalkDeployment)
+!define ElasticBeanstalkDeployment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticBeanstalkDeployment, ElasticBeanstalkDeployment)
+!define ElasticBeanstalkDeploymentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticBeanstalkDeployment, ElasticBeanstalkDeployment)
+!define ElasticBeanstalkDeploymentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticBeanstalkDeployment, ElasticBeanstalkDeployment)

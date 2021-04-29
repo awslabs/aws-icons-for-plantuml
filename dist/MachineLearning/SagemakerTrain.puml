@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SagemakerTrain [64x64/16z] {
+xTOt4W8n58FXNezm_zjI_OsHPsGrH975VflJdPZyyuz4fiUavgJYouyp_ZIw8swgcbFcthTgE57lfM46EYvTqXdOhVlQIpIf7yjpR_Yvb-1xhqrO3V32cvF7
+fVAptp8qlcDSWVUbuPVG3z_MWQsFM-_bOhaKUutZKk39gbc4r2__CfxLsyY4sdYJP0JU4mFv39SVSVSZoBqVGUxz279lHu3FJuZ0oWFKU2BIU4Yr_eZgxKUw
+_Q-x9VXod-Gj_J__F
+}
+
+AWSEntityColoring(SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SagemakerTrain, SagemakerTrain)
+!define SagemakerTrainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SagemakerTrain, SagemakerTrain)

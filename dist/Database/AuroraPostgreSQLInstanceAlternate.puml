@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraPostgreSQLInstanceAlternate [64x64/16z] {
+xTC53iCm50FG0-J3_Kyx_BAywQTQB1Z5PNXjC3yajXPT8of7L8umzroAqmTmjXGe-hlirHx_57_RHIB3khUjzcdMUJ9svAtpjTQEmcHSztDlKuz7tdh6OHRr
+kNg5FnjpNq-6NTBul3-O-dnw4kJHg4U-_k16AOzpFZpwKQVOUUAL8lXfuvjCvXNUViLdbyuB-LA__VRRRx_zzjlNYQjSBa2mN_b2OqmClgPoHEU8W3yXPm
+}
+
+AWSEntityColoring(AuroraPostgreSQLInstanceAlternate)
+!define AuroraPostgreSQLInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraPostgreSQLInstanceAlternate, AuroraPostgreSQLInstanceAlternate)
+!define AuroraPostgreSQLInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraPostgreSQLInstanceAlternate, AuroraPostgreSQLInstanceAlternate)
+!define AuroraPostgreSQLInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraPostgreSQLInstanceAlternate, AuroraPostgreSQLInstanceAlternate)
+!define AuroraPostgreSQLInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraPostgreSQLInstanceAlternate, AuroraPostgreSQLInstanceAlternate)
