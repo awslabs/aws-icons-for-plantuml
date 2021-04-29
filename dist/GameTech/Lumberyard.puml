@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Lumberyard [64x64/16z] {
+fT47ikCw34JH1X6RtFzwVw2d94_9vWJW1STx5C1FKuV9duTDW4s0JO1DW4s0JO1DW4rWDe7P16OJc4rWDe7P16OJcBy2Aekd_Woa0E8yz4SWeIOEuw4_0JfO
+MO7YeJy08jWZoM_z2N1eLhh0YlpI7m3765LID1J9S_y4346JuMJidgV-2HYIUyh4kEVGN_FCHOHy1rpoxhy0XhfsMCaRI8KW3lq6V1yzI1RkckK2ZOIT-aac
+OYjY5NBLgH2hiY5nx2V5hhimnlkXoHpGg7EVk8yfKgz3GukaYjWEJxqghwc1e0EcGYPWmL_s4fCaGuONwH1Lm103mxVvfQ_CAiw9t5k0cM04otMu3GMykETJ
+NuhNY27t5b1aG33KBCHCxqq-Us8a_tzC7uZN5e9qCDrK1K3mdaSVUBz_-s4uAN3k4Ilo2Qphz65yFGa5k1cZ8n3yE3_w2qY1Z260QCg-0BF_um0FmBg1MU4U
+-oQCtUlhvCKFmBg1UxWNa02Cf2c_0-iJe3BB1Sh485tu7LXF8001nFxVJSbW2By3wmaa0ETy3KLFFTS7e0IeUwy24plqJu02VpyRG4xz4qZZVJiuo_BGNy1X
+UEXRm6e2gmci9h2Qm6e2gmci9h2Qm6e2gmci9h2Qm6e2gmci9l0l
+}
+
+AWSEntityColoring(Lumberyard)
+!define Lumberyard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Lumberyard, Lumberyard)
+!define Lumberyard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Lumberyard, Lumberyard)
+!define LumberyardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Lumberyard, Lumberyard)
+!define LumberyardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Lumberyard, Lumberyard)

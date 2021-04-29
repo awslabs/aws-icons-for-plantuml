@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $GlobalAccelerator [64x64/16z] {
+fPI7hgmm34J79Mxy__y-uKkqXKsU96PxESS3IiXVYKtyC_bGa0y5-L2G3mNvK90F1VbGa0y5zL1G6u7RKD5XEq6j1Aw46LPV2Ugtm1aWDOzqDo50_BUWVWe4
+q7Wx1wTEVmhgXo08qhGFLHqzsGZyIr1tWGFZV17CT7a1UTnIDq40dXa2461X_IeHCS1h_YKWU7SG9qJN8V-RhP0rFmM2aMaWJuNbcG5D0on2C5Ry50Iaftic
+qMn4SGeyWh3XMy28J0B0NQGp80o08WPqoRV0ePaAkrOVCVFV6_5c2Jk-KX4PuB_MAip4B4fqLOi1s_55b3dGkngQCuB8J8D6G7Pyd13tD8TDV1g98nWxtk1p
+SB-zOh2hHkYM7uYw1Wz4pZZ6LIC6VCChiWphs5dblpoBY13a5T3vp1Z_uGVoit_8g__9vjZoXgZ0g7d-0k3cBwNd_lWTLWcfwc4dtW93yupi1RRc4reboAeC
+Z7GI2CKy5iYrgPPyCLKPh5NYfWnLSq7NxqQzE9RyGFmjObUyHqxqjRPpnVV16vW0WdeeF5nnVcHSZiw2BuLN2J2wwj-HAo868ESxoq_1SIl0LKaOLOoB1vzl
+E5_ZNuBZMp2WLScGT6Zp0Wy1pqlhf-2u2GHMbGeCXWt402iWyzBw9JZk0lRpEHW020G0t7DLypFDJy4jeOnsQEGYpRTWaG7FNUBuBJ1yPz7Xk7BZfSFpTSVV
+1IaOh_LSUNvUydT14W1vyVsPDtpdSn4hhCe87ETdIuLj-Cx7BaveEKY0F3zdGXVyNI28lWe8iXnZVbxmTq4219ezHaL_pYL_5oXhzbvoWLU5iEQM_xqE1C2e
+cIM_5eH5lRBdfs2J1Vz0S3mK70y5nqF1yL1mF1GS3mN7Gy7nKF0F
+}
+
+AWSEntityColoring(GlobalAccelerator)
+!define GlobalAccelerator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GlobalAccelerator, GlobalAccelerator)
+!define GlobalAccelerator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GlobalAccelerator, GlobalAccelerator)
+!define GlobalAcceleratorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GlobalAccelerator, GlobalAccelerator)
+!define GlobalAcceleratorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GlobalAccelerator, GlobalAccelerator)

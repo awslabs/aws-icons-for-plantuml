@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Tapestorage [64x64/16z] {
+xPM54GD130CRaEVwhpPCgoZCUIleb_SOnZFKQhLQjT4zxYZeAfS-TPLDdzBULR0JBkJB2sTCt9uXocwnUK1GGErirYW68QCE_gGgcLd71OHVGZ0uAB9w1NUG
+1uCCVoBdsHEBBjYPhyC9FUCwNzVnEiUFSOu_gEDi_RghVb-eYMTun_Zd2IIU-UIIJrj4Q2VjHzS__fzAaBkxXmYKSUv_4ZUTFm8U3p0nT8463kAiTE40lomq
+zTuI7ht_FgzMgzMQ0m
+}
+
+AWSEntityColoring(Tapestorage)
+!define Tapestorage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Tapestorage, Tapestorage)
+!define Tapestorage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Tapestorage, Tapestorage)
+!define TapestorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Tapestorage, Tapestorage)
+!define TapestorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Tapestorage, Tapestorage)

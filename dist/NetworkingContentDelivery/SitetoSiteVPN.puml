@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SitetoSiteVPN [64x64/16z] {
+fT87ZkGm34JHKcQHzx_lkjV2U3GmsG9KY1tUT-JR9DXOnyC03mCy3F0mmCC03mCy3F0meA7lhVKue7wWP_nVRa50lO0KeBJUMm7oS0Fg12IZoBm75N03wWGo
+wdCJEv8u0NqFT1JoTw0u0NqF90X_1x9p1QAlWN6V_HCOgB5V0nM3Qo3bsC_0k2-xWEia9xbMg-_rmv64rtBYdnN8jOpgU_tXxEslxrLcmFUJEvCPA9uV0DAt
+0IYExnVFN-TxxVFyeqieplcl0LawppUJUrwZvyThaxjUHn8DV2qI-JdVKxZXrV7tOi_sMK9hTLb2_Kn8XbuGxkCP-tQVnzlgxRdXDVAC_HEGtkJDSyChsN6j
+ldbwde_NWJn6GLlz6h30L_1Qog-UqvllxxUeuDrpUdFz_NTantDwyxmWjPOmFC_fpV4w4e1ErtDwSxngocJWERtvNZNojBd0wuwtmElZwNeBlEvuU_Ezp-o6
+jzMls_4MUDtn5dZTyHPutV4MUDtpqRvxhUlAkj3FQR0NVnQmmu0T1kmmO8S1EmpOOS0E0_y
+}
+
+AWSEntityColoring(SitetoSiteVPN)
+!define SitetoSiteVPN(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SitetoSiteVPN, SitetoSiteVPN)
+!define SitetoSiteVPN(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SitetoSiteVPN, SitetoSiteVPN)
+!define SitetoSiteVPNParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SitetoSiteVPN, SitetoSiteVPN)
+!define SitetoSiteVPNParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SitetoSiteVPN, SitetoSiteVPN)

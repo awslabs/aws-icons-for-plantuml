@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $MigrationEvaluator [64x64/16z] {
+fPM9YYqX30LFr2GdtV__lm-9o4pduG0MownLtQwN_yV_YrNYCX2NWRWCn6KWBWDn6OZBG5m6uZ8Gvu2FFm9n3ZJeEH37W0F2Oo2EWOu6FGRY5728e_4KY5DW
+GDbXfq1ye94R4TBGkGD3Fu7YEz2DYMAGRF0CM0V4Vr5z0e0CpyKZISEi-1006Fu9n9S16m8qNMzE2bmRW6uD_gNuZa5Q1o3mDGnWzjpHgbzeI4lGc033rt9K
+lw2moF-srFTt0YyynITQp00Q5vxV6hfNlmOw6C41vIBt43kSrQy1nw0AX1i7ckKBLRy6180CRd8z1CeQU4h0Eo3bSy7xR7e9F9-0DQ2lLI4R8Ch54A0xMVqT
+K046Oq6W3q4d5zg0PYn-1ZW0qLyBOMloDzO0qUBFWCrs_0GzfeDH9kBhJ_ppz216pC0Um7w3Lln9M8v-8p8h1kL61MX6ilWp49wplr1qpYY_Ap2fVavYhdxI
+CR6VEu2RucTWBGDZugChOmzR-PFqQo0WducWJnk3B86d1WmMrj1ZGy5mYh06dXfesATuaKimO3Nm58Y-Jl7dIdDqba3r5RwaI3ALztcX-Y9f3UXUnbaa5Vgt
+xz0d5n4hHEIc8j7-zZiYSh47RBt8MFT0X_F3-z43qh5M7stVnxbr1qRnFm43q2sUVB2lpuE9pQuK_nCmqTXd0JrFuO8gg7u6AciF6JHYm-AV0euH3V6Bufy2
+3JDn2hp7W05Wd0BlEI3eKVZufu22KId-SHMEWVSoy5u6til0UnbuBmFlPU2z3BoNWVSoy0y
+}
+
+AWSEntityColoring(MigrationEvaluator)
+!define MigrationEvaluator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, MigrationEvaluator, MigrationEvaluator)
+!define MigrationEvaluator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, MigrationEvaluator, MigrationEvaluator)
+!define MigrationEvaluatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, MigrationEvaluator, MigrationEvaluator)
+!define MigrationEvaluatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, MigrationEvaluator, MigrationEvaluator)

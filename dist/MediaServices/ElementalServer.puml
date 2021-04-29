@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElementalServer [64x64/16z] {
+fTO74i8m44FHTLk9-n-O3hPJDCwiQDFUfqCmp5VMvY4OG320O031088110C81X0C81X0C81We9CcLZVhWSxjmde0lrKhTMsbMF7lHh_yNMZTk_28UbppZjsY
+7XTziUVQBb2jBojVytEERQ3blYhyqaVvgaVKGtakU2ZF1O-jhuFdpwUS5ZVwNy3pSwk1DdbYONuy1WEK0S_PTO0gKEovuYh0yq0rIwqbioe2F0lu2_uoVXhW
+MQ1QmNT5F0AU1CRVizOzX9__AB9vzxbEE_R9fer-NZhsyu556NrfqoO_3x_LqLUCS-7PVVu6F6yybEVmuIlzTfxmFU3Ph5QphFvOA09eoIpfGnpA05B2oPJd
+WeVoNF1GdWiUodF1GtbshmBK0NV8AKyiZ6fHpwXdr3Fg6VMCUaOzfGy6Ri70BHXu
+}
+
+AWSEntityColoring(ElementalServer)
+!define ElementalServer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalServer, ElementalServer)
+!define ElementalServer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalServer, ElementalServer)
+!define ElementalServerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalServer, ElementalServer)
+!define ElementalServerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalServer, ElementalServer)

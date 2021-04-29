@@ -20,7 +20,12 @@ class Icon:
     """Reference to source SVG and methods to create the PUML icons"""
 
     def __init__(
-        self, posix_filename=None, config=None, category_regex=None, filename_regex=None
+        self,
+        posix_filename=None,
+        config=None,
+        category_regex=None,
+        filename_regex=None,
+        category_mappings=None,
     ):
 
         # Full path and filename
@@ -35,9 +40,11 @@ class Icon:
         self.target = None
         # Color to apply to icon
         self.color = None
-        # Regex patterns to extract category and filename from full POSIX path
+        # Regex patterns to extract category and filename from full POSIX path, and category remappings
+        # to enforce consistency between source icon directories
         self.category_regex = category_regex
         self.filename_regex = filename_regex
+        self.category_mappings = category_mappings
 
         # Regex patterns to use category and _make_name
 
@@ -52,7 +59,9 @@ class Icon:
             self.source_name = str(self.filename).split("/")[-1]
             # temp category to pass through and set (actual value could be Uncategorized)
             self.temp_category = self._make_category(
-                self.category_regex, str(self.filename)
+                regex=self.category_regex,
+                filename=str(self.filename),
+                mappings=self.category_mappings,
             )
             # print(f"icon source: {self.source_name} ==== {self.temp_category}")
             self._set_values(self.source_name, self.temp_category)
@@ -212,17 +221,27 @@ class Icon:
 
         return new_name
 
-    def _make_category(self, regex: str, filename: str):
+    def _make_category(self, regex: str, filename: str, mappings: dict):
         """[summary]
 
         :param regex: regular expression to obtain category
         :type regex: str
         :param filename: full filename path
         :type filename: str
+        :param mappings: category mapping (incorrect->correct)
+        :type mappings: dict
+        :return: PUML friendly category name
+        :rtype: str
         """
-        name = re.search(regex, filename).group(1)
-        new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
-        return new_name
+        category = re.search(regex, filename).group(1)
+        friendly_category = re.sub(r"[^a-zA-Z0-9]", "", category)
+        if mappings:
+            try:
+                friendly_category = mappings[friendly_category]
+            except KeyError:
+                # no match found, existing category is okay
+                pass
+        return friendly_category
 
     def _color_name(self, color_name):
         """Returns hex color for provided name from config Defaults"""

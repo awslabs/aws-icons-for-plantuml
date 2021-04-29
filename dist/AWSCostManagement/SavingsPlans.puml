@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SavingsPlans [64x64/16z] {
+fPDRmlCc34H7Lv2z__ssH2RG1DBsPxwBdyuH7kIOKd-aR1A7WZWKnA4W3WLnA8X3GHmAub0GXuBO2jnKHDNANh3dbJ4YlX5i-28DCY-r5ZSbW6mdMCq6sEkK
+eW3vMl0zdC3bgqG5j8xiUGTiTGk5mNLannkeRAvHGELRy3cTwdOFT7M2QyOhCEF5FayWNu9h5X1Aix3QwzbRT-KqCMPZyfF0ihg25XA20i84zF8Bg4vv-2we
+eEuX4m8iAWCietg3VWYk8L1uP1JIV4-5Faqbr3d9Fm9mz4W_S0imxirW_nHSRu73uXt65A-cNP5d6RdU0fdlhfg-uo5ecBNzOPGbVmLnZ1IPmX032IXVOCD3
+OyHf3ZSEt2ONw9eli9YIrNbBtaCFUCqxV9wFAJuBzdoPDv7CtJ84dGH4UxuB59o7ply26OAVV0eCaXwcVCu2ubr__buaZcSk83K5bgNM2jdUNpu3prHgE6Zw
+ifLhtTtVHPnFGNdUmfd6DyrjFeh1DxmWsgDEByyKVItJoYgerMt5UnPWgCaJl_YIfqcj4zW9Cpz2BvxekGL1RNmFetUYw_FFDUP4qCGhQljFENlBLzZr20e1
+x6EZlM_KZXzha88yxSJt_3kV0gQGZfM9Zz_dpoGVa3w_nCZF_Z9gBvvvz3TbnrzCOv_6_3pBGd1_yeRIcs2YokZxex4It9-20BzDBVQCHusLuFuIsBl1Ij2d
+D1lZHvB_4Z1iTD7BvrWa-Kz1C2Io0h-Qe0eebab-yGgG4e_D1T3OfDvBGLK0n7-7y79jSwy5LnHb9c9MZr-vXs2VN_oXu3uKt8U2-r1m7mhkGy5zABWF1VUX
+u2y
+}
+
+AWSEntityColoring(SavingsPlans)
+!define SavingsPlans(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SavingsPlans, SavingsPlans)
+!define SavingsPlans(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SavingsPlans, SavingsPlans)
+!define SavingsPlansParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SavingsPlans, SavingsPlans)
+!define SavingsPlansParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SavingsPlans, SavingsPlans)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Internetalt1 [64x64/16z] {
+xPP93WCX30G_q1R__sqkMHfH7XahHzTbrZ8E3T6i_p8CGtpeo0f7hQ6TfcvzNEjqNTVfLbqNrYpxuZpAmsVt2tsapsjnohhl5B1dxCC4ey_FAeEibE28s6zF
+SZjaJ1TddBVryQ9YHqVL9pq0vGNW6aY5f7NyqUIW_hFy70lWWwDtQs2te5VNlG0kc3CCwDpUORyGvvrlQyZVOH-sqhvs52lpbMq8vsd3qPR-QKfyof__okqK
+VL41Typc0Qn04GXOjry8VgF1SbgwqxGTTTm-mp2y
+}
+
+AWSEntityColoring(Internetalt1)
+!define Internetalt1(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Internetalt1, Internetalt1)
+!define Internetalt1(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Internetalt1, Internetalt1)
+!define Internetalt1Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Internetalt1, Internetalt1)
+!define Internetalt1Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Internetalt1, Internetalt1)

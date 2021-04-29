@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $DeepLens [64x64/16z] {
+fTG5OWD134DHxv0bp_tlMoSDBAWuAWJV3mTwBZUkusA0Ym4k1hWOu6A0Ym4k1hWOu6A0Ej3gOyrRzLvAQJf06MZst8PgtYpNPO0oKEty48OrFqnuQW_fNNXg
+3-bTU9vyAwLq0DAxyDnxtypojpWWlGlFdT-ifQnM04ZlmlFbk_L7R6YV4vvFNomRPTpebzufzl3RbesqRlLldk_R7zLVjm_fvHwFlmBtZdzw5OYlVSBg62Nb
+mqFu-Dfd89VmvI5yI4_SLQlDyUaxL21oqXElxJs43-cfFOIFgn-dzVGg43BGxRe15GWT6FssQkt-Trjo5GWTG2sbi9iZ_poFDq06GWSsszAFuiY_z9iL7GWP
+63OktqWk0o43pS1Z88jGWP21QdpluJjK86IWsdCbZwDRxkmXVBnyVQonLuvQozL3-13tF_Uu_o8GCj1Edjf3-7ZuRixTj8VmiVSOp7c7QuyGs_bYZRmT_ukF
+jsys_k6Z5xxsybH-wW29SV5K_el0u_vxmyvJ-Ay2tN1w_fXJNWV6tO_Y1q_bvzS-T_HKVlx1K_afVOZxdrD-IX-dvqy4vbS1h-d36nBaSLJdQyhFaAFSoIy4
+vc9WBWRcOc0k1kPYO2u6vc9WBWO-
+}
+
+AWSEntityColoring(DeepLens)
+!define DeepLens(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DeepLens, DeepLens)
+!define DeepLens(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DeepLens, DeepLens)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $FrontEndWebMobile [64x64/16z] {
+nTLNjiCW48DXt0OaxlwtUpldaB7b3Ad_Q_8fnIs_FnnML8A7VV7-pW7SEO0x1t3d07ZV07ZV07ZV0CWsKEotRPUT391jO4soIG-m3PIqglTOUydLUS9IaV_1
+F5_rj0JHW9_IFaFSftdrfGs8-mskCk1vh-VUOyk06Mxs_e8Rz6lovLDFvwVPBalRkQVpY_ifLpsbHynJUiGyfKVCKth4FCE-7dlUwtclf_I8UKgFcAVqw7pL
+djAZyrLxIe_EL-qfFKf1yrLxIe_ErriyEby7l1tvogmyGxvgpm6_s4MP_lwtdNh__9iv9PVs90aNfyKzCxH79Ndq-_lXeZpIngfycRzRJdrTqxvvmDTYcyz-
+V0lIznsTVu7_JmqioPU55mFPBYkGlaKT0E630yB71uIF3mWV7n0-FY1yV43w-43p7u41CP7VtnS
+}
+
+AWSEntityColoring(FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FrontEndWebMobile, FrontEndWebMobile)

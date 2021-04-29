@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $Officebuilding [64x64/16z] {
+xTI54O0m5C3G1NxkxxyjfxWxD3b57jestrdGRnDdfA_v_exj7eW43dZMUxsUfhvlMiEF-zahDssTPPTxWF7l3t3Cww_zVuuVVJmm_Xm_UjSllUlVYWxxlC0_
+LWK
+}
+
+AWSEntityColoring(Officebuilding)
+!define Officebuilding(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Officebuilding, Officebuilding)
+!define Officebuilding(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Officebuilding, Officebuilding)
+!define OfficebuildingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Officebuilding, Officebuilding)
+!define OfficebuildingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Officebuilding, Officebuilding)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $EndUserComputing [64x64/16z] {
+nTQ7SkKm28LX4195sVT_tdMCuokpi1vDovzUlZEQs-NtCysIB0wTFFM5plp-GFJx0z5l3KI_UOBeTmUYtnw8Vd-WzZn2_TatIRql8Bn51wcy4V3B9KumHAJo
+IA-N0P0SxNXDlEnuJRmK_lLgf25UvIt3l2HNbRUB3HOzGeWDyNBl0zBWY5GPUhWXOPEhsYj25-xG3i_XCWX-1dz687h4q6-l6rwXksduyHgzDsVcXvFH5g-5
+dy6FXj1DlSDpQ-HxXPyFJu14l7fi24tqgF1pyHs6UUxz_EEwH0e_Fnx8Vbgy4eeFv7wwxoR0ThVu0G0agbhucNdxUEL1S7vV-EdUpt_d_agWvTvpFs3OqkgL
+eF3UwOq0-vqyFPvU2pzFRqnunwjdwEwrzZ41aU4He5vUTpo3XrrlhubNHTBOuLNErBky_kC5abWWlaAvl4O_6x34rBqbNgCtH3k_hbtU4g_1JuNcGuctn6lm
+Km13x7uTQBMVJ24HwECPFltNrqnQpW-nuFy_8CdZT_35GBZyxikW1LyFhBvzfrRuSY1wAtmru7wjyDM0NtwhmCpN0m2ndlXwGDaRFx4MlXX8AlpEGFJx0z7l
+3rZmMmF1xmy4lpyG_Fx0wV-yQokIt-yl
+}
+
+AWSEntityColoring(EndUserComputing)
+!define EndUserComputing(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EndUserComputing, EndUserComputing)
+!define EndUserComputing(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EndUserComputing, EndUserComputing)
+!define EndUserComputingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EndUserComputing, EndUserComputing)
+!define EndUserComputingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EndUserComputing, EndUserComputing)

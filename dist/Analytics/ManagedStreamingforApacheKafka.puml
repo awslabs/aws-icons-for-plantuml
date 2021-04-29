@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ManagedStreamingforApacheKafka [64x64/16z] {
+fPC9ikGW34Dbp2Qu_ttd1rn3Eg4z2_ghglgzW0FSfJefd-6XW8S27WfuAE2XW8S27WfuA6Y7WdOeQ8U2vWcIGFyWQ8uWGGB45pH7878viYjeZW1APYHwWkO8
+52aBAkdnZa1m9TCJjE-2Y9HpWLHFqBuA2W9_ag5q1EshG51j2jaHjBt0i06QoE6V0bjsrSAaDS-DqE7V0f7AWbGGno2NmEVRRVKNB-6s0_gy2TRG2mmijWEw
+_19KY65ZY6i7zFWb22YJJy5MBYXxmGQl2P76LmJQKkeq_86d0X1xbXPcdLW28EDVdu_G9DZTHKtpAj3b9RHM8AyWaDcc-IS-Gy8p5v-CfyCdQ0BukeqH6Y7L
+cZF_24ZTN6UTyxEuv-TrcGovjprlOT8Gy-t3yQSdSYFe6toywzjoLtyBUhznsKvGk9QLCSTzzJ8joKxLJT1lWW29AG9nrYfNLo1oPFIuEerVWYJ0zN0BPo-t
+btZrDHZZxpFWypAzflPP-yW3YWA4R8siEZetgVqjo41G1G9jLx_x9dq9YfJnS8Gw_ywkFvtaw6Fy-kHDK03H0CIr3Wa1KCwCBa3SydqSEmbQxtCGqR48EuP1
+WXRk-Rwu571nopCwT-blGRPzA9_TvyiyEH5IdJdQ_7QylIUzlyUr3YRht_ZE-Bdl-jctvwW_qfniztyew8U2VYZeXu9-AEY7Wduew8U2VYZeXu9-AFW5
+}
+
+AWSEntityColoring(ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafka(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafka(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafkaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafkaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)

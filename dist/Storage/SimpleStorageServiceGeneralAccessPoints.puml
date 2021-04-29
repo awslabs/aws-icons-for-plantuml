@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $SimpleStorageServiceGeneralAccessPoints [64x64/16z] {
+pPPLOaGn202_La8gzpzjNMQ5uONgL1UO-9FxVynue-kIdanwDbdJ0w7jBSoaCWalb37ZkYU5k5xn4VC6c3zlLGfKPzWRS7rCAKAgt99zwgCNEqvepBjdVymb
+leRFbp2s-HzYFO2Pp9ualdPF49s9JyFyaVZdvIl-_RcVe3x_PaJ79mi-xcfzNmz0xOyFEklFs75n_vcAjx_gXnptslVJieT_jSnzFnlr0Fe-I6w0si0HEkhS
+9q4zqhhgqH95rUO7_DvwyI7LDvOG7tg-qf7xr6MhCjzrxlKr7naZkLCmxF2muK-YstbzyoEnS_RqPUW2VBKTcB_j3wx_RFMCtxFZZyRwoQlB8YsTGEy1lGVq
+7j1xGF-VF08
+}
+
+AWSEntityColoring(SimpleStorageServiceGeneralAccessPoints)
+!define SimpleStorageServiceGeneralAccessPoints(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SimpleStorageServiceGeneralAccessPoints, SimpleStorageServiceGeneralAccessPoints)
+!define SimpleStorageServiceGeneralAccessPoints(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SimpleStorageServiceGeneralAccessPoints, SimpleStorageServiceGeneralAccessPoints)
+!define SimpleStorageServiceGeneralAccessPointsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SimpleStorageServiceGeneralAccessPoints, SimpleStorageServiceGeneralAccessPoints)
+!define SimpleStorageServiceGeneralAccessPointsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SimpleStorageServiceGeneralAccessPoints, SimpleStorageServiceGeneralAccessPoints)

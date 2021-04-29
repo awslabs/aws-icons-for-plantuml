@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $KeyManagementService [64x64/16z] {
+fTDNWkKW34JH4WX3YVtlTx1D9uGcKHtuElS5supMMhpwDHu6U1ZWOO270Hu6x31WXm4x3DXXm0u3TXYmToluwu2jWQQ2CT7sLm5R0dhJKkw8-a3iPo0XLJwh
+2MaJYBqzl7mH3GAHDnOelqrHWa3WaVXZWkO3iI-uU4z5bFSk5Bf0x1FcToWotydoXlxW9PdD5vrl9GbT8FR8PaO5nw0Sos0G2BqLLBAYR3t_yFx76gIK-SsB
+q0LYh-1zL06aSgmXqots5UKvFvy_HMM1Mmwy2VZzOMf8PCth894Vu7j0KBcPXDukf3O3R8ABUy_8Zm2qsLXJ31vvHjvQ0kuJI8snP-37ykkpyTBoW74wpz3h
+wvK9W93lsLRFm3UP_eBosz_gPw0ld8BwUWMDagYuJVAUZry2amzVS5b3vZXPaJUUjry2YZmz1G8qpdFdERmFwEkDcd8pyZcvzMpT1HAcd-EpmBC_s_gInufT
+-TvyZfhpQo13fqyOIwQuDv_Z6lY-VFpRV-sFxt_CNJ-B0f9slg_tZvMy7nRl0jCd1CjxFmEAwN-ERixtqCU1xW8NibdptWBl0WgjG3EtmBj01gJPPe7tWKJR
+Bl0k4Cxxmq0_3FJ3G3yCzCD0Fmpqmq0_3FJ3G3yCzCF0Bm
+}
+
+AWSEntityColoring(KeyManagementService)
+!define KeyManagementService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, KeyManagementService, KeyManagementService)
+!define KeyManagementService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, KeyManagementService, KeyManagementService)

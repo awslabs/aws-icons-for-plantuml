@@ -27,24 +27,42 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
+# Source directories for the 9.0-2021.01.31 release
 dir_list = [
     {
         "dir": "../source/official",
-        "dir_glob": "Category-Icons_*/*16/*.svg",
+        "dir_glob": "Category-Icons_01-31-2021/*64/*.svg",
         "category_regex": "[^.]*_(.*)_\d*\.svg$",
         "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+        "category_mappings": {
+            "GeneralIcons": "General",
+        },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_*/**/*48/*.svg",
+        "dir_glob": "Architecture-Service-Icons_01-31-2021/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+        "category_mappings": {
+            "AppIntegration": "ApplicationIntegration",
+            "BusinessApplication": "BusinessApplications",
+            "CustomerEnagagement": "CustomerEngagement",
+            "GeneralIcons": "General",
+            "NetworkingContent": "NetworkingContentDelivery",
+        },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_*/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_01-31-2021/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+        "category_mappings": {
+            "GeneralIcons": "General",
+            "MigrationAndTransfer": "MigrationTransfer",
+            "NetworkingandContentDelivery": "NetworkingContentDelivery",
+            "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
+            "loT": "InternetofThings",
+        },
     },
 ]
 
@@ -225,7 +243,11 @@ def create_config_template():
         for i in source_files:
             # Get elements needed for YAML file
             # Exception is if the files originate from the "Category" directory
-            category = Icon()._make_category(regex=dir["category_regex"], filename=i)
+            category = Icon()._make_category(
+                regex=dir["category_regex"],
+                filename=i,
+                mappings=dir["category_mappings"],
+            )
             target = Icon()._make_name(regex=dir["filename_regex"], filename=i)
             source_name = i.split("/")[-1]
             # For source directory, use only relative from this script ./source/official/AWS...
@@ -349,6 +371,7 @@ def main():
                     config=config,
                     category_regex=dir["category_regex"],
                     filename_regex=dir["filename_regex"],
+                    category_mappings=dir["category_mappings"],
                 )
             )
 

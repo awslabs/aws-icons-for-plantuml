@@ -1,0 +1,17 @@
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+sprite $Serverless [64x64/16z] {
+nTE9RXqX38NXOnimnr7V_t6pCIhZ6swAHDiShLc-VtR_yGKVrvTxvgVBXTqA3mCy3F0mmCC03mCy3F0m474MYCD070RYC127WJWCn64WdWHwDLKhZUIMpm5N
+GDG4aDAvuNEWGchdnvf1d5j-1WmsMmrmRlWPgAZfJeXqRlaHw32cESIAR_WHCF1XLHNGBHyaAh-kL-YMZuRErHhAbY_2zLGsl5THhbVnH-y2I8tLvPi9h7tl
+2zGvRc8jdnkwAG1L1QHzuojANEiOwoIxphTPK9_wVl7Bstn_6pytMlxCcznR1hsuzlGowpEFUlV-3Z-vCQt2rzxHam__29WnhwFoxb-cP_RHCF4S2ddtBylZ
+YyT7eApz273uAq2qU5pz6kZZyxhxAo2MCGiNWGOVdUclG8CdhkWH5PQz2iVkVWGqtm7ug4hdN9qlq-LdW88sy62_lwbouyQvuMSW35BQ-uh0EEy3nfVdLGPF
+FWNwktoVM8yvNhy5rBds8p16niD8Tc_DExdsCx1UPjaV19BV3sH_44X-Fv3zGI3v_K3s1u7azmFP7mIItmzaVn18VZ-G_K4W-Vr0yhzs-3eH_kDx0m
+}
+
+AWSEntityColoring(Serverless)
+!define Serverless(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Serverless, Serverless)
+!define Serverless(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Serverless, Serverless)
+!define ServerlessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Serverless, Serverless)
+!define ServerlessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Serverless, Serverless)
+

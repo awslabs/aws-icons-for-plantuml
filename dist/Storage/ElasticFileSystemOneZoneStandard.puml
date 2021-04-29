@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+sprite $ElasticFileSystemOneZoneStandard [64x64/16z] {
+tTM5SWCn38JXeODLmU__jENs7zsEenkLi-78dp4m_cYaVLPuJisbcEhdL9mEY58AxXtea89R1m9v1xLFf9X0J8PdvEGzL9tpx5VyklwExy-V3l36YrJdLoSW
+htoTZKFIMeIdEE5qWBy16QyyfMhulCXuynHtk47tCgyHnZbGkcQQ54IIpdxC_PZmivx78PL-cBTDGI2FoGMEeE79MHzwheGAhn3D4d_F9K-p63aYb_on5Q7G
+y7HGhJzpxw3SV-Vzy_DKdboLbzJpbFPFUhKyND7rgrxJzNhFuOs9t_MHdNyhm9hwSoyHtXU0r1v8cVxS-wD8wcVbTSkFXjyRFgMSV-th_IFcgNTyx_FZeVYd
+Vhzw-JD-zFqVo2C
+}
+
+AWSEntityColoring(ElasticFileSystemOneZoneStandard)
+!define ElasticFileSystemOneZoneStandard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
+!define ElasticFileSystemOneZoneStandard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
+!define ElasticFileSystemOneZoneStandardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
+!define ElasticFileSystemOneZoneStandardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)

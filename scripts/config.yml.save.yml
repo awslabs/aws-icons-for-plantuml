@@ -1,0 +1,1181 @@
+# Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+#
+# Hand curated config file for Release 7.0-2020.04.30 AWS Architecture Icon release
+#
+Defaults:
+  Colors:
+    CeruleanBlue: "#3B48CC"
+    Crimson: "#D6242D"
+    Elm: "#1C7B68"
+    ForestGreen: "#3F8624"
+    MaroonFlush: "#CC2264"
+    Meteor: "#D86613"
+    PurpleHeart: "#693CC5"
+    SquidInk: "#232F3E"
+  # Defaults for services not found
+  Category:
+    Color: SquidInk
+  # Maximum in either height or width in pixels
+  TargetMaxSize: 64
+Categories:
+  - Name: ARVR
+    Color: MaroonFlush
+    Services:
+      - Source: AR-VR
+        Target: ARVR
+      - Source: Amazon-Sumerian
+        Target: Sumerian
+    SourceDir: AR & VR
+  - Name: AWSCostManagement
+    Color: ForestGreen
+    Services:
+      - Source: AWS-Budgets
+        Target: Budgets
+      - Source: AWS-Cost-Explorer
+        Target: CostExplorer
+      - Source: AWS-Cost-Management
+        Target: CostManagement
+      - Source: AWS-Cost-and-Usage-Report
+        Target: CostandUsageReport
+      - Source: Reserved-Instance-Reporting
+        Target: ReservedInstanceReporting
+      - Source: Savings-Plans
+        Target: SavingsPlans
+    SourceDir: AWS Cost Management
+  - Name: Analytics
+    Color: PurpleHeart
+    Services:
+      - Source: AWS-Data-Pipeline
+        Target: DataPipeline
+      - Source: AWS-Data-lake_Resource-icon
+        Target: DatalakeResourceIcon
+      - Source: AWS-Glue_Crawlers
+        Target: GlueCrawlers
+      - Source: AWS-Glue_Data-catalog
+        Target: GlueDataCatalog
+      - Source: AWS-Glue
+        Target: Glue
+      - Source: AWS-Lake-Formation
+        Target: LakeFormation
+      - Source: Amazon-Athena
+        Target: Athena
+      - Source: Amazon-CloudSearch_Search-documents
+        Target: CloudSearchSearchDocuments
+      - Source: Amazon-CloudSearch
+        Target: CloudSearch
+      - Source: Amazon-EMR_Cluster
+        Target: EMRCluster
+      - Source: Amazon-EMR_EMR-engine-MapR-M3
+        Target: EMREngineMapRM3
+      - Source: Amazon-EMR_EMR-engine-MapR-M5
+        Target: EMREngineMapRM5
+      - Source: Amazon-EMR_EMR-engine-MapR-M7
+        Target: EMREngineMapRM7
+      - Source: Amazon-EMR_EMR-engine
+        Target: EMREngine
+      - Source: Amazon-EMR_HDFS-cluster
+        Target: EMRHDFSCluster
+      - Source: Amazon-EMR
+        Target: EMR
+      - Source: Amazon-Elasticsearch-Service
+        Target: ElasticsearchService
+      - Source: Amazon-Kinesis-Data-Analytics
+        Target: KinesisDataAnalytics
+      - Source: Amazon-Kinesis-Data-Firehose
+        Target: KinesisDataFirehose
+      - Source: Amazon-Kinesis-Data-Streams
+        Target: KinesisDataStreams
+      - Source: Amazon-Kinesis-Video-Streams
+        Target: KinesisVideoStreams
+      - Source: Amazon-Kinesis
+        Target: Kinesis
+      - Source: Amazon-Managed-Streaming-for-Kafka
+        Target: ManagedStreamingforKafka
+      - Source: Amazon-Quicksight
+        Target: QuickSight
+      - Source: Amazon-Redshift_Dense-compute-node
+        Target: DenseComputeNodeResource
+      - Source: Amazon-Redshift_Dense-storage-node
+        Target: DenseStorageNodeResource
+      - Source: Amazon-Redshift
+        Target: Redshift
+      - Source: Analytics
+        Target: Analytics
+    SourceDir: Analytics
+  - Name: ApplicationIntegration
+    Color: MaroonFlush
+    Services:
+      - Source: AWS-Express-Workflows
+        Target: ExpressWorkflows
+      - Source: AWS-Step-Functions
+        Target: StepFunctions
+      - Source: Amazon-AppSync
+        Target: AppSync
+      - Source: Amazon-EventBridge_Custom-event-bus_resource-icon
+        Target: EventBridgeCustomEventBusResource
+      - Source: Amazon-EventBridge_Default-event-bus_resource-icon
+        Target: EventBridgeDefaultEventBusResource
+      - Source: Amazon-EventBridge_Saas-Partner-event-bus_resource-icon
+        Target: EventBridgeSaasPartnerEventBusResource
+      - Source: Amazon-EventBridge
+        Target: EventBridge
+      - Source: Amazon-MQ
+        Target: MQ
+      - Source: Amazon-Simple-Notification-Service-SNS_Email-Notification
+        Target: SNSEmailNotification
+      - Source: Amazon-Simple-Notification-Service-SNS_HTTP-Notification
+        Target: SNSHTTPNotification
+      - Source: Amazon-Simple-Notification-Service-SNS_Topic
+        Target: SNSTopic
+      - Source: Amazon-Simple-Notification-Service-SNS
+        Target: SNS
+      - Source: Amazon-Simple-Queue-Service-SQS_Message
+        Target: SQSMessage
+      - Source: Amazon-Simple-Queue-Service-SQS_Queue
+        Target: SQSQueue
+      - Source: Amazon-Simple-Queue-Service-SQS
+        Target: SQS
+      - Source: Application-Integration
+        Target: ApplicationIntegration
+    SourceDir: Application Integration
+  - Name: Blockchain
+    Color: Meteor
+    Services:
+      - Source: Amazon-Managed-Blockchain
+        Target: ManagedBlockchain
+      - Source: Amazon-Quantum-Ledger-Database-QLDB
+        Target: QuantumLedgerDatabaseQLDB
+      - Source: Blockchain_Resource-Icon
+        Target: BlockchainResourceIcon
+      - Source: Blockchain
+        Target: Blockchain
+    SourceDir: Blockchain
+  - Name: BusinessApplications
+    Color: Crimson
+    Services:
+      - Source: Alexa-For-Business
+        Target: AlexaForBusiness
+      - Source: Amazon-Chime
+        Target: Chime
+      - Source: Amazon-WorkMail
+        Target: WorkMail
+      - Source: Business-Applications
+        Target: BusinessApplications
+    SourceDir: Business Applications
+  - Name: Compute
+    Color: Meteor
+    Services:
+      - Source: AWS-Batch
+        Target: Batch
+      - Source: AWS-Compute-Optimizer
+        Target: ComputeOptimizer
+      - Source: AWS-Elastic-Beanstalk_Application
+        Target: ElasticBeanstalkApplication
+      - Source: AWS-Elastic-Beanstalk_Deployment
+        Target: ElasticBeanstalkDeployment
+      - Source: AWS-Elastic-Beanstalk
+        Target: ElasticBeanstalk
+      - Source: AWS-Fargate
+        Target: Fargate
+      - Source: AWS-Lambda_Lambda-Function
+        Target: LambdaLambdaFunction
+      - Source: AWS-Lambda
+        Target: Lambda
+      - Source: AWS-Local-Zones
+        Target: LocalZones
+      - Source: AWS-Outposts
+        Target: Outposts
+      - Source: AWS-Serverless-Application-Repository
+        Target: ServerlessApplicationRepository
+      - Source: AWS-Thinkbox-Deadline
+        Target: ThinkboxDeadline
+      - Source: AWS-Thinkbox-Draft
+        Target: ThinkboxDraft
+      - Source: AWS-Thinkbox-Frost
+        Target: ThinkboxFrost
+      - Source: AWS-Thinkbox-Krakatoa
+        Target: ThinkboxKrakatoa
+      - Source: AWS-Thinkbox-Sequoia
+        Target: ThinkboxSequoia
+      - Source: AWS-Thinkbox-Stoke
+        Target: ThinkboxStoke
+      - Source: AWS-Thinkbox_XMesh
+        Target: ThinkboxXMesh
+      - Source: AWS-Wavelength
+        Target: Wavelength
+      - Source: Amazon-EC2-Container-Registry_Image
+        Target: EC2ContainerRegistryImage
+      - Source: Amazon-EC2-Container-Registry_Registry
+        Target: EC2ContainerRegistryResource
+      - Source: Amazon-EC2-Container-Registry
+        Target: EC2ContainerRegistry
+      - Source: Amazon-EC2_AMI
+        Target: EC2AMI
+      - Source: Amazon-EC2_Auto-Scaling
+        Target: EC2AutoScaling
+      - Source: Amazon-EC2_Elastic-IP-Address
+        Target: EC2ElasticIPAddress
+      - Source: Amazon-EC2_Rescue
+        Target: EC2Rescue
+      - Source: Amazon-EC2
+        Target: EC2
+      - Source: Amazon-Elastic-Container-Service_Container1
+        Target: ECSContainer1
+      - Source: Amazon-Elastic-Container-Service_Container2
+        Target: ECSContainer2
+      - Source: Amazon-Elastic-Container-Service_Container3
+        Target: ECSContainer3
+      - Source: Amazon-Elastic-Container-Service_Service
+        Target: ECSService
+      - Source: Amazon-Elastic-Container-Service
+        Target: ElasticContainerService
+      - Source: Amazon-Elastic-Kubernetes-Service
+        Target: ElasticKubernetesService
+      - Source: Amazon-Lightsail
+        Target: Lightsail
+      - Source: Bottlerocket
+        Target: Bottlerocket
+      - Source: Compute
+        Target: Compute
+      - Source: EC2-Image-Builder
+        Target: EC2ImageBuilder
+      - Source: Parallel-Cluster
+        Target: ParallelCluster
+      - Source: VMware-Cloud-On-AWS
+        Target: VMwareCloudOnAWS
+      - Source: Amazon-EC2_A1-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2A1Instance
+      - Source: Amazon-EC2_C4-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2C4Instance
+      - Source: Amazon-EC2_C5-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2C5Instance
+      - Source: Amazon-EC2_C5n-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2C5nInstance
+      - Source: Amazon-EC2_D2-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2D2Instance
+      - Source: Amazon-EC2_DB-on-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2DBonInstance
+      - Source: Amazon-EC2_F1-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2F1Instance
+      - Source: Amazon-EC2_G3-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2G3Instance
+      - Source: Amazon-EC2_H1-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2H1Instance
+      - Source: Amazon-EC2_High-Memory-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2HighMemoryInstance
+      - Source: Amazon-EC2_I3-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2I3Instance
+      - Source: Amazon-EC2_Instance-with-CloudWatch
+        SourceDir: Compute/_Instances
+        Target: EC2InstancewithCloudWatch
+      - Source: Amazon-EC2_Instance
+        SourceDir: Compute/_Instances
+        Target: EC2Instance
+      - Source: Amazon-EC2_Instances
+        SourceDir: Compute/_Instances
+        Target: EC2Instances
+      - Source: Amazon-EC2_M4-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2M4Instance
+      - Source: Amazon-EC2_M5-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2M5Instance
+      - Source: Amazon-EC2_M5a-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2M5aInstance
+      - Source: Amazon-EC2_Optimized-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2OptimizedInstance
+      - Source: Amazon-EC2_P2-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2P2Instance
+      - Source: Amazon-EC2_P3-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2P3Instance
+      - Source: Amazon-EC2_R4-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2R4Instance
+      - Source: Amazon-EC2_R5-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2R5Instance
+      - Source: Amazon-EC2_R5a-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2R5aInstance
+      - Source: Amazon-EC2_Spot-instance
+        SourceDir: Compute/_Instances
+        Target: EC2SpotInstance
+      - Source: Amazon-EC2_T2-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2T2Instance
+      - Source: Amazon-EC2_T3-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2T3Instance
+      - Source: Amazon-EC2_T3a-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2T3aInstance
+      - Source: Amazon-EC2_X1-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2X1Instance
+      - Source: Amazon-EC2_X1e-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2X1eInstance
+      - Source: Amazon-EC2_z1d-Instance
+        SourceDir: Compute/_Instances
+        Target: EC2z1dInstance
+    SourceDir: Compute
+  - Name: CustomerEnablement
+    Color: CeruleanBlue
+    Services:
+      - Source: AWS-IQ
+        Target: IQ
+      - Source: Customer-Enablement
+        Target: CustomerEnablement
+    SourceDir: Customer Enablement
+  - Name: CustomerEngagement
+    Color: CeruleanBlue
+    Services:
+      - Source: Amazon-Connect
+        Target: Connect
+      - Source: Amazon-Pinpoint
+        Target: Pinpoint
+      - Source: Amazon-Simple-Email-Service-SES_Email
+        Target: SESEmail
+      - Source: Amazon-Simple-Email-Service-SES
+        Target: SimpleEmailServiceSES
+      - Source: Customer-Engagement
+        Target: CustomerEngagement
+    SourceDir: Customer Engagement
+  - Name: Database
+    Color: CeruleanBlue
+    Services:
+      - Source: AWS-Database-Migration-Service_Database-Migration-Workflow
+        Target: DMSDatabaseMigrationWorkflow
+      - Source: AWS-Database-Migration-Service
+        Target: DatabaseMigrationService
+      - Source: Amazon-Aurora
+        Target: Aurora
+      - Source: Amazon-DocumentDB-with-MongoDB-compatibility
+        Target: DocumentDBwithMongoDBcompatibility
+      - Source: Amazon-DynamoDB_Attribute
+        Target: DynamoDBAttribute
+      - Source: Amazon-DynamoDB_Attributes
+        Target: DynamoDBAttributes
+      - Source: Amazon-DynamoDB_Global-Secondary-Index
+        Target: DynamoDBGSI
+      - Source: Amazon-DynamoDB_Item
+        Target: DynamoDBItem
+      - Source: Amazon-DynamoDB_Items
+        Target: DynamoDBItems
+      - Source: Amazon-DynamoDB_Table
+        Target: DynamoDBTable
+      - Source: Amazon-DynamoDB
+        Target: DynamoDB
+      - Source: Amazon-ElastiCache_Cache-Node
+        Target: ElastiCacheCacheNode
+      - Source: Amazon-ElastiCache_For-Memcached
+        Target: ElastiCacheForMemcached
+      - Source: Amazon-ElastiCache_For-Redis
+        Target: ElastiCacheForRedis
+      - Source: Amazon-ElastiCache
+        Target: ElastiCache
+      - Source: Amazon-Managed-Apache-Cassandra-Service
+        Target: ManagedApacheCassandraService
+      - Source: Amazon-Neptune
+        Target: Neptune
+      - Source: Amazon-Quantum-Ledger-Database_QLDB
+        Target: QLDB
+      - Source: Amazon-RDS-on-VMware
+        Target: RDSonVMware
+      - Source: Amazon-RDS_Amazon-Aurora_instance-alt
+        Target: RDSAmazonAurorainstancealt
+      - Source: Amazon-RDS_Amazon-Aurora_instance
+        Target: RDSAmazonAurorainstance
+      - Source: Amazon-RDS_Amazon-RDS_instance-alt
+        Target: RDSAmazonRDSinstancealt
+      - Source: Amazon-RDS_Amazon-RDS_instance
+        Target: RDSAmazonRDSinstance
+      - Source: Amazon-RDS_MariaDB_instance-alt
+        Target: RDSMariaDBinstancealt
+      - Source: Amazon-RDS_MariaDB_instance
+        Target: RDSMariaDBinstance
+      - Source: Amazon-RDS_MySQL_instance-alt
+        Target: RDSMySQLinstancealt
+      - Source: Amazon-RDS_MySQL_instance
+        Target: RDSMySQLinstance
+      - Source: Amazon-RDS_Oracle_instance-alt
+        Target: RDSOracleinstancealt
+      - Source: Amazon-RDS_Oracle_instance
+        Target: RDSOracleinstance
+      # No HiDPI version of Amazon-RDS_PIOP
+      # - Source: Amazon-RDS_PIOP
+      #   Target: RDSPIOP
+      - Source: Amazon-RDS_PostgreSQL_instance-alt
+        Target: RDSPostgreSQLinstancealt
+      - Source: Amazon-RDS_PostgreSQL_instance
+        Target: RDSPostgreSQLinstance
+      - Source: Amazon-RDS_SQL-Server_instance-alt
+        Target: RDSSQLServerinstancealt
+      - Source: Amazon-RDS_SQL-Server_instance
+        Target: RDSSQLServerinstance
+      - Source: Amazon-RDS
+        Target: RDS
+      - Source: Amazon-Redshift_Dense-Compute-Node
+        Target: DenseComputeNodeResource2
+      - Source: Amazon-Redshift_Dense-Storage-Node
+        Target: DenseStorageNodeResource2
+      - Source: Amazon-Redshift
+        Target: AmazonRedshift
+      - Source: Amazon-Timestream
+        Target: Timestream
+      - Source: Database
+        Target: Database
+    SourceDir: Database
+  - Name: DeveloperTools
+    Color: CeruleanBlue
+    Services:
+      - Source: AWS-Cloud-Development-Kit
+        Target: CloudDevelopmentKit
+      - Source: AWS-Cloud9
+        Target: Cloud9
+      - Source: AWS-CodeBuild
+        Target: CodeBuild
+      - Source: AWS-CodeCommit
+        Target: CodeCommit
+      - Source: AWS-CodeDeploy
+        Target: CodeDeploy
+      - Source: AWS-CodePipeline
+        Target: CodePipeline
+      - Source: AWS-CodeStar
+        Target: CodeStar
+      - Source: AWS-Command-Line-Interface
+        Target: CommandLineInterface
+      - Source: AWS-Tools-And-SDKs
+        Target: ToolsAndSDKs
+      - Source: AWS-X-Ray
+        Target: XRay
+      - Source: Cloud9_Resource
+        Target: Cloud9Resource
+      - Source: Developer-Tools
+        Target: DeveloperTools
+    SourceDir: Developer Tools
+  - Name: EndUserComputing
+    Color: Elm
+    Services:
+      - Source: Amazon-Appstream-2.0
+        Target: Appstream2_0
+      - Source: Amazon-WorkDocs
+        Target: WorkDocs
+      - Source: Amazon-WorkLink
+        Target: WorkLink
+      - Source: Amazon-Workspaces
+        Target: Workspaces
+      - Source: End-User-Computing
+        Target: EndUserComputing
+    SourceDir: End User Computing
+  - Name: GameTech
+    Color: PurpleHeart
+    Services:
+      - Source: Amazon-GameLift
+        Target: GameLift
+      - Source: Game-Tech
+        Target: GameTech
+    SourceDir: Game Tech
+  - Name: InternetOfThings
+    Color: ForestGreen
+    Services:
+      - Source: AWS-IoT-1-Click
+        Target: IoT1Click
+      - Source: AWS-IoT-Analytics_Channel
+        Target: IoTAnalyticsChannel
+      - Source: AWS-IoT-Analytics_Data-Set
+        Target: IoTAnalyticsDataSet
+      - Source: AWS-IoT-Analytics_Data-Store
+        Target: IoTAnalyticsDataStore
+      - Source: AWS-IoT-Analytics_Notebook
+        Target: IoTAnalyticsNotebook
+      - Source: AWS-IoT-Analytics_Pipeline
+        Target: IoTAnalyticsPipeline
+      - Source: AWS-IoT-Analytics
+        Target: IoTAnalytics
+      - Source: AWS-IoT-Button
+        Target: IoTButton
+      - Source: AWS-IoT-Core
+        Target: IoTCore
+      - Source: AWS-IoT-Device-Defender
+        Target: IoTDeviceDefender
+      - Source: AWS-IoT-Device-Management
+        Target: IoTDeviceManagement
+      - Source: AWS-IoT-Events
+        Target: IoTEvents
+      - Source: AWS-IoT-Greengrass_Connector
+        Target: IoTGreengrassConnector
+      - Source: AWS-IoT-Greengrass
+        Target: IoTGreengrass
+      - Source: AWS-IoT-SiteWise
+        Target: IoTSiteWise
+      - Source: AWS-IoT-Things-Graph
+        Target: IoTThingsGraph
+      - Source: Amazon-FreeRTOS
+        Target: FreeRTOS
+      - Source: Internet-of-Things
+        Target: InternetofThings
+      - Source: IoT_Action
+        Target: IoTAction
+      - Source: IoT_Actuator
+        Target: IoTActuator
+      - Source: IoT_Alexa-enabled-device
+        Target: IoTAlexaEnabledDevice
+      - Source: IoT_Alexa-skill
+        Target: IoTAlexaSkill
+      - Source: IoT_Alexa-voice-service
+        Target: IoTAlexaVoiceService
+      - Source: IoT_Bank
+        Target: IoTBank
+      - Source: IoT_Bicycle
+        Target: IoTBicycle
+      - Source: IoT_Camera
+        Target: IoTCamera
+      - Source: IoT_Car
+        Target: IoTCar
+      - Source: IoT_Cart
+        Target: IoTCart
+      - Source: IoT_Certificate-manager
+        Target: IoTCertificateManager
+      - Source: IoT_Coffee-pot
+        Target: IoTCoffeePot
+      - Source: IoT_Desired-state
+        Target: IoTDesiredState
+      - Source: IoT_Device-gateway
+        Target: IoTDeviceGateway
+      - Source: IoT_Door-lock
+        Target: IoTDoorLock
+      - Source: IoT_Echo
+        Target: IoTEcho
+      - Source: IoT_Factory
+        Target: IoTFactory
+      - Source: IoT_Fire-TV-stick
+        Target: IoTFireTVStick
+      - Source: IoT_Fire-TV
+        Target: IoTFireTV
+      - Source: IoT_Generic
+        Target: IoTGeneric
+      - Source: IoT_HTTP-2-protocol
+        Target: IoTHTTP2Protocol
+      - Source: IoT_HTTP-protocol
+        Target: IoTHTTPProtocol
+      - Source: IoT_Hardware-board
+        Target: IoTHardwareBoard
+      - Source: IoT_House
+        Target: IoTHouse
+      - Source: IoT_Lambda-function
+        Target: IoTLambdaFunction
+      - Source: IoT_Lightbulb
+        Target: IoTLightbulb
+      - Source: IoT_MQTT-protocol
+        Target: IoTMQTTProtocol
+      - Source: IoT_Medical-emergency
+        Target: IoTMedicalEmergency
+      - Source: IoT_Over-the-air-update
+        Target: IoTOverTheAirUpdate
+      - Source: IoT_Police-emergency
+        Target: IoTPoliceEmergency
+      - Source: IoT_Policy
+        Target: IoTPolicy
+      - Source: IoT_Reported-state
+        Target: IoTReportedState
+      - Source: IoT_Rule
+        Target: IoTRule
+      - Source: IoT_Sensor
+        Target: IoTSensor
+      - Source: IoT_Servo
+        Target: IoTServo
+      - Source: IoT_Shadow
+        Target: IoTShadow
+      - Source: IoT_Simulator
+        Target: IoTSimulator
+      - Source: IoT_Thermostat
+        Target: IoTThermostat
+      - Source: IoT_Topic
+        Target: IoTTopic
+      - Source: IoT_Travel
+        Target: IoTTravel
+      - Source: IoT_Utility
+        Target: IoTUtility
+      - Source: IoT_Windfarm
+        Target: IoTWindfarm
+    SourceDir: Internet of Things
+  - Name: MachineLearning
+    Color: Elm
+    Services:
+      - Source: AWS-Deep-Learning-AMIs
+        Target: DeepLearningAMIs
+      - Source: AWS-Deep-Learning-Containers
+        Target: DeepLearningContainers
+      # Local file rename to process - monitor
+      - Source: AWS-DeepComposer
+        Target: DeepComposer
+      - Source: AWS-DeepLens
+        Target: DeepLens
+      - Source: AWS-DeepRacer
+        Target: DeepRacer
+      - Source: Amazon-Augmented-AI
+        Target: AugmentedAI
+      - Source: Amazon-Comprehend
+        Target: Comprehend
+      - Source: Amazon-Elastic-Inference
+        Target: ElasticInference
+      - Source: Amazon-Forecast
+        Target: Forecast
+      - Source: Amazon-Fraud-Detector
+        Target: FraudDetector
+      - Source: Amazon-Kendra
+        Target: Kendra
+      - Source: Amazon-Lex
+        Target: Lex
+      - Source: Amazon-Personalize
+        Target: Personalize
+      - Source: Amazon-Polly
+        Target: Polly
+      - Source: Amazon-Rekognition_Image
+        Target: RekognitionImage
+      - Source: Amazon-Rekognition_Video
+        Target: RekognitionVideo
+      - Source: Amazon-Rekognition
+        Target: Rekognition
+      - Source: Amazon-SageMaker-Ground-Truth
+        Target: SageMakerGroundTruth
+      - Source: Amazon-SageMaker_Model
+        Target: SageMakerModel
+      - Source: Amazon-SageMaker_Notebook
+        Target: SageMakerNotebook
+      - Source: Amazon-SageMaker_Train
+        Target: SageMakerTrain
+      - Source: Amazon-SageMaker
+        Target: SageMaker
+      - Source: Amazon-Textract
+        Target: Textract
+      - Source: Amazon-Transcribe
+        Target: Transcribe
+      - Source: Amazon-Translate
+        Target: Translate
+      - Source: Apache-MXNet-on-AWS
+        Target: ApacheMXNetonAWS
+      - Source: Machine-Learning
+        Target: MachineLearning
+      - Source: TensorFlow-on-AWS
+        Target: TensorFlowonAWS
+    SourceDir: Machine Learning
+  - Name: ManagementAndGovernance
+    Color: MaroonFlush
+    Services:
+      - Source: AWS-App-Config
+        Target: AppConfig
+      - Source: AWS-Auto-Scaling
+        Target: AutoScaling
+      - Source: AWS-CloudFormation_Change-Set
+        Target: CloudFormationChangeSet
+      - Source: AWS-CloudFormation_Stack
+        Target: CloudFormationStack
+      - Source: AWS-CloudFormation_Template
+        Target: CloudFormationTemplate
+      - Source: AWS-CloudFormation
+        Target: CloudFormation
+      - Source: AWS-CloudTrail
+        Target: CloudTrail
+      - Source: AWS-Command-Line-Interface
+        Target: AWSCLI
+      - Source: AWS-Config
+        Target: Config
+      - Source: AWS-Control-Tower
+        Target: ControlTower
+      - Source: AWS-License-Manager
+        Target: LicenseManager
+      - Source: AWS-Managed-Services
+        Target: ManagedServices
+      - Source: AWS-Management-Console
+        Target: ManagementConsole
+      - Source: AWS-OpsWorks_Apps
+        Target: OpsWorksApps
+      - Source: AWS-OpsWorks_Deployments
+        Target: OpsWorksDeployments
+      - Source: AWS-OpsWorks_Instances
+        Target: OpsWorksInstances
+      - Source: AWS-OpsWorks_Layers
+        Target: OpsWorksLayers
+      - Source: AWS-OpsWorks_Monitoring
+        Target: OpsWorksMonitoring
+      - Source: AWS-OpsWorks_Permissions
+        Target: OpsWorksPermissions
+      - Source: AWS-OpsWorks_Resources
+        Target: OpsWorksResources
+      - Source: AWS-OpsWorks_Stack2
+        Target: OpsWorksStack2
+      - Source: AWS-OpsWorks
+        Target: OpsWorks
+      - Source: AWS-Organizations_Account
+        Target: OrganizationsAccount
+      - Source: AWS-Organizations_Organizational-unit
+        Target: OrganizationsOrganizationalunit
+      - Source: AWS-Organizations
+        Target: Organizations
+      - Source: AWS-Personal-Health-Dashboard
+        Target: PersonalHealthDashboard
+      - Source: AWS-Service-Catalog
+        Target: ServiceCatalog
+      - Source: AWS-Systems-Manager_Automation
+        Target: SystemsManagerAutomation
+      - Source: AWS-Systems-Manager_Documents
+        Target: SystemsManagerDocuments
+      - Source: AWS-Systems-Manager_Inventory
+        Target: SystemsManagerInventory
+      - Source: AWS-Systems-Manager_Maintenance-Windows
+        Target: SystemsManagerMaintWindows
+      - Source: AWS-Systems-Manager_Parameter-Store
+        Target: SystemsManagerParameterStore
+      - Source: AWS-Systems-Manager_Patch-Manager
+        Target: SystemsManagerPatchManager
+      - Source: AWS-Systems-Manager_Run-Command
+        Target: SystemsManagerRunCommand
+      - Source: AWS-Systems-Manager_State-Manager
+        Target: SystemsManagerStateManager
+      - Source: AWS-Systems-Manager
+        Target: SystemsManager
+      - Source: AWS-Trusted-Advisor_Checklist-Cost
+        Target: TrustedAdvisorCheckCost
+      - Source: AWS-Trusted-Advisor_Checklist-Fault-Tolerant
+        Target: TrustedAdvisorCheckFaultTolerant
+      - Source: AWS-Trusted-Advisor_Checklist-Performance
+        Target: TrustedAdvisorCheckPerformance
+      - Source: AWS-Trusted-Advisor_Checklist-Security
+        Target: TrustedAdvisorCheckSecurity
+      - Source: AWS-Trusted-Advisor_Checklist
+        Target: TrustedAdvisorChecklist
+      - Source: AWS-Trusted-Advisor
+        Target: TrustedAdvisor
+      - Source: AWS-Well-Architected-Tool
+        Target: WellArchitectedTool
+      - Source: Amazon-CloudWatch_Alarm
+        Target: CloudWatchAlarm
+      - Source: Amazon-CloudWatch_Event-Event-Based
+        Target: CloudWatchEventEventBased
+      - Source: Amazon-CloudWatch_Event-Time-Based
+        Target: CloudWatchEventTimeBased
+      - Source: Amazon-CloudWatch_Rule
+        Target: CloudWatchRule
+      - Source: Amazon-CloudWatch
+        Target: CloudWatch
+      - Source: Management-and-Governance
+        Target: ManagementandGovernance
+      - Source: Systems-Manager_OpsCenter
+        Target: SystemsManagerOpsCenter
+    SourceDir: Management & Governance
+  - Name: MediaServices
+    Color: Meteor
+    Services:
+      - Source: AWS-Elemental-MediaConnect
+        Target: ElementalMediaConnect
+      - Source: AWS-Elemental-MediaConvert
+        Target: ElementalMediaConvert
+      - Source: AWS-Elemental-MediaLive
+        Target: ElementalMediaLive
+      - Source: AWS-Elemental-MediaPackage
+        Target: ElementalMediaPackage
+      - Source: AWS-Elemental-MediaStore
+        Target: ElementalMediaStore
+      - Source: AWS-Elemental-MediaTailor
+        Target: ElementalMediaTailor
+      - Source: Amazon-Elastic-Transcoder
+        Target: ElasticTranscoder
+      - Source: Amazon-Kinesis-Video-Streams
+        Target: KinesisVideoStreams2
+      - Source: Media-Services
+        Target: MediaServices
+    SourceDir: Media Services
+  - Name: MigrationAndTransfer
+    Color: Elm
+    Services:
+      - Source: AWS-Application-Discovery-Service
+        Target: ApplicationDiscoveryService
+      - Source: AWS-DataSync_Agent
+        Target: DataSyncAgent
+      - Source: AWS-DataSync
+        Target: DataSync
+      - Source: AWS-Database-Migration-Service
+        Target: DatabaseMigrationService2
+      - Source: AWS-Migration-Hub
+        Target: MigrationHub
+      - Source: AWS-Server-Migration-Service
+        Target: ServerMigrationService
+      - Source: AWS-Snowball-Edge
+        Target: SnowballEdge
+      - Source: AWS-Snowball
+        Target: Snowball
+      - Source: AWS-Snowmobile
+        Target: Snowmobile
+      - Source: AWS-Transfer-Family
+        Target: TransferFamily
+      - Source: CloudEndure-Migration
+        Target: CloudEndureMigration
+      - Source: Migration-and-Transfer
+        Target: MigrationandTransfer
+    SourceDir: Migration & Transfer
+  - Name: Mobile
+    Color: Crimson
+    Services:
+      - Source: AWS-Amplify
+        Target: Amplify
+      - Source: AWS-AppSync
+        Target: AppSync2
+      - Source: AWS-Device-Farm
+        Target: DeviceFarm
+      - Source: Amazon-API-Gateway_Endpoint
+        Target: APIGatewayEndpoint
+      - Source: Amazon-API-Gateway
+        Target: APIGateway
+      - Source: Amazon-Pinpoint
+        Target: Pinpoint2
+      - Source: Mobile
+        Target: Mobile
+    SourceDir: Mobile
+  - Name: NetworkingAndContentDelivery
+    Color: PurpleHeart
+    Services:
+      - Source: AWS-App-Mesh
+        Target: AppMesh
+      - Source: AWS-Client-VPN
+        Target: ClientVPN
+      - Source: AWS-Cloud-Map
+        Target: CloudMap
+      - Source: AWS-Direct-Connect
+        Target: DirectConnect
+      - Source: AWS-Global-Accelerator
+        Target: GlobalAccelerator
+      - Source: AWS-PrivateLink
+        Target: PrivateLink
+      - Source: AWS-Site-to-Site-VPN
+        Target: SitetoSiteVPN
+      - Source: AWS-Transit-Gateway
+        Target: TransitGateway
+      - Source: Amazon-API-Gateway_Endpoint
+        Target: APIGatewayEndpoint2
+      - Source: Amazon-API-Gateway
+        Target: APIGateway2
+      - Source: Amazon-CloudFront_Download-Distribution
+        Target: CloudFrontDownloadDistribution
+      - Source: Amazon-CloudFront_Edge-Location
+        Target: CloudFrontEdgeLocation
+      - Source: Amazon-CloudFront_Streaming-Distribution
+        Target: CloudFrontStreamingDistribution
+      - Source: Amazon-CloudFront
+        Target: CloudFront
+      - Source: Amazon-Route-53_Hosted-Zone
+        Target: Route53HostedZone
+      - Source: Amazon-Route-53_Route-Table
+        Target: Route53RouteTable
+      - Source: Amazon-Route-53
+        Target: Route53
+      - Source: Amazon-VPC_Customer-Gateway
+        Target: VPCCustomerGateway
+      - Source: Amazon-VPC_Elastic-Network-Adapter
+        Target: VPCElasticNetworkAdapter
+      - Source: Amazon-VPC_Elastic-Network-Interface
+        Target: VPCElasticNetworkInterface
+      - Source: Amazon-VPC_Endpoints
+        Target: VPCEndpoints
+      - Source: Amazon-VPC_Flow-Logs
+        Target: VPCFlowLogs
+      - Source: Amazon-VPC_Internet-Gateway
+        Target: VPCInternetGateway
+      - Source: Amazon-VPC_NAT-Gateway
+        Target: VPCNATGateway
+      - Source: Amazon-VPC_Network-Access-Control-List
+        Target: VPCNetworkAccessControlList
+      - Source: Amazon-VPC_Peering
+        Target: VPCPeering
+      - Source: Amazon-VPC_Router
+        Target: VPCRouter
+      - Source: Amazon-VPC_VPN-Connection
+        Target: VPCVPNConnection
+      - Source: Amazon-VPC_VPN-Gateway
+        Target: VPCVPNGateway
+      - Source: Amazon-VPC
+        Target: VPC
+      - Source: Elastic-Load-Balancing-ELB_Application-load-balancer
+        Target: ELBApplicationLoadBalancer
+      - Source: Elastic-Load-Balancing-ELB_Network-load-balancer
+        Target: ELBNetworkLoadBalancer
+      - Source: Elastic-Load-Balancing_Classic-load-balancer
+        Target: ClassicLoadBalancer
+      - Source: Elastic-Load-Balancing
+        Target: ElasticLoadBalancing
+      - Source: Networking-and-Content-Delivery
+        Target: NetworkingandContentDelivery
+    SourceDir: Networking & Content Delivery
+  - Name: QuantumTechnologies
+    Services:
+      - Source: AWS-Braket
+        Target: Braket
+      - Source: Quantum-Technologies
+        Target: QuantumTechnologies
+    SourceDir: Quantum Technologies
+  - Name: Robotics
+    Color: Crimson
+    Services:
+      - Source: AWS-RoboMaker_Cloud-Extension-ROS
+        Target: RoboMakerCloudExtensionROS
+      - Source: AWS-RoboMaker_Development-Environment
+        Target: RoboMakerDevEnvironment
+      - Source: AWS-RoboMaker_Fleet-Management
+        Target: RoboMakerFleetManagement
+      - Source: AWS-RoboMaker_Simulation
+        Target: RoboMakerSimulation
+      - Source: AWS-RoboMaker
+        Target: RoboMaker
+      - Source: Robotics
+        Target: Robotics
+    SourceDir: Robotics
+  - Name: Satellite
+    Color: CeruleanBlue
+    Services:
+      - Source: AWS-Ground-Station
+        Target: GroundStation
+      - Source: Satellite
+        Target: Satellite
+    SourceDir: Satellite
+  - Name: SecurityIdentityAndCompliance
+    Color: Crimson
+    Services:
+      - Source: AD-Connector
+        Target: ADConnector
+      - Source: AWS-Artifact
+        Target: Artifact
+      - Source: AWS-Certificate-Authority
+        Target: CertificateAuthority
+      - Source: AWS-Certificate-Manager
+        Target: CertificateManager
+      - Source: AWS-CloudHSM
+        Target: CloudHSM
+      - Source: AWS-Directory-Service
+        Target: DirectoryService
+      - Source: AWS-Firewall-Manager
+        Target: FirewallManager
+      - Source: AWS-Identity-and-Access-Management-IAM_AWS-STS-Alternate
+        Target: IAMAWSSTSAlternate
+      - Source: AWS-Identity-and-Access-Management-IAM_AWS-STS
+        Target: IAMAWSSTS
+      - Source: AWS-Identity-and-Access-Management-IAM_Add-on
+        Target: IAMAddon
+      - Source: AWS-Identity-and-Access-Management-IAM_Data-Encryption-Key
+        Target: IAMDataEncryptionKey
+      - Source: AWS-Identity-and-Access-Management-IAM_Encrypted-Data
+        Target: IAMEncryptedData
+      - Source: AWS-Identity-and-Access-Management-IAM_Long-term-Security-Credential
+        Target: IAMLongtermSecurityCredential
+      - Source: AWS-Identity-and-Access-Management-IAM_MFA-Token
+        Target: IAMMFAToken
+      - Source: AWS-Identity-and-Access-Management-IAM_Permissions
+        Target: IAMPermissions
+      - Source: AWS-Identity-and-Access-Management-IAM_Role
+        Target: IAMRole
+      - Source: AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential
+        Target: IAMTemporarySecurityCredential
+      - Source: AWS-Identity-and-Access-Management_IAM
+        Target: IAMResource
+      - Source: AWS-Key-Management-Service
+        Target: KeyManagementService
+      - Source: AWS-Managed-Microsoft-AD
+        Target: ManagedMicrosoftAD
+      - Source: AWS-Resource-Access-Manager
+        Target: ResourceAccessManager
+      - Source: AWS-Secrets-Manager
+        Target: SecretsManager
+      - Source: AWS-Security-Hub
+        Target: SecurityHub
+      - Source: AWS-Shield_Shield-Advanced
+        Target: ShieldShieldAdvanced
+      - Source: AWS-Shield
+        Target: Shield
+      - Source: AWS-Single-Sign-On
+        Target: SingleSignOn
+      - Source: AWS-WAF_Filtering-rule
+        Target: WAFFilteringrule
+      - Source: AWS-WAF
+        Target: WAF
+      - Source: Amazon-Cloud-Directory
+        Target: CloudDirectory
+      - Source: Amazon-Cognito
+        Target: Cognito
+      - Source: Amazon-Detective
+        Target: Detective
+      - Source: Amazon-GuardDuty
+        Target: GuardDuty
+      - Source: Amazon-Inspector_Agent
+        Target: InspectorAgent
+      - Source: Amazon-Inspector
+        Target: Inspector
+      - Source: Amazon-Macie
+        Target: Macie
+      - Source: Security-Identity-and-Compliance
+        Target: SecIdentityAndCompliance
+      - Source: Simple-AD
+        Target: SimpleAD
+    SourceDir: Security, Identity, & Compliance
+  - Name: Storage
+    Color: ForestGreen
+    Services:
+      - Source: AWS-Backup
+        Target: Backup
+      - Source: AWS-Snow-Family_Snowball-Import-Export
+        Target: SnowFamilyImportExport
+      - Source: AWS-Snowball-Edge
+        Target: SnowballEdge2
+      - Source: AWS-Snowball
+        Target: Snowball2
+      - Source: AWS-Snowmobile
+        Target: Snowmobile2
+      - Source: AWS-Storage-Gateway_Cached-Volume
+        Target: StorageGatewayCachedVolume
+      - Source: AWS-Storage-Gateway_Non-Cached-Volume
+        Target: StorageGatewayNonCachedVolume
+      - Source: AWS-Storage-Gateway_Virtual-Tape-Library
+        Target: StorageGatewayVirtualTapeLibrary
+      - Source: AWS-Storage-Gateway
+        Target: StorageGateway
+      - Source: Amazon-Elastic-Block-Store-EBS_Snapshot
+        Target: EBSSnapshot
+      - Source: Amazon-Elastic-Block-Store-EBS_Volume
+        Target: EBSVolume
+      - Source: Amazon-Elastic-Block-Store-EBS
+        Target: ElasticBlockStoreEBS
+      - Source: Amazon-Elastic-File-System_EFS_File-system
+        Target: EFSFilesystem
+      - Source: Amazon-Elastic-File-System_EFS
+        Target: ElasticFileSystemEFS
+      - Source: Amazon-FSx-for-Lustre
+        Target: FSxforLustre
+      - Source: Amazon-FSx-for-Windows-File-Server
+        Target: FSxforWindowsFileServer
+      - Source: Amazon-FSx
+        Target: FSx
+      - Source: Amazon-S3-Glacier_Archive
+        Target: S3GlacierArchive
+      - Source: Amazon-S3-Glacier_Vault
+        Target: S3GlacierVault
+      - Source: Amazon-S3-Glacier
+        Target: S3Glacier
+      - Source: Amazon-Simple-Storage-Service-S3_Bucket-with-Objects
+        Target: S3BucketwithObjects
+      - Source: Amazon-Simple-Storage-Service-S3_Bucket
+        Target: S3Bucket
+      - Source: Amazon-Simple-Storage-Service-S3_Object
+        Target: S3Object
+      - Source: Amazon-Simple-Storage-Service-S3
+        Target: SimpleStorageServiceS3
+      - Source: CloudEndure-Disaster-Recovery
+        Target: CloudEndureDisasterRecovery
+      - Source: EFS-InfrequentAccess
+        Target: EFSInfrequentAccess
+      - Source: EFS-Standard
+        Target: EFSStandard
+      - Source: Storage
+        Target: Storage
+    SourceDir: Storage
+  - Name: General
+    Color: SquidInk
+    Services:
+      - Source: AWS-Marketplace
+        Target: Marketplace
+      - Source: Client
+        Target: Client
+      - Source: Disk
+        Target: Disk
+      - Source: Forums
+        Target: Forums
+      - Source: General
+        Target: General
+      # Monitor for addition of "_light-bg@5x" entry for Generic Firewall
+      - Source: Generic_Firewall
+        Target: GenericFirewall
+      - Source: Generic-database
+        Target: GenericDatabase
+      - Source: Internet-alt1
+        Target: InternetAlt1
+      - Source: Internet-alt2
+        Target: InternetAlt2
+      - Source: Internet-gateway
+        Target: InternetGateway
+      - Source: Mobile-client
+        Target: MobileClient
+      - Source: Multimedia
+        Target: Multimedia
+      - Source: Office-building
+        Target: OfficeBuilding
+      - Source: SAML-token
+        Target: SAMLToken
+      - Source: SDK
+        Target: SDK
+      - Source: SSL-padlock
+        Target: SSLPadlock
+      - Source: Tape-storage
+        Target: TapeStorage
+      - Source: Toolkit
+        Target: Toolkit
+      - Source: Traditional-server
+        Target: TraditionalServer
+      - Source: User
+        Target: User
+      - Source: Users
+        Target: Users
+    SourceDir: _General
+  - Name: GroupIcons
+    Color: SquidInk
+    Services:
+      - Source: AWS-Cloud-alt
+        Target: Cloudalt
+        Color: SquidInk
+      - Source: AWS-Cloud
+        Target: Cloud
+        Color: SquidInk
+      - Source: AWS-Step-Function
+        Target: StepFunction
+        Color: MaroonFlush
+      - Source: Auto-Scaling
+        Target: AutoScalingGroup
+        Color: Meteor
+      - Source: Corporate-data-center
+        Target: CorporateDataCenter
+        Color: SquidInk
+      - Source: Elastic-Beanstalk-container
+        Target: ElasticBeanstalkContainer
+        Color: Meteor
+      - Source: Region
+        Target: Region
+        Color: CeruleanBlue
+      - Source: Server-contents
+        Target: ServerContents
+        Color: SquidInk
+      - Source: Spot-fleet
+        Target: SpotFleet
+        Color: Meteor
+      - Source: VPC-subnet-private
+        Target: VPCSubnetPrivate
+        Color: CeruleanBlue
+      - Source: VPC-subnet-public
+        Target: VPCSubnetPublic
+        Color: ForestGreen
+      - Source: Virtual-private-cloud-VPC
+        Target: VirtualPrivateCloudVPC
+        Color: ForestGreen
+    SourceDir: _Group Icons
