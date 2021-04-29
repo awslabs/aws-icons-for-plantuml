@@ -20,6 +20,7 @@ Defaults:
   TargetMaxSize: 64
 Categories:
   ARVR:
+    Color: MaroonFlush
     Icons:
       - Source: Arch-Category_AR-VR_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
@@ -28,6 +29,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_AR-VR/Arch_64
         Target: Sumerian
   AWSCostManagement:
+    Color: ForestGreen
     Icons:
       - Source: Arch-Category_AWS-Cost-Management_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
@@ -48,6 +50,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_AWS-Cost-Management/64
         Target: SavingsPlans
   Analytics:
+    Color: PurpleHeart
     Icons:
       - Source: Arch-Category_Analytics_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
@@ -143,6 +146,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Analytics/Arch_64
         Target: SQLWorkbench
   ApplicationIntegration:
+    Color: MaroonFlush
     Icons:
       - Source: Arch_Amazon-API-Gateway_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_App-Integration/Arch_64
@@ -214,6 +218,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_App-Integration/Arch_64
         Target: StepFunctions
   Blockchain:
+    Color: Meteor
     Icons:
       - Source: Arch-Category_Blockchain_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
@@ -228,6 +233,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Blockchain/64
         Target: QuantumLedgerDatabase
   BusinessApplications:
+    Color: Crimson
     Icons:
       - Source: Arch_Alexa-For-Business_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Business-Application/64
@@ -245,6 +251,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Business-Application/64
         Target: WorkMail
   Compute:
+    Color: Meteor
     Icons:
       - Source: Arch_Amazon-Application-Auto-Scaling_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Compute/64
@@ -538,6 +545,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Compute/64
         Target: Wavelength
   Containers:
+    Color: Meteor
     Icons:
       - Source: Arch-Category_Containers_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
@@ -594,6 +602,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Containers/64
         Target: RedHatOpenShift
   CustomerEnablement:
+    Color: CeruleanBlue
     Icons:
       - Source: Arch_AWS-Activate_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Customer-Enablement/64
@@ -617,6 +626,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Customer-Enablement/64
         Target: TrainingCertification
   CustomerEngagement:
+    Color: CeruleanBlue
     Icons:
       - Source: Arch_Amazon-Connect_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Customer-Enagagement/64
@@ -634,6 +644,7 @@ Categories:
         SourceDir: Resource-Icons_01-31-2021/Res_Customer-Engagement/Res_48_Light
         Target: SimpleEmailServiceEmail
   Database:
+    Color: CeruleanBlue
     Icons:
       - Source: Arch_Amazon-Aurora_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Database/64
@@ -756,6 +767,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Database/64
         Target: Timestream
   DeveloperTools:
+    Color: CeruleanBlue
     Icons:
       - Source: Arch_AWS-Cloud9_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Developer-Tools/64
@@ -800,6 +812,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Developer-Tools/64
         Target: XRay
   EndUserComputing:
+    Color: Elm
     Icons:
       - Source: Arch_Amazon-AppStream_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_End-User-Computing/64
@@ -817,6 +830,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_End-User-Computing/64
         Target: WorkSpaces
   FrontEndWebMobile:
+    Color: Crimson
     Icons:
       - Source: Arch_AWS-Amplify_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Front-End-Web-Mobile/64
@@ -828,6 +842,7 @@ Categories:
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: FrontEndWebMobile
   GameTech:
+    Color: PurpleHeart
     Icons:
       - Source: Arch_Amazon-GameLift_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Game-Tech/64
@@ -839,6 +854,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Game-Tech/64
         Target: Lumberyard
   General:
+    Color: SquidInk
     Icons:
       - Source: Res_Client_48_Light.svg
         SourceDir: Resource-Icons_01-31-2021/Res_General-Icons/Res_48_Light
@@ -901,6 +917,7 @@ Categories:
         SourceDir: Resource-Icons_01-31-2021/Res_General-Icons/Res_48_Light
         Target: Users
   InternetOfThings:
+    Color: ForestGreen
     Icons:
       - Source: Arch_FreeRTOS_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Internet-of-Things/64
@@ -1093,6 +1110,7 @@ Categories:
         SourceDir: Resource-Icons_01-31-2021/Res_loT/Res_48_Light
         Target: loTDeviceDefenderIoTDeviceJobs
   MachineLearning:
+    Color: Elm
     Icons:
       - Source: Arch_Apache-MXNet-on-AWS_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Machine-Learning/64
@@ -1212,6 +1230,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Machine-Learning/64
         Target: Translate
   ManagementGovernance:
+    Color: MaroonFlush
     Icons:
       - Source: Arch_AWS-AppConfig_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Management-Governance/64
@@ -1397,6 +1416,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Management-Governance/64
         Target: WellArchitectedTool
   MediaServices:
+    Color: Meteor
     Icons:
       - Source: Arch_Amazon-Elastic-Transcoder_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Media-Services/64
@@ -1447,6 +1467,7 @@ Categories:
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: MediaServices
   MigrationTransfer:
+    Color: Elm
     Icons:
       - Source: Arch_AWS-Application-Discovery-Service_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Migration-Transfer/64
@@ -1485,6 +1506,7 @@ Categories:
         SourceDir: Resource-Icons_01-31-2021/Res_Migration-And-Transfer/Res_48_Light
         Target: TransferFamilyAWSSFTP
   NetworkingContentDelivery:
+    Color: PurpleHeart
     Icons:
       - Source: Arch_AWS-App-Mesh_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Networking-Content/64
@@ -1628,6 +1650,7 @@ Categories:
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Networking-Content/64
         Target: VirtualPrivateCloud
   QuantumTechnologies:
+    Color: Meteor
     Icons:
       - Source: Arch_Amazon-Braket_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Quantum_Technologies/64
@@ -1666,6 +1689,7 @@ Categories:
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: QuantumTechnologies
   Robotics:
+    Color: Crimson
     Icons:
       - Source: Arch_AWS-RoboMaker_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Robotics/64
@@ -1686,6 +1710,7 @@ Categories:
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: Robotics
   Satellite:
+    Color: CeruleanBlue
     Icons:
       - Source: Arch_AWS-Ground-Station_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Satellite/64
@@ -1694,6 +1719,7 @@ Categories:
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: Satellite
   SecurityIdentityCompliance:
+    Color: Crimson
     Icons:
       - Source: Arch_AWS-Artifact_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Security-Identity-Compliance/64
@@ -1825,11 +1851,13 @@ Categories:
         SourceDir: Resource-Icons_01-31-2021/Res_Security-Identity-and-Compliance/Res_48_Light
         Target: WAFFilteringRule
   Serverless:
+    Color: PurpleHeart
     Icons:
       - Source: Arch-Category_Serverless_64.svg
         SourceDir: Category-Icons_01-31-2021/Arch-Category_64
         Target: Serverless
   Storage:
+    Color: ForestGreen
     Icons:
       - Source: Arch_AWS-Backup_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Storage/64
