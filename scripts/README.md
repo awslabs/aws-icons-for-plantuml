@@ -13,7 +13,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 - Install Python 3 and packages from the `requirements.txt` file.
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `AWS-Architecture-Service-Icons_20200911` and `AWS-Architecture-Resource-Icons_20200911` to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_01-31-2021`, `Category-Icons_01-31-2021`, and `Resource-Icons_01-31-2021` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
@@ -24,16 +24,21 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-      ├── AWS-Architecture-Resource-Icons_20200911
-      │   ├── Res_Analytics
-      │   ├── Res_Application-Integration
-      │   ├── Res_Blockchain
-      ...
-      └── AWS-Architecture-Service-Icons_20200911
-          ├── Arch_AR-VR
-          ├── Arch_Analytics
-          ├── Arch_App-Integration
-      ...
+    ├── Architecture-Service-Icons_01-31-2021
+    │   ├── Arch_AR-VR
+    │   ├── Arch_AWS-Cost-Management
+    │   ├── Arch_Analytics
+        ...
+    ├── Category-Icons_01-31-2021
+    │   ├── Arch-Category_16
+    │   ├── Arch-Category_32
+    │   ├── Arch-Category_48
+    │   └── Arch-Category_64
+    └── Resource-Icons_01-31-2021
+        ├── Res_Analytics
+        ├── Res_Application-Integration
+        ├── Res_Blockchain
+        ...
   ```
 
 ## Configure to Build Icon Set
@@ -51,7 +56,6 @@ In the curated `config.yml` file, each AWS service is mapped to it's primary cat
 Next, install the python packages from the `requirements.txt` file. Depending upon your operating system, this may be through `apt`, `yum`, or `pip install` if using a virtual environment. The two requirements are:
 
 - [PyYAML](https://pyyaml.org/)
-- [Pillow](https://github.com/python-pillow/Pillow)
 
 For PIP users, simply run `pip3 install -r requirements.txt` in your environment.
 
@@ -66,12 +70,13 @@ Prerequisites met, exiting
 
 ### _Optional_ Create New `config.yml`
 
-If you would like to start from scratch, delete the existing `config.yml` file and run the `icon-builder.py` script to build the `config-template.yml` file with only the default color and size set. You can the rename to `config.yml`.
+If you would like to start from scratch, delete the existing `config.yml` file and run the `icon-builder.py` script to build the `config-template.yml` file with only the default color and size set. Then rename to `config.yml`.
 
 ```bash
 $ ./icon-builder.py --create-config-template
 ../source/AWSCommon.puml
 Successfully created config-template.yml
+$ mv config-template.yml config.yml
 ```
 
 To process all the files, run the command with no parameters. NOTE: This will take at least a few minutes to complete, and the script with launch multiple Java processes to generate the icons.

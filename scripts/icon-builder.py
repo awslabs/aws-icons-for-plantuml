@@ -21,6 +21,55 @@ import yaml
 
 from awsicons.icon import Icon
 
+# TODO - refactor to param file and/or arguments
+
+# This list are the directories to parse, what type of files they are, and globbing/regex
+# to parse and process. This addresses the changing nature of the assets package.
+
+
+dir_list = [
+    {
+        "dir": "../source/official",
+        "dir_glob": "Category-Icons_*/*16/*.svg",
+        "category_regex": "[^.]*_(.*)_\d*\.svg$",
+        "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+    },
+    {
+        "dir": "../source/official",
+        "dir_glob": "Architecture-Service-Icons_*/**/*48/*.svg",
+        "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+    },
+    {
+        "dir": "../source/official",
+        "dir_glob": "Resource-Icons_*/**/*48_Light/*.svg",
+        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+    },
+]
+
+
+# GOOD
+# dir_list = [
+#     {
+#         "dir": "../source/official",
+#         "dir_glob": "Architecture-Service-Icons_*/**/*48/*.svg",
+#         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
+#         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+#     }
+# ]
+
+# GOOD category
+# dir_list = [
+#     {
+#         "dir": "../source/official",
+#         "dir_glob": "Category-Icons_*/*16/*.svg",
+#         "category_regex": "[^.]*_(.*)_\d*\.svg$",
+#         "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+#     }
+# ]
+
+
 TEMPLATE_DEFAULT = """
 Defaults:
   Colors:
@@ -148,85 +197,68 @@ def copy_puml():
         shutil.copy(file, Path("../dist"))
 
 
-def build_file_list():
-    """Enumerate AWS Icons directory.
+def build_file_list(dir: str, glob: str):
+    """Returns POSIX list of files
 
-    Format for files since current Release 7.0-2020.09.11 Asset package:
-       source/official/AWS-Architecture-Resource-Icons_*/CATEGORY/Res_48_Light/Res_SERVICE-RESOURCE_48_Light.svg
-    and:
-       source/official/AWS-Architecture-Service-Icons_*/CATEGORY48/Arch_SERVICE_48.svg
-
-    Since the 7.0-2020.09.11 release, process from source SVG files, use the "48" directories for consistency
-
-    where:
-
-    CATEGORY = grouping of similar services or general icons
-    SERVICE = Specific AWS named service (.e.g, Amazon Simple Queue Service)
-    RESOURCE = Resource of product (e.g., "Queue" for Amazon SQS)
-
-    Returns list of files
+    :param dir: Starting directory to evaluate
+    :type dir: str
+    :param glob: glob pattern for file names
+    :type glob: str
+    :return: list of files
+    :rtype: list
     """
-
-    service_files = sorted(
-        Path("../source/official").glob("AWS-Architecture-Service-Icons_*/**/*48/*.svg")
-    )
-    resource_files = sorted(
-        Path("../source/official").glob(
-            "AWS-Architecture-Resource-Icons_*/**/*48_Light/*.svg"
-        )
-    )
-
     return sorted(
-        resource_files + service_files,
+        Path(dir).glob(glob),
         key=lambda path: str(path).lower(),
     )
 
 
 def create_config_template():
     """Create config_template.yml file from source icons"""
-    source_files = build_file_list()
-    files_sorted = sorted(str(i) for i in source_files)
 
-    # Prep to compile categories and icon entries for each
+    source_files = []
     category_dict = {}
     dupe_check = []  # checking for duplicate names that need to be resolved
 
-    for i in files_sorted:
-        # Get elements needed for YAML file
-        category = re.sub(r"\W+", "", i.split("/")[-3].split("_")[1])
-        target = Icon()._make_name(i.split("/")[-1])
-        source_name = i.split("/")[-1]
-        # For source directory, use only relative from this script ./source/official/AWS...
-        file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
+    for dir in dir_list:
+        source_files = [str(i) for i in build_file_list(dir["dir"], dir["dir_glob"])]
+        for i in source_files:
+            # Get elements needed for YAML file
+            # Exception is if the files originate from the "Category" directory
+            category = Icon()._make_category(regex=dir["category_regex"], filename=i)
+            target = Icon()._make_name(regex=dir["filename_regex"], filename=i)
+            source_name = i.split("/")[-1]
+            # For source directory, use only relative from this script ./source/official/AWS...
+            file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
 
-        # Process each file and populate entries for creating YAML file
-        # If new category, create new one
-        try:
-            if category not in category_dict:
-                category_dict[category] = {"Icons": []}
-        except KeyError:
-            # Initial entry into dict
-            category_dict = {category: {"Icons": []}}
+            # Process each file and populate entries for creating YAML file
+            # If new category, create new one
+            try:
+                if category not in category_dict:
+                    category_dict[category] = {"Icons": []}
+            except KeyError:
+                # Initial entry into dict
+                category_dict = {category: {"Icons": []}}
 
-        # Check for duplicate entries then append to
-        if target not in dupe_check:
-            category_dict[category]["Icons"].append(
-                {
-                    "Source": source_name,
-                    "Target": target,
-                    "SourceDir": file_source_dir,
-                }
-            )
-            dupe_check.append(target)
-        else:
-            category_dict[category]["Icons"].append(
-                {
-                    "Source": source_name,
-                    "Target": target,
-                    "SourceDir": file_source_dir,
-                    "ZComment": "******* Duplicate target name, must be made unique for All.puml ********",
-                }
-            )
+            # Check for duplicate entries then append to
+            if target not in dupe_check:
+                category_dict[category]["Icons"].append(
+                    {
+                        "Source": source_name,
+                        "Target": target,
+                        "SourceDir": file_source_dir,
+                    }
+                )
+                dupe_check.append(target)
+            else:
+                category_dict[category]["Icons"].append(
+                    {
+                        "Source": source_name,
+                        "Target": target,
+                        "SourceDir": file_source_dir,
+                        "ZComment": "******* Duplicate target name, must be made unique for All.puml ********",
+                    }
+                )
 
     # With the completed dictionary of entries, convert to an OrderedDict and sort by Category -> Target
     # The sorted template file makes it easier to review changes between new icon releases
@@ -297,9 +329,28 @@ def main():
     # Copy source/*.puml files to dist/
     copy_puml()
 
-    # Build and validate each entry as icon object
-    source_files = build_file_list()
-    icons = [Icon(filename, config) for filename in source_files]
+    # Build icons from directory list
+    # for dir in dir_list:
+    #     icons = [
+    #         Icon(
+    #             posix_filename=filename,
+    #             config=config,
+    #             category_regex=dir["category_regex"],
+    #             filename_regex=dir["filename_regex"],
+    #         )
+    #         for filename in build_file_list(dir["dir"], dir["dir_glob"])
+    #     ]
+    icons = []
+    for dir in dir_list:
+        for filename in build_file_list(dir["dir"], dir["dir_glob"]):
+            icons.append(
+                Icon(
+                    posix_filename=filename,
+                    config=config,
+                    category_regex=dir["category_regex"],
+                    filename_regex=dir["filename_regex"],
+                )
+            )
 
     for icon in icons:
         if icon.category == "Uncategorized":

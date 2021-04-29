@@ -19,38 +19,43 @@ PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. Al
 class Icon:
     """Reference to source SVG and methods to create the PUML icons"""
 
-    def __init__(self, posix_filename=None, config=None):
+    def __init__(
+        self, posix_filename=None, config=None, category_regex=None, filename_regex=None
+    ):
+
+        # Full path and filename
         self.filename = posix_filename
+        # Config filename
         self.config = config
+        # Full filename without path
         self.source_name = None
+        # Category for icon to be associated
         self.category = None
+        # Name for PUML removing _, -, etc // called by self._set_values()
         self.target = None
+        # Color to apply to icon
         self.color = None
+        # Regex patterns to extract category and filename from full POSIX path
+        self.category_regex = category_regex
+        self.filename_regex = filename_regex
+
+        # Regex patterns to use category and _make_name
 
         # If config provided, this contains the tracked categories, and is used set the other values
         # for the object.
-        # If no config provided, used to access internal methods only
+        # If config and name not provided, used to access internal methods only
         if self.filename and self.config:
             # Source name and category to uniquely identify same file names
             # in different categories to apply color or other values
 
             # Source filename only without directory
-            self.source_name = str(posix_filename).split("/")[-1]
-            # self.source_name = str(posix_filename).split("/")[-1].split("_")[1]
-
-            # For category, strip leading "Arch_" and then all not alphanumeric
-            # examples:
-            # Arch_Database -> Database
-            # Arch_Developer- Tools -> DeveloperTools (the dash and included space)
-            # Arch_End-User-Computing -. EndUserComputing
-            self.source_category = re.sub(
-                r"\W+", "", str(posix_filename).split("/")[-3].split("_")[1]
+            self.source_name = str(self.filename).split("/")[-1]
+            # temp category to pass through and set (actual value could be Uncategorized)
+            self.temp_category = self._make_category(
+                self.category_regex, str(self.filename)
             )
-            # self.source_category = str(posix_filename).split("/")[-3].split("_")[1]
-            # self.source_category = re.sub(
-            #     r"\W+", "", str(posix_filename).split("/")[-3].split("_")[1]
-            # )
-            self._set_values(self.source_name, self.source_category)
+            # print(f"icon source: {self.source_name} ==== {self.temp_category}")
+            self._set_values(self.source_name, self.temp_category)
 
     def generate_image(self, path, color=True, max_target_size=64, transparency=False):
         """Create image from SVG file and save full color without transparency to path"""
@@ -62,11 +67,11 @@ class Icon:
         try:
             source = self.filename
             color = self.color
-            print(str(source))
             result = subprocess.run(
                 [
                     "java",
                     "-jar",
+                    "-Djava.awt.headless=true",
                     "batik-1.13/batik-rasterizer-1.13.jar",
                     "-d",
                     f"{str(path)}/{self.target}.png",
@@ -98,6 +103,7 @@ class Icon:
                 [
                     "java",
                     "-jar",
+                    "-Djava.awt.headless=true",
                     "./plantuml.jar",
                     "-encodesprite",
                     "16z",
@@ -162,7 +168,9 @@ class Icon:
         # Entry not found, place into uncategorized
         try:
             self.category = "Uncategorized"
-            self.target = self._make_name(self.source_name)
+            self.target = self._make_name(
+                regex=self.filename_regex, filename=self.source_name
+            )
             self.color = self.config["Defaults"]["Category"]["Color"]
         except KeyError as e:
             print(f"Error: {e}")
@@ -171,15 +179,18 @@ class Icon:
             )
             sys.exit(1)
 
-    def _make_name(self, name=None):
+    def _make_name(self, regex: str, filename: str):
         """
-            Create PUML friendly name short name without directory and strip leading Arch_ or Res_
-            and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
-            
-            Strip non-alphanumeric characters.
+        Create PUML friendly name short name without directory and strip leading Arch_ or Res_
+        and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
 
-            The name input should be a complete filename (e.g., Arch_foo_48.svg)   
+        Strip non-alphanumeric characters.
+
+        The name input should be a complete filename (e.g., Arch_foo_48.svg)
         """
+        name = re.search(regex, filename).group(1)
+        new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
+        return new_name
 
         # Source name ex: Arch_AWS-Storage-Gateway_48.svg, we want "Storage-Gateway"
         if name:
@@ -199,6 +210,18 @@ class Icon:
             # Replace non-alphanumeric with underscores (1:1 mapping)
             new_name = re.sub(r"[^a-zA-Z0-9]", "", new_name)
 
+        return new_name
+
+    def _make_category(self, regex: str, filename: str):
+        """[summary]
+
+        :param regex: regular expression to obtain category
+        :type regex: str
+        :param filename: full filename path
+        :type filename: str
+        """
+        name = re.search(regex, filename).group(1)
+        new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
         return new_name
 
     def _color_name(self, color_name):
