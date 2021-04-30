@@ -8,7 +8,7 @@ bxH9GUW1qKgfyqoTPuWN1inqbNBLxnSzljEBmvN_adFByyMg3XFxVdbu0Yzw1dC-g8xXePHI-Am0w7ba
 }
 
 AWSEntityColoring(IoTActuator)
-!define IoTActuator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTActuator, IoTActuator)
-!define IoTActuator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTActuator, IoTActuator)
-!define IoTActuatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTActuator, IoTActuator)
-!define IoTActuatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTActuator, IoTActuator)
+!define IoTActuator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTActuator, IoTActuator)
+!define IoTActuator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTActuator, IoTActuator)
+!define IoTActuatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTActuator, IoTActuator)

@@ -6,7 +6,7 @@ eVylyT7lKxKi8Tdy1mB-J3RzkR9z7XNvbaN0LOTFClaVz4rn_kVHzb_RVyt_2unVBn0_gByxBm
 }
 
 AWSEntityColoring(EC2M5aInstance)
-!define EC2M5aInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EC2M5aInstance, EC2M5aInstance)
-!define EC2M5aInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EC2M5aInstance, EC2M5aInstance)
-!define EC2M5aInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EC2M5aInstance, EC2M5aInstance)
-!define EC2M5aInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EC2M5aInstance, EC2M5aInstance)
+!define EC2M5aInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2M5aInstance, EC2M5aInstance)
+!define EC2M5aInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2M5aInstance, EC2M5aInstance)
+!define EC2M5aInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2M5aInstance, EC2M5aInstance)
+!define EC2M5aInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2M5aInstance, EC2M5aInstance)

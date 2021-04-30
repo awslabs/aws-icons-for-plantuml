@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $FreeRTOS [64x64/16z] {
-fPM7RiCm34HFW-Ea___VmW4Xgr4y05rta_Tmf1Ud-4ti8jmKS5F0JG4t1TmKS5F0JG4t1TmKS5F0JG4t1TmGB7mjRs8XM7Z3gwYxhxoR2UHv145LDLzu0V35
-ypSFe8u6ZH5NhOEV_hdoLUGSeJMEs3UlCUuS6Vy8lbtoZYIIO1Uy1z-k-WliaDQrVoY3Rp_tvnLmqe6wx4z6WnQ2vVWfa539YWJep8kgUIJujimlICgCb91T
-4sIPFz8YNxmX-MS4rEDdWZxmpKef9v-Inyyu4ZZvN8gklCxx4oXddWfPzXVyoEZlai3_l0UpzfyIl070L_y40Fh0E_J3m2YeCryWhaXtlEMSFxn_McJadFNW
-zNWXawom3vzorbSyoi4NFFEZVvlx8_Yl_eVbaczZVnCV-pC-yuU0SVnEdeuaJlAQLm3GE9KLyf-lK7uIvy_5-Qij11asyuRCI9o_L_r3u82Tl07EoDFy8J2W
-8lYAP7pYQQO7Fnfa84bAae3id7XHlTrV26Y86ATSxSzL1S670CLJiWBEYVldpVoHWsVEN7WZUSj7xdWkFAF_bAAibLguzX-2lkxlp8IjpzdWGz3eSVpk1N7y
-I3BuFirVxJ4LnaZm_UHVPV0CVWXC7oEYF1DyRpVXNRnl2lgce6yA-gQWRmhwfg1l2lgce6yA-gQWRmhwfk0F
+xPK5jjj03017sXNT_y25Jo6hthZSUiB9pdkYoFLdS79oCiS2izM39M9JpWZ3QXV38dBhUsZyfNFfFX-_ZtZqftis-T_v3k3tVjnfhP-8kv2jtyT_EHfO4_zE
+NNB2rrUOsPxh-nSWpAg9G3Jzw_Ct94eHGIi4Ux9-WMPLJPXVOrDYpuynzEABvDlhoqkAN7mT8tRgPtXT--NO_Ra-_ZIXRlr2B1Vp3u3x-05YpHUYZ7djJwm2
+-PRlglBYvykpegh-rNTLHL_CV7aMLL_o6L_zGUFlnl_kD_7lrk_Yz_Nh-tVnk_xry-FOhM_unhb-VfMuzWDjvhVv_oJ4nGyadznV0VFTdyZ5iSNzdmfY8YQW
+UMJ_Es_4mVtF294O7Dd_z_rlyZ_gByK_lEOi7oln7xz-7hz-tnFCs6NszKkMoEhm9Uh7S79oyXa
 }
 
 AWSEntityColoring(FreeRTOS)
-!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, FreeRTOS, FreeRTOS)
-!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, FreeRTOS, FreeRTOS)
-!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, FreeRTOS, FreeRTOS)
-!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, FreeRTOS, FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, FreeRTOS, FreeRTOS)
+!define FreeRTOSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, FreeRTOS, FreeRTOS)

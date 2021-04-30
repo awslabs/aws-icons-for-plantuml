@@ -1,18 +1,17 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $CloudSearch [64x64/16z] {
-fPHNUgOm34MlP5My__rEhCzX81XIE0-atcCLy-UAUC3Fv4j1lXJaIq6-5EHBGRuKh9CcZJzeOjy95c5b38WmO7iKRFa50T0qebG-NAGFWkqiC0BPUGO2aDyA
-jfEW0NeTeW1w9zYE0WPdOS8448kNm0djHh0T10If8mKZsvW1aCI0xmHRCK_NEK3MoCA5vlWQP2dOTe7KwS5WpmCwQ-Vr3BP9EdZ42Pfdee7Z0u8_vGar0bXE
-t3ooa18OsaFUwbo6xOSEIAC4rJp3x_D4erT85WQmcWg1QXWLTRJRl4D73vI5LcoAndS1hW9kymqVt-cilaOvSP2hfy0Y57gN9wf75ep87GMW6MWP0Rx91tGy
-PAlPGV80iqMMCnWtUOEDyhqkai7pWi8p1RxELrIGTP76KHSCDYIspbUqeKe19Ayuz2a_eaorI8vSK4Cnw7Vd4t9xo5lUz1z3CXUnFTIVkPw_bwI-AS5oVbAR
-MUxVHkjMYrmA6c8ywljhVaCR3wuxj1I0vsDmpJFcIq28bQ1URzytUybNtu6sEMWb8ChFzekl-GJN6dqpeAaTgTkhcG7AdNE-eiD2kKN32VfyeGMM5q7V2vYt
-Bp--3pyo3evnFFB8p7yAj6wELVixny-W1hIheEy2XbS5iBD0G55VMbi8-Yv8rEg2G9PxNW6k8a2P2q7_BuXPkn70Qcug393FUEHAq7V1eNPhG45IwTd3Ij2F
-WY18rdUrWyZvBOChlX3qNL0qGBSpqO0ABGNzYy09QBw7qnh0qMu5_IWeZ05m4rLf39GjRmNz8gX32GL9hV91q1U2_UfjnQEWtmcAUu7i-Jy9637pVnCuTER_
-A83C_1y4f_F_9cZmTVvx0NlwOlu_5GW6Y_t_L10gwlcOVnQSw2y5_QMWlnJqbuB-Kl0F
+xLM7hYmh37Cg8V__mK-JYRH50pllzkPpjX8xTW1j_dduXpbCc9dLnXUGdN60g5va_3-s7HoVvuSm1iZlqmTL-PiWnqsw5ll2aj_opk1vsb0cWDZEna7GMtIj
+LyN15IaDwoNvo6TKhG7SyyimwaJoqO52gzFRjBozCyP-yk0pgUKRfAOo2NF79rJHeqkCQ89L-B4TWLTVHeNj6G9a9Q6rA8XDUsgHLWFRS2LGSVYWniR0W9L8
+qulMGd7OgU78UWArP1q-m3CR0GgFr6F9uHlxZ_QCfhS3U4vevbm6YCD-z16fsWUOn_5C9RoCN_QYErwS53iMjOrjLuCHLnsy1tI5eWewhwuI-ffV4QiFNtgS
+q3AnwqzzZA_vLcFQvc-RLmZundyj6ER7YjYe3_YQBptX1UfaWUiCNGBSJzVWKpwI4TVslI_P9bv0Se1YTJzq5RylQDqo1yJy2QFsnxjcWQBc1CqCmGku3bMB
+B37nE7qpnXCYuv3D2UG6LiFnY_W3bLi0oGqOeuhVN4uz9GsgMu5vjWa2-NpvzPrbZ3Ft0j7UdG0s7yED0HhrNOrWB_3mxe8JfADtf-WV7H2qwiuzY7uVN1bk
+24m1xFqx1OfqHo070J8UP1T0ufaaUu5q1i2YPYgCLhijq4q91TRUoZS1pO-OivdvHGA5ZO1zdG1ZVfL0mFDh12OqlqAW-d-DW23o2mKuPjG6VXaC1pI_665g
+aRy6_k4_
 }
 
 AWSEntityColoring(CloudSearch)
-!define CloudSearch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CloudSearch, CloudSearch)
-!define CloudSearch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CloudSearch, CloudSearch)
-!define CloudSearchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CloudSearch, CloudSearch)
-!define CloudSearchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CloudSearch, CloudSearch)
+!define CloudSearch(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudSearch, CloudSearch)
+!define CloudSearch(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudSearch, CloudSearch)
+!define CloudSearchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudSearch, CloudSearch)
+!define CloudSearchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudSearch, CloudSearch)

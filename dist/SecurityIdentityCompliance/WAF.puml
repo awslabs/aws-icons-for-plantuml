@@ -1,17 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $WAF [64x64/16z] {
-fPM9eiIe2aHBKA3q_x_tlPc97UphDREaUb_E2K8MdX8FyGnV2lXIm9S2lXJmfQ2_5FINWlvIq9y5PdyZwBUWAlUKmcT1lmMAdmAtLaepVnBqWo2QuewsoFZ6
-xu9G0DBCI_5M1O1-C8N_u7T11SJkzPDX0jI9Qtppkq0WmIlkdpS2cVY1Ju4RzqIpn3V-F8KK9BxoPq6ru9h4L_ue203roz0IF_4IAJ00QDzBS7daAuoaelAg
-f04Igy1G7_Y0T9AiViqChG7bIo3mCryHdwFHB4We2o1Suj0ZJ-XzD1R026M5mBX4SEGRV9b2GOFIOQLmYQ6TU4MEqM05g5SFF98Fo8c7zblWi03yUgsbf45m
-u0CjM-5ej48sECjN4nlyTzxXouVPDGKfG85b0uo_yeRuwYN_3EGlFg0vmKRkl4k1oESpPzCRZ2oeb39f4HGn_Wrli7wTV-QJufldS_q2zZvhPJ3vptVaiNyv
-IbRarDR-fM2iyxCVV9V2cIBB_9Y2CVeAVL9aViCPLCueo1ICHQ1OthBtdbJB-KEu2COYQF3iHRtuFilVsZS5On4GkXHW5z-lxbcM7rmo_ifIzGmBb5T769Ah
-3oXtVWfYAO0Aj58wNO56siKfVEDJKDT3A0I00D2uJ-k6ofrFWKHVuegYnlNI9ZpmznIgzIqfu8dF9MW_2vxuSSRFWh5cuk6_2JnISE3drWNA2Tq7Q2WaApZm
-d-8he1SeyXd4VKtK8qzeRWrGyoWbt1JJbuBarx3diT04TwJnrCInfTy9jrAQnzCKnbcGw_yfg1j_4lWsocr-1y4n6_zAC5uAnal1U2aOBmNZfM2y58oNWly3
+xPO75kCm24G7a6Ztl--sy1oSsClML_FJ8y-0KSt_nuSFPlchRCbtcFDN4RmQk2cHcl-9GQZWG3HQIyu6lW38LYCotG9WUJKj-6GG2n3hzsy2h7Z8PRm51bUC
+zECBWqTv6RZc1Ueb7mrkwVBPO6lSosU3GDMiZx21O7yQ603iFE4S-HCMx4S6gpBPm5cWM7cFL-HbbO2-6GWyx-XZopGoiP80EOUuJo3QfGHeakI6GCy9HDwm
+OIqLWaBIe4JPCEoyGT0BPGIiTEY6zP3tWw2t63G0UtnkukXHhd7iym_bI8KbCS3jBZqlCLZNQzKXaW66zSikqJBkKGASoK10klC5nWJcmu6eF2sJi9AfrCmW
+jaclqASDKQJWf9_oPxIIHlIgEtIk7-IetWEXeNuLhElxza7SAZkF7-BpFu4rZf_U8eYJIc4joZn_x8Soi2iyKSpp9vgrG9_nGw3Z_3st1K6YSdN6QZ7czQjY
+OXCzzYxDj5KXV5m_2sS0343yMFmDQrg_6ouWqUXR6qSEBFtjhMtUf6Q3MLu6izmjBp0lWp4wG-Br_1027ZDOm_cb3ERXum90r9p8JGKr1aQ3F8ZDEE0T5qKS
+STj4s_ptUc4-lyh-dVFp_-F3Xwy
 }
 
 AWSEntityColoring(WAF)
-!define WAF(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, WAF, WAF)
-!define WAF(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WAF, WAF)
-!define WAFParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, WAF, WAF)
-!define WAFParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WAF, WAF)
+!define WAF(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAF, WAF)
+!define WAF(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAF, WAF)
+!define WAFParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAF, WAF)
+!define WAFParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAF, WAF)

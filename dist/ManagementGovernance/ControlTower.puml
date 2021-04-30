@@ -1,16 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ControlTower [64x64/16z] {
-fPG73YGf34K_mJXm__kkRD5YPmONalYTAhtNO8B-6yd3_qGV1Veeq4U1FWhqKQ2F0dqKwAD07mLw4T15eD-2Yluji0jUBWApJxpTMc1VWeOc1VHLHBi847Wk
-i9k0leVHSi5W_ug3N62fOA2iCWAvm3A1eCWwP9ISJmN3SQxnFIvyLWF6hnKfVnICmWjtmRfoustZ24Y0XkR7eU8BlmMq6jsOmDHNLqRAvpKWyEzGzCg7W4Lt
-EaXtc6-ywK3TD3nTLwI0R_oQDj66YjhG2vfVM4Nyv5itey2TQQ3eVyDGBQ5b4gazunlGemO2i2ggEk-i7uH0fGBzp3Vq5W81sXZTlnhwe0eYgYvml5Vq4n_h
-3M2pYdEwHZCOu0DlX5eml0CLZPdGcJk8kMBuLuif5G-T-qy8F0Iq-oz-q08F0KPMVt9SGq3EDkUbUlrRuEA2ePhmdW4EIVnLgQW0xNN5woZd1I4m5umAeF9V
-opAIyYQ5BRBNpr_BChBvD8jF8f5v99c3BqJWtjPkVXJCaq0BNA0L_cg1e-f9C8y20JG40DhUpG-2cGZuDv6QHaZEDPY9u3UHkdv6PYhWyfi7eqWg23oh0U-5
-cVEve0nJCkj5BtmYKAzVDzCBdmigYWlimcU22hBsBPXV0aALWk67ANyH8F1SC6y2_Xqc_4KW-_3EXo1FmZy9vgDWFWhces0-2kQZO3uAvgFWFm
+xLJPskKW28k08EVz7tY6Dlz-jkhiqrpuTKii8NBvWt7YXA_H5NsDtj1Nw9Qo863GR5Ymm00iEMWBz1Yry6A23jal4fWGIBJaPV3o6BmuGskDE4hcVWEGdAcz
+3T8fm2TFWWKFG64GNZylqEcNXcDuPob-f7p2ttRD8x4XalaZnZWG6yOVxyvVU-p1e7MrkK0L9j2weObtgr3xxjt-eTRkVQjVgmRPk-2Nb7wJ3jXBREAIqDs_
+R58NUmvIW7wBRWfZtzsj5aLt5tWjaXkztvX8ZfO9H0bTHT4wsiqeTKY3qxW8XqKOF48GjIX7MaFSY1tOxPIwWB1-oCPxxMdSpAqpPvl93at7I2c2wai6ZVGR
+y4q-EVq52lJFQRuDzevm0I1ljq_DeT7YlINlRlpu67FCpTxOs-2EOReh7H3Ajfie4B3l3dcMpOF6i4FVZkK1WM2Ge6_JV6A6P-VLSKGBNdcRQGA3nDXCO3JV
+_jz8dp0W1JPPFkrl9J2BcbIw8D0XewAu8805Ei_l4iRbv-74YMy
 }
 
 AWSEntityColoring(ControlTower)
-!define ControlTower(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ControlTower, ControlTower)
-!define ControlTower(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ControlTower, ControlTower)
-!define ControlTowerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ControlTower, ControlTower)
-!define ControlTowerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ControlTower, ControlTower)
+!define ControlTower(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTower(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ControlTower, ControlTower)

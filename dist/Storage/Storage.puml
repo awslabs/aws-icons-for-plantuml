@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Storage [64x64/16z] {
-nTHNWkCm38DXoaKYwBt_UNTID8Ri8E7q_raVKbpQd-VOyySzzH0-CL799mQKpmzedn_GFZ_0uOi3-E80lZXmrkiXfnA-sg5930Y_MkEg6j3U-JzeDki1xR7x
-jUe1xR5xLmFQBvVMxjM0zkNIrFspWGYCLVFXHh9vVMjM0n4XFQw-jph5Fix-TiAn7wsZT_PnydPj6Uw3qJlxEFfMBpK0qZlx63qdlRCFwI6ziu_17tvanWTx
-6wlkhdsFVAqhvoaVkp-Myo4zSZwaHy9xkxHORLJjsL8lDUsB9IhQs-AgrfljcOzBaBdxyje7P3b_6V0Xz78-CDlGX5xEXosDckt3VWMrvdn9UQJyujGoU6Yl
-RiKoUB3V7dhK8Hyzs6_iny2n1_jD-f0Ux3VfGtgmtwGFwS5-apwElg17_ZOm5mVb3sesuptsbm6KpEldvEaRjFegGFajP8oq__W0-Vo0zla1zia1xVC3skS7
-jCyFiFydR6B4sv_t7m
+xTT5cWGX44JXG2ep-Fh-zvrfX_9ejt__i1NfJxSf5zji-tA5J-n_lVM8lQ4dghspua0KUvOAaH2lwiqGh-gB8OfztkgE_NO1hGzRyTWt2-ZlP_yIej3NS6H2
+pxsonHsNUkpaSaQfznrUtBSUtxCbzsYvsbkBOZ_m5ZrzAyDyX27x5gVxW1N2T8_4HGapVIwByeDwDkG-eX7L7jah6NBVbKht-3wpefy_e17KdjQWrWzzHH_M
+z66wJy6vm4EQxXcmA73GLzmM-E__NVdrLywlJ_S7
 }
 
 AWSEntityColoring(Storage)
-!define Storage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Storage, Storage)
-!define Storage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Storage, Storage)
-!define StorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Storage, Storage)
-!define StorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Storage, Storage)
+!define Storage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Storage, Storage)
+!define Storage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Storage, Storage)

@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ExpressWorkflows [64x64/16z] {
-fPG7TlOW40D5NottFsygJbaU-WkJzjhCPrl4tB4pOuEN0Lu6U1dWPO2N0Lu6U1dWPO0oC7hN0UqNlD5aW8ACqblI0UUHZaepIr2tuET0nI3DAeO8kBlqUVPj
--IwkdxG4DQE_8vvVJsXsPFakzvC7oLM0Xcpw9BeEeF0TvSV0-APtvFw38Vmdq20OmlTdzTO_Q1i5NVc-_ED_OvF-kl62iTW2say8L0P64VTlAFqd5OqHjL-3
-_PgnON13-1c_pq465mKxku_KVu721L89fDqd8dtf7ItUGagRxpR2VbnKM7mhe_x3_Yc9S_3d_Mq_1nd_i7z7tryAv_qVllOlo16qtVS2_yMpVyixnh_QN_4t
--qksvsU_zpDt1deUMs1we8B-47qCni2SmdVfyzEVqIydSl3vxiT0Xy0O0pC40YYKs9G1GwPcYW0BtcZQ5u62Edf6b_uvC53TdGdIFmSQxFcZ_ONmNVZ7W3tN
-xszeVt5uVYu2ynVxVdZNHM2gW7CC-eFs5ouu-5U1UHcObu5v6PYNWNaPc9U1UHbu1G
+xTO7TiGW30JG0O7Q_U-RNgt8Jv2UxDzUg8Dj_DDSN2YB-JOZt63VHHZ2VRi2mN1tQ_0z4_huyfNbO_-_SlvYVjFtARhvUu1ybRo4BYzeARLS9Sa1pWn8fRnv
+Wa_BczmXo0DRAzzmCCBCafv5JOV1pkMZ9NwkwyW-4o8BiuV6hu2UVw63zbRv8_Px0WvJtJrGUPsVvWj2CHVoRorP1xNyBQu3GYt_h37GGlu3_GXp8N_kaRdN
+yiyLyw-B-GVIzRtdZwyeJvbUASyuOJlNZw-zViNhvw_U_rpsF_p5--UwYujh
 }
 
 AWSEntityColoring(ExpressWorkflows)
-!define ExpressWorkflows(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ExpressWorkflows, ExpressWorkflows)
-!define ExpressWorkflows(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ExpressWorkflows, ExpressWorkflows)
-!define ExpressWorkflowsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ExpressWorkflows, ExpressWorkflows)
-!define ExpressWorkflowsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ExpressWorkflows, ExpressWorkflows)
+!define ExpressWorkflows(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ExpressWorkflows, ExpressWorkflows)
+!define ExpressWorkflows(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ExpressWorkflows, ExpressWorkflows)
+!define ExpressWorkflowsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ExpressWorkflows, ExpressWorkflows)
+!define ExpressWorkflowsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ExpressWorkflows, ExpressWorkflows)

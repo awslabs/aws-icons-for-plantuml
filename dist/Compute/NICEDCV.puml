@@ -1,15 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $NICEDCV [64x64/16z] {
-fPLLekmw30HRs3hxN_23uR5YNN1zfog9aH_axn3Vy330mm0F0pmCy330mm0F0pmCS0g4ky-1u3OGYXlYKu2xW0BY4Qu0DeN95qW-S42tWQrk-KOViSRELnZp
-0zi6U4L0oIMWUGcl42INWC9_stSOkGR41h-_lWKsi9DGFlaRtn6S0xEl8EV0x4Ev3IW0iT5F6BS1LHL09Z_WQt71uFcafk5xCldL_UGOyC_lhnQm2vzVEkBB
-h-uF0OL4Vlkr-BnYSvPK2nXo5mXfPrcrW6zyXWAM2zK2WTZPcetw2XZ9X3SvNHQx-KK642HXgsq0B4bEVZaaILAalLeyUMFm0zBsRxe-NlrawnEoR80q0Q31
-Ds5RFn1LpmtyUB5OzADbuoSaafaHZXlgoHKHajT-FRJczgFfsYz6k7j4FXxR7qsVVgDlWNwqJ7uztzFHLtVoYrJyxiLIrm48EmxdYyalEfmDW1zCVbtyGMjE
-VX5h8Di_JNxb4aX1iWTg2iINxcnCVgL0dwzqNEdav1SDK8y84qZmafeW3JV4kQ56I6Pu9BVK31lDdpdrwzIlKxzE_Hhzmy3FOU3dCF0l
+xLO5ZiH037FG_V-73vOBbmxeXBLWqKuychXP_WaNBZ0ZWgFiLDmWFY910zGpmm29Vhf0-NWRWB6RxX-V5DedOB3LP-yJIEYoXiCw-0BkEufcUXmKexGte3Wm
+s-wVXTSMU66rjVqPG2jj4NKEspTL1QGIICJK0Jdob9_bhwpf0Lac-5xRNwpaKmlwER_8aeR-K-eigqyt5N0sJ6ySiyzRv-yV4hx_8QGXH0E8e_kRXYUxfilD
+kSYgj0iWqU9Rk9rVkWAmR4eTuNeyqWM0VPOEv_cn4yQy5HPBRiQ_65k999dXk45ztxP8TMzkU7BP6qqB8zmzWlphRzcOp0QsNytsEkt9h8SpjF9LWf2v1uiV
+3P4KxHSE2itAmLOW8Nqxo5g0ylpSBX0hUWpiSFcE5X_S8IF3gjoj5OeTjWt53ZsB2nU-0G
 }
 
 AWSEntityColoring(NICEDCV)
-!define NICEDCV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, NICEDCV, NICEDCV)
-!define NICEDCV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, NICEDCV, NICEDCV)
-!define NICEDCVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, NICEDCV, NICEDCV)
-!define NICEDCVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, NICEDCV, NICEDCV)
+!define NICEDCV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, NICEDCV, NICEDCV)
+!define NICEDCV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, NICEDCV, NICEDCV)
+!define NICEDCVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, NICEDCV, NICEDCV)
+!define NICEDCVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, NICEDCV, NICEDCV)

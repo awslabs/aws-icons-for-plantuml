@@ -1,18 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $SimpleEmailService [64x64/16z] {
-fPPNWhCm30O_oROQtF-wVq4u56DUcEsRp514Yuw_O7FYOo0-1k9Z83u6ucCWFWRYOo0-1k8bO2hIHEqj49E0jO8Vt6mMYCU0CW2kel-GklqXGs3g6mD5_OGM
-WBK7tdslGFKxLe5gO-1fuSN2Hun1EWG6dT1cOsp04BZhW4RC0je3Czy95ibhOEOpDE8zGDO3eryX4U-1ji_coJUKxIVX4Tf4XcPWz1c-_GHGxZ20zC1-2Yo7
-hcYHFe7ikWb6eFIzGaw1vGWK-EvNlOrH0Idmwmfu-ZtWgD7zC88S0G7Kk-y5TWIMNq1WXnzEQ3rGGUQ7BsY-atu62kBaXpEARtu1kwUVWBsp-Hb0EVaPPDyx
-Lv_XFvOUSBIhxmIGsVRzwbVOtL_281VV2A8089A1mnVeu2yAFVivGIEo_Ftgo-WBxEGhya_t_QoMawzeewzdNq1-lwgSVNbVVu3FUauJx-jlaENmI_r7ENFo
-6tJq0stP0un7Q3Q_X7Z9m1dcXmiAap_u1P61gTy3A4--84-cDp-EyGr-eEJFDp_o_1tzt80CkEse4kaFtmCe_kWRMlw22VqYhOEVC3nzbWwHT3Xz0_l4TvJq
-wzFsr_GPDlENLdD7rkN1BvlljKPC_4G8OB_xpW19Rxtu0f8AwkSTMGg4sWX3OFJ1aQFODXd8dT6W4K68pintI3yPGb3TyvxAb1MBpiGFjD-nI9j4zDjv5Hwt
-m7eFC6nPAlJVhoZHLSrhudWshlU04mYeMogNpra1WJpEf7yFH2j5zqiQg_P74YsbULn9lmT6100avgG_3uHgl99-1YR4A-l7mFeni7uCh1y3wyV0-Z6mVWoi
-7mD_0G
+xPNPUiGW24OFYWfv__VjPaeddHYwtiq_g_eT0YYu_PCUUiXjz3xCVyJsIgZsRzgm2jGsx4MZlGti6tG1jSECGlcg1OLsFzj0lnHueVhfGgLuxhlGLsiTiGm7
+IrVNSi6kpSjb20NB_2kNcUzReevU6A-x5wUQJwxOsliP753raoemKxICm6Zp3uBuNMA5-RUj7AXiK-W0EvfcQ2pNKzpHuESnEXwSu1K_pwm5_-Pm545x2oTu
+eo_S3twEfv_pJ_3B0AX7VjEPwHB3U1AduRSZxmBYy_l8jxC46Ft0kp06m1Y87_X-jeE3SSiRhsCJiTSbx9OVZ4NwWn-7KZTXtF16J_W-NGwvq1F-rd-X-5rN
+aml_msXIF-7gQl-o-btltoRbhAHF9-Ng_EOyTLK_ER-k7wT-ZQyH_cBUBIHY8O_dPFrheUXVMVyi_LqYyRTa_JCyGy_YLoBAbPhclBRiXX4e_fdt0jAtN1rf
+Yip1hFzN2Tg4dlF8nrOeW7uaNKXnfqKnTDHztgb5ed0IeN74vHMQtvL8OQ8oUztOZUpeG9FB_t1JedkTHbqhSQjcQhMElK-LCGhxeDQsVLCTIFOiqHZR_-cX
+Xvu1
 }
 
 AWSEntityColoring(SimpleEmailService)
-!define SimpleEmailService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SimpleEmailService, SimpleEmailService)
-!define SimpleEmailService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SimpleEmailService, SimpleEmailService)
-!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SimpleEmailService, SimpleEmailService)
-!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailService, SimpleEmailService)

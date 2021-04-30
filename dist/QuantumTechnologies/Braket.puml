@@ -1,16 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Braket [64x64/16z] {
-fT89Rkim30JGuQxU_yBVOXJOfMNL-1gWUz-4P1oN-9lOxyHcGMmMn6P1R1R4Pa5i5iHcGMmMn2mBfQ9sBPZgRu5zFrb-SZVqwALWmY4H2dKNk3ltJw1knKrK
-1JWdUEiv_M1W_-J_l1FvoAEtTzvltap1PW8nOwWPmSn0fWfMDHzjtrIEPL8QPE75dgAgw9CBREhzYC9M3n9eV9fuHsRuaObNoDI77E7YetXs9xWlzYy-gbV8
-UryBe0xuWyyR5ryAs0NYlhxVgi10_Yjj_VgrW635jzN-jK30NdrxuMCw_V2jlF_F1O2vY5Zne-2ytqC1Gvq1IFMjFF_JvFBMupVVLlkFACYDlQID_EaDSAUf
-7mLyX6PUXTK02mVeYCvy2pg2ktSw3ukC53_oC3z1FzDtFvz_PEeL-YcMXH-PUS4OWzB7SA_tvzElzt-u_tYY7Dpz_FvdxEOzH_9FSPQ4httbGDzBO_WZStzE
-UyO0So5YZ_IKA6O-aB5Mdlcu11c9c7azmeS_2xZm0CcHFkBp_cEJl9bSyTX_vEOZqeDw3YY0XjCbmCL7yG7jdpbZ1-opEtCMvgV-OL4AokGZ8NabpXkCkVss
-JV7Nx_DmYhMFgtVOL-VJqbxuI3y2YbwZ7ttaXO-BpzC3e8_EheYm_adx9x6ufvq9OHRxzPk_qvRPzMtNjrtVTdtRzMtNjwNVBFZPBFZPBFW7
+xPO55Xmn34DbbEz_uiQPqi9Gol2NuRz4yiBK7yEVpt-O4S6Jzv2FL_EvxH7HnB4Fhuf-asDeYgg2Ri_J8rsGg_w4i7M_4VrnVcR0CXsUQOXCGMP2FZxF6i3s
+THoZyps-wmSy3vY-l--VZHyFT_eYExqrvtx0t_i-q7DVmDebJls0rReVnDxop84V-rRMwPVxOq9Ow-jJUlRh-RtBM_TVTdzl_XHaloiN-rDu6G2lfSz_Xqys
+I_a3mjHQxIy1bXpur87WrMUOUg8d3-WWTjeTuDLF-L8i80E_ityAd0o0xT_F7_0jlgtv1bOZSk0VvDS7_oN_QV--FKDOxVH_lFzjS1JaKlx4e7DvlVhdd_y0
+aYPYMPlFvlBtpo5PNu7cyky_5VAu5iG7UIr_2kn1Fyi_VKXZf7UMb0SE_9ong9CMEtgg0hfT2KGrhasE1XYfhySV1tv-TN_sxhZbUqqO0ZZhfizjLkaVxRl-
+LZq0QNkIVI_QyXY-PnsIfcgUzSVmd_zy
 }
 
 AWSEntityColoring(Braket)
-!define Braket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Braket, Braket)
-!define Braket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Braket, Braket)
-!define BraketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Braket, Braket)
-!define BraketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Braket, Braket)
+!define Braket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Braket, Braket)
+!define Braket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Braket, Braket)

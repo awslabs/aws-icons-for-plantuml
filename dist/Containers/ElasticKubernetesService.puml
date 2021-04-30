@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ElasticKubernetesService [64x64/16z] {
-fTK7pYiX30JWeRZa_WT-nGXfDc2q4VxB5kMR69DYLFgcv5bs6M2N0NOPO9S1TXbWbm5s6M2N0NOCwF5t2h13G0T4Eqe_15WQ80N30rNI0Ci2Aj1w-Fx_D0j8
-T0Egwl0IhMmNaNWfAABJZpCKsGKahNSpOw-ZexLMte0sRZyyBUBa1IWoBzWdYzYsdlYn24bzjFwu3izDI-nbuWigNsj1KPMlf-m5DV6ecpcgnWbLAOddvgNC
-ETBat_j6SwJ9l_I2noJcv7VUDrw17iSU8JAUkQBilAzUqEdOoUsyBrxP2w1c9-ydBq1imybxxlK_Zpfvptmhj8q7xub_l1zEtZFVNthVzm_8I-_P_FIbzsyV
-Hq6P0HL5JjvttZhARA03zMTl3VNnfVAhjphkzwRZOm6vTukQRrzH_Zo9pTIEatUBQZE1TFilnKnhEtZdBq3M6ZVZQ2VlZrdzr_E4lXyINoq2E65gtaCEO1_X
-4K09fCdRphkKaK23-zBngHwryv5GX0EuHlmiybonIqi03tJMtdiiKHVTrhlikMnvx3xJmcS9RHtR9i2JYjNosFOLFai8DWvf-Q6q0AEDiyzB2e_jT--9Uktz
-rlkjzrlljzwF_ZBWSndmkGpu2m
+xPO5ZlGm38MV7TFzB_n3QwrIQwB0Q8Lz0yNF58pVqgjNhlz_VeeBOA4WFQADy9yN0EpRj3CWSl7QWEPxj5nERzx2U2y99P15_F0H2h3jX1xnuCDNat2vNgny
+X36Wow5NlZwhgZugNsEh-fXZktYjjHbP8B0zWo4FGxbBu04F_bJ76fKJZVZsS4FskIepFdrARPLrNWdierunvot3TRNhqlokF2_pqXqLvCaTy8aVymPOdFDP
+YcEUylIGHzuwv_KhNW3xYi_o9-VRVDVymI3RvaD0ta_gktmqy7FssUITxqiLlwS5p7ZFASlD-na0q2k9AH_Uqa9FYz9rqvlC-BJWtVmbtis4KpwXvjt9V0q2
+UrGBIVUPy8XdGAg54h4BAb_AL2o8rzLHAxNyWgNvoV9TB2mjVJL56woj4vNkKsrELRtLginLkq-MROlkUsqUZdUW6SQXSiYTopt6UlNgBm
 }
 
 AWSEntityColoring(ElasticKubernetesService)
-!define ElasticKubernetesService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticKubernetesService, ElasticKubernetesService)
-!define ElasticKubernetesService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticKubernetesService, ElasticKubernetesService)
-!define ElasticKubernetesServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticKubernetesService, ElasticKubernetesService)
-!define ElasticKubernetesServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticKubernetesService, ElasticKubernetesService)
+!define ElasticKubernetesService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticKubernetesService, ElasticKubernetesService)
+!define ElasticKubernetesService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticKubernetesService, ElasticKubernetesService)
+!define ElasticKubernetesServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticKubernetesService, ElasticKubernetesService)
+!define ElasticKubernetesServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticKubernetesService, ElasticKubernetesService)

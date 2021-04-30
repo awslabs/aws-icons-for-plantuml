@@ -1,14 +1,12 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $WorkMail [64x64/16z] {
-fTO7hiCW48HXqe2PlVzvNq5QNbap4EsefNr_RAk1rRfO-ncI0IG3I0QG320PO3B0P83906UW-bxxjHcW1sfvOw_k0NhWLSgj_LvTxVRBTtgWbdjvd3o3Hxb5
-po_V7ZhW_54lFByyTC1vNteTS2wy2ZXV-WuPSBxsr871fVU0uDBBmEIzhRm838wDNmVy8-tNWVc1z24GEA1z38GtmiT0v83mCH0v87m81Avy30IkVGm4BdqC
-31uzj9-1vnFN7jhF05OUUq_XFM3AKteCRyfJUWnlobDw36_AKteCRyfJUjYOyZpmfZmFl2bFvNtAC-kPzSnw7dZJWRtNWRtV1xG_2cYl0zBNSBnTx7NbMtbZ
-DNg6OwiOelUTFaJtoO0b0vOCM39WoO0b0vOCM3Bm2G
+xTOt5WGX30HHncBkVz-rP0LwpNgZIj7lcFA8F2_l0sNwFGoqD_qSfUQEdyDIX9OmjtrQmgBm9NNy-KtWfUinqEI6vm2vuJb0RdaCa9iU0-2snm2uxJa0RddS
+WYk-NfEhljw3Avw2tF8mu9Al2bpsrO7hlafotPyjkEav06vvjgvboBFFz-xTktU_Hx6zxVNWn__FZyZpZW
 }
 
 AWSEntityColoring(WorkMail)
-!define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, WorkMail, WorkMail)
-!define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WorkMail, WorkMail)
-!define WorkMailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, WorkMail, WorkMail)
-!define WorkMailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WorkMail, WorkMail)
+!define WorkMail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkMail, WorkMail)
+!define WorkMailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkMail, WorkMail)

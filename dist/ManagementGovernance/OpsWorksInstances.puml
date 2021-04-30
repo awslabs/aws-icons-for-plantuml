@@ -3,7 +3,7 @@
 sprite $OpsWorksInstances [64x64/16z] unzum8q6I1JaGHVbWQeaBCZDZqiKKv2c-b43WnH1olMFwX_LJtdwfxz-mgK2OPMKWw5TVWxj-1_DlwFwHyjFda5MVewMdwFjpo6hVrJ_QFkJXyJoamB1WGS
 
 AWSEntityColoring(OpsWorksInstances)
-!define OpsWorksInstances(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstances(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, OpsWorksInstances, OpsWorksInstances)
-!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstances(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksInstances, OpsWorksInstances)
+!define OpsWorksInstancesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksInstances, OpsWorksInstances)

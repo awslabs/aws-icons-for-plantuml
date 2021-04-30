@@ -1,16 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $LocalZones [64x64/16z] {
-fPCBQkqm34H7ri_T_uRVor0N9qfr2nuWFpX7jkJablXB_9uy5EIX80y5UIZ8Gq4U2l9Ga8U2R0LkPjuAybU13wmCUnCqV8O143Lpio60-0N0Y-0TTu5iDLq7
-yGSVl_46M9H8_VZEAoGoLuKTBtdZ3IEk-sgWQFpFWCPBAkwidZ701fgA4n_nDruGjDm0vPlhPzvXlCAtWsGGxW7Uywjy0B6THBzmtiSdFg2PEU3h_JPumIVU
-Bj8f-H60-60Rx0C_mClsFOIuGtdvm8ja9aQ6aJMrTMxO0uoM9yeHA8Ab0PPqYu6847dmi_BiWGZtOQ6mP5s5l_7pZG_UAU7JnTix_n38Nb-m1hfuZChFP_yT
-pdiQH0LEIIXvBVnTe0YMD1W5WFEhity6U-Fdu_YBhDyeUN4Cje2Emjy5a6G37E8_JaJow64K_YdWu26aaWc8NvTj-PMVjn_8haki-iPHEFTK-28OYEkYkIK4
-oj-gyaNWHEy2uYpVy7DVG6filDaIT_pSEb2o9jhnSrj0YNrhEtwkWLKyiAo5BmA55rvXwx7mHI2evSVsql1ppV2jUIiTJy60bzNlwNWAWDnIEzhni-n0waGx
-VjvdmDMNTFoyrNJslgJZvxvdq5JJyNCTs6qM9Hq_5wZKlAVZ9rjmstnDnyyCI03PPRO21n0ztuQdu83dKJxXvoa_J_bvoizJVhRyeU3hKF1rAFW7
+xPNNTeP028G7s07V_uaJMLB-Tk2atFbTMDOTkdhy5nSNuIGzVgQbeH1ZhStL2u3QedEP0EBlYvx72HJ8Yc_MBDwFm52_W5JV43AL6oHAu-xnAUVKkwR63Oci
+yqwnPdBVtaC1iKLQLirWnuoTfWCMDp5b7NiviRRSRnOp9eCFt3-sogkWtYPHM_HEZaf54MtnFOqyDjwYdhwcFDowgSOxLXwwzENCNWzd3IuL_7noG3kzRY-6
+IDT0kYJtYZJwT43uzcPWhDJ3ClU1tdQLe1NCvnLJBttykJEbAd44B8sarJv_nPa_Tmi8iMnUL4K2rlS_Tn7CEmZtuAPbWktyhSmoPCz0pQrcKpE61iZfbeT3
+_FlyBZ1jT5Wc874GvImWkJG9lsP_dOTWBJ7g7QYSHc-0VTyQUZFzVG2XDvtAkt8_2o3ivlkppaCQcGNmmDXz1k0lFemp_5cR8zivmy3NQpqrl2zZwY6iiTYW
+Tz6kfdXDjUe7yfCC-bz_tmDheczwm7dj7tEkMlo01NlinPmKbfcVaMKdD8uVuX3Fv7yAWQRpioduEN6yvkBY3G
 }
 
 AWSEntityColoring(LocalZones)
-!define LocalZones(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LocalZones, LocalZones)
-!define LocalZones(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LocalZones, LocalZones)
-!define LocalZonesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LocalZones, LocalZones)
-!define LocalZonesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LocalZones, LocalZones)
+!define LocalZones(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, LocalZones, LocalZones)
+!define LocalZones(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, LocalZones, LocalZones)
+!define LocalZonesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, LocalZones, LocalZones)
+!define LocalZonesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, LocalZones, LocalZones)

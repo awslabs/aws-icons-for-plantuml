@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Backup [64x64/16z] {
-fPG7ieGw30H7mGhc_kVz0QlUWW5Ny6mEtN92UKaiuX_9JK5k2d9Ja9k2t1JafY0t1RafoAN0M_Er85S20G1P2d8XQ10pWQu4kH0GrVD2a0i1P4mY5e9S28ZZ
-lp35Gf3VQO16AD0MWk_o0c8088Ay2TQydPITnGLaNuB-ZYjWcLcBtm3z4FGtWHCupdU33sUGlmhwYw01BVFAlozZyPCW61nPKOsA4zYVWZuB3D2xh_AsZ8Cl
-WGkB2UYp9neWZLakbkBxc3K1a2lgJTlrtmo0RflH_mJWp1HKzMWUYf7Vl0roheG_-EvZmw5L6G9myt2JNq4zoGPxyZOg_tYGvOWpIY0OesXFVbGs5EK0wBUb
-esAZazIt-fqXJG7K_gc85bxdM00GH0KSBtmA08uqvdoamOAvHV3K4VibsM3vde1an4ixwpS193z2bAV0eDzyP-H8sCGpvIaGn89ly9el_57_581NV43hMfXN
-0b9UM_6Tg0y1-8PRTGH6B7b5387S9q28CInTyuxMJq60ueShMhrwBlaExaDW5u6YPWFAp2Klo3y1DAgLysqLLhp1UWc20H3Xrqq5fp0NV49-BSsLcSMkXtZa
-c--Ca_QUrtXjVbQ--GQlVRpYqAmpMFda0zgxG-vjNM0bcGH7dqEa3PJzBY0emVCXE6P1483B8bOK02WUWcCMC2n3O7U1dvq9dBFWc0G97SVGRc6CGSGiE2P1
-e9sBW2dqsXMAlmh6oaFy5i7OXPmInomGg3l3-rzg_kOAoJb7vTx6Q_akWWO072_yBEZXdhtFWZ0h-fq_-YBvcMDJS6mAZat1iIauDWN7fk3O51oRWdy1
+xPO53lCm38MV8RPp_mF_u6ffPpLgHi9-uoNcL-W_u-OcpAA_ZmA0z7Tf43D1wsz2DDxVOajTy7Py_l_ExyOte4KqmFex28W1WEcT4NXQ6P6b9tzzyhOttm1z
+CJX7Fmml61mlw6PePWn_iOqrbkfpGwwPrweNRNHXiThhwjg4nMTLKptSt5gpE9QMczfPsLcrm7iI5bsnmJxyGT9Bd2LdwKN7Je2RHvZi0HKnjXPiYxpRWsnF
+Mn_skNPcxxd77bOEWCOYRnQDCXF5MGSPqhQADKE9wDuSejGq2D84VAeR0S3HZVbiEDQPhGVN4TLT4o15qRDT4uWVRMfz3cC8fwvGJmJHvpHu-LBjmNtEKJvM
+AxleKEbEYMDeey09Gw29F1T06FbDAEqDK1pTjk5-GitR3WuKN5Qd28vdY_HW1DwxS87j3NO6G0IWLUUB4dHbPXaEOwnTIz1BNukehYIey79oE8hZKe9MCnLO
+Ebc0I1NK2mGb-5By_yZfhHJ5Il-iXy3gM3d-losLdqAp9nX5ldFxjfLRe6qsiQQV0FiJZ5ZKdq3T65K_O7E5B5t-K_651W0Sxzyqvx_VvURcBm
 }
 
 AWSEntityColoring(Backup)
-!define Backup(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Backup, Backup)
-!define Backup(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Backup, Backup)
-!define BackupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Backup, Backup)
-!define BackupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Backup, Backup)
+!define Backup(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Backup, Backup)
+!define Backup(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Backup, Backup)
+!define BackupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Backup, Backup)
+!define BackupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Backup, Backup)

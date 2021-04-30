@@ -1,15 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Glue [64x64/16z] {
-fTBRSiCW38JX5GAXXVT_tpeUnZbCsHl-DidLVZxolrBKl-CXm4E0Xm0F0Hu2F0Hu2F0G68V0q42uUrF0q83XAWKmD62MZjorzaFjMq4AO6YWu2e5C3P0bgjW
-HaIgnWRei08dxzH-0tGqFdlA_UftN_pULtVltEytGEAglPmh9-N-4zXTXzx_0ZrQzL9ATdY3CxhO_mAjuCxCCd5LQO1LlN-02gkj9tcNFJhPcnjSxLVt7jvY
-xRcCvf3xJm0hCol5pB1Aolq316hUzs_bjKQlQ2Jb_W4AaZzr5BwI-nKJXJyzfDolsD3uLKFbIkvNjEyhI1YVv7xLuVp8qVbExbSLmQT0vMTglw8PdypudTgl
-FevP4Tm1OzjppHrERW2nV-wv8Ra5vXvOBy7wsG1J00N9zIvkWIc0ZY03dGAO0aZ4K7kk_TpkOGL82c0g8DpCWwAS2n1HDHN0JdOEkLT081CnXjwln7w8_HRe
-fTXhRwN44FiT441nqWlK9Smzq51u3GlQk19x1QpvbTWBu9uBO6e0zrm0KmCHuoEzNmtHPdy0p4DW7WBp49Y7m3m4vY4m3u5v2Fm1
+xTD50Xqn30DGMNOCklzzovJT9B_SlisWmjRlwx__ojrJzuXtT8zKl9It97x5-CT9bbHLemiD8qBN6gdNylGF-N2Frh71EoarW9y_Z-bSuIIduObGzUYn93um
+inwyiqI0Iyy4BFBBhdTLIvrXyATv-AhULg6M6-9WwJ-DdpGpV39w9X5TAvoVUApgGEefegLTWtfiG6b7Z9vRI6qIIoSCim_8TAJtpNQqpWHANzH51PZDTd-g
+4DjOZZbwMujJ0zlsubXYRMVX637RMJnLI2bHkjGVytsV1udxlDBDFFNBJCtKw5gY6_cByaKQkc5awK82z1adBeUmm966MD9r0tlyl84jVcnXYv_BrE_hl__U
+0W
 }
 
 AWSEntityColoring(Glue)
-!define Glue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Glue, Glue)
-!define Glue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Glue, Glue)
-!define GlueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Glue, Glue)
-!define GlueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Glue, Glue)
+!define Glue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Glue, Glue)
+!define Glue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Glue, Glue)
+!define GlueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Glue, Glue)
+!define GlueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Glue, Glue)

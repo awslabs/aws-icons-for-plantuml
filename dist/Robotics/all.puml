@@ -2,20 +2,18 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 sprite $RoboMaker [64x64/16z] {
-fPNHkcum30LNqhJ9Ij__VS-1psyhN7HkW1c0yebumNzmCi3902S3d0nmCf2JWPmCv6GWtmBHQctlWNmCk0bMnFmva0y1BujOMwjBHXyBUHymeFYvPU_-6l0M
-t51e7DTFqXNwxkSY0SuLCv9Li28r66OVVZPOWv8xBX1h_p61E0Tny0ra0HbSAQZSgIZafz-W5KfNvKhmm8Fabvy6I1p-o9UVZEjn5L1_3UHV_lg2OX0UVFiP
-0XWt0fMiyBV0MJLcAggYSSK7ds--ccMYaB17doz-qyXKk6t7ZrQmKbey1_A20z3zcu5eAIfhuYcGLzYSP3axhG0QOs3qGzj-4YLu8WhGXi3ecsbcDi1vmGKs
-10QV5faEYUILK5IEWHpWecToGE1Z87_KxU8BOkjS2GWFHhy1Y-cmpFj0HUN1u5SKUAQ2-HGGuO-hJu5cyZZy4BZz5dh-u7eLdWjHrBW7J4jmmM6y17hFFnHi
-EY2GBI0GO0k8yXBebu1ABXWY6secMT4OA5nGuINGJm6Q6SgH8MnTYT-12qefSGxqKo00mFRZDnhQFYwmmNOVWFD4FmKQMku-1O1kimf0kFkigAFVCra5Fp_P
-hEKnMtdoKKQ_PuFOxW-GPryXCVYz8UB9pvFVu1NrtH_vu_kdFpBhvwoVitv--LBU_IHjyQlU-LaLQFtDpyq7Z8E_u5z-hdu9tlk16YXnu0C5Rd0--YCZptxw
-VzedlFWZ-GO7VoRG9mDzCj0d0tqoq2S3VJBG9mF_
+xPK5iYim24Kl4W9t__lzcipJoBFHdhgS88KfVue73wf7zEBdI1VyGpm_OTjVCNeF5y2I7wC1Jr7JWSOpFMQj1itdzQV2U481v0Zl94D7_K7I6my4MXVb9EMf
+VacUSHGDPDKe8JW86CzqM8EnwyWXoKdo1WUaXlyfgiRz91NG_CGf0u4xv6Es03x3ev4DUJtmHHgQeKy_oBZsrPs4iU2VyaEJLEaDGP8LXdzO5Az903hs3w9c
+AW2iyvQAJfRDi3CHgwle6YJP0Iy-enm8dd7N_thdArBGUAGy_-fIxtoa2DvGa5fCLdA7_o_UaCk3kI409DdXws_4BZmCGIgAAqIu9WLQh7NuqovLaWpqiKmw
+Hw1SFPyMSezXV1C2gT5tmGWinWCgend9GCok9Nn-kg7C33Q_E5lXA59qP6TckTiz-8WVvJE-Ls2-3I1tlozy3XkWJ_zBKiDdB7fOJV3aiyA3W_0eFldlxt90
+VFWhXg-GVC_FlFEp8Rxavtl-mnUxyviYzlEpzm4llaU_ybSscV0EwniCtR7TlpDhl-AAuZVnuC5l
 }
 
 AWSEntityColoring(RoboMaker)
-!define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMaker, RoboMaker)
-!define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMaker, RoboMaker)
-!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMaker, RoboMaker)
-!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMaker, RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMaker, RoboMaker)
 
 sprite $RoboMakerCloudExtensionsROS [64x64/16z] {
 tPO7hkKm30CFC1Ey-vzsky5m4K7RonTAYZas88koN_zQ2FuS3l0mSe5kE5_2QMHUzOWakhnTcJZwuE6zOOO0a8DbYVeyuA6WLuITT-P3sIcYWTQz7lZWG_vP
@@ -26,10 +24,10 @@ KiC_NetCZSeIjHSoP7ZtzUd4qENV5oXR57xAVzkCrIJpa8DAPoluNnqCxm4
 }
 
 AWSEntityColoring(RoboMakerCloudExtensionsROS)
-!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
-!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
-!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
-!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
+!define RoboMakerCloudExtensionsROSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerCloudExtensionsROS, RoboMakerCloudExtensionsROS)
 
 sprite $RoboMakerDevelopmentEnvironment [64x64/16z] {
 xPO7Rkqm30GFC6Fa_gVzVO45Q7wzXfvDKsIEIPChutrzKDyIy7MSlngRUk34uAa020xohxgrQehFsbohoslPIMdM4ju3d_o2LKlswENIDmsJkZE8qP9Tbudj
@@ -40,10 +38,10 @@ zmOOvoyzMlXf6oHNfpCQu_WYcZ9yxlSa3vcwW3x52xc5MJt3b_c3FojVfYDZi0_fMpy1
 }
 
 AWSEntityColoring(RoboMakerDevelopmentEnvironment)
-!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
-!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
-!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
-!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
 
 sprite $RoboMakerFleetManagement [64x64/16z] {
 pPS9Sg1G24GFmFirzp_jR59TDeMGFUciYW_PnEJNZrFyrTjfub9huKLux-0wopE7UCGVEPBRuRRNPUIXA0kC1pu34ETyddaCGAxjX_5Z0WvWKNl-BCqVww_J
@@ -54,10 +52,10 @@ vPU_m6rLPbOmtLuyzsMFUFaymdk5G2q3QqBCl2v0Z6WMtFiPLI3RA508XYksJMJZ54o0FH6h7b_umXS5
 }
 
 AWSEntityColoring(RoboMakerFleetManagement)
-!define RoboMakerFleetManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMakerFleetManagement, RoboMakerFleetManagement)
-!define RoboMakerFleetManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMakerFleetManagement, RoboMakerFleetManagement)
-!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMakerFleetManagement, RoboMakerFleetManagement)
-!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
+!define RoboMakerFleetManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerFleetManagement, RoboMakerFleetManagement)
 
 sprite $RoboMakerSimulation [64x64/16z] {
 xPK7Re1040CVC8Fu_sjJBTYJmjBI4wjHFEipTVxZ-XStz5tuKiOh_MTWuUMmFeJ_xFvLFuLF-wlzQzHrdiky9_B1Exp0i2-UkNuW4p3LvZ4UkNy0QvnndRd_
@@ -66,23 +64,21 @@ Gwdm6OgRF9kyXUTOVXeRd6a6S9CV1w0vlpvMTEkFIpOK0xZv_jF8C3PyD-3W_wi9_u3_PzdvSxpWLRxg
 }
 
 AWSEntityColoring(RoboMakerSimulation)
-!define RoboMakerSimulation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMakerSimulation, RoboMakerSimulation)
-!define RoboMakerSimulation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMakerSimulation, RoboMakerSimulation)
-!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMakerSimulation, RoboMakerSimulation)
-!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
+!define RoboMakerSimulationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerSimulation, RoboMakerSimulation)
 
 sprite $Robotics [64x64/16z] {
-nTI7hgDG38JXETMUkVl-pxl22eWGh22TBNDx-VuqmFx_U3lFzepJdmQu6E1YW8i1BWQejG2r5g3M0bGQS9jpVWieTeDxGQnqomExruS6wfXkSrIWULxGNS0B
-kfzQnN9_5oZ5I9-zjJwTRgNa_YxWJdO0fG3excuFl2wFe1b9MaC9dVdxm2oXer0cdtdnVQFMGSPodmS6QaKdOwdF0wMHhV2rpES1TBA3-nAV1r1xh_0y43u9
-Z8hNwjWJpxmslJ5pqcrK94zYvkK5pNdC6uenziWxO7oR7Rzvu1t5UPcNIo3tBCKbNdP4UV4_LpyGJLvcboSnyqHJZ9Sr-2cG-W4cbpHq7e7SbvgTZRLmN-w9
-6L_6i3rWVJX93ZZtdVnxmE2I9W0qHg01m2Hfc3nsygU0MmSbeb83Ko871bdXyGIOST_XJu6usVZgacgLn5gvqKaI0COfmF2dG0Tx2Kz9RVCApt1eZiPZkpy2
-3L1uHvSSutKuaHs--KwSJwp3Hu05DNoWKb0eANvTqFdo5SMlFYQ3ZztBMXjKZAEroTqFm_pmCGDtVnt9mtlkEHElLQz7NhdNgjS3xnCQcTUtvpzU_v_SAtlz
-zwaXVBhDev5tFjOnAaOwr14yzHDVDt9_JFd83xyG2ByG2ByG2ByG2ByG2ByG2ByG2ByGsFol1u4aOVz_lm4
+xTS7WXen38NXfpRIqzx_l2bc3MaEOqZF_dJmHvkUlxsNVhYNZxwVw9_sRvwLMNpGCmGZ2UvxEc17adaOuDpq9RWPEgJsl7m4J3VpP7U9xFbYCm2800WsQyVF
+Np1GpM-_v_E6IdBVZmwpuudv9w2AUDoBTPiyuRtR7_U4HYZua6SeNjFWje-FhDZD2WLYpvV0gg-LGMh35oI_d9jG9_tWx2-Ye4vwoesldrtxGFKtAiGfJrX_
+CmFF-01NirESyQAzIEM49uvn4v7NKN6P0G_mla_K60h0vky6y75O8U_vJ0Ux2MK7Zikd7aszFEkPQpy_zlfDLNjUrtWl03Y-vnrqkNgxUGudJlZQqu0Ulk3N
+6IQGtOuQlW7ZmbEWmmya0k5yMk3zwXN2R_i36TDtciKS5-RPqqVYM7bElsXuhloRhpE-Lfu2lUyLmZlptwhr_3TpX2AMGMCv_uy2Tuk5t-xDl_cdZrz_U-y1
 }
 
 AWSEntityColoring(Robotics)
-!define Robotics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Robotics, Robotics)
-!define Robotics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Robotics, Robotics)
-!define RoboticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Robotics, Robotics)
-!define RoboticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Robotics, Robotics)
+!define Robotics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Robotics, Robotics)
+!define Robotics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Robotics, Robotics)
+!define RoboticsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Robotics, Robotics)
+!define RoboticsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Robotics, Robotics)
 

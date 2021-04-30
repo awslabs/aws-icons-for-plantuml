@@ -1,14 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $MediaServices [64x64/16z] {
-nTLPhXqn28JXmiOKP_yBpjGNnV8GxWaP_jVMLp9FpV-Uav5zhX4fbpvh8nO7M1nWSO350HO7M1nWSO350HO7M1nWSO2r0IFdXk1MjsESCqY_rA2v7x3h2T9o
-hvldJo-_vLdrNFpurbkUin_uKUhd3voy0AeAJVm0nAQ1y0g1sLYzhxw90jqOXKVhCBF5ktjuXgTrG1azNc177mDZygJ9TCGthnrwzRvxSZv203IxUp_u-GXx
-kdlV_ND4urFc_UJ9Ru9FcVUJLu3H-tu8cf7HczuQPCpNyoslG6VK03Goynv-VNeJxT3S-uVlyVJmZMomtFlpSYYvUaFhOEAVWMxSFHK2ClFEQFLim1YQURzw
-m_V44kytpm-LUR_vAFEUU9wz-Mr05i_WaoT4fvR_9vTsxoQufTnQ_1wJ4fyF93uVoBnNlLUzLxrNlQU-EF3ohAhtN_lYmAiuyFfU8Yyhpl_ULm
+xTLLOiKm44DHUKZQ_uQBZpcJSds_Sq8cVdkbTlNgjI9EF_scwMlWMl609qPSoP3tVQ9qhM6FU5xrzZCytsfxuhN1UvvrsHjGbSWxFW6h2pum8F6kzv60yzGJ
+5Wzv6w83UU8DVDXBDM2rzoCTgGLUElm80s1QvaN7oFs5NEWt7w5zYxtau0hFmEZwpUjJJR_vVUt_5q1GpV7Rl7ft_cnUlJb_0vjNRwuVXbFDzRkfkt_qzw_-
+_ldz-t___5f_Vgu_lzjDF_tqrUV5R-yP
 }
 
 AWSEntityColoring(MediaServices)
-!define MediaServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, MediaServices, MediaServices)
-!define MediaServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, MediaServices, MediaServices)
-!define MediaServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, MediaServices, MediaServices)
-!define MediaServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, MediaServices, MediaServices)
+!define MediaServices(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, MediaServices, MediaServices)
+!define MediaServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, MediaServices, MediaServices)
+!define MediaServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, MediaServices, MediaServices)
+!define MediaServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, MediaServices, MediaServices)

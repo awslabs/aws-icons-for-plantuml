@@ -354,17 +354,7 @@ def main():
     # Copy source/*.puml files to dist/
     copy_puml()
 
-    # Build icons from directory list
-    # for dir in dir_list:
-    #     icons = [
-    #         Icon(
-    #             posix_filename=filename,
-    #             config=config,
-    #             category_regex=dir["category_regex"],
-    #             filename_regex=dir["filename_regex"],
-    #         )
-    #         for filename in build_file_list(dir["dir"], dir["dir_glob"])
-    #     ]
+    # Build icons from files
     icons = []
     for dir in dir_list:
         for filename in build_file_list(dir["dir"], dir["dir_glob"]):

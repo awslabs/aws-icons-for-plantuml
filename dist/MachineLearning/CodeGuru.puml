@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $CodeGuru [64x64/16z] {
-fPM7TYiX30K5ekWk__-_pmZM9xjSNcFIoymH8h6DKobb1OS170Pm6C1X08S170Pm6C1X0ByFv4m3nEU142g5-E2-yG3nmVrDWFYW_ky3U0TgUkxFVWIqB06y
-0ogwkqOLNIR0Fb1I228Xf382Ad4z0aWWkDtTg1hxnzm3NLy2885gVGf9TGwVn5K6yU5xVsoXgeJA0Gr4oVOWxIO0GoNPf7u3Qd_hLubs4-vFenGMkB0IfThD
-TmyU9VuQC55VOd4hzKywsgl4Nm9PIgyaAHzLifMnZUmxNVmre680YaHVM_MZTtCSPV6NG1G_X8oXtVI5pAqIVmRaWm8nUAIWRttyBRiQGX_bm-BFW7x8Nxy2
-Vdstxvyd_K1y3qnqp1yCcDSNnlngauU_1DAzFw3wwgFakRyrSAs18dba2iguGxtlRmrS920HdGna7tnuKTWJoqK2AlRZiriGDHAuIC3c0FCgp8bIZGGk5aYI
-PwbY1h9lSWrSD11cOD9t66p1VHgmLo2xlk0-3uY-_gKexjC0yHd4lwWFurm4wcFZCwWFxcy24ekJdIZO1Dec4EH1m2RGTe7wmE0GVnkWC9y7Z3zD4Py6J1xO
-Bj1sWIYfJ5JYzWXj5u04J88OTe6s3HJHwgYK_HBRFg0oKRmWFWcWJB10_F_yEsY7WNOOQ8U1TXXeXu5s66Y7WNOO-0K
+xT85TZGn30DWsGv9zxzlmM_yocsoFyEtl1CvuD6Fyzz_S-gRkFzh-TK-Fh-szAM6TdBfhQXHgxi1vdrLFBGZZ9Ac0-OHRe1FIRJG7aeCeEPT7GXAr3Pw9We3
+JXrmTBtGuThNdkABLQ1frqAeMCqRMDhnSYZHNXJTmMlap5JFBrcLsZAGWOufJKnDz2o7iNjwpE6UHPRacBML7O4SRQnQjApuvG7WGKXkgZdpUwt5N0eyq0VY
+mL3brrFxLkKrui7E-XUCjMTQ5aESdDz0NErJO1oSNpMgPUkoXwtQkeNm_1XN-pIe1muUtxyDrEdzMyTTxKlLa3qDGucLqK3JDbeLA0DE7HSuZnSYNfueTUPr
+NlzQtiSp3Xqol60wnFa2zREj-SpIAU85wfIZZKk3wnXXLAA1EZSGCmM6RX6uX6x2SQ5-ZF_-kmS
 }
 
 AWSEntityColoring(CodeGuru)
-!define CodeGuru(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, CodeGuru, CodeGuru)
-!define CodeGuru(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CodeGuru, CodeGuru)
-!define CodeGuruParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CodeGuru, CodeGuru)
-!define CodeGuruParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CodeGuru, CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, CodeGuru, CodeGuru)

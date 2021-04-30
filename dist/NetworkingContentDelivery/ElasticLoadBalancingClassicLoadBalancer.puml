@@ -8,7 +8,7 @@ ZEUST_jeEUN3BJ-_xEId1py_xPIVdm9aoyFo0EWNzbMUe8BNpy_ry_jj3HlQzpy668L-ul-Jgq2xIh1B
 }
 
 AWSEntityColoring(ElasticLoadBalancingClassicLoadBalancer)
-!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
-!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
-!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
-!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)

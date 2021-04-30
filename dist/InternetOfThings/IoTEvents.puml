@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $IoTEvents [64x64/16z] {
-fTIBhgmm28NX1HJAQj__VKySaedRwXoJiY-Js_-9KoDFap-cFmmt0Mu2t0Iu2N0Ju2R0JO2R03S1RWBS1BW9S1FW9d3JDJL_2wnz1mImby3QApffy2yG9h17
-O5otHoD960jm0TJYSODn0RAkB5eten3_UGlZ2a2EhhReGAjxYEZtmBW23l46UEN1p2OuHjf2LBy0W0gCAUXa06BkVYXj1SOAC9DfK4EG3H9P4m9TWB42tpNq
-o3MPqLex55iFSZm2Xiv-v27uJ3i0Fowwz7U0AYb8Ek0zkt-s5sIABFqjKCSOqAmdqT3IuMdeT_sW2pJEVKD-Lc01YfwmTCHjRn0J-AatOS195X1rW1tjhgzd
-Ja5UL_W2jNTzBBs3Wmo8daVmbVGxxQaVDtsk_UF-u-_-6Gp4zOtM8rz-VuvEwFc9gdEyxyVd_CQfJoWTZJK1uv50R_lrGKes11MM9BD1ainq-DBV0gAaeBC1
-eW9erawIItyBA9mfSFQcejPPIrai_IrW0E80n9FdoV_roK4gMWg2T04WP-9t7m2qrq4ABCdUhEwzQxi2QrxlJzJjDg1rrdG3gkUF7iBFipXOaGAYPgO0h9Cr
-ZptXnuVeznZJLN0WVxx6vxvz_jlj6sa5vXLGz34QOhm3vXL8WU2u_3jWBW2RMepn4fW5BFCMc9l0t0Jc9Z0tWRa9p4rWRW9p4vYRmDm4vYOmDu6v2SnDu1y
+xTO5abmv44NHbvnt_mkUiKjcLBa3E-e4V12pU4TUNbusFPf_jf99mNUMQww1LFDPXocvTk8gEDeap-RMgW3CpvVBYgV8W57oU9pdpinofsILKW4h3L2cZooN
+6oN9JGccWPOigpjDAgxiGiX33IbhZd45rqeAA3ambTb0AhWMMaOEOteeYDClt0W7rr9IBTkc01EOSscKj7nvYCTNaLf-gKpUVFM8QRPmk1O5hUPNGXQcugim
+vkkFn_kUno-CWbF6ZrNuOhy-ZfzZjioFmmH7-HVrnlItzT-crJ_MVuVB_YiDShv6sFFWSlnMJYavMi57SkuigSOL2spAzbIgkM8EfY4bSvDy-KZ67LUnfcBI
+pMCuihaIalhiWCjJ5bXNhgcXJ99nhIHvcmhM50kJuGkmdhVxfvgFKihXc93gVly-nYNpY719iK-T7yUMcoJpsgVEhmiNv-SRpkyttH_UlvUNb_y1
 }
 
 AWSEntityColoring(IoTEvents)
-!define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, IoTEvents, IoTEvents)
-!define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, IoTEvents, IoTEvents)
-!define IoTEventsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, IoTEvents, IoTEvents)
-!define IoTEventsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, IoTEvents, IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTEvents, IoTEvents)
+!define IoTEvents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTEvents, IoTEvents)
+!define IoTEventsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTEvents, IoTEvents)

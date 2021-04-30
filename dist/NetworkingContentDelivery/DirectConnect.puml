@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $DirectConnect [64x64/16z] {
-fPPNhiGs40IROKAFxdzVGrx197T7V0PO_rKAZCpm3RR2mm0F0pmCy330mm0F0pmCy30GRwg9gFqTY3GW5H-Q_H689A05QAAglG9z7uZVW0321wiejWl4pPTU
-dGFP1-8xO2ZE6KNrLoo-0nNEbGxnL-8he11-uGNU2qgpr5y35Vn10PHM0TtuJm2DlnI8krk1vVu8E9G3wzr8qen-1z1oVmGKjam4e4zheMBhnwqCtr5knKQW
-GxU-Dqo-GaaRu-6k0FgxBq1JFZogGZW2rWkWBxwWUdpzTYdmTJ_G0abzG-MO1wvAAm2C9ZO7lC0olu9Z7WY0OgoWLm1j3XXguXDz3AEXcgAmWGtT6cGED2I-
-GSSmTZWfy0QYaYoLKq2Wlxx2nhiyljr-U_nv66Nln_B-OXsTWznto3eL0BjzBm0gPzBtZr9Zmc_dziaEuKA39xv0OmADZwympgpZDoYm_-DxWJ7pMT3vfwy5
-GZBnWmreeZSCj9XyLRdfhG1AZi0LCzRmuLy_Xb_mKCNvuV6lME5pBDr-_EVR1-V4ur-HilefZvy7n292XQHrPyxZ9m7AWhq6hZJW-4BV0bSQw33I1wNoXIiD
-DCG4MSl6Jm8TCRFt7pP-RFp1gJy2LY4B1RBrrq13GjduQu3elvTGWUxz4J1OB2pHlNzj_DZuWuqV6tyGL2Q-UcI1AmbiIFopm7KOk0u3rs7WEWnSXu7hC70T
-1lu1
+xPFdekiW38DbWnVl_y0twqTmQIXth--SRaGKoRGVm7_-4wPg_hLgPHnGZRQEqIPKCnC6wh9SGDekdC6nwBrNA6Xf0y_h3RoYP-JK1RAGtM0n8uH1nTkSWXZi
+2L1XmEPwbFOAOI_42JvFJ--VH0w5dpf7cT--tQlRaExcfkNVB0ROezmzooG1Bu3tNXpI1KaI3uEBOlVLkZsbG1vQ4B2ds4Kfzsa47PllvZJKzi90rboxRUDD
+ZOpeRWNaZT62WRwtSOs1sdan1Us5LOXLo6H6Kr22s9-yu1n8uhvaUsw-rGTzxcIqgO7TJly5uic_Z_JUhH5iU2iflmV_oQE3unhu2XsTyOn0NmvoGKhcwHWI
+RAhFyvD-g37HT_ERYG8KqPsiDpsGGY1hRx62aqXwmWLBj4V2RIDVtst79zf9_ak8xLBP-v9OLeTqh1fm97HDNs5nmudNz0MjW-cVqYj3EWWQArSVGF5v-ILU
+qCz7m4PB0_AvtdwfFePPgxVlpN_-ymK
 }
 
 AWSEntityColoring(DirectConnect)
-!define DirectConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DirectConnect, DirectConnect)
-!define DirectConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DirectConnect, DirectConnect)
-!define DirectConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DirectConnect, DirectConnect)
-!define DirectConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DirectConnect, DirectConnect)
+!define DirectConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, DirectConnect, DirectConnect)

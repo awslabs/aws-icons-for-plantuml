@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $RoboMaker [64x64/16z] {
-fPNHkcum30LNqhJ9Ij__VS-1psyhN7HkW1c0yebumNzmCi3902S3d0nmCf2JWPmCv6GWtmBHQctlWNmCk0bMnFmva0y1BujOMwjBHXyBUHymeFYvPU_-6l0M
-t51e7DTFqXNwxkSY0SuLCv9Li28r66OVVZPOWv8xBX1h_p61E0Tny0ra0HbSAQZSgIZafz-W5KfNvKhmm8Fabvy6I1p-o9UVZEjn5L1_3UHV_lg2OX0UVFiP
-0XWt0fMiyBV0MJLcAggYSSK7ds--ccMYaB17doz-qyXKk6t7ZrQmKbey1_A20z3zcu5eAIfhuYcGLzYSP3axhG0QOs3qGzj-4YLu8WhGXi3ecsbcDi1vmGKs
-10QV5faEYUILK5IEWHpWecToGE1Z87_KxU8BOkjS2GWFHhy1Y-cmpFj0HUN1u5SKUAQ2-HGGuO-hJu5cyZZy4BZz5dh-u7eLdWjHrBW7J4jmmM6y17hFFnHi
-EY2GBI0GO0k8yXBebu1ABXWY6secMT4OA5nGuINGJm6Q6SgH8MnTYT-12qefSGxqKo00mFRZDnhQFYwmmNOVWFD4FmKQMku-1O1kimf0kFkigAFVCra5Fp_P
-hEKnMtdoKKQ_PuFOxW-GPryXCVYz8UB9pvFVu1NrtH_vu_kdFpBhvwoVitv--LBU_IHjyQlU-LaLQFtDpyq7Z8E_u5z-hdu9tlk16YXnu0C5Rd0--YCZptxw
-VzedlFWZ-GO7VoRG9mDzCj0d0tqoq2S3VJBG9mF_
+xPK5iYim24Kl4W9t__lzcipJoBFHdhgS88KfVue73wf7zEBdI1VyGpm_OTjVCNeF5y2I7wC1Jr7JWSOpFMQj1itdzQV2U481v0Zl94D7_K7I6my4MXVb9EMf
+VacUSHGDPDKe8JW86CzqM8EnwyWXoKdo1WUaXlyfgiRz91NG_CGf0u4xv6Es03x3ev4DUJtmHHgQeKy_oBZsrPs4iU2VyaEJLEaDGP8LXdzO5Az903hs3w9c
+AW2iyvQAJfRDi3CHgwle6YJP0Iy-enm8dd7N_thdArBGUAGy_-fIxtoa2DvGa5fCLdA7_o_UaCk3kI409DdXws_4BZmCGIgAAqIu9WLQh7NuqovLaWpqiKmw
+Hw1SFPyMSezXV1C2gT5tmGWinWCgend9GCok9Nn-kg7C33Q_E5lXA59qP6TckTiz-8WVvJE-Ls2-3I1tlozy3XkWJ_zBKiDdB7fOJV3aiyA3W_0eFldlxt90
+VFWhXg-GVC_FlFEp8Rxavtl-mnUxyviYzlEpzm4llaU_ybSscV0EwniCtR7TlpDhl-AAuZVnuC5l
 }
 
 AWSEntityColoring(RoboMaker)
-!define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RoboMaker, RoboMaker)
-!define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RoboMaker, RoboMaker)
-!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RoboMaker, RoboMaker)
-!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RoboMaker, RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMaker, RoboMaker)
+!define RoboMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMaker, RoboMaker)

@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Compute [64x64/16z] {
-nTDBrXmX28PXKEIZzx_XKARfYqUbJapolmDc3tKLFvxXbTwhHOAXkpR2uG8SBi3X0XmkmE4272x0uO8f5eMgDFqQyXpHnfDSewh-7bokmJxADQAzH-hrrEkf
-rwOpBbHzCvNNO1_C8iBKzAkPhxHBThuoCn6jVtU99NClnMDQ_qYDk7YoltzyDFgWgO_-qBSwbdi8UzHzeR7QFL_93L-6HzXu6-v_z0W_ltypIpmoRub7vctu
-VqQFy5oyDlXOK2VlBthwdaoyxUxVI-xVk-NRsblYaNbhrUEbX_jIlRRm-_VdO_d-ektz0ydzUwVUbbvotyJZZS_U7_MwfrBuCvBq_SMIzr7ugBJkhwcwzuPv
-uP5vIpmMNfjNtDlIL_4Ks_Tdtiht19XwN5NYHPq6U_7maLOg8jA_D74CxeEg8bfv0pMV9F7JSed_gJ0-ohmb7fctn2FpbdZCVLMVjVK1e8eFwQEcVWnvjktK
-swctr1ykU5ZMgRUzFrpmE5pmk4haOelXn_i5
+xPP5eiCm30N5ylrF_5-KVAxjCizYYhE9CMzEjAE91Eq4dgz_z-a9U_oMG-5xzUGmsIA5M20fyGlqwQGHiKeWBZ4a7FFUQ4ICUcL0b5sSY85tUbF0rBe4YOBe
+z8KEUuV1nVkml-IyDm5KlT1Vh7eMu7lqqdupxpTqs6_fVVQcW8UzA8ZX_1tsnE1PdvyRc3m_0vTvVk_d9rIiR-KtMr_iyVnS_XAdxd-NxyE137jra9Fdrs7w
+_791YRiWpOLENuJM8A_YJt69BD_tbscl0Qj_oI0hwQ0_YdV_xkFuFFBcV
 }
 
 AWSEntityColoring(Compute)
-!define Compute(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Compute, Compute)
-!define Compute(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Compute, Compute)
-!define ComputeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Compute, Compute)
-!define ComputeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Compute, Compute)
+!define Compute(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Compute, Compute)
+!define Compute(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Compute, Compute)
+!define ComputeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Compute, Compute)
+!define ComputeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Compute, Compute)

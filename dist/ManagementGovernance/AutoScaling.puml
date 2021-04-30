@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $AutoScaling [64x64/16z] {
-fTG7TWCn28JX0RO0klzzewoivygaQ5v9_J_Rs-9zNkzyMom2iGZ48X2BG2m2iGZ48X2BG73WF7y0WW8dm07Uz_md84dkWZvn1cJMkM8NsQ4Co1emR27Y6um0
-MGAzYzw7TwS6iW9SDAu-NCLB86l0HyylfAo1c3q3yZRQ1-avO1OSo3j0H_eb82dWPiw1981lwDkcy7EVONxFTq3FKu5z0Z_s3fdr8P3Z_iq4J5cV1ookpPUT
-RsGU3nZjqp1U2yyzxZdlG-1Nhu_lNt7FUJyF0Upn-DdLV-THzQVU1coZZvZdR_GReBSTl-l3HNfD-zTPBtFsy_wRxt_yaXz_oxxPw-oZ03xdcGAxUXqCeW2A
-FCE0O_Jtw-SELFrs__uKME_dzJk1ctJloyK6G1Ioa-T1Ck0KZBDP0uq2iMqUmO360RhHhm6D0zls0z0ue1fqes-aJmwq4eWOVVA-0a9izYgaBu4Ds-ZxDwIl
-0SF-tU-m83q158Vg0OtCkYT02Feaie_q712dLsAZW0C-loSz0Vp-FUydG5RqIq1R1DeYq1Q1jWYqHQ0j0cqH-08
+xPO7LaGX34LV2YNP_uBb-8DWHx3hdJuvzrTI_EFuvvzQptIWdkcWkgqReK6sgpCoSmRRdYz8pkm9igKhr9iVNpPENlpoNROkWLdtsxSjmW--n5VrduofsecD
+XjfRZ2dRCi2rCf2N_JgohH2eZ2yT4N-9Z8WBaAS3aQw_bamI6e3aGGAmgBiHwgtFy_4pXhvs2Q3pzLEygXSE0BtySVykNm4EoehVCA9cB_Z1E4Zeb7yhnp_h
+ZVWOVWGNTIU8tVd6Y_Tln4r09Voql7vaYXQ2MFFp4-jtFVs8GTatAGGWsM7z-Cb4_Vvn_UUyVnfnzvdiS7xuWlcbqUUdhvdV6fK0gbymlwxCp-VyyyyD
 }
 
 AWSEntityColoring(AutoScaling)
-!define AutoScaling(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AutoScaling, AutoScaling)
-!define AutoScaling(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AutoScaling, AutoScaling)
-!define AutoScalingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AutoScaling, AutoScaling)
-!define AutoScalingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AutoScaling, AutoScaling)
+!define AutoScaling(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AutoScaling, AutoScaling)
+!define AutoScaling(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AutoScaling, AutoScaling)
+!define AutoScalingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AutoScaling, AutoScaling)
+!define AutoScalingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AutoScaling, AutoScaling)

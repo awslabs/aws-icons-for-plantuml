@@ -1,16 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $GameTech [64x64/16z] {
-nTG7bjim38JXOST0B_U_RXvXI-HIfbAGCjlBzxkp_VSfryd7xJm_JBRRU4U0pW2T0Je3T0Re3D0PKFK5r1bGPq2T0NK6r1bGPq2_1cgECUQs1bh_TQfFNhiE
-G4mHYC9fBRv_7Ug3LnR4HhuwRV2AKAIlHkG7Nv3vdaI4QuYNICXRBqWS2yZl8GWv0ctd4wZ3DrJQQlzc190sdiZzCol4N8YqnK1EWOoD5zZtbyzlXymvK54_
--mPHrHA041h9WhSl95leozsWVFRLV4qHASdDfxxoxDlxAstvz9dpCx7kVNvz3RI5H5iAd0Dfxy7vgOms7hynmOEFUew2oFSYPF3uu2iIzJK9c1RQu6NlsO32
-hZDGIiddWDowBa2L1wzCGB2Bpien-qt_58MFNfKrfr8pHAT0GQivvI9azvpzCVjp8QdE0IJQtfwpF-w-OJdMCsJsxm1V_hZv5FIr2ItVplvOF55q2SImfcP_
-VFKPr2NGK1RFoLkWWTD1iWOYrdE9ipywQ-CSkmMkmx6Ekt9u2yIeVGLLzHueAEEUMBnD1KawJxgCjeHCjeYsyOSsz6MzZRQCligTFrHhgQAw2qZ9Gmy_fjjn
-RFMEW7b7mBmZODuHCEy8c7S4p3i2vXq1yuw0UKV0l2DWtX4mxmXq_-r7V9_Gzj_t7G
+xPU7rY8n24O_IAZ_-x_l7ZIkmpbct5xdsXBW8dR7VZiV-Sryb9_VmH_bN_xbNxvDvY6UsN4PpDFU-KOW7WomDxiYWmbafxw0xtibsA4CfFS5GqvymSn5CEWp
+uCZ5X6vzntXkWY0BKEcBWUZ-9fK6Quj5OEpyDRskDhmA1-UHYOtliEOBvGsIvXlyjM-8cmKGLLInnj9AKb6T0lhQLtXT3yOOjPAZxwEuhVP-dty-_Dddt_gh
+qEZkq-Fve-RFlOyIspZz3el0YS-7kkU6Zttvn5UCHwKJ3f0_kWxetWy3IPGz0NaoWUbb2y7YnA_-8080oGC4tECZyjJF39KXAeYZht2hS0NF_GMDF1AOX_Lx
+ts3Pc8YlyGTb9o1VwlVgrl6jtwPjEFITR_3sR7K6uj79NliERQKTn-nZThzWpaAWsMbXvjpu1lOCmSYN34YaCspdfwAOkM6YqDpw6IhYkSLLDFwCt-_Bl_pB
+_-xZrz_E9m
 }
 
 AWSEntityColoring(GameTech)
-!define GameTech(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GameTech, GameTech)
-!define GameTech(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GameTech, GameTech)
-!define GameTechParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GameTech, GameTech)
-!define GameTechParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GameTech, GameTech)
+!define GameTech(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GameTech, GameTech)
+!define GameTech(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GameTech, GameTech)
+!define GameTechParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GameTech, GameTech)
+!define GameTechParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GameTech, GameTech)

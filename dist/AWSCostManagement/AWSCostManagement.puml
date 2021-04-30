@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $AWSCostManagement [64x64/16z] {
-nTC7bjmW48HXCbqjt_-yHYkiLrZg0Hp_pU6hDqhrloV0dRptqSFoyud2Vd-0_Vu0-_q1zli377vp0ByvWDs1kQ-PgqAj-EZ6VAQ1kIykrUnY_L7sZWUcFhgl
-JqI24shcG_Xw4LNkiYj2RViwUfbudrAAhiBqyj4dttBDWxqve8gNokbXUc6lfeVfXRsEh_r-_QtkdU-bnu2UqRcxYjtZyZ5T-I1tx1NTX_lr-t3dxzSVo0jx
-nUWb30dxE_RAVep4w8Mztjwuq3EltLVtNffvlNnnkRJoJ_auzTgzu978YbVJutSz_f7NvjDRRj5hzUzbh7c5sPfNc2tvTBrQ8FXM1QI__aLVSginvDGIuElv
-Tt7DNu6hhW3-ybZpQdgiUJKzPXxIWlP_V7fCV7Ijh0ftLfyUx8-7hwKbgbhESFewUh0_Hi_Xwkd1_Z2zcXxiZz7dq2gg6aDBJkz3SAC7--EpHmojCdgmFzYF
-WMEFxdbW_Fkp441rJmFHJR9y7q2P9BO_r8oHxVS7oEyFi9yFJFt-0Flz0VRx0-pt1zX_i-nyHEf_xpi
+xTU5SiH0281XO0cmS-__lWtN8RKradhxdykNYOj-URTwkflxUg5VwV-zolCiwnbUXfBo0cm2nI8Xa8ndYAU88EE9xYDXpyT8irwV4yrvPEPotZFkmMaVvFDz
+Z7jZ_26-vx4dPE_D_2ly6DB4qq7eMSV0QDKRlSWIlbd6MxjLhz2E5xt09esmB7khZVwGvrQmwXNRRMk-tsTvFiRMtrYjbXj_uJt_VlCtTj_-4_ElipF37-FD
+g_4cxmli-Tm6JzDUuwn1FFjnys-ZFV4PuM_CFHB1MHzlv5Es7niszJ1fuaqcsV_vzz6_ltpz-kKz
 }
 
 AWSEntityColoring(AWSCostManagement)
-!define AWSCostManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AWSCostManagement, AWSCostManagement)
-!define AWSCostManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AWSCostManagement, AWSCostManagement)
-!define AWSCostManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AWSCostManagement, AWSCostManagement)
-!define AWSCostManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, AWSCostManagement, AWSCostManagement)

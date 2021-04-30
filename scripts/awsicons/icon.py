@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 from subprocess import PIPE
 from pathlib import Path
+from lxml import etree
 
 PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
@@ -28,7 +29,7 @@ class Icon:
         category_mappings=None,
     ):
 
-        # Full path and filename
+        # Full path and filename as PosixPath
         self.filename = posix_filename
         # Config filename
         self.config = config
@@ -38,7 +39,7 @@ class Icon:
         self.category = None
         # Name for PUML removing _, -, etc // called by self._set_values()
         self.target = None
-        # Color to apply to icon
+        # Color to apply to icon (web hex)
         self.color = None
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
@@ -52,9 +53,6 @@ class Icon:
         # for the object.
         # If config and name not provided, used to access internal methods only
         if self.filename and self.config:
-            # Source name and category to uniquely identify same file names
-            # in different categories to apply color or other values
-
             # Source filename only without directory
             self.source_name = str(self.filename).split("/")[-1]
             # temp category to pass through and set (actual value could be Uncategorized)
@@ -63,19 +61,32 @@ class Icon:
                 filename=str(self.filename),
                 mappings=self.category_mappings,
             )
-            # print(f"icon source: {self.source_name} ==== {self.temp_category}")
             self._set_values(self.source_name, self.temp_category)
 
-    def generate_image(self, path, color=True, max_target_size=64, transparency=False):
+    def generate_image(self, path, color=None, max_target_size=64, transparency=False):
         """Create image from SVG file and save full color without transparency to path"""
-        temp_name = Path(
-            tempfile._get_default_tempdir() + next(tempfile._get_candidate_names())
-        )
 
-        # Call batik to generate the PNG from SVG
+        # PlantUML only supports 16 layers of gray causing banding when applying to the
+        # resource and category icons that have a finer gradient applied. This needs to be replaced
+        # with a constant background color for the source PNG file before conversion to sprites.
+
+        # Parse for id's that indicate service or category and replace with color fill.
+        # If id is for a resource, no changes needed. Save to a temp SVG file.
+
+        root = etree.parse(str(self.filename))
+        # Replace any gradient fills with the requisite color
+
+        elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
+        for elem in elements:
+            elem.attrib["fill"] = self.color
+
+        # Call batik to generate the PNG from SVG - replace the fill color with the icon color
+        # The SVG files for services use a gradient fill that comes out as gray stepping otherwise
         try:
-            source = self.filename
-            color = self.color
+            # Create temporary SVG file with etree
+            svg_temp = tempfile.NamedTemporaryFile()
+            svg_temp.write(etree.tostring(root))
+            svg_temp.flush()
             result = subprocess.run(
                 [
                     "java",
@@ -90,12 +101,13 @@ class Icon:
                     str(max_target_size),
                     "-m",
                     "image/png",
-                    str(source),
+                    svg_temp.name,
                 ],
                 shell=False,
                 stdout=PIPE,
                 stderr=PIPE,
             )
+            svg_temp.close()
         except Exception as e:
             print(f"Error executing batik-rasterizer jar file, {e}")
             sys.exit(1)
@@ -146,11 +158,14 @@ class Icon:
                         self.category = i
                         self.target = j["Target"]
 
-                        # Set color from service, category, default then black
+                        # Set color from icon, category, default then black
                         if "Color" in j:
                             self.color = self._color_name(j["Color"])
-                        elif "Color" in i:
-                            self.color = self._color_name(i["Color"])
+                        # check category
+                        elif "Color" in self.config["Categories"][i]:
+                            self.color = self._color_name(
+                                self.config["Categories"][i]["Color"]
+                            )
                         elif "Color" in self.config["Defaults"]["Category"]:
                             self.color = self._color_name(
                                 self.config["Defaults"]["Category"]["Color"]
@@ -201,28 +216,8 @@ class Icon:
         new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
         return new_name
 
-        # Source name ex: Arch_AWS-Storage-Gateway_48.svg, we want "Storage-Gateway"
-        if name:
-            # If a service (starts with Arch_)
-            if name.startswith("Arch_"):
-                # new_name = name.split("/")[-1].split("_light-bg@")[0]
-                new_name = name.split("_")[1]
-            elif name.startswith("Res_"):
-                # ex: Res_Amazon-Simple-Storage_VPC-Access-Points_48_Light.svg -> SimpleStorageVPCAccessPoints
-                # strip Res_ and _48_Light.svg
-                new_name = name.split("_", 1)[1].split("_48_Light.svg")[0]
-            else:
-                # Name already stripped of unneeded text
-                new_name = name
-            if new_name.startswith(("AWS-", "Amazon-")):
-                new_name = new_name.split("-", 1)[1]
-            # Replace non-alphanumeric with underscores (1:1 mapping)
-            new_name = re.sub(r"[^a-zA-Z0-9]", "", new_name)
-
-        return new_name
-
     def _make_category(self, regex: str, filename: str, mappings: dict):
-        """[summary]
+        """Create PUML friendly category with any remappings
 
         :param regex: regular expression to obtain category
         :type regex: str
@@ -259,15 +254,3 @@ class Icon:
                 "config.yml requires minimal config section, please see documentation"
             )
             sys.exit(1)
-
-    # def _remove_transparency(self, im, bg_colour=(255, 255, 255)):
-    #     """remove transparency from image and background color, default white"""
-    #     # Only process if image has transparency (http://stackoverflow.com/a/1963146)
-    #     if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
-    #         # Need to convert to RGBA if LA format due to a bug in PIL (http://stackoverflow.com/a/1963146)
-    #         alpha = im.convert("RGBA").split()[-1]
-    #         bg = Image.new("RGBA", im.size, bg_colour + (255,))
-    #         bg.paste(im, mask=alpha)
-    #         return bg
-    #     else:
-    #         return im

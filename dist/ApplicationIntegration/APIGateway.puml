@@ -1,16 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $APIGateway [64x64/16z] {
-lTC9ZiCW38LXGm3xcVlVTv9YPG4AgP3cITtx_Ls3Tl9zt0oB0Im6i1Z0OW2B0Im6i1Z0Og0lKnk8t0tqT23YEi146tS2NMt-7aX4pu9vRRNdQ1wu-PZyes1U
-6mrS7ZSlyYoOrre_FEw-AfYtWEdQu-RhGl4ba4pNtW9SV2cSryshcRv7vILTrythqEEx5xKX3JpcNf_U-OXmdW8sD_TozsutznFzvXdL-1-yhdeTUiozDbxI
-vJ7tMlj0V7dClPu-kKEItsaoRm4UUJNFv0H8EnD72UOnz_hnXMCZmITW7fXvEnOSCG2XhNnuTthClUu-aZ-_IF4KBuytNl09E0S0EyVDuustBo40XVxk8GYV
-ImX-zuhouzj-zmg0-Pl7t2jiNO-vrw6tG1vu7NeKdmTUXnx5vvvdWQAS8CSfTJoApnrF5DIN4pnj-wddKNnkVOYigPmGGqBQkXx5v-xdjvdfU-IoWTStFW-y
-ll5vuFMDPw8WNxpU3Mz4gVMQF5cYzGhPlM7o4PKlmv5mGJfU3y_17LY0li-g9U5xtZUuyLdt8NhgUSD3RyS2M9ibmsEVTR2kNmpanK1U3EJ5G5uCvCL0NWpa
-nS0V
+xTC5biCm30JGiIfRqjp_lcMkqWqjUzuBvvlDjTFJ4uqlQJ5QA-1yYWCQOtNkan9IBTOotqoI4X9DvfvCIaZqi4zAIFImVrT2E-lt_bn2oxnpdAV_V2zIgG_7
+D5-ASlDm_CZ-_tplDji7IIgSCSjRSP95wCLcUCF16ngzm2Rx4-S6mMC1Ktqv3G4s9r2c-We9ii98Xg1EzJmMKCgPSx9dXJagIKFb34-ddjuvPta6PDdwTP_d
+-_ut3yRzOTCye9I7OvhNQcptXtxa-_n1ROmtHURP1ESYXlmPGnhJH1MWg0rvqm98ZOG-5Y6PbmHdyIf8_04xnyMpyNMkdPwU7G
 }
 
 AWSEntityColoring(APIGateway)
-!define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, APIGateway, APIGateway)
-!define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, APIGateway, APIGateway)
-!define APIGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, APIGateway, APIGateway)
-!define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, APIGateway, APIGateway)
+!define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, APIGateway, APIGateway)
+!define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, APIGateway, APIGateway)

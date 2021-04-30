@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $Support [64x64/16z] {
-fPI7bgGm30HRZbAR___UWzNmZDu0TxUkpQ5gGe_XYRsWpt0nmCK05mDS370nmCK05mDS3F0jeFsl0Ju7j01P_nBWOw00AGCb5XxyoCVkPZq1zIdmx5Ut3xf0
-wdFWrNQQGDfJuCOMI8ipng2z-Usmuupd5FqkS6Sx5j1y7VFUxzFsW7QTXPukOzxuFrCn_epBCnV7_F9Rj2q3kROYI1gcoEPy--6nP1GZpQn2x8BxCp3k_Ofo
-FeaDvTOtzyUjBp9NoD1RtzmVDtv7cojqr7lVt1_1__eXED4tzyUNNs7pXnVVt1-Fj-z-UVHjE8oAebvZxSrteiyq7u09xDLtej-Hpa119V_NPuDqxcX2vix_
--ko0v2mudud_zJN1ANODg3xx8nm0b6wqbe7kVjznwScVWJoVlovYdoAGt_qpK5384rDQBffG6wJNf2--1peohrZ2JZ9cx8Y--ECylL6lEIjtjEGs0z6t-LBk
-mMz8isMMKT_yGH564fHahwKPpI3swYiQ0nxyF7PQnhrVwT-5m-zY9IkAMOCOEv2-VKkGDWwIZE0Bif58dxDCouBeErqWVV-AF4Rm3zFy71WAoHpyIHCa9Se8
-0P7cudbXQIdw4rOWeOuGI40xDyXGAX3y00kGBGIi8_EmIaaeP45J1ZzW1Jx5TG7r0osLD0XtWX-nx8LJxswGzgdL6TZ67NgCoIDWHff0M_kqgWew3zo_2Smn
-hI3p9-3tlGbsEXtt7m9i0W7ys9ca9Z02DQFpnFqGY6CM2rSq89F6YViX40WprXrbnFttm2lROc1R36oBWMqni2q6jiN0jXZO5WD_
+xPQ7qXiX30ONIO3qlV_xfjpV6FBRldEIgLvNokeOkluNBrvK_fKTuALdwU0EyRHjAQL3VzO-IAEDw_RK9xFHfaup_gm-mFAolTBF3SLij75pCACksfcBKG-6
+OXgCBGqsbd1hZPsnHNU8CQ9XjRQGkEcdLlsZOgTfuQG_w5z_uxhVsjgKkkedOqjSyFU4YAj-frRVh_fpJOX-rQzLcSohlepbVzDbFp6z4uphlWRjIASjnWLV
+4vfxWwwd_3GEDg5qpkyGMQhfV1JaBwHplkEbTwsrZuWGv_nOArP97kNqGSjXzT2VkBHY02OvGAj7VckxtYCEgy87hUxxWxaDfMaXw3Vy6u-N7MNPOqWIJNVz
+NE8l0GEWfUHyxyUtY_yGXzI9qgH94qpQgSzprjh-T9U4VNPDDBImdxFuvjko8nm_mSt3qrB4vX_j8lGHPXhtZlwz-mocP9Ga9vM0RlBDfIbnAI6w4L8mIxUf
+vTAqdY1fqCOo_ZVPBqtpmwZtQ4CtsIzDLL8rSauTp56DrCQjmQp0TGI0rey1Was_nO06dZe2s6YKeFkktwRZjQO0rzDK_qNg7_BYnKy
 }
 
 AWSEntityColoring(Support)
-!define Support(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Support, Support)
-!define Support(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Support, Support)
-!define SupportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Support, Support)
-!define SupportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Support, Support)
+!define Support(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Support, Support)
+!define Support(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Support, Support)
+!define SupportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Support, Support)
+!define SupportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Support, Support)

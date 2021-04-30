@@ -1,18 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $SageMaker [64x64/16z] {
-fTK9qZCh28NXWoXmxFslzmwnGxK9_oWrVEFpnbOhYNgy7FiU7WPu6E1XW8S17WPu6E1XW8S17WRueu1rVmTCxOS1rW5N0DtpM_rHW6MW0yqQC2868AD1h0wm
-29X0B2A6G0GotBq3MWRu5V06m78TtTSUoDSI2iyNqVxs8RAsern2uIbe7kFJXvTBA3mqel3Xzn9ycnzw__GnTBWhV9_2Stbh_lGAe7zxBpnVVi2U7k80y5kU
-fbzUq24gl-UPUv1-0B1Y_NFdZfRtOFFXvX4A-_JFG2W0SPBHy982YySCG3_y8p00ZG7qzTqDcYTVbxjlFWCk-TA06FFWeDurb_5n2sS6EenhEZH8FbuIG0Qy
-GtU_0ehSH8pj_M103HeP-FPp-UZoy24ZBu-YHyxcCz3HWHPCxmAntCNukP_yNw_hPEXv87sHrndqflv3FpkMPWVUWH3PtXJHbe_Ilu-nULiFGZvzGpJSFdxa
-3R3N6YIMPtf50yIMZyAlOupxqGSP2Y4V2sWTK7_vAFmadtV01P3YWsNv-F8Qa-IGsnimHFWHYF7siNigeE42YPSNY7Dvxg-l7ckMpma5W76l7xhsRmlqMsTW
-RXCYVFF1vRU0oD8PcFkqDkSwFkV3cwMFVGe_gUlwf5T0_i3Fw8-Fi_y6RQ3pj_tZ7hI7P-Mlqi_qkVuWMVbhzp8puEbfjlQZy7j0qU8ED3ZP6X_Z0ltoUs00
-dNDE1pft7mgCAFmMe0AsBi3kRRsxLNxV0nS0oZaP2kZzv0rYwxlT5u7PWS793gYkv-X0tedTbu5ea25hlVUtpfpDru5fWDYw1oQ0yJcxhmCqvaKoVipcCr0E
-ozdyIU0w35o7WUimS1q6hiF0THYu3WF_0W
+xPQ9eh8w38GdQvE-_mFV2xLGKQJy-pPdIpZvoe1JfVwA-gT_2esnlAaK09PhQKjv3pT02eEyLYTmON3CqsL1QaFR8jNcBOG0YDgjMxQZanPI0JNqKUP7CMk1
+m57zoCzRWDHwmgyMBdazuLrBhJhF5uwHLm1-XtSyyU0a07DyaHUUo412CtpJWIy0nRN_G0VqcQyPsGvUX0SKRVzGBZpAEE20vYbjW8G1jiyv8748j-LxwuzT
+4mo0ofZdDDqMAGoATxp2jvX9FiLsqSuuz3s_4Msb4OYHEULJANS-oHxN05BODQy0nyu7zTlW0ESr3-xZTjZo6MlBcf_uieUWEoT-shsGJtn_yvDWIBxiVqOL
+NF4E-DhGkW3nE200byzyFaxiyAN1nhTE0SbF_9Y187H-N0HdV4kwzGmuuCprA3_XKm29Gg1O-RLuuMEPolDFZlxIbJPsv0tDvOc2A3jkjRxoJEVqC6-WClR5
+S_Z_9Q_WVEv1UOCFsthm_u8uR9xl-dh-ld_QwtXp_-Y25t1iSOhZ-O8Xrqy-cYq0Ul2R2jZKavUdjW2Cl0EIauzFRRI5FRfrAZDqDvhh7z7rUh9TrhI2GKRW
+6CjRSe3yKHBWzQxISoo_X_xfd_u3
 }
 
 AWSEntityColoring(SageMaker)
-!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SageMaker, SageMaker)
-!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SageMaker, SageMaker)
-!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SageMaker, SageMaker)
-!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMaker, SageMaker)

@@ -6,7 +6,7 @@ EQXfFsp5WZqlvjuiHqD3zz0q_ANfuB3tMwODvd7SZqt5nJAVkCJxatfHt2ltUEOJVVlsxTktRz--FLdT
 }
 
 AWSEntityColoring(AuroraSQLServerInstanceAlternate)
-!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
-!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
-!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
-!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)

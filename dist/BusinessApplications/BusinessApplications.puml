@@ -1,15 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $BusinessApplications [64x64/16z] {
-nTO7UXin44FXuQnO0ER-vmqfDqfPSEUB6zmj_K-zrDyVJjVK10_x5lBn03uPm2S3-6G0_5m0_5m0_5m0t0HAkGoGcu0xT63rb1vDR_6K7XTU1egxcNl1til0
-OJvc1n3pVFO9OsbuHFmQo6dCNhobiHpmIy3JSHpfnSzVpMEURzuVpxyxOfxI8-OfFMAUzzlzsP_S3vJdCO_ywFF9_K3xwHxzsyzhZzQ4zrORBdn9DfPuvcsk
-R7qpBwLu8a-yvvpTwiuNm_toanINtpAUV5zyDhvvddeCZvYdz8XvIe_FUdpMO_5TUqgFnNVjAJqMtxMdyZE0Dz-rf_HOVFyVZyNtp_gkFKE-Qy-GxsGHdY7V
-jMV8zrVl_tfUUvPyM1xpbEzBwUtxdANRcFaj2zyik2hEVx4RE_KmTvWu_LXWSkbdOFysS7BjP-1Y6LlVMwrbimhfrr5F-7X0-7X0-7X0-7X0-7X0-tX0-tXW
--Z-1W4ZKtzzV
+xTS5OWCn34JHqJYIOkV-z-r2kQwnNFyml6GP_DkxfU5kkqyJ_N6_lFkS9t-nTn8WVTG7S0jXs4lQaX6lieNJGxQqprD227BwuoaxFLyEFt-JTnAlFKXlzG6a
+lVH68ZHxoSr_QVCnnlVyzb7Dcs0hwyzFhEYle9anx_UF0gubRuZbyO-mabVKfX_q3_hbbry-gXAw9QBwzFZo5QWQyzxHcETzKbnIjGiqvVtJ3vHvSVfTOh6T
+5tnILD9KzCcjcA_ZxwUMdpv__VRk
 }
 
 AWSEntityColoring(BusinessApplications)
-!define BusinessApplications(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, BusinessApplications, BusinessApplications)
-!define BusinessApplications(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, BusinessApplications, BusinessApplications)
-!define BusinessApplicationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, BusinessApplications, BusinessApplications)
-!define BusinessApplicationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, BusinessApplications, BusinessApplications)
+!define BusinessApplications(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplications(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplicationsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, BusinessApplications, BusinessApplications)
+!define BusinessApplicationsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, BusinessApplications, BusinessApplications)

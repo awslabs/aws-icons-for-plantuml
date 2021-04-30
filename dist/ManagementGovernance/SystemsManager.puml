@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $SystemsManager [64x64/16z] {
-fPHNciCW30P_2TJm_U-xN-HDmJ9-ORRaQIRqgFWQAyHc83O3iHc8pK1i1c8p49k1s0miPHLHMmUUVM4ar5U99ry9QAAgdO3-71XL5q0-AGO_1iQeEdjyy0vw
-2enhm5B_ul8uWd4D45AVHY3hmBW4518NdE32H6mtWN49CAAW0C0CI0sCEU3erNVANJI6bi2O0mgDYeedeEhF0O4_t8KEA_uSw8XO1mIwz3CW17y86C2wz8SJ
-q1-lip30jl0DqAhLDO3T-W7uGfJ4JnHqwtUSbwaYI7fu8kXtFdYC6h3qHLKW4Pv39xhn7J9Am0cICuume9das3ki-WORoQmJ09RFcqQlW4Ahh_1n3H34cUqp
-5oONa2jayVrpW25HU0LiCVyvO22lljDY_ud79Q2WNrFrFQTRNs2NWAE5jmz0QoqO5hT-468ET5WOPiBG8kxyuQ3Vd0WuVY4wFz1xyHC3ckZ9K00o-Rr_JhF4
-dJ-YuSrGc1KtCNs5gv-udGmzRwDp0l191d9WdXnZWSB7en-dlmhCuoUwZFz5-gk00f0ndvsVzKlINmHo_qO6ME87XdIFa_INK-ZmuVNyzFYI_YhWQEDrVa7j
-GxJvbJmU0lh_fA75z2PC_ZhWe1Wlp2_tT_ANWM1eUT92m57yTI2u-JlWZLt0NlnreBwVgLT_FGBlW8zmeBlcuAk_3dY-J6h_XzQY-2LG42IImj9V1qAJMFWb
-i6BXRmMEpS2n6JWs0yTcuDWC79k1OpFm1m
+xPM7ZdGX28KFgBJtVz-_U1CJDx3ZjDJxxKwNeWSmli3DZQk8Mho8C2RKFPv72UYYAeE14SyoGB9SCVZ956It64ywi9_h1IsUW62nqo5FP9yS694B4xKJEHc9
+7Y1GEzB2qTCzTOzmXZvCFrsYSZa7FzRUegR38o5VKMTN8_IhlG5DeyG8wB_xRwZBKN5GADv1LaW7AsnaugiQF3ywBKMPZBH45wcuRjDUL2yhyrdFwTcEn9mX
+rkV63DHDm5uKYK8pSmB0q_DW00JsT6a8D8lkt6obsDW5x0P9uoVc-NWoFzc_fK8v5J8J9w6s36U2QLAv_eOMrXP0QorQ5ZvFhCF2i1DMjeXjbUrZODyHy_M2
+CRnge3Ra8WG_vzqOgvebKgnXvIbGssmNff2eCBq8mJGtdW1yCRzRzZLls-_vC-Vvr-pdfxfDWz8-rO-NdqI_chf-IlBw1RN5gj-Kl7-sY5nllkfVjQHD4exd
+H-ISpgyeE9sV1sJp6zsUY5xU7y-pxgydIE_F3tDpynS
 }
 
 AWSEntityColoring(SystemsManager)
-!define SystemsManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SystemsManager, SystemsManager)
-!define SystemsManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SystemsManager, SystemsManager)
-!define SystemsManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SystemsManager, SystemsManager)
-!define SystemsManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SystemsManager, SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManager, SystemsManager)
+!define SystemsManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManager, SystemsManager)

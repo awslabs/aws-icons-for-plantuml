@@ -3,7 +3,7 @@
 sprite $DynamoDBTable [64x64/16z] unzmm8C2W5mIm73HZmWA69Sm65Zze_g7G_eRkVbtDF-EwX_DlmER_qVpxwZ-qVpBFKBhxz7yEwf_jFquq
 
 AWSEntityColoring(DynamoDBTable)
-!define DynamoDBTable(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DynamoDBTable, DynamoDBTable)
-!define DynamoDBTable(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DynamoDBTable, DynamoDBTable)
-!define DynamoDBTableParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DynamoDBTable, DynamoDBTable)
-!define DynamoDBTableParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTable(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTable(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTableParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBTable, DynamoDBTable)
+!define DynamoDBTableParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBTable, DynamoDBTable)

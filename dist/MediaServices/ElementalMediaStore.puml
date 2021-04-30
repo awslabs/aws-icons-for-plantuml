@@ -1,16 +1,14 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ElementalMediaStore [64x64/16z] {
-rTHNWlCW30JW4GYDzlu7tW8aKMpGNtZQsLw-YP4D3B6_INiF3mjuMC330XuMyB20XmKyBE1X0GyBc1VKQda1im8LG3GjuBwW2Q0AI4iAk8iLeFOb0CKssVge
-scXQPkClLzrNOikiT1C0rMZFLEp6i5wue00QNbvQ1Khx2zyNNi2Ex2UFgkKOLWid2vuZLA0aOxWilElX7ok9H0MYMsz08OUVXUWyH82MU1IBdj9_5Ly_zRK2
-rQANCBOVNMlcbNtQqO-fwDHc-kxzuiU_I_Gq1MJek_Uh9nM0iMTk4Aj3hxpVF3d74AkBxRn77tSlGpBlTp-dzfVUWxyzoynzB6ZtlLIVdWEKfNSkOv2NdsVY
-oiS2YrSXqOyDjV4UJezsyMf4cHjQTzwdBcDkmHkWyzUMU6UR-q-14ZmRUfHavbqHNZT-7PkGFycz1N-Rts_m_XUUEzy0dUCgqwC6tpcCt7Zl9tmBUrS0j9VN
-nm4V_BrXwE5bFXEeP6_dIF3N1hqy__L7eOPd81JuCj6FemJIhoCayquDlb_2M7XCvWtGbmyBZzdwCKUnuQr47PDufmBrnuUp_9RWxs51Jp5katcdoHXR4iz2
-gZAFfo5vvFtK-wdtK--dta-zf_wmuEEmuEEmu0i
+xPQ5TYuW38DJgBt_2ryPEQCp61oPPlBhLmcQdrQ_-bMeHjxB112xfRq1ga3p6pewq6C-7j8AD5BH08tJniLB9t9aWmjOSwc60JTYkO86Q4tlfQ6zRHriWU_e
+D7Gj3bV7ABf76fYN0xgYwTFWHoSDi6U-lesFLEJvJi4PqXSycbS-1IFcpB_abHvDNXxiYqTQTSaFZwBmT8Lqv9gdHrBvJ0FQe7FFP-XiqePxiuaz__fKGSzy
+Dv-quPwdQzSyNHC_uSFZnIQYp_a--Rr2PFBiQiUxvLJbkQ0MF8qNUyPh93eNjCBNTDCHOV8E63hNxeete3attycFhhcIbxp2gc_asNYFtFDUwtxktxVdZOlE
+6nfvzAXyA1RysADic4qUCFBh_Nj68CtwUNwWRyyFodJGv7b-eLzT14IubK20Ta1ha3yyloa7bFpv_Q4uBN9rVs7DFKHkR9jdBNYatidB_V7-_lffzQjV_GK
 }
 
 AWSEntityColoring(ElementalMediaStore)
-!define ElementalMediaStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalMediaStore, ElementalMediaStore)
-!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalMediaStore, ElementalMediaStore)
+!define ElementalMediaStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalMediaStore, ElementalMediaStore)

@@ -7,7 +7,7 @@ r5kW_8O0Dkk0-vI0-eq1-GvIPnM8kdCKw6li0U4U4Eu1uHuGxW7X7X2k0U4QSEw178zo3qJUQfu1
 }
 
 AWSEntityColoring(TrustedAdvisorChecklistCost)
-!define TrustedAdvisorChecklistCost(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
-!define TrustedAdvisorChecklistCost(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
-!define TrustedAdvisorChecklistCostParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
-!define TrustedAdvisorChecklistCostParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
+!define TrustedAdvisorChecklistCost(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
+!define TrustedAdvisorChecklistCost(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
+!define TrustedAdvisorChecklistCostParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)
+!define TrustedAdvisorChecklistCostParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorChecklistCost, TrustedAdvisorChecklistCost)

@@ -1,17 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $LookoutforEquipment [64x64/16z] {
-fTG7ZiCW48NX1qmrzx_lGanm6wyYyQkm9TzBjyLfc3ppnG5V7F350LySyCK1NnpmnG5V7F0vmAFRW32nwAt0CqPymfImLsuJaMTfySaJa0gt-ao-BWHUkz7f
-DIDnE_G32y1wxkc9M_Jrca1cbBuFNm0A1bwVVmORTqfKKZjKK_08Nfy_WOoGnfXa91L0BzsyzaDthyZ6pTX82LaPHI-z-mArpcTQG9gWrruziX74JdNCuFj0
-x0NS9ovrZAot0kzc35NGrIkAflIBToEOGEmQicRyvBt0-E5JqlBmM-XVxj_oqs-HPwY27y_VKdhwBV1QrDIk4KHH0hyzVU_65Sa8R87V7ZuOoCqcg5dWjxEd
-NTzUlu9Y1B9MuDk0VFqOO82cvjIuVFyI-EtaKNRVJQz3i0dcNmA_JSy5-UEr85bFCvin89QHzJGGUoTawzwFAu1aGDjPnb_-zTrPzow0MAlfX6mj7dy9l4tV
-NABFdYPGLsHMzW4PLyZ0RzEx01_lbb5iZ_R7FYOjyDlqhhjlbJd0Sw0V5lXjUkUlzvHi982CgrCly9j2djwl0mLYdm9lePy3ca05sKO_-sCW0yLcJry6qs9d
-xmUnSnS_yci9vHoz-tYWu9g--fc7MUj-NQvdhzBIzlEdU82X5ryFR-WTfp-AV3rvKgLvgZ-BV3sydCxGU-Jhz2HI-bdQ6NkFVDszuvEFqtxtTNp_jMNRPkFy
-tTVcnSpq_qI4ObyLlwOU-Ktb_tWaxXxujX3cOOTV7AYB0tLne2uErCM1kZXG5mVgui0V
+xP17WgGm54FrSxZ_WOTKmPqmarQyZLh63rhLVuERc_A36e_3FNB2TnpucsoC7SrptsF1ttm3I3t2ZG79Cp_NoATV38xr96if2iI9RxvW3xy8zXX0cfq4lx2_
+6Dv1Ysgc36WN8URtAwmDj9TE0LU2QdP_Wjl1h_i6MIVE-egiyNCARqPD-k156ESIok5pVi2Q-EE5ACYKlvRyEBQWpJpd6oeGFKBIWZbVqVxPvtd_3x_lY2_t
+q-J-bEpi4KCKTCR_aY9gH_osBuWcwdDVznx3YqgWRV097tfqsEiXGJe1c_4XUr-SwiUPTm8yzVifkBQ-_R5GuhLqP0caJlrUlQqRA7iZ6Djp1TMfltgrzS1I
+5nXWIEspyjHVR-dMas1Bc5KVQmA8Kxy3s7lnSxA1Qd-bd_gTXxzEbZLU_tinyjG_-Wfn7mIGM_WLdm__ELwHl-clurKW_Rl-EXvIF_WIUmyP_1Svs8F_DGnv
+H_kYBnZ9MN_-td4UlX1zv6K_iVBAwxv6w2kl-pxaTL_SvPN_UtzdB6G_ygBlCOD-wy_ojLy-IVJVukRc5m
 }
 
 AWSEntityColoring(LookoutforEquipment)
-!define LookoutforEquipment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LookoutforEquipment, LookoutforEquipment)
-!define LookoutforEquipment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LookoutforEquipment, LookoutforEquipment)
-!define LookoutforEquipmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LookoutforEquipment, LookoutforEquipment)
-!define LookoutforEquipmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LookoutforEquipment, LookoutforEquipment)
+!define LookoutforEquipment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, LookoutforEquipment, LookoutforEquipment)
+!define LookoutforEquipment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, LookoutforEquipment, LookoutforEquipment)
+!define LookoutforEquipmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, LookoutforEquipment, LookoutforEquipment)
+!define LookoutforEquipmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, LookoutforEquipment, LookoutforEquipment)

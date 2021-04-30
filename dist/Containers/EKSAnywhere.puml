@@ -1,16 +1,15 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $EKSAnywhere [64x64/16z] {
-fTG7hkqg38NX1IwBE_y9F-qu5N1UZl3fvVi516tUnh-CFOUB0Iu6k1ZWOe2B0Iu6k1ZWOe1vm2m-NWDC0nN5lQ2cXHTF5o0y85aWzrPGhFny-NshII3nNW7z
-sVXGf9imcozTd3ozUqqtCNe5Ilpsycu5c6-Yqru09NlllcKJto-zzp42r7UlG7NoyZnzked7qeln6aSX2pocsyJe3P1kCK9AT_82wDmhx7a5OZ7zzL58vltY
-UfrZTtqC-khFszi_bUzUuWgudG6hWCvz6xpi3x5Y_ubqrmAT-pPwClp1oN1ptrwyeiHlttnBlU4yb3VVfbvWW96kln7KszVEjxdVE2l6qSwtkI_SVF-QfQDl
-Co-ec-S-PsBYsyIpGZOVPx1_-ODdWVvyd85JO-_VlGCMtWLEWUbV_1OecxUwUPKNtqPF0pwllxLmnJQfSUXbFp_xt_CxR-9UEE_nSzxyiGLKIptVVEDPS9Aq
-YdxzcRSMWLl1AyRpcti7XFT0MF7RyrUOPhvvFGey2-9aU0klk-Veew2Cm3Nz_RNDi_CnLgBG-_tygAhAy9puA1IBGFhymdFgMroVzi4p_BHG_ODd-74eLy5A
-xXa-ASXn2NBFtdVNuLUfi6xqyanz5AfJC8vrFYiuIUeux7mwJEQhRwk-hVgswjkgRwz-CV1lCV1lCV0V
+xPM7SiD024JtEDh_Vt7283VIG1DFrRgelZsQPN-FBbrIpSyv6M6vBv2TeXb87k2vWomiNS5_Rh1a73eusFmmG3OBVPi_UBSDi4r2Tt_meNOIIe2uLzvT0DA_
+QDiPUkNhjQgwHkLhR5NVvcZ9MwtDpukplHvlTtuzQ_nZ20mjqolVHQNWl_aSWLALFg-PPgbyZtzCc-fBvRdBRv3bDh_tKNbfyqzRJhFavhnWcP_d1J0_polY
+d4c8iP-srk81ERPLqk8pUO8LIPFVeE3XHThaZS317pKuDjRctHOa-Ao1EST6-hmReC4JR4ETeJBYNO65u3LvuHdl0epZFvuSUPDEwsUCT4YD-vSEf6E-F7BI
+GGdT-CMzEWJTh9y0swf3d6lstvMgWr8SKw__XmER5_NcDoMhEZH-FyKXcp_gVwgCpvYlupFdw_XaGXE-_kSf0GE-ZaEu4BI8a-yuaFMUtzzBrRFfLUR_eKkN
+FW
 }
 
 AWSEntityColoring(EKSAnywhere)
-!define EKSAnywhere(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, EKSAnywhere, EKSAnywhere)
-!define EKSAnywhere(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, EKSAnywhere, EKSAnywhere)
-!define EKSAnywhereParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, EKSAnywhere, EKSAnywhere)
-!define EKSAnywhereParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhere(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhere(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhereParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhereParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EKSAnywhere, EKSAnywhere)

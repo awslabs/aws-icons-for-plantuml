@@ -1,14 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ElementalLink [64x64/16z] {
-fPC9SkKm20MH1BoN-rzuiWVN64n2_yMrTLkuC0BUmQvW6C0mW640mm260Gm360Om3A0Ec3q4K0LiYsmh0oW2vzL-BPmgW3mWiipTbaWHG1xOwk_ezep2XtUu
--AOzF820D4dzRHNwmShzqta6k_PT0t5tJ5zvzbK2YdZVL-pHTmiuS5rNh_t67lpQns_clwMQdmqVnVnamqS-Fyc6ZtH-ljBmaSuV0fMFRFuGa6qDxdp--Vrb
-29Ysi3kVQE3_ms60TK3r8S0gO4jaMHbW7l0jeYgol0Wm3HoH4wv9W5b0PVltEJGDC0keE3wngu_APyD7uhj4ed_1W7iV9x1-V9Ur0muW-lSZQFGrtKHc0PM3
-JuueiW2pW2zPzhc4ov45oE84ilrz2N5BvVFpuAySP0G_2RY80rM0TM0jL5G-6pugdmqVh9Zwn2CS1ZWCS1ZWCC1XWCC0Xu6NOU1b6FW7
+xTO5ja8n30JGYKso_mr_n-cd9m-7YykSLs_hSjxUo5eW5T1ifnqm0pnxSK1OHG6oEYpgHrXT1sCAQm2JXddb11tdhIRO_taEglhxGvxCExRupdK1y6G-kILh
+O_M5NRB-0zFr7vYk_zYg_k_wNsx-J5gyVZoCTC_g2m4ageaAH03AQaW3B5UlZR93_rAfQDJ1mVf3-5Non0uElnz8soBRUR4jUQNwUwu6OIUV0ec_GIZPFFue
+gLWLf3K40Sjg8y1QGgHUDNzvRs-V
 }
 
 AWSEntityColoring(ElementalLink)
-!define ElementalLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ElementalLink, ElementalLink)
-!define ElementalLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ElementalLink, ElementalLink)
-!define ElementalLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ElementalLink, ElementalLink)
-!define ElementalLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ElementalLink, ElementalLink)
+!define ElementalLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalLink, ElementalLink)
+!define ElementalLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalLink, ElementalLink)
+!define ElementalLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalLink, ElementalLink)
+!define ElementalLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalLink, ElementalLink)

@@ -8,7 +8,7 @@ VNxSFhzkdv-tp-_Rzm_Rzo_Rzq_Rzs_Rzuz-2honNW
 }
 
 AWSEntityColoring(NetworkFirewallEndpoints)
-!define NetworkFirewallEndpoints(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
-!define NetworkFirewallEndpoints(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
-!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
-!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpoints(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpoints(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
+!define NetworkFirewallEndpointsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, NetworkFirewallEndpoints, NetworkFirewallEndpoints)
