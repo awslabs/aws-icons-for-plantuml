@@ -2,18 +2,18 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/InternetGateway.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/General/Internetalt1.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 actor User as user
 APIGatewayParticipant(api, Credit Card System, All methods are POST)
 LambdaParticipant(lambda,AuthorizeCard,)
 DynamoDBParticipant(db, PaymentTransactions, sortkey=transaction_id+token)
-InternetGatewayParticipant(processor, Authorizer, Returns status and token)
+Internetalt1Participant(processor, Authorizer, Returns status and token)
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details

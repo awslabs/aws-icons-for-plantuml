@@ -37,10 +37,15 @@ In order to incorporate and use the _AWS Icons for PlantUML_ resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v7.0</b>/dist/AWSCommon.puml
+<pre><code>!includeurl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v9.0</b>/dist/AWSCommon.puml
 </code></pre>
 
-This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. You can also use the _main_ branch by replacing `v7.0` (or which ever version you are using) with `main`.
+or this if defining the URL:
+
+<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v9.0</b>/dist
+</code></pre>
+
+This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v9.0_ release.
 
 All examples reference _main_ and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -56,7 +61,7 @@ After inclusion of the `AWSCommon.puml` file, there are two different ways to re
 
 1. **Use individual include files** - Use one file per service or setting. For example:
 
-   `!include AWSPuml/Storage/AmazonSimpleStorageServiceS3.puml`
+   `!include AWSPuml/Storage/AmazonSimpleStorageService.puml`
 
 1. **Use category include file** - Single include that contains all services and resources for that category. For example:
 
@@ -68,7 +73,7 @@ For example, including these files from the repository (URL), the includes would
 
 ```bash
 ' Define the main location (URL or local file path)
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 ' Include main AWSCommon and then sprite files
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/BusinessApplications/all.puml
@@ -85,14 +90,15 @@ This is the [`examples/HelloWorld.puml`](examples/HelloWorld.puml) diagram code:
 
 ```plantuml
 @startuml Hello World
-!define AWSPuml https://raw.githubusercontent.com/gadams999/aws-icons-for-plantuml/process-iconset-9.0-2021.01.31/dist
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/EndUserComputing/all.puml
 !includeurl AWSPuml/Storage/SimpleStorageService.puml
 
 actor "Person" as personAlias
 WorkDocs(desktopAlias, "Label", "Technology", "Optional Description")
-SimpleStorageServiceS3(storageAlias, "Label", "Technology", "Optional Description")
+SimpleStorageService(storageAlias, "Label", "Technology", "Optional Description")
 
 personAlias --> desktopAlias
 desktopAlias --> storageAlias
@@ -102,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/examples/HelloWorld.puml)
 
 ## Examples
 
@@ -117,12 +123,11 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 ```bash
 @startuml Basic Usage - AWS IoT Rules Engine
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/InternetOfThings/IoTRule.puml
-!includeurl AWSPuml/InternetOfThings/IoTAction.puml
 !includeurl AWSPuml/Analytics/KinesisDataStreams.puml
-!includeurl AWSPuml/ApplicationIntegration/SQS.puml
+!includeurl AWSPuml/ApplicationIntegration/SimpleQueueService.puml
 
 left to right direction
 
@@ -130,7 +135,7 @@ agent "Published Event" as event #fff
 
 IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
 KinesisDataStreams(eventStream, "IoT Events", "2 shards")
-SQS(errorQueue, "Rule Error Queue", "failed Rule actions")
+SimpleQueueService(errorQueue, "Rule Error Queue", "failed Rule actions")
 
 event --> iotRule : JSON message
 iotRule --> eventStream : messages
@@ -141,7 +146,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FBasic%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2v9.0%2Fexamples%2FBasic%2520Usage.puml)
 
 ### Raw Sprites
 
@@ -150,7 +155,7 @@ The individual icon sprites (complete list [here](AWSSymbols.md)) can be include
 ```bash
 @startuml Raw usage - Sprites
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/MachineLearning/SageMakerModel.puml
 !includeurl AWSPuml/Robotics/RoboMaker.puml
@@ -169,7 +174,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FRaw%2520Sprite%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FRaw%2520Sprite%2520Usage.puml)
 
 ### Simplified View
 
@@ -178,15 +183,15 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 ```bash
 @startuml Two Modes - Technical View
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
 !includeurl AWSPuml/General/Users.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/SecurityIdentityCompliance/Cognito.puml
 !includeurl AWSPuml/Compute/Lambda.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
@@ -210,11 +215,11 @@ recordVote --> voteDb
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
 
 And if the `!includeurl AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
 
 ### Sequence Diagrams
 
@@ -223,18 +228,18 @@ Icons can also be used in UML sequence diagrams, either in full stereotype or by
 ```bash
 @startuml Sequence Diagram - Spots and stereotypes
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/InternetGateway.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/General/Internetalt1.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 actor User as user
 APIGatewayParticipant(api, Credit Card System, All methods are POST)
 LambdaParticipant(lambda,AuthorizeCard,)
 DynamoDBParticipant(db, PaymentTransactions, sortkey=transaction_id+token)
-InternetGatewayParticipant(processor, Authorizer, Returns status and token)
+Internetalt1Participant(processor, Authorizer, Returns status and token)
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details
@@ -244,21 +249,22 @@ processor -> lambda: Returns status code and token
 lambda -> db: PUT transaction id, token
 lambda -> api: Returns\nstatus code, transaction id
 api -> user: Returns status code
+
 @enduml
 ```
 
 This code generates the fully detailed diagram with stereotypes. The participants follow the spot letter and stereotype formatting, with the icon to the left of the description.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```bash
 @startuml Sequence Diagram - Sprites
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/InternetGateway.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/General/Internetalt1.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 'Comment out to use default PlantUML sequence formatting
@@ -275,7 +281,7 @@ participant "<$APIGateway>\nCredit Card System\nAll methods are POST" as api
 'Or skinned with colors (pulled from each sprite file) and with different layout of sprite to text
 participant "<color:#D86613><$Lambda></color>\nAuthorizeCard\nReturns status" as lambda
 participant "PaymentTransactions\n<color:#3B48CC><$DynamoDB></color>\nsortkey=transaction_id+token" as db
-participant "Authorizer\nReturns status and token\n<color:#232F3E><$InternetGateway></color>" as processor
+participant "Authorizer\nReturns status and token\n<color:#232F3E><$Internetalt1></color>" as processor
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details
@@ -285,12 +291,13 @@ processor -> lambda: Returns status code and token
 lambda -> db: PUT transaction id, token
 lambda -> api: Returns\nstatus code, transaction id
 api -> user: Returns status code
+
 @enduml
 ```
 
 This code generates the same sequence diagram demonstrating how text and icon (sprite) positioning can be modified.
 
-![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fmain%2Fexamples%2FSequence%2520-%2520Sprites.puml)
+![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FSequence%2520-%2520Sprites.puml)
 
 ## Distribution "Dist" Details
 
@@ -298,19 +305,7 @@ All images, filenames, and content are provided from Amazon Web Services (AWS).
 
 To reduce the length of the filename and ultimately the PUML file details, the leading _Amazon_ or _AWS_ have been removed from the product or service icon.
 
-Certain file names, such as `AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential` or `Amazon-Simple-Notification-Service-SNS_Email-Notification` make it difficult to format the [AWS Symbols](AWSSymbols.md) markdown file. In situation such as those, the _target_ name has been shortened in the `scripts/config.yml` file. For example:
-
-```
-AWS-Identity-and-Access-Management-IAM_Temporary-Security-Credential
-```
-
-becomes:
-
-```
-IAMTemporarySecurityCredential
-```
-
-Over time, names in other categories may also be modified for clarity or use. Any such changes will be performed on the `main` branch, and may be changed multiple times between releases. If you do reference files via URL, please use the specific `release` branches which will be kept consistent and not change over time.
+Beyond that, starting with the _v9.0_ release, all filenames now follow the original icon names provided by AWS. While this makes the [AWS Symbols](AWSSymbols.md) more difficult to view, this will reduce curation of new releases. It is recommended to use a versions release tag when referencing this repository instead of the `main` branch.
 
 ## Advanced Examples
 

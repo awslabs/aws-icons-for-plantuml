@@ -2,15 +2,15 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 
 ' Uncomment the following line to create simplified view
 ' !includeurl AWSPuml/AWSSimplified.puml
 
 !includeurl AWSPuml/General/Users.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/SecurityIdentityCompliance/Cognito.puml
 !includeurl AWSPuml/Compute/Lambda.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
