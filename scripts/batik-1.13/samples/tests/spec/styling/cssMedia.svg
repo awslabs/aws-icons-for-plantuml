@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Alternate stylesheets                                                     -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: cssMedia.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+<?xml-stylesheet type="text/css" href="../../resources/style/cssMediaScreen.css" media="screen"?>
+<?xml-stylesheet type="text/css" href="../../resources/style/cssMediaProjection.css" media="projection"?>
+<?xml-stylesheet type="text/css" href="../../resources/style/cssMediaPrint.css" media="print"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+  <title>CSS Media</title>
+
+  <!-- ============================================================= -->
+  <!-- Test content                                                  -->
+  <!-- ============================================================= -->
+  <g id="testContent">
+    <text x="225" y="50" class="title">CSS Media</text>
+
+    <text x="20" y="80" style="font-size:12; text-anchor:start">
+      <tspan>Demonstrate how a slide can be different depending on the CSS media.</tspan>
+      <tspan x="20" y="94">Choose your media using the 'Edit=>Preference' menu item.</tspan>
+      <tspan x="20" y="108">You can switch between 'screen', 'print' or 'projection'</tspan>
+    </text>
+
+    <defs>
+      <pattern id="stripes" patternUnits="userSpaceOnUse" x="0" y="0" width="188" height="4">
+        <rect width="188" height="2" fill="black" fill-opacity=".2" />
+      </pattern>
+
+      <linearGradient id="backgroundGradient" x2="1" y2="0">
+        <stop offset="0" stop-color="rgb(125, 72, 255)" />
+        <stop offset=".25" stop-color="rgb(124, 65, 239)" />
+        <stop offset="1" stop-color="black" />
+      </linearGradient>
+      <linearGradient id="lineGradient" x2="1" y2="0">
+        <stop offset="0" stop-color="black" />
+        <stop offset=".75" stop-color="rgb(124, 65, 239)" />
+        <stop offset="1" stop-color="rgb(125, 72, 255)" />
+      </linearGradient>
+    </defs>
+
+    <g>
+
+      <!-- #################################### -->
+      <!-- background -->
+      <!-- #################################### -->
+      <rect class="background" x="10" y="130" width="430" height="300" />
+
+      <g class="fancyBackground">
+        <rect x="10" y="180" width="50" height="250" style="fill:url(#backgroundGradient)" />
+        <rect x="10" y="180" width="50" height="250" style="fill:url(#stripes)" />
+        <rect x="10" y="180" width="430" height="4" style="fill:url(#backgroundGradient)" />
+      </g>
+
+      <!-- #################################### -->
+      <!-- slide content -->
+      <!-- #################################### -->
+      <g class="sectionTitle">
+        <text x="30" y="160">What is SVG?</text>
+
+        <g>
+          <text x="30" y="210">* Stands for Scalable Vector Graphics</text>
+          <text x="30" y="285">* An XML grammar for defining vector-based 2D graphics</text>
+          <text x="30" y="360">* W3C Recommendation - 4 Sept. 2001</text>
+        </g>
+      </g>
+
+      <!-- #################################### -->
+      <!-- slide text -->
+      <!-- #################################### -->
+      <g class="sectionContent">
+
+        <text x="50" y="230"> 
+          <tspan>The specification defines the features and syntax for Scalable Vector Graphics (SVG),</tspan>
+          <tspan x="50" dy="12">a language for describing two-dimensional vector and mixed vector/raster graphics</tspan>
+          <tspan x="50" dy="12">in XML.</tspan>
+        </text>
+
+        <text x="50" y="305">
+          <tspan>SVG is a language for describing two-dimensional graphics in XML [XML10].</tspan>
+          <tspan x="50" dy="12">SVG allows for three types of graphic objects: vector graphic shapes, images</tspan>
+          <tspan x="50" dy="12">and text.</tspan>
+        </text>
+
+        <text x="50" y="380">
+
+          <tspan>This document has been reviewed by W3C Members and other interested parties and</tspan>
+          <tspan x="50" dy="12">has been endorsed by the Director as a W3C Recommendation. It is a stable</tspan>
+          <tspan x="50" dy="12">document and may be used as reference material or cited as a normative reference</tspan>
+          <tspan x="50" dy="12">from another document.</tspan>
+
+        </text>
+      </g>
+
+    </g>
+
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Batik sample mark                                             -->
+  <!-- ============================================================= -->
+  <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

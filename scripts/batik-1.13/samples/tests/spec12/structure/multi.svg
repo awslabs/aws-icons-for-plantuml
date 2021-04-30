@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- =================================================================== -->
+<!-- Tests 'multiImage' element with just 'subImageRef' children.        -->
+<!--                                                                     -->
+<!-- @author Thomas.DeWeese@Kodak.com                                    -->
+<!-- @version $Id: multi.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- =================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg width="450" height="500" xml:space="preserve" 
+     viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" version="1.2"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <title>MultiImage Extension Tag</title>
+    <defs>
+         <symbol id="theImage" viewBox="0 0 264 384">
+            <rect fill="#ADA" x="0" y="0" width="264" height="384"/>
+            <multiImage id="img" x="12" y="12" width="240" height="360">
+               <subImageRef xlink:href="multi-5.jpg" 
+                            max-pixel-size="2"/>
+               <subImageRef xlink:href="multi-4.jpg" 
+                            min-pixel-size="2" max-pixel-size="4"/>
+               <subImageRef xlink:href="multi-3.jpg" 
+                            min-pixel-size="4"  max-pixel-size="8"/>
+               <subImageRef xlink:href="multi-2.jpg" 
+                            min-pixel-size="8"  max-pixel-size="16"/>
+               <subImageRef xlink:href="data:image/jpeg;base64,
+/9j/4AAQSkZJRgABAQEA5gDmAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRof
+Hh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwh
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAAR
+CAAWAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAA
+AgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYk
+NOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk
+5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoPD1lol5pWoQL4eiju4tLkJupJml3OFA3
+BWGFJPOR06CuZGinH3a6zwpqdpbaZcvdeIvC6Pd2J2Ib4K6SMBtWQHoB375rgpvE9x4d1q+t
+p9VtNb3uGE1vloUJG75WUYxyBjsVxXTHHcsno7HNLBylFWaueZCfzI/kHlxDnA6mrURJUPIS
+2ecZoorlR2M//9k=" 
+                            min-pixel-size="16"/>
+            </multiImage>
+         </symbol>
+    </defs>  
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent" class="legend" style="text-anchor:middle">
+        <text x="225" y="40" class="title">MultiImage Extension Tag</text>
+  
+      <use x="85"  y="75"  width="176" height="256" xlink:href="#theImage"/>
+      <use x="281" y="75"  width="88"  height="128" xlink:href="#theImage"/>
+      <use x="303" y="223" width="44"  height="64"  xlink:href="#theImage"/>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+</svg>

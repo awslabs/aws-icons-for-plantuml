@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudShell [64x64/16z] {
+xPHdUiGm24G7J9FlVz_qi7qbe_Ju_N-KGP_M7yNEZWk1M5lDRWom205QyWcoFXECfQ0pV7r32XFuiSC85ObjxO-Zm0ksmOUiHopmvppRi1vdpPxDs123mg_C
+H3vcDyArMGMW6D9lHMKOoK0GjtFXld_llMb_W7Rlq04VkTrjRA2_hbCGpVcM0mZtkBeDGoBYvSLrz1jHBG3usPTYrCtCYtxoTtoIENy1jwdv5HHJ-pjWK_ar
+WfJz3A7ePmX5FpSe-fbWpSyBrlmCh-RdwcM_vUfD3kXuVutiTu3x_lx_B74Nw_azEdvO1ry_X9sTHm
+}
+
+AWSEntityColoring(CloudShell)
+!define CloudShell(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CloudShell, CloudShell)
+!define CloudShell(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CloudShell, CloudShell)
+!define CloudShellParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CloudShell, CloudShell)
+!define CloudShellParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CloudShell, CloudShell)

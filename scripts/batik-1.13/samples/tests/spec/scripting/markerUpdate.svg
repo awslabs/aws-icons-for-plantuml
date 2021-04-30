@@ -1,0 +1,184 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- check updates on gradients, filter, mask, and clip regarding to        -->
+<!-- geometry updates                                                       -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: markerUpdate.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="body" width="450" height="500" viewBox="0 0 450 500">
+
+    <title>Marker with geometry updates</title>
+
+    <text x="50%" y="25" class="title">Marker with geometry and property updates.
+    <tspan x="50%" dy="1.1em" style="font-style:italic; font-size:12">(click on shapes or run button)</tspan></text>
+
+  <script type="text/ecmascript">
+
+    var svgNamespaceURI = "http://www.w3.org/2000/svg";
+var stroke    = document.getElementById("stroke");
+var userspace = document.getElementById("userspace");
+var start = document.getElementById("start");
+var mid = document.getElementById("mid");
+var end = document.getElementById("end");
+var all = document.getElementById("all");
+
+function changeGeometryEvt(evt) {
+  changeGeometry(evt.target);
+}
+function changeGeometry(tgt) {
+  tgt.setAttribute("points", 
+                   "130 150 150 170 110 190 150 210 110 230 150 250 110 270 150 290 110 310 150 330 110 350 130 370");
+}
+
+function changeMarkerStartEvt(evt) { changeMarkerStart(evt.target); }
+function changeMarkerStart(tgt) { 
+  changeProperty(tgt, "marker-start", "url(#markerRed)");
+}
+function changeMarkerMidEvt(evt) { changeMarkerMid(evt.target); }
+function changeMarkerMid(tgt) { 
+  changeProperty(tgt, "marker-mid", "url(#markerRed)");
+}
+function changeMarkerEndEvt(evt) { changeMarkerEnd(evt.target); }
+function changeMarkerEnd(tgt) { 
+  changeProperty(tgt, "marker-end", "url(#markerRed)");
+}
+function changeMarkerEvt(evt) { changeMarker(evt.target); }
+function changeMarker(tgt) { 
+  changeProperty(tgt, "marker", "url(#markerRed)");
+}
+function changeProperty(tgt, prop, val) {
+      tgt.style.setProperty(prop, val, "");
+}
+
+function run() {
+  changeGeometry(stroke);
+  changeGeometry(userspace);
+  changeMarkerStart(start);
+  changeMarkerMid(mid);
+  changeMarkerEnd(end);
+  changeMarker(all);
+}
+
+function regardStart() {
+  run();
+  setTimeout("regardTestInstance.scriptDone()", 100);
+}
+
+</script>
+
+  <defs>
+
+    <marker id="markerUserSpaceOnUse" refX="8" refY="8" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16">
+      <circle cx="8" cy="8" r="8" style="fill:#aaa" />
+    </marker>
+
+    <marker id="markerStrokeWidth" refX="2" refY="2" markerUnits="strokeWidth" markerWidth="4" markerHeight="4">
+      <circle cx="2" cy="2" r="2" style="fill:#aaa" />
+    </marker>
+
+    <marker id="markerRed" refX="2" refY="2" markerUnits="strokeWidth" markerWidth="4" markerHeight="4">
+      <circle cx="2" cy="2" r="2" style="fill:#a44" />
+    </marker>
+  </defs>
+
+  <g id="test-content" transform="translate(0, -20)">
+
+    <g id="board" style="fill:none; stroke:black">
+      <rect x="40"  y="80"  width="65" height="20" style="fill:#eee"/>
+      <rect x="105" y="80" width="65" height="20" style="fill:#eee"/>
+      <rect x="170" y="80" width="65" height="20" style="fill:#eee"/>
+      <rect x="235" y="80" width="65" height="20" style="fill:#eee"/>
+      <rect x="300" y="80" width="65" height="20" style="fill:#eee"/>
+      <rect x="365" y="80" width="65" height="20" style="fill:#eee"/>
+
+      <rect x="20"  y="100" width="20" height="380" style="fill:#eee"/>
+
+      <rect x="40"  y="100" width="65" height="380" />
+      <rect x="105" y="100" width="65" height="380" />
+      <rect x="170" y="100" width="65" height="380" />
+      <rect x="235" y="100" width="65" height="380" />
+      <rect x="300" y="100" width="65" height="380" />
+      <rect x="365" y="100" width="65" height="380" />
+
+      <g style="fill:black; stroke:none; text-anchor:middle">
+        <text x="72.5" y="94">strokeWidth</text>
+        <text x="137.5" y="94">userspace<desc>userSpaceOnUse</desc></text>
+        <text x="202.5" y="94">start</text>
+        <text x="267.5" y="94">mid</text>
+        <text x="332.5" y="94">end</text>
+        <text x="397.5" y="94">marker</text>
+
+        <text x="0" y="0" transform="translate(34 290)rotate(-90)">&lt;marker></text>
+      </g>
+    </g>
+
+    <polyline id="stroke" 
+      transform="translate(-55, 0)" onclick="changeGeometryEvt(evt)" 
+      points="130 150 130 170 130 190 130 210 130 230 130 250 130 270 130 290 
+              130 310 130 330 130 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; 
+             marker:url(#markerStrokeWidth)" />
+
+
+    <polyline id="userspace" 
+      transform="translate(10 0)" onclick="changeGeometryEvt(evt)" 
+      points="130 150 130 170 130 190 130 210 130 230 130 250 130 270 130 290 
+              130 310 130 330 130 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; 
+             marker:url(#markerUserSpaceOnUse)" />
+
+    <polyline id="start"
+      transform="translate(75 0)" onclick="changeMarkerStartEvt(evt)" 
+      points="130 150 110 170 150 190 110 210 150 230 110 250 150 270 110 290 150 310 110 330 150 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; marker:url(#markerUserSpaceOnUse)" />
+
+    <polyline id="mid"
+      transform="translate(140 0)" onclick="changeMarkerMidEvt(evt)" 
+      points="130 150 110 170 150 190 110 210 150 230 110 250 150 270 110 290 150 310 110 330 150 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; marker:url(#markerUserSpaceOnUse)" />
+
+    <polyline id="end"
+      transform="translate(205 0)" onclick="changeMarkerEndEvt(evt)" 
+      points="130 150 110 170 150 190 110 210 150 230 110 250 150 270 110 290 150 310 110 330 150 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; marker:url(#markerUserSpaceOnUse)" />
+
+    <polyline id="all"
+      transform="translate(270 0)" onclick="changeMarkerEvt(evt)" 
+      points="130 150 110 170 150 190 110 210 150 230 110 250 150 270 110 290 150 310 110 330 150 350 130 370" 
+      style="stroke:black; stroke-width:4; fill:none; 
+             marker:url(#markerUserSpaceOnUse)" />
+  </g>
+
+  <g id="run" transform="translate(195, 468)" cursor="pointer" onclick="run()">
+    <rect rx="5" ry="5" width="60" height="25" fill="#eeeeee" stroke="black" />
+    <text x="30" y="18" font-size="14" 
+      font-weight="bold" text-anchor="middle">Run</text>
+  </g>
+</svg>

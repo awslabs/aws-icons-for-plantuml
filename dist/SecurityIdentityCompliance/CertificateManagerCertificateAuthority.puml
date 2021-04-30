@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CertificateManagerCertificateAuthority [64x64/16z] {
+xTI5Zjmm543H1yPt__z_MoTIwYdQ7b5tzme6JyWWx_PLgOTb6Jd7wPlURa-IW_B7yQqUr1z_s3_yr_XvQRstucS-0tUHzht5JODHrqtl0ENwtGg0RNa3sdDE
+RO3k-80YKnNwXi_GvAK6QTtpUhageX3Btg7CFBf81Llr1MpcKCIXhFe6CxyV1jHLtubBpboWxVaMUhsdowPl85AWJroWxZs_GTl37VBc-7M0K1bjZPy4wFNe
+7guGs_DN-xDk-zRybGxrZVKZ-hf-EuJkU360U-Vp2eJ9bXVjZ8AZ_MkKudp_lBDIMwlPH0wy-u_dv_vxxt_sDitN0lhnV5hmMgk-uIqWxDWdhlpG1r0R46SU
+o28PEFNtxqTUUHQT1SYkbrJagVY2tspsDIrai_rUVVnQUVB1wFPsxbL6walfvCr7Abzz0m
+}
+
+AWSEntityColoring(CertificateManagerCertificateAuthority)
+!define CertificateManagerCertificateAuthority(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CertificateManagerCertificateAuthority, CertificateManagerCertificateAuthority)
+!define CertificateManagerCertificateAuthority(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CertificateManagerCertificateAuthority, CertificateManagerCertificateAuthority)
+!define CertificateManagerCertificateAuthorityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CertificateManagerCertificateAuthority, CertificateManagerCertificateAuthority)
+!define CertificateManagerCertificateAuthorityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CertificateManagerCertificateAuthority, CertificateManagerCertificateAuthority)

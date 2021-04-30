@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DatasyncAgent [64x64/16z] {
+xTO5WYCn30NHBuDirVtlE-nWSo_ll31KGEs0_XGfxv0UOlDWbt3JLUQ0V9lJQzwXzfi7CA1efmAOFlY1N2hW-X1q7T09lKjGTK25z3Mzh0D6zulwxpwTwvsm
+Ctq7yicUUhAdpVV5RnLbTwzwF_aGH0u8c-iRjveS2CaPGZQ6SAYlNtUgPzPF1TfINrhIaZ64cRw1Qr42wanl7MZB-SBpfs2jBq0tFVTZDj3hjFVA0P-S_zWs
+pEgo1XHDzcDjDEP42eYaoVvwcqthlEkcoRwkplsZTscoBq3LQbyqqrTMLx4JIJFzs2wBiZJVgum1M1sIz7bYzP4zzjSD40n51b2LU9IV-x40EDYFnGdDFabA
+RqnAZpJPg_2k7V_zIN6kb_LplUIHVj7lxtV_tP___wmWjDyrSwY7djxrmGBgWJpivWSzlEJDYWUGDAHWjqYwKMDdNVN0qWwcFyKh
+}
+
+AWSEntityColoring(DatasyncAgent)
+!define DatasyncAgent(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DatasyncAgent, DatasyncAgent)
+!define DatasyncAgent(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DatasyncAgent, DatasyncAgent)
+!define DatasyncAgentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DatasyncAgent, DatasyncAgent)
+!define DatasyncAgentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DatasyncAgent, DatasyncAgent)

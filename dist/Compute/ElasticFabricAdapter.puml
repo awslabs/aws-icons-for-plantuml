@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticFabricAdapter [64x64/16z] {
+xPQ50i8m44DpqXp__yD8ERnJ7FQmMKfINps5XOM5ODd2c2Mc2H8nJbKNtScyaCLD02sJZ2jWFFS2wFWO1R2hfyE0iHOSqiXBWO-KQtI4yb7cfIDfo8W8SPAt
+2eWXlQAdhGaTSj-VqOSIL8V19b7JzQSthpPRr61k8xeHOUK60_jLhdlALk-jw5oLVCIRVogw0uYgTvpXLH-0xX2mNNx-fbxD330pJNtwId_z-ZmNoUVVe7UI
+8YHzdlx473tB6Mpe-zllYaRxzVKVu3WUwh41QFMVDc5oqjTZWrds_17Z9v_V0Qd7MTxm-CaPne14ylWuEzqxVzmvVzqxVzuvVz-vVjoxVjs_Vjw_Vj-_VxX_
+_tB__kb-5XOMDW
+}
+
+AWSEntityColoring(ElasticFabricAdapter)
+!define ElasticFabricAdapter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticFabricAdapter, ElasticFabricAdapter)
+!define ElasticFabricAdapter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticFabricAdapter, ElasticFabricAdapter)
+!define ElasticFabricAdapterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticFabricAdapter, ElasticFabricAdapter)
+!define ElasticFabricAdapterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticFabricAdapter, ElasticFabricAdapter)

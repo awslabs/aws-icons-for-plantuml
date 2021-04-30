@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Honeycode [64x64/16z] {
+xPO7TcuX28J7ZdV_-tql2MSEXXGnlV7tykaTaD7h_U8l_aBaDVIiG9qlndj2paZzPRHaf75T8o6_GCGiGDEt3IXn4PwniUB1Q_PQui8xPoxJSYa7DUDRVeZM
+iWD5bYcNYv42zArmwXmgMPCntC-RckbSQ4in951BGLcqyW9SJWhaQRwRSCr55b-JlkF5HCwayrAxHFYAjlQFvRoXnlYd-kU4z_rpoll-EURB-aivv-lwI_q9
+_7WLFmjUmrUWxlbcVBvVFsG9w4UTv966SvK0du1Mb4zSzyAL7Cd_IE1QLTFGvtZ_q3nGTMQpBiaHNisgJ5HLlbfOX6U_MVtCGWFv6yxkp8Y6QXe94juyt62e
+kos4sJRRKIFIhw1skjiyqPV1Aes8TXxQl2qDHBYV7HuUndZ94M9Mz-z6uOTd25-BU13YKESnc_OFotSUK_ldXRJrprUDl_YB_m
+}
+
+AWSEntityColoring(Honeycode)
+!define Honeycode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Honeycode, Honeycode)
+!define Honeycode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Honeycode, Honeycode)
+!define HoneycodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Honeycode, Honeycode)
+!define HoneycodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Honeycode, Honeycode)

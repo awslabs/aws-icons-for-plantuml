@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RoboMakerDevelopmentEnvironment [64x64/16z] {
+xPQ9SYmX20312xJ__tzVZTJkk5FwhgJkTEwi3OBCblAD_92QbI_e1Z1KFYXzkFv1h6MkPDBb8jUGAXVpTwrvhtTeyIE9Gmfjo0KmucK5jjKfnSPSwY8v5hbd
+SaWjNf223fCT0opowoj_0rxvEzWXVw2jHgbB_QL5_UskFxNGZpZ0I8_U3Zp9tv7Dg_m7ESaNQ00vJhXbcQHyOgj7W0nWqOaZu-a3jSssCobneaUUjKET2IM1
+9R3fZxB5UVffJcS7KUWDslJxyH7RxDyx-0m2f7_qCwyHqpxBl_sSplvDxk0QnMIHsy-GrcMk6tzB-8qr07tumKzfupy2AAtthL-1aJT-1D2xzBBpAvEqyJ-V
+-QGI_cd-98EjlWxmJV_tyoVIUqDlF_IDlvy_4H---dRfQfDwdZymZqJQHrttt_qzNlte5oQwwv_i_VtyxNtHuEm79t_bwtuRGyvegMdratkIloS1jCKVuv6k
+DBDMzE5Lo65TvDl7Z6Lt1a7FgwvOxv7UCjZjDsXhbXkJ1VpbU_by_zEqTfv-jKUB0rtN2Hffj_-LHZo9fLwP1hi3IWEeilCpa2ACBrUE9xceRFqEEVG8e0Fq
+J_EJczLtUWlz5Q3iDb1xDttxTby7B7RlJ8RE9UEfzxL_ztLiMMmLp7N-UXUGV6PjG8SH_iTr3FmzedKPke21lv8qIE6lrp6mfr_UlbBzSN_Rv3_xub2Z_98x
+wB7-rM-Wd_UVpCJt_TVLt_U_Xduy_zKlO7zy_xWPa3xyFyvV_g30qCNtI7_s7sGZ-gqpIe--7kayVN6WbylEzfhXC-M1YZGMNFwTv12CBF-55dEtckIR-E4N
+}
+
+AWSEntityColoring(RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironment(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)
+!define RoboMakerDevelopmentEnvironmentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, RoboMakerDevelopmentEnvironment, RoboMakerDevelopmentEnvironment)

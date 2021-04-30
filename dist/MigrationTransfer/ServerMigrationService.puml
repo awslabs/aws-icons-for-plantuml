@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ServerMigrationService [64x64/16z] {
+xTN5OSHG34NH9_YY_liD3eD9uSpT68yPwaDwz2ZjebZd5HVHMkzdyMfVPydlyyw7z2DyHhQENm6IsEvZA0EIdVDF1Rnr_Ho8rlqBK7Py6NGGaSRM-yy0CGEs
+qJkzoY14w_bDSCkN8fkUHpPy285yczzb1E_uIa9qV0MavKkGBM_mbdVOj_g1wFWagevNMCSFI6ttmP2yu-qiEdgtNKg0Blt_yur5Kzz0l-XucE7lHTRNvLPL
+QR4RNTdk-WV6xjPyiNzubOCVN5lQ-KvfKP_MeqVF
+}
+
+AWSEntityColoring(ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ServerMigrationService, ServerMigrationService)
+!define ServerMigrationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ServerMigrationService, ServerMigrationService)

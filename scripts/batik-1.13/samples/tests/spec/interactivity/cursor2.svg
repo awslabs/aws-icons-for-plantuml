@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Tests support for the cursor property.                                    -->
+<!--                                                                           -->
+<!-- @author vhardy@apache.org                                                 -->
+<!-- @version $Id: cursor2.svg 1733420 2016-03-03 07:41:59Z gadams $             -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  
+     id="body" width="450" height="500" viewBox="0 0 450 500" >
+
+    <text class="title" x="50%" y="50">Custom Cursor Hot Spot Test</text>
+
+  <script type="text/ecmascript"><![CDATA[
+
+var hitCount = document.getElementById("hitCount");
+var hitCountText = hitCount.firstChild;
+var curHitCount = 0;
+
+function targetHit() {
+    curHitCount++;
+    hitCountText.data = "" + curHitCount;
+}
+
+var hitTargetArea = document.getElementById("hitTargetArea");
+
+function hotTarget() {
+    hitTargetArea.setAttribute("fill", "gold");
+}
+
+function coldTarget() {
+    hitTargetArea.setAttribute("fill", "#eeeeee");
+}    
+
+var cursorRef = document.getElementById("refNW");
+
+function changeCursor(evt) {
+    var target = evt.target;
+    var id = target.getAttribute("id");
+    var cursorId = "cursor" + id;
+    hitTargetArea.setAttribute("cursor", "url(#" + cursorId + "),crosshair");
+
+    
+    cursorRef.setAttribute("visibility", "hidden");
+    cursorRef = document.getElementById("ref" + id);
+    cursorRef.setAttribute("visibility", "visible");
+}
+
+  ]]></script>
+
+    <text class="label" x="50%" y="125" text-anchor="middle">Try and hit the small black dot
+        <tspan x="50%" dy="+1.4em">after selecting your cursor</tspan></text>
+
+    <g id="hitTargetArea" fill="#eeeeee" transform="translate(175, 150)" shape-rendering="crispEdges" cursor="url(#cursorNW),crosshair" >
+        <rect x="0" y="0" width="100" height="100" stroke="black"/>
+        <rect x="44" y="44" width="12" height="12" fill="black"/>
+        <rect x="45" y="45" width="10" height="10" fill="#eeeeee" />
+        <rect x="49" y="40" width="2" height="20" fill="black" />
+        <rect y="49" x="40" height="2" width="20" fill="black" />
+        <!-- <line x1="40" y1="50" x2="60" y2="50" stroke="black" />
+        <line y1="40" x1="50" y2="60" x2="50" stroke="black" /> -->
+        <rect x="49" y="49" width="2" height="2" fill="black"
+              onclick="targetHit()" 
+              onmouseover="hotTarget()"
+              onmouseout="coldTarget()"/>
+    </g>
+
+    <text class="label" text-anchor="middle" x="50%" y="270" fill="crimson">Hit Count : <tspan id="hitCount">0</tspan></text>
+
+    <text class="label" text-anchor="middle" x="25%" y="340" >Cursor Selection</text>
+
+    <g onclick="changeCursor(evt)" transform="translate(112.5, 410)">
+        <use xlink:href="#Center" x="-16" y="-16" />
+        <use xlink:href="#NW" x="-50" y="-50"  />
+        <use xlink:href="#N" x="-16" y="-50"  />
+        <use xlink:href="#NE" x="18"  y="-50"  />
+        <use xlink:href="#E" x="18"  y="-16"  />
+        <use xlink:href="#SE" x="18"  y="18"   />
+        <use xlink:href="#S" x="-16" y="18"   />
+        <use xlink:href="#SW" x="-50" y="18"   />
+        <use xlink:href="#W" x="-50" y="-16"  />
+    </g>
+
+    <text class="label" text-anchor="middle" x="75%" y="340" >Current Target Area Cursor</text>
+
+    <g transform="translate(321.5, 394)" visibility="hidden">
+        <use id="refCenter" xlink:href="#Center"  />
+        <use id="refNW" xlink:href="#NW"  visibility="visible"/>
+        <use id="refN" xlink:href="#N"  />
+        <use id="refNE" xlink:href="#NE"  />
+        <use id="refE" xlink:href="#E" />
+        <use id="refSE" xlink:href="#SE"   />
+        <use id="refS" xlink:href="#S"   />
+        <use id="refSW" xlink:href="#SW"   />
+        <use id="refW" xlink:href="#W"  />
+    </g>
+
+    <defs>
+        <image id="Center" xlink:href="../../resources/images/hotSpotCenter.png" width="32" height="32"/>
+        <image id="NW" xlink:href="../../resources/images/hotSpotNW.png" width="32" height="32"/>
+        <image id="N" xlink:href="../../resources/images/hotSpotN.png" width="32" height="32"/>
+        <image id="NE" xlink:href="../../resources/images/hotSpotNE.png" width="32" height="32"/>
+        <image id="E" xlink:href="../../resources/images/hotSpotE.png" width="32" height="32"/>
+        <image id="SE" xlink:href="../../resources/images/hotSpotSE.png" width="32" height="32"/>
+        <image id="S" xlink:href="../../resources/images/hotSpotS.png" width="32" height="32"/>
+        <image id="SW" xlink:href="../../resources/images/hotSpotSW.png" width="32" height="32"/>
+        <image id="W" xlink:href="../../resources/images/hotSpotW.png" width="32" height="32"/>
+
+        <cursor id="cursorCenter" x="16" y="16" xlink:href="../../resources/images/hotSpotCenter.png"/>
+        <cursor id="cursorNW" x="0" y="0" xlink:href="../../resources/images/hotSpotNW.png"/>
+        <cursor id="cursorN" x="16" y="0" xlink:href="../../resources/images/hotSpotN.png"/>
+        <cursor id="cursorNE" x="32"  y="0" xlink:href="../../resources/images/hotSpotNE.png"/>
+        <cursor id="cursorE" x="32"  y="16" xlink:href="../../resources/images/hotSpotE.png"/>
+        <cursor id="cursorSE" x="32"  y="32"  xlink:href="../../resources/images/hotSpotSE.png"/>
+        <cursor id="cursorS" x="16" y="32"  xlink:href="../../resources/images/hotSpotS.png"/>
+        <cursor id="cursorSW" x="0" y="32"  xlink:href="../../resources/images/hotSpotSW.png"/>
+        <cursor id="cursorW" x="0" y="16" xlink:href="../../resources/images/hotSpotW.png"/>
+    </defs>
+
+</svg>

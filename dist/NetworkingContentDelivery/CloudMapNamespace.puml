@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudMapNamespace [64x64/16z] {
+pPU9ZkGm20N1jwd__zzL9qO8TKSxUs_DcRIBnezev97_crBawxIzYoGsB4cKlTk3NW7IYml81Hf0_QWh5ptfPZ3ZJkT2F_aRHWVsALyCJDN0TrKtq0TiUMV1
+EltPx7riW7cNOO_UfvtULxIKEhDh5ulWNZU9wwjpW_uXktBwddQlBSSNRcpuYfpX-vrrHnJ-r58qJI5dQ30a-P9zoGomj-n-mC-6J-IhlayxiaD_rDT8R42N
+7_MbmuWqou_vUM8Jx4TzVtjVFx_ebpxdx2gYFS-_QF3eL-DcvGrNCW_-9CYHxw_u2vXLHDk2NA33dZEe7_m1LaHAg_VCQXv7RkZTLp2LiW66r3mpXV4TVqAJ
+misyBt_4D-pAQRKEL8MP-b-j1Nfx-xg0UTv1OP_Lih7m1ncxVMUUXEg9oTYo83r0cJpKVlnojidbcpWDPWtsAUtNvNQMo3ss2UEguHZe-_EVkOfsV7-LI7pa
+z3kV_0RTWx8Y2pI6PrcdoJltgZBNwYydsXzf_N1TsdBqRTc4cWex4tybpo-tMM17l_I8xjRTjnUtdsBQK4CXwUNJy-i5rRDS8dutMjbNj8z-X-NpBZ8uM_6k
+zAMhFFlUzdmfUfgfldqrs7gLNEspNy3yUuTw_2Qk-ohUVOzmYbrc2x-VuyfotNrRBmZ_vUxxkaE9Fns5qCDtmgzmGXgWdlzrUxhk_Z2dviUpdYnzvlIapmNo
+o6QSjfV4cP0HkYJ_ZUBFUOjCw19w-CzKi7Ju2ZryFOZpSE2QOCNry1TEaqonc8clxAwxd-QNw6VOmVHrsRVvWkpN7IjJIUZwlVE3TlCDPVHkOS-cJxwskUCO
+_4QPt9XzyDiq3wF84tbH-7juwUcTFw5UOnNtmrNv4Zeivg7halkNt3majiWW_gVvyGfxX_t3jFpm_ZYwOAdy0ghoV_CD
+}
+
+AWSEntityColoring(CloudMapNamespace)
+!define CloudMapNamespace(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudMapNamespace, CloudMapNamespace)
+!define CloudMapNamespace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudMapNamespace, CloudMapNamespace)
+!define CloudMapNamespaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudMapNamespace, CloudMapNamespace)
+!define CloudMapNamespaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudMapNamespace, CloudMapNamespace)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingWindfarm [64x64/16z] {
+xPS7RiL024Iti-_-5qvGFcd8o3YzZ8hhOn3ZMhwPQk_LBSgBHQWExM7HxnSDMmoj1kEVFqRdMaj0t6AzM4mjwTGsfxMRvpSPLTSyp7fI4p-72INKSqTOQHvf
+R-47ZBVmi0_whrqbSDg-W2XpkocvwRHzCQ8xFhRtlAgf5fosBo1DLTty0ljq_ju-ptlxV7vcdyxFs-VpgsEgVS27_GzKimJzH_Dh0Cu_c7zRBxHXkCT5n7UU
+oQnXHdnJhGEUQa_lW-itdF-0BK2zcf_2Rycl3DaR99UVRq8ktp-zDrSWmyEo3iBy8juAPFCptWfaypFU2kJpCzuAvFE3vM9CpzyAp3VnPLpCp_I6_1BtNvAl
+GoKvVWzLIyulV_-ydPVz5lvqJmD63CNdLbAghcWZeLwywbWYia6U5WBRBTQe__y_R-3Vzl_wpNG7
+}
+
+AWSEntityColoring(IoTThingWindfarm)
+!define IoTThingWindfarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingWindfarm, IoTThingWindfarm)
+!define IoTThingWindfarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingWindfarm, IoTThingWindfarm)

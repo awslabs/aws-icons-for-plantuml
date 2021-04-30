@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingThermostat [64x64/16z] {
+xLU7ajqm2FI21Dh__-6Snyov2PrBUh9NU2exvj4z_MQ0QWYSn1HY12Lb9_H3oASe__aPKAgPEMcBy9Em40Nz1r-7dkZWBU38BsJ1HMZ73fMSBeEquvRr-808
+y8mFDGPSSPSFumw6b0-TuJj-vGolHRLKvuowuxlEmDRnAr_QOQEHP9EL7z0pFpQQbZLAXFGMry_yIMOOkQ7NHSdOSH9JZVkXlypesKyOqM6cdsU-H1ZbQ_kt
+e6y1H8WsVCMlEqjZK_7YREm_a6rpKlUfraYC_MUaOvDJUxwGDlGV8jXw_DZ0o7zAjZMx8MNBDyuegV_Yl_Xg73tpVMJ_Y9c0cc_vwZevEUA7W_hs2nSYzn_8
+alDZ2xd_v7XTEnjozDyB_XFzPQF_I_jTzrzWwB_uF_p-X_WvncyvtBV3a_GOl-VyyVKsbhg9dVeOrayZTNkxDTBp_1tLZr36IEJr8wzVCMw4n-ECzbNzmwP-
+aWq8nRBwcTVlIFYuczJll7-40HdcI_f7th-MZxL6ZKlwLzu_NJTXuqd_JFetxDo_3Kd_VZS_vFDBSGQyuE7y91-uC3-zdjyYSoz2oV9-VZqhS1sbEx_RY_dz
+__lFDVxhzzVV3Dy
+}
+
+AWSEntityColoring(IoTThingThermostat)
+!define IoTThingThermostat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingThermostat, IoTThingThermostat)
+!define IoTThingThermostatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingThermostat, IoTThingThermostat)

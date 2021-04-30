@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Test description here                                                     -->
+<!--                                                                           -->
+<!-- @author tkormann@apache.org                                               -->
+<!-- @version $Id: chessboard.svg 1733420 2016-03-03 07:41:59Z gadams $     -->
+<!-- ========================================================================= -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+<title>Chessboard</title>
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent">
+    <defs>
+
+        <filter id="whiteCellFilter" filterUnits="objectBoundingBox" 
+              x="0%" y="0%" width="1" height="1">
+            <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="3"/>
+            <feColorMatrix type="luminanceToAlpha"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope=".5" intercept="0" />
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncA type="gamma" amplitude="1" exponent="1.5" offset="0" />
+            </feComponentTransfer>
+        </filter>
+
+        <filter id="blackCellFilter" filterUnits="objectBoundingBox" 
+              x="0%" y="0%" width="1" height="1">
+            <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="3"/>
+            <feColorMatrix type="luminanceToAlpha" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="1.5" intercept="0" />
+            </feComponentTransfer>
+            <feColorMatrix type="matrix" values="0 0 0 -1 1    0 0 0 -1 1    0 0 0 -1 1   0 0 0 0 1" />
+        </filter>
+
+        <pattern id="chessBoardPattern" patternUnits="userSpaceOnUse" x="25" y="25" width="100" height="100">
+            <rect id="blackCellTop" width="50" height="50" fill="black" filter="url(#blackCellFilter)" />
+            <rect id="whiteCellTop" transform="translate(30, 0)" x="20" y="0" width="50" height="50" fill="white" filter="url(#whiteCellFilter)"/>
+            <rect id="whiteCellBottom" transform="translate(0, 50)"  width="50" height="50" fill="black" filter="url(#whiteCellFilter)" />
+            <rect id="blackCellBottom" transform="translate(50, 50)" width="50" height="50" fill="white" filter="url(#blackCellFilter)" />
+        </pattern>
+
+        <radialGradient id="light" gradientUnits="userSpaceOnUse" 
+                      cx="200" cy="250" fx="20" fy="20" r="400">
+            <stop offset="30%" style="stop-color:black; stop-opacity:0" />
+            <stop offset="100%" style="stop-color:black; stop-opacity:.5" />
+        </radialGradient>
+
+    </defs>
+
+
+        <rect id="chessboard" x="25" y="25" width="400" height="400" fill="url(#chessBoardPattern)"/>
+        <rect id="lightSquare" x="25" y="25" width="400" height="400" style="fill:url(#light);"/>
+
+    <defs>
+        <radialGradient id="psion" gradientUnits="objectBoundingBox" fx="20%" fy="24%" r="100%">
+            <stop offset="0%"   style="stop-color:white;" />
+            <stop offset="50%" style="stop-color:black;" />
+        </radialGradient>
+        <radialGradient id="psion2" gradientUnits="objectBoundingBox" fx="20%" fy="24%" r="60%">
+            <stop offset="0%"   style="stop-color:white;" />
+            <stop offset="100%" style="stop-color:black;" />
+        </radialGradient>
+    </defs>
+
+    <g id="shadow" style="fill:black; opacity:.6;" transform="translate(172 168) rotate(120)">
+        <circle cx="19" cy="20" r="10"/>
+        <path d="M13 28L24 28C27 28 24 42 32 48L8 48C13 42 13 34 13 28Z"/>
+        <rect x="2" y="45" width="36" height="18"/>
+    </g>
+
+        <circle cx="100" cy="150" r="18" style="fill:url(#psion2); stroke:black; stroke-width:2"/>
+        <circle cx="100" cy="150" r="10" style="fill:url(#psion);"/>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

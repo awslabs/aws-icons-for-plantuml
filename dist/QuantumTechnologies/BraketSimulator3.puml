@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BraketSimulator3 [64x64/16z] {
+xPS7RaGn24GN5tZtlt2w5PIOWDFRg6nzri1yjyktalGk-Mki1Yrx_H3-dvTv8mMjl6v2d1neVWX_AUfzUUbtqXDUxncvpsIfp2-rz-2z_paoTgZt_wH_0jPU
+eZiWSVzbcGhnnKVv3K0YN82Hv3z08zwWf_ahjD2zvlbBQC102lbhq846CylV_y_BZnld_-XpttojpR_nq6OdzstE2yoj_UhyLzZPdzNvFw1jmk_v_8yBy9xY
+_EC4GFFvxmk8xSVvnmKedAo_XiNsOpueODclymr6Q3_EFop0sy_pzmLu-td-GG86bVL_EzlzYf3dxorFFzRn_ciigBdkrVaEwaQgyyxrTA_7-xyOs1W6Thx_
+hm70uVNy_PbgrFV_vvAMd5--wFprlSwVv-VdxtR-_-VhzzTlfMi
+}
+
+AWSEntityColoring(BraketSimulator3)
+!define BraketSimulator3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator3, BraketSimulator3)

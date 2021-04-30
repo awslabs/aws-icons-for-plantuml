@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Config [64x64/16z] {
+xTI7hkD028NX0mmCdFT_u4LEKopvnfFjk_bKN7zt3_y87nyvxBMHF39mnlYYvskl-eo8oVOqMz5EzOh6ZQ7LuzRoJ2-QTkzptFjqp7CzxxtGxtt5R-o7m1GM
+R_Q92tdTJv6fcFlUsVHr7xZmNQ_Uv4plqJ2U-iA5dkXdjbtFsjv_y4H_CTvyV-KG5tZ-_k-d1110_Cr-GhJ1s49hQhAfd-udM_Txw-TlRYtO5ky_k05486pB
+ppzbbCD8HPH9BVJJgtCq2JA09dM-RvrFqydDr16GMkaxvvE0hlG3nfO-HXIROQpq1TssRRoIYbhf7PCqM99J8SX0VDMZFNe7XCpRFMnB0EAm3pDpRdni9mvo
+Mh9rZa66OHprUmO-LCuejjL-ci_YtM6VpuhTQv068Db2adGzwdU4T86Gjz-eHCYwBUrLxB45Pa4woNJ190F11GLbLGYQT4u1LznUrep8-ue5WZZuVyufGPZ6
+PJx40b9SKGAq81rjCM-be-8sVWqjlWDemhU5jU2VvUFZ6m
+}
+
+AWSEntityColoring(Config)
+!define Config(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, Config, Config)
+!define Config(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, Config, Config)
+!define ConfigParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Config, Config)
+!define ConfigParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Config, Config)

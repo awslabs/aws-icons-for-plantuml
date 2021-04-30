@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" 
+          "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Tests support for pointer-events.                                      -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: pointerEvents.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg id="svg-root" width="450" height="500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+   <title id="test-title">Test 'pointer-events' property</title>
+   <text x="50%" y="30" class="title">Test 'pointer-events' property</text>
+
+   <script type="text/ecmascript"><![CDATA[
+    function getFillFill(e) {
+       var g = e.parentNode;
+       var lc = g.lastChild;
+       while (lc) {
+          if (lc.nodeName == "rect") break;
+          lc = lc.previousSibling;
+       }
+       return lc;
+    }
+
+    function getFillStroke(e) {
+       var f = getFillFill(e);
+       if (f) f = f.previousSibling;
+       while (f) {
+          if (f.nodeName == "rect") break;
+          f = f.previousSibling;
+       }
+       return f;
+    }
+
+    function getStrokeFill(e) {
+       var f = getFillStroke(e);
+       if (f) f = f.previousSibling;
+       while (f) {
+          if (f.nodeName == "rect") break;
+          f = f.previousSibling;
+       }
+       return f;
+    }
+
+    function getStrokeStroke(e) {
+       var f = getStrokeFill(e);
+       if (f) f = f.previousSibling;
+       while (f) {
+          if (f.nodeName == "rect") break;
+          f = f.previousSibling;
+       }
+       return f;
+    }
+
+    function setFillFill(evt, color) {
+        var f = getFillFill(evt.target);
+        f.setAttribute("fill", color);
+        evt.stopPropagation();
+    }
+
+    function setFillStroke(evt, color) {
+        var f = getFillStroke(evt.target);
+        f.setAttribute("fill", color);
+        evt.stopPropagation();
+    }
+    function setStrokeStroke(evt, color) {
+        var f = getStrokeStroke(evt.target);
+        f.setAttribute("fill", color);
+        evt.stopPropagation();
+    }
+
+    function setStrokeFill(evt, color) {
+        var f = getStrokeFill(evt.target);
+        f.setAttribute("fill", color);
+        evt.stopPropagation();
+    }
+
+    function onDone() {
+      try {
+          regardTestInstance.scriptDone();   
+      } catch (e) {
+          alert("This button only works when run in the regard framework");
+      } 
+    }
+    function regardStart () {
+       document.getElementById("done").setAttribute("visibility", "visible");
+    }
+   ]]></script>
+
+  <g id="done" transform="translate(380, 10)" 
+     cursor="pointer" onclick="onDone()" visibility="hidden" >
+    <rect rx="5" ry="5" width="60" height="25" fill="#EEE" stroke="#000" />
+    <text x="30" y="18" font-size="14" 
+      font-weight="bold" text-anchor="middle">Done</text>
+    </g>
+
+  <g id="content" transform="translate(-5,-5)">
+    <g id="painted" pointer-events="painted" transform="translate(0,50)">
+      <rect x="10" y="0" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">Painted</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="fill" pointer-events="fill" transform="translate(0,100)">
+      <rect x="10" y="0" width="440" height="50" fill="#CCC" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">Fill</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="stroke" pointer-events="stroke" transform="translate(0,150)">
+      <rect x="10" y="0" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">Stroke</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="all" pointer-events="all" transform="translate(0,200)">
+      <rect x="10" y="0" width="440" height="50" fill="#CCC" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">All</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="none" pointer-events="none" transform="translate(0,250)">
+      <rect x="10" y="0" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">None</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="visible" pointer-events="visible" transform="translate(0,300)">
+      <rect x="10" y="0" width="440" height="50" fill="#CCC" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">Visible</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="visiblePainted" pointer-events="visiblePainted" 
+      transform="translate(0,350)">
+      <rect x="10" y="0" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">VisiblePainted</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="visibleFill" pointer-events="visibleFill" 
+      transform="translate(0,400)">
+      <rect x="10" y="0" width="440" height="50" fill="#CCC" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">VisibleFill</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+
+    <g id="visibleStroke" pointer-events="visibleStroke" 
+      transform="translate(0,450)">
+      <rect x="10" y="0" width="440" height="50" fill="#DDD" stroke="#000"/>
+      <line x1="100" y1="0" x2="100" y2="50" stroke="#000" />
+      <line x1="170" y1="0" x2="170" y2="50" stroke="#000" />
+      <line x1="240" y1="0" x2="240" y2="50" stroke="#000" />
+      <line x1="310" y1="0" x2="310" y2="50" stroke="#000" />
+      <line x1="380" y1="0" x2="380" y2="50" stroke="#000" />
+      <text x="20" y="30">VisibleStroke</text>
+
+      <g transform="translate(100,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(170,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(240,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="black" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(310,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" 
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+
+      <g transform="translate(380,0)">
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setStrokeStroke(evt,'crimson')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setStrokeStroke(evt,'gold')"/>
+        <ellipse cx="16" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setStrokeFill(evt,'crimson')"/>
+
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="0"
+          fill="none" stroke="none" pointer-events="fill"
+          onmouseover="setFillFill(evt,'crimson')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="white" stroke="black" visibility="hidden"
+          onmouseover="setFillFill(evt,'gold')"/>
+        <ellipse cx="44" cy="25" rx="10" ry="17.5" stroke-width="5"
+          fill="none" stroke="none" pointer-events="stroke"
+          onmouseover="setFillStroke(evt,'crimson')"/>
+
+        <rect x="60" y="4" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="14" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="26" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+        <rect x="60" y="36" width="10" height="10" 
+          stroke-width="1" stroke="#000" fill="#888"/>
+      </g>
+    </g>
+  </g>
+</svg>

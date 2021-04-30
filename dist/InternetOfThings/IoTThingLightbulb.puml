@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingLightbulb [64x64/16z] {
+xPS53Xmn301ZE-3v_uUxgrojRfgSNCOH78xM42o_6MBsUf73otigwFLYwujTBmhstpzYhVS-eC-NSNffjhFLIUFwkU-GntTvjvAaWMs-Arbaywp-8torMas_
+qjVEnBkyyyLknkft86Yht-r6oeKnUVZYmAWggiq1bwS_qPClm8Z4pS7bv1UzUSRlq9Ta_1c_tfpgrv_w_AQbwoymDiDRidu7BGi6BTi_6BlvvSd-ATJjf95S
+_soxp1Xeed-nXAqeMAv_PpzNVzlwblOrVfPw8KlzCltpU2PeldyH2xRw1Yqx_oG2g96qWwJdNuF-BEM0bff_yRJnYIy3HdBzY-N7wqU_4Wdb_Fb4wlGhCBvu
+_MpGfj-XvjVF8Fm8BTk_lB-DFto2See_wEzy_vhzotfWN-CNgI_E--Tk_0Q-XByTl-VwAu5yJVyCgbmqaA_eNopZYv_kdy6uST2lgRyGVDtvf_eBI_ZVUdup
+Q9AaWttZ-VKRpyzIDbYzwD3cIp-zLFjXzu__lgZ6oyNcvVVY0m
+}
+
+AWSEntityColoring(IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingLightbulb, IoTThingLightbulb)
+!define IoTThingLightbulbParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingLightbulb, IoTThingLightbulb)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StorageGatewayTapeGateway [64x64/16z] {
+xPS7SkKm28P35V_z3xp5W_Nmo4JUNabN-AYgRx-V43CBCtqDgXwO4gxy9R055WbxQ4960cugdqJDpn7TqnotpZX3iWrzUFBRIDct5koW-thh4KHV1m2Zq8q5
+x_dolrvd_A7yV_u__vytrw_WYQKv1_Oyp-ryA7qnBu4gW_Rykfsx7kS0WAgovnK0ZAvdIz1JtifsNWFY3LzmMPGy3Mnv0U9EKO6WFK_53ucQSebhx7a7j9oA
+zUmR0EzudauCKuBFq6B7Ey2pNYv4f84o9Xl-TA_fzOo4CW1_dvVCdauaZQN6GBpFMs9sZNJai0BSygbu_8oh8mOqmvCD7tMegXGxFHyOcNxLg-FshVmFZT-1
+kqP9Kx-sVtfr5A-sKi_N0ADssW0_Hn_ENocRY0FnQFxM9M80XZABeQuVtl2lDQgO4bJNTi-dNqjJNk_lMPCjJr5wnA929RKgGIkVKOAxMteLMVcPk2xu032c
+08Wb_cfWy78S1btsU6huR3vynaSQzGYjAQvyBVrmdS-ea9V4DS48Qvv4hTYJj-I83X_FtxAtylRRo4S
+}
+
+AWSEntityColoring(StorageGatewayTapeGateway)
+!define StorageGatewayTapeGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayTapeGateway, StorageGatewayTapeGateway)
+!define StorageGatewayTapeGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayTapeGateway, StorageGatewayTapeGateway)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeDefaultEventBus [64x64/16z] {
+xPK7aiKm24E38GtT_xpRYrS_ZBAz-Krd8XSiaQbWC1Wuu5-jjrflMjrsrFhSczBFm5hf5s2P50ayRnAzte0yrRBzMBy1KUleiqvF2oiQaAIdYzLmcop2kB6Q
+18nh1YxMHFfbqNEUNi6A3ddqniPm4CusQ_Hc6TI2jOES4mbiNC3kxEB-DdCV4G0pFng0pQfcFnTi1IW7NTrvEpwGz_jmT05Z1rwuhxyd4_Szt04lOnKXxKFD
+5UdJzkNqw_YSh-jz-5pQ-57sPJrr_29ey_45B1uXgvKJ81wnbr4h1msP4eyuwtdGyLXaFPs_6BHaIZf_RJLjIcq1_VZQQbpHP3fFtvnUGIjAFvssIfhu-Ily
+e_I3mU0Q
+}
+
+AWSEntityColoring(EventBridgeDefaultEventBus)
+!define EventBridgeDefaultEventBus(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, EventBridgeDefaultEventBus, EventBridgeDefaultEventBus)
+!define EventBridgeDefaultEventBus(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, EventBridgeDefaultEventBus, EventBridgeDefaultEventBus)
+!define EventBridgeDefaultEventBusParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, EventBridgeDefaultEventBus, EventBridgeDefaultEventBus)
+!define EventBridgeDefaultEventBusParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, EventBridgeDefaultEventBus, EventBridgeDefaultEventBus)

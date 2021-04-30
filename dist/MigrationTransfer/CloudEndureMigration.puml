@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudEndureMigration [64x64/16z] {
+xTK5SgP050JWVYxtl-yQ2JQG2LkUeaj-_LxZqpyjRzwy2HDciVWlN0O0H038d_CaiEM_TqRWVCW3s9KQ4C_QGNdyZ7p0Yv33mFg-L_YuG_ftS7sh7jn316dq
+lNDXY1wI04YL85FFw8i8RDatdVdhYehFwJNP_QyR0Zux-VPWyqOk4yzWkzs54e1pKa20tt26ZBFBrYoZWw2NNYu75zR4npVNVuoRiRc4Ljz5gAlwsY7_bzZl
+6sAhiicfCVoBRCCjDj_40w_3p8m8sxn0U-y5yoid0SZ63rxdFWb9YrT8zwb_TkKN8PfavKVFr4E8ptpn1gwJByZe5RbnXl-jaMx_u1sqUeEFFg4dthtnVGBy
+zVKhi9NJm1seAry4pONhsdJcvGpAs_kNkbi7phG6W5NV9MCzNVkLI6MDngglupkExCSf_IoWftpScH-TDs_U_0O
+}
+
+AWSEntityColoring(CloudEndureMigration)
+!define CloudEndureMigration(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, CloudEndureMigration, CloudEndureMigration)
+!define CloudEndureMigration(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, CloudEndureMigration, CloudEndureMigration)
+!define CloudEndureMigrationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, CloudEndureMigration, CloudEndureMigration)
+!define CloudEndureMigrationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, CloudEndureMigration, CloudEndureMigration)

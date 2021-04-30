@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Cloud9Cloud9 [64x64/16z] {
+xPRNaeOm28K5Kk6y_-jkoSmVLmopyTxlnaee1wB7bPUNbrJL06s5Z-Tmmuccf-OLlrXlhUEN_YW6KW0zqp6G4KfwO6w0ojyR7K3PjbUWkLiPGDuqRyFS8G1a
+JpP0rxTjD_fbiSieWPHQqp_kQxXmLWnARDy12bUUj50xnCyCGEM3im4r3ZzCBt-UiOL1rjMJpvtCfvSIYk-Lxm2i-bHwL3wxoJOmkhW9ce4LvdFkGbm0TMds
+VBSUm-e2rSywsSq3hBZwtlSAcMOkup9SARjC6z_ab1cnbzC0aqjxfONaCizu8VPPLfklklXT94wSFZqjUn8mrtn-MiJFZVUWMLBHzVx1Sro07ZNaG9szwpSE
+ErgQQYkKm_ZuKgY8wXhJ2Io-F1v5Z-PznxzVtpS8EVaSfD0Zs5Lf3ig2LeLex5WIf6LJ9rxgCvZHX_hBkW6esjX-AAhgZAj77K2qzQbZ11A4i096bm5kj6qj
+3TFyN02cU-2NJZwWBUBVejIwRX7ybZtcvUNb6m
+}
+
+AWSEntityColoring(Cloud9Cloud9)
+!define Cloud9Cloud9(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Cloud9Cloud9, Cloud9Cloud9)
+!define Cloud9Cloud9(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Cloud9Cloud9, Cloud9Cloud9)
+!define Cloud9Cloud9Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Cloud9Cloud9, Cloud9Cloud9)
+!define Cloud9Cloud9Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Cloud9Cloud9, Cloud9Cloud9)

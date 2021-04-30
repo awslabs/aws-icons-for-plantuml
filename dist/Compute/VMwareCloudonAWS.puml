@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VMwareCloudonAWS [64x64/16z] {
+xTM5hY9144RXK_w__mklTPgrwJ1BP8qlSWKELM5C_xAtjxT9z_pb1C2YfG70TTy4u15XOAqgAIZTrU0zZqzAIHhyVlxjhF5LEgDR1bhV2a9ItksTbf8j9AUa
+f7L74MlcWac3pPT-ResVBxqMCqc5PJ9ZhMU6q4_zG0JJCC_NBwq-WLYzAkKcDQ4dajRgEo9APbhmMmSnc9_tbzIadX-4IHvzkNkk_b4sUEcem5AxDxFO_Twy
+7AoFkPMad_TF6_oR5LjN6XjTzmIbxNGOdTPrFq1wQ3aSni5rwEN0Zaw7iQbZtrYEfCxHwJ0MVUmraYODSf-az_lD06olUd__hJin-ZJ__FrjWmqXAPYdnoyN
+lkc3LhOqc2uCDjAIRAwjrk_dUtb1ZKx6rjRjXAwrOP5rOKsToZ28qS6aSSMb9DJxaQQpwIigR3JTerUi_1Nb8qrWhm-kD7pqeWIizBhfqH_fxUtj8m
+}
+
+AWSEntityColoring(VMwareCloudonAWS)
+!define VMwareCloudonAWS(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, VMwareCloudonAWS, VMwareCloudonAWS)
+!define VMwareCloudonAWS(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, VMwareCloudonAWS, VMwareCloudonAWS)
+!define VMwareCloudonAWSParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, VMwareCloudonAWS, VMwareCloudonAWS)
+!define VMwareCloudonAWSParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, VMwareCloudonAWS, VMwareCloudonAWS)

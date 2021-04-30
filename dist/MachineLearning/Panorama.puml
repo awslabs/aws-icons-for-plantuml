@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Panorama [64x64/16z] {
+xTG7ajmm34JH1a2all-1pSqxcLJPbQmtKU4hI_ndJgVER1xdc9n71JHJ4Jn8fSaMvPugVe1nCd17O0fo4ld-NfQG245oSbYtmRb1qMH3oSam6LVTxdEA9BU8
+SbBX1rNkSOpk0J_QjsBIFjgJ0GHvh-yiBb2z-xyDWDRXtZ328RtVTqs9GJ8G-xtWNP9iZFqUwku3GRBWhtjuNVQ3ao1PWbfwwiZ8lkeBc88BoXM0NVPiDoyk
+wX1SzPl6VzMV_Tc7wRVhNhzPyAvMGBvzzkHdBzy0RTvX2FwuwdyB66yLd6iz7SKRWLpj4t6lhwjU-4dU-m4CAX2iXVvMc0NTBE_tYUHTYxCsZ8iCpLi1ooM6
+u3s1HS7xEcD1Dl-Iq-aF
+}
+
+AWSEntityColoring(Panorama)
+!define Panorama(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Panorama, Panorama)
+!define Panorama(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Panorama, Panorama)
+!define PanoramaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Panorama, Panorama)
+!define PanoramaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Panorama, Panorama)

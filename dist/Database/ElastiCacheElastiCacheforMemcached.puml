@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElastiCacheElastiCacheforMemcached [64x64/16z] {
+xTO5akGm38NX9xEbT__phijMifsfq6BH_0CDoHSc_6dVbVgRvSaZVxk0KU9l5zqd_4RvR_jGPbc0N5OHYFus0-9lmrVFYf5nrL6v9O5R1SgLObJfFd3K0D1J
+D6w5oAqAemUWSoHhkREH4I2RYEZoCYhBPn49otSH6H98f2Q15yW2hDLmZr5UFc7a7bW3AodOSlhU-x-zGkPVyIwyggJ9htaXgUNdyHznuhTEFDBdyTy23bv4
+C189CORjFGuUeH-FF_TkKsdAFMqb-Q3T8v_xKUuygIUCddsoRQQrpEgsA9PU-CfHom67GcuSrKUVISiuIugHwSbtck0YCROdhpS-6FNPqufSBV-3DqtAk-qt
+VEAr9uUtw_rdmmzcvpxttgEo8vqVFnawVEezdNblU8pYv_5hsae4CBrtwpqH2K54uDtut6VH_Nc-_BDyyC9LUlQPguCF7zvmcNru-U8pPafsMJVr02_KMloA
+ePYLEq-s02CxlE7wr5U-LRANKLYU4JR_po8vVEJoeOmwMThkFLz_JTq0csZMrrlhqRUVvrxiu5qPpOT7qlpBBzu4Czd3XszzlLL_vnwoXvC-V2GZa4Wv-9yz
+U4ochFWbhxkFP4oaxDxUUERD3wVAYiqNllBKv3wID76VbIyzcPOVa0NB9_ATrqR2lSG8zq9MU-Cx9BcVkKUIz_lln8_-fmynmFCFRxtYCcF7GvNiWjE2xytR
+H4cs9FYIfA6fU4pw_iWJWun2t1-6ck15iVEq5l4oIKrvI7sLVg4GSvcb673HTpy
+}
+
+AWSEntityColoring(ElastiCacheElastiCacheforMemcached)
+!define ElastiCacheElastiCacheforMemcached(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ElastiCacheElastiCacheforMemcached, ElastiCacheElastiCacheforMemcached)
+!define ElastiCacheElastiCacheforMemcached(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ElastiCacheElastiCacheforMemcached, ElastiCacheElastiCacheforMemcached)
+!define ElastiCacheElastiCacheforMemcachedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ElastiCacheElastiCacheforMemcached, ElastiCacheElastiCacheforMemcached)
+!define ElastiCacheElastiCacheforMemcachedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ElastiCacheElastiCacheforMemcached, ElastiCacheElastiCacheforMemcached)

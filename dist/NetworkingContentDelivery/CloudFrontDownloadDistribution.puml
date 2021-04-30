@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudFrontDownloadDistribution [64x64/16z] {
+pLTPWaCX21Dmmzp_lBFxkiNHrpq_CwsD6XGCuOqXQbzGkOPhsR71Y-qYnueBrBZAJfrHKln2AdsslCwkISCHDFtEaMPiTG38GeAP0Q3fVF6qCCfH0HGPZqi1
+K8UZ3c0IvGZ0XTCRqCZGwg-Sp6oj6TcbC-tiQsE2dCKWzMsHzOc4yrDG0BASLm3qOaznHtwSQqr02GHQAysySgQWxvx7ZoiuNJw5LNvdv9FbmnAVKoAGz_Bp
+qKWbwcUGeqlK_zs5kWcmSL9hAJek1hP9qR1NVz3joZXQsCyF3KxbS_uu00AKQ_W5a3yXQNnCyb-jLRh6UXBQZAyvwmryCdPVFeiVv_FutNf-q_GHcIGGkx_H
+0u57SdzP_XZWb-VdW97yOVdhI9Vw4vpaBmz0PF6BHFwuVXK_vdkXzMjSFnFW1xu3YTRFSVt-VQN5JFh_7OIIoHNi94vFG9wyNmuB4gC4WnFrcBwVrlKRVJzN
+tkyAL9vwRSK_P038t3zG_yA2oFtBcdyAjGRgdrRyszXb-gt-yKR_Uhj_ljs_SsYxeNyOzo_2-nUEZ5_K_Di_PT8_tTY_pM65z8ytzA_lYay
+}
+
+AWSEntityColoring(CloudFrontDownloadDistribution)
+!define CloudFrontDownloadDistribution(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontDownloadDistribution, CloudFrontDownloadDistribution)
+!define CloudFrontDownloadDistribution(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontDownloadDistribution, CloudFrontDownloadDistribution)
+!define CloudFrontDownloadDistributionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFrontDownloadDistribution, CloudFrontDownloadDistribution)
+!define CloudFrontDownloadDistributionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFrontDownloadDistribution, CloudFrontDownloadDistribution)

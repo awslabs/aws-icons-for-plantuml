@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EKSCloud [64x64/16z] {
+xPO5jYD1200BQEJ-5rvZfJSz6Nt_QIeknT2CG7qD7pv4zECUgKYLe7dB7j0-ZEiHN92Gdxw487uvTSPFjny3DA-bRbd__4g3aLTIhvhzgjEB20Mlclt6GUF8
+JklK5t_vRM7QnkAlkQsiQypsSwdDDlvIOmUh6lz_c-Dj2eDuENfzAwjW7Fjz2CnLkUH7BtEj_B4_7MqHS-KPPtr3ir_xsRho-6b_UXreJjvLtv6i-xv3rdq_
+8Eg13rwFVCb7lg5LEGJGSSDFnHp4JE66NoaW_kTyoij-HLlzkrttZQW_A0hYL_n4vpCVLJZXzvB3Nv8TNXN7VWwGVkzulI27VaVGg3HMtq3pmAzVgkfcnmX3
+SjFtfPNK9hxvWx-s5oLh6-LTwviZYDGRnfl8eNEt47tln_lcpSYZ_8tSRVy-bsabq8FneoCe6jk_n-40ez6x47a5vCGSqH72p0JG2VEiOxhdJRla8ctQr3dl
+HT1yE45_9Hy-V0S
+}
+
+AWSEntityColoring(EKSCloud)
+!define EKSCloud(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EKSCloud, EKSCloud)
+!define EKSCloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EKSCloud, EKSCloud)
+!define EKSCloudParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EKSCloud, EKSCloud)
+!define EKSCloudParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EKSCloud, EKSCloud)

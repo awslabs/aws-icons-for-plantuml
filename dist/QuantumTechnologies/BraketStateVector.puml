@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BraketStateVector [64x64/16z] {
+xPO5akmm34HNPFNzJ_o_QZsH0cNjK65wqF0ifuq_R-eMcL6RNeW1xj9Vus_-vczULlMbuQdXzP4MKxhcRSKR41Wva96g7BxY7RxXqLIg1hZciti3C1AdQmF7
+8ZuPPvrBZIIIFrMXrGY0bZnjuGrwRa00fqkUrKoPT7CUy1yMDHNQMmWvyu9KFiX3TcZ0-S0pYZmcZpXmRY13cJ098CJo6qlflsG6dJyk79c-jvGCLT67pJG1
+R4Qsp3pwJ3gGqZ8nDRXVZSnCFiKIZGmLhXDpp7wFQgK3w_qW9vqZwCWPmVFZcTPyn8t7e82i-imvvvOyHLtsYPS6DBea_Nucvw7cpEhvC1dG0s-EwKpBovky
+lzF_q136sJ-ZrhyKrG6GI4YEtqeqA-JyeNR-L5dKgFFN-lcRUcdzL5slNy_CZXz0R3h4CxZF7w6msLi36LLn2rP7Q4JPohzc_xGyDHk9cgbGU5NsRueIwkdp
+-I6nTfzMdbyBqpehnsBIjPhdDruCd_S7UGNE1lGrEEzFdzMjVm
+}
+
+AWSEntityColoring(BraketStateVector)
+!define BraketStateVector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketStateVector, BraketStateVector)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCNetworkAccessControlList [64x64/16z] {
+p9G50Xin30HDCcZ-_zwI6nzjiBXXoPCJdS9_h9ZoDwNu2PlRO6cq_1PSEXVryYfTRqIpyatMEbFr5TecQsblJDO1i6TqSe0QHJ4hWAVd5xSNl5eTQF6-FpQW
+t_KEu4cL2p2YnXrSk5uzDTG_woY7obsOjOQgWUcmT0hNBYH0u5eHI9UOoiqR9RJt51ZdwDiMITLutQxQJXa0yHq-0aUFXNVuO8TJG51yREujxdc95AYApm2G
+5L-Xx4Od2Zu2xe3Yusw8e0V16xHPQi673bkO9lZR2UYADyWxk-077hx96I-SItYws8VcavCs-mpGWBBZkplW_lEZxVW2s5Q02Es74-hYCoVb6xzEDeXX0ZQj
+q7QyxxJZ6qpUcE5aA7E4WH4NNy9INdmSm1pU0ld0f-Gm55yMFy1J-esyZb_pElvz_Ne8Z_aG-hv-id-Qr_tJywDvFJzwVZDamSlvNVOZRt798Ejp-lxLywll
+Nxq_4YSbkJ_kxwzI3ofgVztVdq9wVqu1B_8I2L-BhmC2000O167zMp_4hXf20FW1_49-8h_L7z1Vq9_GtzGVqL_Ddz7VlH-yNxoVlD-y7xrVzpi
+}
+
+AWSEntityColoring(VPCNetworkAccessControlList)
+!define VPCNetworkAccessControlList(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCNetworkAccessControlList, VPCNetworkAccessControlList)
+!define VPCNetworkAccessControlList(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCNetworkAccessControlList, VPCNetworkAccessControlList)
+!define VPCNetworkAccessControlListParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCNetworkAccessControlList, VPCNetworkAccessControlList)
+!define VPCNetworkAccessControlListParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCNetworkAccessControlList, VPCNetworkAccessControlList)

@@ -1,0 +1,9 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $OpsWorksLayers [64x64/16z] xTOr0e1034JH2CxzpujBFrbqv_UlZCZpMG6cA-_XTFQEUzjyLG3LftS1AkdfwUd3-mVEKknVKGTJOUox_ukzvNyf7QYAxozwUdhwkWHg4lqlYdk9_I_oWaO
+
+AWSEntityColoring(OpsWorksLayers)
+!define OpsWorksLayers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksLayers, OpsWorksLayers)
+!define OpsWorksLayersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksLayers, OpsWorksLayers)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTLoRaWANProtocol [64x64/16z] {
+xT9LOXX138DXMPRNqlqFN6Rk59FilmpVF1d_HUoVZk_rvAZvY9ylaBWFSlAACsaSr0bVNSzzd_dRt_xsjx_zxMzVtOM3Nhd7aAx3z8epnn40EeSzhlcb2c-J
+r6__4i12gK0HA3KWVkuLlkKLRuHNALKnEiIL1PW0dg_wLg4oMADQ14Ccc01sNdbzms_ij_vQXuYquRLWb0Qp_hfdcb5b9mEWql3Ck3rGa0jCfx_gEqIcuXZW
+ReHhLpjfhDi6KxlVyXLLHY6y7K4snoaaTegfJhxeHwfS4rO6lf1L12Qb69r6Hqp1N_IsZRQ5iY2NSha16_G5kL2-w8Ai_sj-fm-Qz_wqLxvoNE5brOSL_dtF
+0G
+}
+
+AWSEntityColoring(IoTLoRaWANProtocol)
+!define IoTLoRaWANProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTLoRaWANProtocol, IoTLoRaWANProtocol)
+!define IoTLoRaWANProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTLoRaWANProtocol, IoTLoRaWANProtocol)
+!define IoTLoRaWANProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTLoRaWANProtocol, IoTLoRaWANProtocol)
+!define IoTLoRaWANProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTLoRaWANProtocol, IoTLoRaWANProtocol)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DistroforOpenTelemetry [64x64/16z] {
+xTH75jim30JG8K7K-nyubWGNf4bmijJVk8xUiCPrjzlDJTNYMpQnaVYE0qk4-tcUkm7RIcI-SFKwp68Wy_6dlC3YZO5gncPTp1kc5AENPrWKyqA-y7wUtWQY
+cht-wx_bYIxdHLy8xmtdcKyNv-_zhLpDixmGFEi3T3LlvM6nmvnevTF0PXcOeGRWDA_qcNVX1rqmmp8Y3DbfoP-Q8sACxGsIT_AE5R5W4Qux0NaZBz08_Vpt
+GkV-EhPHdJjUHCilrgVZAHvVoEOvYXRY7Ao_Ph73S0J7VAzY1mEyFuRVjrd7UFYC6RXNVmdaetOEn3MTrZV7p6dxcCY9T5f_IvX0oq8wI0vdzNd_Cy7BHkAJ
+RR20P7dnr8qyJteB9JugGyf1sZiqJ7YyU2v9WqczI0WUtsDWnZymbFfzAFNxc2Ags-ts0m
+}
+
+AWSEntityColoring(DistroforOpenTelemetry)
+!define DistroforOpenTelemetry(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, DistroforOpenTelemetry, DistroforOpenTelemetry)
+!define DistroforOpenTelemetry(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, DistroforOpenTelemetry, DistroforOpenTelemetry)
+!define DistroforOpenTelemetryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, DistroforOpenTelemetry, DistroforOpenTelemetry)
+!define DistroforOpenTelemetryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, DistroforOpenTelemetry, DistroforOpenTelemetry)

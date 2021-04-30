@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingBank [64x64/16z] {
+xPS7aiCm24MDG9Jx7pYDcMKK8rRszlAcnEt5WY-txPi1Y33xsVod1CtQy8Etd_RoG__-NEtCB6Oo-s7_wPZPJMqPRNjVxG0AITqT5kb97xhPjemP_mmVYE0r
+7_2EX1-os0qXsFloaC0xxppvA16NqBFlOEw7p8ZiIu8pVsjtEFnGndN6yEKX9VqRv6GyTV-RkPnqdIJ6FFLvaDCyfCfFp49E03MfyXDJ6Fv0UD3Td-VdDRRS
+1-zDbPytdw9YLHzad8ZB_8Yw-o5OZrKcAlEBcwGlgQgO3BVMTR-Rtki7BFoeV--pIVGl_A7-g38xl-7CTx3q8MxLbH_pBtm7_Fu1YH_pB-zVpDSRSAR_Zd0p
+uxVucvYSouy8RZwOyUdyL3NgFvfV4ui43-VdkrJH5y_b5_DtjV_O1vz7dx7qlHdX1x6lpe_y_fK2TgCN-RcFC7-tTR_8Zwmayu7koA9Fxkj3IlBhNDA_z_lF
+UP-yjKjGDiNKZW0xlntHCNqzM7n_Pu9t_dxuzzU_NxyPLm
+}
+
+AWSEntityColoring(IoTThingBank)
+!define IoTThingBank(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingBank, IoTThingBank)
+!define IoTThingBank(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingBank, IoTThingBank)
+!define IoTThingBankParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingBank, IoTThingBank)
+!define IoTThingBankParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingBank, IoTThingBank)

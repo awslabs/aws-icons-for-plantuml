@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeEvent [64x64/16z] {
+tPS7qYiX38FNflFT_xolPeAPEAnVBvhoLor24gnp_SLG_I4wz1_YJyPbKEGR-Hqi7TAtyHjiQWXmP5zn6PYW1IJR7MT8TZCQK6mNKIZc-nwodBBs0lLweCRS
+Kq2z0i2y8iZs7vFAih84GtCtAdLkguphBGQKcCq-v2ve6HoNIENE8URt7yn6h0cIBPxh-TfhyOfWaPyzShGBK7LF0GjJYYg-9J3ozfkH5zfgieyo0MOrvs3J
+Cq6k8r87M7MjkyA0wL9dNNwyjZ9zIyRbDOyPfIkCm3CrPPVkQnMU5cgfVMoXHhmgq9vI7l3eVbOsqmhCqMfs7Qtlkf9uw9BaF3zmKGF7_DNPVaIOvjBw1DAf
+AlBExxGEwQag3RAl6u3HQz5L5RzKFafMSQiIFm1-LU87qA-ANwe-yXq_mN2oMtPLkHrTyflif0FGNJSieIsCxN7okEtKuPKbUCDulUsck-_aNE3UMbABr_1u
+IlvxjNutFG7pN36Jcg_zdEhWD7RSQ--doK8txUfrL2Ray1la-JXLVxexrszuKtm9leMA4JeifOV7sFTJV8uCeTK6QsBLo1G_GFOfVk5G4NzMJ-7G_5bTl_rG
+w4Q0ziCVutu4IUNwV_4H
+}
+
+AWSEntityColoring(EventBridgeEvent)
+!define EventBridgeEvent(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, EventBridgeEvent, EventBridgeEvent)
+!define EventBridgeEvent(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, EventBridgeEvent, EventBridgeEvent)
+!define EventBridgeEventParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, EventBridgeEvent, EventBridgeEvent)
+!define EventBridgeEventParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, EventBridgeEvent, EventBridgeEvent)

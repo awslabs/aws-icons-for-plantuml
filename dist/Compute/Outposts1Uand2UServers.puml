@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Outposts1Uand2UServers [64x64/16z] {
+xP9L0iGW44Cpbk7-9rxtBKFbarUNb2Iq7SPaCfaaNTMC6-KKG0I0vXQv0tuHqe0D5WAI3oCRFf30opKXUMQT-_YuqfKzYEId6t43Sjo-VRPXUTx1HlM4_pKr
+EhpzrHiqHkInq1Lrg4H2k6JCeQLUUpqRM7TVFAtIzqgg9y7x3WtxndV9Edz1tVyU28ay-s19BZK0E-zgbfAcHnDuL6Xdgc0ZIRsh9_DUm_dyXoprW3VUS-87
+B_KHR1bdU3x_WOL-Ptu9LbZdLtSC8Dan5pNPTZEPJ2Od
+}
+
+AWSEntityColoring(Outposts1Uand2UServers)
+!define Outposts1Uand2UServers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Outposts1Uand2UServers, Outposts1Uand2UServers)
+!define Outposts1Uand2UServers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Outposts1Uand2UServers, Outposts1Uand2UServers)
+!define Outposts1Uand2UServersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Outposts1Uand2UServers, Outposts1Uand2UServers)
+!define Outposts1Uand2UServersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Outposts1Uand2UServers, Outposts1Uand2UServers)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SystemsManagerParameterStore [64x64/16z] {
+rT85acCn34LHaK5--r_le5Fv9CDWzoaCN3Dz7681MSeL8QKvHgpHN0MAFIf0dUO9S0euO9DS0F3qnrW3RBgus6oB5SWKqzaHSmDqyTVz6IgMbFZmbhIerx94
+w2zXMy9HxrZYKOz5SUywvQE-qbJz5BtQXMxrYXlRwHDkqcPlUc3xlT21_8y-bSwEVIfviQ_eoi_-JNBrclXN-uAVRDpp2vtx2W0D0DBM-NKPQ4h46O3ihv-1
+zdFd1lX-dqvFcGTzhbqwzWMWpW3Rth-ZNRwDUj6E9_rq__-dL-ka_vCRdjJLypCyuyK-0LwlMj2NT51UlT1L3lgBIsz9HxtWHW-zD00-w8blwD0xlij17tZt
+35HfyF_J__xwIH2Sdrk8U_zJpo_zY5xwUk_zDtjIY_6id-jzzr_wagvyft-otWiUEItZ9_GHV0K
+}
+
+AWSEntityColoring(SystemsManagerParameterStore)
+!define SystemsManagerParameterStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)
+!define SystemsManagerParameterStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)
+!define SystemsManagerParameterStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)
+!define SystemsManagerParameterStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerParameterStore, SystemsManagerParameterStore)

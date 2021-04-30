@@ -1,0 +1,146 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Tests various altGlyph uses                                               -->
+<!--                                                                           -->
+<!-- @author nicolas.socheleau@bitflash.com                                    -->
+<!-- @version $Id: fontAltGlyph2.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg width="450" height="500" viewBox="0 0 450 500" font-family="Arial" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>altGlyph, altGlyphItem</title>
+
+   <g id="content">
+
+   <text class="title" x="50%" y="40">altGlyph, altGlyphItem Test</text>
+
+   <defs>
+      <font id="Font1" horiz-adv-x="1000">
+         <font-face font-family="Super Sans" units-per-em="1000" cap-height="600" x-height="400" ascent="700" descent="300" alphabetic="0" mathematical="350" ideographic="400" hanging="500">
+            <font-face-src>
+               <font-face-name name="Super Sans Bold"/>
+            </font-face-src>
+         </font-face>
+         <missing-glyph d="M0,0h200v200h-200z"/>
+         <glyph id="MyA" unicode="A" horiz-adv-x="500" d="M0,0v500h400v-500h-100v200h-200v-200zM100,300h200v100h-200z"/>
+         <glyph id="MyB" unicode="B" horiz-adv-x="500" d="M0,0h300v100h-200v100h200v100h-200v100h200v100h-300zM300,100h100v100h-100zM300,300h100v100h-100z"/>
+         <glyph id="MyC" unicode="C" horiz-adv-x="500" d="M0,0h400v100h-300v300h300v100h-400z"/>
+         <glyph id="MyD" unicode="D" horiz-adv-x="500" d="M0,0h300v100h-200v300h200v100h-300zM300,100h100v300h-100z"/>
+         <glyph id="MyE" unicode="E" horiz-adv-x="500" d="M0,0h400v100h-300v100h200v100h-200v100h300v100h-400z"/>
+      </font>
+      <altGlyphDef id="MyAltGlyphDef1">
+         <glyphRef xlink:href="#MyA"/>
+         <glyphRef xlink:href="#MyB"/>
+         <glyphRef xlink:href="#MyC"/>
+         <glyphRef xlink:href="#MyD"/>
+         <glyphRef xlink:href="#MyE"/>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef2">
+         <glyphRef xlink:href="#MyA"/>
+         <glyphRef xlink:href="#NoSuchId"/>
+         <glyphRef xlink:href="#MyC"/>
+         <glyphRef xlink:href="#MyD"/>
+         <glyphRef xlink:href="#MyE"/>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef3">
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#MyA"/>
+         </altGlyphItem>
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+         </altGlyphItem>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef4">
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+            <glyphRef xlink:href="#MyA"/>
+         </altGlyphItem>
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+         </altGlyphItem>
+      </altGlyphDef>
+      <altGlyphDef id="MyAltGlyphDef5">
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyA"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+            <glyphRef xlink:href="#MyA"/>
+         </altGlyphItem>
+         <altGlyphItem>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#MyB"/>
+            <glyphRef xlink:href="#NoSuchId"/>
+         </altGlyphItem>
+      </altGlyphDef>
+   </defs>
+
+   <g id="test-body-content" font-family="sans-serif" >
+      <text fill="blue" x="5" y="20%">altGlyph referencing a unique glyph...</text>
+      <text x="5" y="23%">...which is valid : "
+         <altGlyph fill="green" xlink:href="#MyE">No Match</altGlyph>
+"      </text>
+      <text x="5" y="26%">...which has an
+         <tspan fill="red">invalid</tspan>
+ id : "         <altGlyph fill="red" xlink:href="#NoSuchID">No Match</altGlyph>
+"      </text>
+      <text x="5" y="29%">...which is
+         <tspan fill="red">not</tspan>
+ an actual glyph : "         <altGlyph fill="red" xlink:href="#Font1">No Match</altGlyph>
+"      </text>
+      <text fill="blue" x="5" y="40%">altGlyph referencing a glyphDef containing...</text>
+      <text x="5" y="43%">...5 valid glyphRefs : "
+         <altGlyph fill="green" xlink:href="#MyAltGlyphDef1">No Match</altGlyph>
+"      </text>
+      <text x="5" y="46%">...4 valid and an
+         <tspan fill="red">invalid</tspan>
+ glyphRefs : "         <altGlyph fill="red" xlink:href="#MyAltGlyphDef2">No Match</altGlyph>
+"      </text>
+      <text x="5" y="49%">...2 altGlyphItems (both valid) : "
+         <altGlyph fill="green" xlink:href="#MyAltGlyphDef3">No Match</altGlyph>
+"      </text>
+      <text x="5" y="52%">...2 altGlyphItems (2nd is valid) : "
+         <altGlyph fill="green" xlink:href="#MyAltGlyphDef4">No Match</altGlyph>
+"      </text>
+      <text x="5" y="55%">...2 altGlyphItems (both
+         <tspan fill="red">invalid</tspan>
+) : "         <altGlyph fill="red" xlink:href="#MyAltGlyphDef5">No Match</altGlyph>
+"      </text>
+      <text x="5" y="58%">...5 glyphRefs with dx/dy/rotate : "
+         <altGlyph rotate="10,10,10,10,10" dx="0,2,2,2,2" dy="0,2,2,-2,-2" fill="green" xlink:href="#MyAltGlyphDef1">No Match</altGlyph>
+"      </text>
+   </g>
+   </g>
+</svg>

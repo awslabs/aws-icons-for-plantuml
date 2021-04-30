@@ -1,0 +1,104 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a rect's attributes                                    -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: display.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500">
+  <title>'display' property on 'onload'</title>
+
+  <text x="50%" y="45" class="title">'display' property on 'onload'</text>
+
+  <script type="text/ecmascript"><![CDATA[
+    function changeDisplay(evt, newValue) {
+    evt.target.getStyle().setProperty("display", newValue, "");
+    }
+    ]]></script>
+
+  <linearGradient id="grad">
+    <stop style="stop-color:crimson" offset="0" />
+    <stop style="stop-color:gold" offset="1" />
+  </linearGradient>
+
+  <g id="test-content" stroke="black" stroke-width="1">
+
+    <g onload="changeDisplay(evt, 'none')" style="display:inline">
+      <rect x="100" y="100" width="100" height="50" style="fill:#eee"/>
+      <rect x="150" y="100" width="100" height="50" style="fill:gold"/>
+      <rect x="200" y="100" width="100" height="50" style="fill:crimson"/>
+      <rect x="250" y="100" width="100" height="50" style="fill:url(#grad)"/>
+      <image x="300" y="100" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"/>
+    </g>
+    <g >
+      <rect x="100" y="175" width="100" height="50"
+        onload="changeDisplay(evt, 'none')" 
+        style="fill:#eee; display:inline"/>
+      <rect x="150" y="175" width="100" height="50" 
+        onload="changeDisplay(evt, 'none')" 
+        style="fill:gold; display:inline"/>
+      <rect x="200" y="175" width="100" height="50"
+        onload="changeDisplay(evt, 'none')" 
+        style="fill:crimson; display:inline"/>
+      <rect x="250" y="175" width="100" height="50" 
+        onload="changeDisplay(evt, 'none')" 
+        style="fill:url(#grad); display:inline"/>
+      <image x="300" y="175" width="50" height="50" 
+        onload="changeDisplay(evt, 'none')" 
+        xlink:href="../../resources/images/png2.png"/>
+    </g>
+
+    <g onload="changeDisplay(evt, 'inline')" style="display:none">
+      <rect x="100" y="250" width="100" height="50" style="fill:#eee"/>
+      <rect x="150" y="250" width="100" height="50" style="fill:gold"/>
+      <rect x="200" y="250" width="100" height="50" style="fill:crimson"/>
+      <rect x="250" y="250" width="100" height="50" style="fill:url(#grad)"/>
+      <image x="300" y="250" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"/>
+    </g>
+    <g >
+      <rect x="100" y="325" width="100" height="50"
+        onload="changeDisplay(evt, 'inline')" 
+        style="fill:#eee; display:none"/>
+      <rect x="150" y="325" width="100" height="50"
+        onload="changeDisplay(evt, 'inline')" 
+        style="fill:gold; display:none"/>
+      <rect x="200" y="325" width="100" height="50"
+        onload="changeDisplay(evt, 'inline')" 
+        style="fill:crimson; display:none"/>
+      <rect x="250" y="325" width="100" height="50"
+        onload="changeDisplay(evt, 'inline')" 
+         style="fill:url(#grad); display:none"/>
+      <image x="300" y="325" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"
+        onload="changeDisplay(evt, 'inline')" 
+         style="display:none"/>
+    </g>
+
+  </g>
+</svg>

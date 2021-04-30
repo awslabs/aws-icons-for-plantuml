@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $GlueElasticViews [64x64/16z] {
+xPG5cjqm38H7aWNs_G_SPxsrbq9EkTq9m_z5D6c_Jb_wKhXPtAQDaD9xU0Mfknl3R_416yS_amzXBd6Rhm0HKE_oUTyGFukNx-8hunelsmy9vHeFtgYW0nxG
+v_bk_Kc4K40nA2qb_M9vZ_eBma3i-uCjl_NMBXmAwZ5L9GAEHcJcghrUPD5g56HA2-giC7HUhJksl3HBSi-8PQzB7b6ULxp8AsBo6KvTuvdQu6zPleSl3sN7
+hLMKTHv33tQL9_uGl_Qz4C1wXHUyumtUkm390R_0E_GjJz0wYaYyZOGAinGV_xBwocjMmPuyR_C2q4D8fqK_pfORk3a3HxoXvFirNmRCyP922BZcyPWV8yvi
+pnWOO172A5XSv6Vetc70so8lYK-gBFBqmGgextWwutbx5ERyo1hVQ0GqvdUHD_W6S9qFi7y7R-YAspoJkvsQBa3g3ob_V9Lv-EXGJlDliywdgfjvj7R8hskT
+twdVWjRxTrmNRpz1N_hIDm
+}
+
+AWSEntityColoring(GlueElasticViews)
+!define GlueElasticViews(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueElasticViews, GlueElasticViews)
+!define GlueElasticViews(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueElasticViews, GlueElasticViews)
+!define GlueElasticViewsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueElasticViews, GlueElasticViews)
+!define GlueElasticViewsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueElasticViews, GlueElasticViews)

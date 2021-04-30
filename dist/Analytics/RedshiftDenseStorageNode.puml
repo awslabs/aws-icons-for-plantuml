@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RedshiftDenseStorageNode [64x64/16z] {
+rPS94kGW24LL59H___jEMQ6Zf2TMbbbVBRq-0oh1X7-Sc0TFT4oq-tx2p2DVyaPxw1TxM_--BozzQ7hd0_cDNt4t1t9-A3TpoEZ21e0Gajx9GU2nC2xc41i0
+KLMBeVLCOb40ZJkqr9D-SfNfYWqJQPqwMjpUAq1XVpjO1C1pcWdGVQWMDyhAhm2A6wtk_WZmp8zw34vjrGZVFiiH06ZIAIC3H1BWsoUiY2C3uubFjfEKV-hJ
+-IB4BYlmAJwzwMUJbHbeAxymbtr2yyStEMrRhxZzuttzJ8xkURF9enSalt-zJwc1G-c3K31VajlIBTdIsk8wF_NtWI5k_enn2z8muVq0H0Bun8yMzSfFGG0b
+xuyCRF2L7qY1zCYF9ZJ8UVnqxXSq2rmUp5-j_Mskp40sNwQh5Q0H0AqRVF01pLPFFFQV2eteevxkdq5AhcXjYCN-NTKFgmqXG0r1xzTlObU_J-uVQO_Yrz-_
+Gf4ZkXTPdZj0ZyBxgyvdgkz0oVlBpilkezpe7zjUGvssgEw1A6tmqkyEz6d_z4rC0BxTlws9rd5-q5ldXmx3q_tgPtPDdgeLtIS5a5-TtrfyTtxyU-TNY_sv
+p__TyyVxvwUPS9-NpuyXqY3yW_m
+}
+
+AWSEntityColoring(RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNode(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNode(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)
+!define RedshiftDenseStorageNodeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, RedshiftDenseStorageNode, RedshiftDenseStorageNode)

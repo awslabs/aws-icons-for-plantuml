@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NitroEnclaves [64x64/16z] {
+xTE7RiCm38JX8qyY-VvFt9emkojOKdVpPnxWBplnKTswrSyybzMqd5xpNMuuOqwfAJbPqzxtjAFoOfcKpyMHRtcByf6LHzwqN-2XHoX_pikUgbcBh9sJL_oe
+7-_hvxLuW9DKjD5pAqclUUqzDFZujO-zOSkxG6B34-26xm3wkdS8uUjUOOfOzWtDeSlU89vxpRl0aonweXzNoDgqxz1ZymZeizuX7cSTZ5clTMmzr9nlppv7
+YqblGEltMJtKf2UGCSAWCUtTZXfQk2p___DutVZ_4Tx1MFOY3l5bxw2aMFGTaclL4z3Oy0huXdUWnvPdxFWmN_NLTtZQk_6A7vL-N1yM7zcjMtS
+}
+
+AWSEntityColoring(NitroEnclaves)
+!define NitroEnclaves(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, NitroEnclaves, NitroEnclaves)
+!define NitroEnclaves(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, NitroEnclaves, NitroEnclaves)
+!define NitroEnclavesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, NitroEnclaves, NitroEnclaves)
+!define NitroEnclavesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, NitroEnclaves, NitroEnclaves)

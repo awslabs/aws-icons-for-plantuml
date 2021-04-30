@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppMeshMesh [64x64/16z] {
+pPU7Skmm201F5S7-__U-oemd9Wh9TQPSqteEB1RvyjPHMxs15W3hLzB5002vZbUmqGKOr-0Dz5y9mAvC_d_j9bnJn0N_ttJej_03sXNymEkcKAxWo__2bmNh
+zCjSI_AKEe01Liv_341BVW682piULj8K1bZRfYLv4M3jochmeTDwRpi-lwtDGgjbV8SMQZ9IVa8zzlTH4sbj0YtZEx6j18R_jX9-0DZi0aTN67ufXI_viZX2
+uYg1ikMzoZrgpR2Zk7j-0bfFMdMiUKrqonS5vkUM1aQvTA3l-0vx3qmyV7NaXTXniIVdnl_LKWjFaBBn_m2ifhhk6_-7n18--Dz_IlcD_qFT4puqwbMy9FxF
+-04p-3_ZeoXhy7_AvwAkhQPyzBz7yMsPyC7_OLj6FlVtiIrFw_kUpuybBZQjEIz4VryQ7lsg-L407MC1zPhvDM7wL_AJ-Lb-wdzNk6zB2Qicb7H-n6q9-gtv
+qG5cFByihri1c6N35_LR7CvF3QnvRhX7m_wTx1qiUEW4ODLp_rJzSW38OTbX0De-dDyaasZzcrFpT1Gd_Q2bvbbzD-hYo5R1ov14aCGns-Pjv_VnrEU7A8gd
+FZz5KJxp-J4EYlUEtm
+}
+
+AWSEntityColoring(AppMeshMesh)
+!define AppMeshMesh(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, AppMeshMesh, AppMeshMesh)
+!define AppMeshMesh(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, AppMeshMesh, AppMeshMesh)
+!define AppMeshMeshParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, AppMeshMesh, AppMeshMesh)
+!define AppMeshMeshParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, AppMeshMesh, AppMeshMesh)

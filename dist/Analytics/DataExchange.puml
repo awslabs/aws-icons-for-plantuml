@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DataExchange [64x64/16z] {
+xTL7TWGX38JXGWWXrVtlwsmq2JyzlErlC_7l3F1lbyibF7ZC19-QEayqeEiOAe2SRC6Ctq81urPivLy4Wpk63MEI_H6uRJXJD0J_mw6ichRUIV17hn-0jBms
+xRUQCDO4b2ysWCwjAOlIOLno0oBSihPqJamc-VtKmPBxlg-JwOqbUVoPv_5NvCEgcJElNrqCid3_AWJ1hT6Vg3zSLEMMOqdAylZ9Avxk-X1CdlVUO3pklGEJ
+1tr8L-qDq62ndnBPpmQWoGYos4yqppuL-ioFUy_yg5UC--ktrFeGs6ql-265FZUGrzz-p6BF41nV_npmgTvNrxHQRzYmMXzp8yhZ9u9bZcwFe2mBB4bPv_CP
+TowNopi
+}
+
+AWSEntityColoring(DataExchange)
+!define DataExchange(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, DataExchange, DataExchange)
+!define DataExchange(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, DataExchange, DataExchange)
+!define DataExchangeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, DataExchange, DataExchange)
+!define DataExchangeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, DataExchange, DataExchange)

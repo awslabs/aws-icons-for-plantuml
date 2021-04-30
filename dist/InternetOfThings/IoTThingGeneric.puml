@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingGeneric [64x64/16z] {
+xPU5bciX34KX8NB-_uDhAKyOiWgzupDxoSLsxM0jdupAV7_K-UC13Q3BWyS7NnuKZry_KKLL3T1uMFOGdjdaMCRffU_Om6VVMyeY0l2ahQnI9--bNzQlVCNs
+VBqwiHePGVShfVpr0vhu5Ja-ymjTiUuJa5ExhtHbzliHe3n5mt_m--UBh6tvr8HJFy-l-nhhBFFp_C9N13Nn0yfy0fog09hxUNxSTp7RpozyYQ62WTNVdsE4
+m_Kljf6V0oOEjEVowp-gFPjV8GFy_kvrDxznPuJHLdwJVPt3NyplBmAuAE0RwyVqBu3r7N_L7v1eRClv3MW_WBVownWWn03gS_aH0adoo_QFuLoNPFwjx7_K
+Oc1xh_rJsnHB_8FdntZ--URvDVfbu_myVdv__VjB80Tz1gGkeW0VlByUl3_NCe4txkzlzF_Zrwz4_N5bylXSd04
+}
+
+AWSEntityColoring(IoTThingGeneric)
+!define IoTThingGeneric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGeneric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGenericParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingGeneric, IoTThingGeneric)
+!define IoTThingGenericParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingGeneric, IoTThingGeneric)

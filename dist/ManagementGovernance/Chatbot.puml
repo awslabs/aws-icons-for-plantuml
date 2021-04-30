@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Chatbot [64x64/16z] {
+xPLNWkmW30HR0YJKzx_l2_BamJkmETMFOpaemTVZbr_2HZWdwHZZdAF2_1w3JViSq7-Mtzs3uUwvsvTz1ImpILQWBljkrhEGSjVVy_z_VVCaI8OVgF3L_fKW
+5HT7Q_EZGKaLs_3WAXMDgdm-2d-M7swMzIiG9Nrn4XeI8nqP0zmWdK_W43kcBsFO_Pe6TEuZbvagTPZXmbqSZOye2EvX4uNMqFVzqRNvUvfirw8AzFekLqWx
+-69xVuRDLsW1_EgZfGZAvcCS9KUrz1kC316U26YG5Pw-wp245NtpIvhjuYPFCz3IxmPxgVy6tq-TZb_bYAZB-Njv_RoyVb_UF-F-7TDH9kR7WAdvGSC3fC_C
+pmse_KCnc9zJe0xMn1_aUy-CEtVuvPU_
+}
+
+AWSEntityColoring(Chatbot)
+!define Chatbot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, Chatbot, Chatbot)
+!define Chatbot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, Chatbot, Chatbot)
+!define ChatbotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Chatbot, Chatbot)
+!define ChatbotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Chatbot, Chatbot)

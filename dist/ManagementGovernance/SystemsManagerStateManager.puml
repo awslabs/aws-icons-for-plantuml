@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SystemsManagerStateManager [64x64/16z] {
+xTO7pkmg341X0uROdFtlzmcKCg14BzpUpby7ySbC7_bL2abVbyAiixEKwp3RMSu-U0KsVLyse9xUmO8i5VmwGGQJvHpI-T__JuzPzqr1SuFnc1fW4v6a3xND
+mG1oswu07lhOxXDeMtwgCQENsjYUYnG8tVVrmcEb8O_QbK6EraY6EFYiD-NcjM_PGAJY_H1vzaytOlC9IgDLnDil1PqzkDtaEyKhRD9KTI1CFlDOwNkEHvpJ
+Kfbyh3nKswverOlqYbTBCldLlhF_vvCEnKMVc0fhNfcAopwdixBkXyNy3NooiRZeAsFReWVg5TYoDxdwflwV3pgswesnRT5NndpPrtHLMVSkLqy-UAqzk_Un
+M8cZtyhbczYBTpxJqazV80_UpQpU-mYzUFc-57P_YdplIoCAvV8EiBtq1Y82s-aL-c5VprV9d_ChX0J-paVeXSCNzlAxsr-dsz_PizqhH-7X_jzAaDCdsukx
+bsrVo2yUVokFNxrv_C_lF-3fYij7o7VFlx78b1sV60EOCRP5fe8pLXoavn1rJ6HQYH9qA2NOfAVWibgertkgWSSrdceVlrS1B_brnHdlJcEvRJoFBUeeSs4X
+-MNw3m
+}
+
+AWSEntityColoring(SystemsManagerStateManager)
+!define SystemsManagerStateManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)
+!define SystemsManagerStateManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerStateManager, SystemsManagerStateManager)

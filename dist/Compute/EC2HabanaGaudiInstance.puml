@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2HabanaGaudiInstance [64x64/16z] {
+xTS5SYn130DGsR9at__27p8Lffx0ifQAtfAc2IUL86FXzTtaJ2wy_ho_-P0aptZbDLvxpOxeLpmMyxC-U1VlyTvCR9tSPzdV9x_hl_lzZ_F_dsx_KG0oSPVo
+xlxP0AHxlxl_UvyIKQOIe1HWK8aerOVzSqXQA7AYcfoCeXfjQa2owwF-ERPRGCHa6R20vA296232-kZ_l__-RMrUofRllLgzudE0oMgWAOFtVWX_wDC0LEYs
+a-uHSbeD4z7GsFNRu_ys_bDMuaMQEMk-faY-ziWrFvijTu45E52jPdXf_iy1CWDvFmOcs9dDd8N-D-zk17dl9M3pA_rF0cnClV9h_QkPwfYxxz-HZzz_iVzo
+cr2NCjnKe2nb-FBc_zluFtv_nzv_Vd__VFpz_ysldrzFAdy1
+}
+
+AWSEntityColoring(EC2HabanaGaudiInstance)
+!define EC2HabanaGaudiInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2HabanaGaudiInstance, EC2HabanaGaudiInstance)
+!define EC2HabanaGaudiInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2HabanaGaudiInstance, EC2HabanaGaudiInstance)
+!define EC2HabanaGaudiInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2HabanaGaudiInstance, EC2HabanaGaudiInstance)
+!define EC2HabanaGaudiInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2HabanaGaudiInstance, EC2HabanaGaudiInstance)

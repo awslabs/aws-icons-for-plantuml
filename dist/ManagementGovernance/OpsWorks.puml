@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $OpsWorks [64x64/16z] {
+xTG5TXmn40JGKdFN_G-SVjgGsVA6CtzXiAGdvB_gSd4PpW_f9XT4iFRvgLv8Wv02Iwm-Zmz9CWLZzMayqefRMSPX0Gxb0me_hByuqZqvwhG1QpLP2sCLsMln
+G3YS4u9N-QxQuS7tAW156f8ZOLzklJjljTl0RH_BJlB10UMcu8YJlERZ-bDHX-tVdRWFX-rd1OniWKOef4b350y8ccp5q2ORmXC554TdzfVhNph_5HOItER4
+eCt30Z2ST8p3-6YL3WWfY9OTFxSm5ZyiT0H_8pFUHOHdCXvOAnv8lW5lu1kW-RsrydlwTjvUQx_ztBofOgacRrmLK7NUfEg2gl4bXHlXpQC-4zpK6_kko8Es
+61wq9VxD_9M_V_xGT3oOl-Ex-RiP_nINooS
+}
+
+AWSEntityColoring(OpsWorks)
+!define OpsWorks(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorks(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorksParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorks, OpsWorks)
+!define OpsWorksParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorks, OpsWorks)

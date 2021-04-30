@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DocumentDB [64x64/16z] {
+xTPLOYCn44NHLwNY_IzuD363m9ry-fhXD5FzVT--HRYPUSG1gepxM7mVfn209kRnFpTj141YZol0bi_3j0Qq7TxGOZ1Pe5noXTKe1oyzSOqJvCfZxcFfePFf
+t_7WuVBRyQ80QpnZOq1qnrSg0M1HyzFc8mqzYR8jtmjjXBjO_VHrxlXp6M5c4MCpzxUORlddFa1yYH07lDMb1EKHhtAEG9AVUu3E0RD900syr3c1JmO0SAvy
+nNW0841pxaK8FF8I3B36q1lr9hug13tY9g8Yx6T_7yzyBqoOy1FfpMTMnSgFbx_3gi27lI2h6Wvxflwao8FUppEXntm0MJs6JZmFVMc7FS0d7ZBqHTIVhFEP
+1_d8DsmiFmD8VB3-h0hBzMSCW9gezLGze2UVpJlrXU-b2UEI1X0VRV_dCYCogyeqZ_ZxVkr1z-5Jh_AO3pnH_If3gq79LEiKP8CVOBMH4z0yNo__E6elR-Yn
+gFviVyBeDQyFyliB26hgTQ3CZCoQzktRFm
+}
+
+AWSEntityColoring(DocumentDB)
+!define DocumentDB(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DocumentDB, DocumentDB)
+!define DocumentDB(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DocumentDB, DocumentDB)
+!define DocumentDBParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DocumentDB, DocumentDB)
+!define DocumentDBParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DocumentDB, DocumentDB)

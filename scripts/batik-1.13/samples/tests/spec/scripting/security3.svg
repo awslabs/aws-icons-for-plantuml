@@ -1,0 +1,328 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- This test checks that scripts can properly invoke the Window object       -->
+<!-- methods but that they cannot access data through getURL.                  -->
+<!--                                                                           -->
+<!-- @author vincent.hardy@sun.com                                             -->
+<!-- @version $Id: security3.svg 1733420 2016-03-03 07:41:59Z gadams $   -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="450" height="500" viewBox="0 0 450 500"
+     onload="windowTest()">
+
+    <text x="225" y="30" class="title">
+        ECMA Script Secure Access to the Window Object
+    </text>
+
+    <style type="text/css"><![CDATA[
+        .cellLabel {
+            fill: white;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+
+        .cellStatus {
+            stroke: black;
+            fill: white;
+            shape-rendering: crispEdges;
+        }
+
+        .label {
+            font-size: 12;
+            font-family: sans-serif;
+            fill: black;
+            text-anchor: start;
+        }
+
+        .passedTest {
+            fill: rgb(0,200,50);
+            stroke: none;
+            shape-rendering: crispEdges;
+        }
+
+        .failedTest {
+            fill: crimson;
+            stroke: none;
+            shape-rendering: crispEdges;
+        }
+
+        #table {
+            stroke: black;
+        }
+
+        .untested {
+            fill: gray;
+            stroke: none;
+            shapeRendering: crispEdges;
+        }
+
+        .tableCell {
+            fill: none;
+            stroke: black;
+            shapeRendering: crispEdges;
+        }
+    ]]>
+    </style>
+
+    <script type="text/ecmascript" ><![CDATA[
+
+function windowTest() {
+    evalTest();
+    setIntervalTest();
+    setTimeoutTest();
+    getURLTest();
+    alertTest();
+    confirmTest();
+    promptTest();
+}
+
+function evalTest() {
+    var t = document.getElementById("eval");
+    try {
+        eval("dummyGetURL()");
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+function dummyGetURL(){
+    alert('dummyGetURL');
+    getURL('security3Include.svg', dummyFunction);
+}
+
+function dummyFunction() {
+    System.out.println("===>> dummyFunction called");
+}
+
+function setIntervalTest(){
+    var t = document.getElementById("setInterval");
+    var intervalId;
+   
+    try {
+        intervalId = setInterval(dummyFunction, 10000);
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+        return; // Cannot test clearInterval
+    }
+
+    t = document.getElementById("clearInterval");
+
+    try {
+        window.clearInterval(intervalId);
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        System.out.println("Got exception : " + e);
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+function setTimeoutTest(){
+    var t = document.getElementById("setTimeout");
+    var timeoutId = null;
+   
+    try {
+        timeoutId = window.setTimeout(dummyFunction, 10000);
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+        return; // Cannot test clearTimeout
+    }
+
+    t = document.getElementById("clearTimeout");
+
+    try {
+        window.clearTimeout(timeoutId);
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+
+function getURLTest(){
+    var t = document.getElementById("getURL");
+    try {
+        getURL("security3Include.svg", processGetURL);
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+        return;
+    }
+}
+
+function processGetURL(status){
+    var t = document.getElementById("getURL");
+    alert("status.success : " + status.success);
+    if (status.success == false) {
+        t.setAttributeNS(null, "class", "failedTest");
+        return;
+    }
+
+    t.setAttributeNS(null, "class", "passedTest");
+
+    t = document.getElementById("parseXML");
+    try {
+        var root = parseXML(status.content, document);
+        if (root == null){
+            t.setAttributeNS(null, "class", "failedTest");
+        } else {
+            t.setAttributeNS(null, "class", "passedTest");
+        }
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+
+}
+
+function dummyProcessGetURL(status){
+}
+
+function alertTest(){
+    var t = document.getElementById("alert");
+    try {
+        alert("alert() test");
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+function confirmTest(){
+    var t = document.getElementById("confirm");
+    try {
+        confirm("confirm() test");
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+function promptTest(){
+    var t = document.getElementById("prompt");
+    try {
+        prompt("prompt() test");
+        t.setAttributeNS(null, "class", "passedTest");
+    } catch (e) {
+        t.setAttributeNS(null, "class", "failedTest");
+    }
+}
+
+    ]]></script>
+
+
+    <g id="testTable" transform="translate(125, 150)">
+
+        <g id="setIntervalTest">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="setInterval" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">setInterval</text>
+        </g>
+
+        <g id="clearIntervalTest" transform="translate(0, 20)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="clearInterval" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">clearInterval</text>
+        </g>
+
+        <g id="setTimeoutTest" transform="translate(0, 40)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="setTimeout" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">setTimeout</text>
+        </g>
+
+        <g id="clearTimeoutTest" transform="translate(0, 60)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="clearTimeout" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">clearTimeout</text>
+        </g>
+
+        <g id="parseXMLTest" transform="translate(0, 80)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="parseXML" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">parseXML</text>
+        </g>
+
+        <g id="getURLTest" transform="translate(0, 100)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="getURL" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">getURL</text>
+        </g>
+
+        <g id="alertTest" transform="translate(0, 120)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="alert" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">alert</text>
+        </g>
+
+        <g id="confirmTest" transform="translate(0, 140)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="confirm" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">confirm</text>
+        </g>
+
+        <g id="promptTest" transform="translate(0, 160)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="prompt" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">prompt</text>
+        </g>
+
+        <g id="evalTest" transform="translate(0, 160)">
+            <rect class="cellLabel" width="200" height="20" />
+            <rect class="cellStatus" x="200" width="20" height="20" />
+            <rect id="eval" class="untested" x="203" y="3" width="14" height="14" />
+            <text x="5" y="15" class="label">eval</text>
+        </g>
+
+        
+    </g>
+
+
+    <script type="text/ecmascript"><![CDATA[
+function onDone() {
+    if (!(regardTestInstance == null)) {
+        regardTestInstance.scriptDone();   
+    } else {
+        alert("This button only works when run in the regard framework");
+    }
+}
+    ]]></script>
+    <g id="done" transform="translate(195, 468)" cursor="pointer" onclick="onDone()">
+        <rect rx="5" ry="5" width="60" height="25" fill="#eeeeee" stroke="black" />
+        <text x="30" y="18" font-size="14" font-weight="bold" text-anchor="middle">Done</text>
+    </g>
+
+</svg>

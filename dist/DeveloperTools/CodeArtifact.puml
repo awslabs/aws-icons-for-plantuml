@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CodeArtifact [64x64/16z] {
+xPO5TiGm34J79Bh_VOjvdUMrd78x2tdq7R4S7wD__SjtqLhA3jehYgxZ7HZhj1IqTUVjIqt7iUdUDMcwHL03GBL9sXiWnoM0QWFeKxW2tK-C4Hux4JWxSfnn
+j89Y4_onuyrFmZh5q_5aMidxvZZ5SCpmzSgRj42ti_mcNw-L1uJFQNxuBbuXQxot_XgDy6fvNijB60qz3B0iFxQIQ_3O3aZnxJM9ZlOQX9ArlqBUca81ISUl
+GYD0Nx9yD0zvgJXjg_alPLVzAMGN7nehV5df7-xRXcfN-vVyTGsW-vNvGJunoJbEoIUM8CSf-SmcEnsd0abiKff2qtnw7KgZump4hBI0gM0W4X8xNQYxxbJo
+7IucUIat-8fOpcigFRwZ_lMlHm
+}
+
+AWSEntityColoring(CodeArtifact)
+!define CodeArtifact(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CodeArtifact, CodeArtifact)
+!define CodeArtifact(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CodeArtifact, CodeArtifact)
+!define CodeArtifactParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CodeArtifact, CodeArtifact)
+!define CodeArtifactParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CodeArtifact, CodeArtifact)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ThinkBoxDeadline [64x64/16z] {
+xTO7SiGm20LGG09q_nDdMFvCIF6gf1UcfJqS_XfRu-Fgl_xBrT-YEn7RCLUcAF4ZRKAadQoH7cXlHCr79nz-DhY42tyqUCG6ZuQwCtWF1eya-zRWe_Xes1Pz
+36xrMy-6dhxRNMrCh4_ReM5wZrQNsZ5ugKPe61v_ebVUIFog8VnG8hxs_NcIJCdXJMZk8JG6xzLdaZpnViiBILQlcUJKnrKmUFL8SkOn9PA4BqbEVHJBu-VF
+Tbid_6xJju0QMPpuY4A8Y7JuYHSIinpyo3FZXr_YJOY7CkcHZ-o8iMxRdczhpqJauyJdpTga7VXwitPuvTNxDmUNylp44vbNzWThpzKxdiYTPEgnzjNdsaUv
+ppoch3uRecOUQmzVawmNcJs_uNFjxSMVwDttXwJ7MrJ8g-wPv7LvDtZZk5AlNfTFCymjHoaU7ysQpoIBTpHSAud_4xwSHtOB7kUHxN8FdmUnSL22ynirVzFv
+qTvqVjKlEZ_Fwx_-wm4
+}
+
+AWSEntityColoring(ThinkBoxDeadline)
+!define ThinkBoxDeadline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadlineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ThinkBoxDeadline, ThinkBoxDeadline)
+!define ThinkBoxDeadlineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ThinkBoxDeadline, ThinkBoxDeadline)

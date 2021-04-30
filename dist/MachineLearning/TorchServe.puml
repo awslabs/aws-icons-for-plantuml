@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TorchServe [64x64/16z] {
+xPG50YD120GR607-_z_pYuVEngtYsQqn96_6boyHb-aYb-aO5-X-iJxpBxDtNwnZfJS0c6Vh4nOkY2Nw15OhRh_LWNccdXt-vss9Bhwv5HaTShe-8Bxz6n1V
+eaTk4TFZ0lq_yq8TndLVwViOEY-PAavAaw2L9HCGjdhDYev1ffyNDHHerlHoWeb1msFbyYC9Mcr0sF997T84g_j0e1KcFo8d-KdkkSI_VFsNdz_byJFm_46v
+k47qW96hVFi51gzzGP3o8jFtlA21X4YmywdkC0oUNnh7Oz-Iqc5nx8hc2JHe5Fzp1cH_cwwhTL6cGBV340RqF9deW7HV_LB0F9SGJG28cWfGs0NUVykYrcO-
+9r--_0G
+}
+
+AWSEntityColoring(TorchServe)
+!define TorchServe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TorchServe, TorchServe)
+!define TorchServe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TorchServe, TorchServe)
+!define TorchServeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TorchServe, TorchServe)

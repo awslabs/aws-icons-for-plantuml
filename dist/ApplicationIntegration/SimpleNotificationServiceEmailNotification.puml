@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleNotificationServiceEmailNotification [64x64/16z] {
+tPLNcjqW34P_5IH0-zzl08VqMu0aus_EBP8VZam7Tu552BkGHwS8jj2O-AvUacfkCMCPQfgYmpKYOHM_z5aAgqGKJ5A4O0t-iSqKOLX3HlCdOmf4tu8VlT_Z
+FVYhad-SolI-B-YKgz3CwStss_GbeX86FbSWIOCWw30181uf8C3K1DEAn20jin8qSiwAKUtwpz7r0E8t7pacbJ7GCi9ujkvJzVJGHueB9_pifznCSo2vbCS-
+8EQM21EDMWiGgEmfEL2afR_xZz12H42qfABv72BPVlCVrfdj1qowRyKzrnL_p5-WqVqnhbM6BoByocTl21mTKHg9ZkYDz9k_pdT_ax_amtmJmoqmznxSLwFD
+UOWUOptAt_3PdR71y6x0IVjFzy-nVmD8bKuyYSWxwp__fVLBTTUlX3l0gZsehaQ-zFtnuxzq_jXE--qJhFyRd1zdxRy1X-ld_FxRz_bq_tuyNm
+}
+
+AWSEntityColoring(SimpleNotificationServiceEmailNotification)
+!define SimpleNotificationServiceEmailNotification(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleNotificationServiceEmailNotification, SimpleNotificationServiceEmailNotification)
+!define SimpleNotificationServiceEmailNotification(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleNotificationServiceEmailNotification, SimpleNotificationServiceEmailNotification)
+!define SimpleNotificationServiceEmailNotificationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SimpleNotificationServiceEmailNotification, SimpleNotificationServiceEmailNotification)
+!define SimpleNotificationServiceEmailNotificationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SimpleNotificationServiceEmailNotification, SimpleNotificationServiceEmailNotification)

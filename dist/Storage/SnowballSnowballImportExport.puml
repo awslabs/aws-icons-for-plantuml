@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SnowballSnowballImportExport [64x64/16z] {
+xTO7Ok8m58JXUKtMtF_0Mvv5aP4SnFODNthW7th13tjx4u-o90ntd2_mQnvyIM1d95smH9oa8bLIiSp8RPyY2u2en_DMHd-awW0sCdibFV_gIDyBUmLmKjiP
+CHXPoqrEUcaC2BBSL5BxFaZ13RcXKrbn8wJtVI5nfv1kTvmCt27Zj3S-q9KUbGSLIpti08lzqU_gVMTe_0ZVbMBZthdRq4mVjkC-Rht5i0y0OIUzodUm_QZI
+8oEFPFDUa9HaZAwuB6dd_NYWzMsW4NU1kUzH_fmFk2kwWR7vGEe7RAhi0sAFjkk0y9p1EF5Khn_qqAaWwUDZRBbyJZCVYio7jzzfxgvzVdx_yU7zf-KYmzxj
+6qNBhUFPP_xHuqyp1mzQhnZtTksXFdtyksBIGpG96Zr26lKBjit_lkVVvyb3xsJequAqlXUkgRZsIWQWTIdNkxjwhW7gJzFkBKMG1Qja8nsxIh8i8bdHIEKB
+gk3AwtBjwCcIJDxUlW8
+}
+
+AWSEntityColoring(SnowballSnowballImportExport)
+!define SnowballSnowballImportExport(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SnowballSnowballImportExport, SnowballSnowballImportExport)
+!define SnowballSnowballImportExport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SnowballSnowballImportExport, SnowballSnowballImportExport)
+!define SnowballSnowballImportExportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SnowballSnowballImportExport, SnowballSnowballImportExport)
+!define SnowballSnowballImportExportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SnowballSnowballImportExport, SnowballSnowballImportExport)

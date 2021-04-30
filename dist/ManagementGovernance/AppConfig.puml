@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppConfig [64x64/16z] {
+xTG7hYCv30JG8Yd6-zztTqOG22UrzIUdSX9eF6LqVQ_yox-4hUINUSQAVg4d_npxiFUOFuBv4z2k7aL1MMK2B8_XLGxuAGSf0UAhm00R2F0Zpca0tUvw3W0H
+W1_nAhE7SchCbVW9t-IW0s--xI2hldo00QxB1C6lkEJR3R3gfAdQZH14lGbHDvqn8uq2yeORh6S238zm0Reco6iloEQSJtlYqBqDPka9-irE9tMl8E7T7khj
+5MTaTHoZJm10x7nqEwVeC5L7Jxp1Dt-T-MvtTp_GD-WCv8dtYDu_UNahCsBh3S1uUTKDscLWvrDLRwuwvNCxmQfQ9t6GzxoYY_QEMRS0LhD1eCNxLkvZc5FD
+CRy804Xlx_4PvtLyuPvr_lnGyEAswpw-cFVyTXblUVc55qZTSlywhh1RANRD1qRpNinAEWFmArwf3xoVSYa0HX2QRzDS85qCi6LLdFEKkHYLvNN-vZ7doOjX
+dwFBrp5VGB2YNyGhO-L3d3QtxuHF_mMysU-KV_cN_m4
+}
+
+AWSEntityColoring(AppConfig)
+!define AppConfig(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AppConfig, AppConfig)
+!define AppConfig(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AppConfig, AppConfig)
+!define AppConfigParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AppConfig, AppConfig)
+!define AppConfigParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AppConfig, AppConfig)

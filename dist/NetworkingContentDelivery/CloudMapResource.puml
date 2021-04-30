@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudMapResource [64x64/16z] {
+pPU7ijjC24RDLk2y__F-9IeCcTqRoTFotUfow6BbpzyfgRMMR-6c7B8Xx-a1XFIbXUA7uzvQdm3qLw43tc-VrG1zXy_y362FWmVQ9qlyUGI-obOSnjFApzKi
+0EK1Bk3B5ohefqp7jVtiVlEomZrIiiyUtzSLS3N0PVkcVPaClFwVekwxsQ7k-7gxjUsx9ZmRaRafKkBVLqdn9xp2ge8oWOT3XhNLiml_LS7pI3S0F1VH01-o
+Q0c0vKYR0lICUrlEBQQ0hf8T4VncBEtNG8j1MPc-FCfkA4_75Vfg3lnFryqvAYNu4du6zEr4f1V6DR8prGti2dzkMssr3E0q1y18yvh2Img2Tbdh8tRHW7AM
+9zBlS_R8KUp48viePeFw6ryTW9hAhBaRC8FFyGkd9FVWa97zToYvVWFcyNl15oVdFq7knC93F4vy0tBzmTFytBmj-0bewd-7yTlUdz3ERPzviGEKMgAmKQPn
+4WLG1Mgw_ci5lEJnJqUTWKfSxoC6S7CRqG7DH-Iy_ONtAnv6sX-J6uz1ayZtalxAf90Nq835CN-cbtX75ukzfvMObNcMV6coW_VnFrJmKRz8jaop8K_vwDzC
+sxp-X4jkJ3Nm5j6uW_zyk86NPJmABTRcKiQXikB1eYbBTR1Q9jXtl8ASVnQyG_qL_zZnZiLY2pvM8-QiZ__O7wb4PHx3Aigj-eVxpmPWBJgEzMCAodIVvREN
+4_8UvpTWvV671tgP03YqM5wFr5N7_vva0A1nO_bQ_LfAyfhFvtU3_XK_OSgd0l8LBvwEdFSgdl7tQlFenr-hVm4
+}
+
+AWSEntityColoring(CloudMapResource)
+!define CloudMapResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudMapResource, CloudMapResource)
+!define CloudMapResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudMapResource, CloudMapResource)
+!define CloudMapResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudMapResource, CloudMapResource)
+!define CloudMapResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudMapResource, CloudMapResource)

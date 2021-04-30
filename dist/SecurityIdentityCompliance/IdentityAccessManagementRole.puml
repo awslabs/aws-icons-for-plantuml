@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IdentityAccessManagementRole [64x64/16z] {
+xPLNOkGW38QZZfZxttS7WsBQJdlP4d_9TFtgs5z_BHSN5m34HF2HbjHlWIkz6TXkCuOlgp5LIJ9X5hNuY6_4pe93CRbygQ_KVHIyrikvU7sQWXGh0Z4_xDq4
+1m_yMAwbpfhiYJONK1eXZ-HzsprPykR9ySnE7YPVCOAfTLQ_u4SbK1NdsO2E0TAt0zpBeGJQkoSlYKUEljVNDS7VDrR3JBTR5_8z51d0_Gri33oAVE20MmMs
+3_zuGIa2v_gwZZu_tStKNjT0JxAF4gdQvbro_lHWDnjR-spHteUaAkJLriUf86kt_TfsYlNU0SOomZJf-_GftnOIntwMAUQ-0R4KTfPPoPxiZiU135-PV9uW
+3kMx2K7lNLABJ4JX1jRbUW18T2ZqWxbifm-02FqHodUED6IO02zNLsJp7EKQTssfZS9EBz-6Yb7jzkv1wK2_UhsqtwKrsKAStLH4D5NtVkRRw-t874fOxQOj
+DFVkl8K1iLZLJtEJ6cap2BIMrBbQ57fZ0a0Iy-tLSsfJO74YHlJXBJtTCH4c66TtBla708c4pv_2nSN5Bm
+}
+
+AWSEntityColoring(IdentityAccessManagementRole)
+!define IdentityAccessManagementRole(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IdentityAccessManagementRole, IdentityAccessManagementRole)
+!define IdentityAccessManagementRole(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IdentityAccessManagementRole, IdentityAccessManagementRole)
+!define IdentityAccessManagementRoleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IdentityAccessManagementRole, IdentityAccessManagementRole)
+!define IdentityAccessManagementRoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IdentityAccessManagementRole, IdentityAccessManagementRole)

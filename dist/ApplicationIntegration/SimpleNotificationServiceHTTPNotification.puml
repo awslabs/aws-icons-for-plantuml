@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleNotificationServiceHTTPNotification [64x64/16z] {
+tPG5aWGX40Ih1Qt___U283XR1TPpPR3imV4gg9bW5Kbi5CCIpa5QrKjmpoGpfX6IZePMCc2MrFKH2hEG1OD06kRGttqMCc8E8_rtPn9WVXLwwls9rw7eIlwz
+bE5wtz0eFT18ovNzZyCtiahNq_SEbFudZJyF3Apvms9GY9VlI5u0M4NEjUQi_O5QSis7FZ87LV771s928mS0hRRQeO_0JX9SyeiV-0sBAGR1m9bpBWT-i40v
+z0_n8Y9-uESK5R_ympWN-u-7-1hQNspLZaOm055E-HCS-elSo4TCYqGydzx_zaXfzXanvgyzEV-qM_YQacA1xZsNtVxldfzz__c8k-nuHkQL_Pzlj7-bhlfL
+y0geUtkuppwrw-lpfpUwV-9A_-C7xFzdtn_R_Nyok_jdT__kdf_Ty_jylW
+}
+
+AWSEntityColoring(SimpleNotificationServiceHTTPNotification)
+!define SimpleNotificationServiceHTTPNotification(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleNotificationServiceHTTPNotification, SimpleNotificationServiceHTTPNotification)
+!define SimpleNotificationServiceHTTPNotification(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleNotificationServiceHTTPNotification, SimpleNotificationServiceHTTPNotification)
+!define SimpleNotificationServiceHTTPNotificationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SimpleNotificationServiceHTTPNotification, SimpleNotificationServiceHTTPNotification)
+!define SimpleNotificationServiceHTTPNotificationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SimpleNotificationServiceHTTPNotification, SimpleNotificationServiceHTTPNotification)

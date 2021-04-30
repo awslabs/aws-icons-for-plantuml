@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ResourceAccessManager [64x64/16z] {
+xPD76lKW24Kle23kVx-lafxlQVpBA6UGwh5nhN-3cnlN2_ZHLrn0ptorJlJSBxMJCkAxzVkU_A0pfDjdfAFEa4u_WQ1xFLU1TFa6SKBPwpKwQFbEvBM03tfq
+qF85zhhcrHQ4_aAGMlua2cp0NoRk1By-_zN66VZw_YKGJm3vSlqohz6n_0JZ-Hq_FstQVcQ0yqQmeBHz9v38w-BBr37ZJJ-oai6h-Of-49IMdzzwF1pMgssV
+gGR48_vIPS7_zCVdFxv_u_KRpyy_pM-RNjzDpOTzJtWZFkOxWREfWCgGpr5w0utuXbIhQtb_IpfZlNw2LmFUZGWhfCUF8o0mUjtS5WHorT_2o3_z7AjSpTzK
+lPRt9SfX-YAV-OOFlDq_WDuNpX47nWSBwHZoigsVALwN3B2LTQDVH7xicn-JrqN5wmMM_0uIv-SVStFp1
+}
+
+AWSEntityColoring(ResourceAccessManager)
+!define ResourceAccessManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ResourceAccessManager, ResourceAccessManager)
+!define ResourceAccessManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ResourceAccessManager, ResourceAccessManager)
+!define ResourceAccessManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ResourceAccessManager, ResourceAccessManager)
+!define ResourceAccessManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ResourceAccessManager, ResourceAccessManager)

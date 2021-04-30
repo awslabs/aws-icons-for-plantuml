@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleStorageServiceBucketWithObjects [64x64/16z] {
+pPQ9mfmW38JDGOxtV-6MDOgCvNUtzzV-jmaXaq6s_nKYPXPc9lemK9fvv9LmQ_9E6cwUQrpvos2xBgYgqb6zbXEsIj6Y7b2XnQugXMvtj0g4K83LNna4a_ih
+BstFqAjEsoO2gaBkjVgqTVZv2OfCdPQFxJFc1VCNunqQyWH1W86gJmfq3TlSlux9E-Qe0PTP48liEDW4OeyPzKpU1jpJYOyPRohCL32BQ1iMSEa5qpNnlXrI
+omV2f1e6SjYeiRQ2-CLOE32HZcUFw7UQjPUD6Pg2UZlKim3sEsYVnNEcegFuWtWf-V4N24Sw_TZ0z4L196URxiu2-Ogf8L7TvMDG4P-oee0jgnjqpjlzwNL6
+7bLRmecBykEEQXREuucLQK_I2EN70Q1J2kk54_WzZIzgfH4AM7-E7gfGeKPU3dYzz1K5RFitWGDLxZRPd-dv52QwyiJnTV5sRDpTef2W2lQZBkj_HjGFGN25
+ShHqkNUgXG2tg0mUcJS1FQ_e2DEcVAR8mcy2Ibnm6iTz9_ZijQcvwPiEvZnWqFhPmJKHnlHgFurI0O9-Jpjhunjmxz8JgCpu3jsBdcn-O3HUjMDXS2ywc79W
+jtYe50UW9dUddeFwiLDu9fQJQXti7og50c8ywhUUb8h3U9mVVDUWWp6-mzFyEiJ3040y-0Vbmpd1-8T10m4htlK5F0ZxBD31E3_FxrvqSC010g1xxudvW1RR
+hDyZurAuXcnzrvN7EwJOFaKB6EwGS7UiAOA_uG5VX9jPs-zWFjqTl-3X3cbAspkGg7da8Ehk-26qi_tNV0C
+}
+
+AWSEntityColoring(SimpleStorageServiceBucketWithObjects)
+!define SimpleStorageServiceBucketWithObjects(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceBucketWithObjects, SimpleStorageServiceBucketWithObjects)
+!define SimpleStorageServiceBucketWithObjects(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceBucketWithObjects, SimpleStorageServiceBucketWithObjects)
+!define SimpleStorageServiceBucketWithObjectsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceBucketWithObjects, SimpleStorageServiceBucketWithObjects)
+!define SimpleStorageServiceBucketWithObjectsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceBucketWithObjects, SimpleStorageServiceBucketWithObjects)

@@ -1,0 +1,284 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- This test validates arcto and multiple move to                         -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: markersExt.svg 1733420 2016-03-03 07:41:59Z gadams $  -->
+<!-- ====================================================================== -->
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+    <title>Marker Test</title>
+
+    <style type="text/css"><![CDATA[
+        .markedPath { fill:none; stroke:black; stroke-width:4; }
+        .label { filter:url(#textBG); }
+    ]]></style>
+
+    <g id="content">
+
+        <g transform="translate(0, 40)">
+            <text class="title" x="50%" y="0">Markers on paths with just moves</text>
+            <text class="title" x="50%" y="1em">and elliptical arcs</text>
+        </g>
+
+        <defs>
+            <filter id="textBG" x="-5%" y="-5%" width="110%" height="110%"
+                    color-interpolation-filters="sRGB">
+               <feFlood flood-color="lightGrey" result="foo"/>
+               <feComposite in="SourceGraphic" in2="foo" />
+            </filter>
+
+            <path id="testPathMoves" d="M 0 0 m 60 0 m 60 0" />
+
+            <path id="testPathMoves2" d="M 0 0 m 40 -15 m 40 30 m 40 -15" />
+
+            <path id="testPathArcs1" 
+                  d="M 0 0 a 50 30 30 1 1 60 0 a 50 30 30 1 0 60 0" />
+
+            <path id="testPathArcs2" 
+                  d="M 0 0 a 60 30  0 1 1 60 0 a 60 30  0 1 0 60 0" />
+
+            <path id="testPathArcs3" 
+                  d="M 0 0 a 30 15  0 1 1 60 0 a 30 15 0 1 0 60 0" />
+
+            <path id="testPathArcs4" 
+                  d="M 0 0 a 60 30  0 0 1 60 0 a 60 30  0 0 0 60 0" />
+
+            <path id="testPathArcs5" 
+                  d="M 0 0 
+                     a 60 30 30 0 1 40 -15 
+                     a 60 30 30 0 0 40 30 
+                     a 60 30 30 0 0 40 -15" />
+
+
+            <g id="crossHair" style="marker:none" stroke="black">
+                <line y1="-5" x2="0" y2="5" />
+                <line x1="-5" x2="5" y2="0" />
+            </g>
+
+            <g id="startEndCrossHairs">
+                <use x="0" y="20" xlink:href="#crossHair" />
+                <use x="30" y="0" xlink:href="#crossHair" />
+            </g>
+
+            <g id="startMidEndCrossHairs">
+                <use x="0" y="20" xlink:href="#crossHair" />
+                <use x="20" y="0" xlink:href="#crossHair" />
+                <use x="50" y="10" xlink:href="#crossHair" />
+            </g>
+
+            <g id="testPathCrossHairs">
+                <use xlink:href="#crossHair" />
+                <use x="60" xlink:href="#crossHair" />
+                <use x="120" xlink:href="#crossHair" />
+            </g>
+
+            <g id="testPathCrossHairs2">
+                <use xlink:href="#crossHair" />
+                <use x="40" y="-15" xlink:href="#crossHair" />
+                <use x="80" y="15"  xlink:href="#crossHair" />
+                <use x="120" xlink:href="#crossHair" />
+            </g>
+
+            <!-- ============================= -->
+            <!-- Simple Marker Definition      -->
+            <!-- ============================= -->
+            <marker id="markerStart" markerWidth="20" markerHeight="20" 
+                    viewBox="-1 -1 2 2" orient="auto" refX="0" refY="0" 
+                    markerUnits="strokeWidth" overflow="visible">
+                <g opacity="0.5">
+                <circle r="1.8" stroke="black" fill="blue" stroke-width=".4" />
+                <path d="M 0 -1.8 L 0.3 -0.3 L 1.8 0  L 0.3 0.3 L 0 1.8 L -.2 0.3 L -1.8 0 L -0.3 -0.3 Z" 
+                      fill="yellow" stroke="none" /> 
+                <circle r="0.2" cx="0" cy="-1.8" fill="gold"/>
+                </g>
+            </marker>
+
+            <marker id="markerMid" markerWidth="20" markerHeight="20" 
+                    viewBox="-1 -1 2 2" orient="auto" refX="0" refY="0" 
+                    markerUnits="strokeWidth" overflow="visible">
+                <g opacity="0.5">
+                <circle r="1.8" stroke="black" fill="crimson" stroke-width=".4" />
+                <path d="M 0 -1.8 L 0.3 -0.3 L 1.8 0  L 0.3 0.3 L 0 1.8 L -.2 0.3 L -1.8 0 L -0.3 -0.3 Z" 
+                      fill="yellow" stroke="none" /> 
+                <circle r="0.2" cx="0" cy="-1.8" fill="gold"/>
+                </g>
+            </marker>
+
+            <marker id="markerEnd" markerWidth="20" markerHeight="20" 
+                    viewBox="-1 -1 2 2" orient="auto" refX="0" refY="0" 
+                    markerUnits="strokeWidth" overflow="visible">
+                <g opacity="0.5">
+                <circle r="1.8" stroke="black" fill="green" stroke-width=".4" />
+                <path d="M 0 -1.8 L 0.3 -0.3 L 1.8 0  L 0.3 0.3 L 0 1.8 L -.2 0.3 L -1.8 0 L -0.3 -0.3 Z" 
+                      fill="yellow" stroke="none" /> 
+                <circle r="0.2" cx="0" cy="-1.8" fill="gold"/>
+                </g>
+            </marker>
+
+        </defs>
+
+        <g transform="translate(50, 100)">
+
+        <!-- ==================================== -->
+        <!-- Move Tests -->
+        <!-- ==================================== -->
+        <g transform="translate(0, 0)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathMoves" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs" /> 
+
+            <g class="label" transform="translate(60, 35)" text-anchor="middle">
+                <text y="0">Simple test of multiple moves</text>
+            </g>
+        </g>
+
+        <!-- ==================================== -->
+        <!-- Move Tests2  -->
+        <!-- ==================================== -->
+        <g transform="translate(230, 0)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathMoves2" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs2" /> 
+
+            <g class="label" transform="translate(60, 50)" text-anchor="middle">
+                <text y="0">Another test of multiple moves</text>
+            </g>
+        </g>
+
+        <!-- ==================================== -->
+        <!-- Arc Test 1         -->
+        <!-- ==================================== -->
+        <g transform="translate(0, 110)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathArcs1" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs" /> 
+
+            <g class="label" transform="translate(60, 50)" 
+               text-anchor="middle">
+                <text y="0">Test of rotated arcs</text>
+            </g>
+        </g>
+
+
+
+        <!-- ==================================== -->
+        <!-- Arc Test 2         -->
+        <!-- ==================================== -->
+        <g transform="translate(230, 110)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathArcs2" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs" /> 
+
+            <g class="label" transform="translate(60, 50)" text-anchor="middle">
+                <text y="0">Test of arcs 2</text>
+            </g>
+        </g>
+
+
+
+        <!-- ==================================== -->
+        <!-- Arc Test 3         -->
+        <!-- ==================================== -->
+        <g transform="translate(0, 220)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathArcs3" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs" /> 
+
+            <g class="label" transform="translate(60, 50)" text-anchor="middle">
+                <text y="0">Test of arcs 3</text>
+            </g>
+        </g>
+
+
+
+        <!-- ==================================== -->
+        <!-- Arc Test 4         -->
+        <!-- ==================================== -->
+        <g transform="translate(230, 220)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathArcs4" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs" /> 
+
+            <g class="label" transform="translate(60, 50)" text-anchor="middle">
+                <text y="0">Test of arcs 4</text>
+            </g>
+        </g>
+
+
+        <!-- ==================================== -->
+        <!-- Arc Test 5         -->
+        <!-- ==================================== -->
+        <g transform="translate(115, 320)"  >
+            <!-- Top reference point -->
+            <use xlink:href="#testPathArcs5" 
+                 marker-start="url(#markerStart)" 
+                 marker-mid="url(#markerMid)" 
+                 marker-end="url(#markerEnd)" 
+                 class="markedPath" style="stroke-width:1"/>
+            <use xlink:href="#testPathCrossHairs2" /> 
+
+            <g class="label" transform="translate(60, 50)" text-anchor="middle">
+                <text y="0">Test of arcs 5</text>
+            </g>
+        </g>
+
+
+        </g>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

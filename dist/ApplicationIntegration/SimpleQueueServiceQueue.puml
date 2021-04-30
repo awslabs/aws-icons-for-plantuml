@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleQueueServiceQueue [64x64/16z] {
+xTO5aWD128NXGLhV_S-xnde2NHKN_hXyuxPTiopBM0-CZUFWwDqB3axCe-e1jHylsm5fv4cLFlwa_FCIUET71ihFI-pJAyNU8dLy0NJj5IZxVGDGLxu2QBv7
+2pqDB3m6-PudOl_-XycULm238syJAFjzmGSD_KRsfrrlyqUnjpda_PvivYAljW2zvTS1bCZRn7lUrdxiIxpzwCBBQliJtwlDUkHj4vJRtF_J7tx-MHVv8WTK
+V_o1cMSS71z__NDuMPQz0W
+}
+
+AWSEntityColoring(SimpleQueueServiceQueue)
+!define SimpleQueueServiceQueue(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SimpleQueueServiceQueue, SimpleQueueServiceQueue)
+!define SimpleQueueServiceQueue(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SimpleQueueServiceQueue, SimpleQueueServiceQueue)
+!define SimpleQueueServiceQueueParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SimpleQueueServiceQueue, SimpleQueueServiceQueue)
+!define SimpleQueueServiceQueueParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SimpleQueueServiceQueue, SimpleQueueServiceQueue)

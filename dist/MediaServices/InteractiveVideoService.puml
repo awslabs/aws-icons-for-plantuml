@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $InteractiveVideoService [64x64/16z] {
+xPNRUWGX28EH4V3zNxZdV9glKjcsUpVSxF4VJ8modb5ttHKstriyJ7SHnmSNwV4GRasObsPrsbMazvNlNKIzHiSbSiLW7j-U2vsOnwfEj3SePHwkj9z5X8Z6
+oFWHAXB7rKV6nqa1_XCxFl3icWNCGtofJ4ITULSHAy68G5lvbcp-mGRm9BnOVMO-BX9UvQzYvc6xCI-UPTwQ9xbdVfTv-evvHJVmC_EyDRhd7QPFdcE73vxm
+oDx2esMFPJ4PZmQ-y8Yqs70iB-VHZNXqXZqvZsQDU3mLHgOyYGK_DxTZ0JaFivc7gzYVZ8U_n8EQJyfuGx183rQzAB4zZp-kF5R4JkvuG_mN7iAvNBTNKNpJ
+SsLpipQ7PkuTGBLOk9EAuWJc-GrpwXEOx-_gz9r7aFbv-AeJcFalHwn-xpDFDz6pvZTERyP7xY9VLNlUS8EKaiCyV3qNZYpp45QVlhhocZkVsp1v4buicmr3
+RJoZxhhh5G
+}
+
+AWSEntityColoring(InteractiveVideoService)
+!define InteractiveVideoService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, InteractiveVideoService, InteractiveVideoService)
+!define InteractiveVideoService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, InteractiveVideoService, InteractiveVideoService)
+!define InteractiveVideoServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, InteractiveVideoService, InteractiveVideoService)
+!define InteractiveVideoServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, InteractiveVideoService, InteractiveVideoService)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleStorageServiceS3Standard [64x64/16z] {
+pPVRTkim24J3dVd_3putUOLoLd7nM_PZAv34pCJswrCXOcPXPgA7XM8UYQzakCcc3MjW9eplYiNRXgho5rNzUXoNeLglDSD9ITIl5KRVL9y3Aj-FvhgUlVuZ
+06JhExT80DcN9f3wsYA9ti20U2Io0zwspsrbtVTL0F6mtbjzr75s692jszFvzHDRizOzR7aMT_Fus-6qI8Tt2p4WR_y2uIh2H1Labie0KkbVGK60bJj7ok4A
+DAFNTLYjmjR8CEKQ67N_TWCGYwhvmLI5QP2_xBHWDAmzh6_orJnMrBmBAJqQ4b5zczuw_g6tROEUjsi7QhduxXzQNIl1Kps2f_GMSGdIeRoi8yFgeMCXmdvv
+Vh9R6NA0pZMyhW70-tAvDG2Tp8U-vGSW2m4BkHuSV3RB4gOxQeRFDT980LRqYjKlQFt4q3zjg8zq0HiEuG78Ei7z7dMABk0I83s1a4M25-cjI2sOjAPR0qnU
+MmeuUtqlu9orokI2MhbCyFAaUmFKf9O9dfLQ9dXsoZh12wS2lfL_UYOkvSFQ5dlvzW82lfxBUivx0HcGgN7op-KvNjC0XFpy5F1HsTjl45O7SEioylfyKXK-
+YDGxNJq51yGn4qeRXMgx8hokjOB-7LnLf5uUFv7V
+}
+
+AWSEntityColoring(SimpleStorageServiceS3Standard)
+!define SimpleStorageServiceS3Standard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceS3Standard, SimpleStorageServiceS3Standard)
+!define SimpleStorageServiceS3Standard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceS3Standard, SimpleStorageServiceS3Standard)
+!define SimpleStorageServiceS3StandardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3Standard, SimpleStorageServiceS3Standard)
+!define SimpleStorageServiceS3StandardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3Standard, SimpleStorageServiceS3Standard)

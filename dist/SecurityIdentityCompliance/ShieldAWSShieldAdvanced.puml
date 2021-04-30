@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ShieldAWSShieldAdvanced [64x64/16z] {
+xPQ7UiGm28CFBuRU_ttRv2Fd8xXx3tNN_4Z1MPVlhFeMk300VcsBhi0kww-q1cmeyF8G_OOg_B8G4yZjNcAzxlaYwtNZ5rXJbq7F337IOXDiqfOjCbvFrcLW
+YiifHCjywDfqvzG03z5f9btoyv_rE7Veeh0BTSCcgQbqnOTgXOMEJ_DyJUjyE29vabUVLkIFYThJ_2JoNr_E__F__3__p_TNyX1JuLVwTxXM_WNeZ_Aa061g
+s3JEFFdpIu0bNtPRsgFAwX4Ag3_SQC6J0J8FTf50WJdSnBCxKgr7cfAU_yLpPBxuVw_ngiSvD8q5A8bde4xUo-Wy074hIRpvpyctj8b7HmLQv8_D8I862j5M
+bxR0E_fi0b_s9SPLv7CAWeVi0EgJl2L--ARkXKmtVDrNQkzTWT5xz_mf0EZe14WlErys21hdvosZ-hMi6iwYoBCFAKXdqwQOaW58uCc75KMtboQrmNAlqMXk
+QjsFtV_EyWiZguIBdjJp93K0GWyj5F_TGlgK02DtyDi7Zo40eA4Y5tABxeoWiMPdF03AexVM-X359ckLBRvBP-NDSsdtU8bTYheO3fcuumj5zLx5qM-hEm
+}
+
+AWSEntityColoring(ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvanced(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvanced(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvancedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)
+!define ShieldAWSShieldAdvancedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ShieldAWSShieldAdvanced, ShieldAWSShieldAdvanced)

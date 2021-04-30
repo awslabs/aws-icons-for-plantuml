@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DirectConnect [64x64/16z] {
+xPFdekiW38DbWnVl_y0twqTmQIXth--SRaGKoRGVm7_-4wPg_hLgPHnGZRQEqIPKCnC6wh9SGDekdC6nwBrNA6Xf0y_h3RoYP-JK1RAGtM0n8uH1nTkSWXZi
+2L1XmEPwbFOAOI_42JvFJ--VH0w5dpf7cT--tQlRaExcfkNVB0ROezmzooG1Bu3tNXpI1KaI3uEBOlVLkZsbG1vQ4B2ds4Kfzsa47PllvZJKzi90rboxRUDD
+ZOpeRWNaZT62WRwtSOs1sdan1Us5LOXLo6H6Kr22s9-yu1n8uhvaUsw-rGTzxcIqgO7TJly5uic_Z_JUhH5iU2iflmV_oQE3unhu2XsTyOn0NmvoGKhcwHWI
+RAhFyvD-g37HT_ERYG8KqPsiDpsGGY1hRx62aqXwmWLBj4V2RIDVtst79zf9_ak8xLBP-v9OLeTqh1fm97HDNs5nmudNz0MjW-cVqYj3EWWQArSVGF5v-ILU
+qCz7m4PB0_AvtdwfFePPgxVlpN_-ymK
+}
+
+AWSEntityColoring(DirectConnect)
+!define DirectConnect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, DirectConnect, DirectConnect)
+!define DirectConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, DirectConnect, DirectConnect)

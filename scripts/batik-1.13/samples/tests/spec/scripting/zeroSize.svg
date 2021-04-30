@@ -1,0 +1,238 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Modification of a rect's attributes                                    -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: zeroSize.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+  onload="doShowBounds=false">
+  <title>Resizing zero w/h items 'onload'</title>
+  <text x="50%" y="45" class="title">Resizing zero w/h items 'onload'</text>
+
+  <script type="text/ecmascript"><![CDATA[
+    var svgns = "http://www.w3.org/2000/svg";
+    var root  = document.getRootElement();
+    var doShowBounds = true;
+    var stressTest   = false;
+
+    function resizeRect(id, w, h) {
+      var rect = document.getElementById(id);
+      var ow = rect.getAttribute("width");
+      var oh = rect.getAttribute("height");
+      rect.setAttribute("width",  w);
+      rect.setAttribute("height", h);
+      showBounds(rect);
+      if (stressTest)
+        setTimeout("resizeRect('"+id+"',"+ow+","+oh+")", 1000);
+    }
+
+    function resizeCircle(id, r) {
+      var circle = document.getElementById(id);
+      var or = circle.getAttribute("r");
+      circle.setAttribute("r",  r);
+      showBounds(circle);
+      if (stressTest)
+        setTimeout("resizeCircle('"+id+"',"+or+")", 1000);
+    }
+    function resizeEllipse(id, rx, ry) {
+      var ellipse = document.getElementById(id);
+      var orx = ellipse.getAttribute("rx");
+      var ory = ellipse.getAttribute("ry");
+      ellipse.setAttribute("rx",  rx);
+      ellipse.setAttribute("ry",  ry);
+      showBounds(ellipse);
+      if (stressTest)
+        setTimeout("resizeEllipse('"+id+"',"+orx+","+ory+")", 1000);
+    }
+
+    function showBounds(shape) {
+      if (!doShowBounds) return;
+      var bbox = shape.getBBox();
+      var elem;
+//      System.err.println("XXX: [" + bbox.x + ", " +bbox.y + ", " + 
+//                         bbox.width + ", " + bbox.height + "]");
+      if (bbox.width == 0) {
+         if (bbox.height == 0) {
+           elem = document.createElementNS(svgns, "circle");
+           elem.setAttribute("cx", ""+bbox.x);
+           elem.setAttribute("cy", ""+bbox.y);
+           elem.setAttribute("r", "5");
+           elem.setAttribute("stroke","none");
+           elem.setAttribute("fill","lime");
+           elem.setAttribute("fill-opacity", ".5");
+           shape.parentNode.insertBefore(elem, shape.nextSibling);
+           return;
+         } else {
+           elem = document.createElementNS(svgns, "line");
+           elem.setAttribute("x1", ""+bbox.x);
+           elem.setAttribute("y1", ""+bbox.y);
+           elem.setAttribute("x2", ""+bbox.x);
+           elem.setAttribute("y2", ""+(bbox.y+bbox.height));
+         }
+      } else if (bbox.height == 0) {
+           elem = document.createElementNS(svgns, "line");
+           elem.setAttribute("x1", ""+bbox.x);
+           elem.setAttribute("y1", ""+bbox.y);
+           elem.setAttribute("x2", ""+(bbox.x+bbox.width));
+           elem.setAttribute("y2", ""+bbox.y);
+      } else {
+        elem = document.createElementNS(svgns, "rect");
+        elem.setAttribute("x", ""+bbox.x);
+        elem.setAttribute("y", ""+bbox.y);
+        elem.setAttribute("width", ""+bbox.width);
+        elem.setAttribute("height", ""+bbox.height);
+      }
+      elem.setAttribute("fill","none");
+      elem.setAttribute("stroke-width", "5");
+      elem.setAttribute("stroke", "lime");
+      elem.setAttribute("stroke-opacity", ".5");
+      shape.parentNode.insertBefore(elem, shape.nextSibling);
+    }
+    ]]></script>
+
+  <linearGradient id="testGrad" gradientUnits="objectBoundingBox"
+    x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" style="stop-color:crimson" />
+    <stop offset="1" style="stop-color:gold" />
+  </linearGradient>
+
+  <g id="test-content">
+    <g fill="red" stroke="black" stroke-width="2">
+       <rect id="r1-1" x="10" y="60" width="0" height="0" 
+        onload="resizeRect('r1-1', '50', '50')"/>
+       <rect id="r1-2" x="70" y="60" width="50" height="0" 
+        onload="resizeRect('r1-2', '50', '50')"/>
+       <rect id="r1-3" x="130" y="60" width="0" height="50" 
+        onload="resizeRect('r1-3', '50', '50')"/>
+       <circle id="c1-1" cx="215" cy="85" r="0" 
+        onload="resizeCircle('c1-1', '25')"/>
+       <ellipse id="e1-1" cx="275" cy="85" rx="0" ry="0" 
+        onload="resizeEllipse('e1-1', '25', '15')"/>
+       <ellipse id="e1-2" cx="335" cy="85" rx="25" ry="0" 
+        onload="resizeEllipse('e1-2', '25', '15')"/>
+       <ellipse id="e1-3" cx="395" cy="85" rx="0" ry="15" 
+        onload="resizeEllipse('e1-3', '25', '15')"/>
+    </g>
+
+    <g fill="url(#testGrad)" stroke="black" stroke-width="2">
+       <rect id="r2-1" x="10" y="120" width="0" height="0" 
+        onload="resizeRect('r2-1', '50', '50')"/>
+       <rect id="r2-2" x="70" y="120" width="50" height="0" 
+        onload="resizeRect('r2-2', '50', '50')"/>
+       <rect id="r2-3" x="130" y="120" width="0" height="50" 
+        onload="resizeRect('r2-3', '50', '50')"/>
+       <circle id="c2-1" cx="215" cy="145" r="0" 
+        onload="resizeCircle('c2-1', '25')"/>
+       <ellipse id="e2-1" cx="275" cy="145" rx="0" ry="0" 
+        onload="resizeEllipse('e2-1', '25', '15')"/>
+       <ellipse id="e2-2" cx="335" cy="145" rx="50" ry="0" 
+        onload="resizeEllipse('e2-2', '25', '15')"/>
+       <ellipse id="e2-3" cx="395" cy="145" rx="0" ry="50" 
+        onload="resizeEllipse('e2-3', '25', '15')"/>
+    </g>
+          
+    <g fill="red" stroke="black" stroke-width="2">
+       <rect id="r3-1" x="10" y="180" width="50" height="50" 
+        onload="resizeRect('r3-1', '0', '0')"/>
+       <rect id="r3-2" x="70" y="180" width="50" height="50" 
+        onload="resizeRect('r3-2', '50', '0')"/>
+       <rect id="r3-3" x="130" y="180" width="50" height="50" 
+        onload="resizeRect('r3-3', '0', '50')"/>
+       <circle id="c3-1" cx="215" cy="205" r="25" 
+        onload="resizeCircle('c3-1', '0')"/>
+       <ellipse id="e3-1" cx="275" cy="205" rx="25" ry="15" 
+        onload="resizeEllipse('e3-1', '0', '0')"/>
+       <ellipse id="e3-2" cx="335" cy="205" rx="25" ry="15" 
+        onload="resizeEllipse('e3-2', '25', '0')"/>
+       <ellipse id="e3-3" cx="395" cy="205" rx="25" ry="15" 
+        onload="resizeEllipse('e3-3', '0', '15')"/>
+    </g>
+
+    <g fill="url(#testGrad)" stroke="black" stroke-width="2">
+       <rect id="r4-1" x="10" y="240" width="50" height="50" 
+        onload="resizeRect('r4-1', '0', '0')"/>
+       <rect id="r4-2" x="70" y="240" width="50" height="50" 
+        onload="resizeRect('r4-2', '50', '0')"/>
+       <rect id="r4-3" x="130" y="240" width="50" height="50" 
+        onload="resizeRect('r4-3', '0', '50')"/>
+       <circle id="c4-1" cx="215" cy="265" r="25" 
+        onload="resizeCircle('c4-1', '0')"/>
+       <ellipse id="e4-1" cx="275" cy="265" rx="25" ry="15" 
+        onload="resizeEllipse('e4-1', '0', '0')"/>
+       <ellipse id="e4-2" cx="335" cy="265" rx="25" ry="15" 
+        onload="resizeEllipse('e4-2', '25', '0')"/>
+       <ellipse id="e4-3" cx="395" cy="265" rx="25" ry="15" 
+        onload="resizeEllipse('e4-3', '0', '15')"/>
+    </g>
+
+    <g transform="translate(0,300)">
+       <image id="i5-1" x="10" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-1', '0', '0')"/>
+       <image id="i5-2" x="70" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-2', '50', '0')"/>
+       <image id="i5-3" x="130" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-3', '0', '50')"/>
+
+       <image id="i5-4" x="190" y="0" width="0" height="0" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-4', '50', '50')"/>
+       <image id="i5-5" x="250" y="0" width="50" height="0" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-5', '50', '50')"/>
+       <image id="i5-6" x="310" y="0" width="0" height="50" 
+        xlink:href="../../resources/images/png2.png"
+        onload="resizeRect('i5-6', '50', '50')"/>
+    </g>
+
+    <g transform="translate(0,360)">
+       <image id="i6-1" x="10" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-1', '0', '0')"/>
+       <image id="i6-2" x="70" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-2', '50', '0')"/>
+       <image id="i6-3" x="130" y="0" width="50" height="50" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-3', '0', '50')"/>
+
+       <image id="i6-4" x="190" y="0" width="0" height="0" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-4', '50', '50')"/>
+       <image id="i6-5" x="250" y="0" width="50" height="0" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-5', '50', '50')"/>
+       <image id="i6-6" x="310" y="0" width="0" height="50" 
+        xlink:href="../../resources/images/svg2.svg"
+        onload="resizeRect('i6-6', '50', '50')"/>
+    </g>
+  </g>
+</svg>

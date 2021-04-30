@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Proton [64x64/16z] {
+xLOr0WD020jdmFt_ltLNIZfU5gRWDl-4XGMtOGHzO0UnF5s6TY2fm26-4uQIunl6GJPuqdqzo0vBsky7MU4p1JaOLjIZ6ma7q7g5-36Q-hk20k3CgxZtGCKY
+3JZRcLUWT_nePvrvBj1RjA025_5pFkuHJ8cUEz36BHgWCuIEDfzW4g6VSw_FIcFqS-hisO6VMabyCcYGsftPHF9s5Qa6AhYZZZURv7iX2loIyambJutcwFkX
+Ue80nl99_ydyaVKZ-eVfNtf-wFbbzmUxlzZzoUvlydwGzukyd_pzvly7_d_X_oV-V-F_H_v_vVzd7WiBMm
+}
+
+AWSEntityColoring(Proton)
+!define Proton(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, Proton, Proton)
+!define Proton(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, Proton, Proton)
+!define ProtonParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, Proton, Proton)
+!define ProtonParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, Proton, Proton)

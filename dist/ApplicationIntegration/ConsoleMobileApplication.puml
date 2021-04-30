@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ConsoleMobileApplication [64x64/16z] {
+xTG5OiD034JHqOfr__kMmYoxtEuBmrTYh4yqJM7dilfou9BqSuBuEUuFKDZcKOfVRLunedeOcyT1TVJF0rOzOzGL2Udse6iMzECQo1Vz_zdFVYDoJI-o2GJ0
+YBE-Rs2e0BwoDyZcN4GZ6ZsVYAg1pHWGa0_xf1DHZb5ll0mScxxF0TlFPY0NzWDnCaqMzZJENjxi1owCga5P1mc-sIjVq2h3KDjHWc_wFiCHiXNxNyRUilql
+ub-VFsPFSKs_nrNzdlGA-RBbPsHTSbZrE8R7EIDaDIckyMeBqtEUzK6cwHa
+}
+
+AWSEntityColoring(ConsoleMobileApplication)
+!define ConsoleMobileApplication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ConsoleMobileApplication, ConsoleMobileApplication)
+!define ConsoleMobileApplication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ConsoleMobileApplication, ConsoleMobileApplication)
+!define ConsoleMobileApplicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ConsoleMobileApplication, ConsoleMobileApplication)
+!define ConsoleMobileApplicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ConsoleMobileApplication, ConsoleMobileApplication)

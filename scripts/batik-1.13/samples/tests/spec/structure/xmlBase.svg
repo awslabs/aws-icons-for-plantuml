@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- xml:base processing test.                                              -->
+<!--                                                                        -->
+<!-- @author thomas.deweese@kodak.com                                       -->
+<!-- @version $Id: xmlBase.svg 1733420 2016-03-03 07:41:59Z gadams $    -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="500" viewBox="0 0 450 500">
+    <title>XML Base Test</title>
+    <g id="content" xml:base="../../../batikLogo.svg">
+       <font-face font-family="Batik SVGFont">
+          <font-face-src>
+              <font-face-uri xlink:href="#Batik"/>
+          </font-face-src>
+       </font-face>
+
+        <text x="225" y="30" class="title">
+        Test of xml:base, use and SVG fonts 
+        </text>
+
+       <use transform="translate(25, 200) scale(.5)"
+        xlink:href="#Batik_Logo_Shadow" />
+
+
+       <g transform="translate(250,200) scale(.5)" filter="url(#dropShadow)">
+        <use xlink:href="#Batik_Logo" />
+       </g> <!-- End Batik_Logo_Shadow -->
+       
+       
+       <g transform="translate(25, 350) scale(.5)" filter="url(#dropShadow)">
+          <text x="0" y="0" font-family="Batik SVGFont" 
+                font-size="180">Batik</text>
+          <use xlink:href="#Batik_Logo_Underline"/>
+       </g> <!-- End Batik_Logo_Shadow -->
+
+       <g xml:base="tests/">
+           <use transform="translate(250 350) scale(.5)" 
+                xlink:href="../batikLogo.svg#Batik_Logo_Shadow" />
+       </g>
+    </g>
+
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" /> 
+</svg>

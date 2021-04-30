@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ThinkBoxKrakatoa [64x64/16z] {
+xPQ9ZcGX24KF8E3__t0l4ishP9otpBxSxbea7XLovLN_SVgl_uhu5ZeLD1_Jnb3BXsT7GoI4V9fyxoBZuwvoRYco8ZVe1YrtaNC58aWS0e88SIFnRE1pEBxd
+9JpZiATFNDRHFSyIppMGEd4Sy8Isn_qrwnoB9PBRAQy2n0udTAnt9LOWtG3Pyc82s0AK26mjfp2cR7dxt491emA16RbEZduUJjdpwzvOKG9QCLq6KaulUogL
+zNI1W-MTbk051cGj4_sUGcYz9om3tMnMEVo7VEAQBxDEwdVqdyZqtv9oYI_dYPGBd_2zqKGCxnVvpE5Hz-bX0K6dTrlpFEj4eGofZn50JFV1QJTtC8_mwK01
+AJzLNC6_Yaii1rePfusKBPSjOaU_NlLHjnZ7RzZhd8rQ7Kv6yYbIBUGJgHBedBIHKZlNeHjH_dEyebO7q1sF7ZjVqkhvCLg0hzABdF6zcWvMavLUYvHqow-L
+itYjaCZCxMH_O_MjL_wuV-mx-BffIXJluCKxTcZg6pN4iwTL8H11G0TV7ae_CU31vGcqJ0CPGsN8JnxTfXRZoxmiCLklczhuidJ-A5i3l_kx2xKbhPmkA_Y2
+ilznog7dl0BOSzxRXxp_AFtNVxq3
+}
+
+AWSEntityColoring(ThinkBoxKrakatoa)
+!define ThinkBoxKrakatoa(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ThinkBoxKrakatoa, ThinkBoxKrakatoa)
+!define ThinkBoxKrakatoa(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ThinkBoxKrakatoa, ThinkBoxKrakatoa)
+!define ThinkBoxKrakatoaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ThinkBoxKrakatoa, ThinkBoxKrakatoa)
+!define ThinkBoxKrakatoaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ThinkBoxKrakatoa, ThinkBoxKrakatoa)

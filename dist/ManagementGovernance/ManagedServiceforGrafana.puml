@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagedServiceforGrafana [64x64/16z] {
+xTD7WY8m34JHih9q__jE82SrOZnB_hgVxGQg_clVlgMvH_wxPnnQH2pw-La9TbDXMWld5kNO6_nwLlZXh0KVUq8zvNEVa5VUfbvVNHLplrQzyZha0QddSkm5
+yTBBplEhm3Fkq2qloBhF_F0icday_Hta0--mrvxMS7hvslFHvsbPy6vwrNWSsB55i6PwrdWvC5RpoFxdJCZ6LsGpX_xvuKS_czFpz0GVUbgrumEovVKolVIy
+z-dvxFlf1UpU6-Aj3-YMT_2MBuPj-Lo87Ly1oXrV1jdonV0jd-kmm63_Y_Xmf5MLyynNWAffv4iXMxu8lkLp8NTyEUWTrvzyARH_dGi1WFUy-mWob1S0i7hM
+JoLMrbrXnsj9B1hKJBdIbG5WiKPD4-ZnsgSN3oCqBnuM05PpxQWOqEs-VViD
+}
+
+AWSEntityColoring(ManagedServiceforGrafana)
+!define ManagedServiceforGrafana(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafana(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafanaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagedServiceforGrafana, ManagedServiceforGrafana)
+!define ManagedServiceforGrafanaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagedServiceforGrafana, ManagedServiceforGrafana)

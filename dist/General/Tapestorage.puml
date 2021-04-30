@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Tapestorage [64x64/16z] {
+xLK5mjum20t4xVxNNOaHbdRkw_lb4-3XLFq8l7ZnueMsBWHdu5uAXgHMgmUnptKWsLDiqvIMSEV0bxeX6oarUPSMVpWdUVOQ5A09H1K4UNDhy19htrHHcEDb
+aQrTR1HCP74abnhtO8h-o7lKgLecp5i4uIBNeIP9k1KXaJAKMa1GklxMNkP09bOan7Is1-j4qZZfY1Vx2qi5NIPDVcLMtrmDJRTP23ep8pLHL3LtZLBpo5Bq
+bEXMACkjyGwt00op4z3vnG6hGsML0jgCETO8hVYuN5v8i8fUffhdeX2Cqku2PYAEUvw4g82aresmzKe4YDsKIyEJeasKEP5CzgBnYX2mxqYjkjDIcin4Ljs-
+kIOwmc0YgsvFTgT_RFw1e4x_fldlukd_p7-Ezdt-WQi9trj_sNzmoZYBF26o_nRGkfl-cvb0g1cVvq_NOe_vs-SVwz0yvj-D9TLY_lEccRg2UTu_Mj9p_tZ_
+oI3AasB5_elb3EHItXy5WRFNylxGkR9EUCzmt3ybxb_nReBkgMTzI_Tl-UBEPxgHW2QMUeCIwVxYkB_mVFy_Z-8_z_o10_pyoLig4lWbppzKVm9Ul7ZnuWC
+}
+
+AWSEntityColoring(Tapestorage)
+!define Tapestorage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Tapestorage, Tapestorage)
+!define Tapestorage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Tapestorage, Tapestorage)
+!define TapestorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Tapestorage, Tapestorage)
+!define TapestorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Tapestorage, Tapestorage)

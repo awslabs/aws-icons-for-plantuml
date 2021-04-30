@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCElasticNetworkInterface [64x64/16z] {
+rPTNWkGW34H111bq__kkPRjwvO6cOVBKZ-C3gSZk5yjJs4N-FMpW8WyL3ajmtAJH5cVf189Jt9KOfULvUalaZ2YTPQHND1rPPzynC-kNIgyhJyjV8GsI_Q11
+MLDx-bLZV-5orDRqVRoALFjfyQ_IAxaVPUddNjoKIi-3D1CyKcXRWKJ4Ju-h_MTgOeeBumEvckZPBOZVP83eLpAuLv_WmfoDwJOQKHg9Qcgki0545EPPnthK
+wqWQQpQ6RoRxeEzPXjA_lUb4k9tcwQpqFv8QVcWTwGL6QIgqpjEZonIfhiUdTWuslAjIRFejNxh6WOS1wYG_urbLhsivGV1yjHh1leQ_0eGRoV2uWbZdjTU5
+Fy-F_PEg4bnR_z1-g-sFzXlsdr3g6sNNz9z1_-tBzj_1-F66y8TmcytuUJv-JGbH3iMZJfKPl_tv8-D_j9-ArMhOYFJxyvTBVETpLbvZtdBEmM7-ilEdvVMo
+yQKgeZ5MvWq_cldJJiQMjrB-Kh88bF4-ngjSNotE3nCgzTOFh5y4evVMBwoVu6bz_SJw7NVHrFfTFxf_-FZ-vUFxfu_ltpw-V_pu_lNZ--UFxzyXgXyvFzZp
+Yx_1C-SNA6Erp-VvAPlpqqVERnywFtxe_FgBzGy
+}
+
+AWSEntityColoring(VPCElasticNetworkInterface)
+!define VPCElasticNetworkInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCElasticNetworkInterface, VPCElasticNetworkInterface)
+!define VPCElasticNetworkInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCElasticNetworkInterface, VPCElasticNetworkInterface)
+!define VPCElasticNetworkInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCElasticNetworkInterface, VPCElasticNetworkInterface)
+!define VPCElasticNetworkInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCElasticNetworkInterface, VPCElasticNetworkInterface)

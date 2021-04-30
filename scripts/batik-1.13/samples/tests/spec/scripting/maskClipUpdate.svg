@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- check updates on gradients, filter, mask, and clip regarding to        -->
+<!-- geometry updates                                                       -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: maskClipUpdate.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="body" width="450" height="500" viewBox="0 0 450 500">
+
+    <title>Clip and mask with geometry updates</title>
+
+    <text x="50%" y="25" class="title">Clip and mask with geometry updates
+<tspan x="50%" dy="1.1em" style="font-style:italic; font-size:12">(click on all shapes and see 
+<a style="fill:blue" xlink:href="maskClipUpdateRef.svg">maskClipUpdateRef.svg</a>)</tspan></text>
+
+    <script type="text/ecmascript">
+
+    var svgNamespaceURI = "http://www.w3.org/2000/svg";
+
+    function move(evt) {
+        var x = parseFloat(evt.target.getAttribute("x"));
+        var y = parseFloat(evt.target.getAttribute("y"));
+        evt.target.setAttribute("x", x+90);
+        evt.target.setAttribute("y", y+85);
+    }
+
+    </script>
+
+<defs>
+
+<clipPath id="clipObjectBoundingBox" clipPathUnits="objectBoundingBox">
+  <circle cx=".5" cy=".5" r=".5" />
+</clipPath>
+
+<clipPath id="clipUserSpaceOnUse" clipPathUnits="userSpaceOnUse">
+  <circle cx="340" cy="195" r="80" />
+</clipPath>
+
+<mask id="maskObjectBoundingBox" maskContentUnits="objectBoundingBox" maskUnits="objectBoundingBox"
+      x="0" y="0" width="1" height="1">
+  <circle cx=".5" cy=".5" r=".5" fill="white"/>
+</mask>
+
+<mask id="maskUserSpaceOnUse" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse"
+      x="250" y="300" width="180" height="190">
+  <circle cx="340" cy="390" r="80" fill="white"/>
+</mask>
+
+</defs>
+
+
+<g id="test-content" transform="translate(0, -20)">
+
+<g id="board" style="fill:none; stroke:black">
+        <rect x="40" y="80" width="200" height="20" style="fill:#eee"/>
+        <rect x="240" y="80" width="200" height="20" style="fill:#eee"/>
+
+        <rect x="40" y="100" width="200" height="380" />
+        <rect x="240" y="100" width="200" height="380" />
+
+        <line x1="20" y1="290" x2="440" y2="290" />
+        <rect x="20" y="100" width="20" height="190" style="fill:#eee"/>
+        <rect x="20" y="290" width="20" height="190" style="fill:#eee"/>
+
+        <g style="fill:black; stroke:none; text-anchor:middle">
+                <text x="134" y="94">objectBoundingBox</text>
+                <text x="314" y="94">userSpaceOnUse</text>
+                <text x="0" y="0" transform="translate(34 200)rotate(-90)">&lt;clipPath></text>
+                <text x="0" y="0" transform="translate(34 380)rotate(-90)">&lt;mask></text>
+        </g>
+</g>
+
+<rect onclick="move(evt)" x="50" y="110" width="90" height="85" style="fill:crimson; clip-path:url(#clipObjectBoundingBox)"/>
+<rect onclick="move(evt)" x="250" y="110" width="90" height="85" style="fill:crimson; clip-path:url(#clipUserSpaceOnUse)"/>
+
+<rect onclick="move(evt)" x="50" y="300" width="90" height="85" style="fill:crimson; mask:url(#maskObjectBoundingBox)"/>
+<rect onclick="move(evt)" x="250" y="300" width="90" height="85" style="fill:crimson; mask:url(#maskUserSpaceOnUse)"/>
+
+</g>
+
+
+
+    <script type="text/ecmascript"><![CDATA[
+function onDone() {
+    if (!(regardTestInstance == null)) {
+        regardTestInstance.scriptDone();   
+    } else {
+        alert("This button only works when run in the regard framework");
+    }
+}
+    ]]></script>
+    <g id="done" transform="translate(195, 468)" cursor="pointer" onclick="onDone()">
+        <rect rx="5" ry="5" width="60" height="25" fill="#eeeeee" stroke="black" />
+        <text x="30" y="18" font-size="14" font-weight="bold" text-anchor="middle">Done</text>
+    </g>
+
+
+
+</svg>

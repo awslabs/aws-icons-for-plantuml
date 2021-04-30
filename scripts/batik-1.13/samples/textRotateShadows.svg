@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!-- ========================================================================= -->
+<!-- Test description here                                                     -->
+<!--                                                                           -->
+<!-- @author bill.haneman@ireland.sun.com                                      -->
+<!-- @version $Id: textRotateShadows.svg 1733420 2016-03-03 07:41:59Z gadams $                                                             -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="./tests/resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+<title>Text Rotation and Shadows</title>
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+
+    <defs>
+      <clipPath id="textClip">
+       <text x="0" y="0" text-anchor="middle" font-size="400" font-family="Serif" id="text">batik</text>
+      </clipPath>
+       <g id="words">
+         <use xlink:href="#text"/>
+         <g clip-path="url(#textClip)">
+             <use xlink:href="#text" transform="scale(0.9) rotate(20) translate(-20,-15)" filter="url(#blur)" fill="black" opacity="0.4"/>
+         </g>
+       </g>
+    <filter id="blur" filterUnits="objectBoundingBox" primitiveUnits="objectBoundingBox" x="-20%" y="-20%" width="120%" height="120%" > 
+        <feGaussianBlur stdDeviation="3 2" x="-10%" y="-10%" width="120%" height="120%" /> 
+    </filter>
+        <g opacity="1.0" transform="translate(225, 250) rotate(-260)" id="rotatedText">
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        <g  transform="scale(0.9) rotate(20)">
+        <use xlink:href="#words"/>
+        </g></g></g></g></g>
+        </g></g></g></g></g>
+        </g></g></g>
+    </defs>
+
+    <g id="testContent">
+    <text class="title" x="50%" y="10%" font-size="15" text-anchor="middle" >
+            Text Transformation</text>
+    <g transform="translate(-40,-30)" filter="url(#blur)" fill="black" opacity="0.2">
+         <use xlink:href="#rotatedText"/>
+    </g>
+    <g>
+        <use xlink:href="#rotatedText" fill="white" stroke-width="2" stroke="black"/>
+        <g  transform="translate(225, 250) scale(0.254)">
+        <use xlink:href="#text" fill="black" filter="url(#blur)" opacity="0.4" transform="translate(-10, 8)"/>
+        <use xlink:href="#text" stroke="black" stroke-width="16" fill="none"/>
+        <use xlink:href="#text" stroke="none" fill="white"/>
+        </g>
+    </g>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

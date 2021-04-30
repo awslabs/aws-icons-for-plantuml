@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCTrafficMirroring [64x64/16z] {
+pPTHqkiW28L14L7tlz_RdAaK9kDjswV_lAIZV0Y8YQK_B2xreSA_iDB7SWsjty6sRZBvbDO5JTCc3sctvq3xX6wmjPQoBcrW-As7Cc46E8iLbIXlGpylqjw5
+S2NQcOxYoy2EirUERpPAhXmE-7nCyVi2dHmCJBmL7-pCXrcs2bQKBVQ5x8QhurJNblgUGCKJlUr2UKppMpuObynFL3xmLX-2HwwG1aOGREwCJebF4PR1bqc9
+nPB88_h0Mt20U4VcUQsPYzSeybBXu9LS1v-9j3nbdgA3-i033yK0n4sRyyb18UTPF80Qgi7FmR5vF3e6pSXvda-d1REx61PRc5KHAIpW7O0g4yw8swRmRxsT
+U2ZYr3o1Zl23WyptES8P6s5JTG_EVBeoxs8b2YF8Elt83lBw2Dxfk2plTQfLTv3pJxaBp93sJgJveOWECWyy7ZLTYxrTWEC91oXDtdy5ZiB30Hh2UU3AbuWu
+ygv6X6dkS93vibpT-HW_ihr86h0gcPTl-Gh-LJ-xIBrKptnLRIGmVTKF-mUpoGHbllNh8NqNem27nzG_XkUTHqdpTw9x_yGVjkjzZ1_gg-UszJShqtiUPldy
+rFWkCzCphuQHi2gK3xrHvaKReVJ8D9OXlRy2tn9VQi5ZIkHBw4w1lVExmM_dHmBVOGDXpdb8wCQZGvtF7v3sgk36Rpn9v7KRESM1DpDrlehW41luk7mAm9o7
+Ugu_OETltqyQUs0-rNFy_JayzdB3qSEL8F67oqREOF9RthyYShu_kMhbq3y9xuVx6zCx0RVJ1N2Mt--FSB3a_UtU_dj_jdVtv_x6_T8JhUjjW6N0Gw6RIb_h
+amhBX5qh2LRudK8VgCq5ZQugejh19lgDQbytzKhVgAhDZKxJylCVsCBqb_KF
+}
+
+AWSEntityColoring(VPCTrafficMirroring)
+!define VPCTrafficMirroring(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCTrafficMirroring, VPCTrafficMirroring)
+!define VPCTrafficMirroring(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCTrafficMirroring, VPCTrafficMirroring)
+!define VPCTrafficMirroringParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCTrafficMirroring, VPCTrafficMirroring)
+!define VPCTrafficMirroringParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCTrafficMirroring, VPCTrafficMirroring)

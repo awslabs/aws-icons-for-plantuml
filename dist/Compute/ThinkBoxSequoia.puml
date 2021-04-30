@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ThinkBoxSequoia [64x64/16z] {
+xPQ7RiGm34EfIV__5nU97AY7eB6xC8-T4lmqw5lZ__JMMmp-XdP0uiTu2CG1pH_o1kUWmN_8asFKzxVbMbIW_l9RDgH0YdFah0FbDWuuBmjcNngmNQ3evglg
+rWQHLM4ULjZud8XSBQxdj91AeE8hmKSRQBLuymdWull8Ws_Awp-M_OgS_lEQ45_pCgiRoZT1mZfnjd_YFUGyZjhxWELiZ6cCQkeJFyXpMjS3C-HmH2S6ntZc
+3r70epMXftCS0aOjiiFxyTTpA7964QEY7JuXBC_rcgRJQvweHWGuqph7KgvvIbqT5N1U_ymdWtB9EoJhi0aaw81gbGmWr_qDC1x3dW0WMJDbpR7Xdm9Qkz8b
+feTLTeUllWVNCjHQMpmLqa_KQYy2t-HJOAJPQ5wSh9NMl0F-wIMBpWfea5ppWLxT8FuIWhltTt__u_RzIVTaTAcT-wFwVEFCqUgC6Pzu0Uors-Y9vWxom5UJ
+bwVFvKWFyYLFWKHNguZU3wMAxE7T1z1yYLwjwEYkswmLmNiYhUX9lNWXpblfbQ9jQ77nGMXnDkyrzstedVRLNkqlVhSXRtTQshUXpFoXwlxv8xRl_z_qrbiV
+}
+
+AWSEntityColoring(ThinkBoxSequoia)
+!define ThinkBoxSequoia(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ThinkBoxSequoia, ThinkBoxSequoia)
+!define ThinkBoxSequoia(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ThinkBoxSequoia, ThinkBoxSequoia)
+!define ThinkBoxSequoiaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ThinkBoxSequoia, ThinkBoxSequoia)
+!define ThinkBoxSequoiaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ThinkBoxSequoia, ThinkBoxSequoia)

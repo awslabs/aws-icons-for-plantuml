@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudMapService [64x64/16z] {
+xTP5ejWm301HoJ9gxd_UWljTIXovZBEDNfZadyzuhlrutzks8s-oxQVvijj_RxCK-CPpzkDzS8nVuV_x__w__-yrPtsPhgtbdGypPvQ_pXkhybKUQ4bI1TAn
+jxmElgoFIOPsvgqpyxSxt5aZZX_vnkej62pLuSGFO5GpQqxvSj_1rtdA8bBNQLFeiIymvEFIOWLow1NGo_7C7G0az1NApQ_AN4ADFVSdr4G12Ns2Ul49N3gK
+s9VRHxP1Xt7_K7n--7hr2a0AlLQ_zPA1AYchh5AR-SU-hlLTw_XSIzVBaSbBEW3V_N6PJWzfvmTubgSq3q0_y-rTymI7LUYVULOk1mtGZQydFiFjGHha4v-W
+_0YVplVVv2u7bRY-6olGOsumzbV6BTvxTZFgWBUyhuxdgzo82avoQivZBKcGckLDbkHtwJK
+}
+
+AWSEntityColoring(CloudMapService)
+!define CloudMapService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudMapService, CloudMapService)
+!define CloudMapService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudMapService, CloudMapService)
+!define CloudMapServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudMapService, CloudMapService)
+!define CloudMapServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudMapService, CloudMapService)

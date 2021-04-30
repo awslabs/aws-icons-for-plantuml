@@ -1,0 +1,228 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Test of getting/setting current Scale and Translate.                   -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: relativeURI.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     onload="init()"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <title>Test of CSS with relative URIs</title>
+    <text class="title" x="50%" y="50">Test of CSS with relative URIs</text>
+
+
+<script type="text/ecmascript"><![CDATA[
+var root = document.getRootElement();
+
+var t0 = document.getElementById('t0');
+var t1 = document.getElementById('t1');
+var t2 = document.getElementById('t2');
+var t3 = document.getElementById('t3');
+var t4 = document.getElementById('t4');
+var t5 = document.getElementById('t5');
+var t6 = document.getElementById('t6');
+var t7 = document.getElementById('t7');
+var t8 = document.getElementById('t8');
+var t9 = document.getElementById('t9');
+var t10 = document.getElementById('t10');
+var t11 = document.getElementById('t11');
+var t12 = document.getElementById('t12');
+var t13 = document.getElementById('t13');
+var t14 = document.getElementById('t14');
+
+var docURL = document.getURL();
+
+function unifyURL(str) {
+  var start = str.indexOf(docURL);
+  if (start == -1) return str;
+  var before = str.substring(0, start);
+  var after  = str.substring(start+docURL.length);
+  return before + "<doc>" + after;
+}
+
+function init() {
+  var view = document.getDefaultView();
+
+  var elem = document.getElementById('xxx');
+  var cssStyle = elem.getStyle();
+  var computedStyle = view.getComputedStyle(elem, "");
+  
+  cssStyle.setProperty("fill", "url(#grad)","");
+  var localStr = cssStyle.getPropertyValue("fill");
+  var absStr = computedStyle.getPropertyValue("fill");
+  t1.firstChild.nodeValue = unifyURL(localStr);
+  t2.firstChild.nodeValue = unifyURL(absStr);
+
+  cssStyle.setProperty("cursor", "url(#cur),crosshair","");
+  localStr = cssStyle.getPropertyValue("cursor");
+  absStr = computedStyle.getPropertyCSSValue("cursor");
+  absStr = absStr.item(0).getCssText();
+  t3.firstChild.nodeValue = unifyURL(localStr);
+  t4.firstChild.nodeValue = unifyURL(absStr);
+
+  cssStyle.setProperty("clip-path", "url(#clip)","");
+  localStr = cssStyle.getPropertyValue("clip-path");
+  absStr = computedStyle.getPropertyValue("clip-path");
+  t5.firstChild.nodeValue = unifyURL(localStr);
+  t6.firstChild.nodeValue = unifyURL(absStr);
+
+  cssStyle.setProperty("color-profile", "url(#prof)","");
+  localStr = cssStyle.getPropertyValue("color-profile");
+  absStr = computedStyle.getPropertyValue("color-profile");
+  t7.firstChild.nodeValue = unifyURL(localStr);
+  t8.firstChild.nodeValue = unifyURL(absStr);
+
+  cssStyle.setProperty("filter", "url(#filt)","");
+  localStr = cssStyle.getPropertyValue("filter");
+  absStr = computedStyle.getPropertyValue("filter");
+  t9.firstChild.nodeValue  = unifyURL(localStr);
+  t10.firstChild.nodeValue = unifyURL(absStr);
+
+  elem = document.getElementById('yyy');
+  var cssStyle = elem.getStyle();
+  computedStyle = view.getComputedStyle(elem, "");
+
+  cssStyle.setProperty("marker-start", "url(#mark)","");
+  localStr = cssStyle.getPropertyValue("marker-start");
+  absStr = computedStyle.getPropertyValue("marker-start");
+  t11.firstChild.nodeValue = unifyURL(localStr);
+  t12.firstChild.nodeValue = unifyURL(absStr);
+
+  cssStyle.setProperty("mask", "url(#mask)","");
+  localStr = cssStyle.getPropertyValue("mask");
+  absStr = computedStyle.getPropertyValue("mask");
+  t13.firstChild.nodeValue = unifyURL(localStr);
+  t14.firstChild.nodeValue = unifyURL(absStr);
+}
+
+function regardStart() {
+  inRegard = true;
+}
+]]></script>
+
+<!-- cursor, src, clip-path, color-profile, filter, marker, mask -->
+
+  <radialGradient id="grad">
+    <stop offset="0" stop-color="gold" />
+    <stop offset="1" stop-color="crimson" />
+  </radialGradient>
+  
+  <cursor id="cur" x="16" y="16" 
+    xlink:href="../../resources/images/hotSpotCenter.png"/>
+
+  <clipPath id="clip" clipPathUnits="objectBoundingBox">
+    <circle cx=".25"  cy=".5" r=".4"/>
+    <circle cx=".75"  cy=".5" r=".4"/>
+  </clipPath>
+
+  <color-profile id="prof" name="changeColorAuto" 
+    rendering-intent="auto"
+    xlink:href="../../resources/icc/changeColor.icm"/>
+
+  <filter id="filt" primitiveUnits="objectBoundingBox"
+    filterUnits="objectBoundingBox"
+    x="0" y="0" width="200%" height="200%">
+    <feOffset x="0%" y="0%" width="50%" height="50%"/>
+    <feTile /> 
+  </filter>
+
+  <marker id="mark" markerWidth="48" markerHeight="32" 
+    viewBox="-10 -3 13 6" orient="auto" refX="0" refY="0"
+    markerUnits="strokeWidth">
+    <g stroke="none" fill="gold">
+      <circle r="3" />
+      <rect x="-1" y="0" width="2" height="7" />
+      <path d="M -3 6 l 6 0 l -3 3 z" />
+    </g>
+  </marker>
+
+  <mask id="mask">
+    <g transform="translate(275, 400)">
+      <circle cx="-25" cy="-10" r="25" fill="#ff0000" />
+      <circle cx="25" cy="-10" r="25" fill="#00ff00" />
+      <circle cx="-25" cy="10" r="25" fill="#0000ff" />
+      <circle cx="25" cy="10" r="25" fill="#ffffff" />
+    </g>
+  </mask>
+
+  <g transform="translate(30, 75)">
+    <g stroke="black" >
+      <rect x="120" y="15" width="210" height="30" fill="white"/>
+      <rect x="20" y="45" width="310" height="30" fill="lightgrey"/>
+      <rect x="20" y="75" width="310" height="30" fill="white"/>
+      <rect x="20" y="105" width="310" height="30" fill="lightgrey"/>
+      <rect x="20" y="135" width="310" height="30" fill="white"/>
+      <rect x="20" y="165" width="310" height="30" fill="lightgrey"/>
+      <rect x="20" y="195" width="310" height="30" fill="white"/>
+      <rect x="20" y="225" width="310" height="30" fill="lightgrey"/>
+      <line x1="225" y1="15" x2="225" y2="255"/>
+      <line x1="120" y1="15" x2="120" y2="255"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="175" y="35">Style</text>
+      <text x="275" y="35">Computed</text>
+
+      <text x="75" y="65">fill</text>
+      <text id="t1" x="175" y="65"> </text>
+      <text id="t2" x="275" y="65"> </text>
+
+      <text x="75" y="95">cursor</text>
+      <text id="t3" x="175" y="95"> </text>
+      <text id="t4" x="275" y="95"> </text>
+
+      <text x="75" y="125">clip-path</text>
+      <text id="t5" x="175" y="125"> </text>
+      <text id="t6" x="275" y="126"> </text>
+
+      <text x="75" y="155">color-profile</text>
+      <text id="t7" x="175" y="155"> </text>
+      <text id="t8" x="275" y="155"> </text>
+
+      <text x="75" y="185">filter</text>
+      <text id="t9" x="175" y="185"> </text>
+      <text id="t10" x="275" y="185"> </text>
+
+      <text x="75" y="215">marker</text>
+      <text id="t11" x="175" y="215"> </text>
+      <text id="t12" x="275" y="215"> </text>
+
+      <text x="75" y="245">mask</text>
+      <text id="t13" x="175" y="245"> </text>
+      <text id="t14" x="275" y="245"> </text>
+    </g>
+  </g>
+  <rect id="xxx" x="75" y="375" width="100" height="50"
+    style="fill:blue"/>
+
+  <path id="yyy" d="M225 375 h 100 v 50 h -100 z"
+    marker-end="url(#mark)"
+    style="fill:crimson" stroke="black" stroke-width="1"/>
+
+</svg>

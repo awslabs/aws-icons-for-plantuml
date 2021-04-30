@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2AWSInferentia [64x64/16z] {
+xPS5eeD034IJcKpO-r_uknODTU1LqBUkzb0uwGkEew0rB3XUtZzyrnlPMYuvUjzNAw2h-BQGo_hE3xBY9p_mhphveE9_WRFzVlfT4tWl_RtoqtIzzSllyhwD
+S4c_N_y5Vx3-A_uNk81_LlglM_uT4Y7Ar_ckKBpxA-EdagamnhhwfuMJWFpfwf_l9_WHOQpLlnZe4E0xxwUaAkKlCHAfj4x1I1FIgxudqfBlFgJq1-__H_-l
+-mym_zJcpuUU_-lhbmTOVpt2-hE-VdwKzV_Xr_Ul3yKh
+}
+
+AWSEntityColoring(EC2AWSInferentia)
+!define EC2AWSInferentia(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AWSInferentia, EC2AWSInferentia)
+!define EC2AWSInferentia(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AWSInferentia, EC2AWSInferentia)
+!define EC2AWSInferentiaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2AWSInferentia, EC2AWSInferentia)
+!define EC2AWSInferentiaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2AWSInferentia, EC2AWSInferentia)

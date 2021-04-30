@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingCart [64x64/16z] {
+xPU74YiX24M3A7B-_uDJd1tJCFXwFLEsNXNkmhYdtmnHFGuI7n8gbEj1NmzwFHJG__ebsioiWuq3VNLeuI35sSRBkzvX7u_YRgTD6cXmxxIB17FPRw4N_NAz
+w8q-z0rwbGszwOtnfd8mJPHKVr1UzL8xqFRrDygDFlFdUAwt8GhpR_1D_Ydq5QQvll29yi6_ER-lWBhsRndTf47vu5zgWEEfVtEMEE-fVoE1RTaRy_ol0pZM
+cEeRIBnyI-fl1b3ZvMjIVmVGbyjF_1jO603qlFu66WGmRoR-BGCmaDt-QH0kVrUlOFKPWvhspmaHalRFIGtaBUkVJuY3F1Brpt3z0sdFIH8jOV-FyoTz3ZzB
+0kfs_fqR_Ym7tTHNi68F7e9h1G_qqVThyEfXdMNzzFt6-Hzlogjvjbr_2juSgXmuc47VzQy3y_Kv1vBvDsd-agCENNxZ_K_xHhr2aqqCz1lthz-uVvPlsx__
+iF-F_tefPHwk18VVYmi
+}
+
+AWSEntityColoring(IoTThingCart)
+!define IoTThingCart(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingCart, IoTThingCart)
+!define IoTThingCart(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingCart, IoTThingCart)
+!define IoTThingCartParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingCart, IoTThingCart)
+!define IoTThingCartParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingCart, IoTThingCart)

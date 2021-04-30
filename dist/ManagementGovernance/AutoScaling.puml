@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AutoScaling [64x64/16z] {
+xPO7LaGX34LV2YNP_uBb-8DWHx3hdJuvzrTI_EFuvvzQptIWdkcWkgqReK6sgpCoSmRRdYz8pkm9igKhr9iVNpPENlpoNROkWLdtsxSjmW--n5VrduofsecD
+XjfRZ2dRCi2rCf2N_JgohH2eZ2yT4N-9Z8WBaAS3aQw_bamI6e3aGGAmgBiHwgtFy_4pXhvs2Q3pzLEygXSE0BtySVykNm4EoehVCA9cB_Z1E4Zeb7yhnp_h
+ZVWOVWGNTIU8tVd6Y_Tln4r09Voql7vaYXQ2MFFp4-jtFVs8GTatAGGWsM7z-Cb4_Vvn_UUyVnfnzvdiS7xuWlcbqUUdhvdV6fK0gbymlwxCp-VyyyyD
+}
+
+AWSEntityColoring(AutoScaling)
+!define AutoScaling(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AutoScaling, AutoScaling)
+!define AutoScaling(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AutoScaling, AutoScaling)
+!define AutoScalingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AutoScaling, AutoScaling)
+!define AutoScalingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AutoScaling, AutoScaling)

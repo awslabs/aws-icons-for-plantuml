@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleStorageServiceObject [64x64/16z] {
+pPO7ikGm24G58ld-5rvFrwmcEI3yqwjiquHs4EqFGmnAsgw-35pxd1ZQLooTGXOGhj9NH3rm8IIlTg4N9yHp6JWGHXjcAlBoUN6ft0L-ywdjGuQ08_c9o_qs
+GzicricfdK2nby1nunH2N4q-8ctBssWvA3wV0g--K4j2dy41vxFqzra58-Mnjt9hGsq6UdLBOCWC-g98UxyjwKWstG0_lH0qgwSdn_4qva3H2-t3SnwZqBoU
+HrMVTNzCNHz_b8MJMj7RtK2ks3TiWxvNz7BNzxgUKV-wNghzN_Nl-lEx_lxKtr-x-lrS_txh1WJi0rOOW37-643B_y_HI-q0gPyV_TKCAfGldv-EyXiNqi_U
+Y_l3TZ1I1kNtbxxrENfQhjkUEENajcTgK6R1zlh-AeSBCDPZEjuz5pr9lnj0kfmsI8uCj34urESEzq2Sy8jOS3LwIx360ZUL5JNq17KIjkK3upO3YyL_QPXm
+gq34JDJ-Cly
+}
+
+AWSEntityColoring(SimpleStorageServiceObject)
+!define SimpleStorageServiceObject(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceObject, SimpleStorageServiceObject)
+!define SimpleStorageServiceObject(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceObject, SimpleStorageServiceObject)
+!define SimpleStorageServiceObjectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceObject, SimpleStorageServiceObject)
+!define SimpleStorageServiceObjectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceObject, SimpleStorageServiceObject)

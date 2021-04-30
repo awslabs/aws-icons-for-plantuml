@@ -1,13 +1,12 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 sprite $Connect [64x64/16z] {
-xPL7kgOm30HRSfHwxd_T2GO1m_U8Qshr1ygs4lOz7nyV35xQLhEgvcha2zqIWcnyh5T0QpUtNWJI-50lG7Lo9C4BKFb8Rv3ExLSqFebTCFI07R3xjM16uJwU
-x2sdt7bdUuZlKSXKYrlH5_vGZzojAJAlZxz4lubOo_WYC5xv6i_GIbaYvdoEmWkTYaYxO5DwZgP68i-pLp3lpuJIrWCNrKe3j3fF6rSYoGB_bT0PBGaKLWMa
-yqHVbcT2haij8MOG9oqVjYDxhBs4FnUC1gKBHe8Q3gh0XBRLIrkJeKYA55N8UpyscMimUhwIh4WnGq2Qjpre0_PfNVOaIURAfR5C1vgPSzzY-ywjdEPFW1g1
-eriND9ARDBSJlw1uGULIacYZQxzCVbiRbGMQ8FjvRZpC7pkGi4GeSAPTllIWW3eiLe5Khh_P_y-pGuz6NyUSUAGwuizRtUIm0JEISsLQGBLihwCc9qES8AK6
-VHrSzZfH52X-1BrWHTQVCnPIfnz3QwtLWOJFhj0wqQxkGoxCFbc1_E8-ddnw0jg1Tksp2tHK_uq_ybcS_iwdfRYzN_bDuftn1aMS_HqIRzENb1ndVyTbhtny
-VFm1
+xTD5jkmm30JGaiMr__r-VC7ZXcISEsieaoIUFHwFj05WMF6E462egG0ZUPb2elbNEs2yQC2vKOohkmVt7CeB0iuZX_Dxa-CED3iZ-GL7ygoX1W0I_4Xa-YJG
+h104F-XfkGgnNkIzt6_HF2autmlKxj1IF9B1ztpD6om4ku7m9XN5Dqg1tcsLo7LT04K7nDzi3YlEyWrbOP0T0rAlujfS6TI1zLcJDF2lmFmIXS5D2u3rDWNR
+MgCWd53q8LxiWcuZZVKnOjf7svZL_pX9GonRgjNRCXPYgxiiLnJq_zCqTmoppgjTtNDx5FFbD2j7l-my6OSk5loLy__k9NBIDmbdGdbaa_qRldI1GxQJpfvh
+uCtastvk0i62dRVIwUZ5P6u71EZpziM9WPnrjTefhd3Ej23uKGYCSpqWQelYfkt702JvKWp1mhZAzLlHv7TsUJkC_DLy3oXvEnz0y7vU8SNR-LgBTIllGF9s
+lXMZUHU6m7dVEeKtYVAzn-Fn6m
 }
 
 AWSEntityColoring(Connect)
@@ -16,26 +15,12 @@ AWSEntityColoring(Connect)
 !define ConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Connect, Connect)
 !define ConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Connect, Connect)
 
-sprite $CustomerEngagement [64x64/16z] {
-xTO5WiCm34HHoQoP-zztWtQvqJBzChmmoLVrd-wlAh5uoo9X-49lkF3mHVlr_j_RLHxF8jTL7lTPwqL5YiS7NWHrUGMiZSplcMIKFt_yu6bmUxOwQbym_x0H
-3dds-lh7tW5lkHSaBrM7Pn7j1PqJTNczNWpRF937F6_iHePbNOfp_7qtZaIMgNh8ay0-oSngY15HYfa1pprBZ9X8cTzicr48qZXro2SHCv6ql5czg7NxVFmQ
-WA1beW6Bpn6T-zVVyeAtUNoUFzrhIA-NazqLc5vylifU115aAZWyKBUAQeEcwLrpUUvPbAoLKoxV8xAC7_mUODNw5W_-bUkNV-_imcUOitRcNz7xUGdnDOKn
-MdrLyXjw0G
-}
-
-AWSEntityColoring(CustomerEngagement)
-!define CustomerEngagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, CustomerEngagement, CustomerEngagement)
-!define CustomerEngagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, CustomerEngagement, CustomerEngagement)
-
 sprite $Pinpoint [64x64/16z] {
-xLQ5scin24kX1dd_vxtIygs_ZSbrORv32YUe_vxoN_uBB_8Ks6tszaNwD2SVHLiJN4IQxIFlEuYS2a1g7r-aLm5WvD1IwkHjk5L0kZb3t7frDg00wBm57mKo
-mjF3v40PxXsOpE4TQFvUHnQG0vKflA4ClZGSzmJPtqgvORqO0-jkSzhwHeFUWUSuSEiIqUj6Ue7HdHFAXFc2xJoz0H2jLGMBa0OrBeK4Nz4sV0fACz_HQmMo
-Ca8LQ0byGk8BK2yHv4e8Q2k0T2PunM30N-dHougxcTFjAjp2l0iw_MGyNL4WJj9PORmQ-ixzMTUd3nNHuQvG3shOhZCWEqI6iZwdHFm4ka8JLoLtdnsDmU5q
-dmg8CxmBArVOtsw7WYmEwGj_CfZrIWMnXm4KlnGANQ0H5i5H-v2-fHQPJbrcJA0-uvzDm41ByN4RWcrCdGu9nn_5ktUdf_ZSVwSx4_yp_ZJKM5F-ylWvsRFu
-tSwVYWL8yoVFtmLFypUl7vxM4juzLhyR9iV9X_i7OswSiDpkN_QwVqsUCV9C_wGVQkxjtqLhrRBxznaFTyyFnHBjnfV7tps_kESNUU0zWIVpC-PwiFFm_0v2
-Kklv_k13ZbzFx2y2LClX-Vwaa_oM_OtyiVjZlh_-dl9V_ijd
+xPPN5kmW34Fb1jZxt-yhSN9WAWFVkTEBaI9gVEBcviRTOvEgX0EIiguh05ZKYYa3i8XenUgFrGgCebLQX080UyofWBpyhq1Q551CCL2B5uYpbHeJzAr9Xnsl
+iAcwn4apOHPBCz3Up1SgE18302ASwJCy8WJjU_8WlpBaShprma0D0TGOEhluTcLO1rC4XkGucCZBMSvFwOCZvcDPu3s40GKX_RGINpZbYI9fjRIZN8DmAdmD
+lwJxUbqs0AeAZQYm_fSFAD85NnrejHeXGsTqYyc7CTfGpX0y6qqx9Rk6QNRvbY4Ipd8X6eQUuakzzeZQzNSDGtjf_OLKw0uhwl6i-NQOWMsXFcgCzQc_uZzB
+1l-AbVpIrfYVOB7_d2VzDna_WCKuVdHv_EO7MBgeI_EdjaZw_5cSlyaPWaEsrW-6TO6TzIlB6pH-N3_fQVqytX8yzjRl7iBA_g7CQgsdcmsjxb-9v-A_kt-s
+AyEj_TibCzmxFnG1rBVEBwR2I3_RvoUjiOj_rhsvkVaB
 }
 
 AWSEntityColoring(Pinpoint)
@@ -44,32 +29,48 @@ AWSEntityColoring(Pinpoint)
 !define PinpointParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Pinpoint, Pinpoint)
 !define PinpointParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Pinpoint, Pinpoint)
 
-sprite $SESEmail [64x64/16z] {
-xPO73YCn24KfBl3lV-3L86z68oHYPtlvwUNPvZ6DLlw7jQdmftGpHAP-GelXbNwEAm3lmgpZam44mFZwtW4vv3tcbAR4J0gCCxm3asW0c8v61Z-UNgW1S01A
-0v13UPFOBtIkaOvwE81sGPCkdaaFUGFu8XkHm-bu_e320GCpT0hHt0a_UOdMpV2FdKIZyU8Lw6iHP5xdvZtu9R7Hs2fVVF6tFvz0FCsDdZlWYm_rWWisO0jl
-02OxWbV0Y7HQP-fpw7jyxQIB9p_RPNa2Q7Jp2c187C5uxr3ZGdJpr1756o1RvepfmPCQ4E4jSqGtlw9zZD5uqzpDfvZnEtDFlhlHdHvoQdDFVZogPWEWjRad
-t-6SIYpDrNnqSrJcCfzdCgxCrJo9XwXihkQJnMIkv7EvoTm-J_woE00ud_5H030vp6MVcSy2s_MaThrB-cfU4HEohQbJ-sg-FqgV3vybdzLtoqseUJR0jTnz
-CbziUkcdac-vLNado7orwsKrcSy_ruVFpDU7dcmnyzbSOJ7psLnfySaNvWgBBxumLrYyUKdcTYpAue7uT7ozxy3Y0LS-ottzC_1vOlvlvBb_7gPVdF_v0W
+sprite $PinpointJourney [64x64/16z] {
+xPQ7KlGm38InBJVfU__N_IaQ4uEeyVnJMRYx5AsrAb7yy37-aBfY8z-b2uvsZru0cmhKMtnrpmAMRj0pZ9U3Ua-0W7WMeH_osw5-ESpVQVqE--UaVptvzs7O
+4R-1dF0Jp2C10_89ly0u4g3GUyid6OGW8fNyO_sEkLzKmEhF6e2UNmWjhDb_qiHkbGnxiwOqe7pBxv1U6wau6jIVLcQ07rHsU6MmI4ZIfwhEBijjzeL-n2-J
+2zr5JayPAkBed-bFpZQTqm3pCOQsslTafK_oLmmOajoegZpH3U8OaG_hLu6vTvNJHmTGULlLs3_5VGJwysznJRkhbgEjhEEITth4X71fUPS9O3rTz80uL5QT
+ahAmw1Be4cUwGlRIm6Yr6pWzApKs9IcCkU7BC9E_lW3vP00Q-X0IAlxZnbvt-zXPWHOLkNjBUzt5WotXcSmXV7NH_PM-Oih1cs4nekd2PD4zpBX_S2-neEEI
+cfHnYNfuRzwWVERVQvNQkXZqopGWDYJcKaVGkHRTfqZ_f2CcvFrQsUNwCNC2zUEEBA3fiftlfnHOVh6oJvw80IOlAHXkU-sZhb120pXHF15WSoX0ML6ytzFL
+M84CkcGxDA_dCbG-jBHhSfsfgQ53rgZSfHgqbFg7UmebbYKfjFWo3U4lL_Ejh18ca1Y0bKZtjjzdQXh40PPgxvTDL8jroK-7kSuRUyTgx9ZbzxiLPM78lHsV
+jDvRTVB_nnyU0G
 }
 
-AWSEntityColoring(SESEmail)
-!define SESEmail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SESEmail, SESEmail)
-!define SESEmail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SESEmail, SESEmail)
-!define SESEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SESEmail, SESEmail)
-!define SESEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SESEmail, SESEmail)
+AWSEntityColoring(PinpointJourney)
+!define PinpointJourney(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, PinpointJourney, PinpointJourney)
+!define PinpointJourney(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, PinpointJourney, PinpointJourney)
+!define PinpointJourneyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, PinpointJourney, PinpointJourney)
+!define PinpointJourneyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, PinpointJourney, PinpointJourney)
 
-sprite $SimpleEmailServiceSES [64x64/16z] {
-xPQ7qkCW38HND27s_T_tpXfhSEOWvDhKx5_YzY495iNZF-chhtZh3zbXNN-gcv_y9csQ1RSagv6_G_VYMAcjrU83bKv-Ybi1fFPPVwy25EDdk0gaZMSuSZI1
-A3-WHmNguExw4S-GldoANP2F0sIaNPsqX7m8Nv3s8JWI2j_X2hcYSwah0u5oZvl0QxUbV0uym3xxUaTPI7o0kgt01_TF0v3AYmI0EUWfxi8t1W_bGuhWsRO9
-c8TtlcYO9QoZnNbFmDRX6og33xDCImNFYiObdz4dJtFgjfrnyXrvNO1u-ZT_PqtUbGG_dviAAdFo7WYe5V2q9iyCutBrofDd0ue0Ke369r_GLxoYFla2A2rd
-emBboLVecc-J7ydtuPNulN4dtyvyaYjao5SmdVcPFv3qHGbOvx-UlvLEysVJ5zf28YsaqsV6hNzSP4Xa7Z-Us_ftFwOh_BlVFsU-ed6_Vy_v2-nT_xZKQWYe
-eHPP5XxxrrApVvtw9tA_9H97sVbj_mpZtlx_jVxR_s7ZJGNcxGwfytN-sHEy8TekUzVi_fN3ZyNye0A07n-_WJEAgSyI6m0q-iog5UG377D0AWgfa5e5IXOe
-6RMV-Em12vdGoOv45aydd_bOOBUIY9-BcoRiSH8Lo78jv8n_BPjaGFdX-nEoSSpw1oq3ulXP7EQlYp7_VaYp4VXHZ4zJDSR97xv1Z_-chxxw0G
+sprite $SimpleEmailService [64x64/16z] {
+xPNPUiGW24OFYWfv__VjPaeddHYwtiq_g_eT0YYu_PCUUiXjz3xCVyJsIgZsRzgm2jGsx4MZlGti6tG1jSECGlcg1OLsFzj0lnHueVhfGgLuxhlGLsiTiGm7
+IrVNSi6kpSjb20NB_2kNcUzReevU6A-x5wUQJwxOsliP753raoemKxICm6Zp3uBuNMA5-RUj7AXiK-W0EvfcQ2pNKzpHuESnEXwSu1K_pwm5_-Pm545x2oTu
+eo_S3twEfv_pJ_3B0AX7VjEPwHB3U1AduRSZxmBYy_l8jxC46Ft0kp06m1Y87_X-jeE3SSiRhsCJiTSbx9OVZ4NwWn-7KZTXtF16J_W-NGwvq1F-rd-X-5rN
+aml_msXIF-7gQl-o-btltoRbhAHF9-Ng_EOyTLK_ER-k7wT-ZQyH_cBUBIHY8O_dPFrheUXVMVyi_LqYyRTa_JCyGy_YLoBAbPhclBRiXX4e_fdt0jAtN1rf
+Yip1hFzN2Tg4dlF8nrOeW7uaNKXnfqKnTDHztgb5ed0IeN74vHMQtvL8OQ8oUztOZUpeG9FB_t1JedkTHbqhSQjcQhMElK-LCGhxeDQsVLCTIFOiqHZR_-cX
+Xvu1
 }
 
-AWSEntityColoring(SimpleEmailServiceSES)
-!define SimpleEmailServiceSES(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
-!define SimpleEmailServiceSES(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
-!define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
-!define SimpleEmailServiceSESParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailServiceSES, SimpleEmailServiceSES)
+AWSEntityColoring(SimpleEmailService)
+!define SimpleEmailService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailService, SimpleEmailService)
+!define SimpleEmailServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailService, SimpleEmailService)
+
+sprite $SimpleEmailServiceEmail [64x64/16z] {
+xPQ5hkmm30KTfld_tttW2xahIswpZ-485oOmFfKglqt-9wOKduRp063ry0mTb4QJp_6uOEOW4YkGJl6meEwbrYdV5KyrIqmXGpd34moH2Wn8ikZ7sqV9i0OG
+f9zU0AR8H57q8AV7hvAWYmpcELyXILLhUlLwUFu6KRgE7Pf8PueahhF2cxuW0wB4rqFKUppfWK-I84dMxsFpetpUvs_GfK8EYt5dv9ila2MPQpa94rPxuoDq
+FSKgQS48jvwscDzucNhZ47LfkKn6-xxv32kTr8KccrU3q4ikTOPRveeyyb9vJRXZBidcNnFgX3doBNEoUPkQByrzvBLfyU4lzShSvkqv2j1TSpulQS4CdZcV
+bpXXHSUSnsi6a1rp3h_xLAsvAzvQjEPytbhSvevuIQZ5LtCaEUCLWgm_wr97lEfMYsfk3yJXhUw2fko1kBpLdPQQsmFnUQixZX7jG2pl5TNMslAsg3PXMpIy
+LrHRQyjxHRMrjhnNL5jhoxlch4N3--QiHSjRSwv5mrjpliL7tfgxjhXvcZLtRR5jtZ7dMFp8htgOnUQVZXeBYwFO5wNmPEIRyp-V0G
+}
+
+AWSEntityColoring(SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
 

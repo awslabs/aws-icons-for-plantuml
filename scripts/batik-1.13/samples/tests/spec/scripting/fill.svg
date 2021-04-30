@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a rect's attributes                                    -->
+<!--                                                                        -->
+<!-- @author tkormann@ilog.fr                                               -->
+<!-- @version $Id: fill.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500">
+    <title>fill property on 'onload'</title>
+
+    <text x="50%" y="45" class="title">'fill property on 'onload'</text>
+
+    <script type="text/ecmascript"><![CDATA[
+        function changeFill(evt, newValue) {
+                evt.target.setAttribute("style", "fill:"+newValue);
+        }
+
+    ]]></script>
+
+    <g id="test-content">
+
+       <g onload="changeFill(evt, '#eee')">
+           <rect x="100" y="100" width="100" height="100" />
+           <rect x="150" y="100" width="100" height="100" onload="changeFill(evt, 'gold')" />
+           <rect x="200" y="100" width="100" height="100" onload="changeFill(evt, 'crimson')" />
+           <rect x="250" y="100" width="100" height="100" onload="changeFill(evt, 'orange')" />
+       </g>
+
+    </g>
+</svg>

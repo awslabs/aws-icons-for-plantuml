@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DynamoDBAmazonDynamoDBAccelerator [64x64/16z] {
+xPQ7ikCW34KH4aNe_l_thhCEqRnnWiBRNiwKr6CZSJ6aP_o7k3GTmm0RGtkLl25p6xXWlT1RTwusZQ7Qk-emtEaSwdNUB5Doijo7r6bfPxl9zMcnL1G7iYhy
+PfV5xxgy01dGmlBiPGaDg2cWB6unC5A8lVuJeB6lm6iV4kc2fOyQzI_mOPM2Q2xyCwgZShh0TPoXNlazpVGFRLL4c4MaDXsu3oxrjP-ITCDJh4jAiN-GIn_u
+mEWbfuFGToWpom5pfkImIE27_3AV3Ox9jl-ngNtN5q3RIGV0k_u0oDT1swsV_NS2Z7Pz1RA_BK7_Brd9W7eZD0N-9QlTEsP0JX7JzvB7ndFMVPVaKOWbX-GA
+fvH5H04vc1ttQMnoWsOp78zMnOFxX9VPl8bj-0PBpttYA_dyMW4-EBUTwhDwK03m-_qRmD0RrNzgx_S_um7FRN3ip9zYGlDwEVPPvFdcEJp_Ez2zwFR99rqv
+CoYFB3a8cFsWyvYIjtqlNvyjdnPmTlqcLb_y--LpujSdA1B9uT75NXzIA1WPeElSwlA0oa1TvpRRwlnIWHBaDWySQCalHXVcTfvVJ5iLvan4p58z8d5kY-82
+dQcTKnSXLGsJkUZRVFCUb5dgLuJptBnh-ZI481q14XGVKJstdu9wINyXNm
+}
+
+AWSEntityColoring(DynamoDBAmazonDynamoDBAccelerator)
+!define DynamoDBAmazonDynamoDBAccelerator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBAmazonDynamoDBAccelerator, DynamoDBAmazonDynamoDBAccelerator)
+!define DynamoDBAmazonDynamoDBAccelerator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBAmazonDynamoDBAccelerator, DynamoDBAmazonDynamoDBAccelerator)
+!define DynamoDBAmazonDynamoDBAcceleratorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBAmazonDynamoDBAccelerator, DynamoDBAmazonDynamoDBAccelerator)
+!define DynamoDBAmazonDynamoDBAcceleratorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBAmazonDynamoDBAccelerator, DynamoDBAmazonDynamoDBAccelerator)

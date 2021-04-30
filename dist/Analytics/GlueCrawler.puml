@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $GlueCrawler [64x64/16z] {
+xPI5bciX300JFCp_V--Jd6nTu3wNsQtbT818aLzFAWT9uZg7yGKoXydXjrAAGTcYdNn_xI1RvB_4__Rw7IR_cFw3VLF_eH-j_t7_lx_BT_Tx0BE_P_p4-jKv
+gpWwiBJh5u3YRmV0hj-1Y4NTzlmAKFsj0UYE7zOK9m5DpgpvCa5JwrLAwFV-W_j3BpEO1Fh4loTVPH1KsV8xHDup-p6YeNdn_0tY9RwL_1DfiNu5Fx61ffpE
+dvRhZn-P4zsLiUnt63euKnEGbtsPEDR0Udneikxh12n5l4GEgtva4F5OBb_vZ-aIQofC2Jy4YnbuxKUR6vHBNqQ4OmPQVqZrfNiq--nxk4PVtp2X28nhtoC3
+sieTIOTsunjph6mVDm_bnXy095cWFFDDPOt-q2-oIYAk30KxvI_BABHJ9kP9JqpMyMrrdAylZKGM6Q35LL_4KjbAlmFJlKY22LPrBVb1K6y3RK7F0DDYy_D4
+39OcG07BeZ1LWlZvridx9ZHeyMeIf9XSjVSJd4hK-Pn1uJHEfQWieWQCMff5uROP45GvH3QtkyfHDESalnkV0G
+}
+
+AWSEntityColoring(GlueCrawler)
+!define GlueCrawler(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, GlueCrawler, GlueCrawler)
+!define GlueCrawler(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, GlueCrawler, GlueCrawler)
+!define GlueCrawlerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, GlueCrawler, GlueCrawler)
+!define GlueCrawlerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlueCrawler, GlueCrawler)

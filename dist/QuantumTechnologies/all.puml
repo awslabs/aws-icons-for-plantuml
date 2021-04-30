@@ -1,30 +1,169 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 sprite $Braket [64x64/16z] {
-xPP7bkCm44DH4RZ_YKTZsXtafvBbRVilk0F3Lm3rP_ZmeTCzMkzIkD6QgQ2KZu6HMeFAiva8pGHQSb0oK8H93PT4RH3-PdxHb_9Q-H-B9b83p3J46W9ho6sm
-Z4XAyjbVOY2bXcdEPnzmC--euS55sF7s6g66KKSuDgPyoeRbnUwEutmP4wwP7DPl0lr-NdBac7Lt6_9dkuypVw0ck77iZvFxy_FJaJhdSFs0YoTPCyD1Fc4i
-c5bUzaTA1P3uJup-dlTVRXO9j0eXajVy9M3OgFN-Ntr-1Mio0KgDuCQbyplwwwVLP-VF9_yqu-FJLsFv7ubT7Z_pSVdzY-NCN_FNlVUNG7O7xEwlcxhm_oei
-Z3hmDtx_2HGpekuIpDtpvVCpVcvcT_vp__JTl_eb_u7ihfRQu6Jj-cEYYlV-ihw9Lptrry1gDjvwaWwK-DoVS_FzyExKhhz7VXPp-zhfxlvmdkSZxQth-K2o
-qm4hBVRtfvd63I_gFJhSi_Ld-F3X7m
+xPO55Xmn34DbbEz_uiQPqi9Gol2NuRz4yiBK7yEVpt-O4S6Jzv2FL_EvxH7HnB4Fhuf-asDeYgg2Ri_J8rsGg_w4i7M_4VrnVcR0CXsUQOXCGMP2FZxF6i3s
+THoZyps-wmSy3vY-l--VZHyFT_eYExqrvtx0t_i-q7DVmDebJls0rReVnDxop84V-rRMwPVxOq9Ow-jJUlRh-RtBM_TVTdzl_XHaloiN-rDu6G2lfSz_Xqys
+I_a3mjHQxIy1bXpur87WrMUOUg8d3-WWTjeTuDLF-L8i80E_ityAd0o0xT_F7_0jlgtv1bOZSk0VvDS7_oN_QV--FKDOxVH_lFzjS1JaKlx4e7DvlVhdd_y0
+aYPYMPlFvlBtpo5PNu7cyky_5VAu5iG7UIr_2kn1Fyi_VKXZf7UMb0SE_9ong9CMEtgg0hfT2KGrhasE1XYfhySV1tv-TN_sxhZbUqqO0ZZhfizjLkaVxRl-
+LZq0QNkIVI_QyXY-PnsIfcgUzSVmd_zy
 }
 
 AWSEntityColoring(Braket)
-!define Braket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Braket, Braket)
-!define Braket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Braket, Braket)
-!define BraketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Braket, Braket)
-!define BraketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Braket, Braket)
+!define Braket(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Braket, Braket)
+!define Braket(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Braket, Braket)
+!define BraketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Braket, Braket)
+
+sprite $BraketChandelier [64x64/16z] {
+xTO53e0034FHhikWzxym3Z7SxM6nZnjkn9sOH7SCa0AJGfhiGm8e4MYNKdoWBt2ifwJZUaR1ndgB0Z5Xg6yTtFyztG5pDw1TkXFpc0yop40DujP-y_vVwRz_
+__xlx-H__qt_3z8TAqa1X7HD__VTzNkcL8qKQr0ThkoJA2JhUxRBX_RXXP1unVatTGnhs1D--t8
+}
+
+AWSEntityColoring(BraketChandelier)
+!define BraketChandelier(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketChandelier, BraketChandelier)
+!define BraketChandelier(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketChandelier, BraketChandelier)
+!define BraketChandelierParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketChandelier, BraketChandelier)
+!define BraketChandelierParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketChandelier, BraketChandelier)
+
+sprite $BraketChip [64x64/16z] {
+vPU7hgGm301TudZ-_uTVWu1MHZd8zRjHYwnCYkrTGFuQp5JM2O1q4VCMpUsXdcmaOz2UwFrJy01EkbJKNKN4tEK3TzjYliysm4rLhLqlOF2f1CW745iimKOM
+TD-fGxlh0_A5mv4voDl-sBPjWp6sgQyGetB4ACCvbvpvbW3D4kW9eL-XQTcCAzB4pgBD2E0alEKukINiOutGgled7MA3FJbv9CnRDDqF6UwkhpuxUtL7mWpQ
+zILjvXluYCV4h-UNrssr-EVvAm5dSus85R-4gf-G9XgGik1t3lHimPaVdoHuX6k7xADt3f_3xr5wW5TIHLkqVIFVrhvHlw5B8OfVKC157B29V-cEOeqAh_X9
+deC57_fHlgS-0DFzR-M_xVzixQa_VlNTlGDQ_T8_1MDWifP_Ea1NMV43sdXCB_X-jgsvN_dp_mz0pxcFygyjIMYoue_8n9-VNu7i2RJYtybVtqG3Ldo5FWhW
+O-uLrQ_FYhbV-_VQrxZ2Qlxh-MSKl-HFx_d3hVLRySNP25dp6oGP9ej-XwDk2_cJf1z-V9DU_D8tSqR_3FH8l76B7ERfpzvVQ-p7-W9zmI_rM_OTOjaV3mwT
+VB-KMCqWz91bD054rl5Eod_8Em
+}
+
+AWSEntityColoring(BraketChip)
+!define BraketChip(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketChip, BraketChip)
+!define BraketChip(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketChip, BraketChip)
+!define BraketChipParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketChip, BraketChip)
+!define BraketChipParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketChip, BraketChip)
+
+sprite $BraketQPU [64x64/16z] {
+xPQ9oYCX40Rjkzx_YJSqafbWzjUzp-8G91Ni_iPZ_5Q8cJm6DHjZ7SrquoleOmWOOnqXVfJ_tvTua92FeI1Y7Q7YWRxrWsD-b3yMJdudqTIv7urTFM-E_Kby
+gx_CxzfOI_shpqVeYL_ndZpqO_jjx_slpn_YA_C_zYVnpVw-_ZtdlXQKVhMlDFgLlW2Pf7ob7-1Zw5Wuor-Wni9vViwiNDo_o1TLbJ6A6arHS_AaVYkQ17yk
+96dAjhvnKTPwSM4x7mWpzwI9e4atim0sle8_gsPIrDNIhJ-N21aqaV0iJZVvGyxqcqmQwSc4NNu9-knZQUyXmAQMEtz-TJgbMJNzfmMopJyWMq7k6maV2Nwm
+VnAArQSWnti_hPb20PNmqjIUtDm_EXVmEJ_VxvzwzNMvMsLp_zfahbzJSgq_fS1Etm_ETN9gqPqNblnMN-_xCEHX1O3DkTZvp3NgjV-kMchPVt57MlENdj-p
+MFVVAthVV-qrMI_xxq9NNm1NLGkQAfgmUH8Tl7ylGiVGdg7wlucTF_pI_JQJNPAVl57Kt5G6z_DRP6QxyozYfYRBga_ywxH9aA_mMxJEBCS7I7ytms9PP6Vf
+W8olmsXiV2qszQz7TVnsV08
+}
+
+AWSEntityColoring(BraketQPU)
+!define BraketQPU(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketQPU, BraketQPU)
+!define BraketQPU(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketQPU, BraketQPU)
+!define BraketQPUParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketQPU, BraketQPU)
+!define BraketQPUParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketQPU, BraketQPU)
+
+sprite $BraketSimulator [64x64/16z] {
+xPO5ikKm30Hd1FRS_y8BBfL_7ZhnCdHHG6q6uPlvJ-HrWbDlseAbKtj4-IOPBYFbT_NT3J1tWEwywjTxIlN-q_tzzl_wyT_Xk_ej1rBFipps_zYdDR_0zmpk
+-zOboNTzIWDk-arAUYVsV9CQZhZR5Rz9n0EdVSvVgRZYUsI6Cmun7UQHuLpxhWyU3_jS-QuZIS2x3kJ2xr8GeAK69NStajubllVddBcK9UVnevtqStY3rjKn
+YAK_9xrLkrE3sRj5_-UYwyC6m2PLkA_73qqAW5qVVxmAe2IiV4eoqzHd0S4k-Sglu5lVL0JMFc94tlWrbmq_m-_RxI_Q_lWL-_D70Y_NJmtAo_kBG5R4NB_j
+SVrMwO_OsVq3Qo_zNE_VHzRd1-i-8bwmEByQO7enM-lpSuXyeQ_FxmOZ02VECsjpAR11apWdVOCwocBLwyNzBOdOWjB0iOdrRVsOFtrV_lCP
+}
+
+AWSEntityColoring(BraketSimulator)
+!define BraketSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator, BraketSimulator)
+!define BraketSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator, BraketSimulator)
+!define BraketSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator, BraketSimulator)
+!define BraketSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator, BraketSimulator)
+
+sprite $BraketSimulator1 [64x64/16z] {
+rPU9qkGW28G55FhzdtXhj2jiYl7FklTqNGxwuT4oITf_93DT3JLR3J6JNLyLC5PZ01mCQEtx0FxpU1q3Y34Lm6euuBDnw-jISSE9Qe8uudjBAMFU7YH20PG-
+yjQr1k-yZ9VUyXe0GYhFivIC5JvN5XkVgJqVm50F-Kc-bt5dV5dv6MzfiyW9BweghJbmdKD_HKsbyDM_7fZo6I4F1aFl_jNxCv2ABZC_aB9oVvBdZsvctHda
+ScAyeWF0ZI_xxrVGhqKZU9Bilks_yi9DmusuNe01yYMlrrHOSkQu5lNWNt010c2EavMXCUWFV6VZHRba5GucrmU-pSEIkFt9Z9Li4BppOYyjdWiVkBlJbuL0
+S2wtgN9_ydTypnkzf3Vx-vEhNKubhznHuNFzENWxlzRrr_fpz8VzFzI_ti-VPiwD-IDFZQjQcrt9_Db_jxGH6DBqwFufOE_kl-V3zyVhZyw6N82L-at_Hwb_
+REkVqiBBgz5x7y6WNHjWAMwVVuCpfC9c_tAVCzdc-PTRZCMET1G87xFXklS_OwAo3e3rp-rJJpn5Z8aEUOR0FDwE-Np-iXBF-HRqpxTZYtyt2Uhxn_xvL_bL
+nYw5tzs_AZNIMvxQy0Vl7-5VQgJUyGCdqlOh2S8-uFlZS_ZpxzV_IDy
+}
+
+AWSEntityColoring(BraketSimulator1)
+!define BraketSimulator1(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator1, BraketSimulator1)
+!define BraketSimulator1(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator1, BraketSimulator1)
+!define BraketSimulator1Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator1, BraketSimulator1)
+!define BraketSimulator1Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator1, BraketSimulator1)
+
+sprite $BraketSimulator2 [64x64/16z] {
+xLS74kGm25jCo_zVVF72Q5CPShrfIXh21a5iltuh43CrhhSOop8Qr-_F_yydNM7BOfthXOYwF83-4FwhYU_B9tx3dl0jE9IQ9A2Ygb39JumhFbcaYDXythXo
+oJ_Etw_oJTVplyYVh5_fDQQNg9Nm9ztyUrp7neYd2wS6FoPtD0eFJitnVLxeO6IhWvR-6h4QEktZm3hwqupL7CDj7KX3_tn4k02ztqgfVmoZFksEaFHRwqyp
+J62aJSxBPZ5OcN_Pv2sB2E6Fk535txGXCe6wY9TIyCCCZQ23FQtpGk1Vw0ypL72uGLr5V9N-dqxXrJ8P51SR93ESId-C3xu67ttDbVw87qeIAj4cnKUXFy94
+ouXiUd-aywP-53EU74J4DHysU8TAHYOAFg86YEAAJvt-nmG0V6drlz-jxTxv_sjCaqN6bauUzbN_e-wDe_KsqJkYBlM7RcWzjB8rrzzm84GAGqKPTFXelOXf
+J3Oe3VwszJm36Rtr7-Dpy9FDtVKV5awv59WoFLd_aI-r1QNONVy1kzrdrVe3ujFgX-s_Vg_zv_Fzy--s___FxvzVVojy0G
+}
+
+AWSEntityColoring(BraketSimulator2)
+!define BraketSimulator2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator2, BraketSimulator2)
+!define BraketSimulator2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator2, BraketSimulator2)
+!define BraketSimulator2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator2, BraketSimulator2)
+!define BraketSimulator2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator2, BraketSimulator2)
+
+sprite $BraketSimulator3 [64x64/16z] {
+xPS7RaGn24GN5tZtlt2w5PIOWDFRg6nzri1yjyktalGk-Mki1Yrx_H3-dvTv8mMjl6v2d1neVWX_AUfzUUbtqXDUxncvpsIfp2-rz-2z_paoTgZt_wH_0jPU
+eZiWSVzbcGhnnKVv3K0YN82Hv3z08zwWf_ahjD2zvlbBQC102lbhq846CylV_y_BZnld_-XpttojpR_nq6OdzstE2yoj_UhyLzZPdzNvFw1jmk_v_8yBy9xY
+_EC4GFFvxmk8xSVvnmKedAo_XiNsOpueODclymr6Q3_EFop0sy_pzmLu-td-GG86bVL_EzlzYf3dxorFFzRn_ciigBdkrVaEwaQgyyxrTA_7-xyOs1W6Thx_
+hm70uVNy_PbgrFV_vvAMd5--wFprlSwVv-VdxtR-_-VhzzTlfMi
+}
+
+AWSEntityColoring(BraketSimulator3)
+!define BraketSimulator3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator3, BraketSimulator3)
+!define BraketSimulator3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator3, BraketSimulator3)
+
+sprite $BraketSimulator4 [64x64/16z] {
+xPS5WiD030DZUq7___1TGMMooh1J34n8YzDROH6M-3s90vxulRy_VAip6j0oltReLmZKX_XJallw5WkQuhTOOCo4v7tYj_gtNl-jp-zj_P6_Tvj8T3r_1xfH
+1xh-_1lGZJf2zta0whhF0r3FvU-nGmSw-B3MsEdyKssW7-H_et_w-WiMn0wMhl_MWJR_wFLlhVDRzodoL_QfhVz9zPzME_Yhr7-h1t_9QFz7-p_oVwVnfpv-
+VfVn__3r-UjRyGy
+}
+
+AWSEntityColoring(BraketSimulator4)
+!define BraketSimulator4(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketSimulator4, BraketSimulator4)
+!define BraketSimulator4(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketSimulator4, BraketSimulator4)
+!define BraketSimulator4Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketSimulator4, BraketSimulator4)
+!define BraketSimulator4Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketSimulator4, BraketSimulator4)
+
+sprite $BraketStateVector [64x64/16z] {
+xPO5akmm34HNPFNzJ_o_QZsH0cNjK65wqF0ifuq_R-eMcL6RNeW1xj9Vus_-vczULlMbuQdXzP4MKxhcRSKR41Wva96g7BxY7RxXqLIg1hZciti3C1AdQmF7
+8ZuPPvrBZIIIFrMXrGY0bZnjuGrwRa00fqkUrKoPT7CUy1yMDHNQMmWvyu9KFiX3TcZ0-S0pYZmcZpXmRY13cJ098CJo6qlflsG6dJyk79c-jvGCLT67pJG1
+R4Qsp3pwJ3gGqZ8nDRXVZSnCFiKIZGmLhXDpp7wFQgK3w_qW9vqZwCWPmVFZcTPyn8t7e82i-imvvvOyHLtsYPS6DBea_Nucvw7cpEhvC1dG0s-EwKpBovky
+lzF_q136sJ-ZrhyKrG6GI4YEtqeqA-JyeNR-L5dKgFFN-lcRUcdzL5slNy_CZXz0R3h4CxZF7w6msLi36LLn2rP7Q4JPohzc_xGyDHk9cgbGU5NsRueIwkdp
+-I6nTfzMdbyBqpehnsBIjPhdDruCd_S7UGNE1lGrEEzFdzMjVm
+}
+
+AWSEntityColoring(BraketStateVector)
+!define BraketStateVector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketStateVector, BraketStateVector)
+!define BraketStateVectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketStateVector, BraketStateVector)
+
+sprite $BraketTensorNetwork [64x64/16z] {
+pLO9iYmX21j42FS_yIzdKj-6aRTlgRNJHjdrzliGNHYL7dTQNkKa7fXPFabBon63f6MzaHujj_McUjAhMjMJo_hrVTBpNyDzJlzv_p-l9wOjtgIaVt5cAQjY
+7k7aoc5IAB0YseKrXvdnpUHTKIdoKUL-AlMqQwvCJP_dSpJ5Bc_iQTbsivXrEyClYX7TCMUlg9cNXjIN5xqOMRIhPkCM_usQkVwCFeBM-tZhT-QvPXuldQ6Z
+rsiGSliGTXz-M3zUSd4ue1_MqptFP3D76-yG0VcW_rWrAJEJ_JrIiUtg8Ruy6A_CXtrxzOlw-IG8Uoc0bJ80RdFVEGYe-MBrzTdeiJ7eusOWjJlmV0N37Lm-
+HQa6xYHgYBN60yADhd194wkFNeJlhMc5uaAEDdfvN5W4Wk0n9LpJ4E4c9Q3qo5bOD2A7gwzTuH89te-CnEJcyoKzL_kZyp0kHHfs9_7KkmdsYAaPFwv78Tqm
+lLuOjgGdzD3xi0tzlteKlIAxslhFo7lHUwtUllTd0DL-RedwXcLcCrJkDdXkYd6wfMQXgeJfOmFW-Ov6wI2TAGh2yWcX7rxqKfpoNVzq-e7yOkWzG3Zvr7z8
+_TTwaFiNk_qyN_Yz1nxXKtKQE83em1fzOiTqpMiXIIhdiPZ9QcWVEK7mlKgZ4I7RfdkPxPOiUfXXcoPZ26TZVUVrJnGxZ4BiT-O7z4PTYk-hzkV4I1fQdPuu
+90Qwkww5TOy0_zJZYZlZWtAcakg_X7y
+}
+
+AWSEntityColoring(BraketTensorNetwork)
+!define BraketTensorNetwork(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketTensorNetwork, BraketTensorNetwork)
+!define BraketTensorNetwork(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketTensorNetwork, BraketTensorNetwork)
+!define BraketTensorNetworkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketTensorNetwork, BraketTensorNetwork)
+!define BraketTensorNetworkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketTensorNetwork, BraketTensorNetwork)
 
 sprite $QuantumTechnologies [64x64/16z] {
-xPK5WiGm30CbEOR_V_YWcnv3ccLGsVM4O-DSUeZhav2thGBqpdjjLNxYsn7u1__WGxJCcEK3D09GJl59PWNCqQRuXgWAUC5c-EI22KHiv3CYAtPODlXY6EQT
-tPpTbJk3Z_4EUOGR04Mw0DYhGV0XNkeUpGc0tb2Bg26UrYS_WY0OqSTFOxmnUpUWg124w0qQucFtQUk0UV_Va0FyGaQbWRdw4fQzs14-oI2eMaL20GsldoIO
-fdVUWc2UY7VRg_qEGdkCdxJCrFVvix7vCxYOy-id2SOFwpT7rw_uPVyOge9irFp-9GtmgVWH85zPQYf-BSya1P-9dtqyKcnJyNi9u3MVFvAilV8NSy_yUUpy
-_U0VV6vLVE8dj3VFDrxMjij4T97KPf6u1Jq3
+xPQ7iXiX34MFwlN_Vt5cpVZnAkjXqnEv2yvO4gZebqlVjgKF_dP1_cx-FwygNU0B8BVvmhiTizhY6n_lJk_mRiTQ8f4RV5F3YKngWtSRIm6suVyqMe6Uvxkg
+MeVT_SOJtHVE-3A6kDdKOiuGgoLVUBNK5GQMzpMbWSNGExNYyUb-EEF-u343u2pu6REx-qg0r0Z0a4Gd_DpNZXdUGx_cXyoWXIaWfOGGCNUi_4_wnKzun0_m
+UPGhNcOQNmpNYzOnpVNb-GzB6_pDNMOO5lJ9_GloSCE8jreR-Zozlqu5Bl8jBoSAFx__SWxsBPySBrm_cg_yrFvyqlu0OXM_MF8YvROylphdBzmV1sfzVtF5
+csL_bZ_sJFvSprzH7-j7FEf7z-3twfSSN78swsUGIHYvKR_D793MzNk8-lF-qPXH6_th4RDohvt-UPFvRRz_3q_svuVnz_lpoytfQ_DJNPlVwWVEZ__dx_zy
+x-EjNoxV
 }
 
 AWSEntityColoring(QuantumTechnologies)
-!define QuantumTechnologies(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, QuantumTechnologies, QuantumTechnologies)
-!define QuantumTechnologies(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, QuantumTechnologies, QuantumTechnologies)
-!define QuantumTechnologiesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, QuantumTechnologies, QuantumTechnologies)
-!define QuantumTechnologiesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, QuantumTechnologies, QuantumTechnologies)
+!define QuantumTechnologies(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, QuantumTechnologies, QuantumTechnologies)
+!define QuantumTechnologies(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, QuantumTechnologies, QuantumTechnologies)
+!define QuantumTechnologiesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, QuantumTechnologies, QuantumTechnologies)
+!define QuantumTechnologiesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, QuantumTechnologies, QuantumTechnologies)
 

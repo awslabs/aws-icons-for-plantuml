@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Internet [64x64/16z] {
+xPLNWlCW30P55w2v_t7_uh29KjZ-wDcQm7oIYnpvNKvEJaAkgbfp-9PS1on6-R9U3O_bhnKVW6cE8XAB6j33v_KumOgBQmOpVhgwFPMB0-PdEnYWyeZ2-9nU
+eSip7VIJtTlBJYSaITfxI-_v3Ogy8i4S78ouzusvML40p03R1cIekyiAz2WI5MpVFjliJhjsqhPxJBO4MSpjhk4FFuNzDTvSXEbytPwd11etOpTlElS16TOS
+1e1P7bCdWDxE93x0-w86C9FNiy5iqUakmFi7wOYehhf1yzVH1gWBSFv1KFnCJ2XtUbAG5U1zN_BMGG6zrqL1Le3pFT5WBGu_Tls_Vl55iRJp9L-hta-zfiDa
+_R_pZx9hEAZYMVvYwzTr00dALtt_NeBy4p--Nx-FsruTRgpAcgG0klSRZ3TVeViz17SYDtuOC2w-lw7yuwv2tVeI9em2-K4lLokOMt2-2p2Oztfq3_lYbfpl
+0nu7EXaKlztApby1NayTqFlzJ7qZNloc5seAH_En7hHkFDQJOjnOypTPD0bZHia0R3w7Gfli_OEhFvgp7M4Xiduj7jRbTpWvEVaB
+}
+
+AWSEntityColoring(Internet)
+!define Internet(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Internet, Internet)
+!define Internet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Internet, Internet)
+!define InternetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Internet, Internet)
+!define InternetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Internet, Internet)

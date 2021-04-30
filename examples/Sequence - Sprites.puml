@@ -2,11 +2,11 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
 !includeurl AWSPuml/AWSCommon.puml
 !includeurl AWSPuml/Compute/all.puml
-!includeurl AWSPuml/Mobile/APIGateway.puml
-!includeurl AWSPuml/General/InternetGateway.puml
+!includeurl AWSPuml/ApplicationIntegration/APIGateway.puml
+!includeurl AWSPuml/General/Internetalt1.puml
 !includeurl AWSPuml/Database/DynamoDB.puml
 
 'Comment out to use default PlantUML sequence formatting
@@ -23,7 +23,7 @@ participant "<$APIGateway>\nCredit Card System\nAll methods are POST" as api
 'Or skinned with colors (pulled from each sprite file) and with different layout of sprite to text
 participant "<color:#D86613><$Lambda></color>\nAuthorizeCard\nReturns status" as lambda
 participant "PaymentTransactions\n<color:#3B48CC><$DynamoDB></color>\nsortkey=transaction_id+token" as db
-participant "Authorizer\nReturns status and token\n<color:#232F3E><$InternetGateway></color>" as processor
+participant "Authorizer\nReturns status and token\n<color:#232F3E><$Internetalt1></color>" as processor
 
 user -> api: Process transaction\nPOST /prod/process
 api -> lambda: Invokes lambda with cardholder details

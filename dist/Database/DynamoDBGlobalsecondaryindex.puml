@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DynamoDBGlobalsecondaryindex [64x64/16z] {
+xPK5YaD140LxtFR-rzqapVlkheKMKDZqO-XmX2wGDPEw5-xrNu4ZKpBBriDQlTC_37gRcOMr4ufU4uDUiGZqaZfmP-dVFiKV2Nrk5jPEMkd-L2WmDTEXbtNs
+gmf4mtfvztk6_krZOD3dPc7jhBRVM619Lyp4NcWLH8cA4LiFPzcljmnwbvc5jHFV-t_tU_3z7inPzXlS3uyUXjwx3Yw-txTVv_sFt--2__DuFW
+}
+
+AWSEntityColoring(DynamoDBGlobalsecondaryindex)
+!define DynamoDBGlobalsecondaryindex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBGlobalsecondaryindex, DynamoDBGlobalsecondaryindex)
+!define DynamoDBGlobalsecondaryindex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBGlobalsecondaryindex, DynamoDBGlobalsecondaryindex)
+!define DynamoDBGlobalsecondaryindexParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBGlobalsecondaryindex, DynamoDBGlobalsecondaryindex)
+!define DynamoDBGlobalsecondaryindexParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBGlobalsecondaryindex, DynamoDBGlobalsecondaryindex)

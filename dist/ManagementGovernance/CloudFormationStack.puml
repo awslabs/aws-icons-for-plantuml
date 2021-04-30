@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudFormationStack [64x64/16z] {
+xTM54OL034NHjvO4wB_UhxW5zpEUsOiBTcVyP0OVBfdCBjIJdu2Btc62S8p-wPy-k0aexVT-VssOp60cTV-0id_b_07b_1VflMab_vvDArAVlwn7gx1d__HF
+h_x_etylolz_v_VNk6uMS3sm12jr7buQ749Zrd7-0PGC6cPzN9OkZRLXqlxys7IfWJ8Cr-YV_kc52v8kPLQ6KThFUt_dzp1rwKmVulpU
+}
+
+AWSEntityColoring(CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudFormationStack, CloudFormationStack)

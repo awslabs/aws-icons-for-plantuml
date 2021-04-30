@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WorkSpaces [64x64/16z] {
+xTHPUkim20NW0n88plxtUwVmtSIZxFQfRMWpyyU0SVYzuXtlYDRZCne0slYOpWxqZ0QeFz_qlAvRr3D8VOCBO5Uq0JfOuK0ZoQ4G4yYq8NzD2WMyfc59Eg1n
+pW5RJk7v-7phrACQDg35en-9nOcnCsy23N9K7muebC-eJmvzq82kW5UkxnMfSUmP2lHyZg_rtVquz2GwcGsL9BgxdtRk0sZ9NL_ZzOcNIl71TMJ3tFiGQEnv
+0zgOUwO1FTVr3u4E1kQ-2jNrw9oyvci7OkVKNVLCAV9SdLkU8bNoq5hTcyVNnyZgAhxh1KQceVPfubikV0vQpH4Gpdnsm5zy2E9_VdFsEFMr756-bloP7y0u
+zRMS3szqNHqlEuTFF4CV7hxNRqERU78a6T3OyxJ1dkU-yezU3o0-uncTtZ_eAnHJ3p_n1empNfjmu4CX4yxwzTdnsG7ZXSW6-CRxwagQDr7-fFH94-Mhz9oO
+dIRA-tAcTve8U3I8tzRLX4AhauhRJKnAdyHGvtUCTxpZDm
+}
+
+AWSEntityColoring(WorkSpaces)
+!define WorkSpaces(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, WorkSpaces, WorkSpaces)
+!define WorkSpaces(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, WorkSpaces, WorkSpaces)
+!define WorkSpacesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, WorkSpaces, WorkSpaces)
+!define WorkSpacesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, WorkSpaces, WorkSpaces)

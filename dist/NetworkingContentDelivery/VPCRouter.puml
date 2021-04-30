@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCRouter [64x64/16z] {
+pPU9kkCW28L51Qky__lEDLupXfD-DiDiftlBJuIwGFYFHJ5zATAliAbKFLLBUWJdbu9U-LDQ9b4uVudBz2QVq3nOZc5HvE63TtHinuNeJCCPE1t3Qd5_SRvy
+PlZrlVeW2orvxC2IDoezj7SqrQjrY7eeXgl7IlTuKsralkXgX5OtgjPpjnntEyfw7tkrNxooQkwlzaAO0xR3akulgQPkBpPGDdXF5PbiDXeyjMf-wac5u3FC
+fJ3u07CcsrXPjGJGv575H02ZHnuYkEQAmnC-y2MdYxSzZqXMbQUygEPbfj1JdfP9rD_kUPolFutuES_dJmApAH1RdWbdhCovrt0fovKNNBHDwqtu4rDPUT7f
+21D0S-w2WybF7EOmVGV2uTR1v2SE2OpVfZbagz8T3BxZ1Gpwh4kJ9xrLIkDn9_eTl7Vytlnv_p_d_F7EN-_wyQvVv_xXtR-y-wTx__QV7_xpotz-ulcDF9xV
+k_eXK9ny91nztDKlL3KDFcabg5-szHEl-mz3_RIjtyQsSznLzlNRh0oXZfyuMEthLp4urA-x-baC3lNphdwNZiEl3_g7dA5_SFKlllx9rx-v-aTN__eVwmS
+}
+
+AWSEntityColoring(VPCRouter)
+!define VPCRouter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCRouter, VPCRouter)
+!define VPCRouter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCRouter, VPCRouter)
+!define VPCRouterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCRouter, VPCRouter)
+!define VPCRouterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCRouter, VPCRouter)

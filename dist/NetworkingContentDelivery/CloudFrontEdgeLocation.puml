@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudFrontEdgeLocation [64x64/16z] {
+xTTLkeGW681X-9FO_tfFs3LZDz-jpsihO4xFqk8oZt5ni94NMf2hFPe5yHLzyiadBsuWdkvT74WEzQQTFSmd3no6l2SOzo0-PlLybcFuub53p1hoPK5Xq8CK
+s0cw8QzOdbjWs_NeyYs2t-zVUOeEcbvzZc7A_GUD_tbN-Io7qvyV-OmqlCAyvu-kwPsT__w0__h-sNQG-RlyVrW7eYUE7yaddxpAWbpcpr__6RiuStw_
+}
+
+AWSEntityColoring(CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocation(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocation(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
+!define CloudFrontEdgeLocationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)

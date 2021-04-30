@@ -1,0 +1,161 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Test external paint servers                                               -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: linearGradientOrientation.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+<title>Linear Gradient Orientation</title>
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent">
+    <text x="225" y="50" class="title">Linear Gradient Orientation</text>
+<g transform="translate(0 -30)">
+<!-- ############################### -->
+<g id="board" style="fill:none; stroke:black;">
+
+  <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+  <rect x="225" y="100" width="150" height="20" style="fill:#eee"/>
+  <rect x="75" y="120" width="150" height="50" />
+  <rect x="225" y="120" width="150" height="50" />
+  <g transform="translate(0 80)">
+    <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="225" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="75" y="120" width="150" height="50" />
+    <rect x="225" y="120" width="150" height="50" />
+  </g>
+  <g transform="translate(0 180)">
+    <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="225" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="75" y="120" width="150" height="50" />
+    <rect x="225" y="120" width="150" height="50" />
+  </g>
+  <g transform="translate(0 260)">
+    <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="225" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="75" y="120" width="150" height="50" />
+    <rect x="225" y="120" width="150" height="50" />
+  </g>
+  <g transform="translate(75 340)">
+    <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+    <rect x="75" y="120" width="150" height="50" />
+  </g>
+  <g style="stroke:none; fill:black; text-anchor:middle; font-size:12">
+    <text x="150" y="114">x1 &lt; x2 / y1 = y2</text>
+    <text x="300" y="114">x1 > x2 / y1 = y2</text>
+
+    <g transform="translate(0 80)">
+      <text x="150" y="114">x1 = x2 / y1 &lt; y2</text>
+      <text x="300" y="114">x1 = x2 / y1 > y2</text>
+    </g>
+    <g transform="translate(0 180)">
+      <text x="150" y="114">x1 &lt; x2 / y1 &lt; y2</text>
+      <text x="300" y="114">x1 &lt; x2 / y1 > y2</text>
+    </g>
+    <g transform="translate(0 260)">
+      <text x="150" y="114">x1 > x2 / y1 &lt; y2</text>
+      <text x="300" y="114">x1 > x2 / y1 > y2</text>
+    </g>
+    <g transform="translate(75 340)">
+      <text x="150" y="114">x1 = x2 = y1 = y2</text>
+    </g>
+  </g>
+</g>
+
+
+<!-- ############################### -->
+<defs>
+  <linearGradient id="genericGrad">
+    <stop style="stop-color:crimson" offset="0" />
+    <stop style="stop-color:orange" offset=".5" />
+    <stop style="stop-color:gold" offset="1" />
+  </linearGradient>
+  <!-- ### first board ### -->
+  <linearGradient id="grad1" x1="0" y1="1" x2="1" y2="1"
+                  xlink:href="#genericGrad" />
+  <linearGradient id="grad2" x1="1" y1="1" x2="0" y2="1"
+                  xlink:href="#genericGrad" />
+
+  <!-- ### second board ### -->
+  <linearGradient id="grad3" x1="0" y1="0" x2="0" y2="1"
+                  xlink:href="#genericGrad" />
+  <linearGradient id="grad4" x1="0" y1="1" x2="0" y2="0"
+                  xlink:href="#genericGrad" />
+
+  <!-- ### third board ### -->
+  <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1"
+                  xlink:href="#genericGrad" />
+  <linearGradient id="grad6" x1="0" y1="1" x2="1" y2="0"
+                  xlink:href="#genericGrad" />
+
+  <!-- ### fourth board ### -->
+  <linearGradient id="grad7" x1="1" y1="0" x2="0" y2="1"
+                  xlink:href="#genericGrad" />
+  <linearGradient id="grad8" x1="1" y1="1" x2="0" y2="0"
+                  xlink:href="#genericGrad" />
+
+  <!-- ### fifth board ### -->
+  <linearGradient id="grad9" x1=".5" y1=".5" x2=".5" y2=".5"
+                  xlink:href="#genericGrad" />
+
+</defs>
+
+
+<rect x="85" y="130" width="130" height="30" fill="url(#grad1)"/>
+<rect x="235" y="130" width="130" height="30" fill="url(#grad2)"/>
+
+<g transform="translate(0 80)">
+  <rect x="85" y="130" width="130" height="30" fill="url(#grad3)"/>
+  <rect x="235" y="130" width="130" height="30" fill="url(#grad4)"/>
+</g>
+
+<g transform="translate(0 180)">
+  <rect x="85" y="130" width="130" height="30" fill="url(#grad5)"/>
+  <rect x="235" y="130" width="130" height="30" fill="url(#grad6)"/>
+</g>
+
+<g transform="translate(0 260)">
+  <rect x="85" y="130" width="130" height="30" fill="url(#grad7)"/>
+  <rect x="235" y="130" width="130" height="30" fill="url(#grad8)"/>
+</g>
+
+<g transform="translate(75 340)">
+  <rect x="85" y="130" width="130" height="30" fill="url(#grad9)"/>
+</g>
+
+    </g>
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SystemsManagerDocuments [64x64/16z] {
+xTNLaSKm44HHCKt-yIxlmschgynm_uz1Q3QI3MgEzKtK8kjbjA-Zlbya6nZlVTPoj1Srlup7mx2qpwBK7Er5p_6-vPVAmmEmnyFWq1Vmle47i3ucy03M6_00
+seC7q1uyWFQt1n3UnblsvfK78E_abl_rEVoaJ2Fd7oF-tzvIJbZRz_Y6A9J7fLtu0BASTmBootZZGMF7xopUlsU1P-SlB-XjVCyVTlukt-8uBtcCJsFyhVNz
+LtL5xtFEYVMuyRw6WKhNT-hvskFD3ESxMREHFW4
+}
+
+AWSEntityColoring(SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocuments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+!define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)

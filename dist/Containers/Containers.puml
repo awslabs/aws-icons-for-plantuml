@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Containers [64x64/16z] {
+xTS5iiCm38JXbInhz_uNVkXsA1gxJFdByBLXuCDBdLt-UbtGnEy-ypBl_b1FkyZJq2xnZjGbtfhKuuB_jqppCts44Z-b8axtQN29lLDoM9xcsM1TnxgXSUhB
+xu_VM_NS6juqE9Ty0A7HvFtXY_-P3jVmzNZEfyjFrUVbVAay7V3Oh2l7CmUSsxu3LXHAEmJqobCByNOUjX0gpu35D4EmcdzecjQWKU4p9VxUI2aFJyPjmPjB
+WJ6TtCTqHKXkCx_xtPFZjl5axgVLdWtMfXaQBrZ_dthxjLRb6OlnBOwVTx_xYyzV7zut
+}
+
+AWSEntityColoring(Containers)
+!define Containers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Containers, Containers)
+!define Containers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Containers, Containers)

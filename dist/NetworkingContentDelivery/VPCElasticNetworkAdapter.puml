@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCElasticNetworkAdapter [64x64/16z] {
+rTO7ik8m60DWzwRxttU9jloWYJ5ZRtkQyketH88KzoNY_Ha7qecF0FoXxuSUTTy7N4adld62VPypq4-yQq0zyNu0wS3FFmMfZKNetMI2WdNe9nC0w6qL7hXD
+8ELEJWJw-8XVQPj0lSULiC0oWVXr3Pj0lIkbNbz27-zIRGBTZr-MRsNG2TI_Uoi7lKwWth_RFiW44n-YvCdR13D_jyAJrmaYa5vzcmv7RnFCVRdIVtnjucs2
+cH_kIWMik7cRODzpWXFF2Guy9mWp3t-b0k7wMcuz5zXw_vWEPFUnz-ehq6Rx-L8boObFmF0JFmkzbO_krkTe8Z4yIHvVAxsLl_T0j1TaAg_nJ93owjFBPR22
+QJnUHikhTo6_-XX_-iehl9HNpo-mknvuvFoso3i_zHRw0ORUogkljO7UbVQKx5oo6w2LL__P_KFBgmzp9kNLE__86bjvzQj8UMqqLkdUocyzlwJxyaoixNqw
+lPHVHYTY-MrlvJSzo-zxbj_tZUNtFSiV-UoEV7C7dkNturd-9Dxzf_a6
+}
+
+AWSEntityColoring(VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)
+!define VPCElasticNetworkAdapterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCElasticNetworkAdapter, VPCElasticNetworkAdapter)

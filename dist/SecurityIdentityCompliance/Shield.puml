@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Shield [64x64/16z] {
+xPG5aYGn30HBaaN-_tyF5A5XiWFkThTp6B9AJPx_AGS7eRulfn40qjoh7d_TC0B4jwfBww1ShixRjANg9v5hrIuGMnaYBlwIIYX6N8JR6r_FrI1rg370bhE8
+jxvrKGrIdsFKv9_xMetzkQUHZ_s1kFnS9F62V_svu1_i7_xXozZsByatlZxnKvb0OlCb-Snt0aGOe9Ylg5L6aJU-WQpUAF0oe5OPXr_x0Qh4VliS-LkTa6kV
+aJL4LFXuuHkyKyv-b59-XRtm4wC4kVGLqNvNFA577R0BVo2dCXEOsQV3Ncw0rceDtVCdrG39OD-PVpgaZpIOmOnOs7yrhTPhcX00alZy-1LS0StI-LCaGt8s
+A-TlCm3jXANhft46M3ropWmJw4phw_SpN0XesEO6OQPZg4NE_vM3Wzy
+}
+
+AWSEntityColoring(Shield)
+!define Shield(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Shield, Shield)
+!define Shield(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Shield, Shield)
+!define ShieldParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Shield, Shield)
+!define ShieldParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Shield, Shield)

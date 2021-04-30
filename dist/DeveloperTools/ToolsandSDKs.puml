@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ToolsandSDKs [64x64/16z] {
+xPRNiiCW34HN527y_nzym-m3CHu7H2PFrvjEE2xgnm_rw57vYiw0x1z11I4BGjsYBK2Krv3yT8r0xb_LIQVJIOj0p6UsMC-cuCgosQvdIq2UixpMSc_FYOnc
+kprqiAdP78OPSVuxS-lj5hj4QmRok02xvwCWrlVD8V2GtJFf4wzlRb8wWfxldj7FV7EJSRFesVECuWdVFbxqoTULlyZD-HSEoCNpzLZc5KCGCWKTl349EXsS
+VAyRZOxLl3n1jKZ_UNak24Xly9H8e_Vv48v_oQUHJmwU2VFEgol-UwaaRomY7fxXMnjVcVzUdXrGX2LtaSzZnm36afzXw_LRHNIzVe-tUXMDqZLjSgLC6kka
+oOLmEdJnTN_oupmo5zie-RxYd7wKl6Vw6CS8ylpgbWB1Gh00wFRqsPItu5xwZozaTlnEZnxz0G
+}
+
+AWSEntityColoring(ToolsandSDKs)
+!define ToolsandSDKs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, ToolsandSDKs, ToolsandSDKs)
+!define ToolsandSDKs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, ToolsandSDKs, ToolsandSDKs)
+!define ToolsandSDKsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, ToolsandSDKs, ToolsandSDKs)
+!define ToolsandSDKsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, ToolsandSDKs, ToolsandSDKs)

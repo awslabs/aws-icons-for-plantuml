@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2MacInstance [64x64/16z] {
+xTVbWiGW40FW3cDv_oU-3SEvmUaA-LFzsa9MZxEAgCh4yjqqe4qiVzvlBtvA036pbDVUiH3_5NzCvcUzQ4-i-2WZrKbbnO-qx_hlFlyvpFzJl_lNsblxTRb_
+-gopWdwvVyLWZIlhyw_8Ue14qZVp2Ai1URX-xZswWpkN0BA6v60cVEFf2UbUEKESAKM_x2Vzqny1vOA-aYSVi9d-2GMPaE7LJEc1DjU_z-hyA9z09CfFzKyf
+4LBU4EFv4phLFprJtc73EsAY_vVUaAhz-GL8zv0rpwc01KSgNCtbzx_8a_Nz-Ry__y-W_zt_UVt-NF_zV2w__xTV__zwLha3
+}
+
+AWSEntityColoring(EC2MacInstance)
+!define EC2MacInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2MacInstance, EC2MacInstance)
+!define EC2MacInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2MacInstance, EC2MacInstance)
+!define EC2MacInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2MacInstance, EC2MacInstance)
+!define EC2MacInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2MacInstance, EC2MacInstance)

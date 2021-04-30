@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Amplify [64x64/16z] {
+xPM7qkqW28GNiO3l_y1t237SviGuvM_Pqz9MFXZXzC-fLwzUIMPJbar_XIjj-fN8VZBQbbjwGRM37G0Fwm1b1q0ixxeFaB0Du9QYe5vH3W1wvdQ7bOz8knyz
+4X_4T07GGm1_tio47G0FQ_Hj73rnvpEicTDnL1y0AD3Ei0aR00pG6ROXFmDmJq4rvm383g1hVakT1e0W0ChYpgl7mmBsP6G0u1OWceLWpWE0HosM0Dnb2GI0
+NBLOATwLH8OSGDnv6O2WdaIaaj4M0JokCqVVsp8C2RYv1Cb_EBhu1E0L08R4Ouwp312tOwTSywkk02YH_ZaiOdnSko7V5YyZjrFIQJIFZjsWDyNhGAX5z-Ox
+W0JnTUebK3JF1I2paPN_br4qpm3WUV7-4L4qZo9D0ER_ij77oG3Q5400_fy0PTX1GbQGN_eFGCD4f49-b7k1g_MlhrUlNlq2
+}
+
+AWSEntityColoring(Amplify)
+!define Amplify(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Amplify, Amplify)
+!define Amplify(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Amplify, Amplify)

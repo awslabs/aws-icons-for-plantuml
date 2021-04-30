@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $MigrationHub [64x64/16z] {
+xPM7Ykmm40HhHd7w___t1OjbC7l2w8WNYh2XNMsIrFgM_F9BBwLBKZGlGySKW2A5OT1qoA1AbQ56LpYXCoeX1LLkLrlN6OqfJPeA8NM6JeWArhinDV3HWNRq
+Shm1zFK3wuPrFHAjzkY63Idw24clBnryNBcsJ2wiVzpDIlS5nb2_Fp2L15TUj25eaWfA2atPjNBR-rMIezI1zfxlS4OqQkhKSDfRlcCQuA7KfIp8V4jKsasF
+aGMPx-dCc-wKBCZyoKyz2yxykVIkUXLu7FgAfMiLX4xzfSyQLu6E_DGDpu9dlni-RdhDWintDAmOO_cNFjIlWdBBDmGkXRakbgvLy9OdR-UBcvu5cM-8TT_R
+JS-2p7TKIdFMwgIU1PdlhzrNN8QItjxo3I7DwYadpRrT-GCJZFUt5CmeUgOm5SPk3n-XhFdQxE4ZvklnpHu-qYYZGfaVx-4p1V0ABQJHP-uX32LxPf_ITAmx
+K5vxE4ReX0wqKNCFJvcilGaTipblXvXD3Oe-om23gKypgzVGT-MNN_u2
+}
+
+AWSEntityColoring(MigrationHub)
+!define MigrationHub(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MigrationHub, MigrationHub)
+!define MigrationHub(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MigrationHub, MigrationHub)
+!define MigrationHubParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MigrationHub, MigrationHub)
+!define MigrationHubParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MigrationHub, MigrationHub)

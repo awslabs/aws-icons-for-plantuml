@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EMREMREngine [64x64/16z] {
+xTK5ikGm301HoHpr_Syxe46hjbBhp_I6eSE9vOtz-LFwhCgQpcoyHRzkmoJu7dtgTWRuwqYo91FbnUN6di4cA-8E6o3_9MK7FHuE-Ip9dQhk73MnZzzNuyIg
+k6oMVIaVcZohuKZiyzyoP7_UQhcIMRce1aaaWVKJG1zzzT_sPIWYnV_lhsMjJz1BwP2kd-fgxrxSArUotZlDJbVxwAVrBUV-YjvzPjzA6Ilzxzp_VtqVhidR
+NxyAZ3QfAa46p49_7J_KYBRzwxT_UaX6zEy-GzUJ7jTOyxC1AhEApzcuCjbHeSfi0trQKakoGu4In-4XhhIJ8ligOFrkSAAoe14i7w6T9zPKrkcDlBq_Vuu
+}
+
+AWSEntityColoring(EMREMREngine)
+!define EMREMREngine(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, EMREMREngine, EMREMREngine)
+!define EMREMREngine(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, EMREMREngine, EMREMREngine)
+!define EMREMREngineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, EMREMREngine, EMREMREngine)
+!define EMREMREngineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, EMREMREngine, EMREMREngine)

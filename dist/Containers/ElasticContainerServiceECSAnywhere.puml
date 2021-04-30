@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticContainerServiceECSAnywhere [64x64/16z] {
+tPQ9hkWW24Gl8ZB__yNljXCpgI7bxHjPkiYXC5NnuxyrHzfrjOH_EpqImBZl0EJuHZm0yPV5jwKE8CKdWAylmlBEU8WVTpNBlZxrUN7aUPqgeayzR7EwsWAG
+tgI-9FQ3lqn5TAdNF8lWU6Mk-2Ml8fhK2xx-I9swUBSnpCNNHTHHwKURTQR2-QAWomZyd3-IFnnkA2E0Y0JaBY8UJu_HXTksTWom7Yvl_2q6D8UTAoWxNdXQ
+04R-TbwM3D3pwquraVht2zZlMzvnaGPCyRvby9u7O2J4Cve1QFd9Zx1yyXI0QSoEfqgiM7mYUK73E-3qNEBfeD6Arvs6nK-M8whazLqA9jv1VY5VUGEYv5M7
+TVpuD0VcTPt7jUC7MXk_ZcV-_caJl8QUvtNjyl-GRbxfr_C_zlzuHxwUFzdFNmqNynSvklLJp7_clJT2QzSl0V8Avq2mptJx1z-8r_wnMs3DCu5rxZzyMXIL
+tQFPFmq8yN7idnFezkz4Ya_kt-fn5YyyNIzI_ME15hQxypowcPtz2tdqBrEFFypFWKc2_PFHd2UWulXH3aJTlptLIPiJXCU6muzK2xuy8PgDONOSFGe9sa7z
+DIbTsD1FBXFi3y5Edv9cxCwOOoblUWTBXeVhU56cbu41e-TggLv4xtxLt95gsNePKfLyktcY4RspIT7_P_i2
+}
+
+AWSEntityColoring(ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhere(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhere(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhereParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)
+!define ElasticContainerServiceECSAnywhereParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticContainerServiceECSAnywhere, ElasticContainerServiceECSAnywhere)

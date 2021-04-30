@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticLoadBalancingClassicLoadBalancer [64x64/16z] {
+pPU5WYqX24070vJv__zzC76ns5kls5uzAYbk_x50Y281Fc4ZrVqXbU9RS2hx92MzIkURe9n4CjshuUjqoM5h9EHpZVoC3eVM2FC8e8vmUBvvVZBgYnwIm1y7
+KjNSKJrxsc0jbsVKcx36MTG3s1r9xQmLNu-Lu_vi0Pstr5t_hJpXBCS2jb5PsPRXvDF2hQCAUJ51SP-lje3QA4pA7uC-ZyaMa5zvF3rjJtX0Mu063VJqJ_XB
+uaE3pGHjkJLlKO6F0sEt_RRYGqB28nFZxKQS4JK7BdZaQqz6C3FOaLCJEZ3nIMYJFFBG197zQZpglXG181xdA0ElcngIHvxCL06nQDODVBvzeLk5WTTe3atH
+A784wldm29bw1PFnTu2QvzGQqNWLtgkft_CatymtEGecQ3NU373iG0Dl6HwhZ6R1T7feUTq4BaLop-kUeUoCIfyIT00xFbywAj7pihALeNAvNm_LygfPNFE2
+aCm-wB11Id2P-KLUPigdJg2-mBsyF-iHMAD6feHuyVF-PZzVVrqcdVwUxBVsNnO-iIfFPd-TDlbl7JzdQ09SzocXOhhe53zE_5RB2CLqQoqOJlpIb3-n2S0h
+_ujyJVdZvcyndKZnAjzvpb-_Vh1TixdKeuE1gNw0Nx-0XQ3GT1xHgLzE_OIwgzHIM7yoEFNJhz-9n_9fV8luzqV4oZitpMDmxezdzzV4Wm3k_VcSj_lJlxzz
+tkvllt_mUUiVlFwba2T5UUjVdFxfHydMFotxD-0VSGvE_-PqXkuiltzrnVhNx_hdx_jtNm9_yNxuzlrYsNX8mVFzXFP--khzzjNxyQltwtyilm
+}
+
+AWSEntityColoring(ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)
+!define ElasticLoadBalancingClassicLoadBalancerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, ElasticLoadBalancingClassicLoadBalancer, ElasticLoadBalancingClassicLoadBalancer)

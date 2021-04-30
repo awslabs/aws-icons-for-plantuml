@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagementGovernance [64x64/16z] {
+xT75eSCm44NHf-5H__r-Xg0WdDXtPpX2ltlrZ5Q_-kPt-o_cVM2ZCkwTodUm-4rGlkFeUGVfLuB_huAVTwLanyllKcFB_x_iU2wj_ITir5VJ_tpUR_SqFlCa
+dzhAkjxGBFg-iMw_fSyypqFkvhry19IjSjo7VWJIhVB6-sUxu_rlL-my3vtpmTk1c3bdxdyxe9IIvwx_7lwt1Na-7lLzb5QKRTzlt0V5UHv-Lr_1SJH1TBsX
+aTIkhsb7Yzhquwr-zNVl7G
+}
+
+AWSEntityColoring(ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementGovernance, ManagementGovernance)

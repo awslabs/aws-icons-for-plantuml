@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WellArchitectedTool [64x64/16z] {
+xPM7qXmX38DTTZ7m_W-SiPQSo1LcIPjsN_9tYZ2IwHDVlhGWhM_JP4BxDYvd-SaXPzyan3insJi1Pt2rBKegRkMYvMdgNl4K6YuyVs5zWqEYzrFEIFpweVJR
+LF7yP4ECQiEdZU9LV9gh5tBSlpjrj-dENTnTRfVmbCIcSgeayR-IKv9PRGmVtECGmE4XeFJJILbSdqOKEQRZHuGerY5jKS0oM_QGSbbACOSU-G3CGl_4S1D2
+GLQHWFX3761NapfRS2q0mt7hOBWFfofsKN6YTGAW5qBpv4qKmRJa-jxM2KGJmLgvDNxZs1FPN6SIkuqZkeYXW5CVKa4cLnqePUOdqxI-ft9UOE37LLDm8odM
+4exdp_-6PwyNJsYPvv-V2PcftILvEAWAEFiddhq-777GlHYpYD2J6tngYl0Z_FK1UAiwE1hSC9goUh9koSDdz3-s6e_2HLdQByJvTyn30Ep9eSlNiubn80Cu
+rsJnUlBlR4UptzbULjdXNOu6P0zKwkUxYr_RKmmzJvcu9t_kfxTW-TXETzvFZ7sk7zRSUS0fO7jx51y2k3sYSX-70FL4b56vBy3ezS0HTg1uLd0BLezHsUCK
+Vs0GiqTJ8TxNVFdo0m
+}
+
+AWSEntityColoring(WellArchitectedTool)
+!define WellArchitectedTool(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedTool(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedToolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, WellArchitectedTool, WellArchitectedTool)
+!define WellArchitectedToolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, WellArchitectedTool, WellArchitectedTool)

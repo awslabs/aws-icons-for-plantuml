@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AWSCostManagement [64x64/16z] {
+xTU5SiH0281XO0cmS-__lWtN8RKradhxdykNYOj-URTwkflxUg5VwV-zolCiwnbUXfBo0cm2nI8Xa8ndYAU88EE9xYDXpyT8irwV4yrvPEPotZFkmMaVvFDz
+Z7jZ_26-vx4dPE_D_2ly6DB4qq7eMSV0QDKRlSWIlbd6MxjLhz2E5xt09esmB7khZVwGvrQmwXNRRMk-tsTvFiRMtrYjbXj_uJt_VlCtTj_-4_ElipF37-FD
+g_4cxmli-Tm6JzDUuwn1FFjnys-ZFV4PuM_CFHB1MHzlv5Es7niszJ1fuaqcsV_vzz6_ltpz-kKz
+}
+
+AWSEntityColoring(AWSCostManagement)
+!define AWSCostManagement(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, AWSCostManagement, AWSCostManagement)
+!define AWSCostManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, AWSCostManagement, AWSCostManagement)

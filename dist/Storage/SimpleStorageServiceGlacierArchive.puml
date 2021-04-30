@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleStorageServiceGlacierArchive [64x64/16z] {
+xPO7jXmn20H14eAw_u4TU7AsCLh77-g5YJLgUgFyP-Yiq9_gGScG6gScQjt0Y_WRlD87XDRnMFNmzO1QLk1WKZCXgk5h-zpK7Bwke1x-le8SliFyRau3l0VV
+go2uufi0Asum-Ute3T_gcnlYj_SNnEhYt_LTkgoE_-hhyY3SnaF-S3Z4lF3Lnxa7SFS0i7EbuM_OAWgSsyS6XeX1z7mm6Pz2v_u2y8QVWvEsceURvXFoNBE_
+6Pb-GcAw0TP5_uk31oHRfUrF6v-Md6IOiVhhRyYwBOzczXP4stVYF2I9SzZsSz-9Jt4AlxE-t_bvx-BJ_7Ot_u8f0bZgeA9WRL_1KuGuBwF1RFkoqvd0qGU4
+TFrFl_4hOAc81imBNnOfdDP7m9ORNmpmcVxOf7xbPmB61W4mkVL5D-JwZe_7ldzF_cDV-n_xUxc-g7Rzrzz_xMAWl_l_d_-Yh-k68VyBRm4
+}
+
+AWSEntityColoring(SimpleStorageServiceGlacierArchive)
+!define SimpleStorageServiceGlacierArchive(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceGlacierArchive, SimpleStorageServiceGlacierArchive)
+!define SimpleStorageServiceGlacierArchive(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceGlacierArchive, SimpleStorageServiceGlacierArchive)
+!define SimpleStorageServiceGlacierArchiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceGlacierArchive, SimpleStorageServiceGlacierArchive)
+!define SimpleStorageServiceGlacierArchiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceGlacierArchive, SimpleStorageServiceGlacierArchive)

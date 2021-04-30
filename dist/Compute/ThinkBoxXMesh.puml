@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ThinkBoxXMesh [64x64/16z] {
+xPQ7RWGn24G7NBZ__-4Kxkp9ER6HY5PrKTdwn9Z1vN5Tt767DViFNG7fQRm9f0AQaz0LQ5yQ2b0imUl0Aj0ol4mPUTxLjpnVeVtH5pxmhBrkp7dxlhFdcz92
+l8AM3vxD0ErdpmG2SSl9indQsKjJe1hK2b1VahjD5wh_SZ2ZUrxeKmT_U-kX3jdodWBgSba6gs_Zbf0VbEUa5hScvWNQMGuVk4rhr2AUW_NKl1_r3tXFp9m_
+jTZJXorlCrbRwbyf0z3ZbAys2QuZmmjsnXBhh-Iz28r67cZ-isPSP9p2YIKZbxCuwDywy9Z_dR7-DQYeVgiCyvTn_UWVvmnvjj6XVpJi7u5kqtkt7_etdBz5
+WNQOF_7yRuB3_AqHxul4Tlr02NcFpVeLygFyc_NJ-UtwoIBlrcz3sQ_Vp5kt-mTas97VloxTFzVzk-6RxydzVxYGv35SIFDzUDUkFh_5vyVy-VNYytC-xhZZ
+4m
+}
+
+AWSEntityColoring(ThinkBoxXMesh)
+!define ThinkBoxXMesh(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMesh(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMeshParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ThinkBoxXMesh, ThinkBoxXMesh)
+!define ThinkBoxXMeshParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ThinkBoxXMesh, ThinkBoxXMesh)

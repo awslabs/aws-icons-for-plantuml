@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppStream [64x64/16z] {
+xTGtSiH030NHqOB-_lULwGp5gUelQKF-ZEPrYEijU_Pi-yNEEp_6BxPTzotZOy-suIU1Egza1ru2ulD0xWc4NWBg9Q1U0kuzuDu3xZtWtWFkFU3U0-uzWFV0
+wnGlWulNvVwKKsT-7_DLu5cDrtvVvbdD_XMlWTmJM59l0VSUSEy1V9Nx7kX-6HLx0jqJY3s1xWd4da3t169Fe7i2iIVGFO7O4-YUGEm9T4yWzWIw9n1x0lWU
+Y3q1V0_4dW2-1_1f0D_V5JuCZ9hSINmOg5aK7stP9r7nklsyth5dpxu
+}
+
+AWSEntityColoring(AppStream)
+!define AppStream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, AppStream, AppStream)
+!define AppStream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, AppStream, AppStream)
+!define AppStreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, AppStream, AppStream)
+!define AppStreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, AppStream, AppStream)

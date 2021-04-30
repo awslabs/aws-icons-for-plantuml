@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Test description here                                                     -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: clipTransform.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body" 
+     width="450" height="500" viewBox="0 0 450 500">
+<title>Clip Transform Test</title>
+
+    <text x="225" y="40" class="title">Clip Transform Test</text>
+
+    <defs>
+    <clipPath id="clip1">
+        <rect x="175" y="125" width="100" height="50" transform="rotate(45 225 150)" />
+        <rect x="200" y="100" width="50" height="100" transform="rotate(45 225 150)"/>
+    </clipPath>
+
+    <clipPath id="clip2" transform="rotate(45 225 350)">
+        <rect x="175" y="325" width="100" height="50" />
+        <rect x="200" y="300" width="50" height="100" />
+    </clipPath>
+
+    <linearGradient id="grad">
+        <stop style="stop-color:crimson" offset="0" />
+        <stop style="stop-color:orange" offset=".5" />
+        <stop style="stop-color:gold" offset="1" />
+    </linearGradient>
+
+    </defs>
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent">
+
+<rect x="125" y="80" width="200" height="140" style="fill:#eee" />
+<rect x="125" y="80" width="200" height="140" style="fill:url(#grad); clip-path:url(#clip1)" />
+
+<rect x="125" y="280" width="200" height="140" style="fill:#eee" />
+<rect x="125" y="280" width="200" height="140" style="fill:url(#grad); clip-path:url(#clip2)" />
+
+<text x="50%" y="240" style="text-anchor:middle">transform on &lt;clipPath></text>
+<text x="50%" y="440" style="text-anchor:middle">transform on &lt;clipPath>'s children</text>
+
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

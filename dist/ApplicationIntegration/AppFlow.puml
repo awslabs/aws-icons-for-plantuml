@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppFlow [64x64/16z] {
+xPHNUiGm489HcwBxtpSzBcH3ejVzzBzijSt0eFcyR3QRLg_uN6IWNa39kKIYpWk6iQWUTyKLIm8SRTu8_a9Ja5gGPc1eGpI9ykYUDlz9XukP7XF-JlxqAZs_
+FUtIiNUCil9HSUYk2E5OjpVYlYiDA40N6PAxP9vR31oVinJX6ByzxjOH8W5InY8xt65g0yYnYg0RP_iKrCW-QXU_vMlyL_UobEIt5BbeuE6Bj-JDAqWI9h8p
+UA3HNA8IF6EYLyHzBWfOPrU07kQF6XUeVvUruvrsdyi-E8Ifz1oem-zp9JxHrSkpgJoNVoAgJyMMUUi4LazyuIujujA1fxkg6w1FQvaX2rgYWhDRmr7gIK7C
+HNgzCkRpijbiNW4
+}
+
+AWSEntityColoring(AppFlow)
+!define AppFlow(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, AppFlow, AppFlow)
+!define AppFlow(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, AppFlow, AppFlow)
+!define AppFlowParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, AppFlow, AppFlow)
+!define AppFlowParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, AppFlow, AppFlow)

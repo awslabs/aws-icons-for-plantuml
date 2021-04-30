@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagedStreamingforApacheKafka [64x64/16z] {
+xPJdhlD024GFi0Ny_k_xbMiKfQ5izlxrf1uh8mybUxpNfKkNkc3n2pjgoBvVz3W6SzkF7STaRFkDCONOpm-mdxynvd1aCu1Z_pycjfi-iWjpC_tv9JPQUCOE
+cyTeiLD1YCJX3AVVHLbL5krqqRjMh6lGVYQGHaU_Iu-aBPDt-dVf_VGFo-IABz_S_wTFVw3vLSCNxqt-vy_vcMS58BwoDjQ5U7EzTIIMpeo9l0ZBisJDhyz2
+r_mTwxpDRttfB6n5doolVrOKbsDz_xff6nKlz004n0ikVUFS6lJ_BmSKx8LVaTORj4mjBwoj6_GoW03g7tWkDB_YM9b2D45q5FnH0zHCqCZKFmoMN6dAl6jt
+D0gsoWzY2Yrv9DiJjthjLDJylcuHctUieiqNrbTvyYKlgCoTN6i-zgbnOt_eezNtpJdTiRvmdSEppfe5RdpfqgM_
+}
+
+AWSEntityColoring(ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafka(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafka(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafkaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)
+!define ManagedStreamingforApacheKafkaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, ManagedStreamingforApacheKafka, ManagedStreamingforApacheKafka)

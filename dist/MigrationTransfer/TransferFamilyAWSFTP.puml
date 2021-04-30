@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TransferFamilyAWSFTP [64x64/16z] {
+rTO5aiD034HHmM3V_xw1iQEoGZKAvoyQNYy3_LdobEQE-Xm7wbFS3SHv7SyUv_RYKUu7uZm-u8qTFCpzOPpx4t4U7-W0-g4LI3iU03R0UfxZYbFB-MB7RFjd
+5JTGHmr8oo5GHvcMS9dIHRBnv0AgR5C07FFaIa3ZKSnR5MiSyrP_qdDU8Y9L3NfVH_k85xtIXHVL1gYgd7d6jTXxzythlKIzNlWi5z6vPndbQpvDVVv6-W6l
+PGIOR-D4dlHOCtygp_cAaPrlM9CfFmOwaojXm0dl1ZoVzJRWUS3RWEC1RmF6Gzu6ZCUy3HWFUXim7lCsO3paRS3niAVgUDnJ4WfxtzzuBYCgQwpbK9ht617M
+EEDO2_Wa8YIYG1QXZCuAf7alDE9nqz4JLTJF-LeAUyyTEVJvawr71pg7Fd_aVIkEUz_HxCojZz_dVGLAwa1MvNjUr2fRpx3qdi-t_aMLze1tdn2MfUD94TkL
+zPgxoUxyXVO
+}
+
+AWSEntityColoring(TransferFamilyAWSFTP)
+!define TransferFamilyAWSFTP(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, TransferFamilyAWSFTP, TransferFamilyAWSFTP)
+!define TransferFamilyAWSFTP(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, TransferFamilyAWSFTP, TransferFamilyAWSFTP)
+!define TransferFamilyAWSFTPParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, TransferFamilyAWSFTP, TransferFamilyAWSFTP)
+!define TransferFamilyAWSFTPParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, TransferFamilyAWSFTP, TransferFamilyAWSFTP)

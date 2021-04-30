@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ControlTower [64x64/16z] {
+xLJPskKW28k08EVz7tY6Dlz-jkhiqrpuTKii8NBvWt7YXA_H5NsDtj1Nw9Qo863GR5Ymm00iEMWBz1Yry6A23jal4fWGIBJaPV3o6BmuGskDE4hcVWEGdAcz
+3T8fm2TFWWKFG64GNZylqEcNXcDuPob-f7p2ttRD8x4XalaZnZWG6yOVxyvVU-p1e7MrkK0L9j2weObtgr3xxjt-eTRkVQjVgmRPk-2Nb7wJ3jXBREAIqDs_
+R58NUmvIW7wBRWfZtzsj5aLt5tWjaXkztvX8ZfO9H0bTHT4wsiqeTKY3qxW8XqKOF48GjIX7MaFSY1tOxPIwWB1-oCPxxMdSpAqpPvl93at7I2c2wai6ZVGR
+y4q-EVq52lJFQRuDzevm0I1ljq_DeT7YlINlRlpu67FCpTxOs-2EOReh7H3Ajfie4B3l3dcMpOF6i4FVZkK1WM2Ge6_JV6A6P-VLSKGBNdcRQGA3nDXCO3JV
+_jz8dp0W1JPPFkrl9J2BcbIw8D0XewAu8805Ei_l4iRbv-74YMy
+}
+
+AWSEntityColoring(ControlTower)
+!define ControlTower(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTower(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ControlTower, ControlTower)
+!define ControlTowerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ControlTower, ControlTower)

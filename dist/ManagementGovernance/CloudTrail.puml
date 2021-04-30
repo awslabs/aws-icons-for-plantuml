@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudTrail [64x64/16z] {
+xTDLOaKX40FG86FP_tvhFALCtSkvaXzS-ETisxQ5j5gR1jya6e1I0FJWwndGB4XgHV4tL2_60mMCh-DNVNg1yrKgV6ek-0eAcQVJwIBAboa8Ncje05wuaWRX
+983ceK3mUHtEcVIvvLm5CwNoMLuACmtsWdFRcH6WA9cBWkRCXHRKOAf2dr_UoeoXyraToem5drSAtqNWND4Xw8TC68mh69nwo8H1kM93C0wPq6N_RaFm_XTs
+bboGISUW1E2ECruBL2wO3avLZT2pgNg5ySrS0E620eTrFwJIiLACAzOQhTqxfD7R8rsTFyAsRTij
+}
+
+AWSEntityColoring(CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudTrail, CloudTrail)
+!define CloudTrailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudTrail, CloudTrail)

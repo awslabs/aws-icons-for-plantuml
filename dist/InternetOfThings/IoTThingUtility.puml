@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingUtility [64x64/16z] {
+xPS7RiGm30HDKeNx_myd1g_pj53az6HGN0SgQwjitmmnEnqa7ROuK0pGkuEz7lHoAF_-MAsjjGwqEFHqQ76ezinMnpIksKywmv-rkswJLA3aUzYc0Uf1lr5V
+Md-WlSblIDZG5zlf3xxVaVnkEn8z7zpxUaj9Vc13Fp7sDzrfjtv5Gk_zhZl3_2neG8apdUd_H05aInppUNuMvFhBL7uLGzmcykiWTA7vXU_w56i0N6X-uMy3
+f0ETzJ_tet5bsG_DINwi_N8kGtX-7GFgwKtZ-RM17WLhykdtTwK26dv9zPyPFotvkV-v7_FN0Vz4zlFuan57u9A-tpJ-SLX-74UKH_9ZrFXzM7uCYVBu_yEB
+1tpP5y1hn4VoeyLR_Bzh-VckLa0NymFgnF_7_1xbB-RN0E-0B-Vds57gKsht9YJ_W-ktihf-FBv-FRv-3ihi-htyxt-M_SFxrs_62m
+}
+
+AWSEntityColoring(IoTThingUtility)
+!define IoTThingUtility(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtility(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtilityParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingUtility, IoTThingUtility)
+!define IoTThingUtilityParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingUtility, IoTThingUtility)

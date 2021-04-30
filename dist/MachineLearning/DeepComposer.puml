@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeepComposer [64x64/16z] {
+xTO5biCm30JGCGZlVzzb5GD-LfSpPVYAWhO_9aUE60_65ZbZEBp03KK6Ks1BYnSVZ82Nl8vw_JglhLB2Ar3GvZr1lQDD-uwtfvRmKI3Xey2KZm8swwbeT33b
+EzuBoBH7qJZcXxtPsGj05JhgfLUyfeHtAGYowxa0fNMYLiE_jZEu_xIWa7ea_7LerLFqkU6jOSrtLFDjRmJK5KztPrhutaXKLQW2HNJPtt9J3K-8D5dTVYXs
+-RdYDT6_CXEpRcr_oCMoAyh5FXmw_o-xh-ZHpB3NoprCxWcFuXcle9HdoEDyI_PVIchx2Nfc_rc1ZVg5uqShs2Ty7By0-uoFywUfp_WuVxFpXr_W4_EtnFmn
+FN_Dpv_pENBa6G
+}
+
+AWSEntityColoring(DeepComposer)
+!define DeepComposer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepComposer, DeepComposer)
+!define DeepComposer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepComposer, DeepComposer)
+!define DeepComposerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepComposer, DeepComposer)
+!define DeepComposerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepComposer, DeepComposer)

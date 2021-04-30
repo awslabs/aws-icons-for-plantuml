@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraAmazonRDSInstanceAternate [64x64/16z] {
+xTO5hYmv38NXOqWgji_-rpkkkepg33tgJuf2-YysuMSXvZSpmJiZkIKShqXoMyXBNcGTmsys5id4aoINO8i46S1bT8vjIThJgWJRzEcx2ddWfARO42HEHWwS
+YeaDanGq9nrDISf6FqXztGyk3i2cZZKmbmDsh4EXipamrhB7-_b97pIkwxZ8wW5a9Gk3BJ1PfFTqplQnPu8531u83XGL0aHFmBeEn1ZT7-VsGsyya3ICn_ka
+0kPNxzqf2o2l_k3yq1-i9EURFbZiIQga-_osJqOaytMl32ng3mU4TOwlUY419ULLRqpjoLdkXkGukBxg1mD0qL_rFTZJP4jOaILVzMBdHat417eD0AvY46iA
+Y3k0lZ_7ktxRJzTBm-bfXhZBxVrYcy31jgxpvXlzCOhUVSna0CNfqpRwyVo_5LALXRRL3wwhHt08EVRwgSbnzjUc5mpTwLlYfSSeqZRw8-Xu_ldHWhdH3tl-
+_aL5KzPEZw1tlpoOa65wCBPwPtRVKY1ifJVtvWAuGzrTqNJC8RYrttVlx_szl_T63ZpR__mgv0Bs1UjfmN_o-HrE1dP9alRyap0LMop9zVfhCUQ6E0Cya-2s
+XTTiSKSjmtjYjrB1J-Cl
+}
+
+AWSEntityColoring(AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)
+!define AuroraAmazonRDSInstanceAternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraAmazonRDSInstanceAternate, AuroraAmazonRDSInstanceAternate)

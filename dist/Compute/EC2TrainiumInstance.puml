@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2TrainiumInstance [64x64/16z] {
+xPS5Oe1030Htauly_yL5Kc-1gqi6bq7EWny5LNcwFK0ovSBsu_tsQGkUwLUsn3Ci9x1FyN6HZ_Mf6pxZkswmygIuxXVoNl-zt__UzFj1VkT_vx_4WgDmhTkl
+vpyrI0AW0CG2QukxWyFybm3INSq3BYCi38cGEd0BFSZ_yec5vA8OrEzympOVv7_vm70hNvxvX_bVVYWV-Zuaxlp3_EC038krtafHSC3Mm-rWcxl-T_tl_E_y
+_m7ZptUCdt_O-B_zw_7hZ-86
+}
+
+AWSEntityColoring(EC2TrainiumInstance)
+!define EC2TrainiumInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2TrainiumInstance, EC2TrainiumInstance)
+!define EC2TrainiumInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2TrainiumInstance, EC2TrainiumInstance)
+!define EC2TrainiumInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2TrainiumInstance, EC2TrainiumInstance)
+!define EC2TrainiumInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2TrainiumInstance, EC2TrainiumInstance)

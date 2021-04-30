@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IdentityAccessManagementDataEncryptionKey [64x64/16z] {
+rTS7ikCg44RX7-WczDd_Uj-RKPcwoG6OV2hPaZxbgB-dOciLtQkodkjBnaxsnGzmMyjXVF7GDKjPJ-lmsFi067xcIt0hoe4tWERU06pRPw1AEKiLoBj-WAi4
+H973sFG5kX9NIHtAdg-GvT0Qk3AqFNyDhv3JHOEnvmT3CeW0amPni7mDW24fTds39Ab6D4a9-futgDAiWkzv1MJToe0slG7bZVkkLmDwbb87khQz6e0KGDE1
+LmcG88gEl1gy_JltL6cMYfMqvGjWKtS0UjhmAQ3ggZ3Bwtx0q5K6XXKVG5hsJAu1TGxl6vuo5p_LWBJgVMwklzt437pLAw3EVxSor5NV8DBdIQ6j-idFVTEv
+BmsQPEuUuBSg37Ut5zwvIYhSBp_tgW1PCkvNdlgtOsvWwNE-u9MIBa_Hvsp1tthp7eITUmV0Zdr0XpZsq2RvaUN_iUsNJNxe5GpzozxTJltiJ_XxBVlJ-yzR
+tkxbUkBNwl3Jlv-CdOg-vApdkbSkQsNzHVqF
+}
+
+AWSEntityColoring(IdentityAccessManagementDataEncryptionKey)
+!define IdentityAccessManagementDataEncryptionKey(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, IdentityAccessManagementDataEncryptionKey, IdentityAccessManagementDataEncryptionKey)
+!define IdentityAccessManagementDataEncryptionKey(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, IdentityAccessManagementDataEncryptionKey, IdentityAccessManagementDataEncryptionKey)
+!define IdentityAccessManagementDataEncryptionKeyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, IdentityAccessManagementDataEncryptionKey, IdentityAccessManagementDataEncryptionKey)
+!define IdentityAccessManagementDataEncryptionKeyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, IdentityAccessManagementDataEncryptionKey, IdentityAccessManagementDataEncryptionKey)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraSQLServerInstanceAlternate [64x64/16z] {
+xSy7hk0W34NHQumXXhV_xKv9-RqbAbD-RbIVT0Bmj-JrHFuIfqws51vhkb0yundrH95FVk3IT4vM9HbhAJcd2wa3O59oeQ5vN3-uK9DiVqa53mTAX84vQ-lu
+RY4L3hzepaBLr2mq6G2BnYnVy-e0Cx6PXxTjn0lO-c46Rc2K5tuO50KiElmsCeR2b79rPhSvL5ofvpwaeAf2b-t-6EbfMWgPHTu6sLsjFFUKLFZcsVqwrgQS
+QMeGCyGoStPNvOK7zVN1OpnwJ3taNbPloeLbkDjhtwChMDIwWgRU0hQng7bTFKD1AAg_ziiS3UXJ3MfcBh2FCKQG5OWqQ6DuIN_XjrQpy9NUytY_uazq-zlV
+_lQtl_tjRr-au49TCW2av49JaxNbqWEQr5ahak82dyPMI1hjJ7tgwQL3vvkLnwpFaxeRpxFYNwuOVqi_0G
+}
+
+AWSEntityColoring(AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
+!define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)

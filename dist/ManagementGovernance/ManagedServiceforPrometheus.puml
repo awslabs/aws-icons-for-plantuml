@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagedServiceforPrometheus [64x64/16z] {
+xTO5cXqn30DWsJ74klzzI_CDb1ENk_i_nf02_9LUlPensJS5W1QRIk1fK3O5WgHXiiTG91F17aUUzoq5oGe8TrJn4lZ0kIm5aBmRO1QbSEPQ3YR4NSuEBv4F
+3uhL72YABEXPVF2zmceEC4Xou2n-DmVoeGoLi_ZT71Y23DXP_26E72oKNmeHGEielf437-eEdGEuoqi0aBaHN62Cnn-KMnJNAP9C33PTuzWan--5JUC7wrz7
+_nMxQeYCuh_8nvTOSP7WYoON9PIVCZYNEOnFsqbG99ycf3RtlUA3Od9BGlDcS6voF8tEpXMdWSbjYkVJVNuLMXZSD-4yDBV_CuJTuySu8w32Za3olOAnOyAk
+lRD5zDexEyuVYh8du9aPCFOK3iccZ0_ugxnwzHO
+}
+
+AWSEntityColoring(ManagedServiceforPrometheus)
+!define ManagedServiceforPrometheus(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, ManagedServiceforPrometheus, ManagedServiceforPrometheus)
+!define ManagedServiceforPrometheus(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, ManagedServiceforPrometheus, ManagedServiceforPrometheus)
+!define ManagedServiceforPrometheusParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, ManagedServiceforPrometheus, ManagedServiceforPrometheus)
+!define ManagedServiceforPrometheusParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagedServiceforPrometheus, ManagedServiceforPrometheus)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticBlockStore [64x64/16z] {
+xTP9aaKX24HH5279_I_uzxrD-CAQbMViTQR0lx1juNVW0FmkM36vKmwet5cpJxW83WGkKgVFefoWajizL7GcLtHwgkX4pcvVNT3C1trzGPrtUcZm-u80_0Bu
+oHaATgdp8agMjwJEArTE2RqsvhXoqooIm7bPIdnVQ2B1MI65lroSio3LOIIn0_s5caVm8c2QH0xrvba-PSEndYJSIj5Ip47oQF_bt_Ixt_tkGmhhtZajhVtV
+ZFoS7n5mAxtvqPzVAEdW_Ahd9-0tdVcvCByNzuVb_MLrVrhTtzRtn-NzTNr_NhTjPm
+}
+
+AWSEntityColoring(ElasticBlockStore)
+!define ElasticBlockStore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticBlockStore, ElasticBlockStore)
+!define ElasticBlockStoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticBlockStore, ElasticBlockStore)

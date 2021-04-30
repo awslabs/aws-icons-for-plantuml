@@ -1,0 +1,403 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- ====================================================================== -->
+<!-- Test of getBBox interface for various elements with various property   -->
+<!-- values (fill, stroke, visibility, display).                            -->
+<!--                                                                        -->
+<!-- @author deweese@apache.org                                             -->
+<!-- @version $Id: bbox.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     onload="start()">
+  <title>Test getBBox interface</title>
+  <text x="50%" y="45" class="title">Test getBBox interface</text>
+
+  <script type="text/ecmascript"><![CDATA[
+     var svgns = "http://www.w3.org/2000/svg";
+     var root;
+     var pref       = new Array("n", "v", "d" );
+     var fillStroke = new Array("-", "f", "s", "fs" );
+     var elemT      = new Array("p", "t", "u", "i" );
+     var xLoc       = new Array(35, 115, 195, 275);
+     var yLoc       = 10;
+
+     function start() { 
+       root = document.getRootElement();
+       for (i=0; i<pref.length; i++) {
+         for (j=0; j<fillStroke.length; j++) {
+           for (k=0; k<elemT.length; k++) {
+              doBBox(pref[i]+fillStroke[j]+elemT[k], xLoc[k], yLoc);
+           }
+         }
+       }
+
+      updatePath("u-p");
+      updatePath("ufsp");
+
+      updateText("u-t");
+      updateText("ufst");
+
+      updateG("u-u");
+      updateG("ufsu");
+
+      updateImg("u-i");
+      updateImg("ufsi");
+
+
+     }
+
+     function updatePath(id) {
+       doBBox(id, xLoc[0], yLoc);
+       var elem = root.getElementById(id);
+       elem.setAttribute("d", "M 10,25 c 0,-40 60,20 60,-20z");
+       doBBox(id, xLoc[0], yLoc);
+     }
+
+     function updateText(id) {
+       doBBox(id, xLoc[1], yLoc);
+       var elem = root.getElementById(id);
+       var txt = document.createTextNode("getBBox");
+       elem.replaceChild(txt,elem.firstChild);
+       doBBox(id, xLoc[1], yLoc);
+     }
+
+     function updateG(id) {
+       doBBox(id, xLoc[2], yLoc);
+       var elem = root.getElementById(id);
+       var use  = elem.firstChild;
+       use.setAttribute("x",      "190");
+       use.setAttribute("y",      "5");
+       use.setAttribute("width",  "20");
+       use.setAttribute("height", "20");
+
+       doBBox(id, xLoc[1], yLoc);
+     }
+
+     function updateImg(id) {
+       doBBox(id, xLoc[2], yLoc);
+       var elem = root.getElementById(id);
+       elem.setAttribute("x",      "261");
+       elem.setAttribute("y",      "5");
+       elem.setAttribute("width",  "43");
+       elem.setAttribute("height", "20");
+
+       doBBox(id, xLoc[1], yLoc);
+     }
+
+     function doBBox(id, locX, locY) {
+       var elem = root.getElementById(id);
+       var bbox;
+       if (elem) bbox = elem.getBBox();
+       var rect = document.createElementNS(svgns, "rect");
+       if (!bbox) {
+         // No BBox undisplayed etc...  use small crimson rect.
+         rect.setAttribute("x",      ""+locX);
+         rect.setAttribute("y",      ""+locY);
+         rect.setAttribute("width",  "10");
+         rect.setAttribute("height", "10");
+         rect.setAttribute("fill",   "crimson");
+       } else {
+         rect.setAttribute("x",      ""+bbox.x);
+         rect.setAttribute("y",      ""+bbox.y);
+         rect.setAttribute("width",  ""+bbox.width);
+         rect.setAttribute("height", ""+bbox.height);
+         rect.setAttribute("fill", "none");
+         rect.setAttribute("stroke", "black");
+         rect.setAttribute("stroke-width", "2");
+         rect.setAttribute("stroke-opacity", "0.5");
+       }
+
+       elem.getParentNode().getParentNode().appendChild(rect);
+     }
+    ]]></script>
+  <defs>
+     <symbol id="Batik_Squiggle" viewBox="0 0 540 570">
+        <path id="Batik_Squiggle_Blue" 
+         d="M172,44C137,60,31,135,11,199c-8,27,22,48,44,33
+            C14,306-1,332,0,356c0,14,13,42,44,27c8-4,35-25,52-41
+            c14-1,24-11,42-28c17,14,36,10,52-7c22,2,82-78,44-108
+            c-3-24-30-37-53-18c-6-2-13-1-18,1c22-35,43-82,49-105
+            C219,47,188,36,172,44z"/>
+        <path id="Batik_Squiggle_Red" 
+         d="M400,0c-18,3-49,31-49,31c-29,23-43,58-28,95
+            c-13,14-29,44-29,67c0,28,20,52,50,29c7,8,21,16,37,5
+            c-5,29,3,48,26,49c1,10,13,31,36,17c16-10,58-39,79-56
+            c25-23,25-94-18-89c33-59-3-96-27-84c-10,4-46,25-52,30
+            c-1-7-5-12-11-14C436,45,436-5,401,0z"/>
+        <path id="Batik_Squiggle_Green"
+         d="M275,353c-46,12-88,43-114,91c-9,16,6,37,25,33
+            c-14,24-40,67-15,81c28,16,52-8,60-15c18,21,50,10,81-17
+            c41,14,68-2,103-53c8-12,30-43,30-65c0-16-15-30-35-21
+            c-1-12-9-38-53-19c-10-6-31-5-54,17
+            C308,375,300,347,275,353z"/>
+     </symbol>
+  </defs>
+
+  <g id="test-content" transform="translate(0, 60)" >
+     <g> <!-- The test grid -->
+        <g stroke="#000">
+           <rect x="10" y="0"   width="20" height="120" fill="#eee"/>
+           <rect x="10" y="120" width="20" height="120" fill="#ddd"/>
+           <rect x="10" y="240" width="20" height="120" fill="#eee"/>
+           <rect x="10" y="360" width="20" height="60" fill="#ddd"/>
+
+
+           <rect x="30" y="0"  width="410" height="30" fill="#f8f8f8"/>
+           <rect x="30" y="30" width="410" height="30" fill="#f0f0f0"/>
+           <rect x="30" y="60" width="410" height="30" fill="#f8f8f8"/>
+           <rect x="30" y="90" width="410" height="30" fill="#f0f0f0"/>
+
+           <rect x="30" y="120" width="410" height="30" fill="#e0e0e0"/>
+           <rect x="30" y="150" width="410" height="30" fill="#d0d0d0"/>
+           <rect x="30" y="180" width="410" height="30" fill="#e0e0e0"/>
+           <rect x="30" y="210" width="410" height="30" fill="#d0d0d0"/>
+
+           <rect x="30" y="240" width="410" height="30" fill="#f8f8f8"/>
+           <rect x="30" y="270" width="410" height="30" fill="#f0f0f0"/>
+           <rect x="30" y="300" width="410" height="30" fill="#f8f8f8"/>
+           <rect x="30" y="330" width="410" height="30" fill="#f0f0f0"/>
+
+           <rect x="30" y="360" width="410" height="30" fill="#e0e0e0"/>
+           <rect x="30" y="390" width="410" height="30" fill="#d0d0d0"/>
+
+           <line x1="120" x2="120" y1="0" y2="420"/>
+           <line x1="200" x2="200" y1="0" y2="420"/>
+           <line x1="280" x2="280" y1="0" y2="420"/>
+           <line x1="360" x2="360" y1="0" y2="420"/>
+           <line x1="10" x2="440" y1="120" y2="120" stroke-width="3"/>
+           <line x1="10" x2="440" y1="240" y2="240" stroke-width="3"/>
+           <line x1="10" x2="440" y1="360" y2="360" stroke-width="3"/>
+        </g>
+        <text transform="rotate(-90,25,60)" x="25" y="60" text-anchor="middle">Normal</text>
+        <text transform="rotate(-90,25,180)" x="25" y="180" text-anchor="middle">visiblilty="hidden"</text>
+        <text transform="rotate(-90,25,300)" x="25" y="300" text-anchor="middle">display="none"</text>
+        <text transform="rotate(-90,25,390)" x="25" y="390" text-anchor="middle">Update</text>
+        <g font-size="15">
+        <text x="110" y="22" text-anchor="end">none</text>
+        <text x="110" y="52" text-anchor="end">fill</text>
+        <text x="110" y="82" text-anchor="end">stroke</text>
+        <text x="110" y="112" text-anchor="end">fill+stroke</text>
+
+        <text x="110" y="142" text-anchor="end">none</text>
+        <text x="110" y="172" text-anchor="end">fill</text>
+        <text x="110" y="202" text-anchor="end">stroke</text>
+        <text x="110" y="232" text-anchor="end">fill+stroke</text>
+
+        <text x="110" y="262" text-anchor="end">none</text>
+        <text x="110" y="292" text-anchor="end">fill</text>
+        <text x="110" y="322" text-anchor="end">stroke</text>
+        <text x="110" y="352" text-anchor="end">fill+stroke</text>
+
+        <text x="110" y="382" text-anchor="end">none</text>
+        <text x="110" y="412" text-anchor="end">fill+stroke</text>
+        </g>
+     </g>
+
+     <g font-size="18" text-anchor="middle">
+        <g transform="translate(120,0)">
+           <g fill="none" stroke="none" stroke-width="3">
+              <path id="n-p" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="n-t" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="n-u">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="n-i" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,30)">
+           <g fill="crimson" stroke="none" stroke-width="3">
+              <path id="nfp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="nft" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="nfu">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="nfi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,60)">
+           <g fill="none" stroke="gold" stroke-width="3" >
+              <path id="nsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="nst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="nsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="nsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,90)">
+           <g fill="crimson" stroke="gold" stroke-width="3">
+              <path id="nfsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="nfst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="nfsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="nfsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+     </g>
+
+     <g transform="translate(0, 120)" font-size="18" text-anchor="middle">
+        <g transform="translate(120,0)" >
+           <g fill="none" stroke="none" stroke-width="3" visibility="hidden">
+              <path id="v-p" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="v-t" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="v-u">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="v-i" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,30)">
+           <g fill="crimson" stroke="none" stroke-width="3" 
+              visibility="hidden">
+              <path id="vfp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="vft" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="vfu">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="vfi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,60)">
+           <g fill="none" stroke="gold" stroke-width="3" visibility="hidden">
+              <path id="vsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="vst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="vsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="vsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,90)">
+           <g fill="crimson" stroke="gold" stroke-width="3" 
+              visibility="hidden">
+              <path id="vfsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="vfst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="vfsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="vfsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+     </g>
+
+     <g transform="translate(0, 240)" font-size="18" text-anchor="middle">
+        <g transform="translate(120,0)" >
+           <g fill="none" stroke="none" stroke-width="3" display="none">
+              <path id="d-p" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="d-t" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="d-u">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="d-i" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,30)">
+           <g fill="crimson" stroke="none" stroke-width="3" display="none">
+              <path id="dfp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="dft" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="dfu">
+                <use x="190" y="5" width="20" height="20" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="dfi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,60)">
+           <g fill="none" stroke="gold" stroke-width="3" display="none">
+              <path id="dsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="dst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="dsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="dsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,90)">
+           <g fill="crimson" stroke="gold" stroke-width="3" display="none">
+              <path id="dfsp" d="M 10,25 c 0,-40 60,20 60,-20z"/>
+              <text id="dfst" x="120" y="20" stroke-width=".5">getBBox</text>
+              <g id="dfsu">
+                 <use x="190" y="5" width="20" height="20" stroke-width="20"
+                      xlink:href="#Batik_Squiggle"/>
+              </g>
+              <image id="dfsi" x="261" y="5" width="43" height="20"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+     </g>
+
+     <g transform="translate(0, 360)" font-size="18" text-anchor="middle">
+        <g transform="translate(120,0)">
+           <g fill="none" stroke="none" stroke-width="3">
+              <path id="u-p" d="M 40,25 l-10,-10 l10,-10 l10,10 z"/>
+              <text id="u-t" x="120" y="20" stroke-width=".5">sm</text>
+              <g id="u-u"
+                 ><use x="195" y="10" width="10" height="10" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/></g>
+              <image id="u-i" x="271.75" y="10" width="21.5" height="10"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+        <g transform="translate(120,30)">
+           <g fill="crimson" stroke="gold" stroke-width="3">
+              <path id="ufsp" d="M 40,25 l-10,-10 l10,-10 l10,10 z"/>
+              <text id="ufst" x="120" y="20" stroke-width=".5">sm</text>
+              <g id="ufsu"
+                 ><use x="195" y="10" width="10" height="10" stroke-width="20"
+                     xlink:href="#Batik_Squiggle"/></g>
+              <image id="ufsi" x="271.75" y="10" width="21.5" height="10"
+                     xlink:href="../../resources/images/tde.jpg"/>
+           </g>
+        </g>
+     </g>
+  </g>
+
+</svg>
+
+

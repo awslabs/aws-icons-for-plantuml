@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DirectoryServiceAWSManagedMicrosoftAD [64x64/16z] {
+vTK5TjWm44NHFsBDs_z-6nKcu7CCAhSt32_qvLX_i6Jw7WMIj0yOsjS0idOPYslNWDAXQa-6AGDCMnoILA5hGuI-jw415h_6S_67qu2YfnBuuTK7vfk3qw0z
+tsue0BQnNNYuuJ6Oa1vkTpYAEzk50MLZks3WMzjjR5XWwC1lR-XWrryrtFr99-Z4vLygZQehrqkPvHV9T71vKb8TJfWjDhfrKilae5qU_31OPczbgNsmU58u
+lL8RqFE7NyV1Rvuonqq77TBfmG_0SRtiaEzjnp9AKkoOcqFqLziHV8xXiMFq5tSAcFNZWDuQv8ljeX-ISkt3bxMZIINwkE6Sz4VHnp-jpJwss-zdlBxL5nZQ
+wsExgxxszMhgITRcQ6_x2arN_QJeo_FfjVReuuPpsRkKeOYg9VeEFOU3RttpebafcbHxqoVEZMzzyUAYo3gqZLvEMVsBHebUgPnIzBbgzGir-alHBnIDLYVs
+j2zPIqqgVJJJm_xWF-XFhsuRa7HB1MPDR-FIWQcR6Ynpz5vR7nEMQRehTJwQHO_aDZpk8hsOjfYP_YcV
+}
+
+AWSEntityColoring(DirectoryServiceAWSManagedMicrosoftAD)
+!define DirectoryServiceAWSManagedMicrosoftAD(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DirectoryServiceAWSManagedMicrosoftAD, DirectoryServiceAWSManagedMicrosoftAD)
+!define DirectoryServiceAWSManagedMicrosoftAD(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DirectoryServiceAWSManagedMicrosoftAD, DirectoryServiceAWSManagedMicrosoftAD)
+!define DirectoryServiceAWSManagedMicrosoftADParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DirectoryServiceAWSManagedMicrosoftAD, DirectoryServiceAWSManagedMicrosoftAD)
+!define DirectoryServiceAWSManagedMicrosoftADParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DirectoryServiceAWSManagedMicrosoftAD, DirectoryServiceAWSManagedMicrosoftAD)

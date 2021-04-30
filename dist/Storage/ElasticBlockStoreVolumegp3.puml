@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticBlockStoreVolumegp3 [64x64/16z] {
+xPO5ikDG30J5qjp_mbjQ-lmWJ5sG6Bha6IFT6ZfagXU6r4GFJ8YXRa3fW09ie3C0fiDtA40dxOugY4cyoJuTdgRyM86yPPjL89Fmqmfsmy_tD02n202RNhUR
+rx5Z2wSJ8x657faVf_UJbl5b_-M__9TlsUXHVc77v_z__luJE2tx3bI0657uivxBr_ChWgNQBsM7jPwwxWUOADhleKWYhKBngf-WTtxMtmBYiFdrnoVKUdud
+plRZprpUcqy1LBMFoiwTo5pEtx3yFNvrOoAs2DkyVYlRF-ZwPsG2Sh1Fuk6TrkH9dXyl_-MNBfEd__xB8x-_IRTWkX5-0G
+}
+
+AWSEntityColoring(ElasticBlockStoreVolumegp3)
+!define ElasticBlockStoreVolumegp3(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticBlockStoreVolumegp3, ElasticBlockStoreVolumegp3)
+!define ElasticBlockStoreVolumegp3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticBlockStoreVolumegp3, ElasticBlockStoreVolumegp3)
+!define ElasticBlockStoreVolumegp3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticBlockStoreVolumegp3, ElasticBlockStoreVolumegp3)
+!define ElasticBlockStoreVolumegp3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticBlockStoreVolumegp3, ElasticBlockStoreVolumegp3)

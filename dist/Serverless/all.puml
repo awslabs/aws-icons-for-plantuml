@@ -1,0 +1,16 @@
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+
+sprite $Serverless [64x64/16z] {
+xTTbWkCm30NW9vOozp_lGD5kusvWUV9-5VGPW_77ypPjpjkNdtRax_I7F_pXquHPDBRv5815623Ru0taTIuHKAxr2csA2BdE6xen5r6jyGbz_874Sh4NF7Rd
+p83KCb-ONN47B_EEcfyiR95NckR3jC2d4G-yeNxaWmO7NBaAGUErD_3rkzifTQvZW9WPe7ZXxRxnYNE-VF7zQ2RuqESdRxnSYq2D4UJ82xLj2VYwxzKTp3po
+iDP7W4zSXeT7xmFP-Ic-gChJuUaZNvrl-su3Mz8_nMcikjndCx1sHvUEVo9-gDIv1W8vy8xeE7zL6gJtJCFZZv4Df_Ct1sKtenZwkX-T3Kk2LRiWGp-LWDJS
+NQcvN9K2ubcLHj3Nvtyg0G19TkqQuHIE1TVFgkav5UvH_ytz-_27F_pkzzS_dWy
+}
+
+AWSEntityColoring(Serverless)
+!define Serverless(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Serverless, Serverless)
+!define Serverless(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Serverless, Serverless)
+!define ServerlessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Serverless, Serverless)
+!define ServerlessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Serverless, Serverless)
+

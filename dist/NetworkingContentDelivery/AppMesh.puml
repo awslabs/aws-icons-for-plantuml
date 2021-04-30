@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppMesh [64x64/16z] {
+xPO5bbin3017jaM-_tsB_uMZJ-Nkx0QLaHdc7yi77wHgdj41EP50SSCEwoxeeCKnEne8DEX7CXYCdEupnxTtUucUrxVulhBxOxBbiGcNLuCMD5ztpRmXzdem
+wQvMwWtWtPJB0T2hcgE6leyFV12d_4wird_MzQyGgVglkRHPyZLkyg8A8OX_YrSiSSldIBCbNX9noNGxV_CfliPrrMG7d_k93Zh6W9wR9TLvnHj0YwTutNzN
+b73iARxPDqR7Z_kpmvXxVFSotnAlgSixw__S-ajR-_nJ_K3A2YeIA-SjnGyCGRAAUrJxNsTQbJzedNvdZ7ab6rt8idq8eY_xAmS8s2p9QOBS-bUx-To4wRCV
+JtQDYrxyjElnkzq7_UQdmg4BYB3SNvgVkZ_voVlRsVlZsVlh7yi77tm6
+}
+
+AWSEntityColoring(AppMesh)
+!define AppMesh(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, AppMesh, AppMesh)
+!define AppMesh(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, AppMesh, AppMesh)
+!define AppMeshParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, AppMesh, AppMesh)
+!define AppMeshParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, AppMesh, AppMesh)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Snowcone [64x64/16z] {
+xT87WWCX28NXXuZuxd_Wz1vStDxyqZFyq_cJBClIJKErSKR3K67E8SvGhwZCT47dYA8nKLuSkQvyeC98UWauIKzEWK6FcobF8CU1oZ4_3rcqQijEGGVwuKC6
+ntxzYBX0oix-8t1TwgFxHie4GNm8aCufNH1kld4i7pKuQILbfCFYtY7vqVkmFxmI3llitif1evO3PJiT-bmlEFNd6-RKGoPxuH6KEmeUoHVtr_r_MtyzVs_e
+0vFzwg4XJFQA0Ptf4p-ybvAGKUyuA1diEPyrtJ5cgges_W3Bicm1
+}
+
+AWSEntityColoring(Snowcone)
+!define Snowcone(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, Snowcone, Snowcone)
+!define Snowcone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, Snowcone, Snowcone)
+!define SnowconeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Snowcone, Snowcone)
+!define SnowconeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Snowcone, Snowcone)

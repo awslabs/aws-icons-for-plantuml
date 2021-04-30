@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeRule [64x64/16z] {
+xPO5ekOm28GBnEV-vrrDCwccihxl-rsWU9Z-I3uGbLVYG9ZU02GgItPRlY2tzm5mT-KJqEd2HI7Q6O4vWEvgB0fA2xe7jBxDL7LE09rspMTbA4TaMgg0RvxO
+rQmN_bUPoSn_31mnxFZgcJmh0rVygRC1mqf8IGwzotXJrLR0wDp70SXoa3U_YG8fDkSc70SDKVlcNL2g_NOSzAzar_LEJZEb5L8ZsaP31bhcR54nKryInmLf
+iQKs0xgmRfLIlvy7yUtdk5HTNqSAjlQIwme2u_L4WRPyFLEGs27gJpWePbkCe16KwtDxKRuvgkP3gaFITVqlTaB1F6mD5Qt5OzUEXo9zjvGKfSO_NnMl16Uo
+Y82xBhv5DWMWnOt5IUY774Co4YUbwp-cXFXpSGeirH5t9EvvZFcPT7bcIwgDhrXoOxvB3I6vkdluVhvBnrNRp_pKCZhsJaUQrEuuHlgpoMydvd0gBO-VkDuN
+4hyR4fehYLVbCJI4jaRcNXc2SI8zBH5MzKKFyc9px3RAQ_PRTnrxjlZgcorUGjUyOv_7M_mRJ6Nwa_dWCm
+}
+
+AWSEntityColoring(EventBridgeRule)
+!define EventBridgeRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, EventBridgeRule, EventBridgeRule)
+!define EventBridgeRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, EventBridgeRule, EventBridgeRule)

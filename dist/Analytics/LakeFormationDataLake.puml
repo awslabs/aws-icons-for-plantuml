@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LakeFormationDataLake [64x64/16z] {
+tPRTakie30O54WZKx_--MzZ1vQeaiDxPltFwRkQZ9v97o97_6rbLJLNpSxEqpfreHV-ihCvdMabxss9-ejTYWrBzgiPtlJI0NlLJImpgKe_bPrW7-a9twCiA
+DS2_nn2o9WMaRw52aGq5TE7NdL_NFhhMZRM_hY0rjZxK_5cs1ZlV6OGNJNSrctS6lQvzbSeaUXlqOD9KTEUBg0VlX5iIsVi7IOkt7X74gEBMpjPVy1D_pThF
+HGwgdt7sUhPZFfEyyksyj1qeGmSOGe6PwDeVNc6GnkdJIy1Cbdw240aeuABW3R8us4nc__Rjqfb1FKuEDqCJY2kPVfDl1NH8Kg11FtfeKAva-lYtnNP60Q3d
+KUAMJ9_us49_FUaCb5TBv7ioVS1LtiXv7afpnE_9zCtdRQcccjFp-KiruA8-ziztJTnzxKU9kUCoA4IHGMCcx_EJrKgj-fg_z1gtTlu8TkZCP3b_2YxY4CS1
+1d7yEcQozAL3Ij2FiJCe5UmOn7WbilGDwgNS_zYLh7tXO9RyrWoozjyVsVl3NBy_IxmYv_fdjbio_KW_stz4_j7-0vh-OFzr1cxvh-w_t3Y9xbwhFjn_Af9h
+vw8-t7_wsWsrzUa_sdygDr9AZ_RVz9_lluN_RF-fR4XcwHzy_zlEjrMFu3lV8NyDOrj0XLWsXwT5tW5TTmTkdxkhStWMvFarqpJ99AdDEz6IRB0E5n713SyY
+Ur9flDEhofvxoUxjm6lH9ByzVm
+}
+
+AWSEntityColoring(LakeFormationDataLake)
+!define LakeFormationDataLake(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, LakeFormationDataLake, LakeFormationDataLake)
+!define LakeFormationDataLake(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, LakeFormationDataLake, LakeFormationDataLake)
+!define LakeFormationDataLakeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, LakeFormationDataLake, LakeFormationDataLake)
+!define LakeFormationDataLakeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, LakeFormationDataLake, LakeFormationDataLake)

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeviceFarm [64x64/16z] {
+xPO5jcGX34GhnBF__Oum0grvtxNQctEH24czdBxrhOYdqCa0vwDn1LW0VHpjX15LCK3-S3eOi9goET63b098LZcphry7jLPKOEvY7iAEqkl469L4kpLwvR9u
+Ggi4oni73g6xnudSCVPeqDPd_voLckK04ELwDdnBsm8s3PTcMSMBKe1luZ6txXfLlf19qHpmUOYupLlL021LNhlIgnXpRRlFApIkBc6G45Z7CrN5DJCBiXBI
+yO8elPAqCURQsl49402oYw0Y42Wxlb9OpwFL08vKbgo6Fu_3pBEewVazMWV0AwYEySRBPD0zzTbwVakuwQvYr3z17i6FX_A-JilW0LaszPw_SFl2Zzj_QL0z
+aFS1Zcjy38ne-G0nA2_v11Z8Fd-o77R9AwAYpn_6_5py0_FNm4Q8IzunRC0xlWI0LRBllEdCA6XZlvboaLKESFxZOu3-3IGZZjpVAV2PklFcrFqcE5O_AlxN
+pynz-7ZzIenCegP-FRf-zlMRA1pZLltk-mS7WBZPF_JzIwhb-lLI_LFVlxr1_xZwrpVgdtjzwri_0G
+}
+
+AWSEntityColoring(DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DeviceFarm, DeviceFarm)

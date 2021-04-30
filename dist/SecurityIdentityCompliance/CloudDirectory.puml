@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudDirectory [64x64/16z] {
+xTPLecin34DHoHJRyv_lPMfJoCbZs3yghJBrxzZ__bSZt4tLtMFKCPikE4izLtK8G7s-rPURhHnX2a36YYu5BNig3T2wxnLsvL9bqBkyO7qrGztpUTldVG_l
+ApcMFEZLK-d4aeyWGFMHRzTIELm9C6B9TmyJd2N-H1Vzv_jNLUtp_RlivtwLh_eM7mGOszv0Cy8s_O0-Zs9i-CzFIy7slF1rANjUyRhGFH_mvt74dc-1ZM6G
+tlIb0A2ruTygihxf_IlIUxvU8zyE7FJpzyT1ptY9VDkZNhgd_OcUx9vssIS1vhJBdeW0frtr2UzsvFck-e9r6-fyLtqhLA7JBliom6hQJ__Z_Z-q8Ax__4ZV
+hGY9wgaA0QiNSWAqqzz_8q3lnOOHPz567of7kEbJvZ6oVyV-zxz7
+}
+
+AWSEntityColoring(CloudDirectory)
+!define CloudDirectory(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, CloudDirectory, CloudDirectory)
+!define CloudDirectory(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, CloudDirectory, CloudDirectory)
+!define CloudDirectoryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, CloudDirectory, CloudDirectory)
+!define CloudDirectoryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, CloudDirectory, CloudDirectory)

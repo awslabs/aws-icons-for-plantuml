@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="no"?>
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Document that references resource documents                            -->
+<!--                                                                        -->
+<!-- @author cam@mcc.id.au                                                  -->
+<!-- @version $Id: primaryDoc.svg 1733420 2016-03-03 07:41:59Z gadams $                                                          -->
+<!-- ====================================================================== -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1" width="400" height="400" viewBox="0 0 400 400">
+  <script type="text/ecmascript"><![CDATA[
+    var inRegard = false;
+    var es = ["u1", "u2", "u3", "u4"];
+    var all = es.concat(["u1res", "u2res", "u3res", "u4res"]);
+
+    function regardStart() {
+      inRegard = true;
+    
+      regardTestInstance.registerResourceContext("Static11", "u1res");
+      regardTestInstance.registerResourceContext("Dynamic11", "u2res");
+      regardTestInstance.registerResourceContext("Static12", "u3res");
+      regardTestInstance.registerResourceContext("Dynamic12", "u4res");
+
+      for (var i in es) {
+         var e = document.getElementById(es[i]);
+         regardTestInstance.registerElement(e, es[i]);
+         e.parentNode.removeChild(e);
+      }
+
+      setTimeout("checkElem()", 10);
+    }
+
+    function checkElem() {
+      regardTestInstance.checkObjects(all);
+      // System.err.println("finished checking, waiting 10s"); java.lang.Thread.sleep(10000);
+      regardTestInstance.scriptDone();
+    }
+]]></script>
+
+  <use id="u1" xlink:href="resourceDocStatic11.svg#e"/>
+  <use id="u2" xlink:href="resourceDocDynamic11.svg#e"/>
+  <use id="u3" xlink:href="resourceDocStatic12.svg#e"/>
+  <use id="u4" xlink:href="resourceDocDynamic12.svg#e"/>
+</svg>

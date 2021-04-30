@@ -1,0 +1,299 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ====================================================================== -->
+<!-- Modification of a circle attributes                                    -->
+<!--                                                                        -->
+<!-- @author nicolas.socheleau@bitflash.com                                 -->
+<!-- @version                                                               -->
+<!-- ====================================================================== -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>  
+
+<svg id="body" width="450" height="500" overflow="visible" viewBox="0 0 450 500" xmlns:xlink="http://www.w3.org/1999/xlink"
+       onload="setup(evt)" >
+    <title>&lt;tspan&gt; attributes 'onload'</title>
+
+    <text id="titleGroup" x="50%" y="45" class="title">&lt;group&gt; attributes in 'onload'</text>
+    <text id="titleText" x="50%" y="70" class="title">&lt;text&gt; attributes in 'onload'</text>
+    <text id="titleTspan" x="50%" y="95" class="title">&lt;tspan&gt; attributes in 'onload'</text>
+    <text id="titleTRef" x="50%" y="120" class="title">&lt;tref&gt; attributes in 'onload'</text>
+    <text id="titleTextPath" x="50%" y="145" class="title">&lt;textPath&gt; attributes in 'onload'</text>
+
+    <defs>
+        <text id="textContent">fox</text>
+        <path id="path" d="M 0 0 C 10 -10 60 -10 70 0" />
+        <path id="arrow" style="fill:black;stroke:black" d=" M -5 0 L 5 -5 L 5 5 z" />
+    </defs>
+
+    <script type="text/ecmascript"><![CDATA[
+
+    var arrayStyleGroup;
+    var currentStyleGroup = 1;
+    var nbStyleGroup;
+
+    var arrayStyleText;
+    var currentStyleText = 1;
+    var nbStyleText;
+
+    var arrayStyleTspan;
+    var currentStyleTspan = 0;
+    var nbStyleTspan;
+
+
+    var currentStyleTRef = 6;
+    var currentStyleTextPath = 2;
+
+    var group;
+    var text;
+    var tspan;
+    var tref;
+    var textpath;
+    var doc;
+
+    function setup(evt){
+
+      doc = evt.target.getOwnerDocument();
+
+      arrayStyleGroup = new Array();
+        arrayStyleGroup[0] = 'fill:orange;stroke:blue';
+        arrayStyleGroup[1] = 'fill:orange';
+        arrayStyleGroup[2] = 'stroke:blue';
+        arrayStyleGroup[3] = '';
+        nbStyleGroup = 4;
+
+      arrayStyleText = new Array();
+        arrayStyleText[0] = 'text-decoration:underline;fill:crimson';
+        arrayStyleText[1] = 'text-decoration:underline;stroke:black';
+        arrayStyleText[2] = 'fill:green;stroke:red';
+        arrayStyleText[3] = 'stroke:red';
+        arrayStyleText[4] = 'fill:green;fill-opacity:0.6';
+        arrayStyleText[5] = 'stroke-opacity:0.6';
+        arrayStyleText[6] = 'stroke-width:3';
+        arrayStyleText[7] = 'fill:green;text-decoration:underline';
+        arrayStyleText[8] = 'fill:green;text-decoration:overline';
+        arrayStyleText[9] = 'fill:green;text-decoration:line-through';
+        nbStyleText = 10;
+
+      arrayStyleTspan = new Array();
+        arrayStyleTspan[0] = 'fill:red;letter-spacing:10';
+        arrayStyleTspan[1] = 'stroke:gold';
+        arrayStyleTspan[2] = 'stroke:gold;fill-opacity:0.6';
+        arrayStyleTspan[3] = 'stroke-opacity:0.6';
+        arrayStyleTspan[4] = 'stroke-width:3';
+        arrayStyleTspan[5] = 'fill:red;text-decoration:underline';
+        arrayStyleTspan[6] = 'fill:red;text-decoration:overline';
+        arrayStyleTspan[7] = 'fill:red;text-decoration:line-through';
+        arrayStyleTspan[8] = 'fill:red;font-family:Times New Roman';
+        nbStyleTspan = 9;
+
+      group = doc.getElementById('group');
+      text = doc.getElementById('text');
+      tspan = doc.getElementById('tspan');
+      tref = doc.getElementById('tref');
+      textpath = doc.getElementById('textpath');
+
+      applyTextPathStyle();
+      applyTRefStyle();
+      applyTspanStyle();
+      applyTextStyle();
+      applyGroupStyle();
+
+    }
+
+    function nextTextPath()
+    {
+        currentStyleTextPath++;
+        if ( currentStyleTextPath >= nbStyleTspan ){
+          currentStyleTextPath=0;
+        }
+        applyTextPathStyle();
+    }
+    function previousTextPath()
+    {
+        currentStyleTextPath--;
+        if ( currentStyleTextPath < 0 ){
+          currentStyleTextPath = nbStyleTspan-1;
+        }
+        applyTextPathStyle();
+    }
+
+    function applyTextPathStyle()
+    {
+        textpath.setAttribute('style',arrayStyleTspan[currentStyleTextPath]);
+
+        var title = doc.getElementById('titleTextPath');
+        var textnode = title.getFirstChild();
+        textnode.setData('textPath : '+arrayStyleTspan[currentStyleTextPath]);
+    }
+
+    function nextTRef()
+    {
+        currentStyleTRef++;
+        if ( currentStyleTRef >= nbStyleTspan ){
+          currentStyleTRef=0;
+        }
+        applyTRefStyle();
+    }
+    function previousTRef()
+    {
+        currentStyleTRef--;
+        if ( currentStyleTRef < 0 ){
+          currentStyleTRef = nbStyleTspan-1;
+        }
+        applyTRefStyle();
+    }
+
+    function applyTRefStyle()
+    {
+        tref.setAttribute('style',arrayStyleTspan[currentStyleTRef]);
+
+        var title = doc.getElementById('titleTRef');
+        var textnode = title.getFirstChild();
+        textnode.setData('tref : '+arrayStyleTspan[currentStyleTRef]);
+    }
+
+    function nextTspan()
+    {
+        currentStyleTspan++;
+        if ( currentStyleTspan >= nbStyleTspan ){
+          currentStyleTspan=0;
+        }
+        applyTspanStyle();
+    }
+    function previousTspan()
+    {
+        currentStyleTspan--;
+        if ( currentStyleTspan < 0 ){
+          currentStyleTspan = nbStyleTspan-1;
+        }
+        applyTspanStyle();
+    }
+
+    function applyTspanStyle()
+    {
+        tspan.setAttribute('style',arrayStyleTspan[currentStyleTspan]);
+
+        var title = doc.getElementById('titleTspan');
+        var textnode = title.getFirstChild();
+        textnode.setData('tspan : '+arrayStyleTspan[currentStyleTspan]);
+    }
+
+
+    function nextText()
+    {
+        currentStyleText++;
+        if ( currentStyleText >= nbStyleText ){
+          currentStyleText=0;
+        }
+        applyTextStyle();
+    }
+    function previousText()
+    {
+        currentStyleText--;
+        if ( currentStyleText < 0 ){
+          currentStyleText = nbStyleText-1;
+        }
+        applyTextStyle();
+    }
+
+    function applyTextStyle()
+    {
+        text.setAttribute('style',arrayStyleText[currentStyleText]);
+
+        var title = doc.getElementById('titleText');
+        var textnode = title.getFirstChild();
+        textnode.setData('text : '+arrayStyleText[currentStyleText]);
+    }
+
+    function nextGroup()
+    {
+        currentStyleGroup++;
+        if ( currentStyleGroup >= nbStyleGroup ){
+          currentStyleGroup=0;
+        }
+        applyGroupStyle();
+    }
+    function previousGroup()
+    {
+        currentStyleGroup--;
+        if ( currentStyleGroup < 0 ){
+          currentStyleGroup=nbStyleGroup-1;
+        }
+        applyGroupStyle();
+    }
+
+    function applyGroupStyle()
+    {
+        group.setAttribute('style',arrayStyleGroup[currentStyleGroup]);
+
+        var title = doc.getElementById('titleGroup');
+        var textnode = title.getFirstChild();
+        textnode.setData('group : '+arrayStyleGroup[currentStyleGroup]);
+    }
+
+]]>    </script>
+
+    <g id="test-content" style="font-size:30" >
+        <!-- testing only
+         <use transform="translate(155,220)" xlink:href="#path" style="stroke:blue;fill:none" />
+        -->
+         <g transform="translate(155,220)" id="group" >
+                <text dx="-55" id="text" >the
+                  <textPath id="textpath" xlink:href="#path">quick</textPath>
+                  <tspan><tspan id="tspan">brown</tspan></tspan>
+                  <tref id="tref" xlink:href="#textContent" style="fill:gold"/>
+                </text>
+
+         </g>
+    </g>
+
+    <g id="legend" >
+        <g style="fill:white; stroke:black;text-anchor:middle">
+            <g transform="translate(370,300)" >
+              <use xlink:href="#arrow" transform="translate(-40,-5)" onclick="previousTRef()" />
+              <use xlink:href="#arrow" transform="translate(40,-5) rotate(180)" onclick="nextTRef()" />
+                <text style="fill:black;stroke:none" x="0" y="0" >&lt;tref&gt; tests</text>
+            </g>
+            <g transform="translate(250,300)" >
+              <use xlink:href="#arrow" transform="translate(-45,-5)" onclick="previousTspan()" />
+              <use xlink:href="#arrow" transform="translate(45,-5) rotate(180)" onclick="nextTspan()" />
+                <text style="fill:black;stroke:none" x="0" y="0" >&lt;tspan&gt; tests</text>
+            </g>
+            <g transform="translate(120,300)" >
+              <use xlink:href="#arrow" transform="translate(-55,-5)" onclick="previousTextPath()" />
+              <use xlink:href="#arrow" transform="translate(55,-5) rotate(180)" onclick="nextTextPath()" />
+                <text style="fill:black;stroke:none" x="0" y="0" >&lt;textPath&gt; tests</text>
+            </g>
+            <g transform="translate(225,325)" >
+              <use xlink:href="#arrow" transform="translate(-45,-5)" onclick="previousText()" />
+              <use xlink:href="#arrow" transform="translate(45,-5) rotate(180)" onclick="nextText()" />
+                <text style="fill:black;stroke:none" x="0" y="0" >&lt;text&gt; tests</text>
+            </g>
+            <g transform="translate(225,350)" >
+              <use xlink:href="#arrow" transform="translate(-55,-5)" onclick="previousGroup()" />
+              <use xlink:href="#arrow" transform="translate(55,-5) rotate(180)" onclick="nextGroup()" />
+                <text style="fill:black;stroke:none" x="0" y="0" >&lt;group&gt; tests</text>
+            </g>
+        </g>
+    </g>
+</svg>

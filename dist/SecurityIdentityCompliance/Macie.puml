@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Macie [64x64/16z] {
+xPG7hiOm28C_o23q_lTzestuLvVMcx4sicDir4u_1GC30mC3jMpFtI_93ShEt2x87L7QwxmX4lC39AoXhtEbkOYVRv-dARzkMZv36NgcdorS90OLgNEgvPLw
+90v2ZGeD4PBtZGG_BazxMkzjkcSWzHRJSNdjaQUphq5U6VdWYA6Abofv3O76GjlQsBgf-f8ao88Ni6Zew7O6wCfBM4XCA76X5qIv5McBXL39TwMwaZnkiu5A
+_PJxQc6mE2MiToVju8OYKqPl5heO6Ud-qvfzTkmJwb6aCRVdOHSPHBRJA_bsI1SA-Mxxo62PjbK-b7lQt7_Dv2UUeDGjlTmP-RoB2n4-u7dxH_9KQfjdfMun
+RVfc30mC30oy0m
+}
+
+AWSEntityColoring(Macie)
+!define Macie(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Macie, Macie)
+!define Macie(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Macie, Macie)
+!define MacieParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Macie, Macie)

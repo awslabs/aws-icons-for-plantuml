@@ -1,0 +1,354 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!-- ========================================================================= -->
+<!-- Tests various text on a path                                              -->
+<!--                                                                           -->
+<!-- @author bella.robinson@cmis.csiro.au                                      -->
+<!-- @version $Id: numberOfChars.svg 1733420 2016-03-03 07:41:59Z gadams $        -->
+<!-- ========================================================================= -->
+<?xml-stylesheet type="text/css" href="../../../resources/style/test.css" ?>  
+
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" id="body" width="450" height="600"
+viewBox="0 0 450 600" onmouseover="showNumberOfChars(evt)" >
+<title>number of chars</title>
+
+    <style type="text/css"><![CDATA[
+      .description{
+         fill:gray;
+         fill-opacity:0.6;
+      }        
+      filename{
+         fill-opacity:1.0;
+      }
+    ]]></style>
+
+    <defs>
+      <path id="arrow" d="M-5 0 L 5 0 M 0 -5 L 0 5z" />
+      <line stroke-width="3" id="line" x1="-5" y1="0" x2="5" y2="0" />
+    </defs>
+
+<script><![CDATA[
+  var interval;
+  var currentFile;
+  var display;
+  var svgns   = "http://www.w3.org/2000/svg";
+  var xlinkns = "http://www.w3.org/1999/xlink";
+  function showNumberOfChars(evt)
+{
+  var elt = evt.target;
+
+  while (( elt != null ) && ( elt.getLocalName() != "text" )){
+    elt = elt.getParentNode();
+  }
+
+  if ( (elt != null) && ( elt.getLocalName() == "text" ) 
+       && !elt.hasAttributeNS(null,"class") )
+    {
+      var doc = elt.getOwnerDocument();
+
+      var t = doc.getElementById('numberOfChars');
+
+      var textnode = t.getFirstChild();
+
+      textnode.setData("Node has "+elt.getNumberOfChars()+" characters");
+
+      t        = doc.getElementById("extraInfo");
+      textNode = t.getFirstChild();
+      textNode.setData("");
+
+      startCharactersBBox(elt);
+    }
+}
+
+  function startCharactersBBox(elt){
+
+    rendering = elt;
+    currentIndex = 0;
+    display = 0 ;
+    run();
+
+    if ( interval == null ){
+      interval = setInterval('run()',500);
+    }      
+  }
+
+  function run(){
+    
+
+    var doc = rendering.getOwnerDocument();
+    var group = doc.getElementById('bboxGroup');
+
+    while (group.hasChildNodes() ){
+      group.removeChild(group.getFirstChild());
+    }
+
+    if ( display == 0 ) {
+      showCharactersBBox(rendering,currentIndex);
+    }
+    if ( display == 1 ) {
+      showCharactersStartPosition(rendering,currentIndex);
+      showCharactersEndPosition(rendering,currentIndex);
+    }
+    if ( display == 2 ) {
+      showRotationAngle(rendering,currentIndex);
+    }
+
+    if ( display == 3 ) {
+      showTextLength(rendering,currentIndex);
+    }
+
+    //selectAllText(rendering);
+    currentIndex++;
+    var it = doc.getElementById("charIndex");
+    var itn = it.getFirstChild();
+    itn.setData("Character: " + currentIndex);
+
+    if ( currentIndex >= rendering.getNumberOfChars() ){
+      currentIndex = 0;
+      display++;
+    }
+
+    if ( display == 4 ){
+      display = 0 ;
+      var t = doc.getElementById("extraInfo");
+      var textNode = t.getFirstChild();
+      textNode.setData("");
+    }
+    
+  }
+
+  function selectAllText(rendering){
+    rendering.selectSubString(0,rendering.getNumberOfChars());
+  }
+
+  function showCharactersBBox(elt, index) {
+    var doc = elt.getOwnerDocument();
+
+    var group = doc.getElementById('bboxGroup');
+
+    try { 
+      var box = elt.getExtentOfChar(index);
+      var mat = elt.getTransformToElement(group);
+      var root = doc.getRootElement();
+
+      var pt0  = root.createSVGPoint();
+      pt0.x = box.getX();
+      pt0.y = box.getY();
+      pt0 = pt0.matrixTransform(mat);
+
+      var pt1  = root.createSVGPoint();
+      pt1.x = box.getX()+box.getWidth();
+      pt1.y = box.getY();
+      pt1 = pt1.matrixTransform(mat);
+
+      var pt2  = root.createSVGPoint();
+      pt2.x = box.getX()+box.getWidth();
+      pt2.y = box.getY()+box.getHeight();
+      pt2 = pt2.matrixTransform(mat);
+
+      var pt3  = root.createSVGPoint();
+      pt3.x = box.getX();
+      pt3.y = box.getY()+box.getHeight();
+      pt3 = pt3.matrixTransform(mat);
+
+      var p = doc.createElementNS(svgns,"path");
+      p.setAttribute("d","M" + pt0.x + "," + pt0.y + 
+                     "L" + pt1.x + "," + pt1.y +
+                     "L" + pt2.x + "," + pt2.y +
+                     "L" + pt3.x + "," + pt3.y + "z");
+      p.setAttributeNS(null,"stroke","red");
+      group.appendChild(p);
+    } catch (e) { }
+  }
+
+  function showCharactersStartPosition(elt, index) {
+    var doc = elt.getOwnerDocument();
+    var group = doc.getElementById('bboxGroup');
+
+    try {
+      var point = elt.getStartPositionOfChar(index);
+      var mat = elt.getTransformToElement(group);
+      point = point.matrixTransform(mat);
+      var u = doc.createElementNS(svgns,"use");
+      u.setAttributeNS(null,"transform",
+                       "translate("+point.x+","+point.y+")");
+      u.setAttributeNS(xlinkns,"href","#arrow");
+      u.setAttributeNS(null,"stroke","green");
+      group.appendChild(u);
+    } catch (e) { }
+  }
+
+  function showRotationAngle(elt, index) {
+    var doc = elt.getOwnerDocument();
+    var text = doc.getElementById("extraInfo");
+    var textNode = text.getFirstChild();
+    try { 
+      var angle = elt.getRotationOfChar(index);
+
+      textNode.setData("angle : "+angle);
+
+      var group = doc.getElementById('bboxGroup');
+
+      var point1 = elt.getStartPositionOfChar(index);
+      var point2 = elt.getEndPositionOfChar(index);
+
+      var u = doc.createElementNS(svgns,"use");
+      var mat = elt.getTransformToElement(group);
+
+      point1 = point1.matrixTransform(mat);
+      point2 = point2.matrixTransform(mat);
+
+      x = ( point1.getX() + point2.getX() )/2;
+      y = ( point1.getY() + point2.getY() )/2;
+
+      u.setAttributeNS(null,"transform",
+                       "translate("+x+","+y+") rotate("+angle+")");
+      u.setAttributeNS(xlinkns,"href","#line");
+      u.setAttributeNS(null,"stroke","green");
+      group.appendChild(u);
+    } catch (e) { 
+      textNode.setData("angle : <not visible>");
+    }
+  }
+
+  function showCharactersEndPosition(elt, index) {
+    var doc = elt.getOwnerDocument();
+
+    var group = doc.getElementById('bboxGroup');
+
+    try { 
+      var point = elt.getEndPositionOfChar(index);
+      var mat = elt.getTransformToElement(group);
+      point = point.matrixTransform(mat);
+
+      var u = doc.createElementNS(svgns,"use");
+      u.setAttributeNS(null,"transform",
+                       "translate("+point.x+","+point.y+")");
+      u.setAttributeNS(xlinkns,"href","#arrow");
+      u.setAttributeNS(null,"stroke","blue");
+      group.appendChild(u);
+    } catch (e) { }
+  }
+
+  function showTextLength(elt,index) {
+    
+    var doc = elt.getOwnerDocument();
+
+    var group = doc.getElementById('bboxGroup');
+
+    try { 
+      var length = elt.getSubStringLength(0,index+1);
+      var text = doc.getElementById("extraInfo");
+      var textNode = text.getFirstChild();
+      textNode.setData("Length : "+length);
+
+      var point = elt.getStartPositionOfChar(0);
+      var mat = elt.getTransformToElement(group);
+      point = point.matrixTransform(mat);
+
+      var u = doc.createElementNS
+      (svgns,"line");
+      u.setAttributeNS(null,"x1",point.getX());
+      u.setAttributeNS(null,"y1",point.getY());
+      u.setAttributeNS(null,"x2",(point.getX()+length));
+      u.setAttributeNS(null,"y2",point.getY());
+      u.setAttributeNS(null,"stroke","red");
+      group.appendChild(u);
+    } catch (e) { }
+  }
+
+  function switchTo(evt,filename){
+    
+    if ( interval != null ){
+      clearInterval(interval);
+    }
+    interval = null;        
+
+    var doc = evt.target.getOwnerDocument();
+
+    if ( currentFile == null ){
+      currentFile = doc.getElementById('first');
+    }
+    if ( currentFile == evt.target ){
+      return;
+    }
+    currentFile.removeAttributeNS(null,'fill');
+    currentFile = evt.target;
+    currentFile.setAttributeNS(null,'fill','black');
+
+    var group = doc.getElementById('bboxGroup');
+
+    while (group.hasChildNodes() ){
+      group.removeChild(group.getFirstChild());
+    }
+    
+    var use = doc.getElementById('filename');
+    use.setAttributeNS(xlinkns,"href",filename);
+
+    var container = doc.getElementById('container');
+    container.removeChild(use);
+    container.appendChild(use);
+  }
+]]></script>
+
+     <svg id="container" x="0" y="0" width="450" height="500" viewBox="0 0 450 500" >
+        <use id="filename" xlink:href="../../text/textOnPath.svg#content" />
+
+        <g id="bboxes" fill="none" stroke="red" >
+        </g>
+
+        <g id="bboxGroup" style="fill:none;stroke-opacity:0.6">
+        </g>
+     </svg>
+
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../../batikLogo.svg#Batik_Tag_Box" />
+
+
+<text class="filename" id="numberOfChars" x="90%" y="520" 
+    style="text-anchor:end">no text selected
+</text>
+<text class="filename" id="charIndex" x="90%" y="535" style="text-anchor:end"
+    >no text selected</text>
+<text class="filename" id="extraInfo" x="90%" y="550" style="text-anchor:end"
+    >no text selected</text>
+<g fill="gray">
+<text id="first" fill="black" class="filename" x="5%" y="530" onclick="switchTo(evt,'../../text/textOnPath.svg#content')" >textOnPath</text>
+<text class="filename" x="5%" y="545" onclick="switchTo(evt,'../../text/textStyles.svg#testContent')" >textStyles</text>
+<text class="filename" x="5%" y="560" onclick="switchTo(evt,'../../text/verticalText.svg#content')" >verticalText</text>
+<text class="filename" x="5%" y="575" onclick="switchTo(evt,'../../text/textLayout.svg#testContent')" >textLayout</text>
+<text class="filename" x="5%" y="590" onclick="switchTo(evt,'../../text/textEffect3.svg#testContent')" >textEffect3</text>
+
+<text class="filename" x="25%" y="530" onclick="switchTo(evt,'../../fonts/fontAltGlyph.svg#content')" >fontAltGlyph</text>
+<text class="filename" x="25%" y="545" onclick="switchTo(evt,'../../fonts/fontAltGlyph2.svg#content')" >fontAltGlyph2</text>
+<text class="filename" x="25%" y="560" onclick="switchTo(evt,'../../fonts/fontAltGlyph3.svg#content')" >fontAltGlyph3</text>
+<text class="filename" x="25%" y="575" onclick="switchTo(evt,'../../fonts/BatikFont.svg#content')" >BatikFont</text>
+<text class="filename" x="25%" y="590" onclick="switchTo(evt,'../../fonts/fontDecorations.svg#content')" >fontDecorations</text>
+
+<text class="filename" x="45%" y="545" onclick="switchTo(evt,'../../fonts/fontOnPath.svg#content')" >fontOnPath</text>
+<text class="filename" x="45%" y="560" onclick="switchTo(evt,'../../fonts/fontGlyphsBoth.svg#content')" >fontGlyphsBoth</text>
+</g>
+</svg>

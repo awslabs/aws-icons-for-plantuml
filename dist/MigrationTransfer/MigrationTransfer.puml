@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $MigrationTransfer [64x64/16z] {
+xTPNWXen40JGwg1Ezx_l9ZAYFG9dU-fh5tZAoNzxwZlI-jtlFimyN_KXE4JZ1PyAKezmKq3pMP-CSK8vmBdXPtxzgKEUyuhR3mVy6P_GkWrnH2xxWPm-0I2v
+w9cd5fcx0h7a4wCU9OYNV7IZPV0Lx-XM7CQcJrFglMvv0uYruGbIoszv0qVr4GOmUX-GsaW8fFM2hCqCsEpdTTk7gV6EUIsDdBmX7dkRco_WoGUyyp7rLUOr
+ax35zZka53xNlpP-IPHLVDygGwxDtq7c_V4drAyVVN2A-Msp0gFpDGu_lMC3TjUfpfU2BF9G3L_rA-gG641KxyiP0EYcciC_Ygz8R9mVuMPU0g_RZHNscLYx
+lmoZ_x_t_KPM-BfFWdn63tNBPu1SzyAVeGCXy5VM_BnGIUgGN-rtBv_1gpxu4Fj3tw-xt_rlppi
+}
+
+AWSEntityColoring(MigrationTransfer)
+!define MigrationTransfer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, MigrationTransfer, MigrationTransfer)
+!define MigrationTransfer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, MigrationTransfer, MigrationTransfer)
+!define MigrationTransferParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, MigrationTransfer, MigrationTransfer)
+!define MigrationTransferParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, MigrationTransfer, MigrationTransfer)

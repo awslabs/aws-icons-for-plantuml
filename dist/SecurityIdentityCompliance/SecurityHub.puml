@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SecurityHub [64x64/16z] {
+xPNL0hGv24CFq1R8-x_lMjV6Pxhwo_daBjKGz8_ndUzqhj8vQK2q3YbivI1qI52I1gKppFSgbivmawGaTSPaIcsq3d4iOEcKdaQaFg8kLZkus91Rr8ijW-K3
+lMCEwwdSrpJghdunNXndu_j_eN__EdClBj0cfp5Mlssdkj0lOnEzvwSbpMTsnbggN_uTs2ofCo1tBLhMnFMOXOq0MErCITsIobW1Qm5uwmdfu5K6BAa7H4fj
+C5hgzJfEzl31K0M_uAd2zH51AuWAUiB78T0CAVZZAwO-e5YNUX7wW4LUwSt_HVqsyc1htJvUVnFRgS6M5lFTXjEI4bgDAz3SUoczmGIO5K180pS2bnB8r_wR
+UAO3emTp3qUqocmPCNdHphPBT_uuezMPBIMKUh3RsNZYchbNqJjw6DbTox7we_w3VkhQFp8hdL-mkHN4g_noId-kjKvdrcKxNDIJ3U0ETJ-_1qjgCpscmonQ
+z_Ljc4FgRIxrwjr_FY2DsJec0Anqo6Aq4jCXRjjEgJDi6uPrFFyV3Uk4HNGlNAUCy_FVr1nB_rk-yvqV0G
+}
+
+AWSEntityColoring(SecurityHub)
+!define SecurityHub(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHub(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHubParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SecurityHub, SecurityHub)
+!define SecurityHubParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SecurityHub, SecurityHub)

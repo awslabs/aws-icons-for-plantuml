@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StorageGatewayFileGateway [64x64/16z] {
+xSz7WWGX28LXU23A_GyyqxcYeMlJYNzLmK-5tZ86800VeMh57vMiU0QdoKwPZ6d9jqCjgPnJotujSL-NYqr2Yw3NFQoz0owh39MfUZjOvv9otPugOV22g6tl
+hjHBtQNkfUkbxSE73ny-FAQOfc368pxxh8feUPzdHtoMMzbTi5_JqoruFHxmbEjUHZpfVjRnlV2UFdpuyE7HIrj-gBelOnuppo8ylUX8Gc_HFm
+}
+
+AWSEntityColoring(StorageGatewayFileGateway)
+!define StorageGatewayFileGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayFileGateway, StorageGatewayFileGateway)
+!define StorageGatewayFileGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayFileGateway, StorageGatewayFileGateway)
+!define StorageGatewayFileGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayFileGateway, StorageGatewayFileGateway)
+!define StorageGatewayFileGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayFileGateway, StorageGatewayFileGateway)

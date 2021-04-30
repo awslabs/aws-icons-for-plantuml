@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeSaasPartnerEvent [64x64/16z] {
+tPS74kim24ID2f9uzp_lhmc3nmxHxsMdnMKbTi6W77ynIlaXEimVuYyiNdRvHlw4SDMWVHjVGK8qVhMB3jKlofOR8ogkCU81TIVY4T87UZmWi3P2DkY78wpM
+zzmhG0chhR3miOC69cv05RS2FROmRdqMHMAOIvAgUxjLpt8fxn8j4pVs3bLpYmret_q9Ts399bi6pDFBzx5hUrME0FrygzrPXbvYQWQi1QmQ5f3ReW5cFGbV
+WBN7CaDodMe0rgDmhmDr4Gdg172JVK_F-2hlKgLFPzVbzMeUJWPnEsdN3vEDj3l_781ovKkfB_bsCg0PaI-jwpI0btoLwQRNhvbKvojFb9VyXsLMlowaiPit
+09kZjzVxUnPTY8RuYpkHyGyPRgJpCvxplTgQPptXIsqwba7rNFVJ2CdvbITwnX-GbOkjeMMV7w6zFfYx_1m5h3g_UWroRC9ujhtsu9U53r2TRQDjWZhVhxy0
+C9Kt4YPWxIk_GsZ3ChtRPQW6B8LXk1y-38dt8eAqZgDVNbk0tCscUkt_UgjmpBkvoZhRuC8pnDcKpRyVdQjDqZC1bc-chBJcnZjzsIlb5BlSbOTOBl3Lc9Qx
+qrqEC3zFiQ99jdaAx47rpUaknm895BaSS7EKQ7G_QIuxXwVf56y1Zh8rVzUr6-wZGxkPHljeysV-ZJFM3_5RAyV_Yuy
+}
+
+AWSEntityColoring(EventBridgeSaasPartnerEvent)
+!define EventBridgeSaasPartnerEvent(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, EventBridgeSaasPartnerEvent, EventBridgeSaasPartnerEvent)
+!define EventBridgeSaasPartnerEvent(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, EventBridgeSaasPartnerEvent, EventBridgeSaasPartnerEvent)
+!define EventBridgeSaasPartnerEventParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, EventBridgeSaasPartnerEvent, EventBridgeSaasPartnerEvent)
+!define EventBridgeSaasPartnerEventParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, EventBridgeSaasPartnerEvent, EventBridgeSaasPartnerEvent)

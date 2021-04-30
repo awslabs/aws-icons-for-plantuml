@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NICEDCV [64x64/16z] {
+xLO5ZiH037FG_V-73vOBbmxeXBLWqKuychXP_WaNBZ0ZWgFiLDmWFY910zGpmm29Vhf0-NWRWB6RxX-V5DedOB3LP-yJIEYoXiCw-0BkEufcUXmKexGte3Wm
+s-wVXTSMU66rjVqPG2jj4NKEspTL1QGIICJK0Jdob9_bhwpf0Lac-5xRNwpaKmlwER_8aeR-K-eigqyt5N0sJ6ySiyzRv-yV4hx_8QGXH0E8e_kRXYUxfilD
+kSYgj0iWqU9Rk9rVkWAmR4eTuNeyqWM0VPOEv_cn4yQy5HPBRiQ_65k999dXk45ztxP8TMzkU7BP6qqB8zmzWlphRzcOp0QsNytsEkt9h8SpjF9LWf2v1uiV
+3P4KxHSE2itAmLOW8Nqxo5g0ylpSBX0hUWpiSFcE5X_S8IF3gjoj5OeTjWt53ZsB2nU-0G
+}
+
+AWSEntityColoring(NICEDCV)
+!define NICEDCV(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, NICEDCV, NICEDCV)
+!define NICEDCV(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, NICEDCV, NICEDCV)
+!define NICEDCVParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, NICEDCV, NICEDCV)
+!define NICEDCVParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, NICEDCV, NICEDCV)

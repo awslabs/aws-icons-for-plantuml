@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2G4adInstance [64x64/16z] {
+xPS5TWCn34G5bcRkV-9MVc6oKmpu1nQ_QHRbeL1t7K-lOwIDfh_YBr_ZaoHpPghdVl0EubTycUHdVVLEtkEdTtIJoOPvVuDzr_zk-nzW_1yj_vM_kSa6qsCp
+C1p_niAb0Frqfv4VJDDD2nhlzfKfMunHlaM4rwO8Jmxozp8s8AoMc06wA94W1_ctoYGYMX-hyZiCIQf8Sf1_zm52dBRnpOqfnBx_U_zA-m4XMWkcAvXPVdP_
+b3-nyL4GMIqg6PpAhn7DdTWauDBwByKPvXZwuY29jlC5P23x3Xb3lr0vGjVvlwx_3vN_oly1dZ-_zVpyQC__ovz_VtqeFW
+}
+
+AWSEntityColoring(EC2G4adInstance)
+!define EC2G4adInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2G4adInstance, EC2G4adInstance)
+!define EC2G4adInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2G4adInstance, EC2G4adInstance)
+!define EC2G4adInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2G4adInstance, EC2G4adInstance)
+!define EC2G4adInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2G4adInstance, EC2G4adInstance)

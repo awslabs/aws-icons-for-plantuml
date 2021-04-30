@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Signer [64x64/16z] {
+xPK54YCx30NRABZ_VV_VdUnO4rI52jC5mQwdoBBY7-R73nCnlurwZW38dOzcdauHAToi8Dw-pMYzRza2lRTn5J_y4HMWRYNEq_EduWV3JLUhR7lZm4pY6tu1
+xIo-c3-YNvPdT0-KuOclHzbTptotxE2g1nDrhuGpcsLZCuzwCVS94hy-7HjVoAQxno1DPXA_wQgXnziHd_a5TLUAnjiHdzU_gGfBBzWnFk-VK9OU_HiHdvsV
+X1xd5_7v_EZIbUvvV3w_biHdzwTTJBuzTN-r0ltWZA9Fx0-1QUqmdK9zOdzrjhIvIb0UhG7Hi_rfbNPwjfTW1VNxq8_xMyhUkLL2O_fZF_u_nhg-guHEzyHV
+DAhv6LAYTxbFJKOiywzBBTKzzySu-hEMRh62Sx_125yebRPFgEP-erN6yXlcFRP8wZUQUsNSy8sU-fnghUW_Vr8QrKzF9VURRyYUFu1cwu8dbClpqvW2etdE
+XL-ZvS9ysXznuhDWJ_fHlNLW-9F-Nhsqqrvwrj-gjr6WgpyDbUhQe0pp5m1wXIRkEIPN0Aohbp6vugcUwRn6_Qly-F4_
+}
+
+AWSEntityColoring(Signer)
+!define Signer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Signer, Signer)
+!define Signer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Signer, Signer)
+!define SignerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Signer, Signer)
+!define SignerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Signer, Signer)

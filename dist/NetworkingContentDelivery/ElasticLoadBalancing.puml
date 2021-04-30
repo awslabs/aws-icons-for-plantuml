@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticLoadBalancing [64x64/16z] {
+xLPLsWGX34iRhDp_lh-iomWVUIKhetNj0rXOMAWEOqoJ9nWTgBFImR__PZQfWTlbK53cwC7B8P3cwCqlXuOyHq-qYnSlXmaKM8cMm7wAA3J0cEFL_J00O9nI
+9m1E-klR1TPwIRaDn1cijrFUqoN1OzZC5ndDBk4cE9fb7uB2KSE7OnxuJCyms638jwFRC9wniMKdyLGfqrCxSbxTSabvsW8xKeVOgvmBBi48HpkfaUtAxHNv
+QUGcjfyGVe7T745JwLNzLV-9yHFpHyXVhNxq-jNxXzw_rFufzszrVgZpIvsVwlpMzmTzVz7t9tr_MrXO-0K
+}
+
+AWSEntityColoring(ElasticLoadBalancing)
+!define ElasticLoadBalancing(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, ElasticLoadBalancing, ElasticLoadBalancing)
+!define ElasticLoadBalancing(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, ElasticLoadBalancing, ElasticLoadBalancing)
+!define ElasticLoadBalancingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, ElasticLoadBalancing, ElasticLoadBalancing)
+!define ElasticLoadBalancingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, ElasticLoadBalancing, ElasticLoadBalancing)

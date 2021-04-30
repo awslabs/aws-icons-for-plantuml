@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Lumberyard [64x64/16z] {
+xTN5bS0m34NHBykYrt-_myp9cMNkscm1txbSBfSPEAzDiZm_NRvNAZZ9dUaf3UUOwO4DPwHsJ-TIS4PehHaRGkUc5s4UK3ev_S641OTjzTDqC-ETNFFtwRXF
+yQgtJCKlGWqFyqRDYyabhr7mizR3rB0zPU-sZY6M5JzRczSlV7b5UK4lxT-cbuOdRMk0Sia7s6R1RznvCMv9IjiDMehcLvRSI_CS2DbsQQjSA_b1L_K0Akvf
+RzFAcVILsrtA-M6owv5jFSrlI9cMHvJ5zkPxerK3JCLISiyAqkZSxYQf-47gq_kj05FmmFRmazRJW4wN1i0teLHoR_X5cMmjaypB2c3lKfBYZpeZiWPO2U2c
+02mvQ5H0ITh0TWvoeyFaKrf3BWv9oIIB0MQjIUEGaXJ3ep5FEz6qcYSjqxRWY345JqhtZ4Dg3pp9eQFuPvVBvN8B
+}
+
+AWSEntityColoring(Lumberyard)
+!define Lumberyard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Lumberyard, Lumberyard)
+!define Lumberyard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Lumberyard, Lumberyard)
+!define LumberyardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Lumberyard, Lumberyard)
+!define LumberyardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Lumberyard, Lumberyard)

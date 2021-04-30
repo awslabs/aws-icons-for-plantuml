@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NetworkFirewall [64x64/16z] {
+xPK7iYCX30LRGWYa-z_tvqaroTYx5TtEXgTSaF-3Ds_YYtoMRW8WrfzIAuZLQWewRg71v3SCV5WkVHDB7GiUYLmHIii1b9uRGeYHwEi-efBDjFXZxlVE30K1
+kOyZiAEIO95P7p3WX-so-hTOyuPAptD4ymOZBbVl9pSkerE_M8y2vVkBbzeFpHSkvhaB5dz-G8xtkL1El0jjrN51MXvHi9FaV6LBqmMxcF3hvbHwXg5n5EXX
+1fsw--NeSG2vfqtPgtvBiTymxD4XyIah0Udv5sEXFpYaFlatAjAnyrmhSP5_epM4kiJgjjrVo0FGnP13dwnvAkeBBO-hQhJb22YIVs31bd8yme74x-TtwB6C
+XNqhseI1vY7jrq3VcbSmNnNSpqyX1tClRDQhrDpg--N5nRvZj_g5w8KseD-Zigx82Usn0zmfCxhwZb_ewstS_KBVNzGdzffUvJMzuoFrsoFqWVxjwKZF78vx
+eR7Q5pgipoxJFTSDnlKP1Y02Q1dGBqGpLIsrfozdX-CvZBFmZ3vyHUI_vCsRJm
+}
+
+AWSEntityColoring(NetworkFirewall)
+!define NetworkFirewall(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewall(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewallParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, NetworkFirewall, NetworkFirewall)
+!define NetworkFirewallParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, NetworkFirewall, NetworkFirewall)

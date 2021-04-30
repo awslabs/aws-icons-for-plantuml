@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Multiple use combined (external and internal)                             -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: useMultipleURI.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/test.css" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+  <title>Multiple &lt;use> with CSS property values: URIs</title>
+
+  <!-- ============================================================= -->
+  <!-- Test content                                                  -->
+  <!-- ============================================================= -->
+  <g id="testContent">
+    <text x="225" y="50" class="title">Multiple &lt;use> with CSS property values: URIs</text>
+    <text x="225" y="70" style="text-anchor:middle; font-size:12; font-style:italic">This file is using the defs.svg file to get the external resources</text>
+
+    <!-- ############################### -->
+    <g id="board" style="fill:none; stroke:black;">
+
+      <rect x="75" y="100" width="150" height="20" style="fill:#eee"/>
+      <rect x="225" y="100" width="150" height="20" style="fill:#eee"/>
+
+      <rect x="55" y="120" width="20" height="150" style="fill:#eee"/>
+      <rect x="55" y="270" width="20" height="150" style="fill:#eee"/>
+
+      <rect x="75" y="120" width="150" height="300"/>
+      <rect x="225" y="120" width="150" height="300"/>
+
+      <line x1="75" y1="270" x2="375" y2="270" />
+
+      <g style="font-size:12; text-anchor:middle; fill:black; stroke:none">
+        <text x="150" y="114">&lt;use></text>
+        <text x="300" y="114">External &lt;use></text>
+
+        <text x="0" y="0" transform="translate(70 195) rotate(-90)">&lt;use></text>
+        <text x="0" y="0" transform="translate(70 345) rotate(-90)">External &lt;use></text>
+      </g>
+    </g>
+
+    <defs>
+
+      <linearGradient id="crimson">
+        <stop style="stop-color:crimson" offset="0" />
+        <stop style="stop-color:white" offset="1" />
+      </linearGradient>
+
+      <linearGradient id="orange">
+        <stop style="stop-color:orange" offset="0" />
+        <stop style="stop-color:white" offset="1" />
+      </linearGradient>
+
+      <linearGradient id="gold">
+        <stop style="stop-color:gold" offset="0" />
+        <stop style="stop-color:white" offset="1" />
+      </linearGradient>
+
+      <rect id="r1" x="0" y="0" width="80" height="80" />
+
+      <g id="uu11" style="fill:url(#orange)">
+        <rect x="0" y="0" width="80" height="80" fill="url(#crimson)" />
+        <use xlink:href="#r1" x="20" y="20" width="80" height="80" />
+        <use xlink:href="#r1" x="40" y="40" width="80" height="80" style="fill:url(../../resources/svg/defs.svg#extGold)" />
+      </g>
+
+      <g id="uu12" style="fill:url(#orange)">
+        <rect x="0" y="0" width="80" height="80" fill="url(#crimson)" />
+        <use xlink:href="../../resources/svg/defs.svg#extR1" x="20" y="20" width="80" height="80" />
+        <use xlink:href="../../resources/svg/defs.svg#extR1" x="40" y="40" width="80" height="80" style="fill:url(../../resources/svg/defs.svg#extGold)" />
+      </g>
+
+    </defs>
+
+    <use xlink:href="#uu11" x="90" y="130" />
+
+    <use xlink:href="../../resources/svg/defs.svg#uu21" x="240" y="130" />
+
+    <use xlink:href="#uu12" x="90" y="280" />
+
+    <use xlink:href="../../resources/svg/defs.svg#uu22" x="240" y="280" />
+
+
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Batik sample mark                                             -->
+  <!-- ============================================================= -->
+  <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+
+</svg>

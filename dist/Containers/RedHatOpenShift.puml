@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RedHatOpenShift [64x64/16z] {
+xLQ7hYD123EcvVz_-1fQNc68DgTorQe9uxK5dlBuJV4V_v7kPceU-HFaK453B5zK5a3qXtAuAG362ze2V51CLu1vKroBFV_rMtHPb4AWj-YsbGYzGVSF0tm_
+lbJe8ysVy0blSW-GpI08O1-5jKCNG3qotGZ83qgQ07Hm7HmaIvplCvC6s2CKWEPt4L_TnzK5pKzj4G3CCi5DNYzrE_G-27UMYICKLT1bX5dDRFOeiso0nx8J
+rPy5ZkeBCHTLzpXBqtv03xKo7h2TBr8PG9o2uRrc0tZPdorAi3qkI6WtUReaykfHn39zkze4sveR406sz5I-Cw67gbVs88B5VoSKF5IriXSFBdngW2NXvw_B
+ZyOsVq9G4XCfDEZp6QP9IHpHuNaIRq1kvDEE9mz0pwVvOETpWh3iy2_oqKbw4l3DW9VyL9YRFrrZEHhRnW1nrGcCkyg1Q9qZ0kmZslpZ8PSAYJvYzwl3vBhh
+au36l7mhGtl-qPzt0X1I-lBlBYnmUWRG_j8e8gGt9O2TtalYHcr7hEy46_GZulo024BozWD6Onx_kjEd5iIYVnflFC267Y1KvJXJxY6Zg29i9tyN_kC_lW8
+}
+
+AWSEntityColoring(RedHatOpenShift)
+!define RedHatOpenShift(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, RedHatOpenShift, RedHatOpenShift)
+!define RedHatOpenShift(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, RedHatOpenShift, RedHatOpenShift)
+!define RedHatOpenShiftParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, RedHatOpenShift, RedHatOpenShift)
+!define RedHatOpenShiftParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, RedHatOpenShift, RedHatOpenShift)

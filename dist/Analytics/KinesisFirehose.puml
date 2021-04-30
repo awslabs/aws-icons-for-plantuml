@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $KinesisFirehose [64x64/16z] {
+xPO5hg0n28G7APIv_u4tPNUVEycBzOlyYaqD7YwNY-FQJrWeJaWaHy2c0cnEACXK0ScX0_ZcW790Lxj87BvJa5cIUma0CJUOAV9R-aFyk0ZNusGpZgVO_2BL
+iTLMvAxLzgPuuQF2Ft8Hnw9f-qtcKW36dHdBv5rHzdwuouXb_-oR5ANZe1xvZdmFgVCGJ-sfoXsH6Qu0tsHtScX412_jMvmMOsfVFyu_mdMcdtZaOFpytDU7
+yqUwYFtU_67u9_EtkiZlpzzUFuoEgDzVFqqAu5a_MB-DGO8_H-4rC7Si3aWO9nYA0mhE2O7ylVFtzY-No-KF
+}
+
+AWSEntityColoring(KinesisFirehose)
+!define KinesisFirehose(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehose(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehoseParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, KinesisFirehose, KinesisFirehose)
+!define KinesisFirehoseParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, KinesisFirehose, KinesisFirehose)

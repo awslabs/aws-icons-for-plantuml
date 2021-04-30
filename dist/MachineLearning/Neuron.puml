@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Neuron [64x64/16z] {
+xPQ9igmu240Fa138_t_mbCtCFBllXjTwjJRkceEo6VRVaxUy9U8MRM2_rf03nh7bht07ZRr3mQ_JIv3rSjgNK9X_BYTeN3GyFzvfqlFazCnJA6P7Wv-iJGND
+aqUyOVXfa386UbBzWnlIdinCnjw3V7A3vTVuozCeFbxUyAM2OBxg6-Dr_2I-vltfKX0Gv0dmBk-mjkfUuDVv74ZiWzyXZBp2Xw_KXojJvDWRcikZoG-WqZy0
+eWe062r-OMlKMC4TAPrZ6Ql1LyA8LZp_YvTAfLE3dwoTsDwrDtBNVZ4xV8999QAYYbRQYK4s-AeXGs97vK_i44pGwCPVT3ku4STDS_271tfykJ04xBWma2Zd
+TNa_Jh8oFmJ9kjNbwsKB1NTGLdrIbwzm2na24ebKGlJvIJXp5xyd7imh_CA4zFf-JyHOL_Za8UM_Eiyhl3FIqGUJYkV0-_ovXlxKJeC_ESbtO7LXnFQpQt_-
+VwSW_3SmG93yyVzTJsSPFTJYJnkYe-vEiEpFNoMz-UiyQErFP9Ng_lnTqfY_-_t3_VxbVlzqlt-xtp_Uxr_lzy_tvIrl-GS
+}
+
+AWSEntityColoring(Neuron)
+!define Neuron(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Neuron, Neuron)
+!define Neuron(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Neuron, Neuron)
+!define NeuronParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Neuron, Neuron)
+!define NeuronParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Neuron, Neuron)

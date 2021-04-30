@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+# SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 
 """icon-builder.py: Build AWS Icons for PlantUML"""
@@ -11,13 +11,85 @@ import sys
 import subprocess
 import shutil
 import multiprocessing
+import re
 from multiprocessing import Pool
 from pathlib import Path
 from subprocess import PIPE
+from collections import OrderedDict
 
 import yaml
 
 from awsicons.icon import Icon
+
+# TODO - refactor to param file and/or arguments
+
+# This list are the directories to parse, what type of files they are, and globbing/regex
+# to parse and process. This addresses the changing nature of the assets package.
+
+
+# Source directories for the 9.0-2021.01.31 release
+dir_list = [
+    {
+        "dir": "../source/official",
+        "dir_glob": "Category-Icons_01-31-2021/*64/*.svg",
+        "category_regex": "[^.]*_(.*)_\d*\.svg$",
+        "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+        "category_mappings": {
+            "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
+        },
+    },
+    {
+        "dir": "../source/official",
+        "dir_glob": "Architecture-Service-Icons_01-31-2021/**/*64/*.svg",
+        "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+        "category_mappings": {
+            "AppIntegration": "ApplicationIntegration",
+            "BusinessApplication": "BusinessApplications",
+            "CustomerEnagagement": "CustomerEngagement",
+            "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
+            "NetworkingContent": "NetworkingContentDelivery",
+        },
+    },
+    {
+        "dir": "../source/official",
+        "dir_glob": "Resource-Icons_01-31-2021/**/*48_Light/*.svg",
+        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+        "category_mappings": {
+            "GeneralIcons": "General",
+            "InternetofThings": "InternetOfThings",
+            "loT": "InternetOfThings",
+            "MigrationAndTransfer": "MigrationTransfer",
+            "NetworkingandContentDelivery": "NetworkingContentDelivery",
+            "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
+        },
+    },
+]
+
+
+# GOOD
+# dir_list = [
+#     {
+#         "dir": "../source/official",
+#         "dir_glob": "Architecture-Service-Icons_*/**/*48/*.svg",
+#         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
+#         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+#     }
+# ]
+
+# GOOD category
+# dir_list = [
+#     {
+#         "dir": "../source/official",
+#         "dir_glob": "Category-Icons_*/*16/*.svg",
+#         "category_regex": "[^.]*_(.*)_\d*\.svg$",
+#         "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+#     }
+# ]
+
 
 TEMPLATE_DEFAULT = """
 Defaults:
@@ -33,7 +105,7 @@ Defaults:
 MARKDOWN_PREFIX_TEMPLATE = """
 <!--
 Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 -->
 # AWS Symbols
 
@@ -52,7 +124,7 @@ Category | PUML Macro (Name) | Image (PNG) | PUML Url
 """
 
 PUML_COPYRIGHT = """'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 """
 
@@ -72,7 +144,7 @@ parser.add_argument(
     ),
 )
 args = vars(parser.parse_args())
-# config = {}
+config = {}
 
 
 def verify_environment():
@@ -83,7 +155,7 @@ def verify_environment():
     cur_dir = Path(".")
     if str(cur_dir.absolute()).split("/")[-2:] != ["aws-icons-for-plantuml", "scripts"]:
         print(
-            "Working directory for icon-builder.py must be aws-icons-for-plantuml/scripts"
+            f"Working directory for icon-builder.py must be aws-icons-for-plantuml/scripts, not {cur_dir}"
         )
         sys.exit(1)
     # Read config file
@@ -95,11 +167,17 @@ def verify_environment():
         sys.exit(1)
     # Verify other files and folders exist
     dir = Path("../source")
-    q = dir / "AWSCommon.puml"
-    print (q )
-    if not q.exists():
-        print("File AWScommon.puml not found is source/ directory")
-        sys.exit(1)
+    required_files = [
+        "AWSC4Integration.puml",
+        "AWSCommon.puml",
+        "AWSRaw.puml",
+        "AWSSimplified.puml",
+    ]
+    for file in required_files:
+        q = dir / file
+        if not q.exists():
+            print(f"File {file} not found is source/ directory")
+            sys.exit(1)
     q = dir / "official"
     if not q.exists() or len([x for x in q.iterdir() if q.is_dir()]) == 0:
         print(
@@ -140,64 +218,56 @@ def copy_puml():
         shutil.copy(file, Path("../dist"))
 
 
-def build_file_list():
-    """Enumerate AWS Icons directory.
+def build_file_list(dir: str, glob: str):
+    """Returns POSIX list of files
 
-    Format for files since current Release 6.0-2020.01.21 PNG icon set:
-       source/official/CATEGORY/PRODUCT_or_RESOURCE_light-bg@[45]x.png
-    or:
-       source/official/CATEGORY/SUBDIR/PRODUCT_or_RESOURCE_light-bg@[45]x.png
-
-    Since the 6.0 release, new icons now appear tp have an `@5x.png` designator
-
-    where:
-
-    CATEGORY = grouping of similar services or general icons
-    SUBDIR = [optional], used in Compute for EC2 instance types
-    PRODUCT = Specific AWS named service (.e.g, Amazon Simple Queue Service)
-    RESOURCE = Resource of product (e.g., "Queue" for Amazon SQS)
-
-    Returns POSIX path of those files to be processed (ending in _light-bg@4x.png or _light-bg@5x.png)
+    :param dir: Starting directory to evaluate
+    :type dir: str
+    :param glob: glob pattern for file names
+    :type glob: str
+    :return: list of files
+    :rtype: list
     """
-    p = Path("../source/official")
-    return sorted(p.glob("**/*_light-bg@[45]x.png"))
+    return sorted(
+        Path(dir).glob(glob),
+        key=lambda path: str(path).lower(),
+    )
 
 
 def create_config_template():
     """Create config_template.yml file from source icons"""
-    source_files = build_file_list()
-    files_sorted = sorted(str(i) for i in source_files)
 
-    current_category = None
-    entries = []
+    source_files = []
     category_dict = {}
     dupe_check = []  # checking for duplicate names that need to be resolved
-    for i in files_sorted:
-        # Get elements needed for YAML file
-        category = i.split("/")[3]
-        target = Icon(i.split("/")[-1], {})._make_name(i.split("/")[-1])
-        source_name = i.split("/")[-1].split("_light-bg@")[0]
-        file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
 
-        # Process each file and populate entries for creating YAML file
-        if category != current_category:
-            if current_category is not None:
-                entries.append(category_dict)
-            current_category = category
-            category_dict = {"Name": category, "SourceDir": category, "Services": []}
-        if "/" in file_source_dir:
-            # Sub directories, add SourceDir to service
-            if target in dupe_check:
-                category_dict["Services"].append(
-                    {
-                        "Source": source_name,
-                        "Target": target,
-                        "SourceDir": file_source_dir,
-                        "ZComment": "******* Duplicate target name, must be made unique for All.puml ********",
-                    }
-                )
-            else:
-                category_dict["Services"].append(
+    for dir in dir_list:
+        source_files = [str(i) for i in build_file_list(dir["dir"], dir["dir_glob"])]
+        for i in source_files:
+            # Get elements needed for YAML file
+            # Exception is if the files originate from the "Category" directory
+            category = Icon()._make_category(
+                regex=dir["category_regex"],
+                filename=i,
+                mappings=dir["category_mappings"],
+            )
+            target = Icon()._make_name(regex=dir["filename_regex"], filename=i)
+            source_name = i.split("/")[-1]
+            # For source directory, use only relative from this script ./source/official/AWS...
+            file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
+
+            # Process each file and populate entries for creating YAML file
+            # If new category, create new one
+            try:
+                if category not in category_dict:
+                    category_dict[category] = {"Icons": []}
+            except KeyError:
+                # Initial entry into dict
+                category_dict = {category: {"Icons": []}}
+
+            # Check for duplicate entries then append to
+            if target not in dupe_check:
+                category_dict[category]["Icons"].append(
                     {
                         "Source": source_name,
                         "Target": target,
@@ -205,25 +275,26 @@ def create_config_template():
                     }
                 )
                 dupe_check.append(target)
-        else:
-            if target in dupe_check:
-                category_dict["Services"].append(
+            else:
+                category_dict[category]["Icons"].append(
                     {
                         "Source": source_name,
                         "Target": target,
+                        "SourceDir": file_source_dir,
                         "ZComment": "******* Duplicate target name, must be made unique for All.puml ********",
                     }
                 )
-            else:
-                category_dict["Services"].append(
-                    {"Source": source_name, "Target": target}
-                )
-                dupe_check.append(target)
-    # Append last category
-    entries.append(category_dict)
 
+    # With the completed dictionary of entries, convert to an OrderedDict and sort by Category -> Target
+    # The sorted template file makes it easier to review changes between new icon releases
+    sorted_categories = OrderedDict()
+    for category in sorted(category_dict):
+        sorted_categories[category] = {"Icons": []}
+        sorted_categories[category]["Icons"] = sorted(
+            category_dict[category]["Icons"], key=lambda i: i["Target"]
+        )
     yaml_content = yaml.safe_load(TEMPLATE_DEFAULT)
-    yaml_content["Categories"] = entries
+    yaml_content["Categories"] = dict(sorted_categories)
 
     with open("config-template.yml", "w") as f:
         yaml.dump(yaml_content, f, default_flow_style=False)
@@ -271,9 +342,11 @@ def worker(icon):
 
 
 def main():
-    verify_environment()
+
     if args["create_config_template"]:
         create_config_template()
+
+    verify_environment()
 
     # clear out dist/ directory
     clean_dist()
@@ -281,9 +354,23 @@ def main():
     # Copy source/*.puml files to dist/
     copy_puml()
 
-    # Build and validate each entry as icon object
-    source_files = build_file_list()
-    icons = [Icon(filename, config) for filename in source_files]
+    # Build icons from files
+    icons = []
+    for dir in dir_list:
+        for filename in build_file_list(dir["dir"], dir["dir_glob"]):
+            icons.append(
+                Icon(
+                    posix_filename=filename,
+                    config=config,
+                    category_regex=dir["category_regex"],
+                    filename_regex=dir["filename_regex"],
+                    category_mappings=dir["category_mappings"],
+                )
+            )
+
+    for icon in icons:
+        if icon.category == "Uncategorized":
+            print(icon.source_name)
 
     # Create category directories
     categories = sorted(set([icon.category for icon in icons]))

@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTSailboat [64x64/16z] {
+xPS7hYin24KVffxzB_ZNA2ZEyunbbL-lIkgX2CpWZzz4OunpM0AWxDGt3-MPTo1D_TH0WF-maw07_DEjG1nbRu-tHHtnsfaSyJxxrt3JtOOea9_KqvBpG-Mw
+mHka_CIHvX-A-p0Io2YWEr14BGg0qXq3DDuIIu2wYq6ZA9VrsGZvE9OuT8rFD98kyf6CxkqZZUhJUIIvDX1X7oqPygc1TGgllpbGeUy6V9y7S9aDZ2r-c3-Q
+DwQZMdBBjv6Q6ySXxlcMrjGu2MEFdnkdCzZYctWr4A0R_B9i0hdBDqBx31XR_2Bf0RxDTzcQAUgMjmnz6z5TaR7L_tsWUh9t0jV-Q-hTWlbvUPs_l3QEWtO5
+kEQxxlfPq0vooNVTgnFee1N6BJy7dJ0zyA_vUP-83bfs-3beV-7zQdwspAo7YKb_VRWh_jV-_h2MU56Xw_tbMjRBzdf_kiOhVY2h_Qsr7gQIOAlziRK-KmAr
+t5z7l6dCqzDXhFPdvKqwdpDjtjh_7T_-3SR-_U5z3YGSt5yKKfwhmC7zAG5NIq2Exc_9G-Fa_jWF5pcvl_QVVnDz1G
+}
+
+AWSEntityColoring(IoTSailboat)
+!define IoTSailboat(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSailboat, IoTSailboat)
+!define IoTSailboat(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSailboat, IoTSailboat)
+!define IoTSailboatParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSailboat, IoTSailboat)
+!define IoTSailboatParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSailboat, IoTSailboat)

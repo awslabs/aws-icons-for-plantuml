@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $InspectorAgent [64x64/16z] {
+xLVRiXmX20nU4Dp__z-ijZsMMvgpLbuF3tDJe6aGdJ-VyYiX5w-lrwjwoU5MMRIfJgagDwwDQcwLXihN5hJFjmTroB2dtpdlGUUFU7B_-WKFgNdAcu7S1k9P
+SSvo0H2rxjGKRiNVR-bdxmYp0QOmdFAJWKZiQMYx-R2Go6mugqiTtZlVHbUflvQ1e1wKeMOCT4ct66an63gWX_4wCxL4vitIFv9GCMHmDLK3OpCmx4Vt3ewg
+D4VfCLjX0Dpw2O3r0HaKwrElT1ZU8zBTs9PyH5_WPQOgmX0-5OHvgBnCAv9JUpT9EUci6G30Xnty02iZ1XOWIuQQ0J0sx8CTGQ4QzMSs0qBVrn37762wU8ue
+lh3us140LDAlN03vMNTL42FHoIxxEibUq-IqgWq9hXlztAihCnspJ0J4ywDYQAUFwtGrSrlD59f7_zfPqCK_oMbY8_AoqnVoPz0eIx-5VkEFB6xovvZunk98
+-p8e8iZyeO2HrT9WHsuPCxZspEni5n0qCLDUjUIdbNBDSeMcxKv27xFOcW5lQi4HMm1ysz47JV1ET0aizAi0HJgL_rpvbIK0nqtGpnGe5EF71XBP8GcXbiJ7
+m5ey0L14G0zBFG5zEJTWz6PCAJBrkG4eq9qsCPIvu4u88ksY-00NZkUTs6WVaTqZI8WPBCRHmql7fySjn0NBRnL4qOO7ldBSGT7jHE4MG8GdaohCXHqDC3f9
+MOlc9ElHWW6wR0quodOLdWXiTWHWsOWIydfyWlX7f1jXsRgc62N6F9WmML2B7oi93MGLYvF18UVpr4e_eo6z3se3roS9Wt_Ctw4kC70bHjHpLTq9dT90lLD7
+WdNPzgy4g8tFjm6izOyjxLPO_uTszkrVGewfDuHxGIKjkzors5WL__67f_X7-fM_
+}
+
+AWSEntityColoring(InspectorAgent)
+!define InspectorAgent(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, InspectorAgent, InspectorAgent)
+!define InspectorAgent(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, InspectorAgent, InspectorAgent)
+!define InspectorAgentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, InspectorAgent, InspectorAgent)
+!define InspectorAgentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, InspectorAgent, InspectorAgent)

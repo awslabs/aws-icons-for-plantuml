@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Keyspaces [64x64/16z] {
+xP85aaGX30LVFE7-1zwYreN0kasFIt-inpCkNAZAgdgB6IQ4MuZLynLowhHOpCpTJ8K1GFBCBW74QpmYNG3Eay49zlAI3V2zJrYEKepS3j-E0TtvZkWcntk_
+-OlXm0VNyc1EV0KaNYXA0A43Fqi0pEIkqwqCLxuEYE_zo9K_duNm21AVl-hz_aFM_lMmCrrLCty-LDOyocZy7e6GCFojVXe3ujNvFKnpz3VxWbJ4g_qqLPlJ
+PXc3x9Nz1-6QUbF_3cXKLLYzfV_4NDgR-ny2Rxoc_vhzsm1wi-_VSX7yQVyEFVLVn63VwBz__Wb-bz-Stzaq1NRah_wMG9pu1B9QN5eyCroYyzC9O8ryC7Ie
+pnV6DRdPlr32X8Y921EzZjBDF4_sly9KU2BQAAVdzqTyvlVvjFMpgxIWOmUlAqr2RVqYIBve2n3Z00L8enwvhWHeZIFA6028HLLLc020xT2-pLVuEdqYqJRW
+2nUk
+}
+
+AWSEntityColoring(Keyspaces)
+!define Keyspaces(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Keyspaces, Keyspaces)
+!define Keyspaces(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Keyspaces, Keyspaces)
+!define KeyspacesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Keyspaces, Keyspaces)
+!define KeyspacesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Keyspaces, Keyspaces)

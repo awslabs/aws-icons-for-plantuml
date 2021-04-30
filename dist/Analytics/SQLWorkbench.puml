@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SQLWorkbench [64x64/16z] {
+xPQ7pkCm38EfRVdz7_XW5VYDDl55Dx1Bh8R8nyGsAsJ-LttrLOxmKepyKpQKyIRMw3_O092OUvJSJGY0PGiV1FQyX3g3HeSdn65HeCxIuVCWFoHtRmfuX-Tv
+4FTuqErjJkZnHe1OvFOoJ02o7Z-c2qfKGabyZYPVBN1JuPAeUNbj_g1_vTD7Zs_gt_b-_uOn0IJ-pEiDBG2n20Fm9nvnu-bhLUa4pWSUzcxf6sAW_2tl1DB8
+xK1UCqt4nciEv4D_6Q_rIgxMyB89fUKuzEdyqbM8i7uBHhsqhom5PLdjyy_riFZPWG2Nr-PjNTDUSVs96MrUy36uY2kqotFTdf-1qUL9LW7sTOMD_f0cNdnk
+G_U2ElrdsfblHg__zUp4dkbZvGkos_-nhlJ7IbeekDz_elNIq3A24DM1VlzZlN0A82g4XIUG_VvFgQU5063BMaBLkJt_w7r32ExWxFF9u1_J05ztKRRvWiWy
+mWK0TEw07Z_J22M9AR1pmBbQEJmgkWAEOomXyqaCEtyFwMcuZCy0Xzy7mCR53K6y1Pp_XS40YPh7Isug0FJzICtfMCDXZ7U9vMSdWEXzFzz_G4Tizz_qrLU_
+}
+
+AWSEntityColoring(SQLWorkbench)
+!define SQLWorkbench(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, SQLWorkbench, SQLWorkbench)
+!define SQLWorkbench(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, SQLWorkbench, SQLWorkbench)
+!define SQLWorkbenchParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, SQLWorkbench, SQLWorkbench)
+!define SQLWorkbenchParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, SQLWorkbench, SQLWorkbench)

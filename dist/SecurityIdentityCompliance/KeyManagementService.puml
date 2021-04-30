@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $KeyManagementService [64x64/16z] {
+xPD7WYqn20C5nZRe_lUT13zCDlssNHkjoiY9xxcvkV5um3K109d12uG1QdEQ0FE2hXXUFHI3NVJ_eREzm7pVsR3O8Q1yXo1wu_Thn5JD7hjNG54XKaqms43U
+f8L9pfoimWOvpH1am4XoeEzFEBanq-_t3yYSWkZtjvIs098t0ME3Aasw_xlGXKyOlo5RltzFUtm4oczmQBpxJCulq6zzBgYpSC5Yq-S2BDviG-ezdwx0QoAR
+j7rof3_8PIl8p7FVqZSg00bMdlekvIzOB1WhJ_pKT_g684LPUUYddlCN7SRAGzymoW-10CxAGvy3bZx3r9oiFFMfAFyzVN-E5oRNUAN-KJJwAm0e3Q_KF_RV
+V4lzSd_1lko_Vp-Susjmzdwf-0Ox-pyNCSH3_i8W_RfFWst0UPa1YFC1L8E_SdDpymm
+}
+
+AWSEntityColoring(KeyManagementService)
+!define KeyManagementService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, KeyManagementService, KeyManagementService)
+!define KeyManagementService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, KeyManagementService, KeyManagementService)
+!define KeyManagementServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, KeyManagementService, KeyManagementService)

@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!-- =================================================================== -->
+<!-- Tests 'multiImage' element with 'subImageRef' children that         -->
+<!-- reference external SVG files.                                       -->
+<!--                                                                     -->
+<!-- @author Thomas.DeWeese@Kodak.com                                    -->
+<!-- @version $Id: opera-subImageRef.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- =================================================================== -->
+
+<svg width="640" height="480" viewBox="0 0 640 480" 
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+   <image x="165" y="50" width="270" height="405"
+          xlink:href="opera-3-0-0.svg" />
+
+   <image x="10" y="50" width="135" height="202.5"
+          xlink:href="opera-3-0-0.svg" />
+
+   <image x="43.75" y="272.5" width="67.5" height="101.25"
+          xlink:href="opera-3-0-0.svg" />
+    
+</svg>

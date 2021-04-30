@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElementalLink [64x64/16z] {
+xTO5ja8n30JGYKso_mr_n-cd9m-7YykSLs_hSjxUo5eW5T1ifnqm0pnxSK1OHG6oEYpgHrXT1sCAQm2JXddb11tdhIRO_taEglhxGvxCExRupdK1y6G-kILh
+O_M5NRB-0zFr7vYk_zYg_k_wNsx-J5gyVZoCTC_g2m4ageaAH03AQaW3B5UlZR93_rAfQDJ1mVf3-5Non0uElnz8soBRUR4jUQNwUwu6OIUV0ec_GIZPFFue
+gLWLf3K40Sjg8y1QGgHUDNzvRs-V
+}
+
+AWSEntityColoring(ElementalLink)
+!define ElementalLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElementalLink, ElementalLink)
+!define ElementalLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElementalLink, ElementalLink)
+!define ElementalLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElementalLink, ElementalLink)
+!define ElementalLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElementalLink, ElementalLink)

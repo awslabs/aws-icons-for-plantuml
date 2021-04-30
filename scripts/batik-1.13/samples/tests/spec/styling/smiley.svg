@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- Alternate stylesheets                                                     -->
+<!--                                                                           -->
+<!-- @author tkormann@ilog.fr                                                  -->
+<!-- @version $Id: smiley.svg 1733420 2016-03-03 07:41:59Z gadams $ -->
+<!-- ========================================================================= -->
+
+<?xml-stylesheet type="text/css" href="../../resources/style/default.css" ?>
+
+<?xml-stylesheet type="text/css" title="Smiling" href="../../resources/style/smiling.css" alternate="yes" ?>
+<?xml-stylesheet type="text/css" title="Basic Sad" href="../../resources/style/basicsad.css" alternate="yes" ?>
+<?xml-stylesheet type="text/css" title="Wow!" href="../../resources/style/wow.css" alternate="yes" ?>
+<?xml-stylesheet type="text/css" title="Grim" href="../../resources/style/grim.css" alternate="yes" ?>
+<?xml-stylesheet type="text/css" title="Oups" href="../../resources/style/oups.css" alternate="yes" ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="500" viewBox="0 0 450 500">
+<title>Alternate stylesheets</title>
+
+<style type="text/css"><![CDATA[
+
+.title {
+  font-family: Arial, Helvetica; 
+  font-size: 16;
+  text-anchor: middle;
+}
+
+.legend {
+  font-family: Arial, Helvetica; 
+  font-size: 10;
+  text-anchor: middle;
+}
+
+]]> 
+
+</style>
+
+    <!-- ============================================================= -->
+    <!-- Test content                                                  -->
+    <!-- ============================================================= -->
+    <g id="testContent">
+    <text x="225" y="50" class="title">Alternate Stylesheets</text>
+
+<text x="20" y="80" style="font-size:12; text-anchor:start">
+<tspan>Choose your alternate stylesheet using the 'View->Use Stylesheet'</tspan>
+<tspan x="20" y="100"> submenu items.</tspan>
+</text>
+
+<circle cx="50%" cy="50%" r="25%" style="fill:gold; stroke:orange; stroke-width:4"/>
+<g style="font-size:128; text-anchor:middle; fill:black; stroke:none" >
+    <text class="smiling" x="50%" y="56%">:-)</text>
+    <text class="basicsad" x="50%" y="56%">:-(</text>
+    <text class="wow" x="50%" y="56%">:-o</text> 
+    <text class="grim" x="50%" y="56%">:-|</text>
+    <text class="oups" x="50%" y="56%">:-*</text>
+</g>
+
+    </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../../../batikLogo.svg#Batik_Tag_Box" />
+    
+</svg>

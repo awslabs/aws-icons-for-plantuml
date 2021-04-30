@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SecurityIdentityCompliance [64x64/16z] {
+xTS5SiCm50JGNS6dtF--jP8nbMGerpiGVFeh3SdwxRd5uToQZnFvu_xoPYUyLmAiVinh1f980hBkzbRO9eyjM6o7ztcewbp5jtahuv_REw3Ok6InldUk1BbQ
+ZTxpYhfidD9oDnNQzxOyiPIMfsdRV7cCc_sZKDdgCoDcFuRvy_tbBt_vSiAtlrIywiiM7wWXy5SyQYlNzVEOjNT8AzRrcH4eBtqhbLF7Z__ZIz--O-bxl-zJ
+Ppz_RT2E7mdJSrzWKH0RlC1286jloE4eMtmm3mwsz9xWKM6Rl433IPszf_OLScpoaUZXHB67zmfeg-GRlJDvU06OoPo0FCWCZOq-3BG8bymXkGxQCoGs-p2Y
+nYB2nhVxDWz5_VvM2v4iTldnya9YIDP3zp-JEaJikd-_dikVVdxzzZm1
+}
+
+AWSEntityColoring(SecurityIdentityCompliance)
+!define SecurityIdentityCompliance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SecurityIdentityCompliance, SecurityIdentityCompliance)
+!define SecurityIdentityCompliance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SecurityIdentityCompliance, SecurityIdentityCompliance)
+!define SecurityIdentityComplianceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SecurityIdentityCompliance, SecurityIdentityCompliance)
+!define SecurityIdentityComplianceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SecurityIdentityCompliance, SecurityIdentityCompliance)

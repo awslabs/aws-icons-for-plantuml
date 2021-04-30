@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Officebuilding [64x64/16z] {
+xPK5aWKX30LVX2oM-rztA_FTtUagd1v1yQQ8RaAuYEfRTC45gEzGSG7cRhfEytwXprYdNEKJHQ1h_IcktixpXpzygssYx_hUPXGwQzk5pwg0H1J-WeQ3PFSo
+vmyRI9dJtEcOZnFyFTfdTqDobutnwruWxkcKFtmgHQ6bC28cv981n8BWQBbn_jxPl_t_Rn__uOC8KxHn_qvnXFTVVweCLYL474L5n0AAbWUFt_39JC1c14Z4
+oH80CuqM_kBpw_Rn6_uu__89wZ4_-Haq72RtqxhWdVW7
+}
+
+AWSEntityColoring(Officebuilding)
+!define Officebuilding(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Officebuilding, Officebuilding)
+!define Officebuilding(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Officebuilding, Officebuilding)
+!define OfficebuildingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Officebuilding, Officebuilding)
+!define OfficebuildingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Officebuilding, Officebuilding)

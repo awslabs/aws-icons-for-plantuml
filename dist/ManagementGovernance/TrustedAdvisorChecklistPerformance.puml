@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TrustedAdvisorChecklistPerformance [64x64/16z] {
+vT87jfmm34RXNvPbOz_zhpTjodacTD9pJvs1ZoRfzvVoVcc3SwIqwfqZ-POlURkourtR-M4VViixb1lUElWrRvBKeEYIpxXKeEcIJu0xO99K6Ofzh_BUacjU
+0U-NptN8ZtW5j5lxaujTzqE_qTjDtvlTyHFK6pwWwvAtAYa1wPAtHfCwP4coiIE-GvkWNjr_wm1DLxsi0VRy9uRyY9Sr_6VjRwerNV13Lxsjj-1BQAopaSrz
+XZ9mOokVUMF-BWccMAuEFabIWz3SXxxBl8Jyem-oL64QziSNVU5h_j4d86Veu_xMHL_vMXdkdnyW7V6vTM0Ql390p4S--74eVVJAC6dUig_G8KOl3ntp2LhA
+oGS_jEtR0vpsaQJtYvxstg6Qf0vfvhEjzFBlcOO2gaQ_r3X_xq3jG0DCKDy-xViAz2G5NmiDNZdMyeTlGD7NR8AkmM_sy4vFaaT8yffEU-Nd5zIZqzxixSti
+j0z8Bzze_vtt27lDBqUM5E4d_6A7_PINAyVyLljUR9NslUNradv_dm4
+}
+
+AWSEntityColoring(TrustedAdvisorChecklistPerformance)
+!define TrustedAdvisorChecklistPerformance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, TrustedAdvisorChecklistPerformance, TrustedAdvisorChecklistPerformance)
+!define TrustedAdvisorChecklistPerformance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, TrustedAdvisorChecklistPerformance, TrustedAdvisorChecklistPerformance)
+!define TrustedAdvisorChecklistPerformanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, TrustedAdvisorChecklistPerformance, TrustedAdvisorChecklistPerformance)
+!define TrustedAdvisorChecklistPerformanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, TrustedAdvisorChecklistPerformance, TrustedAdvisorChecklistPerformance)

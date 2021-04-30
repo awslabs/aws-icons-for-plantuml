@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<?xml-stylesheet type="text/css" href="extension.css" ?>
+
+<svg id="body" width="450" height="500" viewBox="0 0 450 500"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:batik="http://xml.apache.org/batik/ext">
+
+   <script type="text/ecmascript">
+      <![CDATA[
+        var  g1 = document.getElementById("g1");
+        var  g2 = document.getElementById("g2");
+        var  g3 = document.getElementById("g3");
+        var  g4 = document.getElementById("g4");
+        var  rot = 0;
+        function rotate() {
+          rot += 2;
+          if (rot > 720) rot-=720;
+          g1.setAttributeNS(null, "transform", "rotate("+(rot*1)+")");
+          g2.setAttributeNS(null, "transform", "rotate("+(-rot/2)+")");
+          g3.setAttributeNS(null, "transform", "rotate("+(-rot*2)+")");
+          g4.setAttributeNS(null, "transform", "rotate("+rot/2+")");
+          setTimeout("rotate()", 30);
+        }
+      ]]>
+   </script>
+
+   <title>Animated Stars</title>
+   <g id="body" onload="rotate()" >
+      <text class="title" x="50%" y="40">Animation on a Custom Element</text>
+      <g transform="translate(40, 100)">
+               <g transform="translate(100, 100)" >
+                  <batik:star id="g1" fill="crimson" r="50" ir="40" sides="24"/>
+               </g>
+               <g transform="translate(230, 100), rotate(3.75)">
+                  <g id="g2">
+                     <batik:star fill="gold" r="90" ir="80" sides="48"/>
+                     <batik:star fill="crimson" r="50" ir="40" sides="24"/>
+               <text fill="gold" text-anchor="middle">Batik Rules!</text>
+             </g>
+               </g>
+               <g transform="translate(100, 165), rotate(15)">
+                  <batik:star id="g3" fill="gold" r="25" ir="15" sides="12"/>
+               </g>
+               <g transform="translate(230, 190) rotate(3.75)">
+                  <batik:star id="g4" fill="green" r="50" ir="40" sides="24"/>
+               </g>
+      </g>
+   </g>
+
+    <!-- ============================================================= -->
+    <!-- Batik sample mark                                             -->
+    <!-- ============================================================= -->
+    <use xlink:href="../batikLogo.svg#Batik_Tag_Box" />
+</svg>

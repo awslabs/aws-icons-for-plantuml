@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $OrganizationsOrganizationalUnit [64x64/16z] {
+xPU7TiCW34MZ0SBu__-tgA2GWuVQxFKoRCOLZtdimwFr5VAPmehFPmkLf_DvQdpaCnIDr-iPeat-oqE84lXS7jDS5S_YmtnKnl_nXYU60uPiIrI5H0vlsJqj
+nK4BcjLE0f-VMj821Bsclk8TlgJaq5KDI265mrGkuF1HkpmaqGQofCJXYzDXa5WnEdREuISrt8NAMqnpjyVBedqwuSCAx_TVRDWq4kppk3B-fKQomkcC-TUy
+X7LbaiVhSSo6j_OWpqtnp-iVJjO_7Nc1C_QVrFlwJnuFyOJdrYFHGF3hYFRvHkVSsqErqNSaxF0mAHEmrb3ZDfqzVDhc8QldmKsht-SND_bSpuZXE94X8sxn
+QMZCB3L7raRUuBalpy41b0itbGviyBdlZc4zY8vy5wpol7hWMroVDsDh1eBwDy6gVr2Rwnh7PPLd6-T1vipXxUGPPKKkByN_XknCSVWz-JpluHcUzFdbor_-
+_7oswDBtXqlVNnwjhtu
+}
+
+AWSEntityColoring(OrganizationsOrganizationalUnit)
+!define OrganizationsOrganizationalUnit(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OrganizationsOrganizationalUnit, OrganizationsOrganizationalUnit)
+!define OrganizationsOrganizationalUnit(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OrganizationsOrganizationalUnit, OrganizationsOrganizationalUnit)
+!define OrganizationsOrganizationalUnitParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OrganizationsOrganizationalUnit, OrganizationsOrganizationalUnit)
+!define OrganizationsOrganizationalUnitParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OrganizationsOrganizationalUnit, OrganizationsOrganizationalUnit)

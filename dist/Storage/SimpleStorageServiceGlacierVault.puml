@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleStorageServiceGlacierVault [64x64/16z] {
+xTS5aWCn44DH6QRTkl-1bqafUPdJhoWmVvYCNsOyrG5q-GKl28g1GH5urg2Qc5G3pqboZdlphfTV4iyuo0CFsbtVp0HMazcx7gbVrIA7wtK7BMnCsRs-Hv1p
+k_PiljSV2I5pzhrVIzLbvsalakmGyhFl_O9qjJ9EtFLn8jqkJ1etlPFcr3EoeIMD0x_BnzUVs_rdcJvZV_nKsZuWvFnHyI_wwgklllhggw---ZM4Z9_K8Z_z
+_Itf30mwkHsucl6hWL_Z4W
+}
+
+AWSEntityColoring(SimpleStorageServiceGlacierVault)
+!define SimpleStorageServiceGlacierVault(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceGlacierVault, SimpleStorageServiceGlacierVault)
+!define SimpleStorageServiceGlacierVault(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceGlacierVault, SimpleStorageServiceGlacierVault)
+!define SimpleStorageServiceGlacierVaultParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceGlacierVault, SimpleStorageServiceGlacierVault)
+!define SimpleStorageServiceGlacierVaultParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceGlacierVault, SimpleStorageServiceGlacierVault)

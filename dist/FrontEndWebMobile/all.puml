@@ -1,0 +1,41 @@
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+
+sprite $Amplify [64x64/16z] {
+xPM7qkqW28GNiO3l_y1t237SviGuvM_Pqz9MFXZXzC-fLwzUIMPJbar_XIjj-fN8VZBQbbjwGRM37G0Fwm1b1q0ixxeFaB0Du9QYe5vH3W1wvdQ7bOz8knyz
+4X_4T07GGm1_tio47G0FQ_Hj73rnvpEicTDnL1y0AD3Ei0aR00pG6ROXFmDmJq4rvm383g1hVakT1e0W0ChYpgl7mmBsP6G0u1OWceLWpWE0HosM0Dnb2GI0
+NBLOATwLH8OSGDnv6O2WdaIaaj4M0JokCqVVsp8C2RYv1Cb_EBhu1E0L08R4Ouwp312tOwTSywkk02YH_ZaiOdnSko7V5YyZjrFIQJIFZjsWDyNhGAX5z-Ox
+W0JnTUebK3JF1I2paPN_br4qpm3WUV7-4L4qZo9D0ER_ij77oG3Q5400_fy0PTX1GbQGN_eFGCD4f49-b7k1g_MlhrUlNlq2
+}
+
+AWSEntityColoring(Amplify)
+!define Amplify(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Amplify, Amplify)
+!define Amplify(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Amplify, Amplify)
+!define AmplifyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Amplify, Amplify)
+
+sprite $DeviceFarm [64x64/16z] {
+xPO5jcGX34GhnBF__Oum0grvtxNQctEH24czdBxrhOYdqCa0vwDn1LW0VHpjX15LCK3-S3eOi9goET63b098LZcphry7jLPKOEvY7iAEqkl469L4kpLwvR9u
+Ggi4oni73g6xnudSCVPeqDPd_voLckK04ELwDdnBsm8s3PTcMSMBKe1luZ6txXfLlf19qHpmUOYupLlL021LNhlIgnXpRRlFApIkBc6G45Z7CrN5DJCBiXBI
+yO8elPAqCURQsl49402oYw0Y42Wxlb9OpwFL08vKbgo6Fu_3pBEewVazMWV0AwYEySRBPD0zzTbwVakuwQvYr3z17i6FX_A-JilW0LaszPw_SFl2Zzj_QL0z
+aFS1Zcjy38ne-G0nA2_v11Z8Fd-o77R9AwAYpn_6_5py0_FNm4Q8IzunRC0xlWI0LRBllEdCA6XZlvboaLKESFxZOu3-3IGZZjpVAV2PklFcrFqcE5O_AlxN
+pynz-7ZzIenCegP-FRf-zlMRA1pZLltk-mS7WBZPF_JzIwhb-lLI_LFVlxr1_xZwrpVgdtjzwri_0G
+}
+
+AWSEntityColoring(DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarm(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DeviceFarm, DeviceFarm)
+!define DeviceFarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DeviceFarm, DeviceFarm)
+
+sprite $FrontEndWebMobile [64x64/16z] {
+xTTLbiCm341HsM9r_-iT9Yide6QuVlyt78F-U9UukikZZnFzAp-zoKfwo3EirdtV6v2lfC3xNi1ZhOudVJ_e6opJWeVEAGAfU8wK_x0FiGZLwxtdQfuXvoNV
+kuw1b7p36FBVwQUVVlhfCS_yhSiGWnJclnuDKflUSz7GXspBfqhtRy3htlf3jEc3O5al-51U9CUkVxs3psyzX9oLVAYClV2v_fx-zFxrnxi7
+}
+
+AWSEntityColoring(FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+

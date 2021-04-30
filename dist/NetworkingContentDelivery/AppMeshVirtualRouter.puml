@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppMeshVirtualRouter [64x64/16z] {
+pLU7bgmm25r8n___tsSmNetW6T_MOUk8bz0X7szCn64bfizWGsaBg9NmN-1O5qCrFaNd7L5IN2cLNLf-WauRDl7v8QTDHdg5Pj63o76cgYNy-l3qa6kfArde
+da-bctRBxH6Rl1nMWIrCaUdH91ykgtaJAy7jzYrBxIgPkhBTf73LidcscyTPhGchIyn1rVEja97O_yXLBecD0gzgNgqgsoESDXd6HYTu_kJhnbpXm9apQs-C
+t3HN4iif5mkCzd3rdBBCXmMpfzDTnkQvC2Ku34YxKa3mZxfc0uadOHp8noiaPVKSaWE1fbFvPX_FQcGTvz8fhFYNaF0-FlT02muzNae8Iua21l08Hcq8T08h
+3v-eS6MmnKSqKZgh0nGSCT9snbClmnRRtbvG5p0VX_JwFaScwX_Jk2PF5Zn3X8-85-rQZPqS9iJbN1bql06ohHz-2bFfGHbbI8fYkpQE2lTun8NWZ-TuE0FX
+-TBvzHuF__dsBoa9n7l-G_mi7lx7yJP-o1-BH_pp_R13_hfuv1yeP8nrv2_g1tYtVw0TbgcSKR_mYTy_aDnWetxX01HfSl6aus2n_UFeNx9YkmoBHvwKI_z2
+_uJnjd_WhQg32lrpxj_wj-a9BHWyQJ8870WjCJ_636zRpl3EA73iHeBvOUSNZOGR4hIRTms25d6Wt6f2e_Rc9nLPAdtm9g6Z82yvy_D-VeTX1eqYAEJFRtz_
+W8GHrCRE_l1yVv6N-ulTdn2LwEvFJ_StQT3Ltz_ypT2KWtdhqVxAHQG-s5-_lZz_VN__-ltXw_UNhz-Vldv_-_hzqTvVtvZ-0G
+}
+
+AWSEntityColoring(AppMeshVirtualRouter)
+!define AppMeshVirtualRouter(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, AppMeshVirtualRouter, AppMeshVirtualRouter)
+!define AppMeshVirtualRouterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, AppMeshVirtualRouter, AppMeshVirtualRouter)

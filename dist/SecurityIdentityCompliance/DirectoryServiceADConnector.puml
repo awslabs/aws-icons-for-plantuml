@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DirectoryServiceADConnector [64x64/16z] {
+xPU7SWCn24IFeiR-__Uw5vGSFacPJFLBSLqDi83Fst_mXNAHlyW18AthAwxGgbo0be2ogc-0NF_ncbo1UWzYJVz8lGAw8iz0VfXWQzwPEsWM7xO1jE9TLyX9
+3E3Uo2dwjk5P3mbzocLe3EBt4u09EGCMv3FS-44zHni_U6xQkqaFurmPi67l8a_clOjx8lQkJUGrKoUxdSoYoZJgdOSoQyKTAn9vHx4py3G9bbO06m3KhA8f
+t-y7IolA34YluBW0QBIpj69vNtvkW56mj7uYs3cwzk__z5bZNkuFA4CDKe1yE6fzWyPrfLGhkuoFlSi--kIjgm0V3sY1kVjNJ2_mBO0KUUSZPkzZmeDRqYsS
+kx1YzjPNu5c9cex9DuyCJIxGlJJtecCKlUbTDVaUWAthxz00ukFVNFmnSVtCrUyZKiNxfpl-VQJ5_HCrRTo_UQT_0uBvoRL9iEtdvdVywXJH_gY1O71_sSGL
+5VAl_GdQPWwmz2vY0M0yfdK3KfEAQ6vt4-V8y9XiqwI61yjVh5XLfS_xona
+}
+
+AWSEntityColoring(DirectoryServiceADConnector)
+!define DirectoryServiceADConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DirectoryServiceADConnector, DirectoryServiceADConnector)
+!define DirectoryServiceADConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DirectoryServiceADConnector, DirectoryServiceADConnector)

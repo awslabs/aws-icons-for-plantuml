@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Fargate2 [64x64/16z] {
+xPQ7bben34HdHit__yCfFcQLzi0cFU7kqhcMonmznhTvyU95EUdrh1m2I41HvtOQ0Cj-SZXlOCsyN-thG5VisMmFaEW1MaVk-twRSa_VZ_nLKvbQSpdrrm6k
+uplt9qLE-Lb_aEFG3wihlonsWXDNVZoAKN9-uSgVmpFlvSxh_lhBx-HGYCVx5z2L3ztcOL_xTgihNFdasrSiF_VJtWOdhto7QZuf0RJ8-kXNXX7eZtnSOK3K
+gaUWuPfF1M3ZcY1WkIg5kvcPUwmtqW34WwP709fpR-OQ181H6yrBc52IcIHYelqMLk4caGH8IkPdFRZgufqjqhhfzwN0SjCc80FWdGl0171h10COQG360e1b
+4B0ztm10R9y20DlrHmavh7qR2TNOzVjMxZNzTJlpR_txrBSqh217hDZEDxVy91e93VCeFsG8K92TdvFyadsRxnp2zfjVw0jqqWaz_UiDw4lMCuGKuv_bnOlt
+}
+
+AWSEntityColoring(Fargate2)
+!define Fargate2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, Fargate2, Fargate2)
+!define Fargate2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Fargate2, Fargate2)
+!define Fargate2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Fargate2, Fargate2)
+!define Fargate2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Fargate2, Fargate2)

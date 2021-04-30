@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingPoliceEmergency [64x64/16z] {
+xPS73kKW30N11jjp_mllpvUtH83YrVOoAXHfqbvexJUZgsRHzyK30-HLwAT2NuNSYZt_VPrcvc3l0ZyLKtUs16L2LZ-WJkpUUxOY4tJJryfixcL_hD_rmh_E
+TrNDqQWaTPz4JtvlYMfB-iblSc4tFpmbIC_ZvjjREdq_0-_vJyTLwGvM_lwJ2pVZZPbpCOg-0WxfPiK1BUNN0MdgW6lxL56WL_8B6BSldfK1KSZF8TgM07lE
+J-8mIoc45F8JYCFjfVJz3Vgg2rWvFrrzhURN1CPXOY-Dlt6yVsty1RGD48k_Flzv9fwWw_Elto-Wx_mEKVZ-2lCyxJ_wcVxX0URYB_-l4-r0u9l_Lqag_Zc_
+qlFRStuAjlSDj9QVxUvkjVnQ1p1fDyI0w1M_zU32Hy_sT4Zz8Rza16zSMXFdJUIOVCWlaU5VpjysfBB-tT6yiskxSSnlGHnSsi8flvKv_v3zp_m6_nlsZz-y
+V_ts_VEtxz__dt_g_ZUVNtypFW
+}
+
+AWSEntityColoring(IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergency(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergency(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergencyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingPoliceEmergency, IoTThingPoliceEmergency)
+!define IoTThingPoliceEmergencyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingPoliceEmergency, IoTThingPoliceEmergency)

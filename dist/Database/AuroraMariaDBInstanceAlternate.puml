@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraMariaDBInstanceAlternate [64x64/16z] {
+xTS7rgCm301XoLtItF-ykpZXGVuQRozC6kq3xDU8_2bfBa-NzQMkpb9UpbgTvKmF7X2zbgUh0mZTlSDGMKeDR1yx35dEeEoN3rtt2hOlTFc63EPlXYgYynRc
+pwdgULzKrSU51cdxBNCWjviOs8CVj7qn0C_pSABUfYsVVHnZEifo-DOXIS5Aa5vxYjJfI-lbgsnIScv9jFQMDg_IwLBeqgcllCSGDqmI7bJfE6qxS8GJDv_n
+wGVvjUzawkt-4qCw8-lcLMIGfa-4528Oyjed0jsybZ9zaTkDvlBehJdbjHTd22Ofmi--ut7t6Pltdp1vxNDBcszaFNjS-jqFsjsxlFPRq_Vsu2FxzCC8dVTl
+jFTz2aQSV8CnFM5f7eutUUdFwQlLLxto2_rEV_dBN_xobx_yvTFn_BfUktk5yJtFp-AWwponNxQ0hNk7VDo9wPfEVXgr1c2jF5jj1lZ3lw7bXfmhnbAMNmyf
+FvtA7zCN
+}
+
+AWSEntityColoring(AuroraMariaDBInstanceAlternate)
+!define AuroraMariaDBInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AuroraMariaDBInstanceAlternate, AuroraMariaDBInstanceAlternate)
+!define AuroraMariaDBInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AuroraMariaDBInstanceAlternate, AuroraMariaDBInstanceAlternate)
+!define AuroraMariaDBInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AuroraMariaDBInstanceAlternate, AuroraMariaDBInstanceAlternate)
+!define AuroraMariaDBInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraMariaDBInstanceAlternate, AuroraMariaDBInstanceAlternate)

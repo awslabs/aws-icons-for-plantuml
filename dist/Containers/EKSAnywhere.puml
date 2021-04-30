@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EKSAnywhere [64x64/16z] {
+xPM7SiD024JtEDh_Vt7283VIG1DFrRgelZsQPN-FBbrIpSyv6M6vBv2TeXb87k2vWomiNS5_Rh1a73eusFmmG3OBVPi_UBSDi4r2Tt_meNOIIe2uLzvT0DA_
+QDiPUkNhjQgwHkLhR5NVvcZ9MwtDpukplHvlTtuzQ_nZ20mjqolVHQNWl_aSWLALFg-PPgbyZtzCc-fBvRdBRv3bDh_tKNbfyqzRJhFavhnWcP_d1J0_polY
+d4c8iP-srk81ERPLqk8pUO8LIPFVeE3XHThaZS317pKuDjRctHOa-Ao1EST6-hmReC4JR4ETeJBYNO65u3LvuHdl0epZFvuSUPDEwsUCT4YD-vSEf6E-F7BI
+GGdT-CMzEWJTh9y0swf3d6lstvMgWr8SKw__XmER5_NcDoMhEZH-FyKXcp_gVwgCpvYlupFdw_XaGXE-_kSf0GE-ZaEu4BI8a-yuaFMUtzzBrRFfLUR_eKkN
+FW
+}
+
+AWSEntityColoring(EKSAnywhere)
+!define EKSAnywhere(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhere(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhereParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EKSAnywhere, EKSAnywhere)
+!define EKSAnywhereParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EKSAnywhere, EKSAnywhere)
