@@ -73,12 +73,21 @@ class Icon:
         # Parse for id's that indicate service or category and replace with color fill.
         # If id is for a resource, no changes needed. Save to a temp SVG file.
 
+        ns = {"s": "http://www.w3.org/2000/svg"}
+        fill_rect = etree.Element("rect", width="100%", height="100%", fill="white")
         root = etree.parse(str(self.filename))
-        # Replace any gradient fills with the requisite color
 
+        # Replace any gradient fills with the requisite color
         elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
         for elem in elements:
             elem.attrib["fill"] = self.color
+
+        # For resource icons which are transparent, set fill to white
+        # TODO - can we query without namespaces?
+        elem = root.xpath('//s:g[starts-with(@id, "Icon-Resource")]', namespaces=ns)
+        if elem:
+            # To set fill, add a rect before any of the paths.
+            elem[0].insert(0, fill_rect)
 
         # Call batik to generate the PNG from SVG - replace the fill color with the icon color
         # The SVG files for services use a gradient fill that comes out as gray stepping otherwise

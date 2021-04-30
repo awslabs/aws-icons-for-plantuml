@@ -1,6 +1,9 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
-sprite $SagemakerNotebook [64x64/16z] xPMr0G0X34NhK_RVbXPtYBu-Bj-WuUxacRI_4TgRLf3PXsNTUNZOCvuVh3ty_2RjTNvbWES7Ryz_Vl3_x_QOjP_TNvsVwf_EJ-UdyolQzy30_Z4Oi
+sprite $SagemakerNotebook [64x64/16z] {
+xPS34iLW48ENrVtl-pZCLAdr3OjbVifXKET0UsyuT7dxzB6KhVOkOya3s8DsnR_-tslpBWpjiVVn_zn5kOgzc5b-RCtizrgj4x2_ddwyFVP_ldtKNHGZzEFr
+n_v5sKKUJJ-iVtVzTbW_e7zpzPzlhzR93VJRV_qBM380Jl-IhpzWoNZq8-oV_M_E-dyw_Pxzxvb_y-zF-z__r3Za4Bm1
+}
 
 AWSEntityColoring(SagemakerNotebook)
 !define SagemakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SagemakerNotebook, SagemakerNotebook)

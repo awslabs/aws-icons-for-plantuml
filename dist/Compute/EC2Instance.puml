@@ -1,6 +1,9 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
-sprite $EC2Instance [64x64/16z] unzKW0C82D63Kl-eVWwImA3KJsmgfQv-F8uY6DJ3GJ_zmtyq_aVZVpJ-H-D_DFv7utyq_aVZVmYsNuTb_sDKF_q1
+sprite $EC2Instance [64x64/16z] {
+xPV50S0W34Lnil_2zLiDr_ygdB1uM5DmARd3-8eW4WvZ-lcOp_M68J8kuuCIDNcWiyndZgITp-M1yPblv06_T7BXFlz2nCwFFNyT-KF_q3_q3_r3_z0_z0_z
+LwW_e-ld-lK_viVth_LP0G
+}
 
 AWSEntityColoring(EC2Instance)
 !define EC2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Instance, EC2Instance)
