@@ -117,7 +117,7 @@ Due a lot of new icons, moved icons, and in some cases deprecated ones, the prev
 Here are the significant changes to this release:
 
 - Minimal curation of icon or category names, with the exception that the `GeneralIcons` category has been mapped to `General` as in previous releases.
-- Apache Batik is now use to general all icons, with transparency, and should work with light or dark mode displays.
+- Apache Batik is now use to general all icons from the source SVG. Resource icons which are transparent by default have a white background set to increase the fidelity of the PlantUML sprites.
 - The builder script and supporting class have been changed to extract the parsing logic from different points in the code and placed in a global variable. This will move to a configuration file and command line argument in later releases.
 - Category names with _and_ (or & such as _Management and Governance_ -> `ManagementAndGovernance` in the older releases) have been renamed without them (e.g, `ManagementGovernance`). The `InternetOfThings` category case (`Of`) has been kept instead of the default`InternetofThings`.
 - The `GroupIcons` have been removed from the source assets. If there is demand to have these restored, we can look and creating a local set of persistent source files.
