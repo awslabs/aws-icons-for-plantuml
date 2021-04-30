@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeepLearningContainers [64x64/16z] {
+xTC7Rkj030JGuRBF_U-Rs2i7qYygQQXwxcL93W7nPzrkjrZKLu_ZfVabWdnoE3-frdDhdUPLlfcxjEEJCHeI3uOWEL2C9uVo6aE-vcvkmYkALnH6LN_iNxRV
+ymh5Wyytgl9AxKqE9CybXhidMT3dat6EuYn0U6wWjtaLJRP8Kx5irAmFspjfUD8bzHHp796v5Ud3xP6X3_PAhZhcTwYPI1271Hp1rIP9Sw3cGWBENJChjt99
+iXmB96UENOazqgJXzRJFTKVDUFryyiZcLypv3K_Q_Bo2aLsLeK1z8lsAYnx_EnyOUimvrO3lv3jLfWDm_aSYU6e0OiN_QHZF98oxC2vTehiK_PtsZBC5j1ns
+wBC0UjB0ZtyFw7VcIyZvVaPpHm75CxvRe83aEOVa_xDByOe0jFYN6klnCwt0YEOg5R3cPMK0n3pomLNMYQxgDC67uSslg8o8BFwQs-ts3W
+}
+
+AWSEntityColoring(DeepLearningContainers)
+!define DeepLearningContainers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningContainers, DeepLearningContainers)
+!define DeepLearningContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningContainers, DeepLearningContainers)

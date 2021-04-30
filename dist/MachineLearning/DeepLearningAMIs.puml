@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeepLearningAMIs [64x64/16z] {
+xPQ9Rkiw34GFAOaKv___zorIQiIzXkCB57jFTo4pOhav-d5--QKoInVCo7gWxW3ZptC727sYqJASyQUyPnYfUoPTafpIYLXN5wvxWhb_-1dRXftIBUDBRsTu
+g9-qg_YdCtRy3_F7-5wJP_dJ162yLQ06jBdhbm_gb-QbEWm6U3xkdwJBNFeo2CD2pt5gwRT1-bO_9XXQ-cq0erReup-cFcFKbtuse6lX0FRi-gsl3crwby9I
+vdCwIXkweyoqzBjaKaa3C9hKCE3MO11BRxja-yYdsIYfXjdqEuDNTmPO7aTMvmWfNLFLIIaTN0TElE-am7L96k2Q3iFy-pmDW5vIO-gAm7etVBrgnA7kw_wE
+HpIQb7Y_SDZ_PXcjz8w37JFToNNYLrqVEmflRqovlUsKOYpF2tsGs-P4RlsnTEY7_dfhTa8dt2BVt4FACB-S-b4rU7LTwKK7IeLDQThwbNtLvTF1PeTMRpVC
+DH49xf2hGwSkoTwDsbFdRyUqDOjcRQuuutxtQBTGQRD3_zo_6z-5Ch0uNf_Ar29JYTN7vMyUXctHDFgsIuEEJTtGc4klsbitKjFmWQyI-PP_2i1SsWwuL54o
+6yDi_NfF9q_xizNH1pHzfl137tY3Nkjypj8J1h7qIrv7CHzJsD9lkQI_VOGC3DeSIxvu5JCS7_f8G7FOyiCJRrWpl3x7NzA4EfqENdjmVBm-Ty56dF1jwAQ7
+xt--iuKDtPF4gu_Ej7s_kMxP0wUWwSp4IzK8VM22SJ6b0-nH3rTlxQhbPlUM-Z5--ULV
+}
+
+AWSEntityColoring(DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)
+!define DeepLearningAMIsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLearningAMIs, DeepLearningAMIs)

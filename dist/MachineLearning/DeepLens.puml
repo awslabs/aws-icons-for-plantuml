@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeepLens [64x64/16z] {
+xTLLekGW443HSjl_WWVQvOjYdkUsouadrBVhw2YLBsaPbuytjk8Lhb4nd3_wWXUebmBiv_aq9hQs3mGOTygUJvmc1RZdzK8OekKPgenYK6rvml40gGHfpZyh
+9CkRypUGcb5l_IVaI9-hqFF9C9F-yUig6Z_o_F6NRCaRl1UraDkCGK-FsHAl528gWvYF6EybbpZ2z4un7jCZy8f_trgojFu2hulhczTlNzl_x-F7edyRlpQF
+N_ziRn2rxzEogiAowGcqgXIYwHMyuvNgLiUVrtdBdvS_9BSyWMnvezZnv_Rz_l97U_irlNEUzz_vVR3NT-lew1y
+}
+
+AWSEntityColoring(DeepLens)
+!define DeepLens(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepLens, DeepLens)
+!define DeepLens(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepLens, DeepLens)
+!define DeepLensParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepLens, DeepLens)

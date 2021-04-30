@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LookoutforVision [64x64/16z] {
+xLM7iXmX39Cxvly_E0FPd8StEBqdUkLspyYMJ9lV3__n7yCzyglPJbYGqSJJLRrDdmAo21V07p4gp2BsI0fiUCCNQBxd4MA6O85eQsBB6I3FT6eIE7HnLwqa
+qEAC_A2300NjroHSBH3bJ0QWMwcTWq9UmlqgOC3cP9ZB2XFFjr0y6HDwuGTYvTX2LY--bE-hPrkPu1bymZ-kVt4JijBpjNv-l7-Rgo01nifnK_ZCNpJJF-Oq
+0g-FgqJ7GaEVO-lRY2gV8y_rAnr_wTkXD41oFp00aCRPXjaW018LW1MSqzQhcJ8Wuvo71WO2mBwV1FpKJJrC4tTyHbK1f0A3K0gqdWyS2yi0ZBEvzQnT0wF6
+S1oY0zePE5TuQHm47wy3XoieoBlzcXci4abOe7pJTciQG7niviMHJ0TNSyhd1P1owu_GiaLdjETN1QPwETJT-NIlByYBka_ursVMOoZaC_qBAXNLZfKiqjd_
+Vlxj6PrkprX27dMQ8-myh0eEEtqsHrYDbpCrvR4u3jmMfaBgnO5izrzpDEZh3We65QNErliTLfe9O146e5dtzsfj1p-jXH90R4zImmRD7jnwMtIAJ4VLRmxn
+BiHPKzixa2QY6DNb7jebO9oReq_0sPvEjPDwA2ZQtT5ltq80afsnkhzxf00wZc-Cdfqy63O_YI40gO-nRk0m1iXNLW8EUezXZ8B6DgRCfUkJo71JDOkSloN-
+up_U0G
+}
+
+AWSEntityColoring(LookoutforVision)
+!define LookoutforVision(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, LookoutforVision, LookoutforVision)
+!define LookoutforVision(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, LookoutforVision, LookoutforVision)
+!define LookoutforVisionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, LookoutforVision, LookoutforVision)
+!define LookoutforVisionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, LookoutforVision, LookoutforVision)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Rekognition [64x64/16z] {
+xLM9YkKm39Dl9___mRk9EnkOiatVnVa418zRIOxUuFOFu8ilCjmZsrFSve83fF4msm2mUOIR4a2FAJZ0lkPE0pZlcml8VxKKYBjqXhHPXAcQbt4Ix2xT9a5M
+VgtwVeSliBe3nBFr32DKYn1tefEQLbP-KNybqBRJW-QRlwmKF7IWExx1vwJvgw-JoiYTFSy8ehU862zNKRsUkm5ysEU8801mjG3vKMRimc_74L2V6QHNf8Qe
+umh3fCtN0xwwez6Wsmiqs0ypU3cnpPF-7iHN_1nK-q_8YbOYL_55lNV6eIlu93_sy-Fw_dOCqPklANmqofheEdyjaTFlLz5NUG6YEixyaetD4b7aEEBy_zi5
+MSylKFeDDDQFYCsMYFXueZNQDMY4RD1JClE1RtTWsGZij1HZYD1s0J5ohU2rmE0p7Uax9AQ70bOAjOdZI5At0W5kPGbMSnC2T7P0ZMy86EgMeOG1jkpbdht9
+3G47eggMsOvAGKFcba2SFfTEmA4akn3BRNs0wo82lYzGcODOX6aKrkh7kojGjiMLocy9ZAhrX_1-0Nv2e6w-f9uHq7zLFY-mzjFJ0bR-pmeaw2bsxOOmbFrJ
+0WA0iZ-FzEZlmXTV_04
+}
+
+AWSEntityColoring(Rekognition)
+!define Rekognition(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Rekognition, Rekognition)
+!define Rekognition(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Rekognition, Rekognition)
+!define RekognitionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Rekognition, Rekognition)

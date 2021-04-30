@@ -1202,18 +1202,19 @@ Categories:
       - Source: Arch_Amazon-SageMaker_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Machine-Learning/64
         Target: SageMaker
+        # Review case on items below (file: Sagemaker, should be: SageMaker)
       - Source: Arch_Amazon-SageMaker-Ground-Truth_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Machine-Learning/64
         Target: SageMakerGroundTruth
       - Source: Res_Amazon-Sagemaker_Model_48_Light.svg
         SourceDir: Resource-Icons_01-31-2021/Res_Machine-Learning/Res_48_Light
-        Target: SagemakerModel
+        Target: SageMakerModel
       - Source: Res_Amazon-Sagemaker_Notebook_48_Light.svg
         SourceDir: Resource-Icons_01-31-2021/Res_Machine-Learning/Res_48_Light
-        Target: SagemakerNotebook
+        Target: SageMakerNotebook
       - Source: Res_Amazon-Sagemaker_Train_48_Light.svg
         SourceDir: Resource-Icons_01-31-2021/Res_Machine-Learning/Res_48_Light
-        Target: SagemakerTrain
+        Target: SageMakerTrain
       - Source: Arch_TensorFlow-on-AWS_64.svg
         SourceDir: Architecture-Service-Icons_01-31-2021/Arch_Machine-Learning/64
         Target: TensorFlowonAWS

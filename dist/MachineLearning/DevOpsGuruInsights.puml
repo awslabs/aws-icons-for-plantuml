@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DevOpsGuruInsights [64x64/16z] {
+rPQ9pXqX28K17ONp_k_RXP4O9jSujVjf_utSZw2oqN-XCdI8TmprCzw2jnybBmzPOUMR3Eg7kLxZ2XIg2jW8GoiLGD_ZW0UlZp_VudPVMoLNxHWkz1skV06D
+fuqRSB42-Wud4gVBrTfzbon4RnnSW36vf6EeoGZ3WCqh5CH76Z3LmZaAJTMM5GvatBfMOPQgu-ebuyNm48_dPiTDvYVT0GEM8lt4Lm-svPjY3MkbqE8k562I
+PywpHyMONiKzFjHDxsghLYYfkBq3QZqCvTFbUuWYAIIzu_B3mRabRwR-y99Er1mjH6gMU8IcZPiR92SanzsL7K-6uK1auWgWQttoBIJJLhK3K1QO39m4Bdlo
+MM6hG6ClXO67WyOxtgpxppegmF7Xe0jrlx_j-uqyQOuFYUpUR-PFZuEqm8jLskNFp5y6Z9-zN29_rtog7wQfMJyxdWouWLa2CbedO9JvaYGV-WSz-aVcaTJV
+zQyrd_jdGzWV_NCT_-pVbFitfVuT_FdySFveVecipv_cPnZwd9_1BVdz_CvyIwhR_I7p1_jBua_sftNyKtMrlstkRxMl_JP-fJ_0-_myK0DaER_tkW2BGBBI
+n6vOgtpUNr8uU_ovF_NqRe0jKekN5skOAzF9pkypkfxoSMljdB_de_8vxvF6oYaVHN-TyZ5a-ZaVUNNE4slmfshnZgSgZUbVrbS
+}
+
+AWSEntityColoring(DevOpsGuruInsights)
+!define DevOpsGuruInsights(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DevOpsGuruInsights, DevOpsGuruInsights)
+!define DevOpsGuruInsights(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DevOpsGuruInsights, DevOpsGuruInsights)
+!define DevOpsGuruInsightsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DevOpsGuruInsights, DevOpsGuruInsights)
+!define DevOpsGuruInsightsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DevOpsGuruInsights, DevOpsGuruInsights)

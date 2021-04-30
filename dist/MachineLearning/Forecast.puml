@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Forecast [64x64/16z] {
+xTDLWWGX34NHHvpiVx_jxc5ycljJUaeXCsUpMVUdvJh3AhlsXgVbEkTxNkr9kQupscqV-KATm3xkeq4po6i-R9S2Mrho7OTQPDqBp7VrhFi0dsrwqJF2RLja
+fg3c7R8ossp04_hA-2ehUCCXtPieU0BlaZxW0vB7wbuG7_ADhhvvnJiq1Rnko3FwtfIyqZPmViXJZFbZF-ELjlcW5z0ws91_Okf--kd7n-_rUc7-t5b_uf_s
+bPvUgztsJY-N_wJPR0a
+}
+
+AWSEntityColoring(Forecast)
+!define Forecast(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Forecast, Forecast)
+!define Forecast(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Forecast, Forecast)
+!define ForecastParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Forecast, Forecast)

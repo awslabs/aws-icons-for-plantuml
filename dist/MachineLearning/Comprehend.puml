@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Comprehend [64x64/16z] {
+xPQ5bWCn24KVH83y_mVlOQgqpNR8kjmZepUUm7WF_ld7-XsQyJlkaPJV9KA0P7mT4IQ2lCLd9SXR_14BoFknWBmV2yZxiO2ydoZ0VU4pxeCt2D0Ll_49z7t-
+1FqflebZ9jVOVh_3KSKrVR-ltJ7hr-Xt6JyfH5nrqHS2Y0bWdVfI7Y33keu6DFDZjW8o7_y7zCDNTjjHWaxyAGgoy93qApGUrJdVKC8pSSwNcmehxEdurS7d
+yPER8M_Gf_FNHplDt-XJVxtz-V6hx3GVFqhE7yFS9so-e3xsTHRz1ULIXn5in_eDNIwe9zyORNf-NH7gC4RHmnmHQdB_cfTLGVwF0Mtj_AZmV_p-c_fT9lIZ
+lp7tNy4TBHlLTkMF4Gl-6YqabNcCu4DHnYe2nyOo4dRLs_dddnS
+}
+
+AWSEntityColoring(Comprehend)
+!define Comprehend(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Comprehend, Comprehend)
+!define Comprehend(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Comprehend, Comprehend)
+!define ComprehendParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Comprehend, Comprehend)

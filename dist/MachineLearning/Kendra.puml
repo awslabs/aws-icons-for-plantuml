@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Kendra [64x64/16z] {
+xPPLWkj030HxnEhxt_V19CiaBrDzXQf7aCJcT-2Na0C4RvDOStqXUGj3Sqp3xleym0E-YPCYoH8faYovYxsLF-MDV3d0M_WymBVqV_sC0VcmBnWW3_kL0-fv
+_NVri-VNBlYFvdFyDc2fkmcmyh1V2r8NTG3E8_Dt5X2yf0NsiEzw2sEVhnKL4KsIYZXIl-tJS-4_rhk2fapzXf1qmBD2iPei66FgEufCIFC_iTCKpQalY-H2
+NyO56KZcQ7uab2puZNOQpXxjZmqxdNU1hglj3UhVHmVgoWT9wDJVvoVYnZnwVZvF_UfLFRQB6lkA9Wt1JGjgxtJi1vpiTJgnvFHiSUgVTzy2g0fsZ2CE-0dP
+TSZ2ijelG7lkqszyVElGdliqIF5CEr0qICzz1g3HP9SlG7TDqdEVhJYpGc5N0QFx5skoqrNLQsVvVG4f3w95Nj5o5V0ShWASBmbe65yGq8ha2m80u_Dfj-Id
+u9U_
+}
+
+AWSEntityColoring(Kendra)
+!define Kendra(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Kendra, Kendra)
+!define Kendra(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Kendra, Kendra)
+!define KendraParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Kendra, Kendra)
+!define KendraParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Kendra, Kendra)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticInference [64x64/16z] {
+xPO7bkGW34HB0QNx7tYVntguWzFcD3MX2Vg0t0Mc_aHzwbDcrShXNqqx0nphG00alufE0OO28oiOv4lnA_2nJhYW0emktat2QSPQhtmMxoqTMYt5Sqxtbhx3
+zy8upd7zYDZbU_GhlcgNJo6Ehj_Z_IcU8K3Uv6dX3GzyGii1u9fllV9I0oBqZNmf0BxENnQeYUPRfYExyL3103Hx_r1EVigw_yWx8mGO5MtxqbVJng4Bay7H
+zf-pf0BslZtsaZ3eB7L0Xqk6vtFaBZ-XjR-HL03Fgu0Sy4vZusNRkkA4lEHD0DlucRh1Qo0k-NvgpNVgLHLW8oofM9pnlRbpWBgae1uQtZESvT_qm_SdM0UA
+h4gG2-ASDu3iqJyr5HZbi0kUhAhzs_mKqM18dFAR1FrloW48e7d0ItjMhFaKDD-A_4Xjbqy5V7r-kl9Z_xnnXXwzECJc6Iq0ks8tCBkmiuH-Vh5wiVdR4kHg
+WdQ0mipoDjxpRKae0Ap56CAibZTu9flrYCW-sa04U0LVyP5RVJltOadCAyZE-DswWNEwMEkCpovbRdmyubnfX_pOpWpPU4PCdB86_8ZlTxmpo2U_BTbNYuBF
+Rn3SPtpp0p7jDJhBgylN1AfAQErWGEQ1s3fEOduKy-Ijqx3hQv0Aw3aiP7pL3LAplaCUzRFrgKzz0G
+}
+
+AWSEntityColoring(ElasticInference)
+!define ElasticInference(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInference(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, ElasticInference, ElasticInference)
+!define ElasticInferenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, ElasticInference, ElasticInference)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CodeGuru [64x64/16z] {
+xT85TZGn30DWsGv9zxzlmM_yocsoFyEtl1CvuD6Fyzz_S-gRkFzh-TK-Fh-szAM6TdBfhQXHgxi1vdrLFBGZZ9Ac0-OHRe1FIRJG7aeCeEPT7GXAr3Pw9We3
+JXrmTBtGuThNdkABLQ1frqAeMCqRMDhnSYZHNXJTmMlap5JFBrcLsZAGWOufJKnDz2o7iNjwpE6UHPRacBML7O4SRQnQjApuvG7WGKXkgZdpUwt5N0eyq0VY
+mL3brrFxLkKrui7E-XUCjMTQ5aESdDz0NErJO1oSNpMgPUkoXwtQkeNm_1XN-pIe1muUtxyDrEdzMyTTxKlLa3qDGucLqK3JDbeLA0DE7HSuZnSYNfueTUPr
+NlzQtiSp3Xqol60wnFa2zREj-SpIAU85wfIZZKk3wnXXLAA1EZSGCmM6RX6uX6x2SQ5-ZF_-kmS
+}
+
+AWSEntityColoring(CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuru(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, CodeGuru, CodeGuru)
+!define CodeGuruParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, CodeGuru, CodeGuru)

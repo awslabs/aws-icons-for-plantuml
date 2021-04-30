@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DeepRacer [64x64/16z] {
+xT87ZlCy38JXbwB4ClU_xrU498Qnsl8Nz3neSHrcJFqltjxUthe-o8Y8hDPFE9yR7lfEh8i1vYloht20uRvAFrA6hReE0SmCyFv11G6hTN4iz5TDhFM5nMRt
+ESTuFHIulf1hBMUqRhgbdjXioIbzpJYDE1W3bvAbBotYr2XJSbhD_ERRcmw2uHcKnFpYsq-3V7NXlgAlOXdKpZ-hEU3rU1ZRqkPq0rAnT3J1t1zvFTWBrC_y
+GIQObCGdZtlfgOsf6-El8GMbWy9ryJranqxV66ljUoPzxh-b-v85N5c3LX2IeuD-naVj9biAB4fF2RPtVzXv_BLhkRvExRkLhpjyp9PqsF_Nh5soyHgub1Na
+Xw1FdXzAN6xQagb91A6RTSuloCBozVSc7NW7FcuJ34WTcCaflUPdoAorcBkHZhzAXJEE_SzcNlqLirXx4MpizhTQv741ajYB6SJpU5TdXECEaPcBWId8Kt-v
+pm_wSRohJyYT7OyT89J4yVbYgPZFuof2pdtR9_rflcRtOCLVEoIK69vvCNjj-iqZs7dO-xnNqBb91Qu3nzSL9itTMaeLB-1kMEjW1wtxiTVz5W1RhRCktNH_
+lEDvwktjxUqt
+}
+
+AWSEntityColoring(DeepRacer)
+!define DeepRacer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DeepRacer, DeepRacer)
+!define DeepRacer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DeepRacer, DeepRacer)
+!define DeepRacerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DeepRacer, DeepRacer)
+!define DeepRacerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DeepRacer, DeepRacer)

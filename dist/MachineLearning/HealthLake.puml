@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $HealthLake [64x64/16z] {
+xPI74jim34EXOK3K_tzmJw4pr7enkTxqomxlQK2q-__WvaRyG66zOQ9TzLJoe3LKlQXeBG-ApdJWwRE_uDC7TEmNc7_vs_SlXdBivzmFVAzVz5D-aUA-bVn1
+iOW_SzTbF_aD-IU_0lh2Dri_aP6_yClQT0jKeOk-r5S8v7NwyPhhvnXInVAOdYC2zHW5wddi8ALr4ISqVb9H_U08-Xai_A3zwnCJoHvhNnBCjpF1ZGrhmZnk
+ODags_MxiFK8KfyWZ-hd_NlNm_a52Fe90vtwv7Ql8vLIm5D_hzVzcZhtDM4n_s3lxWyKzNtl8uhg6HpvPKBFjRzeO2I_eByDYgI7BF4RVyelxeka-uMaxVgf
+Rt3z_2keRPfdm6FV4dQeQmR7VZTn6ta61tiFStFp1m
+}
+
+AWSEntityColoring(HealthLake)
+!define HealthLake(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, HealthLake, HealthLake)
+!define HealthLake(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, HealthLake, HealthLake)
+!define HealthLakeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, HealthLake, HealthLake)
+!define HealthLakeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, HealthLake, HealthLake)

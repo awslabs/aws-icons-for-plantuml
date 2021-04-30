@@ -412,9 +412,9 @@ MachineLearning | RekognitionImage  | ![RekognitionImage](dist/MachineLearning/R
 MachineLearning | RekognitionVideo  | ![RekognitionVideo](dist/MachineLearning/RekognitionVideo.png?raw=true) |MachineLearning/RekognitionVideo.puml
 MachineLearning | SageMaker  | ![SageMaker](dist/MachineLearning/SageMaker.png?raw=true) |MachineLearning/SageMaker.puml
 MachineLearning | SageMakerGroundTruth  | ![SageMakerGroundTruth](dist/MachineLearning/SageMakerGroundTruth.png?raw=true) |MachineLearning/SageMakerGroundTruth.puml
-MachineLearning | SagemakerModel  | ![SagemakerModel](dist/MachineLearning/SagemakerModel.png?raw=true) |MachineLearning/SagemakerModel.puml
-MachineLearning | SagemakerNotebook  | ![SagemakerNotebook](dist/MachineLearning/SagemakerNotebook.png?raw=true) |MachineLearning/SagemakerNotebook.puml
-MachineLearning | SagemakerTrain  | ![SagemakerTrain](dist/MachineLearning/SagemakerTrain.png?raw=true) |MachineLearning/SagemakerTrain.puml
+MachineLearning | SageMakerModel  | ![SageMakerModel](dist/MachineLearning/SageMakerModel.png?raw=true) |MachineLearning/SageMakerModel.puml
+MachineLearning | SageMakerNotebook  | ![SageMakerNotebook](dist/MachineLearning/SageMakerNotebook.png?raw=true) |MachineLearning/SageMakerNotebook.puml
+MachineLearning | SageMakerTrain  | ![SageMakerTrain](dist/MachineLearning/SageMakerTrain.png?raw=true) |MachineLearning/SageMakerTrain.puml
 MachineLearning | TensorFlowonAWS  | ![TensorFlowonAWS](dist/MachineLearning/TensorFlowonAWS.png?raw=true) |MachineLearning/TensorFlowonAWS.puml
 MachineLearning | Textract  | ![Textract](dist/MachineLearning/Textract.png?raw=true) |MachineLearning/Textract.puml
 MachineLearning | TorchServe  | ![TorchServe](dist/MachineLearning/TorchServe.png?raw=true) |MachineLearning/TorchServe.puml

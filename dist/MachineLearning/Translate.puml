@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Translate [64x64/16z] {
+xTDLekCm38NX8yaMxN_1u-OwdK11XSV-PVZ2oc_rwvVffjXz6GNksCQJD2prYc-sfe3CR-sIG0jUD-y9BJSHlUXLTjlS42_wuEqsT_YBFeDWkQQl-cQc-4Ek
+q_Ue-xyuHuA-U46l-ddPqEA3qOSNI5RzZ3dd0YutoPetzRtFO63mcWz0jdukGBBe5Op89RESXMNLCnaqJrLze2TuNUkcgFaElrxjZ4ta9K-KQUX_dlGQ0LRm
+lb2YxV6VooBeSzz0p0pOoNCG-YClmmIeZnhQsMSmMZvEvoe8SVOP0ec7NkQSD-ZHWqS0F-B1aalE_U0xBn7kMlKxyxUjeJ2_N_SgyP4NlEsrZmZzKZpsBBjq
+yOp_sICVEDGM7oumTsTuvFJLXXyv9DCkJpLliVV9i61uqGiuzju1GS-Q5m0SEvyASDQyW2-ts7eZeBX-WJYqWsFreGnq0wZvKzyXEVpoEZq3Cc0q0FRCHy_5
+f_hghSSwdxsm_zENv-_xFj0-yaaK7ta5gOqycUoO89-cr_d3kOBFC1rPkfwp_5A_Vlq3
+}
+
+AWSEntityColoring(Translate)
+!define Translate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Translate, Translate)
+!define Translate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, Translate, Translate)
+!define TranslateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, Translate, Translate)

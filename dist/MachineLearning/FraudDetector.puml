@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FraudDetector [64x64/16z] {
+xPQ7jYGt24GlI0Ye__zVXzQSTJiypMuxs-zE3bMWvXn0Vn2VV5Ahz9nsm9yxE3C3QpsZc98MIyzOfAGcz8maNiyFCRBJU6nG1h3ySGrwJOOK4DUdR7qhavJA
+yLhmu2YDIr80jj9PslJjvNq2KXajoKmNmLQwVsK2CjzkkiYTI3FrZjX_TMj9ZZRupUP8xvm7etlYsknIzFLIbZgmM6h700mh_P91wOHP6hFmcGg8LsjOkMN9
+r945f5vHoh7goOKjIHsj4psXL8oR7HwPEGshKs37eXndtWyPM4fTVNdLeN8s30WvoT2BnBl305-gZ_jJuoqDbfJSufXrEpPZ64Ctur-GfAGYTlNlvVHTX1xx
+OD-aTxIOqg8afueuvrzItV9doEbBlztDpzSlfVdJzUkjsFhjPgVwJPZ5q2I_w1bt_J2Tw06K6d_fvwiBzEkJcyu4XBuaOBRV9YrDiXawCp6y6vjvVQh6Idrv
+k1RvlWC5381H0rm9KPqJgis-gWNRxXym9g4q0Bmqc6_3t_jNQKioPfJQWNWN_XVzimUsMb85H3lnFhp6lNyl0pC0fiu6SOMlyOlvaNFucAL1R8DJ-9umWzyw
+Qlisg0_cvo0xODG7ytCR9El3-Jt1yxnbJQC_tXzilLtJB0_xoz8x-i7-z61_Uxe__Ztxw_Fz-JcVVF8z
+}
+
+AWSEntityColoring(FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, FraudDetector, FraudDetector)
+!define FraudDetector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, FraudDetector, FraudDetector)
+!define FraudDetectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, FraudDetector, FraudDetector)

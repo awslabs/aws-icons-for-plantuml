@@ -1,0 +1,18 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SageMakerModel [64x64/16z] {
+pPU7iiCu24M54Et-_mVlMZ637vFdbArdMYBhK3ouZVyfayO5cX_Q3aZz5S3e0rrn43ms73YGyPhQRu57KZ80uHdl1RcVpo94pjISyLvmxi-JWBBqTHCzougp
+wehdytNf1GFvD-D1wQvq7Kdv1Ic0M4_rLbttENPdkmbxebCBt7p6WPzbFlSb6ucmsNm7r1__z8LlE9W_VS2EBNhdnmCW3F2VVY2c07BZ5pFtb2_Oq6r-0y8S
+MCERVtR5uxx_W6SXTlfhdfpLl_J70W2dqx-oRlo5zCSKVUpiFgVFpsuuMDiljY_C770-g5DfrCSQqF7CFwI0ZGkvEn5an9T-LLlJ7W2SSvbtn1C3U2_tUnTl
+wV4pGr7au2eA9kJo3oJwZ0jWWgDKk_eAw5vkhEuRC8OZzY_QB83jM77uIry0OS2tN-TFWRNUoK_OSFDdBj_xUL9bD7-ioD5TTi6RVy1Ce_krFD3eVjBz18WB
+t_ZQ-lzdV0VMTtxgWDMnwO2-xoziLXwREF3kI_dECw4zmaG1Izy1yttgBpuPJf_wFMeFVFdvwDZearl8D5oG8K048Ea7d1RWzYTKpt6V8s47W13HhJbmVVue
+DbJtZlQQa14v7uBYBYFzCzuQ9tEd6Xq19Fr-_sCHghLVdlytVZ8NvzetlW68-PPFazBlRwMl_CoaLrzK5V2fWBxs3GTQ_ihPc83T-xQdm5S0vGis8VuoVqxn
+0kRLdoGuCFxLzpa2E7Tvoq_dWtVQSt-hHlF0g__oTnAI6kK6rGisvKjczpdkNg5dVILCfj7yEluxgtqbwDNF-cwfJPLl-vAXxoc930TR4g2L_hA9hUZvPcIz
+zDTDv8acGrRnBbkgzoEE7UepU8rYhV5_vGy
+}
+
+AWSEntityColoring(SageMakerModel)
+!define SageMakerModel(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, SageMakerModel, SageMakerModel)
+!define SageMakerModel(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, SageMakerModel, SageMakerModel)
+!define SageMakerModelParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, SageMakerModel, SageMakerModel)
+!define SageMakerModelParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, SageMakerModel, SageMakerModel)
