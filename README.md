@@ -108,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/examples/HelloWorld.puml?v9)
 
 ## Examples
 
@@ -146,7 +146,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FBasic%2520Usage.puml?v9)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv9.0%2Fexamples%2FBasic%2520Usage.puml%3Fv9)
 
 ### Raw Sprites
 
