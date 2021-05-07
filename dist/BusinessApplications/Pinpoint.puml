@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Pinpoint [64x64/16z] {
+xPQ7SWD124CVi0t__mSd5tO6zysvJ3sbk0eaRJqzm8431tmCVvNRY_07iRQxo310hTHMYm9rUw_M_a_P1SwQUhTVOW6GyH_bO3VVQzZmXgpf5RcZKpIgj1Mz
+e7x74ZKUohAxvGYOgfL-HXpKbNUT3Ik0243z5QHigepd0JhYimuQ8-1DePyCIjML_4A_as4N55DOgHzOqAyoTDbi-N8QXhqC8T-NAMmyLO15D_6ffxNnHpSN
+F2hvi_1RgE_JDe0qsyfsQdxb0KeKd-ehrDwh4AgK621xp1SzQz7HgJXUjr2bih8_LGYJRY9dCx3mPFAKO9pDrCrxPMJr-Y30fAYat1xHjNHN6JluftvQy1Vw
+avBfxCWloifLzLtZvqf_CdxB-SCqegIANVDtlg2cYdthPqEkdxthDp136DXB-uTIiy4h-rVGUwQtsZ_bQl_C45xQlpE4LywFW8MB5ywlo33CltH-PeQldT_3
+8iFNxW_DeFXBzvTQJ0azBz-VIl_6_Ut0WGC_
+}
+
+AWSEntityColoring(Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Pinpoint, Pinpoint)
+!define Pinpoint(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Pinpoint, Pinpoint)
+!define PinpointParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Pinpoint, Pinpoint)

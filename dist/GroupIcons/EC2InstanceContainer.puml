@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2InstanceContainer [64x64/16z] {
+xTRL0SCm30HGIMVQV-9UcMC8m_i8cZajo-402Rogy1B5U7NYU3K9cu_lG2h6gmWlThcgwECpN5TyaophZkzZ9v-9dwjZ62--9yt7Lqzy-Y8NsVWNVVFlM_yb
+nWULr1yqHlj7idnyYxJ5zbSgQJ-bll7Ntdvznq_VyTjt_gos_O_r6ptR3_tsxrpyBFGzlnpdlwKu74u
+}
+
+AWSEntityColoring(EC2InstanceContainer)
+!define EC2InstanceContainer(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2InstanceContainer, EC2InstanceContainer)
+!define EC2InstanceContainer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2InstanceContainer, EC2InstanceContainer)
+!define EC2InstanceContainerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2InstanceContainer, EC2InstanceContainer)
+!define EC2InstanceContainerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2InstanceContainer, EC2InstanceContainer)

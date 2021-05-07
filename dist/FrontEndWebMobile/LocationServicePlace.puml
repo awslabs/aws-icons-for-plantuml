@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LocationServicePlace [64x64/16z] {
+pPM93kCm24Jn5Hlc__ztjuSilQvYbTNLfwjDFC10XEsNgUqlzV-aOscpHZB828d4iA-vf0S-hz7xkAPB3oxxYgu7inVRb3xre7yXNqp5efRPcU9KVqRmSfQ7
+5CrkQ275CK18RWTSYjDhoDCdnb6-0umxyv8A3LzpNkruY9CRBEVDvzDrbzuvoOqNEYWtu-qSXQvgLY-nwHqV20GmixCMPyax72ZIj4s36PUQRQQs0PRLaRxQ
+fku2S19SK3m4T8FQTWDG5H9-3gtIwLdVn18x6l2LdldF-dE9R3dDiKH-31pvlRaTzK8r4-d7tQGseS0_RSb0UXv4aeeYjPx_wnAiLPG6nM8_f5Wh9FfTsj68
+qrTrlN4ylbrIJGe-c275PBP0UZ3XB7s6JISO1Q4tZRFyS_QawMXXOf9t0U8cGmt83uTciNyeaw7F5_Zg1lh2zNsakHxCdQjEFV1cNz9TqlRQzC2x9IZ3zwH3
+yb4iovJQE_sq1DY1s7r9f8NTdyLVGiaj0VSSzsA-0R2VHPguLxA40jisovHAIK-V5pqk-oIFtBZvieI2zlCDWFqiGrYeQQgmR_D8ae4S2pilpu3zF9NsyvHY
+lyqV
+}
+
+AWSEntityColoring(LocationServicePlace)
+!define LocationServicePlace(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServicePlace, LocationServicePlace)

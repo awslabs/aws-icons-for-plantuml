@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ChimeVoiceConnector [64x64/16z] {
+xLPfcYmX28k02zx_mEzLgkMpLsR_rPdTciGW23L_3s-yCHenliel8EnJ9FVO7jPxhsYVyWoP5rGSpWt-AJhGvma1Wv3FqGVA91pAbVev-coNW3jQ1F51WFzS
+u3C25uIuf592IeUjm1a4uGeW4nZGa1ce4SHq0zH7Ag0OIsRFNWM43p81XomPAIk8Nb3wCfXKWw6VCWuxipS4PLLW0yGJ0zosGj7vKu1AolAHu2ntBq3v3m3g
+aJu-ob2AqscH0mgDz9a_jsrjFUpCcwwzx13mIX_FqG187L54ojDR0gqmVI_vrHXiyoFx9pq4k7d27tEEAhGX83tGokakuH_mVjgOLz32vMBT4_w1KU_vN9Rd
+DXfiMo_tVCAR0YWF5COwl6VymB37LHJs7l6nkHvFgz3NATtpkUm9Fsp4XOi2aEKkuKUdifskYh4Epsh2vts_hj-phOIxbcn-tFSGQ2o66aF5syjh6AMkK3bG
+BlsWp1mDa14-LWUvz8EQaFVsv1KGCZhqP1OaZMzhJxplqRzZgBpc0sFt4Vrx6ohvx6JwQ3ZwzpvKKW6FDjak_NliGoKJs3gLqgwKgw6Ilxl45f08WaE5yfzv
+awWh2Fvis-nCiG9d44J1P-WHU4JSyJbwP2_qFaDdkVVU3K5odv-1WIX_zkRyURpnnZy
+}
+
+AWSEntityColoring(ChimeVoiceConnector)
+!define ChimeVoiceConnector(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, ChimeVoiceConnector, ChimeVoiceConnector)
+!define ChimeVoiceConnector(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, ChimeVoiceConnector, ChimeVoiceConnector)
+!define ChimeVoiceConnectorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, ChimeVoiceConnector, ChimeVoiceConnector)
+!define ChimeVoiceConnectorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, ChimeVoiceConnector, ChimeVoiceConnector)

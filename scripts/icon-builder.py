@@ -27,21 +27,32 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 9.0-2021.01.31 release
+# Source directories for the 10.0-2021.04.30 release
 dir_list = [
     {
         "dir": "../source/official",
-        "dir_glob": "Category-Icons_01-31-2021/*64/*.svg",
-        "category_regex": "[^.]*_(.*)_\d*\.svg$",
-        "filename_regex": "[^.]*_(.*)_\d*\.svg$",
+        # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
+        # to: Category-Icons_04-30-2021/64/filename
+        "dir_glob": "Category-Icons_04-30-2021/*64/*.svg",
+        "category_regex": "[^.]*\/(.*)_\d*\.svg$",
+        "filename_regex": "[^.]*\/(.*)_\d*\.svg$",
         "category_mappings": {
+            "BusinessApplication": "BusinessApplications",
+            "CostManagement": "AWSCostManagement",
+            "DevTools": "DeveloperTools",
             "GeneralIcons": "General",
-            "InternetofThings": "InternetOfThings",
+            "IoT": "InternetOfThings",
+        },
+        "filename_mappings": {
+            "BusinessApplication": "BusinessApplications",
+            "CostManagement": "AWSCostManagement",
+            "DevTools": "DeveloperTools",
+            "IoT": "InternetOfThings",
         },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_01-31-2021/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_04-30-2021/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -52,10 +63,11 @@ dir_list = [
             "InternetofThings": "InternetOfThings",
             "NetworkingContent": "NetworkingContentDelivery",
         },
+        "filename_mappings": {},
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_01-31-2021/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_04-30-2021/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -66,29 +78,30 @@ dir_list = [
             "NetworkingandContentDelivery": "NetworkingContentDelivery",
             "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
         },
+        "filename_mappings": {},
+    },
+    {
+        "dir": "../source/unofficial",
+        "dir_glob": "AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons/*.svg",
+        "category_regex": "[^.]*\/_(.*)\/",
+        "filename_regex": "[^.]*\/(.*)_light-bg\.svg",
+        "category_mappings": {},
+        "filename_mappings": {
+            "AWSCloud": "Cloud",
+            "AWSCloudalt": "Cloudalt",
+            "AWSStepFunction": "StepFunction",
+            "AutoScaling": "AutoScalingGroup",
+            "Corporatedatacenter": "CorporateDataCenter",
+            "EC2instancecontainer": "EC2InstanceContainer",
+            "ElasticBeanstalkcontainer": "ElasticBeanstalkContainer",
+            "Servercontents": "ServerContents",
+            "Spotfleet": "SpotFleet",
+            "VPCsubnetprivate": "VPCSubnetPrivate",
+            "VPCsubnetpublic": "VPCSubnetPublic",
+            "VirtualprivatecloudVPC": "VirtualPrivateCloudVPC",
+        },
     },
 ]
-
-
-# GOOD
-# dir_list = [
-#     {
-#         "dir": "../source/official",
-#         "dir_glob": "Architecture-Service-Icons_*/**/*48/*.svg",
-#         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
-#         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
-#     }
-# ]
-
-# GOOD category
-# dir_list = [
-#     {
-#         "dir": "../source/official",
-#         "dir_glob": "Category-Icons_*/*16/*.svg",
-#         "category_regex": "[^.]*_(.*)_\d*\.svg$",
-#         "filename_regex": "[^.]*_(.*)_\d*\.svg$",
-#     }
-# ]
 
 
 TEMPLATE_DEFAULT = """
@@ -251,7 +264,11 @@ def create_config_template():
                 filename=i,
                 mappings=dir["category_mappings"],
             )
-            target = Icon()._make_name(regex=dir["filename_regex"], filename=i)
+            target = Icon()._make_name(
+                regex=dir["filename_regex"],
+                filename=i,
+                mappings=dir["filename_mappings"],
+            )
             source_name = i.split("/")[-1]
             # For source directory, use only relative from this script ./source/official/AWS...
             file_source_dir = "/".join(i.split("/", 3)[-1].split("/")[:-1])
@@ -365,6 +382,7 @@ def main():
                     category_regex=dir["category_regex"],
                     filename_regex=dir["filename_regex"],
                     category_mappings=dir["category_mappings"],
+                    filename_mappings=dir["filename_mappings"],
                 )
             )
 

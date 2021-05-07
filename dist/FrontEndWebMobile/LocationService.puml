@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LocationService [64x64/16z] {
+xLE5acCn35CSS9p__zyZ7VZTQB9DOV1fjsr8Hdbz0ZTkZ0kEwO4BOft2u7y1Uo9-ZBmyHobfzGGwd0j7VuOVVx8sn7e63NFzm4HxXaqYpJp9PzxzMRx3-JEU
+utVMBPxBFrO5jO-wufGyhAuA4BQQZGCJim6bht3tKjmzrYX0cmyAtm0RYp1RXEVJlUlioKnSIMWdPY8qZUWYIJDLcf1gGM6H5J-tfW0kt1lG7k4tm4BMhW9L
+nBz_ix-TKznlC8juaTXbVjdz2fZhtbOgODlzO8NylpjMDuRbkuoPkXyTA2FffW0zaWAcufEIBMHsCYRvlEWNEPR1qyJcgOBsT8rAiVSML4xxsI_KiT9jIUEd
+Nh05x9LGlRFuBIIxiljK6dkPTKLLKW4rzFnEfNIkqvMQt-maip9RX2QJp0RDydDHcgs5QFdvdgsR726aSM3XcAr5pj4uG9wQlUhtav3IEGNBdHhoZ0ModuVx
+-XnktFWE
+}
+
+AWSEntityColoring(LocationService)
+!define LocationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationService, LocationService)
+!define LocationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationService, LocationService)
+!define LocationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationService, LocationService)
+!define LocationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationService, LocationService)

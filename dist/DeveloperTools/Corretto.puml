@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Corretto [64x64/16z] {
+xTG7ck8m44JXKcVL_UyxmNoZIRG1itdvoU4vI_mP7XuoNXKFcZWvtbjLwHszaxG_e9-sgLlx8I83f6EZl8tAAttR1oWFETYdRURHNh29m_rOvy2nETglytUi
+lvsB-7klyfLotu3uEdxV-u5YQsO4vDFv-ohxVYfU2JlxVG6MLUDWFp6spJtQ6uhtz52klgmbJP_8zpxHQ_f0yPxjpolxQFg2hqj_ZsFoh36uKSX9iUIptIav
+uAVN_RxVF86l7Ud1s150pGo3lKIobO9DiINW9HF2Ji9vaIFO6E0Lf1zZmKjIrb3-Ac1CdToZGB60uZSE8GDmBlr50Fy-k-df5SPE8BYP0idFAr-POh9Xu9i0
+XYLVpL10ghc6sbCN0W03hpIvA8gT0UUxcMQgvldjE7IcO0HxSns7JWn0lCZlqcKTXnrb0y1GywYJ33VTllJ9QymmmMT3FITlCYjZazMNnpqyF0C
+}
+
+AWSEntityColoring(Corretto)
+!define Corretto(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Corretto, Corretto)
+!define Corretto(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Corretto, Corretto)
+!define CorrettoParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Corretto, Corretto)
+!define CorrettoParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Corretto, Corretto)

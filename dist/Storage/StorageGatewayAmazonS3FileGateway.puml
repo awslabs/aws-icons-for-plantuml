@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StorageGatewayAmazonS3FileGateway [64x64/16z] {
+xTHLOYin38LXMMIT_I-u3IZWGUioz7ygvDCeG_G7rfY5cHlL4-k1P-5Q6Q8Twy9uRcb77jDKhgbvpWkTrEjZjTp99lJUejfF9cZ-_sI-qawfZse6ODyxdUP_
+iV_oNvv5wdxijtfMwn50H3VbghV0K5Z5jxYZVYj_QVFU5gzMjW2qvhMzxQC1sBnNvFv-AVUl79-1TJpl2N0sxv5R63lG2ZxGxuj4C5th25fvyLSo-0xa70Jd
+mBN7Uxou02qz448joRxF-PdaF8d0DKUQXVVnYcL4_BfSpP7vWQS--F4KQ-1Q77dsLylpbTDbnq-ylP3ZfdrUWAm1LlFojcwUpf8VXG9SymI4Shijpne05RrZ
+g5VzEC2fuZDHyqkcGbJrOx_Hk-jtUS3_MV_bkvnrwAVQzu6PTEL5cAurcOZfZ-eJ
+}
+
+AWSEntityColoring(StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)

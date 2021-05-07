@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WAFLabels [64x64/16z] {
+xPLLWiKW302BG-R-vrqNKWthmlmyQOS8jlmeNDI4GLrOCJP0OuCVq2kqs5D0d5dFsxSBDAkUzh9jK6rwsE-MGB7e7eZFtrF9ePkIP9kv_De7eBbkOClC5QM3
+T8LvmyofGdo3t3NsV1RBQxGbFwKBeXwVe08KU4v9ftT8L0Ncfn-2hDkpZzSJ7nvZ9MMSpMA0l9eAgW1U1wd7VjZRn7hIJVuJMQ3uPTZN_2H_-gKaWs_Wf_iX
+sd4xViLEUA__tlp_tFnDFnK3wTYl6AYVuOyp_VUVt_F-ctwEbvpv5ZxFTz56M7uYjm
+}
+
+AWSEntityColoring(WAFLabels)
+!define WAFLabels(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFLabels, WAFLabels)
+!define WAFLabels(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFLabels, WAFLabels)
+!define WAFLabelsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFLabels, WAFLabels)
+!define WAFLabelsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFLabels, WAFLabels)

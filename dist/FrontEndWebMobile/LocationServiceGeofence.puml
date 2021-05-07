@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LocationServiceGeofence [64x64/16z] {
+rPP7bjim50I9-4FT_xpEvXFXGTF3MQcsKec_nKOutfLIMttWz37D8_b5VU2yqgGvJsSbmsqw-ldj0sVqLilVduUY_BuuAmQ7Og3p-QslyoKf_Rjyu5_qJVgc
+ynMON_4h3EcxzXjqwGUfwq7x3x_sOPxOPrzlQGd1IH6lv-hrQP5SIEZoxpq7NJotqMiv2hZ-UnSnRFPN9q3Mj__rV8vM_-tNWARgEs3sMhRzgc2glWP5zZD9
+zR63xkU4AZuEKliDfgWl-4s_8KHzmMvyXxAjRuLvipuwzBM-oxFazhbMq63ph6N0JGKTnDlvCw2O9ydhCC8lfROs8COmCtVFJ72zLHd4ho_kiDTXuWD_HsQ6
+knLz5BJpYsPZZDu7M2cRhToEUo2URULh1KLL5HtwevDwhQ2gYYBWoKcbvxm_gSGkkDP7Ko3bJK9J4qBT13GTYFAuFXCmSP9hIW13NzHqzFr33Cg3wA8-Ehgk
+ZuukNh-EBdrx6lqyV7HqIGFmsQk8hgZy9NsqieakgCFYSdSQRHDTKDgytDvysYQwelRfd8ZeUfHXWOv-Jsd7E_0T
+}
+
+AWSEntityColoring(LocationServiceGeofence)
+!define LocationServiceGeofence(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofence(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceGeofence, LocationServiceGeofence)

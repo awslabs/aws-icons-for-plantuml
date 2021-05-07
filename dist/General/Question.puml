@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Question [64x64/16z] {
+vPHLOXqn303D9CtzZrlOLJXvpwjoC_zZYyDVJ8mvbvoYnqrj28RE5Y_AvZunyxuzE5YZrL9gwmk0lfdqOUjuyLzPW6mbqO5LmckoR3umuFrK9wmz_yoZz36N
+p55JE5bGD_tKXITcEbzKTCkloqJv1e2UzMWx0GnJ7-Ck4pGT0S3SyDzqhs6LMni9LFJDj4v8rjlxBKpX3HcQ1PA21nX7AI2xV6MUkP7z__lZJz2jDz7ZTujR
+48yU5NaCmy62-hIQ7dtQ52n7xHuFXtY-Ruhf4yPLkmYODK6kskjnz-C2YGwx7rBHo_e468SJ9p2lwG4OwR2xWhPm4PYFDYjvLtO1KiDrX7M6eJLuMCZJvly1
+Vw8_v0_uetw7wFMVRgtVhp1QQ_Xzm-adDRy67z48dvPSQ_6dNyJQvwDXB5_ie3tdAiu89XIxOoI73zFAu9h01Ct64Fhlz_tn6nEotM6Ikt-fFFNFEp_Y7E6g
+DhzkScqbXh-Rhm
+}
+
+AWSEntityColoring(Question)
+!define Question(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Question, Question)
+!define Question(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Question, Question)
+!define QuestionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Question, Question)
+!define QuestionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Question, Question)

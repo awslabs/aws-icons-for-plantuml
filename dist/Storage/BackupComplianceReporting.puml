@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BackupComplianceReporting [64x64/16z] {
+xPO74jmm200bGC3-_y5fyf297STSUjifLynItAJnUoFoBRO2wDSNvmFogcU-IJ23z8sqonOnHb0q_KMHSoQ5VicQdaUD98yvjcRxEFWO0o1zNlM4xGkiiN40
+7vk0muUy9708VyU7zcKSw5hLj7tutzyHLD8YYVgMdn-GwYkk8U3diEAIsE7MjsEGAmdox0VSOy--SayswZVe-VzzKNCtbQ_ovqeESirN_UbyWi-NVDbbvPqr
+PJSYB_YsxxL24h2shnLT6A1DNtPiKJcbvsVffmJPyWtMpMlPEdxLEPFGy1NiKdeUZUcpxp0ljslEMW6UV8YBllqHyEXFM3VwM32VV06xqOU1D7pTmNhMX_Py
+gvDTUgz-pLytVEdj-UkB0L5wQPtrfxhTUW7nx7-yo-oaQslzcbLbg1zwTJQV_U4t6ntT8O_-fEeKzNV3hxal-oDhll-ytfw5P0Ky-oE0TTuIncZv5PzBZjeh
+Ar_J7ve06Uwnl-chwvybHThNhB-o8Y5ZoM-_V_Zl1vWsCOYpBxo4Z3DAcviNZ6WJ6RyFRm4
+}
+
+AWSEntityColoring(BackupComplianceReporting)
+!define BackupComplianceReporting(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReporting(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReportingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReportingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupComplianceReporting, BackupComplianceReporting)

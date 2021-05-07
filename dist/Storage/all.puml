@@ -15,6 +15,97 @@ AWSEntityColoring(Backup)
 !define BackupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, Backup, Backup)
 !define BackupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Backup, Backup)
 
+sprite $BackupBackupPlan [64x64/16z] {
+pTT7eYCn20HG0GhK_Iyymm-kXLfjcecr-G4_59tQVnErDxdd7U_YSkSdYWtexIwB3Kw-tMLo1bK_sQ3a6nlSUEcZww7E1aTlY8n3dGqENl2PVgYpmR7Ucpfm
+LMU3etUipykeUtr-1D6Wv9dnVFu6C3EnV-VGvyulxtb_gdvFtTkOQyrk9QyJt6vvuCLCcdnfTnvuqXjW6cPr-TnFvvNB-HbQMLC7NDC-ChOgv85V9Yn51h3I
+Fc9xlQUyNFlcGCetiOXSl47rX3y7M3NFHzGzNvJANW5BU96px-_z0AJkkSezbfW_7xM5Cxlr4jNBUExyrhu1R9pm7HY7wwFtdlFKozrRBUKDy7ts3aZ2yorw
+uoFz-hq-N-uO0ysjPmFCLmTTv3dV1W3ux6PzEj-FCvvZCbDQqZCw_1El4VgZWwGyep_pzLji_t9vvXa7nW9MrIiYtYgU3QJkL_XHzS4z6bJzW3S5hEfRZpsm
+F_hvov8v-7GkVN_YU-NxAwFjlyaF
+}
+
+AWSEntityColoring(BackupBackupPlan)
+!define BackupBackupPlan(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlan(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlanParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlanParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupBackupPlan, BackupBackupPlan)
+
+sprite $BackupBackupRestore [64x64/16z] {
+tPQ7beGs302Hh3R__yDPNkpR21QEpIifS_tmo9Pms_xDgEfGbR-Z3az-I1_VoSc9V1p2QlLgOmopdv7u8vkTj9QrMB9ZlzbQGBbi9yG1IYz4YDTtl-vaFVKR
+Fu6GxH898AzyAM1ijmoWvAEVrHvTe1UjW2kz8mLruKVuim1vzYVRim2dVgBvzsYly_TOBy7tPClWUmIGpwi-goh3TBibFWt0cQoL4ZIo3-2Sr4vbPh4pZZxQ
+1c2djr8cwu-0sYp-GZPV8SzB8qpbXGwlqm17yxSwFpzmxmVeyNdnvXHVnf3UtC_nTPYxsP0jcdz6MW5E0QMwh-QHuVOU0zGv_xs9cKUr_2Lua_hpkX_MJ-dO
+Ag0S_8XQdNY-_O8qdKKCfkUW7zwFxEpXtpuGAs-rcjxo5NpwxrD7dURlL1KxLtvlrlr5zsM-oBYl7uGCZtmHfWRQwWSv_R5QkMakVpLOB3-XhGHjPzSewkr3
+-1YgmpoPFgj1WimuLBYPHGBOJVuhxHsVkx4aYtxGGYMBoZ_zyTE1_aHIpzN8v70sYuuNAhkeVVssfIuljWxKQ6j1-_A9TfneX7mwMpCZCjdHlbeLycAVkQZV
+BFgYG6xz6945K64EUkZI82_NSMoGSjZuggNS_Zpx0UISFm7KtYQFU-Usy6YCuyGebJhcc13FBhHfdrfBtLykv_nHEHt_tzyf1g0V3rzzge-Bs-bufll5dU2o
+1hsNk7icTxOau3TZky_10EpNw_-uY5v0wQ_vhNj8GwnegT_UyUU1DP7X2QquTuWpgNnHJ4AtfupWG8pjEyGyiw0gtNJxl_87
+}
+
+AWSEntityColoring(BackupBackupRestore)
+!define BackupBackupRestore(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupBackupRestore, BackupBackupRestore)
+!define BackupBackupRestore(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupBackupRestore, BackupBackupRestore)
+!define BackupBackupRestoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupBackupRestore, BackupBackupRestore)
+!define BackupBackupRestoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupBackupRestore, BackupBackupRestore)
+
+sprite $BackupBackupVault [64x64/16z] {
+pPS7bYCX30LHGlhtF_06dcLMVerfCvjgCfuIQYDI-_UG74939nmp0WYEaOTlSe1DNze1yj_x9FeJeHDV7K_2-3EVEbu8lUsdxIPCHAmM8m9lVUsM1UMbFnuH
+xTBdtZDo1rgpqbV9oUdLJwPliwCA1n2qymq0jsiSY9sV-Yg0l_CT08pV1j2TZpVrJ07GshUrFoLV--svC95JZMmpHQu-YT15dcEeY7cyfiynPQ1lwZU7YZKU
+bQy0UBwozYSTavZwI4LsVWO84x6eDK50l-Cxq9-Hl4q2iVTpe3AKbCJkFJ_Lb1C3QE_7hpaxeZrHW2zz4MvFW5vJtli1F-w__bUMIGBuvlclijJo--xzpy19
+P7CJ8EwClxnsWywFfJTeNN_NZsae1AtglvOiJHqQ63WxPe00si8Nm3B9CKYilIkFo8lvNvch6uDhEVjY_Ib81ZzT_ppRpjRVnhbK7Ap_EJf1d-q_DSvs_rlx
+i-vqi_yk_Sp0-TMcqNph_281m4iRs_ByiTx7kmeJCSlTyqyzxrH2FZl_qV7vRyAYPgfC__Nv-UltXsFao_UdUNzpOFwy1l3oaqhDJRyjc7v_Ts1P-ycLhqXY
+vGSIlQos1ss9FE3st_0T
+}
+
+AWSEntityColoring(BackupBackupVault)
+!define BackupBackupVault(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupBackupVault, BackupBackupVault)
+!define BackupBackupVault(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupBackupVault, BackupBackupVault)
+!define BackupBackupVaultParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupBackupVault, BackupBackupVault)
+!define BackupBackupVaultParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupBackupVault, BackupBackupVault)
+
+sprite $BackupComplianceReporting [64x64/16z] {
+xPO74jmm200bGC3-_y5fyf297STSUjifLynItAJnUoFoBRO2wDSNvmFogcU-IJ23z8sqonOnHb0q_KMHSoQ5VicQdaUD98yvjcRxEFWO0o1zNlM4xGkiiN40
+7vk0muUy9708VyU7zcKSw5hLj7tutzyHLD8YYVgMdn-GwYkk8U3diEAIsE7MjsEGAmdox0VSOy--SayswZVe-VzzKNCtbQ_ovqeESirN_UbyWi-NVDbbvPqr
+PJSYB_YsxxL24h2shnLT6A1DNtPiKJcbvsVffmJPyWtMpMlPEdxLEPFGy1NiKdeUZUcpxp0ljslEMW6UV8YBllqHyEXFM3VwM32VV06xqOU1D7pTmNhMX_Py
+gvDTUgz-pLytVEdj-UkB0L5wQPtrfxhTUW7nx7-yo-oaQslzcbLbg1zwTJQV_U4t6ntT8O_-fEeKzNV3hxal-oDhll-ytfw5P0Ky-oE0TTuIncZv5PzBZjeh
+Ar_J7ve06Uwnl-chwvybHThNhB-o8Y5ZoM-_V_Zl1vWsCOYpBxo4Z3DAcviNZ6WJ6RyFRm4
+}
+
+AWSEntityColoring(BackupComplianceReporting)
+!define BackupComplianceReporting(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReporting(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReportingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+!define BackupComplianceReportingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupComplianceReporting, BackupComplianceReporting)
+
+sprite $BackupRecoveryPointObjective [64x64/16z] {
+tPO7ZYGX34NRc63kV-4LGvM-U0tRGM635UdnTtWOJpt-QhCqpBwIUer-Mwl-cTfRfxNtG-IfY5gok-ToLHBvFVMFzrgnpOBYTGtM3fci_8Hz8K_3wLJdY13f
+LUVDpj57Q_vxUT7HQqHTyrK6eDpNSXMGFllU7RqqkC-Vjmmi5d8s_LBlWIhr2rihwp5VxWMEsslqtjj3fhpHEsuaDWZerdfF2CpOx2glnwfGJ5VahFHngiQU
+q-aNTL-GOEuFcoSWB2oftVcKSKvhZxH1Q6IYTjLnknQ742uU2fQ7Wo_Dr8d4BsNRJA7BsqllPWPuRJGHlUqGsa2YsnofPed29Rs0oiRlyf_cWdVf1OO8gm3S
+eBBWhNenaPLbGBHs9ckbc38Dj03gg3UcGgddqFiIBja3yAJNKGYXn-Gfr3WNpLYterv9dFhrJUfWsnNO5iHs5os42lvi8G_e6RrIptkO9IRfrPtcZ_0K57hI
+5HUiN8n8cXbP81ui9WHw0iBxN_5Yn5nwJJVt3wzNlgunKO-9-q_ZzLflpR1_Zpjzz9wXfo_XSHZ1XDT8UDHtD8KDWvMxyHDdMO4lrzlhhyEGBxR6Q_EkJW64
+bcf4jVqtaks1a1-JbIdFqJYKpnRp_eBPaV04B_qmgVWiYQI6p_3qH360Pii48XQXLduOe6OifTtu00rVAvyoFoYNMM41DwPy7BLM3tyJ6EXV6_y1gyGNnkP2
+8rK_jgwoM__Agb1y4Q7vut-mNm
+}
+
+AWSEntityColoring(BackupRecoveryPointObjective)
+!define BackupRecoveryPointObjective(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupRecoveryPointObjective, BackupRecoveryPointObjective)
+!define BackupRecoveryPointObjective(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupRecoveryPointObjective, BackupRecoveryPointObjective)
+!define BackupRecoveryPointObjectiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupRecoveryPointObjective, BackupRecoveryPointObjective)
+!define BackupRecoveryPointObjectiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupRecoveryPointObjective, BackupRecoveryPointObjective)
+
+sprite $BackupRecoveryTimeObjective [64x64/16z] {
+pLO7Tkim30itSVy3_mw7TQWNoVf-A-YM372pVdmqI0xGFRgX47SK52VY1Z-HAhy8u8O3W3z_4q0-YC_xV68HOMtym9O0uHKXT9PbGq0J8qBEjk2jpWbJOHPH
+FzHI3lyl10G_SEc7lxJW7te2CUbtUb00I7rpQy2JQp4pB9G0R99IN_Uo00uWvytAMTUBmDyOvh_VOY4WLUaJBF9RZxGw3I1M_DwhWVmTHG1s2lWaFpC-Mm98
+hi66hXOM3VngoA8HzlT10AzDgNzrskGxqDAZfSejRmqoyWjSZKz0RFFxWrd7_ABh3Jpm-v_szCJ-D_wgNItdMtnzfj00llAz-0tF332Wazoj-GvGRTThlYJW
+DEw8rfZNUp2fpuYLOpiht8TnAyTjOmOKu1g1FoJYk6jyLZqyTgkZik6N_38rfaK09mRocYzFVZUMLPJB-Aii_PXgSRMSQZFKooB3RX9J6dCgxmO0YFgvjP00
+VtiUwxeI4At_nmB8UhBjp1EFmbOvfvNvdCn_0bM9M4Kl4o_rPRdQt7kVPgbSe-d_5wrPPC3VtLgjQVXacdcHewnhFjvKEZYBNc4K-dQl4FhUOGUG9O-SfIVE
+DGUaCVseiGNEc2YdhxDvEiQ1Zk2Yp-j3Xq2vd431kJ-o48WpRXOrTrDkMQmOPm8fYurOrgU8Ils0oebjBNsZT-poRGqA00XjzRT4ENODYVC5NDGyMX5sm8wE
+UeFS1skWkAxyk0KY9dfyBBu
+}
+
+AWSEntityColoring(BackupRecoveryTimeObjective)
+!define BackupRecoveryTimeObjective(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupRecoveryTimeObjective, BackupRecoveryTimeObjective)
+!define BackupRecoveryTimeObjective(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupRecoveryTimeObjective, BackupRecoveryTimeObjective)
+!define BackupRecoveryTimeObjectiveParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupRecoveryTimeObjective, BackupRecoveryTimeObjective)
+!define BackupRecoveryTimeObjectiveParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupRecoveryTimeObjective, BackupRecoveryTimeObjective)
+
 sprite $CloudEndureDisasterRecovery [64x64/16z] {
 xPK73gDG34J7tTp_m5j7Ii7x5r9KUMg9XViOje6BYulkVjctNF0RovSoAo0UuGP8dKyEUFDt07xMdJc9mSuL3s5oukSgK3ntRBGS8k53HLkvMXvBlxS5512m
 iIKzJWlG_Xr63fGVWpNyrjkQG9reRe-ZNurEvVPQMj4BRmDqLv6Htuw6XPvRuBqlcR3qKgRO8nWKmftLpIim1uXfTSwOd0jjCQQNIKuwn1QPkkTWfjDfo7-N
@@ -117,18 +208,20 @@ AWSEntityColoring(ElasticFileSystemFileSystem)
 !define ElasticFileSystemFileSystemParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemFileSystem, ElasticFileSystemFileSystem)
 !define ElasticFileSystemFileSystemParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemFileSystem, ElasticFileSystemFileSystem)
 
-sprite $ElasticFileSystemInfrequentAccess [64x64/16z] {
-xPM7ijmW300H0i7-_mUdcBl1qOo9XTFpzlenIvUK_Zn47kaA-am7VQQ3Fj1LzpieXwbGqXxb65XB-cs8glo-y_T-Pb8t_0wJ7FOpD7i15lOhSz06OT-OJhbS
-W1JxYZy_C-jqlnQhlfVA83a0Q7CKtgY_ymD_Vm7EWT1uuuVHIFoKRripb5ZyGdNx7SiVOCvVvA-OFt_7VP-_rxxgOhmRVgNBsfUQ5xv1M_iDvD8VpIi_0xRm
-5NJbDm3PzXKwsBRVGHhaJRz0FIB-jf_r8B-7PwGVlUaNO0Py7Py2_QPl3CQMWKisfTDDrhv-ORJvgY6T0rtwioqLUrDbt8NUEY2tV8-ESoXWMtvz3TpfA_-o
-I1dCpnlxxocWtnjVuJ9r2dHDqg1S-MigWvv2lk-WoQwVf5hLGFmj-FFygY6y7-Vi2t7AoK-YKNAQ_XO_mJTuwbk8vlquPry9qzC7dm4
+sprite $ElasticFileSystemOneZone [64x64/16z] {
+tPO7hkmm2031sC3S_y2_MD7YQECjKVbbNdSoBa32ax-L9XkqDNrhQ-ANuyx4spkTgma63_oDVdLB037CUW2fU_rwZG5fCca1iVCRE4GIv-7JcW6sdS05NFrf
+zqr4FTDLH25apyNffw39SNQ7h_m6VLeHysA7zgLl8ZCeGOhOztul_xlrQwZs7o1xtFj5zMZ5Jy7bAmn6vS-XoNSaQ4LZc_xk3-nq5bksdDlbZGLROhdMxDYV
+Fbc8aw-07hlFZQumbeYVV1dC6VLgzyszoL8MzNlv4Z2ExolQH6mUpW9E6TF3R_QBfe3DNIoqW7Ruh2ThW5NXWSyXI5rrMFqriC--T62UIfSpkJtsRoQ5cftt
+BtEYCS_MPN8KylG_UfRw527gkVp6NtDRtjwtwJzTyW_zmC2T_jeFDp2FxTEGBts7d9--cI3rfQzvTTl4Qdplrtlf6QlnlI-QsvPeG-MjBvgbRzZxnN_bZsnt
+_NfDtlS3iFj-0yZxVa10l-iRkAuRQ9xaq9tV_Q0lxNBK1WPCshNVUD2MRfdmQ2Q49w2NlfLlIxVkHw_HOzu1iVFNdqPnBD_htv3t_k2WrjLgYkzz7LxnlE6l
+tDd_ogVn2_z5NFXtybTyLZ-IcrQngT-_wFqrx7kY_BjKOczGOLQxX_mD_0G
 }
 
-AWSEntityColoring(ElasticFileSystemInfrequentAccess)
-!define ElasticFileSystemInfrequentAccess(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemInfrequentAccess, ElasticFileSystemInfrequentAccess)
-!define ElasticFileSystemInfrequentAccess(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemInfrequentAccess, ElasticFileSystemInfrequentAccess)
-!define ElasticFileSystemInfrequentAccessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemInfrequentAccess, ElasticFileSystemInfrequentAccess)
-!define ElasticFileSystemInfrequentAccessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemInfrequentAccess, ElasticFileSystemInfrequentAccess)
+AWSEntityColoring(ElasticFileSystemOneZone)
+!define ElasticFileSystemOneZone(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemOneZone, ElasticFileSystemOneZone)
+!define ElasticFileSystemOneZone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemOneZone, ElasticFileSystemOneZone)
+!define ElasticFileSystemOneZoneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemOneZone, ElasticFileSystemOneZone)
+!define ElasticFileSystemOneZoneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemOneZone, ElasticFileSystemOneZone)
 
 sprite $ElasticFileSystemOneZoneInfrequentAccess [64x64/16z] {
 xPO5idGh30Q3XVJ-5_m4waoA2LoXvDU-BbtvWkIC_7AadDEzh0mqN-cD5oedQfK37UYjbDe1EtIXeCVgLcIGE_IzVWoNbveTobut0zsdpo99pJI99EZxY2aP
@@ -144,21 +237,6 @@ AWSEntityColoring(ElasticFileSystemOneZoneInfrequentAccess)
 !define ElasticFileSystemOneZoneInfrequentAccessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemOneZoneInfrequentAccess, ElasticFileSystemOneZoneInfrequentAccess)
 !define ElasticFileSystemOneZoneInfrequentAccessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemOneZoneInfrequentAccess, ElasticFileSystemOneZoneInfrequentAccess)
 
-sprite $ElasticFileSystemOneZoneStandard [64x64/16z] {
-tPO7hkmm2031sC3S_y2_MD7YQECjKVbbNdSoBa32ax-L9XkqDNrhQ-ANuyx4spkTgma63_oDVdLB037CUW2fU_rwZG5fCca1iVCRE4GIv-7JcW6sdS05NFrf
-zqr4FTDLH25apyNffw39SNQ7h_m6VLeHysA7zgLl8ZCeGOhOztul_xlrQwZs7o1xtFj5zMZ5Jy7bAmn6vS-XoNSaQ4LZc_xk3-nq5bksdDlbZGLROhdMxDYV
-Fbc8aw-07hlFZQumbeYVV1dC6VLgzyszoL8MzNlv4Z2ExolQH6mUpW9E6TF3R_QBfe3DNIoqW7Ruh2ThW5NXWSyXI5rrMFqriC--T62UIfSpkJtsRoQ5cftt
-BtEYCS_MPN8KylG_UfRw527gkVp6NtDRtjwtwJzTyW_zmC2T_jeFDp2FxTEGBts7d9--cI3rfQzvTTl4Qdplrtlf6QlnlI-QsvPeG-MjBvgbRzZxnN_bZsnt
-_NfDtlS3iFj-0yZxVa10l-iRkAuRQ9xaq9tV_Q0lxNBK1WPCshNVUD2MRfdmQ2Q49w2NlfLlIxVkHw_HOzu1iVFNdqPnBD_htv3t_k2WrjLgYkzz7LxnlE6l
-tDd_ogVn2_z5NFXtybTyLZ-IcrQngT-_wFqrx7kY_BjKOczGOLQxX_mD_0G
-}
-
-AWSEntityColoring(ElasticFileSystemOneZoneStandard)
-!define ElasticFileSystemOneZoneStandard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
-!define ElasticFileSystemOneZoneStandard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
-!define ElasticFileSystemOneZoneStandardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
-!define ElasticFileSystemOneZoneStandardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemOneZoneStandard, ElasticFileSystemOneZoneStandard)
-
 sprite $ElasticFileSystemStandard [64x64/16z] {
 vTO7jkCW341H987WxN_1l-eSGd2AbUdpVYytaHjE-NCJUObNiDVuAmzWV6Lf7bbwUWU7Md9LCp0BdibY-F_7kzVDI_ElIb5tlU_1Dz_vBdu-wuMaZoh4q3dl
 K9xmeYRXrIuRZDMRcLvh7O25TzRwwW66h1pkUDyzO_43tFRvexBDtq7BJE8vmXyrVO2sZc-VN_pJYpznFH-TPmeEVT1N9zjwSknbhFihCePiwzcHBp8cdmre
@@ -172,6 +250,19 @@ AWSEntityColoring(ElasticFileSystemStandard)
 !define ElasticFileSystemStandard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemStandard, ElasticFileSystemStandard)
 !define ElasticFileSystemStandardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemStandard, ElasticFileSystemStandard)
 !define ElasticFileSystemStandardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemStandard, ElasticFileSystemStandard)
+
+sprite $ElasticFileSystemStandardInfrequentAccess [64x64/16z] {
+xPM7ijmW300H0i7-_mUdcBl1qOo9XTFpzlenIvUK_Zn47kaA-am7VQQ3Fj1LzpieXwbGqXxb65XB-cs8glo-y_T-Pb8t_0wJ7FOpD7i15lOhSz06OT-OJhbS
+W1JxYZy_C-jqlnQhlfVA83a0Q7CKtgY_ymD_Vm7EWT1uuuVHIFoKRripb5ZyGdNx7SiVOCvVvA-OFt_7VP-_rxxgOhmRVgNBsfUQ5xv1M_iDvD8VpIi_0xRm
+5NJbDm3PzXKwsBRVGHhaJRz0FIB-jf_r8B-7PwGVlUaNO0Py7Py2_QPl3CQMWKisfTDDrhv-ORJvgY6T0rtwioqLUrDbt8NUEY2tV8-ESoXWMtvz3TpfA_-o
+I1dCpnlxxocWtnjVuJ9r2dHDqg1S-MigWvv2lk-WoQwVf5hLGFmj-FFygY6y7-Vi2t7AoK-YKNAQ_XO_mJTuwbk8vlquPry9qzC7dm4
+}
+
+AWSEntityColoring(ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccess(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccess(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
 
 sprite $FSx [64x64/16z] {
 xPDdUgKm3017nPPq_mFl9i0Nyxh9ttXUeOuQfXvPB1QBHKRMDDq6KLMX06YRZ64CUfM3cfk2pFfHWuOSUSD_uqEEW-j-O7KYpVgOat_sErvd_AUUX7xTBy5g
@@ -382,6 +473,39 @@ AWSEntityColoring(SimpleStorageServiceS3IntelligentTiering)
 !define SimpleStorageServiceS3IntelligentTieringParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3IntelligentTiering, SimpleStorageServiceS3IntelligentTiering)
 !define SimpleStorageServiceS3IntelligentTieringParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3IntelligentTiering, SimpleStorageServiceS3IntelligentTiering)
 
+sprite $SimpleStorageServiceS3ObjectLambda [64x64/16z] {
+tPQ9ikue28J3Jh__2yy4gN3Fggbjbk-ilrORQ4Hp_NzHcR_leG3i_iS1VoyNtEXr6G0alvGxW02W1cJMIY_WfH0KN344dUlH4Ml9EvjyfQSLY4Z_yqfla-_u
+yQQAkG8WTPD-V5mlKC1ArSOvm2-hhnTXaQMd5-ee0ws2283BVp-CW180l9JtHq3h_rCB3FqiBpsNViKanxctYKuSRTsvXq-WYSBxq-aE2c2SU1RZSlC4dKH5
+ZSUMqm808UR1KqzNFWw_YpKzxoWEmvTAOD69DroJ6tM9p8GwuRQ3rVHUAcbd7NIMaZQEfej_DP56Nd6x_4q0pxm3kQrSGsX6icj4-N1I9nh_aD-FwhOwb3e0
+QNgMBL7wdy4YNOLfXed50eluNP-6XrpW8MrpbmNoZZFm3M5yqMON-jDwekOHaHaHRZhNW6pE7jhiBpwVVx_-n4VSWlYSto-CFxGMuhbunz_VGDSdW6mzC2V9
+zWnFnFFsOHL_0a3gewUJipE1VExmm8rnXRCluFfjCh6IOGMXkD5T0Gc0IW8ouub5ODV1Slaq_i1hT9C10_fPJvxfT2-UC_eJPVk7nfTvQ29LbGuklu40H019
+ipis7VpPKUsJaSRxNGSd2du609lks7QOOE4rmEthhZlRBQxVuLvwhesJ06-wTmhOsw3jSXJsfBBluD5tIe2Ule6KQE8lc6TgHo8--FSnjCEt7vhwVR9cY_rG
+vDCNE0QGnfzj5U_EsI8eqatbHjMY6u-k8opn3Q7NCQoU7xGcTBs5Y5cOYQv_CNy1
+}
+
+AWSEntityColoring(SimpleStorageServiceS3ObjectLambda)
+!define SimpleStorageServiceS3ObjectLambda(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceS3ObjectLambda, SimpleStorageServiceS3ObjectLambda)
+!define SimpleStorageServiceS3ObjectLambda(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceS3ObjectLambda, SimpleStorageServiceS3ObjectLambda)
+!define SimpleStorageServiceS3ObjectLambdaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3ObjectLambda, SimpleStorageServiceS3ObjectLambda)
+!define SimpleStorageServiceS3ObjectLambdaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3ObjectLambda, SimpleStorageServiceS3ObjectLambda)
+
+sprite $SimpleStorageServiceS3ObjectLambdaAccessPoints [64x64/16z] {
+pPQ9SjWm24Gha83z_n_kQD1ESKqrwPtj4SVY0KONNpwjjEWNS4UH_pmVA8fVYHzw5F1VulduSNu4v3mvmBU0ZtmInBZZm3PG1oeFkEvn037kE6BCh9tnlMKD
+9ySlk1jIfdL4ZQ-T3deyvptcUtW6E4u77RuDrYdMD7TtMoULnN4ww71A31IhHz711HT7Ae8FUdL0l1GybgJHc0w0Qu0EdZodYxd0vP7U0W2j_f-yR8IFp9RY
+UiHaU41-L83HRDUnKrzqqDKlkUDdVJSaPr6Vi0285ytad8KeYlDkPk2LURoC8cDuupa3Rz9eMfNWp52ZFOcSZx8TGflZZX_nKAPhXv1qr5IOcQ6fQ-H_6MRd
+PuyiFTmTEu0quJCqQwR0oYgvHoQXI6MgidTxYdCNgZgPGFv4IWyV0ImMOI2LW8FA18o18iYVdwoBWkhu2IvTVV637xTKbUUlKbAfEwzCz2q1PizpxCwF2pyw
+Nft7ror-YlcxcKNo1cnPuVN2Mwr_bXlkBFwz_hmp0wcL2qLsK1QZb4NVwsTnNLDSq0kC6l3N-aaLyyhJHgf3f9Jxnu-pG7JRaXkE-u_xvsKuMIWgW9Nfqipf
+xdr-D6UZu4Xe9UtvmSYJKqrf_TBPP4a5zojBI4spIL-8ySsqFRy7wFmboJpQypj1MgqELte6SBl_5QNVCfDoPwxs-cPKvtDiqt5yiNACtj-V0Envry8dUJNs
+NIMNjd-WD3Pn-87QKl4BkiylKaSmVknSFju0KK9UQDpWb_wjrA_ftsxz8-QRdsZwnql_EYelNVzwxv-V_Br_fWR1wRv_qyth1d861l6B0tcqFO3LkPOUxwNb
+ulmbAV5VrUJHywkQluTpwNvYVGK
+}
+
+AWSEntityColoring(SimpleStorageServiceS3ObjectLambdaAccessPoints)
+!define SimpleStorageServiceS3ObjectLambdaAccessPoints(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, SimpleStorageServiceS3ObjectLambdaAccessPoints, SimpleStorageServiceS3ObjectLambdaAccessPoints)
+!define SimpleStorageServiceS3ObjectLambdaAccessPoints(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, SimpleStorageServiceS3ObjectLambdaAccessPoints, SimpleStorageServiceS3ObjectLambdaAccessPoints)
+!define SimpleStorageServiceS3ObjectLambdaAccessPointsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, SimpleStorageServiceS3ObjectLambdaAccessPoints, SimpleStorageServiceS3ObjectLambdaAccessPoints)
+!define SimpleStorageServiceS3ObjectLambdaAccessPointsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, SimpleStorageServiceS3ObjectLambdaAccessPoints, SimpleStorageServiceS3ObjectLambdaAccessPoints)
+
 sprite $SimpleStorageServiceS3OnOutposts [64x64/16z] {
 xPK7ZlCw30R3ZwJ4kV-1Np421zeLxVrx7TJO7XMsF7uAv3lqGJlfy2_JGOzxe7nBmBpNrHzpmBtlNy7_w__rdGN_thx6Wlwq-9ils5UBlxb7ZF_9a7sYdnDM
 Pkg3vrVHaBgFdqq0QgJBx7XYyXmS3Bln1J33Dc-YWB9hls3eqQ09rTUlZktpSS40Q-FlXr_gTQyRtm0gj9EL1N1z_rUwGtfkPV8u2wBkubT9HoMCtZzxHpdg
@@ -566,9 +690,8 @@ AWSEntityColoring(Snowmobile)
 !define SnowmobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, Snowmobile, Snowmobile)
 
 sprite $Storage [64x64/16z] {
-xTT5cWGX44JXG2ep-Fh-zvrfX_9ejt__i1NfJxSf5zji-tA5J-n_lVM8lQ4dghspua0KUvOAaH2lwiqGh-gB8OfztkgE_NO1hGzRyTWt2-ZlP_yIej3NS6H2
-pxsonHsNUkpaSaQfznrUtBSUtxCbzsYvsbkBOZ_m5ZrzAyDyX27x5gVxW1N2T8_4HGapVIwByeDwDkG-eX7L7jah6NBVbKht-3wpefy_e17KdjQWrWzzHH_M
-z66wJy6vm4EQxXcmA73GLzmM-E__NVdrLywlJ_S7
+xPD7ZaDH3CEslr3tF-vCUXK-PAGdvbQWNlLuIeCSnBuyvBulvJOVSPC_8cxoVK7k-uBSDmKBldQSbo9ky5r1ldzRaFj7o7q_57M_dclF2_pRyyxbU9R__Bnp
+L8RpsZfkMpaBVliJvhsct4S6Sbzo6sx_MVVlt_zh_t_xbFtpxpIBcevcy-4I_7USPahslDMRVm
 }
 
 AWSEntityColoring(Storage)
@@ -589,6 +712,32 @@ AWSEntityColoring(StorageGateway)
 !define StorageGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGateway, StorageGateway)
 !define StorageGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGateway, StorageGateway)
 !define StorageGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGateway, StorageGateway)
+
+sprite $StorageGatewayAmazonFSxFileGateway [64x64/16z] {
+xTQ5OeCm50NGv_B_FpooXBqgDj-uzJOdv48DVbw8Y8deW4HMpuehxy4QUHyNtAJPntXJuHPH6_CPhUlesxeTINrDiTo3l8qHNAYrD8FLwmlTubaBAhsuGdis
+UoR3QlwlF_tfJsycntpb6pp9209gX1llyveZH9aPaMaxFUDh8FeWvfsUHf5K695HWaoklLW5Rpodp1upiTr4ufMdp4hSRR-AIpe0M9-nFETbzDg3foEC-4Gv
+7UuyruYMvbLQ-bFESmDl9HOyllaU7B-18PsWrzXRN_koZj-OLUTUb04B_lRuzTHE9_IK8nwaEGoh_WTyAo_fHxmdJTJwGTpXAPIHE2QA6VKstEfn_Y_NLz-h
+-Ah7MZw9gc2xG_CpjEpNyuM-ndwIF_tfbLUYotuz2vwsURproDoV8zuGX9-L5m
+}
+
+AWSEntityColoring(StorageGatewayAmazonFSxFileGateway)
+!define StorageGatewayAmazonFSxFileGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayAmazonFSxFileGateway, StorageGatewayAmazonFSxFileGateway)
+!define StorageGatewayAmazonFSxFileGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayAmazonFSxFileGateway, StorageGatewayAmazonFSxFileGateway)
+!define StorageGatewayAmazonFSxFileGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayAmazonFSxFileGateway, StorageGatewayAmazonFSxFileGateway)
+!define StorageGatewayAmazonFSxFileGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayAmazonFSxFileGateway, StorageGatewayAmazonFSxFileGateway)
+
+sprite $StorageGatewayAmazonS3FileGateway [64x64/16z] {
+xTHLOYin38LXMMIT_I-u3IZWGUioz7ygvDCeG_G7rfY5cHlL4-k1P-5Q6Q8Twy9uRcb77jDKhgbvpWkTrEjZjTp99lJUejfF9cZ-_sI-qawfZse6ODyxdUP_
+iV_oNvv5wdxijtfMwn50H3VbghV0K5Z5jxYZVYj_QVFU5gzMjW2qvhMzxQC1sBnNvFv-AVUl79-1TJpl2N0sxv5R63lG2ZxGxuj4C5th25fvyLSo-0xa70Jd
+mBN7Uxou02qz448joRxF-PdaF8d0DKUQXVVnYcL4_BfSpP7vWQS--F4KQ-1Q77dsLylpbTDbnq-ylP3ZfdrUWAm1LlFojcwUpf8VXG9SymI4Shijpne05RrZ
+g5VzEC2fuZDHyqkcGbJrOx_Hk-jtUS3_MV_bkvnrwAVQzu6PTEL5cAurcOZfZ-eJ
+}
+
+AWSEntityColoring(StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
+!define StorageGatewayAmazonS3FileGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayAmazonS3FileGateway, StorageGatewayAmazonS3FileGateway)
 
 sprite $StorageGatewayCachedVolume [64x64/16z] {
 xTC5bWD124NHJ-7xt_0qOot4nYNrefnmuutV4hybj2BVaZUVRohGlVEjnKblk3N_nPvLkMvadORKFGPaYIzxJTEw4qdFaq9gsnoKUirJCYeA4s3ag67rXEg2

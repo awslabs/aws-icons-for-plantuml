@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AllProducts [64x64/16z] {
+xTTNKiOm40DWRVmdSLdT_xXqM3fOIoTw_sOqxWPmnEhWP4Qru4uXRhU-ijbqvSQAcmmQfcCSk0a98UHFzuUlpLAU74lEqzUKtycQyJWvkoKybi5H4XxMw6l2
+0p48cez143sMGIzl-iudmMqQkRxb-IGTTzd8-gR72ub1q7mCWkPZ43RPno3e7iNPC_wKypNLtthi9C6Vd6E1wcCNlkmVfp_gFhr_7dMVtBzaT6S351_TPL-S
+eq3s6zaCghVOSuel8xeBFhfhFhfhtWiIlZRxw--dm-l_X-p_9Vj_ol_VZfm3
+}
+
+AWSEntityColoring(AllProducts)
+!define AllProducts(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #FFFFFF, AllProducts, AllProducts)
+!define AllProducts(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #FFFFFF, AllProducts, AllProducts)
+!define AllProductsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #FFFFFF, AllProducts, AllProducts)
+!define AllProductsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #FFFFFF, AllProducts, AllProducts)

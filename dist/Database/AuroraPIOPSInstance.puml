@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuroraPIOPSInstance [64x64/16z] {
+xPO7TWCX34I7jY0qzpzldlJSEwGdV7VXhs9lmqyXvG7IfImSf4KSsJX1ETEbv06Ad2H8f2OCaaa6E48c35F82YEGWWawTTz-cV4tCkmcoJD-8UE7-CjV_lAN
+l_pbBt_vHKHQ0h9ijjof5K2qQDu77lcLAhQsiVctHDc1vD62H8heOtzprtrb0Zep4iLoeD6wUkPdYlbkmDwv3nADrlohzOjPoEpx-jv_nAlp-mmxJqLPt6Dv
+vhU4o_eMDG-XcVcuV-Dw_Zt2yg8FQpaeyy4FyF_ZLJ-JdQRk_QfTgU7enylhvoAMRx_z9UdTNgDK6AdrteANOO0nUVskL3YDp5ENxnLE95acT0t7FP5z6w4g
+Jvik74SpZeIgWtODE2V4z38nuAVm1W
+}
+
+AWSEntityColoring(AuroraPIOPSInstance)
+!define AuroraPIOPSInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, AuroraPIOPSInstance, AuroraPIOPSInstance)
+!define AuroraPIOPSInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, AuroraPIOPSInstance, AuroraPIOPSInstance)
+!define AuroraPIOPSInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, AuroraPIOPSInstance, AuroraPIOPSInstance)
+!define AuroraPIOPSInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraPIOPSInstance, AuroraPIOPSInstance)

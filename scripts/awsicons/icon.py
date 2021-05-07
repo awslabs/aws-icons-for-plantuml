@@ -27,6 +27,7 @@ class Icon:
         category_regex=None,
         filename_regex=None,
         category_mappings=None,
+        filename_mappings=None,
     ):
 
         # Full path and filename as PosixPath
@@ -46,6 +47,7 @@ class Icon:
         self.category_regex = category_regex
         self.filename_regex = filename_regex
         self.category_mappings = category_mappings
+        self.filename_mappings = filename_mappings
 
         # Regex patterns to use category and _make_name
 
@@ -74,20 +76,36 @@ class Icon:
         # If id is for a resource, no changes needed. Save to a temp SVG file.
 
         ns = {"s": "http://www.w3.org/2000/svg"}
-        fill_rect = etree.Element("rect", width="100%", height="100%", fill="white")
-        root = etree.parse(str(self.filename))
+        white_rect = etree.Element("rect", width="100%", height="100%", fill="white")
+        color_rect = etree.Element(
+            "rect", width="100%", height="100%", fill=f"{self.color}"
+        )
+        parser = etree.XMLParser(remove_blank_text=True)
+        root = etree.parse(str(self.filename), parser)
 
         # Replace any gradient fills with the requisite color
+        # This was in effect for 2021.01.31 Category icons
         elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
         for elem in elements:
             elem.attrib["fill"] = self.color
 
-        # For resource icons which are transparent, set fill to white
+        # For resource or category icons which are transparent, set fill to white
         # TODO - can we query without namespaces?
-        elem = root.xpath('//s:g[starts-with(@id, "Icon-Resource")]', namespaces=ns)
+        elem = root.xpath(
+            '//s:g[starts-with(@id, "Icon-Resource")]',
+            namespaces=ns,
+        )
         if elem:
             # To set fill, add a rect before any of the paths.
-            elem[0].insert(0, fill_rect)
+            elem[0].insert(0, white_rect)
+        # For category icons, set fill to category color
+        elem = root.xpath(
+            '//s:g[starts-with(@id, "Icon-Category")]',
+            namespaces=ns,
+        )
+        if elem:
+            # To set fill, add a rect before any of the paths.
+            elem[0].insert(0, color_rect)
 
         # Call batik to generate the PNG from SVG - replace the fill color with the icon color
         # The SVG files for services use a gradient fill that comes out as gray stepping otherwise
@@ -202,7 +220,9 @@ class Icon:
         try:
             self.category = "Uncategorized"
             self.target = self._make_name(
-                regex=self.filename_regex, filename=self.source_name
+                regex=self.filename_regex,
+                filename=self.source_name,
+                mappings=self.filename_mappings,
             )
             self.color = self.config["Defaults"]["Category"]["Color"]
         except KeyError as e:
@@ -212,7 +232,7 @@ class Icon:
             )
             sys.exit(1)
 
-    def _make_name(self, regex: str, filename: str):
+    def _make_name(self, regex: str, filename: str, mappings: dict):
         """
         Create PUML friendly name short name without directory and strip leading Arch_ or Res_
         and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
@@ -223,6 +243,12 @@ class Icon:
         """
         name = re.search(regex, filename).group(1)
         new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
+        if mappings:
+            try:
+                new_name = mappings[new_name]
+            except KeyError:
+                # no match found, existing filename is okay
+                pass
         return new_name
 
     def _make_category(self, regex: str, filename: str, mappings: dict):

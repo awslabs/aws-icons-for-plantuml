@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BackupBackupPlan [64x64/16z] {
+pTT7eYCn20HG0GhK_Iyymm-kXLfjcecr-G4_59tQVnErDxdd7U_YSkSdYWtexIwB3Kw-tMLo1bK_sQ3a6nlSUEcZww7E1aTlY8n3dGqENl2PVgYpmR7Ucpfm
+LMU3etUipykeUtr-1D6Wv9dnVFu6C3EnV-VGvyulxtb_gdvFtTkOQyrk9QyJt6vvuCLCcdnfTnvuqXjW6cPr-TnFvvNB-HbQMLC7NDC-ChOgv85V9Yn51h3I
+Fc9xlQUyNFlcGCetiOXSl47rX3y7M3NFHzGzNvJANW5BU96px-_z0AJkkSezbfW_7xM5Cxlr4jNBUExyrhu1R9pm7HY7wwFtdlFKozrRBUKDy7ts3aZ2yorw
+uoFz-hq-N-uO0ysjPmFCLmTTv3dV1W3ux6PzEj-FCvvZCbDQqZCw_1El4VgZWwGyep_pzLji_t9vvXa7nW9MrIiYtYgU3QJkL_XHzS4z6bJzW3S5hEfRZpsm
+F_hvov8v-7GkVN_YU-NxAwFjlyaF
+}
+
+AWSEntityColoring(BackupBackupPlan)
+!define BackupBackupPlan(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlan(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlanParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, BackupBackupPlan, BackupBackupPlan)
+!define BackupBackupPlanParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, BackupBackupPlan, BackupBackupPlan)

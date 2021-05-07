@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SimpleEmailServiceEmail [64x64/16z] {
+xP87hbqX34Gn7Rp__KQU5BWQ2OURNaRbb_UEoy7Xjyd_n9JYQpXrHPgyeGMq8la5FbL7bX1YLTLqpK_L-bc2whp5E_1KSeX9ykK6QDb3iCcx3J-rNxUF8Ijm
+bT1k5r0TfW2eOf0hFDds2JiCQrqk-M9BLrZ3whVzcwqFSm7lq7LWA3TJFlC2X_OG1KN0-qaFFXcKGhPA8RPpDhuQq5GR90WSUEaRNqnTehKEaQ6gpVXrVZPH
+iIhTnIEQPEEHWTyaedHmanKD5szT0Vk1BbEryvYzbvphaAyoLyAJHqr4V7F0DXwHEbHdpvwvYUTPFATcrzpEuzBYuolLC_VaqsEEWXO7SmwFnnnoCEVmGSnH
+F9bZdWVD1tCUZtkgRCxZoIAPStcsoEPy7l-5HPWZtEK1mIBCePJ3isvOXBc1KWxFkeiYPJt8aMVToV2q7iJXMNSSG_X1c3yTwlx_wF7hK3cmwF1qg7JM9twP
+uv15vfSv3bbadiqTB1BFvWuMYNVCaKNYoPnhSUVPd6znuokRyotMnH_C7Im--5gkKdV-TS3BUru28YyJlZd_ym4
+}
+
+AWSEntityColoring(SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmail(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, SimpleEmailServiceEmail, SimpleEmailServiceEmail)
+!define SimpleEmailServiceEmailParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, SimpleEmailServiceEmail, SimpleEmailServiceEmail)

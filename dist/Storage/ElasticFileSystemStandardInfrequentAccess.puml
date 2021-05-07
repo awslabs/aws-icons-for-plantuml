@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticFileSystemStandardInfrequentAccess [64x64/16z] {
+xPM7ijmW300H0i7-_mUdcBl1qOo9XTFpzlenIvUK_Zn47kaA-am7VQQ3Fj1LzpieXwbGqXxb65XB-cs8glo-y_T-Pb8t_0wJ7FOpD7i15lOhSz06OT-OJhbS
+W1JxYZy_C-jqlnQhlfVA83a0Q7CKtgY_ymD_Vm7EWT1uuuVHIFoKRripb5ZyGdNx7SiVOCvVvA-OFt_7VP-_rxxgOhmRVgNBsfUQ5xv1M_iDvD8VpIi_0xRm
+5NJbDm3PzXKwsBRVGHhaJRz0FIB-jf_r8B-7PwGVlUaNO0Py7Py2_QPl3CQMWKisfTDDrhv-ORJvgY6T0rtwioqLUrDbt8NUEY2tV8-ESoXWMtvz3TpfA_-o
+I1dCpnlxxocWtnjVuJ9r2dHDqg1S-MigWvv2lk-WoQwVf5hLGFmj-FFygY6y7-Vi2t7AoK-YKNAQ_XO_mJTuwbk8vlquPry9qzC7dm4
+}
+
+AWSEntityColoring(ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccess(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccess(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccessParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
+!define ElasticFileSystemStandardInfrequentAccessParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ElasticFileSystemStandardInfrequentAccess, ElasticFileSystemStandardInfrequentAccess)
