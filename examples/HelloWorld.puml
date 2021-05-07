@@ -2,9 +2,9 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v9.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v10.0/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/EndUserComputing/all.puml
+!includeurl AWSPuml/BusinessApplications/all.puml
 !includeurl AWSPuml/Storage/SimpleStorageService.puml
 
 actor "Person" as personAlias
