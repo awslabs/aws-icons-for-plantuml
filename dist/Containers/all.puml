@@ -2,9 +2,8 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 sprite $Containers [64x64/16z] {
-xTS5iiCm38JXbInhz_uNVkXsA1gxJFdByBLXuCDBdLt-UbtGnEy-ypBl_b1FkyZJq2xnZjGbtfhKuuB_jqppCts44Z-b8axtQN29lLDoM9xcsM1TnxgXSUhB
-xu_VM_NS6juqE9Ty0A7HvFtXY_-P3jVmzNZEfyjFrUVbVAay7V3Oh2l7CmUSsxu3LXHAEmJqobCByNOUjX0gpu35D4EmcdzecjQWKU4p9VxUI2aFJyPjmPjB
-WJ6TtCTqHKXkCx_xtPFZjl5axgVLdWtMfXaQBrZ_dthxjLRb6OlnBOwVTx_xYyzV7zut
+xPLL0iCm688VOt3_uywbJcpQdwtUhn3tMpAHk-PJ6myojRWBMjlx3ZpHaB-w425UwuyN-nYAhNb64d1s3omB4K36uOr88fIO9trlAE4roAIZhnebNOZvE_hR
+EgEkHrr7-fq88cHL4A8eMq4TwNeJNhBUT3qcKklq7eSQH60TpxP9zeluIedwLqh3B3NfluuddtjWU3xS2rxk_u8ttlZ_6F_jyn-hPEjFU_sRZW
 }
 
 AWSEntityColoring(Containers)
@@ -12,19 +11,6 @@ AWSEntityColoring(Containers)
 !define Containers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, Containers, Containers)
 !define ContainersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, Containers, Containers)
 !define ContainersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Containers, Containers)
-
-sprite $ECSCopilotCLI [64x64/16z] {
-xPO7gWGX44JjfDx_mXjgWvz5MwbFPXvnmokqfsYcRBc8xYN3uusK1n83m-_zGP9G-mSj3xGFukltPWjT-jvlRPsWy3AUEOupAEjZYW-gqdwHG89GFX2CEeJr
-HmBb0qM2SpwmXWJE7mdDplrQVd0a7FhJxdc7T-9hctNFpdpWa-RekVzfRmZdZ-OuwOynsDftApbuxhxo3Rzj1nc9ZnzJ4X-Rgv8-a8O0saT0Ottm313I1nK1
-j8-0hfm_gcwa3nm1l8ycEUcFAf9-NaLydVkWBcQ0JRRteI-NG6nyoLeOs2APR-FoooDKMVgE4-xNST9VFrccKryQljzYRUhhP7BhEShm5vFB42a_VlnTppPX
-zVurAKtq2P7vWQlpVccuEdL-0Z4JrX_UvKkdaNVjI3vryQ3mycykxW
-}
-
-AWSEntityColoring(ECSCopilotCLI)
-!define ECSCopilotCLI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ECSCopilotCLI, ECSCopilotCLI)
-!define ECSCopilotCLI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ECSCopilotCLI, ECSCopilotCLI)
-!define ECSCopilotCLIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ECSCopilotCLI, ECSCopilotCLI)
-!define ECSCopilotCLIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ECSCopilotCLI, ECSCopilotCLI)
 
 sprite $EKSAnywhere [64x64/16z] {
 xPM7SiD024JtEDh_Vt7283VIG1DFrRgelZsQPN-FBbrIpSyv6M6vBv2TeXb87k2vWomiNS5_Rh1a73eusFmmG3OBVPi_UBSDi4r2Tt_meNOIIe2uLzvT0DA_
@@ -149,6 +135,19 @@ AWSEntityColoring(ElasticContainerServiceContainer3)
 !define ElasticContainerServiceContainer3(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticContainerServiceContainer3, ElasticContainerServiceContainer3)
 !define ElasticContainerServiceContainer3Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticContainerServiceContainer3, ElasticContainerServiceContainer3)
 !define ElasticContainerServiceContainer3Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticContainerServiceContainer3, ElasticContainerServiceContainer3)
+
+sprite $ElasticContainerServiceCopilotCLI [64x64/16z] {
+xPO7gWGX44JjfDx_mXjgWvz5MwbFPXvnmokqfsYcRBc8xYN3uusK1n83m-_zGP9G-mSj3xGFukltPWjT-jvlRPsWy3AUEOupAEjZYW-gqdwHG89GFX2CEeJr
+HmBb0qM2SpwmXWJE7mdDplrQVd0a7FhJxdc7T-9hctNFpdpWa-RekVzfRmZdZ-OuwOynsDftApbuxhxo3Rzj1nc9ZnzJ4X-Rgv8-a8O0saT0Ottm313I1nK1
+j8-0hfm_gcwa3nm1l8ycEUcFAf9-NaLydVkWBcQ0JRRteI-NG6nyoLeOs2APR-FoooDKMVgE4-xNST9VFrccKryQljzYRUhhP7BhEShm5vFB42a_VlnTppPX
+zVurAKtq2P7vWQlpVccuEdL-0Z4JrX_UvKkdaNVjI3vryQ3mycykxW
+}
+
+AWSEntityColoring(ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
 
 sprite $ElasticContainerServiceECSAnywhere [64x64/16z] {
 tPQ9hkWW24Gl8ZB__yNljXCpgI7bxHjPkiYXC5NnuxyrHzfrjOH_EpqImBZl0EJuHZm0yPV5jwKE8CKdWAylmlBEU8WVTpNBlZxrUN7aUPqgeayzR7EwsWAG

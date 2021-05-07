@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Route53ResolverDNSFirewall [64x64/16z] {
+tPO7ZlGw38FZ4ilIT__plc9a4yUSYlONecsafIfbpFPx8-VjOrJVnGHgy_eu5M1tqmuIm82oAL80H9aina1Fbwq404dv3Zs0d-fo0wW5eEMVqe7eu4AtOJG0
+efi7GEHjom4GRjq1i97ADkaqqlzPEnVsqtUYvz7gEfK2vAFhscFaAvDxr1DzF_hEommJKBSlKEypT6ZRLsWGvqU7_WLNE41MCNbRjYngcufnRH1m4ThZbhls
+tndm_BJ_Vfz_qWG14lWneO9fWprt7e_MrdtxYAUc0hZo8KI_8w2OKa1__ooagO7alQNHG5En3vXM6yJoQeoGZuVhXEg9-PZ0pfAQB05joU1o3roY252-vf__
+Bd3TP8FoWYyjDSY5woeocCqznBnJ3LcXZ1Tf6YwBtXTwWVtEt_mYE0D5r397J0j_o-innQGMNzFtst6bTJbWKAQ0UT5wkNt9SkaPsloyQFhhgqbtvDlK-sq2
+0VdLBVgGOYVcUudvqkn--2AkM2IwjMbXSILKjGsKI-9QG05Rb2nGHuCgrwpYL8bV1NGXo768GxUSbdMX-VN_3fM9z5KzgwhdhPM3NvUuvUtu3fxmPVyoBwbd
+w5gEGM2hTOVyS60PoDezBlteCGuqYCEYCVKDA1BQM7QoJmQzG0VJ0D7IaQdUNZ_zpP3KNG48D-i1G1KwULubdkxj6HDiSJhtRPG0Mbfgi01mgmkx0HIDI9Uz
+AueXrOvi0K1lvGLtxm14VNWW3WFUidhpVheFjYAT_nDxkZk2WxmliJLFPy3oQJ86kd8V8xTZQzCcxVriTHXjA6Mq_3MA0n7NpzYlKKEMzIMQNDQNI7dxk_4l
+}
+
+AWSEntityColoring(Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewall(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewall(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewallParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewallParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)

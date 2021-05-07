@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Documents [64x64/16z] {
+rPS7qjug30054ZOOxVsF-ruIb8uTus_cBpl5ZTM0J9MFIB8fUbFVE66_fITuAO12jRzfTmCebCdh7HpsLtnps2xTqYddVj9_152uzEKYG9IfUkL7W0jVvDAF
+0CzzYIG-z2D0UUINdpsfFF1_Ozal_4PQzKNj1-s6d-q7itBN_k_jJM_jlrx_2P_Cjpfb8VzJqflupzkVFhy_przvCt_UV_IjsXyyyREPlEBhgBZPkX-lwvYf
+Mrhtym6mYm5qNVMBGtTeG0UsDRy2BQcFhh83nugVeeUfuriiihRWIuVyQpp7qugleyAfr2sF4jjQ_Xgec0DUH9mkItvga9Fp3VtgvmK_Lw3B1fiOD6b0qxj-
+ZYvJuLigUtGck-zt6-zLijD4H0yez_mVwLBWyF0QfBj-XHmVW1On3xdhAsmYISHQFyguWqrodNA0_8xJctEa-9Tuwp6NpJacmmUYptQYp9dlRT9z_OYCA_J8
+udro5icZqnlOU35XhvkS0itCAWpN9ZZjt7U258-BXxZ6eCkvtvESOuCeido8VNl-1m
+}
+
+AWSEntityColoring(Documents)
+!define Documents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Documents, Documents)
+!define Documents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Documents, Documents)
+!define DocumentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Documents, Documents)
+!define DocumentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Documents, Documents)

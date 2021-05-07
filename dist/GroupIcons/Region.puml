@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Region [64x64/16z] {
+xTH50W8n50JHYgVlVs0SLdZZ_Dg_cRWUMXIrqXsUWNe_7vG9Zi-DfFihG9THzRWgm_HjdEkoFrkxx4iz5HHd_fKamtUOXXymPFX4a-4pHOQlP3a-Kom_4ytn
+6Z0ShmxJyQeaoojJhFlReScylyEul-kQ-tvze0yVFdpuoQ5ybq-7YfvV52q1
+}
+
+AWSEntityColoring(Region)
+!define Region(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, Region, Region)
+!define Region(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Region, Region)
+!define RegionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Region, Region)
+!define RegionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Region, Region)

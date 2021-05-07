@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WAFBot [64x64/16z] {
+xPO5RWGn40GzPhl-_zwmhTDsS3QSjE2WLGk33jzQbfATe3j0Doy-kTCq7zzXb3AW-suF8zneW7du12NSg43w2Zwmdp-ur5RysXVaRpq1jE1NXXnEA47wgNmi
+lGyOlRVixTsjuihzl1FmvXwSCFTJMtrh6RJ33IDl2gJ1b4ICDvIT1EpPBYmJXsRPB-jKMozBSmYmXz1aPs-cCpMUbF_dOscjnA1IJ_dTzDq4La_vo9OyWdZA
+suIUGaXTTuPwoZTeuV1jIJtbBvf-7hfLFUKZrF2WUeY0Uiedo8VUM1Bl2RxiYIAyUCBRnSpiXpEFUig7lc-QPDwhftnSUwPg0QcdV2W0OyY-4a_v5TexoK0J
+J_crgGQCQeghb_YVN--nFoBCvj1SXJHmQfnRmEtvsFZFWV-yvMpo-rlg6W
+}
+
+AWSEntityColoring(WAFBot)
+!define WAFBot(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFBot, WAFBot)
+!define WAFBot(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFBot, WAFBot)
+!define WAFBotParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFBot, WAFBot)
+!define WAFBotParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFBot, WAFBot)

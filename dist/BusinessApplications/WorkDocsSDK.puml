@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WorkDocsSDK [64x64/16z] {
+xPOtaiD03C2udCt_V_3r9nHmg3o4hInWbftkDoYACv5j_HdCqlvSJveEpA2bPciKy7vk37Z_Si3x7F0-1xpF0UzpmFiSy3u7lCy1xtF0-npmFWUypm7lSy3x
+7F0-1xpF0U_Bm8piT_pV8l91YzZMJoGchr-olJ_6PtxcPtxlvF_O_3L_pL_py_TZWvkJVG_vPxx0kT-WAFu
+}
+
+AWSEntityColoring(WorkDocsSDK)
+!define WorkDocsSDK(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WorkDocsSDK, WorkDocsSDK)
+!define WorkDocsSDK(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WorkDocsSDK, WorkDocsSDK)
+!define WorkDocsSDKParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WorkDocsSDK, WorkDocsSDK)
+!define WorkDocsSDKParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WorkDocsSDK, WorkDocsSDK)

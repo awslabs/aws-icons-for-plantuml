@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StepFunction [64x64/16z] {
+xTO5eiCm30DGEMpT_xxZCiRv_FV6QrMkOtwMjpUDtaUbLH7SIA6D2g9gX2XDCW9l0Z9D8X9l4g8r7xiFam9HKWM5DXxm7l2q2hW9j5D0sG9WfIHZW8obKmTj
+cp-JBznGFZElwSaXFh_akhp3NAhA2-A4HroMaxoNvyZMRMV8Q_0BQItl9gJBPop9cUicTtbVPY1SAayU-Vb59sLieZLViVqR-QhZv_CCfEByPInKvHdzGhPS
+lntx_UDJ-_tx_VMdlNxQwxTb_FY-yIlY9j8gFCVlmDR-uNlwbz3rJu4MNJ0WVK__oDpLGIiDpWNbPtbxkm8
+}
+
+AWSEntityColoring(StepFunction)
+!define StepFunction(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, StepFunction, StepFunction)
+!define StepFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, StepFunction, StepFunction)
+!define StepFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, StepFunction, StepFunction)
+!define StepFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, StepFunction, StepFunction)

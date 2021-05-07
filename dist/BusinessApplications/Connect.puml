@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Connect [64x64/16z] {
+xPNPskem2027i2Jm_kzxDZMd_LEtNdVSemCaqC_woSN5HRS6DEkdx11egYeWtqT8HI9lRntiMxrXks0jl_8RKLiS_KPtR5dnBwf73YhAoeYU7wLV3toW1Y3n
+tXUf5GNj8uHuNxxLoi3ldSatVj-aoB76iJT-y91I3uPFsXlVfs-e2paBCyygfR-oHuEnITNfCnemoa4ydoV7HXtv0yr1gyeGP3pH7vC-w-TM_psGSZyY3WCC
+slQJ0DCVMAN8uuCS-Khkz9uvqFcbC0yZy5LFTFRzdtxRH3nIglQNRUp4_xxVzKeXRo-xBHkh7tV5C1VwZDhC7zLCd7mwUT9sKom0n3fbQ_rz-h4xgexM7YEV
+NdcE6fARNwx7rNXnvHkR2GkYne_yFnUMhkOsAhBCMpiUm4QlXNIrtAyeNaUa4FMM4AoE6OBeP5jCcjveh__Hl0aFDbdwN1MD-epD6TkIynj_D3Jhj1_WLMVz
+L6JKQNy8bdNQTuWw2PgDbdKMHF0wpnoqayYxfbzSNFm6
+}
+
+AWSEntityColoring(Connect)
+!define Connect(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, Connect, Connect)
+!define Connect(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, Connect, Connect)
+!define ConnectParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, Connect, Connect)
+!define ConnectParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, Connect, Connect)

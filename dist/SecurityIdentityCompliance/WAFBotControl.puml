@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WAFBotControl [64x64/16z] {
+pPS70Xih34G_843YtV-yFqM9jKLuqvDnjvYnAcR_-wTHHChpAfETfK5xfeFy35_81DfGMm3BTBJl513b0fMp-Xk1qfTpbXcOVVtKIn3GhK07m4QD-Eim07ei
+P-D1DO1Hhlah0y2gBtQfJ62SR7NEJunmR0Hz8s1Qjjsabj7tPInphNcHI-bvLWe0b2TwsEpqUO8Pp7D3vlJeYi3wf6UiutUwezVxzpYVss_qUkTRj5JkVq2n
+6xqdwuhFJqbq-tKfK9A2WxV3q-81_TldlyEufcebxA6G3ZzmRPrnyzB0ORSGngLLDOdUUC6I3EZP7qrYzDHLItAZfm1QhAXZEXQelrDOqp5ggBTJE3N6Ou-O
+q0eZyuP79177ZBIGJJ6WnMnTq_VyVn7sSBc8W8cqWxssSYbOgmT-4p4GAVwTGr_sjYvDKnHOyk8hZfRo1MBkOWv14dxY_u8XnxcVO39WfVvVy_Ubj2icojyE
+g5d-l1Z1Ro2n8EJ5RUrISXSZ-8LFQlxiC2Z-77pGU_zwV0PBWHwZ1Bh0t7xltmOz-6K19tt52nBy3YsPNxUNQLW_3RDXixWz8WuOV5__WftqeNyFluDa-sU3
+AMymSVw2V4DSF63bsst15Tjwe3VtbdBV6QQ7AE8OCEBLuScPsIwpi2HNQKuj_xFvr5PFVCVkF2hCPtxAZGFG4z-GFJrcniz-yHgg84_qxp-j1ztcdZij13Rq
+3aloywiiw26Gqhq1Lx-VF_hozWk1pR5m0A2z1Bzq1M1iSs14wih0OQgWQZX6UPF4ywTkN60zhS8URThhCcQsnpBc492zoTvH7_T3iU-uVlrdyG4
+}
+
+AWSEntityColoring(WAFBotControl)
+!define WAFBotControl(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, WAFBotControl, WAFBotControl)
+!define WAFBotControl(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, WAFBotControl, WAFBotControl)
+!define WAFBotControlParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, WAFBotControl, WAFBotControl)
+!define WAFBotControlParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, WAFBotControl, WAFBotControl)

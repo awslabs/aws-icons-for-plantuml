@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticContainerServiceCopilotCLI [64x64/16z] {
+xPO7gWGX44JjfDx_mXjgWvz5MwbFPXvnmokqfsYcRBc8xYN3uusK1n83m-_zGP9G-mSj3xGFukltPWjT-jvlRPsWy3AUEOupAEjZYW-gqdwHG89GFX2CEeJr
+HmBb0qM2SpwmXWJE7mdDplrQVd0a7FhJxdc7T-9hctNFpdpWa-RekVzfRmZdZ-OuwOynsDftApbuxhxo3Rzj1nc9ZnzJ4X-Rgv8-a8O0saT0Ottm313I1nK1
+j8-0hfm_gcwa3nm1l8ycEUcFAf9-NaLydVkWBcQ0JRRteI-NG6nyoLeOs2APR-FoooDKMVgE4-xNST9VFrccKryQljzYRUhhP7BhEShm5vFB42a_VlnTppPX
+zVurAKtq2P7vWQlpVccuEdL-0Z4JrX_UvKkdaNVjI3vryQ3mycykxW
+}
+
+AWSEntityColoring(ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)
+!define ElasticContainerServiceCopilotCLIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticContainerServiceCopilotCLI, ElasticContainerServiceCopilotCLI)

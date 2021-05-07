@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCSubnetPublic [64x64/16z] {
+xPG5WiKm20M75afVxd_VTNVe-i_KPU8m_YsJYJBLbdVd2jzRUW3BkYv0DFGLGbTz25ZBkcFxNKSCB-e9kdyIPB7rZuKiza3OunU6Iir_sc6lTI3O7h_OQdFe
+v2iDUflffrq2s2sFNkIxFc_o0TyBtVhllZ9rm0-0QFk1kHlHz8NfucoevoV-HAhv-q5VeDjpS_nmX_Yf-RjjVDyVnZZWJp_pp-MV9LvbuSlplxOtqVX7J2Rd
+}
+
+AWSEntityColoring(VPCSubnetPublic)
+!define VPCSubnetPublic(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
+!define VPCSubnetPublic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
+!define VPCSubnetPublicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
+!define VPCSubnetPublicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, VPCSubnetPublic, VPCSubnetPublic)

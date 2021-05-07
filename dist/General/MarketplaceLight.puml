@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $MarketplaceLight [64x64/16z] {
+xPG7hkOm28G7N6dtF-usMyhBogkmxQdb--ie6aG6uhZnyl9YNI-XtUAty0wWRPDL0DqZpoGKgS3mLQfA0Sr8eWoQ-rScWNMNrCWmThFB19hNBQLQQ42rPMa0
+q5OnAq3B-HlGFNm0bQY2nZVHW9RrXnPGPx04SmY3Ew6Of_qHGg0HyTqVFWWi4Nd_DtI5nRmYrVX4l_-LluDa-vM1ejilX1xEM3nihoccLQ1teFc0wjfWHQdV
+QKzFJq5PUsHrYRMK4n89h01WNK8PgzGE9yMy_CBNvZD73httlqivweFFszp-UtwxAiQJVmrvpwzSyzjtfV40SnptBnjVWv_ywVW6zEJFnNT5PFVdrwvhoG3b
+u_aXjzvI0NuylsxP90Eydv_f-EvDQYdsqwrb0anUEUCeyqo3HeA2N-AHmEL4mH2BD6vtRIYHnmf0Sj1966qGzAYp8xHhsh9qZIJhcA1oq2aKRNqTT8eAhY0x
+w1pU2TLE-ixBoyjN
+}
+
+AWSEntityColoring(MarketplaceLight)
+!define MarketplaceLight(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, MarketplaceLight, MarketplaceLight)
+!define MarketplaceLight(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, MarketplaceLight, MarketplaceLight)
+!define MarketplaceLightParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, MarketplaceLight, MarketplaceLight)
+!define MarketplaceLightParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, MarketplaceLight, MarketplaceLight)

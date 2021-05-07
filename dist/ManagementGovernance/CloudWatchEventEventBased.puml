@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudWatchEventEventBased [64x64/16z] {
+xTJNmiCW28RXJoM2uVwlzvyTn4xeRdtEtyIDrv79od0INMe97gmzXiUiCrbD5Hwg0ei_gX_zw1iiSVQYlGQFhBq2brJPgWdtLcYhm6rIgyABrP98Jsl17cjT
+NzYO_Bqkb0jx2lICbV8cFOinkVkY2v5-NWlsX1K-t8z-zACVlNNu_JAEzUMSdc6G61M_gXY47ubbYpEk99MmzO97NQLF58R7-mO
+}
+
+AWSEntityColoring(CloudWatchEventEventBased)
+!define CloudWatchEventEventBased(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBased(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)
+!define CloudWatchEventEventBasedParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchEventEventBased, CloudWatchEventEventBased)

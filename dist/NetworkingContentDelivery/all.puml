@@ -156,6 +156,22 @@ AWSEntityColoring(CloudFrontEdgeLocation)
 !define CloudFrontEdgeLocationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
 !define CloudFrontEdgeLocationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFrontEdgeLocation, CloudFrontEdgeLocation)
 
+sprite $CloudFrontFunctions [64x64/16z] {
+pPS5ibqX44GP7Cx-rnkRMmbqSVCayd-NF84URInyMkG5Rz0x2_hh_Cc2-Jf_CFE5oNYB7ouypxT9khuD21TWc7zBJFiz7UBtsdTO-T2_zo02Qa3fp5YksiNW
+Q5x3SetRFPtUS0o06XnMEexMnO3GhxvN2zRTGCenX3YSxkFJxkXU-EhZcH6oP-Gby3Q80Q6lCCiuh3NlYnXGkW8egSdGoS2Pdg3u_A06fZgY7POWF-HKONVN
+0FLq2C2YMvsWxaaoDqvKvMtQX5wdn3P-T4GH0GsonzFoTMKg2jIme0BHLTIin7sa7FSBBOZdQ26CFRNJVf9tzmPiYibx05dvO-zHtypPxj5W2DsaVMMReIdt
+pLcVeuybfDfxDRDmdtA6qSTqZmc7_H82g3xQze_XI1T_BX9nkYesxXfgpd7-Phhyc5YXQdtHnNNaD_0ekigBz2A_fJs1Alm7yIUOIzDWFE1B_Ih0J4lF7_2r
+Vx41TFifeVY8xoYzLoTPSrFBNlIOdsoDPW3rcbQ4VzHFb7drsjcijtJGZ-Zt6ASRZsVzwlgfOBerJhC1ZAZhHzUlzibXPZZYjdv5ttBlaD5UEeox_ICKBzkr
+roaykWPsjt-5oRpr7w4ifOLvjtzx_WhR_Cjc9kT7WsF-BJUOSduSpgzo7CKHvVmwd9_fK1pNiRFq_DJpswvl2aiMKhexloVqhH6Aqb8OYyRctVt5gtnixu0d
+Ba3vq1xV_Xe8_Nn_EoYmGQg0qk_lZoeWXz3lxwyzs-vUxw-FxyzDs2Nwk3s-lvUXz_THvFx-BzuFz--N__r-qlVR_tu_wllrq-8h
+}
+
+AWSEntityColoring(CloudFrontFunctions)
+!define CloudFrontFunctions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudFrontFunctions, CloudFrontFunctions)
+!define CloudFrontFunctions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudFrontFunctions, CloudFrontFunctions)
+!define CloudFrontFunctionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudFrontFunctions, CloudFrontFunctions)
+!define CloudFrontFunctionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudFrontFunctions, CloudFrontFunctions)
+
 sprite $CloudFrontStreamingDistribution [64x64/16z] {
 rPU53grA34NRaOwi___UzwvCJcWeOU3wZg1hrr3vYwKfVr7IDsnfWu-6vMTmvwHUTca3WDcjbY-orjUEkaDN07frLQSw0BXrI1DWmKvg02FTfrulKxjBeGDD
 vLBQWNvvT00tWoh0kC0d3DrfK6mmWWDvpXna6HdqQ7U92XfH3op2OrxdUGePq4rU4f34QSQTBvUxVR8Lckppqg78GO0-uHMcRrwLBJuc0DdYumGAr8UysE58
@@ -230,22 +246,6 @@ AWSEntityColoring(CloudMapService)
 !define CloudMapService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudMapService, CloudMapService)
 !define CloudMapServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudMapService, CloudMapService)
 !define CloudMapServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudMapService, CloudMapService)
-
-sprite $CloudfrontFunctions [64x64/16z] {
-pPS5ibqX44GP7Cx-rnkRMmbqSVCayd-NF84URInyMkG5Rz0x2_hh_Cc2-Jf_CFE5oNYB7ouypxT9khuD21TWc7zBJFiz7UBtsdTO-T2_zo02Qa3fp5YksiNW
-Q5x3SetRFPtUS0o06XnMEexMnO3GhxvN2zRTGCenX3YSxkFJxkXU-EhZcH6oP-Gby3Q80Q6lCCiuh3NlYnXGkW8egSdGoS2Pdg3u_A06fZgY7POWF-HKONVN
-0FLq2C2YMvsWxaaoDqvKvMtQX5wdn3P-T4GH0GsonzFoTMKg2jIme0BHLTIin7sa7FSBBOZdQ26CFRNJVf9tzmPiYibx05dvO-zHtypPxj5W2DsaVMMReIdt
-pLcVeuybfDfxDRDmdtA6qSTqZmc7_H82g3xQze_XI1T_BX9nkYesxXfgpd7-Phhyc5YXQdtHnNNaD_0ekigBz2A_fJs1Alm7yIUOIzDWFE1B_Ih0J4lF7_2r
-Vx41TFifeVY8xoYzLoTPSrFBNlIOdsoDPW3rcbQ4VzHFb7drsjcijtJGZ-Zt6ASRZsVzwlgfOBerJhC1ZAZhHzUlzibXPZZYjdv5ttBlaD5UEeox_ICKBzkr
-roaykWPsjt-5oRpr7w4ifOLvjtzx_WhR_Cjc9kT7WsF-BJUOSduSpgzo7CKHvVmwd9_fK1pNiRFq_DJpswvl2aiMKhexloVqhH6Aqb8OYyRctVt5gtnixu0d
-Ba3vq1xV_Xe8_Nn_EoYmGQg0qk_lZoeWXz3lxwyzs-vUxw-FxyzDs2Nwk3s-lvUXz_THvFx-BzuFz--N__r-qlVR_tu_wllrq-8h
-}
-
-AWSEntityColoring(CloudfrontFunctions)
-!define CloudfrontFunctions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, CloudfrontFunctions, CloudfrontFunctions)
-!define CloudfrontFunctions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, CloudfrontFunctions, CloudfrontFunctions)
-!define CloudfrontFunctionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, CloudfrontFunctions, CloudfrontFunctions)
-!define CloudfrontFunctionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, CloudfrontFunctions, CloudfrontFunctions)
 
 sprite $DirectConnect [64x64/16z] {
 xPFdekiW38DbWnVl_y0twqTmQIXth--SRaGKoRGVm7_-4wPg_hLgPHnGZRQEqIPKCnC6wh9SGDekdC6nwBrNA6Xf0y_h3RoYP-JK1RAGtM0n8uH1nTkSWXZi
@@ -363,11 +363,10 @@ AWSEntityColoring(GlobalAccelerator)
 !define GlobalAcceleratorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlobalAccelerator, GlobalAccelerator)
 
 sprite $NetworkingContentDelivery [64x64/16z] {
-xTU7SkOm20JW1O5OoFi_xrNFwJBv9SlfRQUuVkusEDuyT_NetFtszOHyPl_jsOEFzZJyIUEZl4CyCiC5_WZVO7N4q2zx_zyqv4MViCdKdZVa_Kbel-Bb_Wwf
-fh1zJpoSwOXjtszTCDLjxwZLHjUUtkIM9xZXim7Q_8OFgFKyyIdmh9kXAW3BfMzWBKA7SE69NkkaICwzIPs5yBcNLgTfkl1sxatcNdVsl_26FFNIvfwmCnxe
-Sry6NtEArCANGJjpbZ08bxv2iKhBq_StenznGA7GVYHugVvGG4SrsAFgLq2o75MEzWZVeVdR7gDNV0RBqCQdB23CuAOt_8xNy4K10E6EDpX3aCF_cMbZvj8d
-_DzhFZni5BAr3t2y9bJq71L5zSIFLU5_zWw1P5MYZ-_3sfSAgmoi2bWLHSVCsF0K2E37f-8eF7dCtF2LRixZTCS5wMQiXP-s0OR7zcy92HhyCNuyTlwK_fEH
-t_ttBD_-oV-lRvwV
+xPRBhiCW34JtFJF__xdtWKGLHqPXK9UT5P9zyAiuVVNw2icMu8psMoAdDJ76CSKBWgmKhodB9BplxjW1taHBAg3pjO0eV9Ns1zdMYa0sQVfv5p11QPaFTiJd
+2O3EUMJRFa_kyRrhxO4iDhU2E1nktGWvlju8mGljmf7kA9bymwm3ogzGbNVE-uFnp-lF-zy3DldyyWJMxh88yEuRiNl3OXFZJIq3eQgt-qriLobvFjPOeqgP
+SJZ41p-EH_ZWoxpI1ICpMn7_0PfySW6oDPmBFmpYyJSc3qryyfsjnqNjbanZV7XLbFYTiPTCEVGdUPEVtMoClRY5m4FgZ3q_ELssXAp6kEu_ihacAbEDZ_Ed
+V2AmRiQrkEm7g_BJkAiQFrUjFnTZ-6Vxgyx_M4yD--eN
 }
 
 AWSEntityColoring(NetworkingContentDelivery)
@@ -418,6 +417,53 @@ AWSEntityColoring(Route53HostedZone)
 !define Route53HostedZone(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53HostedZone, Route53HostedZone)
 !define Route53HostedZoneParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53HostedZone, Route53HostedZone)
 !define Route53HostedZoneParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53HostedZone, Route53HostedZone)
+
+sprite $Route53Resolver [64x64/16z] {
+pPVRakmg34CRpCsi___US_Q5YeierEpCq_Yj1N9iWTp9vsT7pYysrv5kI85oppZgYGxa3J40s-beobZPrmpk2Ge0Jqsb2GwCQx41hG4jQWSSPbA-G_zK0A-M
+Ska0zMyMUid9gl-5EhZG5vYTYFcdSfj4UFxxgAP2hw9iiDZrQcHbODZLQX7jGXGhhPQyhPVQYZrkZuGleX8QHaClOjDmm7Z1ZUCAxLumfUKAfDTyGh9-Ag0w
+-BDT9lGGu56_F05WPbrhCFPiwT5Fxez-oRUA2_I3mdBT5rRkxToss5MXQm4YM0MJ3lELgObRgZJKfCGugYwvjQ8X_7JAFK3FqqyrDZ6NwtrH2x0aCH7hcT_L
+e_HQ1-hj_dHQLJPTOPhQH96a8y8175dBqE-0onRo9vcbJzCBwBUKGtgSWSXualkkZn_GjrbXKa3UVjdc-Tj4C62V1GOUrS3OF2-URN2R1GDCr0ZFNuZWMLes
+w2VFd_41MPmgdZ_ZuQh9F7d-Z0SjxAsUF-C1PgXdpv_nja23SlRy6IzWDtuYC88kUF2Z_fFd5Gyio-Xeh5XTAgv3q24sbWdW5iW91r-5xBCdcyNTFUF1Ij_z
+_uvK-5kwGoWym5zLaES-xvrNBs2LUyL3H3-7EJ3qXG9c-xABt2P0LKK60BFNVEJMFW7epmVSMJ6AhfR1YfwFrPK-7pTPNx3tBsMsvh39QGjezg-te_fwsRy-
+2Ro-kw9v0FHFwiH7pViCSmRxTTYChvZlHPD1yZ9I-lpi-1y
+}
+
+AWSEntityColoring(Route53Resolver)
+!define Route53Resolver(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53Resolver, Route53Resolver)
+!define Route53Resolver(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53Resolver, Route53Resolver)
+!define Route53ResolverParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53Resolver, Route53Resolver)
+!define Route53ResolverParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53Resolver, Route53Resolver)
+
+sprite $Route53ResolverDNSFirewall [64x64/16z] {
+tPO7ZlGw38FZ4ilIT__plc9a4yUSYlONecsafIfbpFPx8-VjOrJVnGHgy_eu5M1tqmuIm82oAL80H9aina1Fbwq404dv3Zs0d-fo0wW5eEMVqe7eu4AtOJG0
+efi7GEHjom4GRjq1i97ADkaqqlzPEnVsqtUYvz7gEfK2vAFhscFaAvDxr1DzF_hEommJKBSlKEypT6ZRLsWGvqU7_WLNE41MCNbRjYngcufnRH1m4ThZbhls
+tndm_BJ_Vfz_qWG14lWneO9fWprt7e_MrdtxYAUc0hZo8KI_8w2OKa1__ooagO7alQNHG5En3vXM6yJoQeoGZuVhXEg9-PZ0pfAQB05joU1o3roY252-vf__
+Bd3TP8FoWYyjDSY5woeocCqznBnJ3LcXZ1Tf6YwBtXTwWVtEt_mYE0D5r397J0j_o-innQGMNzFtst6bTJbWKAQ0UT5wkNt9SkaPsloyQFhhgqbtvDlK-sq2
+0VdLBVgGOYVcUudvqkn--2AkM2IwjMbXSILKjGsKI-9QG05Rb2nGHuCgrwpYL8bV1NGXo768GxUSbdMX-VN_3fM9z5KzgwhdhPM3NvUuvUtu3fxmPVyoBwbd
+w5gEGM2hTOVyS60PoDezBlteCGuqYCEYCVKDA1BQM7QoJmQzG0VJ0D7IaQdUNZ_zpP3KNG48D-i1G1KwULubdkxj6HDiSJhtRPG0Mbfgi01mgmkx0HIDI9Uz
+AueXrOvi0K1lvGLtxm14VNWW3WFUidhpVheFjYAT_nDxkZk2WxmliJLFPy3oQJ86kd8V8xTZQzCcxVriTHXjA6Mq_3MA0n7NpzYlKKEMzIMQNDQNI7dxk_4l
+}
+
+AWSEntityColoring(Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewall(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewall(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewallParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+!define Route53ResolverDNSFirewallParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53ResolverDNSFirewall, Route53ResolverDNSFirewall)
+
+sprite $Route53ResolverQueryLogging [64x64/16z] {
+pPO7aYCX34K1YVZkVzuDTbcb1dSPDiwVQE0XyQKEuMihfR2lqkRL2ZhlsCeDde7h1W8Wov2-JnMcEUKXMOPIM1K7TA3RP0LA0IpXz5W08wvyX_hSlcT9eXKW
+Fqz5LKcI-pF12dscNuEfWMayCfS1ffPUeQxAbfIyTkZP9lkB5ZkgJgvwKqHpbdWnHt9MkLYT_BGPloa5uiMx4evKl8SDsZQvCWeZE2MzKGfE0zHuaiEvqR9A
+hVO-0U5MUWbV_66AvukyKV5ykLesN6wor78TJvDb2lM4h_DbFU24Xxxql-xp2dcvUHItBkgYwFXYtMk2vdXXaJg-GPWqwFjyD_TluaTP57tyTtpTzw_2Efdt
+-GooN8vndqzGv_Bra_xf4AVm4hRhR_rkY8N_N3zB88NbqnQ_HbGh_cRzxSJUZIt_J17Vi3MSyg7PcGkaKzvViOCHpdd3egM_Ntz_4IHh_Vtw-Pk8ZH_o2kBu
+e_eRR_cV-vSXkbl7CT_0skzNUEYMI3xcFSNS_rNVgCpzFvoJ8-u_lzTNi0OZdRm_f75zVdUS1r5k5DtPwVFzbw5XIpfmqTsMZ98-mQaCB5clM04ODQTRDhS7
+J8tljxQtP5qMnDo0JqbASQ_A9lzINMpyqnxTLchVPItPZkqWp_yrXXEb-ZGgFl-cSApKp4wZpoJZwiEv2fJmEuenV6rz1m
+}
+
+AWSEntityColoring(Route53ResolverQueryLogging)
+!define Route53ResolverQueryLogging(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, Route53ResolverQueryLogging, Route53ResolverQueryLogging)
+!define Route53ResolverQueryLogging(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, Route53ResolverQueryLogging, Route53ResolverQueryLogging)
+!define Route53ResolverQueryLoggingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, Route53ResolverQueryLogging, Route53ResolverQueryLogging)
+!define Route53ResolverQueryLoggingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, Route53ResolverQueryLogging, Route53ResolverQueryLogging)
 
 sprite $Route53RouteTable [64x64/16z] {
 tPG7Skmu34GR10WYtF--Mu9OibQULFpExJ0AUCFyyFrfiXZQyLmERJolypnvbOMCDvwn4Fa_JzlV5e0OCuIgQAYqXkFYmjD81I8Y3JqygMXB0LgO5JZ2hN3t

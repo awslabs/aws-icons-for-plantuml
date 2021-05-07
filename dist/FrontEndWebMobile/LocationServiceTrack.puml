@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LocationServiceTrack [64x64/16z] {
+xPU5bkGW54I3yxZ__xqhaNPIEMHtl6PQEVLSwEb3m8NGEV71QtO5AExv906q8EYD6VPqabcmBw22fMHG7Wu2a6C1TjMlcWtYFGpyOaNQuOVrEF4CMnMKi_oJ
+ziUJyJkPF-Af-X42PFr684tZ-Fm2rbp-2A2S4U0_Y81WO75OG0E63V4psmn8mnRuvMMKdzVXuWUhO0vTxEmLjVksSLmw-kNkCyZEPMXxzDBTVGPwBSRkxAwA
+FgEx-meq7qiHoU_jhinJs0G_tmVrODRhozqNLxSroXQ_DaJFRAZtyoSUfXSUrge7qc7Zmro_la5pKymb-iFZizu4sHbNbAFqvk-bNKEXORF5DsXRlzYauPxe
+_jglJjCRc1FpGj37vvL_6IGnBnLzIdfUkn1srcCHsNSLeFRhAnfO5FT7KPxo_YhgGz-VLNte-tluttnj_tZyP7-g_3MbNjIFE_NxrKsV4hy1
+}
+
+AWSEntityColoring(LocationServiceTrack)
+!define LocationServiceTrack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceTrack, LocationServiceTrack)

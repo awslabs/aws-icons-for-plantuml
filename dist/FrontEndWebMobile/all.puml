@@ -28,14 +28,75 @@ AWSEntityColoring(DeviceFarm)
 !define DeviceFarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DeviceFarm, DeviceFarm)
 !define DeviceFarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DeviceFarm, DeviceFarm)
 
-sprite $FrontEndWebMobile [64x64/16z] {
-xTTLbiCm341HsM9r_-iT9Yide6QuVlyt78F-U9UukikZZnFzAp-zoKfwo3EirdtV6v2lfC3xNi1ZhOudVJ_e6opJWeVEAGAfU8wK_x0FiGZLwxtdQfuXvoNV
-kuw1b7p36FBVwQUVVlhfCS_yhSiGWnJclnuDKflUSz7GXspBfqhtRy3htlf3jEc3O5al-51U9CUkVxs3psyzX9oLVAYClV2v_fx-zFxrnxi7
+sprite $LocationService [64x64/16z] {
+xLE5acCn35CSS9p__zyZ7VZTQB9DOV1fjsr8Hdbz0ZTkZ0kEwO4BOft2u7y1Uo9-ZBmyHobfzGGwd0j7VuOVVx8sn7e63NFzm4HxXaqYpJp9PzxzMRx3-JEU
+utVMBPxBFrO5jO-wufGyhAuA4BQQZGCJim6bht3tKjmzrYX0cmyAtm0RYp1RXEVJlUlioKnSIMWdPY8qZUWYIJDLcf1gGM6H5J-tfW0kt1lG7k4tm4BMhW9L
+nBz_ix-TKznlC8juaTXbVjdz2fZhtbOgODlzO8NylpjMDuRbkuoPkXyTA2FffW0zaWAcufEIBMHsCYRvlEWNEPR1qyJcgOBsT8rAiVSML4xxsI_KiT9jIUEd
+Nh05x9LGlRFuBIIxiljK6dkPTKLLKW4rzFnEfNIkqvMQt-maip9RX2QJp0RDydDHcgs5QFdvdgsR726aSM3XcAr5pj4uG9wQlUhtav3IEGNBdHhoZ0ModuVx
+-XnktFWE
 }
 
-AWSEntityColoring(FrontEndWebMobile)
-!define FrontEndWebMobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
-!define FrontEndWebMobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
-!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
-!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+AWSEntityColoring(LocationService)
+!define LocationService(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationService, LocationService)
+!define LocationService(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationService, LocationService)
+!define LocationServiceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationService, LocationService)
+!define LocationServiceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationService, LocationService)
+
+sprite $LocationServiceGeofence [64x64/16z] {
+rPP7bjim50I9-4FT_xpEvXFXGTF3MQcsKec_nKOutfLIMttWz37D8_b5VU2yqgGvJsSbmsqw-ldj0sVqLilVduUY_BuuAmQ7Og3p-QslyoKf_Rjyu5_qJVgc
+ynMON_4h3EcxzXjqwGUfwq7x3x_sOPxOPrzlQGd1IH6lv-hrQP5SIEZoxpq7NJotqMiv2hZ-UnSnRFPN9q3Mj__rV8vM_-tNWARgEs3sMhRzgc2glWP5zZD9
+zR63xkU4AZuEKliDfgWl-4s_8KHzmMvyXxAjRuLvipuwzBM-oxFazhbMq63ph6N0JGKTnDlvCw2O9ydhCC8lfROs8COmCtVFJ72zLHd4ho_kiDTXuWD_HsQ6
+knLz5BJpYsPZZDu7M2cRhToEUo2URULh1KLL5HtwevDwhQ2gYYBWoKcbvxm_gSGkkDP7Ko3bJK9J4qBT13GTYFAuFXCmSP9hIW13NzHqzFr33Cg3wA8-Ehgk
+ZuukNh-EBdrx6lqyV7HqIGFmsQk8hgZy9NsqieakgCFYSdSQRHDTKDgytDvysYQwelRfd8ZeUfHXWOv-Jsd7E_0T
+}
+
+AWSEntityColoring(LocationServiceGeofence)
+!define LocationServiceGeofence(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofence(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofenceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+!define LocationServiceGeofenceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceGeofence, LocationServiceGeofence)
+
+sprite $LocationServiceMap [64x64/16z] {
+nPU7ZlCm38FhFVZ-p_kF74Ax-OBcCAkRSILQ8cKBUNtVGlojOxfTbTHBU8hDRKggz4iwRBOSFiMUrYBsjysQFiIUV_l5IUglvJLgOkoHNP9AdeTFtkE7viMx
+b-YdLLcH_a6dSQoL5T-ayzzOkcoENNxXSEhIJcMLTavY6VUCTkyJwW-LFqzPMlLugK6DgR4UojGP5gL2JIfaz8PEE-C3-jhY1RD8qOaznhFCAeMD6FR4OToF
+T3OZaQkBp6mRDyPzFFtfagH2PvOqM2BL8YLsQfJOK8odV8NFpfPaKRu4EU4DSR42EN62l8AAWCTSY6wv9l781Qibn-JCsZ0ZoiKEOxibnsC1-O0SLEGUHpuu
+GOod1nsAL5CalBtpb288mWpgDSTtHcEkVMhTw_S2P-qsMabIFoDjna0xLYdJtNYzvY7LiM4SZ9F_a4eRxv5nEo9fOMX-QCvOf94Z3yI6CT0Cv9yDVM984rSx
+v4N_eM9yo1K2cW-8YNR5zGS-7kuVKaG-xky_JWGM-7p_OW_m0R4UCW8Vd3ySDcH4wYIR5ner8X-SlwY8D-BGV1fMJms4LA0EKW8VA9QCmCjy83E0GnBmuLP4
+SSyDXCt0ADR01vsz5t827xYyK2jEB7ruUgY8QMAEKT9ivNxw-5RkqoyN5pw2B-kQmywjvuzinjZv20UuHqCwsozUHa4fVSDuvoEaRPivf37Vvbda2yf4syIy
+DiH0jMqO-KMB9rMzfBsjY87zjseY5ua1fo_ONm
+}
+
+AWSEntityColoring(LocationServiceMap)
+!define LocationServiceMap(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceMap, LocationServiceMap)
+!define LocationServiceMap(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceMap, LocationServiceMap)
+!define LocationServiceMapParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceMap, LocationServiceMap)
+!define LocationServiceMapParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceMap, LocationServiceMap)
+
+sprite $LocationServicePlace [64x64/16z] {
+pPM93kCm24Jn5Hlc__ztjuSilQvYbTNLfwjDFC10XEsNgUqlzV-aOscpHZB828d4iA-vf0S-hz7xkAPB3oxxYgu7inVRb3xre7yXNqp5efRPcU9KVqRmSfQ7
+5CrkQ275CK18RWTSYjDhoDCdnb6-0umxyv8A3LzpNkruY9CRBEVDvzDrbzuvoOqNEYWtu-qSXQvgLY-nwHqV20GmixCMPyax72ZIj4s36PUQRQQs0PRLaRxQ
+fku2S19SK3m4T8FQTWDG5H9-3gtIwLdVn18x6l2LdldF-dE9R3dDiKH-31pvlRaTzK8r4-d7tQGseS0_RSb0UXv4aeeYjPx_wnAiLPG6nM8_f5Wh9FfTsj68
+qrTrlN4ylbrIJGe-c275PBP0UZ3XB7s6JISO1Q4tZRFyS_QawMXXOf9t0U8cGmt83uTciNyeaw7F5_Zg1lh2zNsakHxCdQjEFV1cNz9TqlRQzC2x9IZ3zwH3
+yb4iovJQE_sq1DY1s7r9f8NTdyLVGiaj0VSSzsA-0R2VHPguLxA40jisovHAIK-V5pqk-oIFtBZvieI2zlCDWFqiGrYeQQgmR_D8ae4S2pilpu3zF9NsyvHY
+lyqV
+}
+
+AWSEntityColoring(LocationServicePlace)
+!define LocationServicePlace(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServicePlace, LocationServicePlace)
+!define LocationServicePlaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServicePlace, LocationServicePlace)
+
+sprite $LocationServiceTrack [64x64/16z] {
+xPU5bkGW54I3yxZ__xqhaNPIEMHtl6PQEVLSwEb3m8NGEV71QtO5AExv906q8EYD6VPqabcmBw22fMHG7Wu2a6C1TjMlcWtYFGpyOaNQuOVrEF4CMnMKi_oJ
+ziUJyJkPF-Af-X42PFr684tZ-Fm2rbp-2A2S4U0_Y81WO75OG0E63V4psmn8mnRuvMMKdzVXuWUhO0vTxEmLjVksSLmw-kNkCyZEPMXxzDBTVGPwBSRkxAwA
+FgEx-meq7qiHoU_jhinJs0G_tmVrODRhozqNLxSroXQ_DaJFRAZtyoSUfXSUrge7qc7Zmro_la5pKymb-iFZizu4sHbNbAFqvk-bNKEXORF5DsXRlzYauPxe
+_jglJjCRc1FpGj37vvL_6IGnBnLzIdfUkn1srcCHsNSLeFRhAnfO5FT7KPxo_YhgGz-VLNte-tluttnj_tZyP7-g_3MbNjIFE_NxrKsV4hy1
+}
+
+AWSEntityColoring(LocationServiceTrack)
+!define LocationServiceTrack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceTrack, LocationServiceTrack)
+!define LocationServiceTrackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceTrack, LocationServiceTrack)
 

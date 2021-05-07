@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RDSProxyInstanceAlternate [64x64/16z] {
+xPO5iYOX30Q_u2Hz_-kkyKyzbwnRZqlZfD1lWjMMe3wocvDabNlwWZpjlhwhCbYFkmGQJ6Kn9tHmjl8OZEkcIddcBTiAUXxJQtJYgluj6RnB0yAxf1wyLh7Z
+tVTZ1aq3Nq5N8SP8-KkDfS5G9TIPad9-ON_n5PI6MzAtoJp-fifXf7mWxFARD9FjvvEXupj5KWrQgluHnxVRfqNF-5_SmUhEL1sr1JNb6w41iAG6CFLkNsRN
+OLT4Aahu2Vv6l-ozL_rwlnBxQIJAprypcQHIxhhKpktxvkzYqCp1hH0QjCvKPxx37qmjV9R564nDUcmPhabzqoU8eaML0XaX2wYI8-SzyQ-RZWyIN35wK5dl
+QJ_flXzIG94AYvxoD-qMIzcI72pb5u1Yx1F91gwtVBij2cepITQxgRHoNbVcDut_GVq6ty3r3RvwjxyoVlpt__l__GAc9FVNpu8kvTciSxC8Kve6JLS5tD9w
+uFUIOhOCVKFO_SJIkEaUOmS9OZNz7Nm4
+}
+
+AWSEntityColoring(RDSProxyInstanceAlternate)
+!define RDSProxyInstanceAlternate(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, RDSProxyInstanceAlternate, RDSProxyInstanceAlternate)
+!define RDSProxyInstanceAlternate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, RDSProxyInstanceAlternate, RDSProxyInstanceAlternate)
+!define RDSProxyInstanceAlternateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, RDSProxyInstanceAlternate, RDSProxyInstanceAlternate)
+!define RDSProxyInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, RDSProxyInstanceAlternate, RDSProxyInstanceAlternate)

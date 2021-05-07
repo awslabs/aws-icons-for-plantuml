@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Cloudalt [64x64/16z] {
+xTHLWkCm44NHAvLOzVQ_t05PQNBIy3Fe4uvLPDBlTxbSBjvhIQMlhtFgC5tB_cUsaajpdNdc4ATKeEgd2EtsnUM9GzD90q88G71ri5KEIFjBb0omP86aaswh
+hH6XoW6_9TtPoyhgQstN8xjqWY4f4s5g_oxGz167kEj9aHfMJ2185R8-jE8TRBtFH9Oc-nthUi2hXH2ih7WPk3f1bRWgTqa58EIXEsPaM_7r63XfW2iHz5Cx
+5fdh949ilVTsn4yeCgeSkW9PXr4Y4E_jzkZFyqiHSnYIKSRH_jO3TBrHeJpl_sFM3kkBLV3NQ-kT-AmTnseK3Did14dFxfu70yAKPeRLjHGuMdBOwxErANa3
+N6yP482KToVfbiXkwnDx3Kqd-zggxj7cxYYki7ORRIQMs7NFR6sutkMZjpRrT_FH-vj1vzHdTMEfUg5HN9zY8PfPWFJsz2-kJ_D0Fb--UNpoDYz5whtxTwnJ
+xniv4DpXl714W5Z6uyev0DdLCPrv3InMtfvaFbhUzvuXAT5rZvV0JR2KSYav9Ok1pLQSa_M0D-EXDBGqSpqsgt4MKdDj_l4fMjDpqo7cElHrFXVzcIwNotS
+}
+
+AWSEntityColoring(Cloudalt)
+!define Cloudalt(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Cloudalt, Cloudalt)
+!define Cloudalt(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cloudalt, Cloudalt)
+!define CloudaltParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Cloudalt, Cloudalt)
+!define CloudaltParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Cloudalt, Cloudalt)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Cloud [64x64/16z] {
+xPHLOY0X341VWjlzZxjRLvWmRJzvun8d6N_AuN0uzEG5nCNs8-d8ex0JmD_NK0L9Js8zAwIxuX3xsrCMuYtn1ldJizppGD_4tnNKVV64_nwGFfnotigayFst
+I5G0tqtnGfZKKo2Kub5JGQIitsQy9U-OcdXv6SnCgbpMrYfbbqlvWQl6kbSZF3GllHF4QBXUa-3xIZpqhUPqOuRVRPGu_R4QgyCgSYJlTtYQATsVDE9dVJks
+SJhHUKl-T_xhf89XFt-DCAsV8MOqkIFjba_wUl3QugjvMi1NC_QuDbCLn5sYe1SsiiF0Mp7sTiNRRuV3uV0V
+}
+
+AWSEntityColoring(Cloud)
+!define Cloud(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Cloud, Cloud)
+!define Cloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cloud, Cloud)
+!define CloudParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Cloud, Cloud)
+!define CloudParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Cloud, Cloud)
