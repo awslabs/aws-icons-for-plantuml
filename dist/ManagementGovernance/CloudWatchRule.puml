@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudWatchRule [64x64/16z] {
+rPHNbiCm30D5gfgw_tqtReyFAOwWxVFjWPk0yEj8GfJqOxyZyJwIMBycfx01yUxwT0kmCTHz21WbkWy1RGG3doVD-2clHfdqLoUlGg5yF2krho6KZm6hJlX8
+kUajXA-zVuN-yU-F9FRxtvEe_n_Y3jC_y06YVuUl3QcPxX_IijsnjEUe-n0G629-1x5RG3nHkS9z31WbWWy1f0z87g61Jo7G7zfl9f_mPUczpVjglS_UFqj8
+i3-SNxgjxQnXqcy-NkX3F-frmEgWJzIdcGRq-VwXZs3_hYcdBuZI_KCi6kzZG7vBsf33RzLPrkD9xnV-PCjZYFiGyCdzgRoFo0WPV8QadzglChKVMC9fNvP3
+d_2ZwR5-Kxvwk-_y9EA4bzHLBs_tGwy2ShZshmFAQjpvMe6s1l3xXMzP1rZSHmhLl_a0xjmz8_n_FW
+}
+
+AWSEntityColoring(CloudWatchRule)
+!define CloudWatchRule(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRule(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRuleParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchRule, CloudWatchRule)
+!define CloudWatchRuleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchRule, CloudWatchRule)

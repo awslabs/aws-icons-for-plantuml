@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudWatchLogs [64x64/16z] {
+xPI7aiOW28G1KKJU_trla8dNZzpVspSbTRCh4k2gl7Y1_3i5SehzZfnRd-T_WLn5MZsm5dNOHkV_g-qJ-hyGg2uIHW2aEYyQV8NaA-k9Hw-mGF55vFttGTvn
+2akXzMxVgzVeNsnHGMM_66i96H9MR0ib03Ip0Zd-uW20vaAfNBkvSiRLdVObzgz-g1xD1mmvquO-fMtp7lgwKdZwzizUOQrca4BiGcR-KXETQofm6DsjoQCT
+X5kJfsY_z4ys1tb6z-j3zUx_MK-Im-yRW42U_p26ZHc23ovVWmYH8bAzPwN1Wcmg_SV8KN_NlHHNyMRmkc_xETfSlVe50Rd7z4BRfmUDzrmMnBN6IJh_rh_7
+Qa6dsC7XaNRCBzwCY9iqHeWq0rtHSprKYm6wOBUcYARxQkZLWmbMZMN46FLzIQ6GQEywp97j0-eBWOnLlLL1sfmrbf13jG-peH8LNCxzqD_0Fq0GO-GW-kmC
+FdoCYKKN8Hn8CwScymj-XwIt0eVhTyq_E3ClNhm1
+}
+
+AWSEntityColoring(CloudWatchLogs)
+!define CloudWatchLogs(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudWatchLogs, CloudWatchLogs)
+!define CloudWatchLogs(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudWatchLogs, CloudWatchLogs)
+!define CloudWatchLogsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudWatchLogs, CloudWatchLogs)
+!define CloudWatchLogsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudWatchLogs, CloudWatchLogs)
