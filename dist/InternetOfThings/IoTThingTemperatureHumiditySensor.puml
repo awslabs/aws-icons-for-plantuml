@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingTemperatureHumiditySensor [64x64/16z] {
+xPS7jjmW34Kb149t_nlECLyfIZWUazxU5BTtAJ9LVZSri-jWraH4pRJUUoc7wm1-4M3bte_Z__FQtTq3hWE4kq-Odz_phblSU2pRvSw1DYNeqELMzqw7ZTLz
+OmL_n5kfxJ7VIBKpNlCOC4G6n2tVV2aWiIomfirNk7sf9n--rEfxp-XcVjdsyiYI9v-o3GymJlXQ_v7je_AFuwSG7SRNyWDC0hxWxPA-v8F81hghlstu4Z-5
+aOR5vQ_mT_5lR_U2MVXQ_ihNzaEIGofVLDfFhRy30MZbdxV_cGNRrXz_oKltELGEUBMb2L9K-Tf_fYrfYVyTNmGf-rR-iFnDDkLF-Js_Rxy_YpyP_r8Q7_bG
+sRVVc_XFS5bvEypZzzSkoDvCCvrxVbz_1xLqAVZf_1E4JEWTfapYb0T_yqqGX_FyLxQgyIh_VVmcI6Uf2ypJ-1iCSG2N0NtFtxIV09CsHXE3U3Z-rGR0PMXU
+NlH9-o_bFEP59qkpoIcVqZv6BtJblttzzkthnszVlvwldt-JzVz__dp_-hlf7G
+}
+
+AWSEntityColoring(IoTThingTemperatureHumiditySensor)
+!define IoTThingTemperatureHumiditySensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingTemperatureHumiditySensor, IoTThingTemperatureHumiditySensor)
+!define IoTThingTemperatureHumiditySensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingTemperatureHumiditySensor, IoTThingTemperatureHumiditySensor)
+!define IoTThingTemperatureHumiditySensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingTemperatureHumiditySensor, IoTThingTemperatureHumiditySensor)
+!define IoTThingTemperatureHumiditySensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingTemperatureHumiditySensor, IoTThingTemperatureHumiditySensor)

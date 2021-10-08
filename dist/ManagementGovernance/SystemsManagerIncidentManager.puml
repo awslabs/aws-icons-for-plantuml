@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SystemsManagerIncidentManager [64x64/16z] {
+xTG73jjG30DGIlfVW_U_RvVJ0AhgnWvQhEPXPOXUOi9_uEEZmZsIRtB53xAAzuK0ooDyAx1vruOu7qAXTJUkDTvU5x_EEumt28hTWlCodm-iH6eheC7NL3Wu
+036xiel2uYG_agK8lk1Zf28P_ZYulbvUZY8k_hHGF3SdIW7p6bTtfdRRNd7jwjs0nHzxBujFIyRLkk6yZe5MbDrwboQM96j1ycHrafmzTjia4r0WZo-ao6cr
+XrF7aqW1zkFBnEeLxQ1zaNxSql443IJbCI72ATjHZvaI93do6_cgUN4SBO_1L0X9XNWR7VdUex8Zle6LZtfeaG7d42rlu7FEeTN-ZKP-th_eypwhxMjZiRBu
+r29FbKT-x9M6v6_j-TFDkTTd2uOIvEbUvtLE2JdTIt-q9mAmxKtHaMmMUAOCwF95ViYEj_BJ_vulmoJEgnPi4YGlKk4KyCjvvPJNymQFOI5uKGem6I-hy25u
+MwcJo_Ws4TzOV5i8eCNtLIJ_ie-Fhm
+}
+
+AWSEntityColoring(SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)

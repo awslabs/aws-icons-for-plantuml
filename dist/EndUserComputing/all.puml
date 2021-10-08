@@ -14,9 +14,10 @@ AWSEntityColoring(AppStream)
 !define AppStreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, AppStream, AppStream)
 
 sprite $EndUserComputing [64x64/16z] {
-xTP5Obn15CNG-TFL_fSRijrS74uqApYDd-gj_n7d2q_SjNZmIis7FavGAqMEFF-il_JJV7nTEfx4P71aqlJnBJeVZRQFUPDcn-VorPGDhvTfi-unDnzbntFZ
-MVNa7Ynvefh7VM-p33sQ41xtaKHbu57QdnEbxoEzxudfUap_TrBwdhwFQhRzvMVS-VoNq8OldV0Lq_0n4xwQlc8uyHKVujdJyKKoyf6s7tv_DBNgyQRKWK-e
-TT-VZ-tu2RuYrMh6btBaqIDVc2DVsVpzBcNVzyD6FytJcV-JFBTV-zp_CxzVeuwVVNx-tsS
+xTHLUiKm34JXCMaaxN-_XSjEypc6SdlU_u11N4rj8IND5x9__--hAEsqwItWgDpo2THs6MpuaFmeb9RFtzuNZdhJEklpAhJzBPKER-cqsUQAB7KX7NiBAAeP
+qGXwNUpm2Uel4MNA6xAVIc7IYv-IEE4bXlif8SWKi_JxX90J7tsC0T4wVO7uGvVl5vG-RqY-upq5w_8AsVK28DcyDqe6zD3x_lUVCgJPzJkNqRb_vPfMFeKE
+xqpX5XyzaJjy7K6JSmdHPhpWNCZj_LCDIJSPGTDJH-U7s8dzzyyYXDkitxk5OBvjmBiYBdad4Eeuv5tI9cNl_AvhxSgW5wsBWvvUD-VZQ_OrlYv-wlePtbH6
+lAjiejT-ld__xzKMKgxs3
 }
 
 AWSEntityColoring(EndUserComputing)
@@ -24,17 +25,6 @@ AWSEntityColoring(EndUserComputing)
 !define EndUserComputing(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, EndUserComputing, EndUserComputing)
 !define EndUserComputingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, EndUserComputing, EndUserComputing)
 !define EndUserComputingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, EndUserComputing, EndUserComputing)
-
-sprite $WorkDocs2 [64x64/16z] {
-xPOtaiD03C2udCt_V_3r9nHmg3o4hInWbftkDoYACv5j_HdCqlvSJveEpA2bPciKy7vk37Z_Si3x7F0-1xpF0UzpmFiSy3u7lCy1xtF0-npmFWUypm7lSy3x
-7F0-1xpF0U_Bm8piT_pV8l91YzZMJoGchr-olJ_6PtxcPtxlvF_O_3L_pL_py_TZWvkJVG_vPxx0kT-WAFu
-}
-
-AWSEntityColoring(WorkDocs2)
-!define WorkDocs2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, WorkDocs2, WorkDocs2)
-!define WorkDocs2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, WorkDocs2, WorkDocs2)
-!define WorkDocs2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, WorkDocs2, WorkDocs2)
-!define WorkDocs2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, WorkDocs2, WorkDocs2)
 
 sprite $WorkLink [64x64/16z] {
 xTJ53GH144FHQYvr_lakmw27sV_-99-SPucnYD9kBh0UFgRMN1yFDlfBUthS_5wzg-HrYFTIom_pkTBJooyTvTqtYMFyBpsVfwTttqPvbLzzF0h_1_Rulx37

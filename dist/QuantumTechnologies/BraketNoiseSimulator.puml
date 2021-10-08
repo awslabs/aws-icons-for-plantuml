@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BraketNoiseSimulator [64x64/16z] {
+pPQ7iYGX2019Gl__3r-OAMgJTywk5rvNsDW2evJ85y5T-wsQcRwfAyInp2XEQjYxlWuUg7Z77wTT8znZ90T-tGSeLsai2aYzxjTpnG5WL_sOV9s0NNr-CmPW
+6xu4e1k-3CWTNn9ynrTWnvU0sF45QiiVO3k-GUpu0hdb9spv0tJ7ZqtVmNPyiQtzEx2audC_0CXFVGTomoymaLN-onRyr2-g2z5h_ho15CORlcTHbP6WdKZv
+oAhAMFi9DDON0atfmWyWCuk32lMsCnEeXLyT8hWdzQKdvpuCQT-A0ozoqbFQvKmtRK31IO5CuxzcCC3ldcE85z3-O_spWKCv_sBGfJX0zEAFVos035CLLHzz
+zHrETQcQvre1zRp_mJr-TiqO74PZ0EM0lfuVJsX6bpNn0Mn-_jGZHeHf_niCujxt0k9I_oH0FSKlWD8hVb0ropyXh_ZYPmxvq1IbaZ0M_gFI_TUB5TZ2z_wg
+kcq2UkCCSk7dtVa7I4xwLnO-vAp_Qj9_1lvhtw4ugOUc_lq5cP37C5wd6ib1keWEO771AtSC4n6DFWtAGyPTrMHy1ghWBgVZKP5sPK1ICnNn3gRpAp0x_TK4
+6DDPrfRprU3qcDMfwn5TeNG-Ici08Gi2oXDgbZn3bYG7El7BvG83A9tL9jTGK_boV0S
+}
+
+AWSEntityColoring(BraketNoiseSimulator)
+!define BraketNoiseSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketNoiseSimulator, BraketNoiseSimulator)
+!define BraketNoiseSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketNoiseSimulator, BraketNoiseSimulator)
+!define BraketNoiseSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketNoiseSimulator, BraketNoiseSimulator)
+!define BraketNoiseSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketNoiseSimulator, BraketNoiseSimulator)

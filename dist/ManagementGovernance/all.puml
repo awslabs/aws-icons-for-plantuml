@@ -371,8 +371,9 @@ AWSEntityColoring(ManagementConsole)
 !define ManagementConsoleParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, ManagementConsole, ManagementConsole)
 
 sprite $ManagementGovernance [64x64/16z] {
-xTKt4eGm50JHN3Lz_-jkk8wX1Y_NAV_XGSKt4pzfc-Ul0CdF9wS2tWVdeiyT_tipQ0YiRWpyJw7tpo_nOKnlkjkBC2rxufmlKKDuQDM3xwWVuFxL-Vv21RxY
-zw_--rVz-pTzt3NhTzuT7iRsGaQ4OuJvNSVlqkm5
+xT85WeH034JHjAOgzx_lEYvfTbpU3Cx7zLJW2Q1AEm7V_RlVeNM0upra9BJt6iClgUXa2RyIl5ubbXzPr3fP_jQ5GAVFtQLYqWyhdJw5lVkdrDRUQXdeyNxg
+ONhoNptBdkhsLNR1xscRz9ezULel-MQzXYyYOOBjFSeNYMM2Lxx_L6_u_gT2FQsNSgn7cfBuDUB1zz_fFWMUUlstw3ilrATjqUyHzaGwlQkzHyHflUXDUvE4
+JLdWzbLsP7DxOzq4S_fsx_xTWoU0dkeJ
 }
 
 AWSEntityColoring(ManagementGovernance)
@@ -613,6 +614,20 @@ AWSEntityColoring(SystemsManagerDocuments)
 !define SystemsManagerDocuments(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
 !define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
 !define SystemsManagerDocumentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerDocuments, SystemsManagerDocuments)
+
+sprite $SystemsManagerIncidentManager [64x64/16z] {
+xTG73jjG30DGIlfVW_U_RvVJ0AhgnWvQhEPXPOXUOi9_uEEZmZsIRtB53xAAzuK0ooDyAx1vruOu7qAXTJUkDTvU5x_EEumt28hTWlCodm-iH6eheC7NL3Wu
+036xiel2uYG_agK8lk1Zf28P_ZYulbvUZY8k_hHGF3SdIW7p6bTtfdRRNd7jwjs0nHzxBujFIyRLkk6yZe5MbDrwboQM96j1ycHrafmzTjia4r0WZo-ao6cr
+XrF7aqW1zkFBnEeLxQ1zaNxSql443IJbCI72ATjHZvaI93do6_cgUN4SBO_1L0X9XNWR7VdUex8Zle6LZtfeaG7d42rlu7FEeTN-ZKP-th_eypwhxMjZiRBu
+r29FbKT-x9M6v6_j-TFDkTTd2uOIvEbUvtLE2JdTIt-q9mAmxKtHaMmMUAOCwF95ViYEj_BJ_vulmoJEgnPi4YGlKk4KyCjvvPJNymQFOI5uKGem6I-hy25u
+MwcJo_Ws4TzOV5i8eCNtLIJ_ie-Fhm
+}
+
+AWSEntityColoring(SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
+!define SystemsManagerIncidentManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerIncidentManager, SystemsManagerIncidentManager)
 
 sprite $SystemsManagerInventory [64x64/16z] {
 pPK54WCm20GX2kJ_xwq4fYwGwjR8f3lfNGt-6tnDRsFKTRl8s25vpKwybySEmeNWVM-smsCuk9rhhsFKS73EPql9iU05JgZk6cu7zjVGxfraDOI26-Sr188R

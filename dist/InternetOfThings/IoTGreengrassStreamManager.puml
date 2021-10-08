@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTGreengrassStreamManager [64x64/16z] {
+xTO5iiCm34LHnx9VhFql-ACoKZYHokqPADwYALt1nmT15KVFLWxsvEaXr-Y1-an_ihClB4fIn5EhFLZ0tTEFSPynjTNhOvlYlOhtMNly-EiTyyV-_YwaN-Xf
+a97Fvusj4bX7z7UlSgiTwdiQ3FruN7MqPZhMj6y0Ukc9rwpt-Ek2VU3pQxzbfPVVj0PwONkmWSs-iUWylOvfcwS2ewoDd-ZuZSwVwFnzQjKC78_8_w3p7d3t
+qctsu6LqexvWMHxt3l5UnFiQErFNBecGZuzl
+}
+
+AWSEntityColoring(IoTGreengrassStreamManager)
+!define IoTGreengrassStreamManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassStreamManager, IoTGreengrassStreamManager)
+!define IoTGreengrassStreamManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassStreamManager, IoTGreengrassStreamManager)
+!define IoTGreengrassStreamManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassStreamManager, IoTGreengrassStreamManager)
+!define IoTGreengrassStreamManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassStreamManager, IoTGreengrassStreamManager)

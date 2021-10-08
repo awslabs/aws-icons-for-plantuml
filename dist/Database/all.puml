@@ -234,9 +234,9 @@ AWSEntityColoring(AuroraSQLServerInstanceAlternate)
 !define AuroraSQLServerInstanceAlternateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, AuroraSQLServerInstanceAlternate, AuroraSQLServerInstanceAlternate)
 
 sprite $Database [64x64/16z] {
-xPT55eH030NtKydzZpkuGpuyNFuMghrQVcFv0fR5qrWMMCJwI6QMGLKf5010rHGqFLKJvIU9JpSJH075Tr5-y8Ev1R3-nHp54_4-X_U8r-sFUJr-WizAY6Z1
-w_KJyytw9K_6PMdMh-25FueN_cfUP3t_yK_spvH_TfH_rlRFFlyEuJ__4FZ5_VinTbLhf42FF-QDWOrzPTyKFocWmPBv1wmEhVvywt_j_N7j_NNr_Ndz_Ntz
--s7z-sNz-sdz--rB0W
+xTP7TaGn24JH0YIWsFz-dNEapUcHzURtHwMOnXh4YBgEF_vuPhX7yW-Us_0csxp4km2wF99tPVXIGBphgL2l3xb2sVA4P7rH2jZn2wml8rR7gzKtcRRyz_Tl
+UlXNtD7qgf3DZ-D1eDhpLc60sFR8kyAt2M1HrlLLzALuIPUpgk-V8lCkrbDz_w5_vUVZxzlvr_GgiAWFXK7QusyBO3kIh28pjW6oB_b-kHHlqfMNVtzc-5sH
+FEFlZByp_gxfv_lt_FmmFx_Cpq_pyzly_DZl-ECvAgRT0W
 }
 
 AWSEntityColoring(Database)
@@ -375,6 +375,19 @@ AWSEntityColoring(DynamoDBItems)
 !define DynamoDBItems(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBItems, DynamoDBItems)
 !define DynamoDBItemsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBItems, DynamoDBItems)
 !define DynamoDBItemsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBItems, DynamoDBItems)
+
+sprite $DynamoDBStream [64x64/16z] {
+xPS5ZaD134Cp3D_tlswvrZIBNeQ-CZmfri-GVJiXlvbmz3FUJ7wl_-xwlvaxTyB4ofQiuOPcfCsMlU_7JpSu-DU88wCcvuz6plviP2v-PP6znCNFHiv-Dz8N
+Vm2nz0qdjfPK7nZ7brG7JYJDJq1XrMsJ_GP4MyEOvaziPYwCu0T-pp2IppyoZEPt89YvC8A_OTeHXj7yo950I_8Ba6w-3fe_68HX59_Ncs4qFm7LZZ2CvbVu
+vXNy9vfNyNtpLitF7BiC8_aDldartyVlcXzyynRDBtxi1i5_OkmglX-xJVEZRzwi-PN_uTYLrgy1ODQqZ5rj_QmuCsfa66dz3eNBNkySkngn3bRqLbATfuZl
+8EGQx2zmvtx--tRs
+}
+
+AWSEntityColoring(DynamoDBStream)
+!define DynamoDBStream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3B48CC, DynamoDBStream, DynamoDBStream)
+!define DynamoDBStream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, DynamoDBStream, DynamoDBStream)
+!define DynamoDBStreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, DynamoDBStream, DynamoDBStream)
+!define DynamoDBStreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, DynamoDBStream, DynamoDBStream)
 
 sprite $DynamoDBTable [64x64/16z] {
 xTS5ZaCn38JX2ITsxd_TtRPJYDZIO_X4fRySmkPS70GWsZayn3uG-6uNPkfB96LVeqNzzH4ax1CiqbxwkrUXpbx5GcVw_mKPL7YnyvY12mCF13liPFpMJCg-

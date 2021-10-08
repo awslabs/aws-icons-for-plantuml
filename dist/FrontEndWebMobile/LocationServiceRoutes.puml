@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LocationServiceRoutes [64x64/16z] {
+rPS5acWX30GdM0Xz__D-TzcbajL-Bf521xq9hFUAzGPmoveVlX3AiI7c3F1S-6-H0yOO9erFTAbzlbxOTvYIDFdCa02sv02IHir-uANy0xnIVWtmIlqrwANs
+qxfajVPhnrKXm5MWKNVWgj2MohYhmde3XNYiv21CLRhNpC7L0sAa2_7m1KyxW0XWfXsqhvUi_VhMd5go18Sa3UXAODzApfFn5R3C5XobSBxHbM7Mp0VGX_jK
+3hyDtFU_Gwnv6sVgBwwpNi2GulTS0zSbSPeKC7xFANH3bsIIvc_LPETo_8eVKGTRFx5eT-QSNpFfN-zQSfYTx5zam0Nzzs4MsB83wqgBsb_v78xiOhpxNn7R
+6PBlEtD21JPRQKpIpEl_nghe_msCYlu7h-d_gEf_Ku9Vz7klsbVphvNVhgtVZgdKVgoqVZMzIpu2
+}
+
+AWSEntityColoring(LocationServiceRoutes)
+!define LocationServiceRoutes(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutes(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceRoutes, LocationServiceRoutes)

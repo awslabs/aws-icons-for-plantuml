@@ -100,7 +100,7 @@ class Icon:
             elem[0].insert(0, white_rect)
         # For category icons, set fill to category color
         elem = root.xpath(
-            '//s:g[starts-with(@id, "Icon-Category")]',
+            '//s:g[starts-with(@id, "Icon-Architecture-Category")]',
             namespaces=ns,
         )
         if elem:
@@ -221,7 +221,7 @@ class Icon:
             self.category = "Uncategorized"
             self.target = self._make_name(
                 regex=self.filename_regex,
-                filename=self.source_name,
+                filename=str(self.filename),
                 mappings=self.filename_mappings,
             )
             self.color = self.config["Defaults"]["Category"]["Color"]
@@ -241,14 +241,21 @@ class Icon:
 
         The name input should be a complete filename (e.g., Arch_foo_48.svg)
         """
-        name = re.search(regex, filename).group(1)
-        new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
+        try:
+            name = re.search(regex, filename).group(1)
+            new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
+        except Exception as e:
+            print(
+                f"Error in extracting icon name from filename. Regex: {regex}, source filename string: {filename}"
+            )
+            raise SystemExit(1)
         if mappings:
             try:
                 new_name = mappings[new_name]
             except KeyError:
                 # no match found, existing filename is okay
                 pass
+
         return new_name
 
     def _make_category(self, regex: str, filename: str, mappings: dict):
@@ -263,8 +270,14 @@ class Icon:
         :return: PUML friendly category name
         :rtype: str
         """
-        category = re.search(regex, filename).group(1)
-        friendly_category = re.sub(r"[^a-zA-Z0-9]", "", category)
+        try:
+            category = re.search(regex, filename).group(1)
+            friendly_category = re.sub(r"[^a-zA-Z0-9]", "", category)
+        except Exception as e:
+            print(
+                f"Error in extracting category from filename. Regex: {regex}, source filename string: {filename}"
+            )
+            raise SystemExit(1)
         if mappings:
             try:
                 friendly_category = mappings[friendly_category]

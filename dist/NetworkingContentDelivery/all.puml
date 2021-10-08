@@ -363,10 +363,11 @@ AWSEntityColoring(GlobalAccelerator)
 !define GlobalAcceleratorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, GlobalAccelerator, GlobalAccelerator)
 
 sprite $NetworkingContentDelivery [64x64/16z] {
-xPRBhiCW34JtFJF__xdtWKGLHqPXK9UT5P9zyAiuVVNw2icMu8psMoAdDJ76CSKBWgmKhodB9BplxjW1taHBAg3pjO0eV9Ns1zdMYa0sQVfv5p11QPaFTiJd
-2O3EUMJRFa_kyRrhxO4iDhU2E1nktGWvlju8mGljmf7kA9bymwm3ogzGbNVE-uFnp-lF-zy3DldyyWJMxh88yEuRiNl3OXFZJIq3eQgt-qriLobvFjPOeqgP
-SJZ41p-EH_ZWoxpI1ICpMn7_0PfySW6oDPmBFmpYyJSc3qryyfsjnqNjbanZV7XLbFYTiPTCEVGdUPEVtMoClRY5m4FgZ3q_ELssXAp6kEu_ihacAbEDZ_Ed
-V2AmRiQrkEm7g_BJkAiQFrUjFnTZ-6Vxgyx_M4yD--eN
+xTPPqhGm28NX0u5mOF_x_KUhqb-LYL5l-xrnV7fkCTwMhuh8Uj7SV_tNimSVUnh-rVZ8EyGZCrpW3to3rP6Xt_R-QHhofa_OP6lF6_Bd9hJVyMBr6TKKjk-9
+EFb4OjjtdEnKtVQEMZtesjERd7c26puReCrFV42jvuLFWMUTHbK0balVm5f4Xt3XYLxhKYJdtgIk8dpkfTLbJHVUhht9tElEyo-y8I-zjBadx8e7-joNmTUS
+8hNmPT3Ed1K6uT9NA5Qrh9aV-_gH0mg5zgFWhVb30HtLO8_cLq2o75MEzi1tQFwrn-eTdy4oj74f2mWpkEaDV_CQlYW08Dpn1cS8yjENmSREfK_uyJV_zB0n
+oDO-mF4teQBdc2Yg5twS2gyg1mIILOa-hWzhNogiCh0gO5KK7JjZmrCWW1-NYcFmvB5pmrUwEO-tEpwGRiPQ-EbjWE7f_Lj2WWP_wei233xtynXPb_vvN__r
+hugt_GO
 }
 
 AWSEntityColoring(NetworkingContentDelivery)
@@ -505,6 +506,20 @@ AWSEntityColoring(TransitGateway)
 !define TransitGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, TransitGateway, TransitGateway)
 !define TransitGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, TransitGateway, TransitGateway)
 !define TransitGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, TransitGateway, TransitGateway)
+
+sprite $VPCCarrierGateway [64x64/16z] {
+p5E7WiKW23jKNFt__psfDfhwRa_US2Q4q3xzun3dMpZv3DQdSY1AyXy2XtniaSDxqV5290qjD5riyJrexLXrwwRJpg5leLqz4yb-8gUiwjvEhfywjJ2HIMWd
+auPafRtORkjOOCBxzM3TbCVmsihZesI2qrktHfJ9p8sCcyhokFQosPNEhsw9TWzqofextlUVRYNelUzD9yE3UMduFYE2TjbjclXEpshuhkJENRPIcR2QRHrl
+HbO-lPkogC-n5sH3nnj1bnlpKW4tIdVcYTzLAhLriWLO0poR70W2K9owFBl8Iw3YOdX6zGbCTpnG2Pdob9-nMOVKiH62q8OPZQJKQlBHGmOI-vjl2caHbjNE
+oGyOFvvJ8PZAifNO1l5UkF2q92iedoJ11ib7Yon3cd2nUOfDSF_Y2UCziwW631TklIr3jQ8GCFUXg9OXpmQIhQCIRzbmD4TfyCvw2CZdQ8eyy3028oerLo0A
+uu_WtwMVyL_tR_Ollwz_cVltN7mT4000W20Cwz_Q41EmWWe_t8_Uh_wF_Y_cX-QNvYVcj_O7zfVs9_QtyWFo2_8Jyflo8_AhyJFok_k3-ulxa_kR-wFxwtuE
+}
+
+AWSEntityColoring(VPCCarrierGateway)
+!define VPCCarrierGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
 
 sprite $VPCCustomerGateway [64x64/16z] {
 p9874WCX24N5Zk_-vqrVnyLasxJyAJOUy1tS7qjyUCZB5JOKfKjBE0N7ogGQZz9v8KgA3wMoPCj7wFHcatU3V7hdI7kqRm1PUY-zfcI0vdUBZqKgrEdrjofG

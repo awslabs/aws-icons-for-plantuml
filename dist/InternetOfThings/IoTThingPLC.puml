@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingPLC [64x64/16z] {
+xPS73iCm30Chqul_Vt3tBW4r489CTdXUXcJ4p65kIi2b0DBvtm3xwlDKoKj1rWj1ugjlB7xdBTUpEdafo7x-RsJxxglP90x-BGZSE43Y2ZAP3qfwfewRhwyu
+Aju0BNDuDn3cy5uUeFXKh-flVC5PvRjyu_kDIU_dU-DXW8dooR-kH_Fg9_cNwd-y7p__-drUbMFmCdu-_n32l5u_cjVh9nw_YNd3LMq8tt2LJPs_wFKlFN_H
+zJjr_gQDt_xyY-wVWVqxuX_Y_YNgdwB-BUeVW_urxf-dz_yx7tz_dLud
+}
+
+AWSEntityColoring(IoTThingPLC)
+!define IoTThingPLC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingPLC, IoTThingPLC)
+!define IoTThingPLC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingPLC, IoTThingPLC)
+!define IoTThingPLCParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingPLC, IoTThingPLC)
+!define IoTThingPLCParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingPLC, IoTThingPLC)

@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTGreengrassProtocol [64x64/16z] {
+xPU7SiCW44GDN67__uSZ4yQCrxCkqgJdfMTvvnDkn-bxK-iHsx1XktN7m9ytcdjRlGFTh0ELSaL9R6HPtTTHnJWN90QvsZ__09norJmGfGJGBhTlyplbShlA
+rkJbzWg0J025SpP5tZ1e8b-e_ce2MMNET0pwLSccSwRq4HVsTSxukZZoEMTulVxx8_rAbqVhoteo2FBH_YK9eW3xh6jY561_wg4zBi2-rakxfWFTsi01RmC3
+q6bXUTUncp9xt4kRlhST-FBRQGVjT_crRLJ--RmVs0Z-UTJ_yFx_x__Zpv_TjEEl7nlbjZ44ltu5RY-pgFSG1EtHV5cj9qBepdiy2w0-gRC_S2gWTVAVBr26
+Jlx2vvvBsgFvuOFV_nqmiPvoFJyb-IBNyrkIhtB6W1WpTgNvKUHC06S7C9fVHQvzdf-rh_ld-PrplNyXpWyh5zGkpY-KVzJvIP_VFlxygC-ltvit
+}
+
+AWSEntityColoring(IoTGreengrassProtocol)
+!define IoTGreengrassProtocol(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassProtocol, IoTGreengrassProtocol)
+!define IoTGreengrassProtocol(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassProtocol, IoTGreengrassProtocol)
+!define IoTGreengrassProtocolParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassProtocol, IoTGreengrassProtocol)
+!define IoTGreengrassProtocolParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassProtocol, IoTGreengrassProtocol)

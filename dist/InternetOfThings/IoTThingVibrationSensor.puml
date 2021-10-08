@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingVibrationSensor [64x64/16z] {
+r989hWGX24G7i86w_uL_YyJq47zctseMb_W42a_V9XRfWmZl_oH2PU-I5EW3e9q0fEpz0F-ZF3NTvK0V0D__3R2wfusMkE1goIewRj0YWmQqIzxKazMtAmNe
+j_EDQc__vLb3Vk3POEUymVZ0-s3uhE-Jtx95fRdRv96I5IyEG6l-2i2byelwys1LNdlPFv-9vZ0d6-2N-1ZBAvkp2_4dnvcjfVTP4TTxGjK_1YHkyTdova4A
+m9VzfwXVZkOckG5K-DNxSLZUCZL8WzVtK-fF7hL6pIs_-Fvdbxp_axehnI8xUuaFuoWgzXCv44kFKcdOM7cIa061XrKKWm9c_J2Z6n132zu6GzL_2IvIRUca
+mKTMexUGulz3_AFvF-3VY_htDzBI3wNfbzByGsd-fQJyeBpyehpyfBJyfhJ-eBJ-ehJ-9Bl-7ZRj5yhRRvIt7obllrBUVgP_-tzKF-Nzru47
+}
+
+AWSEntityColoring(IoTThingVibrationSensor)
+!define IoTThingVibrationSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingVibrationSensor, IoTThingVibrationSensor)
+!define IoTThingVibrationSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingVibrationSensor, IoTThingVibrationSensor)
+!define IoTThingVibrationSensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingVibrationSensor, IoTThingVibrationSensor)
+!define IoTThingVibrationSensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingVibrationSensor, IoTThingVibrationSensor)

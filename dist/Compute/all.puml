@@ -1,6 +1,18 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
+sprite $AppRunner [64x64/16z] {
+xTR5WSD044JHXcd8Fs5JBPcjqhBddqHFJFrjpMOPg4ZlWeBqkIjKP3IVYyApt1EUvNt33pkkwcZim6zv5VkGIgQelPRWDxqUxOtaqRBWNPw41wz6XD_pDCw3
+Opxdoxn9ZwffZxx3JnyVyhtt-D0zRt9SbHndjttbSTrvNAttw_UVFtz_uVwPljPvj-8zNjIijmHdVO4JFhrw5pZXXsI3vyNlDv9R7hok_3-WSSCVE1KyEEqL
+dFQYaRj87uASz1Ke-zkQpRO
+}
+
+AWSEntityColoring(AppRunner)
+!define AppRunner(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, AppRunner, AppRunner)
+!define AppRunner(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, AppRunner, AppRunner)
+!define AppRunnerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, AppRunner, AppRunner)
+!define AppRunnerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, AppRunner, AppRunner)
+
 sprite $ApplicationAutoScaling [64x64/16z] {
 xPO5ZaCn30LVpFS_yJQILoxNIXb6y772YHttuySFi-jqGA_J0Rr67nZGTTt6y05TrcECM2p0fpxzMS3ABCYKfXykiKJwnVVvPl4it8eL7IYiRSK_2jQ4eVM3
 dzCPLhuUkJNmfJspBxbK_VNzGW7bApPeJwzVoXym9U_fzLFvrU7pkeu4WE_Khp8y9tGaSiIdP9HVPsZwb6Y__U7AqEPXNlh-_5S1xVcRc65t_hIfXpCpu0vi
@@ -41,8 +53,9 @@ AWSEntityColoring(Bottlerocket)
 !define BottlerocketParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, Bottlerocket, Bottlerocket)
 
 sprite $Compute [64x64/16z] {
-xPQr0O104C1AzFPVbmuFxYIul9sdBIHYmUMXxMrVn38AQ1zBmOOfm7_lRzy0xV6thxOlflK-gxyWbkYF9mZj6x0zVxRzSlchlmUrLt_gRs_ytHl_pPyFgr-M
-ihV--qJzQ_lzI0K
+xPP5OiKm30N5olrFt1V5vHhAv5dCnzd4cD_EyGvsl_jdttd27e_bKFXIJmwJdLA81P8I_uC-dJGYBWd49OQ4OzuRZOXHhmo8ieiJCV1ERmgOZYv1eY0wVQ73
+tjkxp-x3dfBptWHGzK9FiUfPW2_qSZnctZTqsBVqP_QcW4VzUFue0nhsnE2lFZytC7b-1Zxd-Utd9rHSR-KnhIyMdf_BK-Az-z_dz-50XhqwoCdpwp1zVdcY
+n5sGvacdBq9ha2_nhRX4bll-CkqrOFKx6MGb_L7trztl_jkv0G
 }
 
 AWSEntityColoring(Compute)
@@ -90,17 +103,17 @@ AWSEntityColoring(EC2A1Instance)
 !define EC2A1InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2A1Instance, EC2A1Instance)
 !define EC2A1InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2A1Instance, EC2A1Instance)
 
-sprite $EC2AMIResource [64x64/16z] {
+sprite $EC2AMI [64x64/16z] {
 xPO5ZaCn30LZVlS_yOg-gy1MSPb659emjLU1M7PXdcm9b73ksWwKiK4tAU00FFt8o3OKfnv8KSz6AKEj3XyTe2DG9117HNA9Ry3XyoM-Tdvf3_Z25nIWfU-M
 -9bOhFrk6lgO0jJ5Rk___9ylb2Z0_yKi_LkU7wxuRVQRs3Oy-KLUqgTjLZvXdxZF_McQ-BdOwvsVd__pVtvu4cFCkzWDtu_yVqRnxs_0JVwl3V1h_i_DStOh
 2A3vau-oJZYrQa1mkNL8nXn0M840ODrSbkdNZ2mgSkXgIhPfhyCV
 }
 
-AWSEntityColoring(EC2AMIResource)
-!define EC2AMIResource(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AMIResource, EC2AMIResource)
-!define EC2AMIResource(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AMIResource, EC2AMIResource)
-!define EC2AMIResourceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2AMIResource, EC2AMIResource)
-!define EC2AMIResourceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2AMIResource, EC2AMIResource)
+AWSEntityColoring(EC2AMI)
+!define EC2AMI(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2AMI, EC2AMI)
+!define EC2AMI(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2AMI, EC2AMI)
+!define EC2AMIParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2AMI, EC2AMI)
+!define EC2AMIParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2AMI, EC2AMI)
 
 sprite $EC2AWSInferentia [64x64/16z] {
 xPS5eeD034IJcKpO-r_uknODTU1LqBUkzb0uwGkEew0rB3XUtZzyrnlPMYuvUjzNAw2h-BQGo_hE3xBY9p_mhphveE9_WRFzVlfT4tWl_RtoqtIzzSllyhwD

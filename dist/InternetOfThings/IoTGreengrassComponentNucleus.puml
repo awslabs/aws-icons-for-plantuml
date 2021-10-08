@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTGreengrassComponentNucleus [64x64/16z] {
+pLTNejmm27mqWUz_uHZBBxChSBQbyUCY1ePY97_ztyBy2NfikuotuR4T4kzxTrL_cy4Epyjku7KiQSQkUQjRyg2Nikux1lX3N9v5Iqm0-4zpyPG5caNRTUqx
+VxRR74yMGX9jLEgNTf_mRqcS-lx9rnuHRKy1e7t_WXtm7PmVHkS-z8fyqAyBctYxMDI4breCMl4NUQH9lcW7tRt965kINWn7nZgx27XLl5dOUqc77JdLEto-
+aOgFbHQTdHDvAGkrCiWhwnX6Nppa9AQYPietnAHnZov8MRAOuY3WjR06wniOYc-G0G-yv0flTkn-IzDiJA3I70e4Ry0kIO8RyiEfdk4gChm6G328DJtGz7Dn
+08zRPCpkWflEdS28uDIGZ3hd-T3ZcqRtN4BRGB_E-VFPP3e7Fb5UzEkSXtsx3U-uKAlFcDDyPXFSWPzIzIj-ngu5JnNVygV9VonusRZmh_cO2veKWf4_V7L5
+lwtV9A707qNNej_t3ts_3BdfQ21idU6yzY-6DS_-dIY20G8QpG5ly1E6xuVhvmRIo8OICJRJv2fCWX53vViL55mJW5woCZ_A00CZ6802BV12lveKLQNzmgSv
+8L4LWeCaMuTofOHBdRMLW6OQm69W_wZxIh-1d7W4xbvuCTwi9GYKkDa_yNLn0MFVuEKSDwXiis1Vbe2_rl5sGTtZ8PwGZeuzyFtvYUFwX6CHs2Fxyx-jwxr8
+j7DUuicVYIGfwvpIUEe4Z6_M5NDI7Jl24y9ZMyxlE1G_9wH-ZyU9ysaHy7_l9ywGlt_m_uR--V3_zV-M7m
+}
+
+AWSEntityColoring(IoTGreengrassComponentNucleus)
+!define IoTGreengrassComponentNucleus(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassComponentNucleus, IoTGreengrassComponentNucleus)
+!define IoTGreengrassComponentNucleus(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassComponentNucleus, IoTGreengrassComponentNucleus)
+!define IoTGreengrassComponentNucleusParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassComponentNucleus, IoTGreengrassComponentNucleus)
+!define IoTGreengrassComponentNucleusParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassComponentNucleus, IoTGreengrassComponentNucleus)

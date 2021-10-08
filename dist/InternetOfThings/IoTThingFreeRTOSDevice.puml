@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingFreeRTOSDevice [64x64/16z] {
+xPS7sYiX24K7KU3iVy5_6LA-CFEYURtTT3B7SZL8jjzDJVNpHRLzF8kgbDXC1fylO9y4Q8dzAFu_Bzq-5F3v0c5c3bvZrkKKLvQb9xZmWkJ8T-ZRLFNAwbjL
+Qt8CWgtn0y3aQtbZLtmbhn1T7SPJljckEF2MFWTnu2EPzhZkXyb7lbOBRe1-cU-tY0FOEL_dNwrpaS6ka5VySuY-1Ibf0RHrth8_SO1ebyWoty5lxyRDJJ_o
+v_xTPwkWzodfclyZloYyW9_nTVz8XzWgdysELlRFSVuTW77a5G2R-DT9ZSetKlwK5mWLpNodLrvpUbsQWrPUT9V3hJy5k7y6I4RsaO4d8zN_djkidV7zClLd
+wzVoiWvgDtw7mBFXyS2NyMy1GmV4LdW3qnxG7iPV_LTIMda9Tet9_c-HUEMp0VhyzoCEKlcSMblAVmf-v3kCnVpdq2lV85Rpdm3zaM-0hkQ_u_u9OCppJsb0
+RdmwlyxdQk6U3mXzzVnokCipDib_jJqBW72mby-VkdwfIVwRyzFyD-VBvn_5DzLh_QxQrlX5WNrh_VQjzUCtrg_VM3__PlN_Vtxz_-llfdS
+}
+
+AWSEntityColoring(IoTThingFreeRTOSDevice)
+!define IoTThingFreeRTOSDevice(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingFreeRTOSDevice, IoTThingFreeRTOSDevice)
+!define IoTThingFreeRTOSDevice(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingFreeRTOSDevice, IoTThingFreeRTOSDevice)
+!define IoTThingFreeRTOSDeviceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingFreeRTOSDevice, IoTThingFreeRTOSDevice)
+!define IoTThingFreeRTOSDeviceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingFreeRTOSDevice, IoTThingFreeRTOSDevice)

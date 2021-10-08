@@ -28,6 +28,17 @@ AWSEntityColoring(DeviceFarm)
 !define DeviceFarmParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, DeviceFarm, DeviceFarm)
 !define DeviceFarmParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, DeviceFarm, DeviceFarm)
 
+sprite $FrontEndWebMobile [64x64/16z] {
+xT19Ka0n24LHqW9l_mlMcKL-fS7OovdV1E1RUeLPSI7wwF56-WGVzOscikvxeQeJJ6tVTrBCv7BPvyC-qHCxUifjKAbx-eQ1VdEFBW3p-tiT-Vf68tNrERD5
+tTMd0aD_PXzzzD57Nxh1IBaRRTadiZ8I3PQzZf2A6hBg3UV-GctUItvLbpqgFML73suF_Mp-kSFxpHKQYQi7TqjW-mlHHt-5Rxq
+}
+
+AWSEntityColoring(FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, FrontEndWebMobile, FrontEndWebMobile)
+
 sprite $LocationService [64x64/16z] {
 xLE5acCn35CSS9p__zyZ7VZTQB9DOV1fjsr8Hdbz0ZTkZ0kEwO4BOft2u7y1Uo9-ZBmyHobfzGGwd0j7VuOVVx8sn7e63NFzm4HxXaqYpJp9PzxzMRx3-JEU
 utVMBPxBFrO5jO-wufGyhAuA4BQQZGCJim6bht3tKjmzrYX0cmyAtm0RYp1RXEVJlUlioKnSIMWdPY8qZUWYIJDLcf1gGM6H5J-tfW0kt1lG7k4tm4BMhW9L
@@ -86,6 +97,19 @@ AWSEntityColoring(LocationServicePlace)
 !define LocationServicePlace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServicePlace, LocationServicePlace)
 !define LocationServicePlaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServicePlace, LocationServicePlace)
 !define LocationServicePlaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServicePlace, LocationServicePlace)
+
+sprite $LocationServiceRoutes [64x64/16z] {
+rPS5acWX30GdM0Xz__D-TzcbajL-Bf521xq9hFUAzGPmoveVlX3AiI7c3F1S-6-H0yOO9erFTAbzlbxOTvYIDFdCa02sv02IHir-uANy0xnIVWtmIlqrwANs
+qxfajVPhnrKXm5MWKNVWgj2MohYhmde3XNYiv21CLRhNpC7L0sAa2_7m1KyxW0XWfXsqhvUi_VhMd5go18Sa3UXAODzApfFn5R3C5XobSBxHbM7Mp0VGX_jK
+3hyDtFU_Gwnv6sVgBwwpNi2GulTS0zSbSPeKC7xFANH3bsIIvc_LPETo_8eVKGTRFx5eT-QSNpFfN-zQSfYTx5zam0Nzzs4MsB83wqgBsb_v78xiOhpxNn7R
+6PBlEtD21JPRQKpIpEl_nghe_msCYlu7h-d_gEf_Ku9Vz7klsbVphvNVhgtVZgdKVgoqVZMzIpu2
+}
+
+AWSEntityColoring(LocationServiceRoutes)
+!define LocationServiceRoutes(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutes(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
+!define LocationServiceRoutesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D6242D, LocationServiceRoutes, LocationServiceRoutes)
 
 sprite $LocationServiceTrack [64x64/16z] {
 xPU5bkGW54I3yxZ__xqhaNPIEMHtl6PQEVLSwEb3m8NGEV71QtO5AExv906q8EYD6VPqabcmBw22fMHG7Wu2a6C1TjMlcWtYFGpyOaNQuOVrEF4CMnMKi_oJ
