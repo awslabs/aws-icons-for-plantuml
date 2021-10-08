@@ -2,8 +2,9 @@
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
 sprite $AWSCostManagement [64x64/16z] {
-xTH50iCm34JHjUMP-n-tp8QHoctqDy4NZijLcG6y3TNSdFsgqsExPoMlJcYLX8lRVhzwUpu3JU8pDA8zSC2NTk-WP-Fv7d_eJc_2U_j13rxL-AlGUaOyUzv_
-_TetnJpO1Er5l-31UH2UAkdBh6_twLMl_Vvqt-wvgvs7k7_bFSzVN_B3Fdty_Rt1v_EF_JznZxyVlqAr7Wo40yhM
+xTS5OiH028LXO0YykV-56tSZKz_zAwjVNBqqv8BWdejw-xVVvZOFKQ-qZ2taZHH62KCcP16lDFmR4efuaNOYC9yYZtgV4uzvLjNqt2lNqNC_aU_toatRwIVk
+qutVBZlTBh-aNImNNaOYiyQ1oLqFMOIOtnRnsE-kTzfFRtgZodRYTDiZx_H2NlUYkzvvlwfq-_ikh-FKDa-GCsBJRrhNV50rJz3k_u7bTt0mup_ZqPId9r6V
+gAvPsjJaOU_3LOCruSyjlqhgh5aGpHCqdaNegH-UsBViFpZjqjD55nvs4JQ-eBT_-yBxvz8-
 }
 
 AWSEntityColoring(AWSCostManagement)
@@ -11,6 +12,20 @@ AWSEntityColoring(AWSCostManagement)
 !define AWSCostManagement(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, AWSCostManagement, AWSCostManagement)
 !define AWSCostManagementParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, AWSCostManagement, AWSCostManagement)
 !define AWSCostManagementParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, AWSCostManagement, AWSCostManagement)
+
+sprite $ApplicationCostProfiler [64x64/16z] {
+xPLP4kCW34HRA-B-1vxL6eQAKZYQvSllq-YPffqYyt_ny10UyoxLf67Sj8razdq5qFUTmAFl2yZdl7pLJtt-QLu-qMT-46mU_H7lTxTvz0TiraYkz7o7v6JB
+HqupTbzmnzUibw0DFo2hn8QVsojiTdpm_BdAi-FxzPGHBLyHsKBBPyeMUZuaNrFw9mAQOiVFK07j-iJV85ZFzvy-xztilj9rkKRb-yfV--iJ5VxOWjS-yUNN
+_I-ZzcDzuW9m4OveFs9E5Z0oH-tN4mk3NrDH-mFw_XPVfnkGsYV4_gm-m1HuVRtOYb7XkK1LG5ktMvJw2XZqca31guMQTV8WoBP9C6JRvFJt8u3-cXi2wDP2
+nNxomG29cga0AurdZfh0IXTA-05Rh8hfT0jitGVHvQOUy_W2U_VxrQEUtLV-OF1Hp-vV_90CTcOG8Fwxxu9CTGjd0ApcHExA06JCZmXZ816R7MBuDqRCVyJ3
+mrS
+}
+
+AWSEntityColoring(ApplicationCostProfiler)
+!define ApplicationCostProfiler(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, ApplicationCostProfiler, ApplicationCostProfiler)
+!define ApplicationCostProfiler(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, ApplicationCostProfiler, ApplicationCostProfiler)
+!define ApplicationCostProfilerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, ApplicationCostProfiler, ApplicationCostProfiler)
+!define ApplicationCostProfilerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, ApplicationCostProfiler, ApplicationCostProfiler)
 
 sprite $Budgets [64x64/16z] {
 xTC5hkmm38NXuv3j_I_uGUV8b-hKjnfnV-705rJylJqzsKgoccz8QZKlegU9LBsVTii_NddtTttdtT_rfZe0kUEPGkIELoCNk-CdeEH-mqyqmNpnNtfojuPs
@@ -51,18 +66,6 @@ AWSEntityColoring(CostandUsageReport)
 !define CostandUsageReport(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CostandUsageReport, CostandUsageReport)
 !define CostandUsageReportParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CostandUsageReport, CostandUsageReport)
 !define CostandUsageReportParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CostandUsageReport, CostandUsageReport)
-
-sprite $CustomBillingManager [64x64/16z] {
-xTPLWWKX34JH2ccePFyB7k6vmWJ6EIr_jrtmYPQ5vJvw7pnIEll4UmJ8VRtwFIA2FDHxmZRKkqA7UbUaeTut91lfFKCiraChWLYaLnpbG7_2_z0JTsbldv7q
-5gI_fz-IMNrBxOaBsknP3cf_UGqWpLvniE_f9zBkZGUn_cJVNqWVxMtJSwMdfrRX-vTHnVgJARtLdrvvOrRUHAw_kW0W0KYxrxHNUoDfpZU-NtVtttd-MgBd
-Vth_G-V__T-VyU_d-FTx_VyIdygjlgc4niydFisol08
-}
-
-AWSEntityColoring(CustomBillingManager)
-!define CustomBillingManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, CustomBillingManager, CustomBillingManager)
-!define CustomBillingManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, CustomBillingManager, CustomBillingManager)
-!define CustomBillingManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, CustomBillingManager, CustomBillingManager)
-!define CustomBillingManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, CustomBillingManager, CustomBillingManager)
 
 sprite $ReservedInstanceReporting [64x64/16z] {
 xLO7SiCm38D8sAJ-_-3kXLDqqfNT3R9Z0qTnzy_35LUSPutVshVoixKi7Du0mDxdWZmQm0W2xTWs8lZqwVUqn-_tGXwFtxbG8bmPgkRWmW274sZCIwSPwIDS

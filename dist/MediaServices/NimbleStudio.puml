@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $NimbleStudio [64x64/16z] {
+xLO7Rcin32Crt_ql_8Tjl0Y8bVLdsx0Z0cnIbE9r_9zuuurqCrKpZnV8eSG5ulbKPYD0zSW084DA7rTmW3Qc6n147kbyM245N7ODp2EWeo01uv72BuaS_1a9
+Ogd17l7kfnA7KAxF8mczIpzD9h52WvsbDG8rvOAUHWuYJu6cX9foISbn7IVXFL_A894xtGIoBrvBR8LU1_eM45dZGhTg4j6bjssiArw8pe0WQzmPhcCL2Isn
+5FVP-gmmH8dz4jfL8cdjs_H0xXfvkm38s3nHIccwPOXz-Gc0nNuprtThC627m0rU3TQmJjtntQ2pEQL1vDRgTl52SYIi-f27-K3EucPzQVaat-UW6EByug7x
+LlMRJo0OEf2I_tR_wobd02yVPBDIMmCn4nDZck3sHjjiR497Zn9QShNhlrQmzllW-SXJrc-__-fMM-E2d06HZzYlMzrozZt99TAUFzrG39OL0ttwtTdeCo3Y
+2B0xf8-sjOeyxoEhZFxyNxnOHieLBD3cz6uCb6LhOAP0SesBDSpQdRh33F1KDDTUixVg3Wj2mW4-zeOY2tyW5H0t069nGwDqFfRTea1TBpgIz9il4162bbSl
+kXECdfyo082Yvcucz2cXGbBKuia7wE2_Weo8oEDFuOqtlWC
+}
+
+AWSEntityColoring(NimbleStudio)
+!define NimbleStudio(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudio(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudioParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudioParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, NimbleStudio, NimbleStudio)

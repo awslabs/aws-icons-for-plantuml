@@ -27,32 +27,32 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 10.0-2021.04.30 release
+# Source directories for the 11.1-2021.09.21 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_04-30-2021/*64/*.svg",
-        "category_regex": "[^.]*\/(.*)_\d*\.svg$",
-        "filename_regex": "[^.]*\/(.*)_\d*\.svg$",
+        "dir_glob": "Category-Icons_07302021/*64/*.svg",
+        "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
+        "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "category_mappings": {
             "BusinessApplication": "BusinessApplications",
-            "CostManagement": "AWSCostManagement",
+            # "CostManagement": "AWSCostManagement",
             "DevTools": "DeveloperTools",
             "GeneralIcons": "General",
-            "IoT": "InternetOfThings",
+            "InternetofThings": "InternetOfThings",
         },
         "filename_mappings": {
             "BusinessApplication": "BusinessApplications",
             "CostManagement": "AWSCostManagement",
             "DevTools": "DeveloperTools",
-            "IoT": "InternetOfThings",
+            "InternetofThings": "InternetOfThings",
         },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_04-30-2021/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_09172021/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -62,19 +62,22 @@ dir_list = [
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
             "NetworkingContent": "NetworkingContentDelivery",
+            "VRAR": "ARVR",
         },
-        "filename_mappings": {},
+        "filename_mappings": {
+            "S3onOutpostsStorage": "S3OnOutpostsStorage",
+        },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_04-30-2021/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_07302021/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
             "loT": "InternetOfThings",
-            "MigrationAndTransfer": "MigrationTransfer",
+            "MigrationandTransfer": "MigrationTransfer",
             "NetworkingandContentDelivery": "NetworkingContentDelivery",
             "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
         },

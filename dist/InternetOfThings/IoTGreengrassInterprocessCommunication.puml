@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTGreengrassInterprocessCommunication [64x64/16z] {
+pPU74ciX24G55DZ__-4tqPsRqP3s-av9yo0WO6xxNoHg7qlbf7lYAsNVzavyhPGTT_j2lXb8mDkNSY3vjXF_sa2_jcy_8T01sRRNN74DZFSEo2G0kvyZ4pC0
+XBpa3L2-acyIwsXQnvIzuMtdRJBJ1b_7_9RAeI_vJf-d0ULdybJ82zx1H0vtPMRGcZgLp4t5StaS4T8WfG7aY_Zzo5W2yd1cupaloxpqqPaFBjvClkJZXZ5E
+EtZQj8fdTEWt8y3AnD7dt6BKl9FgWB4swSbHzLxpDrfduUEgJHdOYllYhTnV6A4RCyzlAOUJJ_IDfxdE5Dz4By6Iu9JooISG1y-bN4USHZS3G2pyWG-WYTsM
+o-fBayrzMcQQ7tbZbocZlIyz3KHTFw3aZjFzpG3nHtuWXZcdIY9jE8VPPe3uoLFAJyzcibXxoSkwITWxtyml2YWYL-4T-vvFKBgrlR8_t_BDbkwuJfEoaf_w
+ZZyrRXIGblCLupclCKvQOYBEfk2zKlEAnrCBtCT3C9YiUUKU9yzVZQzr_HBV3N3vQL0hddWU1iwXRcNzBtmu8AS1NkyQoCvIgFXWbfiaLn1VLqPdQ7EybVcF
+qIRV9EsYrTdGM7F7rdXthVA_-4qp8okwpjblhCQA7-U5j-YDNoLGytREcw13z9yBw_d9_UhhpZZuBcTgVbI7DsM165UMfEBP_Q57-NPtlSx3k-PoikBPuqvf
+wzimCduQ9x_tAxMEczedVCbJElBEDnjTrxao6zf7_sR-y1YKYN-SV_g6PzEvUsmhRHgbLwybg8UoVFh_FOZ7Njk_-lpmYyyll_hyz8lFRx_y_FZhpw__NZy
+}
+
+AWSEntityColoring(IoTGreengrassInterprocessCommunication)
+!define IoTGreengrassInterprocessCommunication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassInterprocessCommunication, IoTGreengrassInterprocessCommunication)
+!define IoTGreengrassInterprocessCommunication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassInterprocessCommunication, IoTGreengrassInterprocessCommunication)
+!define IoTGreengrassInterprocessCommunicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassInterprocessCommunication, IoTGreengrassInterprocessCommunication)
+!define IoTGreengrassInterprocessCommunicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassInterprocessCommunication, IoTGreengrassInterprocessCommunication)

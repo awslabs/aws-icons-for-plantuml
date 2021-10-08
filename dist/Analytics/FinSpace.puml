@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FinSpace [64x64/16z] {
+xPI7jiCW34F5iet__uCVoN4dZTxUtEuQeTkH-CzbiH3nTz0paFlRou7M07bpUJPtoqo1b_iEK-3b0LFWvPQpKGLUtZ1eH86KnpOHF51WvG8K7nH0Y08fH_L1
+1L4WvSqHUM-p0YylIEQNl5j2kLCWvGh0_Ie_0A1t2gGyp_dyd4A9yeJQwvpVtaoXK1xgxtTrt_rHVZUiFPREH7c27UKDAHIEo11XUH5a9_JkFB-je3oNfxmz
+l_8hl_9TLIj4jK07AAhNpmLrFEki-tcOWyaBCFyiDDXCz0wxdX-0O3-Htf6lvmT8i5N97Nez_mowpfWFJ6Vwotxx-F_DoCj-UsE3zxDOF04
+}
+
+AWSEntityColoring(FinSpace)
+!define FinSpace(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, FinSpace, FinSpace)
+!define FinSpace(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, FinSpace, FinSpace)
+!define FinSpaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, FinSpace, FinSpace)
+!define FinSpaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, FinSpace, FinSpace)

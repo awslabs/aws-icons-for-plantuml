@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPCCarrierGateway [64x64/16z] {
+p5E7WiKW23jKNFt__psfDfhwRa_US2Q4q3xzun3dMpZv3DQdSY1AyXy2XtniaSDxqV5290qjD5riyJrexLXrwwRJpg5leLqz4yb-8gUiwjvEhfywjJ2HIMWd
+auPafRtORkjOOCBxzM3TbCVmsihZesI2qrktHfJ9p8sCcyhokFQosPNEhsw9TWzqofextlUVRYNelUzD9yE3UMduFYE2TjbjclXEpshuhkJENRPIcR2QRHrl
+HbO-lPkogC-n5sH3nnj1bnlpKW4tIdVcYTzLAhLriWLO0poR70W2K9owFBl8Iw3YOdX6zGbCTpnG2Pdob9-nMOVKiH62q8OPZQJKQlBHGmOI-vjl2caHbjNE
+oGyOFvvJ8PZAifNO1l5UkF2q92iedoJ11ib7Yon3cd2nUOfDSF_Y2UCziwW631TklIr3jQ8GCFUXg9OXpmQIhQCIRzbmD4TfyCvw2CZdQ8eyy3028oerLo0A
+uu_WtwMVyL_tR_Ollwz_cVltN7mT4000W20Cwz_Q41EmWWe_t8_Uh_wF_Y_cX-QNvYVcj_O7zfVs9_QtyWFo2_8Jyflo8_AhyJFok_k3-ulxa_kR-wFxwtuE
+}
+
+AWSEntityColoring(VPCCarrierGateway)
+!define VPCCarrierGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, VPCCarrierGateway, VPCCarrierGateway)
+!define VPCCarrierGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, VPCCarrierGateway, VPCCarrierGateway)

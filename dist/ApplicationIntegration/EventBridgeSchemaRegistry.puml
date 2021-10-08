@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EventBridgeSchemaRegistry [64x64/16z] {
+xPS53aD124HP5-v_tihKXMQb_dcH-UHb6YCbIv_7-a7ihix3u0SS3-Fs_UW5uYDtw2DlQN1VsFUrUWAoa_ksy8PYCGXExfl4Uv8XaftG3rkRZSdR3DJYhfBh
+xgjoYxlDI7jYYnDor6cVgpyiQfz3cehrt2zgDQqE2IBM4uiQYThS8G7M4ukAKN927qDXBeTHS68VU7_uajtu_yyVzkVlnp1kYVTFxv_UF-th_TFxf_Tlzlqu
+-txzF6i
+}
+
+AWSEntityColoring(EventBridgeSchemaRegistry)
+!define EventBridgeSchemaRegistry(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, EventBridgeSchemaRegistry, EventBridgeSchemaRegistry)
+!define EventBridgeSchemaRegistry(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, EventBridgeSchemaRegistry, EventBridgeSchemaRegistry)
+!define EventBridgeSchemaRegistryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, EventBridgeSchemaRegistry, EventBridgeSchemaRegistry)
+!define EventBridgeSchemaRegistryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, EventBridgeSchemaRegistry, EventBridgeSchemaRegistry)

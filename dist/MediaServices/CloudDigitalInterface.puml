@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudDigitalInterface [64x64/16z] {
+pLS7Tjqm31E7ADt_mXbyTFFnZOIEku8sM-20e3L-ClGTSeywO_z2k7wBRCb5X5rb-qh2YkbcvdvKilmIkx89TEEH4TeQT6KYefbu_adwvDxyrU8pDTwBdECB
+pFSIIWrErsPcaXln_cayOLLxNO2GCIJsjW484fBMc3caHZTqaO78KJN-ITj5zPgN-BgpBYRMjgR-qawfbVAJTlhvgKw9D4l-AIa7WitVHZ6ALI4dcfBunvzC
+QmjoIi3Q0VzMo7Lgt30Woe2mn_I2vM93ygMdAXOV9nFcadcYb0mT51eFCgDtZCMAKw2W_FbelGyZQCq1ZgJjhy7vA0NoiNtEJwjupv-Vy1MjmFa2AP1_ECU0
+p-Nd_6C1wMr-BI01FWVd2-SRR1bT_JBky67b0J_ZIiStCd_iXpl-YPvVUnZdBtPUN5y_0h4lhzz6_dR_QDg_j7-ny_Ex-wVplR3Vlt7BnpEXEJ_OYODdKdT-
+uO57piJ-_3n2EZ-Jc_FxmzhjdO3V7shSrlvEWlSNLCj7nyVx4xzfyVeHFHtrQo0BjSFvQmCeJFB9F-tzcTCF_rwwlpVjDUy77GriaHUNM6nCth-VTapF1zIC
+Ub3vltY_uOlhg4J77OY-O_nal08
+}
+
+AWSEntityColoring(CloudDigitalInterface)
+!define CloudDigitalInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, CloudDigitalInterface, CloudDigitalInterface)

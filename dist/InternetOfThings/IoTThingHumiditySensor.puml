@@ -1,0 +1,15 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingHumiditySensor [64x64/16z] {
+xLU7biCW33j6REl_V_YABkz1rUNSNkg037a8uhfFtmsrjJ6qLa_VfRKYvnx1W340DXX0atCVnV_dbsud130684xV3hYUirwkqXlIQDUyum2kHD21peaWUISr
+IWAmdyRtgBVurOWGlXgFil33Y7g-xlSK1tpXxsWvVXrie5_Xf_9te1K09QlVrcLZs_wTuzlv1WlGitD8yAbMNRFVrb7vgb_XF6OosFq68g4_erypyEM2yg_i
+dyAL1k86N_UFvj-1jWJDQPNuR-atnxeNlcXZ6eKNi2NuT3UZG1rNu3ur5Nvfn9uctVKEWCgIP21YxZzlHBckFz6va4urcmUyPv-VZNGAtr--5YXVuoTg6NRf
+kcYrrVXLFzts7R3ZzOkyRTevoYTjUNo9VFqZQnDBX-gVpQZxBdHs_PRDJXHPmbJz0qpcH_HJ_zjXlal-URwkMX5bRjS_NNzZxnaIVav_keLxdFro9UhVD10W
+rc0JzMz1yq1O_GtzX_BVsh-zjNzyO__wnlxvc_N___py_zVlXcS
+}
+
+AWSEntityColoring(IoTThingHumiditySensor)
+!define IoTThingHumiditySensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingHumiditySensor, IoTThingHumiditySensor)
+!define IoTThingHumiditySensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingHumiditySensor, IoTThingHumiditySensor)
+!define IoTThingHumiditySensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingHumiditySensor, IoTThingHumiditySensor)
+!define IoTThingHumiditySensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingHumiditySensor, IoTThingHumiditySensor)

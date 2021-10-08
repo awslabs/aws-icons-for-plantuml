@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingIndustrialPC [64x64/16z] {
+xPS5SiKm34Jhh6dlV-0Vqan8fb6vVM5uYHdUlXiJi1w0QTaxm5tlDOdaUY3ZQf2utFiu_zztFYvaSZsGUTadCjtlHUzK7Um6YkuuW182JtezNjgRUhfrGiPV
+v4zn8u_uUNUcQxxt-mBi_Zt-CRD2ZetqIsoGghxRacRRPLBgpt6zxbpD1mbvthZMwbs_By3kNyiFo02G2KWa49xNk9QVU_mRAF5_Pp-WGb1yXurqf4yPY9-m
+uTJqBzAVVt8kuQIW-KVu-_qZ_7hvZGjxkV3x8q4flvfVfD_7qPueuTVRltw_tFxXKYT4L-8lm9h_nlJJswyYIljbR3-jxVStw7zC_UV_-CCmVhEC7utZL-Fu
+-HkC__zzm_pr6p43
+}
+
+AWSEntityColoring(IoTThingIndustrialPC)
+!define IoTThingIndustrialPC(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingIndustrialPC, IoTThingIndustrialPC)
+!define IoTThingIndustrialPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingIndustrialPC, IoTThingIndustrialPC)
+!define IoTThingIndustrialPCParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingIndustrialPC, IoTThingIndustrialPC)
+!define IoTThingIndustrialPCParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingIndustrialPC, IoTThingIndustrialPC)

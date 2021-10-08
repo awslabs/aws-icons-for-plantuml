@@ -1,6 +1,21 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
+sprite $CloudDigitalInterface [64x64/16z] {
+pLS7Tjqm31E7ADt_mXbyTFFnZOIEku8sM-20e3L-ClGTSeywO_z2k7wBRCb5X5rb-qh2YkbcvdvKilmIkx89TEEH4TeQT6KYefbu_adwvDxyrU8pDTwBdECB
+pFSIIWrErsPcaXln_cayOLLxNO2GCIJsjW484fBMc3caHZTqaO78KJN-ITj5zPgN-BgpBYRMjgR-qawfbVAJTlhvgKw9D4l-AIa7WitVHZ6ALI4dcfBunvzC
+QmjoIi3Q0VzMo7Lgt30Woe2mn_I2vM93ygMdAXOV9nFcadcYb0mT51eFCgDtZCMAKw2W_FbelGyZQCq1ZgJjhy7vA0NoiNtEJwjupv-Vy1MjmFa2AP1_ECU0
+p-Nd_6C1wMr-BI01FWVd2-SRR1bT_JBky67b0J_ZIiStCd_iXpl-YPvVUnZdBtPUN5y_0h4lhzz6_dR_QDg_j7-ny_Ex-wVplR3Vlt7BnpEXEJ_OYODdKdT-
+uO57piJ-_3n2EZ-Jc_FxmzhjdO3V7shSrlvEWlSNLCj7nyVx4xzfyVeHFHtrQo0BjSFvQmCeJFB9F-tzcTCF_rwwlpVjDUy77GriaHUNM6nCth-VTapF1zIC
+Ub3vltY_uOlhg4J77OY-O_nal08
+}
+
+AWSEntityColoring(CloudDigitalInterface)
+!define CloudDigitalInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+!define CloudDigitalInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, CloudDigitalInterface, CloudDigitalInterface)
+
 sprite $ElasticTranscoder [64x64/16z] {
 xPP55aCv40EhKRx_XGVI0o4xi8vMeRBLyFModkcddzJw7gum0A-lQ1buPZfOVuutn7XNmiSM17rzrgSEdBerem_TnsqhYGv_lvD-Vvy11gxtUFn-bfYMWdmB
 r-FlIcD3xvM_gRJU6eHYnpUMUeKdsEv70TGB_BolvTx7scT8Nyivughmo3wCpazu6HUvjdoUMvjQguFT8Fl4rt-3wTs8H9mYHSid5chtExF3zRa4X0vzplru
@@ -190,9 +205,9 @@ AWSEntityColoring(KinesisVideoStreams2)
 !define KinesisVideoStreams2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, KinesisVideoStreams2, KinesisVideoStreams2)
 
 sprite $MediaServices [64x64/16z] {
-xPOtkiGW30RRNs7kVzmNS8kCFZQ7gNPj3nb9UZXVlaIo84CrIOCizI1KqFeeKODw0FHyllx06SIcRt0GSzyMVWB7_vdlW9_vJfxvIK1QwHlOcG-oXAZynBNm
-9K_mgU-arhuqcGGSes_vaqamSBNyoII6dkhvrIJKz2UJsF379E8INo8lyUso_WDIsxv3kZRyOl5xVh7vxVDJ3BrzVekXj-_FPEZ5_QtZZsitVZXZwDlnI-Qc
-2-9dGH6_ByiV5-QlR_w_e7wwh7wxl7wyl7vzF5--_08
+xTRLWKKX40FGZ6RwR_YvwmNMbtnpSEEtfmRoKNxwwQTFmRFu0a-8FuaYtlj0rhE8Bl5ywlLdUExIxObjXEyyyx5N83CGRtm0cdNl7O8gllKc0HXlFQ6-oAiK
+3OWRh-1YNvLoEGYLC4Gr-AhBGIW0hJPVD4YS2xBH7mPHvpJxAWC7F1qou5EWh4v_cBxk-NF0MNthTzVrnlrpsVNs_Ukux7hx-Q4RQ-3ytkNk_XYylmRlpnzt
+_xU_N-tlv-3x_UF-7zDFF_stPmq
 }
 
 AWSEntityColoring(MediaServices)
@@ -200,4 +215,19 @@ AWSEntityColoring(MediaServices)
 !define MediaServices(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, MediaServices, MediaServices)
 !define MediaServicesParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, MediaServices, MediaServices)
 !define MediaServicesParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, MediaServices, MediaServices)
+
+sprite $NimbleStudio [64x64/16z] {
+xLO7Rcin32Crt_ql_8Tjl0Y8bVLdsx0Z0cnIbE9r_9zuuurqCrKpZnV8eSG5ulbKPYD0zSW084DA7rTmW3Qc6n147kbyM245N7ODp2EWeo01uv72BuaS_1a9
+Ogd17l7kfnA7KAxF8mczIpzD9h52WvsbDG8rvOAUHWuYJu6cX9foISbn7IVXFL_A894xtGIoBrvBR8LU1_eM45dZGhTg4j6bjssiArw8pe0WQzmPhcCL2Isn
+5FVP-gmmH8dz4jfL8cdjs_H0xXfvkm38s3nHIccwPOXz-Gc0nNuprtThC627m0rU3TQmJjtntQ2pEQL1vDRgTl52SYIi-f27-K3EucPzQVaat-UW6EByug7x
+LlMRJo0OEf2I_tR_wobd02yVPBDIMmCn4nDZck3sHjjiR497Zn9QShNhlrQmzllW-SXJrc-__-fMM-E2d06HZzYlMzrozZt99TAUFzrG39OL0ttwtTdeCo3Y
+2B0xf8-sjOeyxoEhZFxyNxnOHieLBD3cz6uCb6LhOAP0SesBDSpQdRh33F1KDDTUixVg3Wj2mW4-zeOY2tyW5H0t069nGwDqFfRTea1TBpgIz9il4162bbSl
+kXECdfyo082Yvcucz2cXGbBKuia7wE2_Weo8oEDFuOqtlWC
+}
+
+AWSEntityColoring(NimbleStudio)
+!define NimbleStudio(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudio(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudioParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, NimbleStudio, NimbleStudio)
+!define NimbleStudioParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, NimbleStudio, NimbleStudio)
 

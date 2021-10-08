@@ -1,0 +1,12 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTGreengrassRecipe [64x64/16z] {
+xPS54iCm4CJEPzp_FxZChKTbYZKOaC9W-oeyTl1hxD3K9HbJfOS2KesNaDfL0QdqvZi4o3S8e0y1z2d0laK8W0y1y260FWJ0ht53wGJ0XriP_AOJ7FrZuY5P
+YdsVYL_k3xyiSLlWvGY_pjUIk5xtYFYeFwxVyB_t_kFdPro_AVXnIR058HuHllV-VNp_n_KVVerCxlfLLn9W_0Wa6By2mRw8EG
+}
+
+AWSEntityColoring(IoTGreengrassRecipe)
+!define IoTGreengrassRecipe(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTGreengrassRecipe, IoTGreengrassRecipe)
+!define IoTGreengrassRecipe(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTGreengrassRecipe, IoTGreengrassRecipe)
+!define IoTGreengrassRecipeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTGreengrassRecipe, IoTGreengrassRecipe)
+!define IoTGreengrassRecipeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTGreengrassRecipe, IoTGreengrassRecipe)

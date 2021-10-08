@@ -1,0 +1,14 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTThingTemperatureSensor [64x64/16z] {
+xPU9ijiW300bX0Nx_p_SGKCFueoBxDvzcplHcbkZo9z6CHilPaL4r4pNxxwBmtW17mROyjtFypzyhUxk7SOBT7Tlq5w_ywflTMCRapDA0Ztx5QgyOJVIuKse
+-vjGy2tV2EocNvYKUtw7G-I0VkaN3_ghhpFCOxezgDFl7fHrtK-Zjw-l13xzYJtsl-9NVcB-Vf9l0xtlCx2pVpr_yt7o9xRlh_sVsB9_hlo5TVzCFEExJBPz
+0ly9lbhGhltr_3GBT7l-5s1YJ_ra_ukS-f-Pl_F-_ML-Flzf_-ftNVsT_DV09TfsQEdrAqCo8gWj8zZBVmvg1ARWsVFJwTAWLcZIw5aVF1xnlKE-_MXMjI_j
+R-U_1b89ga3Bph_18GxWSYm5msR-ws1IZgE8GS_dlmACWEA0tSf_Ip_JlcWZQFdwOwBrEEfYh_xp-krv_VYyVitNptz8_V_Xv_-__cby0W
+}
+
+AWSEntityColoring(IoTThingTemperatureSensor)
+!define IoTThingTemperatureSensor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTThingTemperatureSensor, IoTThingTemperatureSensor)
+!define IoTThingTemperatureSensor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTThingTemperatureSensor, IoTThingTemperatureSensor)
+!define IoTThingTemperatureSensorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTThingTemperatureSensor, IoTThingTemperatureSensor)
+!define IoTThingTemperatureSensorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTThingTemperatureSensor, IoTThingTemperatureSensor)
