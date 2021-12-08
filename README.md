@@ -310,6 +310,72 @@ The code above generates the same sequence diagram demonstrating how colors, tex
 
 ![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FSequence%2520-%2520Images.puml)
 
+### Groups
+
+Groups are used to show the connection between multiple services or resources. Groups with icons are provided in the similar way as other icons. The file `AWSGroups.puml` provides groups with out icons, for example `AvailabilityZoneGroup`.
+
+```
+@startuml VPC
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/AWSGroups.puml
+
+!include AWSPuml/Compute/EC2.puml
+
+!include AWSPuml/GroupIcons/Cloud.puml
+!include AWSPuml/GroupIcons/VirtualPrivateCloudVPC.puml
+!include AWSPuml/GroupIcons/VPCSubnetPublic.puml
+!include AWSPuml/GroupIcons/VPCSubnetPrivate.puml
+
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+
+CloudGroup(cloud, "AWS Cloud") {
+  VirtualPrivateCloudVPCGroup(vpc, "VPC") {
+
+    VPCInternetGateway(internet_gateway, "Internet Gateway", "")
+
+    AvailabilityZoneGroup(az_1, "Availability Zone 1") {
+      VPCSubnetPublicGroup(az_1_public, "Public Subnet") {
+        VPCNATGateway(az_1_nat_gateway, "NAT Gateway", "")
+      }
+      VPCSubnetPrivateGroup(az_1_private, "Private Subnet") {
+        EC2(az_1_ec2_1, "EC2", "")
+      }
+
+      az_1_ec2_1 .u..> az_1_nat_gateway
+    }
+
+    AvailabilityZoneGroup(az_2, "Availability Zone 2") {
+      VPCSubnetPublicGroup(az_2_public, "Public Subnet") {
+        VPCNATGateway(az_2_nat_gateway, "NAT Gateway", "")
+      }
+      VPCSubnetPrivateGroup(az_2_private, "Private Subnet") {
+        EC2(az_2_ec2_1, "EC2", "")
+      }
+
+      az_2_ec2_1 .u..> az_2_nat_gateway
+    }
+
+    az_2_nat_gateway .u..> internet_gateway
+    az_1_nat_gateway .u..> internet_gateway
+
+  }
+}
+@enduml
+```
+
+This code generates the following diagram:
+
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FVPC.puml)
+
+Groups that cross other groups are not possible as it is not supported in PlantUML.
+
 ## Distribution "Dist" Details
 
 All images, filenames, and content are provided from Amazon Web Services (AWS).

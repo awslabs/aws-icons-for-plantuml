@@ -47,6 +47,11 @@ class Icon:
         self.target_size = 64
         # Should icon be transparent
         self.transparency = False
+        # Group configuration
+        self.group = False
+        self.groupBackgroundColor = None
+        self.groupBorderColor = None
+        self.groupBorderStyle = None
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
         self.category_regex = category_regex
@@ -153,6 +158,10 @@ class Icon:
         puml_content = PUML_LICENSE_HEADER
         target = self.target
         color = self.color
+        group = self.group
+        groupBackgroundColor = self.groupBackgroundColor
+        groupBorderColor = self.groupBorderColor
+        groupBorderStyle = self.groupBorderStyle
 
         puml_content += sprite
         with open(f"{path}/{target}.png", "rb") as png_file:
@@ -166,6 +175,10 @@ class Icon:
         puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
         puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
         puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+        if group:
+            puml_content += f"AWSGroupColoring({target}Group, {groupBackgroundColor}, {groupBorderColor}, {groupBorderStyle})\n"
+            puml_content += f"!define {target}Group(g_alias, g_label) AWSGroupEntity(g_alias, g_label, {color}, {target}, {target}Group)\n"
+
 
         with open(f"{path}/{target}.puml", "w") as f:
             f.write(puml_content)
@@ -229,6 +242,40 @@ class Icon:
                                 f"No color definition found for {source_name}, using black"
                             )
                             self.color = "#000000"
+
+                        if source_category == "GroupIcons":
+                            self.group = True
+
+                            groupBackgroundColor = self._group_value("BackgroundColor", j)
+
+                            if groupBackgroundColor != None:
+                                self.groupBackgroundColor = self._color_name(groupBackgroundColor)
+                            else:
+                                print(
+                                    f"No background color definition found for {source_name}, using white"
+                                )
+                                self.groupBackgroundColor = "#FFFFFF"
+
+                            groupBorderColor = self._group_value("BorderColor", j)
+
+                            if groupBorderColor != None:
+                                self.groupBorderColor = self._color_name(groupBorderColor)
+                            else:
+                                print(
+                                    f"No border color definition found for {source_name}, using black"
+                                )
+                                self.groupBorderColor = "#000000"
+
+                            groupBorderStyle = self._group_value("BorderStyle", j)
+
+                            if groupBorderStyle != None:
+                                self.groupBorderStyle = self._border_style(groupBorderStyle)
+                            else:
+                                print(
+                                    f"No border style definition found for {source_name}, using plain"
+                                )
+                                self.groupBorderStyle = "plain"
+
                         return
                     except KeyError as e:
                         print(f"Error: {e}")
@@ -329,3 +376,17 @@ class Icon:
                 "config.yml requires minimal config section, please see documentation"
             )
             sys.exit(1)
+
+    def _border_style(self, border_style):
+        """Check and Returns valid bordre style"""
+
+        if border_style.lower() in ['bold', 'dotted', 'dashed', 'plain']:
+            return border_style.lower()
+        else:
+            return 'plain'
+
+    def _group_value(self, key, icon):
+        if "Group" in icon and key in icon["Group"]:
+            return icon["Group"][key]
+        elif "Group" in self.config["Defaults"] and key in self.config["Defaults"]["Group"]:
+            return self.config["Defaults"]["Group"][key]

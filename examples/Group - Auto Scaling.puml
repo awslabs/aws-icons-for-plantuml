@@ -1,0 +1,67 @@
+@startuml Auto Scaling Group
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/AWSGroups.puml
+
+!include AWSPuml/Compute/EC2AutoScaling.puml
+!include AWSPuml/Compute/EC2Instance.puml
+
+!include AWSPuml/GroupIcons/Cloud.puml
+!include AWSPuml/GroupIcons/VirtualPrivateCloudVPC.puml
+!include AWSPuml/GroupIcons/AutoScalingGroup.puml
+
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+
+skinparam rectangle<<hidden>> {
+  shadowing false
+  BackgroundColor transparent
+  BorderColor transparent
+}
+
+!unquoted procedure LayoutRectangle($p_alias)
+rectangle " " as $p_alias <<hidden>>
+!endprocedure
+
+CloudGroup(cloud, "AWS Cloud") {
+  VirtualPrivateCloudVPCGroup(vpc, "VPC") {
+
+    AvailabilityZoneGroup(az_2, "Availability Zone 2") {
+      VPCNATGateway(az_2_nat_gateway, "NAT Gateway", "")
+      EC2Instance(az_2_ec2_1, "Instance", "")
+      EC2Instance(az_2_ec2_2, "Instance", "")
+      az_2_nat_gateway -[hidden]d- az_2_ec2_1
+      az_2_ec2_1 -[hidden]d- az_2_ec2_2
+    }
+
+    LayoutRectangle(layout_rectangle) {
+      EC2AutoScaling(ec2_auto_scaling, "Amazon EC2 Auto Scaling", "")
+      AutoScalingGroup(asg_1, "Auto Scaling Group", "")
+      AutoScalingGroup(asg_2, "Auto Scaling Group", "")
+      ec2_auto_scaling -[hidden]d- asg_1
+      asg_1 -[hidden]d- asg_2
+    }
+
+    AvailabilityZoneGroup(az_1, "Availability Zone 1") {
+      VPCNATGateway(az_1_nat_gateway, "NAT Gateway", "")
+      EC2Instance(az_1_ec2_1, "Instance", "")
+      EC2Instance(az_1_ec2_2, "Instance", "")
+      az_1_nat_gateway -[hidden]d- az_1_ec2_1
+      az_1_ec2_1 -[hidden]d- az_1_ec2_2
+    }
+
+    ec2_auto_scaling -[hidden]l- az_1_nat_gateway
+    ec2_auto_scaling -[hidden]r- az_2_nat_gateway
+
+    asg_1 -[dashed,#D86613]l- az_1_ec2_1
+    asg_1 -[dashed,#D86613]r- az_2_ec2_1
+
+    asg_2 -[dashed,#D86613]l- az_1_ec2_2
+    asg_2 -[dashed,#D86613]r- az_2_ec2_2
+
+  }
+}
+@enduml

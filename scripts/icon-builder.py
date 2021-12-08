@@ -151,6 +151,27 @@ GROUPICONS_COLORS = {
     "VirtualPrivateCloudVPC": "ForestGreen",
 }
 
+GROUPICONS_BORDER_COLORS = {
+    "Cloud": "SquidInk",
+    "Cloudalt": "SquidInk",
+    "CorporateDataCenter": "SquidInk",
+    "Region": "CeruleanBlue",
+    "ServerContents": "SquidInk",
+    "StepFunction": "MaroonFlush",
+    "VPCSubnetPrivate": "Transparent",
+    "VPCSubnetPublic": "Transparent",
+    "VirtualPrivateCloudVPC": "ForestGreen",
+}
+
+GROUPICONS_BORDER_STYLE = {
+    "Region": "Dotted",
+}
+
+GROUPICONS_BACKGROUND_COLORS = {
+    "VPCSubnetPrivate": "CeruleanBlueWithOpacity",
+    "VPCSubnetPublic": "ForestGreenWithOpacity",
+}
+
 TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
@@ -160,17 +181,24 @@ TEMPLATE_DEFAULT = """
 Defaults:
   Colors:
     CeruleanBlue: "#3B48CC"
+    CeruleanBlueWithOpacity: "#E7F2F8"
     Crimson: "#D6242D"
     Elm: "#1C7B68"
     ForestGreen: "#3F8624"
+    ForestGreenWithOpacity: "#E6F2E7"
     MaroonFlush: "#CC2264"
     Meteor: "#D86613"
     PurpleHeart: "#693CC5"
     SquidInk: "#232F3E"
     White: "#FFFFFF"
+    Transparent: "Transparent"
   # Defaults for services not found
   Category:
     Color: SquidInk
+  Group:
+    BorderStyle: Plain
+    BorderColor: Meteor
+    BackgroundColor: White
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 """
@@ -245,6 +273,7 @@ def verify_environment():
         "AWSCommon.puml",
         "AWSRaw.puml",
         "AWSSimplified.puml",
+        "AWSGroups.puml"
     ]
     for file in required_files:
         q = dir / file
@@ -354,8 +383,21 @@ def create_config_template():
             else:
                 icon_entry["ZComment"] = "******* Duplicate target name, must be made unique for All.puml ********"
 
-            if category == "GroupIcons" and target in GROUPICONS_COLORS:
-                icon_entry["Color"] = GROUPICONS_COLORS[target]
+            if category == "GroupIcons":
+                if target in GROUPICONS_COLORS:
+                    icon_entry["Color"] = GROUPICONS_COLORS[target]
+
+                if target in GROUPICONS_BORDER_STYLE or target in GROUPICONS_BORDER_COLORS or target in GROUPICONS_BACKGROUND_COLORS:
+                   icon_entry["Group"] = {}
+
+                if target in GROUPICONS_BORDER_STYLE:
+                    icon_entry["Group"]["BorderStyle"] = GROUPICONS_BORDER_STYLE[target]
+
+                if target in GROUPICONS_BORDER_COLORS:
+                    icon_entry["Group"]["BorderColor"] = GROUPICONS_BORDER_COLORS[target]
+
+                if target in GROUPICONS_BACKGROUND_COLORS:
+                    icon_entry["Group"]["BackgroundColor"] = GROUPICONS_BACKGROUND_COLORS[target]
 
             category_dict[category]["Icons"].append(icon_entry)
 

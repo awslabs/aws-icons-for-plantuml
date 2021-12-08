@@ -15,6 +15,8 @@
 
 skinparam defaultTextAlignment center
 
+skinparam PackageTitleAlignment Left
+
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
 
@@ -40,6 +42,15 @@ skinparam rectangle<<stereo>> {
 '}
 !enddefinelong
 
+!definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
+  skinparam rectangle<<g_stereo>> {
+    backgroundColor g_background_color
+    borderColor g_border_color
+    borderStyle g_border_style
+    shadowing false
+  }
+!enddefinelong
+
 ' Layout
 ' ##################################
 
@@ -59,6 +70,10 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 !return %call_user_func("$" + $service + "IMG")
 !endfunction
 
+!function $AWSGroupImg($service)
+!return %call_user_func("$" + $service + "IMG", "0.5")
+!endfunction
+
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 rectangle "==e_label\n$AWSImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
@@ -73,4 +88,12 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>"
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
 participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong AWSGroupEntity(g_alias, g_label, g_color, g_stereo)
+rectangle "<color:g_color>g_label</color>" as g_alias <<g_stereo>>
+!enddefinelong
+
+!definelong AWSGroupEntity(g_alias, g_label, g_color, g_sprite, g_stereo)
+rectangle "$AWSGroupImg(g_sprite)<color:g_color>  g_label</color>" as g_alias <<g_stereo>>
 !enddefinelong

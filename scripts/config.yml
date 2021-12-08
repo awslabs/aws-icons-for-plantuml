@@ -7,17 +7,24 @@
 Defaults:
   Colors:
     CeruleanBlue: "#3B48CC"
+    CeruleanBlueWithOpacity: "#E7F2F8"
     Crimson: "#D6242D"
     Elm: "#1C7B68"
     ForestGreen: "#3F8624"
+    ForestGreenWithOpacity: "#E6F2E7"
     MaroonFlush: "#CC2264"
     Meteor: "#D86613"
     PurpleHeart: "#693CC5"
     SquidInk: "#232F3E"
     White: "#FFFFFF"
+    Transparent: "Transparent"
   # Defaults for services not found
   Category:
     Color: SquidInk
+  Group:
+    BorderStyle: Plain
+    BorderColor: Meteor
+    BackgroundColor: White
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 Categories:
@@ -1101,14 +1108,20 @@ Categories:
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: AutoScalingGroup
     - Color: SquidInk
+      Group:
+        BorderColor: SquidInk
       Source: AWS-Cloud_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: Cloud
     - Color: SquidInk
+      Group:
+        BorderColor: SquidInk
       Source: AWS-Cloud-alt_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: Cloudalt
     - Color: SquidInk
+      Group:
+        BorderColor: SquidInk
       Source: Corporate-data-center_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: CorporateDataCenter
@@ -1121,10 +1134,15 @@ Categories:
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: ElasticBeanstalkContainer
     - Color: CeruleanBlue
+      Group:
+        BorderColor: CeruleanBlue
+        BorderStyle: Dotted
       Source: Region_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: Region
     - Color: SquidInk
+      Group:
+        BorderColor: SquidInk
       Source: Server-contents_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: ServerContents
@@ -1133,18 +1151,28 @@ Categories:
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: SpotFleet
     - Color: MaroonFlush
+      Group:
+        BorderColor: MaroonFlush
       Source: AWS-Step-Function_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: StepFunction
     - Color: CeruleanBlue
+      Group:
+        BackgroundColor: CeruleanBlueWithOpacity
+        BorderColor: Transparent
       Source: VPC-subnet-private_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: VPCSubnetPrivate
     - Color: ForestGreen
+      Group:
+        BackgroundColor: ForestGreenWithOpacity
+        BorderColor: Transparent
       Source: VPC-subnet-public_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: VPCSubnetPublic
     - Color: ForestGreen
+      Group:
+        BorderColor: ForestGreen
       Source: Virtual-private-cloud-VPC_light-bg.svg
       SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
       Target: VirtualPrivateCloudVPC
