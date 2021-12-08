@@ -6,14 +6,17 @@
 Defaults:
   Colors:
     CeruleanBlue: "#3B48CC"
+    CeruleanBlueWithOpacity: "#E7F2F8"
     Crimson: "#D6242D"
     Elm: "#1C7B68"
     ForestGreen: "#3F8624"
+    ForestGreenWithOpacity: "#E6F2E7"
     MaroonFlush: "#CC2264"
     Meteor: "#D86613"
     PurpleHeart: "#693CC5"
     SquidInk: "#232F3E"
     White: "#FFFFFF"
+    Transparent: "Transparent"
   # Defaults for services not found
   Category:
     Color: SquidInk
@@ -989,54 +992,106 @@ Categories:
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: AutoScalingGroup
         Color: Meteor
+        Group:
+          BorderStyle: Plain
+          BorderColor: Meteor
+          BackgroundColor: White
       - Source: AWS-Cloud_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: Cloud
         Color: SquidInk
+        Group:
+          BorderStyle: Plain
+          BorderColor: SquidInk
+          BackgroundColor: White
       - Source: AWS-Cloud-alt_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: Cloudalt
         Color: SquidInk
+        Group:
+          BorderStyle: Plain
+          BorderColor: SquidInk
+          BackgroundColor: White
       - Source: Corporate-data-center_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: CorporateDataCenter
         Color: SquidInk
+        Group:
+          BorderStyle: Plain
+          BorderColor: SquidInk
+          BackgroundColor: White
       - Source: EC2-instance-container_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: EC2InstanceContainer
         Color: Meteor
+        Group:
+          BorderStyle: Plain
+          BorderColor: Meteor
+          BackgroundColor: White
       - Source: Elastic-Beanstalk-container_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: ElasticBeanstalkContainer
         Color: Meteor
+        Group:
+          BorderStyle: Plain
+          BorderColor: Meteor
+          BackgroundColor: White
       - Source: Region_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: Region
         Color: CeruleanBlue
+        Group:
+          BorderStyle: Dotted
+          BorderColor: CeruleanBlue
+          BackgroundColor: White
       - Source: Server-contents_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: ServerContents
         Color: SquidInk
+        Group:
+          BorderStyle: Plain
+          BorderColor: SquidInk
+          BackgroundColor: White
       - Source: Spot-fleet_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: SpotFleet
         Color: Meteor
+        Group:
+          BorderStyle: Plain
+          BorderColor: Meteor
+          BackgroundColor: White
       - Source: AWS-Step-Function_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: StepFunction
         Color: MaroonFlush
+        Group:
+          BorderStyle: Plain
+          BorderColor: MaroonFlush
+          BackgroundColor: White
       - Source: VPC-subnet-private_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: VPCSubnetPrivate
         Color: CeruleanBlue
+        Group:
+          BorderStyle: Plain
+          BorderColor: Transparent
+          BackgroundColor: CeruleanBlueWithOpacity
       - Source: VPC-subnet-public_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: VPCSubnetPublic
         Color: ForestGreen
+        Group:
+          BorderStyle: Plain
+          BorderColor: Transparent
+          BackgroundColor: ForestGreenWithOpacity
       - Source: Virtual-private-cloud-VPC_light-bg.svg
         SourceDir: AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons
         Target: VirtualPrivateCloudVPC
         Color: ForestGreen
+        Group:
+          BorderStyle: Plain
+          BorderColor: ForestGreen
+          BackgroundColor: White
   InternetOfThings:
     Color: ForestGreen
     Icons:

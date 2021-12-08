@@ -11,6 +11,8 @@ AWSEntityColoring(AutoScalingGroup)
 !define AutoScalingGroup(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, AutoScalingGroup, AutoScalingGroup)
 !define AutoScalingGroupParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, AutoScalingGroup, AutoScalingGroup)
 !define AutoScalingGroupParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, AutoScalingGroup, AutoScalingGroup)
+AWSGroupColoring(AutoScalingGroupGroup, #FFFFFF, #D86613, plain)
+!define AutoScalingGroupGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #D86613, AutoScalingGroup, AutoScalingGroupGroup)
 
 sprite $Cloud [64x64/16z] {
 xPHLOY0X341VWjlzZxjRLvWmRJzvun8d6N_AuN0uzEG5nCNs8-d8ex0JmD_NK0L9Js8zAwIxuX3xsrCMuYtn1ldJizppGD_4tnNKVV64_nwGFfnotigayFst
@@ -23,6 +25,8 @@ AWSEntityColoring(Cloud)
 !define Cloud(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cloud, Cloud)
 !define CloudParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Cloud, Cloud)
 !define CloudParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Cloud, Cloud)
+AWSGroupColoring(CloudGroup, #FFFFFF, #232F3E, plain)
+!define CloudGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, Cloud, CloudGroup)
 
 sprite $Cloudalt [64x64/16z] {
 xTHLWkCm44NHAvLOzVQ_t05PQNBIy3Fe4uvLPDBlTxbSBjvhIQMlhtFgC5tB_cUsaajpdNdc4ATKeEgd2EtsnUM9GzD90q88G71ri5KEIFjBb0omP86aaswh
@@ -37,6 +41,8 @@ AWSEntityColoring(Cloudalt)
 !define Cloudalt(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Cloudalt, Cloudalt)
 !define CloudaltParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Cloudalt, Cloudalt)
 !define CloudaltParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Cloudalt, Cloudalt)
+AWSGroupColoring(CloudaltGroup, #FFFFFF, #232F3E, plain)
+!define CloudaltGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, Cloudalt, CloudaltGroup)
 
 sprite $CorporateDataCenter [64x64/16z] {
 xPDL0iOW3COexVgL-n_uL-RkcfTf9WJ22ZmyA9NGiJwx4ZpUHtw0s_fCytplxkplty-mzV-p_q5bd_mFxjNXKYptpQMWt-TqD_LpUBIVo0m_PRnliF33KW4s
@@ -48,6 +54,8 @@ AWSEntityColoring(CorporateDataCenter)
 !define CorporateDataCenter(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, CorporateDataCenter, CorporateDataCenter)
 !define CorporateDataCenterParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, CorporateDataCenter, CorporateDataCenter)
 !define CorporateDataCenterParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, CorporateDataCenter, CorporateDataCenter)
+AWSGroupColoring(CorporateDataCenterGroup, #FFFFFF, #232F3E, plain)
+!define CorporateDataCenterGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, CorporateDataCenter, CorporateDataCenterGroup)
 
 sprite $EC2InstanceContainer [64x64/16z] {
 xTRL0SCm30HGIMVQV-9UcMC8m_i8cZajo-402Rogy1B5U7NYU3K9cu_lG2h6gmWlThcgwECpN5TyaophZkzZ9v-9dwjZ62--9yt7Lqzy-Y8NsVWNVVFlM_yb
@@ -59,6 +67,8 @@ AWSEntityColoring(EC2InstanceContainer)
 !define EC2InstanceContainer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2InstanceContainer, EC2InstanceContainer)
 !define EC2InstanceContainerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2InstanceContainer, EC2InstanceContainer)
 !define EC2InstanceContainerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2InstanceContainer, EC2InstanceContainer)
+AWSGroupColoring(EC2InstanceContainerGroup, #FFFFFF, #D86613, plain)
+!define EC2InstanceContainerGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #D86613, EC2InstanceContainer, EC2InstanceContainerGroup)
 
 sprite $ElasticBeanstalkContainer [64x64/16z] {
 xPK7cgiu40Qhi-z_OGS17mWvxxvCpJW9_iuIfx-FWuCAk-BvdJgL6V7wtBU2M6I62qX-AXSaQXD9V2hNRSp-eG55-uM03r88P5ynHwvXPRvLII77Z705qDSM
@@ -73,6 +83,8 @@ AWSEntityColoring(ElasticBeanstalkContainer)
 !define ElasticBeanstalkContainer(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, ElasticBeanstalkContainer, ElasticBeanstalkContainer)
 !define ElasticBeanstalkContainerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, ElasticBeanstalkContainer, ElasticBeanstalkContainer)
 !define ElasticBeanstalkContainerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, ElasticBeanstalkContainer, ElasticBeanstalkContainer)
+AWSGroupColoring(ElasticBeanstalkContainerGroup, #FFFFFF, #D86613, plain)
+!define ElasticBeanstalkContainerGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #D86613, ElasticBeanstalkContainer, ElasticBeanstalkContainerGroup)
 
 sprite $Region [64x64/16z] {
 xTH50W8n50JHYgVlVs0SLdZZ_Dg_cRWUMXIrqXsUWNe_7vG9Zi-DfFihG9THzRWgm_HjdEkoFrkxx4iz5HHd_fKamtUOXXymPFX4a-4pHOQlP3a-Kom_4ytn
@@ -84,6 +96,8 @@ AWSEntityColoring(Region)
 !define Region(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, Region, Region)
 !define RegionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, Region, Region)
 !define RegionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, Region, Region)
+AWSGroupColoring(RegionGroup, #FFFFFF, #3B48CC, dotted)
+!define RegionGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #3B48CC, Region, RegionGroup)
 
 sprite $ServerContents [64x64/16z] xTQr0S0W441Hz6J_XTF7tVYlnpdnKm4rJgg-GWgJqhhnvgEieV4oi6cyXG7Rj7uPkFFyZDU1Uzy_3_1-Ftz_tf_nZ6SyuoUbE_hdzO0E
 
@@ -92,6 +106,8 @@ AWSEntityColoring(ServerContents)
 !define ServerContents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ServerContents, ServerContents)
 !define ServerContentsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ServerContents, ServerContents)
 !define ServerContentsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ServerContents, ServerContents)
+AWSGroupColoring(ServerContentsGroup, #FFFFFF, #232F3E, plain)
+!define ServerContentsGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, ServerContents, ServerContentsGroup)
 
 sprite $SpotFleet [64x64/16z] {
 xPO7akGm30CRf2dw_n--P9SqyidqvRYei67K62YI-y_JczuaVHyFtqfck0b0vYs_3F4-hXcVM100tgP1QpcM1ot08e_y6GPOEt33x_ZK9uDqKEHXwUTa19wV
@@ -106,6 +122,8 @@ AWSEntityColoring(SpotFleet)
 !define SpotFleet(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, SpotFleet, SpotFleet)
 !define SpotFleetParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, SpotFleet, SpotFleet)
 !define SpotFleetParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, SpotFleet, SpotFleet)
+AWSGroupColoring(SpotFleetGroup, #FFFFFF, #D86613, plain)
+!define SpotFleetGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #D86613, SpotFleet, SpotFleetGroup)
 
 sprite $StepFunction [64x64/16z] {
 xTO5eiCm30DGEMpT_xxZCiRv_FV6QrMkOtwMjpUDtaUbLH7SIA6D2g9gX2XDCW9l0Z9D8X9l4g8r7xiFam9HKWM5DXxm7l2q2hW9j5D0sG9WfIHZW8obKmTj
@@ -118,6 +136,8 @@ AWSEntityColoring(StepFunction)
 !define StepFunction(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, StepFunction, StepFunction)
 !define StepFunctionParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, StepFunction, StepFunction)
 !define StepFunctionParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, StepFunction, StepFunction)
+AWSGroupColoring(StepFunctionGroup, #FFFFFF, #CC2264, plain)
+!define StepFunctionGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #CC2264, StepFunction, StepFunctionGroup)
 
 sprite $VPCSubnetPrivate [64x64/16z] {
 xTJLWSKm34JHQsS4wR_WPMOfoy_p5pXcQ_-tMLd9YEnZSHNrcZ1WIXEm1fztp62MkHXtmyw1YZok-8C6eZfwtn_4YpD8nkCNWwnuVpfXuRMzywSDMiNhkLVD
@@ -129,6 +149,8 @@ AWSEntityColoring(VPCSubnetPrivate)
 !define VPCSubnetPrivate(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3B48CC, VPCSubnetPrivate, VPCSubnetPrivate)
 !define VPCSubnetPrivateParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3B48CC, VPCSubnetPrivate, VPCSubnetPrivate)
 !define VPCSubnetPrivateParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3B48CC, VPCSubnetPrivate, VPCSubnetPrivate)
+AWSGroupColoring(VPCSubnetPrivateGroup, #E7F2F8, Transparent, plain)
+!define VPCSubnetPrivateGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #3B48CC, VPCSubnetPrivate, VPCSubnetPrivateGroup)
 
 sprite $VPCSubnetPublic [64x64/16z] {
 xPG5WiKm20M75afVxd_VTNVe-i_KPU8m_YsJYJBLbdVd2jzRUW3BkYv0DFGLGbTz25ZBkcFxNKSCB-e9kdyIPB7rZuKiza3OunU6Iir_sc6lTI3O7h_OQdFe
@@ -140,6 +162,8 @@ AWSEntityColoring(VPCSubnetPublic)
 !define VPCSubnetPublic(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
 !define VPCSubnetPublicParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
 !define VPCSubnetPublicParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, VPCSubnetPublic, VPCSubnetPublic)
+AWSGroupColoring(VPCSubnetPublicGroup, #E6F2E7, Transparent, plain)
+!define VPCSubnetPublicGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #3F8624, VPCSubnetPublic, VPCSubnetPublicGroup)
 
 sprite $VirtualPrivateCloudVPC [64x64/16z] {
 xPL5OiD034M_MEhzxriCQSpfTbxG80P_T2QJoIHDHTJpFMadt61_mpO3P94PHW1VzI5UPOA1k2fkhyTsJK4HR4W6S244WOwd37m-Tw1Qd6Hu6PFuiRp2LvNU
@@ -153,4 +177,6 @@ AWSEntityColoring(VirtualPrivateCloudVPC)
 !define VirtualPrivateCloudVPC(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, VirtualPrivateCloudVPC, VirtualPrivateCloudVPC)
 !define VirtualPrivateCloudVPCParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, VirtualPrivateCloudVPC, VirtualPrivateCloudVPC)
 !define VirtualPrivateCloudVPCParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, VirtualPrivateCloudVPC, VirtualPrivateCloudVPC)
+AWSGroupColoring(VirtualPrivateCloudVPCGroup, #FFFFFF, #3F8624, plain)
+!define VirtualPrivateCloudVPCGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #3F8624, VirtualPrivateCloudVPC, VirtualPrivateCloudVPCGroup)
 

@@ -188,6 +188,7 @@ def verify_environment():
         "AWSCommon.puml",
         "AWSRaw.puml",
         "AWSSimplified.puml",
+        "AWSGroups.puml"
     ]
     for file in required_files:
         q = dir / file

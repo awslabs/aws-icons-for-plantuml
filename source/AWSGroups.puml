@@ -1,0 +1,25 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+skinparam PackageTitleAlignment Left
+
+!definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
+  skinparam rectangle<<g_stereo>> {
+    backgroundColor g_background_color
+    borderColor g_border_color
+    borderStyle g_border_style
+    shadowing false
+  }
+!enddefinelong
+
+AWSGroupColoring(AvalabilityZone, #FFFFFF, #03A0C7, dashed)
+!define AvalabilityZoneGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #03A0C7, AvalabilityZone)
+
+AWSGroupColoring(SecurityGroup, #FFFFFF, #DF3312, plain)
+!define SecurityGroupGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #DF3312, SecurityGroup)
+
+AWSGroupColoring(GenericGroup, #FFFFFF, #232F3E, dashed)
+!define GenericGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, GenericGroup)
+
+AWSGroupColoring(GenericAltGroup, #EFF0F2, Transparent, none)
+!define GenericAltGroup(g_alias, g_label) AWSGroupEntity(g_alias, g_label, #232F3E, GenericAltGroup)

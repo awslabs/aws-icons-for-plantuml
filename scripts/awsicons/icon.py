@@ -42,6 +42,13 @@ class Icon:
         self.target = None
         # Color to apply to icon (web hex)
         self.color = None
+
+        # Group configuration
+        self.group = False
+        self.groupBackgroundColor = None
+        self.groupBorderColor = None
+        self.groupBorderStyle = None
+
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
         self.category_regex = category_regex
@@ -147,6 +154,10 @@ class Icon:
         try:
             target = self.target
             color = self.color
+            group = self.group
+            groupBackgroundColor = self.groupBackgroundColor
+            groupBorderColor = self.groupBorderColor
+            groupBorderStyle = self.groupBorderStyle
             result = subprocess.run(
                 [
                     "java",
@@ -167,6 +178,9 @@ class Icon:
             puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
             puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
             puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+            if group:
+              puml_content += f"AWSGroupColoring({target}Group, {groupBackgroundColor}, {groupBorderColor}, {groupBorderStyle})\n"
+              puml_content += f"!define {target}Group(g_alias, g_label) AWSGroupEntity(g_alias, g_label, {color}, {target}, {target}Group)\n"
 
             with open(f"{path}/{target}.puml", "w") as f:
                 f.write(puml_content)
@@ -202,6 +216,13 @@ class Icon:
                                 f"No color definition found for {source_name}, using black"
                             )
                             self.color = "#000000"
+
+                        if "Group" in j:
+                          self.group = True
+                          self.groupBackgroundColor = self._color_name(j["Group"]["BackgroundColor"])
+                          self.groupBorderColor = self._color_name(j["Group"]["BorderColor"])
+                          self.groupBorderStyle =  self._border_style(j["Group"]["BorderStyle"])
+
                         return
                     except KeyError as e:
                         print(f"Error: {e}")
@@ -302,3 +323,11 @@ class Icon:
                 "config.yml requires minimal config section, please see documentation"
             )
             sys.exit(1)
+
+    def _border_style(self, border_style):
+      """Check and Returns valid bordre style"""
+
+      if border_style.lower() in ['bold', 'dotted', 'dashed', 'plain']:
+        return border_style.lower()
+      else:
+        return 'plain'

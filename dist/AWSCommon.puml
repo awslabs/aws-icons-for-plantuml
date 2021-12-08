@@ -15,6 +15,8 @@
 
 skinparam defaultTextAlignment center
 
+skinparam PackageTitleAlignment Left
+
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
 
@@ -37,6 +39,15 @@ skinparam participant<<stereo>> {
     BackgroundColor AWS_BG_COLOR
     BorderColor AWS_BORDER_COLOR
 }
+!enddefinelong
+
+!definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
+  skinparam rectangle<<g_stereo>> {
+    backgroundColor g_background_color
+    borderColor g_border_color
+    borderStyle g_border_style
+    shadowing false
+  }
 !enddefinelong
 
 ' Layout
@@ -69,4 +80,12 @@ participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias << ($p_
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
 participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias << ($p_sprite, p_color) p_stereo>>
+!enddefinelong
+
+!definelong AWSGroupEntity(g_alias, g_label, g_color, g_stereo)
+rectangle "<color:g_color>g_label</color>" as g_alias <<g_stereo>>
+!enddefinelong
+
+!definelong AWSGroupEntity(g_alias, g_label, g_color, g_sprite, g_stereo)
+rectangle "<color:g_color><$g_sprite{scale=.5}>  g_label</color>" as g_alias <<g_stereo>>
 !enddefinelong

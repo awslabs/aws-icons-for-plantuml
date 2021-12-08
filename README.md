@@ -51,7 +51,7 @@ All examples reference _main_ and are designed with the most recent files. For c
 
 For local access use `!include` instead of `!includeurl` and include the path to the file's location:
 
-```bash
+```plantuml
 !include path/to/AWSCommon.puml
 ```
 
@@ -71,7 +71,7 @@ All of the services can be found in the `dist/` directory, which includes the se
 
 For example, including these files from the repository (URL), the includes would look like this:
 
-```bash
+```plantuml
 ' Define the main location (URL or local file path)
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
 ' Include main AWSCommon and then sprite files
@@ -120,7 +120,7 @@ Consider these as starting points for how to use the resources in your own docum
 
 This example shows AWS IoT processing of messages via the Rules Engine with an error action. It utilizes AWS service entities to show a simple architecture workflow. Each entity has a unique entity name and icon (`<<foo..>>`), name of function, and additional details or constraints.
 
-```bash
+```plantuml
 @startuml Basic Usage - AWS IoT Rules Engine
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
@@ -152,7 +152,7 @@ This code generates the following diagram:
 
 The individual icon sprites (complete list [here](AWSSymbols.md)) can be included in all diagrams. Here are few examples showing sprite usage on different entities (component, database, and AWS PlantUML).
 
-```bash
+```plantuml
 @startuml Raw usage - Sprites
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
@@ -180,7 +180,7 @@ This code generates the following diagram:
 
 In some cases, PlantUML diagrams may contain too much information, but are still usable for executive or higher level conversations. Using the `AWSSimplified.puml` file filters out a lot of the technical details, while keeping the interactions between entities. Here is an example of a technical view and simplified view. To generate the simplified view, uncomment the `!includeurl` statement and regenerate the image.
 
-```bash
+```plantuml
 @startuml Two Modes - Technical View
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
@@ -225,7 +225,7 @@ And if the `!includeurl AWSPuml/AWSSimplified.puml`is uncommented, this simplifi
 
 Icons can also be used in UML sequence diagrams, either in full stereotype or by just using sprites and formatting via `participant` description. Here are examples of both.
 
-```bash
+```plantuml
 @startuml Sequence Diagram - Spots and stereotypes
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
@@ -257,7 +257,7 @@ This code generates the fully detailed diagram with stereotypes. The participant
 
 ![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv11.1%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
-```bash
+```plantuml
 @startuml Sequence Diagram - Sprites
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
@@ -298,6 +298,70 @@ api -> user: Returns status code
 This code generates the same sequence diagram demonstrating how text and icon (sprite) positioning can be modified.
 
 ![Sprite View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv11.1%2Fexamples%2FSequence%2520-%2520Sprites.puml)
+
+### Groups
+
+Groups are used to show the connection between multiple services or resources. Groups with icons are provided in the similar way as other sprites. The file `AWSGroups.puml` provides groups with out icons, for example `AvalabilityZoneGroup`.
+
+```plantuml
+@startuml VPC
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
+
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/AWSGroups.puml
+
+!include AWSPuml/Compute/EC2.puml
+
+!include AWSPuml/GroupIcons/Cloud.puml
+!include AWSPuml/GroupIcons/VirtualPrivateCloudVPC.puml
+!include AWSPuml/GroupIcons/VPCSubnetPublic.puml
+!include AWSPuml/GroupIcons/VPCSubnetPrivate.puml
+
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+
+CloudGroup(cloud, "AWS Cloud") {
+  VirtualPrivateCloudVPCGroup(vpc, "VPC") {
+
+    VPCInternetGateway(internet_gateway, "Internet Gateway", "")
+
+    AvalabilityZoneGroup(az_1, "Availability Zone 1") {
+      VPCSubnetPublicGroup(az_1_public, "Public Subnet") {
+        VPCNATGateway(az_1_nat_gateway, "NAT Gateway", "")
+      }
+      VPCSubnetPrivateGroup(az_1_private, "Private Subnet") {
+        EC2(az_1_ec2_1, "EC2", "")
+      }
+
+      az_1_ec2_1 .u..> az_1_nat_gateway
+    }
+
+    AvalabilityZoneGroup(az_2, "Availability Zone 2") {
+      VPCSubnetPublicGroup(az_2_public, "Public Subnet") {
+        VPCNATGateway(az_2_nat_gateway, "NAT Gateway", "")
+      }
+      VPCSubnetPrivateGroup(az_2_private, "Private Subnet") {
+        EC2(az_2_ec2_1, "EC2", "")
+      }
+
+      az_2_ec2_1 .u..> az_2_nat_gateway
+    }
+
+    az_2_nat_gateway .u..> internet_gateway
+    az_1_nat_gateway .u..> internet_gateway
+
+  }
+}
+@enduml
+```
+
+This code generates the following diagram:
+
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv11.1%2Fexamples%2FVPC.puml)
+
+Groups that cross other groups are not possible as it is not supported in PlantUML.
 
 ## Distribution "Dist" Details
 
