@@ -93,7 +93,7 @@ This is the [`examples/HelloWorld.puml`](examples/HelloWorld.puml) diagram code:
 
 !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
 !includeurl AWSPuml/AWSCommon.puml
-!includeurl AWSPuml/EndUserComputing/all.puml
+!includeurl AWSPuml/BusinessApplications/all.puml
 !includeurl AWSPuml/Storage/SimpleStorageService.puml
 
 actor "Person" as personAlias
