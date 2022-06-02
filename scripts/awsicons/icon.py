@@ -11,6 +11,7 @@ import tempfile
 from subprocess import PIPE
 from pathlib import Path
 from lxml import etree
+import base64
 
 PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
@@ -42,6 +43,10 @@ class Icon:
         self.target = None
         # Color to apply to icon (web hex)
         self.color = None
+        # Icon size
+        self.target_size = 64
+        # Should icon be transparent
+        self.transparency = False
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
         self.category_regex = category_regex
@@ -65,7 +70,7 @@ class Icon:
             )
             self._set_values(self.source_name, self.temp_category)
 
-    def generate_image(self, path, color=None, max_target_size=64, transparency=False):
+    def generate_image(self, path, color=None, max_target_size=64, transparency=False, gradient=True):
         """Create image from SVG file and save full color without transparency to path"""
 
         # PlantUML only supports 16 layers of gray causing banding when applying to the
@@ -83,32 +88,35 @@ class Icon:
         parser = etree.XMLParser(remove_blank_text=True)
         root = etree.parse(str(self.filename), parser)
 
-        # Replace any gradient fills with the requisite color
-        # This was in effect for 2021.01.31 Category icons
-        elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
-        for elem in elements:
-            elem.attrib["fill"] = self.color
+        if gradient == True:
+            # Replace any gradient fills with the requisite color
+            # This was in effect for 2021.01.31 Category icons
+            elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
+            for elem in elements:
+                elem.attrib["fill"] = self.color
 
-        # For resource or category icons which are transparent, set fill to white
-        # TODO - can we query without namespaces?
-        elem = root.xpath(
-            '//s:g[starts-with(@id, "Icon-Resource")]',
-            namespaces=ns,
-        )
-        if elem:
-            # To set fill, add a rect before any of the paths.
-            elem[0].insert(0, white_rect)
-        # For category icons, set fill to category color
-        elem = root.xpath(
-            '//s:g[starts-with(@id, "Icon-Architecture-Category")]',
-            namespaces=ns,
-        )
-        if elem:
-            # To set fill, add a rect before any of the paths.
-            elem[0].insert(0, color_rect)
+        if transparency == False:
+            # For resource or category icons which are transparent, set fill to white
+            # TODO - can we query without namespaces?
+            elem = root.xpath(
+                '//s:g[starts-with(@id, "Icon-Resource")]',
+                namespaces=ns,
+            )
+            if elem:
+                # To set fill, add a rect before any of the paths.
+                elem[0].insert(0, white_rect)
+            # For category icons, set fill to category color
+            elem = root.xpath(
+                '//s:g[starts-with(@id, "Icon-Architecture-Category")]',
+                namespaces=ns,
+            )
+            if elem:
+                # To set fill, add a rect before any of the paths.
+                elem[0].insert(0, color_rect)
 
         # Call batik to generate the PNG from SVG - replace the fill color with the icon color
         # The SVG files for services use a gradient fill that comes out as gray stepping otherwise
+        # https://xmlgraphics.apache.org/batik/tools/rasterizer.html
         try:
             # Create temporary SVG file with etree
             svg_temp = tempfile.NamedTemporaryFile()
@@ -140,19 +148,39 @@ class Icon:
             sys.exit(1)
         return
 
-    def generate_puml(self, path):
+    def generate_puml(self, path, sprite):
         """Generate puml file for service"""
         puml_content = PUML_LICENSE_HEADER
-        # Start plantuml.jar and encode sprite from main PNG
+        target = self.target
+        color = self.color
+
+        puml_content += sprite
+        with open(f"{path}/{target}.png", "rb") as png_file:
+            encoded_string = base64.b64encode(png_file.read())
+            puml_content += f"!function ${target}IMG($scale=1)\n"
+            puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
+            puml_content += f"!endfunction\n\n"
+
+        puml_content += f"AWSEntityColoring({target})\n"
+        puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
+        puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
+        puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
+        puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+
+        with open(f"{path}/{target}.puml", "w") as f:
+            f.write(puml_content)
+
+    def generate_puml_sprite(self, path):
+        """Generate puml sprite for service"""
+        # Start plantuml-mit-1.2022.5.jar and encode sprite from main PNG
         try:
             target = self.target
-            color = self.color
             result = subprocess.run(
                 [
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "./plantuml.jar",
+                    "./plantuml-mit-1.2022.5.jar",
                     "-encodesprite",
                     "16z",
                     f"{path}/{target}.png",
@@ -161,19 +189,14 @@ class Icon:
                 stdout=PIPE,
                 stderr=PIPE,
             )
-            puml_content += result.stdout.decode("UTF-8")
-            puml_content += f"AWSEntityColoring({target})\n"
-            puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
-            puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
-            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
-            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+            puml_content = result.stdout.decode("UTF-8")
 
-            with open(f"{path}/{target}.puml", "w") as f:
-                f.write(puml_content)
+            return puml_content
 
         except Exception as e:
             print(f"Error executing plantuml jar file, {e}")
             sys.exit(1)
+
 
     # Internal methods
     def _set_values(self, source_name, source_category):
@@ -184,6 +207,10 @@ class Icon:
                     try:
                         self.category = i
                         self.target = j["Target"]
+
+                        if source_name.startswith("Res_"):
+                            self.target_size = 48
+                            self.transparency = True
 
                         # Set color from icon, category, default then black
                         if "Color" in j:

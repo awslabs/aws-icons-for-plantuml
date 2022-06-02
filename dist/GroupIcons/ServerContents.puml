@@ -2,6 +2,10 @@
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $ServerContents [64x64/16z] xTQr0S0W441Hz6J_XTF7tVYlnpdnKm4rJgg-GWgJqhhnvgEieV4oi6cyXG7Rj7uPkFFyZDU1Uzy_3_1-Ftz_tf_nZ6SyuoUbE_hdzO0E
 
+!function $ServerContentsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAWNJREFUeNrt2r8rRXEYx/Hn3FyTcLuZpFAY7iallEkm/4DIZLw3DAaD7mCwWZRVFoMMJpLbMSBFfkx3uBRKRimTX+cencFkfe7p++15P3/A8z3ndTrP+XR6gqnSaiyGKyPGCwAAAAAAAAAMV5NWo/HRQZkYGxYJgsZecRzLfnghldMbtwBGhgrSkW9P5aklZzkH8Fdz5Q15fXtvyI3nc62yvlJkBgAAgINfgX+ymUAK/d0qvap3T1Kvx34BNGezslScVOk1u7gmH59ffgFEUSQHx5dqvbx7Bb5/ItneCxmCAAAAgN0cMNDbpdKr9vDsZw5Ynp+2nQMqJ9e2c8DW7hFDEAAAALCbA/p6OlV63T+++JkDygsztnNAeHZrOwds7hwyBAEAAAAAAAAAAAAAAAAAAAAAAAAAAHCs1H+JaW9yegNwflWVXFtLKsvSyVnOASTLy1oLzMwAAAAAAAAAAAAgjfoF8ldsMt/wvOoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
 AWSEntityColoring(ServerContents)
 !define ServerContents(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ServerContents, ServerContents)
 !define ServerContents(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ServerContents, ServerContents)

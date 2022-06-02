@@ -2,6 +2,10 @@
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $OpsWorksApps [64x64/16z] xTH50eGm44JHbdZkVzxnWNq5f_x-GLpspmAOVdc7-tZ7lVryGaQVP-y253izFRse0dfsmwK25aVV7nto--qVFJqzFJqzFNsEG6NsM3-lC6_opR5C3j0J
 
+!function $OpsWorksAppsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAZlJREFUeNrt280uA1EUB/Bz5kNHfWysbIiFjQRhL+nKatoh1INYeQO8AK8gkZSZhsSKhZWFxtKCpYhYkEanTNtjipHWlFjf+/9v5t7uzu+eeyczmRIheoc7J35fYYYMmlO1WKGWNEnOV+pHtymAku3OGiZfxkND8UWvmTaN56vlR+os1rBoUoPi28lSk8aSifXLxthh4Qul2l/IJZbVn79bvevnM68e7KsEcNifH40PgRSADi3/ZwAAAAAAAAAAAAAAAAAATfP9MGSGfNxwzInPcfNBtULfQmfXdqK99jis2XeEJE++XzmlnPWUGd5mlnnFKz5ZCstbqS3wnBlcjItfV37JhXJ+pnDgvQbX3YegQVltTn5TBlId0NUlzGteqNwboY149TdxGwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADapecXIiJS9B13SqVCRWjh3wBxikJcVHXVW8SS2gLSsirx5UWDrr+3a9FNMun662xpaHmEo2ha1cqFuWGGfOVRUCUE+cg7p5BcAMCFVygAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
 AWSEntityColoring(OpsWorksApps)
 !define OpsWorksApps(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksApps, OpsWorksApps)
 !define OpsWorksApps(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksApps, OpsWorksApps)

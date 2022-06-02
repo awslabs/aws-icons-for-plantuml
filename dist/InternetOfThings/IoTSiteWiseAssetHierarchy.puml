@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTSiteWiseAssetHierarchy [64x64/16z] {
+xPO53e0m34LPIkt-1yOTcfJXyl2VF6oQt9S03I5EruuGuqFlGwIFK83nFZJ7J_hR_ry7RAq_fzVVXh15Rlxz-JvG2wiojO3NLuFpV9g7T9vFbCx3b2YvFttP
+O-Z3WEuwe1tOXzYdVf_waFn-wqrzRnd-lb39rAz2ERxy-ge2IqC1Rcs_B_L5LoB6MEi69ZxJ0cpdO8rJllptRplFz-VMFCsTM_D4RsxDKxsvDKzsvO_tj_-_
+hUMtjVvihR_NamC
+}
+
+!function $IoTSiteWiseAssetHierarchyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArBJREFUeNrtWjFv00AUvnckEzIjc1ACygQCkQUBCb+ASlDmCkZmJBrEiIvEzIiomBAwwC/AAYmlEgimCojozNxOTu7xTE3UVE58xnf21X5PSu5kPb27+3z3vc/2E4Kt3gZFDnbl0amzAPL8Mh9E9eXjg1/fKgfAtcdnzimlPlNXprgqKeWF9/e/fy1iXrIoAFCp05rjydi3EGuUdO6eKoFb83cCeijE3aLnUgoAZMGH4fjNwQsDv7MnSgBAipobA1B3AMrigMFVv3380LVebQCI2B4OSRCs+hEAKX9EIkfDVcW+LIUrB8AcCWx0WwrD/t9tCM1RsL69UycSpFs9uUg8sBn3V+l/p9IcUJvH4YHfXkEQ19N3ALQi93/SWACm7gBA8S4Yjt86fQRQwAv687LiRoDopM8b1Jxw/Qh4Fnes8dg2SfD1aPjzlolAfb/zippVJsEjkQYBN+POlkGqDogB9gQbm3s6QCvvI4QADV9X7kYyGXEypOPUtK0LcnOAbt5HMTlGzR29mJOH1NxO0wYmdIGJLOBpIuVlQNUzOnZBWSAx71MOz/Wug2KCTV3AL0UZAAaApbCpB+Fef6P9PClX5XoQSoyJPVOvMkwAMKUf5Xho0WLXlsiWaQZ9Np0hh7CWMnbJRwDhmcZ93pUSX2pPat93N1Ut7I9drhRekvetvA9I0gVMggwAA2CeAy49aZ9shjCibveIr3E7bGL/073x70w7oBHKyxVYfGTdeC3ZdIAUKA/kNq0PFxnTZ0tk/DDyv/GjteQSQlFVV7A+X9SU1wZ+5ybGE7Qdn0mQAWAAGAA2Ng0laLuIycX4MwBs1/O7Gn/mbLue39X4jUXKz2Y9v0vxF0lh2/X8zsRnIcQA1NwWcYDten5n4icCYLue36X4syNgu57f1fi1l8Jsdbc/zOdcYMguj24AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(IoTSiteWiseAssetHierarchy)
+!define IoTSiteWiseAssetHierarchy(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSiteWiseAssetHierarchy, IoTSiteWiseAssetHierarchy)
+!define IoTSiteWiseAssetHierarchy(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSiteWiseAssetHierarchy, IoTSiteWiseAssetHierarchy)
+!define IoTSiteWiseAssetHierarchyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSiteWiseAssetHierarchy, IoTSiteWiseAssetHierarchy)
+!define IoTSiteWiseAssetHierarchyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSiteWiseAssetHierarchy, IoTSiteWiseAssetHierarchy)

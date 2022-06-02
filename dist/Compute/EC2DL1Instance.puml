@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2DL1Instance [64x64/16z] {
+xPS5iWGn20K31FRT_yAZVF_P8kFM9PJrH7er7GeIeS0imW07vlB-uvDs662H-Kz4HGMwYf-2BEkJ35YDRwD3tiI9-mxFzUVkV-7xtzz_-XDtV8Hb_hA8ATBV
+C60qRYqvR815xjzWEIi0-kvtTjZF_fZlFfHpbKy0kU_qVg2_--a5AVdb_kxxBFiEp_VB-o_xx_kx3t313zr_nYjDzObO0Hby7gZoH-JxrLRqpzeZ_ftg39rK
+di__v_D_yVvF__r_VzR_Vjx_z__Zp___kZyj
+}
+
+!function $EC2DL1InstanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA45JREFUeNrtWs9LFFEcf995+4tICoUORaGX8MdsIRUJJXmqQ9EhEoRVy6IugZcgUPAQgf9AeJW1drcOUSQh0cWMOqWItWuHOkgFgZAdDN3d2Xmv76wru+tOOWOrzrjfL+y8mfnue/PeZ74/Pu+9YYyksgU2WvFTR6BW5+yMcc51NtHwODnnJL1V8WwUAJ2L44hfeOVctmMx5yS9VVEq3QUIAAKAAKA0aDHlyX7GpLegai0e2nIXr1G3Jgpvpx40rsOgldRoKQ0KLgaw0Wv/wKttHSy3XI995lhcL4sLSFCq3GbaVvtsmwip0RQ4eeDxkF9SENwIFS7k1qX2xGpdNzLsczwUuGKmKpw7eMy49c4QeQIPYfN5TH7uQC6QNwtlEl3g6l/+dyuHqJsozns8DJm7AEyWAJDzCVPiEO8MnEefchcAwObUSHKEsgABQAAQDyAeQDxgk3lAosPbLDx8T1FwAVjm3uXZ+mG2WLK+0F1VkxFakAsmGmPJN5bWJLr9hzMC9jNdLAQfpT84igdIrtwHKU8V3ZOSZVL+TDzExjAn31YjqS+ruoxIt4BkLwQwDS99/xpGojPQim3d0XV2AbATiOwrvH2uXDzAU05zAmATTMhxyRSOzlWPoJzFLl/EyfnpRMjX2hRNz9qc2r6VeWAl+4+NnC0BQEqYUGOpu6vXM12793GpvURFM/Z+GG+12GyyGX/PEMgRBPUYAzngKh5w9OHveSHEjZx9nDRihZ36nPsOqdHUpaZY+jlThOZKHnAkpk2hKX/D04PSoxjmPG21bsODxZ87hQd8NQDAWHCgUnmAtvJSCpfVK2g9AEN3TXalEuRCxa0HJNpZNQ6+PmtuEqa3bvwOWQ8QPn8/Fobpz+/ypsYd6wLlAV3uNbJJNtAorA5A9ODb71rxf+irC7Pk2iofOwNtJe1I0NTo8jvXAYCD7cUI25u/zhI3Y9B9wWhy2Oz5SHLMrOIX/qpdsx4gQY4ht/9czArxNsCUAvxpY2TpR7GliO/rpNylUuuCGWwyjGwz4TgeEIykB+38X41oM1j02KnTFEmNYjFK6wFu5AHbI7QvQPsC2z4dJgDcFARpX4D2BYgHEA8gHlDJLmBV7H6HtyN4AEix6LaBWe2zJQtQdOUepg7dTR9LY58HywZALkDeLHYF32V8UK4DckiNpp84SU9UmAAgAAgAAmAziJDZ3KGQWztFT0JiTf4AG+Y2GYv66fgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(EC2DL1Instance)
+!define EC2DL1Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2DL1Instance, EC2DL1Instance)
+!define EC2DL1Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2DL1Instance, EC2DL1Instance)
+!define EC2DL1InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2DL1Instance, EC2DL1Instance)
+!define EC2DL1InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2DL1Instance, EC2DL1Instance)
