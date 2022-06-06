@@ -5,6 +5,10 @@ xPV50S0W34Lnil_2zLiDr_ygdB1uM5DmARd3-8eW4WvZ-lcOp_M68J8kuuCIDNcWiyndZgITp-M1yPbl
 LwW_e-ld-lK_viVth_LP0G
 }
 
+!function $EC2InstanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaNJREFUeNrtmrFKw0AYgO+Sql18h6xCRp3t7qogVFAUXHwDwanQN+hewYKDD6GzHQOueQeXqiTnLwYa7amXUDXXfv+QpPxNe/m4//7vIEoRyx267o0P++0oC9X223WYqbuN60napLxrtOoCyMJ8U/gN36/NnpzSJuVdI1j2EgAAAABAG3RseeZcKbNSujWSQ6f4cCu5T6vwf+b1S5jpvktrdGqDeZhfyI8ef8Or8wPLP8/LmEM5ncylBIwO1n2b2q5jrixC8ehJN/nBk+6aYRGso8Jlt56dTyry7slkzEm3fWhLlfcOLZtbL0aYLTkM7fuY6d6BEphOi2AsJXD0xffOCqI+Kc69HAb2EtDjGQBFTVjFITlo70hN+QVAqzS+mlzSBQAAADwAD8AD8AA8gC4AAADgAXgAHoAH4AF0AQAAAA/AA/AAPAAPoAsAAAB4AB5ACeABeAAlUPWGqu/hLYQHaJM/+vZgrmN2mgFBFvSkdWQ+vSwtY+7PDUCxQJ5+LIXVXfmjYgBmEI+eb5qUR4UBAAAAAOA3RMi2dyi7dVPyBOEWr/USdMiPnQ6kAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
 AWSEntityColoring(EC2Instance)
 !define EC2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Instance, EC2Instance)
 !define EC2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Instance, EC2Instance)

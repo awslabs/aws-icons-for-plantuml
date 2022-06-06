@@ -5,6 +5,10 @@ xTNL0O0m34NHUfBz1yRTNT_vGovEg_uC05WQUFM-LbhiUDpVjrX7eK2pVNzVssZiV5_lEzZFEB-dC85c
 T__zxv-_ziwVU-VlFmE06
 }
 
+!function $IoTAnalyticsPipelineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAYpJREFUeNrtmTFOwzAUhm0rmdhZqWiGXqALQkp2VsoMK8wM6QHagZleoj1EIiEWLpAhkZi5QlAejnAaloY2enUC+T+prRXZr3/+vt+qWyEAAAAAAAAAAAAwNGQ1uHgan7q5jPVwcmCNJHfJf33MPmwK59KrqqtOri5bFCuZmLVW4dLrVAMlSFE9KRKS3hvLkBzp56Baa9sALr3Ojlw8R2G2aaoXLLxrMgV7kOPWeh0OAbrw2l94Vm+a2Dpp4DhMdX7PIHsL1Jnu3IB9MsgN1x6ECHT1xv7yfKp7576hr97iMF19z/X0PJqW4zjM7v6FAZLUmW7h24YpJ/qxMlu+bnU5M9dZDUAEunrjaJ5ufp5Fmojn6c3xvlEOHBgAA2AADIABMAAGwAAYAANwGGqPPtY++MvxlU3hRGLUp9NgIEgiAoONgP7sZ+Z8bw3zo+j6KAbsk2muDNrag3bp3RpQCFnI+v+WgzJdrrV901x6t3vAp1u86JekhZbErLXKX9MLAAAAAAAAAACA/vAFQ2KDpKrOfpkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
 AWSEntityColoring(IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
 !define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)

@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2Trn1Instance [64x64/16z] {
+xPS50eGm30IRfDdk_p-CdciuHRgu33P0spIhY9a4fdUZf0Qcd-ShBzu5929JkUQT4-9VuLCmd-N5Xc0AZv6HdPDTulmk-Yx_xlNFuFclot_rZrtIHGm8yUvE
+kb_ieOLar7yfHxbThzqqku0n_piUo8Gn5t8y71Zql-E9R4Q8WBBZW_vtV3SoMZ_I7H_m7-3l-e_pVkHcoAls8-j6OjAFnhLMl__w_v-5_-f_1lNFj-hFSwl_
+LpxUVfrLMW
+}
+
+!function $EC2Trn1InstanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyFJREFUeNrtWs1rE1EQn3kvTbakfhQsiKdehNamCH7g0V6KQu3NSm0qxgpevHgTBKEgtPgHFEVQKjZSqaB405OiINSCShu8ptd6s61NsrtvnMa0TdpY1yVps2bmsB9vspt5v8zHb94LgEh9C/p98Fu/1epqOL16rV141z6ZSdeS3quE/ALganOC8Rv/fU19fErXkt6rqHoPAQFAABAApAx6LHl0C4Aaih5t5UNX4eYt6zZl4d3Uo61dHPFSGj2VQaPNbX7p0DZ4df0Fyx3Xs82aT1crEgKEak/QXNurzf9MhGLJLNbyxOfiEZIk6IcKF3Prrf4ErYGbGds8F7cul1MV9w6hctz6/xA6yYfx8n3MRu8gIbDhFmqGQyDxh89dLyAaJIrziQ9j5UMAZ7YAUIiJssRhbtDq4ZgKFgAI6dhE5rFUAQFAABAeIDxAeIDwAOEBFWuHN8vnBOxvsCMvtrUll+3tmIIlP+9P9UHYhK1BRdRvFNidE9meqoSAX2lU4Dqly1EX8jkYaGptZKUZjK/e/mKklxTcR6BDhPxmgh9VywF+pe0RLALkrhQtSJzhkxNLboylEtGDXy9h09EnSwv5XzQUbVbO8rLS1oG2ycx8OgGRn5mGdsBQFJyVafaWXB5KRTECfAlgxhH0PQI6HEgeYGznGZebptRA+BUg3lTkfGC3nuQJPUwNWnfRoSHS0AKrjhKOfEn1ZU+tgtCRzI2ugxjXweYB7MHHCPE7WzbM7jzPI9GCpUfImHPa6AWj6AHrut1Q43EOnI87wQNCsHOSiyWzZ9duZuPWUN5MomTnU3sawIbZgcgbBqpba7OvLnkAT94VHiDrAdIO704vULEeDOmGMlCyOaEQRo3BlpI4JHpvEBNG4fS61yK9JlAJW+HsllLK1YMJ0d4q5B0PPKAoCQZnZ2i7JCjrAbIeIOsBwgOkDAoAAgDIvoDwAAkB4QHCAyQEfHZbdcQDkMxi0Cbm1WZPHqBcdYdLhxukP0uzzSMVA6CQIK+VhkL4PH9RwQAaiyVzz2tJL1RYABAABAABoBpEqFzvUMyta0UvIuJNfgE+xxB76Cw7hAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(EC2Trn1Instance)
+!define EC2Trn1Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Trn1Instance, EC2Trn1Instance)
+!define EC2Trn1Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Trn1Instance, EC2Trn1Instance)
+!define EC2Trn1InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2Trn1Instance, EC2Trn1Instance)
+!define EC2Trn1InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2Trn1Instance, EC2Trn1Instance)

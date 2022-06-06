@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $IoTSiteWiseDataStreams [64x64/16z] {
+xT854iCm34HHMzjiwliVkEHgHgCmus_3UU5mi62BmtsoOGjV8bUCz0mvxDmBw-hlaUfQpzTld-wVp9NZl6bzxrlI2odX63r87MgJ3i-KTAWDq_tui3CV0IsE
+yHZqN1Vn1JuLWpoqYB_389yqpEs5jcPVDbm_agtPqp-_yLxppu5hUF_zUg_RfS7xl4VASHElrp_UvzRqjlMzq3RK-yxdXPG9FhUX5rAkzlvk3qW8We-CGCpB
+U-mD
+}
+
+!function $IoTSiteWiseDataStreamsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlpJREFUeNrtWj1awkAQnY2h8hDyCYUHMK3kEFILLZ4ADgAngFZthZY+UAoHsAC/cAgr+DJuIkLAhATyt8nOFGKEfIa3896b2VkACrmD5f0LPHQrT+feo7DSxGh/mvbvav5XkL2efRNu6vynA4AiOwXUArF5hmD1fdMemIYAzwUGAM1pZ/nm967erX6DBwDSU4A0IK1/VOvdapynrfgzPycAMFRu+LM2iAJkg075WTc6i1Es1OpWMXcAJGSDWq1XefF9F6Fc9EKozAWxQRogGwUmnUWkjpYyIDWJYtYKtq0rAq6AgkIM7/Cu26st21cdkWkvm6euEyLMYNL+mmWnAQg6x6a+vWoGXCewKmzMX1IBQCEKCBJ6t/rIi/ph3L0CZYAszZDeuytbuK6FWvUizQX2wr25Dz0jcM0FMgGA9/Dv/KUeRy1PFPBW9r4FODsUu5zOBcLM/mxO87R2/8mYdpajI5fxnAuo4q9mCF7/cppsMJIGXLpvb/cGKT3rB2+jB55Zwkpz2wUiARBh3z4tAIJmf24AdK4d10cf0aRxAVvt2VGVj+fYYFAt7vZxKoWFsQt1jrgORWFHM+IGIKgWVxhbGe2FkdT339b2ZmYZgLDRTnk2otPqGqIlDtUB8VVs6syC/xy86BRXHgHw4yB3DKEBIAr4FBJDvnJSAEAZsFt11+xOSgC2k5imbADQQUnSAFFa2IzODwgDQFYaRBQQ5UEO9ySzPh+QQbj3JOl8AGkAAUAAEAAEQEHqAF7WOtZmb4vvLI/BwEIcH/rgfl/fvW//d/8VMBMoKGKPH7D319K1SMwCAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(IoTSiteWiseDataStreams)
+!define IoTSiteWiseDataStreams(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTSiteWiseDataStreams, IoTSiteWiseDataStreams)
+!define IoTSiteWiseDataStreams(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTSiteWiseDataStreams, IoTSiteWiseDataStreams)
+!define IoTSiteWiseDataStreamsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTSiteWiseDataStreams, IoTSiteWiseDataStreams)
+!define IoTSiteWiseDataStreamsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTSiteWiseDataStreams, IoTSiteWiseDataStreams)

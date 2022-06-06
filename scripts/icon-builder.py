@@ -27,13 +27,13 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 11.1-2021.09.21 release
+# Source directories for the 13.0-2022.04.30 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_07302021/*64/*.svg",
+        "dir_glob": "Category-Icons_04302022/*64/*.svg",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "category_mappings": {
@@ -52,7 +52,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_09172021/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_04302022/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -62,7 +62,6 @@ dir_list = [
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
             "NetworkingContent": "NetworkingContentDelivery",
-            "VRAR": "ARVR",
         },
         "filename_mappings": {
             "S3onOutpostsStorage": "S3OnOutpostsStorage",
@@ -70,7 +69,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_07302021/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_04302022/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -106,12 +105,70 @@ dir_list = [
     },
 ]
 
+CATEGORY_COLORS = {
+    "Analytics": "PurpleHeart",
+    "AWSCostManagement": "ForestGreen",
+    "ApplicationIntegration": "MaroonFlush",
+    "Blockchain": "Meteor",
+    "BusinessApplications": "Crimson",
+    "Compute": "Meteor",
+    "Containers": "Meteor",
+    "CustomerEnablement": "CeruleanBlue",
+    "Database": "CeruleanBlue",
+    "DeveloperTools": "CeruleanBlue",
+    "EndUserComputing": "Elm",
+    "FrontEndWebMobile": "Crimson",
+    "GameTech": "PurpleHeart",
+    "General": "SquidInk",
+    "InternetOfThings": "ForestGreen",
+    "MachineLearning": "Elm",
+    "ManagementGovernance": "MaroonFlush",
+    "MediaServices": "Meteor",
+    "MigrationTransfer": "Elm",
+    "NetworkingContentDelivery": "PurpleHeart",
+    "QuantumTechnologies": "Meteor",
+    "Robotics": "Crimson",
+    "Satellite": "CeruleanBlue",
+    "SecurityIdentityCompliance": "Crimson",
+    "Serverless": "PurpleHeart",
+    "Storage": "ForestGreen",
+    "VRAR": "MaroonFlush",
+}
+
+GROUPICONS_COLORS = {
+    "AutoScalingGroup": "Meteor",
+    "Cloud": "SquidInk",
+    "Cloudalt": "SquidInk",
+    "CorporateDataCenter": "SquidInk",
+    "EC2InstanceContainer": "Meteor",
+    "ElasticBeanstalkContainer": "Meteor",
+    "Region": "CeruleanBlue",
+    "ServerContents": "SquidInk",
+    "SpotFleet": "Meteor",
+    "StepFunction": "MaroonFlush",
+    "VPCSubnetPrivate": "CeruleanBlue",
+    "VPCSubnetPublic": "ForestGreen",
+    "VirtualPrivateCloudVPC": "ForestGreen",
+}
 
 TEMPLATE_DEFAULT = """
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+#
+# Curated config file for Release 13.0-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# cSpell: disable
 Defaults:
   Colors:
+    CeruleanBlue: "#3B48CC"
+    Crimson: "#D6242D"
+    Elm: "#1C7B68"
+    ForestGreen: "#3F8624"
+    MaroonFlush: "#CC2264"
+    Meteor: "#D86613"
+    PurpleHeart: "#693CC5"
     SquidInk: "#232F3E"
-  # Defaults for all categories
+    White: "#FFFFFF"
+  # Defaults for services not found
   Category:
     Color: SquidInk
   # Maximum in either height or width in pixels
@@ -133,9 +190,9 @@ If you want to reference and use these files without Internet connectivity, you 
 
 For each symbol, there is a resized icon in PNG format generated from the source file. Where the original icons had transparency set, this has been kept in the generated icons. You can also use the images outside of PlantUML, e.g. for documents or presentations, but the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) are available in all popular formats.
 
-## All PNG generated AWS symbols
+## All generated AWS symbols and PNGs
 
-Category | PUML Macro (Name) | Image (PNG) | PUML Url
+Category | PUML Macros (Name) | Image (PNG) | PUML Url
   ---    |  ---  | :---:  | ---
 """
 
@@ -200,10 +257,10 @@ def verify_environment():
             "source/official must contain folders of AWS  icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml.jar and verify java
+    # Start plantuml-mit-1.2022.5.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2022.5.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
@@ -285,25 +342,22 @@ def create_config_template():
                 # Initial entry into dict
                 category_dict = {category: {"Icons": []}}
 
+            icon_entry = {
+                "Source": source_name,
+                "Target": target,
+                "SourceDir": file_source_dir,
+            }
+
             # Check for duplicate entries then append to
             if target not in dupe_check:
-                category_dict[category]["Icons"].append(
-                    {
-                        "Source": source_name,
-                        "Target": target,
-                        "SourceDir": file_source_dir,
-                    }
-                )
                 dupe_check.append(target)
             else:
-                category_dict[category]["Icons"].append(
-                    {
-                        "Source": source_name,
-                        "Target": target,
-                        "SourceDir": file_source_dir,
-                        "ZComment": "******* Duplicate target name, must be made unique for All.puml ********",
-                    }
-                )
+                icon_entry["ZComment"] = "******* Duplicate target name, must be made unique for All.puml ********"
+
+            if category == "GroupIcons" and target in GROUPICONS_COLORS:
+                icon_entry["Color"] = GROUPICONS_COLORS[target]
+
+            category_dict[category]["Icons"].append(icon_entry)
 
     # With the completed dictionary of entries, convert to an OrderedDict and sort by Category -> Target
     # The sorted template file makes it easier to review changes between new icon releases
@@ -313,10 +367,13 @@ def create_config_template():
         sorted_categories[category]["Icons"] = sorted(
             category_dict[category]["Icons"], key=lambda i: i["Target"]
         )
-    yaml_content = yaml.safe_load(TEMPLATE_DEFAULT)
+        if category in CATEGORY_COLORS:
+            sorted_categories[category]["Color"] = CATEGORY_COLORS[category]
+    yaml_content = {}
     yaml_content["Categories"] = dict(sorted_categories)
 
     with open("config-template.yml", "w") as f:
+        f.write(TEMPLATE_DEFAULT)
         yaml.dump(yaml_content, f, default_flow_style=False)
     print("Successfully created config-template.yml")
     sys.exit(0)
@@ -346,18 +403,23 @@ def worker(icon):
     icon.generate_image(
         Path(f"../dist/{icon.category}"),
         color=True,
-        max_target_size=64,
+        max_target_size=64, # override to 64x64
+        #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
         transparency=False,
+        gradient=True,
     )
-    print(f"generating PUML for {icon.source_name}")
-    icon.generate_puml(Path(f"../dist/{icon.category}"))
+    sprite = icon.generate_puml_sprite(Path(f"../dist/{icon.category}"))
     # Recreate the images with transparency
     icon.generate_image(
         Path(f"../dist/{icon.category}"),
         color=True,
-        max_target_size=64,
-        transparency=True,
+        max_target_size=64, # override to 64x64
+        #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
+        transparency=icon.transparency, # was True
+        gradient=False,
     )
+    print(f"generating PUML for {icon.source_name}")
+    icon.generate_puml(Path(f"../dist/{icon.category}"), sprite)
     return
 
 
@@ -420,7 +482,7 @@ def main():
                 cat = j.category
                 tgt = j.target
                 markdown += (
-                    f"{cat} | {tgt}  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                    f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
                     f"{cat}/{tgt}.puml\n"
                 )
     with open(Path("../AWSSymbols.md"), "w") as f:

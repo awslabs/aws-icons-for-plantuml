@@ -33,10 +33,11 @@ skinparam rectangle<<stereo>> {
     BackgroundColor AWS_BG_COLOR
     BorderColor AWS_BORDER_COLOR
 }
-skinparam participant<<stereo>> {
-    BackgroundColor AWS_BG_COLOR
-    BorderColor AWS_BORDER_COLOR
-}
+' https://github.com/plantuml/plantuml/issues/1023
+'skinparam participant<<stereo>> {
+'    BackgroundColor AWS_BG_COLOR
+'    BorderColor AWS_BORDER_COLOR
+'}
 !enddefinelong
 
 ' Layout
@@ -54,19 +55,22 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 
 ' Elements
 ' ##################################
+!function $AWSImg($service)
+!return %call_user_func("$" + $service + "IMG")
+!endfunction
 
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+rectangle "==e_label\n$AWSImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong AWSEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+rectangle "==e_label\n$AWSImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
-participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias << ($p_sprite, p_color) p_stereo>>
+participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
 !enddefinelong
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
-participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias << ($p_sprite, p_color) p_stereo>>
+participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
 !enddefinelong

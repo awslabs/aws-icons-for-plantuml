@@ -1,0 +1,46 @@
+@startuml Sequence Diagram - Images
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/Compute/Lambda.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/General/Internetalt1.puml
+!include AWSPuml/Database/DynamoDB.puml
+
+'Comment out to use default PlantUML sequence formatting
+skinparam participant {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor AWS_BORDER_COLOR
+}
+skinparam sequence { 
+    ArrowThickness 2
+    LifeLineBorderColor AWS_COLOR
+    LifeLineBackgroundColor AWS_BORDER_COLOR
+    BoxBorderColor AWS_COLOR
+}
+
+'Hide the bottom boxes / Use filled triangle arrowheads
+hide footbox
+skinparam style strictuml
+
+actor User as user
+box AWS Cloud
+'Instead of using ...Participant(), native creole img tags can be used
+participant "$APIGatewayIMG()\nCredit Card System\nAll methods are POST" as api << REST API >>
+participant "$LambdaIMG()\nAuthorizeCard\nReturns status" as lambda << python3.9 >>
+participant "PaymentTransactions\n$DynamoDBIMG()\nsortkey=transaction_id+token" as db << on-demand >>
+endbox
+participant "Authorizer\nReturns status and token\n$Internetalt1IMG()" as processor
+
+'Use shortcut syntax for activation with colored lifelines and return keyword
+user -> api++ #CC2264: Process transaction\nPOST /prod/process
+api -> lambda++ #D86613: Invokes lambda with cardholder details
+lambda -> processor++ #232F3E: Submit via API token\ncard number, expiry, CID
+processor -> processor: Validate and create token
+return status code and token
+lambda ->> db: PUT transaction id, token
+return status code, transaction id
+return status code
+@enduml

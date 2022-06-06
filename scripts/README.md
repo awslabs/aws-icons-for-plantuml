@@ -13,7 +13,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 - Install Python 3 and packages from the `requirements.txt` file.
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_01-31-2021`, `Category-Icons_01-31-2021`, and `Resource-Icons_01-31-2021` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_04302022`, `Category-Icons_04302022`, and `Resource-Icons_04302022` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
@@ -24,17 +24,17 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-    ├── Architecture-Service-Icons_01-31-2021
+    ├── Architecture-Service-Icons_04302022
     │   ├── Arch_AR-VR
     │   ├── Arch_AWS-Cost-Management
     │   ├── Arch_Analytics
         ...
-    ├── Category-Icons_01-31-2021
+    ├── Category-Icons_04302022
     │   ├── Arch-Category_16
     │   ├── Arch-Category_32
     │   ├── Arch-Category_48
     │   └── Arch-Category_64
-    └── Resource-Icons_01-31-2021
+    └── Resource-Icons_04302022
         ├── Res_Analytics
         ├── Res_Application-Integration
         ├── Res_Blockchain
@@ -49,7 +49,7 @@ The included `config.yml` file is a curated file that maps specific file names t
 
 If you are using the `config.yml` file as the basis to incorporate a newer version of the AWS Architecture Icons, you may see an _Uncategorized_ category of mismatched entries.
 
-For general categories, the `Color` attribute is set to match as closely as possible the color represented for that category. For example, in the AR-VR category, the color for Amazon Sumerian is `#CC2264`, or approximately Maroon Flush. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-icon.
+For general categories, the `Color` attribute is set to match as closely as possible the color represented for that category. For example, in the ApplicationIntegration category, the color for Amazon API Gateway is `#CC2264`, or approximately Maroon Flush. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-sprite.
 
 In the curated `config.yml` file, each AWS service is mapped to it's primary category. This then maps to the specific PUML file referenced by _Category/Filename.puml_, or are included in the _Category/all.puml_ file.
 
@@ -61,7 +61,7 @@ For PIP users, simply run `pip3 install -r requirements.txt` in your environment
 
 ## Verify Dependencies and Process
 
-To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags..
+To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags.
 
 ```bash
 $ ./icon-builder.py --check-env
@@ -104,7 +104,48 @@ From a logical point of view, the following happens:
 1. In addition to single AWS services PUML files, a combined PUML file, named `all.puml`, is created for each category.
 1. A markdown table with all AWS services, image/icon, and the PUML name is generated.
 
+### Local Testing
+
+You can used the included PlantUML .jar to run a local server for rendering or download the latest [plantuml Files](https://sourceforge.net/projects/plantuml/files/) from SourceForge.  This project uses the MIT licensed distribution.
+
+To check the version and license of PlantUML, create a diagram with the following syntax:
+
+```
+@startuml
+version
+@enduml
+```
+
+Or execute the jar with the `-version` parameter:
+```bash
+$ java -jar scripts/plantuml-mit-1.2022.5.jar -version
+PlantUML version 1.2022.5 (Sat Apr 30 05:55:52 CDT 2022)
+(MIT source distribution)
+```
+
+To start the local render server:
+```bash
+java -jar scripts/plantuml-mit-1.2022.5.jar -picoweb
+```
+
+If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
+
+```json
+  "plantuml.render": "PlantUMLServer",
+  "plantuml.server": "http://localhost:8080/plantuml/",
+```
+
+ To `!include` the local `.puml` files via URL: `cd dist` and `python3 -m http.server 8000` to run a local web server. Then, in your `.puml` file, redefine `AWSPuml` to use localhost.
+
+```
+!define AWSPuml http://localhost:8000
+```
+
 ## Build Notes
+
+### Release 13.0-2022.04.30
+
+This release switched to using `plantuml-mit-1.2022.5.jar` which had changes to default styling and slightly different sprite generation.  Because PlantUML native sprites are grayscale and have color is applied to them, the default is now to use PNG files for icons. The included `.png` icon files were added to the `.puml` files via a `!function` (e.g. `$APIGatewayIMG($scale="1")` which returns a creole `<img>` tag with a data URL (data:image/png;base64).  The definitions of `AWSEntity` and `AWSParticipant` were updated to use these images instead of the colorized sprites.
 
 ### Release 9.0-2021.1.31
 
@@ -134,4 +175,4 @@ This is a makeover release where all items have moved. Of note:
 
 The icons provided in this package are made available to you under the terms of the CC-BY-ND 2.0 license, available in the `LICENSE` file. Code is made available under the MIT license in `LICENSE-CODE`.
 
-The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml.jar`, is licensed under the MIT license in `LICENSE-CODE`.
+The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml-mit-1.2022.5.jar`, is licensed under the MIT license in `LICENSE-CODE`.
