@@ -1,0 +1,114 @@
+@startuml Groups
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/Groups/all.puml
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+
+' create a "filler" rectangle to give empty groups some volume
+skinparam rectangle<<filler>> {
+  BackgroundColor #Transparent
+  BorderThickness 0
+}
+
+!$fillerindex = 0
+!function $filler($newline="")
+!$fillerindex = $fillerindex + 1
+!return "rectangle " + %chr(34) + "                    " + $newline + %chr(34) + " as spacer" + $fillerindex + " <<filler>>"
+!endfunction
+
+' similar layout to "Groups" slide from AWS-Architecture-Icons-Deck
+AWSCloudAltGroup(cloudalt) { 
+  $filler()
+}  
+AWSCloudGroup(awscloud) {
+  $filler()
+}
+RegionGroup(region) {
+  $filler()
+}
+AvailabilityZoneGroup(az) {
+  $filler()
+}
+SecurityGroupGroup(sg)  {
+  $filler()
+}
+AutoScalingGroupGroup(asg) {
+  $filler()
+}
+VPCGroup(vpc) {
+  $filler()
+}
+PrivateSubnetGroup(private) {
+  $filler()
+}
+PublicSubnetGroup(public) {
+  $filler()
+}
+ServerContentsGroup(server) {
+  $filler()
+}
+CorporateDataCenterGroup(dc) {
+  $filler()
+}
+EC2InstanceContentsGroup(instance) {
+  $filler()
+}
+SpotFleetGroup(sf) {
+  $filler()
+}
+AWSAccountGroup(account) {
+  $filler()
+}
+IoTGreengrassDeploymentGroup(iotgd) {
+  $filler()
+}
+IoTGreengrassGroup(iotg) {
+  $filler()
+}
+ElasticBeanstalkContainerGroup(beanstalk) {
+  $filler()
+}
+StepFunctionsWorkflowGroup(sfw) {
+  $filler()
+}
+GenericGroup(g1)  {
+  $filler()
+}
+GenericAltGroup(g2)  {
+  $filler()
+}
+
+' row 1 layout
+awscloud -[hidden]r-> cloudalt
+cloudalt -[hidden]r-> region 
+region -[hidden]r-> az
+az -[hidden]r-> sg
+cloudalt -[hidden]r-> region
+
+' row 2 layout
+asg -[hidden]up-> awscloud
+asg -[hidden]right-> vpc
+vpc -[hidden]right-> private
+private -[hidden]right-> public
+public -[hidden]right-> server
+server -[hidden]right-> dc
+
+' row 3 layout
+instance -[hidden]up-> asg
+instance -[hidden]right-> sf
+sf -[hidden]right-> account
+account -[hidden]right-> iotgd
+iotgd -[hidden]right-> iotg
+iotg -[hidden]right-> beanstalk
+
+' row 4 layout
+sfw -[hidden]up-> instance
+sfw -[hidden]right-> g1
+g1 -[hidden]right-> g2
+@enduml

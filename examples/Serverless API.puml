@@ -1,0 +1,42 @@
+@startuml Serverless API
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/Compute/Lambda.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/General/Client.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+skinparam rectangle {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+
+!procedure $stepnum($number) 
+<back:black><color:white><b> $number </b></color></back>
+!endprocedure
+
+rectangle "$ClientIMG()\nClient" as client
+AWSCloudGroup(cloud){
+  rectangle "$APIGatewayIMG()\nAmazon API\nGateway" as api
+  rectangle "$LambdaIMG()\nAWS Lambda\n" as lambda
+  rectangle "$DynamoDBIMG()\nAmazon DynamoDB\n" as dynamodb
+  rectangle "$SimpleStorageServiceIMG()\nAmazon S3" as s3
+  rectangle "$LambdaIMG()\nAWS Lambda" as trigger
+
+  client -right-> api: $stepnum("1")\n
+  api -right-> lambda: $stepnum("2")\n
+  lambda -right-> dynamodb: $stepnum("3")\n
+  api -[hidden]down-> s3
+  client -right-> s3: $stepnum("4")
+  s3 -right-> trigger: $stepnum("5")\n
+  trigger -[hidden]up-> lambda
+  trigger -u-> dynamodb: $stepnum("6")\n
+}
+@enduml
