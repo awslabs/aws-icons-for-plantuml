@@ -23,10 +23,10 @@ skinparam rectangle<<filler>> {
 !endfunction
 
 ' similar layout to "Groups" slide from AWS-Architecture-Icons-Deck
-AWSCloudAltGroup(cloudalt) { 
-  $filler()
-}  
 AWSCloudGroup(awscloud) {
+  $filler()
+}
+AWSCloudAltGroup(cloudalt) { 
   $filler()
 }
 RegionGroup(region) {
