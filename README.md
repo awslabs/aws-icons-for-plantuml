@@ -37,15 +37,15 @@ In order to incorporate and use the _AWS Icons for PlantUML_ resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v13.0</b>/dist/AWSCommon.puml
+<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v13.1</b>/dist/AWSCommon.puml
 </code></pre>
 
 or this if defining the URL:
 
-<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v13.0</b>/dist
+<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v13.1</b>/dist
 </code></pre>
 
-This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v13.0_ release.
+This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v13.1_ release.
 
 All examples reference _main_ and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -71,7 +71,7 @@ For example, including these files from the repository (URL), the includes would
 
 ```
 ' Define the main location (URL or local file path)
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 ' Include main AWSCommon and then resource files
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
@@ -89,7 +89,7 @@ This is the [`examples/HelloWorld.puml`](examples/HelloWorld.puml) diagram code:
 ```
 @startuml Hello World
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
@@ -106,7 +106,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/examples/HelloWorld.puml)
 
 ## Examples
 
@@ -121,7 +121,7 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 ```
 @startuml Basic Usage - AWS IoT Rules Engine
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/InternetOfThings/IoTRule.puml
 !include AWSPuml/Analytics/KinesisDataStreams.puml
@@ -144,7 +144,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FBasic%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FBasic%2520Usage.puml)
 
 ### Raw Images
 
@@ -155,7 +155,7 @@ The individual icon images (complete list [here](AWSSymbols.md)) can be included
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/MachineLearning/SageMakerModel.puml
 !include AWSPuml/Robotics/RoboMaker.puml
@@ -174,7 +174,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FRaw%2520Image%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FRaw%2520Image%2520Usage.puml)
 
 ### Simplified View
 
@@ -183,7 +183,7 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 ```
 @startuml Two Modes - Technical View
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 
 ' Uncomment the following line to create simplified view
@@ -215,11 +215,11 @@ recordVote --> voteDb
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
 
 And if the `!include AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
 
 ### Sequence Diagrams
 
@@ -228,7 +228,7 @@ Icons can also be used in UML sequence diagrams, either with Participant macros 
 ```bash
 @startuml Sequence Diagram - Technical
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Compute/all.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -255,14 +255,14 @@ api -> user: Returns status code
 
 The code above generates the fully detailed diagram with stereotypes.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```
 @startuml Sequence Diagram - Images
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -308,63 +308,61 @@ return status code
 
 The code above generates the same sequence diagram demonstrating how colors, text positioning, and stereotypes can be modified.
 
-![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FSequence%2520-%2520Images.puml)
+![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FSequence%2520-%2520Images.puml)
 
 ### Groups
 
-Groups are used to show the connection between multiple services or resources. Groups with icons are provided in the similar way as other icons. The file `AWSGroups.puml` provides groups with out icons, for example `AvailabilityZoneGroup`.
+Groups are a system element which shows the connection between multiple services or resources. Diagrams that required Groups which overlap across other groups are not possible using PlantUML.  Here is an example of a VPC with multiple Availability Zones and subnets.
 
 ```
 @startuml VPC
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
-
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSSimplified.puml
-!include AWSPuml/AWSGroups.puml
-
 !include AWSPuml/Compute/EC2.puml
-
-!include AWSPuml/GroupIcons/Cloud.puml
-!include AWSPuml/GroupIcons/VirtualPrivateCloudVPC.puml
-!include AWSPuml/GroupIcons/VPCSubnetPublic.puml
-!include AWSPuml/GroupIcons/VPCSubnetPrivate.puml
-
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/VPC.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/PublicSubnet.puml
+!include AWSPuml/Groups/PrivateSubnet.puml
 !include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
 !include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
 
-CloudGroup(cloud, "AWS Cloud") {
-  VirtualPrivateCloudVPCGroup(vpc, "VPC") {
+hide stereotype
+skinparam linetype ortho
 
-    VPCInternetGateway(internet_gateway, "Internet Gateway", "")
+AWSCloudGroup(cloud) {
+  VPCGroup(vpc) {
+    VPCInternetGateway(internet_gateway, "Internet gateway", "")
 
-    AvailabilityZoneGroup(az_1, "Availability Zone 1") {
-      VPCSubnetPublicGroup(az_1_public, "Public Subnet") {
-        VPCNATGateway(az_1_nat_gateway, "NAT Gateway", "")
+    AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+      PublicSubnetGroup(az_1_public, "Public subnet") {
+        VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent
       }
-      VPCSubnetPrivateGroup(az_1_private, "Private Subnet") {
-        EC2(az_1_ec2_1, "EC2", "")
+      PrivateSubnetGroup(az_1_private, "Private subnet") {
+        EC2Instance(az_1_ec2_1, "Instance", "") #Transparent
       }
 
-      az_1_ec2_1 .u..> az_1_nat_gateway
+      az_1_ec2_1 .u.> az_1_nat_gateway
     }
 
-    AvailabilityZoneGroup(az_2, "Availability Zone 2") {
-      VPCSubnetPublicGroup(az_2_public, "Public Subnet") {
-        VPCNATGateway(az_2_nat_gateway, "NAT Gateway", "")
+    AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+      PublicSubnetGroup(az_2_public, "Public subnet") {
+        VPCNATGateway(az_2_nat_gateway, "NAT gateway", "") #Transparent
       }
-      VPCSubnetPrivateGroup(az_2_private, "Private Subnet") {
-        EC2(az_2_ec2_1, "EC2", "")
+      PrivateSubnetGroup(az_2_private, "Private subnet") {
+        EC2Instance(az_2_ec2_1, "Instance", "") #Transparent
       }
 
-      az_2_ec2_1 .u..> az_2_nat_gateway
+      az_2_ec2_1 .u.> az_2_nat_gateway
     }
 
-    az_2_nat_gateway .u..> internet_gateway
-    az_1_nat_gateway .u..> internet_gateway
-
+    az_2_nat_gateway .[hidden]u.> internet_gateway
+    az_1_nat_gateway .[hidden]u.> internet_gateway
   }
 }
 @enduml
@@ -372,9 +370,82 @@ CloudGroup(cloud, "AWS Cloud") {
 
 This code generates the following diagram:
 
-![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.0%2Fexamples%2FVPC.puml)
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FGroups-VPC.puml)
 
-Groups that cross other groups are not possible as it is not supported in PlantUML.
+Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is an Amazon S3 upload workflow example defining a custom group for the Amazon S3 bucket.
+
+```
+@startuml S3 Upload Workflow
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/mcwarman/aws-icons-for-plantuml/groups/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/Groups/all.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/General/Documents.puml
+!include AWSPuml/General/Multimedia.puml
+!include AWSPuml/General/Tapestorage.puml
+!include AWSPuml/General/User.puml
+!include AWSPuml/MediaServices/ElementalMediaConvert.puml
+!include AWSPuml/MachineLearning/Transcribe.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+
+' define custom group for Amazon S3 bucket
+AWSGroupColoring(S3BucketGroup, #FFFFFF, AWS_COLOR_GREEN, plain)
+!define S3BucketGroup(g_alias, g_label="Amazon S3 bucket") AWSGroupEntity(g_alias, g_label, AWS_COLOR_GREEN, SimpleStorageService, S3BucketGroup)
+
+!procedure $stepnum($number) 
+<back:black><color:white><b> $number </b></color></back>
+!endprocedure
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+skinparam rectangle {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+}
+
+rectangle "$UserIMG()\nUser" as user
+AWSCloudGroup(cloud){
+  RegionGroup(region) {
+    S3BucketGroup(s3) {
+      rectangle "$MultimediaIMG()\n\tvideo\t" as video
+      rectangle "$TapestorageIMG()\n\taudio\t" as audio
+      rectangle "$DocumentsIMG()\n\ttranscript\t" as transcript
+
+      user -r-> video: $stepnum("1")\lupload
+      video -r-> audio
+      audio -r-> transcript
+    }
+
+    rectangle "$LambdaLambdaFunctionIMG()\nObjectCreated\nevent handler" as e1
+    rectangle "$ElementalMediaConvertIMG()\nAWS Elemental\nMediaConvert" as mediaconvert
+    rectangle "$TranscribeIMG()\nAmazon Transcribe\n" as transcribe
+    
+    video -d-> e1: $stepnum("2")
+    e1 -[hidden]r-> mediaconvert
+    mediaconvert -[hidden]r-> transcribe
+    mediaconvert -u-> audio: $stepnum("3")
+    transcribe -u-> transcript: $stepnum("4") 
+    
+    StepFunctionsWorkflowGroup(sfw) {
+      rectangle "$LambdaLambdaFunctionIMG()\nextract audio" as sfw1
+      rectangle "$LambdaLambdaFunctionIMG()\ntranscribe audio" as sfw2
+
+      e1 -r-> sfw1: Start\nExecution
+      sfw1 -r-> sfw2
+      sfw1 -u-> mediaconvert
+      sfw2 -u-> transcribe
+    }
+  }
+}
+
+@enduml
+```
+
+![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FS3%2520Upload%2520Workflow.puml)
 
 ## Distribution "Dist" Details
 
@@ -403,6 +474,7 @@ Please see the `CONTRIBUTING.md` file for details on how to contribute.
 The following, in alphabetical order by name or GitHub username, have contributed to this repository:
 
 - [jack-burridge-tp](https://github.com/jack-burridge-tp) - Added support for Sequence Diagrams
+- [mcwarman](https://github.com/mcwarman) - Added support for Groups
 
 ## License Summary
 

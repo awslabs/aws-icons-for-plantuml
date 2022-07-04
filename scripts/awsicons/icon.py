@@ -37,6 +37,8 @@ class Icon:
         self.config = config
         # Full filename without path
         self.source_name = None
+        # Skip Icon generation (used for some groups)
+        self.skip_icon = False
         # Category for icon to be associated
         self.category = None
         # Name for PUML removing _, -, etc // called by self._set_values()
@@ -49,9 +51,10 @@ class Icon:
         self.transparency = False
         # Group configuration
         self.group = False
-        self.groupBackgroundColor = None
-        self.groupBorderColor = None
-        self.groupBorderStyle = None
+        self.group_background_color = None
+        self.group_border_color = None
+        self.group_border_style = None
+        self.group_label = ""
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
         self.category_regex = category_regex
@@ -65,6 +68,9 @@ class Icon:
         # for the object.
         # If config and name not provided, used to access internal methods only
         if self.filename and self.config:
+            # .touch files are special placeholders for iconless groups
+            if str(self.filename).endswith('.touch'):
+                self.skip_icon = True
             # Source filename only without directory
             self.source_name = str(self.filename).split("/")[-1]
             # temp category to pass through and set (actual value could be Uncategorized)
@@ -159,26 +165,31 @@ class Icon:
         target = self.target
         color = self.color
         group = self.group
-        groupBackgroundColor = self.groupBackgroundColor
-        groupBorderColor = self.groupBorderColor
-        groupBorderStyle = self.groupBorderStyle
+        group_background_color = self.group_background_color
+        group_border_color = self.group_border_color
+        group_border_style = self.group_border_style
+        group_label = self.group_label
 
         puml_content += sprite
-        with open(f"{path}/{target}.png", "rb") as png_file:
-            encoded_string = base64.b64encode(png_file.read())
-            puml_content += f"!function ${target}IMG($scale=1)\n"
-            puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
-            puml_content += f"!endfunction\n\n"
+        if not self.skip_icon:
+            with open(f"{path}/{target}.png", "rb") as png_file:
+                encoded_string = base64.b64encode(png_file.read())
+                puml_content += f"!function ${target}IMG($scale=1)\n"
+                puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
+                puml_content += f"!endfunction\n\n"
 
-        puml_content += f"AWSEntityColoring({target})\n"
-        puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
-        puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
-        puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
-        puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
         if group:
-            puml_content += f"AWSGroupColoring({target}Group, {groupBackgroundColor}, {groupBorderColor}, {groupBorderStyle})\n"
-            puml_content += f"!define {target}Group(g_alias, g_label) AWSGroupEntity(g_alias, g_label, {color}, {target}, {target}Group)\n"
-
+            puml_content += f"AWSGroupColoring({target}Group, {group_background_color}, {group_border_color}, {group_border_style})\n"
+            if self.skip_icon:
+                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") AWSGroupEntity(g_alias, g_label, {color}, {target}Group)\n"
+            else:
+                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") AWSGroupEntity(g_alias, g_label, {color}, {target}, {target}Group)\n"
+        else:
+            puml_content += f"AWSEntityColoring({target})\n"
+            puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
+            puml_content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
 
         with open(f"{path}/{target}.puml", "w") as f:
             f.write(puml_content)
@@ -227,7 +238,10 @@ class Icon:
 
                         # Set color from icon, category, default then black
                         if "Color" in j:
-                            self.color = self._color_name(j["Color"])
+                            if j["Color"].startswith( '#' ):
+                                self.color = j["Color"]
+                            else:
+                                self.color = self._color_name(j["Color"])
                         # check category
                         elif "Color" in self.config["Categories"][i]:
                             self.color = self._color_name(
@@ -243,38 +257,48 @@ class Icon:
                             )
                             self.color = "#000000"
 
-                        if source_category == "GroupIcons":
+                        if source_category == "Groups":
                             self.group = True
 
-                            groupBackgroundColor = self._group_value("BackgroundColor", j)
+                            group_background_color = self._group_value("BackgroundColor", j)
 
-                            if groupBackgroundColor != None:
-                                self.groupBackgroundColor = self._color_name(groupBackgroundColor)
+                            if group_background_color != None:
+                                self.group_background_color = group_background_color
                             else:
                                 print(
                                     f"No background color definition found for {source_name}, using white"
                                 )
-                                self.groupBackgroundColor = "#FFFFFF"
+                                self.group_background_color = "#FFFFFF"
 
-                            groupBorderColor = self._group_value("BorderColor", j)
+                            group_border_color = self._group_value("BorderColor", j)
 
-                            if groupBorderColor != None:
-                                self.groupBorderColor = self._color_name(groupBorderColor)
+                            if group_border_color != None:
+                                self.group_border_color = group_border_color
                             else:
                                 print(
-                                    f"No border color definition found for {source_name}, using black"
+                                    f"No border color definition found for {source_name}, using Color: {self.color}"
                                 )
-                                self.groupBorderColor = "#000000"
+                                self.group_border_color = self.color
 
-                            groupBorderStyle = self._group_value("BorderStyle", j)
+                            group_border_style = self._group_value("BorderStyle", j)
 
-                            if groupBorderStyle != None:
-                                self.groupBorderStyle = self._border_style(groupBorderStyle)
+                            if group_border_style != None:
+                                self.group_border_style = self._border_style(group_border_style)
                             else:
                                 print(
                                     f"No border style definition found for {source_name}, using plain"
                                 )
-                                self.groupBorderStyle = "plain"
+                                self.group_border_style = "plain"
+
+                            group_label = j["Label"]
+
+                            if group_label != None:
+                                self.group_label = group_label
+                            else:
+                                print(
+                                    f"No label definition found for {source_name}, using Generic group"
+                                )
+                                self.group_label = "Generic group"
 
                         return
                     except KeyError as e:
@@ -378,7 +402,7 @@ class Icon:
             sys.exit(1)
 
     def _border_style(self, border_style):
-        """Check and Returns valid bordre style"""
+        """Check and Returns valid border style"""
 
         if border_style.lower() in ['bold', 'dotted', 'dashed', 'plain']:
             return border_style.lower()

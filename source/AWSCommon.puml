@@ -8,6 +8,21 @@
 !define AWS_BORDER_COLOR #FF9900
 !define AWS_SYMBOL_COLOR AWS_COLOR
 
+' Customer Enablement; Database; Developer Tools; Satellite
+!define AWS_COLOR_BLUE #3A47CB
+' Cloud Financial Management; Internet of Things; Storage
+!define AWS_COLOR_GREEN #3F8624
+' Blockchain; Compute; Containers; Media Services; Quantum Technologies
+!define AWS_COLOR_ORANGE #D86613
+' Application Integration; Management & Governance; VR & AR
+!define AWS_COLOR_PINK #CD2264
+' Analytics; Game Tech; Networking & Content Delivery; Serverless
+!define AWS_COLOR_PURPLE #693BC5
+' Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+!define AWS_COLOR_RED #D6232C
+' End User Computing; Machine Learning; Migration & Transfer
+!define AWS_COLOR_TURQUOISE #1B7B67
+
 ' Styling
 ' ##################################
 
@@ -42,12 +57,16 @@ skinparam rectangle<<stereo>> {
 '}
 !enddefinelong
 
+' "StereotypeFontSize 0" below will hide text
+' still need "hide stereotype" in diagrams to hide whitespace
 !definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
   skinparam rectangle<<g_stereo>> {
-    backgroundColor g_background_color
-    borderColor g_border_color
-    borderStyle g_border_style
-    shadowing false
+    StereotypeFontSize 0
+    BackgroundColor g_background_color
+    BorderColor g_border_color
+    BorderStyle g_border_style
+    Shadowing false
+    RoundCorner 0
   }
 !enddefinelong
 
@@ -90,10 +109,23 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>"
 participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
 !enddefinelong
 
+' wraps each line (seperated by \n) of a multi-line label with color
+!function $colorlabel($label, $color="black")
+!$buffer = ""
+!$tmp = $label
+!$i = %strpos($tmp, "\n")
+!while $i >= 0
+  !$buffer = $buffer + %substr($tmp, 0, $i) + "</color>\n<color:" + $color + ">"
+  !$tmp = %substr($tmp, $i + 2)
+  !$i = %strpos($tmp, "\n")
+!endwhile
+!return "<color:" + $color + ">" + $buffer + $tmp + "</color>"
+!endfunction
+
 !definelong AWSGroupEntity(g_alias, g_label, g_color, g_stereo)
-rectangle "<color:g_color>g_label</color>" as g_alias <<g_stereo>>
+rectangle "$colorlabel(g_label, g_color)" as g_alias <<g_stereo>>
 !enddefinelong
 
 !definelong AWSGroupEntity(g_alias, g_label, g_color, g_sprite, g_stereo)
-rectangle "$AWSGroupImg(g_sprite)<color:g_color>  g_label</color>" as g_alias <<g_stereo>>
+rectangle "$AWSGroupImg(g_sprite)  $colorlabel(g_label, g_color)" as g_alias <<g_stereo>>
 !enddefinelong
