@@ -379,7 +379,7 @@ Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/mcwarman/aws-icons-for-plantuml/groups/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Groups/all.puml
 !include AWSPuml/Compute/LambdaLambdaFunction.puml
