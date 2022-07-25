@@ -2,7 +2,7 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -35,12 +35,12 @@ endbox
 participant "Authorizer\nReturns status and token\n$Internetalt1IMG()" as processor
 
 'Use shortcut syntax for activation with colored lifelines and return keyword
-user -> api++ #CC2264: Process transaction\nPOST /prod/process
-api -> lambda++ #D86613: Invokes lambda with cardholder details
-lambda -> processor++ #232F3E: Submit via API token\ncard number, expiry, CID
-processor -> processor: Validate and create token
-return status code and token
+user -> api++ AWS_COLOR_PINK: Process transaction\lPOST /prod/process
+api -> lambda++ AWS_COLOR_ORANGE: Invokes lambda with\lcardholder details
+lambda -> processor++ AWS_COLOR: Submit via API token\lcard number, expiry, CID
+processor -> processor: Validate and\lcreate token
+return status code, token
 lambda ->> db: PUT transaction id, token
-return status code, transaction id
+return status code,\rtransaction id
 return status code
 @enduml

@@ -1,0 +1,4 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+AWSGroupColoring(AvailabilityZoneGroup, #FFFFFF, #5B9CD5, dashed)
+!define AvailabilityZoneGroup(g_alias, g_label="\n  Availability Zone") AWSGroupEntity(g_alias, g_label, #5B9CD5, AvailabilityZoneGroup)

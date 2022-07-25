@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Region [64x64/16z] {
+xTDN3iCm38DX9bxo_G_SlLaKWjbqwd__lDsVN1HPDOKt04NmCpQzqLS0kGjLZVU68le75O-Vq_rce0dhjmcrkxp0oHDtU86J9-xqp0M_uu9Fo8Ad0JoU1n0y
+3U3sF83Vym22vm6M__-Sy_yhXGy_KlZmjgcYsAOXZtDjnETprXSkYjO
+}
+
+!function $RegionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhRJREFUeNrt2k1IAkEUAOBnWWoYyQZhlIHhITpEgXTqB6Rzp25esg7dgiAQD3UviA6dvHToIgUdhArqUlFBP4QUUVFokT9Ef5SBZOhu7mCykYfIHXCc92DZHV1W3sfszptZNcLkhgQcRxlwHgiAAAiAAAiAAAigXlhMehhoM0NLnZEJAK2aF+u2CuBztoOhohxESQL36iXMH0X46QHjvVaSPLmwRgMeh42vW0CfTT7X1pYRCG4A5nZvSdfPtfd+tkseYOXiAVyLp+R4ZjsE01sh/kaB8NsH2Ueye65GAWXM9reSjXakRAk8a/8fbagBHIZfIfiUoJZ4Q40eepoFSGcArgv4HWoAvkAMFo6jVK7dmEne77JDMiWSZ87OzQs/pfB38vXVOpL8+tVjcT4DaIRcZvsH7WBWKXmmegCN5JkBoJU8EwA0k2cCwOfsgCaTAYaW1E+eCYCTWBzk+ZTDVgs05lVFPwqM+s9Bl5lVDndaSNudqfrUnF8VPYBc6Y0sn5FjGghM1AE0EZgphGghMFUJ0kBgCoAGAvPrATJC8DkB3v07vtYDlBGIxvlaD+CqEkQABEAABEAABEAABEAABEAABEAABEAABFA7Cl4Rkt/bKcNs1JG9UFX567v79yR8psXSAgiMdeX9fKLPRjZlOLwH5F1fSQFMbQb/fK7cA0ruFmDhz5D4EEQABEAABEAABECAfPEFvhLRjhPP3+QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSGroupColoring(RegionGroup, #FFFFFF, #5B9CD5, dotted)
+!define RegionGroup(g_alias, g_label="Region") AWSGroupEntity(g_alias, g_label, #5B9CD5, Region, RegionGroup)

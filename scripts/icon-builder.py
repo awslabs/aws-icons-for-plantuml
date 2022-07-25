@@ -103,6 +103,14 @@ dir_list = [
             "VirtualprivatecloudVPC": "VirtualPrivateCloudVPC",
         },
     },
+    {
+        "dir": "../source/unofficial",
+        "dir_glob": "Groups_04302022/*.*",
+        "category_regex": "[^.]*\/(Groups).*\/",
+        "filename_regex": "[^.]*\/(.*)\.(?:svg|touch)",
+        "category_mappings": {},
+        "filename_mappings": {},
+    },
 ]
 
 CATEGORY_COLORS = {
@@ -155,7 +163,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 13.0-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 13.1-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -171,8 +179,170 @@ Defaults:
   # Defaults for services not found
   Category:
     Color: SquidInk
+  Group:
+    BorderStyle: plain
+    BackgroundColor: "#FFFFFF"
+    Label: "Generic group"
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
+"""
+
+# \\\\n in Python needed to generate \\n in YAML for \n in output .puml
+CATEGORY_GROUPS = """
+  Groups:
+    Icons:
+    - Color: "#5B9CD5"
+      Group:
+        BorderStyle: dashed
+      Label: "\\\\n  Availability Zone"
+      Source: Availability-Zone.touch
+      SourceDir: Groups_20200430
+      Target: AvailabilityZone
+    - Color: "#CD2264"
+      Label: "AWS account"
+      Source: AWS-Account.svg
+      SourceDir: Groups_20200430
+      Target: AWSAccount
+    - Color: "#000000"
+      Label: "AWS Cloud"
+      Source: AWS-Cloud-alt.svg
+      SourceDir: Groups_20200430
+      Target: AWSCloudAlt
+    - Color: "#000000"
+      Label: "AWS Cloud"
+      Source: AWS-Cloud.svg
+      SourceDir: Groups_20200430
+      Target: AWSCloud
+    - Color: "#3F8624"
+      Label: "AWS IoT Greengrass Deployment"
+      Source: AWS-IoT-Greengrass-Deployment.svg
+      SourceDir: Groups_20200430
+      Target: IoTGreengrassDeployment
+    - Color: "#3F8624"
+      Label: "AWS IoT Greengrass"
+      Source: AWS-IoT-Greengrass.svg
+      SourceDir: Groups_20200430
+      Target: IoTGreengrass
+    - Color: "#CD2264"
+      Label: "AWS Step Functions workflow"
+      Source: AWS-Step-Functions-workflow.svg
+      SourceDir: Groups_20200430
+      Target: StepFunctionsWorkflow
+    - Color: "#D86613"
+      Group:
+        BorderStyle: dashed
+      Label: "\\\\nAuto Scaling group"
+      Source: Auto-Scaling-group.svg
+      SourceDir: Groups_20200430
+      Target: AutoScalingGroup
+    - Color: "#5A6B86"
+      Label: "Corporate data center"
+      Source: Corporate-data-center.svg
+      SourceDir: Groups_20200430
+      Target: CorporateDataCenter
+    - Color: "#D86613"
+      Label: "EC2 instance contents"
+      Source: EC2-instance-contents.svg
+      SourceDir: Groups_20200430
+      Target: EC2InstanceContents
+    - Color: "#D86613"
+      Label: "Elastic Beanstalk container"
+      Source: Elastic-Beanstalk-container.svg
+      SourceDir: Groups_20200430
+      Target: ElasticBeanstalkContainer
+    - Color: "#5A6B86"
+      Group:
+        BorderStyle: dashed
+      Label: "\\\\n  Generic group"
+      Source: Generic-group.touch
+      SourceDir: Groups_20200430
+      Target: Generic
+    - Color: "#000000"
+      Group:
+        BackgroundColor: "#EFF0F3"
+        BorderColor: "#Transparent"
+      Label: "\\\\n  Generic group"
+      Source: Generic-group-alt.touch
+      SourceDir: Groups_20200430
+      Target: GenericAlt
+    - Color: "#3A47CB"
+      Label: "Generic Blue group"
+      Source: Placeholder_Blue.svg
+      SourceDir: Groups_20200430
+      Target: GenericBlue
+    - Color: "#3A47CB"
+      Label: "Generic Green group"
+      Source: Placeholder_Green.svg
+      SourceDir: Groups_20200430
+      Target: GenericGreen
+    - Color: "#3A47CB"
+      Label: "Generic Orange group"
+      Source: Placeholder_Orange.svg
+      SourceDir: Groups_20200430
+      Target: GenericOrange
+    - Color: "#3A47CB"
+      Label: "Generic Pink group"
+      Source: Placeholder_Pink.svg
+      SourceDir: Groups_20200430
+      Target: GenericPink
+    - Color: "#3A47CB"
+      Label: "Generic Purple group"
+      Source: Placeholder_Purple.svg
+      SourceDir: Groups_20200430
+      Target: GenericPurple
+    - Color: "#3A47CB"
+      Label: "Generic Red group"
+      Source: Placeholder_Red.svg
+      SourceDir: Groups_20200430
+      Target: GenericRed
+    - Color: "#3A47CB"
+      Label: "Generic Turquoise group"
+      Source: Placeholder_Turquoise.svg
+      SourceDir: Groups_20200430
+      Target: GenericTurquoise
+    - Color: "#5B9CD5"
+      Group:
+        BackgroundColor: "#E6F2F8"
+        BorderColor: "#Transparent"
+      Label: "Private subnet"
+      Source: Private-subnet.svg
+      SourceDir: Groups_20200430
+      Target: PrivateSubnet
+    - Color: "#1E8900"
+      Group:
+        BackgroundColor: "#E9F3E6"
+        BorderColor: "#Transparent"
+      Label: "Public subnet"
+      Source: Public-subnet.svg
+      SourceDir: Groups_20200430
+      Target: PublicSubnet
+    - Color: "#5B9CD5"
+      Group:
+        BorderStyle: dotted
+      Label: "Region"
+      Source: Region.svg
+      SourceDir: Groups_20200430
+      Target: Region
+    - Color: "#DF3312"
+      Label: "\\\\n  Security group"
+      Source: Security-group.touch
+      SourceDir: Groups_20200430
+      Target: SecurityGroup
+    - Color: "#5A6B86"
+      Label: "Server contents"
+      Source: Server-contents.svg
+      SourceDir: Groups_20200430
+      Target: ServerContents
+    - Color: "#D86613"
+      Label: "Spot Fleet"
+      Source: Spot-Fleet.svg
+      SourceDir: Groups_20200430
+      Target: SpotFleet
+    - Color: "#1E8900"
+      Label: "VPC"
+      Source: VPC.svg
+      SourceDir: Groups_20200430
+      Target: VPC
 """
 
 MARKDOWN_PREFIX_TEMPLATE = """
@@ -324,6 +494,9 @@ def create_config_template():
                 filename=i,
                 mappings=dir["category_mappings"],
             )
+            if category == "Groups":
+                continue  # Groups will be added en-masse at the end
+
             target = Icon()._make_name(
                 regex=dir["filename_regex"],
                 filename=i,
@@ -354,6 +527,7 @@ def create_config_template():
             else:
                 icon_entry["ZComment"] = "******* Duplicate target name, must be made unique for All.puml ********"
 
+            # Note: GroupIcons are deprecated, replaced by Groups
             if category == "GroupIcons" and target in GROUPICONS_COLORS:
                 icon_entry["Color"] = GROUPICONS_COLORS[target]
 
@@ -375,6 +549,7 @@ def create_config_template():
     with open("config-template.yml", "w") as f:
         f.write(TEMPLATE_DEFAULT)
         yaml.dump(yaml_content, f, default_flow_style=False)
+        f.write(CATEGORY_GROUPS)
     print("Successfully created config-template.yml")
     sys.exit(0)
 
@@ -399,25 +574,29 @@ def create_category_all_file(path):
 
 def worker(icon):
     """multiprocess resource intensive operations (java subprocess)"""
-    # create images without transparency for use with PlantUML sprites
-    icon.generate_image(
-        Path(f"../dist/{icon.category}"),
-        color=True,
-        max_target_size=64, # override to 64x64
-        #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
-        transparency=False,
-        gradient=True,
-    )
-    sprite = icon.generate_puml_sprite(Path(f"../dist/{icon.category}"))
-    # Recreate the images with transparency
-    icon.generate_image(
-        Path(f"../dist/{icon.category}"),
-        color=True,
-        max_target_size=64, # override to 64x64
-        #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
-        transparency=icon.transparency, # was True
-        gradient=False,
-    )
+    if icon.skip_icon:
+        sprite = ""
+        print(f"skipping icon for {icon.source_name}")
+    else:
+        # create images without transparency for use with PlantUML sprites
+        icon.generate_image(
+            Path(f"../dist/{icon.category}"),
+            color=True,
+            max_target_size=64, # override to 64x64
+            #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
+            transparency=False,
+            gradient=True,
+        )
+        sprite = icon.generate_puml_sprite(Path(f"../dist/{icon.category}"))
+        # Recreate the images with transparency
+        icon.generate_image(
+            Path(f"../dist/{icon.category}"),
+            color=True,
+            max_target_size=64, # override to 64x64
+            #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
+            transparency=icon.transparency, # was True
+            gradient=False,
+        )
     print(f"generating PUML for {icon.source_name}")
     icon.generate_puml(Path(f"../dist/{icon.category}"), sprite)
     return
@@ -472,19 +651,34 @@ def main():
         create_category_all_file(Path(f"../dist/{i}"))
 
     # Create markdown sheet and place in dist
-    sorted_icons = sorted(icons, key=lambda x: (x.category, x.target))
+    sorted_icons = sorted(icons, key=lambda x: (x.category, x.target, x.skip_icon))
     markdown = MARKDOWN_PREFIX_TEMPLATE
     for i in categories:
         category = i
-        markdown += f"**{category}** | | | **{category}/all.puml**\n"
+        if category == "GroupIcons":
+            pass
+        else:
+            markdown += f"**{category}** | | | **{category}/all.puml**\n"
         for j in sorted_icons:
             if j.category == i:
                 cat = j.category
                 tgt = j.target
-                markdown += (
-                    f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
-                    f"{cat}/{tgt}.puml\n"
-                )
+                skip_icon = j.skip_icon
+                if cat == "GroupIcons":
+                    pass
+                elif cat == "Groups":
+                    if skip_icon:
+                        markdown += f"{cat} | {tgt}Group  | - | {cat}/{tgt}.puml\n"
+                    else:
+                        markdown += (
+                            f"{cat} | {tgt}Group / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                            f"{cat}/{tgt}.puml\n"
+                        )
+                else:
+                    markdown += (
+                        f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                        f"{cat}/{tgt}.puml\n"
+                    )
     with open(Path("../AWSSymbols.md"), "w") as f:
         f.write(markdown)
 

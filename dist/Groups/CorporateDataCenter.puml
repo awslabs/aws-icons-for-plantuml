@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CorporateDataCenter [64x64/16z] {
+xPN50O0m3003RMp_WN5trzm7FQGnFG73O6n0wtreGUlza2iGSBtlwds-pKUtptVmRr_uwlXP_0bJshx355waGuwlVO6SS8cFW9oYAL9kKe9WcSywp7L-4VVM
+TerVh5jh-ok_Y7jxQ_6_nBVuM_pxt_-YzKSUPfbFC4guOduEmNeiXX43
+}
+
+!function $CorporateDataCenterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfZJREFUeNrtmj9IAlEcx3+ppzYEIiFFOUhgTRIE0dQuRLsQLTUUtbW0FjQ31tBUQ3NBNLUURIlRiAlaYiamZBli4b87rbto0UTlPHjnfb/wEPw9Pf1w39/7Pt71eFa2qqRh6UjjAgAAAAAAAAAA0LAMSl9gbMROtn5LW5/hhQrd+MNULJXVD2B91UNGrv3L7Owf04U3oH4A4p+/DTzSydl1S/MHbFZa9LiJ4wzdYQFRH9kcBR9iLc3NF4togpoAMD3loqW5Ge0CcDqGJAjIAQAAAN2dBBtJzAWXvqB2ASRfM9KABZADkANgAdU3QZORowmXkwx6XQfvkGHieaHu/UgsSYnUG1sAJsdHaXl+tmE995Vv+bs+f+ZWq7894j+LhCJx2tg+YAvA39597/CUUjVLGy8IFHl6aTkHpN+ztLa5S1ZLX11tweMmI8exmwOi8SRFn1Oyc0AqnZFGrQqFEpqgagA0W+fl1pkH0Gydl1uHBQAAANjeDjfb78utMw+g2X5fbh0WQA5ADoAFAAAAkAOQA2AB5ADkAFiAySYYjibIoNcrVmcewPmVXxpK1WEBFu8Ah32Qek0mxX6s2Wzs+NlARwCUy7z0Kj7hqbTEozHmAHjvQiRUjjp6ONpI4uEocwDEp7ovffdIggAAAAAAAAAAAACgKn0DfxfyPjk4nvwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSGroupColoring(CorporateDataCenterGroup, #FFFFFF, #5A6B86, plain)
+!define CorporateDataCenterGroup(g_alias, g_label="Corporate data center") AWSGroupEntity(g_alias, g_label, #5A6B86, CorporateDataCenter, CorporateDataCenterGroup)

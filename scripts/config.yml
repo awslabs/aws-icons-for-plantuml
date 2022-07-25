@@ -1,8 +1,8 @@
 
-# Copyright 2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 13.0-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 13.1-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -18,6 +18,10 @@ Defaults:
   # Defaults for services not found
   Category:
     Color: SquidInk
+  Group:
+    BorderStyle: plain
+    BackgroundColor: "#FFFFFF"
+    Label: "Generic group"
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 Categories:
@@ -2525,3 +2529,158 @@ Categories:
     - Source: Arch-Category_VR-AR_64.svg
       SourceDir: Category-Icons_04302022/Arch-Category_64
       Target: VRAR
+
+  Groups:
+    Icons:
+    - Color: "#5B9CD5"
+      Group:
+        BorderStyle: dashed
+      Label: "\\n  Availability Zone"
+      Source: Availability-Zone.touch
+      SourceDir: Groups_20200430
+      Target: AvailabilityZone
+    - Color: "#CD2264"
+      Label: "AWS account"
+      Source: AWS-Account.svg
+      SourceDir: Groups_20200430
+      Target: AWSAccount
+    - Color: "#000000"
+      Label: "AWS Cloud"
+      Source: AWS-Cloud-alt.svg
+      SourceDir: Groups_20200430
+      Target: AWSCloudAlt
+    - Color: "#000000"
+      Label: "AWS Cloud"
+      Source: AWS-Cloud.svg
+      SourceDir: Groups_20200430
+      Target: AWSCloud
+    - Color: "#3F8624"
+      Label: "AWS IoT Greengrass Deployment"
+      Source: AWS-IoT-Greengrass-Deployment.svg
+      SourceDir: Groups_20200430
+      Target: IoTGreengrassDeployment
+    - Color: "#3F8624"
+      Label: "AWS IoT Greengrass"
+      Source: AWS-IoT-Greengrass.svg
+      SourceDir: Groups_20200430
+      Target: IoTGreengrass
+    - Color: "#CD2264"
+      Label: "AWS Step Functions workflow"
+      Source: AWS-Step-Functions-workflow.svg
+      SourceDir: Groups_20200430
+      Target: StepFunctionsWorkflow
+    - Color: "#D86613"
+      Group:
+        BorderStyle: dashed
+      Label: "\\nAuto Scaling group"
+      Source: Auto-Scaling-group.svg
+      SourceDir: Groups_20200430
+      Target: AutoScalingGroup
+    - Color: "#5A6B86"
+      Label: "Corporate data center"
+      Source: Corporate-data-center.svg
+      SourceDir: Groups_20200430
+      Target: CorporateDataCenter
+    - Color: "#D86613"
+      Label: "EC2 instance contents"
+      Source: EC2-instance-contents.svg
+      SourceDir: Groups_20200430
+      Target: EC2InstanceContents
+    - Color: "#D86613"
+      Label: "Elastic Beanstalk container"
+      Source: Elastic-Beanstalk-container.svg
+      SourceDir: Groups_20200430
+      Target: ElasticBeanstalkContainer
+    - Color: "#5A6B86"
+      Group:
+        BorderStyle: dashed
+      Label: "\\n  Generic group"
+      Source: Generic-group.touch
+      SourceDir: Groups_20200430
+      Target: Generic
+    - Color: "#000000"
+      Group:
+        BackgroundColor: "#EFF0F3"
+        BorderColor: "#Transparent"
+      Label: "\\n  Generic group"
+      Source: Generic-group-alt.touch
+      SourceDir: Groups_20200430
+      Target: GenericAlt
+    - Color: "#3A47CB"
+      Label: "Generic Blue group"
+      Source: Placeholder_Blue.svg
+      SourceDir: Groups_20200430
+      Target: GenericBlue
+    - Color: "#3A47CB"
+      Label: "Generic Green group"
+      Source: Placeholder_Green.svg
+      SourceDir: Groups_20200430
+      Target: GenericGreen
+    - Color: "#3A47CB"
+      Label: "Generic Orange group"
+      Source: Placeholder_Orange.svg
+      SourceDir: Groups_20200430
+      Target: GenericOrange
+    - Color: "#3A47CB"
+      Label: "Generic Pink group"
+      Source: Placeholder_Pink.svg
+      SourceDir: Groups_20200430
+      Target: GenericPink
+    - Color: "#3A47CB"
+      Label: "Generic Purple group"
+      Source: Placeholder_Purple.svg
+      SourceDir: Groups_20200430
+      Target: GenericPurple
+    - Color: "#3A47CB"
+      Label: "Generic Red group"
+      Source: Placeholder_Red.svg
+      SourceDir: Groups_20200430
+      Target: GenericRed
+    - Color: "#3A47CB"
+      Label: "Generic Turquoise group"
+      Source: Placeholder_Turquoise.svg
+      SourceDir: Groups_20200430
+      Target: GenericTurquoise
+    - Color: "#5B9CD5"
+      Group:
+        BackgroundColor: "#E6F2F8"
+        BorderColor: "#Transparent"
+      Label: "Private subnet"
+      Source: Private-subnet.svg
+      SourceDir: Groups_20200430
+      Target: PrivateSubnet
+    - Color: "#1E8900"
+      Group:
+        BackgroundColor: "#E9F3E6"
+        BorderColor: "#Transparent"
+      Label: "Public subnet"
+      Source: Public-subnet.svg
+      SourceDir: Groups_20200430
+      Target: PublicSubnet
+    - Color: "#5B9CD5"
+      Group:
+        BorderStyle: dotted
+      Label: "Region"
+      Source: Region.svg
+      SourceDir: Groups_20200430
+      Target: Region
+    - Color: "#DF3312"
+      Label: "\\n  Security group"
+      Source: Security-group.touch
+      SourceDir: Groups_20200430
+      Target: SecurityGroup
+    - Color: "#5A6B86"
+      Label: "Server contents"
+      Source: Server-contents.svg
+      SourceDir: Groups_20200430
+      Target: ServerContents
+    - Color: "#D86613"
+      Label: "Spot Fleet"
+      Source: Spot-Fleet.svg
+      SourceDir: Groups_20200430
+      Target: SpotFleet
+    - Color: "#1E8900"
+      Label: "VPC"
+      Source: VPC.svg
+      SourceDir: Groups_20200430
+      Target: VPC

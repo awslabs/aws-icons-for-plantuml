@@ -1,0 +1,51 @@
+@startuml VPC
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v13.1/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/VPC.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/PublicSubnet.puml
+!include AWSPuml/Groups/PrivateSubnet.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+
+hide stereotype
+skinparam linetype ortho
+
+AWSCloudGroup(cloud) {
+  VPCGroup(vpc) {
+    VPCInternetGateway(internet_gateway, "Internet gateway", "")
+
+    AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+      PublicSubnetGroup(az_1_public, "Public subnet") {
+        VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent
+      }
+      PrivateSubnetGroup(az_1_private, "Private subnet") {
+        EC2Instance(az_1_ec2_1, "Instance", "") #Transparent
+      }
+
+      az_1_ec2_1 .u.> az_1_nat_gateway
+    }
+
+    AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+      PublicSubnetGroup(az_2_public, "Public subnet") {
+        VPCNATGateway(az_2_nat_gateway, "NAT gateway", "") #Transparent
+      }
+      PrivateSubnetGroup(az_2_private, "Private subnet") {
+        EC2Instance(az_2_ec2_1, "Instance", "") #Transparent
+      }
+
+      az_2_ec2_1 .u.> az_2_nat_gateway
+    }
+
+    az_2_nat_gateway .[hidden]u.> internet_gateway
+    az_1_nat_gateway .[hidden]u.> internet_gateway
+  }
+}
+@enduml

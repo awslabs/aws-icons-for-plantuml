@@ -41,6 +41,8 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
         ...
   ```
 
+- The group icons (in the `source/official` directory) are extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) page.
+
 ## Configure to Build Icon Set
 
 ### Configuration File: config.yml
@@ -101,6 +103,7 @@ From a logical point of view, the following happens:
    - Non-matching files be set to Uncategorized with default `Target` and `Color` settings.
 1. For each file, the source SVG will be used to generate the `TargetMaxSize` in pixels as a .png, preserving transparency if set.
 1. A PlantUML sprite is generated.
+1. A `<img>` tag with a data URL (data:image/png;base64) is generated.
 1. In addition to single AWS services PUML files, a combined PUML file, named `all.puml`, is created for each category.
 1. A markdown table with all AWS services, image/icon, and the PUML name is generated.
 
@@ -142,6 +145,10 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 ```
 
 ## Build Notes
+
+### Release 13.1-2022.04.30
+
+This release added Groups support via a custom styled `rectangle` using the corresponding AWS Icon and a default label.  Since `icon-builder.py` is file driven, and groups like Availability Zone or Security Group do not have associated icon files, a convention using a zero-length file with the `.touch` extension was implemented.  The generation logic uses this file to trigger `.puml` creation, but will not generate a Sprite / PNG image or have an image reference in the AWS Symbols table. Groups deprecates the GroupIcons category whose macros no longer appear in AWS Symbols table, but the .puml files are still generated for backward compatibility.
 
 ### Release 13.0-2022.04.30
 

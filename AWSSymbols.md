@@ -375,20 +375,34 @@ General | Toolkit / ToolkitParticipant / $ToolkitIMG()  | ![Toolkit](dist/Genera
 General | Traditionalserver / TraditionalserverParticipant / $TraditionalserverIMG()  | ![Traditionalserver](dist/General/Traditionalserver.png?raw=true) |General/Traditionalserver.puml
 General | User / UserParticipant / $UserIMG()  | ![User](dist/General/User.png?raw=true) |General/User.puml
 General | Users / UsersParticipant / $UsersIMG()  | ![Users](dist/General/Users.png?raw=true) |General/Users.puml
-**GroupIcons** | | | **GroupIcons/all.puml**
-GroupIcons | AutoScalingGroup / AutoScalingGroupParticipant / $AutoScalingGroupIMG()  | ![AutoScalingGroup](dist/GroupIcons/AutoScalingGroup.png?raw=true) |GroupIcons/AutoScalingGroup.puml
-GroupIcons | Cloud / CloudParticipant / $CloudIMG()  | ![Cloud](dist/GroupIcons/Cloud.png?raw=true) |GroupIcons/Cloud.puml
-GroupIcons | Cloudalt / CloudaltParticipant / $CloudaltIMG()  | ![Cloudalt](dist/GroupIcons/Cloudalt.png?raw=true) |GroupIcons/Cloudalt.puml
-GroupIcons | CorporateDataCenter / CorporateDataCenterParticipant / $CorporateDataCenterIMG()  | ![CorporateDataCenter](dist/GroupIcons/CorporateDataCenter.png?raw=true) |GroupIcons/CorporateDataCenter.puml
-GroupIcons | EC2InstanceContainer / EC2InstanceContainerParticipant / $EC2InstanceContainerIMG()  | ![EC2InstanceContainer](dist/GroupIcons/EC2InstanceContainer.png?raw=true) |GroupIcons/EC2InstanceContainer.puml
-GroupIcons | ElasticBeanstalkContainer / ElasticBeanstalkContainerParticipant / $ElasticBeanstalkContainerIMG()  | ![ElasticBeanstalkContainer](dist/GroupIcons/ElasticBeanstalkContainer.png?raw=true) |GroupIcons/ElasticBeanstalkContainer.puml
-GroupIcons | Region / RegionParticipant / $RegionIMG()  | ![Region](dist/GroupIcons/Region.png?raw=true) |GroupIcons/Region.puml
-GroupIcons | ServerContents / ServerContentsParticipant / $ServerContentsIMG()  | ![ServerContents](dist/GroupIcons/ServerContents.png?raw=true) |GroupIcons/ServerContents.puml
-GroupIcons | SpotFleet / SpotFleetParticipant / $SpotFleetIMG()  | ![SpotFleet](dist/GroupIcons/SpotFleet.png?raw=true) |GroupIcons/SpotFleet.puml
-GroupIcons | StepFunction / StepFunctionParticipant / $StepFunctionIMG()  | ![StepFunction](dist/GroupIcons/StepFunction.png?raw=true) |GroupIcons/StepFunction.puml
-GroupIcons | VPCSubnetPrivate / VPCSubnetPrivateParticipant / $VPCSubnetPrivateIMG()  | ![VPCSubnetPrivate](dist/GroupIcons/VPCSubnetPrivate.png?raw=true) |GroupIcons/VPCSubnetPrivate.puml
-GroupIcons | VPCSubnetPublic / VPCSubnetPublicParticipant / $VPCSubnetPublicIMG()  | ![VPCSubnetPublic](dist/GroupIcons/VPCSubnetPublic.png?raw=true) |GroupIcons/VPCSubnetPublic.puml
-GroupIcons | VirtualPrivateCloudVPC / VirtualPrivateCloudVPCParticipant / $VirtualPrivateCloudVPCIMG()  | ![VirtualPrivateCloudVPC](dist/GroupIcons/VirtualPrivateCloudVPC.png?raw=true) |GroupIcons/VirtualPrivateCloudVPC.puml
+**Groups** | | | **Groups/all.puml**
+Groups | AWSAccountGroup / $AWSAccountIMG()  | ![AWSAccount](dist/Groups/AWSAccount.png?raw=true) |Groups/AWSAccount.puml
+Groups | AWSCloudGroup / $AWSCloudIMG()  | ![AWSCloud](dist/Groups/AWSCloud.png?raw=true) |Groups/AWSCloud.puml
+Groups | AWSCloudAltGroup / $AWSCloudAltIMG()  | ![AWSCloudAlt](dist/Groups/AWSCloudAlt.png?raw=true) |Groups/AWSCloudAlt.puml
+Groups | AutoScalingGroupGroup / $AutoScalingGroupIMG()  | ![AutoScalingGroup](dist/Groups/AutoScalingGroup.png?raw=true) |Groups/AutoScalingGroup.puml
+Groups | AvailabilityZoneGroup  | - | Groups/AvailabilityZone.puml
+Groups | CorporateDataCenterGroup / $CorporateDataCenterIMG()  | ![CorporateDataCenter](dist/Groups/CorporateDataCenter.png?raw=true) |Groups/CorporateDataCenter.puml
+Groups | EC2InstanceContentsGroup / $EC2InstanceContentsIMG()  | ![EC2InstanceContents](dist/Groups/EC2InstanceContents.png?raw=true) |Groups/EC2InstanceContents.puml
+Groups | ElasticBeanstalkContainerGroup / $ElasticBeanstalkContainerIMG()  | ![ElasticBeanstalkContainer](dist/Groups/ElasticBeanstalkContainer.png?raw=true) |Groups/ElasticBeanstalkContainer.puml
+Groups | GenericGroup  | - | Groups/Generic.puml
+Groups | GenericAltGroup  | - | Groups/GenericAlt.puml
+Groups | GenericBlueGroup / $GenericBlueIMG()  | ![GenericBlue](dist/Groups/GenericBlue.png?raw=true) |Groups/GenericBlue.puml
+Groups | GenericGreenGroup / $GenericGreenIMG()  | ![GenericGreen](dist/Groups/GenericGreen.png?raw=true) |Groups/GenericGreen.puml
+Groups | GenericOrangeGroup / $GenericOrangeIMG()  | ![GenericOrange](dist/Groups/GenericOrange.png?raw=true) |Groups/GenericOrange.puml
+Groups | GenericPinkGroup / $GenericPinkIMG()  | ![GenericPink](dist/Groups/GenericPink.png?raw=true) |Groups/GenericPink.puml
+Groups | GenericPurpleGroup / $GenericPurpleIMG()  | ![GenericPurple](dist/Groups/GenericPurple.png?raw=true) |Groups/GenericPurple.puml
+Groups | GenericRedGroup / $GenericRedIMG()  | ![GenericRed](dist/Groups/GenericRed.png?raw=true) |Groups/GenericRed.puml
+Groups | GenericTurquoiseGroup / $GenericTurquoiseIMG()  | ![GenericTurquoise](dist/Groups/GenericTurquoise.png?raw=true) |Groups/GenericTurquoise.puml
+Groups | IoTGreengrassGroup / $IoTGreengrassIMG()  | ![IoTGreengrass](dist/Groups/IoTGreengrass.png?raw=true) |Groups/IoTGreengrass.puml
+Groups | IoTGreengrassDeploymentGroup / $IoTGreengrassDeploymentIMG()  | ![IoTGreengrassDeployment](dist/Groups/IoTGreengrassDeployment.png?raw=true) |Groups/IoTGreengrassDeployment.puml
+Groups | PrivateSubnetGroup / $PrivateSubnetIMG()  | ![PrivateSubnet](dist/Groups/PrivateSubnet.png?raw=true) |Groups/PrivateSubnet.puml
+Groups | PublicSubnetGroup / $PublicSubnetIMG()  | ![PublicSubnet](dist/Groups/PublicSubnet.png?raw=true) |Groups/PublicSubnet.puml
+Groups | RegionGroup / $RegionIMG()  | ![Region](dist/Groups/Region.png?raw=true) |Groups/Region.puml
+Groups | SecurityGroupGroup  | - | Groups/SecurityGroup.puml
+Groups | ServerContentsGroup / $ServerContentsIMG()  | ![ServerContents](dist/Groups/ServerContents.png?raw=true) |Groups/ServerContents.puml
+Groups | SpotFleetGroup / $SpotFleetIMG()  | ![SpotFleet](dist/Groups/SpotFleet.png?raw=true) |Groups/SpotFleet.puml
+Groups | StepFunctionsWorkflowGroup / $StepFunctionsWorkflowIMG()  | ![StepFunctionsWorkflow](dist/Groups/StepFunctionsWorkflow.png?raw=true) |Groups/StepFunctionsWorkflow.puml
+Groups | VPCGroup / $VPCIMG()  | ![VPC](dist/Groups/VPC.png?raw=true) |Groups/VPC.puml
 **InternetOfThings** | | | **InternetOfThings/all.puml**
 InternetOfThings | FreeRTOS / FreeRTOSParticipant / $FreeRTOSIMG()  | ![FreeRTOS](dist/InternetOfThings/FreeRTOS.png?raw=true) |InternetOfThings/FreeRTOS.puml
 InternetOfThings | InternetOfThings / InternetOfThingsParticipant / $InternetOfThingsIMG()  | ![InternetOfThings](dist/InternetOfThings/InternetOfThings.png?raw=true) |InternetOfThings/InternetOfThings.puml
