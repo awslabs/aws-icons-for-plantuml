@@ -370,7 +370,7 @@ AWSCloudGroup(cloud) {
 
 This code generates the following diagram:
 
-![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FGroups-VPC.puml)
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv13.1%2Fexamples%2FGroups%2520-%2520VPC.puml)
 
 Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is an Amazon S3 upload workflow example defining a custom group for the Amazon S3 bucket.
 
