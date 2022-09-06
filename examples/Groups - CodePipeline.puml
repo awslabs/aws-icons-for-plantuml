@@ -1,0 +1,58 @@
+@startuml AWS CodePipeline - Human Approval Step
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+' based on https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codepipeline-extend
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/DeveloperTools/CodeBuild.puml
+!include AWSPuml/DeveloperTools/CodeCommit.puml
+!include AWSPuml/DeveloperTools/CodeDeploy.puml
+!include AWSPuml/DeveloperTools/CodePipeline.puml
+!include AWSPuml/General/User.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+
+' define custom group for AWS CodePipeline
+AWSGroupColoring(CodePipelineGroup, #FFFFFF, AWS_COLOR_BLUE, plain)
+!define CodePipelineGroup(g_alias, g_label="AWS CodePipeline") AWSGroupEntity(g_alias, g_label, AWS_COLOR_BLUE, CodePipeline, CodePipelineGroup)
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+skinparam rectangle {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+}
+
+' define custom procedure for AWS Service icon and two lines of text
+!procedure $AWSIcon($service, $line1, $line2="")
+rectangle "$AWSImg($service)\n$line1\n$line2"
+!endprocedure 
+
+CodePipelineGroup(pipeline){
+  $AWSIcon(CodeCommit, "AWS CodeCommit") as cc
+  $AWSIcon(CodeBuild, "AWS CodeBuild") as cb
+  $AWSIcon(SimpleStorageService, "Amazon S3", "(artifact store)") as s3
+  cc -r-> cb
+  cb -d-> s3
+
+  $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd1
+  $AWSIcon(EC2, "Amazon EC2", "(dev)") as ec2dev
+  cb -r-> cd1
+  cd1 -d-> ec2dev
+
+  $AWSIcon(User, "Human", "Approval") as user
+  cd1 -r-> user
+
+  $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd2
+  $AWSIcon(EC2, "Amazon EC2", "(prod)") as ec2prod
+  user -r-> cd2
+  cd2 -d-> ec2prod
+
+  $AWSIcon(SimpleNotificationService, "SNS Notification") as sns
+  cd2 -r-> sns
+}
+@enduml

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BraketEmbeddedSimulator [64x64/16z] {
+xPU52iGm343N6Fd_7puDDYePLI0F2VRkjhMnwoWIOdB48g0AZZZU3p_n1r4LJymS8ki3U8f_EHdh9_mXJtpvEydEnF3x1dJx-UT7_e3tc7d-xFUpi-HxT7p_
+Rh___96vv35ZzVnhps5UzVpzlW6zVl_pzt-__lCx__pZ_EFyu_o9OCtvKxP_zFh-_W_P_dbW_--TNuxANp_zVk_yl6t-3xzxVpsADm
+}
+
+!function $BraketEmbeddedSimulatorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAm5JREFUeNrtmstKw0AUhmcSLwHxHboVu9S13bu1VajgDVzoC4ggKII+gW6tYMXbQ+i6uqu67TuIUpVkPNJIY5PoMUzaif3PYpL2pJ3JmXP5ZhghIP0tMukPH+ecnGuLqc972xU3Y2fNhkl6rgwkNYBrexNkv0rrXhXp0jBJzxWr30MABoABYACUQWbJU5tCqMHAT3PUFPwP16TryMK91Mt325V7nNLIKoOe7W3Rny7/YK/CL7bsup7GbNNlRUsIKGmNZs21uWP+Mwjlq6/S5Bevl4cVkmASFA6yddifRC5zb0ZjrpedhShVcO0wEMXW/0PUJDWV6HVMe+2AEGi7hXVLIbAY89y6b1FuIloLPy9rlEAPdeiZiFOj5iA6BORtyAB+TESCQ33emaaYYhtACjlFqbj0/Us5Qu0hR0/3BeqvGKvnDaKRP2keowqktSHyk4xXm7N0mU2qp5krZcoAwZjNV9+W0gWdoaNkOSFFDuiI6aV050wusnICOAAc0DsOMGSro3scoIS6ofalS65d8Tut6eAALVVARzbm96W3yiAHgAPAAeAA5ABwADgAHIAcAA4AB4ADwAHggAxwgFRqu9WpeuhLDhg/fdsxrgyGS5WzT1O08X1G5OXXfv992TknrynF6cnjLmiGi3F6gFAaHqD3fIB3FypBAXaPzBlBtlfqmprnWD2rCvaQA4gGr+hylTRn6Mkp4ABwgOjV+QAz3h/nA9LhgL+ewzNdWB4glfeUtRfjjpnlAZZr7VLpcLN0WJrGvKfNAH6CXO3YmZmhjvwBqAO/9hujBwrDADAADAADpLkhElw7BNnaFD0EwpMPLvMQpBbJEysAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(BraketEmbeddedSimulator)
+!define BraketEmbeddedSimulator(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, BraketEmbeddedSimulator, BraketEmbeddedSimulator)
+!define BraketEmbeddedSimulator(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, BraketEmbeddedSimulator, BraketEmbeddedSimulator)
+!define BraketEmbeddedSimulatorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, BraketEmbeddedSimulator, BraketEmbeddedSimulator)
+!define BraketEmbeddedSimulatorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, BraketEmbeddedSimulator, BraketEmbeddedSimulator)

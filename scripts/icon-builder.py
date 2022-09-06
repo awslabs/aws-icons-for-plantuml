@@ -27,13 +27,13 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 13.0-2022.04.30 release
+# Source directories for the 14.0-2022.07.31 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_04302022/*64/*.svg",
+        "dir_glob": "Category-Icons_07312022/*64/*.svg",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "category_mappings": {
@@ -52,7 +52,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_04302022/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_07312022/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -69,7 +69,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_04302022/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_07312022/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -163,7 +163,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 13.1-2022.04.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 14.0-2022.07.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -270,32 +270,32 @@ CATEGORY_GROUPS = """
       Source: Placeholder_Blue.svg
       SourceDir: Groups_20200430
       Target: GenericBlue
-    - Color: "#3A47CB"
+    - Color: "#3F8624"
       Label: "Generic Green group"
       Source: Placeholder_Green.svg
       SourceDir: Groups_20200430
       Target: GenericGreen
-    - Color: "#3A47CB"
+    - Color: "#D86613"
       Label: "Generic Orange group"
       Source: Placeholder_Orange.svg
       SourceDir: Groups_20200430
       Target: GenericOrange
-    - Color: "#3A47CB"
+    - Color: "#CD2264"
       Label: "Generic Pink group"
       Source: Placeholder_Pink.svg
       SourceDir: Groups_20200430
       Target: GenericPink
-    - Color: "#3A47CB"
+    - Color: "#693BC5"
       Label: "Generic Purple group"
       Source: Placeholder_Purple.svg
       SourceDir: Groups_20200430
       Target: GenericPurple
-    - Color: "#3A47CB"
+    - Color: "#D6232C"
       Label: "Generic Red group"
       Source: Placeholder_Red.svg
       SourceDir: Groups_20200430
       Target: GenericRed
-    - Color: "#3A47CB"
+    - Color: "#1B7B67"
       Label: "Generic Turquoise group"
       Source: Placeholder_Turquoise.svg
       SourceDir: Groups_20200430

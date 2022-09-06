@@ -6,5 +6,5 @@ sprite $GenericRed [64x64/16z] xS4n4G0000AXtVw1xV47B0y0000u
 !return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaBJREFUeNrl20FywjAQRFHp3ye73P8ouYpigQkyGtmSs+umKGvB0DavCmwGJv98fZe03XLO26be+7U+VDc5tev+nDRYo6yu7hnU5q9nNRnDY81hXc0g7bdSNofHvV/rQ3VTUrvuz0mDNcrq6p5Bbf56VpMxPNYS1tUMXkGuCLRBjgh8BrkhEAU5ITAKckHgLMgBgeiFOSFQBi/MBYHXe8EVgfYDwRGBz09FNwSiU4MTwn4a9EXgXeyJwLHYD4G+2AuBuNgHgXGxBwLnO9ZH4HrH2gjM7VgXgXGQBwLnQfoIXAdpIzAXpIvAfJAmAmtBegisB2khcC9IB4HX8bgi8G4PeSJw7JH5IdD/ZOyFQPy7uQ/C4zTojPB3GnRFOFwIOSJ0F0JuCGFLzAlh2BJzQThtiTkgXLbE1BGmWmLKCNMtMVWEpZaYIsJyS0wN4dgQMUToGyJmCHFDxAiB7r9zZgiEfyA0QmA0SuKCwNk8jQMCV0NF6gjMTFYpIzA7XqaKwMqMnSICq4OGagjcmbZUQuDuyKkKAv+Zu1VACL4LeCH8AnqMbgjVV1ujAAAAAElFTkSuQmCC{scale="+$scale+"}>"
 !endfunction
 
-AWSGroupColoring(GenericRedGroup, #FFFFFF, #3A47CB, plain)
-!define GenericRedGroup(g_alias, g_label="Generic Red group") AWSGroupEntity(g_alias, g_label, #3A47CB, GenericRed, GenericRedGroup)
+AWSGroupColoring(GenericRedGroup, #FFFFFF, #D6232C, plain)
+!define GenericRedGroup(g_alias, g_label="Generic Red group") AWSGroupEntity(g_alias, g_label, #D6232C, GenericRed, GenericRedGroup)

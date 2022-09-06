@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Folder [64x64/16z] {
+xTT50iCW04HH76htFsxRk4_Sv-_VH5WXviPSQ6Q6S_rfomxsvWC6Xld6sremW3mUmBuvu0nE0HyFzAM07p9Wa1VAm3pmGpBNyTvCo1T-OlCzVl-ZdZyzFJqz
+FJqz_UHYhwTxdTwV9kR4tDWF
+}
+
+!function $FolderIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaRJREFUeNrt27FKw1AUBuBzkmz6AoIOJYqLtFZwa8TRF8gbCA59B3HwFRwE38Cu4uAi1kmH0uBUql2EvoBumuO9KDVKqxWT3Nvk/6fS4cL5cs69t5ASIQiClDg8+hSGrt8bHqivFlNbXOisH7VbMwHgVxs7xHye8vqxQthTCCe2AjifEjyfxfrCdLxcDXZtBfAmtG7439bVReviEwhkYyc4WS2si9Xtr8fA5k7wslxcI+gn/6UTasGSMD+YKjh+kc7grh3lAjAWgWifRMy1vEtxpd7YGHSuu5mOwA/jYHzs3Vdeya0DkgiVteDG8bhuomqReFOddM1c94Dv+Zi9yASAGsNnNYbN3E6BWQkAyg7gTbjAb/vrW3NFKjR+3wSnvArr3dLgWZ3Nrz7GCEw9AkJyxOzcFqnQP90D1KX9st+9ahUJAPcAHIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJQ241+RYTr1a0GhCpXfOkBInsry1JO1jjrgfnXhwu8ND9P805Sl5T/qWs28sYwgCGJZ3gCFk4Ochsi93gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Folder)
+!define Folder(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Folder, Folder)
+!define Folder(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Folder, Folder)
+!define FolderParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Folder, Folder)
+!define FolderParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Folder, Folder)

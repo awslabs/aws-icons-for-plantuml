@@ -1,0 +1,61 @@
+@startuml Figure 2
+
+' title Figure 2. Missing accept-version header
+' https://aws.amazon.com/blogs/architecture/sequence-diagrams-enrich-your-understanding-of-distributed-architectures/
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/General/User.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFront.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFrontEdgeLocation.puml
+
+hide footbox
+skinparam style strictuml
+
+skinparam participant {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor AWS_BORDER_COLOR
+    RoundCorner 0
+}
+skinparam sequence { 
+    ArrowThickness 2
+    LifeLineBorderColor AWS_COLOR
+    LifeLineBackgroundColor AWS_BORDER_COLOR
+    BoxBorderColor AWS_COLOR
+    MessageAlignment left
+}
+skinparam NoteTextAlignment left
+skinparam NoteBorderColor AWS_COLOR
+skinparam NoteBackgroundColor #BUSINESS
+
+skinparam shadowing false
+skinparam MaxMessageSize 600
+skinparam ParticipantPadding 40
+
+!procedure $AWSIcon($service, $line1, $line2="")
+participant "$AWSImg($service)\n<b>$line1</b>\n$line2"
+!endprocedure 
+
+$AWSIcon(User, " ", "User") as user
+$AWSIcon(CloudFront, "Web Distribution", "Amazon CloudFront") as cf
+$AWSIcon(CloudFrontEdgeLocation, "Orgin Request", "AWS Lambda@Edge") as edge <<nodejs14.x>>
+
+user -> cf: GET /hello\nHost: {distribution}.cloudfront.net
+note right
+  missing Accept-Version header
+end note
+activate user #white
+activate cf AWS_COLOR_PURPLE
+cf -> edge: handle(event)
+activate edge %lighten(AWS_COLOR_PURPLE, 75)
+edge --> cf: cf.response object\nwith status=400 and\ncustom description
+deactivate edge
+cf --> user: HTTP/1.1 400 Version Required
+deactivate cf
+deactivate user
+
+@enduml
