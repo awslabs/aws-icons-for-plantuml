@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Document [64x64/16z] {
+xTT50eD040NHcKu7x_iVDy86ft2l_VjHp1qeqSwyuqBhBXNaOZPhGCr2RI_91zYhQo-YTy0-XW7o3WRGmm1w640F0-XX03qCe8S1z310lbpgvtdJaTv7fMBm
+b89_lDNJRNrKJvxVxqm-Qkqzs5jhqHOUsi8_NklvOv-_-FrVvVTx_EDVw_bG1nHsUB712Jm_GY4ylqBY3jGN
+}
+
+!function $DocumentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApJJREFUeNrtm89rE0EUx+fNRpQWD/ZUetDSSCmCTTz0ZFPi2WPN2fbipfhXePbioR5tLwXBk3gVbdKLKJoUolBTjT0U/FEVvGjtzvMZErFCZTa7bzvTfQ+SSRZmZ+Yzb977voVVSizbBlE7nL1QOoehmlQajrPOzOAPCNTD1ovaR2cA5AulW9RcT3GDtlHhpTeNtQ2uAYIoO69QLafsoSdBweyp4dMPvrzf2uEYIGftkQYmgAh03AbUbVTwhG3ZiAv0PdX9N0IQHo0Vplk8wRqARtQIvfnB6majepdr/fnCzGUaZeqvS2wQtAdh+v4/EMYzBeDEz88VTgjOA2g2m7ucENw/AswQdH/HspsOjgAELzyAE4JXADggeAcgaQheAkgSQs71hVIBdmDA/d6RpfsudSBQ3VK0rSKd9ADKMt9idB+huqXktQfsgb4RmDAkEscidBulT7lXt3gNoF1/3KbmWqQHNZOlK1SslTMTBLNTDQoAAWBlps/6JPEg+L+8bZ0GUVVa67V74gEpGEcaXIrtzlq/8xbAZqM2L0HwUPQzoMQAASAAsgsAlElRCMHBg5EQusMU45626muLPuiAOQ4AVOIPUrMoR8ADIQQ+ARAhJGlQAAgAyQJJWr44czXuPUKlV7uPxiMoQZIKTgghxKXYu4JhhZq2HAEfjwDl49hSeA/0M3+VYL26fChbaUgI9aGFJA0KAAEgAI6IGakGBYAASAuAARQPcC0EgpIgyFoLGIA/kOkElKnuH3RpIWCw2Hun6fdckwdg9MtAh9ip9xQs9Pf4gc8Q9s/Vtp/1e4NfP7Q/DQ2fGaCfF912arz5dr26Yu05UW8/er48EUBYZH91NuqyjdkNcrr++nn1lRITs7Zf/Wjy+alU8M4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Document)
+!define Document(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Document, Document)
+!define Document(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Document, Document)
+!define DocumentParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Document, Document)
+!define DocumentParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Document, Document)

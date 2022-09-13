@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $GenericApplication [64x64/16z] {
+xPK52i0m54ChWMAx_tM7pBT0vfQ7ywX-2_UJG4YIJnKbAHxSG_G52nJT8oo0ptfxUtlx_VrpR__UEp_spY-pxdyY44EFDFzRM2w2huUmdkUdl9xNXzTxVKHF
+6UTQrFeh1NlNxxs_u-_rs_hd_lwzVtxidr_tKmC
+}
+
+!function $GenericApplicationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAb5JREFUeNrtmrFOwzAQhn1ON16iFbCh0iLYKPQl2Nl5HnYegIdogY2qpYgNpPYl2BIfIa0iBzI4beKzlP9f6qqWfudTXN+dTymo3SL7S+9k1NcdGjZpaGJerD6e38t+k/DPAfSGl6fa0Dwd6oahG6P5bLV4WRYeXsg/N4sSOvZgnnluvQqS8u+UzWDF90T6tU5XZnNBiu6c5nr0LwWgmSZfy6fHOhdw1B99MyknAD79fbxyQQsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qbSmqAhHh8Org7qNDKboqTbXI/+pQCy6ilzraRdH963f74Fkog/f0F5eOvM1qsgKf/WX41BENRuBfUnWEXdwbgbKXOdnSBKT9dvk/VegdDmfl7N0/O30ehQp6tOvf71B1ReuEnOmdRDNubkJv3YCUAw/QFBhcLS/QHiAKT7A5ANAgAAAAAAAAAAyMUBErJje6ecwqrxVa0h2rlDMADs2N4tiyN7XKmGaOcO2AKhLCTW0SzdAre75BZVc5eY9Cw4ANs96ZzS2rnFPrkLjkEAAAAAAAAAQCD0J84W7g8QByDdHyCyBaT7A6TU+qsxqO36AT1c82TiQEIVAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(GenericApplication)
+!define GenericApplication(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, GenericApplication, GenericApplication)
+!define GenericApplication(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, GenericApplication, GenericApplication)
+!define GenericApplicationParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, GenericApplication, GenericApplication)
+!define GenericApplicationParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, GenericApplication, GenericApplication)

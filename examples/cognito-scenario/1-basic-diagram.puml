@@ -1,0 +1,35 @@
+@startuml Amazon S3 objects using IAM Temporary Credentials
+
+title Amazon S3 objects using IAM Temporary Credentials
+' compare with https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+
+participant "User" as user
+participant "Cognito User Pool" as userpool
+participant "Cognito Identity Pool" as idpool
+participant "S3 Bucket" as s3
+participant "STS" as sts
+participant "IAM Policy" as permissions
+
+' 1. Authenticate and get tokens
+user -> userpool: InitiateAuth
+user <-- userpool: ID Token and Access Token
+
+' 2. Exchange tokens for AWS credentials
+user -> idpool: GetCredentialsForIdentity
+idpool -> idpool: map to IAM Role
+idpool -> sts: AssumeRoleWithWebIdentity(Role)
+idpool <-- sts: temporary security credentials
+user <-- idpool: temporary security credentials
+
+' 3. Access AWS services with credentials
+user -> s3: GetObject
+s3 -> permissions: check permissions
+alt no access
+  s3 <-- permissions: Deny
+  user <-- s3: error (AccessDenied)
+else access
+  s3 <-- permissions: Allow
+  user <-- s3: S3 object
+end
+
+@enduml

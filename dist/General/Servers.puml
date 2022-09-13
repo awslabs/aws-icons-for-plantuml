@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Servers [64x64/16z] {
+xTH50eD044JHfeD3tV-uKMINX76fjuVnBzLh5XXQ6dbgOQpTlfz60zFvVIi6skI-RzkRrVV0QFjzjFblwln-Q0qCv_TcjkyLnbHUjDq0S_lJ3BGRbTFVzsy4
+v6JrFVl7_h5_x9yXze_zO__OF_RFa4fy3m
+}
+
+!function $ServersIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAbtJREFUeNrtmDFPwlAQx989u7k7a+rgYECHMhiKnXV111k+j866Gj+E2MTBBdI4mEgjs59Bex7QUkRLBBe897+kvJa2Cf/j7t3dzxgYDOayUXHi1w42iGyHDe3oFszPzNlhmjy8Da9tcYPJa2oXP9IpGodai2uvOLHMlifxYO7kGCjTvilHVGj95oAvYcLmop/Et5rUb9fCE/mDo9nvreuboPMO8BZ9wd9rnY7ShHjQ78Yd5xxgmK/GC9/I0kEKOBcBRGfjRUeZXNgBae/+GlUADoADdG+CGXEk9X5dk9CMs4DK4Xe+A+TBthR6ZWMwzU+BjzV+GTrKgajPcq25Y6ZsazesWY/2f9MJyouPTHS5GkM+t+UzmO5TKtW/c/f1KU5+TIH8RjJ3FqiH41bY8CDtxSvRE/j11rH8omCZPsX5KgAmOEkjMEEwwTJMwAQxCwCIVNZcMEEwQbdTAEwQTBBlEA5QvwmCCYIJqjZ9TJCYzyVeG9N9SqV6nUyweSTKG8v0KWCCEy+CCYIJggmWuyqYIGYBAJGqmgsmCCbodgqACYIJogzCAeo3QTBBMEHV9kcm+N/VzzBBmOv2CSMsBuTyHmYiAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Servers)
+!define Servers(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Servers, Servers)
+!define Servers(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Servers, Servers)
+!define ServersParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Servers, Servers)
+!define ServersParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Servers, Servers)

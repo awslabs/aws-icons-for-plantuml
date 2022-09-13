@@ -1,0 +1,103 @@
+@startuml Figure 5
+
+' title Figure 5. Header-based API Gateway versioning with CloudFront
+' https://aws.amazon.com/blogs/architecture/sequence-diagrams-enrich-your-understanding-of-distributed-architectures/
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/General/User.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFront.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFrontEdgeLocation.puml
+
+hide footbox
+skinparam style strictuml
+
+skinparam participant {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor AWS_BORDER_COLOR
+    RoundCorner 0
+}
+skinparam sequence { 
+    ArrowThickness 2
+    LifeLineBorderColor AWS_COLOR
+    LifeLineBackgroundColor AWS_BORDER_COLOR
+    BoxBorderColor AWS_COLOR
+    MessageAlignment left
+}
+skinparam NoteTextAlignment left
+skinparam NoteBorderColor AWS_COLOR
+skinparam NoteBackgroundColor #BUSINESS
+
+skinparam shadowing false
+skinparam MaxMessageSize 600
+
+!procedure $AWSIcon($service, $line1, $line2="")
+participant "$AWSImg($service)\n<b>$line1</b>\n$line2"
+!endprocedure 
+
+$AWSIcon(User, " ", "User\n") as user
+$AWSIcon(CloudFront, "Web Distribution", "Amazon CloudFront\n") as cf
+$AWSIcon(CloudFrontEdgeLocation, "Orgin Request", "AWS Lambda@Edge\n") as edge <<nodejs14.x>>
+$AWSIcon(DynamoDB, "Version Mappings", "Amazon DynamoDB\n") as dynamodb <<on-demand>>
+
+box API Version 1
+$AWSIcon(APIGateway, "API V1", "Amazon API\nGateway") as api2 <<REST API>>
+$AWSIcon(LambdaLambdaFunction, "Function V1", "AWS Lambda\n") as lambda2 <<nodejs14.x>>
+end box
+
+alt missing Accept-Version header
+    user -> cf: GET /hello\nHost: {distribution}.cloudfront.net
+    activate user #white
+    activate cf AWS_COLOR_PURPLE
+    cf -> edge: handle(event)
+    activate edge %lighten(AWS_COLOR_PURPLE, 75)
+    edge --> cf: cf.response object\nwith status=400 and\ncustom description
+    deactivate edge
+    cf --> user: HTTP/1.1 400 Version Required
+    deactivate cf
+    deactivate user
+
+else else
+    user -> cf: GET /hello\nHost: {distribution}.cloudfront.net\nAccept-Version: {V#}
+    activate user #white
+    activate cf AWS_COLOR_PURPLE
+    cf -> edge: handle(event)
+    activate edge %lighten(AWS_COLOR_PURPLE, 75)
+
+    opt version mappings not cached
+        edge -> dynamodb: table scan
+        activate dynamodb AWS_COLOR_BLUE
+        dynamodb --> edge: items
+        deactivate dynamodb
+        edge -> edge: cache version mappings
+    end
+
+    edge -> edge: lookup API version
+    
+    alt version not found
+        edge --> cf: cf.response object\nwith status=404 and\ncustom description
+        note right
+            Accept-Version: V3
+        end note
+        cf --> user: HTTP/1.1 404 Version Not Found
+    else else
+        edge --> cf: cf.request object\nwith updated path\nand Host header
+        note right
+            Accept-Version: V1
+        end note
+        deactivate edge
+        cf->api2++ AWS_COLOR_PINK: GET /Prod/v1\nHost: {API V1}.execute-api.{region}.amazonaws.com
+        api2->lambda2++ AWS_COLOR_ORANGE:
+        return 
+        return
+        cf --> user: HTTP/1.1 200 OK\lContent-Type: application/json\l\l{\l  "message" : "API V1: Hello world!"\l}
+        deactivate cf
+        deactivate user
+    end
+end 
+
+@enduml
