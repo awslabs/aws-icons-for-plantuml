@@ -124,7 +124,7 @@ end
 @enduml
 ```
 
-![Visual Updates](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2Fcognito-scenario%2F1-visual-updates.puml)
+![Visual Updates](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2Fcognito-scenario%2F2-visual-updates.puml)
 
 ## AWS Icons and Colors
 
