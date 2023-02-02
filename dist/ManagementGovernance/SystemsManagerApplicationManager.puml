@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SystemsManagerApplicationManager [64x64/16z] {
+xTK7QaGn30N00moW-zysr4I8VVakGAgshpssSAqG_m4kELpmynpU7LpmAi2kdmFXrjlYnezT7mPaVV1E6yWriUf3mQfVACdX2xtGmBBNnZ-MFgKknaWYvVVW
+FOzSqfycSBc-BFhwUk_ArxqF_0ly5yHzMl9rkpBl21eYxzuhNa3atHEBWfvUkEwYhmzVtHjU6Blc6ve2WLVtbNmX-DS7gMDlr8yU5Vm4sS_0vlXbxyY7zSEA
+f_inGgc1q0qzGc_oxpati_BOCmXTABq1J8N1qrARleBE3SoWVUR0bI-uy27xuByq_kCD
+}
+
+!function $SystemsManagerApplicationManagerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgtJREFUeNrtWktOxTAMbEwXcBIuA9JbsOA4cBsWLJ4Ep+EisEACunioqpLUST3OzyN1U7WxMx4732kyGAwjw2kZOl/f/2zfnb7e3BAE+DpfCxlUS+Q5JDWngG2nOB3XVoIr2XlO9NGEwAngdqAUCTQ1AGR9oBodXiKuVQtcDfKXqCNVEIBwGE2Cq7nzofYl24bUAIRUUTWBWnF03bbkqEAI+bcEmgYHSUR8LfvW1EAI2aNI8M0vlneXR2UYjA1HWtEP2c0pwCTlRMlNjSMBuMo18PL98ez7Znm/PI/z7RMi8j67a3shv0RSQGqOj45+in+ElJcmcoNi84AeO5Wi1q4IUB0Gh0oB1FrcaoDB0N7w0sJyN8VHd7QxzaLIKcapBdtJsKhBBHfXOXV3mlI7zzVcepnLTduZY2zbacTuLJrUpS1f8GhP1jEJaZ7hpaYZ91uSZBypiByiOVt2VEN1R06/9/6dpaJzcTiUayXrw9q/oALON3cPo0zmdlOgF/lz8J8Cp8/31z/Dk6aMtYohfDksHTHNozYqMaTVpCCSlleNxMV8Yl9ZTT0HlCYzt729xZHowmY73pa+Jcb530lJOlS4cpzmFsGUS9chP9yRPIpF/MgxuvRt8lgQnHSR4ZCQWz8QmzSQe4JS6RCzs0dS1nK4lclLdTPBEAktEDFLN+jbLuvtOM1gMBgMveAXsqelip7aarMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(SystemsManagerApplicationManager)
+!define SystemsManagerApplicationManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, SystemsManagerApplicationManager, SystemsManagerApplicationManager)
+!define SystemsManagerApplicationManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, SystemsManagerApplicationManager, SystemsManagerApplicationManager)
+!define SystemsManagerApplicationManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, SystemsManagerApplicationManager, SystemsManagerApplicationManager)
+!define SystemsManagerApplicationManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, SystemsManagerApplicationManager, SystemsManagerApplicationManager)

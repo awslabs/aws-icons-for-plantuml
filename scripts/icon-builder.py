@@ -33,7 +33,7 @@ dir_list = [
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_07312022/*64/*.svg",
+        "dir_glob": "Category-Icons_01312023/*64/*.svg",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
         "category_mappings": {
@@ -52,7 +52,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_07312022/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_01312023/**/*64/*.svg",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -69,7 +69,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_07312022/**/*48_Light/*.svg",
+        "dir_glob": "Resource-Icons_01312023/**/*48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -115,10 +115,10 @@ dir_list = [
 
 CATEGORY_COLORS = {
     "Analytics": "PurpleHeart",
-    "AWSCostManagement": "ForestGreen",
     "ApplicationIntegration": "MaroonFlush",
     "Blockchain": "Meteor",
     "BusinessApplications": "Crimson",
+    "CloudFinancialManagement": "ForestGreen",
     "Compute": "Meteor",
     "Containers": "Meteor",
     "CustomerEnablement": "CeruleanBlue",
@@ -126,7 +126,7 @@ CATEGORY_COLORS = {
     "DeveloperTools": "CeruleanBlue",
     "EndUserComputing": "Elm",
     "FrontEndWebMobile": "Crimson",
-    "GameTech": "PurpleHeart",
+    "Games": "PurpleHeart",
     "General": "SquidInk",
     "InternetOfThings": "ForestGreen",
     "MachineLearning": "Elm",
@@ -159,11 +159,23 @@ GROUPICONS_COLORS = {
     "VirtualPrivateCloudVPC": "ForestGreen",
 }
 
+COLOR_MACROS = {
+    "CeruleanBlue": "AWS_COLOR_BLUE",
+    "Crimson": "AWS_COLOR_RED",
+    "Elm": "AWS_COLOR_TURQUOISE",
+    "ForestGreen": "AWS_COLOR_GREEN",
+    "MaroonFlush": "AWS_COLOR_PINK",
+    "Meteor": "AWS_COLOR_ORANGE",
+    "PurpleHeart": "AWS_COLOR_PURPLE",
+    "SquidInk": "AWS_COLOR",
+    "White": "AWS_BG_COLOR",
+}
+
 TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 14.0-2022.07.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 15.0-2023.01.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -196,66 +208,66 @@ CATEGORY_GROUPS = """
         BorderStyle: dashed
       Label: "\\\\n  Availability Zone"
       Source: Availability-Zone.touch
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: AvailabilityZone
     - Color: "#CD2264"
       Label: "AWS account"
       Source: AWS-Account.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: AWSAccount
     - Color: "#000000"
       Label: "AWS Cloud"
       Source: AWS-Cloud-alt.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: AWSCloudAlt
     - Color: "#000000"
       Label: "AWS Cloud"
       Source: AWS-Cloud.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: AWSCloud
     - Color: "#3F8624"
       Label: "AWS IoT Greengrass Deployment"
       Source: AWS-IoT-Greengrass-Deployment.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: IoTGreengrassDeployment
     - Color: "#3F8624"
       Label: "AWS IoT Greengrass"
       Source: AWS-IoT-Greengrass.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: IoTGreengrass
     - Color: "#CD2264"
       Label: "AWS Step Functions workflow"
       Source: AWS-Step-Functions-workflow.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: StepFunctionsWorkflow
     - Color: "#D86613"
       Group:
         BorderStyle: dashed
       Label: "\\\\nAuto Scaling group"
       Source: Auto-Scaling-group.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: AutoScalingGroup
     - Color: "#5A6B86"
       Label: "Corporate data center"
       Source: Corporate-data-center.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: CorporateDataCenter
     - Color: "#D86613"
       Label: "EC2 instance contents"
       Source: EC2-instance-contents.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: EC2InstanceContents
     - Color: "#D86613"
       Label: "Elastic Beanstalk container"
       Source: Elastic-Beanstalk-container.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: ElasticBeanstalkContainer
     - Color: "#5A6B86"
       Group:
         BorderStyle: dashed
       Label: "\\\\n  Generic group"
       Source: Generic-group.touch
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: Generic
     - Color: "#000000"
       Group:
@@ -263,42 +275,42 @@ CATEGORY_GROUPS = """
         BorderColor: "#Transparent"
       Label: "\\\\n  Generic group"
       Source: Generic-group-alt.touch
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericAlt
     - Color: "#3A47CB"
       Label: "Generic Blue group"
       Source: Placeholder_Blue.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericBlue
     - Color: "#3F8624"
       Label: "Generic Green group"
       Source: Placeholder_Green.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericGreen
     - Color: "#D86613"
       Label: "Generic Orange group"
       Source: Placeholder_Orange.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericOrange
     - Color: "#CD2264"
       Label: "Generic Pink group"
       Source: Placeholder_Pink.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericPink
     - Color: "#693BC5"
       Label: "Generic Purple group"
       Source: Placeholder_Purple.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericPurple
     - Color: "#D6232C"
       Label: "Generic Red group"
       Source: Placeholder_Red.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericRed
     - Color: "#1B7B67"
       Label: "Generic Turquoise group"
       Source: Placeholder_Turquoise.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: GenericTurquoise
     - Color: "#5B9CD5"
       Group:
@@ -306,7 +318,7 @@ CATEGORY_GROUPS = """
         BorderColor: "#Transparent"
       Label: "Private subnet"
       Source: Private-subnet.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: PrivateSubnet
     - Color: "#1E8900"
       Group:
@@ -314,34 +326,34 @@ CATEGORY_GROUPS = """
         BorderColor: "#Transparent"
       Label: "Public subnet"
       Source: Public-subnet.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: PublicSubnet
     - Color: "#5B9CD5"
       Group:
         BorderStyle: dotted
       Label: "Region"
       Source: Region.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: Region
     - Color: "#DF3312"
       Label: "\\\\n  Security group"
       Source: Security-group.touch
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: SecurityGroup
     - Color: "#5A6B86"
       Label: "Server contents"
       Source: Server-contents.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: ServerContents
     - Color: "#D86613"
       Label: "Spot Fleet"
       Source: Spot-Fleet.svg
-      SourceDir: Groups_20200430
+      SourceDir: Groups_04302020
       Target: SpotFleet
-    - Color: "#1E8900"
-      Label: "VPC"
-      Source: VPC.svg
-      SourceDir: Groups_20200430
+    - Color: "#693BC5"
+      Label: "Virtual private cloud (VPC)"
+      Source: Virtual-Private-Network-VPC.svg
+      SourceDir: Groups_04302020
       Target: VPC
 """
 
@@ -356,11 +368,28 @@ The table below lists all AWS symbols in the `dist/` directory, sorted by catego
 
 If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) directory and reference it locally with PlantUML.
 
+## Colors
+
+These colors are defined in `AWSCommon.puml`
+
+PUML Macro (Name) | Color | Categories
+  ---  |  ---  | ---
+AWS_COLOR | #232F3E |
+AWS_BG_COLOR | #FFFFFF |
+AWS_BORDER_COLOR | #FF9900 |
+AWS_COLOR_BLUE | #3A47CB | Customer Enablement; Database; Developer Tools; Satellite
+AWS_COLOR_GREEN | #3F8624 | Cloud Financial Management; Internet of Things; Storage
+AWS_COLOR_ORANGE | #D86613 | Blockchain; Compute; Containers; Media Services; Quantum Technologies
+AWS_COLOR_PINK | #CD2264 | Application Integration; Management & Governance; VR & AR
+AWS_COLOR_PURPLE | #693BC5 | Analytics; Game Tech; Networking & Content Delivery; Serverless
+AWS_COLOR_RED | #D6232C | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+AWS_COLOR_TURQUOISE | #1B7B67 | End User Computing; Machine Learning; Migration & Transfer
+
 ## PNG images
 
 For each symbol, there is a resized icon in PNG format generated from the source file. Where the original icons had transparency set, this has been kept in the generated icons. You can also use the images outside of PlantUML, e.g. for documents or presentations, but the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) are available in all popular formats.
 
-## All generated AWS symbols and PNGs
+### All generated AWS symbols and PNGs
 
 Category | PUML Macros (Name) | Image (PNG) | PUML Url
   ---    |  ---  | :---:  | ---
@@ -424,13 +453,13 @@ def verify_environment():
     q = dir / "official"
     if not q.exists() or len([x for x in q.iterdir() if q.is_dir()]) == 0:
         print(
-            "source/official must contain folders of AWS  icons to process. Please see README file for details."
+            "source/official must contain folders of AWS icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml-mit-1.2022.5.jar and verify java
+    # Start plantuml-mit-1.2023.1.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml-mit-1.2022.5.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2023.1.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
@@ -642,7 +671,8 @@ def main():
     # Create PlantUML sprites
     pool = Pool(processes=multiprocessing.cpu_count())
     for i in icons:
-        pool.apply_async(worker, args=(i,))
+        #pass
+        pool.apply_async(worker, args=(i,)) 
     pool.close()
     pool.join()
 
@@ -658,7 +688,10 @@ def main():
         if category == "GroupIcons":
             pass
         else:
-            markdown += f"**{category}** | | | **{category}/all.puml**\n"
+            if category == "Groups":
+                markdown += f"**{category}** | | | **{category}/all.puml**\n"
+            else:
+                markdown += f"**{category}** | {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
         for j in sorted_icons:
             if j.category == i:
                 cat = j.category

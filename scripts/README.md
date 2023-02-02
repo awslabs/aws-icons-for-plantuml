@@ -13,7 +13,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 - Install Python 3 and packages from the `requirements.txt` file.
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_07312022`, `Category-Icons_07312022`, and `Resource-Icons_07312022` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_01312023`, `Category-Icons_01312023`, and `Resource-Icons_01312023` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
@@ -24,17 +24,17 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-    ├── Architecture-Service-Icons_07312022
+    ├── Architecture-Service-Icons_01312023
     │   ├── Arch_AR-VR
     │   ├── Arch_AWS-Cost-Management
     │   ├── Arch_Analytics
         ...
-    ├── Category-Icons_07312022
+    ├── Category-Icons_01312023
     │   ├── Arch-Category_16
     │   ├── Arch-Category_32
     │   ├── Arch-Category_48
     │   └── Arch-Category_64
-    └── Resource-Icons_07312022
+    └── Resource-Icons_01312023
         ├── Res_Analytics
         ├── Res_Application-Integration
         ├── Res_Blockchain
@@ -121,14 +121,14 @@ version
 
 Or execute the jar with the `-version` parameter:
 ```bash
-$ java -jar scripts/plantuml-mit-1.2022.7.jar -version
-PlantUML version 1.2022.7 (Mon Aug 22 12:01:30 CDT 2022)
+$ java -jar scripts/plantuml-mit-1.2023.1.jar -version
+PlantUML version 1.2023.1 (Sun Jan 29 06:58:56 CST 2023)
 (MIT source distribution)
 ```
 
 To start the local render server:
 ```bash
-java -jar scripts/plantuml-mit-1.2022.7.jar -picoweb
+java -jar scripts/plantuml-mit-1.2023.1.jar -picoweb
 ```
 
 If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
@@ -145,6 +145,10 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 ```
 
 ## Build Notes
+
+### Release 15.0-2023.01.31
+
+This release switched to using `plantuml-mit-1.2023.1.jar` and `batik-rasterizer-1.16.jar` which had no noticeable changes.  Documented color definitions in generated `AWSSymbols.md`.
 
 ### Release 14.0-2022.07.31
 

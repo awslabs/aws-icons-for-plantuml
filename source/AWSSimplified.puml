@@ -12,6 +12,8 @@ skinparam rectangle<<e_stereo>> {
     BorderColor transparent
     Shadowing false
 }
+skinparam ParticipantBackgroundColor<<e_stereo>> AWS_BG_COLOR
+skinparam SequenceParticipantBorderThickness<<e_stereo>> 0
 !enddefinelong
 
 ' Overwriting Elements
@@ -26,4 +28,12 @@ rectangle "$AWSImg(e_sprite)\n\n==e_label" <<e_stereo>> as e_alias
 
 !definelong AWSEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 rectangle "$AWSImg(e_sprite)\n\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong AWSParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+participant "$AWSImg(p_sprite)\np_label" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong AWSParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+participant "$AWSImg(p_sprite)\np_label" as p_alias <<p_stereo>>
 !enddefinelong

@@ -1,0 +1,20 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+
+' Sprites
+' ##################################
+!function $DefineCalloutSprite($number) 
+!$header = 'sprite Callout_' + $number + ' <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">'
+!$circle = '<circle cx="9" cy="9" r="9" fill="black" />'
+!$textnumber = '<text x="5" y="13" fill="white" font-size="12">' + $number + '</text></svg>'
+!return $header + $circle + $textnumber
+!endfunction
+
+' spacing helper for multi-line labels
+sprite Callout_SP <svg xmlns="http://www.w3.org/2000/svg" width="18" height="1"></svg>
+
+!$CalloutIndex = 1
+!while $CalloutIndex < 10
+  $DefineCalloutSprite($CalloutIndex)
+  !$CalloutIndex = $CalloutIndex + 1
+!endwhile

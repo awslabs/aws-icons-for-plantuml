@@ -2,8 +2,9 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
 !include AWSPuml/General/Internetalt1.puml
@@ -24,6 +25,7 @@ skinparam sequence {
 'Hide the bottom boxes / Use filled triangle arrowheads
 hide footbox
 skinparam style strictuml
+skinparam MaxMessageSize 200
 
 actor User as user
 box AWS Cloud
@@ -35,9 +37,9 @@ endbox
 participant "Authorizer\nReturns status and token\n$Internetalt1IMG()" as processor
 
 'Use shortcut syntax for activation with colored lifelines and return keyword
-user -> api++ AWS_COLOR_PINK: Process transaction\lPOST /prod/process
-api -> lambda++ AWS_COLOR_ORANGE: Invokes lambda with\lcardholder details
-lambda -> processor++ AWS_COLOR: Submit via API token\lcard number, expiry, CID
+user -> api++ AWS_COLOR_PINK: <$Callout_1> Process transaction\l<$Callout_SP> ""POST /prod/process""
+api -> lambda++ AWS_COLOR_ORANGE: <$Callout_2> Invokes lambda with\l<$Callout_SP> cardholder details
+lambda -> processor++ AWS_COLOR: <$Callout_3> Submit via API token\l<$Callout_SP> card number, expiry, CID
 processor -> processor: Validate and\lcreate token
 return status code, token
 lambda ->> db: PUT transaction id, token

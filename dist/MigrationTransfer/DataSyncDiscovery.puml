@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DataSyncDiscovery [64x64/16z] {
+rTSrOWH14CNGN4dT_xHcBoZetp1OcU5fcEgYmnB-cnKyrtYQcO3_tuNCGxANkx30EmDujp4M47SWyp8NwlMDbSPZRi-g9tXn-HezylQT0I6jhDPScvOzgvuP
+do-BotYwFE3HulVpZLdmTpj-h7fe1A87wbpVs8543-r0yD0JmECxsAm7gWO3vZ4G7iuvGFmBGCCJVkz0BcYtvu0N5WCkUAeM0X8vuEq8WJ2N3jG90Vap0jdd
+GFOv47YuHc7zy-o4hqFjkllF9m
+}
+
+!function $DataSyncDiscoveryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAe5JREFUeNrtm01uxCAMhWOUnrPbziVa9Ra9axetsog0ikICfv5lYDXSCMb+eBjH8SzLHHOojrfPx3tk+0jF6a+Pv6vvf79/aDgAd05HBUIaTh8daoHjBYGkHO9x4AqINQhCnJcwFoVpCkDa+SsQVhAogvOeEAg1qjX6tzpjDaEg11XP1ccB5a6A3egzQ7j3fqQkaBurxCJ3Tj3D2j4jEJCE68zewtl9z6zRNQaMCGG13v1tzX19znGQtql47MyzE95KWK2j9ZnDZ0roAdMCtOZPWYIMLyWEAeAFYbX4kZ48AT2CvfNCKeDlj4D7LRApQ9Oy63hESoYHlvRBUDuIzhggBWAnHTUWTAW8OgANZaZTwAZBEkSpRdxocUCrLD9jQDaD1StCEVPjY1VZHUCkklWtgiS1fvNzOlKyQiSu/So9dAw4boDGJlCvEZoqqB29u99FlECcnbA+9y3vJrl2kaRRVs5L2gT19UhC4K6PQiArQ3tzDaTpqmcuSRrN3TWJa44LQaVPELkBkN3kzFVpc0PzeksI5r3CFs1SPXNDl78tIISv/2tDCF8PkOobSHkENJTQ9GpsNCUMoQBUCTUVpK8JokpIWRWWhJC2LC7VtZ6+D+Du6fQuZgzRCIHkBkN1gnD+rzhkK4x1DXOOORKPf9DUj1cTaWPPAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(DataSyncDiscovery)
+!define DataSyncDiscovery(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, DataSyncDiscovery, DataSyncDiscovery)
+!define DataSyncDiscovery(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, DataSyncDiscovery, DataSyncDiscovery)
+!define DataSyncDiscoveryParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #1C7B68, DataSyncDiscovery, DataSyncDiscovery)
+!define DataSyncDiscoveryParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #1C7B68, DataSyncDiscovery, DataSyncDiscovery)

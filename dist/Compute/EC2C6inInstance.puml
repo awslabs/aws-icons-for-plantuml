@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $EC2C6inInstance [64x64/16z] {
+xPOr0WCn3C1MRVx_Qyir58FjWRK4TH2qB0gW85sYdpxbTEemnvT2nleevVwD1VXT_vz-plzh7zSJQds0MqAzxmUcvVirnLAyzNx-t_iNYkPFqolwVYdrVGge
+BvJDVqY3Nph-chRv_h-HSZ_CYARUp_sVv__wvp_dVmdnv_hZ__JNpn4
+}
+
+!function $EC2C6inInstanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVRJREFUeNrtmUEOgjAQRcFUTqO3ccfCq8mCld5GT4MLtItqQ4C2pLWtfT8hAQaSzmd++5lWFSgb9dYXH+3+rM4P/bNLLW4LsfXFsaov2mWXWtwWu9IlAAEQAAEsg1a4t82YS1LHfqi9EpBT8q4kFC8BEbK8YsC1WqmAr7duTm/qrv+S2Fol6FWMD0ACn1/K4ba0LLIMIgEIgAB8AD4ACeAD8AEedShj0/jcvSwloCdiSjJ2dYlQX3yuBKfJTp+J0WsQMbS39IwiSMXltX4egqTkfcCchGxIsPUBItRA1+ImKSzFQswXP/cBMiF1uCYWYo7w5gPk4ExlN/flQ60C0XyAixSScoIhSbCd9bP/FzAloi9pqVSC89ZYLhsjtuOkH0A/gH4A/QAkAAEQwCSID0AC+AB8ABIoWgI+ZlcqIENsbm647ALFiFMBEAABEAABEAAAMOAFwiP8YYI2D/kAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(EC2C6inInstance)
+!define EC2C6inInstance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2C6inInstance, EC2C6inInstance)
+!define EC2C6inInstance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2C6inInstance, EC2C6inInstance)
+!define EC2C6inInstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2C6inInstance, EC2C6inInstance)
+!define EC2C6inInstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2C6inInstance, EC2C6inInstance)

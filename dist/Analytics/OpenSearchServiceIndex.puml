@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $OpenSearchServiceIndex [64x64/16z] {
+xTO53iCm38NXn7RmtV--YrHID5konj1Fi1N-CeNFHN8j-dE2XjqzGyN-7bbcpLv0bDdehsSjm41Qtp6p-cmi0Cu-60i0cclxbvqWfIzXilKiYxZqury7UdJt
+1Olb_wRVr6Viz9xAGlJjtmQQrJCMPUjrvJdzv7KzoG0qcMKWYwu1Cj2IusQqREVDsBZFNVBHSxW1_s9_zcTFOY1NJp2HfsUOsDbdKMH_pq71B--nUbTVLaR_
+kSUl5aLrzmPd7piCFNxQ_N_sPt__zzFD-Fxlnu7aHXJUxm8
+}
+
+!function $OpenSearchServiceIndexIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzFJREFUeNrtmj9ME1Ecx3+/dyWiOJj4Z8VB2nPRqGGWaGJUepgYWnBSJxNYHHV0c3WAGSbhWlNDi4m6gDExBIPR6VpiwuzuYJT381fbYkt6LVzfHY/2/YbeXa95j/vc79/3PQCM9bZhlJONJbIXALcvqRqPpLWWL417hwJAMr5wEVFs8KlQOOwfQJrMexOvgg4govM1MRTCfDEifOnYmWTgAQ4k7hBnAOR6YNcnnObDcNWF+/iLTNLO3Cl4qXfKAdw6557uE3gdhDwS5I9d8ibmd38niVYKxYlsUABOwh2tAahaPxLlHNu9nffSq0oBxCz4QEA2UOB0MR9yGn8OBE/47BgfC0nbvVHw0p9U5gBb5zLGb/wpAbyoXh5HgjejtnsljBywjkgzOkIoFNOPncRiP7vDI748IQjecsm9tlQc/6YSwFazeFZSIu3MiAA56O+mcvW1d2+raW9hL96v5BWxhkA3+bQ8zkkC+d6JZ6+26xNiOrxBTmBTBJjyL/ZW+d6WT0WYq6QC2n3rDKDM8fG8Hn2AQmNYe+3+bJUh0FiK4gtchsRUi/e6ni+lZvf0QIiz7ObLfvctkJ/rr48W6dmvIVgDi0616xNCA0AoBrkwPmjxiwH+2BMAbmBW9jN3BtLbsAnL++gTuisElPbSHZSebNRqMgzreQ/Adnq9VmY6b4TEMBFNqxBD+xJLSI15iqwv9Q0ShqzXdTTWYvJyoTT5tTEEwtHreoZ95Vn9k2DYLnpAz70Tgm2rQKd6XUdLJtyfHO/TpgoYAAaAAWAAGAAGgAFgABgABoC/Fghqqvf/m4v9Rj2vDYDyegKB3CivloYs5yXPtaPn9QmB6NYTGvS8ViEQ7npCcz2vJYAw1hP89LypAjp6QCtzEi61up8vpiPdazAeEPmMBHM9DSBfSj80rXC3e0C5XDnxf1vUKu2s1gAEIpf/nQQ/Eua+cXku7ULA+m195IMXgdd61bn08oDc97s/oM0/JJn1AAPAADAADAADwAAwAAwA3cUQ99ojY/biQHc9Kg7XaZXWACqrr9hl75rahADJTf6UPeD1svqsNen+3yLZ2jpwR1C7tWbssNtfw3MVQL5RoukAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(OpenSearchServiceIndex)
+!define OpenSearchServiceIndex(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #693CC5, OpenSearchServiceIndex, OpenSearchServiceIndex)
+!define OpenSearchServiceIndex(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #693CC5, OpenSearchServiceIndex, OpenSearchServiceIndex)
+!define OpenSearchServiceIndexParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #693CC5, OpenSearchServiceIndex, OpenSearchServiceIndex)
+!define OpenSearchServiceIndexParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #693CC5, OpenSearchServiceIndex, OpenSearchServiceIndex)

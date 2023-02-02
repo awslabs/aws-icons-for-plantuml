@@ -138,7 +138,7 @@ class Icon:
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "batik-1.13/batik-rasterizer-1.13.jar",
+                    "batik-1.16/batik-rasterizer-1.16.jar",
                     "-d",
                     f"{str(path)}/{self.target}.png",
                     "-w",
@@ -196,7 +196,7 @@ class Icon:
 
     def generate_puml_sprite(self, path):
         """Generate puml sprite for service"""
-        # Start plantuml-mit-1.2022.5.jar and encode sprite from main PNG
+        # Start plantuml-mit-1.2023.1.jar and encode sprite from main PNG
         try:
             target = self.target
             result = subprocess.run(
@@ -204,7 +204,7 @@ class Icon:
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "./plantuml-mit-1.2022.5.jar",
+                    "./plantuml-mit-1.2023.1.jar",
                     "-encodesprite",
                     "16z",
                     f"{path}/{target}.png",
