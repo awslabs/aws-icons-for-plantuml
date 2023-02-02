@@ -381,7 +381,7 @@ AWS_COLOR_BLUE | #3A47CB | Customer Enablement; Database; Developer Tools; Satel
 AWS_COLOR_GREEN | #3F8624 | Cloud Financial Management; Internet of Things; Storage
 AWS_COLOR_ORANGE | #D86613 | Blockchain; Compute; Containers; Media Services; Quantum Technologies
 AWS_COLOR_PINK | #CD2264 | Application Integration; Management & Governance; VR & AR
-AWS_COLOR_PURPLE | #693BC5 | Analytics; Game Tech; Networking & Content Delivery; Serverless
+AWS_COLOR_PURPLE | #693BC5 | Analytics; Games; Networking & Content Delivery; Serverless
 AWS_COLOR_RED | #D6232C | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
 AWS_COLOR_TURQUOISE | #1B7B67 | End User Computing; Machine Learning; Migration & Transfer
 
