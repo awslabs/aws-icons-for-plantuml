@@ -37,15 +37,15 @@ In order to incorporate and use the _AWS Icons for PlantUML_ resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v14.0</b>/dist/AWSCommon.puml
+<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v15.0</b>/dist/AWSCommon.puml
 </code></pre>
 
 or this if defining the URL:
 
-<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v14.0</b>/dist
+<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v15.0</b>/dist
 </code></pre>
 
-This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v14.0_ release.
+This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v15.0_ release.
 
 All examples reference _main_ and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -54,6 +54,8 @@ All examples reference _main_ and are designed with the most recent files. For c
 ```
 
 :exclamation: Earlier version of PlantUML required `!includeurl` for URLs. Now `!include` can be used with local file paths _or_ URLs. Please see the [Preprocessing](http://plantuml.com/preprocessing) notes for usage.
+
+:exclamation: Syntax of `!include <awslib/AWSCommon.puml>` uses the embedded [plantuml-stdlib](https://github.com/plantuml/plantuml-stdlib).  As of the PlantUML version 1.2022.14 [update](https://github.com/plantuml/plantuml/commit/8cc6471ad3a5f8fd9aa69adbaa2be4784439c54e), this includes the Release 14-2022.07.31 icon set.
 
 After inclusion of the `AWSCommon.puml` file, there are two different ways to reference resources:
 
@@ -71,7 +73,7 @@ For example, including these files from the repository (URL), the includes would
 
 ```
 ' Define the main location (URL or local file path)
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 ' Include main AWSCommon and then resource files
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
@@ -89,7 +91,7 @@ This is the [`examples/HelloWorld.puml`](examples/HelloWorld.puml) diagram code:
 ```
 @startuml Hello World
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
@@ -106,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/examples/HelloWorld.puml)
 
 ## Examples
 
@@ -121,7 +123,7 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 ```
 @startuml Basic Usage - AWS IoT Rules Engine
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/InternetOfThings/IoTRule.puml
 !include AWSPuml/Analytics/KinesisDataStreams.puml
@@ -144,7 +146,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FBasic%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FBasic%2520Usage.puml)
 
 ### Raw Images
 
@@ -155,7 +157,7 @@ The individual icon images (complete list [here](AWSSymbols.md)) can be included
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/MachineLearning/SageMakerModel.puml
 !include AWSPuml/Robotics/RoboMaker.puml
@@ -174,7 +176,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FRaw%2520Image%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FRaw%2520Image%2520Usage.puml)
 
 ### Simplified View
 
@@ -183,7 +185,7 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 ```
 @startuml Two Modes - Technical View
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 
 ' Uncomment the following line to create simplified view
@@ -215,11 +217,11 @@ recordVote --> voteDb
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
 
 And if the `!include AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
 
 ### Sequence Diagrams
 
@@ -228,7 +230,7 @@ Icons can also be used in UML sequence diagrams, either with Participant macros 
 ```bash
 @startuml Sequence Diagram - Technical
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Compute/all.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -255,15 +257,16 @@ api -> user: Returns status code
 
 The code above generates the fully detailed diagram with stereotypes.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```
 @startuml Sequence Diagram - Images
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
 !include AWSPuml/General/Internetalt1.puml
@@ -284,6 +287,7 @@ skinparam sequence {
 'Hide the bottom boxes / Use filled triangle arrowheads
 hide footbox
 skinparam style strictuml
+skinparam MaxMessageSize 200
 
 actor User as user
 box AWS Cloud
@@ -295,20 +299,20 @@ endbox
 participant "Authorizer\nReturns status and token\n$Internetalt1IMG()" as processor
 
 'Use shortcut syntax for activation with colored lifelines and return keyword
-user -> api++ #CC2264: Process transaction\nPOST /prod/process
-api -> lambda++ #D86613: Invokes lambda with cardholder details
-lambda -> processor++ #232F3E: Submit via API token\ncard number, expiry, CID
-processor -> processor: Validate and create token
-return status code and token
+user -> api++ AWS_COLOR_PINK: <$Callout_1> Process transaction\l<$Callout_SP> ""POST /prod/process""
+api -> lambda++ AWS_COLOR_ORANGE: <$Callout_2> Invokes lambda with\l<$Callout_SP> cardholder details
+lambda -> processor++ AWS_COLOR: <$Callout_3> Submit via API token\l<$Callout_SP> card number, expiry, CID
+processor -> processor: Validate and\lcreate token
+return status code, token
 lambda ->> db: PUT transaction id, token
-return status code, transaction id
+return status code,\rtransaction id
 return status code
 @enduml
 ```
 
 The code above generates the same sequence diagram demonstrating how colors, text positioning, and stereotypes can be modified.
 
-![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FSequence%2520-%2520Images.puml)
+![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FSequence%2520-%2520Images.puml)
 
 ### Groups
 
@@ -319,7 +323,7 @@ Groups are a system element which shows the connection between multiple services
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSSimplified.puml
 !include AWSPuml/Compute/EC2.puml
@@ -370,7 +374,7 @@ AWSCloudGroup(cloud) {
 
 This code generates the following diagram:
 
-![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FGroups%2520-%2520VPC.puml)
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FGroups%2520-%2520VPC.puml)
 
 Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is an Amazon S3 upload workflow example defining a custom group for the Amazon S3 bucket.
 
@@ -379,8 +383,9 @@ Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/Groups/all.puml
 !include AWSPuml/Compute/LambdaLambdaFunction.puml
 !include AWSPuml/General/Documents.puml
@@ -394,10 +399,6 @@ Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is
 ' define custom group for Amazon S3 bucket
 AWSGroupColoring(S3BucketGroup, #FFFFFF, AWS_COLOR_GREEN, plain)
 !define S3BucketGroup(g_alias, g_label="Amazon S3 bucket") AWSGroupEntity(g_alias, g_label, AWS_COLOR_GREEN, SimpleStorageService, S3BucketGroup)
-
-!procedure $stepnum($number) 
-<back:black><color:white><b> $number </b></color></back>
-!endprocedure
 
 ' Groups are rectangles with a custom style using stereotype - need to hide
 hide stereotype
@@ -415,7 +416,7 @@ AWSCloudGroup(cloud){
       rectangle "$TapestorageIMG()\n\taudio\t" as audio
       rectangle "$DocumentsIMG()\n\ttranscript\t" as transcript
 
-      user -r-> video: $stepnum("1")\lupload
+      user -r-> video: <$Callout_1>\lupload
       video -r-> audio
       audio -r-> transcript
     }
@@ -424,11 +425,11 @@ AWSCloudGroup(cloud){
     rectangle "$ElementalMediaConvertIMG()\nAWS Elemental\nMediaConvert" as mediaconvert
     rectangle "$TranscribeIMG()\nAmazon Transcribe\n" as transcribe
     
-    video -d-> e1: $stepnum("2")
+    video -d-> e1: <$Callout_2> 
     e1 -[hidden]r-> mediaconvert
     mediaconvert -[hidden]r-> transcribe
-    mediaconvert -u-> audio: $stepnum("3")
-    transcribe -u-> transcript: $stepnum("4") 
+    mediaconvert -u-> audio: <$Callout_3> 
+    transcribe -u-> transcript: <$Callout_4> 
     
     StepFunctionsWorkflowGroup(sfw) {
       rectangle "$LambdaLambdaFunctionIMG()\nextract audio" as sfw1
@@ -445,7 +446,7 @@ AWSCloudGroup(cloud){
 @enduml
 ```
 
-![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv14.0%2Fexamples%2FS3%2520Upload%2520Workflow.puml)
+![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FS3%2520Upload%2520Workflow.puml)
 
 ## Distribution "Dist" Details
 

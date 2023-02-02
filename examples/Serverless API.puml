@@ -1,7 +1,8 @@
 @startuml Serverless API
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/Database/DynamoDB.puml
@@ -18,10 +19,6 @@ skinparam rectangle {
     Shadowing false
 }
 
-!procedure $stepnum($number) 
-<back:black><color:white><b> $number </b></color></back>
-!endprocedure
-
 rectangle "$ClientIMG()\nClient" as client
 AWSCloudGroup(cloud){
   rectangle "$APIGatewayIMG()\nAmazon API\nGateway" as api
@@ -30,13 +27,13 @@ AWSCloudGroup(cloud){
   rectangle "$SimpleStorageServiceIMG()\nAmazon S3" as s3
   rectangle "$LambdaIMG()\nAWS Lambda" as trigger
 
-  client -right-> api: $stepnum("1")\n
-  api -right-> lambda: $stepnum("2")\n
-  lambda -right-> dynamodb: $stepnum("3")\n
+  client -right-> api: <$Callout_1>\n
+  api -right-> lambda: <$Callout_2>\n
+  lambda -right-> dynamodb: <$Callout_3>\n
   api -[hidden]down-> s3
-  client -right-> s3: $stepnum("4")
-  s3 -right-> trigger: $stepnum("5")\n
+  client -right-> s3: <$Callout_4>  
+  s3 -right-> trigger: <$Callout_5>\n
   trigger -[hidden]up-> lambda
-  trigger -u-> dynamodb: $stepnum("6")\n
+  trigger -u-> dynamodb: <$Callout_6>\n
 }
 @enduml

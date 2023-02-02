@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudTrailCloudTrailLake [64x64/16z] {
+vTO73W8n44FH0tpA_KzBjJIAB3I9wM1wUTw-c_q71zxjtpLDu0rUaV-_09xNUYyCDbky6G7YoKiOpmfoJyobXdUaCu1yMb0l91unaeBoAaYyhvB8go3poffN
+h9EsXYemhuIdNM60sEiruHKWz4he-p_1h2Vd-X-pjRDJQdJR49oeYIVl8ZjHvzvd-NqUnKyT2ikU8W2mv8jGMJoG1mai3qqO4T1SPz7htFhZbc_Mdt7t_Vhp
+oidr1vMrgn2ZJuxmylv7gn-bfV7D-cl347qC2veD5ko_FvKZ
+}
+
+!function $CloudTrailCloudTrailLakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgpJREFUeNrtWktOxDAMbUIWw0m4DCAWLNhxFbgJ7JDYDOI2nIQFUlElikaj5uP4EzuNpUqVqqbx88uz43Sahg0TtY/D7eNyaZlPkP7gPM0vf7evGgDwg5NIOx5u5uWyOv/ACcx6f/f96bQCsPslgGaA5ugOGzYsa+D1y5HyWurIyAItIqepcPIYpykcaZ1G0UsACoK2stm3pL6GIspTUNfyZogsC+RA0Bh9NAC1TmhiD2kdEHMGyg5TAJyzIOdMjDWtGivslSC0MSINAgkAGEHbelcSBLG9QAqk5Rl0KXW5GWoBgrrdoHR9QPaxWvWHiCdHMeWpnOWMXCxFUiwR9KaG2/EYm6jYYKojdJotqIB3WqMvNR/zPUFsELpqitaIoocMbqHxAZ2jqx1U05lgKlugAdDayaEKlLOk+BxAFAFg9Qi8hL1eS2OiVYr0FINYXhrdH47mAhj2EPndVII19s+A4+X1/TS79xJGUDc/TseVZh7Lf4KQ9HkOpnTqZf1XOOZMSYqVAsJxOl6j1pi6vqYYYqdZCoycUxSleG4MtyWCOcGDPG8pgiWlcLciWLqL7U4EoYw0KYLQ8cUBgICRmlxMwEoAKGWOSLGB6SptLQVMZinKAlj61QhYq+ZLaBHxFIjSPUg1Irg6S10J5uyCY9C3n6/nh3D1BHF8eSf17vrcBAM0lcLDhg1L2i/m4o2rkltIzwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(CloudTrailCloudTrailLake)
+!define CloudTrailCloudTrailLake(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, CloudTrailCloudTrailLake, CloudTrailCloudTrailLake)
+!define CloudTrailCloudTrailLake(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, CloudTrailCloudTrailLake, CloudTrailCloudTrailLake)
+!define CloudTrailCloudTrailLakeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, CloudTrailCloudTrailLake, CloudTrailCloudTrailLake)
+!define CloudTrailCloudTrailLakeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, CloudTrailCloudTrailLake, CloudTrailCloudTrailLake)
