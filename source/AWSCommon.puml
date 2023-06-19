@@ -1,73 +1,303 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
+' Dark Mode support
+' ##################################
+' if $AWS_DARK is not defined, check $PUML_MODE
+!if (%not(%variable_exists("$AWS_DARK")) && (%variable_exists("$PUML_MODE") && $PUML_MODE == "dark"))
+!$AWS_DARK = true
+!endif
+' ensure $AWS_DARK is either true or false
+!if %not(%variable_exists("$AWS_DARK") && ($AWS_DARK == true))
+!$AWS_DARK = false
+!endif
+
 ' Colors
+' prefer $AWS_ versions, treat AWS_ as deprecated
 ' ##################################
 !define AWS_COLOR #232F3E
+!$AWS_COLOR_SQUID = "#232F3E"
+!if $AWS_DARK == true
+!define AWS_BG_COLOR #000000
+!$AWS_BG_COLOR = "#000000"
+!$AWS_FG_COLOR = "#FFFFFF"
+!$AWS_ARROW_COLOR = "#9BA7B6"
+!else
 !define AWS_BG_COLOR #FFFFFF
+!$AWS_BG_COLOR = "#FFFFFF"
+!$AWS_FG_COLOR = "#000000"
+!$AWS_ARROW_COLOR = "#000000"
+!endif
 !define AWS_BORDER_COLOR #FF9900
+!$AWS_BORDER_COLOR = "#FF9900"
 !define AWS_SYMBOL_COLOR AWS_COLOR
+!$AWS_COLOR_GRAY = "#7D8998"
 
 ' Customer Enablement; Database; Developer Tools; Satellite
-!define AWS_COLOR_BLUE #3A47CB
+!define AWS_COLOR_BLUE #C925D1
+!$AWS_COLOR_NEBULA = "#C925D1"
 ' Cloud Financial Management; Internet of Things; Storage
-!define AWS_COLOR_GREEN #3F8624
+!define AWS_COLOR_GREEN #7AA116
+!$AWS_COLOR_ENDOR = "#7AA116"
 ' Blockchain; Compute; Containers; Media Services; Quantum Technologies
-!define AWS_COLOR_ORANGE #D86613
+!define AWS_COLOR_ORANGE #ED7100
+!$AWS_COLOR_SMILE = "#ED7100"
 ' Application Integration; Management & Governance; VR & AR
-!define AWS_COLOR_PINK #CD2264
+!define AWS_COLOR_PINK #E7157B
+!$AWS_COLOR_COSMOS = "#E7157B"
 ' Analytics; Games; Networking & Content Delivery; Serverless
-!define AWS_COLOR_PURPLE #693BC5
+!define AWS_COLOR_PURPLE #8C4FFF
+!$AWS_COLOR_GALAXY = "#8C4FFF"
 ' Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
-!define AWS_COLOR_RED #D6232C
+!define AWS_COLOR_RED #DD344C
+!$AWS_COLOR_MARS = "#DD344C"
 ' End User Computing; Machine Learning; Migration & Transfer
-!define AWS_COLOR_TURQUOISE #1B7B67
+!define AWS_COLOR_TURQUOISE #01A88D
+!$AWS_COLOR_ORBIT = "#01A88D"
 
-' Styling
+!$AWS_CATEGORY_COLORS = {
+  "analytics": "#8C4FFF",
+  "applicationintegration": "#E7157B",
+  "blockchain": "#ED7100",
+  "businessapplications": "#DD344C",
+  "cloudfinancialmanagement": "#7AA116",
+  "compute": "#ED7100",
+  "contactcenter": "#DD344C",
+  "containers": "#ED7100",
+  "customerenablement": "#C925D1",
+  "database": "#C925D1",
+  "developertools": "#C925D1",
+  "endusercomputing": "#01A88D",
+  "frontendwebmobile": "#DD344C",
+  "games": "#8C4FFF",
+  "general": "#232F3E",
+  "internetofthings": "#7AA116",
+  "machinelearning": "#01A88D",
+  "managementgovernance": "#E7157B",
+  "mediaservices": "#ED7100",
+  "migrationtransfer": "#01A88D",
+  "networkingcontentdelivery": "#8C4FFF",
+  "quantumtechnologies": "#ED7100",
+  "robotics": "#DD344C",
+  "satellite": "#C925D1",
+  "securityidentitycompliance": "#DD344C",
+  "serverless": "#8C4FFF",
+  "storage": "#7AA116"
+}
+
+' returns color based on AWS icon category name
+!function $AWSColor($category)
+!$category = %lower($category)
+!if %json_key_exists($AWS_CATEGORY_COLORS, $category)
+!return $AWS_CATEGORY_COLORS[$category]
+!else
+!return $AWS_BG_COLOR
+!endif
+!endfunction
+
+' Styling / Theme
 ' ##################################
+!$THEME = "aws-icons"
+
+<style>
+  root {
+    BackgroundColor $AWS_BG_COLOR
+    FontColor $AWS_FG_COLOR
+    LineColor $AWS_FG_COLOR
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+</style>
 
 !define TECHN_FONT_SIZE 12
 
-skinparam defaultTextAlignment center
-
+skinparam defaultTextAlignment Center
 skinparam PackageTitleAlignment Left
 
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
+skinparam Shadowing false
+skinparam RoundCorner 0
+skinparam BackgroundColor $AWS_BG_COLOR
 
-skinparam rectangle {
-    StereotypeFontSize 12
+!procedure $AWS_common_skinparam()
+    FontColor $AWS_FG_COLOR
+    BackgroundColor $AWS_BG_COLOR
+    BorderColor $AWS_COLOR_GRAY
+!endprocedure
+
+!procedure $AWS_deployment_skinparam()
+    FontColor $AWS_FG_COLOR
+    BackgroundColor $AWS_BG_COLOR
+    BorderColor $AWS_COLOR_GRAY
+    BorderThickness 1.25
+!endprocedure
+
+skinparam arrow {
+    Color $AWS_ARROW_COLOR
+    FontColor $AWS_FG_COLOR
+    FontSize 12
 }
 
-skinparam Arrow {
-    Color #666666
-    FontColor #666666
-    FontSize 12
+skinparam TitleFontColor $AWS_FG_COLOR
+skinparam TitleBorderColor transparent
+skinparam BackgroundColor $AWS_BG_COLOR
+
+' Sequence Diagram
+skinparam participant {
+    $AWS_common_skinparam()
+    BorderThickness 1.25
+    Padding 2
+}
+
+skinparam sequence {
+    ArrowThickness 2
+    LifeLineBorderColor $AWS_FG_COLOR
+    LifeLineBackgroundColor $AWS_BG_COLOR
+    BoxFontColor $AWS_FG_COLOR
+    BoxBorderColor $AWS_COLOR_GRAY
+    BoxBorderThickness 1.25
+    BoxBackgroundColor $AWS_BG_COLOR
+    GroupBorderColor $AWS_FG_COLOR
+    GroupFontColor $AWS_FG_COLOR
+    GroupBodyBackgroundColor transparent
+}
+skinparam BoxPadding 2
+
+skinparam note {
+  BorderColor $AWS_COLOR_GRAY
+  BorderThickness 1.25
+}
+
+' Activity Diagram
+' StartColor not working, uses <style> LineColor
+skinparam activity {
+  $AWS_common_skinparam()
+  BorderThickness 2
+  StartColor $AWS_BG_COLOR
+  EndColor $AWS_FG_COLOR
+  BarColor $AWS_FG_COLOR
+}
+skinparam swimlane {
+  $AWS_common_skinparam()
+  TitleFontColor $AWS_FG_COLOR
+}
+
+' Deployment Diagram
+skinparam actor { 
+    $AWS_deployment_skinparam()
+    'StereotypeFontColor  $AWS_FG_COLOR
+}
+skinparam agent { 
+    $AWS_deployment_skinparam()
+    Padding 2
+}
+skinparam artifact {
+    $AWS_deployment_skinparam()
+}
+skinparam boundary {
+    $AWS_deployment_skinparam()
+}
+skinparam card {
+    $AWS_deployment_skinparam()
+}
+skinparam circle {
+    $AWS_deployment_skinparam()
+}
+skinparam cloud {
+    $AWS_deployment_skinparam()
+}
+skinparam collections {
+    $AWS_deployment_skinparam()
+}
+skinparam component { 
+    $AWS_deployment_skinparam()
+}
+skinparam control {
+    $AWS_deployment_skinparam()
+}
+skinparam database { 
+    $AWS_deployment_skinparam()
+}
+skinparam entity {
+    $AWS_deployment_skinparam()
+}
+skinparam file {
+    $AWS_deployment_skinparam()
+}
+skinparam folder {
+    $AWS_deployment_skinparam()
+}
+skinparam frame {
+    $AWS_deployment_skinparam()
+}
+skinparam hexagon {
+    $AWS_deployment_skinparam()
+}
+skinparam interface {
+    $AWS_deployment_skinparam()
+}
+skinparam label {
+    $AWS_deployment_skinparam()
+}
+skinparam node {
+    $AWS_deployment_skinparam()
+}
+skinparam package { 
+    $AWS_deployment_skinparam()
+}
+skinparam person { 
+    $AWS_deployment_skinparam()
+}
+skinparam queue {
+    $AWS_deployment_skinparam()
+}
+skinparam rectangle {
+    StereotypeFontSize 12
+    $AWS_common_skinparam()
+    BorderThickness 2
+}
+skinparam stack {
+    $AWS_deployment_skinparam()
+}
+skinparam storage {
+    $AWS_deployment_skinparam()
+}
+skinparam usecase { 
+    $AWS_deployment_skinparam()
+}
+
+' other
+skinparam legend {
+    $AWS_common_skinparam()
+}
+skinparam object {
+    $AWS_common_skinparam()
+}
+skinparam class {
+    $AWS_common_skinparam()
+}
+skinparam partition {
+    $AWS_common_skinparam()
 }
 
 !definelong AWSEntityColoring(stereo)
 skinparam rectangle<<stereo>> {
-    BackgroundColor AWS_BG_COLOR
-    BorderColor AWS_BORDER_COLOR
+    $AWS_common_skinparam()
+    BorderThickness 2
 }
 ' https://github.com/plantuml/plantuml/issues/1023
 'skinparam participant<<stereo>> {
 '    BackgroundColor AWS_BG_COLOR
 '    BorderColor AWS_BORDER_COLOR
 '}
-!enddefinelong
-
-' "StereotypeFontSize 0" below will hide text
-' still need "hide stereotype" in diagrams to hide whitespace
-!definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
-  skinparam rectangle<<g_stereo>> {
-    StereotypeFontSize 0
-    BackgroundColor g_background_color
-    BorderColor g_border_color
-    BorderStyle g_border_style
-    Shadowing false
-    RoundCorner 0
-  }
 !enddefinelong
 
 ' Layout
@@ -109,6 +339,54 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>"
 participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
 !enddefinelong
 
+' Group support
+' ##################################
+!function $AWSColorDetectDark($color)
+!if $AWS_DARK == true && ($color == "black" || $color == "#000000")
+  !return white
+!log after $color
+!endif
+!if $AWS_DARK == true && ($color == "white" || $color == "#FFFFFF")
+  !return black
+!endif
+!return $color
+!endfunction
+
+' "StereotypeFontSize 0" below will hide text
+' still need "hide stereotype" in diagrams to hide whitespace
+!procedure $AWSGroupColoring($stereo, $border_color=$AWS_FG_COLOR, $border_style="plain")
+  skinparam rectangle<<$stereo>> {
+    StereotypeFontSize 0
+    FontColor  $AWS_FG_COLOR
+    BackgroundColor $AWS_BG_COLOR
+    BorderColor $border_color
+    BorderStyle $border_style
+    Shadowing false
+    BorderThickness 2
+  }
+!endprocedure
+' AWSGroupColoring deprecated, left for backwards compatibility
+!definelong AWSGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
+  skinparam rectangle<<g_stereo>> {
+    StereotypeFontSize 0
+    BackgroundColor $AWSColorDetectDark(g_background_color)
+    BorderColor $AWSColorDetectDark(g_border_color)
+    BorderStyle g_border_style
+    Shadowing false
+    BorderThickness 2
+  }
+!enddefinelong
+
+!function $AWSDefineGroup($alias, $label, $stereo)
+!$ret = 'rectangle "' + $label + '" as ' + $alias + ' <<' + $stereo + '>>'
+!return $ret
+!endfunction
+
+!function $AWSDefineGroup($alias, $label, $sprite, $stereo)
+!$ret = 'rectangle "' + $AWSGroupImg($sprite) + '  ' + $label + '" as ' + $alias + ' <<' + $stereo + '>>'
+!return $ret
+!endfunction
+
 ' wraps each line (seperated by \n) of a multi-line label with color
 !function $colorlabel($label, $color="black")
 !$buffer = ""
@@ -122,6 +400,7 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\
 !return "<color:" + $color + ">" + $buffer + $tmp + "</color>"
 !endfunction
 
+' AWSGroupEntity deprecated, left for backwards compatibility
 !definelong AWSGroupEntity(g_alias, g_label, g_color, g_stereo)
 rectangle "$colorlabel(g_label, g_color)" as g_alias <<g_stereo>>
 !enddefinelong

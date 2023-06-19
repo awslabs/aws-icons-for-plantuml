@@ -4,6 +4,7 @@
 Modules to support creation of PlantUML icon files
 """
 
+import shutil
 import sys
 import re
 import subprocess
@@ -12,6 +13,7 @@ from subprocess import PIPE
 from pathlib import Path
 from lxml import etree
 import base64
+from PIL import Image, ImageOps
 
 PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
@@ -19,7 +21,7 @@ PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. Al
 
 
 class Icon:
-    """Reference to source SVG and methods to create the PUML icons"""
+    """Reference to source SVG or PNG and methods to create the PUML icons"""
 
     def __init__(
         self,
@@ -33,6 +35,7 @@ class Icon:
 
         # Full path and filename as PosixPath
         self.filename = posix_filename
+        self.filename_dark = None
         # Config filename
         self.config = config
         # Full filename without path
@@ -51,8 +54,6 @@ class Icon:
         self.transparency = False
         # Group configuration
         self.group = False
-        self.group_background_color = None
-        self.group_border_color = None
         self.group_border_style = None
         self.group_label = ""
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
@@ -81,8 +82,34 @@ class Icon:
             )
             self._set_values(self.source_name, self.temp_category)
 
-    def generate_image(self, path, color=None, max_target_size=64, transparency=False, gradient=True):
+    def crop_category_image(self, image_filename, png_filename):
+        img = Image.open(image_filename)
+
+        # should be 72x72
+        width, height = img.size
+        
+        pngimg = img.crop((7, 7, 67, 67))
+
+        ImageOps.expand(pngimg, border=2, fill='#879196').save(png_filename)
+
+    def generate_image(self, path, color=None, max_target_size=64, transparency=False, gradient=True, image_filename=None, dark=False):
         """Create image from SVG file and save full color without transparency to path"""
+
+        if image_filename == None:
+            image_filename = self.filename
+        png_filename = self.target
+        if dark:
+            png_filename = png_filename + "_Dark"
+
+        # copy file to another location
+        if str(image_filename).endswith(".png"):
+            print(f"Copying {image_filename} to {str(path)}/{png_filename}.png")
+
+            if str(self.source_name).startswith("Arch-Category"):
+                self.crop_category_image(image_filename, f"{str(path)}/{png_filename}.png")
+            else:
+                shutil.copyfile(image_filename, f"{str(path)}/{png_filename}.png")
+            return
 
         # PlantUML only supports 16 layers of gray causing banding when applying to the
         # resource and category icons that have a finer gradient applied. This needs to be replaced
@@ -97,7 +124,9 @@ class Icon:
             "rect", width="100%", height="100%", fill=f"{self.color}"
         )
         parser = etree.XMLParser(remove_blank_text=True)
-        root = etree.parse(str(self.filename), parser)
+
+            
+        root = etree.parse(str(image_filename), parser)
 
         if gradient == True:
             # Replace any gradient fills with the requisite color
@@ -140,7 +169,7 @@ class Icon:
                     "-Djava.awt.headless=true",
                     "batik-1.16/batik-rasterizer-1.16.jar",
                     "-d",
-                    f"{str(path)}/{self.target}.png",
+                    f"{str(path)}/{png_filename}.png",
                     "-w",
                     str(max_target_size),
                     "-h",
@@ -159,31 +188,45 @@ class Icon:
             sys.exit(1)
         return
 
+    def generate_images(self, path, color, max_target_size, transparency, gradient):
+        self.generate_image(path, color, max_target_size, transparency, gradient, self.filename)
+        if self.filename_dark is not None:
+            self.generate_image(path, color, max_target_size, transparency, gradient, self.filename_dark, dark=True)
+
     def generate_puml(self, path, sprite):
         """Generate puml file for service"""
         puml_content = PUML_LICENSE_HEADER
         target = self.target
         color = self.color
+        quoted_color = f"\"{color}\"" if color.startswith("#") else color
         group = self.group
-        group_background_color = self.group_background_color
-        group_border_color = self.group_border_color
         group_border_style = self.group_border_style
         group_label = self.group_label
 
         puml_content += sprite
         if not self.skip_icon:
+            puml_content += f"!function ${target}IMG($scale=1)\n"
+            if self.filename_dark != None:
+                puml_content += "!if %variable_exists(\"$AWS_DARK\") && ($AWS_DARK == true)\n"
+                with open(f"{path}/{target}_Dark.png", "rb") as png_file:
+                    encoded_string = base64.b64encode(png_file.read())
+                    puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
+                puml_content += "!else\n"
             with open(f"{path}/{target}.png", "rb") as png_file:
                 encoded_string = base64.b64encode(png_file.read())
-                puml_content += f"!function ${target}IMG($scale=1)\n"
                 puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
-                puml_content += f"!endfunction\n\n"
+            if self.filename_dark != None:
+                puml_content += "!endif\n"
+            puml_content += f"!endfunction\n\n"
 
         if group:
-            puml_content += f"AWSGroupColoring({target}Group, {group_background_color}, {group_border_color}, {group_border_style})\n"
+            puml_content += f"$AWSGroupColoring({target}Group, {quoted_color}, {group_border_style})\n"
             if self.skip_icon:
-                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") AWSGroupEntity(g_alias, g_label, {color}, {target}Group)\n"
+                # puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSGroupEntity(g_alias, g_label, {target}Group)\n"
+                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}Group)\n"
             else:
-                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") AWSGroupEntity(g_alias, g_label, {color}, {target}, {target}Group)\n"
+                # puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSGroupEntity(g_alias, g_label, {target}, {target}Group)\n"
+                puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}, {target}Group)\n"
         else:
             puml_content += f"AWSEntityColoring({target})\n"
             puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
@@ -196,7 +239,7 @@ class Icon:
 
     def generate_puml_sprite(self, path):
         """Generate puml sprite for service"""
-        # Start plantuml-mit-1.2023.1.jar and encode sprite from main PNG
+        # Start plantuml-mit-1.2023.7.jar and encode sprite from main PNG
         try:
             target = self.target
             result = subprocess.run(
@@ -204,7 +247,7 @@ class Icon:
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "./plantuml-mit-1.2023.1.jar",
+                    "./plantuml-mit-1.2023.7.jar",
                     "-encodesprite",
                     "16z",
                     f"{path}/{target}.png",
@@ -232,13 +275,17 @@ class Icon:
                         self.category = i
                         self.target = j["Target"]
 
+                        if "SourceDark" in j and "SourceDirDark" in j:
+                            self.filename_dark = str(self.filename).replace(j["SourceDir"], j["SourceDirDark"]).replace(j["Source"], j["SourceDark"])
+                            # print(f"self.filename_dark {self.filename_dark}")
+
                         if source_name.startswith("Res_"):
                             self.target_size = 48
                             self.transparency = True
 
                         # Set color from icon, category, default then black
                         if "Color" in j:
-                            if j["Color"].startswith( '#' ):
+                            if j["Color"].startswith( '#' ) or j["Color"].startswith( '$' ):
                                 self.color = j["Color"]
                             else:
                                 self.color = self._color_name(j["Color"])
@@ -253,32 +300,12 @@ class Icon:
                             )
                         else:
                             print(
-                                f"No color definition found for {source_name}, using black"
+                                f"No color definition found for {source_name}, using $AWS_FG_COLOR"
                             )
-                            self.color = "#000000"
+                            self.color = "$AWS_FG_COLOR"
 
                         if source_category == "Groups":
                             self.group = True
-
-                            group_background_color = self._group_value("BackgroundColor", j)
-
-                            if group_background_color != None:
-                                self.group_background_color = group_background_color
-                            else:
-                                print(
-                                    f"No background color definition found for {source_name}, using white"
-                                )
-                                self.group_background_color = "#FFFFFF"
-
-                            group_border_color = self._group_value("BorderColor", j)
-
-                            if group_border_color != None:
-                                self.group_border_color = group_border_color
-                            else:
-                                print(
-                                    f"No border color definition found for {source_name}, using Color: {self.color}"
-                                )
-                                self.group_border_color = self.color
 
                             group_border_style = self._group_value("BorderStyle", j)
 
@@ -391,9 +418,9 @@ class Icon:
                 if color == color_name:
                     return self.config["Defaults"]["Colors"][color]
             print(
-                f"ERROR: Color {color_name} not found in default color list, returning Black"
+                f"ERROR: Color {color_name} not found in default color list, returning $AWS_FG_COLOR"
             )
-            return "#000000"
+            return "$AWS_FG_COLOR"
         except KeyError as e:
             print(f"Error: {e}")
             print(
