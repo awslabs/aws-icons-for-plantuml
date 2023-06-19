@@ -734,9 +734,6 @@ def main():
     categories = sorted(set([icon.category for icon in icons]))
 
     if not (args["symbols_only"] or args["create_color_json"]):
-        # print("danger")
-        # sys.exit()
-
         # clear out dist/ directory
         clean_dist()
 
@@ -768,7 +765,6 @@ def main():
                 color_map[str(category).lower()] = COLOR_VALUES[CATEGORY_COLORS[category]]
         print("!$AWS_CATEGORY_COLORS = " + json.dumps(color_map, indent=2))
         sys.exit(0)
-                
 
     # Create markdown sheet and place in dist
     sorted_icons = sorted(icons, key=lambda x: (x.category, x.target, x.skip_icon))

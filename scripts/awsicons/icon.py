@@ -277,7 +277,6 @@ class Icon:
 
                         if "SourceDark" in j and "SourceDirDark" in j:
                             self.filename_dark = str(self.filename).replace(j["SourceDir"], j["SourceDirDark"]).replace(j["Source"], j["SourceDark"])
-                            # print(f"self.filename_dark {self.filename_dark}")
 
                         if source_name.startswith("Res_"):
                             self.target_size = 48
