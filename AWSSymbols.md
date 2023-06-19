@@ -21,17 +21,17 @@ $AWS_ARROW_COLOR | #000000 |
 $AWS_BORDER_COLOR | #FF9900 |
 $AWS_COLOR_SQUID | #232F3E |
 $AWS_COLOR_GRAY | #7D8998 |
-$AWS_COLOR_NEBULA / AWS_COLOR_BLUE | #C925D1 | Customer Enablement; Database; Developer Tools; Satellite
-$AWS_COLOR_ENDOR / AWS_COLOR_GREEN | #7AA116 | Cloud Financial Management; Internet of Things; Storage
-$AWS_COLOR_SMILE / AWS_COLOR_ORANGE | #ED7100 | Blockchain; Compute; Containers; Media Services; Quantum Technologies
-$AWS_COLOR_COSMOS / AWS_COLOR_PINK | #E7157B | Application Integration; Management & Governance
-$AWS_COLOR_GALAXY / AWS_COLOR_PURPLE | #8C4FFF | Analytics; Games; Networking & Content Delivery; Serverless
-$AWS_COLOR_MARS / AWS_COLOR_RED | #DD344C | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
-$AWS_COLOR_ORBIT / AWS_COLOR_TURQUOISE | #01A88D | End User Computing; Machine Learning; Migration & Transfer
+$AWS_COLOR_NEBULA | #C925D1 (blue replacement) | Customer Enablement; Database; Developer Tools; Satellite
+$AWS_COLOR_ENDOR | #7AA116 (green) | Cloud Financial Management; Internet of Things; Storage
+$AWS_COLOR_SMILE | #ED7100 (orange) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
+$AWS_COLOR_COSMOS | #E7157B (pink) | Application Integration; Management & Governance
+$AWS_COLOR_GALAXY | #8C4FFF (purple) | Analytics; Games; Networking & Content Delivery; Serverless
+$AWS_COLOR_MARS | #DD344C (red) | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+$AWS_COLOR_ORBIT | #01A88D (turquoise) | End User Computing; Machine Learning; Migration & Transfer
 
 An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
 
-When `!$AWS_DARK = true` precedes the `AWSCommon.puml` the `!include`:
+When `!$AWS_DARK = true` precedes the `!include` of `AWSCommon.puml`, some colors are alternately defined:
 
 PUML Macro (Name) | Color
   ---  |  --- 
