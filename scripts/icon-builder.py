@@ -797,9 +797,11 @@ def main():
                 cat = j.category
                 tgt = j.target
                 skip_icon = j.skip_icon
-                img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
                 if j.filename_dark is not None:
+                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
                     img = img + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
+                else:
+                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true)"
                 if cat == "GroupIcons":
                     pass
                 elif cat == "Groups":
