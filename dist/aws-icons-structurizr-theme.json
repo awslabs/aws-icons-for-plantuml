@@ -1,0 +1,4219 @@
+{
+  "name": "AWS Icons for PlantUML Structurizr theme",
+  "description": "This theme includes element styles with icons for each of the AWS services, based upon the AWS Architecture Icons (https://aws.amazon.com/architecture/icons/) and using tag names from AWS Icons for PlantUML (https://github.com/awslabs/aws-icons-for-plantuml).",
+  "elements": [
+    {
+      "tag": "Element",
+      "shape": "Box",
+      "color": "#000000",
+      "stroke": "#000000",
+      "strokeWidth": 2,
+      "background": "#ffffff"
+    },
+    {
+      "tag": "Analytics",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/Analytics.png"
+    },
+    {
+      "tag": "Athena",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/Athena.png"
+    },
+    {
+      "tag": "AthenaDataSourceConnectors",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/AthenaDataSourceConnectors.png"
+    },
+    {
+      "tag": "CleanRooms",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/CleanRooms.png"
+    },
+    {
+      "tag": "CloudSearch",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/CloudSearch.png"
+    },
+    {
+      "tag": "CloudSearchSearchDocuments",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/CloudSearchSearchDocuments.png"
+    },
+    {
+      "tag": "DataExchange",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataExchange.png"
+    },
+    {
+      "tag": "DataExchangeforAPIs",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataExchangeforAPIs.png"
+    },
+    {
+      "tag": "DataPipeline",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataPipeline.png"
+    },
+    {
+      "tag": "DataZone",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataZone.png"
+    },
+    {
+      "tag": "DataZoneBusinessDataCatalog",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataZoneBusinessDataCatalog.png"
+    },
+    {
+      "tag": "DataZoneDataPortal",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataZoneDataPortal.png"
+    },
+    {
+      "tag": "DataZoneDataProjects",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataZoneDataProjects.png"
+    },
+    {
+      "tag": "EMR",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/EMR.png"
+    },
+    {
+      "tag": "EMRCluster",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/EMRCluster.png"
+    },
+    {
+      "tag": "EMREMREngine",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/EMREMREngine.png"
+    },
+    {
+      "tag": "EMRHDFSCluster",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/EMRHDFSCluster.png"
+    },
+    {
+      "tag": "FinSpace",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/FinSpace.png"
+    },
+    {
+      "tag": "Glue",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/Glue.png"
+    },
+    {
+      "tag": "GlueAWSGlueforRay",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueAWSGlueforRay.png"
+    },
+    {
+      "tag": "GlueCrawler",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueCrawler.png"
+    },
+    {
+      "tag": "GlueDataBrew",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueDataBrew.png"
+    },
+    {
+      "tag": "GlueDataCatalog",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueDataCatalog.png"
+    },
+    {
+      "tag": "GlueDataQuality",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueDataQuality.png"
+    },
+    {
+      "tag": "GlueElasticViews",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/GlueElasticViews.png"
+    },
+    {
+      "tag": "Kinesis",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/Kinesis.png"
+    },
+    {
+      "tag": "KinesisDataAnalytics",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/KinesisDataAnalytics.png"
+    },
+    {
+      "tag": "KinesisDataFirehose",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/KinesisDataFirehose.png"
+    },
+    {
+      "tag": "KinesisDataStreams",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/KinesisDataStreams.png"
+    },
+    {
+      "tag": "KinesisVideoStreams",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/KinesisVideoStreams.png"
+    },
+    {
+      "tag": "LakeFormation",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/LakeFormation.png"
+    },
+    {
+      "tag": "LakeFormationDataLake",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/LakeFormationDataLake.png"
+    },
+    {
+      "tag": "MSKAmazonMSKConnect",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/MSKAmazonMSKConnect.png"
+    },
+    {
+      "tag": "ManagedStreamingforApacheKafka",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/ManagedStreamingforApacheKafka.png"
+    },
+    {
+      "tag": "OpenSearchService",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchService.png"
+    },
+    {
+      "tag": "OpenSearchServiceClusterAdministratorNode",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceClusterAdministratorNode.png"
+    },
+    {
+      "tag": "OpenSearchServiceDataNode",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceDataNode.png"
+    },
+    {
+      "tag": "OpenSearchServiceIndex",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceIndex.png"
+    },
+    {
+      "tag": "OpenSearchServiceObservability",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceObservability.png"
+    },
+    {
+      "tag": "OpenSearchServiceOpenSearchDashboards",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceOpenSearchDashboards.png"
+    },
+    {
+      "tag": "OpenSearchServiceTraces",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceTraces.png"
+    },
+    {
+      "tag": "OpenSearchServiceUltraWarmNode",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/OpenSearchServiceUltraWarmNode.png"
+    },
+    {
+      "tag": "QuickSight",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/QuickSight.png"
+    },
+    {
+      "tag": "QuicksightPaginatedReports",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/QuicksightPaginatedReports.png"
+    },
+    {
+      "tag": "Redshift",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/Redshift.png"
+    },
+    {
+      "tag": "RedshiftAutocopy",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftAutocopy.png"
+    },
+    {
+      "tag": "RedshiftDataSharingGovernance",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftDataSharingGovernance.png"
+    },
+    {
+      "tag": "RedshiftDenseComputeNode",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftDenseComputeNode.png"
+    },
+    {
+      "tag": "RedshiftDenseStorageNode",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftDenseStorageNode.png"
+    },
+    {
+      "tag": "RedshiftML",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftML.png"
+    },
+    {
+      "tag": "RedshiftQueryEditorv20",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftQueryEditorv20.png"
+    },
+    {
+      "tag": "RedshiftRA3",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftRA3.png"
+    },
+    {
+      "tag": "RedshiftStreamingIngestion",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/RedshiftStreamingIngestion.png"
+    },
+    {
+      "tag": "APIGateway",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/APIGateway.png"
+    },
+    {
+      "tag": "APIGatewayEndpoint",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/APIGatewayEndpoint.png"
+    },
+    {
+      "tag": "AppFlow",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/AppFlow.png"
+    },
+    {
+      "tag": "AppSync",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/AppSync.png"
+    },
+    {
+      "tag": "ApplicationIntegration",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/ApplicationIntegration.png"
+    },
+    {
+      "tag": "ConsoleMobileApplication",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/ConsoleMobileApplication.png"
+    },
+    {
+      "tag": "EventBridge",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridge.png"
+    },
+    {
+      "tag": "EventBridgeCustomEventBus",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeCustomEventBus.png"
+    },
+    {
+      "tag": "EventBridgeDefaultEventBus",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeDefaultEventBus.png"
+    },
+    {
+      "tag": "EventBridgeEvent",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeEvent.png"
+    },
+    {
+      "tag": "EventBridgePipes",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgePipes.png"
+    },
+    {
+      "tag": "EventBridgeRule",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeRule.png"
+    },
+    {
+      "tag": "EventBridgeSaasPartnerEvent",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeSaasPartnerEvent.png"
+    },
+    {
+      "tag": "EventBridgeScheduler",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeScheduler.png"
+    },
+    {
+      "tag": "EventBridgeSchema",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeSchema.png"
+    },
+    {
+      "tag": "EventBridgeSchemaRegistry",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/EventBridgeSchemaRegistry.png"
+    },
+    {
+      "tag": "ExpressWorkflows",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/ExpressWorkflows.png"
+    },
+    {
+      "tag": "MQ",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/MQ.png"
+    },
+    {
+      "tag": "MQBroker",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/MQBroker.png"
+    },
+    {
+      "tag": "ManagedWorkflowsforApacheAirflow",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/ManagedWorkflowsforApacheAirflow.png"
+    },
+    {
+      "tag": "SimpleNotificationService",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleNotificationService.png"
+    },
+    {
+      "tag": "SimpleNotificationServiceEmailNotification",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleNotificationServiceEmailNotification.png"
+    },
+    {
+      "tag": "SimpleNotificationServiceHTTPNotification",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleNotificationServiceHTTPNotification.png"
+    },
+    {
+      "tag": "SimpleNotificationServiceTopic",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleNotificationServiceTopic.png"
+    },
+    {
+      "tag": "SimpleQueueService",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleQueueService.png"
+    },
+    {
+      "tag": "SimpleQueueServiceMessage",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleQueueServiceMessage.png"
+    },
+    {
+      "tag": "SimpleQueueServiceQueue",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/SimpleQueueServiceQueue.png"
+    },
+    {
+      "tag": "StepFunctions",
+      "stroke": "#E7157B",
+      "icon": "ApplicationIntegration/StepFunctions.png"
+    },
+    {
+      "tag": "Blockchain",
+      "stroke": "#ED7100",
+      "icon": "Blockchain/Blockchain.png"
+    },
+    {
+      "tag": "ManagedBlockchain",
+      "stroke": "#ED7100",
+      "icon": "Blockchain/ManagedBlockchain.png"
+    },
+    {
+      "tag": "ManagedBlockchainBlockchain",
+      "stroke": "#ED7100",
+      "icon": "Blockchain/ManagedBlockchainBlockchain.png"
+    },
+    {
+      "tag": "QuantumLedgerDatabase",
+      "stroke": "#ED7100",
+      "icon": "Blockchain/QuantumLedgerDatabase.png"
+    },
+    {
+      "tag": "AlexaForBusiness",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/AlexaForBusiness.png"
+    },
+    {
+      "tag": "BusinessApplications",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/BusinessApplications.png"
+    },
+    {
+      "tag": "Chime",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/Chime.png"
+    },
+    {
+      "tag": "ChimeSDK",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/ChimeSDK.png"
+    },
+    {
+      "tag": "Connect",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/Connect.png"
+    },
+    {
+      "tag": "Honeycode",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/Honeycode.png"
+    },
+    {
+      "tag": "Pinpoint",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/Pinpoint.png"
+    },
+    {
+      "tag": "PinpointAPIs",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/PinpointAPIs.png"
+    },
+    {
+      "tag": "PinpointJourney",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/PinpointJourney.png"
+    },
+    {
+      "tag": "SimpleEmailService",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/SimpleEmailService.png"
+    },
+    {
+      "tag": "SimpleEmailServiceEmail",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/SimpleEmailServiceEmail.png"
+    },
+    {
+      "tag": "SupplyChain",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/SupplyChain.png"
+    },
+    {
+      "tag": "Wickr",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/Wickr.png"
+    },
+    {
+      "tag": "WorkDocs",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/WorkDocs.png"
+    },
+    {
+      "tag": "WorkDocsSDK",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/WorkDocsSDK.png"
+    },
+    {
+      "tag": "WorkMail",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/WorkMail.png"
+    },
+    {
+      "tag": "ApplicationCostProfiler",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/ApplicationCostProfiler.png"
+    },
+    {
+      "tag": "BillingConductor",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/BillingConductor.png"
+    },
+    {
+      "tag": "Budgets",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/Budgets.png"
+    },
+    {
+      "tag": "CloudFinancialManagement",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/CloudFinancialManagement.png"
+    },
+    {
+      "tag": "CostExplorer",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/CostExplorer.png"
+    },
+    {
+      "tag": "CostandUsageReport",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/CostandUsageReport.png"
+    },
+    {
+      "tag": "ReservedInstanceReporting",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/ReservedInstanceReporting.png"
+    },
+    {
+      "tag": "SavingsPlans",
+      "stroke": "#7AA116",
+      "icon": "CloudFinancialManagement/SavingsPlans.png"
+    },
+    {
+      "tag": "AppRunner",
+      "stroke": "#ED7100",
+      "icon": "Compute/AppRunner.png"
+    },
+    {
+      "tag": "Batch",
+      "stroke": "#ED7100",
+      "icon": "Compute/Batch.png"
+    },
+    {
+      "tag": "Bottlerocket",
+      "stroke": "#ED7100",
+      "icon": "Compute/Bottlerocket.png"
+    },
+    {
+      "tag": "Compute",
+      "stroke": "#ED7100",
+      "icon": "Compute/Compute.png"
+    },
+    {
+      "tag": "ComputeOptimizer",
+      "stroke": "#ED7100",
+      "icon": "Compute/ComputeOptimizer.png"
+    },
+    {
+      "tag": "EC2",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2.png"
+    },
+    {
+      "tag": "EC2AMI",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2AMI.png"
+    },
+    {
+      "tag": "EC2AWSMicroserviceExtractorforNET",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2AWSMicroserviceExtractorforNET.png"
+    },
+    {
+      "tag": "EC2AutoScaling",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2AutoScaling.png"
+    },
+    {
+      "tag": "EC2AutoScalingResource",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2AutoScalingResource.png"
+    },
+    {
+      "tag": "EC2DBInstance",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2DBInstance.png"
+    },
+    {
+      "tag": "EC2ElasticIPAddress",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2ElasticIPAddress.png"
+    },
+    {
+      "tag": "EC2ImageBuilder",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2ImageBuilder.png"
+    },
+    {
+      "tag": "EC2Instance",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2Instance.png"
+    },
+    {
+      "tag": "EC2Instances",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2Instances.png"
+    },
+    {
+      "tag": "EC2InstancewithCloudWatch",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2InstancewithCloudWatch.png"
+    },
+    {
+      "tag": "EC2Rescue",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2Rescue.png"
+    },
+    {
+      "tag": "EC2SpotInstance",
+      "stroke": "#ED7100",
+      "icon": "Compute/EC2SpotInstance.png"
+    },
+    {
+      "tag": "ElasticBeanstalk",
+      "stroke": "#ED7100",
+      "icon": "Compute/ElasticBeanstalk.png"
+    },
+    {
+      "tag": "ElasticBeanstalkApplication",
+      "stroke": "#ED7100",
+      "icon": "Compute/ElasticBeanstalkApplication.png"
+    },
+    {
+      "tag": "ElasticBeanstalkDeployment",
+      "stroke": "#ED7100",
+      "icon": "Compute/ElasticBeanstalkDeployment.png"
+    },
+    {
+      "tag": "ElasticFabricAdapter",
+      "stroke": "#ED7100",
+      "icon": "Compute/ElasticFabricAdapter.png"
+    },
+    {
+      "tag": "GenomicsCLI",
+      "stroke": "#ED7100",
+      "icon": "Compute/GenomicsCLI.png"
+    },
+    {
+      "tag": "Lambda",
+      "stroke": "#ED7100",
+      "icon": "Compute/Lambda.png"
+    },
+    {
+      "tag": "LambdaLambdaFunction",
+      "stroke": "#ED7100",
+      "icon": "Compute/LambdaLambdaFunction.png"
+    },
+    {
+      "tag": "Lightsail",
+      "stroke": "#ED7100",
+      "icon": "Compute/Lightsail.png"
+    },
+    {
+      "tag": "LightsailforResearch",
+      "stroke": "#ED7100",
+      "icon": "Compute/LightsailforResearch.png"
+    },
+    {
+      "tag": "LocalZones",
+      "stroke": "#ED7100",
+      "icon": "Compute/LocalZones.png"
+    },
+    {
+      "tag": "NICEDCV",
+      "stroke": "#ED7100",
+      "icon": "Compute/NICEDCV.png"
+    },
+    {
+      "tag": "NICEEnginFrame",
+      "stroke": "#ED7100",
+      "icon": "Compute/NICEEnginFrame.png"
+    },
+    {
+      "tag": "NitroEnclaves",
+      "stroke": "#ED7100",
+      "icon": "Compute/NitroEnclaves.png"
+    },
+    {
+      "tag": "Outpostsfamily",
+      "stroke": "#ED7100",
+      "icon": "Compute/Outpostsfamily.png"
+    },
+    {
+      "tag": "Outpostsrack",
+      "stroke": "#ED7100",
+      "icon": "Compute/Outpostsrack.png"
+    },
+    {
+      "tag": "Outpostsservers",
+      "stroke": "#ED7100",
+      "icon": "Compute/Outpostsservers.png"
+    },
+    {
+      "tag": "ParallelCluster",
+      "stroke": "#ED7100",
+      "icon": "Compute/ParallelCluster.png"
+    },
+    {
+      "tag": "ServerlessApplicationRepository",
+      "stroke": "#ED7100",
+      "icon": "Compute/ServerlessApplicationRepository.png"
+    },
+    {
+      "tag": "SimSpaceWeaver",
+      "stroke": "#ED7100",
+      "icon": "Compute/SimSpaceWeaver.png"
+    },
+    {
+      "tag": "ThinkboxDeadline",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxDeadline.png"
+    },
+    {
+      "tag": "ThinkboxFrost",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxFrost.png"
+    },
+    {
+      "tag": "ThinkboxKrakatoa",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxKrakatoa.png"
+    },
+    {
+      "tag": "ThinkboxSequoia",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxSequoia.png"
+    },
+    {
+      "tag": "ThinkboxStoke",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxStoke.png"
+    },
+    {
+      "tag": "ThinkboxXMesh",
+      "stroke": "#ED7100",
+      "icon": "Compute/ThinkboxXMesh.png"
+    },
+    {
+      "tag": "VMwareCloudonAWS",
+      "stroke": "#ED7100",
+      "icon": "Compute/VMwareCloudonAWS.png"
+    },
+    {
+      "tag": "Wavelength",
+      "stroke": "#ED7100",
+      "icon": "Compute/Wavelength.png"
+    },
+    {
+      "tag": "ContactCenter",
+      "stroke": "#DD344C",
+      "icon": "ContactCenter/ContactCenter.png"
+    },
+    {
+      "tag": "Containers",
+      "stroke": "#ED7100",
+      "icon": "Containers/Containers.png"
+    },
+    {
+      "tag": "ECSAnywhere",
+      "stroke": "#ED7100",
+      "icon": "Containers/ECSAnywhere.png"
+    },
+    {
+      "tag": "EKSAnywhere",
+      "stroke": "#ED7100",
+      "icon": "Containers/EKSAnywhere.png"
+    },
+    {
+      "tag": "EKSCloud",
+      "stroke": "#ED7100",
+      "icon": "Containers/EKSCloud.png"
+    },
+    {
+      "tag": "EKSDistro",
+      "stroke": "#ED7100",
+      "icon": "Containers/EKSDistro.png"
+    },
+    {
+      "tag": "ElasticContainerRegistry",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerRegistry.png"
+    },
+    {
+      "tag": "ElasticContainerRegistryImage",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerRegistryImage.png"
+    },
+    {
+      "tag": "ElasticContainerRegistryRegistry",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerRegistryRegistry.png"
+    },
+    {
+      "tag": "ElasticContainerService",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerService.png"
+    },
+    {
+      "tag": "ElasticContainerServiceContainer1",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceContainer1.png"
+    },
+    {
+      "tag": "ElasticContainerServiceContainer2",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceContainer2.png"
+    },
+    {
+      "tag": "ElasticContainerServiceContainer3",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceContainer3.png"
+    },
+    {
+      "tag": "ElasticContainerServiceCopilotCLI",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceCopilotCLI.png"
+    },
+    {
+      "tag": "ElasticContainerServiceECSServiceConnect",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceECSServiceConnect.png"
+    },
+    {
+      "tag": "ElasticContainerServiceService",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceService.png"
+    },
+    {
+      "tag": "ElasticContainerServiceTask",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticContainerServiceTask.png"
+    },
+    {
+      "tag": "ElasticKubernetesService",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticKubernetesService.png"
+    },
+    {
+      "tag": "ElasticKubernetesServiceEKSonOutposts",
+      "stroke": "#ED7100",
+      "icon": "Containers/ElasticKubernetesServiceEKSonOutposts.png"
+    },
+    {
+      "tag": "Fargate",
+      "stroke": "#ED7100",
+      "icon": "Containers/Fargate.png"
+    },
+    {
+      "tag": "RedHatOpenShiftServiceonAWS",
+      "stroke": "#ED7100",
+      "icon": "Containers/RedHatOpenShiftServiceonAWS.png"
+    },
+    {
+      "tag": "Activate",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/Activate.png"
+    },
+    {
+      "tag": "CustomerEnablement",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/CustomerEnablement.png"
+    },
+    {
+      "tag": "IQ",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/IQ.png"
+    },
+    {
+      "tag": "ManagedServices",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/ManagedServices.png"
+    },
+    {
+      "tag": "ProfessionalServices",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/ProfessionalServices.png"
+    },
+    {
+      "tag": "Support",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/Support.png"
+    },
+    {
+      "tag": "TrainingCertification",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/TrainingCertification.png"
+    },
+    {
+      "tag": "rePost",
+      "stroke": "#C925D1",
+      "icon": "CustomerEnablement/rePost.png"
+    },
+    {
+      "tag": "Aurora",
+      "stroke": "#C925D1",
+      "icon": "Database/Aurora.png"
+    },
+    {
+      "tag": "AuroraAmazonAuroraInstancealternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraAmazonAuroraInstancealternate.png"
+    },
+    {
+      "tag": "AuroraAmazonRDSInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraAmazonRDSInstance.png"
+    },
+    {
+      "tag": "AuroraAmazonRDSInstanceAternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraAmazonRDSInstanceAternate.png"
+    },
+    {
+      "tag": "AuroraInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraInstance.png"
+    },
+    {
+      "tag": "AuroraMariaDBInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraMariaDBInstance.png"
+    },
+    {
+      "tag": "AuroraMariaDBInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraMariaDBInstanceAlternate.png"
+    },
+    {
+      "tag": "AuroraMySQLInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraMySQLInstance.png"
+    },
+    {
+      "tag": "AuroraMySQLInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraMySQLInstanceAlternate.png"
+    },
+    {
+      "tag": "AuroraOracleInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraOracleInstance.png"
+    },
+    {
+      "tag": "AuroraOracleInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraOracleInstanceAlternate.png"
+    },
+    {
+      "tag": "AuroraPIOPSInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraPIOPSInstance.png"
+    },
+    {
+      "tag": "AuroraPostgreSQLInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraPostgreSQLInstance.png"
+    },
+    {
+      "tag": "AuroraPostgreSQLInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraPostgreSQLInstanceAlternate.png"
+    },
+    {
+      "tag": "AuroraSQLServerInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraSQLServerInstance.png"
+    },
+    {
+      "tag": "AuroraSQLServerInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraSQLServerInstanceAlternate.png"
+    },
+    {
+      "tag": "AuroraTrustedLanguageExtensionsforPostgreSQL",
+      "stroke": "#C925D1",
+      "icon": "Database/AuroraTrustedLanguageExtensionsforPostgreSQL.png"
+    },
+    {
+      "tag": "Database",
+      "stroke": "#C925D1",
+      "icon": "Database/Database.png"
+    },
+    {
+      "tag": "DatabaseMigrationService",
+      "stroke": "#C925D1",
+      "icon": "Database/DatabaseMigrationService.png"
+    },
+    {
+      "tag": "DatabaseMigrationServiceDatabasemigrationworkflowjob",
+      "stroke": "#C925D1",
+      "icon": "Database/DatabaseMigrationServiceDatabasemigrationworkflowjob.png"
+    },
+    {
+      "tag": "DocumentDB",
+      "stroke": "#C925D1",
+      "icon": "Database/DocumentDB.png"
+    },
+    {
+      "tag": "DocumentDBElasticClusters",
+      "stroke": "#C925D1",
+      "icon": "Database/DocumentDBElasticClusters.png"
+    },
+    {
+      "tag": "DynamoDB",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDB.png"
+    },
+    {
+      "tag": "DynamoDBAmazonDynamoDBAccelerator",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBAmazonDynamoDBAccelerator.png"
+    },
+    {
+      "tag": "DynamoDBAttribute",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBAttribute.png"
+    },
+    {
+      "tag": "DynamoDBAttributes",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBAttributes.png"
+    },
+    {
+      "tag": "DynamoDBGlobalsecondaryindex",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBGlobalsecondaryindex.png"
+    },
+    {
+      "tag": "DynamoDBItem",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBItem.png"
+    },
+    {
+      "tag": "DynamoDBItems",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBItems.png"
+    },
+    {
+      "tag": "DynamoDBStandardAccessTableClass",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBStandardAccessTableClass.png"
+    },
+    {
+      "tag": "DynamoDBStandardInfrequentAccessTableClass",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBStandardInfrequentAccessTableClass.png"
+    },
+    {
+      "tag": "DynamoDBStream",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBStream.png"
+    },
+    {
+      "tag": "DynamoDBTable",
+      "stroke": "#C925D1",
+      "icon": "Database/DynamoDBTable.png"
+    },
+    {
+      "tag": "ElastiCache",
+      "stroke": "#C925D1",
+      "icon": "Database/ElastiCache.png"
+    },
+    {
+      "tag": "ElastiCacheCacheNode",
+      "stroke": "#C925D1",
+      "icon": "Database/ElastiCacheCacheNode.png"
+    },
+    {
+      "tag": "ElastiCacheElastiCacheforMemcached",
+      "stroke": "#C925D1",
+      "icon": "Database/ElastiCacheElastiCacheforMemcached.png"
+    },
+    {
+      "tag": "ElastiCacheElastiCacheforRedis",
+      "stroke": "#C925D1",
+      "icon": "Database/ElastiCacheElastiCacheforRedis.png"
+    },
+    {
+      "tag": "Keyspaces",
+      "stroke": "#C925D1",
+      "icon": "Database/Keyspaces.png"
+    },
+    {
+      "tag": "MemoryDBforRedis",
+      "stroke": "#C925D1",
+      "icon": "Database/MemoryDBforRedis.png"
+    },
+    {
+      "tag": "Neptune",
+      "stroke": "#C925D1",
+      "icon": "Database/Neptune.png"
+    },
+    {
+      "tag": "RDS",
+      "stroke": "#C925D1",
+      "icon": "Database/RDS.png"
+    },
+    {
+      "tag": "RDSBlueGreenDeployments",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSBlueGreenDeployments.png"
+    },
+    {
+      "tag": "RDSMultiAZ",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSMultiAZ.png"
+    },
+    {
+      "tag": "RDSMultiAZDBCluster",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSMultiAZDBCluster.png"
+    },
+    {
+      "tag": "RDSOptimizedWrites",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSOptimizedWrites.png"
+    },
+    {
+      "tag": "RDSProxyInstance",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSProxyInstance.png"
+    },
+    {
+      "tag": "RDSProxyInstanceAlternate",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSProxyInstanceAlternate.png"
+    },
+    {
+      "tag": "RDSTrustedLanguageExtensionsforPostgreSQL",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSTrustedLanguageExtensionsforPostgreSQL.png"
+    },
+    {
+      "tag": "RDSonVMware",
+      "stroke": "#C925D1",
+      "icon": "Database/RDSonVMware.png"
+    },
+    {
+      "tag": "Timestream",
+      "stroke": "#C925D1",
+      "icon": "Database/Timestream.png"
+    },
+    {
+      "tag": "ApplicationComposer",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/ApplicationComposer.png"
+    },
+    {
+      "tag": "Cloud9",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/Cloud9.png"
+    },
+    {
+      "tag": "Cloud9Cloud9",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/Cloud9Cloud9.png"
+    },
+    {
+      "tag": "CloudControlAPI",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CloudControlAPI.png"
+    },
+    {
+      "tag": "CloudDevelopmentKit",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CloudDevelopmentKit.png"
+    },
+    {
+      "tag": "CloudShell",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CloudShell.png"
+    },
+    {
+      "tag": "CodeArtifact",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeArtifact.png"
+    },
+    {
+      "tag": "CodeBuild",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeBuild.png"
+    },
+    {
+      "tag": "CodeCatalyst",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeCatalyst.png"
+    },
+    {
+      "tag": "CodeCommit",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeCommit.png"
+    },
+    {
+      "tag": "CodeDeploy",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeDeploy.png"
+    },
+    {
+      "tag": "CodePipeline",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodePipeline.png"
+    },
+    {
+      "tag": "CodeStar",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CodeStar.png"
+    },
+    {
+      "tag": "CommandLineInterface",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/CommandLineInterface.png"
+    },
+    {
+      "tag": "Corretto",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/Corretto.png"
+    },
+    {
+      "tag": "DeveloperTools",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/DeveloperTools.png"
+    },
+    {
+      "tag": "ToolsandSDKs",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/ToolsandSDKs.png"
+    },
+    {
+      "tag": "XRay",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/XRay.png"
+    },
+    {
+      "tag": "AppStream",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/AppStream.png"
+    },
+    {
+      "tag": "EndUserComputing",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/EndUserComputing.png"
+    },
+    {
+      "tag": "WorkLink",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/WorkLink.png"
+    },
+    {
+      "tag": "WorkSpacesFamily",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/WorkSpacesFamily.png"
+    },
+    {
+      "tag": "WorkSpacesFamilyAmazonWorkSpaces",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.png"
+    },
+    {
+      "tag": "WorkSpacesFamilyAmazonWorkSpacesCore",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.png"
+    },
+    {
+      "tag": "WorkSpacesFamilyAmazonWorkSpacesWeb",
+      "stroke": "#01A88D",
+      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesWeb.png"
+    },
+    {
+      "tag": "Amplify",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/Amplify.png"
+    },
+    {
+      "tag": "AmplifyAWSAmplifyStudio",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/AmplifyAWSAmplifyStudio.png"
+    },
+    {
+      "tag": "DeviceFarm",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/DeviceFarm.png"
+    },
+    {
+      "tag": "FrontEndWebMobile",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/FrontEndWebMobile.png"
+    },
+    {
+      "tag": "LocationService",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationService.png"
+    },
+    {
+      "tag": "LocationServiceGeofence",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationServiceGeofence.png"
+    },
+    {
+      "tag": "LocationServiceMap",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationServiceMap.png"
+    },
+    {
+      "tag": "LocationServicePlace",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationServicePlace.png"
+    },
+    {
+      "tag": "LocationServiceRoutes",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationServiceRoutes.png"
+    },
+    {
+      "tag": "LocationServiceTrack",
+      "stroke": "#DD344C",
+      "icon": "FrontEndWebMobile/LocationServiceTrack.png"
+    },
+    {
+      "tag": "GameKit",
+      "stroke": "#8C4FFF",
+      "icon": "Games/GameKit.png"
+    },
+    {
+      "tag": "GameLift",
+      "stroke": "#8C4FFF",
+      "icon": "Games/GameLift.png"
+    },
+    {
+      "tag": "GameSparks",
+      "stroke": "#8C4FFF",
+      "icon": "Games/GameSparks.png"
+    },
+    {
+      "tag": "Games",
+      "stroke": "#8C4FFF",
+      "icon": "Games/Games.png"
+    },
+    {
+      "tag": "Open3DEngine",
+      "stroke": "#8C4FFF",
+      "icon": "Games/Open3DEngine.png"
+    },
+    {
+      "tag": "AWSManagementConsole",
+      "stroke": "#232F3E",
+      "icon": "General/AWSManagementConsole.png"
+    },
+    {
+      "tag": "Alert",
+      "stroke": "#232F3E",
+      "icon": "General/Alert.png"
+    },
+    {
+      "tag": "AuthenticatedUser",
+      "stroke": "#232F3E",
+      "icon": "General/AuthenticatedUser.png"
+    },
+    {
+      "tag": "Camera",
+      "stroke": "#232F3E",
+      "icon": "General/Camera.png"
+    },
+    {
+      "tag": "Chat",
+      "stroke": "#232F3E",
+      "icon": "General/Chat.png"
+    },
+    {
+      "tag": "Client",
+      "stroke": "#232F3E",
+      "icon": "General/Client.png"
+    },
+    {
+      "tag": "ColdStorage",
+      "stroke": "#232F3E",
+      "icon": "General/ColdStorage.png"
+    },
+    {
+      "tag": "Credentials",
+      "stroke": "#232F3E",
+      "icon": "General/Credentials.png"
+    },
+    {
+      "tag": "DataStream",
+      "stroke": "#232F3E",
+      "icon": "General/DataStream.png"
+    },
+    {
+      "tag": "DataTable",
+      "stroke": "#232F3E",
+      "icon": "General/DataTable.png"
+    },
+    {
+      "tag": "Disk",
+      "stroke": "#232F3E",
+      "icon": "General/Disk.png"
+    },
+    {
+      "tag": "Document",
+      "stroke": "#232F3E",
+      "icon": "General/Document.png"
+    },
+    {
+      "tag": "Documents",
+      "stroke": "#232F3E",
+      "icon": "General/Documents.png"
+    },
+    {
+      "tag": "Email",
+      "stroke": "#232F3E",
+      "icon": "General/Email.png"
+    },
+    {
+      "tag": "Firewall",
+      "stroke": "#232F3E",
+      "icon": "General/Firewall.png"
+    },
+    {
+      "tag": "Folder",
+      "stroke": "#232F3E",
+      "icon": "General/Folder.png"
+    },
+    {
+      "tag": "Folders",
+      "stroke": "#232F3E",
+      "icon": "General/Folders.png"
+    },
+    {
+      "tag": "Forums",
+      "stroke": "#232F3E",
+      "icon": "General/Forums.png"
+    },
+    {
+      "tag": "Gear",
+      "stroke": "#232F3E",
+      "icon": "General/Gear.png"
+    },
+    {
+      "tag": "GenericApplication",
+      "stroke": "#232F3E",
+      "icon": "General/GenericApplication.png"
+    },
+    {
+      "tag": "Genericdatabase",
+      "stroke": "#232F3E",
+      "icon": "General/Genericdatabase.png"
+    },
+    {
+      "tag": "GitRepository",
+      "stroke": "#232F3E",
+      "icon": "General/GitRepository.png"
+    },
+    {
+      "tag": "Globe",
+      "stroke": "#232F3E",
+      "icon": "General/Globe.png"
+    },
+    {
+      "tag": "Internet",
+      "stroke": "#232F3E",
+      "icon": "General/Internet.png"
+    },
+    {
+      "tag": "Internetalt1",
+      "stroke": "#232F3E",
+      "icon": "General/Internetalt1.png"
+    },
+    {
+      "tag": "Internetalt2",
+      "stroke": "#232F3E",
+      "icon": "General/Internetalt2.png"
+    },
+    {
+      "tag": "JSONScript",
+      "stroke": "#232F3E",
+      "icon": "General/JSONScript.png"
+    },
+    {
+      "tag": "Logs",
+      "stroke": "#232F3E",
+      "icon": "General/Logs.png"
+    },
+    {
+      "tag": "MagnifyingGlass",
+      "stroke": "#232F3E",
+      "icon": "General/MagnifyingGlass.png"
+    },
+    {
+      "tag": "Marketplace",
+      "stroke": "#232F3E",
+      "icon": "General/Marketplace.png"
+    },
+    {
+      "tag": "Metrics",
+      "stroke": "#232F3E",
+      "icon": "General/Metrics.png"
+    },
+    {
+      "tag": "Mobileclient",
+      "stroke": "#232F3E",
+      "icon": "General/Mobileclient.png"
+    },
+    {
+      "tag": "Multimedia",
+      "stroke": "#232F3E",
+      "icon": "General/Multimedia.png"
+    },
+    {
+      "tag": "Officebuilding",
+      "stroke": "#232F3E",
+      "icon": "General/Officebuilding.png"
+    },
+    {
+      "tag": "ProgrammingLanguage",
+      "stroke": "#232F3E",
+      "icon": "General/ProgrammingLanguage.png"
+    },
+    {
+      "tag": "Question",
+      "stroke": "#232F3E",
+      "icon": "General/Question.png"
+    },
+    {
+      "tag": "Recover",
+      "stroke": "#232F3E",
+      "icon": "General/Recover.png"
+    },
+    {
+      "tag": "SAMLtoken",
+      "stroke": "#232F3E",
+      "icon": "General/SAMLtoken.png"
+    },
+    {
+      "tag": "SDK",
+      "stroke": "#232F3E",
+      "icon": "General/SDK.png"
+    },
+    {
+      "tag": "SSLpadlock",
+      "stroke": "#232F3E",
+      "icon": "General/SSLpadlock.png"
+    },
+    {
+      "tag": "Servers",
+      "stroke": "#232F3E",
+      "icon": "General/Servers.png"
+    },
+    {
+      "tag": "Shield2",
+      "stroke": "#232F3E",
+      "icon": "General/Shield2.png"
+    },
+    {
+      "tag": "SourceCode",
+      "stroke": "#232F3E",
+      "icon": "General/SourceCode.png"
+    },
+    {
+      "tag": "Tapestorage",
+      "stroke": "#232F3E",
+      "icon": "General/Tapestorage.png"
+    },
+    {
+      "tag": "Toolkit",
+      "stroke": "#232F3E",
+      "icon": "General/Toolkit.png"
+    },
+    {
+      "tag": "Traditionalserver",
+      "stroke": "#232F3E",
+      "icon": "General/Traditionalserver.png"
+    },
+    {
+      "tag": "User",
+      "stroke": "#232F3E",
+      "icon": "General/User.png"
+    },
+    {
+      "tag": "Users",
+      "stroke": "#232F3E",
+      "icon": "General/Users.png"
+    },
+    {
+      "tag": "AWSAccount",
+      "stroke": "#E7157B",
+      "icon": "Groups/AWSAccount.png"
+    },
+    {
+      "tag": "AWSCloud",
+      "stroke": "$AWS_FG_COLOR",
+      "icon": "Groups/AWSCloud.png"
+    },
+    {
+      "tag": "AWSCloudAlt",
+      "stroke": "$AWS_FG_COLOR",
+      "icon": "Groups/AWSCloudAlt.png"
+    },
+    {
+      "tag": "AutoScalingGroup",
+      "stroke": "#ED7100",
+      "border": "dashed",
+      "icon": "Groups/AutoScalingGroup.png"
+    },
+    {
+      "tag": "AvailabilityZone",
+      "stroke": "#00A4A6",
+      "border": "dashed"
+    },
+    {
+      "tag": "CorporateDataCenter",
+      "stroke": "#7D8998",
+      "icon": "Groups/CorporateDataCenter.png"
+    },
+    {
+      "tag": "EC2InstanceContents",
+      "stroke": "#ED7100",
+      "icon": "Groups/EC2InstanceContents.png"
+    },
+    {
+      "tag": "ElasticBeanstalkContainer",
+      "stroke": "#ED7100",
+      "icon": "Groups/ElasticBeanstalkContainer.png"
+    },
+    {
+      "tag": "Generic",
+      "stroke": "#7D8998",
+      "border": "dashed"
+    },
+    {
+      "tag": "GenericAlt",
+      "stroke": "#7D8998"
+    },
+    {
+      "tag": "GenericBlue",
+      "stroke": "#C925D1",
+      "icon": "Groups/GenericBlue.png"
+    },
+    {
+      "tag": "GenericGreen",
+      "stroke": "#7AA116",
+      "icon": "Groups/GenericGreen.png"
+    },
+    {
+      "tag": "GenericOrange",
+      "stroke": "#ED7100",
+      "icon": "Groups/GenericOrange.png"
+    },
+    {
+      "tag": "GenericPink",
+      "stroke": "#E7157B",
+      "icon": "Groups/GenericPink.png"
+    },
+    {
+      "tag": "GenericPurple",
+      "stroke": "#8C4FFF",
+      "icon": "Groups/GenericPurple.png"
+    },
+    {
+      "tag": "GenericRed",
+      "stroke": "#DD344C",
+      "icon": "Groups/GenericRed.png"
+    },
+    {
+      "tag": "GenericTurquoise",
+      "stroke": "#01A88D",
+      "icon": "Groups/GenericTurquoise.png"
+    },
+    {
+      "tag": "IoTGreengrass",
+      "stroke": "#7AA116",
+      "icon": "Groups/IoTGreengrass.png"
+    },
+    {
+      "tag": "IoTGreengrassDeployment",
+      "stroke": "#7AA116",
+      "icon": "Groups/IoTGreengrassDeployment.png"
+    },
+    {
+      "tag": "PrivateSubnet",
+      "stroke": "#00A4A6",
+      "icon": "Groups/PrivateSubnet.png"
+    },
+    {
+      "tag": "PublicSubnet",
+      "stroke": "#7AA116",
+      "icon": "Groups/PublicSubnet.png"
+    },
+    {
+      "tag": "Region",
+      "stroke": "#00A4A6",
+      "border": "dotted",
+      "icon": "Groups/Region.png"
+    },
+    {
+      "tag": "SecurityGroup",
+      "stroke": "#DD344C"
+    },
+    {
+      "tag": "ServerContents",
+      "stroke": "#7D8998",
+      "icon": "Groups/ServerContents.png"
+    },
+    {
+      "tag": "SpotFleet",
+      "stroke": "#ED7100",
+      "icon": "Groups/SpotFleet.png"
+    },
+    {
+      "tag": "StepFunctionsWorkflow",
+      "stroke": "#E7157B",
+      "icon": "Groups/StepFunctionsWorkflow.png"
+    },
+    {
+      "tag": "VPC",
+      "stroke": "#8C4FFF",
+      "icon": "Groups/VPC.png"
+    },
+    {
+      "tag": "FreeRTOS",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/FreeRTOS.png"
+    },
+    {
+      "tag": "InternetOfThings",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/InternetOfThings.png"
+    },
+    {
+      "tag": "IoT1Click",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoT1Click.png"
+    },
+    {
+      "tag": "IoTAction",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAction.png"
+    },
+    {
+      "tag": "IoTActuator",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTActuator.png"
+    },
+    {
+      "tag": "IoTAlexaEnabledDevice",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAlexaEnabledDevice.png"
+    },
+    {
+      "tag": "IoTAlexaSkill",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAlexaSkill.png"
+    },
+    {
+      "tag": "IoTAlexaVoiceService",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAlexaVoiceService.png"
+    },
+    {
+      "tag": "IoTAnalytics",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalytics.png"
+    },
+    {
+      "tag": "IoTAnalyticsChannel",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalyticsChannel.png"
+    },
+    {
+      "tag": "IoTAnalyticsDataStore",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalyticsDataStore.png"
+    },
+    {
+      "tag": "IoTAnalyticsDataset",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalyticsDataset.png"
+    },
+    {
+      "tag": "IoTAnalyticsNotebook",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalyticsNotebook.png"
+    },
+    {
+      "tag": "IoTAnalyticsPipeline",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTAnalyticsPipeline.png"
+    },
+    {
+      "tag": "IoTButton",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTButton.png"
+    },
+    {
+      "tag": "IoTCertificate",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTCertificate.png"
+    },
+    {
+      "tag": "IoTCore",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTCore.png"
+    },
+    {
+      "tag": "IoTCoreDeviceAdvisor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTCoreDeviceAdvisor.png"
+    },
+    {
+      "tag": "IoTCoreDeviceLocation",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTCoreDeviceLocation.png"
+    },
+    {
+      "tag": "IoTDesiredState",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDesiredState.png"
+    },
+    {
+      "tag": "IoTDeviceDefender",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceDefender.png"
+    },
+    {
+      "tag": "IoTDeviceDefenderIoTDeviceJobs",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceDefenderIoTDeviceJobs.png"
+    },
+    {
+      "tag": "IoTDeviceGateway",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceGateway.png"
+    },
+    {
+      "tag": "IoTDeviceManagement",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceManagement.png"
+    },
+    {
+      "tag": "IoTDeviceManagementFleetHub",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceManagementFleetHub.png"
+    },
+    {
+      "tag": "IoTDeviceTester",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTDeviceTester.png"
+    },
+    {
+      "tag": "IoTEcho",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTEcho.png"
+    },
+    {
+      "tag": "IoTEduKit",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTEduKit.png"
+    },
+    {
+      "tag": "IoTEvents",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTEvents.png"
+    },
+    {
+      "tag": "IoTExpressLink",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTExpressLink.png"
+    },
+    {
+      "tag": "IoTFireTV",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTFireTV.png"
+    },
+    {
+      "tag": "IoTFireTVStick",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTFireTVStick.png"
+    },
+    {
+      "tag": "IoTFleetWise",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTFleetWise.png"
+    },
+    {
+      "tag": "IoTGreengrass",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrass.png"
+    },
+    {
+      "tag": "IoTGreengrassArtifact",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassArtifact.png"
+    },
+    {
+      "tag": "IoTGreengrassComponent",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassComponent.png"
+    },
+    {
+      "tag": "IoTGreengrassComponentMachineLearning",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassComponentMachineLearning.png"
+    },
+    {
+      "tag": "IoTGreengrassComponentNucleus",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassComponentNucleus.png"
+    },
+    {
+      "tag": "IoTGreengrassComponentPrivate",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassComponentPrivate.png"
+    },
+    {
+      "tag": "IoTGreengrassComponentPublic",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassComponentPublic.png"
+    },
+    {
+      "tag": "IoTGreengrassConnector",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassConnector.png"
+    },
+    {
+      "tag": "IoTGreengrassInterprocessCommunication",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassInterprocessCommunication.png"
+    },
+    {
+      "tag": "IoTGreengrassProtocol",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassProtocol.png"
+    },
+    {
+      "tag": "IoTGreengrassRecipe",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassRecipe.png"
+    },
+    {
+      "tag": "IoTGreengrassStreamManager",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTGreengrassStreamManager.png"
+    },
+    {
+      "tag": "IoTHTTP2Protocol",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTHTTP2Protocol.png"
+    },
+    {
+      "tag": "IoTHTTPProtocol",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTHTTPProtocol.png"
+    },
+    {
+      "tag": "IoTHardwareBoard",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTHardwareBoard.png"
+    },
+    {
+      "tag": "IoTLambdaFunction",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTLambdaFunction.png"
+    },
+    {
+      "tag": "IoTLoRaWANProtocol",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTLoRaWANProtocol.png"
+    },
+    {
+      "tag": "IoTMQTTProtocol",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTMQTTProtocol.png"
+    },
+    {
+      "tag": "IoTOverAirUpdate",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTOverAirUpdate.png"
+    },
+    {
+      "tag": "IoTPolicy",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTPolicy.png"
+    },
+    {
+      "tag": "IoTReportedState",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTReportedState.png"
+    },
+    {
+      "tag": "IoTRoboRunner",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTRoboRunner.png"
+    },
+    {
+      "tag": "IoTRule",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTRule.png"
+    },
+    {
+      "tag": "IoTSailboat",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSailboat.png"
+    },
+    {
+      "tag": "IoTSensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSensor.png"
+    },
+    {
+      "tag": "IoTServo",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTServo.png"
+    },
+    {
+      "tag": "IoTShadow",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTShadow.png"
+    },
+    {
+      "tag": "IoTSimulator",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSimulator.png"
+    },
+    {
+      "tag": "IoTSiteWise",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWise.png"
+    },
+    {
+      "tag": "IoTSiteWiseAsset",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWiseAsset.png"
+    },
+    {
+      "tag": "IoTSiteWiseAssetHierarchy",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWiseAssetHierarchy.png"
+    },
+    {
+      "tag": "IoTSiteWiseAssetModel",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWiseAssetModel.png"
+    },
+    {
+      "tag": "IoTSiteWiseAssetProperties",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWiseAssetProperties.png"
+    },
+    {
+      "tag": "IoTSiteWiseDataStreams",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTSiteWiseDataStreams.png"
+    },
+    {
+      "tag": "IoTThingBank",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingBank.png"
+    },
+    {
+      "tag": "IoTThingBicycle",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingBicycle.png"
+    },
+    {
+      "tag": "IoTThingCamera",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingCamera.png"
+    },
+    {
+      "tag": "IoTThingCar",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingCar.png"
+    },
+    {
+      "tag": "IoTThingCart",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingCart.png"
+    },
+    {
+      "tag": "IoTThingCoffeePot",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingCoffeePot.png"
+    },
+    {
+      "tag": "IoTThingDoorLock",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingDoorLock.png"
+    },
+    {
+      "tag": "IoTThingFactory",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingFactory.png"
+    },
+    {
+      "tag": "IoTThingFreeRTOSDevice",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingFreeRTOSDevice.png"
+    },
+    {
+      "tag": "IoTThingGeneric",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingGeneric.png"
+    },
+    {
+      "tag": "IoTThingHouse",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingHouse.png"
+    },
+    {
+      "tag": "IoTThingHumiditySensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingHumiditySensor.png"
+    },
+    {
+      "tag": "IoTThingIndustrialPC",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingIndustrialPC.png"
+    },
+    {
+      "tag": "IoTThingLightbulb",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingLightbulb.png"
+    },
+    {
+      "tag": "IoTThingMedicalEmergency",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingMedicalEmergency.png"
+    },
+    {
+      "tag": "IoTThingPLC",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingPLC.png"
+    },
+    {
+      "tag": "IoTThingPoliceEmergency",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingPoliceEmergency.png"
+    },
+    {
+      "tag": "IoTThingRelay",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingRelay.png"
+    },
+    {
+      "tag": "IoTThingStacklight",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingStacklight.png"
+    },
+    {
+      "tag": "IoTThingTemperatureHumiditySensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingTemperatureHumiditySensor.png"
+    },
+    {
+      "tag": "IoTThingTemperatureSensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingTemperatureSensor.png"
+    },
+    {
+      "tag": "IoTThingTemperatureVibrationSensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingTemperatureVibrationSensor.png"
+    },
+    {
+      "tag": "IoTThingThermostat",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingThermostat.png"
+    },
+    {
+      "tag": "IoTThingTravel",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingTravel.png"
+    },
+    {
+      "tag": "IoTThingUtility",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingUtility.png"
+    },
+    {
+      "tag": "IoTThingVibrationSensor",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingVibrationSensor.png"
+    },
+    {
+      "tag": "IoTThingWindfarm",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingWindfarm.png"
+    },
+    {
+      "tag": "IoTThingsGraph",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTThingsGraph.png"
+    },
+    {
+      "tag": "IoTTopic",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTTopic.png"
+    },
+    {
+      "tag": "IoTTwinMaker",
+      "stroke": "#7AA116",
+      "icon": "InternetOfThings/IoTTwinMaker.png"
+    },
+    {
+      "tag": "ApacheMXNetonAWS",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/ApacheMXNetonAWS.png"
+    },
+    {
+      "tag": "AugmentedAIA2I",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/AugmentedAIA2I.png"
+    },
+    {
+      "tag": "CodeGuru",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/CodeGuru.png"
+    },
+    {
+      "tag": "CodeWhisperer",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/CodeWhisperer.png"
+    },
+    {
+      "tag": "Comprehend",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Comprehend.png"
+    },
+    {
+      "tag": "ComprehendMedical",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/ComprehendMedical.png"
+    },
+    {
+      "tag": "DeepComposer",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DeepComposer.png"
+    },
+    {
+      "tag": "DeepLearningAMIs",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DeepLearningAMIs.png"
+    },
+    {
+      "tag": "DeepLearningContainers",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DeepLearningContainers.png"
+    },
+    {
+      "tag": "DeepLens",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DeepLens.png"
+    },
+    {
+      "tag": "DeepRacer",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DeepRacer.png"
+    },
+    {
+      "tag": "DevOpsGuru",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DevOpsGuru.png"
+    },
+    {
+      "tag": "DevOpsGuruInsights",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/DevOpsGuruInsights.png"
+    },
+    {
+      "tag": "ElasticInference",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/ElasticInference.png"
+    },
+    {
+      "tag": "Forecast",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Forecast.png"
+    },
+    {
+      "tag": "FraudDetector",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/FraudDetector.png"
+    },
+    {
+      "tag": "HealthLake",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/HealthLake.png"
+    },
+    {
+      "tag": "Kendra",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Kendra.png"
+    },
+    {
+      "tag": "Lex",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Lex.png"
+    },
+    {
+      "tag": "LookoutforEquipment",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/LookoutforEquipment.png"
+    },
+    {
+      "tag": "LookoutforMetrics",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/LookoutforMetrics.png"
+    },
+    {
+      "tag": "LookoutforVision",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/LookoutforVision.png"
+    },
+    {
+      "tag": "MachineLearning",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/MachineLearning.png"
+    },
+    {
+      "tag": "Monitron",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Monitron.png"
+    },
+    {
+      "tag": "Neuron",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Neuron.png"
+    },
+    {
+      "tag": "Omics",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Omics.png"
+    },
+    {
+      "tag": "Panorama",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Panorama.png"
+    },
+    {
+      "tag": "Personalize",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Personalize.png"
+    },
+    {
+      "tag": "Polly",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Polly.png"
+    },
+    {
+      "tag": "Rekognition",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Rekognition.png"
+    },
+    {
+      "tag": "RekognitionImage",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/RekognitionImage.png"
+    },
+    {
+      "tag": "RekognitionVideo",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/RekognitionVideo.png"
+    },
+    {
+      "tag": "SageMaker",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMaker.png"
+    },
+    {
+      "tag": "SageMakerCanvas",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerCanvas.png"
+    },
+    {
+      "tag": "SageMakerGeospatialML",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerGeospatialML.png"
+    },
+    {
+      "tag": "SageMakerGroundTruth",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerGroundTruth.png"
+    },
+    {
+      "tag": "SageMakerModel",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerModel.png"
+    },
+    {
+      "tag": "SageMakerNotebook",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerNotebook.png"
+    },
+    {
+      "tag": "SageMakerShadowTesting",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerShadowTesting.png"
+    },
+    {
+      "tag": "SageMakerStudioLab",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerStudioLab.png"
+    },
+    {
+      "tag": "SageMakerTrain",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/SageMakerTrain.png"
+    },
+    {
+      "tag": "TensorFlowonAWS",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/TensorFlowonAWS.png"
+    },
+    {
+      "tag": "Textract",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Textract.png"
+    },
+    {
+      "tag": "TextractAnalyzeLending",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/TextractAnalyzeLending.png"
+    },
+    {
+      "tag": "TorchServe",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/TorchServe.png"
+    },
+    {
+      "tag": "Transcribe",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Transcribe.png"
+    },
+    {
+      "tag": "Translate",
+      "stroke": "#01A88D",
+      "icon": "MachineLearning/Translate.png"
+    },
+    {
+      "tag": "AppConfig",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/AppConfig.png"
+    },
+    {
+      "tag": "ApplicationAutoScaling2",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ApplicationAutoScaling2.png"
+    },
+    {
+      "tag": "AutoScaling",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/AutoScaling.png"
+    },
+    {
+      "tag": "BackintAgent",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/BackintAgent.png"
+    },
+    {
+      "tag": "Chatbot",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/Chatbot.png"
+    },
+    {
+      "tag": "CloudFormation",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudFormation.png"
+    },
+    {
+      "tag": "CloudFormationChangeSet",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudFormationChangeSet.png"
+    },
+    {
+      "tag": "CloudFormationStack",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudFormationStack.png"
+    },
+    {
+      "tag": "CloudFormationTemplate",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudFormationTemplate.png"
+    },
+    {
+      "tag": "CloudTrail",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudTrail.png"
+    },
+    {
+      "tag": "CloudTrailCloudTrailLake",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudTrailCloudTrailLake.png"
+    },
+    {
+      "tag": "CloudWatch",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatch.png"
+    },
+    {
+      "tag": "CloudWatchAlarm",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchAlarm.png"
+    },
+    {
+      "tag": "CloudWatchCrossaccountObservability",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchCrossaccountObservability.png"
+    },
+    {
+      "tag": "CloudWatchDataProtection",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchDataProtection.png"
+    },
+    {
+      "tag": "CloudWatchEventEventBased",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchEventEventBased.png"
+    },
+    {
+      "tag": "CloudWatchEventTimeBased",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchEventTimeBased.png"
+    },
+    {
+      "tag": "CloudWatchEvidently",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchEvidently.png"
+    },
+    {
+      "tag": "CloudWatchLogs",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchLogs.png"
+    },
+    {
+      "tag": "CloudWatchMetricsInsights",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchMetricsInsights.png"
+    },
+    {
+      "tag": "CloudWatchRUM",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchRUM.png"
+    },
+    {
+      "tag": "CloudWatchRule",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchRule.png"
+    },
+    {
+      "tag": "CloudWatchSynthetics",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/CloudWatchSynthetics.png"
+    },
+    {
+      "tag": "Config",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/Config.png"
+    },
+    {
+      "tag": "ControlTower",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ControlTower.png"
+    },
+    {
+      "tag": "DistroforOpenTelemetry",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/DistroforOpenTelemetry.png"
+    },
+    {
+      "tag": "FaultInjectionSimulator",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/FaultInjectionSimulator.png"
+    },
+    {
+      "tag": "HealthDashboard",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/HealthDashboard.png"
+    },
+    {
+      "tag": "LaunchWizard",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/LaunchWizard.png"
+    },
+    {
+      "tag": "LicenseManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/LicenseManager.png"
+    },
+    {
+      "tag": "LicenseManagerApplicationDiscovery",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/LicenseManagerApplicationDiscovery.png"
+    },
+    {
+      "tag": "LicenseManagerLicenseBlending",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/LicenseManagerLicenseBlending.png"
+    },
+    {
+      "tag": "ManagedGrafana",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ManagedGrafana.png"
+    },
+    {
+      "tag": "ManagedServiceforPrometheus",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ManagedServiceforPrometheus.png"
+    },
+    {
+      "tag": "ManagementConsole",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ManagementConsole.png"
+    },
+    {
+      "tag": "ManagementGovernance",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ManagementGovernance.png"
+    },
+    {
+      "tag": "OpsWorks",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorks.png"
+    },
+    {
+      "tag": "OpsWorksApps",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksApps.png"
+    },
+    {
+      "tag": "OpsWorksDeployments",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksDeployments.png"
+    },
+    {
+      "tag": "OpsWorksInstances",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksInstances.png"
+    },
+    {
+      "tag": "OpsWorksLayers",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksLayers.png"
+    },
+    {
+      "tag": "OpsWorksMonitoring",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksMonitoring.png"
+    },
+    {
+      "tag": "OpsWorksPermissions",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksPermissions.png"
+    },
+    {
+      "tag": "OpsWorksResources",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksResources.png"
+    },
+    {
+      "tag": "OpsWorksStack2",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OpsWorksStack2.png"
+    },
+    {
+      "tag": "Organizations",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/Organizations.png"
+    },
+    {
+      "tag": "OrganizationsAccount",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OrganizationsAccount.png"
+    },
+    {
+      "tag": "OrganizationsManagementAccount",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OrganizationsManagementAccount.png"
+    },
+    {
+      "tag": "OrganizationsOrganizationalUnit",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/OrganizationsOrganizationalUnit.png"
+    },
+    {
+      "tag": "Proton",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/Proton.png"
+    },
+    {
+      "tag": "ResilienceHub",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ResilienceHub.png"
+    },
+    {
+      "tag": "ResourceExplorer",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ResourceExplorer.png"
+    },
+    {
+      "tag": "ServiceCatalog",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ServiceCatalog.png"
+    },
+    {
+      "tag": "ServiceManagementConnector",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ServiceManagementConnector.png"
+    },
+    {
+      "tag": "SystemsManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManager.png"
+    },
+    {
+      "tag": "SystemsManagerApplicationManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerApplicationManager.png"
+    },
+    {
+      "tag": "SystemsManagerAutomation",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerAutomation.png"
+    },
+    {
+      "tag": "SystemsManagerChangeCalendar",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerChangeCalendar.png"
+    },
+    {
+      "tag": "SystemsManagerChangeManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerChangeManager.png"
+    },
+    {
+      "tag": "SystemsManagerCompliance",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerCompliance.png"
+    },
+    {
+      "tag": "SystemsManagerDistributor",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerDistributor.png"
+    },
+    {
+      "tag": "SystemsManagerDocuments",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerDocuments.png"
+    },
+    {
+      "tag": "SystemsManagerIncidentManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerIncidentManager.png"
+    },
+    {
+      "tag": "SystemsManagerInventory",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerInventory.png"
+    },
+    {
+      "tag": "SystemsManagerMaintenanceWindows",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerMaintenanceWindows.png"
+    },
+    {
+      "tag": "SystemsManagerOpsCenter",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerOpsCenter.png"
+    },
+    {
+      "tag": "SystemsManagerParameterStore",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerParameterStore.png"
+    },
+    {
+      "tag": "SystemsManagerPatchManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerPatchManager.png"
+    },
+    {
+      "tag": "SystemsManagerRunCommand",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerRunCommand.png"
+    },
+    {
+      "tag": "SystemsManagerSessionManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerSessionManager.png"
+    },
+    {
+      "tag": "SystemsManagerStateManager",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/SystemsManagerStateManager.png"
+    },
+    {
+      "tag": "TelcoNetworkBuilder",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TelcoNetworkBuilder.png"
+    },
+    {
+      "tag": "TrustedAdvisor",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisor.png"
+    },
+    {
+      "tag": "TrustedAdvisorChecklist",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisorChecklist.png"
+    },
+    {
+      "tag": "TrustedAdvisorChecklistCost",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisorChecklistCost.png"
+    },
+    {
+      "tag": "TrustedAdvisorChecklistFaultTolerant",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisorChecklistFaultTolerant.png"
+    },
+    {
+      "tag": "TrustedAdvisorChecklistPerformance",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisorChecklistPerformance.png"
+    },
+    {
+      "tag": "TrustedAdvisorChecklistSecurity",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/TrustedAdvisorChecklistSecurity.png"
+    },
+    {
+      "tag": "WellArchitectedTool",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/WellArchitectedTool.png"
+    },
+    {
+      "tag": "CloudDigitalInterface",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/CloudDigitalInterface.png"
+    },
+    {
+      "tag": "ElasticTranscoder",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElasticTranscoder.png"
+    },
+    {
+      "tag": "ElementalAppliancesSoftware",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalAppliancesSoftware.png"
+    },
+    {
+      "tag": "ElementalConductor",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalConductor.png"
+    },
+    {
+      "tag": "ElementalDelta",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalDelta.png"
+    },
+    {
+      "tag": "ElementalLink",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalLink.png"
+    },
+    {
+      "tag": "ElementalLive",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalLive.png"
+    },
+    {
+      "tag": "ElementalMediaConnect",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaConnect.png"
+    },
+    {
+      "tag": "ElementalMediaConvert",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaConvert.png"
+    },
+    {
+      "tag": "ElementalMediaLive",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaLive.png"
+    },
+    {
+      "tag": "ElementalMediaPackage",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaPackage.png"
+    },
+    {
+      "tag": "ElementalMediaStore",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaStore.png"
+    },
+    {
+      "tag": "ElementalMediaTailor",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalMediaTailor.png"
+    },
+    {
+      "tag": "ElementalServer",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ElementalServer.png"
+    },
+    {
+      "tag": "InteractiveVideoService",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/InteractiveVideoService.png"
+    },
+    {
+      "tag": "KinesisVideoStreams2",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/KinesisVideoStreams2.png"
+    },
+    {
+      "tag": "MediaServices",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/MediaServices.png"
+    },
+    {
+      "tag": "NimbleStudio",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/NimbleStudio.png"
+    },
+    {
+      "tag": "ApplicationDiscoveryService",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/ApplicationDiscoveryService.png"
+    },
+    {
+      "tag": "ApplicationDiscoveryServiceAWSAgentlessCollector",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/ApplicationDiscoveryServiceAWSAgentlessCollector.png"
+    },
+    {
+      "tag": "ApplicationDiscoveryServiceAWSDiscoveryAgent",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/ApplicationDiscoveryServiceAWSDiscoveryAgent.png"
+    },
+    {
+      "tag": "ApplicationDiscoveryServiceMigrationEvaluatorCollector",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/ApplicationDiscoveryServiceMigrationEvaluatorCollector.png"
+    },
+    {
+      "tag": "ApplicationMigrationService",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/ApplicationMigrationService.png"
+    },
+    {
+      "tag": "DataSync",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/DataSync.png"
+    },
+    {
+      "tag": "DataSyncDiscovery",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/DataSyncDiscovery.png"
+    },
+    {
+      "tag": "DatasyncAgent",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/DatasyncAgent.png"
+    },
+    {
+      "tag": "MainframeModernization",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernization.png"
+    },
+    {
+      "tag": "MainframeModernizationAnalyzer",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernizationAnalyzer.png"
+    },
+    {
+      "tag": "MainframeModernizationCompiler",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernizationCompiler.png"
+    },
+    {
+      "tag": "MainframeModernizationConverter",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernizationConverter.png"
+    },
+    {
+      "tag": "MainframeModernizationDeveloper",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernizationDeveloper.png"
+    },
+    {
+      "tag": "MainframeModernizationRuntime",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MainframeModernizationRuntime.png"
+    },
+    {
+      "tag": "MigrationEvaluator",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationEvaluator.png"
+    },
+    {
+      "tag": "MigrationHub",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationHub.png"
+    },
+    {
+      "tag": "MigrationHubRefactorSpacesApplications",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationHubRefactorSpacesApplications.png"
+    },
+    {
+      "tag": "MigrationHubRefactorSpacesEnvironments",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationHubRefactorSpacesEnvironments.png"
+    },
+    {
+      "tag": "MigrationHubRefactorSpacesServices",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationHubRefactorSpacesServices.png"
+    },
+    {
+      "tag": "MigrationTransfer",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/MigrationTransfer.png"
+    },
+    {
+      "tag": "TransferFamily",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/TransferFamily.png"
+    },
+    {
+      "tag": "TransferFamilyAWSAS2",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/TransferFamilyAWSAS2.png"
+    },
+    {
+      "tag": "TransferFamilyAWSFTP",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/TransferFamilyAWSFTP.png"
+    },
+    {
+      "tag": "TransferFamilyAWSFTPS",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/TransferFamilyAWSFTPS.png"
+    },
+    {
+      "tag": "TransferFamilyAWSSFTP",
+      "stroke": "#01A88D",
+      "icon": "MigrationTransfer/TransferFamilyAWSSFTP.png"
+    },
+    {
+      "tag": "AppMesh",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMesh.png"
+    },
+    {
+      "tag": "AppMeshMesh",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMeshMesh.png"
+    },
+    {
+      "tag": "AppMeshVirtualGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMeshVirtualGateway.png"
+    },
+    {
+      "tag": "AppMeshVirtualNode",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMeshVirtualNode.png"
+    },
+    {
+      "tag": "AppMeshVirtualRouter",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMeshVirtualRouter.png"
+    },
+    {
+      "tag": "AppMeshVirtualService",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/AppMeshVirtualService.png"
+    },
+    {
+      "tag": "ClientVPN",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ClientVPN.png"
+    },
+    {
+      "tag": "CloudFront",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudFront.png"
+    },
+    {
+      "tag": "CloudFrontDownloadDistribution",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudFrontDownloadDistribution.png"
+    },
+    {
+      "tag": "CloudFrontEdgeLocation",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudFrontEdgeLocation.png"
+    },
+    {
+      "tag": "CloudFrontFunctions",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudFrontFunctions.png"
+    },
+    {
+      "tag": "CloudFrontStreamingDistribution",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudFrontStreamingDistribution.png"
+    },
+    {
+      "tag": "CloudMap",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudMap.png"
+    },
+    {
+      "tag": "CloudMapNamespace",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudMapNamespace.png"
+    },
+    {
+      "tag": "CloudMapResource",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudMapResource.png"
+    },
+    {
+      "tag": "CloudMapService",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudMapService.png"
+    },
+    {
+      "tag": "CloudWAN",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudWAN.png"
+    },
+    {
+      "tag": "CloudWANCoreNetworkEdge",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudWANCoreNetworkEdge.png"
+    },
+    {
+      "tag": "CloudWANSegmentNetwork",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudWANSegmentNetwork.png"
+    },
+    {
+      "tag": "CloudWANTransitGatewayRouteTableAttachment",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/CloudWANTransitGatewayRouteTableAttachment.png"
+    },
+    {
+      "tag": "DirectConnect",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/DirectConnect.png"
+    },
+    {
+      "tag": "DirectConnectGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/DirectConnectGateway.png"
+    },
+    {
+      "tag": "ElasticLoadBalancing",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ElasticLoadBalancing.png"
+    },
+    {
+      "tag": "ElasticLoadBalancingApplicationLoadBalancer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ElasticLoadBalancingApplicationLoadBalancer.png"
+    },
+    {
+      "tag": "ElasticLoadBalancingClassicLoadBalancer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ElasticLoadBalancingClassicLoadBalancer.png"
+    },
+    {
+      "tag": "ElasticLoadBalancingGatewayLoadBalancer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ElasticLoadBalancingGatewayLoadBalancer.png"
+    },
+    {
+      "tag": "ElasticLoadBalancingNetworkLoadBalancer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ElasticLoadBalancingNetworkLoadBalancer.png"
+    },
+    {
+      "tag": "GlobalAccelerator",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/GlobalAccelerator.png"
+    },
+    {
+      "tag": "NetworkingContentDelivery",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/NetworkingContentDelivery.png"
+    },
+    {
+      "tag": "Private5G",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Private5G.png"
+    },
+    {
+      "tag": "PrivateLink",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/PrivateLink.png"
+    },
+    {
+      "tag": "Route53",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53.png"
+    },
+    {
+      "tag": "Route53ApplicationRecoveryController",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53ApplicationRecoveryController.png"
+    },
+    {
+      "tag": "Route53HostedZone",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53HostedZone.png"
+    },
+    {
+      "tag": "Route53ReadinessChecks",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53ReadinessChecks.png"
+    },
+    {
+      "tag": "Route53Resolver",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53Resolver.png"
+    },
+    {
+      "tag": "Route53ResolverDNSFirewall",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53ResolverDNSFirewall.png"
+    },
+    {
+      "tag": "Route53ResolverQueryLogging",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53ResolverQueryLogging.png"
+    },
+    {
+      "tag": "Route53RouteTable",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53RouteTable.png"
+    },
+    {
+      "tag": "Route53RoutingControls",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/Route53RoutingControls.png"
+    },
+    {
+      "tag": "SitetoSiteVPN",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/SitetoSiteVPN.png"
+    },
+    {
+      "tag": "TransitGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/TransitGateway.png"
+    },
+    {
+      "tag": "TransitGatewayAttachment",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/TransitGatewayAttachment.png"
+    },
+    {
+      "tag": "VPCCarrierGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCCarrierGateway.png"
+    },
+    {
+      "tag": "VPCCustomerGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCCustomerGateway.png"
+    },
+    {
+      "tag": "VPCElasticNetworkAdapter",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCElasticNetworkAdapter.png"
+    },
+    {
+      "tag": "VPCElasticNetworkInterface",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCElasticNetworkInterface.png"
+    },
+    {
+      "tag": "VPCEndpoints",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCEndpoints.png"
+    },
+    {
+      "tag": "VPCFlowLogs",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCFlowLogs.png"
+    },
+    {
+      "tag": "VPCInternetGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCInternetGateway.png"
+    },
+    {
+      "tag": "VPCLattice",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCLattice.png"
+    },
+    {
+      "tag": "VPCNATGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCNATGateway.png"
+    },
+    {
+      "tag": "VPCNetworkAccessAnalyzer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCNetworkAccessAnalyzer.png"
+    },
+    {
+      "tag": "VPCNetworkAccessControlList",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCNetworkAccessControlList.png"
+    },
+    {
+      "tag": "VPCPeeringConnection",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCPeeringConnection.png"
+    },
+    {
+      "tag": "VPCReachabilityAnalyzer",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCReachabilityAnalyzer.png"
+    },
+    {
+      "tag": "VPCRouter",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCRouter.png"
+    },
+    {
+      "tag": "VPCTrafficMirroring",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCTrafficMirroring.png"
+    },
+    {
+      "tag": "VPCVPNConnection",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCVPNConnection.png"
+    },
+    {
+      "tag": "VPCVPNGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCVPNGateway.png"
+    },
+    {
+      "tag": "VPCVirtualprivatecloudVPC",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VPCVirtualprivatecloudVPC.png"
+    },
+    {
+      "tag": "VerifiedAccess",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VerifiedAccess.png"
+    },
+    {
+      "tag": "VirtualPrivateCloud",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/VirtualPrivateCloud.png"
+    },
+    {
+      "tag": "Braket",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/Braket.png"
+    },
+    {
+      "tag": "BraketChandelier",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketChandelier.png"
+    },
+    {
+      "tag": "BraketChip",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketChip.png"
+    },
+    {
+      "tag": "BraketEmbeddedSimulator",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketEmbeddedSimulator.png"
+    },
+    {
+      "tag": "BraketManagedSimulator",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketManagedSimulator.png"
+    },
+    {
+      "tag": "BraketNoiseSimulator",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketNoiseSimulator.png"
+    },
+    {
+      "tag": "BraketQPU",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketQPU.png"
+    },
+    {
+      "tag": "BraketSimulator",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketSimulator.png"
+    },
+    {
+      "tag": "BraketSimulator1",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketSimulator1.png"
+    },
+    {
+      "tag": "BraketSimulator2",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketSimulator2.png"
+    },
+    {
+      "tag": "BraketSimulator3",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketSimulator3.png"
+    },
+    {
+      "tag": "BraketSimulator4",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketSimulator4.png"
+    },
+    {
+      "tag": "BraketStateVector",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketStateVector.png"
+    },
+    {
+      "tag": "BraketTensorNetwork",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/BraketTensorNetwork.png"
+    },
+    {
+      "tag": "QuantumTechnologies",
+      "stroke": "#ED7100",
+      "icon": "QuantumTechnologies/QuantumTechnologies.png"
+    },
+    {
+      "tag": "RoboMaker",
+      "stroke": "#DD344C",
+      "icon": "Robotics/RoboMaker.png"
+    },
+    {
+      "tag": "RoboMakerCloudExtensionsROS",
+      "stroke": "#DD344C",
+      "icon": "Robotics/RoboMakerCloudExtensionsROS.png"
+    },
+    {
+      "tag": "RoboMakerDevelopmentEnvironment",
+      "stroke": "#DD344C",
+      "icon": "Robotics/RoboMakerDevelopmentEnvironment.png"
+    },
+    {
+      "tag": "RoboMakerFleetManagement",
+      "stroke": "#DD344C",
+      "icon": "Robotics/RoboMakerFleetManagement.png"
+    },
+    {
+      "tag": "RoboMakerSimulation",
+      "stroke": "#DD344C",
+      "icon": "Robotics/RoboMakerSimulation.png"
+    },
+    {
+      "tag": "Robotics",
+      "stroke": "#DD344C",
+      "icon": "Robotics/Robotics.png"
+    },
+    {
+      "tag": "GroundStation",
+      "stroke": "#C925D1",
+      "icon": "Satellite/GroundStation.png"
+    },
+    {
+      "tag": "Satellite",
+      "stroke": "#C925D1",
+      "icon": "Satellite/Satellite.png"
+    },
+    {
+      "tag": "Artifact",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Artifact.png"
+    },
+    {
+      "tag": "AuditManager",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/AuditManager.png"
+    },
+    {
+      "tag": "CertificateManager",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/CertificateManager.png"
+    },
+    {
+      "tag": "CertificateManagerCertificateAuthority",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/CertificateManagerCertificateAuthority.png"
+    },
+    {
+      "tag": "CloudDirectory",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/CloudDirectory.png"
+    },
+    {
+      "tag": "CloudHSM",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/CloudHSM.png"
+    },
+    {
+      "tag": "Cognito",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Cognito.png"
+    },
+    {
+      "tag": "Detective",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Detective.png"
+    },
+    {
+      "tag": "DirectoryService",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/DirectoryService.png"
+    },
+    {
+      "tag": "DirectoryServiceADConnector",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/DirectoryServiceADConnector.png"
+    },
+    {
+      "tag": "DirectoryServiceAWSManagedMicrosoftAD",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/DirectoryServiceAWSManagedMicrosoftAD.png"
+    },
+    {
+      "tag": "DirectoryServiceSimpleAD",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/DirectoryServiceSimpleAD.png"
+    },
+    {
+      "tag": "FirewallManager",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/FirewallManager.png"
+    },
+    {
+      "tag": "GuardDuty",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/GuardDuty.png"
+    },
+    {
+      "tag": "IAMIdentityCenter",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IAMIdentityCenter.png"
+    },
+    {
+      "tag": "IdentityAccessManagementAWSSTS",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementAWSSTS.png"
+    },
+    {
+      "tag": "IdentityAccessManagementAWSSTSAlternate",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementAWSSTSAlternate.png"
+    },
+    {
+      "tag": "IdentityAccessManagementAddon",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementAddon.png"
+    },
+    {
+      "tag": "IdentityAccessManagementDataEncryptionKey",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementDataEncryptionKey.png"
+    },
+    {
+      "tag": "IdentityAccessManagementEncryptedData",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementEncryptedData.png"
+    },
+    {
+      "tag": "IdentityAccessManagementIAMAccessAnalyzer",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementIAMAccessAnalyzer.png"
+    },
+    {
+      "tag": "IdentityAccessManagementIAMRolesAnywhere",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementIAMRolesAnywhere.png"
+    },
+    {
+      "tag": "IdentityAccessManagementLongTermSecurityCredential",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementLongTermSecurityCredential.png"
+    },
+    {
+      "tag": "IdentityAccessManagementMFAToken",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementMFAToken.png"
+    },
+    {
+      "tag": "IdentityAccessManagementPermissions",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementPermissions.png"
+    },
+    {
+      "tag": "IdentityAccessManagementRole",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementRole.png"
+    },
+    {
+      "tag": "IdentityAccessManagementTemporarySecurityCredential",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityAccessManagementTemporarySecurityCredential.png"
+    },
+    {
+      "tag": "IdentityandAccessManagement",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/IdentityandAccessManagement.png"
+    },
+    {
+      "tag": "Inspector",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Inspector.png"
+    },
+    {
+      "tag": "InspectorAgent",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/InspectorAgent.png"
+    },
+    {
+      "tag": "KeyManagementService",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/KeyManagementService.png"
+    },
+    {
+      "tag": "KeyManagementServiceExternalKeyStore",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/KeyManagementServiceExternalKeyStore.png"
+    },
+    {
+      "tag": "Macie",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Macie.png"
+    },
+    {
+      "tag": "NetworkFirewall",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/NetworkFirewall.png"
+    },
+    {
+      "tag": "NetworkFirewallEndpoints",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/NetworkFirewallEndpoints.png"
+    },
+    {
+      "tag": "PrivateCertificateAuthority",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/PrivateCertificateAuthority.png"
+    },
+    {
+      "tag": "ResourceAccessManager",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/ResourceAccessManager.png"
+    },
+    {
+      "tag": "SecretsManager",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecretsManager.png"
+    },
+    {
+      "tag": "SecurityHub",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityHub.png"
+    },
+    {
+      "tag": "SecurityHubFinding",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityHubFinding.png"
+    },
+    {
+      "tag": "SecurityIdentityCompliance",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityIdentityCompliance.png"
+    },
+    {
+      "tag": "SecurityLake",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityLake.png"
+    },
+    {
+      "tag": "Shield",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Shield.png"
+    },
+    {
+      "tag": "ShieldAWSShieldAdvanced",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/ShieldAWSShieldAdvanced.png"
+    },
+    {
+      "tag": "Signer",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/Signer.png"
+    },
+    {
+      "tag": "VerifiedPermissions",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/VerifiedPermissions.png"
+    },
+    {
+      "tag": "WAF",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAF.png"
+    },
+    {
+      "tag": "WAFBadBot",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFBadBot.png"
+    },
+    {
+      "tag": "WAFBot",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFBot.png"
+    },
+    {
+      "tag": "WAFBotControl",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFBotControl.png"
+    },
+    {
+      "tag": "WAFFilteringRule",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFFilteringRule.png"
+    },
+    {
+      "tag": "WAFLabels",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFLabels.png"
+    },
+    {
+      "tag": "WAFManagedRule",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFManagedRule.png"
+    },
+    {
+      "tag": "WAFRule",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/WAFRule.png"
+    },
+    {
+      "tag": "Serverless",
+      "stroke": "#8C4FFF",
+      "icon": "Serverless/Serverless.png"
+    },
+    {
+      "tag": "Backup",
+      "stroke": "#7AA116",
+      "icon": "Storage/Backup.png"
+    },
+    {
+      "tag": "BackupAWSBackupforAWSCloudFormation",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupAWSBackupforAWSCloudFormation.png"
+    },
+    {
+      "tag": "BackupAWSBackupsupportforAmazonFSxforNetAppONTAP",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupAWSBackupsupportforAmazonFSxforNetAppONTAP.png"
+    },
+    {
+      "tag": "BackupAWSBackupsupportforAmazonS3",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupAWSBackupsupportforAmazonS3.png"
+    },
+    {
+      "tag": "BackupAWSBackupsupportforVMwareWorkloads",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupAWSBackupsupportforVMwareWorkloads.png"
+    },
+    {
+      "tag": "BackupAuditManager",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupAuditManager.png"
+    },
+    {
+      "tag": "BackupBackupPlan",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupBackupPlan.png"
+    },
+    {
+      "tag": "BackupBackupRestore",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupBackupRestore.png"
+    },
+    {
+      "tag": "BackupBackupVault",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupBackupVault.png"
+    },
+    {
+      "tag": "BackupComplianceReporting",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupComplianceReporting.png"
+    },
+    {
+      "tag": "BackupCompute",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupCompute.png"
+    },
+    {
+      "tag": "BackupDatabase",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupDatabase.png"
+    },
+    {
+      "tag": "BackupGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupGateway.png"
+    },
+    {
+      "tag": "BackupLegalHold",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupLegalHold.png"
+    },
+    {
+      "tag": "BackupRecoveryPointObjective",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupRecoveryPointObjective.png"
+    },
+    {
+      "tag": "BackupRecoveryTimeObjective",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupRecoveryTimeObjective.png"
+    },
+    {
+      "tag": "BackupStorage",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupStorage.png"
+    },
+    {
+      "tag": "BackupVaultLock",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupVaultLock.png"
+    },
+    {
+      "tag": "BackupVirtualMachine",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupVirtualMachine.png"
+    },
+    {
+      "tag": "BackupVirtualMachineMonitor",
+      "stroke": "#7AA116",
+      "icon": "Storage/BackupVirtualMachineMonitor.png"
+    },
+    {
+      "tag": "EFS",
+      "stroke": "#7AA116",
+      "icon": "Storage/EFS.png"
+    },
+    {
+      "tag": "ElasticBlockStore",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStore.png"
+    },
+    {
+      "tag": "ElasticBlockStoreAmazonDataLifecycleManager",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStoreAmazonDataLifecycleManager.png"
+    },
+    {
+      "tag": "ElasticBlockStoreMultipleVolumes",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStoreMultipleVolumes.png"
+    },
+    {
+      "tag": "ElasticBlockStoreSnapshot",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStoreSnapshot.png"
+    },
+    {
+      "tag": "ElasticBlockStoreVolume",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStoreVolume.png"
+    },
+    {
+      "tag": "ElasticBlockStoreVolumegp3",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticBlockStoreVolumegp3.png"
+    },
+    {
+      "tag": "ElasticDisasterRecovery",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticDisasterRecovery.png"
+    },
+    {
+      "tag": "ElasticFileSystemElasticThroughput",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemElasticThroughput.png"
+    },
+    {
+      "tag": "ElasticFileSystemFileSystem",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemFileSystem.png"
+    },
+    {
+      "tag": "ElasticFileSystemIntelligentTiering",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemIntelligentTiering.png"
+    },
+    {
+      "tag": "ElasticFileSystemOneZone",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemOneZone.png"
+    },
+    {
+      "tag": "ElasticFileSystemOneZoneInfrequentAccess",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemOneZoneInfrequentAccess.png"
+    },
+    {
+      "tag": "ElasticFileSystemStandard",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemStandard.png"
+    },
+    {
+      "tag": "ElasticFileSystemStandardInfrequentAccess",
+      "stroke": "#7AA116",
+      "icon": "Storage/ElasticFileSystemStandardInfrequentAccess.png"
+    },
+    {
+      "tag": "FSx",
+      "stroke": "#7AA116",
+      "icon": "Storage/FSx.png"
+    },
+    {
+      "tag": "FSxforLustre",
+      "stroke": "#7AA116",
+      "icon": "Storage/FSxforLustre.png"
+    },
+    {
+      "tag": "FSxforNetAppONTAP",
+      "stroke": "#7AA116",
+      "icon": "Storage/FSxforNetAppONTAP.png"
+    },
+    {
+      "tag": "FSxforOpenZFS",
+      "stroke": "#7AA116",
+      "icon": "Storage/FSxforOpenZFS.png"
+    },
+    {
+      "tag": "FSxforWFS",
+      "stroke": "#7AA116",
+      "icon": "Storage/FSxforWFS.png"
+    },
+    {
+      "tag": "FileCache",
+      "stroke": "#7AA116",
+      "icon": "Storage/FileCache.png"
+    },
+    {
+      "tag": "FileCacheHybridNFSlinkeddatasets",
+      "stroke": "#7AA116",
+      "icon": "Storage/FileCacheHybridNFSlinkeddatasets.png"
+    },
+    {
+      "tag": "FileCacheOnpremisesNFSlinkeddatasets",
+      "stroke": "#7AA116",
+      "icon": "Storage/FileCacheOnpremisesNFSlinkeddatasets.png"
+    },
+    {
+      "tag": "FileCacheS3linkeddatasets",
+      "stroke": "#7AA116",
+      "icon": "Storage/FileCacheS3linkeddatasets.png"
+    },
+    {
+      "tag": "S3onOutposts",
+      "stroke": "#7AA116",
+      "icon": "Storage/S3onOutposts.png"
+    },
+    {
+      "tag": "SimpleStorageService",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageService.png"
+    },
+    {
+      "tag": "SimpleStorageServiceBucket",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceBucket.png"
+    },
+    {
+      "tag": "SimpleStorageServiceBucketWithObjects",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceBucketWithObjects.png"
+    },
+    {
+      "tag": "SimpleStorageServiceGeneralAccessPoints",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceGeneralAccessPoints.png"
+    },
+    {
+      "tag": "SimpleStorageServiceGlacier",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceGlacier.png"
+    },
+    {
+      "tag": "SimpleStorageServiceGlacierArchive",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceGlacierArchive.png"
+    },
+    {
+      "tag": "SimpleStorageServiceGlacierVault",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceGlacierVault.png"
+    },
+    {
+      "tag": "SimpleStorageServiceObject",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceObject.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3BatchOperations",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3BatchOperations.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3GlacierDeepArchive",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3GlacierDeepArchive.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3GlacierFlexibleRetrieval",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3GlacierFlexibleRetrieval.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3GlacierInstantRetrieval",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3GlacierInstantRetrieval.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3IntelligentTiering",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3IntelligentTiering.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3MultiRegionAccessPoints",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3MultiRegionAccessPoints.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3ObjectLambda",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3ObjectLambda.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3ObjectLambdaAccessPoints",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3ObjectLambdaAccessPoints.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3ObjectLock",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3ObjectLock.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3OnOutposts",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3OnOutposts.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3OneZoneIA",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3OneZoneIA.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3Replication",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3Replication.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3ReplicationTimeControl",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3ReplicationTimeControl.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3Select",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3Select.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3Standard",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3Standard.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3StandardIA",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3StandardIA.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3StorageLens",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3StorageLens.png"
+    },
+    {
+      "tag": "SimpleStorageServiceVPCAccessPoints",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceVPCAccessPoints.png"
+    },
+    {
+      "tag": "Snowball",
+      "stroke": "#7AA116",
+      "icon": "Storage/Snowball.png"
+    },
+    {
+      "tag": "SnowballEdge",
+      "stroke": "#7AA116",
+      "icon": "Storage/SnowballEdge.png"
+    },
+    {
+      "tag": "SnowballSnowballImportExport",
+      "stroke": "#7AA116",
+      "icon": "Storage/SnowballSnowballImportExport.png"
+    },
+    {
+      "tag": "Snowcone",
+      "stroke": "#7AA116",
+      "icon": "Storage/Snowcone.png"
+    },
+    {
+      "tag": "Snowmobile",
+      "stroke": "#7AA116",
+      "icon": "Storage/Snowmobile.png"
+    },
+    {
+      "tag": "Storage",
+      "stroke": "#7AA116",
+      "icon": "Storage/Storage.png"
+    },
+    {
+      "tag": "StorageGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGateway.png"
+    },
+    {
+      "tag": "StorageGatewayAmazonFSxFileGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayAmazonFSxFileGateway.png"
+    },
+    {
+      "tag": "StorageGatewayAmazonS3FileGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayAmazonS3FileGateway.png"
+    },
+    {
+      "tag": "StorageGatewayCachedVolume",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayCachedVolume.png"
+    },
+    {
+      "tag": "StorageGatewayFileGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayFileGateway.png"
+    },
+    {
+      "tag": "StorageGatewayNoncachedVolume",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayNoncachedVolume.png"
+    },
+    {
+      "tag": "StorageGatewayTapeGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayTapeGateway.png"
+    },
+    {
+      "tag": "StorageGatewayVirtualTapeLibrary",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayVirtualTapeLibrary.png"
+    },
+    {
+      "tag": "StorageGatewayVolumeGateway",
+      "stroke": "#7AA116",
+      "icon": "Storage/StorageGatewayVolumeGateway.png"
+    }
+  ]
+}

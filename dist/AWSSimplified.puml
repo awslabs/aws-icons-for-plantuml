@@ -8,11 +8,11 @@ hide stereotype
 
 !definelong AWSEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
-    BackgroundColor AWS_BG_COLOR
+    BackgroundColor $AWS_BG_COLOR
     BorderColor transparent
     Shadowing false
 }
-skinparam ParticipantBackgroundColor<<e_stereo>> AWS_BG_COLOR
+skinparam ParticipantBackgroundColor<<e_stereo>> $AWS_BG_COLOR
 skinparam SequenceParticipantBorderThickness<<e_stereo>> 0
 !enddefinelong
 

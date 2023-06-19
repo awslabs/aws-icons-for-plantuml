@@ -1,16 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $IoTAnalyticsPipeline [64x64/16z] {
-xTNL0O0m34NHUfBz1yRTNT_vGovEg_uC05WQUFM-LbhiUDpVjrX7eK2pVNzVssZiV5_lEzZFEB-dC85c-jdxlxWt8UUKSY6ixwtaaZI8NDlteKUFVjVuzQ3n
-T__zxv-_ziwVU-VlFmE06
+xTN30KLH30JGEFrN_CrdSyvwhX4wCm28_16ziv9_XAhLPYNJxSLRsvUpyjD6sjj_ivNjMypVtgs1jxHlNV_2xTcUb4ZD-hUNV78YprosVHdQeptQZ_g_DlJ_
+Zb__-FerjdwEhTzd1W1N
 }
 
 !function $IoTAnalyticsPipelineIMG($scale=1)
-!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAYpJREFUeNrtmTFOwzAUhm0rmdhZqWiGXqALQkp2VsoMK8wM6QHagZleoj1EIiEWLpAhkZi5QlAejnAaloY2enUC+T+prRXZr3/+vt+qWyEAAAAAAAAAAAAwNGQ1uHgan7q5jPVwcmCNJHfJf33MPmwK59KrqqtOri5bFCuZmLVW4dLrVAMlSFE9KRKS3hvLkBzp56Baa9sALr3Ojlw8R2G2aaoXLLxrMgV7kOPWeh0OAbrw2l94Vm+a2Dpp4DhMdX7PIHsL1Jnu3IB9MsgN1x6ECHT1xv7yfKp7576hr97iMF19z/X0PJqW4zjM7v6FAZLUmW7h24YpJ/qxMlu+bnU5M9dZDUAEunrjaJ5ufp5Fmojn6c3xvlEOHBgAA2AADIABMAAGwAAYAANwGGqPPtY++MvxlU3hRGLUp9NgIEgiAoONgP7sZ+Z8bw3zo+j6KAbsk2muDNrag3bp3RpQCFnI+v+WgzJdrrV901x6t3vAp1u86JekhZbErLXKX9MLAAAAAAAAAACA/vAFQ2KDpKrOfpkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAZRJREFUeNrtmTFOwzAUht+zAgszgY2OvUA3JLKzUkZS1nIBaAfEQDkBXSGs9BAgsXGBjqwNNwCRR0wTUiQSpWCclP7f0FhpbP/96/8pTogAAAAAAAAAAACwbHDaOL3ZcF+F7omkOecQ4xWmnbODSWhTuCm9Kj39QrI9/2AaaU772sWUXic7LypdEMJyxxE/FQ6jpMHCXtbXMob0Ot9fTZeDTjgqGvAkWN+LD14tgvwLvY6ZQsK3vcBdyCKoaMkxsgLKZND4qp/NdNUGlMmgaUzVIESgqomPrzZbiqNubmFlejz3w6Fu9wO3K0It3Y5X2uG/MIDV21b82clPFa/Fh2HS9oilnXxl1ABEoKqJL/zn0exepIiBP9nHfQAMgAEwAAbAABgAA2AADIABMKB+myGmo961u2tTuLA04n1yPQz4eDbHdv+5eE5EoDYREJJ2sr+3hn4oqt9H/I0BJTJtKoO2alCe3swA5ii9oEymv2RQ97X+o83o/awBq8QP+tXxD5SMp33tsmh6AQAAAAAAAAAAUB/eAfCek0Kz47p1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
 !endfunction
 
 AWSEntityColoring(IoTAnalyticsPipeline)
-!define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
-!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #7AA116, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipeline(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #7AA116, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #7AA116, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
+!define IoTAnalyticsPipelineParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #7AA116, IoTAnalyticsPipeline, IoTAnalyticsPipeline)
