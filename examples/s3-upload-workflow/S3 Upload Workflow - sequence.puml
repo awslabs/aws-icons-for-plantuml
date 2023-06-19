@@ -1,0 +1,72 @@
+@startuml Amazon S3 Upload Workflow
+'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+
+title Amazon S3 video upload workflow
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
+!include AWSPuml/ApplicationIntegration/StepFunctions.puml
+!include AWSPuml/Groups/all.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/General/Documents.puml
+!include AWSPuml/General/Multimedia.puml
+!include AWSPuml/General/Tapestorage.puml
+!include AWSPuml/General/User.puml
+!include AWSPuml/MediaServices/ElementalMediaConvert.puml
+!include AWSPuml/MachineLearning/Transcribe.puml
+!include AWSPuml/Storage/SimpleStorageServiceBucket.puml
+
+'Hide the bottom boxes / Use filled triangle arrowheads
+hide footbox
+skinparam style strictuml
+skinparam MaxMessageSize 200
+
+participant "$UserIMG()\nUser\n" as user
+box Step Functions workflow
+participant "$StepFunctionsIMG()\nworkflow\n" as sfw
+participant "$LambdaLambdaFunctionIMG()\nextract audio\n" as sfw1
+participant "$LambdaLambdaFunctionIMG()\ntranscribe audio\n" as sfw2
+end box
+
+participant "$ElementalMediaConvertIMG()\nAWS Elemental\nMediaConvert" as mediaconvert
+participant "$TranscribeIMG()\nAmazon Transcribe\n" as transcribe
+box object storage
+participant "$SimpleStorageServiceBucketIMG()\nAmazon S3\nbucket" as s3
+participant "$LambdaLambdaFunctionIMG()\nObjectCreated\nevent handler" as e1
+end box
+
+user -> s3++ $AWSColor(Storage): <$Callout_1> upload video 
+$AWSIconRight(Multimedia, video)
+user <-- s3:
+s3 ->> e1++ $AWSColor(Compute): <$Callout_2> event
+e1 ->> sfw--: start workflow
+activate sfw $AWSColor(ApplicationIntegration)
+
+== audio ==
+
+sfw -> sfw1++ $AWSColor(Compute):
+sfw1 ->> mediaconvert: create job
+activate mediaconvert $AWSColor(MediaServices)
+sfw <-- sfw1--:
+mediaconvert -> s3: <$Callout_3> save audio
+$AWSIconRight(Tapestorage, audio)
+sfw <<- mediaconvert--:  task success
+
+== transcript ==
+
+sfw -> sfw2++ $AWSColor(Compute):
+sfw2 ->> transcribe: start transcription job
+activate transcribe $AWSColor(MachineLearning)
+sfw <-- sfw2--:
+transcribe -> s3: <$Callout_4> save transcript
+$AWSIconRight(Documents, transcript)
+deactivate s3
+sfw <<- transcribe--: task success
+deactivate sfw
+
+@enduml

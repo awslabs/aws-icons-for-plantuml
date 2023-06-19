@@ -7,9 +7,7 @@ SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-pl
 
 PlantUML images, sprites, macros, and other includes for Amazon Web Services (AWS) services and resources. Used to create PlantUML diagrams with AWS components. All elements are generated from the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and when combined with [PlantUML](http://plantuml.com/) and the [C4 model](https://c4model.com/), are a great way to communicate your design, deployment, and topology as code.
 
-Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily be created with the icons.
-
-This repository is based on the [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML) repository for creating patterns used in quality diagrams. Thanks Ricardo!
+Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily be created with the icons (including experimental support for "dark mode").
 
 ## Table of Contents
 
@@ -37,15 +35,15 @@ In order to incorporate and use the _AWS Icons for PlantUML_ resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v15.0</b>/dist/AWSCommon.puml
+<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v16.0</b>/dist/AWSCommon.puml
 </code></pre>
 
 or this if defining the URL:
 
-<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v15.0</b>/dist
+<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v16.0</b>/dist
 </code></pre>
 
-This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v15.0_ release.
+This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v16.0_ release.
 
 All examples reference _main_ and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -73,7 +71,7 @@ For example, including these files from the repository (URL), the includes would
 
 ```
 ' Define the main location (URL or local file path)
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 ' Include main AWSCommon and then resource files
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
@@ -90,8 +88,10 @@ This is the [`examples/HelloWorld.puml`](examples/HelloWorld.puml) diagram code:
 
 ```
 @startuml Hello World
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/BusinessApplications/all.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
@@ -108,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/examples/HelloWorld.puml)
 
 ## Examples
 
@@ -116,14 +116,18 @@ Below are some sample diagrams that demonstrate the uses of this repository by u
 
 Consider these as starting points for how to use the resources in your own documents and diagrams. You may wish to use the icon images in your UML diagrams, use the rectangle entities, or create large and complex C4 model diagrams.
 
+These examples all support the experimental "dark mode", which is enabled by setting `'!$AWS_DARK = true` before you `!include AWSPuml/AWSCommon.puml`.
+
 ### Basic Usage
 
 This example shows AWS IoT processing of messages via the Rules Engine with an error action. It utilizes AWS service entities to show a simple architecture workflow. Each entity has a unique entity name and icon (`<<foo..>>`), name of function, and additional details or constraints.
 
 ```
 @startuml Basic Usage - AWS IoT Rules Engine
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/InternetOfThings/IoTRule.puml
 !include AWSPuml/Analytics/KinesisDataStreams.puml
@@ -131,7 +135,7 @@ This example shows AWS IoT processing of messages via the Rules Engine with an e
 
 left to right direction
 
-agent "Published Event" as event #fff
+agent "Published Event" as event
 
 IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
 KinesisDataStreams(eventStream, "IoT Events", "2 shards")
@@ -146,7 +150,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FBasic%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FBasic%2520Usage.puml)
 
 ### Raw Images
 
@@ -154,10 +158,10 @@ The individual icon images (complete list [here](AWSSymbols.md)) can be included
 
 ```
 @startuml Raw usage - Images
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/MachineLearning/SageMakerModel.puml
 !include AWSPuml/Robotics/RoboMaker.puml
@@ -176,7 +180,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FRaw%2520Image%2520Usage.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FRaw%2520Image%2520Usage.puml)
 
 ### Simplified View
 
@@ -184,8 +188,10 @@ In some cases, PlantUML diagrams may contain too much information, but are still
 
 ```
 @startuml Two Modes - Technical View
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 
 ' Uncomment the following line to create simplified view
@@ -211,26 +217,27 @@ sources --> votingAPI
 userAuth <--> generateToken
 votingAPI --> recordVote
 recordVote --> voteDb
-
 @enduml
 ```
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
 
 And if the `!include AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
 
 ### Sequence Diagrams
 
 Icons can also be used in UML sequence diagrams, either with Participant macros or by just using images and formatting via `participant` description. Here are examples of both.
 
-```bash
+```
 @startuml Sequence Diagram - Technical
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Compute/all.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -251,45 +258,34 @@ processor -> lambda: Returns status code and token
 lambda -> db: PUT transaction id, token
 lambda -> api: Returns\nstatus code, transaction id
 api -> user: Returns status code
-
 @enduml
 ```
 
 The code above generates the fully detailed diagram with stereotypes.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FSequence%2520-%2520Technical.puml)
 
 ```
 @startuml Sequence Diagram - Images
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSExperimental.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
 !include AWSPuml/General/Internetalt1.puml
+!include AWSPuml/General/User.puml
 !include AWSPuml/Database/DynamoDB.puml
-
-'Comment out to use default PlantUML sequence formatting
-skinparam participant {
-    BackgroundColor AWS_BG_COLOR
-    BorderColor AWS_BORDER_COLOR
-}
-skinparam sequence { 
-    ArrowThickness 2
-    LifeLineBorderColor AWS_COLOR
-    LifeLineBackgroundColor AWS_BORDER_COLOR
-    BoxBorderColor AWS_COLOR
-}
 
 'Hide the bottom boxes / Use filled triangle arrowheads
 hide footbox
 skinparam style strictuml
+
 skinparam MaxMessageSize 200
 
-actor User as user
+participant "$UserIMG()\nUser" as user
 box AWS Cloud
 'Instead of using ...Participant(), native creole img tags can be used
 participant "$APIGatewayIMG()\nCredit Card System\nAll methods are POST" as api << REST API >>
@@ -299,9 +295,9 @@ endbox
 participant "Authorizer\nReturns status and token\n$Internetalt1IMG()" as processor
 
 'Use shortcut syntax for activation with colored lifelines and return keyword
-user -> api++ AWS_COLOR_PINK: <$Callout_1> Process transaction\l<$Callout_SP> ""POST /prod/process""
-api -> lambda++ AWS_COLOR_ORANGE: <$Callout_2> Invokes lambda with\l<$Callout_SP> cardholder details
-lambda -> processor++ AWS_COLOR: <$Callout_3> Submit via API token\l<$Callout_SP> card number, expiry, CID
+user -> api++ $AWSColor(ApplicationIntegration): <$Callout_1> Process transaction\l<$Callout_SP> ""POST /prod/process""
+api -> lambda++ $AWSColor(Compute): <$Callout_2> Invokes lambda with\l<$Callout_SP> cardholder details
+lambda -> processor++ $AWS_COLOR_SQUID: <$Callout_3> Submit via API token\l<$Callout_SP> card number, expiry, CID
 processor -> processor: Validate and\lcreate token
 return status code, token
 lambda ->> db: PUT transaction id, token
@@ -312,7 +308,7 @@ return status code
 
 The code above generates the same sequence diagram demonstrating how colors, text positioning, and stereotypes can be modified.
 
-![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FSequence%2520-%2520Images.puml)
+![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FSequence%2520-%2520Images.puml)
 
 ### Groups
 
@@ -320,10 +316,10 @@ Groups are a system element which shows the connection between multiple services
 
 ```
 @startuml VPC
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSSimplified.puml
 !include AWSPuml/Compute/EC2.puml
@@ -374,79 +370,71 @@ AWSCloudGroup(cloud) {
 
 This code generates the following diagram:
 
-![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FGroups%2520-%2520VPC.puml)
+![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FGroups%2520-%2520VPC.puml)
 
-Custom groups can also be constructed using the `AWSGroupEntity` macro.  Here is an Amazon S3 upload workflow example defining a custom group for the Amazon S3 bucket.
+Custom groups can also be constructed using the `$AWSDefineGroup` macro.  Here is an AWS CodePipeline human approval workflow example defining a custom group for AWS CodePipeline.
 
 ```
-@startuml S3 Upload Workflow
-'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
+@startuml AWS CodePipeline - Human Approval Step
+' based on https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codepipeline-extend
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
-!include AWSPuml/AWSExperimental.puml
-!include AWSPuml/Groups/all.puml
-!include AWSPuml/Compute/LambdaLambdaFunction.puml
-!include AWSPuml/General/Documents.puml
-!include AWSPuml/General/Multimedia.puml
-!include AWSPuml/General/Tapestorage.puml
+!include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/DeveloperTools/CodeBuild.puml
+!include AWSPuml/DeveloperTools/CodeCommit.puml
+!include AWSPuml/DeveloperTools/CodeDeploy.puml
+!include AWSPuml/DeveloperTools/CodePipeline.puml
 !include AWSPuml/General/User.puml
-!include AWSPuml/MediaServices/ElementalMediaConvert.puml
-!include AWSPuml/MachineLearning/Transcribe.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
 
-' define custom group for Amazon S3 bucket
-AWSGroupColoring(S3BucketGroup, #FFFFFF, AWS_COLOR_GREEN, plain)
-!define S3BucketGroup(g_alias, g_label="Amazon S3 bucket") AWSGroupEntity(g_alias, g_label, AWS_COLOR_GREEN, SimpleStorageService, S3BucketGroup)
+$AWSGroupColoring(CodePipelineGroup, $AWSColor(DeveloperTools))
+!define CodePipelineGroup(g_alias, g_label="AWS CodePipeline") $AWSDefineGroup(g_alias, g_label, CodePipeline, CodePipelineGroup)
 
 ' Groups are rectangles with a custom style using stereotype - need to hide
 hide stereotype
 skinparam linetype ortho
 skinparam rectangle {
-    BackgroundColor AWS_BG_COLOR
+    BackgroundColor $AWS_BG_COLOR
     BorderColor transparent
 }
 
-rectangle "$UserIMG()\nUser" as user
-AWSCloudGroup(cloud){
-  RegionGroup(region) {
-    S3BucketGroup(s3) {
-      rectangle "$MultimediaIMG()\n\tvideo\t" as video
-      rectangle "$TapestorageIMG()\n\taudio\t" as audio
-      rectangle "$DocumentsIMG()\n\ttranscript\t" as transcript
+' define custom procedure for AWS Service icon and two lines of text
+!procedure $AWSIcon($service, $line1, $line2="")
+rectangle "$AWSImg($service)\n$line1\n$line2"
+!endprocedure 
 
-      user -r-> video: <$Callout_1>\lupload
-      video -r-> audio
-      audio -r-> transcript
-    }
+CodePipelineGroup(pipeline){
+  $AWSIcon(CodeCommit, "AWS CodeCommit") as cc
+  $AWSIcon(CodeBuild, "AWS CodeBuild") as cb
+  $AWSIcon(SimpleStorageService, "Amazon S3", "(artifact store)") as s3
+  cc -r-> cb
+  cb -d-> s3
 
-    rectangle "$LambdaLambdaFunctionIMG()\nObjectCreated\nevent handler" as e1
-    rectangle "$ElementalMediaConvertIMG()\nAWS Elemental\nMediaConvert" as mediaconvert
-    rectangle "$TranscribeIMG()\nAmazon Transcribe\n" as transcribe
-    
-    video -d-> e1: <$Callout_2> 
-    e1 -[hidden]r-> mediaconvert
-    mediaconvert -[hidden]r-> transcribe
-    mediaconvert -u-> audio: <$Callout_3> 
-    transcribe -u-> transcript: <$Callout_4> 
-    
-    StepFunctionsWorkflowGroup(sfw) {
-      rectangle "$LambdaLambdaFunctionIMG()\nextract audio" as sfw1
-      rectangle "$LambdaLambdaFunctionIMG()\ntranscribe audio" as sfw2
+  $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd1
+  $AWSIcon(EC2, "Amazon EC2", "(dev)") as ec2dev
+  cb -r-> cd1
+  cd1 -d-> ec2dev
 
-      e1 -r-> sfw1: Start\nExecution
-      sfw1 -r-> sfw2
-      sfw1 -u-> mediaconvert
-      sfw2 -u-> transcribe
-    }
-  }
+  $AWSIcon(User, "Human", "Approval") as user
+  cd1 -r-> user
+
+  $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd2
+  $AWSIcon(EC2, "Amazon EC2", "(prod)") as ec2prod
+  user -r-> cd2
+  cd2 -d-> ec2prod
+
+  $AWSIcon(SimpleNotificationService, "SNS Notification") as sns
+  cd2 -r-> sns
 }
-
 @enduml
 ```
 
-![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv15.0%2Fexamples%2FS3%2520Upload%2520Workflow.puml)
+![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv16.0%2Fexamples%2FGroups%2520-%2520CodePipeline.puml)
 
 ## Distribution "Dist" Details
 
@@ -458,11 +446,9 @@ Beyond that, starting with the _v11.1_ release, all filenames now follow the ori
 
 ## Advanced Examples
 
-This section will contain examples that map [AWS References Architectures](https://aws.amazon.com/architecture/#AWS_reference_architectures) from the [AWS Architecture Center](https://aws.amazon.com/architecture/). Focus will be on providing examples that not only describe the different components, but also how to use containers for referencing items such as VPCs, subnets, or groups of EC2 instances.
+The [examples](examples) folder includes additional examples, including some that map [AWS References Architectures](https://aws.amazon.com/architecture/#AWS_reference_architectures) from the [AWS Architecture Center](https://aws.amazon.com/architecture/).
 
-Other examples will focus on using the [Plant-UML C4 model](https://github.com/RicardoNiepel/C4-PlantUML) for expressing solution architectures.
-
-Stay tuned!
+A set of diagrams in [examples/s3-upload-workflow](examples/s3-upload-workflow) show the architecture for an "S3 Upload Workflow" represented across multiple examples, including using [C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML).
 
 ## Customized Builds
 
@@ -484,6 +470,7 @@ The icons provided in this package are made available to you under the terms of 
 ## Acknowledgements
 
 - [PlantUML](http://plantuml.com/index) - Thank you for the ability to create technical diagrams by writing lines of code/text.
+- [Standard Library for PlantUML](https://github.com/plantuml/plantuml-stdlib) - Thank you for including a version in the official release of PlantUML.
 - [AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML) - Thank you for the base structure and understanding how to incorporate new sprites into Plant-UML.
 - [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML) - Thank you Ricardo for the elegant look and feel of the repository, diagrams, and the C4 Model.
 - [C4 Model](https://c4model.com/) - Thanks you for an approach to document solutions without the specificity of UML.

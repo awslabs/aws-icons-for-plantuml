@@ -1,0 +1,21 @@
+@startuml Colors
+allowmixing
+
+title Color Palette
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+
+json Colors {
+  "<color:$AWS_COLOR_GALAXY>Galaxy (#8C4FFF)" : ["Analytics", "Games", "Networking & Content Delivery", "Serverless"],
+  "<color:$AWS_COLOR_NEBULA>Nebula (#C925D1)" : ["Customer Enablement", "Database", "Developer Tools", "Satellite"],
+  "<color:$AWS_COLOR_COSMOS>Cosmos (#E7157B)" : ["Application Integration", "Management & Governance"],
+  "<color:$AWS_COLOR_MARS>Mars (#DD344C)" : ["Business Applications", "Contact Center", "Front-End Web & Mobile", "Robotics", "Security, Identity & Compliance"],
+  "<color:$AWS_COLOR_SMILE>Smile (#ED7100)" : ["Blockchain", "Compute", "Containers", "Media Services", "Quantum Technologies"],
+  "<color:$AWS_COLOR_ENDOR>Endor (#7AA116)" : ["Cloud Financial Management", "Internet of Things", "Storage"],
+  "<color:$AWS_COLOR_ORBIT>Orbit (#01A88D)" : ["End User Computing", "Machine Learning", "Migration & Transfer"]
+}
+@enduml

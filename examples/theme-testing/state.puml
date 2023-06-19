@@ -1,0 +1,26 @@
+@startuml State
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+
+state A {
+  state entry1 <<entryPoint>>
+  state X {    
+  }
+  state Y {
+  }
+}
+
+state B {
+  state Z {
+  }
+}
+
+[*] --> entry1
+X --> Z
+Z --> Y
+
+@enduml

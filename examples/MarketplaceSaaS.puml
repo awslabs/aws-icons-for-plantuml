@@ -1,0 +1,57 @@
+@startuml AWS Marketplace SaaS
+
+' based on https://aws.amazon.com/solutions/implementations/aws-marketplace-saas/
+title AWS Marketplace Serverless SaaS Integration on AWS
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/Compute/Lambda.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/General/Documents.puml
+!include AWSPuml/General/Marketplace.puml
+!include AWSPuml/General/Users.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFront.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFrontEdgeLocation.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+skinparam rectangle {
+    BackgroundColor $AWS_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+
+rectangle "$UsersIMG()\nCustomers" as customers
+AWSCloudGroup(cloud){
+  rectangle "$MarketplaceIMG()\nAWS Marketplace" as marketplace
+  rectangle "$CloudFrontEdgeLocationIMG()\nLambda@Edge" as edge
+  rectangle "$CloudFrontIMG()\nAmazon CloudFront" as cf  
+  rectangle "$SimpleStorageServiceIMG()\nAmazon S3" as s3
+
+  customers -right-> marketplace
+  marketplace -right-> edge
+  edge -right-> cf
+  cf -right-> s3
+
+  rectangle "$DocumentsIMG()\nRegistration page" as page
+
+  customers -right-> page
+  marketplace -down-> page
+  cf -down-> page
+
+  rectangle "$APIGatewayIMG()\nAmazon API Gateway" as api
+  rectangle "$LambdaIMG()\nAWS Lambda" as lambda
+  rectangle "$DynamoDBIMG()\nAmazon DynamoDB" as dynamodb
+
+  page -down-> api
+  api -right-> lambda
+  lambda -right-> dynamodb
+}
+@enduml

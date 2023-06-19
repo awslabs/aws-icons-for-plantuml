@@ -1,0 +1,27 @@
+@startuml Network
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+
+header some header
+
+footer some footer
+
+title My title
+
+nwdiag {
+  network inet {
+    web01 [shape = cloud]
+  }
+}
+
+legend
+The legend
+end legend
+
+caption This is caption
+
+@enduml

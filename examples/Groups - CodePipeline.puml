@@ -4,7 +4,10 @@
 
 ' based on https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codepipeline-extend
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
 !include AWSPuml/Compute/EC2.puml
@@ -15,15 +18,14 @@
 !include AWSPuml/General/User.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
 
-' define custom group for AWS CodePipeline
-AWSGroupColoring(CodePipelineGroup, #FFFFFF, AWS_COLOR_BLUE, plain)
-!define CodePipelineGroup(g_alias, g_label="AWS CodePipeline") AWSGroupEntity(g_alias, g_label, AWS_COLOR_BLUE, CodePipeline, CodePipelineGroup)
+$AWSGroupColoring(CodePipelineGroup, $AWSColor(DeveloperTools))
+!define CodePipelineGroup(g_alias, g_label="AWS CodePipeline") $AWSDefineGroup(g_alias, g_label, CodePipeline, CodePipelineGroup)
 
 ' Groups are rectangles with a custom style using stereotype - need to hide
 hide stereotype
 skinparam linetype ortho
 skinparam rectangle {
-    BackgroundColor AWS_BG_COLOR
+    BackgroundColor $AWS_BG_COLOR
     BorderColor transparent
 }
 

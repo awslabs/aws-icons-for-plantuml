@@ -1,0 +1,28 @@
+@startuml Use Cases
+
+title Use Cases
+
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!include AWSPuml/AWSCommon.puml
+
+left to right direction
+actor "Kevin" as kevin <<architect>>
+package "Diagrams" {
+  usecase "create presentation" as uc1
+  usecase "write documentation" as uc2
+  usecase "solution design" as uc3
+}
+
+kevin --> uc1
+kevin --> uc2
+kevin --> uc3
+
+note bottom of kevin
+     ❤️
+  diagrams-as code
+end note
+
+@enduml
