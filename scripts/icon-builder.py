@@ -5,6 +5,7 @@
 
 """icon-builder.py: Build AWS Icons for PlantUML"""
 
+import json
 import os
 import argparse
 import sys
@@ -27,15 +28,15 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 14.0-2022.07.31 release
+# Source directories for the 16.0-2023.04.28 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_01312023/*64/*.svg",
-        "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
-        "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.svg$",
+        "dir_glob": "Category-Icons_04282023/*48/*.png",
+        "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
+        "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
             "BusinessApplication": "BusinessApplications",
             # "CostManagement": "AWSCostManagement",
@@ -52,9 +53,10 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Architecture-Service-Icons_01312023/**/*64/*.svg",
+        # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
+        "dir_glob": "Architecture-Service-Icons_04282023/**/*48/*.png",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
-        "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+        "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
             "AppIntegration": "ApplicationIntegration",
             "BusinessApplication": "BusinessApplications",
@@ -65,135 +67,183 @@ dir_list = [
         },
         "filename_mappings": {
             "S3onOutpostsStorage": "S3OnOutpostsStorage",
+            "MarketplaceLight": "Marketplace",
+            "ApplicationAutoScaling": "ApplicationAutoScaling2",
         },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_01312023/**/*48_Light/*.svg",
-        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
-        "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+        "dir_glob": "Resource-Icons_04282023/*/*.svg",
+        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
             "loT": "InternetOfThings",
+            "IoT": "InternetOfThings",
             "MigrationandTransfer": "MigrationTransfer",
             "NetworkingandContentDelivery": "NetworkingContentDelivery",
             "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
         },
+        "filename_mappings": {
+            "ElasticContainerServiceCopiIoTCLI": "ElasticContainerServiceCopilotCLI",
+            "EC2AutoScaling": "EC2AutoScalingResource",
+            "Route53Route53ApplicationRecoveryController": "Route53ApplicationRecoveryController",
+            "DatabaseMigrationServiceDatabasemigrationworkfloworjob": "DatabaseMigrationServiceDatabasemigrationworkflowjob",
+            "BackupAWSBackupSupportforVMwareWorkloads": "BackupAWSBackupsupportforVMwareWorkloads",
+            "ElasticFileSystemEFSIntelligentTiering": "ElasticFileSystemIntelligentTiering",
+            "ElasticFileSystemEFSOneZone": "ElasticFileSystemOneZone",
+            "ElasticFileSystemEFSOneZoneInfrequentAccess": "ElasticFileSystemOneZoneInfrequentAccess",
+            "ElasticFileSystemEFSStandard": "ElasticFileSystemStandard",
+            "ElasticFileSystemEFSStandardInfrequentAccess": "ElasticFileSystemStandardInfrequentAccess",
+        },
+    },
+    {
+        "dir": "../source/official",
+        "dir_glob": "Resource-Icons_04282023/Res_General-Icons/Res_48_Light/*.svg",
+        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": "[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+        "category_mappings": {
+            "GeneralIcons": "General",
+        },
+        "filename_mappings": {
+            "Database": "Genericdatabase",
+            "ManagementConsole": "AWSManagementConsole",
+            "Shield": "Shield2",
+            "Server": "Traditionalserver",
+        },
+    },
+    # {
+    #     "dir": "../source/unofficial",
+    #     "dir_glob": "AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons/*.svg",
+    #     "category_regex": "[^.]*\/_(.*)\/",
+    #     "filename_regex": "[^.]*\/(.*)_light-bg\.svg",
+    #     "category_mappings": {},
+    #     "filename_mappings": {
+    #         "AWSCloud": "Cloud",
+    #         "AWSCloudalt": "Cloudalt",
+    #         "AWSStepFunction": "StepFunction",
+    #         "AutoScaling": "AutoScalingGroup",
+    #         "Corporatedatacenter": "CorporateDataCenter",
+    #         "EC2instancecontainer": "EC2InstanceContainer",
+    #         "ElasticBeanstalkcontainer": "ElasticBeanstalkContainer",
+    #         "Servercontents": "ServerContents",
+    #         "Spotfleet": "SpotFleet",
+    #         "VPCsubnetprivate": "VPCSubnetPrivate",
+    #         "VPCsubnetpublic": "VPCSubnetPublic",
+    #         "VirtualprivatecloudVPC": "VirtualPrivateCloudVPC",
+    #     },
+    # },
+    {
+        "dir": "../source/unofficial",
+        "dir_glob": "Groups_04282023/*.png",
+        "category_regex": "[^.]*\/(Groups).*\/",
+        "filename_regex": "[^.]*\/(.*)\.(?:png|touch)",
+        "category_mappings": {},
         "filename_mappings": {},
     },
     {
         "dir": "../source/unofficial",
-        "dir_glob": "AWS-Architecture-Icons_SVG_20200430/SVG Light/_Group Icons/*.svg",
-        "category_regex": "[^.]*\/_(.*)\/",
-        "filename_regex": "[^.]*\/(.*)_light-bg\.svg",
-        "category_mappings": {},
-        "filename_mappings": {
-            "AWSCloud": "Cloud",
-            "AWSCloudalt": "Cloudalt",
-            "AWSStepFunction": "StepFunction",
-            "AutoScaling": "AutoScalingGroup",
-            "Corporatedatacenter": "CorporateDataCenter",
-            "EC2instancecontainer": "EC2InstanceContainer",
-            "ElasticBeanstalkcontainer": "ElasticBeanstalkContainer",
-            "Servercontents": "ServerContents",
-            "Spotfleet": "SpotFleet",
-            "VPCsubnetprivate": "VPCSubnetPrivate",
-            "VPCsubnetpublic": "VPCSubnetPublic",
-            "VirtualprivatecloudVPC": "VirtualPrivateCloudVPC",
-        },
-    },
-    {
-        "dir": "../source/unofficial",
-        "dir_glob": "Groups_04302022/*.*",
+        "dir_glob": "Groups_04282023/*.touch",
         "category_regex": "[^.]*\/(Groups).*\/",
-        "filename_regex": "[^.]*\/(.*)\.(?:svg|touch)",
+        "filename_regex": "[^.]*\/(.*)\.(?:png|touch)",
         "category_mappings": {},
         "filename_mappings": {},
     },
 ]
 
 CATEGORY_COLORS = {
-    "Analytics": "PurpleHeart",
-    "ApplicationIntegration": "MaroonFlush",
-    "Blockchain": "Meteor",
-    "BusinessApplications": "Crimson",
-    "CloudFinancialManagement": "ForestGreen",
-    "Compute": "Meteor",
-    "Containers": "Meteor",
-    "CustomerEnablement": "CeruleanBlue",
-    "Database": "CeruleanBlue",
-    "DeveloperTools": "CeruleanBlue",
-    "EndUserComputing": "Elm",
-    "FrontEndWebMobile": "Crimson",
-    "Games": "PurpleHeart",
-    "General": "SquidInk",
-    "InternetOfThings": "ForestGreen",
-    "MachineLearning": "Elm",
-    "ManagementGovernance": "MaroonFlush",
-    "MediaServices": "Meteor",
-    "MigrationTransfer": "Elm",
-    "NetworkingContentDelivery": "PurpleHeart",
-    "QuantumTechnologies": "Meteor",
-    "Robotics": "Crimson",
-    "Satellite": "CeruleanBlue",
-    "SecurityIdentityCompliance": "Crimson",
-    "Serverless": "PurpleHeart",
-    "Storage": "ForestGreen",
-    "VRAR": "MaroonFlush",
+    "Analytics": "Galaxy",
+    "ApplicationIntegration": "Cosmos",
+    "Blockchain": "Smile",
+    "BusinessApplications": "Mars",
+    "CloudFinancialManagement": "Endor",
+    "Compute": "Smile",
+    "ContactCenter": "Mars",
+    "Containers": "Smile",
+    "CustomerEnablement": "Nebula",
+    "Database": "Nebula",
+    "DeveloperTools": "Nebula",
+    "EndUserComputing": "Orbit",
+    "FrontEndWebMobile": "Mars",
+    "Games": "Galaxy",
+    "General": "Squid",
+    "InternetOfThings": "Endor",
+    "MachineLearning": "Orbit",
+    "ManagementGovernance": "Cosmos",
+    "MediaServices": "Smile",
+    "MigrationTransfer": "Orbit",
+    "NetworkingContentDelivery": "Galaxy",
+    "QuantumTechnologies": "Smile",
+    "Robotics": "Mars",
+    "Satellite": "Nebula",
+    "SecurityIdentityCompliance": "Mars",
+    "Serverless": "Galaxy",
+    "Storage": "Endor",
+    "VRAR": "Cosmos",
 }
 
 GROUPICONS_COLORS = {
-    "AutoScalingGroup": "Meteor",
-    "Cloud": "SquidInk",
-    "Cloudalt": "SquidInk",
-    "CorporateDataCenter": "SquidInk",
-    "EC2InstanceContainer": "Meteor",
-    "ElasticBeanstalkContainer": "Meteor",
-    "Region": "CeruleanBlue",
-    "ServerContents": "SquidInk",
-    "SpotFleet": "Meteor",
-    "StepFunction": "MaroonFlush",
-    "VPCSubnetPrivate": "CeruleanBlue",
-    "VPCSubnetPublic": "ForestGreen",
-    "VirtualPrivateCloudVPC": "ForestGreen",
+    "AutoScalingGroup": "Smile",
+    "Cloud": "Squid",
+    "Cloudalt": "Squid",
+    "CorporateDataCenter": "Squid",
+    "EC2InstanceContainer": "Smile",
+    "ElasticBeanstalkContainer": "Smile",
+    "Region": "Nebula",
+    "ServerContents": "Squid",
+    "SpotFleet": "Smile",
+    "StepFunction": "Cosmos",
+    "VPCSubnetPrivate": "Nebula",
+    "VPCSubnetPublic": "Endor",
+    "VirtualPrivateCloudVPC": "Endor",
 }
 
 COLOR_MACROS = {
-    "CeruleanBlue": "AWS_COLOR_BLUE",
-    "Crimson": "AWS_COLOR_RED",
-    "Elm": "AWS_COLOR_TURQUOISE",
-    "ForestGreen": "AWS_COLOR_GREEN",
-    "MaroonFlush": "AWS_COLOR_PINK",
-    "Meteor": "AWS_COLOR_ORANGE",
-    "PurpleHeart": "AWS_COLOR_PURPLE",
-    "SquidInk": "AWS_COLOR",
-    "White": "AWS_BG_COLOR",
+    "Nebula": "$AWS_COLOR_NEBULA",
+    "Mars": "$AWS_COLOR_MARS",
+    "Orbit": "$AWS_COLOR_ORBIT",
+    "Endor": "$AWS_COLOR_ENDOR",
+    "Cosmos": "$AWS_COLOR_COSMOS",
+    "Smile": "$AWS_COLOR_SMILE",
+    "Galaxy": "$AWS_COLOR_GALAXY",
+    "Squid": "$AWS_COLOR_SQUID",
+    "White": "$AWS_BG_COLOR",
+}
+COLOR_VALUES = {
+    "Nebula": "#C925D1",
+    "Mars": "#DD344C",
+    "Orbit": "#01A88D",
+    "Endor": "#7AA116",
+    "Cosmos": "#E7157B",
+    "Smile": "#ED7100",
+    "Galaxy": "#8C4FFF",
+    'Squid': "#232F3E",
+    "White": "#FFFFFF",
 }
 
 TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 15.0-2023.01.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 16.0-2023.04.28 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
-    CeruleanBlue: "#3B48CC"
-    Crimson: "#D6242D"
-    Elm: "#1C7B68"
-    ForestGreen: "#3F8624"
-    MaroonFlush: "#CC2264"
-    Meteor: "#D86613"
-    PurpleHeart: "#693CC5"
-    SquidInk: "#232F3E"
+    Nebula: "#C925D1"
+    Mars: "#DD344C"
+    Orbit: "#01A88D"
+    Endor: "#7AA116"
+    Cosmos: "#E7157B"
+    Smile: "#ED7100"
+    Galaxy: "#8C4FFF"
+    Squid: "#232F3E"
     White: "#FFFFFF"
   # Defaults for services not found
   Category:
-    Color: SquidInk
+    Color: Squid
   Group:
     BorderStyle: plain
-    BackgroundColor: "#FFFFFF"
     Label: "Generic group"
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
@@ -203,157 +253,152 @@ Defaults:
 CATEGORY_GROUPS = """
   Groups:
     Icons:
-    - Color: "#5B9CD5"
+    - Color: "#00A4A6"
       Group:
         BorderStyle: dashed
       Label: "\\\\n  Availability Zone"
       Source: Availability-Zone.touch
-      SourceDir: Groups_04302020
+      SourceDir: Groups_04282023
       Target: AvailabilityZone
-    - Color: "#CD2264"
+    - Color: "#E7157B"
       Label: "AWS account"
-      Source: AWS-Account.svg
-      SourceDir: Groups_04302020
+      Source: AWS-Account.png
+      SourceDir: Groups_04282023
       Target: AWSAccount
-    - Color: "#000000"
+    - Color: $AWS_FG_COLOR
       Label: "AWS Cloud"
-      Source: AWS-Cloud-alt.svg
-      SourceDir: Groups_04302020
+      Source: AWS-Cloud-alt.png
+      SourceDir: Groups_04282023
+      SourceDark: AWS-Cloud-alt_Dark.png
+      SourceDirDark: Groups_04282023/Dark
       Target: AWSCloudAlt
-    - Color: "#000000"
+    - Color: $AWS_FG_COLOR
       Label: "AWS Cloud"
-      Source: AWS-Cloud.svg
-      SourceDir: Groups_04302020
+      Source: AWS-Cloud.png
+      SourceDir: Groups_04282023
+      SourceDark: AWS-Cloud_Dark.png
+      SourceDirDark: Groups_04282023/Dark
       Target: AWSCloud
-    - Color: "#3F8624"
+    - Color: "#7AA116"
       Label: "AWS IoT Greengrass Deployment"
-      Source: AWS-IoT-Greengrass-Deployment.svg
-      SourceDir: Groups_04302020
+      Source: AWS-IoT-Greengrass-Deployment.png
+      SourceDir: Groups_04282023
       Target: IoTGreengrassDeployment
-    - Color: "#3F8624"
+    - Color: "#7AA116"
       Label: "AWS IoT Greengrass"
-      Source: AWS-IoT-Greengrass.svg
-      SourceDir: Groups_04302020
+      Source: AWS-IoT-Greengrass.png
+      SourceDir: Groups_04282023
       Target: IoTGreengrass
-    - Color: "#CD2264"
+    - Color: "#E7157B"
       Label: "AWS Step Functions workflow"
-      Source: AWS-Step-Functions-workflow.svg
-      SourceDir: Groups_04302020
+      Source: AWS-Step-Functions-workflow.png
+      SourceDir: Groups_04282023
       Target: StepFunctionsWorkflow
-    - Color: "#D86613"
+    - Color: "#ED7100"
       Group:
         BorderStyle: dashed
-      Label: "\\\\nAuto Scaling group"
-      Source: Auto-Scaling-group.svg
-      SourceDir: Groups_04302020
+      Label: "\\\\n  Auto Scaling group"
+      Source: Auto-Scaling-group.png
+      SourceDir: Groups_04282023
       Target: AutoScalingGroup
-    - Color: "#5A6B86"
+    - Color: "#7D8998"
       Label: "Corporate data center"
-      Source: Corporate-data-center.svg
-      SourceDir: Groups_04302020
+      Source: Corporate-data-center.png
+      SourceDir: Groups_04282023
       Target: CorporateDataCenter
-    - Color: "#D86613"
+    - Color: "#ED7100"
       Label: "EC2 instance contents"
-      Source: EC2-instance-contents.svg
-      SourceDir: Groups_04302020
+      Source: EC2-instance-contents.png
+      SourceDir: Groups_04282023
       Target: EC2InstanceContents
-    - Color: "#D86613"
+    - Color: "#ED7100"
       Label: "Elastic Beanstalk container"
-      Source: Elastic-Beanstalk-container.svg
-      SourceDir: Groups_04302020
+      Source: Elastic-Beanstalk-container.png
+      SourceDir: Groups_04282023
       Target: ElasticBeanstalkContainer
-    - Color: "#5A6B86"
+    - Color: "#7D8998"
       Group:
         BorderStyle: dashed
       Label: "\\\\n  Generic group"
       Source: Generic-group.touch
-      SourceDir: Groups_04302020
+      SourceDir: Groups_04282023
       Target: Generic
-    - Color: "#000000"
-      Group:
-        BackgroundColor: "#EFF0F3"
-        BorderColor: "#Transparent"
+    - Color: "#7D8998"
       Label: "\\\\n  Generic group"
       Source: Generic-group-alt.touch
-      SourceDir: Groups_04302020
+      SourceDir: Groups_04282023
       Target: GenericAlt
-    - Color: "#3A47CB"
+    - Color: "#C925D1"
       Label: "Generic Blue group"
-      Source: Placeholder_Blue.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Blue.png
+      SourceDir: Groups_04282023
       Target: GenericBlue
-    - Color: "#3F8624"
+    - Color: "#7AA116"
       Label: "Generic Green group"
-      Source: Placeholder_Green.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Green.png
+      SourceDir: Groups_04282023
       Target: GenericGreen
-    - Color: "#D86613"
+    - Color: "#ED7100"
       Label: "Generic Orange group"
-      Source: Placeholder_Orange.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Orange.png
+      SourceDir: Groups_04282023
       Target: GenericOrange
-    - Color: "#CD2264"
+    - Color: "#E7157B"
       Label: "Generic Pink group"
-      Source: Placeholder_Pink.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Pink.png
+      SourceDir: Groups_04282023
       Target: GenericPink
-    - Color: "#693BC5"
+    - Color: "#8C4FFF"
       Label: "Generic Purple group"
-      Source: Placeholder_Purple.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Purple.png
+      SourceDir: Groups_04282023
       Target: GenericPurple
-    - Color: "#D6232C"
+    - Color: "#DD344C"
       Label: "Generic Red group"
-      Source: Placeholder_Red.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Red.png
+      SourceDir: Groups_04282023
       Target: GenericRed
-    - Color: "#1B7B67"
+    - Color: "#01A88D"
       Label: "Generic Turquoise group"
-      Source: Placeholder_Turquoise.svg
-      SourceDir: Groups_04302020
+      Source: Placeholder_Turquoise.png
+      SourceDir: Groups_04282023
       Target: GenericTurquoise
-    - Color: "#5B9CD5"
-      Group:
-        BackgroundColor: "#E6F2F8"
-        BorderColor: "#Transparent"
+    - Color: "#00A4A6"
       Label: "Private subnet"
-      Source: Private-subnet.svg
-      SourceDir: Groups_04302020
+      Source: Private-subnet.png
+      SourceDir: Groups_04282023
       Target: PrivateSubnet
-    - Color: "#1E8900"
-      Group:
-        BackgroundColor: "#E9F3E6"
-        BorderColor: "#Transparent"
+    - Color: "#7AA116"
       Label: "Public subnet"
-      Source: Public-subnet.svg
-      SourceDir: Groups_04302020
+      Source: Public-subnet.png
+      SourceDir: Groups_04282023
       Target: PublicSubnet
-    - Color: "#5B9CD5"
+    - Color: "#00A4A6"
       Group:
         BorderStyle: dotted
       Label: "Region"
-      Source: Region.svg
-      SourceDir: Groups_04302020
+      Source: Region.png
+      SourceDir: Groups_04282023
       Target: Region
-    - Color: "#DF3312"
+    - Color: "#DD344C"
       Label: "\\\\n  Security group"
       Source: Security-group.touch
-      SourceDir: Groups_04302020
+      SourceDir: Groups_04282023
       Target: SecurityGroup
-    - Color: "#5A6B86"
+    - Color: "#7D8998"
       Label: "Server contents"
-      Source: Server-contents.svg
-      SourceDir: Groups_04302020
+      Source: Server-contents.png
+      SourceDir: Groups_04282023
       Target: ServerContents
-    - Color: "#D86613"
+    - Color: "#ED7100"
       Label: "Spot Fleet"
-      Source: Spot-Fleet.svg
-      SourceDir: Groups_04302020
+      Source: Spot-Fleet.png
+      SourceDir: Groups_04282023
       Target: SpotFleet
-    - Color: "#693BC5"
+    - Color: "#8C4FFF"
       Label: "Virtual private cloud (VPC)"
-      Source: Virtual-Private-Network-VPC.svg
-      SourceDir: Groups_04302020
+      Source: Virtual-Private-Network-VPC.png
+      SourceDir: Groups_04282023
       Target: VPC
 """
 
@@ -364,7 +409,7 @@ SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-ic
 -->
 # AWS Symbols
 
-The table below lists all AWS symbols in the `dist/` directory, sorted by category.
+The main table lists all AWS symbols in the `dist/` directory, sorted by category.
 
 If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for AWS* dist](dist/) directory and reference it locally with PlantUML.
 
@@ -374,16 +419,29 @@ These colors are defined in `AWSCommon.puml`
 
 PUML Macro (Name) | Color | Categories
   ---  |  ---  | ---
-AWS_COLOR | #232F3E |
-AWS_BG_COLOR | #FFFFFF |
-AWS_BORDER_COLOR | #FF9900 |
-AWS_COLOR_BLUE | #3A47CB | Customer Enablement; Database; Developer Tools; Satellite
-AWS_COLOR_GREEN | #3F8624 | Cloud Financial Management; Internet of Things; Storage
-AWS_COLOR_ORANGE | #D86613 | Blockchain; Compute; Containers; Media Services; Quantum Technologies
-AWS_COLOR_PINK | #CD2264 | Application Integration; Management & Governance; VR & AR
-AWS_COLOR_PURPLE | #693BC5 | Analytics; Games; Networking & Content Delivery; Serverless
-AWS_COLOR_RED | #D6232C | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
-AWS_COLOR_TURQUOISE | #1B7B67 | End User Computing; Machine Learning; Migration & Transfer
+$AWS_BG_COLOR | #FFFFFF |
+$AWS_FG_COLOR | #000000 |
+$AWS_ARROW_COLOR | #000000 |
+$AWS_BORDER_COLOR | #FF9900 |
+$AWS_COLOR_SQUID | #232F3E |
+$AWS_COLOR_GRAY | #7D8998 |
+$AWS_COLOR_NEBULA | #C925D1 (blue replacement) | Customer Enablement; Database; Developer Tools; Satellite
+$AWS_COLOR_ENDOR | #7AA116 (green) | Cloud Financial Management; Internet of Things; Storage
+$AWS_COLOR_SMILE | #ED7100 (orange) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
+$AWS_COLOR_COSMOS | #E7157B (pink) | Application Integration; Management & Governance
+$AWS_COLOR_GALAXY | #8C4FFF (purple) | Analytics; Games; Networking & Content Delivery; Serverless
+$AWS_COLOR_MARS | #DD344C (red) | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+$AWS_COLOR_ORBIT | #01A88D (turquoise) | End User Computing; Machine Learning; Migration & Transfer
+
+An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
+
+When `!$AWS_DARK = true` precedes the `!include` of `AWSCommon.puml`, some colors are alternately defined:
+
+PUML Macro (Name) | Color
+  ---  |  --- 
+$AWS_BG_COLOR | #000000
+$AWS_FG_COLOR | #FFFFFF
+$AWS_ARROW_COLOR | #9BA7B6
 
 ## PNG images
 
@@ -414,6 +472,18 @@ parser.add_argument(
     help=(
         "Creates a YAML config template based on official source for " "customization"
     ),
+)
+parser.add_argument(
+    "--symbols-only",
+    action="store_true",
+    default=False,
+    help="Only generates the AWSSymbols.md and Structuriz theme files",
+)
+parser.add_argument(
+    "--create-color-json",
+    action="store_true",
+    default=False,
+    help="Prints AWS Colors JSON to stdout",
 )
 args = vars(parser.parse_args())
 config = {}
@@ -456,10 +526,10 @@ def verify_environment():
             "source/official must contain folders of AWS icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml-mit-1.2023.1.jar and verify java
+    # Start plantuml-mit-1.2023.7.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml-mit-1.2023.1.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2023.7.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
@@ -549,6 +619,12 @@ def create_config_template():
                 "Target": target,
                 "SourceDir": file_source_dir,
             }
+            if category == "General":
+                if target == "MarketplaceDark":
+                    continue # not needed as standalone, combined with MarketplaceLight
+                else:
+                    icon_entry["SourceDark"] = source_name.replace("Light", "Dark")
+                    icon_entry["SourceDirDark"] = file_source_dir.replace("Light", "Dark")
 
             # Check for duplicate entries then append to
             if target not in dupe_check:
@@ -618,7 +694,7 @@ def worker(icon):
         )
         sprite = icon.generate_puml_sprite(Path(f"../dist/{icon.category}"))
         # Recreate the images with transparency
-        icon.generate_image(
+        icon.generate_images(
             Path(f"../dist/{icon.category}"),
             color=True,
             max_target_size=64, # override to 64x64
@@ -638,65 +714,94 @@ def main():
 
     verify_environment()
 
-    # clear out dist/ directory
-    clean_dist()
-
-    # Copy source/*.puml files to dist/
-    copy_puml()
-
     # Build icons from files
     icons = []
     for dir in dir_list:
         for filename in build_file_list(dir["dir"], dir["dir_glob"]):
-            icons.append(
-                Icon(
+            icon = Icon(
                     posix_filename=filename,
                     config=config,
                     category_regex=dir["category_regex"],
                     filename_regex=dir["filename_regex"],
                     category_mappings=dir["category_mappings"],
                     filename_mappings=dir["filename_mappings"],
-                )
-            )
+                   )
+            if icon.category == "Uncategorized":
+                print(f"skipping Uncategorized {icon.source_name}")
+            else:
+                icons.append(icon)
 
-    for icon in icons:
-        if icon.category == "Uncategorized":
-            print(icon.source_name)
-
-    # Create category directories
     categories = sorted(set([icon.category for icon in icons]))
-    for i in categories:
-        Path(f"../dist/{i}").mkdir(exist_ok=True)
 
-    # Create PlantUML sprites
-    pool = Pool(processes=multiprocessing.cpu_count())
-    for i in icons:
-        #pass
-        pool.apply_async(worker, args=(i,)) 
-    pool.close()
-    pool.join()
+    if not (args["symbols_only"] or args["create_color_json"]):
+        # clear out dist/ directory
+        clean_dist()
 
-    # Generate "all.puml" files for each category
-    for i in categories:
-        create_category_all_file(Path(f"../dist/{i}"))
+        # Copy source/*.puml files to dist/
+        copy_puml()
+
+        # Create category directories
+        for i in categories:
+            Path(f"../dist/{i}").mkdir(exist_ok=True)
+
+        # Create PlantUML sprites
+        pool = Pool(processes=multiprocessing.cpu_count())
+        for i in icons:
+            #pass
+            pool.apply_async(worker, args=(i,))
+        pool.close()
+        pool.join()
+
+        # Generate "all.puml" files for each category
+        for i in categories:
+            create_category_all_file(Path(f"../dist/{i}"))
+
+    if args["create_color_json"]:
+        color_map = {}
+        for category in categories:
+            if category in ["GroupIcons", "Uncategorized", "Groups"]:
+                pass
+            else:
+                color_map[str(category).lower()] = COLOR_VALUES[CATEGORY_COLORS[category]]
+        print("!$AWS_CATEGORY_COLORS = " + json.dumps(color_map, indent=2))
+        sys.exit(0)
 
     # Create markdown sheet and place in dist
     sorted_icons = sorted(icons, key=lambda x: (x.category, x.target, x.skip_icon))
     markdown = MARKDOWN_PREFIX_TEMPLATE
+    structerizr = {
+        "name": "AWS Icons for PlantUML Structurizr theme",
+        "description": "This theme includes element styles with icons for each of the AWS services, based upon the AWS Architecture Icons (https://aws.amazon.com/architecture/icons/) and using tag names from AWS Icons for PlantUML (https://github.com/awslabs/aws-icons-for-plantuml).",
+        "elements": [
+            {
+                "tag": "Element",
+                "shape": "Box",
+                "color": "#000000",
+                "stroke": "#000000",
+                "strokeWidth": 2,
+                "background": "#ffffff",
+            }
+        ]
+    }
     for i in categories:
         category = i
-        if category == "GroupIcons":
+        if category == "GroupIcons" or category == "Uncategorized":
             pass
         else:
             if category == "Groups":
                 markdown += f"**{category}** | | | **{category}/all.puml**\n"
             else:
-                markdown += f"**{category}** | {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
+                markdown += f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
         for j in sorted_icons:
             if j.category == i:
                 cat = j.category
                 tgt = j.target
                 skip_icon = j.skip_icon
+                if j.filename_dark is not None:
+                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
+                    img = img + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
+                else:
+                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true)"
                 if cat == "GroupIcons":
                     pass
                 elif cat == "Groups":
@@ -704,16 +809,32 @@ def main():
                         markdown += f"{cat} | {tgt}Group  | - | {cat}/{tgt}.puml\n"
                     else:
                         markdown += (
-                            f"{cat} | {tgt}Group / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                            f"{cat} | {tgt}Group / ${tgt}IMG()  | {img} |"
                             f"{cat}/{tgt}.puml\n"
                         )
                 else:
                     markdown += (
-                        f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | ![{tgt}](dist/{cat}/{tgt}.png?raw=true) |"
+                        f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | {img} |"
                         f"{cat}/{tgt}.puml\n"
                     )
+
+                # Add element to Structurizr theme
+                element = {
+                    "tag": tgt,
+                    "stroke": j.color
+                }
+                if j.group_border_style == "dashed" or j.group_border_style == "dotted":
+                    # solid|dashed|dotted
+                    element["border"] = j.group_border_style
+
+                if not skip_icon:
+                    element["icon"] = f"{cat}/{tgt}.png"
+                structerizr["elements"].append(element)
+
     with open(Path("../AWSSymbols.md"), "w") as f:
         f.write(markdown)
+    with open(Path("../dist/aws-icons-structurizr-theme.json"), "w") as f:
+        f.write(json.dumps(structerizr, indent=2))
 
 
 if __name__ == "__main__":

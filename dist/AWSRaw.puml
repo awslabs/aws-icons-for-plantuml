@@ -4,8 +4,11 @@
 ' Colors
 ' ##################################
 !define AWS_COLOR #232F3E
+!$AWS_COLOR_SQUID = "#232F3E"
 !define AWS_BG_COLOR #FFFFFF
+!$AWS_BG_COLOR = "#000000"
 !define AWS_BORDER_COLOR #FF9900
+!$AWS_BORDER_COLOR = "#FF9900"
 !define AWS_SYMBOL_COLOR AWS_COLOR
 
 ' Styling
@@ -15,8 +18,8 @@
 
 !definelong AWSEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
-    BackgroundColor AWS_BG_COLOR
-    BorderColor AWS_BORDER_COLOR
+    BackgroundColor $AWS_BG_COLOR 
+    BorderColor $AWS_BORDER_COLOR
     
 }
 !enddefinelong

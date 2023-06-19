@@ -1,16 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $EC2Instance [64x64/16z] {
-xPV50S0W34Lnil_2zLiDr_ygdB1uM5DmARd3-8eW4WvZ-lcOp_M68J8kuuCIDNcWiyndZgITp-M1yPblv06_T7BXFlz2nCwFFNyT-KF_q3_q3_r3_z0_z0_z
-LwW_e-ld-lK_viVth_LP0G
+xPS34i0m4023m_zVN0zhQxV8A3fVU1OfBHWdfhkd9UFnyval5UgkIyQXwRu2EML-MCZ1yrE3hfclxPnEPnqhvdUalVDtdlyc-QD_z8_-qJ_wH__e7_tVK7_k
+hf_lh_-Plxz_lPyI
 }
 
 !function $EC2InstanceIMG($scale=1)
-!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaNJREFUeNrtmrFKw0AYgO+Sql18h6xCRp3t7qogVFAUXHwDwanQN+hewYKDD6GzHQOueQeXqiTnLwYa7amXUDXXfv+QpPxNe/m4//7vIEoRyx267o0P++0oC9X223WYqbuN60napLxrtOoCyMJ8U/gN36/NnpzSJuVdI1j2EgAAAABAG3RseeZcKbNSujWSQ6f4cCu5T6vwf+b1S5jpvktrdGqDeZhfyI8ef8Or8wPLP8/LmEM5ncylBIwO1n2b2q5jrixC8ehJN/nBk+6aYRGso8Jlt56dTyry7slkzEm3fWhLlfcOLZtbL0aYLTkM7fuY6d6BEphOi2AsJXD0xffOCqI+Kc69HAb2EtDjGQBFTVjFITlo70hN+QVAqzS+mlzSBQAAADwAD8AD8AA8gC4AAADgAXgAHoAH4AF0AQAAAA/AA/AAPAAPoAsAAAB4AB5ACeABeAAlUPWGqu/hLYQHaJM/+vZgrmN2mgFBFvSkdWQ+vSwtY+7PDUCxQJ5+LIXVXfmjYgBmEI+eb5qUR4UBAAAAAOA3RMi2dyi7dVPyBOEWr/USdMiPnQ6kAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaBJREFUeNrtmrFOwzAURa/TMjKg8gH5CDrTnRVmEEgsLO2KxITUtV26w85HwAwfkQ8AMTCixDgoQgm4khMVmtDzFlt6cmtf+b53LEUiNjtM04WvY8Wp0X4+71k97MyVtCkfGv2mAmTSnlPvppgfuSFpUz40ok23AAIgAALQBoNaXmZ0Kautr4VGsZVGxY/cW1utwmvNG71HVtOQ1hjUBrNIV+7wp2W5rCrz0Xcp1513e+654Ww1FrDa7tzdDtxzbRAazJrT41/Ey6RyOSiCwTegzNaeUhnX07UV5T1+nujYlyq/Hfo+tvb4SR2sAcNl5ym/HbBAqRg8pdKJ9zYZXeSKdswCj44NFl4LuLP+EKDwRLKksh64YdgxCyS7M93SBRAAAeAAOAAOgAPgALoAAiAAHAAHwAFwABxAF0AABIAD4AA4AA6AA+gCCIAAcAAcgAXgADgAC9RdUPc7vP/BAUZvnTtZ4J6DbkCU6TozSjv1sXSm6coEKArkecUKYx26P/rcQF5tB3PdtSkPCiMAAiAAAvwGCPneDmW2bkueIMLiA6oVVqgncLbsAAAAAElFTkSuQmCC{scale="+$scale+"}>"
 !endfunction
 
 AWSEntityColoring(EC2Instance)
-!define EC2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #D86613, EC2Instance, EC2Instance)
-!define EC2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #D86613, EC2Instance, EC2Instance)
-!define EC2InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #D86613, EC2Instance, EC2Instance)
-!define EC2InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #D86613, EC2Instance, EC2Instance)
+!define EC2Instance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #ED7100, EC2Instance, EC2Instance)
+!define EC2Instance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #ED7100, EC2Instance, EC2Instance)
+!define EC2InstanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #ED7100, EC2Instance, EC2Instance)
+!define EC2InstanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #ED7100, EC2Instance, EC2Instance)

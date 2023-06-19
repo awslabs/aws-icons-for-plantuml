@@ -2,7 +2,10 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/Groups/all.puml
 
@@ -41,7 +44,7 @@ SecurityGroupGroup(sg)  {
 AutoScalingGroupGroup(asg) {
   $filler()
 }
-VPCGroup(vpc) {
+VPCGroup(vpc, "Virtual private\l\tcloud (VPC)") {
   $filler()
 }
 PrivateSubnetGroup(private) {
@@ -53,10 +56,10 @@ PublicSubnetGroup(public) {
 ServerContentsGroup(server) {
   $filler()
 }
-CorporateDataCenterGroup(dc) {
+CorporateDataCenterGroup(dc, "Corporate\l\tdata center") {
   $filler()
 }
-EC2InstanceContentsGroup(instance) {
+EC2InstanceContentsGroup(instance, "EC2 instance\l\tcontents") {
   $filler()
 }
 SpotFleetGroup(sf) {
@@ -65,16 +68,16 @@ SpotFleetGroup(sf) {
 AWSAccountGroup(account) {
   $filler()
 }
-IoTGreengrassDeploymentGroup(iotgd) {
+IoTGreengrassDeploymentGroup(iotgd, "AWS IoT\l\tGreengrass\l\tDeployment") {
   $filler()
 }
-IoTGreengrassGroup(iotg) {
+IoTGreengrassGroup(iotg, "AWS IoT\l\tGreengrass") {
   $filler()
 }
-ElasticBeanstalkContainerGroup(beanstalk) {
+ElasticBeanstalkContainerGroup(beanstalk, "Elastic Beanstalk\l\tcontainer") {
   $filler()
 }
-StepFunctionsWorkflowGroup(sfw) {
+StepFunctionsWorkflowGroup(sfw, "AWS Step\l\tFunctions\l\tworkflow") {
   $filler()
 }
 GenericGroup(g1)  {

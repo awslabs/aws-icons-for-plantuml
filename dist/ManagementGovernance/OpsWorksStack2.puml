@@ -1,13 +1,13 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
-sprite $OpsWorksStack2 [64x64/16z] xTUr0O105C3GR_Z-y-BIut19_mQ8F9_5pdJYpUvqyBxV--pps56nUPSTnOSy7e_7u_5uF1wFnn__f-F_fWV_KTHtfl9y7G
+sprite $OpsWorksStack2 [64x64/16z] xTUt0O103CLGsv-y_xxaq9FXfFuD87i-ryvyudMpize7hsPtCVjSEoesBzkHFkRnU3mUZyVZyNWy_lW_xIxE-4Vps9dRytK
 
 !function $OpsWorksStack2IMG($scale=1)
-!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAR1JREFUeNrt279qwlAUx/FzbxIJ+A4OAaFTpWsX3TXp4BM4+zx9i1YqtntXEdyE0iFDX0JpSY5/IJDaSJ3v/f6WcMJdzufkZjsixO+YejFvZbdi5c7lhm2py/R78fEHYBaNejYw6+MZt2euP4XozXj3lku9WRtK1/3mTzOPAgmTqgqbz5hHo7Jyau6i/cNjcv6+GUDK94fd65NLAC9xGjUBePDJ//NTBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCxXNgZsoN5nLVdalRF768HUJ2qb1egLHRzXCr0oOdtYMrPqvi1OvscDxMrpuP0nTcmT7eLLyHklD2jTTA6lif8XAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAR5JREFUeNrt27FqwlAUxvFzQ5y62ogOHQTBqaWrS30VZ1+gWLoVqg/gW/gQriJ0K5QODi41iDgWGnJOo9ASlBS63vv/IOTeZPp+92SMCAk7rrxJk9G1mrv1ubCpLlq757czgDR5vFHTl2IZeX7oWRTl3UY6Xkm5rJp1Aih/SE0kbv9s4opBmRbDsfSs+F1xDU4fVgBE8+b2aeZT+019VDPnzgBCGPk/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBvqfhnSPsflw8XPhU1kd4/ANwwuE/AVF6LWxZA58/8K3v/Perym7Rx39Y8vvK5veXZqrWfrIWQY74BgW03lIubT5cAAAAASUVORK5CYII={scale="+$scale+"}>"
 !endfunction
 
 AWSEntityColoring(OpsWorksStack2)
-!define OpsWorksStack2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #CC2264, OpsWorksStack2, OpsWorksStack2)
-!define OpsWorksStack2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #CC2264, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #E7157B, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #E7157B, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #E7157B, OpsWorksStack2, OpsWorksStack2)
+!define OpsWorksStack2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #E7157B, OpsWorksStack2, OpsWorksStack2)

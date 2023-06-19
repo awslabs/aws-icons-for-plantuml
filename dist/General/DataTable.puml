@@ -1,0 +1,20 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DataTable [64x64/16z] {
+xT435WD154JHtsRjVxbXwoXswexnXl9UHDhUI1zptEnm0OkRsTO7suHb_PpG-xPSrYzY7zIplz7Z-XIRrDQR0iG5K9QjTFxzTuKiW7Zc-x6_okDx_lyNzlp_
+xFd_sT-ezGOtCxBduusyt8Te2m
+}
+
+!function $DataTableIMG($scale=1)
+!if %variable_exists("$AWS_DARK") && ($AWS_DARK == true)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVBJREFUeNrtlj1uAjEQhdcRx6BIQxsEUnoOEfqkzjW4wvbUwA1o6JFAyQkocgTSxnlIa8ksP2YQEsn6+6SRtZI963k7a7+iAAAAAIA8cfGD9/5JQ6/hNa+dc58HAqj4roaV4qHhAvwo+hLho6gV28mg+FBzJzy0TkwqFctEomfFu2H+vYn3W6QEWKhFZuey6Zf5jhIm59+b2n732iFrEAABECBvTt0CU52aljzW+XTAX++AhWKTWPuoGBjmxwyq9TvGxj2/VuOmeu+lxPtNClBeYIReooSlxQhp7SQIoHVvRkMTBFha1tb2yy+AAAiAAGcPQStX+wB/vYEY+huYDzrgRnka5wOs4AO4BRAAAfAB+AB8AD4AH8AtgAAIgA/AB+AD8AH4AG4BBECAf4GrHRLTTOoehkM77oBtRh9+e+wanCtGinbDi/+qagUAAADIm18NoqFyCq3XbwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!else
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAZVJREFUeNrtlkFKw0AUhueNvYTgwhLFjTRUcGckh7B7XfcaXqF719YbuCmNu4IlwZU0tAvBC+hO85yGqKOGZEaQYOb/ICSBN8n8fybzfiEAAAAAAICbkH7T3Q96skP9NgvOXni+vIuSHwZ0+0e+zOhWXcqWf/Qsk3ywnN/EQhe78Uq7DojPNRdaczplFSx4RCRnVU9hzg5J0NC0vmn0+eqUGiCZJot4elX1wJ1e8Mwkhqb1TaPP94tW17sADIABMMBtytsgibHnB9VtxbK+8TaIFWCxAhQTdaxqxm6rI7So1wmL8WsuLOd8WpxXxXtN0edbbQCxGC2SqC4InailH5rW63j+8aValLkBaRyd2ahXv1phAM3SeGo8Vp8vfgEYAANgQF0XsOux1jmA9U2Nf/nWgc1Y5IC/XAGtywG2IAegC8AAGIAcgByAHIAcgByALgADYAByAHIAcgByAHIAugAMgAH/Bfq2SYydEM1i8L5py8+gwE+ufHVd60cbTPc2r737x3Plz1bL5T+stYpEAAAAAAC4zRuSGsabBFeeIwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endif
+!endfunction
+
+AWSEntityColoring(DataTable)
+!define DataTable(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, DataTable, DataTable)
+!define DataTable(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DataTable, DataTable)
+!define DataTableParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, DataTable, DataTable)
+!define DataTableParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DataTable, DataTable)

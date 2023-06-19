@@ -1,6 +1,9 @@
 @startuml Serverless API
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSExperimental.puml
 !include AWSPuml/ApplicationIntegration/APIGateway.puml
@@ -14,9 +17,7 @@
 hide stereotype
 skinparam linetype ortho
 skinparam rectangle {
-    BackgroundColor AWS_BG_COLOR
     BorderColor transparent
-    Shadowing false
 }
 
 rectangle "$ClientIMG()\nClient" as client

@@ -1,16 +1,16 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 sprite $StorageGatewayNoncachedVolume [64x64/16z] {
-xTUt5KCn049HvR3_mcuj56di7tWjvmw0kKgUgUUbCfNELww1p_wqFFJ9d9OUvUNbvUNbvUNbvULjm2pbIyKAvMiVwPFzBl6-MP_kyJyD_Eu_GUYXxNyCpHfW
-pRl_wc1rc__wjpu
+xTUr5GD154FHWG_zT-nm69IOLY_LkGKeV4i9QUJcI3PunvfuIxVPr6kuJV_AqzFJqzFJqzFJqyVS5o7lGuRvCT1hh5FSXxh_zkD_clZZVweRVTVnF-PGbxtD
+ZlyLM3_Q2m
 }
 
 !function $StorageGatewayNoncachedVolumeIMG($scale=1)
-!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaBJREFUeNrt279Lw0AUB/D3rpHgH2AEF4WmUHBx0NEoOjmIf4KjS/8AyebQ/Ac663/g4qCgljo4OLm0oga6qnORis0zZBC3XH5Bz37fkGS4vNx9cu8uS4gQ0x2c1mA9cOdqItsRk23KoJTQaMx8fee/fqS1tVKTEXWFuckGvVXhpN+9+HJZY3yp0TR0dmv128pQLQ9C0fHk1zS34tOqbvsMADLo+uHZpAN4bXeXWR9A0ZQHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+a1hVJd5sN1YiJXtF89RYnd8ePj8aByAslyzkFM0TyfggPi2YVQKS/InilJOM540sgT8z4ULRTCu74fdJfNgxdg34fX/Cw47/NMh630bgDrELAAAAk/QdwEteUN/XUg1UXPpS2jKi+9ykMdFiRQCyxsSnmit/qeuo7nOrKQGhfrFdIOf9Iv2CY+uVMgPYVl40irbikcxm1mV663yFV3l67zTCo/eX+r1wjg8q4U9lqxtCIFLjB7miWRjIOtrzAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaVJREFUeNrt261Ow1AUB/Bz7trCHqCFYMCQLMEgwCJAIQhPQBYwmL3A5lCDBwAJK7wABgEJCAwChRkCs7l96GVhsB5KIATX2w+SXvY/phWnpz2/3o+aEiEmOzgqoXo667IlGyLBlDFNsXqVd76t73X6UblWZLGC3JNIiaOt8hMixEqa4dlSVKrSqFYydGxrPbelX1AeQ9jj/PetKuFLW9HN1wcQ1aqXu37eAWrn3hYJaQMomvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMB/DeuvCtfO3GVSvJ22zljR5dFO78k4AFF8zURe2jqFgPbDw5xZU0CIs2j+O2aMnAI/wXwVjLkS+82o4CQ8bBq7BvwaDYPD3U4r9hriewPsAgAAQI6+AzhYqPpuWSv1ItN/7Fj3vl9rDs9/LjzZAwivhl01NBe+bPcR4oZ+umQ9BeQ55TaQ9PqU96VmJiPAse210ehtXZiKsVsPqDvd7t8kefqXYu9gceg+SIIPKhYaOo59RwhEZHwATrJcB7AP/pQAAAAASUVORK5CYII={scale="+$scale+"}>"
 !endfunction
 
 AWSEntityColoring(StorageGatewayNoncachedVolume)
-!define StorageGatewayNoncachedVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #3F8624, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
-!define StorageGatewayNoncachedVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #3F8624, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
-!define StorageGatewayNoncachedVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #3F8624, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
-!define StorageGatewayNoncachedVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #3F8624, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
+!define StorageGatewayNoncachedVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #7AA116, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
+!define StorageGatewayNoncachedVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #7AA116, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
+!define StorageGatewayNoncachedVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #7AA116, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)
+!define StorageGatewayNoncachedVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #7AA116, StorageGatewayNoncachedVolume, StorageGatewayNoncachedVolume)

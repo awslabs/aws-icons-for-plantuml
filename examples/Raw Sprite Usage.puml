@@ -2,16 +2,19 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/master/LICENSE)
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/MachineLearning/SageMakerModel.puml
 !include AWSPuml/Robotics/RoboMaker.puml
 
-component "<color:green><$SageMakerModel></color>" as myMLModel 
-database "<color:#232F3E><$RoboMaker></color>" as myRoboticService
+component "<color:$AWSColor(MachineLearning)><$SageMakerModel></color>" as myMLModel 
+database "<color:$AWS_COLOR_GRAY><$RoboMaker></color>" as myRoboticService
 RoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
 
-rectangle "<color:AWS_SYMBOL_COLOR><$SageMakerModel></color>" as mySecondML
+rectangle "<color:$AWSColor(MachineLearning)><$SageMakerModel></color>" as mySecondML
 
 myMLModel --> myRoboticService
 mySecondFunction --> mySecondML

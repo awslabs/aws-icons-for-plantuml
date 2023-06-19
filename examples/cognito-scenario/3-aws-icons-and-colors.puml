@@ -3,8 +3,12 @@
 title Amazon S3 objects using IAM Temporary Credentials
 ' compare with https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/General/User.puml
 !include AWSPuml/General/SAMLtoken.puml
 !include AWSPuml/SecurityIdentityCompliance/Cognito.puml
@@ -18,36 +22,19 @@ title Amazon S3 objects using IAM Temporary Credentials
 hide footbox
 skinparam style strictuml
 
-skinparam participant {
-    BackgroundColor AWS_BG_COLOR
-    BorderColor AWS_BORDER_COLOR
-    RoundCorner 0
-}
-skinparam sequence { 
-    ArrowThickness 2
-    LifeLineBorderColor AWS_COLOR
+skinparam Sequence { 
     MessageAlignment left
 }
-skinparam note {
-  TextAlignment left
-  BorderColor AWS_COLOR
-  BackgroundColor %lighten(AWS_BORDER_COLOR, 75)
+skinparam Note {
+  TextAlignment left 
+  FontColor black
+  BackgroundColor %lighten($AWS_COLOR_SMILE, 90)
 }
 skinparam WrapWidth 300
 skinparam MaxMessageSize 600
 
 !procedure $AWSIcon($service, $line1, $line2="")
 participant "$AWSImg($service)\n<b>$line1</b>\n$line2"
-!endprocedure 
-
-skinparam note<<ReturnIcon>> {
-  BorderColor #Transparent
-  BackgroundColor #Transparent
-}
-!procedure $AWSReturnIcon($service)
-note<<ReturnIcon>> left
-   %call_user_func("$" + $service + "IMG", "0.5")
-end note
 !endprocedure 
 
 $AWSIcon(User, " ", "User") as user <<Tenant 1>>
@@ -60,36 +47,36 @@ $AWSIcon(IdentityAccessManagementPermissions, "Policy", "AWS IAM") as permission
 note over userpool
   1. Authenticate and get tokens
 end note
-user -> userpool++ AWS_COLOR_RED: InitiateAuth
+user -> userpool++ $AWSColor(SecurityIdentityCompliance): InitiateAuth
 return ID Token and Access Token
-note<<ReturnIcon>> left
+note<<AWSIcon>> left
   $SAMLtokenIMG("0.5") $SAMLtokenIMG("0.5")
 end note
 
 note over idpool
   2. Exchange tokens for AWS credentials
 end note
-user -> idpool++ AWS_COLOR_RED: GetCredentialsForIdentity
+user -> idpool++ $AWSColor(SecurityIdentityCompliance): GetCredentialsForIdentity
 idpool -> idpool: map to IAM Role
-$AWSReturnIcon(IdentityAccessManagementRole)
-idpool -> sts++ %lighten(AWS_COLOR_RED, 75): AssumeRoleWithWebIdentity(Role)
+$AWSIconLeft(IdentityAccessManagementRole)
+idpool -> sts++ $AWSColor(SecurityIdentityCompliance): AssumeRoleWithWebIdentity(Role)
 return temporary security credentials
-$AWSReturnIcon(IdentityAccessManagementTemporarySecurityCredential)
+$AWSIconLeft(IdentityAccessManagementTemporarySecurityCredential)
 return temporary security credentials
-$AWSReturnIcon(IdentityAccessManagementTemporarySecurityCredential)
+$AWSIconLeft(IdentityAccessManagementTemporarySecurityCredential)
 
 note over s3
   3. Access AWS services with credentials
 end note
-user -> s3++ AWS_COLOR_GREEN: GetObject
-s3 -> permissions++ %lighten(AWS_COLOR_RED, 75): check permissions
+user -> s3++ $AWSColor(Storage): GetObject
+s3 -> permissions++ $AWSColor(SecurityIdentityCompliance): check permissions
 alt no access
   permissions --> s3: ❌  Deny
   s3 --> user: error (AccessDenied)
 else access
   return ✅  Allow
   return S3 object
-  $AWSReturnIcon(SimpleStorageServiceObject)
+  $AWSIconLeft(SimpleStorageServiceObject)
 end
 
 @enduml
