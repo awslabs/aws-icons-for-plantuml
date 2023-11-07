@@ -128,7 +128,7 @@ workspace {
             autoLayout lr
         }
 
-        theme http://localhost:8000/aws-icons-structurizr-theme.json
+        theme https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v17.0/dist/aws-icons-structurizr-theme.json
     }
 
 }
