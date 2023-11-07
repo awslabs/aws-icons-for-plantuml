@@ -18,9 +18,8 @@ PUML Macro (Name) | Color | Categories
 $AWS_BG_COLOR | #FFFFFF |
 $AWS_FG_COLOR | #000000 |
 $AWS_ARROW_COLOR | #000000 |
-$AWS_BORDER_COLOR | #FF9900 |
 $AWS_COLOR_SQUID | #232F3E |
-$AWS_COLOR_GRAY | #7D8998 |
+$AWS_COLOR_GRAY | #7D8998 (borders) |
 $AWS_COLOR_NEBULA | #C925D1 (blue replacement) | Customer Enablement; Database; Developer Tools; Satellite
 $AWS_COLOR_ENDOR | #7AA116 (green) | Cloud Financial Management; Internet of Things; Storage
 $AWS_COLOR_SMILE | #ED7100 (orange) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
