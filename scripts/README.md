@@ -13,11 +13,11 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 - Install Python 3 and packages from the `requirements.txt` file.
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_04282023`, `Category-Icons_04282023`, and `Resource-Icons_04282023` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_10232023`, `Category-Icons_10232023`, and `Resource-Icons_10232023` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
-  ```
+  ```text
   aws-icons-for-plantuml/source
   ├── AWSC4Integration.puml
   ├── AWSCommon.puml
@@ -25,24 +25,24 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-    ├── Architecture-Service-Icons_04282023
+    ├── Architecture-Service-Icons_10232023
     │   ├── Arch_Analytics
     │   ├── Arch_App-Integration
     │   ├── Arch_Blockchain
         ...
-    ├── Category-Icons_04282023
+    ├── Category-Icons_10232023
     │   ├── Arch-Category_16
     │   ├── Arch-Category_32
     │   ├── Arch-Category_48
     │   └── Arch-Category_64
-    └── Resource-Icons_04282023
+    └── Resource-Icons_10232023
         ├── Res_Analytics
         ├── Res_Application-Integration
         ├── Res_Blockchain
         ...
   ```
 
-- The group icons (in the `source/unofficial/Groups_04282023` directory) are extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) page.  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
+- There is now a `Architecture-Group-Icons_10232023`, but the group icons (in the `source/unofficial/Groups_04282023` directory) were extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
 
 ## Configure to Build Icon Set
 
@@ -125,7 +125,7 @@ From a logical point of view, the following happens:
 
 ### Local Testing
 
-You can used the included PlantUML .jar to run a local server for rendering or download the latest [plantuml Files](https://sourceforge.net/projects/plantuml/files/) from SourceForge.  This project uses the MIT licensed distribution.
+You can used the included PlantUML .jar to run a local server for rendering or download the latest [plantuml release](https://github.com/plantuml/plantuml/releases) from GitHub.  This project uses the MIT licensed distribution.
 
 To check the version and license of PlantUML, create a diagram with the following syntax:
 
@@ -137,14 +137,14 @@ version
 
 Or execute the jar with the `-version` parameter:
 ```bash
-$ java -jar scripts/plantuml-mit-1.2023.7.jar -version
-PlantUML version 1.2023.7 (Fri May 12 12:23:42 CDT 2023)
+$ java -jar scripts/plantuml-mit-1.2023.12.jar -version
+PlantUML version 1.2023.12 (Fri Oct 20 08:49:54 CDT 2023)
 (MIT source distribution)
 ```
 
 To start the local render server:
 ```bash
-java -jar scripts/plantuml-mit-1.2023.7.jar -picoweb
+java -jar scripts/plantuml-mit-1.2023.12.jar -picoweb
 ```
 
 If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
@@ -163,6 +163,10 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running "PlantUML picoweb 8080", "http.server 8000", and http.server CORS 8000".
 
 ## Build Notes
+
+### Release 17.0-2023.10.23
+
+This release switched to using `plantuml-mit-1.2023.12.jar`.
 
 ### Release 16.0-2023.04.28
 
