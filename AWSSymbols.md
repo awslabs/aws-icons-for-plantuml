@@ -64,6 +64,7 @@ Analytics | EMR / EMRParticipant / $EMRIMG()  | ![EMR](dist/Analytics/EMR.png?ra
 Analytics | EMRCluster / EMRClusterParticipant / $EMRClusterIMG()  | ![EMRCluster](dist/Analytics/EMRCluster.png?raw=true) |Analytics/EMRCluster.puml
 Analytics | EMREMREngine / EMREMREngineParticipant / $EMREMREngineIMG()  | ![EMREMREngine](dist/Analytics/EMREMREngine.png?raw=true) |Analytics/EMREMREngine.puml
 Analytics | EMRHDFSCluster / EMRHDFSClusterParticipant / $EMRHDFSClusterIMG()  | ![EMRHDFSCluster](dist/Analytics/EMRHDFSCluster.png?raw=true) |Analytics/EMRHDFSCluster.puml
+Analytics | EntityResolution / EntityResolutionParticipant / $EntityResolutionIMG()  | ![EntityResolution](dist/Analytics/EntityResolution.png?raw=true) |Analytics/EntityResolution.puml
 Analytics | FinSpace / FinSpaceParticipant / $FinSpaceIMG()  | ![FinSpace](dist/Analytics/FinSpace.png?raw=true) |Analytics/FinSpace.puml
 Analytics | Glue / GlueParticipant / $GlueIMG()  | ![Glue](dist/Analytics/Glue.png?raw=true) |Analytics/Glue.puml
 Analytics | GlueAWSGlueforRay / GlueAWSGlueforRayParticipant / $GlueAWSGlueforRayIMG()  | ![GlueAWSGlueforRay](dist/Analytics/GlueAWSGlueforRay.png?raw=true) |Analytics/GlueAWSGlueforRay.puml
@@ -73,13 +74,13 @@ Analytics | GlueDataCatalog / GlueDataCatalogParticipant / $GlueDataCatalogIMG()
 Analytics | GlueDataQuality / GlueDataQualityParticipant / $GlueDataQualityIMG()  | ![GlueDataQuality](dist/Analytics/GlueDataQuality.png?raw=true) |Analytics/GlueDataQuality.puml
 Analytics | GlueElasticViews / GlueElasticViewsParticipant / $GlueElasticViewsIMG()  | ![GlueElasticViews](dist/Analytics/GlueElasticViews.png?raw=true) |Analytics/GlueElasticViews.puml
 Analytics | Kinesis / KinesisParticipant / $KinesisIMG()  | ![Kinesis](dist/Analytics/Kinesis.png?raw=true) |Analytics/Kinesis.puml
-Analytics | KinesisDataAnalytics / KinesisDataAnalyticsParticipant / $KinesisDataAnalyticsIMG()  | ![KinesisDataAnalytics](dist/Analytics/KinesisDataAnalytics.png?raw=true) |Analytics/KinesisDataAnalytics.puml
 Analytics | KinesisDataFirehose / KinesisDataFirehoseParticipant / $KinesisDataFirehoseIMG()  | ![KinesisDataFirehose](dist/Analytics/KinesisDataFirehose.png?raw=true) |Analytics/KinesisDataFirehose.puml
 Analytics | KinesisDataStreams / KinesisDataStreamsParticipant / $KinesisDataStreamsIMG()  | ![KinesisDataStreams](dist/Analytics/KinesisDataStreams.png?raw=true) |Analytics/KinesisDataStreams.puml
 Analytics | KinesisVideoStreams / KinesisVideoStreamsParticipant / $KinesisVideoStreamsIMG()  | ![KinesisVideoStreams](dist/Analytics/KinesisVideoStreams.png?raw=true) |Analytics/KinesisVideoStreams.puml
 Analytics | LakeFormation / LakeFormationParticipant / $LakeFormationIMG()  | ![LakeFormation](dist/Analytics/LakeFormation.png?raw=true) |Analytics/LakeFormation.puml
 Analytics | LakeFormationDataLake / LakeFormationDataLakeParticipant / $LakeFormationDataLakeIMG()  | ![LakeFormationDataLake](dist/Analytics/LakeFormationDataLake.png?raw=true) |Analytics/LakeFormationDataLake.puml
 Analytics | MSKAmazonMSKConnect / MSKAmazonMSKConnectParticipant / $MSKAmazonMSKConnectIMG()  | ![MSKAmazonMSKConnect](dist/Analytics/MSKAmazonMSKConnect.png?raw=true) |Analytics/MSKAmazonMSKConnect.puml
+Analytics | ManagedServiceforApacheFlink / ManagedServiceforApacheFlinkParticipant / $ManagedServiceforApacheFlinkIMG()  | ![ManagedServiceforApacheFlink](dist/Analytics/ManagedServiceforApacheFlink.png?raw=true) |Analytics/ManagedServiceforApacheFlink.puml
 Analytics | ManagedStreamingforApacheKafka / ManagedStreamingforApacheKafkaParticipant / $ManagedStreamingforApacheKafkaIMG()  | ![ManagedStreamingforApacheKafka](dist/Analytics/ManagedStreamingforApacheKafka.png?raw=true) |Analytics/ManagedStreamingforApacheKafka.puml
 Analytics | OpenSearchService / OpenSearchServiceParticipant / $OpenSearchServiceIMG()  | ![OpenSearchService](dist/Analytics/OpenSearchService.png?raw=true) |Analytics/OpenSearchService.puml
 Analytics | OpenSearchServiceClusterAdministratorNode / OpenSearchServiceClusterAdministratorNodeParticipant / $OpenSearchServiceClusterAdministratorNodeIMG()  | ![OpenSearchServiceClusterAdministratorNode](dist/Analytics/OpenSearchServiceClusterAdministratorNode.png?raw=true) |Analytics/OpenSearchServiceClusterAdministratorNode.puml
@@ -87,6 +88,7 @@ Analytics | OpenSearchServiceDataNode / OpenSearchServiceDataNodeParticipant / $
 Analytics | OpenSearchServiceIndex / OpenSearchServiceIndexParticipant / $OpenSearchServiceIndexIMG()  | ![OpenSearchServiceIndex](dist/Analytics/OpenSearchServiceIndex.png?raw=true) |Analytics/OpenSearchServiceIndex.puml
 Analytics | OpenSearchServiceObservability / OpenSearchServiceObservabilityParticipant / $OpenSearchServiceObservabilityIMG()  | ![OpenSearchServiceObservability](dist/Analytics/OpenSearchServiceObservability.png?raw=true) |Analytics/OpenSearchServiceObservability.puml
 Analytics | OpenSearchServiceOpenSearchDashboards / OpenSearchServiceOpenSearchDashboardsParticipant / $OpenSearchServiceOpenSearchDashboardsIMG()  | ![OpenSearchServiceOpenSearchDashboards](dist/Analytics/OpenSearchServiceOpenSearchDashboards.png?raw=true) |Analytics/OpenSearchServiceOpenSearchDashboards.puml
+Analytics | OpenSearchServiceOpenSearchIngestion / OpenSearchServiceOpenSearchIngestionParticipant / $OpenSearchServiceOpenSearchIngestionIMG()  | ![OpenSearchServiceOpenSearchIngestion](dist/Analytics/OpenSearchServiceOpenSearchIngestion.png?raw=true) |Analytics/OpenSearchServiceOpenSearchIngestion.puml
 Analytics | OpenSearchServiceTraces / OpenSearchServiceTracesParticipant / $OpenSearchServiceTracesIMG()  | ![OpenSearchServiceTraces](dist/Analytics/OpenSearchServiceTraces.png?raw=true) |Analytics/OpenSearchServiceTraces.puml
 Analytics | OpenSearchServiceUltraWarmNode / OpenSearchServiceUltraWarmNodeParticipant / $OpenSearchServiceUltraWarmNodeIMG()  | ![OpenSearchServiceUltraWarmNode](dist/Analytics/OpenSearchServiceUltraWarmNode.png?raw=true) |Analytics/OpenSearchServiceUltraWarmNode.puml
 Analytics | QuickSight / QuickSightParticipant / $QuickSightIMG()  | ![QuickSight](dist/Analytics/QuickSight.png?raw=true) |Analytics/QuickSight.puml
@@ -136,6 +138,7 @@ Blockchain | ManagedBlockchainBlockchain / ManagedBlockchainBlockchainParticipan
 Blockchain | QuantumLedgerDatabase / QuantumLedgerDatabaseParticipant / $QuantumLedgerDatabaseIMG()  | ![QuantumLedgerDatabase](dist/Blockchain/QuantumLedgerDatabase.png?raw=true) |Blockchain/QuantumLedgerDatabase.puml
 **BusinessApplications** | $AWSColor(BusinessApplications) / $AWS_COLOR_MARS | | **BusinessApplications/all.puml**
 BusinessApplications | AlexaForBusiness / AlexaForBusinessParticipant / $AlexaForBusinessIMG()  | ![AlexaForBusiness](dist/BusinessApplications/AlexaForBusiness.png?raw=true) |BusinessApplications/AlexaForBusiness.puml
+BusinessApplications | AppFabric / AppFabricParticipant / $AppFabricIMG()  | ![AppFabric](dist/BusinessApplications/AppFabric.png?raw=true) |BusinessApplications/AppFabric.puml
 BusinessApplications | BusinessApplications / BusinessApplicationsParticipant / $BusinessApplicationsIMG()  | ![BusinessApplications](dist/BusinessApplications/BusinessApplications.png?raw=true) |BusinessApplications/BusinessApplications.puml
 BusinessApplications | Chime / ChimeParticipant / $ChimeIMG()  | ![Chime](dist/BusinessApplications/Chime.png?raw=true) |BusinessApplications/Chime.puml
 BusinessApplications | ChimeSDK / ChimeSDKParticipant / $ChimeSDKIMG()  | ![ChimeSDK](dist/BusinessApplications/ChimeSDK.png?raw=true) |BusinessApplications/ChimeSDK.puml
@@ -438,7 +441,6 @@ InternetOfThings | IoTDeviceManagement / IoTDeviceManagementParticipant / $IoTDe
 InternetOfThings | IoTDeviceManagementFleetHub / IoTDeviceManagementFleetHubParticipant / $IoTDeviceManagementFleetHubIMG()  | ![IoTDeviceManagementFleetHub](dist/InternetOfThings/IoTDeviceManagementFleetHub.png?raw=true) |InternetOfThings/IoTDeviceManagementFleetHub.puml
 InternetOfThings | IoTDeviceTester / IoTDeviceTesterParticipant / $IoTDeviceTesterIMG()  | ![IoTDeviceTester](dist/InternetOfThings/IoTDeviceTester.png?raw=true) |InternetOfThings/IoTDeviceTester.puml
 InternetOfThings | IoTEcho / IoTEchoParticipant / $IoTEchoIMG()  | ![IoTEcho](dist/InternetOfThings/IoTEcho.png?raw=true) |InternetOfThings/IoTEcho.puml
-InternetOfThings | IoTEduKit / IoTEduKitParticipant / $IoTEduKitIMG()  | ![IoTEduKit](dist/InternetOfThings/IoTEduKit.png?raw=true) |InternetOfThings/IoTEduKit.puml
 InternetOfThings | IoTEvents / IoTEventsParticipant / $IoTEventsIMG()  | ![IoTEvents](dist/InternetOfThings/IoTEvents.png?raw=true) |InternetOfThings/IoTEvents.puml
 InternetOfThings | IoTExpressLink / IoTExpressLinkParticipant / $IoTExpressLinkIMG()  | ![IoTExpressLink](dist/InternetOfThings/IoTExpressLink.png?raw=true) |InternetOfThings/IoTExpressLink.puml
 InternetOfThings | IoTFireTV / IoTFireTVParticipant / $IoTFireTVIMG()  | ![IoTFireTV](dist/InternetOfThings/IoTFireTV.png?raw=true) |InternetOfThings/IoTFireTV.puml
@@ -511,6 +513,7 @@ InternetOfThings | IoTTwinMaker / IoTTwinMakerParticipant / $IoTTwinMakerIMG()  
 **MachineLearning** | $AWSColor(MachineLearning) / $AWS_COLOR_ORBIT | | **MachineLearning/all.puml**
 MachineLearning | ApacheMXNetonAWS / ApacheMXNetonAWSParticipant / $ApacheMXNetonAWSIMG()  | ![ApacheMXNetonAWS](dist/MachineLearning/ApacheMXNetonAWS.png?raw=true) |MachineLearning/ApacheMXNetonAWS.puml
 MachineLearning | AugmentedAIA2I / AugmentedAIA2IParticipant / $AugmentedAIA2IIMG()  | ![AugmentedAIA2I](dist/MachineLearning/AugmentedAIA2I.png?raw=true) |MachineLearning/AugmentedAIA2I.puml
+MachineLearning | Bedrock / BedrockParticipant / $BedrockIMG()  | ![Bedrock](dist/MachineLearning/Bedrock.png?raw=true) |MachineLearning/Bedrock.puml
 MachineLearning | CodeGuru / CodeGuruParticipant / $CodeGuruIMG()  | ![CodeGuru](dist/MachineLearning/CodeGuru.png?raw=true) |MachineLearning/CodeGuru.puml
 MachineLearning | CodeWhisperer / CodeWhispererParticipant / $CodeWhispererIMG()  | ![CodeWhisperer](dist/MachineLearning/CodeWhisperer.png?raw=true) |MachineLearning/CodeWhisperer.puml
 MachineLearning | Comprehend / ComprehendParticipant / $ComprehendIMG()  | ![Comprehend](dist/MachineLearning/Comprehend.png?raw=true) |MachineLearning/Comprehend.puml
@@ -525,7 +528,10 @@ MachineLearning | DevOpsGuruInsights / DevOpsGuruInsightsParticipant / $DevOpsGu
 MachineLearning | ElasticInference / ElasticInferenceParticipant / $ElasticInferenceIMG()  | ![ElasticInference](dist/MachineLearning/ElasticInference.png?raw=true) |MachineLearning/ElasticInference.puml
 MachineLearning | Forecast / ForecastParticipant / $ForecastIMG()  | ![Forecast](dist/MachineLearning/Forecast.png?raw=true) |MachineLearning/Forecast.puml
 MachineLearning | FraudDetector / FraudDetectorParticipant / $FraudDetectorIMG()  | ![FraudDetector](dist/MachineLearning/FraudDetector.png?raw=true) |MachineLearning/FraudDetector.puml
+MachineLearning | HealthImaging / HealthImagingParticipant / $HealthImagingIMG()  | ![HealthImaging](dist/MachineLearning/HealthImaging.png?raw=true) |MachineLearning/HealthImaging.puml
 MachineLearning | HealthLake / HealthLakeParticipant / $HealthLakeIMG()  | ![HealthLake](dist/MachineLearning/HealthLake.png?raw=true) |MachineLearning/HealthLake.puml
+MachineLearning | HealthOmics / HealthOmicsParticipant / $HealthOmicsIMG()  | ![HealthOmics](dist/MachineLearning/HealthOmics.png?raw=true) |MachineLearning/HealthOmics.puml
+MachineLearning | HealthScribe / HealthScribeParticipant / $HealthScribeIMG()  | ![HealthScribe](dist/MachineLearning/HealthScribe.png?raw=true) |MachineLearning/HealthScribe.puml
 MachineLearning | Kendra / KendraParticipant / $KendraIMG()  | ![Kendra](dist/MachineLearning/Kendra.png?raw=true) |MachineLearning/Kendra.puml
 MachineLearning | Lex / LexParticipant / $LexIMG()  | ![Lex](dist/MachineLearning/Lex.png?raw=true) |MachineLearning/Lex.puml
 MachineLearning | LookoutforEquipment / LookoutforEquipmentParticipant / $LookoutforEquipmentIMG()  | ![LookoutforEquipment](dist/MachineLearning/LookoutforEquipment.png?raw=true) |MachineLearning/LookoutforEquipment.puml
@@ -534,7 +540,6 @@ MachineLearning | LookoutforVision / LookoutforVisionParticipant / $LookoutforVi
 MachineLearning | MachineLearning / MachineLearningParticipant / $MachineLearningIMG()  | ![MachineLearning](dist/MachineLearning/MachineLearning.png?raw=true) |MachineLearning/MachineLearning.puml
 MachineLearning | Monitron / MonitronParticipant / $MonitronIMG()  | ![Monitron](dist/MachineLearning/Monitron.png?raw=true) |MachineLearning/Monitron.puml
 MachineLearning | Neuron / NeuronParticipant / $NeuronIMG()  | ![Neuron](dist/MachineLearning/Neuron.png?raw=true) |MachineLearning/Neuron.puml
-MachineLearning | Omics / OmicsParticipant / $OmicsIMG()  | ![Omics](dist/MachineLearning/Omics.png?raw=true) |MachineLearning/Omics.puml
 MachineLearning | Panorama / PanoramaParticipant / $PanoramaIMG()  | ![Panorama](dist/MachineLearning/Panorama.png?raw=true) |MachineLearning/Panorama.puml
 MachineLearning | Personalize / PersonalizeParticipant / $PersonalizeIMG()  | ![Personalize](dist/MachineLearning/Personalize.png?raw=true) |MachineLearning/Personalize.puml
 MachineLearning | Polly / PollyParticipant / $PollyIMG()  | ![Polly](dist/MachineLearning/Polly.png?raw=true) |MachineLearning/Polly.puml
@@ -645,6 +650,7 @@ MediaServices | ElementalDelta / ElementalDeltaParticipant / $ElementalDeltaIMG(
 MediaServices | ElementalLink / ElementalLinkParticipant / $ElementalLinkIMG()  | ![ElementalLink](dist/MediaServices/ElementalLink.png?raw=true) |MediaServices/ElementalLink.puml
 MediaServices | ElementalLive / ElementalLiveParticipant / $ElementalLiveIMG()  | ![ElementalLive](dist/MediaServices/ElementalLive.png?raw=true) |MediaServices/ElementalLive.puml
 MediaServices | ElementalMediaConnect / ElementalMediaConnectParticipant / $ElementalMediaConnectIMG()  | ![ElementalMediaConnect](dist/MediaServices/ElementalMediaConnect.png?raw=true) |MediaServices/ElementalMediaConnect.puml
+MediaServices | ElementalMediaConnectMediaConnectGateway / ElementalMediaConnectMediaConnectGatewayParticipant / $ElementalMediaConnectMediaConnectGatewayIMG()  | ![ElementalMediaConnectMediaConnectGateway](dist/MediaServices/ElementalMediaConnectMediaConnectGateway.png?raw=true) |MediaServices/ElementalMediaConnectMediaConnectGateway.puml
 MediaServices | ElementalMediaConvert / ElementalMediaConvertParticipant / $ElementalMediaConvertIMG()  | ![ElementalMediaConvert](dist/MediaServices/ElementalMediaConvert.png?raw=true) |MediaServices/ElementalMediaConvert.puml
 MediaServices | ElementalMediaLive / ElementalMediaLiveParticipant / $ElementalMediaLiveIMG()  | ![ElementalMediaLive](dist/MediaServices/ElementalMediaLive.png?raw=true) |MediaServices/ElementalMediaLive.puml
 MediaServices | ElementalMediaPackage / ElementalMediaPackageParticipant / $ElementalMediaPackageIMG()  | ![ElementalMediaPackage](dist/MediaServices/ElementalMediaPackage.png?raw=true) |MediaServices/ElementalMediaPackage.puml
@@ -807,6 +813,7 @@ SecurityIdentityCompliance | KeyManagementServiceExternalKeyStore / KeyManagemen
 SecurityIdentityCompliance | Macie / MacieParticipant / $MacieIMG()  | ![Macie](dist/SecurityIdentityCompliance/Macie.png?raw=true) |SecurityIdentityCompliance/Macie.puml
 SecurityIdentityCompliance | NetworkFirewall / NetworkFirewallParticipant / $NetworkFirewallIMG()  | ![NetworkFirewall](dist/SecurityIdentityCompliance/NetworkFirewall.png?raw=true) |SecurityIdentityCompliance/NetworkFirewall.puml
 SecurityIdentityCompliance | NetworkFirewallEndpoints / NetworkFirewallEndpointsParticipant / $NetworkFirewallEndpointsIMG()  | ![NetworkFirewallEndpoints](dist/SecurityIdentityCompliance/NetworkFirewallEndpoints.png?raw=true) |SecurityIdentityCompliance/NetworkFirewallEndpoints.puml
+SecurityIdentityCompliance | PaymentCryptography / PaymentCryptographyParticipant / $PaymentCryptographyIMG()  | ![PaymentCryptography](dist/SecurityIdentityCompliance/PaymentCryptography.png?raw=true) |SecurityIdentityCompliance/PaymentCryptography.puml
 SecurityIdentityCompliance | PrivateCertificateAuthority / PrivateCertificateAuthorityParticipant / $PrivateCertificateAuthorityIMG()  | ![PrivateCertificateAuthority](dist/SecurityIdentityCompliance/PrivateCertificateAuthority.png?raw=true) |SecurityIdentityCompliance/PrivateCertificateAuthority.puml
 SecurityIdentityCompliance | ResourceAccessManager / ResourceAccessManagerParticipant / $ResourceAccessManagerIMG()  | ![ResourceAccessManager](dist/SecurityIdentityCompliance/ResourceAccessManager.png?raw=true) |SecurityIdentityCompliance/ResourceAccessManager.puml
 SecurityIdentityCompliance | SecretsManager / SecretsManagerParticipant / $SecretsManagerIMG()  | ![SecretsManager](dist/SecurityIdentityCompliance/SecretsManager.png?raw=true) |SecurityIdentityCompliance/SecretsManager.puml
