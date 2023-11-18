@@ -822,6 +822,8 @@ def main():
                     "tag": tgt,
                     "stroke": j.color
                 }
+                if j.color == "$AWS_FG_COLOR":
+                     element["stroke"] = "#000000"
                 if j.group_border_style == "dashed" or j.group_border_style == "dotted":
                     # solid|dashed|dotted
                     element["border"] = j.group_border_style

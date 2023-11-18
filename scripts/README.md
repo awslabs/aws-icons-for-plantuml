@@ -166,7 +166,7 @@ If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running
 
 ### Release 17.0-2023.10.23
 
-This release switched to using `plantuml-mit-1.2023.12.jar`.
+This release switched to using `plantuml-mit-1.2023.12.jar` which had no noticeable changes.
 
 ### Release 16.0-2023.04.28
 
