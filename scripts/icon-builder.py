@@ -28,13 +28,13 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 16.0-2023.04.28 release
+# Source directories for the 17-2023.10.23 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_04282023/*48/*.png",
+        "dir_glob": "Category-Icons_10232023/*48/*.png",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
@@ -54,7 +54,7 @@ dir_list = [
     {
         "dir": "../source/official",
         # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
-        "dir_glob": "Architecture-Service-Icons_04282023/**/*48/*.png",
+        "dir_glob": "Architecture-Service-Icons_10232023/**/*48/*.png",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
@@ -73,7 +73,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_04282023/*/*.svg",
+        "dir_glob": "Resource-Icons_10232023/*/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -100,7 +100,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_04282023/Res_General-Icons/Res_48_Light/*.svg",
+        "dir_glob": "Resource-Icons_10232023/Res_General-Icons/Res_48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -226,7 +226,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 16.0-2023.04.28 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 17.0-2023.10.23 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -422,9 +422,8 @@ PUML Macro (Name) | Color | Categories
 $AWS_BG_COLOR | #FFFFFF |
 $AWS_FG_COLOR | #000000 |
 $AWS_ARROW_COLOR | #000000 |
-$AWS_BORDER_COLOR | #FF9900 |
 $AWS_COLOR_SQUID | #232F3E |
-$AWS_COLOR_GRAY | #7D8998 |
+$AWS_COLOR_GRAY | #7D8998 (borders) |
 $AWS_COLOR_NEBULA | #C925D1 (blue replacement) | Customer Enablement; Database; Developer Tools; Satellite
 $AWS_COLOR_ENDOR | #7AA116 (green) | Cloud Financial Management; Internet of Things; Storage
 $AWS_COLOR_SMILE | #ED7100 (orange) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
@@ -526,10 +525,10 @@ def verify_environment():
             "source/official must contain folders of AWS icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml-mit-1.2023.7.jar and verify java
+    # Start plantuml-mit-1.2023.12.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml-mit-1.2023.7.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2023.12.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
@@ -823,6 +822,8 @@ def main():
                     "tag": tgt,
                     "stroke": j.color
                 }
+                if j.color == "$AWS_FG_COLOR":
+                     element["stroke"] = "#000000"
                 if j.group_border_style == "dashed" or j.group_border_style == "dotted":
                     # solid|dashed|dotted
                     element["border"] = j.group_border_style

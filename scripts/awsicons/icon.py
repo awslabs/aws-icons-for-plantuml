@@ -239,7 +239,7 @@ class Icon:
 
     def generate_puml_sprite(self, path):
         """Generate puml sprite for service"""
-        # Start plantuml-mit-1.2023.7.jar and encode sprite from main PNG
+        # Start plantuml-mit-1.2023.12.jar and encode sprite from main PNG
         try:
             target = self.target
             result = subprocess.run(
@@ -247,7 +247,7 @@ class Icon:
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "./plantuml-mit-1.2023.7.jar",
+                    "./plantuml-mit-1.2023.12.jar",
                     "-encodesprite",
                     "16z",
                     f"{path}/{target}.png",
