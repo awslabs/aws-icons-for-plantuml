@@ -108,6 +108,7 @@ ApplicationIntegration | APIGatewayEndpoint / APIGatewayEndpointParticipant / $A
 ApplicationIntegration | AppFlow / AppFlowParticipant / $AppFlowIMG()  | ![AppFlow](dist/ApplicationIntegration/AppFlow.png?raw=true) |ApplicationIntegration/AppFlow.puml
 ApplicationIntegration | AppSync / AppSyncParticipant / $AppSyncIMG()  | ![AppSync](dist/ApplicationIntegration/AppSync.png?raw=true) |ApplicationIntegration/AppSync.puml
 ApplicationIntegration | ApplicationIntegration / ApplicationIntegrationParticipant / $ApplicationIntegrationIMG()  | ![ApplicationIntegration](dist/ApplicationIntegration/ApplicationIntegration.png?raw=true) |ApplicationIntegration/ApplicationIntegration.puml
+ApplicationIntegration | B2BDataInterchange / B2BDataInterchangeParticipant / $B2BDataInterchangeIMG()  | ![B2BDataInterchange](dist/ApplicationIntegration/B2BDataInterchange.png?raw=true) |ApplicationIntegration/B2BDataInterchange.puml
 ApplicationIntegration | ConsoleMobileApplication / ConsoleMobileApplicationParticipant / $ConsoleMobileApplicationIMG()  | ![ConsoleMobileApplication](dist/ApplicationIntegration/ConsoleMobileApplication.png?raw=true) |ApplicationIntegration/ConsoleMobileApplication.puml
 ApplicationIntegration | EventBridge / EventBridgeParticipant / $EventBridgeIMG()  | ![EventBridge](dist/ApplicationIntegration/EventBridge.png?raw=true) |ApplicationIntegration/EventBridge.puml
 ApplicationIntegration | EventBridgeCustomEventBus / EventBridgeCustomEventBusParticipant / $EventBridgeCustomEventBusIMG()  | ![EventBridgeCustomEventBus](dist/ApplicationIntegration/EventBridgeCustomEventBus.png?raw=true) |ApplicationIntegration/EventBridgeCustomEventBus.puml
@@ -241,6 +242,7 @@ CustomerEnablement | ProfessionalServices / ProfessionalServicesParticipant / $P
 CustomerEnablement | Support / SupportParticipant / $SupportIMG()  | ![Support](dist/CustomerEnablement/Support.png?raw=true) |CustomerEnablement/Support.puml
 CustomerEnablement | TrainingCertification / TrainingCertificationParticipant / $TrainingCertificationIMG()  | ![TrainingCertification](dist/CustomerEnablement/TrainingCertification.png?raw=true) |CustomerEnablement/TrainingCertification.puml
 CustomerEnablement | rePost / rePostParticipant / $rePostIMG()  | ![rePost](dist/CustomerEnablement/rePost.png?raw=true) |CustomerEnablement/rePost.puml
+CustomerEnablement | rePostPrivate / rePostPrivateParticipant / $rePostPrivateIMG()  | ![rePostPrivate](dist/CustomerEnablement/rePostPrivate.png?raw=true) |CustomerEnablement/rePostPrivate.puml
 **Database** | $AWSColor(Database) / $AWS_COLOR_NEBULA | | **Database/all.puml**
 Database | Aurora / AuroraParticipant / $AuroraIMG()  | ![Aurora](dist/Database/Aurora.png?raw=true) |Database/Aurora.puml
 Database | AuroraAmazonAuroraInstancealternate / AuroraAmazonAuroraInstancealternateParticipant / $AuroraAmazonAuroraInstancealternateIMG()  | ![AuroraAmazonAuroraInstancealternate](dist/Database/AuroraAmazonAuroraInstancealternate.png?raw=true) |Database/AuroraAmazonAuroraInstancealternate.puml
@@ -319,6 +321,7 @@ EndUserComputing | WorkSpacesFamily / WorkSpacesFamilyParticipant / $WorkSpacesF
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpaces / WorkSpacesFamilyAmazonWorkSpacesParticipant / $WorkSpacesFamilyAmazonWorkSpacesIMG()  | ![WorkSpacesFamilyAmazonWorkSpaces](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.puml
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpacesCore / WorkSpacesFamilyAmazonWorkSpacesCoreParticipant / $WorkSpacesFamilyAmazonWorkSpacesCoreIMG()  | ![WorkSpacesFamilyAmazonWorkSpacesCore](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.puml
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpacesWeb / WorkSpacesFamilyAmazonWorkSpacesWebParticipant / $WorkSpacesFamilyAmazonWorkSpacesWebIMG()  | ![WorkSpacesFamilyAmazonWorkSpacesWeb](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesWeb.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesWeb.puml
+EndUserComputing | WorkSpacesThinClient / WorkSpacesThinClientParticipant / $WorkSpacesThinClientIMG()  | ![WorkSpacesThinClient](dist/EndUserComputing/WorkSpacesThinClient.png?raw=true) |EndUserComputing/WorkSpacesThinClient.puml
 **FrontEndWebMobile** | $AWSColor(FrontEndWebMobile) / $AWS_COLOR_MARS | | **FrontEndWebMobile/all.puml**
 FrontEndWebMobile | Amplify / AmplifyParticipant / $AmplifyIMG()  | ![Amplify](dist/FrontEndWebMobile/Amplify.png?raw=true) |FrontEndWebMobile/Amplify.puml
 FrontEndWebMobile | AmplifyAWSAmplifyStudio / AmplifyAWSAmplifyStudioParticipant / $AmplifyAWSAmplifyStudioIMG()  | ![AmplifyAWSAmplifyStudio](dist/FrontEndWebMobile/AmplifyAWSAmplifyStudio.png?raw=true) |FrontEndWebMobile/AmplifyAWSAmplifyStudio.puml
@@ -543,6 +546,7 @@ MachineLearning | Neuron / NeuronParticipant / $NeuronIMG()  | ![Neuron](dist/Ma
 MachineLearning | Panorama / PanoramaParticipant / $PanoramaIMG()  | ![Panorama](dist/MachineLearning/Panorama.png?raw=true) |MachineLearning/Panorama.puml
 MachineLearning | Personalize / PersonalizeParticipant / $PersonalizeIMG()  | ![Personalize](dist/MachineLearning/Personalize.png?raw=true) |MachineLearning/Personalize.puml
 MachineLearning | Polly / PollyParticipant / $PollyIMG()  | ![Polly](dist/MachineLearning/Polly.png?raw=true) |MachineLearning/Polly.puml
+MachineLearning | Q / QParticipant / $QIMG()  | ![Q](dist/MachineLearning/Q.png?raw=true) |MachineLearning/Q.puml
 MachineLearning | Rekognition / RekognitionParticipant / $RekognitionIMG()  | ![Rekognition](dist/MachineLearning/Rekognition.png?raw=true) |MachineLearning/Rekognition.puml
 MachineLearning | RekognitionImage / RekognitionImageParticipant / $RekognitionImageIMG()  | ![RekognitionImage](dist/MachineLearning/RekognitionImage.png?raw=true) |MachineLearning/RekognitionImage.puml
 MachineLearning | RekognitionVideo / RekognitionVideoParticipant / $RekognitionVideoIMG()  | ![RekognitionVideo](dist/MachineLearning/RekognitionVideo.png?raw=true) |MachineLearning/RekognitionVideo.puml

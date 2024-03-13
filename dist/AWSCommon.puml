@@ -4,8 +4,10 @@
 ' Dark Mode support
 ' ##################################
 ' if $AWS_DARK is not defined, check $PUML_MODE
-!if (%not(%variable_exists("$AWS_DARK")) && (%variable_exists("$PUML_MODE") && $PUML_MODE == "dark"))
+!if (%not(%variable_exists("$AWS_DARK")))
+!if ((%variable_exists("$PUML_MODE") && $PUML_MODE == "dark"))
 !$AWS_DARK = true
+!endif
 !endif
 ' ensure $AWS_DARK is either true or false
 !if %not(%variable_exists("$AWS_DARK") && ($AWS_DARK == true))
