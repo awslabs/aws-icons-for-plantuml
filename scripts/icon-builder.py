@@ -28,13 +28,13 @@ from awsicons.icon import Icon
 # to parse and process. This addresses the changing nature of the assets package.
 
 
-# Source directories for the 17-2023.10.23 release
+# Source directories for the 19.0-2024.06.07 release
 dir_list = [
     {
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_01312024/*48/*.png",
+        "dir_glob": "Category-Icons_06072024/*48/*.png",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
@@ -54,7 +54,7 @@ dir_list = [
     {
         "dir": "../source/official",
         # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
-        "dir_glob": "Architecture-Service-Icons_01312024/**/*48/*.png",
+        "dir_glob": "Architecture-Service-Icons_06072024/**/*48/*.png",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
@@ -73,7 +73,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_01312024/*/*.svg",
+        "dir_glob": "Resource-Icons_06072024/*/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -100,7 +100,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_01312024/Res_General-Icons/Res_48_Light/*.svg",
+        "dir_glob": "Resource-Icons_06072024/Res_General-Icons/Res_48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -154,6 +154,7 @@ dir_list = [
 
 CATEGORY_COLORS = {
     "Analytics": "Galaxy",
+    "ArtificialIntelligence": "Orbit",
     "ApplicationIntegration": "Cosmos",
     "Blockchain": "Smile",
     "BusinessApplications": "Mars",
@@ -173,6 +174,7 @@ CATEGORY_COLORS = {
     "ManagementGovernance": "Cosmos",
     "MediaServices": "Smile",
     "MigrationTransfer": "Orbit",
+    "MigrationModernization": "Orbit",
     "NetworkingContentDelivery": "Galaxy",
     "QuantumTechnologies": "Smile",
     "Robotics": "Mars",
@@ -226,7 +228,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 18.0-2024.02.06 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 19.0-2024.06.07 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -525,10 +527,10 @@ def verify_environment():
             "source/official must contain folders of AWS icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml-mit-1.2024.3.jar and verify java
+    # Start plantuml-mit-1.2024.6.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml-mit-1.2024.3.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2024.6.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,

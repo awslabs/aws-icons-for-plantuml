@@ -137,14 +137,14 @@ version
 
 Or execute the jar with the `-version` parameter:
 ```bash
-$ java -jar scripts/plantuml-mit-1.2024.3.jar -version
+$ java -jar scripts/plantuml-mit-1.2024.6.jar -version
 PlantUML version 1.2024.3 (Thu Feb 15 13:40:05 CST 2024)
 (MIT source distribution)
 ```
 
-To start the local render server:
+To start the local render server.  You may need `-DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url="http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/"`, but consult [Deploy PlantUML safely](https://plantuml.com/security):
 ```bash
-java -jar scripts/plantuml-mit-1.2024.3.jar -picoweb
+java -jar scripts/plantuml-mit-1.2024.6.jar -picoweb
 ```
 
 If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
@@ -160,9 +160,13 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 !define AWSPuml http://localhost:8000
 ```
 
-If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running "PlantUML picoweb 8080", "http.server 8000", and http.server CORS 8000".
+If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running "PlantUML picoweb 8080" (using `ALLOWLIST`), "http.server 8000", and http.server CORS 8000".
 
 ## Build Notes
+
+### Release 19.0-2024.06.07
+
+This release switched to using `plantuml-mit-1.2024.6.jar` which had no noticeable changes.  Experimental `upgrade.py` that will replace renamed categories and icons in .puml files based on release notes **Breaking Changes** since Release 13.0.  Default is read-only mode (`python upgrade.py file.puml`) but supports `--overwrite` and filename wildcards (`python upgrade.py --overwrite "*.puml"`).  This upgrade script was used to update `examples` directory from `v18.0` to `v19.0`.
 
 ### Release 18.0-2024.02.06
 
