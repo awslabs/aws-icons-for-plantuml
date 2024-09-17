@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $APIGateway [64x64/16z] {
+xTO5ieOm303XJMd9tl_2pvN9xowBZF7XvhNrxDaSuQA8uPPb0rm4JEasTIXzG7TZ0vYiV4wmwI3c1cssz9e1aMlu10pLskk8DQUX0rtNUUqGtQg0bcxovWHX
+4SowsUk0shkTTniF-dTsRk-YX_Lvc9zfU_higXEJFVVm6NGLiXEviyyWKWTX1f6x-azkOsW6iPzFoFry1f4EsYVF_SvVCBGJkT_rIr3tktxV5_-p_NnZFiYR
+3_JyFz-_uw3lNq2CpNu4X5NZTmsLNoopPWsrBtMzXjBNkbv3vMjThw7mjQuRzV_hjVNisIi
+}
+
+!function $APIGatewayIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMISURBVHgB7Zs/aBRBFMa/FUFBSCqv0iKolTbGIminjWmOWGkabfxTprESUgZsFMEyYq9Wio1V7BQLrWInWNhpZSBFquQ+Xh432WySnd33dg9mfnDM3u7e7rxv3ns7b9grni1sbyNhjiFxsgBInCwAEicLgMTJAiBxjsOBs5eA+SXZfvUIrXi4Ku2XN8DPNZhjKsD0ALi5JAJYMTWQdn73ul9HQvz/CzNMBDhxCpgdAleGsr21Ka0lGyOjL96QD73hx0e5T1ta5wB2iG56bVGMZsfaun0Vb5fHIcB73Xsh925LYw+gO15dHLv7n3VxT7Ye0AM+vZTRv7MiocGwoBjvlpuHRbQAHGUaTncndMPPr30SVBUUgh7G0afxFOLBqty/SX6IEkAN1zinu383isVYaPCvb9If9ouC0BvZH/arLrUFYJxrRqab0x03DLNxEyg8Q2J9TbyBIly/L6LUzUO1BVDjGW9ecd4UzQ/sF/OC9rUO0U+BSTM+pEkecpkJhjx+L+3zW3u/x+zzJNcCcEZH9KDvR+3z9oRcDiNxsgCYAAYz6I3eBeD09e6oslt4gl7oTAAulswO9+/Xklan1TxnOmIm15ZOBKBBt1dknl4W4dyctCxieIzn8NyuRHAXQI3n/JyjzApO4eifHFWW/36Pj7GdGnQngrsAofFc1QkryPPB6JPwHBXBm06TYBFsc3RVgLDAKtAt7gKUR1Td+szuUpq6PSmHC3/rjbsAZbfWpKfJMMwJPHZQuHjhXgwRNejCnCxXcaQ5+eGKTljD61JW6BXedCIAoUGa7C5XjL4Ss55nQS8zQc0DXa0kH0ZnHhDy4Slwekae/33TWy0wCcaTXA4jcfKqMBInrwojcaIFsHgpwYsmfasdAlrM6EsJXi8tNSF8V4DE1BG1BSi/lDAJQlQZHtufqCTIC/PTtxAWhiuNngJ9CWFpuFJY/GWmqmO6XfWIi0Efg+E1LQxXTOYBVR5hja4UWXuY6USoLIQFmtG9QqvI/xpLnCwAEicLgMTJAiBxsgBInB0u6Dl5mu5b5wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(APIGateway)
+!define APIGateway(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #8C4FFF, APIGateway, APIGateway)
+!define APIGateway(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #8C4FFF, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #8C4FFF, APIGateway, APIGateway)
+!define APIGatewayParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #8C4FFF, APIGateway, APIGateway)

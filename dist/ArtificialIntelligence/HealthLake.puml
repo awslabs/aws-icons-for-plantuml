@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $HealthLake [64x64/16z] {
+xTC5aiCm50JHzbXIvluNNlWBMeoeAlmAWcrRv4lqy22ev5w9O4DLFwU-71lygVQj2q1n-DM70gtUntgVigzcUa6bLd_JlqjBVOQoqc-mJ_JIv-rXl4yVTzt8
+8lVrrG6WnEqtP-H1GWaESNixteqehuLGtDxUIMxXknHZI75x5xvhzt9aiFcLVlLTTiXU8Na8F7xlS_fUlD9q3w7TyytttqxG_pVsUcsDzZKJhoPwLwsURqxV
+jyT_yldlN_-or2V-4Mdmr0NQv-_q7XwU0G
+}
+
+!function $HealthLakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAD6ElEQVRoBe1ZXUgVQRR2r/dW/lFR11KupZcstEJByhLUTCHpB4qwHwLrwacejbA/iB56kFB66DEogqKIKLAig8C/BAtBpRQTMtFUMughxUi9dmxqHWZ35565M+12YeUis2fOnPnO952z7M5q2v26mGj+80Qz+AXsbgJOK+gq4CogyYBbQpIESi+PegW80hQsBnhadGhvSsbitcXo+djg/pbHFpPCZrEElnhir2wpqEzPTolLoLfyPKiHSwx62i10tJoOMjY9dedT7+V37T9Dc7SdPxZLANDXZG3jRyTJWPkwoGk3IIUEP9/TStv5Y7EEgHsId6D1ybPRj/y4mFkm1X2pwYbCg7CFUAJiTUwqRwl6Y4YkLFOcRjfGIpYAs/h/uBQrIQxiTpVjlov6qFQA7o+Y7ZFumFDgo1IBhXd3JHpwU6kAfleFnm4CaDJjNa1p9xH4aeglGEf7FDixPqvIH4DfruQ0DDKkj00JAP0Xs/MJppMZm5HgMG4qE/B5PG2lx16XHY+LZW9uQH9m0srP05PzMTGHA5mJXh8GHMZHZQLVm/IKVqfuXJVyLbeY3lun/0JPW+vESILXV5G2kXaQGbNU8WMxj1+0cyA+6VL2DrDMhEKnN+Q0jg02/H3gI/QPfP92b6jPq2nQBlBFtwbf08vJmBPf6PxnidWEqL0utxiofTj84dzvh+Gb2/esXbbwzqDTf7W3Y25+HhymZmcK/YFg4nLRLUz91ZRQ2Zp1UBWA7ExX8/X+zpfjQ/6lcbfzy+GOqdN/d6gPEEzOzjwaGQB7ZbqaVtb4h7tCT2bwHF/b9xZQAvfd5ZWQQ013S1VwK7TvqY4X8LZFKCxJTntVUmFKp6mRX1dqFICN27+O1vd3EgTjP6aq3jTCuDanCNBD9RP6yWzTl+HmiREylv8fRgGZDW7klUI3QwSafpmApmvF7kKmIayMZ7uaMxNXxHt9NP1WzhHbxRQgLcEvyoihwMII4ivrARncMmvdBGTYU7H2HzZxBPAi6K6oLyHnFTAeCQud/jqvgPFI2GjhVKOUAvgnpbDFrTvgY5KsnFeAwy5mSkoBnTbMTrSPse7pWRjrOoTtB2cUYKqcPmykx5AJ48nkCZdSChjDCVlMBaTPJ3UdOGGlEsBsQPY2xcqBhZ9ypoTw+MJ6SikgyasuIN2pYfubSckZBTidynQt48mgh0spBYzhkJawnYrXVkwB+JQLEOFzIhKoDW5iCsDRCHzKhY+h8sgYjvV+EI0spgB8RoeTH6KD6E5W/sYqN1qs1oJd7KWeE8ipKTEFnELJ2ddNgEOOLVOuArbQzNnEVYBDji1TrgK20MzZ5Bfv0xvHLXERqgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(HealthLake)
+!define HealthLake(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, HealthLake, HealthLake)
+!define HealthLake(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, HealthLake, HealthLake)
+!define HealthLakeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, HealthLake, HealthLake)
+!define HealthLakeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, HealthLake, HealthLake)

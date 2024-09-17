@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AppStream2 [64x64/16z] {
+xP77bS0m48LmdluhtWOui3df7ta6szByYAsjxUJjvc_qZGUsIOF9WUxt04mETBy7O7AW-pq0amFTxm6O7EX-3y3aGFTx02O4hdVvuthtvxVvExgz-Xi-y_kT
+1ry2pVT0zptGVG_8ivUm682PIrWDWB8S06Kv0Cfo09Jb02ZB0L2M0w0i1q1P3e2o701bEG3ASW2KvG0eom5mrWFAylPTsO_OsjeB
+}
+
+!function $AppStream2IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAB9UlEQVRoBe3avUoEMRAAYFf8QRAsRMRCQRAbCwtfQM9OtNPzHSx9DzvxGUSL66xE5cAHsLARweJAwZ/CSmzEkYUjnGxmJpkkE8hWy2WymW9m79gsV1WnR0M5H8M5J/+XewGk7mDpQOmAZwXKLeRZQO/p2XdgxF6Cy/Xd1uyCPSbo6MXL03a3Y1kC6cDk6JhlcoShrblF+ypIB3a6nauN9srU9P3nR+v67O37y3452dGf/UP0gkgHIGPIG7IHA0hmxifQK0YOQACQjXIDDlBuIAE0G6gAtQYGQKeBB1BoYAO0GVwAqgyOAD0Gd4ASgxdAg8EXMGDYm1+GT2IeyNMoMZX6eQmyP3m8I06RChPoQJ0KGOJnD0uLAaQqyr1O9gDkOyCyJ0b3tdyqm/FIB0T2xOi+1kyIe450wH9PTNnXcpM245EOKN9PggQBQIRyAw5QbiABBA0HS6uy72aoABEDZH+8tin7fokB8Dec9x7E35HxAJ6GEL8HbIA2gwtAlcERoMfgDlBi8AJoMPgCkhsEAGkNMoCEBjFAKoMkIIlBGPDfAJ/Qj4FnDcpEeQCsauZBScKM4c4NAjANZnLE876BEh8K0Dfcvj/fvPYoqZgxtYEytyr/WjQLl+A84C0UR1MAcercvErpQHNt4oyUDsSpc/Mq2XfgFwD+8yQDNgRQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(AppStream2)
+!define AppStream2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, AppStream2, AppStream2)
+!define AppStream2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, AppStream2, AppStream2)
+!define AppStream2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, AppStream2, AppStream2)
+!define AppStream2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, AppStream2, AppStream2)

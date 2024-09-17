@@ -3,10 +3,10 @@
 
 ' Sprites
 ' ##################################
-!function $DefineCalloutSprite($number, $textcolor, $fillcolor) 
+!function $DefineCalloutSprite($number, $textcolor, $fillcolor, $x) 
 !$header = 'sprite Callout_' + $number + ' <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">'
 !$circle = '<circle cx="9" cy="9" r="9" fill="' + $fillcolor + '" />'
-!$textnumber = '<text x="5" y="13" fill="' + $textcolor + '" font-size="12">' + $number + '</text></svg>'
+!$textnumber = '<text x="' + $x + '" y="13" fill="' + $textcolor + '" font-size="10">' + $number + '</text></svg>'
 !return $header + $circle + $textnumber
 !endfunction
 
@@ -14,8 +14,12 @@
 sprite Callout_SP <svg xmlns="http://www.w3.org/2000/svg" width="18" height="1"></svg>
 
 !$CalloutIndex = 1
-!while $CalloutIndex < 10
-  $DefineCalloutSprite($CalloutIndex, $AWS_BG_COLOR, $AWS_FG_COLOR)
+!while $CalloutIndex < 100
+  !if $CalloutIndex < 10
+    $DefineCalloutSprite($CalloutIndex, $AWS_BG_COLOR, $AWS_FG_COLOR, 6)
+  !else
+    $DefineCalloutSprite($CalloutIndex, $AWS_BG_COLOR, $AWS_FG_COLOR, 3)
+  !endif
   !$CalloutIndex = $CalloutIndex + 1
 !endwhile
 

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SageMakerNotebook [64x64/16z] {
+xPS53iKm34DR9uFxN_WpUkWnz0a7nIS5mcQ8fi7ZhTI8quztwqjUEnwXBxw1yUGkUvu_jhj4xNYK7-pvkObybl41mEsL0tYU1qr46dyyV_full_nuxre8klX
+J_VFzsTv4xuvVtp-jVsj43_e_aRu7pzUY1z7zRT-_7CA6V9uKYwTd-E79t_2-9J_HiR_i_bByNF__iRtJ-ltVm4QOHDS0G
+}
+
+!function $SageMakerNotebookIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApJJREFUeNrtWj1MFEEUfm92kVILsSQkNiQEExM7SQiJMdQWcEeioTDBwhjJegWJPYkKGkuLix2H2lJcAnpUWFiQYCPN0WmkoKI4Zefxzp+9Pzkvu4zu7LxX7N7dzm12vnvf++Z9cwASbgf2PLL06CKgP2btTGvhG7hVOGz/2O/9Dt5VJHpp6/ypT73lUwcAynUK+DF580wjbqef35QDgslTB0CTXodcYS31AJSejBJgVwCcp4DUgBOvrDwdAkXjEVJEY/T7NaprenX5fKPE0hbkgt3W7y9d5oGXzE9Bf4HpB2UDRTC8goSR7FGzpADcZ0lsek9zfNptTS26wUMe/gOmv+MnKQsFTj0DvDObFNYmGkip64Sw8OsXX+C0fx+NPfI/dSSmR0UIacN8AqgDMwBM3dvnYyWaUGlpEBuc34F8odL1zlOFKh+rogICgKsyaH8vkEwGM90M9RSrywGDdNe4CBBs6XwwkzoZVFqfI8Qh430+JlMaYzKoFVaZQhXjGYCwTamkwHRQ5AcrGs8AkUFTRfDV8wEIayMNGYRhwijvRmHl8WFLDbg5/zlbAITfxhHV6z+lGgIu1skXXesL6zL4QlaC2VoHeB8IabZtJXj7Zwa0maKsxZ0rSdsNkfz8Hh/3mmSwXgJ+ANCLKSqGiOtLYfsNkaQyaIkhIjIoNcCUDFoPQEIZFEMkhiHCAJd1LriTCQDiGCKcYhfSkwEJTdE4hggCfaT0UCChKRrDEKH/UANEBkUGHZdB2RuUGmBIBjNQBN3YGxQKnKyCyfYG7Qcg6V9khAICgOUUkL1BMUWlG5RuULpBkUGXa0AX1Nq7wZQGL9lH/mY0+vFu3NoNCgWcoID2yoTfJ6yd6dn+ryAh0RHHx+qs+lvPuwYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(SageMakerNotebook)
+!define SageMakerNotebook(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, SageMakerNotebook, SageMakerNotebook)
+!define SageMakerNotebook(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SageMakerNotebook, SageMakerNotebook)
+!define SageMakerNotebookParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, SageMakerNotebook, SageMakerNotebook)
+!define SageMakerNotebookParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SageMakerNotebook, SageMakerNotebook)

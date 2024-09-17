@@ -51,6 +51,11 @@
       "icon": "Analytics/DataExchangeforAPIs.png"
     },
     {
+      "tag": "DataFirehose",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/DataFirehose.png"
+    },
+    {
       "tag": "DataPipeline",
       "stroke": "#8C4FFF",
       "icon": "Analytics/DataPipeline.png"
@@ -144,11 +149,6 @@
       "tag": "Kinesis",
       "stroke": "#8C4FFF",
       "icon": "Analytics/Kinesis.png"
-    },
-    {
-      "tag": "KinesisDataFirehose",
-      "stroke": "#8C4FFF",
-      "icon": "Analytics/KinesisDataFirehose.png"
     },
     {
       "tag": "KinesisDataStreams",
@@ -286,16 +286,6 @@
       "icon": "Analytics/RedshiftStreamingIngestion.png"
     },
     {
-      "tag": "APIGateway",
-      "stroke": "#E7157B",
-      "icon": "ApplicationIntegration/APIGateway.png"
-    },
-    {
-      "tag": "APIGatewayEndpoint",
-      "stroke": "#E7157B",
-      "icon": "ApplicationIntegration/APIGatewayEndpoint.png"
-    },
-    {
       "tag": "AppFlow",
       "stroke": "#E7157B",
       "icon": "ApplicationIntegration/AppFlow.png"
@@ -314,11 +304,6 @@
       "tag": "B2BDataInterchange",
       "stroke": "#E7157B",
       "icon": "ApplicationIntegration/B2BDataInterchange.png"
-    },
-    {
-      "tag": "ConsoleMobileApplication",
-      "stroke": "#E7157B",
-      "icon": "ApplicationIntegration/ConsoleMobileApplication.png"
     },
     {
       "tag": "EventBridge",
@@ -431,6 +416,261 @@
       "icon": "ApplicationIntegration/StepFunctions.png"
     },
     {
+      "tag": "ApacheMXNetonAWS",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/ApacheMXNetonAWS.png"
+    },
+    {
+      "tag": "ArtificialIntelligence",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/ArtificialIntelligence.png"
+    },
+    {
+      "tag": "AugmentedAIA2I",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/AugmentedAIA2I.png"
+    },
+    {
+      "tag": "Bedrock",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Bedrock.png"
+    },
+    {
+      "tag": "CodeGuru",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/CodeGuru.png"
+    },
+    {
+      "tag": "CodeWhisperer",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/CodeWhisperer.png"
+    },
+    {
+      "tag": "Comprehend",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Comprehend.png"
+    },
+    {
+      "tag": "ComprehendMedical",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/ComprehendMedical.png"
+    },
+    {
+      "tag": "DeepComposer",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DeepComposer.png"
+    },
+    {
+      "tag": "DeepLearningAMIs",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DeepLearningAMIs.png"
+    },
+    {
+      "tag": "DeepLearningContainers",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DeepLearningContainers.png"
+    },
+    {
+      "tag": "DeepLens",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DeepLens.png"
+    },
+    {
+      "tag": "DeepRacer",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DeepRacer.png"
+    },
+    {
+      "tag": "DevOpsGuru",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DevOpsGuru.png"
+    },
+    {
+      "tag": "DevOpsGuruInsights",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/DevOpsGuruInsights.png"
+    },
+    {
+      "tag": "ElasticInference",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/ElasticInference.png"
+    },
+    {
+      "tag": "Forecast",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Forecast.png"
+    },
+    {
+      "tag": "FraudDetector",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/FraudDetector.png"
+    },
+    {
+      "tag": "HealthImaging",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/HealthImaging.png"
+    },
+    {
+      "tag": "HealthLake",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/HealthLake.png"
+    },
+    {
+      "tag": "HealthOmics",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/HealthOmics.png"
+    },
+    {
+      "tag": "HealthScribe",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/HealthScribe.png"
+    },
+    {
+      "tag": "Kendra",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Kendra.png"
+    },
+    {
+      "tag": "Lex",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Lex.png"
+    },
+    {
+      "tag": "LookoutforEquipment",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/LookoutforEquipment.png"
+    },
+    {
+      "tag": "LookoutforMetrics",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/LookoutforMetrics.png"
+    },
+    {
+      "tag": "LookoutforVision",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/LookoutforVision.png"
+    },
+    {
+      "tag": "Monitron",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Monitron.png"
+    },
+    {
+      "tag": "Neuron",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Neuron.png"
+    },
+    {
+      "tag": "Panorama",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Panorama.png"
+    },
+    {
+      "tag": "Personalize",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Personalize.png"
+    },
+    {
+      "tag": "Polly",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Polly.png"
+    },
+    {
+      "tag": "PyTorchonAWS",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/PyTorchonAWS.png"
+    },
+    {
+      "tag": "Q",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Q.png"
+    },
+    {
+      "tag": "Rekognition",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Rekognition.png"
+    },
+    {
+      "tag": "RekognitionImage",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/RekognitionImage.png"
+    },
+    {
+      "tag": "RekognitionVideo",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/RekognitionVideo.png"
+    },
+    {
+      "tag": "SageMaker",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMaker.png"
+    },
+    {
+      "tag": "SageMakerCanvas",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerCanvas.png"
+    },
+    {
+      "tag": "SageMakerGeospatialML",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerGeospatialML.png"
+    },
+    {
+      "tag": "SageMakerGroundTruth",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerGroundTruth.png"
+    },
+    {
+      "tag": "SageMakerModel",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerModel.png"
+    },
+    {
+      "tag": "SageMakerNotebook",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerNotebook.png"
+    },
+    {
+      "tag": "SageMakerShadowTesting",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerShadowTesting.png"
+    },
+    {
+      "tag": "SageMakerStudioLab",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerStudioLab.png"
+    },
+    {
+      "tag": "SageMakerTrain",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/SageMakerTrain.png"
+    },
+    {
+      "tag": "TensorFlowonAWS",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/TensorFlowonAWS.png"
+    },
+    {
+      "tag": "Textract",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Textract.png"
+    },
+    {
+      "tag": "TextractAnalyzeLending",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/TextractAnalyzeLending.png"
+    },
+    {
+      "tag": "Transcribe",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Transcribe.png"
+    },
+    {
+      "tag": "Translate",
+      "stroke": "#232F3E",
+      "icon": "ArtificialIntelligence/Translate.png"
+    },
+    {
       "tag": "Blockchain",
       "stroke": "#ED7100",
       "icon": "Blockchain/Blockchain.png"
@@ -479,11 +719,6 @@
       "tag": "Connect",
       "stroke": "#DD344C",
       "icon": "BusinessApplications/Connect.png"
-    },
-    {
-      "tag": "Honeycode",
-      "stroke": "#DD344C",
-      "icon": "BusinessApplications/Honeycode.png"
     },
     {
       "tag": "Pinpoint",
@@ -596,11 +831,6 @@
       "icon": "Compute/Compute.png"
     },
     {
-      "tag": "ComputeOptimizer",
-      "stroke": "#ED7100",
-      "icon": "Compute/ComputeOptimizer.png"
-    },
-    {
       "tag": "EC2",
       "stroke": "#ED7100",
       "icon": "Compute/EC2.png"
@@ -686,11 +916,6 @@
       "icon": "Compute/ElasticFabricAdapter.png"
     },
     {
-      "tag": "GenomicsCLI",
-      "stroke": "#ED7100",
-      "icon": "Compute/GenomicsCLI.png"
-    },
-    {
       "tag": "Lambda",
       "stroke": "#ED7100",
       "icon": "Compute/Lambda.png"
@@ -759,41 +984,6 @@
       "tag": "SimSpaceWeaver",
       "stroke": "#ED7100",
       "icon": "Compute/SimSpaceWeaver.png"
-    },
-    {
-      "tag": "ThinkboxDeadline",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxDeadline.png"
-    },
-    {
-      "tag": "ThinkboxFrost",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxFrost.png"
-    },
-    {
-      "tag": "ThinkboxKrakatoa",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxKrakatoa.png"
-    },
-    {
-      "tag": "ThinkboxSequoia",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxSequoia.png"
-    },
-    {
-      "tag": "ThinkboxStoke",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxStoke.png"
-    },
-    {
-      "tag": "ThinkboxXMesh",
-      "stroke": "#ED7100",
-      "icon": "Compute/ThinkboxXMesh.png"
-    },
-    {
-      "tag": "VMwareCloudonAWS",
-      "stroke": "#ED7100",
-      "icon": "Compute/VMwareCloudonAWS.png"
     },
     {
       "tag": "Wavelength",
@@ -1281,6 +1471,11 @@
       "icon": "DeveloperTools/DeveloperTools.png"
     },
     {
+      "tag": "FaultInjectionService",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/FaultInjectionService.png"
+    },
+    {
       "tag": "ToolsandSDKs",
       "stroke": "#C925D1",
       "icon": "DeveloperTools/ToolsandSDKs.png"
@@ -1291,19 +1486,14 @@
       "icon": "DeveloperTools/XRay.png"
     },
     {
-      "tag": "AppStream",
+      "tag": "AppStream2",
       "stroke": "#01A88D",
-      "icon": "EndUserComputing/AppStream.png"
+      "icon": "EndUserComputing/AppStream2.png"
     },
     {
       "tag": "EndUserComputing",
       "stroke": "#01A88D",
       "icon": "EndUserComputing/EndUserComputing.png"
-    },
-    {
-      "tag": "WorkLink",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkLink.png"
     },
     {
       "tag": "WorkSpacesFamily",
@@ -1321,9 +1511,9 @@
       "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.png"
     },
     {
-      "tag": "WorkSpacesFamilyAmazonWorkSpacesWeb",
+      "tag": "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser",
       "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesWeb.png"
+      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesSecureBrowser.png"
     },
     {
       "tag": "WorkSpacesThinClient",
@@ -2246,11 +2436,6 @@
       "icon": "InternetOfThings/IoTThingWindfarm.png"
     },
     {
-      "tag": "IoTThingsGraph",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTThingsGraph.png"
-    },
-    {
       "tag": "IoTTopic",
       "stroke": "#7AA116",
       "icon": "InternetOfThings/IoTTopic.png"
@@ -2259,261 +2444,6 @@
       "tag": "IoTTwinMaker",
       "stroke": "#7AA116",
       "icon": "InternetOfThings/IoTTwinMaker.png"
-    },
-    {
-      "tag": "ApacheMXNetonAWS",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/ApacheMXNetonAWS.png"
-    },
-    {
-      "tag": "AugmentedAIA2I",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/AugmentedAIA2I.png"
-    },
-    {
-      "tag": "Bedrock",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Bedrock.png"
-    },
-    {
-      "tag": "CodeGuru",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/CodeGuru.png"
-    },
-    {
-      "tag": "CodeWhisperer",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/CodeWhisperer.png"
-    },
-    {
-      "tag": "Comprehend",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Comprehend.png"
-    },
-    {
-      "tag": "ComprehendMedical",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/ComprehendMedical.png"
-    },
-    {
-      "tag": "DeepComposer",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DeepComposer.png"
-    },
-    {
-      "tag": "DeepLearningAMIs",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DeepLearningAMIs.png"
-    },
-    {
-      "tag": "DeepLearningContainers",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DeepLearningContainers.png"
-    },
-    {
-      "tag": "DeepLens",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DeepLens.png"
-    },
-    {
-      "tag": "DeepRacer",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DeepRacer.png"
-    },
-    {
-      "tag": "DevOpsGuru",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DevOpsGuru.png"
-    },
-    {
-      "tag": "DevOpsGuruInsights",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/DevOpsGuruInsights.png"
-    },
-    {
-      "tag": "ElasticInference",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/ElasticInference.png"
-    },
-    {
-      "tag": "Forecast",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Forecast.png"
-    },
-    {
-      "tag": "FraudDetector",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/FraudDetector.png"
-    },
-    {
-      "tag": "HealthImaging",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/HealthImaging.png"
-    },
-    {
-      "tag": "HealthLake",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/HealthLake.png"
-    },
-    {
-      "tag": "HealthOmics",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/HealthOmics.png"
-    },
-    {
-      "tag": "HealthScribe",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/HealthScribe.png"
-    },
-    {
-      "tag": "Kendra",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Kendra.png"
-    },
-    {
-      "tag": "Lex",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Lex.png"
-    },
-    {
-      "tag": "LookoutforEquipment",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/LookoutforEquipment.png"
-    },
-    {
-      "tag": "LookoutforMetrics",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/LookoutforMetrics.png"
-    },
-    {
-      "tag": "LookoutforVision",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/LookoutforVision.png"
-    },
-    {
-      "tag": "MachineLearning",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/MachineLearning.png"
-    },
-    {
-      "tag": "Monitron",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Monitron.png"
-    },
-    {
-      "tag": "Neuron",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Neuron.png"
-    },
-    {
-      "tag": "Panorama",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Panorama.png"
-    },
-    {
-      "tag": "Personalize",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Personalize.png"
-    },
-    {
-      "tag": "Polly",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Polly.png"
-    },
-    {
-      "tag": "Q",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Q.png"
-    },
-    {
-      "tag": "Rekognition",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Rekognition.png"
-    },
-    {
-      "tag": "RekognitionImage",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/RekognitionImage.png"
-    },
-    {
-      "tag": "RekognitionVideo",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/RekognitionVideo.png"
-    },
-    {
-      "tag": "SageMaker",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMaker.png"
-    },
-    {
-      "tag": "SageMakerCanvas",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerCanvas.png"
-    },
-    {
-      "tag": "SageMakerGeospatialML",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerGeospatialML.png"
-    },
-    {
-      "tag": "SageMakerGroundTruth",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerGroundTruth.png"
-    },
-    {
-      "tag": "SageMakerModel",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerModel.png"
-    },
-    {
-      "tag": "SageMakerNotebook",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerNotebook.png"
-    },
-    {
-      "tag": "SageMakerShadowTesting",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerShadowTesting.png"
-    },
-    {
-      "tag": "SageMakerStudioLab",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerStudioLab.png"
-    },
-    {
-      "tag": "SageMakerTrain",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/SageMakerTrain.png"
-    },
-    {
-      "tag": "TensorFlowonAWS",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/TensorFlowonAWS.png"
-    },
-    {
-      "tag": "Textract",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Textract.png"
-    },
-    {
-      "tag": "TextractAnalyzeLending",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/TextractAnalyzeLending.png"
-    },
-    {
-      "tag": "TorchServe",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/TorchServe.png"
-    },
-    {
-      "tag": "Transcribe",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Transcribe.png"
-    },
-    {
-      "tag": "Translate",
-      "stroke": "#01A88D",
-      "icon": "MachineLearning/Translate.png"
     },
     {
       "tag": "AppConfig",
@@ -2631,9 +2561,19 @@
       "icon": "ManagementGovernance/CloudWatchSynthetics.png"
     },
     {
+      "tag": "ComputeOptimizer",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ComputeOptimizer.png"
+    },
+    {
       "tag": "Config",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/Config.png"
+    },
+    {
+      "tag": "ConsoleMobileApplication",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/ConsoleMobileApplication.png"
     },
     {
       "tag": "ControlTower",
@@ -2644,11 +2584,6 @@
       "tag": "DistroforOpenTelemetry",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/DistroforOpenTelemetry.png"
-    },
-    {
-      "tag": "FaultInjectionSimulator",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/FaultInjectionSimulator.png"
     },
     {
       "tag": "HealthDashboard",
@@ -2916,6 +2851,11 @@
       "icon": "MediaServices/CloudDigitalInterface.png"
     },
     {
+      "tag": "DeadlineCloud",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/DeadlineCloud.png"
+    },
+    {
       "tag": "ElasticTranscoder",
       "stroke": "#ED7100",
       "icon": "MediaServices/ElasticTranscoder.png"
@@ -3006,129 +2946,164 @@
       "icon": "MediaServices/NimbleStudio.png"
     },
     {
+      "tag": "ThinkboxDeadline",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxDeadline.png"
+    },
+    {
+      "tag": "ThinkboxFrost",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxFrost.png"
+    },
+    {
+      "tag": "ThinkboxKrakatoa",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxKrakatoa.png"
+    },
+    {
+      "tag": "ThinkboxStoke",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxStoke.png"
+    },
+    {
+      "tag": "ThinkboxXMesh",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxXMesh.png"
+    },
+    {
       "tag": "ApplicationDiscoveryService",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/ApplicationDiscoveryService.png"
+      "icon": "MigrationModernization/ApplicationDiscoveryService.png"
     },
     {
       "tag": "ApplicationDiscoveryServiceAWSAgentlessCollector",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/ApplicationDiscoveryServiceAWSAgentlessCollector.png"
+      "icon": "MigrationModernization/ApplicationDiscoveryServiceAWSAgentlessCollector.png"
     },
     {
       "tag": "ApplicationDiscoveryServiceAWSDiscoveryAgent",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/ApplicationDiscoveryServiceAWSDiscoveryAgent.png"
+      "icon": "MigrationModernization/ApplicationDiscoveryServiceAWSDiscoveryAgent.png"
     },
     {
       "tag": "ApplicationDiscoveryServiceMigrationEvaluatorCollector",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/ApplicationDiscoveryServiceMigrationEvaluatorCollector.png"
+      "icon": "MigrationModernization/ApplicationDiscoveryServiceMigrationEvaluatorCollector.png"
     },
     {
       "tag": "ApplicationMigrationService",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/ApplicationMigrationService.png"
+      "icon": "MigrationModernization/ApplicationMigrationService.png"
     },
     {
       "tag": "DataSync",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/DataSync.png"
+      "icon": "MigrationModernization/DataSync.png"
     },
     {
       "tag": "DataSyncDiscovery",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/DataSyncDiscovery.png"
+      "icon": "MigrationModernization/DataSyncDiscovery.png"
     },
     {
       "tag": "DatasyncAgent",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/DatasyncAgent.png"
+      "icon": "MigrationModernization/DatasyncAgent.png"
     },
     {
       "tag": "MainframeModernization",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernization.png"
+      "icon": "MigrationModernization/MainframeModernization.png"
     },
     {
       "tag": "MainframeModernizationAnalyzer",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernizationAnalyzer.png"
+      "icon": "MigrationModernization/MainframeModernizationAnalyzer.png"
     },
     {
       "tag": "MainframeModernizationCompiler",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernizationCompiler.png"
+      "icon": "MigrationModernization/MainframeModernizationCompiler.png"
     },
     {
       "tag": "MainframeModernizationConverter",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernizationConverter.png"
+      "icon": "MigrationModernization/MainframeModernizationConverter.png"
     },
     {
       "tag": "MainframeModernizationDeveloper",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernizationDeveloper.png"
+      "icon": "MigrationModernization/MainframeModernizationDeveloper.png"
     },
     {
       "tag": "MainframeModernizationRuntime",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MainframeModernizationRuntime.png"
+      "icon": "MigrationModernization/MainframeModernizationRuntime.png"
     },
     {
       "tag": "MigrationEvaluator",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationEvaluator.png"
+      "icon": "MigrationModernization/MigrationEvaluator.png"
     },
     {
       "tag": "MigrationHub",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationHub.png"
+      "icon": "MigrationModernization/MigrationHub.png"
     },
     {
       "tag": "MigrationHubRefactorSpacesApplications",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationHubRefactorSpacesApplications.png"
+      "icon": "MigrationModernization/MigrationHubRefactorSpacesApplications.png"
     },
     {
       "tag": "MigrationHubRefactorSpacesEnvironments",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationHubRefactorSpacesEnvironments.png"
+      "icon": "MigrationModernization/MigrationHubRefactorSpacesEnvironments.png"
     },
     {
       "tag": "MigrationHubRefactorSpacesServices",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationHubRefactorSpacesServices.png"
+      "icon": "MigrationModernization/MigrationHubRefactorSpacesServices.png"
     },
     {
-      "tag": "MigrationTransfer",
+      "tag": "MigrationModernization",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/MigrationTransfer.png"
+      "icon": "MigrationModernization/MigrationModernization.png"
     },
     {
       "tag": "TransferFamily",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/TransferFamily.png"
+      "icon": "MigrationModernization/TransferFamily.png"
     },
     {
       "tag": "TransferFamilyAWSAS2",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/TransferFamilyAWSAS2.png"
+      "icon": "MigrationModernization/TransferFamilyAWSAS2.png"
     },
     {
       "tag": "TransferFamilyAWSFTP",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/TransferFamilyAWSFTP.png"
+      "icon": "MigrationModernization/TransferFamilyAWSFTP.png"
     },
     {
       "tag": "TransferFamilyAWSFTPS",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/TransferFamilyAWSFTPS.png"
+      "icon": "MigrationModernization/TransferFamilyAWSFTPS.png"
     },
     {
       "tag": "TransferFamilyAWSSFTP",
       "stroke": "#01A88D",
-      "icon": "MigrationTransfer/TransferFamilyAWSSFTP.png"
+      "icon": "MigrationModernization/TransferFamilyAWSSFTP.png"
+    },
+    {
+      "tag": "APIGateway",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/APIGateway.png"
+    },
+    {
+      "tag": "APIGatewayEndpoint",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/APIGatewayEndpoint.png"
     },
     {
       "tag": "AppMesh",
@@ -4071,19 +4046,24 @@
       "icon": "Storage/SimpleStorageService.png"
     },
     {
-      "tag": "SimpleStorageServiceBucket",
-      "stroke": "#7AA116",
-      "icon": "Storage/SimpleStorageServiceBucket.png"
-    },
-    {
       "tag": "SimpleStorageServiceBucketWithObjects",
       "stroke": "#7AA116",
       "icon": "Storage/SimpleStorageServiceBucketWithObjects.png"
     },
     {
+      "tag": "SimpleStorageServiceDirectorybucket",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceDirectorybucket.png"
+    },
+    {
       "tag": "SimpleStorageServiceGeneralAccessPoints",
       "stroke": "#7AA116",
       "icon": "Storage/SimpleStorageServiceGeneralAccessPoints.png"
+    },
+    {
+      "tag": "SimpleStorageServiceGeneralpurposebucket",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceGeneralpurposebucket.png"
     },
     {
       "tag": "SimpleStorageServiceGlacier",
@@ -4109,6 +4089,11 @@
       "tag": "SimpleStorageServiceS3BatchOperations",
       "stroke": "#7AA116",
       "icon": "Storage/SimpleStorageServiceS3BatchOperations.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3ExpressOneZone",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3ExpressOneZone.png"
     },
     {
       "tag": "SimpleStorageServiceS3GlacierDeepArchive",
@@ -4214,11 +4199,6 @@
       "tag": "Snowcone",
       "stroke": "#7AA116",
       "icon": "Storage/Snowcone.png"
-    },
-    {
-      "tag": "Snowmobile",
-      "stroke": "#7AA116",
-      "icon": "Storage/Snowmobile.png"
     },
     {
       "tag": "Storage",
