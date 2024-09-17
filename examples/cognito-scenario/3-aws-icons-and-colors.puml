@@ -6,7 +6,7 @@ title Amazon S3 objects using IAM Temporary Credentials
 ' Uncomment the line below for "dark mode" styling
 '!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v19.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSExperimental.puml
 !include AWSPuml/General/User.puml
@@ -16,7 +16,7 @@ title Amazon S3 objects using IAM Temporary Credentials
 !include AWSPuml/SecurityIdentityCompliance/IdentityAccessManagementAWSSTSAlternate.puml
 !include AWSPuml/SecurityIdentityCompliance/IdentityAccessManagementTemporarySecurityCredential.puml
 !include AWSPuml/SecurityIdentityCompliance/IdentityAccessManagementRole.puml
-!include AWSPuml/Storage/SimpleStorageServiceBucket.puml
+!include AWSPuml/Storage/SimpleStorageServiceGeneralpurposebucket.puml
 !include AWSPuml/Storage/SimpleStorageServiceObject.puml
 
 hide footbox
@@ -40,7 +40,7 @@ participant "$AWSImg($service)\n<b>$line1</b>\n$line2"
 $AWSIcon(User, " ", "User") as user <<Tenant 1>>
 $AWSIcon(Cognito, "User Pool", "Amazon Cognito") as userpool
 $AWSIcon(Cognito, "Identity Pool", "Amazon Cognito") as idpool
-$AWSIcon(SimpleStorageServiceBucket, "Bucket", "Amazon S3") as s3 <<Multi-Tenant>>
+$AWSIcon(SimpleStorageServiceGeneralpurposebucket, "Bucket", "Amazon S3") as s3 <<Multi-Tenant>>
 $AWSIcon(IdentityAccessManagementAWSSTSAlternate, " ", "AWS STS") as sts
 $AWSIcon(IdentityAccessManagementPermissions, "Policy", "AWS IAM") as permissions
 

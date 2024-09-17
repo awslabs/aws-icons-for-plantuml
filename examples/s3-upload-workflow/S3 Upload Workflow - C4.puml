@@ -6,7 +6,7 @@ title Amazon S3 video upload workflow
 '!$AWS_DARK = true
 
 !include <C4/C4_Container>
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v19.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSC4Integration.puml
 
@@ -32,7 +32,7 @@ AddElementTag("$icon", $fontColor=$AWS_FG_COLOR, $borderColor=$tagborder, $bgCol
 !endprocedure
 
 $AWSC4AddElementTag("General", "User")
-$AWSC4AddElementTag("Storage", "SimpleStorageServiceBucket")
+$AWSC4AddElementTag("Storage", "SimpleStorageServiceGeneralpurposebucket")
 $AWSC4AddElementTag("Compute", "LambdaLambdaFunction")
 $AWSC4AddElementTag("ApplicationIntegration", "StepFunctions")
 $AWSC4AddElementTag("MediaServices", "ElementalMediaConvert")
@@ -40,7 +40,7 @@ $AWSC4AddElementTag("MachineLearning", "Transcribe")
 
 Person(user, "User", $tags="User")
 System_Boundary(softwareSystem, "Video Transcription Service") {
-  Container(s3bucket, "Amazon S3 bucket", $tags="SimpleStorageServiceBucket")
+  Container(s3bucket, "Amazon S3 bucket", $tags="SimpleStorageServiceGeneralpurposebucket")
   Container(objectcreated, "ObjectCreated event handler", $tags="LambdaLambdaFunction")
   Container(stepfunction, "transcribe workflow", $tags="StepFunctions")
   Container(extractaudio, "extract audio", $tags="LambdaLambdaFunction")

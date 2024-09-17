@@ -3,10 +3,10 @@
 ' Uncomment the line below for "dark mode" styling
 '!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v19.0/dist
 !include AWSPuml/AWSCommon.puml
 !include AWSPuml/AWSExperimental.puml
-!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/NetworkingContentDelivery/APIGateway.puml
 !include AWSPuml/Compute/Lambda.puml
 !include AWSPuml/Database/DynamoDB.puml
 !include AWSPuml/General/Client.puml
@@ -28,13 +28,13 @@ AWSCloudGroup(cloud){
   rectangle "$SimpleStorageServiceIMG()\nAmazon S3" as s3
   rectangle "$LambdaIMG()\nAWS Lambda" as trigger
 
-  client -right-> api: <$Callout_1>\n
-  api -right-> lambda: <$Callout_2>\n
-  lambda -right-> dynamodb: <$Callout_3>\n
+  client -right-> api: \n<$Callout_1>
+  api -right-> lambda: \n<$Callout_2>
+  lambda -right-> dynamodb: \n<$Callout_3>
   api -[hidden]down-> s3
-  client -right-> s3: <$Callout_4>  
-  s3 -right-> trigger: <$Callout_5>\n
+  client -right-> s3: <$Callout_4><$Callout_SP>
+  s3 -right-> trigger: \n<$Callout_5>
   trigger -[hidden]up-> lambda
-  trigger -u-> dynamodb: <$Callout_6>\n
+  trigger -u-> dynamodb: <$Callout_6><$Callout_SP>\n
 }
 @enduml
