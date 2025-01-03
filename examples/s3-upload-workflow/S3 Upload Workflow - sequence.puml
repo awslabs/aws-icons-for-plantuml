@@ -19,7 +19,7 @@ title Amazon S3 video upload workflow
 !include AWSPuml/General/User.puml
 !include AWSPuml/MediaServices/ElementalMediaConvert.puml
 !include AWSPuml/ArtificialIntelligence/Transcribe.puml
-!include AWSPuml/Storage/SimpleStorageServiceGeneralpurposebucket.puml
+!include AWSPuml/Storage/SimpleStorageServiceBucket.puml
 
 'Hide the bottom boxes / Use filled triangle arrowheads
 hide footbox
@@ -36,7 +36,7 @@ end box
 participant "$ElementalMediaConvertIMG()\nAWS Elemental\nMediaConvert" as mediaconvert
 participant "$TranscribeIMG()\nAmazon Transcribe\n" as transcribe
 box object storage
-participant "$SimpleStorageServiceGeneralpurposebucketIMG()\nAmazon S3\nbucket" as s3
+participant "$SimpleStorageServiceBucketIMG()\nAmazon S3\nbucket" as s3
 participant "$LambdaLambdaFunctionIMG()\nObjectCreated\nevent handler" as e1
 end box
 
@@ -61,7 +61,7 @@ sfw <<- mediaconvert--:  task success
 
 sfw -> sfw2++ $AWSColor(Compute):
 sfw2 ->> transcribe: start transcription job
-activate transcribe $AWSColor(MachineLearning)
+activate transcribe $AWSColor(ArtificialIntelligence)
 sfw <-- sfw2--:
 transcribe -> s3: <$Callout_4> save transcript
 $AWSIconRight(Documents, transcript)

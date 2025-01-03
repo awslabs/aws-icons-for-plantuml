@@ -449,7 +449,7 @@ Beyond that, starting with the _v11.1_ release, all filenames now follow the ori
 
 The [examples](examples) folder includes additional examples, including some that map [AWS References Architectures](https://aws.amazon.com/architecture/#AWS_reference_architectures) from the [AWS Architecture Center](https://aws.amazon.com/architecture/).
 
-A set of diagrams in [examples/s3-upload-workflow](examples/s3-upload-workflow) show the architecture for an "S3 Upload Workflow" represented across multiple examples, including using [C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML).
+A set of diagrams in [examples/s3-upload-workflow](examples/s3-upload-workflow) show the architecture for an "S3 Upload Workflow" represented across multiple examples, including using [C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML), the [Structurizr DSL](https://github.com/structurizr/dsl) (using experimental `dist/aws-icons-structurizr-theme.json`), and Mermaid [Architecture](https://mermaid.js.org/syntax/architecture.html) diagrams (using experimental `dist/aws-icons-mermaid.json`).
 
 ## Customized Builds
 

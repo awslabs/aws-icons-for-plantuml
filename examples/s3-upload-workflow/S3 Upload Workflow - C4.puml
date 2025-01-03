@@ -32,7 +32,7 @@ AddElementTag("$icon", $fontColor=$AWS_FG_COLOR, $borderColor=$tagborder, $bgCol
 !endprocedure
 
 $AWSC4AddElementTag("General", "User")
-$AWSC4AddElementTag("Storage", "SimpleStorageServiceGeneralpurposebucket")
+$AWSC4AddElementTag("Storage", "SimpleStorageServiceBucket")
 $AWSC4AddElementTag("Compute", "LambdaLambdaFunction")
 $AWSC4AddElementTag("ApplicationIntegration", "StepFunctions")
 $AWSC4AddElementTag("MediaServices", "ElementalMediaConvert")
@@ -40,7 +40,7 @@ $AWSC4AddElementTag("MachineLearning", "Transcribe")
 
 Person(user, "User", $tags="User")
 System_Boundary(softwareSystem, "Video Transcription Service") {
-  Container(s3bucket, "Amazon S3 bucket", $tags="SimpleStorageServiceGeneralpurposebucket")
+  Container(s3bucket, "Amazon S3 bucket", $tags="SimpleStorageServiceBucket")
   Container(objectcreated, "ObjectCreated event handler", $tags="LambdaLambdaFunction")
   Container(stepfunction, "transcribe workflow", $tags="StepFunctions")
   Container(extractaudio, "extract audio", $tags="LambdaLambdaFunction")
