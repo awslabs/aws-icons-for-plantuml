@@ -45,16 +45,16 @@ def test_process_include_WorkSpaces_moved():
     assert result == after
 
 
-def test_process_line_SimpleStorageServiceBucketIMG_renamed():
-    before = """participant "$SimpleStorageServiceBucketIMG()\nAmazon S3\nbucket" as s3"""
-    after  = """participant "$SimpleStorageServiceGeneralpurposebucketIMG()\nAmazon S3\nbucket" as s3"""
+def test_process_line_KinesisDataFirehoseIMG_renamed():
+    before = """participant "$KinesisDataFirehoseIMG()\nData Firehose" as firehose"""
+    after  = """participant "$DataFirehoseIMG()\nData Firehose" as firehose"""
 
     result = process_line(before, SUPPORTED_VERSIONS)
     assert result == after
 
-def test_process_line_SimpleStorageServiceBucket_renamed():
-    before = """$AWSIcon(SimpleStorageServiceBucket, "Bucket", "Amazon S3") as s3 <<Multi-Tenant>>"""
-    after  = """$AWSIcon(SimpleStorageServiceGeneralpurposebucket, "Bucket", "Amazon S3") as s3 <<Multi-Tenant>>"""
+def test_process_line_KinesisDataFirehose_renamed():
+    before = """$AWSIcon(KinesisDataFirehose, "Bucket", "Data Firehose") as firehose"""
+    after  = """$AWSIcon(DataFirehose, "Bucket", "Data Firehose") as firehose"""
 
     result = process_line(before, SUPPORTED_VERSIONS)
     assert result == after

@@ -246,6 +246,12 @@ BREAKING_CHANGES["v19.0"] = {
             "ThinkboxSequoia"
         ]
     },
+    "Database": {
+        "REPLACED": {
+            "AuroraAmazonRDSInstanceAternate": "AuroraAmazonRDSInstanceAlternate",
+            "AuroraAmazonAuroraInstancealternate": "AuroraAmazonAuroraInstanceAlternate",
+        }
+    },
     "EndUserComputing": {
         "REPLACED": {
             "AppStream": "AppStream2",
@@ -278,9 +284,9 @@ BREAKING_CHANGES["v19.0"] = {
         "RENAMED": "MigrationModernization"
     },
     "Storage": {
-        "REPLACED": {
-            "SimpleStorageServiceBucket": "SimpleStorageServiceGeneralpurposebucket",
-        },
+        # "REPLACED": {
+        #     "SimpleStorageServiceBucket": "SimpleStorageServiceGeneralpurposebucket",
+        # },
         "REMOVED": [
             "Snowmobile"
         ]

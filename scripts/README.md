@@ -13,7 +13,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
 
 - Install Python 3 and packages from the `requirements.txt` file.
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_01312024`, `Category-Icons_01312024`, and `Resource-Icons_01312024` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_06072024`, `Category-Icons_06072024`, and `Resource-Icons_06072024` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
@@ -25,24 +25,24 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-    ├── Architecture-Service-Icons_01312024
+    ├── Architecture-Service-Icons_06072024
     │   ├── Arch_Analytics
     │   ├── Arch_App-Integration
     │   ├── Arch_Blockchain
         ...
-    ├── Category-Icons_01312024
+    ├── Category-Icons_06072024
     │   ├── Arch-Category_16
     │   ├── Arch-Category_32
     │   ├── Arch-Category_48
     │   └── Arch-Category_64
-    └── Resource-Icons_01312024
+    └── Resource-Icons_06072024
         ├── Res_Analytics
         ├── Res_Application-Integration
         ├── Res_Blockchain
         ...
   ```
 
-- There is now a `Architecture-Group-Icons_01312024`, but the group icons (in the `source/unofficial/Groups_04282023` directory) were extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
+- There is now a `Architecture-Group-Icons_06072024`, but the group icons (in the `source/unofficial/Groups_04282023` directory) were extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
 
 ## Configure to Build Icon Set
 
@@ -52,7 +52,7 @@ The included `config.yml` file is a curated file that maps specific file names t
 
 If you are using the `config.yml` file as the basis to incorporate a newer version of the AWS Architecture Icons, you may see an _Uncategorized_ category of mismatched entries.
 
-For general categories, the `Color` attribute is set to match the color represented for that category. For example, in the ApplicationIntegration category, the color for Amazon API Gateway is `#E7157B`, or Cosmos. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-sprite.
+For general categories, the `Color` attribute is set to match the color represented for that category. For example, in the NetworkingContentDelivery category, the color for Amazon API Gateway is `#8C4FFF`, or Galaxy. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-sprite.
 
 In the curated `config.yml` file, each AWS service is mapped to it's primary category. This then maps to the specific PUML file referenced by _Category/Filename.puml_, or are included in the _Category/all.puml_ file.
 
@@ -61,6 +61,7 @@ Next, install the python packages from the `requirements.txt` file. Depending up
 - [PyYAML](https://pyyaml.org/)
 - [lxml](https://lxml.de/)
 - [Pillow](https://python-pillow.org/)
+- [pytest](https://docs.pytest.org/en/stable/)
 
 For PIP users, simply run `pip3 install -r requirements.txt` in your environment.
 
@@ -136,13 +137,15 @@ version
 ```
 
 Or execute the jar with the `-version` parameter:
+
 ```bash
 $ java -jar scripts/plantuml-mit-1.2024.6.jar -version
-PlantUML version 1.2024.3 (Thu Feb 15 13:40:05 CST 2024)
+PlantUML version 1.2024.6 (Sat Jul 06 04:14:38 CDT 2024)
 (MIT source distribution)
 ```
 
 To start the local render server.  You may need `-DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url="http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/"`, but consult [Deploy PlantUML safely](https://plantuml.com/security):
+
 ```bash
 java -jar scripts/plantuml-mit-1.2024.6.jar -picoweb
 ```
@@ -154,7 +157,7 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
   "plantuml.server": "http://localhost:8080/plantuml/",
 ```
 
- To `!include` the local `.puml` files via URL: `cd dist` and `python3 -m http.server 8000` to run a local web server. Then, in your `.puml` file, redefine `AWSPuml` to use localhost.  Alternatively, you can `cd dist` and `python3 ../scripts/http_server_cors.py` for a server with CORS support (needed to test Structurizr theme).
+ To `!include` the local `.puml` files via URL: `cd dist` and `python3 -m http.server 8000` to run a local web server. Then, in your `.puml` file, redefine `AWSPuml` to use localhost.  Alternatively, you can `cd dist` and `python3 ../scripts/http_server_cors.py` for a server with CORS support (needed to test Structurizr theme or Mermaid icons).
 
 ```
 !define AWSPuml http://localhost:8000
@@ -166,7 +169,7 @@ If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running
 
 ### Release 19.0-2024.06.07
 
-This release switched to using `plantuml-mit-1.2024.6.jar` which had no noticeable changes.  Experimental `upgrade.py` that will replace renamed categories and icons in .puml files based on release notes **Breaking Changes** since Release 13.0.  Default is read-only mode (`python upgrade.py file.puml`) but supports `--overwrite` and filename wildcards (`python upgrade.py --overwrite "*.puml"`).  This upgrade script was used to update `examples` directory from `v18.0` to `v19.0`.
+This release switched to using `plantuml-mit-1.2024.6.jar` which had no noticeable changes.  Experimental `upgrade.py` that will replace renamed categories and icons in .puml files based on release notes **Breaking Changes** since Release 13.0.  Default is read-only mode (`python upgrade.py file.puml`) but supports `--overwrite` and filename wildcards (`python upgrade.py --overwrite "*.puml"`).  This upgrade script was used to update `examples` directory from `v18.0` to `v19.0` and tested via `pytest test_upgrade.py`.
 
 ### Release 18.0-2024.02.06
 

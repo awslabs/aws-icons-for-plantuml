@@ -13,20 +13,20 @@ If you want to reference and use these files without Internet connectivity, you 
 
 These colors are defined in `AWSCommon.puml`
 
-PUML Macro (Name) | Color | Categories
-  ---  |  ---  | ---
-$AWS_BG_COLOR | #FFFFFF |
-$AWS_FG_COLOR | #000000 |
-$AWS_ARROW_COLOR | #000000 |
-$AWS_COLOR_SQUID | #232F3E |
-$AWS_COLOR_GRAY | #7D8998 (borders) |
-$AWS_COLOR_NEBULA | #C925D1 (blue replacement) | Customer Enablement; Database; Developer Tools; Satellite
-$AWS_COLOR_ENDOR | #7AA116 (green) | Cloud Financial Management; Internet of Things; Storage
-$AWS_COLOR_SMILE | #ED7100 (orange) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
-$AWS_COLOR_COSMOS | #E7157B (pink) | Application Integration; Management & Governance
-$AWS_COLOR_GALAXY | #8C4FFF (purple) | Analytics; Games; Networking & Content Delivery; Serverless
-$AWS_COLOR_MARS | #DD344C (red) | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
-$AWS_COLOR_ORBIT | #01A88D (turquoise) | End User Computing; Machine Learning; Migration & Transfer
+PUML Macro (Name) | Color | | Categories
+  ---  |  ---  |  ---  |  ---
+$AWS_BG_COLOR | #FFFFFF | |
+$AWS_FG_COLOR | #000000 | |
+$AWS_ARROW_COLOR | #000000 | |
+$AWS_COLOR_SQUID | #232F3E | |
+$AWS_COLOR_GRAY | #7D8998 (borders) | |
+$AWS_COLOR_NEBULA | #C925D1 (blue replacement) | ![Nebula](dist/Groups/GenericBlue.png?raw=true) | Customer Enablement; Database; Developer Tools; Satellite
+$AWS_COLOR_ENDOR | #7AA116 (green) | ![Endor](dist/Groups/GenericGreen.png?raw=true) | Cloud Financial Management; Internet of Things; Storage
+$AWS_COLOR_SMILE | #ED7100 (orange) | ![Smile](dist/Groups/GenericOrange.png?raw=true) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
+$AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance
+$AWS_COLOR_GALAXY | #8C4FFF (purple) | ![Galaxy](dist/Groups/GenericPurple.png?raw=true) | Analytics; Games; Networking & Content Delivery; Serverless
+$AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+$AWS_COLOR_ORBIT | #01A88D (turquoise) | ![Orbit](dist/Groups/GenericTurquoise.png?raw=true) | Artificial Intelligence; End User Computing; Migration & Modernization
 
 An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
 
@@ -284,9 +284,9 @@ CustomerEnablement | rePost / rePostParticipant / $rePostIMG()  | ![rePost](dist
 CustomerEnablement | rePostPrivate / rePostPrivateParticipant / $rePostPrivateIMG()  | ![rePostPrivate](dist/CustomerEnablement/rePostPrivate.png?raw=true) |CustomerEnablement/rePostPrivate.puml
 **Database** | $AWSColor(Database) / $AWS_COLOR_NEBULA | | **Database/all.puml**
 Database | Aurora / AuroraParticipant / $AuroraIMG()  | ![Aurora](dist/Database/Aurora.png?raw=true) |Database/Aurora.puml
-Database | AuroraAmazonAuroraInstancealternate / AuroraAmazonAuroraInstancealternateParticipant / $AuroraAmazonAuroraInstancealternateIMG()  | ![AuroraAmazonAuroraInstancealternate](dist/Database/AuroraAmazonAuroraInstancealternate.png?raw=true) |Database/AuroraAmazonAuroraInstancealternate.puml
+Database | AuroraAmazonAuroraInstanceAlternate / AuroraAmazonAuroraInstanceAlternateParticipant / $AuroraAmazonAuroraInstanceAlternateIMG()  | ![AuroraAmazonAuroraInstanceAlternate](dist/Database/AuroraAmazonAuroraInstanceAlternate.png?raw=true) |Database/AuroraAmazonAuroraInstanceAlternate.puml
 Database | AuroraAmazonRDSInstance / AuroraAmazonRDSInstanceParticipant / $AuroraAmazonRDSInstanceIMG()  | ![AuroraAmazonRDSInstance](dist/Database/AuroraAmazonRDSInstance.png?raw=true) |Database/AuroraAmazonRDSInstance.puml
-Database | AuroraAmazonRDSInstanceAternate / AuroraAmazonRDSInstanceAternateParticipant / $AuroraAmazonRDSInstanceAternateIMG()  | ![AuroraAmazonRDSInstanceAternate](dist/Database/AuroraAmazonRDSInstanceAternate.png?raw=true) |Database/AuroraAmazonRDSInstanceAternate.puml
+Database | AuroraAmazonRDSInstanceAlternate / AuroraAmazonRDSInstanceAlternateParticipant / $AuroraAmazonRDSInstanceAlternateIMG()  | ![AuroraAmazonRDSInstanceAlternate](dist/Database/AuroraAmazonRDSInstanceAlternate.png?raw=true) |Database/AuroraAmazonRDSInstanceAlternate.puml
 Database | AuroraInstance / AuroraInstanceParticipant / $AuroraInstanceIMG()  | ![AuroraInstance](dist/Database/AuroraInstance.png?raw=true) |Database/AuroraInstance.puml
 Database | AuroraMariaDBInstance / AuroraMariaDBInstanceParticipant / $AuroraMariaDBInstanceIMG()  | ![AuroraMariaDBInstance](dist/Database/AuroraMariaDBInstance.png?raw=true) |Database/AuroraMariaDBInstance.puml
 Database | AuroraMariaDBInstanceAlternate / AuroraMariaDBInstanceAlternateParticipant / $AuroraMariaDBInstanceAlternateIMG()  | ![AuroraMariaDBInstanceAlternate](dist/Database/AuroraMariaDBInstanceAlternate.png?raw=true) |Database/AuroraMariaDBInstanceAlternate.puml
@@ -881,10 +881,10 @@ Storage | FileCacheOnpremisesNFSlinkeddatasets / FileCacheOnpremisesNFSlinkeddat
 Storage | FileCacheS3linkeddatasets / FileCacheS3linkeddatasetsParticipant / $FileCacheS3linkeddatasetsIMG()  | ![FileCacheS3linkeddatasets](dist/Storage/FileCacheS3linkeddatasets.png?raw=true) |Storage/FileCacheS3linkeddatasets.puml
 Storage | S3onOutposts / S3onOutpostsParticipant / $S3onOutpostsIMG()  | ![S3onOutposts](dist/Storage/S3onOutposts.png?raw=true) |Storage/S3onOutposts.puml
 Storage | SimpleStorageService / SimpleStorageServiceParticipant / $SimpleStorageServiceIMG()  | ![SimpleStorageService](dist/Storage/SimpleStorageService.png?raw=true) |Storage/SimpleStorageService.puml
+Storage | SimpleStorageServiceBucket / SimpleStorageServiceBucketParticipant / $SimpleStorageServiceBucketIMG()  | ![SimpleStorageServiceBucket](dist/Storage/SimpleStorageServiceBucket.png?raw=true) |Storage/SimpleStorageServiceBucket.puml
 Storage | SimpleStorageServiceBucketWithObjects / SimpleStorageServiceBucketWithObjectsParticipant / $SimpleStorageServiceBucketWithObjectsIMG()  | ![SimpleStorageServiceBucketWithObjects](dist/Storage/SimpleStorageServiceBucketWithObjects.png?raw=true) |Storage/SimpleStorageServiceBucketWithObjects.puml
-Storage | SimpleStorageServiceDirectorybucket / SimpleStorageServiceDirectorybucketParticipant / $SimpleStorageServiceDirectorybucketIMG()  | ![SimpleStorageServiceDirectorybucket](dist/Storage/SimpleStorageServiceDirectorybucket.png?raw=true) |Storage/SimpleStorageServiceDirectorybucket.puml
+Storage | SimpleStorageServiceDirectoryBucket / SimpleStorageServiceDirectoryBucketParticipant / $SimpleStorageServiceDirectoryBucketIMG()  | ![SimpleStorageServiceDirectoryBucket](dist/Storage/SimpleStorageServiceDirectoryBucket.png?raw=true) |Storage/SimpleStorageServiceDirectoryBucket.puml
 Storage | SimpleStorageServiceGeneralAccessPoints / SimpleStorageServiceGeneralAccessPointsParticipant / $SimpleStorageServiceGeneralAccessPointsIMG()  | ![SimpleStorageServiceGeneralAccessPoints](dist/Storage/SimpleStorageServiceGeneralAccessPoints.png?raw=true) |Storage/SimpleStorageServiceGeneralAccessPoints.puml
-Storage | SimpleStorageServiceGeneralpurposebucket / SimpleStorageServiceGeneralpurposebucketParticipant / $SimpleStorageServiceGeneralpurposebucketIMG()  | ![SimpleStorageServiceGeneralpurposebucket](dist/Storage/SimpleStorageServiceGeneralpurposebucket.png?raw=true) |Storage/SimpleStorageServiceGeneralpurposebucket.puml
 Storage | SimpleStorageServiceGlacier / SimpleStorageServiceGlacierParticipant / $SimpleStorageServiceGlacierIMG()  | ![SimpleStorageServiceGlacier](dist/Storage/SimpleStorageServiceGlacier.png?raw=true) |Storage/SimpleStorageServiceGlacier.puml
 Storage | SimpleStorageServiceGlacierArchive / SimpleStorageServiceGlacierArchiveParticipant / $SimpleStorageServiceGlacierArchiveIMG()  | ![SimpleStorageServiceGlacierArchive](dist/Storage/SimpleStorageServiceGlacierArchive.png?raw=true) |Storage/SimpleStorageServiceGlacierArchive.puml
 Storage | SimpleStorageServiceGlacierVault / SimpleStorageServiceGlacierVaultParticipant / $SimpleStorageServiceGlacierVaultIMG()  | ![SimpleStorageServiceGlacierVault](dist/Storage/SimpleStorageServiceGlacierVault.png?raw=true) |Storage/SimpleStorageServiceGlacierVault.puml

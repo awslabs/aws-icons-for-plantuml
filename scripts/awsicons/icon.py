@@ -31,6 +31,7 @@ class Icon:
         filename_regex=None,
         category_mappings=None,
         filename_mappings=None,
+        filename_mappings2=None,
     ):
 
         # Full path and filename as PosixPath
@@ -62,6 +63,7 @@ class Icon:
         self.filename_regex = filename_regex
         self.category_mappings = category_mappings
         self.filename_mappings = filename_mappings
+        self.filename_mappings2 = filename_mappings2
 
         # Regex patterns to use category and _make_name
 
@@ -274,6 +276,7 @@ class Icon:
                     try:
                         self.category = i
                         self.target = j["Target"]
+                        self.target2 = j["Target2"]
 
                         if "SourceDark" in j and "SourceDirDark" in j:
                             self.filename_dark = str(self.filename).replace(j["SourceDir"], j["SourceDirDark"]).replace(j["Source"], j["SourceDark"])
@@ -343,10 +346,11 @@ class Icon:
         # Entry not found, place into uncategorized
         try:
             self.category = "Uncategorized"
-            self.target = self._make_name(
+            (self.target, self.target2) = self._make_name(
                 regex=self.filename_regex,
                 filename=str(self.filename),
                 mappings=self.filename_mappings,
+                mappings2=self.filename_mappings2,
             )
             self.color = self.config["Defaults"]["Category"]["Color"]
         except KeyError as e:
@@ -356,7 +360,7 @@ class Icon:
             )
             sys.exit(1)
 
-    def _make_name(self, regex: str, filename: str, mappings: dict):
+    def _make_name(self, regex: str, filename: str, mappings: dict, mappings2: dict):
         """
         Create PUML friendly name short name without directory and strip leading Arch_ or Res_
         and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
@@ -368,6 +372,11 @@ class Icon:
         try:
             name = re.search(regex, filename).group(1)
             new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
+
+            # Mermaid names use iconify and match against lower kebob case
+            # var matchIconName = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+            # @iconify+utils@2.1.33/node_modules/@iconify/utils/lib/icon/name.mjs
+            new_name2 = name.lower().strip().replace("_", "-")
         except Exception as e:
             print(
                 f"Error in extracting icon name from filename. Regex: {regex}, source filename string: {filename}"
@@ -379,8 +388,14 @@ class Icon:
             except KeyError:
                 # no match found, existing filename is okay
                 pass
+        if mappings2:
+            try:
+                new_name2 = mappings2[new_name2]
+            except KeyError:
+                # no match found, existing filename is okay
+                pass
 
-        return new_name
+        return (new_name, new_name2)
 
     def _make_category(self, regex: str, filename: str, mappings: dict):
         """Create PUML friendly category with any remappings
