@@ -14,7 +14,7 @@ vZ-zwkZ_KFLnztwzfze-JU8nycVvVPVWND_D_n5wqvlU0m
 !endfunction
 
 AWSEntityColoring(LookoutforMetrics)
-!define LookoutforMetrics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, LookoutforMetrics, LookoutforMetrics)
-!define LookoutforMetrics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, LookoutforMetrics, LookoutforMetrics)
-!define LookoutforMetricsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, LookoutforMetrics, LookoutforMetrics)
-!define LookoutforMetricsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, LookoutforMetrics, LookoutforMetrics)
+!define LookoutforMetrics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, LookoutforMetrics, LookoutforMetrics)
+!define LookoutforMetrics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, LookoutforMetrics, LookoutforMetrics)
+!define LookoutforMetricsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, LookoutforMetrics, LookoutforMetrics)
+!define LookoutforMetricsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, LookoutforMetrics, LookoutforMetrics)

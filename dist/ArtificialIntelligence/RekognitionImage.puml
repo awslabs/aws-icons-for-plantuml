@@ -15,7 +15,7 @@ HCFJV5_jeus81JT8e_5GQyF7s-jCWvU6jpSCBzy0rVDqTfvOh_sJcItxkV1l0sEfjl-8mstWFuMWjRy7
 !endfunction
 
 AWSEntityColoring(RekognitionImage)
-!define RekognitionImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, RekognitionImage, RekognitionImage)
-!define RekognitionImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, RekognitionImage, RekognitionImage)
-!define RekognitionImageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, RekognitionImage, RekognitionImage)
-!define RekognitionImageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, RekognitionImage, RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, RekognitionImage, RekognitionImage)
+!define RekognitionImage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, RekognitionImage, RekognitionImage)
+!define RekognitionImageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, RekognitionImage, RekognitionImage)

@@ -11,7 +11,7 @@ X0FUBiy0NMvhtAuER1tkk5s4kHJSNTlv62FwV0g0jla1PZ2wFEIS2Nt-yDxc4wBDOmOWsSyVCS2w-o_n
 !endfunction
 
 AWSEntityColoring(Q)
-!define Q(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, Q, Q)
-!define Q(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, Q, Q)
-!define QParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, Q, Q)
-!define QParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, Q, Q)
+!define Q(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, Q, Q)
+!define Q(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, Q, Q)
+!define QParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, Q, Q)
+!define QParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, Q, Q)

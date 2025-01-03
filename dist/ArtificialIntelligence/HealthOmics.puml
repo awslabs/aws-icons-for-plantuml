@@ -11,7 +11,7 @@ sit7lFcUDc_UTqT-7soR_JT77c2gClnj_UVdLsjR_JSbHEtsYwO25c_jls-G_zR-_Ri6
 !endfunction
 
 AWSEntityColoring(HealthOmics)
-!define HealthOmics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, HealthOmics, HealthOmics)
-!define HealthOmics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, HealthOmics, HealthOmics)
-!define HealthOmicsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, HealthOmics, HealthOmics)
-!define HealthOmicsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, HealthOmics, HealthOmics)
+!define HealthOmics(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, HealthOmics, HealthOmics)
+!define HealthOmics(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, HealthOmics, HealthOmics)
+!define HealthOmicsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, HealthOmics, HealthOmics)
+!define HealthOmicsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, HealthOmics, HealthOmics)

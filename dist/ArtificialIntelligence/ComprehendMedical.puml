@@ -11,7 +11,7 @@ hqwIzbwYBVmKsSvBREl-y4_eHHz5hwgtsljJgtq_UUd_bO9bPxoivFDugRYlDVsUhgxk0G
 !endfunction
 
 AWSEntityColoring(ComprehendMedical)
-!define ComprehendMedical(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, ComprehendMedical, ComprehendMedical)
-!define ComprehendMedical(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ComprehendMedical, ComprehendMedical)
-!define ComprehendMedicalParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, ComprehendMedical, ComprehendMedical)
-!define ComprehendMedicalParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ComprehendMedical, ComprehendMedical)
+!define ComprehendMedical(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, ComprehendMedical, ComprehendMedical)
+!define ComprehendMedical(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, ComprehendMedical, ComprehendMedical)
+!define ComprehendMedicalParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, ComprehendMedical, ComprehendMedical)
+!define ComprehendMedicalParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, ComprehendMedical, ComprehendMedical)

@@ -13,7 +13,7 @@ tyXddnD0oCiE0CbKWGU__Z9cHFQV-PlvLtijae_0UFqBjaWWmpZU0pBx0--1dCz_4N20jpwhyXbGGBP-
 !endfunction
 
 AWSEntityColoring(TextractAnalyzeLending)
-!define TextractAnalyzeLending(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, TextractAnalyzeLending, TextractAnalyzeLending)
-!define TextractAnalyzeLending(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, TextractAnalyzeLending, TextractAnalyzeLending)
-!define TextractAnalyzeLendingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, TextractAnalyzeLending, TextractAnalyzeLending)
-!define TextractAnalyzeLendingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, TextractAnalyzeLending, TextractAnalyzeLending)
+!define TextractAnalyzeLending(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, TextractAnalyzeLending, TextractAnalyzeLending)
+!define TextractAnalyzeLending(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, TextractAnalyzeLending, TextractAnalyzeLending)
+!define TextractAnalyzeLendingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, TextractAnalyzeLending, TextractAnalyzeLending)
+!define TextractAnalyzeLendingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, TextractAnalyzeLending, TextractAnalyzeLending)

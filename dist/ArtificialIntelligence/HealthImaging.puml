@@ -11,7 +11,7 @@ vapt7SdwqF4DM-JlYY_m8tqVDl03G__4YhvoGYUU_m4NflkXihKVKU3g0phLVsZAYIdvnz4Fy2VSV_ly
 !endfunction
 
 AWSEntityColoring(HealthImaging)
-!define HealthImaging(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #232F3E, HealthImaging, HealthImaging)
-!define HealthImaging(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #232F3E, HealthImaging, HealthImaging)
-!define HealthImagingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #232F3E, HealthImaging, HealthImaging)
-!define HealthImagingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, HealthImaging, HealthImaging)
+!define HealthImaging(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, HealthImaging, HealthImaging)
+!define HealthImaging(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, HealthImaging, HealthImaging)
+!define HealthImagingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, HealthImaging, HealthImaging)
+!define HealthImagingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, HealthImaging, HealthImaging)
