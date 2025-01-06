@@ -21,6 +21,7 @@ Defaults:
   Group:
     BorderStyle: plain
     Label: "Generic group"
+    Alignment: left
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 Categories:
@@ -890,7 +891,7 @@ Categories:
     - Source: Res_Amazon-Elastic-Container-Service_CopiIoT-CLI_48.svg
       SourceDir: Resource-Icons_06072024/Res_Containers
       Target: ElasticContainerServiceCopilotCLI
-      Target2: elastic-container-service-copiiot-cli
+      Target2: elastic-container-service-copilot-cli
     - Source: Res_Amazon-Elastic-Container-Service_ECS-Service-Connect_48.svg
       SourceDir: Resource-Icons_06072024/Res_Containers
       Target: ElasticContainerServiceECSServiceConnect
@@ -1040,7 +1041,7 @@ Categories:
     - Source: Res_AWS-Database-Migration-Service_Database-migration-workflow-or-job_48.svg
       SourceDir: Resource-Icons_06072024/Res_Database
       Target: DatabaseMigrationServiceDatabasemigrationworkflowjob
-      Target2: database-migration-service-database-migration-workflow-or-job
+      Target2: database-migration-service-database-migration-workflow-job
     - Source: Arch_Amazon-DocumentDB_48.png
       SourceDir: Architecture-Service-Icons_06072024/Arch_Database/48
       Target: DocumentDB
@@ -1519,7 +1520,7 @@ Categories:
       SourceDir: Architecture-Service-Icons_06072024/Arch_General-Icons/48
       SourceDirDark: Architecture-Service-Icons_06072024/Arch_General-Icons/48
       Target: Marketplace
-      Target2: marketplace-light
+      Target2: marketplace
     - Source: Res_Metrics_48_Light.svg
       SourceDark: Res_Metrics_48_Dark.svg
       SourceDir: Resource-Icons_06072024/Res_General-Icons/Res_48_Light
@@ -1615,7 +1616,7 @@ Categories:
       SourceDir: Resource-Icons_06072024/Res_General-Icons/Res_48_Light
       SourceDirDark: Resource-Icons_06072024/Res_General-Icons/Res_48_Dark
       Target: Traditionalserver
-      Target2: server
+      Target2: traditional-server
     - Source: Res_User_48_Light.svg
       SourceDark: Res_User_48_Dark.svg
       SourceDir: Resource-Icons_06072024/Res_General-Icons/Res_48_Light
@@ -2682,7 +2683,7 @@ Categories:
     - Source: Res_Amazon-Route-53_Route-53-Application-Recovery-Controller_48.svg
       SourceDir: Resource-Icons_06072024/Res_Networking-Content-Delivery
       Target: Route53ApplicationRecoveryController
-      Target2: route-53-route-53-application-recovery-controller
+      Target2: route-53-application-recovery-controller
     - Source: Res_Amazon-Route-53-Hosted-Zone_48.svg
       SourceDir: Resource-Icons_06072024/Res_Networking-Content-Delivery
       Target: Route53HostedZone
@@ -3260,23 +3261,23 @@ Categories:
     - Source: Res_Amazon-Elastic-File-System_EFS-Intelligent-Tiering_48.svg
       SourceDir: Resource-Icons_06072024/Res_Storage
       Target: ElasticFileSystemIntelligentTiering
-      Target2: elastic-file-system-efs-intelligent-tiering
+      Target2: elastic-file-system-intelligent-tiering
     - Source: Res_Amazon-Elastic-File-System_EFS-One-Zone_48.svg
       SourceDir: Resource-Icons_06072024/Res_Storage
       Target: ElasticFileSystemOneZone
-      Target2: elastic-file-system-efs-one-zone
+      Target2: elastic-file-system-one-zone
     - Source: Res_Amazon-Elastic-File-System_EFS-One-Zone-Infrequent-Access_48.svg
       SourceDir: Resource-Icons_06072024/Res_Storage
       Target: ElasticFileSystemOneZoneInfrequentAccess
-      Target2: elastic-file-system-efs-one-zone-infrequent-access
+      Target2: elastic-file-system-one-zone-infrequent-access
     - Source: Res_Amazon-Elastic-File-System_EFS-Standard_48.svg
       SourceDir: Resource-Icons_06072024/Res_Storage
       Target: ElasticFileSystemStandard
-      Target2: elastic-file-system-efs-standard
+      Target2: elastic-file-system-standard
     - Source: Res_Amazon-Elastic-File-System_EFS-Standard-Infrequent-Access_48.svg
       SourceDir: Resource-Icons_06072024/Res_Storage
       Target: ElasticFileSystemStandardInfrequentAccess
-      Target2: elastic-file-system-efs-standard-infrequent-access
+      Target2: elastic-file-system-standard-infrequent-access
     - Source: Arch_Amazon-FSx_48.png
       SourceDir: Architecture-Service-Icons_06072024/Arch_Storage/48
       Target: FSx
@@ -3491,7 +3492,8 @@ Categories:
     - Color: "#00A4A6"
       Group:
         BorderStyle: dashed
-      Label: "\\n  Availability Zone"
+        Alignment: center
+      Label: "Availability Zone"
       Source: Availability-Zone.touch
       SourceDir: Groups_04282023
       Target: AvailabilityZone
@@ -3539,7 +3541,8 @@ Categories:
     - Color: "#ED7100"
       Group:
         BorderStyle: dashed
-      Label: "\\n  Auto Scaling group"
+        Alignment: center
+      Label: "Auto Scaling group"
       Source: Auto-Scaling-group.png
       SourceDir: Groups_04282023
       Target: AutoScalingGroup
@@ -3565,13 +3568,16 @@ Categories:
     - Color: "#7D8998"
       Group:
         BorderStyle: dashed
-      Label: "\\n  Generic group"
+        Alignment: center
+      Label: "Generic group"
       Source: Generic-group.touch
       SourceDir: Groups_04282023
       Target: Generic
       Target2: generic
     - Color: "#7D8998"
-      Label: "\\n  Generic group"
+      Group:
+        Alignment: center
+      Label: "Generic group"
       Source: Generic-group-alt.touch
       SourceDir: Groups_04282023
       Target: GenericAlt
@@ -3639,7 +3645,9 @@ Categories:
       Target: Region
       Target2: region
     - Color: "#DD344C"
-      Label: "\\n  Security group"
+      Label: "Security group"
+      Group:
+        Alignment: center
       Source: Security-group.touch
       SourceDir: Groups_04282023
       Target: SecurityGroup

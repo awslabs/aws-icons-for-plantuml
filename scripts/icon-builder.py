@@ -14,12 +14,12 @@ import shutil
 from datetime import datetime, timezone
 import multiprocessing
 import re
-from lxml import etree
 import xml.etree.ElementTree as ET
 from multiprocessing import Pool
 from pathlib import Path
 from subprocess import PIPE
 from collections import OrderedDict
+from lxml import etree
 
 import yaml
 
@@ -27,14 +27,15 @@ from awsicons.icon import Icon
 
 # TODO - refactor to param file and/or arguments
 
-# This list are the directories to parse, what type of files they are, and globbing/regex
-# to parse and process. This addresses the changing nature of the assets package.
-
-
-# Source directories for the 19.0-2024.06.07 release
+# used to inject into aws-icons-mermaid.json
 release_version = "19.0"
 release_date_obj = datetime.strptime("2024-06-07", "%Y-%m-%d")
 release_utc_seconds = int(release_date_obj.replace(tzinfo=timezone.utc).timestamp())
+
+# This list are the directories to parse, what type of files they are, and globbing/regex
+# to parse and process. This addresses the changing nature of the assets package.
+
+# Source directories for the 19.0-2024.06.07 release
 
 dir_list = [
     {
@@ -79,6 +80,7 @@ dir_list = [
             "ApplicationAutoScaling": "ApplicationAutoScaling2",
         },
          "filename_mappings2": {
+            "marketplace-light": "marketplace",
             "application-auto-scaling": "application-auto-scaling2",
         },
     },
@@ -112,9 +114,17 @@ dir_list = [
             "SimpleStorageServiceDirectorybucket": "SimpleStorageServiceDirectoryBucket",
             "SimpleStorageServiceGeneralpurposebucket": "SimpleStorageServiceBucket",
         },
-        "filename_mappings2": {
-            "ec2-auto-scaling": "ec2-auto-scaling-resource",
+        "filename_mappings2": {            
             "aurora-amazon-rds-instance-aternate": "aurora-amazon-rds-instance-alternate",
+            "elastic-container-service-copiiot-cli": "elastic-container-service-copilot-cli",
+            "ec2-auto-scaling": "ec2-auto-scaling-resource",
+            "route-53-route-53-application-recovery-controller":"route-53-application-recovery-controller",
+            "database-migration-service-database-migration-workflow-or-job": "database-migration-service-database-migration-workflow-job",
+            "elastic-file-system-efs-intelligent-tiering": "elastic-file-system-intelligent-tiering",
+            "elastic-file-system-efs-one-zone": "elastic-file-system-one-zone",
+            "elastic-file-system-efs-one-zone-infrequent-access": "elastic-file-system-one-zone-infrequent-access",
+            "elastic-file-system-efs-standard": "elastic-file-system-standard",
+            "elastic-file-system-efs-standard-infrequent-access": "elastic-file-system-standard-infrequent-access",
             "simple-storage-service-general-purpose-bucket": "simple-storage-service-bucket"
         },
     },
@@ -133,9 +143,10 @@ dir_list = [
             "Server": "Traditionalserver",
         },
         "filename_mappings2": {
-            "shield": "shield2",
             "database": "generic-database",
             "management-console": "aws-management-console",
+            "shield": "shield2",
+            "server": "traditional-server",
         },
     },
     # {
@@ -274,6 +285,7 @@ Defaults:
   Group:
     BorderStyle: plain
     Label: "Generic group"
+    Alignment: left
   # Maximum in either height or width in pixels
   TargetMaxSize: 64
 """
@@ -285,7 +297,8 @@ CATEGORY_GROUPS = """
     - Color: "#00A4A6"
       Group:
         BorderStyle: dashed
-      Label: "\\\\n  Availability Zone"
+        Alignment: center
+      Label: "Availability Zone"
       Source: Availability-Zone.touch
       SourceDir: Groups_04282023
       Target: AvailabilityZone
@@ -333,7 +346,8 @@ CATEGORY_GROUPS = """
     - Color: "#ED7100"
       Group:
         BorderStyle: dashed
-      Label: "\\\\n  Auto Scaling group"
+        Alignment: center
+      Label: "Auto Scaling group"
       Source: Auto-Scaling-group.png
       SourceDir: Groups_04282023
       Target: AutoScalingGroup
@@ -359,13 +373,16 @@ CATEGORY_GROUPS = """
     - Color: "#7D8998"
       Group:
         BorderStyle: dashed
-      Label: "\\\\n  Generic group"
+        Alignment: center
+      Label: "Generic group"
       Source: Generic-group.touch
       SourceDir: Groups_04282023
       Target: Generic
       Target2: generic
     - Color: "#7D8998"
-      Label: "\\\\n  Generic group"
+      Group:
+        Alignment: center
+      Label: "Generic group"
       Source: Generic-group-alt.touch
       SourceDir: Groups_04282023
       Target: GenericAlt
@@ -433,7 +450,9 @@ CATEGORY_GROUPS = """
       Target: Region
       Target2: region
     - Color: "#DD344C"
-      Label: "\\\\n  Security group"
+      Label: "Security group"
+      Group:
+        Alignment: center
       Source: Security-group.touch
       SourceDir: Groups_04282023
       Target: SecurityGroup
@@ -525,14 +544,14 @@ parser.add_argument(
     action="store_true",
     default=False,
     help=(
-        "Creates a YAML config template based on official source for " "customization"
+        "Creates a YAML config template based on official source for customization"
     ),
 )
 parser.add_argument(
     "--symbols-only",
     action="store_true",
     default=False,
-    help="Only generates the AWSSymbols.md and Structuriz theme files",
+    help="Only generates the AWSSymbols.md. Structuriz theme, and Mermaid JSON files",
 )
 parser.add_argument(
     "--create-color-json",
@@ -559,7 +578,7 @@ def verify_environment():
     try:
         with open("config.yml") as f:
             config = yaml.safe_load(f)
-    except Exception as e:
+    except Exception as e: # pylint: disable=broad-except
         print(f"Error: {e}\ncheck config.yml file")
         sys.exit(1)
     # Verify other files and folders exist
@@ -589,7 +608,7 @@ def verify_environment():
             stdout=PIPE,
             stderr=PIPE,
         )
-    except Exception as e:
+    except Exception as e: # pylint: disable=broad-except
         print(f"Error executing plantuml jar file, {e}")
         sys.exit(1)
 
@@ -597,7 +616,7 @@ def verify_environment():
     if args["check_env"]:
         # dry run only
         print("Prerequisites met, exiting")
-        exit(0)
+        sys.exit(0)
     return
 
 
@@ -829,7 +848,7 @@ def main():
 
     # Create markdown sheet and place in dist
     sorted_icons = sorted(icons, key=lambda x: (x.category, x.target, x.skip_icon))
-    markdown = MARKDOWN_PREFIX_TEMPLATE
+    markdown = [MARKDOWN_PREFIX_TEMPLATE]
     structerizr = {
         "name": "AWS Icons for PlantUML Structurizr theme",
         "description": "This theme includes element styles with icons for each of the AWS services, based upon the AWS Architecture Icons (https://aws.amazon.com/architecture/icons/) and using tag names from AWS Icons for PlantUML (https://github.com/awslabs/aws-icons-for-plantuml).",
@@ -881,9 +900,9 @@ def main():
             pass
         else:
             if category == "Groups":
-                markdown += f"**{category}** | | | **{category}/all.puml**\n"
+                markdown.append(f"**{category}** | | | **{category}/all.puml**\n")
             else:
-                markdown += f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
+                markdown.append(f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n")
         for j in sorted_icons:
             if j.category == i:
                 cat = j.category
@@ -898,17 +917,17 @@ def main():
                     pass
                 elif cat == "Groups":
                     if skip_icon:
-                        markdown += f"{cat} | {tgt}Group  | - | {cat}/{tgt}.puml\n"
+                        markdown.append(f"{cat} | {tgt}Group  | - | {cat}/{tgt}.puml\n")
                     else:
-                        markdown += (
+                        markdown.append((
                             f"{cat} | {tgt}Group / ${tgt}IMG()  | {img} |"
                             f"{cat}/{tgt}.puml\n"
-                        )
+                        ))
                 else:
-                    markdown += (
+                    markdown.append((
                         f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | {img} |"
                         f"{cat}/{tgt}.puml\n"
-                    )
+                    ))
 
                 # Add element to Structurizr theme
                 element = {
@@ -942,7 +961,7 @@ def main():
                         svg_body = re.sub(r'\sxmlns[^"]*"[^"]*"', '', svg_body)
 
                         mermaid["info"]["total"] = mermaid["info"]["total"] + 1
-                        if (mermaid["categories"].get(cat) == None):
+                        if (mermaid["categories"].get(cat) is None):
                             mermaid["categories"][cat] = []
                         mermaid["categories"][cat].append(j.target2)
                         mermaid["icons"][j.target2] = {
@@ -953,11 +972,11 @@ def main():
                         if mermaid["height"] != int(svg_height):
                             mermaid["icons"][j.target2]["height"] = int(svg_height)
 
-                except Exception as e:
+                except Exception as e: # pylint: disable=broad-except
                     print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")
 
     with open(Path("../AWSSymbols.md"), "w") as f:
-        f.write(markdown)
+        f.write(''.join(markdown))
     with open(Path("../dist/aws-icons-structurizr-theme.json"), "w") as f:
         f.write(json.dumps(structerizr, indent=2))
     with open(Path("../dist/aws-icons-mermaid.json"), "w") as f:
