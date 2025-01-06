@@ -1,4 +1,8 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
-$AWSGroupColoring(GenericGroup, "#7D8998", dashed)
+$AWSGroupColoring(GenericGroup, "#7D8998", dashed, center)
+!if ($AWS_FLAG_GROUPALIGNMENT)
+!define GenericGroup(g_alias, g_label="\nGeneric group") $AWSDefineGroup(g_alias, g_label, GenericGroup)
+!else
 !define GenericGroup(g_alias, g_label="\n  Generic group") $AWSDefineGroup(g_alias, g_label, GenericGroup)
+!endif

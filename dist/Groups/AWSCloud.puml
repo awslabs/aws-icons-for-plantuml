@@ -18,5 +18,5 @@ krFVD6alAIXloCoZ0h2jV0VRSO_UMcrhVkwBU-mE61DVdduQPXlzTyI31m_-0m
 !endif
 !endfunction
 
-$AWSGroupColoring(AWSCloudGroup, $AWS_FG_COLOR, plain)
+$AWSGroupColoring(AWSCloudGroup, $AWS_FG_COLOR, plain, left)
 !define AWSCloudGroup(g_alias, g_label="AWS Cloud") $AWSDefineGroup(g_alias, g_label, AWSCloud, AWSCloudGroup)

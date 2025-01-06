@@ -14,6 +14,13 @@
 !$AWS_DARK = false
 !endif
 
+' feature flags based on PlantUML version
+' ##################################
+!$PUML_VERSION = %splitstr_regex(%version(), "((\.|beta))")
+!$PUML_YEAR = %intval($PUML_VERSION[1])
+!$PUML_RELEASE = %intval($PUML_VERSION[2])
+!$AWS_FLAG_GROUPALIGNMENT = $PUML_YEAR > 2024 || ($PUML_YEAR == 2024 && $PUML_RELEASE >= 8)
+
 ' Colors
 ' prefer $AWS_ versions, treat AWS_ as deprecated
 ' ##################################
@@ -358,7 +365,14 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\
 
 ' "StereotypeFontSize 0" below will hide text
 ' still need "hide stereotype" in diagrams to hide whitespace
-!procedure $AWSGroupColoring($stereo, $border_color=$AWS_FG_COLOR, $border_style="plain")
+!procedure $AWSGroupColoring($stereo, $border_color=$AWS_FG_COLOR, $border_style="plain", $alignment="left")
+!if ($AWS_FLAG_GROUPALIGNMENT)
+<style>
+.$stereo {
+    HorizontalAlignment $alignment
+}
+</style>
+!endif
   skinparam rectangle<<$stereo>> {
     StereotypeFontSize 0
     FontColor  $AWS_FG_COLOR
