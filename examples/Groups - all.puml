@@ -44,7 +44,7 @@ SecurityGroupGroup(sg)  {
 AutoScalingGroupGroup(asg) {
   $filler()
 }
-VPCGroup(vpc, "Virtual private\l\tcloud (VPC)") {
+VPCGroup(vpc, "Virtual private\l\t cloud (VPC)") {
   $filler()
 }
 PrivateSubnetGroup(private) {
@@ -56,10 +56,10 @@ PublicSubnetGroup(public) {
 ServerContentsGroup(server) {
   $filler()
 }
-CorporateDataCenterGroup(dc, "Corporate\l\tdata center") {
+CorporateDataCenterGroup(dc, "Corporate\l\t data center") {
   $filler()
 }
-EC2InstanceContentsGroup(instance, "EC2 instance\l\tcontents") {
+EC2InstanceContentsGroup(instance, "EC2 instance\l\t contents") {
   $filler()
 }
 SpotFleetGroup(sf) {
@@ -68,16 +68,16 @@ SpotFleetGroup(sf) {
 AWSAccountGroup(account) {
   $filler()
 }
-IoTGreengrassDeploymentGroup(iotgd, "AWS IoT\l\tGreengrass\l\tDeployment") {
+IoTGreengrassDeploymentGroup(iotgd, "AWS IoT\l\t Greengrass\l\t Deployment") {
   $filler()
 }
-IoTGreengrassGroup(iotg, "AWS IoT\l\tGreengrass") {
+IoTGreengrassGroup(iotg, "AWS IoT\l\t Greengrass") {
   $filler()
 }
-ElasticBeanstalkContainerGroup(beanstalk, "Elastic Beanstalk\l\tcontainer") {
+ElasticBeanstalkContainerGroup(beanstalk, "Elastic Beanstalk\l\t container") {
   $filler()
 }
-StepFunctionsWorkflowGroup(sfw, "AWS Step\l\tFunctions\l\tworkflow") {
+StepFunctionsWorkflowGroup(sfw, "AWS Step\l\t Functions\l\t workflow") {
   $filler()
 }
 GenericGroup(g1)  {

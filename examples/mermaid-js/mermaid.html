@@ -64,6 +64,81 @@ config:
     </pre>
 
     <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+        group vpc(aws:vpc)[Virtual private cloud] in awscloud
+
+        group az2[Availability Zone 2] in vpc
+          service nat2(aws:vpc-nat-gateway)[NAT gateway] in az2
+          service instance21(aws:ec2-instance)[Instance] in az2
+          service instance22(aws:ec2-instance)[Instance] in az2
+          
+        group az1[Availability Zone 1] in vpc
+          service nat1(aws:vpc-nat-gateway)[NAT gateway] in az1
+          service instance11(aws:ec2-instance)[Instance] in az1
+          service instance12(aws:ec2-instance)[Instance] in az1
+
+        group asg1(aws:auto-scaling-group)[Auto Scaling group] in vpc
+          service asgr1(aws:ec2-auto-scaling-resource) in asg1
+        group asg2(aws:auto-scaling-group)[Auto Scaling group] in vpc
+          service asgr2(aws:ec2-auto-scaling-resource) in asg2
+
+        service asg(aws:ec2-auto-scaling)[Amazon EC2 Auto Scaling] in vpc
+        
+        asg:B -- T:asgr1{group}
+        asgr1{group}:B -- T:asgr2{group}
+
+        instance21:L -- R:asgr1{group}
+        instance22:L -- R:asgr2{group}
+
+        instance11:R -- L:asgr1{group}
+        instance12:R -- L:asgr2{group}
+    </pre>
+
+    <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+        group vpc(aws:vpc)[Virtual private cloud] in awscloud
+
+        group spacer in vpc
+          service ig(aws:vpc-internet-gateway)[Internet gateway] in spacer
+
+        group az2[Availability Zone 2] in vpc
+          group az2public(aws:public-subnet)[Public Subnet] in az2
+            service nat2(aws:vpc-nat-gateway)[NAT gateway] in az2public
+          group az2private(aws:private-subnet)[Private Subnet] in az2
+            service instance2(aws:ec2-instance)[Instance] in az2private
+
+          instance2:T --> B:nat2
+
+        group az1[Availability Zone 1] in vpc
+          group az1public(aws:public-subnet)[Public Subnet] in az1
+            service nat1(aws:vpc-nat-gateway)[NAT gateway] in az1public
+          group az1private(aws:private-subnet)[Private Subnet] in az1
+            service instance1(aws:ec2-instance)[Instance] in az1private
+
+          instance1:T --> B:nat1
+    </pre>
+
+    <pre class="mermaid">
 ---
 config:
   theme: base
@@ -95,6 +170,78 @@ architecture-beta
     cd2:B --> T:prod
     cd2:R --> L:sns
     </pre>
+
+    <pre class="mermaid">
+---
+config:
+  theme: base
+  themeVariables:
+    darkMode: false
+    archEdgeColor: "#232F3E"
+    archEdgeArrowColor: "#232F3E"
+    archGroupBorderColor: "#7D8998"
+---
+architecture-beta
+  service client(aws:client)[Client]
+  group awscloud(aws:aws-cloud)[AWS Cloud]
+    service api(aws:api-gateway)[Amazon API Gateway] in awscloud
+    service lambda1(aws:lambda)[AWS Lambda] in awscloud
+    service dynamodb(aws:dynamodb)[Amazon DynamoDB] in awscloud
+
+    client:R -[1]-> L:api
+    api:R -[2]-> L:lambda1
+    lambda1:R -[3]-> L:dynamodb
+
+    junction junctionLeft
+    service s3(aws:simple-storage-service)[Amazon S3] in awscloud
+    service lambda2(aws:lambda)[AWS Lambda] in awscloud
+    junction junctionRight
+
+    client:B -- T:junctionLeft
+    junctionLeft:R -[4]-> L:s3
+    s3:R -[5]-> L:lambda2
+
+    lambda2:R -[6]- L:junctionRight
+    junctionRight:T --> B:dynamodb
+</pre>
+
+    <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        service users(aws:users)[Customers]
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+          service marketplace(aws:marketplace)[AWS Marketplace] in awscloud
+          service edge(aws:cloudfront-edge-location)[Lambda Edge] in awscloud
+          service cloudfront(aws:cloudfront)[Amazon CloudFront] in awscloud
+          service s3(aws:simple-storage-service)[Amazon S3] in awscloud
+
+          service page(aws:documents)[Registration Page] in awscloud
+
+          service api(aws:api-gateway)[Amazon API Gateway] in awscloud
+          service lambda(aws:lambda)[AWS Lambda] in awscloud
+          service dynamodb(aws:dynamodb)[Amazon DynamoDB] in awscloud
+
+          users:R --> L:marketplace
+          users:B --> L:page
+          marketplace:B --> T:page
+          marketplace:R --> L:edge
+          edge:R --> L:cloudfront
+          cloudfront:B --> R:page
+          cloudfront:R --> L:s3
+
+          page:B --> T:api
+
+          api:R --> L:lambda
+          lambda:R --> L:dynamodb
+      </pre>
 
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.mjs';

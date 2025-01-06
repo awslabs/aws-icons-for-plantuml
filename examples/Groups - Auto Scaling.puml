@@ -28,7 +28,7 @@ rectangle " " as $p_alias <<hidden>>
 
 AWSCloudGroup(cloud) {
   VPCGroup(vpc) {
-    AvailabilityZoneGroup(az_2, "  Availability Zone 2") {
+    AvailabilityZoneGroup(az_2, "Availability Zone 2") {
       VPCNATGateway(az_2_nat_gateway, "NAT gateway", "")
       EC2Instance(az_2_ec2_1, "Instance", "")
       EC2Instance(az_2_ec2_2, "Instance", "")
@@ -46,7 +46,7 @@ AWSCloudGroup(cloud) {
       asg_1 -[hidden]d- asg_2
     }
 
-    AvailabilityZoneGroup(az_1, "  Availability Zone 1") {
+    AvailabilityZoneGroup(az_1, "Availability Zone 1") {
       VPCNATGateway(az_1_nat_gateway, "NAT gateway", "")
       EC2Instance(az_1_ec2_1, "Instance", "")
       EC2Instance(az_1_ec2_2, "Instance", "")

@@ -25,7 +25,7 @@ AWSCloudGroup(cloud) {
   VPCGroup(vpc) {
     VPCInternetGateway(internet_gateway, "Internet gateway", "")
 
-    AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+    AvailabilityZoneGroup(az_1, "Availability Zone 1") {
       PublicSubnetGroup(az_1_public, "Public subnet") {
         VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent
       }
@@ -36,7 +36,7 @@ AWSCloudGroup(cloud) {
       az_1_ec2_1 .u.> az_1_nat_gateway
     }
 
-    AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+    AvailabilityZoneGroup(az_2, "Availability Zone 2") {
       PublicSubnetGroup(az_2_public, "Public subnet") {
         VPCNATGateway(az_2_nat_gateway, "NAT gateway", "") #Transparent
       }
