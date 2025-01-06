@@ -757,6 +757,32 @@ def create_category_all_file(path):
         all_file.write(content)
     return
 
+def build_mermaid_icon(mermaid, svg_filename, cat, mermaid_target):
+    """add an icon to the mermaid object"""
+    svg_parser = etree.XMLParser(remove_blank_text=True)
+    svg_tree = etree.parse(svg_filename, svg_parser)
+    svg_root = svg_tree.getroot()
+    svg_width = svg_root.get("width").strip("px")
+    svg_height = svg_root.get("height").strip("px")
+    # Register the SVG namespace to avoid automatic namespace additions
+    ET.register_namespace('', "http://www.w3.org/2000/svg")
+    ET.register_namespace('xlink', "http://www.w3.org/1999/xlink")
+    svg_body = ''.join((ET.tostring(child, encoding='unicode', method='xml') for child in svg_root if child.tag != '{http://www.w3.org/2000/svg}title'))
+    # Remove any remaining xmlns declrations
+    svg_body = re.sub(r'\sxmlns[^"]*"[^"]*"', '', svg_body)
+
+    mermaid["info"]["total"] = mermaid["info"]["total"] + 1
+    if (mermaid["categories"].get(cat) is None):
+        mermaid["categories"][cat] = []
+    mermaid["categories"][cat].append(mermaid_target)
+    mermaid["icons"][mermaid_target] = {
+        "body": svg_body,
+    }
+    if mermaid["width"] != int(svg_width):
+        mermaid["icons"][mermaid_target]["width"] = int(svg_width)
+    if mermaid["height"] != int(svg_height):
+        mermaid["icons"][mermaid_target]["height"] = int(svg_height)
+
 
 def worker(icon):
     """multiprocess resource intensive operations (java subprocess)"""
@@ -948,29 +974,12 @@ def main():
                 try:
                     svg_filename = re.sub(r'\.png$','.svg', str(j.filename))
                     if svg_filename.endswith(".svg"):
-                        svg_parser = etree.XMLParser(remove_blank_text=True)
-                        svg_tree = etree.parse(svg_filename, svg_parser)
-                        svg_root = svg_tree.getroot()
-                        svg_width = svg_root.get("width").strip("px")
-                        svg_height = svg_root.get("height").strip("px")
-                        # Register the SVG namespace to avoid automatic namespace additions
-                        ET.register_namespace('', "http://www.w3.org/2000/svg")
-                        ET.register_namespace('xlink', "http://www.w3.org/1999/xlink")
-                        svg_body = ''.join((ET.tostring(child, encoding='unicode', method='xml') for child in svg_root if child.tag != '{http://www.w3.org/2000/svg}title'))
-                        # Remove any remaining xmlns declrations
-                        svg_body = re.sub(r'\sxmlns[^"]*"[^"]*"', '', svg_body)
+                        build_mermaid_icon(mermaid, svg_filename, cat, j.target2)
 
-                        mermaid["info"]["total"] = mermaid["info"]["total"] + 1
-                        if (mermaid["categories"].get(cat) is None):
-                            mermaid["categories"][cat] = []
-                        mermaid["categories"][cat].append(j.target2)
-                        mermaid["icons"][j.target2] = {
-                            "body": svg_body,
-                        }
-                        if mermaid["width"] != int(svg_width):
-                            mermaid["icons"][j.target2]["width"] = int(svg_width)
-                        if mermaid["height"] != int(svg_height):
-                            mermaid["icons"][j.target2]["height"] = int(svg_height)
+                    if j.filename_dark is not None:
+                        svg_filename_dark = re.sub(r'\.png$','.svg', str(j.filename_dark))
+                        if svg_filename_dark.endswith(".svg"):
+                            build_mermaid_icon(mermaid, svg_filename_dark, cat, f"{j.target2}-dark")
 
                 except Exception as e: # pylint: disable=broad-except
                     print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")

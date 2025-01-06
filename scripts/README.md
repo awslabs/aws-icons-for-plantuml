@@ -3,6 +3,8 @@ Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 -->
 
+<!-- markdownlint-disable MD014 -->
+
 # Generating the PlantUML Icons for AWS
 
 If you would like to have customized builds and/or experiment with _PlantUML Icons for AWS_, you can generate your own distribution of icons and PUML files for local use.
@@ -96,7 +98,7 @@ Next, run the same command without `--check-env` to create all new icons and upd
 
 ### Other commands
 
-After icons have been created, you can just regenerate the `AWSSymbols.md` and Structurizr theme files by running the command with the `--symbols-only` parameter.
+After icons have been created, you can just regenerate the `AWSSymbols.md`, Structurizr theme, and Mermaid icons files by running the command with the `--symbols-only` parameter.
 
 ```bash
 $ ./icon-builder.py --symbols-only
@@ -163,13 +165,15 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 !define AWSPuml http://localhost:8000
 ```
 
-If you use Visual Studio Code, `.vscode\tasks.json` has task defined for running "PlantUML picoweb 8080" (using `ALLOWLIST`), "http.server 8000", and http.server CORS 8000".
+If you use Visual Studio Code, `.vscode\tasks.json` has tasks defined for running "PlantUML picoweb 8080" (using `ALLOWLIST`), "http.server 8000", and "http.server CORS 8000".
 
 ## Build Notes
 
 ### Release 19.0-2024.06.07
 
 This release switched to using `plantuml-mit-1.2024.6.jar` which had no noticeable changes.  Experimental `upgrade.py` that will replace renamed categories and icons in .puml files based on release notes **Breaking Changes** since Release 13.0.  Default is read-only mode (`python upgrade.py file.puml`) but supports `--overwrite` and filename wildcards (`python upgrade.py --overwrite "*.puml"`).  This upgrade script was used to update `examples` directory from `v18.0` to `v19.0` and tested via `pytest test_upgrade.py`.
+
+Experimental [Mermaid](https://mermaid.js.org/) support via [iconifyJSON](https://iconify.design/docs/types/iconify-json.html) formatted `aws-icons-mermaid.json` and example added to "s3-upload-workflow" folder.  These icon filenames are required to be lower kebob case, so a `Target2` field was added to `config.yml`
 
 ### Release 18.0-2024.02.06
 
@@ -184,6 +188,8 @@ This release switched to using `plantuml-mit-1.2023.12.jar` which had no noticea
 This is major release due to all icons changing to a new color palette supporting both light and dark backgrounds.  Since service icons no longer have gradients, optimized build to just copy the existing `*_48.png` (64x64) files instead of re-rendering from the `.svg`.  For category `.png` files which were expanded to 74x74 and included a gray border, used the Pillow library to crop out the center and then add the border back.  Added new command line arguments (`--symbols-only` and `--create-color-json`).  Added about 10 more `filename_mappings` to avoid breaking changes for low value name changes. This release switched to using `plantuml-mit-1.2023.7.jar` which had no noticeable changes.
 
 Experimental "dark mode" support. Support for `$AWS_DARK` was embedded into `AWSCommon.md` (vs. using PlantUML [themes format](https://github.com/plantuml/plantuml/blob/master/themes/)) to support swapping Light/Dark images and match contrast/accessibility guidelines. Markdown images references in `AWSSymbols.md` are generated using [GitHub image theme](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/) values of `#gh-dark-mode-only` or `#gh-light-mode-only`.
+
+Experimental [Structurizr](https://structurizr.com/) support via `aws-icons-structurizr-theme.json` and example added to "s3-upload-workflow" folder.
 
 ### Release 15.0-2023.01.31
 
