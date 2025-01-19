@@ -14,6 +14,13 @@
 !$AWS_DARK = false
 !endif
 
+' feature flags based on PlantUML version
+' ##################################
+!$PUML_VERSION = %splitstr_regex(%version(), "((\.|beta))")
+!$PUML_YEAR = %intval($PUML_VERSION[1])
+!$PUML_RELEASE = %intval($PUML_VERSION[2])
+!$AWS_FLAG_GROUPALIGNMENT = $PUML_YEAR > 2024 || ($PUML_YEAR == 2024 && $PUML_RELEASE >= 8)
+
 ' Colors
 ' prefer $AWS_ versions, treat AWS_ as deprecated
 ' ##################################
@@ -44,7 +51,7 @@
 ' Blockchain; Compute; Containers; Media Services; Quantum Technologies
 !define AWS_COLOR_ORANGE #ED7100
 !$AWS_COLOR_SMILE = "#ED7100"
-' Application Integration; Management & Governance; VR & AR
+' Application Integration; Management & Governance
 !define AWS_COLOR_PINK #E7157B
 !$AWS_COLOR_COSMOS = "#E7157B"
 ' Analytics; Games; Networking & Content Delivery; Serverless
@@ -53,13 +60,14 @@
 ' Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
 !define AWS_COLOR_RED #DD344C
 !$AWS_COLOR_MARS = "#DD344C"
-' End User Computing; Machine Learning; Migration & Transfer
+' Artificial Intelligence; End User Computing; Migration & Modernization
 !define AWS_COLOR_TURQUOISE #01A88D
 !$AWS_COLOR_ORBIT = "#01A88D"
 
 !$AWS_CATEGORY_COLORS = {
   "analytics": "#8C4FFF",
   "applicationintegration": "#E7157B",
+  "artificialintelligence": "#01A88D",
   "blockchain": "#ED7100",
   "businessapplications": "#DD344C",
   "cloudfinancialmanagement": "#7AA116",
@@ -78,6 +86,7 @@
   "managementgovernance": "#E7157B",
   "mediaservices": "#ED7100",
   "migrationtransfer": "#01A88D",
+  "migrationmodernization": "#01A88D",
   "networkingcontentdelivery": "#8C4FFF",
   "quantumtechnologies": "#ED7100",
   "robotics": "#DD344C",
@@ -356,7 +365,14 @@ participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\
 
 ' "StereotypeFontSize 0" below will hide text
 ' still need "hide stereotype" in diagrams to hide whitespace
-!procedure $AWSGroupColoring($stereo, $border_color=$AWS_FG_COLOR, $border_style="plain")
+!procedure $AWSGroupColoring($stereo, $border_color=$AWS_FG_COLOR, $border_style="plain", $alignment="left")
+!if ($AWS_FLAG_GROUPALIGNMENT)
+<style>
+.$stereo {
+    HorizontalAlignment $alignment
+}
+</style>
+!endif
   skinparam rectangle<<$stereo>> {
     StereotypeFontSize 0
     FontColor  $AWS_FG_COLOR

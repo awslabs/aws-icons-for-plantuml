@@ -7,14 +7,15 @@
 ' Uncomment the line below for "dark mode" styling
 '!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v19.0/dist
 !include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSExperimental.puml
 !include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
 !include AWSPuml/Compute/EC2.puml
 !include AWSPuml/DeveloperTools/CodeBuild.puml
-!include AWSPuml/DeveloperTools/CodeCommit.puml
 !include AWSPuml/DeveloperTools/CodeDeploy.puml
 !include AWSPuml/DeveloperTools/CodePipeline.puml
+!include AWSPuml/General/GitRepository.puml
 !include AWSPuml/General/User.puml
 !include AWSPuml/Storage/SimpleStorageService.puml
 
@@ -35,26 +36,26 @@ rectangle "$AWSImg($service)\n$line1\n$line2"
 !endprocedure 
 
 CodePipelineGroup(pipeline){
-  $AWSIcon(CodeCommit, "AWS CodeCommit") as cc
+  $AWSIcon(GitRepository, "Git Repository") as gr
   $AWSIcon(CodeBuild, "AWS CodeBuild") as cb
   $AWSIcon(SimpleStorageService, "Amazon S3", "(artifact store)") as s3
-  cc -r-> cb
-  cb -d-> s3
+  gr -r-> cb: \n<$Callout_1>
+  cb -d-> s3: <$Callout_2><$Callout_SP>
 
   $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd1
   $AWSIcon(EC2, "Amazon EC2", "(dev)") as ec2dev
-  cb -r-> cd1
-  cd1 -d-> ec2dev
+  cb -r-> cd1: \n<$Callout_3>
+  cd1 -d-> ec2dev: <$Callout_4><$Callout_SP>
 
   $AWSIcon(User, "Human", "Approval") as user
-  cd1 -r-> user
+  cd1 -r-> user: \n<$Callout_5>
 
   $AWSIcon(CodeDeploy, "AWS CodeDeploy") as cd2
   $AWSIcon(EC2, "Amazon EC2", "(prod)") as ec2prod
-  user -r-> cd2
-  cd2 -d-> ec2prod
+  user -r-> cd2: \n<$Callout_6>
+  cd2 -d-> ec2prod: <$Callout_7><$Callout_SP>
 
   $AWSIcon(SimpleNotificationService, "SNS Notification") as sns
-  cd2 -r-> sns
+  cd2 -r-> sns: \n<$Callout_8>
 }
 @enduml

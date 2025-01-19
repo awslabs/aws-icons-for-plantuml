@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <title>Mermaid Architecture diagrams</title>
+    <!--
+      requires "dist" folder being served at http://localhost:8000/
+    -->
+  </head>
+  <body>
+    
+    <h1>Mermaid <a href="https://mermaid.js.org/syntax/architecture.html" target="_blank">Architecture</a> diagrams:</h1>
+
+    <h2>Generic icons</h2>
+    <pre class="mermaid">
+      architecture-beta
+         group api(cloud)[API]
+    
+        service db(database)[Database] in api
+        service disk1(disk)[Storage] in api
+        service disk2(disk)[Storage] in api
+        service server(server)[Server] in api
+    
+        db:L -- R:server
+        disk1:T -- B:server
+        disk2:T -- B:db  
+    </pre>
+
+    <h2>AWS icons from iconify.design</h2>
+    <pre class="mermaid">
+      architecture-beta
+        group api(logos:aws-lambda)[API]
+    
+        service db(logos:aws-aurora)[Database] in api
+        service disk1(logos:aws-glacier)[Storage] in api
+        service disk2(logos:aws-s3)[Storage] in api
+        service server(logos:aws-ec2)[Server] in api
+    
+        db:L -- R:server
+        disk1:T -- B:server
+        disk2:T -- B:db  
+    </pre>
+
+    <h2>AWS icons from aws-icons-for-plantuml</h2>
+    <pre class="mermaid">
+---
+config:
+  theme: base
+  themeVariables:
+    darkMode: false
+    archEdgeColor: "#232F3E"
+    archEdgeArrowColor: "#232F3E"
+    archGroupBorderColor: "#ED7100"
+---
+      architecture-beta
+        group api(aws:lambda)[API]
+    
+        service db(aws:aurora)[Database] in api
+        service disk1(aws:simple-storage-service-glacier)[Storage] in api
+        service disk2(aws:simple-storage-service)[Storage] in api
+        service server(aws:ec2)[Server] in api
+    
+        db:L <-- R:server
+        disk1:T <-- B:server
+        disk2:T <-- B:db  
+    </pre>
+
+    <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+        group vpc(aws:vpc)[Virtual private cloud] in awscloud
+
+        group az2[Availability Zone 2] in vpc
+          service nat2(aws:vpc-nat-gateway)[NAT gateway] in az2
+          service instance21(aws:ec2-instance)[Instance] in az2
+          service instance22(aws:ec2-instance)[Instance] in az2
+          
+        group az1[Availability Zone 1] in vpc
+          service nat1(aws:vpc-nat-gateway)[NAT gateway] in az1
+          service instance11(aws:ec2-instance)[Instance] in az1
+          service instance12(aws:ec2-instance)[Instance] in az1
+
+        group asg1(aws:auto-scaling-group)[Auto Scaling group] in vpc
+          service asgr1(aws:ec2-auto-scaling-resource) in asg1
+        group asg2(aws:auto-scaling-group)[Auto Scaling group] in vpc
+          service asgr2(aws:ec2-auto-scaling-resource) in asg2
+
+        service asg(aws:ec2-auto-scaling)[Amazon EC2 Auto Scaling] in vpc
+        
+        asg:B -- T:asgr1{group}
+        asgr1{group}:B -- T:asgr2{group}
+
+        instance21:L -- R:asgr1{group}
+        instance22:L -- R:asgr2{group}
+
+        instance11:R -- L:asgr1{group}
+        instance12:R -- L:asgr2{group}
+    </pre>
+
+    <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+        group vpc(aws:vpc)[Virtual private cloud] in awscloud
+
+        group spacer in vpc
+          service ig(aws:vpc-internet-gateway)[Internet gateway] in spacer
+
+        group az2[Availability Zone 2] in vpc
+          group az2public(aws:public-subnet)[Public Subnet] in az2
+            service nat2(aws:vpc-nat-gateway)[NAT gateway] in az2public
+          group az2private(aws:private-subnet)[Private Subnet] in az2
+            service instance2(aws:ec2-instance)[Instance] in az2private
+
+          instance2:T --> B:nat2
+
+        group az1[Availability Zone 1] in vpc
+          group az1public(aws:public-subnet)[Public Subnet] in az1
+            service nat1(aws:vpc-nat-gateway)[NAT gateway] in az1public
+          group az1private(aws:private-subnet)[Private Subnet] in az1
+            service instance1(aws:ec2-instance)[Instance] in az1private
+
+          instance1:T --> B:nat1
+    </pre>
+
+    <pre class="mermaid">
+---
+config:
+  theme: base
+  themeVariables:
+    darkMode: false
+    archEdgeColor: "#232F3E"
+    archEdgeArrowColor: "#232F3E"
+    archGroupBorderColor: "#C925D1"
+---
+architecture-beta
+  group cp(aws:codepipeline)[AWS CodePipeline]
+
+    service gr(aws:git-repository)[Git Repository] in cp
+    service cb(aws:codebuild)[AWS CodeBuild] in cp
+    service cd1(aws:codedeploy)[AWS CodeDeploy] in cp
+    service s3(aws:simple-storage-service)[Amazon S3 artifact store] in cp
+    service user(aws:user)[Human Approval] in cp
+    service dev(aws:ec2)[Amazon EC2 dev] in cp
+    service cd2(aws:codedeploy)[AWS CodeDeploy] in cp
+    service prod(aws:ec2)[Amazon EC2 prod] in cp
+    service sns(aws:simple-notification-service)[SNS Notification] in cp
+
+    gr:R --> L:cb
+    cb:R --> L:cd1
+    cb:B --> T:s3
+    cd1:R --> L:user
+    cd1:B --> T:dev
+    user:R --> L:cd2
+    cd2:B --> T:prod
+    cd2:R --> L:sns
+    </pre>
+
+    <pre class="mermaid">
+---
+config:
+  theme: base
+  themeVariables:
+    darkMode: false
+    archEdgeColor: "#232F3E"
+    archEdgeArrowColor: "#232F3E"
+    archGroupBorderColor: "#7D8998"
+---
+architecture-beta
+  service client(aws:client)[Client]
+  group awscloud(aws:aws-cloud)[AWS Cloud]
+    service api(aws:api-gateway)[Amazon API Gateway] in awscloud
+    service lambda1(aws:lambda)[AWS Lambda] in awscloud
+    service dynamodb(aws:dynamodb)[Amazon DynamoDB] in awscloud
+
+    client:R -[1]-> L:api
+    api:R -[2]-> L:lambda1
+    lambda1:R -[3]-> L:dynamodb
+
+    junction junctionLeft
+    service s3(aws:simple-storage-service)[Amazon S3] in awscloud
+    service lambda2(aws:lambda)[AWS Lambda] in awscloud
+    junction junctionRight
+
+    client:B -- T:junctionLeft
+    junctionLeft:R -[4]-> L:s3
+    s3:R -[5]-> L:lambda2
+
+    lambda2:R -[6]- L:junctionRight
+    junctionRight:T --> B:dynamodb
+</pre>
+
+    <pre class="mermaid">
+      ---
+      config:
+        theme: base
+        themeVariables:
+          darkMode: false
+          archEdgeColor: "#232F3E"
+          archEdgeArrowColor: "#232F3E"
+          archGroupBorderColor: "#7D8998"
+      ---
+      architecture-beta
+        service users(aws:users)[Customers]
+        group awscloud(aws:aws-cloud)[AWS Cloud]
+          service marketplace(aws:marketplace)[AWS Marketplace] in awscloud
+          service edge(aws:cloudfront-edge-location)[Lambda Edge] in awscloud
+          service cloudfront(aws:cloudfront)[Amazon CloudFront] in awscloud
+          service s3(aws:simple-storage-service)[Amazon S3] in awscloud
+
+          service page(aws:documents)[Registration Page] in awscloud
+
+          service api(aws:api-gateway)[Amazon API Gateway] in awscloud
+          service lambda(aws:lambda)[AWS Lambda] in awscloud
+          service dynamodb(aws:dynamodb)[Amazon DynamoDB] in awscloud
+
+          users:R --> L:marketplace
+          users:B --> L:page
+          marketplace:B --> T:page
+          marketplace:R --> L:edge
+          edge:R --> L:cloudfront
+          cloudfront:B --> R:page
+          cloudfront:R --> L:s3
+
+          page:B --> T:api
+
+          api:R --> L:lambda
+          lambda:R --> L:dynamodb
+      </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.mjs';
+      let baseUrl = 'http://localhost:8000';
+      let icons = await fetch(`${baseUrl}/aws-icons-mermaid.json`).then((res) => res.json());
+      // https://mermaid.js.org/config/icons.html
+      mermaid.registerIconPacks([
+        {
+          name: 'logos',
+          loader: () =>
+            fetch('https://unpkg.com/@iconify-json/logos@1/icons.json').then((res) => res.json()),
+        },
+        {
+          name: 'aws',
+          loader: () => icons
+        },
+      ]);
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>

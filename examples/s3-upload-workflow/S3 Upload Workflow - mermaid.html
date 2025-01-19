@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>S3 Upload Workflow - mermaid</title>
+    <!--
+      requires "dist" folder being served at http://localhost:8000/
+    -->
+  </head>
+  <body>
+    
+    <h1>Mermaid <a href="https://mermaid.js.org/syntax/architecture.html" target="_blank">Architecture</a> diagram:</h1>
+
+    <h2>S3 Upload Workflow</h2>
+    <pre class="mermaid">
+---
+config:
+  theme: base
+  themeVariables:
+    darkMode: false
+    archEdgeColor: "#232F3E"
+    archEdgeArrowColor: "#232F3E"
+    archGroupBorderColor: "#7D8998"
+---
+architecture-beta
+  service user(aws:user)[User]
+  group awscloud(aws:aws-cloud)[AWS Cloud]
+  group region(aws:region)[Region] in awscloud
+
+  group s3bucket(aws:simple-storage-service)[Amazon S3 bucket] in region
+
+    service video(aws:multimedia)[video] in s3bucket
+    service audio(aws:tape-storage)[audio] in s3bucket
+    service transcript(aws:documents)[transcript] in s3bucket
+    
+    user:R -[1 upload]-> L:video
+    video:R --> L:audio
+    audio:R --> L:transcript
+
+  service handler(aws:lambda-lambda-function)[ObjectCreated event handler] in region
+  service mediaconvert(aws:elemental-mediaconvert)[AWS Elemental MediaConvert] in region
+  service transcribe(aws:transcribe)[Amazon Transcribe] in region
+
+  handler:T <-[2]- B:video
+  mediaconvert:T -[3]-> B:audio
+  transcribe:T -[4]-> B:transcript
+
+  group workflow(aws:step-functions-workflow)[AWS Step Functions workflow] in region
+
+    service extractaudio(aws:lambda-lambda-function)[extract audio] in workflow
+    service transcribeaudio(aws:lambda-lambda-function)[transcribe audio] in workflow
+
+    extractaudio:R --> L:transcribeaudio
+    extractaudio{group}:L <-[Start Execution]- B:handler
+    extractaudio:T --> B:mediaconvert
+    transcribeaudio:T --> B:transcribe
+          </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.mjs';
+      let baseUrl = 'http://localhost:8000';
+      let icons = await fetch(`${baseUrl}/aws-icons-mermaid.json`).then((res) => res.json());
+      // https://mermaid.js.org/config/icons.html
+      mermaid.registerIconPacks([
+        {
+          name: 'aws',
+          loader: () => icons
+        },
+      ]);
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>

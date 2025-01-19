@@ -1,4 +1,8 @@
 ' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 ' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
-$AWSGroupColoring(AvailabilityZoneGroup, "#00A4A6", dashed)
+$AWSGroupColoring(AvailabilityZoneGroup, "#00A4A6", dashed, center)
+!if ($AWS_FLAG_GROUPALIGNMENT)
+!define AvailabilityZoneGroup(g_alias, g_label="\nAvailability Zone") $AWSDefineGroup(g_alias, g_label, AvailabilityZoneGroup)
+!else
 !define AvailabilityZoneGroup(g_alias, g_label="\n  Availability Zone") $AWSDefineGroup(g_alias, g_label, AvailabilityZoneGroup)
+!endif

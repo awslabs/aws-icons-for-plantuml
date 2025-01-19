@@ -15,5 +15,5 @@ qcC_liIFRxx-Uy_VpBdNh_zbrFJw_Ryil4NSeWwqnG56qfQywYXKSt0Xdn8TKCHbutFO4IYkwy-eAPvH
 !endif
 !endfunction
 
-$AWSGroupColoring(AWSCloudAltGroup, $AWS_FG_COLOR, plain)
+$AWSGroupColoring(AWSCloudAltGroup, $AWS_FG_COLOR, plain, left)
 !define AWSCloudAltGroup(g_alias, g_label="AWS Cloud") $AWSDefineGroup(g_alias, g_label, AWSCloudAlt, AWSCloudAltGroup)

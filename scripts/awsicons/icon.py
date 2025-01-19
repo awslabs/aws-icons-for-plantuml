@@ -9,10 +9,9 @@ import sys
 import re
 import subprocess
 import tempfile
-from subprocess import PIPE
-from pathlib import Path
-from lxml import etree
 import base64
+from subprocess import PIPE
+from lxml import etree
 from PIL import Image, ImageOps
 
 PUML_LICENSE_HEADER = """' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -31,6 +30,7 @@ class Icon:
         filename_regex=None,
         category_mappings=None,
         filename_mappings=None,
+        filename_mappings2=None,
     ):
 
         # Full path and filename as PosixPath
@@ -55,6 +55,7 @@ class Icon:
         # Group configuration
         self.group = False
         self.group_border_style = None
+        self.group_alignment = None
         self.group_label = ""
         # Regex patterns to extract category and filename from full POSIX path, and category remappings
         # to enforce consistency between source icon directories
@@ -62,6 +63,7 @@ class Icon:
         self.filename_regex = filename_regex
         self.category_mappings = category_mappings
         self.filename_mappings = filename_mappings
+        self.filename_mappings2 = filename_mappings2
 
         # Regex patterns to use category and _make_name
 
@@ -83,19 +85,17 @@ class Icon:
             self._set_values(self.source_name, self.temp_category)
 
     def crop_category_image(self, image_filename, png_filename):
-        img = Image.open(image_filename)
-
-        # should be 72x72
-        width, height = img.size
-        
-        pngimg = img.crop((7, 7, 67, 67))
-
-        ImageOps.expand(pngimg, border=2, fill='#879196').save(png_filename)
+        """Copy 72x72 category image and add 2px border"""
+        with Image.open(image_filename) as img:
+            # should be 72x72
+            width, height = img.size # pylint: disable=unused-variable
+            png_img = img.crop((7, 7, 67, 67))
+            ImageOps.expand(png_img, border=2, fill='#879196').save(png_filename)
 
     def generate_image(self, path, color=None, max_target_size=64, transparency=False, gradient=True, image_filename=None, dark=False):
         """Create image from SVG file and save full color without transparency to path"""
 
-        if image_filename == None:
+        if image_filename is None:
             image_filename = self.filename
         png_filename = self.target
         if dark:
@@ -125,17 +125,16 @@ class Icon:
         )
         parser = etree.XMLParser(remove_blank_text=True)
 
-            
         root = etree.parse(str(image_filename), parser)
 
-        if gradient == True:
+        if gradient is True:
             # Replace any gradient fills with the requisite color
             # This was in effect for 2021.01.31 Category icons
             elements = root.xpath('//*[@fill="url(#linearGradient-1)"]')
             for elem in elements:
                 elem.attrib["fill"] = self.color
 
-        if transparency == False:
+        if transparency is False:
             # For resource or category icons which are transparent, set fill to white
             # TODO - can we query without namespaces?
             elem = root.xpath(
@@ -183,7 +182,7 @@ class Icon:
                 stderr=PIPE,
             )
             svg_temp.close()
-        except Exception as e:
+        except Exception as e: # pylint: disable=broad-except
             print(f"Error executing batik-rasterizer jar file, {e}")
             sys.exit(1)
         return
@@ -201,12 +200,13 @@ class Icon:
         quoted_color = f"\"{color}\"" if color.startswith("#") else color
         group = self.group
         group_border_style = self.group_border_style
+        group_alignment = self.group_alignment
         group_label = self.group_label
 
         puml_content += sprite
         if not self.skip_icon:
             puml_content += f"!function ${target}IMG($scale=1)\n"
-            if self.filename_dark != None:
+            if self.filename_dark is not None:
                 puml_content += "!if %variable_exists(\"$AWS_DARK\") && ($AWS_DARK == true)\n"
                 with open(f"{path}/{target}_Dark.png", "rb") as png_file:
                     encoded_string = base64.b64encode(png_file.read())
@@ -215,18 +215,28 @@ class Icon:
             with open(f"{path}/{target}.png", "rb") as png_file:
                 encoded_string = base64.b64encode(png_file.read())
                 puml_content += f"!return \"<img data:image/png;base64,{encoded_string.decode()}{{scale=\"+$scale+\"}}>\"\n"
-            if self.filename_dark != None:
+            if self.filename_dark is not None:
                 puml_content += "!endif\n"
-            puml_content += f"!endfunction\n\n"
+            puml_content += "!endfunction\n\n"
 
         if group:
-            puml_content += f"$AWSGroupColoring({target}Group, {quoted_color}, {group_border_style})\n"
+            puml_content += f"$AWSGroupColoring({target}Group, {quoted_color}, {group_border_style}, {group_alignment})\n"
+            if group_alignment == "center":
+                group_label = "\\n" + self.group_label
+                puml_content += "!if ($AWS_FLAG_GROUPALIGNMENT)\n"
+                if self.skip_icon:
+                    puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}Group)\n"
+                else:
+                    puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}, {target}Group)\n"
+                puml_content += "!else\n"
+                group_label = "\\n  " + self.group_label
             if self.skip_icon:
-                # puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSGroupEntity(g_alias, g_label, {target}Group)\n"
                 puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}Group)\n"
             else:
-                # puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSGroupEntity(g_alias, g_label, {target}, {target}Group)\n"
                 puml_content += f"!define {target}Group(g_alias, g_label=\"{group_label}\") $AWSDefineGroup(g_alias, g_label, {target}, {target}Group)\n"
+            if group_alignment == "center":
+                puml_content += "!endif\n"
+
         else:
             puml_content += f"AWSEntityColoring({target})\n"
             puml_content += f"!define {target}(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
@@ -239,7 +249,7 @@ class Icon:
 
     def generate_puml_sprite(self, path):
         """Generate puml sprite for service"""
-        # Start plantuml-mit-1.2024.3.jar and encode sprite from main PNG
+        # Start plantuml-mit-1.2024.6.jar and encode sprite from main PNG
         try:
             target = self.target
             result = subprocess.run(
@@ -247,7 +257,7 @@ class Icon:
                     "java",
                     "-jar",
                     "-Djava.awt.headless=true",
-                    "./plantuml-mit-1.2024.3.jar",
+                    "./plantuml-mit-1.2024.6.jar",
                     "-encodesprite",
                     "16z",
                     f"{path}/{target}.png",
@@ -260,7 +270,7 @@ class Icon:
 
             return puml_content
 
-        except Exception as e:
+        except Exception as e: # pylint: disable=broad-except
             print(f"Error executing plantuml jar file, {e}")
             sys.exit(1)
 
@@ -274,6 +284,7 @@ class Icon:
                     try:
                         self.category = i
                         self.target = j["Target"]
+                        self.target2 = j["Target2"]
 
                         if "SourceDark" in j and "SourceDirDark" in j:
                             self.filename_dark = str(self.filename).replace(j["SourceDir"], j["SourceDirDark"]).replace(j["Source"], j["SourceDark"])
@@ -308,7 +319,7 @@ class Icon:
 
                             group_border_style = self._group_value("BorderStyle", j)
 
-                            if group_border_style != None:
+                            if group_border_style is not None:
                                 self.group_border_style = self._border_style(group_border_style)
                             else:
                                 print(
@@ -316,9 +327,18 @@ class Icon:
                                 )
                                 self.group_border_style = "plain"
 
+                            group_alignment = self._group_value("Alignment", j)
+                            if group_alignment is not None:
+                                self.group_alignment = self._alignment(group_alignment)
+                            else:
+                                print(
+                                    f"No alignment definition found for {source_name}, using left"
+                                )
+                                self.group_alignment = "left"
+
                             group_label = j["Label"]
 
-                            if group_label != None:
+                            if group_label is not None:
                                 self.group_label = group_label
                             else:
                                 print(
@@ -343,10 +363,11 @@ class Icon:
         # Entry not found, place into uncategorized
         try:
             self.category = "Uncategorized"
-            self.target = self._make_name(
+            (self.target, self.target2) = self._make_name(
                 regex=self.filename_regex,
                 filename=str(self.filename),
                 mappings=self.filename_mappings,
+                mappings2=self.filename_mappings2,
             )
             self.color = self.config["Defaults"]["Category"]["Color"]
         except KeyError as e:
@@ -356,7 +377,7 @@ class Icon:
             )
             sys.exit(1)
 
-    def _make_name(self, regex: str, filename: str, mappings: dict):
+    def _make_name(self, regex: str, filename: str, mappings: dict, mappings2: dict):
         """
         Create PUML friendly name short name without directory and strip leading Arch_ or Res_
         and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
@@ -368,7 +389,12 @@ class Icon:
         try:
             name = re.search(regex, filename).group(1)
             new_name = re.sub(r"[^a-zA-Z0-9]", "", name)
-        except Exception as e:
+
+            # Mermaid names use iconify and match against lower kebob case
+            # var matchIconName = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+            # @iconify+utils@2.1.33/node_modules/@iconify/utils/lib/icon/name.mjs
+            new_name2 = name.lower().strip().replace("_", "-")
+        except Exception as e: # pylint: disable=broad-except
             print(
                 f"Error in extracting icon name from filename. Regex: {regex}, source filename string: {filename}"
             )
@@ -379,8 +405,14 @@ class Icon:
             except KeyError:
                 # no match found, existing filename is okay
                 pass
+        if mappings2:
+            try:
+                new_name2 = mappings2[new_name2]
+            except KeyError:
+                # no match found, existing filename is okay
+                pass
 
-        return new_name
+        return (new_name, new_name2)
 
     def _make_category(self, regex: str, filename: str, mappings: dict):
         """Create PUML friendly category with any remappings
@@ -397,7 +429,7 @@ class Icon:
         try:
             category = re.search(regex, filename).group(1)
             friendly_category = re.sub(r"[^a-zA-Z0-9]", "", category)
-        except Exception as e:
+        except Exception as e: # pylint: disable=broad-except
             print(
                 f"Error in extracting category from filename. Regex: {regex}, source filename string: {filename}"
             )
@@ -428,12 +460,20 @@ class Icon:
             sys.exit(1)
 
     def _border_style(self, border_style):
-        """Check and Returns valid border style"""
+        """Check and returns valid border style"""
 
         if border_style.lower() in ['bold', 'dotted', 'dashed', 'plain']:
             return border_style.lower()
         else:
             return 'plain'
+
+    def _alignment(self, alignment):
+        """Check and returns valid alignment"""
+
+        if alignment.lower() in ['left', 'center', 'right']:
+            return alignment.lower()
+        else:
+            return 'left'
 
     def _group_value(self, key, icon):
         if "Group" in icon and key in icon["Group"]:

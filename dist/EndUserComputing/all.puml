@@ -1,20 +1,20 @@
 'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 'SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 
-sprite $AppStream [64x64/16z] {
+sprite $AppStream2 [64x64/16z] {
 xP77bS0m48LmdluhtWOui3df7ta6szByYAsjxUJjvc_qZGUsIOF9WUxt04mETBy7O7AW-pq0amFTxm6O7EX-3y3aGFTx02O4hdVvuthtvxVvExgz-Xi-y_kT
 1ry2pVT0zptGVG_8ivUm682PIrWDWB8S06Kv0Cfo09Jb02ZB0L2M0w0i1q1P3e2o701bEG3ASW2KvG0eom5mrWFAylPTsO_OsjeB
 }
 
-!function $AppStreamIMG($scale=1)
+!function $AppStream2IMG($scale=1)
 !return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAB9UlEQVRoBe3avUoEMRAAYFf8QRAsRMRCQRAbCwtfQM9OtNPzHSx9DzvxGUSL66xE5cAHsLARweJAwZ/CSmzEkYUjnGxmJpkkE8hWy2WymW9m79gsV1WnR0M5H8M5J/+XewGk7mDpQOmAZwXKLeRZQO/p2XdgxF6Cy/Xd1uyCPSbo6MXL03a3Y1kC6cDk6JhlcoShrblF+ypIB3a6nauN9srU9P3nR+v67O37y3452dGf/UP0gkgHIGPIG7IHA0hmxifQK0YOQACQjXIDDlBuIAE0G6gAtQYGQKeBB1BoYAO0GVwAqgyOAD0Gd4ASgxdAg8EXMGDYm1+GT2IeyNMoMZX6eQmyP3m8I06RChPoQJ0KGOJnD0uLAaQqyr1O9gDkOyCyJ0b3tdyqm/FIB0T2xOi+1kyIe450wH9PTNnXcpM245EOKN9PggQBQIRyAw5QbiABBA0HS6uy72aoABEDZH+8tin7fokB8Dec9x7E35HxAJ6GEL8HbIA2gwtAlcERoMfgDlBi8AJoMPgCkhsEAGkNMoCEBjFAKoMkIIlBGPDfAJ/Qj4FnDcpEeQCsauZBScKM4c4NAjANZnLE876BEh8K0Dfcvj/fvPYoqZgxtYEytyr/WjQLl+A84C0UR1MAcercvErpQHNt4oyUDsSpc/Mq2XfgFwD+8yQDNgRQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
 !endfunction
 
-AWSEntityColoring(AppStream)
-!define AppStream(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, AppStream, AppStream)
-!define AppStream(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, AppStream, AppStream)
-!define AppStreamParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, AppStream, AppStream)
-!define AppStreamParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, AppStream, AppStream)
+AWSEntityColoring(AppStream2)
+!define AppStream2(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, AppStream2, AppStream2)
+!define AppStream2(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, AppStream2, AppStream2)
+!define AppStream2Participant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, AppStream2, AppStream2)
+!define AppStream2Participant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, AppStream2, AppStream2)
 
 sprite $EndUserComputing [64x64/16z] {
 xTP5biKm34JHLpBkVyFDRAkZOmy-fIR16p2tYwTlvBxywOiuZ8hh2w4KpulS3vEHvw470hVWIxBSbdqLW5USXxw1SacGrhozmmQbL_4tggx_lLEmBiReVr-n
@@ -31,18 +31,6 @@ AWSEntityColoring(EndUserComputing)
 !define EndUserComputing(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, EndUserComputing, EndUserComputing)
 !define EndUserComputingParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, EndUserComputing, EndUserComputing)
 !define EndUserComputingParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, EndUserComputing, EndUserComputing)
-
-sprite $WorkLink [64x64/16z] xTQ53O0m503Hdw3xJqmCXxhtNXJQYzRM8W23A0pwNfHCUkLO-pszKlczQZCDThsyN7yE1lt7e1nS-bE3FJtzmQqVxlsTeZyfpu-sJaerRaDw9U_NR1603G
-
-!function $WorkLinkIMG($scale=1)
-!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAB2UlEQVRoBe1aXUoDMRDerIJ4iYpvBS+gV+gB/BfBG+g9FLyBBesPviuewOJ7sW+l3kLR6ujSPJjdzOzOZGNglkJDMjOZ7/uyyTTUmJvTLOUnTzn5n9wVQGwFVQFVgMmALiEmgWz35BVY9FNwud7bXen6bRqMXk3H+8P7Bo6uC6JAiOwhCcGwiAIF4vz2zIXeuGe2ddLY13VEFHAd/luPAoitiCqgCjAZSH4Jkc4BJkl/3GVPFVVgTu9SvjBv4t9fWfY++8TtCBYyS2iw0dvp1Kv5BtOXg+EDIUPERAZAkf0bmVSQa7vTtQA81dH163jvyVe3ygAoWFq+O0fo+h3OjfnYPDYU0ywDatoDQEupxKpqX/IoY6MkvwspAKtlpIYqEIl4O60qYKmI1FAFIhFvp1UFLBWRGqRirqomqaph2sSCAIBbWMo9JvxAgeqyCmcpHnAReRAAcIdMuUbuT0aHq2vEChnyhuwvJqM2ABDnOHp+hA/RWNZMdyFZPutHE1MA3uBaL3H9VMs9xACUhw/fqwDCc+yfQRXw8xN+VBUIz7F/BqQW8ju7o+0fBWJLCG5hXTz8HjSs0X8t8llmRRBbQqwsGM4KgEGeiKsqIEIjI4gqwCBPxDV5Bb4BilhOzI5G7e8AAAAASUVORK5CYII={scale="+$scale+"}>"
-!endfunction
-
-AWSEntityColoring(WorkLink)
-!define WorkLink(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, WorkLink, WorkLink)
-!define WorkLink(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, WorkLink, WorkLink)
-!define WorkLinkParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, WorkLink, WorkLink)
-!define WorkLinkParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, WorkLink, WorkLink)
 
 sprite $WorkSpacesFamily [64x64/16z] {
 xPO5LWGn40KhdljV6FautU_H2R0wjJAILDpcHN1ma37CgPyXUpvn7z-FlhmMNvpLxodrVNzaW3ms_GfK_Utu3IZFDmLeYxwAdhgv3_asJvKbxZjrrgkWdxqs
@@ -96,22 +84,22 @@ AWSEntityColoring(WorkSpacesFamilyAmazonWorkSpacesCore)
 !define WorkSpacesFamilyAmazonWorkSpacesCoreParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, WorkSpacesFamilyAmazonWorkSpacesCore, WorkSpacesFamilyAmazonWorkSpacesCore)
 !define WorkSpacesFamilyAmazonWorkSpacesCoreParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, WorkSpacesFamilyAmazonWorkSpacesCore, WorkSpacesFamilyAmazonWorkSpacesCore)
 
-sprite $WorkSpacesFamilyAmazonWorkSpacesWeb [64x64/16z] {
+sprite $WorkSpacesFamilyAmazonWorkSpacesSecureBrowser [64x64/16z] {
 xPO7RWGX303f-FyVJhDJHaYiOz9pSxtCuY8Pqeqo9SGiwaiONLvaz013f9XVGcc_zUTCzWZvRn-XzLjBpu-0VvX_b7F_1_J_E_pQ-v7VHRx6BtFMk9-7F31o
 qEzYz8XVTMsDeJfzpiHPNz-Mz_ZvAVIMZFQKH7Rx3MN3zHm-usK-rpxhjTRpmc_e5z4aThxE4ajy9UlCsFlCdJNm-EmLU-3n6tl5mhHhlx1NIhMU5eUFNh6d
 NjzwrHFUEtsiYLXyFdD6BLm-Qwwz2FYQX8OUyBUVIwq7llAHlk7rkN-d4VL7KbfNl7vNMbfm-M3ns-x_xShdu5vdwyR7_8JF-Rc5yrjzpkyDs3_WBpF9aKGs
 7_kN3_k_-jW_lLYyZpxsGpTQhmTrQZq3uFmI0EUd63o_hTou1m
 }
 
-!function $WorkSpacesFamilyAmazonWorkSpacesWebIMG($scale=1)
+!function $WorkSpacesFamilyAmazonWorkSpacesSecureBrowserIMG($scale=1)
 !return "<img data:image/png;base64,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{scale="+$scale+"}>"
 !endfunction
 
-AWSEntityColoring(WorkSpacesFamilyAmazonWorkSpacesWeb)
-!define WorkSpacesFamilyAmazonWorkSpacesWeb(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, WorkSpacesFamilyAmazonWorkSpacesWeb, WorkSpacesFamilyAmazonWorkSpacesWeb)
-!define WorkSpacesFamilyAmazonWorkSpacesWeb(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, WorkSpacesFamilyAmazonWorkSpacesWeb, WorkSpacesFamilyAmazonWorkSpacesWeb)
-!define WorkSpacesFamilyAmazonWorkSpacesWebParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, WorkSpacesFamilyAmazonWorkSpacesWeb, WorkSpacesFamilyAmazonWorkSpacesWeb)
-!define WorkSpacesFamilyAmazonWorkSpacesWebParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, WorkSpacesFamilyAmazonWorkSpacesWeb, WorkSpacesFamilyAmazonWorkSpacesWeb)
+AWSEntityColoring(WorkSpacesFamilyAmazonWorkSpacesSecureBrowser)
+!define WorkSpacesFamilyAmazonWorkSpacesSecureBrowser(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser)
+!define WorkSpacesFamilyAmazonWorkSpacesSecureBrowser(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser)
+!define WorkSpacesFamilyAmazonWorkSpacesSecureBrowserParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser)
+!define WorkSpacesFamilyAmazonWorkSpacesSecureBrowserParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser, WorkSpacesFamilyAmazonWorkSpacesSecureBrowser)
 
 sprite $WorkSpacesThinClient [64x64/16z] {
 xP874jim30GN9xR_VpXLOuI27RZtTMDR3NpWU3w-VEbL1gPodhsmO-adwmrGxN-g0Dg9UWNrNIc2Uge-_UjoOWMk-mDEq1UqNH9B5UYeCg37F5UMN2yeBWfg

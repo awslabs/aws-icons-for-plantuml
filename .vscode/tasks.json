@@ -14,7 +14,7 @@
     {
 			"label": "PlantUML picoweb 8080",
 			"type": "shell",
-			"command": "cd scripts && java -jar plantuml-mit-1.2024.3.jar -picoweb"
+			"command": "cd scripts && java -DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url=\"http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/\" -jar plantuml-mit-1.2024.6.jar -picoweb"
 		}
 	]
 }
