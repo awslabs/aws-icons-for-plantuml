@@ -293,6 +293,91 @@ BREAKING_CHANGES["v19.0"] = {
     }
 }
 
+BREAKING_CHANGES["v20.0"] = {
+    "Analytics": {
+        "REMOVED": [
+            "DataPipeline",
+            "GlueElasticViews"
+        ]
+    },
+    "ArtificialIntelligence": {
+        "REPLACED": {
+            "SageMaker": "SageMakerAI"
+        },
+    },
+    "CloudFinancialManagement": {
+        "REMOVED": [
+            "ApplicationCostProfiler"
+        ]
+    },
+    "Compute": {
+        "REPLACED": {
+            "NICEDCV": "DCV"
+        }
+    },
+    "Database": {
+        "REPLACED": {
+            "MemoryDBforRedis": "MemoryDB"
+        },
+        "REMOVED": [
+            "RDSonVMware"
+        ]
+    },
+    "DeveloperTools": {
+        "REPLACED": {
+            "ApplicationComposer": "InfrastructureComposer"
+        },
+        "REMOVED": [
+            "CodeStar"
+        ]
+    },
+    "EndUserComputing": {
+        "REMOVED": [
+            "WorkSpacesThinClient"
+        ]
+    },
+    "Games": {
+        "REMOVED": [
+            "GameKit",
+            "GameSparks"
+        ]
+    },
+    "InternetOfThings": {
+        "REMOVED": [
+            "IoT1Click",
+            "IoTRoboRunner"
+        ]
+    },
+    "ManagementGovernance": {
+        "REMOVED": [
+            "OpsWorks",
+            "OpsWorksApps",
+            "OpsWorksDeployments",
+            "OpsWorksInstances",
+            "OpsWorksLayers",
+            "OpsWorksMonitoring",
+            "OpsWorksPermissions",
+            "OpsWorksResources",
+            "OpsWorksStack2"
+        ]
+    },
+    "MediaServices": {
+        "REMOVED": [
+            "NimbleStudio"
+        ]
+    },
+    "NetworkingContentDelivery": {
+        "REPLACED": {
+            "Route53ApplicationRecoveryController": "ApplicationRecoveryController"
+        },
+    },
+    "Storage": {
+        "REMOVED": [
+            "Snowcone"
+        ]
+    }
+}
+
 ICON_CHANGES = {}
 ICON_CHANGE_SET = set()
 
