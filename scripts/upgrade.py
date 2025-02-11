@@ -15,7 +15,7 @@ import glob
 # 1. add new "vX.Y" version to end of SUPPORTED_VERSIONS
 # 2. add a BREAKING_CHANGES["vX.Y"] structure
 
-SUPPORTED_VERSIONS = ["v13.0", "v13.1", "v14.0", "v15.0", "v16.0", "v17.0", "v18.0", "v19.0"]
+SUPPORTED_VERSIONS = ["v13.0", "v13.1", "v14.0", "v15.0", "v16.0", "v17.0", "v18.0", "v19.0", "v20.0"]
 
 UPDATES = {
     "AWS_COLOR": "$AWS_COLOR_SQUID",
