@@ -56,7 +56,6 @@ Analytics | CloudSearchSearchDocuments / CloudSearchSearchDocumentsParticipant /
 Analytics | DataExchange / DataExchangeParticipant / $DataExchangeIMG()  | ![DataExchange](dist/Analytics/DataExchange.png?raw=true) |Analytics/DataExchange.puml
 Analytics | DataExchangeforAPIs / DataExchangeforAPIsParticipant / $DataExchangeforAPIsIMG()  | ![DataExchangeforAPIs](dist/Analytics/DataExchangeforAPIs.png?raw=true) |Analytics/DataExchangeforAPIs.puml
 Analytics | DataFirehose / DataFirehoseParticipant / $DataFirehoseIMG()  | ![DataFirehose](dist/Analytics/DataFirehose.png?raw=true) |Analytics/DataFirehose.puml
-Analytics | DataPipeline / DataPipelineParticipant / $DataPipelineIMG()  | ![DataPipeline](dist/Analytics/DataPipeline.png?raw=true) |Analytics/DataPipeline.puml
 Analytics | DataZone / DataZoneParticipant / $DataZoneIMG()  | ![DataZone](dist/Analytics/DataZone.png?raw=true) |Analytics/DataZone.puml
 Analytics | DataZoneBusinessDataCatalog / DataZoneBusinessDataCatalogParticipant / $DataZoneBusinessDataCatalogIMG()  | ![DataZoneBusinessDataCatalog](dist/Analytics/DataZoneBusinessDataCatalog.png?raw=true) |Analytics/DataZoneBusinessDataCatalog.puml
 Analytics | DataZoneDataPortal / DataZoneDataPortalParticipant / $DataZoneDataPortalIMG()  | ![DataZoneDataPortal](dist/Analytics/DataZoneDataPortal.png?raw=true) |Analytics/DataZoneDataPortal.puml
@@ -73,7 +72,6 @@ Analytics | GlueCrawler / GlueCrawlerParticipant / $GlueCrawlerIMG()  | ![GlueCr
 Analytics | GlueDataBrew / GlueDataBrewParticipant / $GlueDataBrewIMG()  | ![GlueDataBrew](dist/Analytics/GlueDataBrew.png?raw=true) |Analytics/GlueDataBrew.puml
 Analytics | GlueDataCatalog / GlueDataCatalogParticipant / $GlueDataCatalogIMG()  | ![GlueDataCatalog](dist/Analytics/GlueDataCatalog.png?raw=true) |Analytics/GlueDataCatalog.puml
 Analytics | GlueDataQuality / GlueDataQualityParticipant / $GlueDataQualityIMG()  | ![GlueDataQuality](dist/Analytics/GlueDataQuality.png?raw=true) |Analytics/GlueDataQuality.puml
-Analytics | GlueElasticViews / GlueElasticViewsParticipant / $GlueElasticViewsIMG()  | ![GlueElasticViews](dist/Analytics/GlueElasticViews.png?raw=true) |Analytics/GlueElasticViews.puml
 Analytics | Kinesis / KinesisParticipant / $KinesisIMG()  | ![Kinesis](dist/Analytics/Kinesis.png?raw=true) |Analytics/Kinesis.puml
 Analytics | KinesisDataStreams / KinesisDataStreamsParticipant / $KinesisDataStreamsIMG()  | ![KinesisDataStreams](dist/Analytics/KinesisDataStreams.png?raw=true) |Analytics/KinesisDataStreams.puml
 Analytics | KinesisVideoStreams / KinesisVideoStreamsParticipant / $KinesisVideoStreamsIMG()  | ![KinesisVideoStreams](dist/Analytics/KinesisVideoStreams.png?raw=true) |Analytics/KinesisVideoStreams.puml
@@ -102,6 +100,7 @@ Analytics | RedshiftML / RedshiftMLParticipant / $RedshiftMLIMG()  | ![RedshiftM
 Analytics | RedshiftQueryEditorv20 / RedshiftQueryEditorv20Participant / $RedshiftQueryEditorv20IMG()  | ![RedshiftQueryEditorv20](dist/Analytics/RedshiftQueryEditorv20.png?raw=true) |Analytics/RedshiftQueryEditorv20.puml
 Analytics | RedshiftRA3 / RedshiftRA3Participant / $RedshiftRA3IMG()  | ![RedshiftRA3](dist/Analytics/RedshiftRA3.png?raw=true) |Analytics/RedshiftRA3.puml
 Analytics | RedshiftStreamingIngestion / RedshiftStreamingIngestionParticipant / $RedshiftStreamingIngestionIMG()  | ![RedshiftStreamingIngestion](dist/Analytics/RedshiftStreamingIngestion.png?raw=true) |Analytics/RedshiftStreamingIngestion.puml
+Analytics | SageMaker / SageMakerParticipant / $SageMakerIMG()  | ![SageMaker](dist/Analytics/SageMaker.png?raw=true) |Analytics/SageMaker.puml
 **ApplicationIntegration** | $AWSColor(ApplicationIntegration) / $AWS_COLOR_COSMOS | | **ApplicationIntegration/all.puml**
 ApplicationIntegration | AppFlow / AppFlowParticipant / $AppFlowIMG()  | ![AppFlow](dist/ApplicationIntegration/AppFlow.png?raw=true) |ApplicationIntegration/AppFlow.puml
 ApplicationIntegration | AppSync / AppSyncParticipant / $AppSyncIMG()  | ![AppSync](dist/ApplicationIntegration/AppSync.png?raw=true) |ApplicationIntegration/AppSync.puml
@@ -131,6 +130,7 @@ ApplicationIntegration | SimpleQueueServiceQueue / SimpleQueueServiceQueuePartic
 ApplicationIntegration | StepFunctions / StepFunctionsParticipant / $StepFunctionsIMG()  | ![StepFunctions](dist/ApplicationIntegration/StepFunctions.png?raw=true) |ApplicationIntegration/StepFunctions.puml
 **ArtificialIntelligence** | $AWSColor(ArtificialIntelligence) / $AWS_COLOR_ORBIT | | **ArtificialIntelligence/all.puml**
 ArtificialIntelligence | ApacheMXNetonAWS / ApacheMXNetonAWSParticipant / $ApacheMXNetonAWSIMG()  | ![ApacheMXNetonAWS](dist/ArtificialIntelligence/ApacheMXNetonAWS.png?raw=true) |ArtificialIntelligence/ApacheMXNetonAWS.puml
+ArtificialIntelligence | AppStudio / AppStudioParticipant / $AppStudioIMG()  | ![AppStudio](dist/ArtificialIntelligence/AppStudio.png?raw=true) |ArtificialIntelligence/AppStudio.puml
 ArtificialIntelligence | ArtificialIntelligence / ArtificialIntelligenceParticipant / $ArtificialIntelligenceIMG()  | ![ArtificialIntelligence](dist/ArtificialIntelligence/ArtificialIntelligence.png?raw=true) |ArtificialIntelligence/ArtificialIntelligence.puml
 ArtificialIntelligence | AugmentedAIA2I / AugmentedAIA2IParticipant / $AugmentedAIA2IIMG()  | ![AugmentedAIA2I](dist/ArtificialIntelligence/AugmentedAIA2I.png?raw=true) |ArtificialIntelligence/AugmentedAIA2I.puml
 ArtificialIntelligence | Bedrock / BedrockParticipant / $BedrockIMG()  | ![Bedrock](dist/ArtificialIntelligence/Bedrock.png?raw=true) |ArtificialIntelligence/Bedrock.puml
@@ -159,6 +159,7 @@ ArtificialIntelligence | LookoutforMetrics / LookoutforMetricsParticipant / $Loo
 ArtificialIntelligence | LookoutforVision / LookoutforVisionParticipant / $LookoutforVisionIMG()  | ![LookoutforVision](dist/ArtificialIntelligence/LookoutforVision.png?raw=true) |ArtificialIntelligence/LookoutforVision.puml
 ArtificialIntelligence | Monitron / MonitronParticipant / $MonitronIMG()  | ![Monitron](dist/ArtificialIntelligence/Monitron.png?raw=true) |ArtificialIntelligence/Monitron.puml
 ArtificialIntelligence | Neuron / NeuronParticipant / $NeuronIMG()  | ![Neuron](dist/ArtificialIntelligence/Neuron.png?raw=true) |ArtificialIntelligence/Neuron.puml
+ArtificialIntelligence | Nova / NovaParticipant / $NovaIMG()  | ![Nova](dist/ArtificialIntelligence/Nova.png?raw=true) |ArtificialIntelligence/Nova.puml
 ArtificialIntelligence | Panorama / PanoramaParticipant / $PanoramaIMG()  | ![Panorama](dist/ArtificialIntelligence/Panorama.png?raw=true) |ArtificialIntelligence/Panorama.puml
 ArtificialIntelligence | Personalize / PersonalizeParticipant / $PersonalizeIMG()  | ![Personalize](dist/ArtificialIntelligence/Personalize.png?raw=true) |ArtificialIntelligence/Personalize.puml
 ArtificialIntelligence | Polly / PollyParticipant / $PollyIMG()  | ![Polly](dist/ArtificialIntelligence/Polly.png?raw=true) |ArtificialIntelligence/Polly.puml
@@ -167,7 +168,7 @@ ArtificialIntelligence | Q / QParticipant / $QIMG()  | ![Q](dist/ArtificialIntel
 ArtificialIntelligence | Rekognition / RekognitionParticipant / $RekognitionIMG()  | ![Rekognition](dist/ArtificialIntelligence/Rekognition.png?raw=true) |ArtificialIntelligence/Rekognition.puml
 ArtificialIntelligence | RekognitionImage / RekognitionImageParticipant / $RekognitionImageIMG()  | ![RekognitionImage](dist/ArtificialIntelligence/RekognitionImage.png?raw=true) |ArtificialIntelligence/RekognitionImage.puml
 ArtificialIntelligence | RekognitionVideo / RekognitionVideoParticipant / $RekognitionVideoIMG()  | ![RekognitionVideo](dist/ArtificialIntelligence/RekognitionVideo.png?raw=true) |ArtificialIntelligence/RekognitionVideo.puml
-ArtificialIntelligence | SageMaker / SageMakerParticipant / $SageMakerIMG()  | ![SageMaker](dist/ArtificialIntelligence/SageMaker.png?raw=true) |ArtificialIntelligence/SageMaker.puml
+ArtificialIntelligence | SageMakerAI / SageMakerAIParticipant / $SageMakerAIIMG()  | ![SageMakerAI](dist/ArtificialIntelligence/SageMakerAI.png?raw=true) |ArtificialIntelligence/SageMakerAI.puml
 ArtificialIntelligence | SageMakerCanvas / SageMakerCanvasParticipant / $SageMakerCanvasIMG()  | ![SageMakerCanvas](dist/ArtificialIntelligence/SageMakerCanvas.png?raw=true) |ArtificialIntelligence/SageMakerCanvas.puml
 ArtificialIntelligence | SageMakerGeospatialML / SageMakerGeospatialMLParticipant / $SageMakerGeospatialMLIMG()  | ![SageMakerGeospatialML](dist/ArtificialIntelligence/SageMakerGeospatialML.png?raw=true) |ArtificialIntelligence/SageMakerGeospatialML.puml
 ArtificialIntelligence | SageMakerGroundTruth / SageMakerGroundTruthParticipant / $SageMakerGroundTruthIMG()  | ![SageMakerGroundTruth](dist/ArtificialIntelligence/SageMakerGroundTruth.png?raw=true) |ArtificialIntelligence/SageMakerGroundTruth.puml
@@ -193,6 +194,7 @@ BusinessApplications | BusinessApplications / BusinessApplicationsParticipant / 
 BusinessApplications | Chime / ChimeParticipant / $ChimeIMG()  | ![Chime](dist/BusinessApplications/Chime.png?raw=true) |BusinessApplications/Chime.puml
 BusinessApplications | ChimeSDK / ChimeSDKParticipant / $ChimeSDKIMG()  | ![ChimeSDK](dist/BusinessApplications/ChimeSDK.png?raw=true) |BusinessApplications/ChimeSDK.puml
 BusinessApplications | Connect / ConnectParticipant / $ConnectIMG()  | ![Connect](dist/BusinessApplications/Connect.png?raw=true) |BusinessApplications/Connect.puml
+BusinessApplications | EndUserMessaging / EndUserMessagingParticipant / $EndUserMessagingIMG()  | ![EndUserMessaging](dist/BusinessApplications/EndUserMessaging.png?raw=true) |BusinessApplications/EndUserMessaging.puml
 BusinessApplications | Pinpoint / PinpointParticipant / $PinpointIMG()  | ![Pinpoint](dist/BusinessApplications/Pinpoint.png?raw=true) |BusinessApplications/Pinpoint.puml
 BusinessApplications | PinpointAPIs / PinpointAPIsParticipant / $PinpointAPIsIMG()  | ![PinpointAPIs](dist/BusinessApplications/PinpointAPIs.png?raw=true) |BusinessApplications/PinpointAPIs.puml
 BusinessApplications | PinpointJourney / PinpointJourneyParticipant / $PinpointJourneyIMG()  | ![PinpointJourney](dist/BusinessApplications/PinpointJourney.png?raw=true) |BusinessApplications/PinpointJourney.puml
@@ -204,7 +206,6 @@ BusinessApplications | WorkDocs / WorkDocsParticipant / $WorkDocsIMG()  | ![Work
 BusinessApplications | WorkDocsSDK / WorkDocsSDKParticipant / $WorkDocsSDKIMG()  | ![WorkDocsSDK](dist/BusinessApplications/WorkDocsSDK.png?raw=true) |BusinessApplications/WorkDocsSDK.puml
 BusinessApplications | WorkMail / WorkMailParticipant / $WorkMailIMG()  | ![WorkMail](dist/BusinessApplications/WorkMail.png?raw=true) |BusinessApplications/WorkMail.puml
 **CloudFinancialManagement** | $AWSColor(CloudFinancialManagement) / $AWS_COLOR_ENDOR | | **CloudFinancialManagement/all.puml**
-CloudFinancialManagement | ApplicationCostProfiler / ApplicationCostProfilerParticipant / $ApplicationCostProfilerIMG()  | ![ApplicationCostProfiler](dist/CloudFinancialManagement/ApplicationCostProfiler.png?raw=true) |CloudFinancialManagement/ApplicationCostProfiler.puml
 CloudFinancialManagement | BillingConductor / BillingConductorParticipant / $BillingConductorIMG()  | ![BillingConductor](dist/CloudFinancialManagement/BillingConductor.png?raw=true) |CloudFinancialManagement/BillingConductor.puml
 CloudFinancialManagement | Budgets / BudgetsParticipant / $BudgetsIMG()  | ![Budgets](dist/CloudFinancialManagement/Budgets.png?raw=true) |CloudFinancialManagement/Budgets.puml
 CloudFinancialManagement | CloudFinancialManagement / CloudFinancialManagementParticipant / $CloudFinancialManagementIMG()  | ![CloudFinancialManagement](dist/CloudFinancialManagement/CloudFinancialManagement.png?raw=true) |CloudFinancialManagement/CloudFinancialManagement.puml
@@ -217,6 +218,7 @@ Compute | AppRunner / AppRunnerParticipant / $AppRunnerIMG()  | ![AppRunner](dis
 Compute | Batch / BatchParticipant / $BatchIMG()  | ![Batch](dist/Compute/Batch.png?raw=true) |Compute/Batch.puml
 Compute | Bottlerocket / BottlerocketParticipant / $BottlerocketIMG()  | ![Bottlerocket](dist/Compute/Bottlerocket.png?raw=true) |Compute/Bottlerocket.puml
 Compute | Compute / ComputeParticipant / $ComputeIMG()  | ![Compute](dist/Compute/Compute.png?raw=true) |Compute/Compute.puml
+Compute | DCV / DCVParticipant / $DCVIMG()  | ![DCV](dist/Compute/DCV.png?raw=true) |Compute/DCV.puml
 Compute | EC2 / EC2Participant / $EC2IMG()  | ![EC2](dist/Compute/EC2.png?raw=true) |Compute/EC2.puml
 Compute | EC2AMI / EC2AMIParticipant / $EC2AMIIMG()  | ![EC2AMI](dist/Compute/EC2AMI.png?raw=true) |Compute/EC2AMI.puml
 Compute | EC2AWSMicroserviceExtractorforNET / EC2AWSMicroserviceExtractorforNETParticipant / $EC2AWSMicroserviceExtractorforNETIMG()  | ![EC2AWSMicroserviceExtractorforNET](dist/Compute/EC2AWSMicroserviceExtractorforNET.png?raw=true) |Compute/EC2AWSMicroserviceExtractorforNET.puml
@@ -239,13 +241,13 @@ Compute | LambdaLambdaFunction / LambdaLambdaFunctionParticipant / $LambdaLambda
 Compute | Lightsail / LightsailParticipant / $LightsailIMG()  | ![Lightsail](dist/Compute/Lightsail.png?raw=true) |Compute/Lightsail.puml
 Compute | LightsailforResearch / LightsailforResearchParticipant / $LightsailforResearchIMG()  | ![LightsailforResearch](dist/Compute/LightsailforResearch.png?raw=true) |Compute/LightsailforResearch.puml
 Compute | LocalZones / LocalZonesParticipant / $LocalZonesIMG()  | ![LocalZones](dist/Compute/LocalZones.png?raw=true) |Compute/LocalZones.puml
-Compute | NICEDCV / NICEDCVParticipant / $NICEDCVIMG()  | ![NICEDCV](dist/Compute/NICEDCV.png?raw=true) |Compute/NICEDCV.puml
 Compute | NICEEnginFrame / NICEEnginFrameParticipant / $NICEEnginFrameIMG()  | ![NICEEnginFrame](dist/Compute/NICEEnginFrame.png?raw=true) |Compute/NICEEnginFrame.puml
 Compute | NitroEnclaves / NitroEnclavesParticipant / $NitroEnclavesIMG()  | ![NitroEnclaves](dist/Compute/NitroEnclaves.png?raw=true) |Compute/NitroEnclaves.puml
 Compute | Outpostsfamily / OutpostsfamilyParticipant / $OutpostsfamilyIMG()  | ![Outpostsfamily](dist/Compute/Outpostsfamily.png?raw=true) |Compute/Outpostsfamily.puml
 Compute | Outpostsrack / OutpostsrackParticipant / $OutpostsrackIMG()  | ![Outpostsrack](dist/Compute/Outpostsrack.png?raw=true) |Compute/Outpostsrack.puml
 Compute | Outpostsservers / OutpostsserversParticipant / $OutpostsserversIMG()  | ![Outpostsservers](dist/Compute/Outpostsservers.png?raw=true) |Compute/Outpostsservers.puml
 Compute | ParallelCluster / ParallelClusterParticipant / $ParallelClusterIMG()  | ![ParallelCluster](dist/Compute/ParallelCluster.png?raw=true) |Compute/ParallelCluster.puml
+Compute | ParallelComputingService / ParallelComputingServiceParticipant / $ParallelComputingServiceIMG()  | ![ParallelComputingService](dist/Compute/ParallelComputingService.png?raw=true) |Compute/ParallelComputingService.puml
 Compute | ServerlessApplicationRepository / ServerlessApplicationRepositoryParticipant / $ServerlessApplicationRepositoryIMG()  | ![ServerlessApplicationRepository](dist/Compute/ServerlessApplicationRepository.png?raw=true) |Compute/ServerlessApplicationRepository.puml
 Compute | SimSpaceWeaver / SimSpaceWeaverParticipant / $SimSpaceWeaverIMG()  | ![SimSpaceWeaver](dist/Compute/SimSpaceWeaver.png?raw=true) |Compute/SimSpaceWeaver.puml
 Compute | Wavelength / WavelengthParticipant / $WavelengthIMG()  | ![Wavelength](dist/Compute/Wavelength.png?raw=true) |Compute/Wavelength.puml
@@ -320,9 +322,11 @@ Database | ElastiCache / ElastiCacheParticipant / $ElastiCacheIMG()  | ![ElastiC
 Database | ElastiCacheCacheNode / ElastiCacheCacheNodeParticipant / $ElastiCacheCacheNodeIMG()  | ![ElastiCacheCacheNode](dist/Database/ElastiCacheCacheNode.png?raw=true) |Database/ElastiCacheCacheNode.puml
 Database | ElastiCacheElastiCacheforMemcached / ElastiCacheElastiCacheforMemcachedParticipant / $ElastiCacheElastiCacheforMemcachedIMG()  | ![ElastiCacheElastiCacheforMemcached](dist/Database/ElastiCacheElastiCacheforMemcached.png?raw=true) |Database/ElastiCacheElastiCacheforMemcached.puml
 Database | ElastiCacheElastiCacheforRedis / ElastiCacheElastiCacheforRedisParticipant / $ElastiCacheElastiCacheforRedisIMG()  | ![ElastiCacheElastiCacheforRedis](dist/Database/ElastiCacheElastiCacheforRedis.png?raw=true) |Database/ElastiCacheElastiCacheforRedis.puml
+Database | ElastiCacheElastiCacheforValkey / ElastiCacheElastiCacheforValkeyParticipant / $ElastiCacheElastiCacheforValkeyIMG()  | ![ElastiCacheElastiCacheforValkey](dist/Database/ElastiCacheElastiCacheforValkey.png?raw=true) |Database/ElastiCacheElastiCacheforValkey.puml
 Database | Keyspaces / KeyspacesParticipant / $KeyspacesIMG()  | ![Keyspaces](dist/Database/Keyspaces.png?raw=true) |Database/Keyspaces.puml
-Database | MemoryDBforRedis / MemoryDBforRedisParticipant / $MemoryDBforRedisIMG()  | ![MemoryDBforRedis](dist/Database/MemoryDBforRedis.png?raw=true) |Database/MemoryDBforRedis.puml
+Database | MemoryDB / MemoryDBParticipant / $MemoryDBIMG()  | ![MemoryDB](dist/Database/MemoryDB.png?raw=true) |Database/MemoryDB.puml
 Database | Neptune / NeptuneParticipant / $NeptuneIMG()  | ![Neptune](dist/Database/Neptune.png?raw=true) |Database/Neptune.puml
+Database | OracleDatabaseatAWS / OracleDatabaseatAWSParticipant / $OracleDatabaseatAWSIMG()  | ![OracleDatabaseatAWS](dist/Database/OracleDatabaseatAWS.png?raw=true) |Database/OracleDatabaseatAWS.puml
 Database | RDS / RDSParticipant / $RDSIMG()  | ![RDS](dist/Database/RDS.png?raw=true) |Database/RDS.puml
 Database | RDSBlueGreenDeployments / RDSBlueGreenDeploymentsParticipant / $RDSBlueGreenDeploymentsIMG()  | ![RDSBlueGreenDeployments](dist/Database/RDSBlueGreenDeployments.png?raw=true) |Database/RDSBlueGreenDeployments.puml
 Database | RDSMultiAZ / RDSMultiAZParticipant / $RDSMultiAZIMG()  | ![RDSMultiAZ](dist/Database/RDSMultiAZ.png?raw=true) |Database/RDSMultiAZ.puml
@@ -331,10 +335,8 @@ Database | RDSOptimizedWrites / RDSOptimizedWritesParticipant / $RDSOptimizedWri
 Database | RDSProxyInstance / RDSProxyInstanceParticipant / $RDSProxyInstanceIMG()  | ![RDSProxyInstance](dist/Database/RDSProxyInstance.png?raw=true) |Database/RDSProxyInstance.puml
 Database | RDSProxyInstanceAlternate / RDSProxyInstanceAlternateParticipant / $RDSProxyInstanceAlternateIMG()  | ![RDSProxyInstanceAlternate](dist/Database/RDSProxyInstanceAlternate.png?raw=true) |Database/RDSProxyInstanceAlternate.puml
 Database | RDSTrustedLanguageExtensionsforPostgreSQL / RDSTrustedLanguageExtensionsforPostgreSQLParticipant / $RDSTrustedLanguageExtensionsforPostgreSQLIMG()  | ![RDSTrustedLanguageExtensionsforPostgreSQL](dist/Database/RDSTrustedLanguageExtensionsforPostgreSQL.png?raw=true) |Database/RDSTrustedLanguageExtensionsforPostgreSQL.puml
-Database | RDSonVMware / RDSonVMwareParticipant / $RDSonVMwareIMG()  | ![RDSonVMware](dist/Database/RDSonVMware.png?raw=true) |Database/RDSonVMware.puml
 Database | Timestream / TimestreamParticipant / $TimestreamIMG()  | ![Timestream](dist/Database/Timestream.png?raw=true) |Database/Timestream.puml
 **DeveloperTools** | $AWSColor(DeveloperTools) / $AWS_COLOR_NEBULA | | **DeveloperTools/all.puml**
-DeveloperTools | ApplicationComposer / ApplicationComposerParticipant / $ApplicationComposerIMG()  | ![ApplicationComposer](dist/DeveloperTools/ApplicationComposer.png?raw=true) |DeveloperTools/ApplicationComposer.puml
 DeveloperTools | Cloud9 / Cloud9Participant / $Cloud9IMG()  | ![Cloud9](dist/DeveloperTools/Cloud9.png?raw=true) |DeveloperTools/Cloud9.puml
 DeveloperTools | Cloud9Cloud9 / Cloud9Cloud9Participant / $Cloud9Cloud9IMG()  | ![Cloud9Cloud9](dist/DeveloperTools/Cloud9Cloud9.png?raw=true) |DeveloperTools/Cloud9Cloud9.puml
 DeveloperTools | CloudControlAPI / CloudControlAPIParticipant / $CloudControlAPIIMG()  | ![CloudControlAPI](dist/DeveloperTools/CloudControlAPI.png?raw=true) |DeveloperTools/CloudControlAPI.puml
@@ -346,11 +348,11 @@ DeveloperTools | CodeCatalyst / CodeCatalystParticipant / $CodeCatalystIMG()  | 
 DeveloperTools | CodeCommit / CodeCommitParticipant / $CodeCommitIMG()  | ![CodeCommit](dist/DeveloperTools/CodeCommit.png?raw=true) |DeveloperTools/CodeCommit.puml
 DeveloperTools | CodeDeploy / CodeDeployParticipant / $CodeDeployIMG()  | ![CodeDeploy](dist/DeveloperTools/CodeDeploy.png?raw=true) |DeveloperTools/CodeDeploy.puml
 DeveloperTools | CodePipeline / CodePipelineParticipant / $CodePipelineIMG()  | ![CodePipeline](dist/DeveloperTools/CodePipeline.png?raw=true) |DeveloperTools/CodePipeline.puml
-DeveloperTools | CodeStar / CodeStarParticipant / $CodeStarIMG()  | ![CodeStar](dist/DeveloperTools/CodeStar.png?raw=true) |DeveloperTools/CodeStar.puml
 DeveloperTools | CommandLineInterface / CommandLineInterfaceParticipant / $CommandLineInterfaceIMG()  | ![CommandLineInterface](dist/DeveloperTools/CommandLineInterface.png?raw=true) |DeveloperTools/CommandLineInterface.puml
 DeveloperTools | Corretto / CorrettoParticipant / $CorrettoIMG()  | ![Corretto](dist/DeveloperTools/Corretto.png?raw=true) |DeveloperTools/Corretto.puml
 DeveloperTools | DeveloperTools / DeveloperToolsParticipant / $DeveloperToolsIMG()  | ![DeveloperTools](dist/DeveloperTools/DeveloperTools.png?raw=true) |DeveloperTools/DeveloperTools.puml
 DeveloperTools | FaultInjectionService / FaultInjectionServiceParticipant / $FaultInjectionServiceIMG()  | ![FaultInjectionService](dist/DeveloperTools/FaultInjectionService.png?raw=true) |DeveloperTools/FaultInjectionService.puml
+DeveloperTools | InfrastructureComposer / InfrastructureComposerParticipant / $InfrastructureComposerIMG()  | ![InfrastructureComposer](dist/DeveloperTools/InfrastructureComposer.png?raw=true) |DeveloperTools/InfrastructureComposer.puml
 DeveloperTools | ToolsandSDKs / ToolsandSDKsParticipant / $ToolsandSDKsIMG()  | ![ToolsandSDKs](dist/DeveloperTools/ToolsandSDKs.png?raw=true) |DeveloperTools/ToolsandSDKs.puml
 DeveloperTools | XRay / XRayParticipant / $XRayIMG()  | ![XRay](dist/DeveloperTools/XRay.png?raw=true) |DeveloperTools/XRay.puml
 **EndUserComputing** | $AWSColor(EndUserComputing) / $AWS_COLOR_ORBIT | | **EndUserComputing/all.puml**
@@ -360,7 +362,6 @@ EndUserComputing | WorkSpacesFamily / WorkSpacesFamilyParticipant / $WorkSpacesF
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpaces / WorkSpacesFamilyAmazonWorkSpacesParticipant / $WorkSpacesFamilyAmazonWorkSpacesIMG()  | ![WorkSpacesFamilyAmazonWorkSpaces](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.puml
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpacesCore / WorkSpacesFamilyAmazonWorkSpacesCoreParticipant / $WorkSpacesFamilyAmazonWorkSpacesCoreIMG()  | ![WorkSpacesFamilyAmazonWorkSpacesCore](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.puml
 EndUserComputing | WorkSpacesFamilyAmazonWorkSpacesSecureBrowser / WorkSpacesFamilyAmazonWorkSpacesSecureBrowserParticipant / $WorkSpacesFamilyAmazonWorkSpacesSecureBrowserIMG()  | ![WorkSpacesFamilyAmazonWorkSpacesSecureBrowser](dist/EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesSecureBrowser.png?raw=true) |EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesSecureBrowser.puml
-EndUserComputing | WorkSpacesThinClient / WorkSpacesThinClientParticipant / $WorkSpacesThinClientIMG()  | ![WorkSpacesThinClient](dist/EndUserComputing/WorkSpacesThinClient.png?raw=true) |EndUserComputing/WorkSpacesThinClient.puml
 **FrontEndWebMobile** | $AWSColor(FrontEndWebMobile) / $AWS_COLOR_MARS | | **FrontEndWebMobile/all.puml**
 FrontEndWebMobile | Amplify / AmplifyParticipant / $AmplifyIMG()  | ![Amplify](dist/FrontEndWebMobile/Amplify.png?raw=true) |FrontEndWebMobile/Amplify.puml
 FrontEndWebMobile | AmplifyAWSAmplifyStudio / AmplifyAWSAmplifyStudioParticipant / $AmplifyAWSAmplifyStudioIMG()  | ![AmplifyAWSAmplifyStudio](dist/FrontEndWebMobile/AmplifyAWSAmplifyStudio.png?raw=true) |FrontEndWebMobile/AmplifyAWSAmplifyStudio.puml
@@ -373,9 +374,7 @@ FrontEndWebMobile | LocationServicePlace / LocationServicePlaceParticipant / $Lo
 FrontEndWebMobile | LocationServiceRoutes / LocationServiceRoutesParticipant / $LocationServiceRoutesIMG()  | ![LocationServiceRoutes](dist/FrontEndWebMobile/LocationServiceRoutes.png?raw=true) |FrontEndWebMobile/LocationServiceRoutes.puml
 FrontEndWebMobile | LocationServiceTrack / LocationServiceTrackParticipant / $LocationServiceTrackIMG()  | ![LocationServiceTrack](dist/FrontEndWebMobile/LocationServiceTrack.png?raw=true) |FrontEndWebMobile/LocationServiceTrack.puml
 **Games** | $AWSColor(Games) / $AWS_COLOR_GALAXY | | **Games/all.puml**
-Games | GameKit / GameKitParticipant / $GameKitIMG()  | ![GameKit](dist/Games/GameKit.png?raw=true) |Games/GameKit.puml
 Games | GameLift / GameLiftParticipant / $GameLiftIMG()  | ![GameLift](dist/Games/GameLift.png?raw=true) |Games/GameLift.puml
-Games | GameSparks / GameSparksParticipant / $GameSparksIMG()  | ![GameSparks](dist/Games/GameSparks.png?raw=true) |Games/GameSparks.puml
 Games | Games / GamesParticipant / $GamesIMG()  | ![Games](dist/Games/Games.png?raw=true) |Games/Games.puml
 Games | Open3DEngine / Open3DEngineParticipant / $Open3DEngineIMG()  | ![Open3DEngine](dist/Games/Open3DEngine.png?raw=true) |Games/Open3DEngine.puml
 **General** | $AWSColor(General) / $AWS_COLOR_SQUID | | **General/all.puml**
@@ -458,7 +457,6 @@ Groups | VPCGroup / $VPCIMG()  | ![VPC](dist/Groups/VPC.png?raw=true) |Groups/VP
 **InternetOfThings** | $AWSColor(InternetOfThings) / $AWS_COLOR_ENDOR | | **InternetOfThings/all.puml**
 InternetOfThings | FreeRTOS / FreeRTOSParticipant / $FreeRTOSIMG()  | ![FreeRTOS](dist/InternetOfThings/FreeRTOS.png?raw=true) |InternetOfThings/FreeRTOS.puml
 InternetOfThings | InternetOfThings / InternetOfThingsParticipant / $InternetOfThingsIMG()  | ![InternetOfThings](dist/InternetOfThings/InternetOfThings.png?raw=true) |InternetOfThings/InternetOfThings.puml
-InternetOfThings | IoT1Click / IoT1ClickParticipant / $IoT1ClickIMG()  | ![IoT1Click](dist/InternetOfThings/IoT1Click.png?raw=true) |InternetOfThings/IoT1Click.puml
 InternetOfThings | IoTAction / IoTActionParticipant / $IoTActionIMG()  | ![IoTAction](dist/InternetOfThings/IoTAction.png?raw=true) |InternetOfThings/IoTAction.puml
 InternetOfThings | IoTActuator / IoTActuatorParticipant / $IoTActuatorIMG()  | ![IoTActuator](dist/InternetOfThings/IoTActuator.png?raw=true) |InternetOfThings/IoTActuator.puml
 InternetOfThings | IoTAlexaEnabledDevice / IoTAlexaEnabledDeviceParticipant / $IoTAlexaEnabledDeviceIMG()  | ![IoTAlexaEnabledDevice](dist/InternetOfThings/IoTAlexaEnabledDevice.png?raw=true) |InternetOfThings/IoTAlexaEnabledDevice.puml
@@ -509,7 +507,6 @@ InternetOfThings | IoTMQTTProtocol / IoTMQTTProtocolParticipant / $IoTMQTTProtoc
 InternetOfThings | IoTOverAirUpdate / IoTOverAirUpdateParticipant / $IoTOverAirUpdateIMG()  | ![IoTOverAirUpdate](dist/InternetOfThings/IoTOverAirUpdate.png?raw=true) |InternetOfThings/IoTOverAirUpdate.puml
 InternetOfThings | IoTPolicy / IoTPolicyParticipant / $IoTPolicyIMG()  | ![IoTPolicy](dist/InternetOfThings/IoTPolicy.png?raw=true) |InternetOfThings/IoTPolicy.puml
 InternetOfThings | IoTReportedState / IoTReportedStateParticipant / $IoTReportedStateIMG()  | ![IoTReportedState](dist/InternetOfThings/IoTReportedState.png?raw=true) |InternetOfThings/IoTReportedState.puml
-InternetOfThings | IoTRoboRunner / IoTRoboRunnerParticipant / $IoTRoboRunnerIMG()  | ![IoTRoboRunner](dist/InternetOfThings/IoTRoboRunner.png?raw=true) |InternetOfThings/IoTRoboRunner.puml
 InternetOfThings | IoTRule / IoTRuleParticipant / $IoTRuleIMG()  | ![IoTRule](dist/InternetOfThings/IoTRule.png?raw=true) |InternetOfThings/IoTRule.puml
 InternetOfThings | IoTSailboat / IoTSailboatParticipant / $IoTSailboatIMG()  | ![IoTSailboat](dist/InternetOfThings/IoTSailboat.png?raw=true) |InternetOfThings/IoTSailboat.puml
 InternetOfThings | IoTSensor / IoTSensorParticipant / $IoTSensorIMG()  | ![IoTSensor](dist/InternetOfThings/IoTSensor.png?raw=true) |InternetOfThings/IoTSensor.puml
@@ -589,15 +586,6 @@ ManagementGovernance | ManagedGrafana / ManagedGrafanaParticipant / $ManagedGraf
 ManagementGovernance | ManagedServiceforPrometheus / ManagedServiceforPrometheusParticipant / $ManagedServiceforPrometheusIMG()  | ![ManagedServiceforPrometheus](dist/ManagementGovernance/ManagedServiceforPrometheus.png?raw=true) |ManagementGovernance/ManagedServiceforPrometheus.puml
 ManagementGovernance | ManagementConsole / ManagementConsoleParticipant / $ManagementConsoleIMG()  | ![ManagementConsole](dist/ManagementGovernance/ManagementConsole.png?raw=true) |ManagementGovernance/ManagementConsole.puml
 ManagementGovernance | ManagementGovernance / ManagementGovernanceParticipant / $ManagementGovernanceIMG()  | ![ManagementGovernance](dist/ManagementGovernance/ManagementGovernance.png?raw=true) |ManagementGovernance/ManagementGovernance.puml
-ManagementGovernance | OpsWorks / OpsWorksParticipant / $OpsWorksIMG()  | ![OpsWorks](dist/ManagementGovernance/OpsWorks.png?raw=true) |ManagementGovernance/OpsWorks.puml
-ManagementGovernance | OpsWorksApps / OpsWorksAppsParticipant / $OpsWorksAppsIMG()  | ![OpsWorksApps](dist/ManagementGovernance/OpsWorksApps.png?raw=true) |ManagementGovernance/OpsWorksApps.puml
-ManagementGovernance | OpsWorksDeployments / OpsWorksDeploymentsParticipant / $OpsWorksDeploymentsIMG()  | ![OpsWorksDeployments](dist/ManagementGovernance/OpsWorksDeployments.png?raw=true) |ManagementGovernance/OpsWorksDeployments.puml
-ManagementGovernance | OpsWorksInstances / OpsWorksInstancesParticipant / $OpsWorksInstancesIMG()  | ![OpsWorksInstances](dist/ManagementGovernance/OpsWorksInstances.png?raw=true) |ManagementGovernance/OpsWorksInstances.puml
-ManagementGovernance | OpsWorksLayers / OpsWorksLayersParticipant / $OpsWorksLayersIMG()  | ![OpsWorksLayers](dist/ManagementGovernance/OpsWorksLayers.png?raw=true) |ManagementGovernance/OpsWorksLayers.puml
-ManagementGovernance | OpsWorksMonitoring / OpsWorksMonitoringParticipant / $OpsWorksMonitoringIMG()  | ![OpsWorksMonitoring](dist/ManagementGovernance/OpsWorksMonitoring.png?raw=true) |ManagementGovernance/OpsWorksMonitoring.puml
-ManagementGovernance | OpsWorksPermissions / OpsWorksPermissionsParticipant / $OpsWorksPermissionsIMG()  | ![OpsWorksPermissions](dist/ManagementGovernance/OpsWorksPermissions.png?raw=true) |ManagementGovernance/OpsWorksPermissions.puml
-ManagementGovernance | OpsWorksResources / OpsWorksResourcesParticipant / $OpsWorksResourcesIMG()  | ![OpsWorksResources](dist/ManagementGovernance/OpsWorksResources.png?raw=true) |ManagementGovernance/OpsWorksResources.puml
-ManagementGovernance | OpsWorksStack2 / OpsWorksStack2Participant / $OpsWorksStack2IMG()  | ![OpsWorksStack2](dist/ManagementGovernance/OpsWorksStack2.png?raw=true) |ManagementGovernance/OpsWorksStack2.puml
 ManagementGovernance | Organizations / OrganizationsParticipant / $OrganizationsIMG()  | ![Organizations](dist/ManagementGovernance/Organizations.png?raw=true) |ManagementGovernance/Organizations.puml
 ManagementGovernance | OrganizationsAccount / OrganizationsAccountParticipant / $OrganizationsAccountIMG()  | ![OrganizationsAccount](dist/ManagementGovernance/OrganizationsAccount.png?raw=true) |ManagementGovernance/OrganizationsAccount.puml
 ManagementGovernance | OrganizationsManagementAccount / OrganizationsManagementAccountParticipant / $OrganizationsManagementAccountIMG()  | ![OrganizationsManagementAccount](dist/ManagementGovernance/OrganizationsManagementAccount.png?raw=true) |ManagementGovernance/OrganizationsManagementAccount.puml
@@ -631,6 +619,7 @@ ManagementGovernance | TrustedAdvisorChecklistCost / TrustedAdvisorChecklistCost
 ManagementGovernance | TrustedAdvisorChecklistFaultTolerant / TrustedAdvisorChecklistFaultTolerantParticipant / $TrustedAdvisorChecklistFaultTolerantIMG()  | ![TrustedAdvisorChecklistFaultTolerant](dist/ManagementGovernance/TrustedAdvisorChecklistFaultTolerant.png?raw=true) |ManagementGovernance/TrustedAdvisorChecklistFaultTolerant.puml
 ManagementGovernance | TrustedAdvisorChecklistPerformance / TrustedAdvisorChecklistPerformanceParticipant / $TrustedAdvisorChecklistPerformanceIMG()  | ![TrustedAdvisorChecklistPerformance](dist/ManagementGovernance/TrustedAdvisorChecklistPerformance.png?raw=true) |ManagementGovernance/TrustedAdvisorChecklistPerformance.puml
 ManagementGovernance | TrustedAdvisorChecklistSecurity / TrustedAdvisorChecklistSecurityParticipant / $TrustedAdvisorChecklistSecurityIMG()  | ![TrustedAdvisorChecklistSecurity](dist/ManagementGovernance/TrustedAdvisorChecklistSecurity.png?raw=true) |ManagementGovernance/TrustedAdvisorChecklistSecurity.puml
+ManagementGovernance | UserNotifications / UserNotificationsParticipant / $UserNotificationsIMG()  | ![UserNotifications](dist/ManagementGovernance/UserNotifications.png?raw=true) |ManagementGovernance/UserNotifications.puml
 ManagementGovernance | WellArchitectedTool / WellArchitectedToolParticipant / $WellArchitectedToolIMG()  | ![WellArchitectedTool](dist/ManagementGovernance/WellArchitectedTool.png?raw=true) |ManagementGovernance/WellArchitectedTool.puml
 **MediaServices** | $AWSColor(MediaServices) / $AWS_COLOR_SMILE | | **MediaServices/all.puml**
 MediaServices | CloudDigitalInterface / CloudDigitalInterfaceParticipant / $CloudDigitalInterfaceIMG()  | ![CloudDigitalInterface](dist/MediaServices/CloudDigitalInterface.png?raw=true) |MediaServices/CloudDigitalInterface.puml
@@ -652,10 +641,10 @@ MediaServices | ElementalServer / ElementalServerParticipant / $ElementalServerI
 MediaServices | InteractiveVideoService / InteractiveVideoServiceParticipant / $InteractiveVideoServiceIMG()  | ![InteractiveVideoService](dist/MediaServices/InteractiveVideoService.png?raw=true) |MediaServices/InteractiveVideoService.puml
 MediaServices | KinesisVideoStreams2 / KinesisVideoStreams2Participant / $KinesisVideoStreams2IMG()  | ![KinesisVideoStreams2](dist/MediaServices/KinesisVideoStreams2.png?raw=true) |MediaServices/KinesisVideoStreams2.puml
 MediaServices | MediaServices / MediaServicesParticipant / $MediaServicesIMG()  | ![MediaServices](dist/MediaServices/MediaServices.png?raw=true) |MediaServices/MediaServices.puml
-MediaServices | NimbleStudio / NimbleStudioParticipant / $NimbleStudioIMG()  | ![NimbleStudio](dist/MediaServices/NimbleStudio.png?raw=true) |MediaServices/NimbleStudio.puml
 MediaServices | ThinkboxDeadline / ThinkboxDeadlineParticipant / $ThinkboxDeadlineIMG()  | ![ThinkboxDeadline](dist/MediaServices/ThinkboxDeadline.png?raw=true) |MediaServices/ThinkboxDeadline.puml
 MediaServices | ThinkboxFrost / ThinkboxFrostParticipant / $ThinkboxFrostIMG()  | ![ThinkboxFrost](dist/MediaServices/ThinkboxFrost.png?raw=true) |MediaServices/ThinkboxFrost.puml
 MediaServices | ThinkboxKrakatoa / ThinkboxKrakatoaParticipant / $ThinkboxKrakatoaIMG()  | ![ThinkboxKrakatoa](dist/MediaServices/ThinkboxKrakatoa.png?raw=true) |MediaServices/ThinkboxKrakatoa.puml
+MediaServices | ThinkboxSequoia / ThinkboxSequoiaParticipant / $ThinkboxSequoiaIMG()  | ![ThinkboxSequoia](dist/MediaServices/ThinkboxSequoia.png?raw=true) |MediaServices/ThinkboxSequoia.puml
 MediaServices | ThinkboxStoke / ThinkboxStokeParticipant / $ThinkboxStokeIMG()  | ![ThinkboxStoke](dist/MediaServices/ThinkboxStoke.png?raw=true) |MediaServices/ThinkboxStoke.puml
 MediaServices | ThinkboxXMesh / ThinkboxXMeshParticipant / $ThinkboxXMeshIMG()  | ![ThinkboxXMesh](dist/MediaServices/ThinkboxXMesh.png?raw=true) |MediaServices/ThinkboxXMesh.puml
 **MigrationModernization** | $AWSColor(MigrationModernization) / $AWS_COLOR_ORBIT | | **MigrationModernization/all.puml**
@@ -666,7 +655,9 @@ MigrationModernization | ApplicationDiscoveryServiceMigrationEvaluatorCollector 
 MigrationModernization | ApplicationMigrationService / ApplicationMigrationServiceParticipant / $ApplicationMigrationServiceIMG()  | ![ApplicationMigrationService](dist/MigrationModernization/ApplicationMigrationService.png?raw=true) |MigrationModernization/ApplicationMigrationService.puml
 MigrationModernization | DataSync / DataSyncParticipant / $DataSyncIMG()  | ![DataSync](dist/MigrationModernization/DataSync.png?raw=true) |MigrationModernization/DataSync.puml
 MigrationModernization | DataSyncDiscovery / DataSyncDiscoveryParticipant / $DataSyncDiscoveryIMG()  | ![DataSyncDiscovery](dist/MigrationModernization/DataSyncDiscovery.png?raw=true) |MigrationModernization/DataSyncDiscovery.puml
+MigrationModernization | DataTransferTerminal / DataTransferTerminalParticipant / $DataTransferTerminalIMG()  | ![DataTransferTerminal](dist/MigrationModernization/DataTransferTerminal.png?raw=true) |MigrationModernization/DataTransferTerminal.puml
 MigrationModernization | DatasyncAgent / DatasyncAgentParticipant / $DatasyncAgentIMG()  | ![DatasyncAgent](dist/MigrationModernization/DatasyncAgent.png?raw=true) |MigrationModernization/DatasyncAgent.puml
+MigrationModernization | ElasticVMwareService / ElasticVMwareServiceParticipant / $ElasticVMwareServiceIMG()  | ![ElasticVMwareService](dist/MigrationModernization/ElasticVMwareService.png?raw=true) |MigrationModernization/ElasticVMwareService.puml
 MigrationModernization | MainframeModernization / MainframeModernizationParticipant / $MainframeModernizationIMG()  | ![MainframeModernization](dist/MigrationModernization/MainframeModernization.png?raw=true) |MigrationModernization/MainframeModernization.puml
 MigrationModernization | MainframeModernizationAnalyzer / MainframeModernizationAnalyzerParticipant / $MainframeModernizationAnalyzerIMG()  | ![MainframeModernizationAnalyzer](dist/MigrationModernization/MainframeModernizationAnalyzer.png?raw=true) |MigrationModernization/MainframeModernizationAnalyzer.puml
 MigrationModernization | MainframeModernizationCompiler / MainframeModernizationCompilerParticipant / $MainframeModernizationCompilerIMG()  | ![MainframeModernizationCompiler](dist/MigrationModernization/MainframeModernizationCompiler.png?raw=true) |MigrationModernization/MainframeModernizationCompiler.puml
@@ -693,6 +684,7 @@ NetworkingContentDelivery | AppMeshVirtualGateway / AppMeshVirtualGatewayPartici
 NetworkingContentDelivery | AppMeshVirtualNode / AppMeshVirtualNodeParticipant / $AppMeshVirtualNodeIMG()  | ![AppMeshVirtualNode](dist/NetworkingContentDelivery/AppMeshVirtualNode.png?raw=true) |NetworkingContentDelivery/AppMeshVirtualNode.puml
 NetworkingContentDelivery | AppMeshVirtualRouter / AppMeshVirtualRouterParticipant / $AppMeshVirtualRouterIMG()  | ![AppMeshVirtualRouter](dist/NetworkingContentDelivery/AppMeshVirtualRouter.png?raw=true) |NetworkingContentDelivery/AppMeshVirtualRouter.puml
 NetworkingContentDelivery | AppMeshVirtualService / AppMeshVirtualServiceParticipant / $AppMeshVirtualServiceIMG()  | ![AppMeshVirtualService](dist/NetworkingContentDelivery/AppMeshVirtualService.png?raw=true) |NetworkingContentDelivery/AppMeshVirtualService.puml
+NetworkingContentDelivery | ApplicationRecoveryController / ApplicationRecoveryControllerParticipant / $ApplicationRecoveryControllerIMG()  | ![ApplicationRecoveryController](dist/NetworkingContentDelivery/ApplicationRecoveryController.png?raw=true) |NetworkingContentDelivery/ApplicationRecoveryController.puml
 NetworkingContentDelivery | ClientVPN / ClientVPNParticipant / $ClientVPNIMG()  | ![ClientVPN](dist/NetworkingContentDelivery/ClientVPN.png?raw=true) |NetworkingContentDelivery/ClientVPN.puml
 NetworkingContentDelivery | CloudFront / CloudFrontParticipant / $CloudFrontIMG()  | ![CloudFront](dist/NetworkingContentDelivery/CloudFront.png?raw=true) |NetworkingContentDelivery/CloudFront.puml
 NetworkingContentDelivery | CloudFrontDownloadDistribution / CloudFrontDownloadDistributionParticipant / $CloudFrontDownloadDistributionIMG()  | ![CloudFrontDownloadDistribution](dist/NetworkingContentDelivery/CloudFrontDownloadDistribution.png?raw=true) |NetworkingContentDelivery/CloudFrontDownloadDistribution.puml
@@ -719,7 +711,6 @@ NetworkingContentDelivery | NetworkingContentDelivery / NetworkingContentDeliver
 NetworkingContentDelivery | Private5G / Private5GParticipant / $Private5GIMG()  | ![Private5G](dist/NetworkingContentDelivery/Private5G.png?raw=true) |NetworkingContentDelivery/Private5G.puml
 NetworkingContentDelivery | PrivateLink / PrivateLinkParticipant / $PrivateLinkIMG()  | ![PrivateLink](dist/NetworkingContentDelivery/PrivateLink.png?raw=true) |NetworkingContentDelivery/PrivateLink.puml
 NetworkingContentDelivery | Route53 / Route53Participant / $Route53IMG()  | ![Route53](dist/NetworkingContentDelivery/Route53.png?raw=true) |NetworkingContentDelivery/Route53.puml
-NetworkingContentDelivery | Route53ApplicationRecoveryController / Route53ApplicationRecoveryControllerParticipant / $Route53ApplicationRecoveryControllerIMG()  | ![Route53ApplicationRecoveryController](dist/NetworkingContentDelivery/Route53ApplicationRecoveryController.png?raw=true) |NetworkingContentDelivery/Route53ApplicationRecoveryController.puml
 NetworkingContentDelivery | Route53HostedZone / Route53HostedZoneParticipant / $Route53HostedZoneIMG()  | ![Route53HostedZone](dist/NetworkingContentDelivery/Route53HostedZone.png?raw=true) |NetworkingContentDelivery/Route53HostedZone.puml
 NetworkingContentDelivery | Route53ReadinessChecks / Route53ReadinessChecksParticipant / $Route53ReadinessChecksIMG()  | ![Route53ReadinessChecks](dist/NetworkingContentDelivery/Route53ReadinessChecks.png?raw=true) |NetworkingContentDelivery/Route53ReadinessChecks.puml
 NetworkingContentDelivery | Route53Resolver / Route53ResolverParticipant / $Route53ResolverIMG()  | ![Route53Resolver](dist/NetworkingContentDelivery/Route53Resolver.png?raw=true) |NetworkingContentDelivery/Route53Resolver.puml
@@ -819,6 +810,7 @@ SecurityIdentityCompliance | SecretsManager / SecretsManagerParticipant / $Secre
 SecurityIdentityCompliance | SecurityHub / SecurityHubParticipant / $SecurityHubIMG()  | ![SecurityHub](dist/SecurityIdentityCompliance/SecurityHub.png?raw=true) |SecurityIdentityCompliance/SecurityHub.puml
 SecurityIdentityCompliance | SecurityHubFinding / SecurityHubFindingParticipant / $SecurityHubFindingIMG()  | ![SecurityHubFinding](dist/SecurityIdentityCompliance/SecurityHubFinding.png?raw=true) |SecurityIdentityCompliance/SecurityHubFinding.puml
 SecurityIdentityCompliance | SecurityIdentityCompliance / SecurityIdentityComplianceParticipant / $SecurityIdentityComplianceIMG()  | ![SecurityIdentityCompliance](dist/SecurityIdentityCompliance/SecurityIdentityCompliance.png?raw=true) |SecurityIdentityCompliance/SecurityIdentityCompliance.puml
+SecurityIdentityCompliance | SecurityIncidentResponse / SecurityIncidentResponseParticipant / $SecurityIncidentResponseIMG()  | ![SecurityIncidentResponse](dist/SecurityIdentityCompliance/SecurityIncidentResponse.png?raw=true) |SecurityIdentityCompliance/SecurityIncidentResponse.puml
 SecurityIdentityCompliance | SecurityLake / SecurityLakeParticipant / $SecurityLakeIMG()  | ![SecurityLake](dist/SecurityIdentityCompliance/SecurityLake.png?raw=true) |SecurityIdentityCompliance/SecurityLake.puml
 SecurityIdentityCompliance | Shield / ShieldParticipant / $ShieldIMG()  | ![Shield](dist/SecurityIdentityCompliance/Shield.png?raw=true) |SecurityIdentityCompliance/Shield.puml
 SecurityIdentityCompliance | ShieldAWSShieldAdvanced / ShieldAWSShieldAdvancedParticipant / $ShieldAWSShieldAdvancedIMG()  | ![ShieldAWSShieldAdvanced](dist/SecurityIdentityCompliance/ShieldAWSShieldAdvanced.png?raw=true) |SecurityIdentityCompliance/ShieldAWSShieldAdvanced.puml
@@ -907,11 +899,11 @@ Storage | SimpleStorageServiceS3Select / SimpleStorageServiceS3SelectParticipant
 Storage | SimpleStorageServiceS3Standard / SimpleStorageServiceS3StandardParticipant / $SimpleStorageServiceS3StandardIMG()  | ![SimpleStorageServiceS3Standard](dist/Storage/SimpleStorageServiceS3Standard.png?raw=true) |Storage/SimpleStorageServiceS3Standard.puml
 Storage | SimpleStorageServiceS3StandardIA / SimpleStorageServiceS3StandardIAParticipant / $SimpleStorageServiceS3StandardIAIMG()  | ![SimpleStorageServiceS3StandardIA](dist/Storage/SimpleStorageServiceS3StandardIA.png?raw=true) |Storage/SimpleStorageServiceS3StandardIA.puml
 Storage | SimpleStorageServiceS3StorageLens / SimpleStorageServiceS3StorageLensParticipant / $SimpleStorageServiceS3StorageLensIMG()  | ![SimpleStorageServiceS3StorageLens](dist/Storage/SimpleStorageServiceS3StorageLens.png?raw=true) |Storage/SimpleStorageServiceS3StorageLens.puml
+Storage | SimpleStorageServiceS3Tables / SimpleStorageServiceS3TablesParticipant / $SimpleStorageServiceS3TablesIMG()  | ![SimpleStorageServiceS3Tables](dist/Storage/SimpleStorageServiceS3Tables.png?raw=true) |Storage/SimpleStorageServiceS3Tables.puml
 Storage | SimpleStorageServiceVPCAccessPoints / SimpleStorageServiceVPCAccessPointsParticipant / $SimpleStorageServiceVPCAccessPointsIMG()  | ![SimpleStorageServiceVPCAccessPoints](dist/Storage/SimpleStorageServiceVPCAccessPoints.png?raw=true) |Storage/SimpleStorageServiceVPCAccessPoints.puml
 Storage | Snowball / SnowballParticipant / $SnowballIMG()  | ![Snowball](dist/Storage/Snowball.png?raw=true) |Storage/Snowball.puml
 Storage | SnowballEdge / SnowballEdgeParticipant / $SnowballEdgeIMG()  | ![SnowballEdge](dist/Storage/SnowballEdge.png?raw=true) |Storage/SnowballEdge.puml
 Storage | SnowballSnowballImportExport / SnowballSnowballImportExportParticipant / $SnowballSnowballImportExportIMG()  | ![SnowballSnowballImportExport](dist/Storage/SnowballSnowballImportExport.png?raw=true) |Storage/SnowballSnowballImportExport.puml
-Storage | Snowcone / SnowconeParticipant / $SnowconeIMG()  | ![Snowcone](dist/Storage/Snowcone.png?raw=true) |Storage/Snowcone.puml
 Storage | Storage / StorageParticipant / $StorageIMG()  | ![Storage](dist/Storage/Storage.png?raw=true) |Storage/Storage.puml
 Storage | StorageGateway / StorageGatewayParticipant / $StorageGatewayIMG()  | ![StorageGateway](dist/Storage/StorageGateway.png?raw=true) |Storage/StorageGateway.puml
 Storage | StorageGatewayAmazonFSxFileGateway / StorageGatewayAmazonFSxFileGatewayParticipant / $StorageGatewayAmazonFSxFileGatewayIMG()  | ![StorageGatewayAmazonFSxFileGateway](dist/Storage/StorageGatewayAmazonFSxFileGateway.png?raw=true) |Storage/StorageGatewayAmazonFSxFileGateway.puml
