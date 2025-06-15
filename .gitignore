@@ -13,3 +13,35 @@ __pycache__/
 
 
 config-template.yml
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+*.log
+.tox/
+.nox/
+
+# Claude settings
+.claude/*
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*~
