@@ -15,7 +15,7 @@ import glob
 # 1. add new "vX.Y" version to end of SUPPORTED_VERSIONS
 # 2. add a BREAKING_CHANGES["vX.Y"] structure
 
-SUPPORTED_VERSIONS = ["v13.0", "v13.1", "v14.0", "v15.0", "v16.0", "v17.0", "v18.0", "v19.0"]
+SUPPORTED_VERSIONS = ["v13.0", "v13.1", "v14.0", "v15.0", "v16.0", "v17.0", "v18.0", "v19.0", "v20.0"]
 
 UPDATES = {
     "AWS_COLOR": "$AWS_COLOR_SQUID",
@@ -289,6 +289,91 @@ BREAKING_CHANGES["v19.0"] = {
         # },
         "REMOVED": [
             "Snowmobile"
+        ]
+    }
+}
+
+BREAKING_CHANGES["v20.0"] = {
+    "Analytics": {
+        "REMOVED": [
+            "DataPipeline",
+            "GlueElasticViews"
+        ]
+    },
+    "ArtificialIntelligence": {
+        "REPLACED": {
+            "SageMaker": "SageMakerAI"
+        },
+    },
+    "CloudFinancialManagement": {
+        "REMOVED": [
+            "ApplicationCostProfiler"
+        ]
+    },
+    "Compute": {
+        "REPLACED": {
+            "NICEDCV": "DCV"
+        }
+    },
+    "Database": {
+        "REPLACED": {
+            "MemoryDBforRedis": "MemoryDB"
+        },
+        "REMOVED": [
+            "RDSonVMware"
+        ]
+    },
+    "DeveloperTools": {
+        "REPLACED": {
+            "ApplicationComposer": "InfrastructureComposer"
+        },
+        "REMOVED": [
+            "CodeStar"
+        ]
+    },
+    "EndUserComputing": {
+        "REMOVED": [
+            "WorkSpacesThinClient"
+        ]
+    },
+    "Games": {
+        "REMOVED": [
+            "GameKit",
+            "GameSparks"
+        ]
+    },
+    "InternetOfThings": {
+        "REMOVED": [
+            "IoT1Click",
+            "IoTRoboRunner"
+        ]
+    },
+    "ManagementGovernance": {
+        "REMOVED": [
+            "OpsWorks",
+            "OpsWorksApps",
+            "OpsWorksDeployments",
+            "OpsWorksInstances",
+            "OpsWorksLayers",
+            "OpsWorksMonitoring",
+            "OpsWorksPermissions",
+            "OpsWorksResources",
+            "OpsWorksStack2"
+        ]
+    },
+    "MediaServices": {
+        "REMOVED": [
+            "NimbleStudio"
+        ]
+    },
+    "NetworkingContentDelivery": {
+        "REPLACED": {
+            "Route53ApplicationRecoveryController": "ApplicationRecoveryController"
+        },
+    },
+    "Storage": {
+        "REMOVED": [
+            "Snowcone"
         ]
     }
 }

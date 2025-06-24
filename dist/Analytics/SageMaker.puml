@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SageMaker [64x64/16z] {
+xPO5OiGW4007MFl_XojREQURr5lc59dW4XSi5el1yAE0RBEj0UrP4e2cTTixT1qfvQFwuzVmeYwGzTL7iqEpvu2Kz0OZafHUB1_GAZxOeILmI52e-ON0t_Lr
+vkkRTeDsos_GT6fVv819UZ9_FapgbypQT_1BimXAKNNVEZJVxGkq1cEl3v8FsUrd-Ft-TzL_lBF_mdFlZBg_C-hzy_Vzw-Vzw_Vz-yVxzw-r_mVuzO3L_AEh
+WXnVF8hdTrefsSlzGG-NYXB-A5b-vOnYQ8VkKIIbGtcI0Oqj-61S3HnOB1Rt
+}
+
+!function $SageMakerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMNSURBVHgB7Zs/aBRBFMa/E8FCMJXpLAQ7U2khWqmNNiFWksbKP2VArAKWloJgGbGxClZCGivtIhZJlXSBFOmSKgcpUiX5mDzydrKX3dl5OxuY+cFB7tjJ3PfNzsx7s+9Gn+eOjpAxV5A5xQBkTjEAmVMMQOYUA5A5xQBkTq8GXLsOPH4NfPgFPF8ApqbD2jycd+/7ZNRXMnRrxom+oUSPd4G1FWB9pb4NBd+frYpmm9VlYPMPesHcAI7yswVnANnZcILvPADuPnWf+aJ8s9jm33L1M17Lz/Z3YYqpAXoEDw/cF15To00DHs2fidr6764Vs2jM76/OgEltaBz/rxVmBrxdqo7W3+/OhDp8UXVmaXgdr9d30Ld3MOEqjBAxPz9WR7AOGsRraBqhmElmEbkzeMfMLVbXlVjMd4Em8cJYzeWLxGtogDUlDkDmFANggKzOKbHqM2oX8LezsXGQUgf7YH8Mkth3bJTYyYA64X2Gqxpumbr/WCOCDdABT0rhGvbHV50RoQFSsAEinoFJauE+2gg/8WpL50VwaPGamO8yyDbI5Oflp7P3nFZThuFtCGa5QFs4T5k1Etk1eOu+WXJpM5OolCS/A0Q8s78f791L0tt7s0jOYJEgdw8mQXytGub3oZRQGAMhU4EnQvL3ECRfBLnQca5zMZw5jef1SVJqkhvAVX7jROiLxfOHoG0PUywZZArsbVdD1jbHaH3R2YAhUuBJxHyX4ClgnY7GYJGOBxtgnY52wTId77QIWqajoVin41G7gEU6Gop1Om6yCwyxBlj1WUJhZE4xAMZM3253nS6CaHsaJI/RLTEzQIKQV1+ay2GYDMmTYcLjsYuiOSmbkWM0y+cPpgUS/nGXv0dzBJ+cCLl5epdI/K8LJJgs6afAkjlK0QWzSdYRtH2i3IR5iQz3aYpkSQxh4kNRNGZSJYgf2dE0mkDxutSGbcaXuURG44siTSMoVSB+GymO6INRnz+ZoRDWDHEkKVzOAZvaiBFt28QwKr8ZypxiADKnGIDMKQYgc4oByJxiADLnGELWT6yyBY9dAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(SageMaker)
+!define SageMaker(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #8C4FFF, SageMaker, SageMaker)
+!define SageMaker(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #8C4FFF, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #8C4FFF, SageMaker, SageMaker)
+!define SageMakerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #8C4FFF, SageMaker, SageMaker)

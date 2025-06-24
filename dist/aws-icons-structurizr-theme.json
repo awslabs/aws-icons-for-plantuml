@@ -56,11 +56,6 @@
       "icon": "Analytics/DataFirehose.png"
     },
     {
-      "tag": "DataPipeline",
-      "stroke": "#8C4FFF",
-      "icon": "Analytics/DataPipeline.png"
-    },
-    {
       "tag": "DataZone",
       "stroke": "#8C4FFF",
       "icon": "Analytics/DataZone.png"
@@ -139,11 +134,6 @@
       "tag": "GlueDataQuality",
       "stroke": "#8C4FFF",
       "icon": "Analytics/GlueDataQuality.png"
-    },
-    {
-      "tag": "GlueElasticViews",
-      "stroke": "#8C4FFF",
-      "icon": "Analytics/GlueElasticViews.png"
     },
     {
       "tag": "Kinesis",
@@ -286,6 +276,11 @@
       "icon": "Analytics/RedshiftStreamingIngestion.png"
     },
     {
+      "tag": "SageMaker",
+      "stroke": "#8C4FFF",
+      "icon": "Analytics/SageMaker.png"
+    },
+    {
       "tag": "AppFlow",
       "stroke": "#E7157B",
       "icon": "ApplicationIntegration/AppFlow.png"
@@ -419,6 +414,11 @@
       "tag": "ApacheMXNetonAWS",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/ApacheMXNetonAWS.png"
+    },
+    {
+      "tag": "AppStudio",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/AppStudio.png"
     },
     {
       "tag": "ArtificialIntelligence",
@@ -561,6 +561,11 @@
       "icon": "ArtificialIntelligence/Neuron.png"
     },
     {
+      "tag": "Nova",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/Nova.png"
+    },
+    {
       "tag": "Panorama",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/Panorama.png"
@@ -601,9 +606,9 @@
       "icon": "ArtificialIntelligence/RekognitionVideo.png"
     },
     {
-      "tag": "SageMaker",
+      "tag": "SageMakerAI",
       "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMaker.png"
+      "icon": "ArtificialIntelligence/SageMakerAI.png"
     },
     {
       "tag": "SageMakerCanvas",
@@ -721,6 +726,11 @@
       "icon": "BusinessApplications/Connect.png"
     },
     {
+      "tag": "EndUserMessaging",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/EndUserMessaging.png"
+    },
+    {
       "tag": "Pinpoint",
       "stroke": "#DD344C",
       "icon": "BusinessApplications/Pinpoint.png"
@@ -769,11 +779,6 @@
       "tag": "WorkMail",
       "stroke": "#DD344C",
       "icon": "BusinessApplications/WorkMail.png"
-    },
-    {
-      "tag": "ApplicationCostProfiler",
-      "stroke": "#7AA116",
-      "icon": "CloudFinancialManagement/ApplicationCostProfiler.png"
     },
     {
       "tag": "BillingConductor",
@@ -829,6 +834,11 @@
       "tag": "Compute",
       "stroke": "#ED7100",
       "icon": "Compute/Compute.png"
+    },
+    {
+      "tag": "DCV",
+      "stroke": "#ED7100",
+      "icon": "Compute/DCV.png"
     },
     {
       "tag": "EC2",
@@ -941,11 +951,6 @@
       "icon": "Compute/LocalZones.png"
     },
     {
-      "tag": "NICEDCV",
-      "stroke": "#ED7100",
-      "icon": "Compute/NICEDCV.png"
-    },
-    {
       "tag": "NICEEnginFrame",
       "stroke": "#ED7100",
       "icon": "Compute/NICEEnginFrame.png"
@@ -974,6 +979,11 @@
       "tag": "ParallelCluster",
       "stroke": "#ED7100",
       "icon": "Compute/ParallelCluster.png"
+    },
+    {
+      "tag": "ParallelComputingService",
+      "stroke": "#ED7100",
+      "icon": "Compute/ParallelComputingService.png"
     },
     {
       "tag": "ServerlessApplicationRepository",
@@ -1326,19 +1336,29 @@
       "icon": "Database/ElastiCacheElastiCacheforRedis.png"
     },
     {
+      "tag": "ElastiCacheElastiCacheforValkey",
+      "stroke": "#C925D1",
+      "icon": "Database/ElastiCacheElastiCacheforValkey.png"
+    },
+    {
       "tag": "Keyspaces",
       "stroke": "#C925D1",
       "icon": "Database/Keyspaces.png"
     },
     {
-      "tag": "MemoryDBforRedis",
+      "tag": "MemoryDB",
       "stroke": "#C925D1",
-      "icon": "Database/MemoryDBforRedis.png"
+      "icon": "Database/MemoryDB.png"
     },
     {
       "tag": "Neptune",
       "stroke": "#C925D1",
       "icon": "Database/Neptune.png"
+    },
+    {
+      "tag": "OracleDatabaseatAWS",
+      "stroke": "#C925D1",
+      "icon": "Database/OracleDatabaseatAWS.png"
     },
     {
       "tag": "RDS",
@@ -1381,19 +1401,9 @@
       "icon": "Database/RDSTrustedLanguageExtensionsforPostgreSQL.png"
     },
     {
-      "tag": "RDSonVMware",
-      "stroke": "#C925D1",
-      "icon": "Database/RDSonVMware.png"
-    },
-    {
       "tag": "Timestream",
       "stroke": "#C925D1",
       "icon": "Database/Timestream.png"
-    },
-    {
-      "tag": "ApplicationComposer",
-      "stroke": "#C925D1",
-      "icon": "DeveloperTools/ApplicationComposer.png"
     },
     {
       "tag": "Cloud9",
@@ -1451,11 +1461,6 @@
       "icon": "DeveloperTools/CodePipeline.png"
     },
     {
-      "tag": "CodeStar",
-      "stroke": "#C925D1",
-      "icon": "DeveloperTools/CodeStar.png"
-    },
-    {
       "tag": "CommandLineInterface",
       "stroke": "#C925D1",
       "icon": "DeveloperTools/CommandLineInterface.png"
@@ -1474,6 +1479,11 @@
       "tag": "FaultInjectionService",
       "stroke": "#C925D1",
       "icon": "DeveloperTools/FaultInjectionService.png"
+    },
+    {
+      "tag": "InfrastructureComposer",
+      "stroke": "#C925D1",
+      "icon": "DeveloperTools/InfrastructureComposer.png"
     },
     {
       "tag": "ToolsandSDKs",
@@ -1514,11 +1524,6 @@
       "tag": "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser",
       "stroke": "#01A88D",
       "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesSecureBrowser.png"
-    },
-    {
-      "tag": "WorkSpacesThinClient",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesThinClient.png"
     },
     {
       "tag": "Amplify",
@@ -1571,19 +1576,9 @@
       "icon": "FrontEndWebMobile/LocationServiceTrack.png"
     },
     {
-      "tag": "GameKit",
-      "stroke": "#8C4FFF",
-      "icon": "Games/GameKit.png"
-    },
-    {
       "tag": "GameLift",
       "stroke": "#8C4FFF",
       "icon": "Games/GameLift.png"
-    },
-    {
-      "tag": "GameSparks",
-      "stroke": "#8C4FFF",
-      "icon": "Games/GameSparks.png"
     },
     {
       "tag": "Games",
@@ -1981,11 +1976,6 @@
       "icon": "InternetOfThings/InternetOfThings.png"
     },
     {
-      "tag": "IoT1Click",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoT1Click.png"
-    },
-    {
       "tag": "IoTAction",
       "stroke": "#7AA116",
       "icon": "InternetOfThings/IoTAction.png"
@@ -2234,11 +2224,6 @@
       "tag": "IoTReportedState",
       "stroke": "#7AA116",
       "icon": "InternetOfThings/IoTReportedState.png"
-    },
-    {
-      "tag": "IoTRoboRunner",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTRoboRunner.png"
     },
     {
       "tag": "IoTRule",
@@ -2631,51 +2616,6 @@
       "icon": "ManagementGovernance/ManagementGovernance.png"
     },
     {
-      "tag": "OpsWorks",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorks.png"
-    },
-    {
-      "tag": "OpsWorksApps",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksApps.png"
-    },
-    {
-      "tag": "OpsWorksDeployments",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksDeployments.png"
-    },
-    {
-      "tag": "OpsWorksInstances",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksInstances.png"
-    },
-    {
-      "tag": "OpsWorksLayers",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksLayers.png"
-    },
-    {
-      "tag": "OpsWorksMonitoring",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksMonitoring.png"
-    },
-    {
-      "tag": "OpsWorksPermissions",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksPermissions.png"
-    },
-    {
-      "tag": "OpsWorksResources",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksResources.png"
-    },
-    {
-      "tag": "OpsWorksStack2",
-      "stroke": "#E7157B",
-      "icon": "ManagementGovernance/OpsWorksStack2.png"
-    },
-    {
       "tag": "Organizations",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/Organizations.png"
@@ -2841,6 +2781,11 @@
       "icon": "ManagementGovernance/TrustedAdvisorChecklistSecurity.png"
     },
     {
+      "tag": "UserNotifications",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/UserNotifications.png"
+    },
+    {
       "tag": "WellArchitectedTool",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/WellArchitectedTool.png"
@@ -2941,11 +2886,6 @@
       "icon": "MediaServices/MediaServices.png"
     },
     {
-      "tag": "NimbleStudio",
-      "stroke": "#ED7100",
-      "icon": "MediaServices/NimbleStudio.png"
-    },
-    {
       "tag": "ThinkboxDeadline",
       "stroke": "#ED7100",
       "icon": "MediaServices/ThinkboxDeadline.png"
@@ -2959,6 +2899,11 @@
       "tag": "ThinkboxKrakatoa",
       "stroke": "#ED7100",
       "icon": "MediaServices/ThinkboxKrakatoa.png"
+    },
+    {
+      "tag": "ThinkboxSequoia",
+      "stroke": "#ED7100",
+      "icon": "MediaServices/ThinkboxSequoia.png"
     },
     {
       "tag": "ThinkboxStoke",
@@ -3006,9 +2951,19 @@
       "icon": "MigrationModernization/DataSyncDiscovery.png"
     },
     {
+      "tag": "DataTransferTerminal",
+      "stroke": "#01A88D",
+      "icon": "MigrationModernization/DataTransferTerminal.png"
+    },
+    {
       "tag": "DatasyncAgent",
       "stroke": "#01A88D",
       "icon": "MigrationModernization/DatasyncAgent.png"
+    },
+    {
+      "tag": "ElasticVMwareService",
+      "stroke": "#01A88D",
+      "icon": "MigrationModernization/ElasticVMwareService.png"
     },
     {
       "tag": "MainframeModernization",
@@ -3134,6 +3089,11 @@
       "tag": "AppMeshVirtualService",
       "stroke": "#8C4FFF",
       "icon": "NetworkingContentDelivery/AppMeshVirtualService.png"
+    },
+    {
+      "tag": "ApplicationRecoveryController",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/ApplicationRecoveryController.png"
     },
     {
       "tag": "ClientVPN",
@@ -3264,11 +3224,6 @@
       "tag": "Route53",
       "stroke": "#8C4FFF",
       "icon": "NetworkingContentDelivery/Route53.png"
-    },
-    {
-      "tag": "Route53ApplicationRecoveryController",
-      "stroke": "#8C4FFF",
-      "icon": "NetworkingContentDelivery/Route53ApplicationRecoveryController.png"
     },
     {
       "tag": "Route53HostedZone",
@@ -3746,6 +3701,11 @@
       "icon": "SecurityIdentityCompliance/SecurityIdentityCompliance.png"
     },
     {
+      "tag": "SecurityIncidentResponse",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityIncidentResponse.png"
+    },
+    {
       "tag": "SecurityLake",
       "stroke": "#DD344C",
       "icon": "SecurityIdentityCompliance/SecurityLake.png"
@@ -4176,6 +4136,11 @@
       "icon": "Storage/SimpleStorageServiceS3StorageLens.png"
     },
     {
+      "tag": "SimpleStorageServiceS3Tables",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3Tables.png"
+    },
+    {
       "tag": "SimpleStorageServiceVPCAccessPoints",
       "stroke": "#7AA116",
       "icon": "Storage/SimpleStorageServiceVPCAccessPoints.png"
@@ -4194,11 +4159,6 @@
       "tag": "SnowballSnowballImportExport",
       "stroke": "#7AA116",
       "icon": "Storage/SnowballSnowballImportExport.png"
-    },
-    {
-      "tag": "Snowcone",
-      "stroke": "#7AA116",
-      "icon": "Storage/Snowcone.png"
     },
     {
       "tag": "Storage",
