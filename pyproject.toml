@@ -1,0 +1,20 @@
+[project]
+name = "aws-icons-for-plantuml"
+version = "23.0"
+description = "PlantUML sprites, macros, and other includes for Amazon Web Services services and resources"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0.3",
+    "lxml>=6.0.2",
+    "pillow>=12.1.1",
+    "pytest>=9.0.2",
+]
+
+# https://docs.astral.sh/ruff/settings/
+[tool.ruff.lint]
+# Note: if you're using Ruff to organize imports in VS Code and also expect to run Ruff from the command line, you'll want to enable Ruff's isort rules by adding "I" to your extend-select.
+extend-select = ["I"]
+
+[tool.bandit]
+exclude_dirs = [".venv"]

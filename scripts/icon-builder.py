@@ -5,25 +5,24 @@
 
 """icon-builder.py: Build AWS Icons for PlantUML"""
 
-import json
-import os
 import argparse
-import sys
-import subprocess
-import shutil
-from datetime import datetime, timezone
+import json
 import multiprocessing
+import os
 import re
+import shutil
+import subprocess
+import sys
 import xml.etree.ElementTree as ET
+from collections import OrderedDict
+from datetime import datetime, timezone
 from multiprocessing import Pool
 from pathlib import Path
 from subprocess import PIPE
-from collections import OrderedDict
-from lxml import etree
 
 import yaml
-
 from awsicons.icon import Icon
+from lxml import etree
 
 # TODO - refactor to param file and/or arguments
 
@@ -43,8 +42,8 @@ dir_list = [
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
         "dir_glob": "Category-Icons_07312025/*48/*.png",
-        "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
-        "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
+        "category_regex": r"[^.]*\/Arch-Category_(.*)_\d*\.png$",
+        "filename_regex": r"[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
             "BusinessApplication": "BusinessApplications",
             # "CostManagement": "AWSCostManagement",
@@ -64,8 +63,8 @@ dir_list = [
         "dir": "../source/official",
         # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
         "dir_glob": "Architecture-Service-Icons_07312025/**/*48/*.png",
-        "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
-        "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
+        "category_regex": r"[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": r"[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
             "AppIntegration": "ApplicationIntegration",
             "BusinessApplication": "BusinessApplications",
@@ -79,7 +78,7 @@ dir_list = [
             "MarketplaceLight": "Marketplace",
             "ApplicationAutoScaling": "ApplicationAutoScaling2",
         },
-         "filename_mappings2": {
+        "filename_mappings2": {
             "marketplace-light": "marketplace",
             "application-auto-scaling": "application-auto-scaling2",
         },
@@ -87,8 +86,8 @@ dir_list = [
     {
         "dir": "../source/official",
         "dir_glob": "Resource-Icons_07312025/*/*.svg",
-        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*$)",
-        "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
+        "category_regex": r"[^.]*\/(?:Res_)(.*)\/(?:.*$)",
+        "filename_regex": r"[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
@@ -114,25 +113,25 @@ dir_list = [
             "SimpleStorageServiceDirectorybucket": "SimpleStorageServiceDirectoryBucket",
             "SimpleStorageServiceGeneralpurposebucket": "SimpleStorageServiceBucket",
         },
-        "filename_mappings2": {            
+        "filename_mappings2": {
             "aurora-amazon-rds-instance-aternate": "aurora-amazon-rds-instance-alternate",
             "elastic-container-service-copiiot-cli": "elastic-container-service-copilot-cli",
             "ec2-auto-scaling": "ec2-auto-scaling-resource",
-            "route-53-route-53-application-recovery-controller":"route-53-application-recovery-controller",
+            "route-53-route-53-application-recovery-controller": "route-53-application-recovery-controller",
             "database-migration-service-database-migration-workflow-or-job": "database-migration-service-database-migration-workflow-job",
             "elastic-file-system-efs-intelligent-tiering": "elastic-file-system-intelligent-tiering",
             "elastic-file-system-efs-one-zone": "elastic-file-system-one-zone",
             "elastic-file-system-efs-one-zone-infrequent-access": "elastic-file-system-one-zone-infrequent-access",
             "elastic-file-system-efs-standard": "elastic-file-system-standard",
             "elastic-file-system-efs-standard-infrequent-access": "elastic-file-system-standard-infrequent-access",
-            "simple-storage-service-general-purpose-bucket": "simple-storage-service-bucket"
+            "simple-storage-service-general-purpose-bucket": "simple-storage-service-bucket",
         },
     },
     {
         "dir": "../source/official",
         "dir_glob": "Resource-Icons_07312025/Res_General-Icons/Res_48_Light/*.svg",
-        "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
-        "filename_regex": "[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
+        "category_regex": r"[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
+        "filename_regex": r"[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
         },
@@ -173,8 +172,8 @@ dir_list = [
     {
         "dir": "../source/unofficial",
         "dir_glob": "Groups_04282023/*.png",
-        "category_regex": "[^.]*\/(Groups).*\/",
-        "filename_regex": "[^.]*\/(.*)\.(?:png|touch)",
+        "category_regex": r"[^.]*\/(Groups).*\/",
+        "filename_regex": r"[^.]*\/(.*)\.(?:png|touch)",
         "category_mappings": {},
         "filename_mappings": {},
         "filename_mappings2": {},
@@ -182,8 +181,8 @@ dir_list = [
     {
         "dir": "../source/unofficial",
         "dir_glob": "Groups_04282023/*.touch",
-        "category_regex": "[^.]*\/(Groups).*\/",
-        "filename_regex": "[^.]*\/(.*)\.(?:png|touch)",
+        "category_regex": r"[^.]*\/(Groups).*\/",
+        "filename_regex": r"[^.]*\/(.*)\.(?:png|touch)",
         "category_mappings": {},
         "filename_mappings": {},
         "filename_mappings2": {},
@@ -258,7 +257,7 @@ COLOR_VALUES = {
     "Cosmos": "#E7157B",
     "Smile": "#ED7100",
     "Galaxy": "#8C4FFF",
-    'Squid': "#232F3E",
+    "Squid": "#232F3E",
     "White": "#FFFFFF",
 }
 
@@ -492,27 +491,29 @@ If you want to reference and use these files without Internet connectivity, you 
 
 These colors are defined in `AWSCommon.puml`
 
+<!-- markdownlint-disable MD055 -->
+
 PUML Macro (Name) | Color | | Categories
-  ---  |  ---  |  ---  |  ---
-$AWS_BG_COLOR | #FFFFFF | |
-$AWS_FG_COLOR | #000000 | |
-$AWS_ARROW_COLOR | #000000 | |
-$AWS_COLOR_SQUID | #232F3E | |
-$AWS_COLOR_GRAY | #7D8998 (borders) | |
-$AWS_COLOR_NEBULA | #C925D1 (blue replacement) | ![Nebula](dist/Groups/GenericBlue.png?raw=true) | Customer Enablement; Database; Developer Tools; Satellite
-$AWS_COLOR_ENDOR | #7AA116 (green) | ![Endor](dist/Groups/GenericGreen.png?raw=true) | Cloud Financial Management; Internet of Things; Storage
-$AWS_COLOR_SMILE | #ED7100 (orange) | ![Smile](dist/Groups/GenericOrange.png?raw=true) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
-$AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance
-$AWS_COLOR_GALAXY | #8C4FFF (purple) | ![Galaxy](dist/Groups/GenericPurple.png?raw=true) | Analytics; Games; Networking & Content Delivery; Serverless
-$AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Security, Identity & Compliance
-$AWS_COLOR_ORBIT | #01A88D (turquoise) | ![Orbit](dist/Groups/GenericTurquoise.png?raw=true) | Artificial Intelligence; End User Computing; Migration & Modernization
+| --- | --- | --- | --- |
+| $AWS_BG_COLOR | #FFFFFF | | |
+| $AWS_FG_COLOR | #000000 | | |
+| $AWS_ARROW_COLOR | #000000 | | |
+| $AWS_COLOR_SQUID | #232F3E | | |
+| $AWS_COLOR_GRAY | #7D8998 (borders) | | |
+| $AWS_COLOR_NEBULA | #C925D1 (blue replacement) | ![Nebula](dist/Groups/GenericBlue.png?raw=true) | Customer Enablement; Database; Developer Tools; Satellite |
+| $AWS_COLOR_ENDOR | #7AA116 (green) | ![Endor](dist/Groups/GenericGreen.png?raw=true) | Cloud Financial Management; Internet of Things; Storage |
+| $AWS_COLOR_SMILE | #ED7100 (orange) | ![Smile](dist/Groups/GenericOrange.png?raw=true) | Blockchain; Compute; Containers; Media Services; Quantum Technologies |
+| $AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance |
+| $AWS_COLOR_GALAXY | #8C4FFF (purple) | ![Galaxy](dist/Groups/GenericPurple.png?raw=true) | Analytics; Games; Networking & Content Delivery; Serverless |
+| $AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Security, Identity & Compliance |
+| $AWS_COLOR_ORBIT | #01A88D (turquoise) | ![Orbit](dist/Groups/GenericTurquoise.png?raw=true) | Artificial Intelligence; End User Computing; Migration & Modernization |
 
 An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
 
 When `!$AWS_DARK = true` precedes the `!include` of `AWSCommon.puml`, some colors are alternately defined:
 
 PUML Macro (Name) | Color
-  ---  |  --- 
+ --- | ---
 $AWS_BG_COLOR | #000000
 $AWS_FG_COLOR | #FFFFFF
 $AWS_ARROW_COLOR | #9BA7B6
@@ -524,7 +525,7 @@ For each symbol, there is a resized icon in PNG format generated from the source
 ### All generated AWS symbols and PNGs
 
 Category | PUML Macros (Name) | Image (PNG) | PUML Url
-  ---    |  ---  | :---:  | ---
+ --- | --- | :---: | ---
 """
 
 PUML_COPYRIGHT = """'Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -543,9 +544,7 @@ parser.add_argument(
     "--create-config-template",
     action="store_true",
     default=False,
-    help=(
-        "Creates a YAML config template based on official source for customization"
-    ),
+    help=("Creates a YAML config template based on official source for customization"),
 )
 parser.add_argument(
     "--symbols-only",
@@ -565,7 +564,7 @@ config = {}
 
 def verify_environment():
     """Test all dependencies to verify that builder can run correctly"""
-    global config
+    global config  # pylint: disable=global-statement
 
     # Check execution from scripts working directory
     cur_dir = Path(".")
@@ -576,13 +575,13 @@ def verify_environment():
         sys.exit(1)
     # Read config file
     try:
-        with open("config.yml") as f:
+        with open("config.yml", encoding="utf-8") as f:
             config = yaml.safe_load(f)
-    except Exception as e: # pylint: disable=broad-except
+    except Exception as e:  # pylint: disable=broad-except
         print(f"Error: {e}\ncheck config.yml file")
         sys.exit(1)
     # Verify other files and folders exist
-    dir = Path("../source")
+    source_dir = Path("../source")
     required_files = [
         "AWSC4Integration.puml",
         "AWSCommon.puml",
@@ -590,25 +589,25 @@ def verify_environment():
         "AWSSimplified.puml",
     ]
     for file in required_files:
-        q = dir / file
+        q = source_dir / file
         if not q.exists():
             print(f"File {file} not found is source/ directory")
             sys.exit(1)
-    q = dir / "official"
+    q = source_dir / "official"
     if not q.exists() or len([x for x in q.iterdir() if q.is_dir()]) == 0:
         print(
             "source/official must contain folders of AWS icons to process. Please see README file for details."
         )
         sys.exit(1)
-    # Start plantuml-mit-1.2025.0.jar and verify java
+    # Start plantuml-mit-1.2026.2.jar and verify java
     try:
         subprocess.run(
-            ["java", "-jar", "./plantuml-mit-1.2025.0.jar", "-version"],
+            ["java", "-jar", "./plantuml-mit-1.2026.2.jar", "-version"],
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
         )
-    except Exception as e: # pylint: disable=broad-except
+    except Exception as e:  # pylint: disable=broad-except
         print(f"Error executing plantuml jar file, {e}")
         sys.exit(1)
 
@@ -634,7 +633,7 @@ def copy_puml():
         shutil.copy(file, Path("../dist"))
 
 
-def build_file_list(dir: str, glob: str):
+def build_file_list(file_dir: str, glob: str):
     """Returns POSIX list of files
 
     :param dir: Starting directory to evaluate
@@ -645,7 +644,7 @@ def build_file_list(dir: str, glob: str):
     :rtype: list
     """
     return sorted(
-        Path(dir).glob(glob),
+        Path(file_dir).glob(glob),
         key=lambda path: str(path).lower(),
     )
 
@@ -658,24 +657,26 @@ def create_config_template():
     dupe_check = []  # checking for duplicate names that need to be resolved
     dupe_check2 = []
 
-    for dir in dir_list:
-        source_files = [str(i) for i in build_file_list(dir["dir"], dir["dir_glob"])]
+    for file_dir in dir_list:
+        source_files = [
+            str(i) for i in build_file_list(file_dir["dir"], file_dir["dir_glob"])
+        ]
         for i in source_files:
             # Get elements needed for YAML file
             # Exception is if the files originate from the "Category" directory
             category = Icon()._make_category(
-                regex=dir["category_regex"],
+                regex=file_dir["category_regex"],
                 filename=i,
-                mappings=dir["category_mappings"],
+                mappings=file_dir["category_mappings"],
             )
             if category == "Groups":
                 continue  # Groups will be added en-masse at the end
 
             (target, target2) = Icon()._make_name(
-                regex=dir["filename_regex"],
+                regex=file_dir["filename_regex"],
                 filename=i,
-                mappings=dir["filename_mappings"],
-                mappings2=dir["filename_mappings2"],
+                mappings=file_dir["filename_mappings"],
+                mappings2=file_dir["filename_mappings2"],
             )
             source_name = i.split("/")[-1]
             # For source directory, use only relative from this script ./source/official/AWS...
@@ -698,20 +699,26 @@ def create_config_template():
             }
             if category == "General":
                 if target == "MarketplaceDark":
-                    continue # not needed as standalone, combined with MarketplaceLight
+                    continue  # not needed as standalone, combined with MarketplaceLight
                 else:
                     icon_entry["SourceDark"] = source_name.replace("Light", "Dark")
-                    icon_entry["SourceDirDark"] = file_source_dir.replace("Light", "Dark")
+                    icon_entry["SourceDirDark"] = file_source_dir.replace(
+                        "Light", "Dark"
+                    )
 
             # Check for duplicate entries then append to
             if target not in dupe_check:
                 dupe_check.append(target)
             else:
-                icon_entry["ZComment"] = "******* Duplicate target name, must be made unique for All.puml ********"
+                icon_entry["ZComment"] = (
+                    "******* Duplicate target name, must be made unique for All.puml ********"
+                )
             if target2 not in dupe_check2:
                 dupe_check2.append(target2)
             else:
-                icon_entry["ZComment2"] = "******* Duplicate target2 name, must be made unique for aws-icons-mermaid.json ********"
+                icon_entry["ZComment2"] = (
+                    "******* Duplicate target2 name, must be made unique for aws-icons-mermaid.json ********"
+                )
 
             # Note: GroupIcons are deprecated, replaced by Groups
             if category == "GroupIcons" and target in GROUPICONS_COLORS:
@@ -732,7 +739,7 @@ def create_config_template():
     yaml_content = {}
     yaml_content["Categories"] = dict(sorted_categories)
 
-    with open("config-template.yml", "w") as f:
+    with open("config-template.yml", "w", encoding="utf-8") as f:
         f.write(TEMPLATE_DEFAULT)
         yaml.dump(yaml_content, f, default_flow_style=False)
         f.write(CATEGORY_GROUPS)
@@ -744,7 +751,7 @@ def create_category_all_file(path):
     """Create an 'all.puml' file with contents of files in path"""
     data = ""
     for f in sorted(path.glob("*.puml")):
-        with open(f, "r") as read_file:
+        with open(f, "r", encoding="utf-8") as read_file:
             data += read_file.read() + "\n"
     # Filter out individual copyright statements and add single copyright to top of file
     content = ""
@@ -753,9 +760,10 @@ def create_category_all_file(path):
             content += line + "\n"
     content = PUML_COPYRIGHT + content
 
-    with open(f"{path}/all.puml", "w") as all_file:
+    with open(f"{path}/all.puml", "w", encoding="utf-8") as all_file:
         all_file.write(content)
     return
+
 
 def build_mermaid_icon(mermaid, svg_filename, cat, mermaid_target):
     """add an icon to the mermaid object"""
@@ -765,14 +773,20 @@ def build_mermaid_icon(mermaid, svg_filename, cat, mermaid_target):
     svg_width = svg_root.get("width").strip("px")
     svg_height = svg_root.get("height").strip("px")
     # Register the SVG namespace to avoid automatic namespace additions
-    ET.register_namespace('', "http://www.w3.org/2000/svg")
-    ET.register_namespace('xlink', "http://www.w3.org/1999/xlink")
-    svg_body = ''.join((ET.tostring(child, encoding='unicode', method='xml') for child in svg_root if child.tag != '{http://www.w3.org/2000/svg}title'))
+    ET.register_namespace("", "http://www.w3.org/2000/svg")
+    ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
+    svg_body = "".join(
+        (
+            ET.tostring(child, encoding="unicode", method="xml")
+            for child in svg_root
+            if child.tag != "{http://www.w3.org/2000/svg}title"
+        )
+    )
     # Remove any remaining xmlns declrations
-    svg_body = re.sub(r'\sxmlns[^"]*"[^"]*"', '', svg_body)
+    svg_body = re.sub(r'\sxmlns[^"]*"[^"]*"', "", svg_body)
 
     mermaid["info"]["total"] = mermaid["info"]["total"] + 1
-    if (mermaid["categories"].get(cat) is None):
+    if mermaid["categories"].get(cat) is None:
         mermaid["categories"][cat] = []
     mermaid["categories"][cat].append(mermaid_target)
     mermaid["icons"][mermaid_target] = {
@@ -794,8 +808,8 @@ def worker(icon):
         icon.generate_image(
             Path(f"../dist/{icon.category}"),
             color=True,
-            max_target_size=64, # override to 64x64
-            #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
+            max_target_size=64,  # override to 64x64
+            # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
             transparency=False,
             gradient=True,
         )
@@ -804,14 +818,15 @@ def worker(icon):
         icon.generate_images(
             Path(f"../dist/{icon.category}"),
             color=True,
-            max_target_size=64, # override to 64x64
-            #max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
-            transparency=icon.transparency, # was True
+            max_target_size=64,  # override to 64x64
+            # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
+            transparency=icon.transparency,  # was True
             gradient=False,
         )
     print(f"generating PUML for {icon.source_name}")
     icon.generate_puml(Path(f"../dist/{icon.category}"), sprite)
     return
+
 
 def main():
 
@@ -822,16 +837,16 @@ def main():
 
     # Build icons from files
     icons = []
-    for dir in dir_list:
-        for filename in build_file_list(dir["dir"], dir["dir_glob"]):
+    for icon_dir in dir_list:
+        for filename in build_file_list(icon_dir["dir"], icon_dir["dir_glob"]):
             icon = Icon(
-                    posix_filename=filename,
-                    config=config,
-                    category_regex=dir["category_regex"],
-                    filename_regex=dir["filename_regex"],
-                    category_mappings=dir["category_mappings"],
-                    filename_mappings=dir["filename_mappings"],
-                   )
+                posix_filename=filename,
+                config=config,
+                category_regex=icon_dir["category_regex"],
+                filename_regex=icon_dir["filename_regex"],
+                category_mappings=icon_dir["category_mappings"],
+                filename_mappings=icon_dir["filename_mappings"],
+            )
             if icon.category == "Uncategorized":
                 print(f"skipping Uncategorized {icon.source_name}")
             else:
@@ -853,7 +868,7 @@ def main():
         # Create PlantUML sprites
         pool = Pool(processes=multiprocessing.cpu_count())
         for i in icons:
-            #pass
+            # pass
             pool.apply_async(worker, args=(i,))
         pool.close()
         pool.join()
@@ -868,7 +883,9 @@ def main():
             if category in ["GroupIcons", "Uncategorized", "Groups"]:
                 pass
             else:
-                color_map[str(category).lower()] = COLOR_VALUES[CATEGORY_COLORS[category]]
+                color_map[str(category).lower()] = COLOR_VALUES[
+                    CATEGORY_COLORS[category]
+                ]
         print("!$AWS_CATEGORY_COLORS = " + json.dumps(color_map, indent=2))
         sys.exit(0)
 
@@ -887,7 +904,7 @@ def main():
                 "strokeWidth": 2,
                 "background": "#ffffff",
             }
-        ]
+        ],
     }
     mermaid = {
         "prefix": "aws",
@@ -909,15 +926,13 @@ def main():
                 "simple-storage-service",
                 "lambda",
             ],
-            "palette": True
+            "palette": True,
         },
         "lastModified": release_utc_seconds,
         "width": 48,
         "height": 48,
-        "icons": {
-        },
-        "categories": {
-        },
+        "icons": {},
+        "categories": {},
     }
 
     for i in categories:
@@ -928,7 +943,9 @@ def main():
             if category == "Groups":
                 markdown.append(f"**{category}** | | | **{category}/all.puml**\n")
             else:
-                markdown.append(f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n")
+                markdown.append(
+                    f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
+                )
         for j in sorted_icons:
             if j.category == i:
                 cat = j.category
@@ -936,32 +953,34 @@ def main():
                 skip_icon = j.skip_icon
                 if j.filename_dark is not None:
                     img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
-                    img = img + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
+                    img = (
+                        img
+                        + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
+                    )
                 else:
                     img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true)"
                 if cat == "GroupIcons":
                     pass
                 elif cat == "Groups":
                     if skip_icon:
-                        markdown.append(f"{cat} | {tgt}Group  | - | {cat}/{tgt}.puml\n")
+                        markdown.append(f"{cat} | {tgt}Group | - | {cat}/{tgt}.puml\n")
                     else:
-                        markdown.append((
-                            f"{cat} | {tgt}Group / ${tgt}IMG()  | {img} |"
-                            f"{cat}/{tgt}.puml\n"
-                        ))
+                        markdown.append(
+                            (
+                                f"{cat} | {tgt}Group / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
+                            )
+                        )
                 else:
-                    markdown.append((
-                        f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG()  | {img} |"
-                        f"{cat}/{tgt}.puml\n"
-                    ))
+                    markdown.append(
+                        (
+                            f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
+                        )
+                    )
 
                 # Add element to Structurizr theme
-                element = {
-                    "tag": tgt,
-                    "stroke": j.color
-                }
+                element = {"tag": tgt, "stroke": j.color}
                 if j.color == "$AWS_FG_COLOR":
-                     element["stroke"] = "#000000"
+                    element["stroke"] = "#000000"
                 if j.group_border_style == "dashed" or j.group_border_style == "dotted":
                     # solid|dashed|dotted
                     element["border"] = j.group_border_style
@@ -972,24 +991,31 @@ def main():
 
                 # Add element to Mermaid
                 try:
-                    svg_filename = re.sub(r'\.png$','.svg', str(j.filename))
+                    svg_filename = re.sub(r"\.png$", ".svg", str(j.filename))
                     if svg_filename.endswith(".svg"):
                         build_mermaid_icon(mermaid, svg_filename, cat, j.target2)
 
                     if j.filename_dark is not None:
-                        svg_filename_dark = re.sub(r'\.png$','.svg', str(j.filename_dark))
+                        svg_filename_dark = re.sub(
+                            r"\.png$", ".svg", str(j.filename_dark)
+                        )
                         if svg_filename_dark.endswith(".svg"):
-                            build_mermaid_icon(mermaid, svg_filename_dark, cat, f"{j.target2}-dark")
+                            build_mermaid_icon(
+                                mermaid, svg_filename_dark, cat, f"{j.target2}-dark"
+                            )
 
-                except Exception as e: # pylint: disable=broad-except
+                except Exception as e:  # pylint: disable=broad-except
                     print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")
 
-    with open(Path("../AWSSymbols.md"), "w") as f:
-        f.write(''.join(markdown))
-    with open(Path("../dist/aws-icons-structurizr-theme.json"), "w") as f:
+    with open(Path("../AWSSymbols.md"), "w", encoding="utf-8") as f:
+        f.write("".join(markdown))
+    with open(
+        Path("../dist/aws-icons-structurizr-theme.json"), "w", encoding="utf-8"
+    ) as f:
         f.write(json.dumps(structerizr, indent=2))
-    with open(Path("../dist/aws-icons-mermaid.json"), "w") as f:
+    with open(Path("../dist/aws-icons-mermaid.json"), "w", encoding="utf-8") as f:
         f.write(json.dumps(mermaid, indent=2))
+
 
 if __name__ == "__main__":
     main()

@@ -5,17 +5,28 @@
 
 """upgrade.py: Upgrade AWS Icons for PlantUML references"""
 
+import argparse
+import glob
 import os
 import re
 from typing import List
-import argparse
-import glob
 
 # To update for a new version
 # 1. add new "vX.Y" version to end of SUPPORTED_VERSIONS
 # 2. add a BREAKING_CHANGES["vX.Y"] structure
 
-SUPPORTED_VERSIONS = ["v13.0", "v13.1", "v14.0", "v15.0", "v16.0", "v17.0", "v18.0", "v19.0", "v20.0", "v22.0"]
+SUPPORTED_VERSIONS = [
+    "v13.0",
+    "v13.1",
+    "v14.0",
+    "v15.0",
+    "v16.0",
+    "v17.0",
+    "v18.0",
+    "v19.0",
+    "v20.0",
+    "v22.0",
+]
 
 UPDATES = {
     "AWS_COLOR": "$AWS_COLOR_SQUID",
@@ -31,7 +42,7 @@ UPDATES = {
 }
 
 FLAT_UPDATES = "|".join(str(item) for item in UPDATES.keys())
-update_pattern = fr"\b(?![$])(?P<macro>{FLAT_UPDATES})\b"
+update_pattern = rf"\b(?![$])(?P<macro>{FLAT_UPDATES})\b"
 
 BREAKING_CHANGES = {}
 """
@@ -43,16 +54,12 @@ Order of operations on BREAKING_CHANGES
 """
 
 BREAKING_CHANGES["v13.0"] = {
-    "ARVR": {
-        "RENAMED": "VRAR"
-    },
-    "AWSCostManagement": {
-        "RENAMED": "CloudFinancialManagement"
-    },
+    "ARVR": {"RENAMED": "VRAR"},
+    "AWSCostManagement": {"RENAMED": "CloudFinancialManagement"},
     "Compute": {
         "REPLACED": {
             "Outposts1Uand2UServers": "Outpostsservers",
-            "Outposts": "Outpostsrack"
+            "Outposts": "Outpostsrack",
         }
     },
     "Storage": {
@@ -61,14 +68,12 @@ BREAKING_CHANGES["v13.0"] = {
             "SimpleStorageServiceS3Glacier": "SimpleStorageServiceS3GlacierFlexibleRetrieval",
             "S3OnOutpostsStorage": "S3onOutposts",
             "StorageGatewayNonCachedVolume": "StorageGatewayNoncachedVolume",
-            "ElasticFileSystem": "EFS"
+            "ElasticFileSystem": "EFS",
         }
-    }
+    },
 }
 BREAKING_CHANGES["v13.1"] = {
-    "GroupIcons": {
-        "RENAMED": "Groups"
-    },
+    "GroupIcons": {"RENAMED": "Groups"},
 }
 
 BREAKING_CHANGES["v14.0"] = {
@@ -79,136 +84,66 @@ BREAKING_CHANGES["v14.0"] = {
             "ThinkBoxKrakatoa": "ThinkboxKrakatoa",
             "ThinkBoxSequoia": "ThinkboxSequoia",
             "ThinkBoxStoke": "ThinkboxStoke",
-            "ThinkBoxXMesh": "ThinkboxXMesh"
+            "ThinkBoxXMesh": "ThinkboxXMesh",
         }
     },
-    "EndUserComputing": {
-        "REPLACED": {
-            "WorkSpacesWorkSpacesWeb": "WorkSpacesWeb"
-        }
-    },
+    "EndUserComputing": {"REPLACED": {"WorkSpacesWorkSpacesWeb": "WorkSpacesWeb"}},
     "ManagementGovernance": {
-        "REPLACED": {
-            "ManagedServiceforGrafana": "ManagedGrafana"
-        }
+        "REPLACED": {"ManagedServiceforGrafana": "ManagedGrafana"}
     },
     "SecurityIdentityCompliance": {
         "REPLACED": {
             "IdentityAccessManagementAWSIAMAccessAnalyzer": "IdentityAccessManagementIAMAccessAnalyzer",
-            "SingleSignOn": "IAMIdentityCenter"
+            "SingleSignOn": "IAMIdentityCenter",
         }
     },
     "Storage": {
         "REPLACED": {
             "BackupAWSBackupSupportforVMwareWorkloads": "BackupAWSBackupsupportforVMwareWorkloads"
         }
-    }
+    },
 }
 
 BREAKING_CHANGES["v15.0"] = {
-    "Compute": {
-        "REMOVED": [
-            "EC2R5dInstance",
-            "EC2RdnInstance"
-        ]
-    },
-    "Containers": {
-        "REPLACED": {
-            "RedHatOpenShift": "RedHatOpenShiftServiceonAWS"
-        }
-    },
-    "Database": {
-        "REMOVED": [
-            "QuantumLedgerDatabase2"
-        ]
-    },
+    "Compute": {"REMOVED": ["EC2R5dInstance", "EC2RdnInstance"]},
+    "Containers": {"REPLACED": {"RedHatOpenShift": "RedHatOpenShiftServiceonAWS"}},
+    "Database": {"REMOVED": ["QuantumLedgerDatabase2"]},
     "EndUserComputing": {
         "REPLACED": {
             "WorkSpaces": "WorkSpacesFamilyAmazonWorkSpaces",
-            "WorkSpacesWeb": "WorkSpacesFamilyAmazonWorkSpacesWeb"
+            "WorkSpacesWeb": "WorkSpacesFamilyAmazonWorkSpacesWeb",
         }
     },
-    "GameTech": {
-        "RENAMED": "Games"
-    },
-    "Storage": {
-        "REPLACED": {
-            "CloudEndureDisasterRecovery": "ElasticDisasterRecovery"
-        }
-    }
+    "GameTech": {"RENAMED": "Games"},
+    "Storage": {"REPLACED": {"CloudEndureDisasterRecovery": "ElasticDisasterRecovery"}},
 }
 
 BREAKING_CHANGES["v16.0"] = {
-    "Analytics": {
-        "REPLACED": {
-            "KinesisFirehose": "KinesisDataFirehose"
-        }
-    },
-    "BusinessApplications": {
-        "REMOVED": [
-            "ChimeVoiceConnector"
-        ]
-    },
-    "Compute": {
-        "REMOVED": [
-            "ApplicationAutoScaling",
-            "Fargate2"
-        ]
-    },
-    "Containers": {
-        "REMOVED": [
-            "ElasticContainerServiceECSAnywhere"
-        ]
-    },
-    "Games": {
-        "REMOVED": [
-            "Lumberyard"
-        ]
-    },
+    "Analytics": {"REPLACED": {"KinesisFirehose": "KinesisDataFirehose"}},
+    "BusinessApplications": {"REMOVED": ["ChimeVoiceConnector"]},
+    "Compute": {"REMOVED": ["ApplicationAutoScaling", "Fargate2"]},
+    "Containers": {"REMOVED": ["ElasticContainerServiceECSAnywhere"]},
+    "Games": {"REMOVED": ["Lumberyard"]},
     "General": {
         "REPLACED": {
             "MarketplaceLight": "Marketplace",
-            "MarketplaceDark": "Marketplace"
+            "MarketplaceDark": "Marketplace",
         }
     },
     "ManagementGovernance": {
-        "REPLACED": {
-            "PersonalHealthDashboard": "HealthDashboard"
-        }
+        "REPLACED": {"PersonalHealthDashboard": "HealthDashboard"}
     },
-    "MigrationTransfer": {
-        "REMOVED": [
-            "ServerMigrationService"
-        ]
-    },
-    "NetworkingContentDelivery": {
-        "REMOVED": [
-            "CloudDirectory2",
-            "CloudWANVirtualPoP"
-        ]
-    },
+    "MigrationTransfer": {"REMOVED": ["ServerMigrationService"]},
+    "NetworkingContentDelivery": {"REMOVED": ["CloudDirectory2", "CloudWANVirtualPoP"]},
     "VRAR": {
-         "RENAMED": None # Deleted
-    }
-
+        "RENAMED": None  # Deleted
+    },
 }
 
 BREAKING_CHANGES["v17.0"] = {
-    "Analytics": {
-        "REPLACED": {
-            "KinesisDataAnalytics": "ManagedServiceforApacheFlink"
-        }
-    },
-    "InternetOfThings": {
-        "REMOVED": [
-            "IoTEduKit"
-        ]
-    },
-    "MachineLearning": {
-        "REPLACED": {
-            "Omics": "HealthOmics"
-        }
-    }
+    "Analytics": {"REPLACED": {"KinesisDataAnalytics": "ManagedServiceforApacheFlink"}},
+    "InternetOfThings": {"REMOVED": ["IoTEduKit"]},
+    "MachineLearning": {"REPLACED": {"Omics": "HealthOmics"}},
 }
 
 BREAKING_CHANGES["v18.0"] = {}
@@ -218,19 +153,11 @@ BREAKING_CHANGES["v19.0"] = {
         "MOVED": {
             "APIGateway": "NetworkingContentDelivery",
             "APIGatewayEndpoint": "NetworkingContentDelivery",
-            "ConsoleMobileApplication": "ManagementGovernance"
+            "ConsoleMobileApplication": "ManagementGovernance",
         }
     },
-    "Analytics": {
-        "REPLACED": {
-            "KinesisDataFirehose": "DataFirehose"
-        }
-    },
-    "BusinessApplications": {
-        "REMOVED": [
-            "Honeycode"
-        ]
-    },
+    "Analytics": {"REPLACED": {"KinesisDataFirehose": "DataFirehose"}},
+    "BusinessApplications": {"REMOVED": ["Honeycode"]},
     "Compute": {
         "MOVED": {
             "ComputeOptimizer": "ManagementGovernance",
@@ -238,13 +165,9 @@ BREAKING_CHANGES["v19.0"] = {
             "ThinkboxFrost": "MediaServices",
             "ThinkboxKrakatoa": "MediaServices",
             "ThinkboxStoke": "MediaServices",
-            "ThinkboxXMesh": "MediaServices"
+            "ThinkboxXMesh": "MediaServices",
         },
-        "REMOVED": [
-            "GenomicsCLI",
-            "VMwareCloudonAWS",
-            "ThinkboxSequoia"
-        ]
+        "REMOVED": ["GenomicsCLI", "VMwareCloudonAWS", "ThinkboxSequoia"],
     },
     "Database": {
         "REPLACED": {
@@ -255,99 +178,46 @@ BREAKING_CHANGES["v19.0"] = {
     "EndUserComputing": {
         "REPLACED": {
             "AppStream": "AppStream2",
-            "WorkSpacesFamilyAmazonWorkSpacesWeb": "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser"
+            "WorkSpacesFamilyAmazonWorkSpacesWeb": "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser",
         },
-        "REMOVED": [
-            "WorkLink"
-        ]
+        "REMOVED": ["WorkLink"],
     },
-    "InternetOfThings": {
-        "REMOVED": [
-            "IoTThingsGraph"
-        ]
-    },
+    "InternetOfThings": {"REMOVED": ["IoTThingsGraph"]},
     "ManagementGovernance": {
-        "MOVED": {
-            "FaultInjectionSimulator": "DeveloperTools"
-        },
-        "REPLACED": {
-            "FaultInjectionSimulator": "FaultInjectionService"
-        }
+        "MOVED": {"FaultInjectionSimulator": "DeveloperTools"},
+        "REPLACED": {"FaultInjectionSimulator": "FaultInjectionService"},
     },
     "MachineLearning": {
         "RENAMED": "ArtificialIntelligence",
-        "REPLACED": {
-            "TorchServe": "PyTorchonAWS"
-        }
+        "REPLACED": {"TorchServe": "PyTorchonAWS"},
     },
-    "MigrationTransfer": {
-        "RENAMED": "MigrationModernization"
-    },
+    "MigrationTransfer": {"RENAMED": "MigrationModernization"},
     "Storage": {
         # "REPLACED": {
         #     "SimpleStorageServiceBucket": "SimpleStorageServiceGeneralpurposebucket",
         # },
-        "REMOVED": [
-            "Snowmobile"
-        ]
-    }
+        "REMOVED": ["Snowmobile"]
+    },
 }
 
 BREAKING_CHANGES["v20.0"] = {
-    "Analytics": {
-        "REMOVED": [
-            "DataPipeline",
-            "GlueElasticViews"
-        ]
-    },
+    "Analytics": {"REMOVED": ["DataPipeline", "GlueElasticViews"]},
     "ArtificialIntelligence": {
-        "REPLACED": {
-            "SageMaker": "SageMakerAI"
-        },
+        "REPLACED": {"SageMaker": "SageMakerAI"},
     },
-    "CloudFinancialManagement": {
-        "REMOVED": [
-            "ApplicationCostProfiler"
-        ]
-    },
-    "Compute": {
-        "REPLACED": {
-            "NICEDCV": "DCV"
-        }
-    },
+    "CloudFinancialManagement": {"REMOVED": ["ApplicationCostProfiler"]},
+    "Compute": {"REPLACED": {"NICEDCV": "DCV"}},
     "Database": {
-        "REPLACED": {
-            "MemoryDBforRedis": "MemoryDB"
-        },
-        "REMOVED": [
-            "RDSonVMware"
-        ]
+        "REPLACED": {"MemoryDBforRedis": "MemoryDB"},
+        "REMOVED": ["RDSonVMware"],
     },
     "DeveloperTools": {
-        "REPLACED": {
-            "ApplicationComposer": "InfrastructureComposer"
-        },
-        "REMOVED": [
-            "CodeStar"
-        ]
+        "REPLACED": {"ApplicationComposer": "InfrastructureComposer"},
+        "REMOVED": ["CodeStar"],
     },
-    "EndUserComputing": {
-        "REMOVED": [
-            "WorkSpacesThinClient"
-        ]
-    },
-    "Games": {
-        "REMOVED": [
-            "GameKit",
-            "GameSparks"
-        ]
-    },
-    "InternetOfThings": {
-        "REMOVED": [
-            "IoT1Click",
-            "IoTRoboRunner"
-        ]
-    },
+    "EndUserComputing": {"REMOVED": ["WorkSpacesThinClient"]},
+    "Games": {"REMOVED": ["GameKit", "GameSparks"]},
+    "InternetOfThings": {"REMOVED": ["IoT1Click", "IoTRoboRunner"]},
     "ManagementGovernance": {
         "REMOVED": [
             "OpsWorks",
@@ -358,24 +228,16 @@ BREAKING_CHANGES["v20.0"] = {
             "OpsWorksMonitoring",
             "OpsWorksPermissions",
             "OpsWorksResources",
-            "OpsWorksStack2"
+            "OpsWorksStack2",
         ]
     },
-    "MediaServices": {
-        "REMOVED": [
-            "NimbleStudio"
-        ]
-    },
+    "MediaServices": {"REMOVED": ["NimbleStudio"]},
     "NetworkingContentDelivery": {
         "REPLACED": {
             "Route53ApplicationRecoveryController": "ApplicationRecoveryController"
         },
     },
-    "Storage": {
-        "REMOVED": [
-            "Snowcone"
-        ]
-    }
+    "Storage": {"REMOVED": ["Snowcone"]},
 }
 
 BREAKING_CHANGES["v22.0"] = {
@@ -388,14 +250,10 @@ BREAKING_CHANGES["v22.0"] = {
             "SageMakerShadowTesting": "SageMakerAIShadowTesting",
             "SageMakerTrain": "SageMakerAITrain",
         },
-        "REMOVED": [
-            "DeepLens"
-        ]
+        "REMOVED": ["DeepLens"],
     },
     "Games": {
-        "REPLACED": {
-            "GameLift": "GameLiftServers"
-        },
+        "REPLACED": {"GameLift": "GameLiftServers"},
     },
     "MigrationModernization": {
         "MOVED": {
@@ -403,12 +261,13 @@ BREAKING_CHANGES["v22.0"] = {
         }
     },
     "Robotics": {
-         "RENAMED": None # Deleted
-    }
+        "RENAMED": None  # Deleted
+    },
 }
 
 ICON_CHANGES = {}
 ICON_CHANGE_SET = set()
+
 
 def process_icon_changes():
     """
@@ -419,7 +278,9 @@ def process_icon_changes():
         tmp = {}
         for category in BREAKING_CHANGES[version]:
             if "REPLACED" in BREAKING_CHANGES[version][category]:
-                for key, value in BREAKING_CHANGES[version][category]["REPLACED"].items():
+                for key, value in BREAKING_CHANGES[version][category][
+                    "REPLACED"
+                ].items():
                     tmp[key] = value
                     ICON_CHANGE_SET.add(key)
             if "REMOVED" in BREAKING_CHANGES[version][category]:
@@ -429,15 +290,20 @@ def process_icon_changes():
 
         ICON_CHANGES[version] = tmp
 
+
 class IncludePatternManager:
     def __init__(self, define: str = "AWSPuml"):
         self.include_define = define
         self.update_include_pattern()
 
     def update_include_pattern(self):
-        self.include_pattern = rf"!include(url)? {self.include_define}/(?P<category>.+)/(?P<icon>.+).puml"
+        self.include_pattern = (
+            rf"!include(url)? {self.include_define}/(?P<category>.+)/(?P<icon>.+).puml"
+        )
+
 
 pattern_manager = IncludePatternManager()
+
 
 def process_include(line: str, upgrade_versions: List[str]) -> str:
     """
@@ -506,7 +372,8 @@ FLAT_ICON_CHANGES = "|".join(str(item) for item in ICON_CHANGE_SET)
 # - sprite $ResourceIcon
 # - image $ResourceIconIMG(
 # - macro ResourceIcon(
-icon_pattern = fr"\b(?:$)?(?P<icon>{FLAT_ICON_CHANGES})(?:IMG\(|\(|\b)"
+icon_pattern = rf"\b(?:$)?(?P<icon>{FLAT_ICON_CHANGES})(?:IMG\(|\(|\b)"
+
 
 def process_line(line: str, upgrade_versions: List[str]) -> str:
     """
@@ -558,7 +425,7 @@ def process_file(output_file: str) -> List[str]:
     """
     Process the PlantUML file
     Return the lines to be written to the file
-    
+
     :param output_file: The PlantUML file to process
     :type output_file: str
     :return: The lines to be written to the file
@@ -572,7 +439,7 @@ def process_file(output_file: str) -> List[str]:
     awspuml_pattern = r"!define (.+) https:\/\/raw.githubusercontent.com\/awslabs\/aws-icons-for-plantuml\/(.+)\/dist"
 
     # Open the file in read mode
-    with open(output_file, 'r') as file:
+    with open(output_file, "r", encoding="utf-8") as file:
         # Iterate over each line in the file
         for line in file:
             line_number += 1
@@ -592,7 +459,7 @@ def process_file(output_file: str) -> List[str]:
                         line = processed_line
                         print(f"🔄 {line_number:>3}: {line}", end="")
 
-            elif (line.startswith("!define ")):
+            elif line.startswith("!define "):
                 match = re.search(awspuml_pattern, line)
                 if match:
                     detected_define = match.group(1)
@@ -600,14 +467,16 @@ def process_file(output_file: str) -> List[str]:
                     if detected_define != "AWSPuml":
                         pattern_manager.include_define = detected_define
                         pattern_manager.update_include_pattern()
-                    
+
                     print(f"⏹️  {line_number:>3}: {line}", end="")
                     line = line.replace(detected_version, SUPPORTED_VERSIONS[-1])
                     print(f"🔄 {line_number:>3}: {line}", end="")
                     if detected_version not in SUPPORTED_VERSIONS:
-                        print(f"aws-icons-for-plantuml version {detected_version} not in {SUPPORTED_VERSIONS}")
+                        print(
+                            f"aws-icons-for-plantuml version {detected_version} not in {SUPPORTED_VERSIONS}"
+                        )
                         return None
-                    
+
                     version_index = SUPPORTED_VERSIONS.index(detected_version)
                     upgrade_versions = SUPPORTED_VERSIONS[version_index:]
 
@@ -616,16 +485,21 @@ def process_file(output_file: str) -> List[str]:
     return overwrite_lines
 
 
-parser = argparse.ArgumentParser(description="Upgrade AWS Icons for PlantUML references")
+parser = argparse.ArgumentParser(
+    description="Upgrade AWS Icons for PlantUML references"
+)
 parser.add_argument(
     "--overwrite",
     action="store_true",
     default=False,
     help="Overwrite PlantUML file",
 )
-parser.add_argument('filename', help='The PlantUML filename or wildcard in quotes (e.g. "*.puml")')
+parser.add_argument(
+    "filename", help='The PlantUML filename or wildcard in quotes (e.g. "*.puml")'
+)
 
 args = vars(parser.parse_args())
+
 
 def main():
     overwrite = False
@@ -644,7 +518,7 @@ def main():
         if updated_lines is None:
             print("No changes detected")
         elif overwrite:
-            with open(output_file, 'w') as file:
+            with open(output_file, "w", encoding="utf-8") as file:
                 for line in updated_lines:
                     file.write(line)
 

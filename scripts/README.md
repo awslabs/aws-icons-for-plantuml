@@ -13,7 +13,8 @@ If you would like to have customized builds and/or experiment with _PlantUML Ico
 
 To generate the PlantUML files locally, ensure the following is prerequisites have been completed:
 
-- Install Python 3 and packages from the `requirements.txt` file.
+- Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) - An extremely fast Python package and project manager, written in Rust.
+- Create a Python virtual environment (`uv venv`) and install packages from `pyproject.toml` (`uv sync`).
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
 - Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_07312025`, `Category-Icons_07312025`, and `Resource-Icons_07312025` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
@@ -58,21 +59,17 @@ For general categories, the `Color` attribute is set to match the color represen
 
 In the curated `config.yml` file, each AWS service is mapped to it's primary category. This then maps to the specific PUML file referenced by _Category/Filename.puml_, or are included in the _Category/all.puml_ file.
 
-Next, install the python packages from the `requirements.txt` file. Depending upon your operating system, this may be through `apt`, `yum`, or `pip install` if using a virtual environment. The requirements are:
-
 - [PyYAML](https://pyyaml.org/)
 - [lxml](https://lxml.de/)
 - [Pillow](https://python-pillow.org/)
 - [pytest](https://docs.pytest.org/en/stable/)
-
-For PIP users, simply run `pip3 install -r requirements.txt` in your environment.
 
 ## Verify Dependencies and Process
 
 To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags.
 
 ```bash
-$ ./icon-builder.py --check-env
+$ uv run icon-builder.py --check-env
 Prerequisites met, exiting
 ```
 
@@ -81,7 +78,7 @@ Prerequisites met, exiting
 If you would like to start from scratch, rename the existing `config.yml` file and run the `icon-builder.py` script to build the `config-template.yml` file with only the default color and size set. Then rename to `config.yml`. You can use the renamed original file to get colors and configuration settings if desired.
 
 ```bash
-$ ./icon-builder.py --create-config-template
+$ uv run icon-builder.py --create-config-template
 ../source/AWSCommon.puml
 Successfully created config-template.yml
 $ mv config-template.yml config.yml
@@ -90,7 +87,7 @@ $ mv config-template.yml config.yml
 To process all the files, run the command with no parameters. NOTE: This will take at least a few minutes to complete, and the script with launch multiple Java processes to generate the icons.
 
 ```bash
-$ ./icon-builder.py --check-env
+$ uv run icon-builder.py --check-env
 Prerequisites met, exiting
 ```
 
@@ -101,13 +98,13 @@ Next, run the same command without `--check-env` to create all new icons and upd
 After icons have been created, you can just regenerate the `AWSSymbols.md`, Structurizr theme, and Mermaid icons files by running the command with the `--symbols-only` parameter.
 
 ```bash
-$ ./icon-builder.py --symbols-only
+$ uv run icon-builder.py --symbols-only
 ```
 
 The `$AWSColor($service)` relies on a JSON mapping of category to color (`$AWS_CATEGORY_COLORS` in `AWSCommon.puml`).  When a new category is added (or colors change), you can generate this JSON structure by running the command with the `--create-color-json` parameter.  You will then need to copy this and replace the version in `AWSCommon.puml`.
 
 ```bash
-$ ./icon-builder.py --create-color-json
+$ uv run icon-builder.py --create-color-json
 ```
 
 ### What Happens
@@ -141,15 +138,15 @@ version
 Or execute the jar with the `-version` parameter:
 
 ```bash
-$ java -jar scripts/plantuml-mit-1.2025.0.jar -version
-PlantUML version 1.2025.0 (Tue Jan 07 11:35:36 CST 2025)
+$ java -jar scripts/plantuml-mit-1.2026.2.jar -version
+PlantUML version 1.2026.2 / bb8550d [2026-02-27 17:45:29 UTC]
 (MIT source distribution)
 ```
 
 To start the local render server.  You may need `-DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url="http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/"`, but consult [Deploy PlantUML safely](https://plantuml.com/security):
 
 ```bash
-java -jar scripts/plantuml-mit-1.2025.0.jar -picoweb
+java -jar scripts/plantuml-mit-1.2026.2.jar -picoweb
 ```
 
 If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
@@ -168,6 +165,10 @@ If you use Visual Studio Code and the jebbs [PlantUML](https://marketplace.visua
 If you use Visual Studio Code, `.vscode\tasks.json` has tasks defined for running "PlantUML picoweb 8080" (using `ALLOWLIST`), "http.server 8000", and "http.server CORS 8000".
 
 ## Build Notes
+
+### Release 23.0-2026.01.30
+
+This release switched to using `plantuml-mit-1.2026.2.jar` which had no noticeable changes and Pillow 12.1.1 which generated visually similar category images, but different bytes in .png files and base64 encoding in .puml files.
 
 ### Release 22.0-2025.07.31
 
@@ -243,4 +244,4 @@ This is a makeover release where all items have moved. Of note:
 
 The icons provided in this package are made available to you under the terms of the CC-BY-ND 2.0 license, available in the `LICENSE` file. Code is made available under the MIT license in `LICENSE-CODE`.
 
-The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml-mit-1.2022.5.jar`, is licensed under the MIT license in `LICENSE-CODE`.
+The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml-mit-1.2026.2.jar`, is licensed under the MIT license in `LICENSE-CODE`.
