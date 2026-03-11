@@ -5,18 +5,19 @@
 ' Uncomment the line below for "dark mode" styling
 '!$AWS_DARK = true
 
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v20.0/dist
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v22.0/dist
 !include AWSPuml/AWSCommon.puml
-!include AWSPuml/ArtificialIntelligence/SageMakerModel.puml
-!include AWSPuml/Robotics/RoboMaker.puml
+!include AWSPuml/ArtificialIntelligence/SageMakerAIModel.puml
+!include AWSPuml/Compute/Compute.puml
+!include AWSPuml/General/Documents.puml
 
-component "<color:$AWSColor(ArtificialIntelligence)><$SageMakerModel></color>" as myMLModel 
-database "<color:$AWS_COLOR_GRAY><$RoboMaker></color>" as myRoboticService
-RoboMaker(mySecondFunction, "Reinforcement Learning", "Gazebo")
+component "<color:$AWSColor(ArtificialIntelligence)><$SageMakerAIModel></color>" as myMLModel 
+database "<color:$AWSColor(General)><$Documents></color>" as myDocuments
+Compute(mySecondFunction, "Agent Runtime", "Python")
 
-rectangle "<color:$AWSColor(ArtificialIntelligence)><$SageMakerModel></color>" as mySecondML
+rectangle "<color:$AWSColor(ArtificialIntelligence)><$SageMakerAIModel></color>" as mySecondML
 
-myMLModel --> myRoboticService
+myMLModel --> myDocuments
 mySecondFunction --> mySecondML
 
 @enduml
