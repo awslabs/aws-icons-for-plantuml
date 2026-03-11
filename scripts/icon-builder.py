@@ -28,14 +28,14 @@ from awsicons.icon import Icon
 # TODO - refactor to param file and/or arguments
 
 # used to inject into aws-icons-mermaid.json
-release_version = "20.0"
-release_date_obj = datetime.strptime("2025-02-07", "%Y-%m-%d")
+release_version = "22.0"
+release_date_obj = datetime.strptime("2025-07-31", "%Y-%m-%d")
 release_utc_seconds = int(release_date_obj.replace(tzinfo=timezone.utc).timestamp())
 
 # This list are the directories to parse, what type of files they are, and globbing/regex
 # to parse and process. This addresses the changing nature of the assets package.
 
-# Source directories for the 20.0-2025.02.07 release
+# Source directories for the 22.0-2025.07.31 release
 
 dir_list = [
     {
@@ -266,7 +266,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 20.0-2025.02.07 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 22.0-2025.07.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:

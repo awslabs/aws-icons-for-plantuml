@@ -35,15 +35,15 @@ In order to incorporate and use the _AWS Icons for PlantUML_ resources, `!includ
 
 To get started, include the `AWSCommon.puml` file from the `dist` directory in each `.puml` file or PlantUML diagram. This can be referenced by a URL directly to this repository, or by including the file locally. To use this repository, use the following:
 
-<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v20.0</b>/dist/AWSCommon.puml
+<pre><code>!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v22.0</b>/dist/AWSCommon.puml
 </code></pre>
 
 or this if defining the URL:
 
-<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v20.0</b>/dist
+<pre><code>!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/<b>v22.0</b>/dist
 </code></pre>
 
-This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v20.0_ release.
+This references the latest _GitHub release_ version of the referenced file from GitHub when an Internet connection is available. It is recommended _not_ to use the `main` branch, but instead a specific release version. The examples below reference the current _v22.0_ release.
 
 All examples reference _main_ and are designed with the most recent files. For consistency of UML diagrams when referencing the files directly via GitHub and not generated locally, it is recommended to use a specific release version.
 
@@ -108,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v20.0/examples/HelloWorld.puml)
+![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v22.0/examples/HelloWorld.puml)
 
 ## Examples
 
