@@ -471,11 +471,6 @@
       "icon": "ArtificialIntelligence/DeepLearningContainers.png"
     },
     {
-      "tag": "DeepLens",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/DeepLens.png"
-    },
-    {
       "tag": "DeepRacer",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/DeepRacer.png"
@@ -611,14 +606,34 @@
       "icon": "ArtificialIntelligence/SageMakerAI.png"
     },
     {
-      "tag": "SageMakerCanvas",
+      "tag": "SageMakerAICanvas",
       "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerCanvas.png"
+      "icon": "ArtificialIntelligence/SageMakerAICanvas.png"
     },
     {
-      "tag": "SageMakerGeospatialML",
+      "tag": "SageMakerAIGeospatialML",
       "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerGeospatialML.png"
+      "icon": "ArtificialIntelligence/SageMakerAIGeospatialML.png"
+    },
+    {
+      "tag": "SageMakerAIModel",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/SageMakerAIModel.png"
+    },
+    {
+      "tag": "SageMakerAINotebook",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/SageMakerAINotebook.png"
+    },
+    {
+      "tag": "SageMakerAIShadowTesting",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/SageMakerAIShadowTesting.png"
+    },
+    {
+      "tag": "SageMakerAITrain",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/SageMakerAITrain.png"
     },
     {
       "tag": "SageMakerGroundTruth",
@@ -626,29 +641,9 @@
       "icon": "ArtificialIntelligence/SageMakerGroundTruth.png"
     },
     {
-      "tag": "SageMakerModel",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerModel.png"
-    },
-    {
-      "tag": "SageMakerNotebook",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerNotebook.png"
-    },
-    {
-      "tag": "SageMakerShadowTesting",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerShadowTesting.png"
-    },
-    {
       "tag": "SageMakerStudioLab",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/SageMakerStudioLab.png"
-    },
-    {
-      "tag": "SageMakerTrain",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/SageMakerTrain.png"
     },
     {
       "tag": "TensorFlowonAWS",
@@ -836,6 +831,11 @@
       "icon": "Compute/Compute.png"
     },
     {
+      "tag": "ComputeOptimizer2",
+      "stroke": "#ED7100",
+      "icon": "Compute/ComputeOptimizer2.png"
+    },
+    {
       "tag": "DCV",
       "stroke": "#ED7100",
       "icon": "Compute/DCV.png"
@@ -924,6 +924,11 @@
       "tag": "ElasticFabricAdapter",
       "stroke": "#ED7100",
       "icon": "Compute/ElasticFabricAdapter.png"
+    },
+    {
+      "tag": "ElasticVMwareService",
+      "stroke": "#ED7100",
+      "icon": "Compute/ElasticVMwareService.png"
     },
     {
       "tag": "Lambda",
@@ -1576,9 +1581,14 @@
       "icon": "FrontEndWebMobile/LocationServiceTrack.png"
     },
     {
-      "tag": "GameLift",
+      "tag": "GameLiftServers",
       "stroke": "#8C4FFF",
-      "icon": "Games/GameLift.png"
+      "icon": "Games/GameLiftServers.png"
+    },
+    {
+      "tag": "GameLiftStreams",
+      "stroke": "#8C4FFF",
+      "icon": "Games/GameLiftStreams.png"
     },
     {
       "tag": "Games",
@@ -2961,11 +2971,6 @@
       "icon": "MigrationModernization/DatasyncAgent.png"
     },
     {
-      "tag": "ElasticVMwareService",
-      "stroke": "#01A88D",
-      "icon": "MigrationModernization/ElasticVMwareService.png"
-    },
-    {
       "tag": "MainframeModernization",
       "stroke": "#01A88D",
       "icon": "MigrationModernization/MainframeModernization.png"
@@ -3049,6 +3054,11 @@
       "tag": "TransferFamilyAWSSFTP",
       "stroke": "#01A88D",
       "icon": "MigrationModernization/TransferFamilyAWSSFTP.png"
+    },
+    {
+      "tag": "Transform",
+      "stroke": "#01A88D",
+      "icon": "MigrationModernization/Transform.png"
     },
     {
       "tag": "APIGateway",
@@ -3449,36 +3459,6 @@
       "tag": "QuantumTechnologies",
       "stroke": "#ED7100",
       "icon": "QuantumTechnologies/QuantumTechnologies.png"
-    },
-    {
-      "tag": "RoboMaker",
-      "stroke": "#DD344C",
-      "icon": "Robotics/RoboMaker.png"
-    },
-    {
-      "tag": "RoboMakerCloudExtensionsROS",
-      "stroke": "#DD344C",
-      "icon": "Robotics/RoboMakerCloudExtensionsROS.png"
-    },
-    {
-      "tag": "RoboMakerDevelopmentEnvironment",
-      "stroke": "#DD344C",
-      "icon": "Robotics/RoboMakerDevelopmentEnvironment.png"
-    },
-    {
-      "tag": "RoboMakerFleetManagement",
-      "stroke": "#DD344C",
-      "icon": "Robotics/RoboMakerFleetManagement.png"
-    },
-    {
-      "tag": "RoboMakerSimulation",
-      "stroke": "#DD344C",
-      "icon": "Robotics/RoboMakerSimulation.png"
-    },
-    {
-      "tag": "Robotics",
-      "stroke": "#DD344C",
-      "icon": "Robotics/Robotics.png"
     },
     {
       "tag": "GroundStation",
@@ -4139,6 +4119,11 @@
       "tag": "SimpleStorageServiceS3Tables",
       "stroke": "#7AA116",
       "icon": "Storage/SimpleStorageServiceS3Tables.png"
+    },
+    {
+      "tag": "SimpleStorageServiceS3Vectors",
+      "stroke": "#7AA116",
+      "icon": "Storage/SimpleStorageServiceS3Vectors.png"
     },
     {
       "tag": "SimpleStorageServiceVPCAccessPoints",
