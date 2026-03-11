@@ -42,7 +42,7 @@ dir_list = [
         "dir": "../source/official",
         # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
         # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_02072025/*48/*.png",
+        "dir_glob": "Category-Icons_07312025/*48/*.png",
         "category_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "filename_regex": "[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
@@ -63,7 +63,7 @@ dir_list = [
     {
         "dir": "../source/official",
         # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
-        "dir_glob": "Architecture-Service-Icons_02072025/**/*48/*.png",
+        "dir_glob": "Architecture-Service-Icons_07312025/**/*48/*.png",
         "category_regex": "[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
@@ -86,7 +86,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_02072025/*/*.svg",
+        "dir_glob": "Resource-Icons_07312025/*/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
@@ -130,7 +130,7 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_02072025/Res_General-Icons/Res_48_Light/*.svg",
+        "dir_glob": "Resource-Icons_07312025/Res_General-Icons/Res_48_Light/*.svg",
         "category_regex": "[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": "[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
@@ -504,7 +504,7 @@ $AWS_COLOR_ENDOR | #7AA116 (green) | ![Endor](dist/Groups/GenericGreen.png?raw=t
 $AWS_COLOR_SMILE | #ED7100 (orange) | ![Smile](dist/Groups/GenericOrange.png?raw=true) | Blockchain; Compute; Containers; Media Services; Quantum Technologies
 $AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance
 $AWS_COLOR_GALAXY | #8C4FFF (purple) | ![Galaxy](dist/Groups/GenericPurple.png?raw=true) | Analytics; Games; Networking & Content Delivery; Serverless
-$AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+$AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Security, Identity & Compliance
 $AWS_COLOR_ORBIT | #01A88D (turquoise) | ![Orbit](dist/Groups/GenericTurquoise.png?raw=true) | Artificial Intelligence; End User Computing; Migration & Modernization
 
 An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
