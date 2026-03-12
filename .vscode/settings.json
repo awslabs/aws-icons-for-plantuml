@@ -1,0 +1,25 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "plantuml.render": "PlantUMLServer",
+  "plantuml.server": "http://localhost:8080/plantuml/",
+  "cSpell.words": [
+    "Corretto",
+    "Endor",
+    "plantuml",
+    "puml",
+    "Structurizr",
+    "Uncategorized"
+  ],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "pyproject.toml": "uv.lock, .pylintrc, .python-version"
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:HOME}/.local/bin:${env:PATH}"
+  }
+}
