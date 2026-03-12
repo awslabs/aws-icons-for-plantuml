@@ -587,7 +587,7 @@ def verify_environment():
         print(f"Error: {e}\ncheck config.yml file")
         sys.exit(1)
     # Verify other files and folders exist
-    source_dir = Path("../source")
+    source_dir = Path("..") / "source"
     required_files = [
         "AWSC4Integration.puml",
         "AWSCommon.puml",
@@ -627,7 +627,7 @@ def verify_environment():
 
 def clean_dist():
     """Removes all files from the dist/ directory"""
-    path = Path("../dist")
+    path = Path("..") / "dist"
     if path.exists():
         shutil.rmtree(path)
     os.mkdir(path)
@@ -636,7 +636,7 @@ def clean_dist():
 def copy_puml():
     """Copy source/*.puml files to dist"""
     for file in Path(".").glob("../source/*.puml"):
-        shutil.copy(file, Path("../dist"))
+        shutil.copy(file, Path("..") / "dist")
 
 
 def build_file_list(file_dir: str, glob: str):
@@ -812,17 +812,17 @@ def worker(icon):
     else:
         # create images without transparency for use with PlantUML sprites
         icon.generate_image(
-            Path(f"../dist/{icon.category}"),
+            Path("..") / "dist" / icon.category,
             color=True,
             max_target_size=64,  # override to 64x64
             # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
             transparency=False,
             gradient=True,
         )
-        sprite = icon.generate_puml_sprite(Path(f"../dist/{icon.category}"))
+        sprite = icon.generate_puml_sprite(Path("..") / "dist" / icon.category)
         # Recreate the images with transparency
         icon.generate_images(
-            Path(f"../dist/{icon.category}"),
+            Path("..") / "dist" / icon.category,
             color=True,
             max_target_size=64,  # override to 64x64
             # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
@@ -830,7 +830,7 @@ def worker(icon):
             gradient=False,
         )
     print(f"generating PUML for {icon.source_name}")
-    icon.generate_puml(Path(f"../dist/{icon.category}"), sprite)
+    icon.generate_puml(Path("..") / "dist" / icon.category, sprite)
     return
 
 
@@ -1088,7 +1088,7 @@ def main():
 
         # Create category directories
         for i in categories:
-            Path(f"../dist/{i}").mkdir(exist_ok=True)
+            (Path("..") / "dist" / i).mkdir(exist_ok=True)
 
         # Create PlantUML sprites
         pool = Pool(processes=multiprocessing.cpu_count())
@@ -1100,7 +1100,7 @@ def main():
 
         # Generate "all.puml" files for each category
         for i in categories:
-            create_category_all_file(Path(f"../dist/{i}"))
+            create_category_all_file(Path("..") / "dist" / i)
 
     if args["create_color_json"]:
         color_map = {}
@@ -1232,13 +1232,13 @@ def main():
                 except Exception as e:  # pylint: disable=broad-except
                     print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")
 
-    with open(Path("../AWSSymbols.md"), "w", encoding="utf-8") as f:
+    with open(Path("..") / "AWSSymbols.md", "w", encoding="utf-8") as f:
         f.write("".join(markdown))
     with open(
-        Path("../dist/aws-icons-structurizr-theme.json"), "w", encoding="utf-8"
+        Path("..") / "dist" / "aws-icons-structurizr-theme.json", "w", encoding="utf-8"
     ) as f:
         f.write(json.dumps(structerizr, indent=2))
-    with open(Path("../dist/aws-icons-mermaid.json"), "w", encoding="utf-8") as f:
+    with open(Path("..") / "dist" / "aws-icons-mermaid.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(mermaid, indent=2))
 
 
