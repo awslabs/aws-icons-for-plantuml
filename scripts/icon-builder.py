@@ -27,77 +27,89 @@ from lxml import etree
 # TODO - refactor to param file and/or arguments
 
 # used to inject into aws-icons-mermaid.json
-release_version = "22.0"
-release_date_obj = datetime.strptime("2025-07-31", "%Y-%m-%d")
+release_version = "23.0"
+release_date_obj = datetime.strptime("2026-01-30", "%Y-%m-%d")
 release_utc_seconds = int(release_date_obj.replace(tzinfo=timezone.utc).timestamp())
 
 # This list are the directories to parse, what type of files they are, and globbing/regex
 # to parse and process. This addresses the changing nature of the assets package.
 
-# Source directories for the 22.0-2025.07.31 release
+# Source directories for the 23.0-2026.01.30 release
 
 dir_list = [
     {
         "dir": "../source/official",
-        # dir structure changed from Category-Icons_04-30-2021/Arch-Category_64/filename
-        # to: Category-Icons_04-30-2021/64/filename
-        "dir_glob": "Category-Icons_07312025/*48/*.png",
+        "dir_glob": "Category-Icons_01302026/*48/*.png",
         "category_regex": r"[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "filename_regex": r"[^.]*\/Arch-Category_(.*)_\d*\.png$",
         "category_mappings": {
             "BusinessApplication": "BusinessApplications",
-            # "CostManagement": "AWSCostManagement",
             "DevTools": "DeveloperTools",
+            "Databases": "Database",
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
+            "ManagementTools": "ManagementGovernance",
+            "SecurityIdentity": "SecurityIdentityCompliance",
         },
-        "filename_mappings": {
+        "filename_mappings": {  # Target
             "BusinessApplication": "BusinessApplications",
             "CostManagement": "AWSCostManagement",
             "DevTools": "DeveloperTools",
+            "Databases": "Database",
             "InternetofThings": "InternetOfThings",
+            "ManagementTools": "ManagementGovernance",
+            "SecurityIdentity": "SecurityIdentityCompliance",
         },
-        "filename_mappings2": {},
+        "filename_mappings2": {  # Target2
+            "databases": "database",
+            "management-tools": "management-governance",
+            "security-identity": "security-identity-compliance",
+        },
     },
     {
         "dir": "../source/official",
         # "dir_glob": "Architecture-Service-Icons_04282023/**/*64/*.svg",
-        "dir_glob": "Architecture-Service-Icons_07312025/**/*48/*.png",
+        "dir_glob": "Architecture-Service-Icons_01302026/**/*48/*.png",
         "category_regex": r"[^.]*\/(?:Arch_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": r"[^.]*Arch_(?:Amazon.|AWS.)?(.*)_\d*\.png$",
         "category_mappings": {
             "AppIntegration": "ApplicationIntegration",
             "BusinessApplication": "BusinessApplications",
             "CustomerEnagagement": "CustomerEngagement",
+            "Databases": "Database",
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
+            "ManagementTools": "ManagementGovernance",
             "NetworkingContent": "NetworkingContentDelivery",
+            "SecurityIdentity": "SecurityIdentityCompliance",
         },
-        "filename_mappings": {
+        "filename_mappings": {  # Target
             "S3onOutpostsStorage": "S3OnOutpostsStorage",
             "MarketplaceLight": "Marketplace",
             "ApplicationAutoScaling": "ApplicationAutoScaling2",
         },
-        "filename_mappings2": {
+        "filename_mappings2": {  # Target2
             "marketplace-light": "marketplace",
             "application-auto-scaling": "application-auto-scaling2",
         },
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_07312025/*/*.svg",
+        "dir_glob": "Resource-Icons_01302026/*/*.svg",
         "category_regex": r"[^.]*\/(?:Res_)(.*)\/(?:.*$)",
         "filename_regex": r"[^.]*Res_(?:Amazon.|AWS.)?(.*)_\d*\.svg$",
         "category_mappings": {
+            "Databases": "Database",
             "GeneralIcons": "General",
             "InternetofThings": "InternetOfThings",
             "loT": "InternetOfThings",
             "IoT": "InternetOfThings",
             "MigrationandTransfer": "MigrationTransfer",
             "NetworkingandContentDelivery": "NetworkingContentDelivery",
+            "SecurityIdentity": "SecurityIdentityCompliance",
             "SecurityIdentityandCompliance": "SecurityIdentityCompliance",
         },
-        "filename_mappings": {
+        "filename_mappings": {  # Target
             "AuroraAmazonRDSInstanceAternate": "AuroraAmazonRDSInstanceAlternate",
             "AuroraAmazonAuroraInstancealternate": "AuroraAmazonAuroraInstanceAlternate",
             "ElasticContainerServiceCopiIoTCLI": "ElasticContainerServiceCopilotCLI",
@@ -113,7 +125,7 @@ dir_list = [
             "SimpleStorageServiceDirectorybucket": "SimpleStorageServiceDirectoryBucket",
             "SimpleStorageServiceGeneralpurposebucket": "SimpleStorageServiceBucket",
         },
-        "filename_mappings2": {
+        "filename_mappings2": {  # Target2
             "aurora-amazon-rds-instance-aternate": "aurora-amazon-rds-instance-alternate",
             "elastic-container-service-copiiot-cli": "elastic-container-service-copilot-cli",
             "ec2-auto-scaling": "ec2-auto-scaling-resource",
@@ -129,19 +141,19 @@ dir_list = [
     },
     {
         "dir": "../source/official",
-        "dir_glob": "Resource-Icons_07312025/Res_General-Icons/Res_48_Light/*.svg",
+        "dir_glob": "Resource-Icons_01302026/Res_General-Icons/Res_48_Light/*.svg",
         "category_regex": r"[^.]*\/(?:Res_)(.*)\/(?:.*)\/(?:.*$)",
         "filename_regex": r"[^.]*Res_General-Icons\/Res_48_Light\/*Res_(?:Amazon.|AWS.)?(.*)_\d*_Light\.svg$",
         "category_mappings": {
             "GeneralIcons": "General",
         },
-        "filename_mappings": {
+        "filename_mappings": {  # Target
             "Database": "Genericdatabase",
             "ManagementConsole": "AWSManagementConsole",
             "Shield": "Shield2",
             "Server": "Traditionalserver",
         },
-        "filename_mappings2": {
+        "filename_mappings2": {  # Target2
             "database": "generic-database",
             "management-console": "aws-management-console",
             "shield": "shield2",
@@ -200,7 +212,9 @@ CATEGORY_COLORS = {
     "ContactCenter": "Mars",
     "Containers": "Smile",
     "CustomerEnablement": "Nebula",
+    "CustomerExperience": "Mars",
     "Database": "Nebula",
+    "Databases": "Nebula",
     "DeveloperTools": "Nebula",
     "EndUserComputing": "Orbit",
     "FrontEndWebMobile": "Mars",
@@ -212,10 +226,12 @@ CATEGORY_COLORS = {
     "MediaServices": "Smile",
     "MigrationTransfer": "Orbit",
     "MigrationModernization": "Orbit",
+    "MulticloudandHybrid": "Cosmos",
     "NetworkingContentDelivery": "Galaxy",
     "QuantumTechnologies": "Smile",
     "Robotics": "Mars",
     "Satellite": "Nebula",
+    "SecurityIdentity": "Mars",
     "SecurityIdentityCompliance": "Mars",
     "Serverless": "Galaxy",
     "Storage": "Endor",
@@ -265,7 +281,7 @@ TEMPLATE_DEFAULT = """
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
 #
-# Curated config file for Release 22.0-2025.07.31 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
+# Curated config file for Release 23.0-2026.01.30 AWS Architecture Icons release (https://aws.amazon.com/architecture/icons/)
 # cSpell: disable
 Defaults:
   Colors:
@@ -503,9 +519,9 @@ PUML Macro (Name) | Color | | Categories
 | $AWS_COLOR_NEBULA | #C925D1 (blue replacement) | ![Nebula](dist/Groups/GenericBlue.png?raw=true) | Customer Enablement; Database; Developer Tools; Satellite |
 | $AWS_COLOR_ENDOR | #7AA116 (green) | ![Endor](dist/Groups/GenericGreen.png?raw=true) | Cloud Financial Management; Internet of Things; Storage |
 | $AWS_COLOR_SMILE | #ED7100 (orange) | ![Smile](dist/Groups/GenericOrange.png?raw=true) | Blockchain; Compute; Containers; Media Services; Quantum Technologies |
-| $AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance |
+| $AWS_COLOR_COSMOS | #E7157B (pink) | ![Cosmos](dist/Groups/GenericPink.png?raw=true) | Application Integration; Management & Governance; Multicloud & Hybrid |
 | $AWS_COLOR_GALAXY | #8C4FFF (purple) | ![Galaxy](dist/Groups/GenericPurple.png?raw=true) | Analytics; Games; Networking & Content Delivery; Serverless |
-| $AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Contact Center; Front-End Web & Mobile; Security, Identity & Compliance |
+| $AWS_COLOR_MARS | #DD344C (red) | ![Mars](dist/Groups/GenericRed.png?raw=true) | Business Applications; Customer Experience; Front-End Web & Mobile; Security, Identity & Compliance |
 | $AWS_COLOR_ORBIT | #01A88D (turquoise) | ![Orbit](dist/Groups/GenericTurquoise.png?raw=true) | Artificial Intelligence; End User Computing; Migration & Modernization |
 
 An alternative and recommended way to find a category color is the `$AWSColor($category)` function, where the `$category` is the normalized name of the category in the table below.  For example, to get the color for the "Application Integration" category, call `$AWSColor(ApplicationIntegration)` or for "Management & Governance" for call `$AWSColor(ManagementGovernance)`.
@@ -834,7 +850,6 @@ def worker(icon):
     return
 
 
-
 def validate_config():
     """Load and validate config.yml, reporting any issues found.
 
@@ -851,45 +866,55 @@ def validate_config():
         with open("config.yml", encoding="utf-8") as f:
             config_data = yaml.safe_load(f)
     except yaml.YAMLError as e:
-        issues.append({
-            "check_type": "structure",
-            "message": f"Failed to parse config.yml: {e}",
-            "category": "",
-        })
+        issues.append(
+            {
+                "check_type": "structure",
+                "message": f"Failed to parse config.yml: {e}",
+                "category": "",
+            }
+        )
         return issues, None
 
     if not isinstance(config_data, dict):
-        issues.append({
-            "check_type": "structure",
-            "message": "config.yml did not parse as a YAML mapping",
-            "category": "",
-        })
+        issues.append(
+            {
+                "check_type": "structure",
+                "message": "config.yml did not parse as a YAML mapping",
+                "category": "",
+            }
+        )
         return issues, None
 
     # AC 2.2: Check for Defaults top-level key
     if "Defaults" not in config_data:
-        issues.append({
-            "check_type": "structure",
-            "message": "Missing required top-level key: Defaults",
-            "category": "",
-        })
+        issues.append(
+            {
+                "check_type": "structure",
+                "message": "Missing required top-level key: Defaults",
+                "category": "",
+            }
+        )
 
     # AC 2.3: Check for Categories top-level key
     if "Categories" not in config_data:
-        issues.append({
-            "check_type": "structure",
-            "message": "Missing required top-level key: Categories",
-            "category": "",
-        })
+        issues.append(
+            {
+                "check_type": "structure",
+                "message": "Missing required top-level key: Categories",
+                "category": "",
+            }
+        )
 
     # AC 2.4: Check for Defaults.Colors key
     defaults = config_data.get("Defaults")
     if isinstance(defaults, dict) and "Colors" not in defaults:
-        issues.append({
-            "check_type": "structure",
-            "message": "Missing required key: Defaults.Colors",
-            "category": "",
-        })
+        issues.append(
+            {
+                "check_type": "structure",
+                "message": "Missing required key: Defaults.Colors",
+                "category": "",
+            }
+        )
 
     # Requirement 3: Required field validation for icon entries
     # Only run if Categories exists and is a dict
@@ -907,15 +932,17 @@ def validate_config():
                     continue
                 for field in required_fields:
                     if field not in entry:
-                        issues.append({
-                            "check_type": "missing_field",
-                            "message": f"Category '{cat_name}', entry {idx}: missing required field '{field}'",
-                            "category": cat_name,
-                        })
+                        issues.append(
+                            {
+                                "check_type": "missing_field",
+                                "message": f"Category '{cat_name}', entry {idx}: missing required field '{field}'",
+                                "category": cat_name,
+                            }
+                        )
 
     # Requirement 4 & 5: Duplicate Target and Target2 detection
     if isinstance(categories, dict):
-        target_map = {}   # Target value -> list of category names
+        target_map = {}  # Target value -> list of category names
         target2_map = {}  # Target2 value -> list of category names
         for cat_name, cat_value in categories.items():
             if not isinstance(cat_value, dict):
@@ -936,20 +963,24 @@ def validate_config():
         for target_val, cat_names in target_map.items():
             if len(cat_names) > 1:
                 for cat_name in cat_names:
-                    issues.append({
-                        "check_type": "duplicate",
-                        "message": f"Duplicate Target '{target_val}' in category '{cat_name}'",
-                        "category": cat_name,
-                    })
+                    issues.append(
+                        {
+                            "check_type": "duplicate",
+                            "message": f"Duplicate Target '{target_val}' in category '{cat_name}'",
+                            "category": cat_name,
+                        }
+                    )
 
         for target2_val, cat_names in target2_map.items():
             if len(cat_names) > 1:
                 for cat_name in cat_names:
-                    issues.append({
-                        "check_type": "duplicate",
-                        "message": f"Duplicate Target2 '{target2_val}' in category '{cat_name}'",
-                        "category": cat_name,
-                    })
+                    issues.append(
+                        {
+                            "check_type": "duplicate",
+                            "message": f"Duplicate Target2 '{target2_val}' in category '{cat_name}'",
+                            "category": cat_name,
+                        }
+                    )
 
     # Requirement 6 & 7: Color validation for categories and icon entries
     # Only run if Defaults.Colors was successfully parsed
@@ -966,11 +997,13 @@ def validate_config():
             # AC 6.1, 6.2, 6.3: Category-level Color validation
             cat_color = cat_value.get("Color")
             if cat_color is not None and cat_color not in palette_names:
-                issues.append({
-                    "check_type": "invalid_color",
-                    "message": f"Category '{cat_name}' has invalid Color '{cat_color}'",
-                    "category": cat_name,
-                })
+                issues.append(
+                    {
+                        "check_type": "invalid_color",
+                        "message": f"Category '{cat_name}' has invalid Color '{cat_color}'",
+                        "category": cat_name,
+                    }
+                )
 
             # AC 7.1, 7.2, 7.3: Icon-level Color validation
             icons = cat_value.get("Icons")
@@ -987,13 +1020,16 @@ def validate_config():
                     continue
                 if icon_color_str not in palette_names:
                     target_val = entry.get("Target", "<unknown>")
-                    issues.append({
-                        "check_type": "invalid_color",
-                        "message": f"Category '{cat_name}', Target '{target_val}' has invalid Color '{icon_color_str}'",
-                        "category": cat_name,
-                    })
+                    issues.append(
+                        {
+                            "check_type": "invalid_color",
+                            "message": f"Category '{cat_name}', Target '{target_val}' has invalid Color '{icon_color_str}'",
+                            "category": cat_name,
+                        }
+                    )
 
     return issues, config_data
+
 
 def format_report(issues):
     """Format validation issues into a grouped report.
@@ -1042,8 +1078,6 @@ def format_report(issues):
 
     lines.append(f"Validation found {len(issues)} issue(s)")
     return lines
-
-
 
 
 def main():
@@ -1238,7 +1272,9 @@ def main():
         Path("..") / "dist" / "aws-icons-structurizr-theme.json", "w", encoding="utf-8"
     ) as f:
         f.write(json.dumps(structerizr, indent=2))
-    with open(Path("..") / "dist" / "aws-icons-mermaid.json", "w", encoding="utf-8") as f:
+    with open(
+        Path("..") / "dist" / "aws-icons-mermaid.json", "w", encoding="utf-8"
+    ) as f:
         f.write(json.dumps(mermaid, indent=2))
 
 

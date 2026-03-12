@@ -35,42 +35,52 @@ def _run_validate_config(config_content):
             with open("config.yml", encoding="utf-8") as f:
                 config_data = yaml.safe_load(f)
         except yaml.YAMLError as e:
-            issues.append({
-                "check_type": "structure",
-                "message": f"Failed to parse config.yml: {e}",
-                "category": "",
-            })
+            issues.append(
+                {
+                    "check_type": "structure",
+                    "message": f"Failed to parse config.yml: {e}",
+                    "category": "",
+                }
+            )
             return issues, None
 
         if not isinstance(config_data, dict):
-            issues.append({
-                "check_type": "structure",
-                "message": "config.yml did not parse as a YAML mapping",
-                "category": "",
-            })
+            issues.append(
+                {
+                    "check_type": "structure",
+                    "message": "config.yml did not parse as a YAML mapping",
+                    "category": "",
+                }
+            )
             return issues, None
 
         if "Defaults" not in config_data:
-            issues.append({
-                "check_type": "structure",
-                "message": "Missing required top-level key: Defaults",
-                "category": "",
-            })
+            issues.append(
+                {
+                    "check_type": "structure",
+                    "message": "Missing required top-level key: Defaults",
+                    "category": "",
+                }
+            )
 
         if "Categories" not in config_data:
-            issues.append({
-                "check_type": "structure",
-                "message": "Missing required top-level key: Categories",
-                "category": "",
-            })
+            issues.append(
+                {
+                    "check_type": "structure",
+                    "message": "Missing required top-level key: Categories",
+                    "category": "",
+                }
+            )
 
         defaults = config_data.get("Defaults")
         if isinstance(defaults, dict) and "Colors" not in defaults:
-            issues.append({
-                "check_type": "structure",
-                "message": "Missing required key: Defaults.Colors",
-                "category": "",
-            })
+            issues.append(
+                {
+                    "check_type": "structure",
+                    "message": "Missing required key: Defaults.Colors",
+                    "category": "",
+                }
+            )
 
         # Requirement 3: Required field validation for icon entries
         categories = config_data.get("Categories") if config_data else None
@@ -87,15 +97,17 @@ def _run_validate_config(config_content):
                         continue
                     for field in required_fields:
                         if field not in entry:
-                            issues.append({
-                                "check_type": "missing_field",
-                                "message": f"Category '{cat_name}', entry {idx}: missing required field '{field}'",
-                                "category": cat_name,
-                            })
+                            issues.append(
+                                {
+                                    "check_type": "missing_field",
+                                    "message": f"Category '{cat_name}', entry {idx}: missing required field '{field}'",
+                                    "category": cat_name,
+                                }
+                            )
 
         # Requirement 4 & 5: Duplicate Target and Target2 detection
         if isinstance(categories, dict):
-            target_map = {}   # Target value -> list of category names
+            target_map = {}  # Target value -> list of category names
             target2_map = {}  # Target2 value -> list of category names
             for cat_name, cat_value in categories.items():
                 if not isinstance(cat_value, dict):
@@ -116,20 +128,24 @@ def _run_validate_config(config_content):
             for target_val, cat_names in target_map.items():
                 if len(cat_names) > 1:
                     for cat_name in cat_names:
-                        issues.append({
-                            "check_type": "duplicate",
-                            "message": f"Duplicate Target '{target_val}' in category '{cat_name}'",
-                            "category": cat_name,
-                        })
+                        issues.append(
+                            {
+                                "check_type": "duplicate",
+                                "message": f"Duplicate Target '{target_val}' in category '{cat_name}'",
+                                "category": cat_name,
+                            }
+                        )
 
             for target2_val, cat_names in target2_map.items():
                 if len(cat_names) > 1:
                     for cat_name in cat_names:
-                        issues.append({
-                            "check_type": "duplicate",
-                            "message": f"Duplicate Target2 '{target2_val}' in category '{cat_name}'",
-                            "category": cat_name,
-                        })
+                        issues.append(
+                            {
+                                "check_type": "duplicate",
+                                "message": f"Duplicate Target2 '{target2_val}' in category '{cat_name}'",
+                                "category": cat_name,
+                            }
+                        )
 
         # Requirement 6 & 7: Color validation for categories and icon entries
         colors = None
@@ -144,11 +160,13 @@ def _run_validate_config(config_content):
 
                 cat_color = cat_value.get("Color")
                 if cat_color is not None and cat_color not in palette_names:
-                    issues.append({
-                        "check_type": "invalid_color",
-                        "message": f"Category '{cat_name}' has invalid Color '{cat_color}'",
-                        "category": cat_name,
-                    })
+                    issues.append(
+                        {
+                            "check_type": "invalid_color",
+                            "message": f"Category '{cat_name}' has invalid Color '{cat_color}'",
+                            "category": cat_name,
+                        }
+                    )
 
                 icons_list2 = cat_value.get("Icons")
                 if not isinstance(icons_list2, list):
@@ -164,11 +182,13 @@ def _run_validate_config(config_content):
                         continue
                     if icon_color_str not in palette_names:
                         target_val = entry.get("Target", "<unknown>")
-                        issues.append({
-                            "check_type": "invalid_color",
-                            "message": f"Category '{cat_name}', Target '{target_val}' has invalid Color '{icon_color_str}'",
-                            "category": cat_name,
-                        })
+                        issues.append(
+                            {
+                                "check_type": "invalid_color",
+                                "message": f"Category '{cat_name}', Target '{target_val}' has invalid Color '{icon_color_str}'",
+                                "category": cat_name,
+                            }
+                        )
 
         return issues, config_data
     finally:
@@ -512,7 +532,11 @@ Categories:
       Target2: icon-b
 """
         issues, _ = _run_validate_config(content)
-        dupes = [i for i in issues if i["check_type"] == "duplicate" and "Duplicate Target " in i["message"]]
+        dupes = [
+            i
+            for i in issues
+            if i["check_type"] == "duplicate" and "Duplicate Target " in i["message"]
+        ]
         assert len(dupes) == 2
         assert all(d["category"] == "Analytics" for d in dupes)
         assert all("DupeIcon" in d["message"] for d in dupes)
@@ -540,7 +564,11 @@ Categories:
       Target2: icon-b
 """
         issues, _ = _run_validate_config(content)
-        dupes = [i for i in issues if i["check_type"] == "duplicate" and "Duplicate Target " in i["message"]]
+        dupes = [
+            i
+            for i in issues
+            if i["check_type"] == "duplicate" and "Duplicate Target " in i["message"]
+        ]
         assert len(dupes) == 2
         cats = {d["category"] for d in dupes}
         assert cats == {"Analytics", "Compute"}
@@ -596,7 +624,11 @@ Categories:
       Target2: dupe-name
 """
         issues, _ = _run_validate_config(content)
-        dupes = [i for i in issues if i["check_type"] == "duplicate" and "Duplicate Target2 " in i["message"]]
+        dupes = [
+            i
+            for i in issues
+            if i["check_type"] == "duplicate" and "Duplicate Target2 " in i["message"]
+        ]
         assert len(dupes) == 2
         assert all(d["category"] == "Analytics" for d in dupes)
         assert all("dupe-name" in d["message"] for d in dupes)
@@ -624,7 +656,11 @@ Categories:
       Target2: shared-name
 """
         issues, _ = _run_validate_config(content)
-        dupes = [i for i in issues if i["check_type"] == "duplicate" and "Duplicate Target2 " in i["message"]]
+        dupes = [
+            i
+            for i in issues
+            if i["check_type"] == "duplicate" and "Duplicate Target2 " in i["message"]
+        ]
         assert len(dupes) == 2
         cats = {d["category"] for d in dupes}
         assert cats == {"Analytics", "Compute"}
@@ -654,7 +690,11 @@ Categories:
 """
         issues, _ = _run_validate_config(content)
         dupes = [i for i in issues if i["check_type"] == "duplicate"]
-        target_dupes = [d for d in dupes if "Duplicate Target " in d["message"] and "Target2" not in d["message"]]
+        target_dupes = [
+            d
+            for d in dupes
+            if "Duplicate Target " in d["message"] and "Target2" not in d["message"]
+        ]
         target2_dupes = [d for d in dupes if "Duplicate Target2 " in d["message"]]
         assert len(target_dupes) == 2
         assert len(target2_dupes) == 2
@@ -1016,9 +1056,17 @@ class TestReportFormatting:
     def test_issues_grouped_by_check_type(self):
         """AC 8.2: Issues are grouped by validation check type."""
         issues = [
-            {"check_type": "duplicate", "message": "Dup Target 'X' in 'A'", "category": "A"},
+            {
+                "check_type": "duplicate",
+                "message": "Dup Target 'X' in 'A'",
+                "category": "A",
+            },
             {"check_type": "structure", "message": "Missing Defaults", "category": ""},
-            {"check_type": "missing_field", "message": "Missing Source in 'B'", "category": "B"},
+            {
+                "check_type": "missing_field",
+                "message": "Missing Source in 'B'",
+                "category": "B",
+            },
         ]
         lines = _format_report(issues)
         headers = [l for l in lines if l.startswith("---")]

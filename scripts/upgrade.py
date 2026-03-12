@@ -26,6 +26,7 @@ SUPPORTED_VERSIONS = [
     "v19.0",
     "v20.0",
     "v22.0",
+    "v23.0",
 ]
 
 UPDATES = {
@@ -263,6 +264,40 @@ BREAKING_CHANGES["v22.0"] = {
     "Robotics": {
         "RENAMED": None  # Deleted
     },
+}
+
+BREAKING_CHANGES["v23.0"] = {
+    "Analytics": {"REMOVED": ["QuickSight", "QuicksightPaginatedReports"]},
+    "ArtificialIntelligence": {"REMOVED": ["DeepComposer", "LookoutforMetrics"]},
+    "Blockchain": {"REMOVED": ["QuantumLedgerDatabase"]},
+    "BusinessApplications": {"REMOVED": ["AlexaForBusiness"]},
+    "Compute": {"REMOVED": ["NICEEnginFrame"]},
+    "ContactCenter": {
+        "RENAMED": None  # Deleted
+    },
+    "Containers": {"REMOVED": ["EKSCloud"]},
+    "EndUserComputing": {
+        "REPLACED": {"WorkSpacesFamily": "WorkSpaces"},
+        "REMOVED": [
+            "AppStream2",
+            "WorkSpacesFamilyAmazonWorkSpaces",
+            "WorkSpacesFamilyAmazonWorkSpacesCore",
+            "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser",
+        ],
+    },
+    "InternetOfThings": {
+        "REMOVED": [
+            "IoTAnalytics",
+            "IoTAnalyticsChannel",
+            "IoTAnalyticsDataStore",
+            "IoTAnalyticsDataset",
+            "IoTAnalyticsNotebook",
+            "IoTAnalyticsPipeline",
+            "IoTButton",
+        ]
+    },
+    "MediaServices": {"REMOVED": ["ElasticTranscoder", "ThinkboxSequoia"]},
+    "NetworkingContentDelivery": {"REMOVED": ["Private5G"]},
 }
 
 ICON_CHANGES = {}

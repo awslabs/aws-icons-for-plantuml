@@ -1,0 +1,5 @@
+uv run ../scripts/upgrade.py --overwrite "*.puml"
+cd architecture-blog && uv run ../../scripts/upgrade.py --overwrite "Figure 5(updated).puml"
+cd ../cognito-scenario && uv run ../../scripts/upgrade.py --overwrite "3-aws-icons-and-colors.puml"
+cd ../s3-upload-workflow && uv run ../../scripts/upgrade.py --overwrite "*.puml"
+cd ../theme-testing && uv run ../../scripts/upgrade.py --overwrite "*.puml"
