@@ -558,6 +558,12 @@ parser.add_argument(
     default=False,
     help="Prints AWS Colors JSON to stdout",
 )
+parser.add_argument(
+    "--validate-config",
+    action="store_true",
+    default=False,
+    help="Validates config.yml and exits without performing any build steps",
+)
 args = vars(parser.parse_args())
 config = {}
 
@@ -828,7 +834,226 @@ def worker(icon):
     return
 
 
+
+def validate_config():
+    """Load and validate config.yml, reporting any issues found.
+
+    Returns:
+        tuple: (issues, config) where issues is a list of dicts with
+               'check_type', 'message', and 'category' keys, and config
+               is the parsed YAML dict (or None if parsing failed).
+    """
+    issues = []
+    config_data = None
+
+    # AC 2.1: Parse YAML
+    try:
+        with open("config.yml", encoding="utf-8") as f:
+            config_data = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        issues.append({
+            "check_type": "structure",
+            "message": f"Failed to parse config.yml: {e}",
+            "category": "",
+        })
+        return issues, None
+
+    if not isinstance(config_data, dict):
+        issues.append({
+            "check_type": "structure",
+            "message": "config.yml did not parse as a YAML mapping",
+            "category": "",
+        })
+        return issues, None
+
+    # AC 2.2: Check for Defaults top-level key
+    if "Defaults" not in config_data:
+        issues.append({
+            "check_type": "structure",
+            "message": "Missing required top-level key: Defaults",
+            "category": "",
+        })
+
+    # AC 2.3: Check for Categories top-level key
+    if "Categories" not in config_data:
+        issues.append({
+            "check_type": "structure",
+            "message": "Missing required top-level key: Categories",
+            "category": "",
+        })
+
+    # AC 2.4: Check for Defaults.Colors key
+    defaults = config_data.get("Defaults")
+    if isinstance(defaults, dict) and "Colors" not in defaults:
+        issues.append({
+            "check_type": "structure",
+            "message": "Missing required key: Defaults.Colors",
+            "category": "",
+        })
+
+    # Requirement 3: Required field validation for icon entries
+    # Only run if Categories exists and is a dict
+    categories = config_data.get("Categories")
+    if isinstance(categories, dict):
+        required_fields = ["Source", "SourceDir", "Target", "Target2"]
+        for cat_name, cat_value in categories.items():
+            if not isinstance(cat_value, dict):
+                continue
+            icons = cat_value.get("Icons")
+            if not isinstance(icons, list):
+                continue
+            for idx, entry in enumerate(icons):
+                if not isinstance(entry, dict):
+                    continue
+                for field in required_fields:
+                    if field not in entry:
+                        issues.append({
+                            "check_type": "missing_field",
+                            "message": f"Category '{cat_name}', entry {idx}: missing required field '{field}'",
+                            "category": cat_name,
+                        })
+
+    # Requirement 4 & 5: Duplicate Target and Target2 detection
+    if isinstance(categories, dict):
+        target_map = {}   # Target value -> list of category names
+        target2_map = {}  # Target2 value -> list of category names
+        for cat_name, cat_value in categories.items():
+            if not isinstance(cat_value, dict):
+                continue
+            icons = cat_value.get("Icons")
+            if not isinstance(icons, list):
+                continue
+            for entry in icons:
+                if not isinstance(entry, dict):
+                    continue
+                target_val = entry.get("Target")
+                if target_val is not None:
+                    target_map.setdefault(target_val, []).append(cat_name)
+                target2_val = entry.get("Target2")
+                if target2_val is not None:
+                    target2_map.setdefault(target2_val, []).append(cat_name)
+
+        for target_val, cat_names in target_map.items():
+            if len(cat_names) > 1:
+                for cat_name in cat_names:
+                    issues.append({
+                        "check_type": "duplicate",
+                        "message": f"Duplicate Target '{target_val}' in category '{cat_name}'",
+                        "category": cat_name,
+                    })
+
+        for target2_val, cat_names in target2_map.items():
+            if len(cat_names) > 1:
+                for cat_name in cat_names:
+                    issues.append({
+                        "check_type": "duplicate",
+                        "message": f"Duplicate Target2 '{target2_val}' in category '{cat_name}'",
+                        "category": cat_name,
+                    })
+
+    # Requirement 6 & 7: Color validation for categories and icon entries
+    # Only run if Defaults.Colors was successfully parsed
+    colors = None
+    if isinstance(defaults, dict):
+        colors = defaults.get("Colors")
+    if isinstance(colors, dict) and isinstance(categories, dict):
+        palette_names = set(colors.keys())
+
+        for cat_name, cat_value in categories.items():
+            if not isinstance(cat_value, dict):
+                continue
+
+            # AC 6.1, 6.2, 6.3: Category-level Color validation
+            cat_color = cat_value.get("Color")
+            if cat_color is not None and cat_color not in palette_names:
+                issues.append({
+                    "check_type": "invalid_color",
+                    "message": f"Category '{cat_name}' has invalid Color '{cat_color}'",
+                    "category": cat_name,
+                })
+
+            # AC 7.1, 7.2, 7.3: Icon-level Color validation
+            icons = cat_value.get("Icons")
+            if not isinstance(icons, list):
+                continue
+            for entry in icons:
+                if not isinstance(entry, dict):
+                    continue
+                icon_color = entry.get("Color")
+                if icon_color is None:
+                    continue
+                icon_color_str = str(icon_color)
+                if icon_color_str.startswith("#") or icon_color_str.startswith("$"):
+                    continue
+                if icon_color_str not in palette_names:
+                    target_val = entry.get("Target", "<unknown>")
+                    issues.append({
+                        "check_type": "invalid_color",
+                        "message": f"Category '{cat_name}', Target '{target_val}' has invalid Color '{icon_color_str}'",
+                        "category": cat_name,
+                    })
+
+    return issues, config_data
+
+def format_report(issues):
+    """Format validation issues into a grouped report.
+
+    Groups issues by check_type and returns a list of formatted lines.
+    Each issue is prefixed with its category name (AC 8.1).
+    Issues are grouped by check type (AC 8.2).
+    A summary line is appended if there are issues (AC 8.3),
+    or a success message if there are none (AC 8.4).
+
+    Args:
+        issues: List of issue dicts with 'check_type', 'message', 'category' keys.
+
+    Returns:
+        list: Formatted report lines (strings).
+    """
+    if not issues:
+        return ["config.yml is valid"]
+
+    group_labels = {
+        "structure": "Structure Issues",
+        "missing_field": "Missing Field Issues",
+        "duplicate": "Duplicate Issues",
+        "invalid_color": "Invalid Color Issues",
+    }
+    group_order = ["structure", "missing_field", "duplicate", "invalid_color"]
+
+    # Group issues by check_type
+    grouped = {}
+    for issue in issues:
+        check_type = issue["check_type"]
+        grouped.setdefault(check_type, []).append(issue)
+
+    lines = []
+    for check_type in group_order:
+        if check_type not in grouped:
+            continue
+        label = group_labels.get(check_type, check_type)
+        lines.append(f"--- {label} ---")
+        for issue in grouped[check_type]:
+            category = issue.get("category", "")
+            if category:
+                lines.append(f"  [{category}] {issue['message']}")
+            else:
+                lines.append(f"  {issue['message']}")
+
+    lines.append(f"Validation found {len(issues)} issue(s)")
+    return lines
+
+
+
+
 def main():
+
+    if args["validate_config"]:
+        issues, _ = validate_config()
+        report_lines = format_report(issues)
+        for line in report_lines:
+            print(line)
+        sys.exit(1 if issues else 0)
 
     if args["create_config_template"]:
         create_config_template()
