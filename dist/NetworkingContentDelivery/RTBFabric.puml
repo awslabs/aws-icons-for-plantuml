@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $RTBFabric [64x64/16z] {
+xPPL0eH0582mlV-9zzUUODk77KpN_1K4GSE2fjo79JN-yjxxdD8CpWUN_j_mESNxhls0QByBFuttONdGI1-N_eIVACEqdwx3b7zutq_Axsccy_Id_QcXcIhy
+ay9Kla-_BpzVVxxz-FQRHlYo__hnu_tZ9mi-Ft-5ppcDzAUqRzUFVltw_GJ10m
+}
+
+!function $RTBFabricIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHKSURBVHgB7ZoxTgNBDEV/EBIFEum4ADegoeYACCougOACtJRINHABuAB0kegpkdLQ0cEF6ECioAqykilYJcSezHpnbb9mtZK3mD+2x+P14PpwMoFj1uCcEADOCQHgnBAAzgkB4Jx1ruHpLbC1DRFfH8DdGaqG7QHSxed+ow3bAxI3Rzy78xF6gViAXLQEobB7vgden3j25pIghd3+Cd9ezQO4obMq5Gkbm3z7qAPgHHNJUEp4AITk7qRmEpTA9gA6X6XkfKMN2wNqr+lzUUuCi0gum0KE+06UuGz1OgmWuGx17gHN5Mh9L3WsZgtgpT+QLUDX/YFSx+rKIdBGf2D3AHgfA58Kx2h1SZAWT9fZ40tg+I/HkKAl8kB1AryNp7mCwmWZCCVQPwUku5ZEmJc4S+WAuAxBmWU7N5ztOu0+hcLDxXy7ZoWYS3UesLP3d/FtX6g6rwSbvDxOnykZLqKaOqCNTk8SQYPsEOi6P1CqDsj2ACv9gV73A0rQ6zqgREgNrA1KSuuDmA/gGsZ8wAxr8wHxcxTOCQHgHJO/xyUFkjkP+PkGRld8e3MzQlLU5gNqxf18gLnLkJSoA+CcEADOCQHgnBAAznEvwC8RDoFEdV8qlQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(RTBFabric)
+!define RTBFabric(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #8C4FFF, RTBFabric, RTBFabric)
+!define RTBFabric(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #8C4FFF, RTBFabric, RTBFabric)
+!define RTBFabricParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #8C4FFF, RTBFabric, RTBFabric)
+!define RTBFabricParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #8C4FFF, RTBFabric, RTBFabric)
