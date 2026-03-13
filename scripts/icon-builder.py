@@ -14,7 +14,7 @@ import shutil
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 from datetime import datetime, timezone
 from multiprocessing import Pool
 from pathlib import Path
@@ -625,7 +625,7 @@ def verify_environment():
     try:
         subprocess.run(
             ["java", "-jar", "./plantuml-mit-1.2026.2.jar", "-version"],
-            shell=True,
+            shell=False,
             stdout=PIPE,
             stderr=PIPE,
         )
@@ -686,7 +686,7 @@ def create_config_template():
         for i in source_files:
             # Get elements needed for YAML file
             # Exception is if the files originate from the "Category" directory
-            category = Icon()._make_category(
+            category = Icon._make_category(
                 regex=file_dir["category_regex"],
                 filename=i,
                 mappings=file_dir["category_mappings"],
@@ -694,7 +694,7 @@ def create_config_template():
             if category == "Groups":
                 continue  # Groups will be added en-masse at the end
 
-            (target, target2) = Icon()._make_name(
+            (target, target2) = Icon._make_name(
                 regex=file_dir["filename_regex"],
                 filename=i,
                 mappings=file_dir["filename_mappings"],
@@ -822,23 +822,24 @@ def build_mermaid_icon(mermaid, svg_filename, cat, mermaid_target):
 
 def worker(icon):
     """multiprocess resource intensive operations (java subprocess)"""
+    dist_path = Path("..") / "dist" / icon.category
     if icon.skip_icon:
         sprite = ""
         print(f"skipping icon for {icon.source_name}")
     else:
         # create images without transparency for use with PlantUML sprites
         icon.generate_image(
-            Path("..") / "dist" / icon.category,
+            dist_path,
             color=True,
             max_target_size=64,  # override to 64x64
             # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
             transparency=False,
             gradient=True,
         )
-        sprite = icon.generate_puml_sprite(Path("..") / "dist" / icon.category)
+        sprite = icon.generate_puml_sprite(dist_path)
         # Recreate the images with transparency
         icon.generate_images(
-            Path("..") / "dist" / icon.category,
+            dist_path,
             color=True,
             max_target_size=64,  # override to 64x64
             # max_target_size=icon.target_size, # use for mix of 64x64 and 48x48
@@ -846,7 +847,7 @@ def worker(icon):
             gradient=False,
         )
     print(f"generating PUML for {icon.source_name}")
-    icon.generate_puml(Path("..") / "dist" / icon.category, sprite)
+    icon.generate_puml(dist_path, sprite)
     return
 
 
@@ -1111,7 +1112,7 @@ def main():
             else:
                 icons.append(icon)
 
-    categories = sorted(set([icon.category for icon in icons]))
+    categories = sorted({icon.category for icon in icons})
 
     if not (args["symbols_only"] or args["create_color_json"]):
         # clear out dist/ directory
@@ -1139,8 +1140,8 @@ def main():
     if args["create_color_json"]:
         color_map = {}
         for category in categories:
-            if category in ["GroupIcons", "Uncategorized", "Groups"]:
-                pass
+            if category in ("GroupIcons", "Uncategorized", "Groups"):
+                continue
             else:
                 color_map[str(category).lower()] = COLOR_VALUES[
                     CATEGORY_COLORS[category]
@@ -1194,9 +1195,13 @@ def main():
         "categories": {},
     }
 
-    for i in categories:
-        category = i
-        if category == "GroupIcons" or category == "Uncategorized":
+    # Group sorted icons by category for O(n) iteration instead of O(categories × icons)
+    icons_by_category = defaultdict(list)
+    for icon in sorted_icons:
+        icons_by_category[icon.category].append(icon)
+
+    for category in categories:
+        if category in ("GroupIcons", "Uncategorized"):
             pass
         else:
             if category == "Groups":
@@ -1205,66 +1210,65 @@ def main():
                 markdown.append(
                     f"**{category}** | $AWSColor({category}) / {COLOR_MACROS[CATEGORY_COLORS[category]]} | | **{category}/all.puml**\n"
                 )
-        for j in sorted_icons:
-            if j.category == i:
-                cat = j.category
-                tgt = j.target
-                skip_icon = j.skip_icon
-                if j.filename_dark is not None:
-                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
-                    img = (
-                        img
-                        + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
-                    )
-                else:
-                    img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true)"
-                if cat == "GroupIcons":
-                    pass
-                elif cat == "Groups":
-                    if skip_icon:
-                        markdown.append(f"{cat} | {tgt}Group | - | {cat}/{tgt}.puml\n")
-                    else:
-                        markdown.append(
-                            (
-                                f"{cat} | {tgt}Group / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
-                            )
-                        )
+        for j in icons_by_category[category]:
+            cat = j.category
+            tgt = j.target
+            skip_icon = j.skip_icon
+            if j.filename_dark is not None:
+                img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true#gh-light-mode-only)"
+                img = (
+                    img
+                    + f" ![{tgt}](dist/{cat}/{tgt}_Dark.png?raw=true#gh-dark-mode-only)"
+                )
+            else:
+                img = f"![{tgt}](dist/{cat}/{tgt}.png?raw=true)"
+            if cat == "GroupIcons":
+                pass
+            elif cat == "Groups":
+                if skip_icon:
+                    markdown.append(f"{cat} | {tgt}Group | - | {cat}/{tgt}.puml\n")
                 else:
                     markdown.append(
                         (
-                            f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
+                            f"{cat} | {tgt}Group / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
                         )
                     )
+            else:
+                markdown.append(
+                    (
+                        f"{cat} | {tgt} / {tgt}Participant / ${tgt}IMG() | {img} | {cat}/{tgt}.puml\n"
+                    )
+                )
 
-                # Add element to Structurizr theme
-                element = {"tag": tgt, "stroke": j.color}
-                if j.color == "$AWS_FG_COLOR":
-                    element["stroke"] = "#000000"
-                if j.group_border_style == "dashed" or j.group_border_style == "dotted":
-                    # solid|dashed|dotted
-                    element["border"] = j.group_border_style
+            # Add element to Structurizr theme
+            element = {"tag": tgt, "stroke": j.color}
+            if j.color == "$AWS_FG_COLOR":
+                element["stroke"] = "#000000"
+            if j.group_border_style in ("dashed", "dotted"):
+                # solid|dashed|dotted
+                element["border"] = j.group_border_style
 
-                if not skip_icon:
-                    element["icon"] = f"{cat}/{tgt}.png"
-                structerizr["elements"].append(element)
+            if not skip_icon:
+                element["icon"] = f"{cat}/{tgt}.png"
+            structerizr["elements"].append(element)
 
-                # Add element to Mermaid
-                try:
-                    svg_filename = re.sub(r"\.png$", ".svg", str(j.filename))
-                    if svg_filename.endswith(".svg"):
-                        build_mermaid_icon(mermaid, svg_filename, cat, j.target2)
+            # Add element to Mermaid
+            try:
+                svg_filename = re.sub(r"\.png$", ".svg", str(j.filename))
+                if svg_filename.endswith(".svg"):
+                    build_mermaid_icon(mermaid, svg_filename, cat, j.target2)
 
-                    if j.filename_dark is not None:
-                        svg_filename_dark = re.sub(
-                            r"\.png$", ".svg", str(j.filename_dark)
+                if j.filename_dark is not None:
+                    svg_filename_dark = re.sub(
+                        r"\.png$", ".svg", str(j.filename_dark)
+                    )
+                    if svg_filename_dark.endswith(".svg"):
+                        build_mermaid_icon(
+                            mermaid, svg_filename_dark, cat, f"{j.target2}-dark"
                         )
-                        if svg_filename_dark.endswith(".svg"):
-                            build_mermaid_icon(
-                                mermaid, svg_filename_dark, cat, f"{j.target2}-dark"
-                            )
 
-                except Exception as e:  # pylint: disable=broad-except
-                    print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")
+            except Exception as e:  # pylint: disable=broad-except
+                print(f"Error: {e} adding {j.target2} to aws-icons-mermaid.json")
 
     with open(Path("..") / "AWSSymbols.md", "w", encoding="utf-8") as f:
         f.write("".join(markdown))

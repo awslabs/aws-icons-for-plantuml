@@ -102,6 +102,7 @@ class Icon:
         gradient=True,
         image_filename=None,
         dark=False,
+        batik=True,
     ):
         """Create image from SVG file and save full color without transparency to path"""
 
@@ -165,37 +166,55 @@ class Icon:
                 # To set fill, add a rect before any of the paths.
                 elem[0].insert(0, color_rect)
 
-        # Call batik to generate the PNG from SVG - replace the fill color with the icon color
+        # Generate PNG from the modified SVG
         # The SVG files for services use a gradient fill that comes out as gray stepping otherwise
-        # https://xmlgraphics.apache.org/batik/tools/rasterizer.html
         try:
             # Create temporary SVG file with etree
             svg_temp = tempfile.NamedTemporaryFile()
             svg_temp.write(etree.tostring(root))
             svg_temp.flush()
-            subprocess.run(
-                [
-                    "java",
-                    "-jar",
-                    "-Djava.awt.headless=true",
-                    "batik-1.16/batik-rasterizer-1.16.jar",
-                    "-d",
-                    f"{str(path)}/{png_filename}.png",
-                    "-w",
-                    str(max_target_size),
-                    "-h",
-                    str(max_target_size),
-                    "-m",
-                    "image/png",
-                    svg_temp.name,
-                ],
-                shell=False,
-                stdout=PIPE,
-                stderr=PIPE,
-            )
+            if batik:
+                # https://xmlgraphics.apache.org/batik/tools/rasterizer.html
+                subprocess.run(
+                    [
+                        "java",
+                        "-jar",
+                        "-Djava.awt.headless=true",
+                        "batik-1.16/batik-rasterizer-1.16.jar",
+                        "-d",
+                        f"{str(path)}/{png_filename}.png",
+                        "-w",
+                        str(max_target_size),
+                        "-h",
+                        str(max_target_size),
+                        "-m",
+                        "image/png",
+                        svg_temp.name,
+                    ],
+                    shell=False,
+                    stdout=PIPE,
+                    stderr=PIPE,
+                )
+            else:
+                # Use rsvg-convert (librsvg) instead of Batik (experimental)
+                subprocess.run(
+                    [
+                        "rsvg-convert",
+                        "-w",
+                        str(max_target_size),
+                        "-h",
+                        str(max_target_size),
+                        "-o",
+                        f"{str(path)}/{png_filename}.png",
+                        svg_temp.name,
+                    ],
+                    shell=False,
+                    stdout=PIPE,
+                    stderr=PIPE,
+                )
             svg_temp.close()
         except Exception as e:  # pylint: disable=broad-except
-            print(f"Error executing batik-rasterizer jar file, {e}")
+            print(f"Error executing {'batik-rasterizer' if batik else 'rsvg-convert'}, {e}")
             sys.exit(1)
         return
 
@@ -406,7 +425,8 @@ class Icon:
             )
             sys.exit(1)
 
-    def _make_name(self, regex: str, filename: str, mappings: dict, mappings2: dict):
+    @staticmethod
+    def _make_name(regex: str, filename: str, mappings: dict, mappings2: dict):
         """
         Create PUML friendly name short name without directory and strip leading Arch_ or Res_
         and trailing _48.svg, then remove leading AWS or Amazon to reduce length.
@@ -443,7 +463,8 @@ class Icon:
 
         return (new_name, new_name2)
 
-    def _make_category(self, regex: str, filename: str, mappings: dict):
+    @staticmethod
+    def _make_category(regex: str, filename: str, mappings: dict):
         """Create PUML friendly category with any remappings
 
         :param regex: regular expression to obtain category
