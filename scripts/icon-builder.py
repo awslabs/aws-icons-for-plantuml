@@ -1259,9 +1259,7 @@ def main():
                     build_mermaid_icon(mermaid, svg_filename, cat, j.target2)
 
                 if j.filename_dark is not None:
-                    svg_filename_dark = re.sub(
-                        r"\.png$", ".svg", str(j.filename_dark)
-                    )
+                    svg_filename_dark = re.sub(r"\.png$", ".svg", str(j.filename_dark))
                     if svg_filename_dark.endswith(".svg"):
                         build_mermaid_icon(
                             mermaid, svg_filename_dark, cat, f"{j.target2}-dark"

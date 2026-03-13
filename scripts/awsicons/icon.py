@@ -214,7 +214,9 @@ class Icon:
                 )
             svg_temp.close()
         except Exception as e:  # pylint: disable=broad-except
-            print(f"Error executing {'batik-rasterizer' if batik else 'rsvg-convert'}, {e}")
+            print(
+                f"Error executing {'batik-rasterizer' if batik else 'rsvg-convert'}, {e}"
+            )
             sys.exit(1)
         return
 
