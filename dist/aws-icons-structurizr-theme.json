@@ -221,16 +221,6 @@
       "icon": "Analytics/OpenSearchServiceUltraWarmNode.png"
     },
     {
-      "tag": "QuickSight",
-      "stroke": "#8C4FFF",
-      "icon": "Analytics/QuickSight.png"
-    },
-    {
-      "tag": "QuicksightPaginatedReports",
-      "stroke": "#8C4FFF",
-      "icon": "Analytics/QuicksightPaginatedReports.png"
-    },
-    {
       "tag": "Redshift",
       "stroke": "#8C4FFF",
       "icon": "Analytics/Redshift.png"
@@ -436,6 +426,11 @@
       "icon": "ArtificialIntelligence/Bedrock.png"
     },
     {
+      "tag": "BedrockAgentCore",
+      "stroke": "#01A88D",
+      "icon": "ArtificialIntelligence/BedrockAgentCore.png"
+    },
+    {
       "tag": "CodeGuru",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/CodeGuru.png"
@@ -454,11 +449,6 @@
       "tag": "ComprehendMedical",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/ComprehendMedical.png"
-    },
-    {
-      "tag": "DeepComposer",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/DeepComposer.png"
     },
     {
       "tag": "DeepLearningAMIs",
@@ -534,11 +524,6 @@
       "tag": "LookoutforEquipment",
       "stroke": "#01A88D",
       "icon": "ArtificialIntelligence/LookoutforEquipment.png"
-    },
-    {
-      "tag": "LookoutforMetrics",
-      "stroke": "#01A88D",
-      "icon": "ArtificialIntelligence/LookoutforMetrics.png"
     },
     {
       "tag": "LookoutforVision",
@@ -686,16 +671,6 @@
       "icon": "Blockchain/ManagedBlockchainBlockchain.png"
     },
     {
-      "tag": "QuantumLedgerDatabase",
-      "stroke": "#ED7100",
-      "icon": "Blockchain/QuantumLedgerDatabase.png"
-    },
-    {
-      "tag": "AlexaForBusiness",
-      "stroke": "#DD344C",
-      "icon": "BusinessApplications/AlexaForBusiness.png"
-    },
-    {
       "tag": "AppFabric",
       "stroke": "#DD344C",
       "icon": "BusinessApplications/AppFabric.png"
@@ -739,6 +714,11 @@
       "tag": "PinpointJourney",
       "stroke": "#DD344C",
       "icon": "BusinessApplications/PinpointJourney.png"
+    },
+    {
+      "tag": "QuickSuite",
+      "stroke": "#DD344C",
+      "icon": "BusinessApplications/QuickSuite.png"
     },
     {
       "tag": "SimpleEmailService",
@@ -956,11 +936,6 @@
       "icon": "Compute/LocalZones.png"
     },
     {
-      "tag": "NICEEnginFrame",
-      "stroke": "#ED7100",
-      "icon": "Compute/NICEEnginFrame.png"
-    },
-    {
       "tag": "NitroEnclaves",
       "stroke": "#ED7100",
       "icon": "Compute/NitroEnclaves.png"
@@ -1006,11 +981,6 @@
       "icon": "Compute/Wavelength.png"
     },
     {
-      "tag": "ContactCenter",
-      "stroke": "#DD344C",
-      "icon": "ContactCenter/ContactCenter.png"
-    },
-    {
       "tag": "Containers",
       "stroke": "#ED7100",
       "icon": "Containers/Containers.png"
@@ -1024,11 +994,6 @@
       "tag": "EKSAnywhere",
       "stroke": "#ED7100",
       "icon": "Containers/EKSAnywhere.png"
-    },
-    {
-      "tag": "EKSCloud",
-      "stroke": "#ED7100",
-      "icon": "Containers/EKSCloud.png"
     },
     {
       "tag": "EKSDistro",
@@ -1154,6 +1119,11 @@
       "tag": "rePostPrivate",
       "stroke": "#C925D1",
       "icon": "CustomerEnablement/rePostPrivate.png"
+    },
+    {
+      "tag": "CustomerExperience",
+      "stroke": "#DD344C",
+      "icon": "CustomerExperience/CustomerExperience.png"
     },
     {
       "tag": "Aurora",
@@ -1501,34 +1471,14 @@
       "icon": "DeveloperTools/XRay.png"
     },
     {
-      "tag": "AppStream2",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/AppStream2.png"
-    },
-    {
       "tag": "EndUserComputing",
       "stroke": "#01A88D",
       "icon": "EndUserComputing/EndUserComputing.png"
     },
     {
-      "tag": "WorkSpacesFamily",
+      "tag": "WorkSpaces",
       "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesFamily.png"
-    },
-    {
-      "tag": "WorkSpacesFamilyAmazonWorkSpaces",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpaces.png"
-    },
-    {
-      "tag": "WorkSpacesFamilyAmazonWorkSpacesCore",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesCore.png"
-    },
-    {
-      "tag": "WorkSpacesFamilyAmazonWorkSpacesSecureBrowser",
-      "stroke": "#01A88D",
-      "icon": "EndUserComputing/WorkSpacesFamilyAmazonWorkSpacesSecureBrowser.png"
+      "icon": "EndUserComputing/WorkSpaces.png"
     },
     {
       "tag": "Amplify",
@@ -2009,41 +1959,6 @@
       "tag": "IoTAlexaVoiceService",
       "stroke": "#7AA116",
       "icon": "InternetOfThings/IoTAlexaVoiceService.png"
-    },
-    {
-      "tag": "IoTAnalytics",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalytics.png"
-    },
-    {
-      "tag": "IoTAnalyticsChannel",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalyticsChannel.png"
-    },
-    {
-      "tag": "IoTAnalyticsDataStore",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalyticsDataStore.png"
-    },
-    {
-      "tag": "IoTAnalyticsDataset",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalyticsDataset.png"
-    },
-    {
-      "tag": "IoTAnalyticsNotebook",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalyticsNotebook.png"
-    },
-    {
-      "tag": "IoTAnalyticsPipeline",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTAnalyticsPipeline.png"
-    },
-    {
-      "tag": "IoTButton",
-      "stroke": "#7AA116",
-      "icon": "InternetOfThings/IoTButton.png"
     },
     {
       "tag": "IoTCertificate",
@@ -2576,6 +2491,11 @@
       "icon": "ManagementGovernance/ControlTower.png"
     },
     {
+      "tag": "DevOpsAgent",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/DevOpsAgent.png"
+    },
+    {
       "tag": "DistroforOpenTelemetry",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/DistroforOpenTelemetry.png"
@@ -2644,6 +2564,11 @@
       "tag": "OrganizationsOrganizationalUnit",
       "stroke": "#E7157B",
       "icon": "ManagementGovernance/OrganizationsOrganizationalUnit.png"
+    },
+    {
+      "tag": "PartnerCentral",
+      "stroke": "#E7157B",
+      "icon": "ManagementGovernance/PartnerCentral.png"
     },
     {
       "tag": "Proton",
@@ -2811,11 +2736,6 @@
       "icon": "MediaServices/DeadlineCloud.png"
     },
     {
-      "tag": "ElasticTranscoder",
-      "stroke": "#ED7100",
-      "icon": "MediaServices/ElasticTranscoder.png"
-    },
-    {
       "tag": "ElementalAppliancesSoftware",
       "stroke": "#ED7100",
       "icon": "MediaServices/ElementalAppliancesSoftware.png"
@@ -2909,11 +2829,6 @@
       "tag": "ThinkboxKrakatoa",
       "stroke": "#ED7100",
       "icon": "MediaServices/ThinkboxKrakatoa.png"
-    },
-    {
-      "tag": "ThinkboxSequoia",
-      "stroke": "#ED7100",
-      "icon": "MediaServices/ThinkboxSequoia.png"
     },
     {
       "tag": "ThinkboxStoke",
@@ -3059,6 +2974,11 @@
       "tag": "Transform",
       "stroke": "#01A88D",
       "icon": "MigrationModernization/Transform.png"
+    },
+    {
+      "tag": "MulticloudandHybrid",
+      "stroke": "#E7157B",
+      "icon": "MulticloudandHybrid/MulticloudandHybrid.png"
     },
     {
       "tag": "APIGateway",
@@ -3221,14 +3141,14 @@
       "icon": "NetworkingContentDelivery/NetworkingContentDelivery.png"
     },
     {
-      "tag": "Private5G",
-      "stroke": "#8C4FFF",
-      "icon": "NetworkingContentDelivery/Private5G.png"
-    },
-    {
       "tag": "PrivateLink",
       "stroke": "#8C4FFF",
       "icon": "NetworkingContentDelivery/PrivateLink.png"
+    },
+    {
+      "tag": "RTBFabric",
+      "stroke": "#8C4FFF",
+      "icon": "NetworkingContentDelivery/RTBFabric.png"
     },
     {
       "tag": "Route53",
@@ -3664,6 +3584,11 @@
       "tag": "SecretsManager",
       "stroke": "#DD344C",
       "icon": "SecurityIdentityCompliance/SecretsManager.png"
+    },
+    {
+      "tag": "SecurityAgent",
+      "stroke": "#DD344C",
+      "icon": "SecurityIdentityCompliance/SecurityAgent.png"
     },
     {
       "tag": "SecurityHub",

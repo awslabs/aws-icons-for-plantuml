@@ -4,17 +4,22 @@
 		{
 			"label": "http.server 8000",
 			"type": "shell",
-			"command": "cd dist && python3 -m http.server 8000"
+			"command": "cd dist && uv run python -m http.server 8000"
 		},
 		{
 			"label": "http.server CORS 8000",
 			"type": "shell",
-			"command": "cd dist && python3 ../scripts/http_server_cors.py"
+			"command": "cd dist && uv run python ../scripts/http_server_cors.py"
 		},
     {
 			"label": "PlantUML picoweb 8080",
 			"type": "shell",
-			"command": "cd scripts && java -DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url=\"http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/\" -jar plantuml-mit-1.2025.0.jar -picoweb"
+			"command": "cd scripts && java -DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url=\"http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/\" -jar plantuml-mit-1.2026.2.jar -picoweb"
+		},
+    {
+			"label": "format scripts",
+			"type": "shell",
+			"command": "cd scripts && uvx ruff format"
 		}
 	]
 }

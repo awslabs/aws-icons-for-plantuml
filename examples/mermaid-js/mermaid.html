@@ -1,13 +1,13 @@
-<html>
+<html lang="en">
   <head>
     <title>Mermaid Architecture diagrams</title>
     <!--
-      requires "dist" folder being served at http://localhost:8000/
+      requires "dist" folder being served at http://localhost:8000/ with CORS
     -->
   </head>
   <body>
     
-    <h1>Mermaid <a href="https://mermaid.js.org/syntax/architecture.html" target="_blank">Architecture</a> diagrams:</h1>
+    <h1>Mermaid <a href="https://mermaid.js.org/syntax/architecture.html" rel="noopener" target="_blank">Architecture</a> diagrams:</h1>
 
     <h2>Generic icons</h2>
     <pre class="mermaid">
@@ -244,7 +244,7 @@ architecture-beta
       </pre>
 
     <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.mjs';
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.13.0/dist/mermaid.esm.mjs';
       let baseUrl = 'http://localhost:8000';
       let icons = await fetch(`${baseUrl}/aws-icons-mermaid.json`).then((res) => res.json());
       // https://mermaid.js.org/config/icons.html
