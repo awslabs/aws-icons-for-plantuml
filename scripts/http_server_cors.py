@@ -2,6 +2,7 @@
 """Use instead of `python3 -m http.server 8000` when you need CORS"""
 
 from http.server import HTTPServer, SimpleHTTPRequestHandler
+import sys
 
 
 class CORSRequestHandler(SimpleHTTPRequestHandler):
@@ -12,5 +13,16 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         return super(CORSRequestHandler, self).end_headers()
 
 
-httpd = HTTPServer(("localhost", 8000), CORSRequestHandler)
+class QuietHTTPServer(HTTPServer):
+    """Suppress BrokenPipeError tracebacks from disconnected clients."""
+
+    def handle_error(self, request, client_address):
+
+        exc = sys.exc_info()[1]
+        if isinstance(exc, BrokenPipeError):
+            return  # Client disconnected — safe to ignore
+        super().handle_error(request, client_address)
+
+
+httpd = QuietHTTPServer(("localhost", 8000), CORSRequestHandler)
 httpd.serve_forever()
