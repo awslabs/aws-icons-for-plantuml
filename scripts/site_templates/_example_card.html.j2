@@ -1,0 +1,19 @@
+<div class="example-card">
+    <h3>{{ example.title }}</h3>
+    <p>{{ example.description }}</p>
+    <div class="example-diagram">
+        <img
+            src="{{ example.proxy_url }}"
+            alt="Rendered diagram: {{ example.title }}"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';"
+        >
+        <div class="example-fallback" style="display:none;">
+            <p>Diagram unavailable.</p>
+            <a href="{{ example.puml_url }}" target="_blank" rel="noopener noreferrer">View source .puml file</a>
+        </div>
+    </div>
+    <a href="{{ example.puml_url }}" class="example-source-link" target="_blank" rel="noopener noreferrer">
+        {{ example.source_path }}
+    </a>
+</div>

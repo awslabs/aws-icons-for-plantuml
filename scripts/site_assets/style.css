@@ -1,0 +1,554 @@
+/* ==========================================================================
+   AWS Icons for PlantUML — Icon Browser Stylesheet
+   CloudScape Design System inspired tokens and layout
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Design Tokens (CSS Custom Properties)
+   -------------------------------------------------------------------------- */
+:root {
+    /* Colors */
+    --color-background-layout-main: #ffffff;
+    --color-background-container-content: #ffffff;
+    --color-background-container-header: #fafafa;
+    --color-border-divider-default: #e9ebed;
+    --color-text-body-default: #000716;
+    --color-text-heading-default: #000716;
+    --color-text-body-secondary: #414d5c;
+    --color-background-button-primary-default: #0972d3;
+    --color-background-button-primary-hover: #065299;
+    --color-background-button-primary-active: #033160;
+    --color-text-interactive-default: #0972d3;
+    --color-text-link-default: #0972d3;
+    --color-background-input-default: #ffffff;
+    --color-border-input-default: #7d8998;
+    --color-border-input-focused: #0972d3;
+    --color-background-notification-green: #037f0c;
+    --color-background-layout-nav: #0f1b2a;
+    --color-text-nav: #ffffff;
+    --color-background-badge: #414d5c;
+
+    /* Typography */
+    --font-family-base: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif;
+    --font-family-mono: "Monaco", "Menlo", "Consolas", "Courier New", monospace;
+    --font-size-body-s: 12px;
+    --font-size-body-m: 14px;
+    --font-size-heading-s: 18px;
+    --font-size-heading-m: 20px;
+    --font-size-heading-l: 24px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --line-height-body: 1.5;
+    --line-height-heading: 1.25;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-m: 12px;
+    --space-l: 20px;
+    --space-xl: 24px;
+    --space-xxl: 32px;
+
+    /* Border Radii */
+    --border-radius-container: 16px;
+    --border-radius-button: 8px;
+    --border-radius-input: 8px;
+    --border-radius-badge: 4px;
+
+    /* Shadows */
+    --shadow-container: 0 1px 2px 0 rgba(0, 7, 22, 0.12);
+    --shadow-card-hover: 0 4px 12px rgba(0, 7, 22, 0.12);
+
+    /* Focus */
+    --color-border-item-focused: #0972d3;
+    --focus-ring: 0 0 0 2px var(--color-border-item-focused);
+
+    /* Transitions */
+    --transition-duration: 150ms;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset & Base
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size-body-m);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body);
+    color: var(--color-text-body-default);
+    background-color: var(--color-background-layout-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 var(--space-m) 0;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    color: var(--color-text-heading-default);
+}
+
+a {
+    color: var(--color-text-link-default);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. Utility Classes
+   -------------------------------------------------------------------------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Focus Indicators (Keyboard Navigation)
+   -------------------------------------------------------------------------- */
+:focus-visible {
+    outline: 2px solid var(--color-border-item-focused);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--color-border-item-focused);
+    outline-offset: 2px;
+    border-radius: var(--border-radius-badge);
+}
+
+/* --------------------------------------------------------------------------
+   5. Navigation Bar
+   -------------------------------------------------------------------------- */
+nav {
+    background-color: var(--color-background-layout-nav);
+    color: var(--color-text-nav);
+    padding: var(--space-m) var(--space-xl);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-m);
+}
+
+.nav-title {
+    font-size: var(--font-size-heading-s);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-nav);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-title:hover {
+    color: var(--color-text-nav);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.nav-github-link {
+    color: var(--color-text-nav);
+    font-size: var(--font-size-body-m);
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-s);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--border-radius-button);
+    transition: background-color var(--transition-duration);
+}
+
+.nav-github-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   6. Main Content Area
+   -------------------------------------------------------------------------- */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+}
+
+/* --------------------------------------------------------------------------
+   7. Controls Section (Version Selector + Category Dropdown + Search)
+   -------------------------------------------------------------------------- */
+.controls {
+    margin-bottom: var(--space-xl);
+}
+
+.controls-row {
+    display: flex;
+    gap: var(--space-l);
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-m);
+}
+
+.version-selector,
+.category-selector {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 140px;
+}
+
+.version-selector label,
+.category-selector label {
+    font-size: var(--font-size-body-s);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-body-secondary);
+}
+
+.version-selector select,
+.category-selector select {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body-m);
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--color-border-input-default);
+    border-radius: var(--border-radius-input);
+    background-color: var(--color-background-input-default);
+    color: var(--color-text-body-default);
+    cursor: pointer;
+    appearance: auto;
+}
+
+.category-selector {
+    min-width: 220px;
+}
+
+.version-selector select:focus-visible,
+.category-selector select:focus-visible {
+    border-color: var(--color-border-input-focused);
+    outline: 2px solid var(--color-border-item-focused);
+    outline-offset: -1px;
+}
+
+.search-container {
+    flex: 1;
+    min-width: 200px;
+    max-width: 480px;
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body-m);
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--color-border-input-default);
+    border-radius: var(--border-radius-input);
+    background-color: var(--color-background-input-default);
+    color: var(--color-text-body-default);
+}
+
+.search-container input[type="search"]::placeholder {
+    color: var(--color-text-body-secondary);
+}
+
+.search-container input[type="search"]:focus-visible {
+    border-color: var(--color-border-input-focused);
+    outline: 2px solid var(--color-border-item-focused);
+    outline-offset: -1px;
+}
+
+/* --------------------------------------------------------------------------
+   8. Icon Counts (inline with controls row)
+   -------------------------------------------------------------------------- */
+.icon-counts {
+    font-size: var(--font-size-body-m);
+    color: var(--color-text-body-secondary);
+    white-space: nowrap;
+    flex-shrink: 0;
+    align-self: flex-end;
+    padding-bottom: var(--space-s);
+}
+
+/* --------------------------------------------------------------------------
+   9. Icon Grid & Category Sections
+   -------------------------------------------------------------------------- */
+.icon-grid {
+    margin-top: var(--space-xl);
+}
+
+.category-section {
+    margin-bottom: var(--space-xxl);
+}
+
+.category-heading {
+    font-size: var(--font-size-heading-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-heading-default);
+    padding: var(--space-s) var(--space-m);
+    margin-bottom: var(--space-m);
+    background-color: var(--color-background-container-header);
+    border-left: 4px solid currentColor; /* overridden by inline style */
+    border-radius: var(--border-radius-badge);
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-s);
+}
+
+.category-heading .category-count {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-body-m);
+    color: var(--color-text-body-secondary);
+}
+
+.category-heading .category-color {
+    margin-left: auto;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body-s);
+    font-weight: var(--font-weight-normal);
+}
+
+/* List layout: vertical stack of icon rows */
+.category-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* --------------------------------------------------------------------------
+   10. Icon Rows (List View)
+   -------------------------------------------------------------------------- */
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-m);
+    padding: var(--space-s) var(--space-m);
+    background-color: var(--color-background-container-content);
+    border-bottom: 1px solid var(--color-border-divider-default);
+    transition: background-color var(--transition-duration);
+}
+
+.icon-row:first-child {
+    border-top: 1px solid var(--color-border-divider-default);
+}
+
+.icon-row:hover {
+    background-color: var(--color-background-container-header);
+}
+
+.icon-row img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Broken-image placeholder */
+.icon-placeholder {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-container-header);
+    border: 1px dashed var(--color-border-divider-default);
+    border-radius: var(--border-radius-badge);
+    color: var(--color-text-body-secondary);
+    font-size: var(--font-size-heading-s);
+    flex-shrink: 0;
+}
+
+.icon-name {
+    font-size: var(--font-size-body-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-heading-default);
+    white-space: nowrap;
+    min-width: 140px;
+    flex-shrink: 0;
+}
+
+.icon-puml-path {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body-s);
+    color: var(--color-text-body-secondary);
+    word-break: break-all;
+    line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   11. Copy Button & Copied Feedback
+   -------------------------------------------------------------------------- */
+.copy-button {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body-s);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-background-button-primary-default);
+    background-color: transparent;
+    border: 1px solid var(--color-background-button-primary-default);
+    border-radius: var(--border-radius-button);
+    padding: var(--space-xs) var(--space-m);
+    cursor: pointer;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+    white-space: nowrap;
+    min-width: 64px;
+    flex-shrink: 0;
+}
+
+.copy-button:hover {
+    background-color: var(--color-background-button-primary-default);
+    color: #ffffff;
+}
+
+.copy-button:active {
+    background-color: var(--color-background-button-primary-active);
+    color: #ffffff;
+}
+
+/* Copied confirmation state */
+.copy-button.copied {
+    background-color: var(--color-background-notification-green);
+    border-color: var(--color-background-notification-green);
+    color: #ffffff;
+    pointer-events: none;
+    animation: copied-flash 1.5s ease-out forwards;
+}
+
+@keyframes copied-flash {
+    0% {
+        background-color: var(--color-background-notification-green);
+        border-color: var(--color-background-notification-green);
+        color: #ffffff;
+    }
+    70% {
+        background-color: var(--color-background-notification-green);
+        border-color: var(--color-background-notification-green);
+        color: #ffffff;
+    }
+    100% {
+        background-color: transparent;
+        border-color: var(--color-background-button-primary-default);
+        color: var(--color-background-button-primary-default);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   12. Footer
+   -------------------------------------------------------------------------- */
+footer {
+    margin-top: var(--space-xxl);
+    padding: var(--space-xl);
+    border-top: 1px solid var(--color-border-divider-default);
+    background-color: var(--color-background-container-header);
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--font-size-body-s);
+    color: var(--color-text-body-secondary);
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: var(--color-text-link-default);
+}
+
+/* --------------------------------------------------------------------------
+   14. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+
+/* Mobile: 320px – 767px */
+@media (max-width: 767px) {
+    nav {
+        padding: var(--space-s) var(--space-m);
+    }
+
+    .nav-content {
+        flex-wrap: wrap;
+    }
+
+    .nav-title {
+        font-size: 16px;
+    }
+
+    main {
+        padding: var(--space-m);
+    }
+
+    .controls-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .version-selector,
+    .category-selector {
+        min-width: unset;
+    }
+
+    .search-container {
+        max-width: none;
+    }
+
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .icon-row {
+        gap: var(--space-s);
+        padding: var(--space-xs) var(--space-s);
+    }
+
+    .icon-name {
+        min-width: 80px;
+        font-size: var(--font-size-body-s);
+    }
+
+    .icon-puml-path {
+        font-size: 10px;
+        display: none; /* Hide PUML path on mobile to save space */
+    }
+}
+
+/* Tablet: 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .icon-name {
+        min-width: 120px;
+    }
+}
+
+/* Desktop: 1024px+ — defaults above handle this */

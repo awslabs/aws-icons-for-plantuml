@@ -1,0 +1,21 @@
+<div class="icon-row"
+     data-target="{{ icon.target }}"
+     data-target2="{{ icon.target2 }}"
+     data-category="{{ category }}">
+    <img
+        src="https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/{{ current_version }}/dist/{{ icon.pngPath }}"
+        alt="{{ icon.target }} - {{ category }}"
+        loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+    >
+    <div class="icon-placeholder" style="display:none;" aria-hidden="true">?</div>
+    <span class="icon-name">{{ icon.target }}</span>
+    <code class="icon-puml-path">!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/{{ current_version }}/dist/{{ icon.pumlPath }}</code>
+    <button
+        class="copy-button"
+        onclick="copyToClipboard('!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/{{ current_version }}/dist/{{ icon.pumlPath }}', this)"
+        aria-label="Copy include statement for {{ icon.target }}"
+    >
+        Copy
+    </button>
+</div>
