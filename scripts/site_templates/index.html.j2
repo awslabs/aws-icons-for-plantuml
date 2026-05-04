@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Icons for PlantUML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-content">
+                <a href="/" class="nav-title">AWS Icons for PlantUML</a>
+                <a href="https://github.com/awslabs/aws-icons-for-plantuml"
+                   class="nav-github-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls" aria-label="Icon browser controls">
+            <div class="controls-row">
+                <div class="version-selector">
+                    <label for="version-select">Version</label>
+                    <select id="version-select" aria-label="Select icon set version">
+                        {% for version in supported_versions %}
+                        <option value="{{ version }}"{% if version == current_version %} selected{% endif %}>{{ version }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="category-selector">
+                    <label for="category-select">Category</label>
+                    <select id="category-select" aria-label="Filter by category">
+                        {% set ns = namespace(total=0) %}
+                        {% for cat in icon_data.categories.values() %}
+                            {% set ns.total = ns.total + cat.icons | length %}
+                        {% endfor %}
+                        <option value="all">All Categories ({{ ns.total }})</option>
+                        {% for cat_name, cat in icon_data.categories.items() %}
+                        <option value="{{ cat_name }}">{{ cat_name }} ({{ cat.icons | length }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="search-container">
+                    <label for="search-input" class="visually-hidden">Search icons</label>
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search icons by name…"
+                        aria-label="Search icons by name"
+                    >
+                </div>
+
+                {% set ns = namespace(total=0) %}
+                {% for cat in icon_data.categories.values() %}
+                    {% set ns.total = ns.total + cat.icons | length %}
+                {% endfor %}
+                <div class="icon-counts" aria-live="polite">
+                    <span id="visible-count">{{ ns.total }}</span>
+                    of
+                    <span id="total-count">{{ ns.total }}</span>
+                    icons
+                </div>
+            </div>
+        </section>
+
+        <section class="icon-grid" aria-label="Icon catalog">
+            {% for cat_name, cat in icon_data.categories.items() %}
+            <div class="category-section" data-category="{{ cat_name }}" data-color="{{ cat.color }}">
+                <h2 class="category-heading" style="border-left-color: {{ cat.color }};">
+                    {{ cat_name }}
+                    <span class="category-count">({{ cat.icons | length }})</span>
+                    <span class="category-color" style="color: {{ cat.color }};">{{ cat.color }}</span>
+                </h2>
+                <div class="category-icons">
+                    {% for icon in cat.icons %}
+                        {% set category = cat_name %}
+                        {% set color = cat.color %}
+                        {% include '_icon_card.html.j2' %}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <a href="https://github.com/awslabs/aws-icons-for-plantuml">AWS Icons for PlantUML</a>
+                — Licensed under the MIT License.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.ICON_DATA = {{ icon_data_json | safe }};
+    </script>
+    <script>
+        window.ICON_DATA_BY_VERSION = {{ icon_data_by_version_json | safe }};
+    </script>
+    <script>
+        window.CATEGORY_MAPPING = {{ category_mapping_json | safe }};
+    </script>
+    <script>
+        window.SUPPORTED_VERSIONS = {{ supported_versions_json | safe }};
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
