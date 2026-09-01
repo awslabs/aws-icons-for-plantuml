@@ -1,15 +1,19 @@
 [project]
 name = "aws-icons-for-plantuml"
-version = "23.0"
+version = "23.1"
 description = "PlantUML sprites, macros, and other includes for Amazon Web Services services and resources"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "jinja2>=3.1.0",
     "pyyaml>=6.0.3",
-    "lxml>=6.1.0",
+    "lxml>=6.1.2",
     "pillow>=12.3.0",
-    "pytest>=9.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
 ]
 
 # https://docs.astral.sh/ruff/settings/

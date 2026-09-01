@@ -20,7 +20,7 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   - [Pillow](https://python-pillow.org/)
   - [pytest](https://docs.pytest.org/en/stable/)
 - [Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) or [OpenJDK 11](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.  Corretto 11 (LTS) "End of Life" is January 2032.
-- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_01302026`, `Category-Icons_01302026`, and `Resource-Icons_01302026` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
+- Download the [Asset Package](https://aws.amazon.com/architecture/icons/) which contains both PNG and SVG file formats, unzip, and copy or move the `Architecture-Service-Icons_04302026`, `Category-Icons_04302026`, and `Resource-Icons_04302026` directories to the `source/official` directory of this repository. The date may be different depending upon the version of the AWS Architecture Icons being downloaded.
 
   The folder structure should look like this once the directories have been copied over:
 
@@ -32,24 +32,24 @@ To generate the PlantUML files locally, ensure the following is prerequisites ha
   ├── AWSRaw.puml
   ├── AWSSimplified.puml
   └── official
-    ├── Architecture-Service-Icons_01302026
+    ├── Architecture-Service-Icons_04302026
     │   ├── Arch_Analytics
     │   ├── Arch_App-Integration
     │   ├── Arch_Blockchain
         ...
-    ├── Category-Icons_01302026
+    ├── Category-Icons_04302026
     │   ├── Arch-Category_16
     │   ├── Arch-Category_32
     │   ├── Arch-Category_48
     │   └── Arch-Category_64
-    └── Resource-Icons_01302026
+    └── Resource-Icons_04302026
         ├── Res_Analytics
         ├── Res_Application-Integration
         ├── Res_Blockchain
         ...
   ```
 
-- There is now a `Architecture-Group-Icons_01302026`, but the group icons (in the `source/unofficial/Groups_04282023` directory) were extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
+- There is now a `Architecture-Group-Icons_04302026`, but the group icons (in the `source/unofficial/Groups_04282023` directory) were extracted from the Microsoft PowerPoint found on the [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/).  If you see a change looking at the `.pptx` file, `unzip` it from the command line and look in the `ppt/media` for the images.  These are named `image#.svg` and `image#.png` where `#` and since group icons are early in the deck, they are usually in the first 100 images.  Copy and rename the `.svg` file, and copy, rename, and resize (to 64x64) the `.png` file.
 
 ## Configure to Build Icon Set
 
@@ -129,15 +129,15 @@ You can used the included PlantUML .jar to run a local server for rendering or d
 To check the version and license of PlantUML, render the `scripts/version.puml` diagram or execute the jar with the `-version` parameter:
 
 ```bash
-$ java -jar scripts/plantuml-mit-1.2026.2.jar -version
-PlantUML version 1.2026.2 / bb8550d [2026-02-27 17:45:29 UTC]
+$ java -jar scripts/plantuml-mit-1.2026.7.jar  -version
+PlantUML version 1.2026.7 / e131e27 [2026-08-25 09:35:51 UTC]
 (MIT source distribution)
 ```
 
 To start the local render server.  You may need `-DPLANTUML_SECURITY_PROFILE=ALLOWLIST -Dplantuml.allowlist.url="http://localhost:8000/;https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/"`, but consult [Deploy PlantUML safely](https://plantuml.com/security):
 
 ```bash
-java -jar scripts/plantuml-mit-1.2026.2.jar -picoweb
+java -jar scripts/plantuml-mit-1.2026.7.jar -picoweb
 ```
 
 If you use Visual Studio Code (or another editor based on Code - OSS) and the jebbs [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) extension, update your `.vscode\settings.json` as below to use that local server.
@@ -164,8 +164,8 @@ When new releases of AWS Icons are published, the flow for updating this project
 1. Download the new AWS Architecture Icons assets and unzip into the `source/official` directory of this repository.
 1. In `icon-builder.py`:
     1. update the `dir_glob` values for `dir_list` paths
-    1. update the `release_version` and `release_date_obj` (and any other text instances of version number - e.g. 23.0-2026.01.30)
-1. In the `scripts` folder, run `uv run icon-builder.py --create-config-template`, then compare the generated `config-template.yml` to the existing `config.yml`.  You can make this easier by pre-editing `config.yml` `SourceDir` files with a Find/Replace for folders (e.g. `_07312025` with `_01302026`)
+    1. update the `release_version` and `release_date_obj` (and any other text instances of version number - e.g. 23.1-2026.04.28)
+1. In the `scripts` folder, run `uv run icon-builder.py --create-config-template`, then compare the generated `config-template.yml` to the existing `config.yml`.  You can make this easier by pre-editing `config.yml` `SourceDir` files with a Find/Replace for folders (e.g. `_01302026` with `_04302026`)
     1. From the compare, build release notes (use preview GitHub Release notes as template).  Look for any renamed or removed icons, and changes to categories.  The AWS Architecture Icons PowerPoint has a "What’s New?" slide.
     1. Update `upgrade.py` for `SUPPORTED_VERSIONS` and `BREAKING_CHANGES` (`REPLACED`, `REMOVED`, `MOVED`, and `RENAMED`).
     1. New categories require updates to `CATEGORY_COLORS` in `icon-builder.py`, `!$AWS_CATEGORY_COLORS` in `source\AWSCommon.puml` and the `MARKDOWN_PREFIX_TEMPLATE` in `icon-builder.py`.
@@ -175,6 +175,10 @@ When new releases of AWS Icons are published, the flow for updating this project
 1. Run `upgrade.sh` from the `examples` folder.  Update the project `README.md` with new version number (e.g. "v22.0" to "v23.0").  Check if any of the example .puml files were changes by the upgrade, and may need parallel update in `README.md`.
 1. Create a `### Release ...` section below and make any other updates to this `README.md` file.
 1. For easier compare on the GitHub PR, make multiple commits (e.g. "update scripts", "generate icons for dist", and "update examples").
+
+### Release 23.1-2026.04.28
+
+This release switched to using `plantuml-mit-1.2026.7.jar` which had no noticeable changes.
 
 ### Release 23.0-2026.01.30
 
@@ -254,4 +258,4 @@ This is a makeover release where all items have moved. Of note:
 
 The icons provided in this package are made available to you under the terms of the CC-BY-ND 2.0 license, available in the `LICENSE` file. Code is made available under the MIT license in `LICENSE-CODE`.
 
-The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml-mit-1.2026.2.jar`, is licensed under the MIT license in `LICENSE-CODE`.
+The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml-mit-1.2026.7.jar`, is licensed under the MIT license in `LICENSE-CODE`.

@@ -13,7 +13,7 @@
 
 ## External Tools
 - Java 11+ (Corretto or OpenJDK): Required for PlantUML and Batik
-- PlantUML MIT JAR (`scripts/plantuml-mit-1.2026.2.jar`): Sprite generation and rendering
+- PlantUML MIT JAR (`scripts/plantuml-mit-1.2026.7.jar`): Sprite generation and rendering
 - Apache Batik (`scripts/batik-1.16/`): SVG to PNG rasterization
 
 ## Linting
@@ -53,7 +53,7 @@ uv run upgrade.py "*.puml"              # dry run
 uv run upgrade.py --overwrite "*.puml"  # apply changes
 
 # Local PlantUML render server
-java -jar plantuml-mit-1.2026.2.jar -picoweb
+java -jar plantuml-mit-1.2026.7.jar -picoweb
 
 # Local HTTP server for dist/ files
 cd ../dist && python3 -m http.server 8000
