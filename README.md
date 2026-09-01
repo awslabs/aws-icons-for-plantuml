@@ -108,7 +108,7 @@ desktopAlias --> storageAlias
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v23.1/examples/HelloWorld.puml)
+![](https://awslabs.github.io/aws-icons-for-plantuml/examples/HelloWorld.png)
 
 ## Examples
 
@@ -150,7 +150,7 @@ iotRule --> errorQueue : Failed action message
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FBasic%2520Usage.puml)
+![](https://awslabs.github.io/aws-icons-for-plantuml/examples/Basic_Usage.png)
 
 ### Raw Images
 
@@ -181,7 +181,7 @@ mySecondFunction --> mySecondML
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FRaw%2520Image%2520Usage.puml)
+![](https://awslabs.github.io/aws-icons-for-plantuml/examples/Raw_Image_Usage.png)
 
 ### Simplified View
 
@@ -223,11 +223,11 @@ recordVote --> voteDb
 
 This code generates the following diagram:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FTwo%2520Modes%2520-%2520Technical%2520View.puml)
+![](https://awslabs.github.io/aws-icons-for-plantuml/examples/Two_Modes_-_Technical_View.png)
 
 And if the `!include AWSPuml/AWSSimplified.puml`is uncommented, this simplified view is created:
 
-![](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FTwo%2520Modes%2520-%2520Simple%2520View.puml)
+![](https://awslabs.github.io/aws-icons-for-plantuml/examples/Two_Modes_-_Simple_View.png)
 
 ### Sequence Diagrams
 
@@ -264,7 +264,7 @@ api -> user: Returns status code
 
 The code above generates the fully detailed diagram with stereotypes.
 
-![Technical View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FSequence%2520-%2520Technical.puml)
+![Technical View Sequence Diagram](https://awslabs.github.io/aws-icons-for-plantuml/examples/Sequence_-_Technical.png)
 
 ```
 @startuml Sequence Diagram - Images
@@ -309,7 +309,7 @@ return status code
 
 The code above generates the same sequence diagram demonstrating how colors, text positioning, and stereotypes can be modified.
 
-![Image View Sequence Diagram](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FSequence%2520-%2520Images.puml)
+![Image View Sequence Diagram](https://awslabs.github.io/aws-icons-for-plantuml/examples/Sequence_-_Images.png)
 
 ### Groups
 
@@ -371,7 +371,7 @@ AWSCloudGroup(cloud) {
 
 This code generates the following diagram:
 
-![VPC Groups Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FGroups%2520-%2520VPC.puml)
+![VPC Groups Sample](https://awslabs.github.io/aws-icons-for-plantuml/examples/Groups_-_VPC.png)
 
 Custom groups can also be constructed using the `$AWSDefineGroup` macro.  Here is an AWS CodePipeline human approval workflow example defining a custom group for AWS CodePipeline.
 
@@ -436,7 +436,7 @@ CodePipelineGroup(pipeline){
 @enduml
 ```
 
-![Amazon S3 Upload Workflow Sample](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Fawslabs%2Faws-icons-for-plantuml%2Fv23.1%2Fexamples%2FGroups%2520-%2520CodePipeline.puml)
+![CodePipeline Custom Group Sample](https://awslabs.github.io/aws-icons-for-plantuml/examples/Groups_-_CodePipeline.png)
 
 ## Distribution "Dist" Details
 

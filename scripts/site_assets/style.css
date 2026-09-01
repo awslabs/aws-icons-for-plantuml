@@ -196,6 +196,182 @@ nav {
     text-decoration: none;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+}
+
+.nav-link {
+    color: var(--color-text-nav);
+    font-size: var(--font-size-body-m);
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-s);
+    border-radius: var(--border-radius-button);
+    transition: background-color var(--transition-duration);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-nav);
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   5b. Examples Page
+   -------------------------------------------------------------------------- */
+.example-selector {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 320px;
+}
+
+.example-selector label {
+    font-size: var(--font-size-body-s);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-body-secondary);
+}
+
+.example-selector select {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-body-m);
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--color-border-input-default);
+    border-radius: var(--border-radius-input);
+    background-color: var(--color-background-input-default);
+    color: var(--color-text-body-default);
+    cursor: pointer;
+    appearance: auto;
+}
+
+.example-selector select:focus-visible {
+    border-color: var(--color-border-input-focused);
+    outline: 2px solid var(--color-border-item-focused);
+    outline-offset: -1px;
+}
+
+.examples-intro {
+    margin-bottom: var(--space-xl);
+}
+
+.examples-intro h1 {
+    font-size: var(--font-size-heading-l);
+}
+
+.examples-intro p {
+    color: var(--color-text-body-secondary);
+    max-width: 820px;
+}
+
+.examples-intro code {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body-s);
+    background-color: var(--color-background-container-header);
+    padding: 1px var(--space-xs);
+    border-radius: var(--border-radius-badge);
+}
+
+.example-panel {
+    border: 1px solid var(--color-border-divider-default);
+    border-radius: var(--border-radius-container);
+    background-color: var(--color-background-container-content);
+    box-shadow: var(--shadow-container);
+    overflow: hidden;
+}
+
+.example-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-m);
+    flex-wrap: wrap;
+    padding: var(--space-l) var(--space-xl);
+    background-color: var(--color-background-container-header);
+    border-bottom: 1px solid var(--color-border-divider-default);
+}
+
+.example-title {
+    margin: 0;
+    font-size: var(--font-size-heading-m);
+}
+
+.example-source-link {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body-s);
+    color: var(--color-text-link-default);
+    word-break: break-all;
+}
+
+.example-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+}
+
+.example-images {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.example-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--color-border-divider-default);
+    border-radius: var(--border-radius-badge);
+    background-color: #ffffff;
+    padding: var(--space-s);
+}
+
+.example-no-image {
+    color: var(--color-text-body-secondary);
+    font-style: italic;
+}
+
+.example-source {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.example-source-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-s);
+}
+
+.example-source-label {
+    font-size: var(--font-size-body-s);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-body-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.example-code {
+    margin: 0;
+    padding: var(--space-m);
+    background-color: #0f1b2a;
+    color: #e9ebed;
+    border-radius: var(--border-radius-badge);
+    overflow-x: auto;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body-s);
+    line-height: 1.5;
+    max-height: 640px;
+    overflow-y: auto;
+}
+
+.example-code code {
+    font-family: inherit;
+    white-space: pre;
+}
+
 /* --------------------------------------------------------------------------
    6. Main Content Area
    -------------------------------------------------------------------------- */
@@ -541,6 +717,21 @@ footer {
     .icon-puml-path {
         font-size: 10px;
         display: none; /* Hide PUML path on mobile to save space */
+    }
+
+    .example-body {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .example-selector {
+        min-width: unset;
+    }
+}
+
+/* Examples page: stack source/image columns on narrower viewports */
+@media (max-width: 1023px) {
+    .example-body {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
