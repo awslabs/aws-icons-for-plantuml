@@ -3,8 +3,6 @@ name: Deploy Icon Browser to GitHub Pages
 on:
   push:
     branches: [main]
-  release:
-    types: [created]
 
 permissions:
   contents: read
