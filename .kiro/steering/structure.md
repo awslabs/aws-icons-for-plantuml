@@ -23,7 +23,7 @@ aws-icons-for-plantuml/
 │   ├── config.yml                 # Curated mapping of source icons → categories/targets/colors
 │   ├── upgrade.py                 # Upgrades .puml files between release versions
 │   ├── test_upgrade.py            # Tests for upgrade.py
-│   ├── plantuml-mit-1.2026.2.jar  # PlantUML MIT-licensed JAR
+│   ├── plantuml-mit-1.2026.7.jar  # PlantUML MIT-licensed JAR
 │   └── batik-1.16/                # Apache Batik SVG rasterizer
 ├── examples/                      # Example .puml diagrams
 ├── AWSSymbols.md                  # Generated markdown table of all icons

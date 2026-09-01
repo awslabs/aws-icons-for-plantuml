@@ -27,6 +27,7 @@ SUPPORTED_VERSIONS = [
     "v20.0",
     "v22.0",
     "v23.0",
+    "v23.1",
 ]
 
 UPDATES = {
@@ -298,6 +299,12 @@ BREAKING_CHANGES["v23.0"] = {
     },
     "MediaServices": {"REMOVED": ["ElasticTranscoder", "ThinkboxSequoia"]},
     "NetworkingContentDelivery": {"REMOVED": ["Private5G"]},
+}
+
+BREAKING_CHANGES["v23.1"] = {
+    "Analytics": {
+        "REPLACED": {"QuickSuite": "Quick"},
+    },
 }
 
 ICON_CHANGES = {}
