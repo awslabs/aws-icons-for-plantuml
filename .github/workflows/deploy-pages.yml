@@ -25,7 +25,7 @@ jobs:
         with:
           distribution: corretto
           java-version: "17"
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v6
       - run: uv sync
       # Renders example diagrams to site/examples/ using the bundled PlantUML
       # JAR and the committed dist/ icons (current release only). The PNGs live
