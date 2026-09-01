@@ -261,9 +261,7 @@ def build_example_list() -> list[ExampleDiagram]:
     for spec in examples_spec:
         source_path = spec["source_path"]
         puml_url = f"{_GITHUB_RAW_BASE}/{quote(source_path)}"
-        proxy_url = (
-            f"{_PLANTUML_PROXY_BASE}?idx=0&src={quote(puml_url, safe='')}"
-        )
+        proxy_url = f"{_PLANTUML_PROXY_BASE}?idx=0&src={quote(puml_url, safe='')}"
         examples.append(
             ExampleDiagram(
                 title=spec["title"],
@@ -521,9 +519,7 @@ def main() -> None:
         icon_data_by_version=icon_data_by_version,
     )
 
-    total_icons = sum(
-        len(cat.icons) for cat in icon_data.categories.values()
-    )
+    total_icons = sum(len(cat.icons) for cat in icon_data.categories.values())
     print(
         f"Success: {len(icon_data.categories)} categories, "
         f"{total_icons} icons, {len(examples)} examples"
