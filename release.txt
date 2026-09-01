@@ -1,0 +1,16 @@
+To reference files specific to this release, define `AWSPuml` to:
+
+`!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v23.1/dist`
+
+This release recreates the icons based on the 2026-04-28 (23-2026.04.28) updated AWS Architecture Icons.
+
+## Updates
+
+- Updated to Release 23-2026.04.28 of [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
+  - New icons in the `ArtificialIntelligence`, `ManagementGovernance`, `NetworkingContentDelivery`, and `Storage` categories.
+- Updated experimental `scripts/upgrade.py` and experimental `aws-icons-mermaid.json` [iconifyJSON](https://iconify.design/docs/types/iconify-json.html) formatted icon pack.
+
+## Breaking Changes
+
+- In the `Analytics` category:
+  - `QuickSuite` was replaced by `Quick`
