@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples — AWS Icons for PlantUML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-title">AWS Icons for PlantUML</a>
+                <div class="nav-actions">
+                    <a href="index.html" class="nav-link">Icons</a>
+                    <a href="https://github.com/awslabs/aws-icons-for-plantuml"
+                       class="nav-github-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="examples-intro" aria-label="Examples introduction">
+            <h1>Examples</h1>
+            <p>
+                Browse the example PlantUML diagrams from the
+                <code>examples/</code> directory. Diagrams are pre-rendered for
+                the current release ({{ current_version }}). Select an example
+                to view its source and rendered image.
+            </p>
+        </section>
+
+        <section class="controls" aria-label="Example browser controls">
+            <div class="controls-row">
+                <div class="example-selector">
+                    <label for="example-select">Example</label>
+                    <select id="example-select" aria-label="Select an example diagram">
+                        {% for ex in examples %}
+                        <option value="{{ loop.index0 }}"{% if loop.first %} selected{% endif %}>{{ ex.title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples-panels" aria-label="Selected example">
+            {% for ex in examples %}
+            <article
+                class="example-panel"
+                id="example-{{ loop.index0 }}"
+                data-index="{{ loop.index0 }}"
+                {% if not loop.first %}hidden{% endif %}
+            >
+                <div class="example-header">
+                    <h2 class="example-title">{{ ex.title }}</h2>
+                    <a href="{{ ex.puml_url }}"
+                       class="example-source-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        {{ ex.source_path }}
+                    </a>
+                </div>
+
+                <div class="example-body">
+                    <div class="example-images" aria-label="Rendered diagram images">
+                        {% if ex.image_paths %}
+                            {% for img in ex.image_paths %}
+                            <img
+                                class="example-image"
+                                src="{{ img }}"
+                                alt="Rendered diagram: {{ ex.title }}"
+                                loading="lazy"
+                            >
+                            {% endfor %}
+                        {% else %}
+                            <p class="example-no-image">
+                                No rendered image available for this example.
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="example-source">
+                        <div class="example-source-toolbar">
+                            <span class="example-source-label">Source</span>
+                            <button
+                                class="copy-button"
+                                type="button"
+                                aria-label="Copy source for {{ ex.title }}"
+                                data-copy-target="source-{{ loop.index0 }}"
+                            >
+                                Copy
+                            </button>
+                        </div>
+                        <pre class="example-code"><code id="source-{{ loop.index0 }}">{{ ex.source_text }}</code></pre>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <a href="https://github.com/awslabs/aws-icons-for-plantuml">AWS Icons for PlantUML</a>
+                — Licensed under the MIT License.
+            </p>
+        </div>
+    </footer>
+
+    <script src="examples.js"></script>
+</body>
+</html>
