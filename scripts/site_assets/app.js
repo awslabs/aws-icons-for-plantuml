@@ -8,6 +8,57 @@
  */
 
 /* ------------------------------------------------------------------ */
+/*  Sanitization helpers                                               */
+/* ------------------------------------------------------------------ */
+
+/** Fixed, trusted base for all icon asset URLs. */
+var RAW_BASE = 'https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/';
+
+/**
+ * Allow only safe version strings (e.g. "v23.0", "v23.1-2026.04.28").
+ * Rejects anything containing path separators, whitespace, or characters
+ * outside a conservative allowlist.
+ *
+ * @param {string} version
+ * @returns {string} The version if valid, otherwise an empty string.
+ */
+function sanitizeVersion(version) {
+  if (typeof version !== 'string') return '';
+  return /^[A-Za-z0-9._-]+$/.test(version) ? version : '';
+}
+
+/**
+ * Allow only safe relative asset paths of the form "Category/Name.ext".
+ * Rejects absolute URLs, protocol-relative URLs, backslashes, parent
+ * traversal, and any character outside a conservative allowlist. This
+ * prevents an untrusted value from being reinterpreted as a different
+ * URL/scheme when assigned to an element attribute.
+ *
+ * @param {string} relPath
+ * @returns {string} The path if valid, otherwise an empty string.
+ */
+function sanitizeAssetPath(relPath) {
+  if (typeof relPath !== 'string') return '';
+  if (relPath.indexOf('..') !== -1) return '';
+  return /^[A-Za-z0-9._/-]+\.(png|puml)$/.test(relPath) ? relPath : '';
+}
+
+/**
+ * Build a fully-qualified, validated raw asset URL. Returns an empty
+ * string if either component fails validation.
+ *
+ * @param {string} version
+ * @param {string} relPath
+ * @returns {string}
+ */
+function buildAssetUrl(version, relPath) {
+  var safeVersion = sanitizeVersion(version);
+  var safePath = sanitizeAssetPath(relPath);
+  if (!safeVersion || !safePath) return '';
+  return RAW_BASE + safeVersion + '/dist/' + safePath;
+}
+
+/* ------------------------------------------------------------------ */
 /*  State                                                              */
 /* ------------------------------------------------------------------ */
 
@@ -138,8 +189,9 @@ function rebuildIconGrid(iconData, version) {
 
     for (var j = 0; j < cat.icons.length; j++) {
       var icon = cat.icons[j];
-      var baseUrl = 'https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/' + version + '/dist/';
-      var pumlInclude = '!include ' + baseUrl + icon.pumlPath;
+      var pngUrl = buildAssetUrl(version, icon.pngPath);
+      var pumlUrl = buildAssetUrl(version, icon.pumlPath);
+      var pumlInclude = '!include ' + pumlUrl;
 
       // Create icon row
       var row = document.createElement('div');
@@ -150,7 +202,7 @@ function rebuildIconGrid(iconData, version) {
 
       // Image
       var img = document.createElement('img');
-      img.src = baseUrl + icon.pngPath;
+      if (pngUrl) img.src = pngUrl;
       img.alt = icon.target + ' - ' + catName;
       img.loading = 'lazy';
       img.onerror = function() {
@@ -245,20 +297,26 @@ function switchVersion(version) {
     // Rebuild the entire grid with the version's icon data
     rebuildIconGrid(versionData, version);
   } else {
-    // Fallback: just update URLs in existing DOM (old behavior)
-    var versionPattern = /awslabs\/aws-icons-for-plantuml\/[^/]+\/dist\//g;
-    var replacement = 'awslabs/aws-icons-for-plantuml/' + version + '/dist/';
+    // Fallback: rebuild URLs in existing DOM (old behavior).
+    // Extract the trusted relative asset path from the existing URL and
+    // reconstruct a fully validated URL rather than substituting into the
+    // untrusted string, so no attacker-controlled value can be reinterpreted.
+    var assetPattern = /awslabs\/aws-icons-for-plantuml\/[^/]+\/dist\/(.+)$/;
 
     var images = document.querySelectorAll('.icon-row img');
     for (var i = 0; i < images.length; i++) {
       var src = images[i].getAttribute('src');
-      if (src) images[i].setAttribute('src', src.replace(versionPattern, replacement));
+      var match = src && src.match(assetPattern);
+      var newSrc = match && buildAssetUrl(version, match[1]);
+      if (newSrc) images[i].setAttribute('src', newSrc);
     }
 
     var pumlPaths = document.querySelectorAll('.icon-puml-path');
     for (var i = 0; i < pumlPaths.length; i++) {
       var text = pumlPaths[i].textContent;
-      if (text) pumlPaths[i].textContent = text.replace(versionPattern, replacement);
+      var pumlMatch = text && text.match(assetPattern);
+      var pumlUrl = pumlMatch && buildAssetUrl(version, pumlMatch[1]);
+      if (pumlUrl) pumlPaths[i].textContent = '!include ' + pumlUrl;
     }
   }
 
